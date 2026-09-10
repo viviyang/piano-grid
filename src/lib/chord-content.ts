@@ -23,7 +23,7 @@ export function getChordDetail(url:string):ReturnType<typeof getAMinorContent> {
  // Independently sourced RH example remains separate from all null inversion fingerings.
  if(d.verified_fingering_example){const f=d.verified_fingering_example;blocks.splice(4,0,{block_id:`${prefix}-fingering-example`,content:{...empty('Right-hand root-position example'),paragraphs:[`${f.scope}: ${f.notes.join('–')} → ${f.fingers.join('–')}.`]}});}
  const related=d.related.filter((u:string)=>isPublicRoute(u));
- if(related.length)blocks.push({block_id:`${prefix}-related`,content:{...empty('Related local previews'),links:related.map((u:string)=>({url:u,label:u==='/chords'?'Piano chord chart':u,published:true}))}});
+ if(related.length)blocks.push({block_id:`${prefix}-related`,content:{...empty('Related references'),links:related.map((u:string)=>({url:u,label:u==='/chords'?'Piano chord chart':u,published:true}))}});
  const byId=Object.fromEntries(blocks.map(b=>[b.block_id,b]));
  return {data,blocks,byId,metadata:page.metadata,answer:page.blocks[0].body,introduction:[],searchSections:blocks.filter(b=>b.block_id!==`${prefix}-intro`).map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)}))};
 }

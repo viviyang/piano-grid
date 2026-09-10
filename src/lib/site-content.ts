@@ -5,7 +5,6 @@ import { PUBLIC_ROUTES } from './site-routes';
 // Server/build-only source access. Reading a master object never authorizes its route.
 export const authorizedURLs = PUBLIC_ROUTES;
 export const locallyAvailableURLs = new Set<string>(authorizedURLs);
-export const localPreview = process.env.NODE_ENV === 'development' || process.env.PIANO_LOCAL_PREVIEW === '1';
 export function readMaster() { return JSON.parse(readFileSync(resolve('docs/content/site-master/page-content.master.json'), 'utf8')); }
 export function readAuthorizedPage(url: string) {
   if (!(authorizedURLs as readonly string[]).includes(url)) throw new Error(`Unauthorized route: ${url}`);

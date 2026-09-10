@@ -120,6 +120,7 @@ for (const url of routes) {
       h1,
       headings,
       mainText,
+      bodyText: normalizedText(document.body?.innerText),
       renderedDataBlocks: document.querySelectorAll('main [data-block-id]').length,
       links,
       imgs,
@@ -164,6 +165,7 @@ for (const url of routes) {
   if (dom.h1.length !== 1) issues.push({ severity: 'P2', code: 'H1_COUNT', detail: dom.h1 });
   if (canonicalPath !== url) issues.push({ severity: 'P1', code: 'CANONICAL_PATH', detail: dom.canonical });
   if (!dom.robots?.includes('index') || !dom.robots?.includes('follow') || dom.robots.includes('noindex') || dom.robots.includes('nofollow')) issues.push({ severity: 'P1', code: 'PUBLIC_INDEX_POLICY', detail: dom.robots });
+  if (/local page preview|local preview|in this preview/i.test(dom.bodyText)) issues.push({ severity: 'P2', code: 'STALE_PREVIEW_COPY' });
   if (brokenInternal.length) issues.push({ severity: 'P1', code: 'BROKEN_INTERNAL_LINK', detail: brokenInternal });
   if (dom.pageOverflow) issues.push({ severity: 'P2', code: 'PAGE_OVERFLOW_1440' });
   if (imageIssues.length || svgIssues.length) issues.push({ severity: 'P2', code: 'MEDIA_ACCESSIBILITY', detail: { imageIssues, svgIssues } });
