@@ -4,13 +4,14 @@ import { getEasySongs, getSongCenter } from '@/lib/song-content';
 import type { SongBlock, SongPageModel, SongResource } from '@/lib/song-types';
 import { SongCenterExperience } from './center-experience';
 import { EasySongChooser } from './easy-experience';
+import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import '@/app/chords/a-minor/a-minor.css';
 import './songs.css';
 
 function SongShell({ model, children }: { model: SongPageModel; children: ReactNode }) {
   const detail = model.url === '/songs/easy';
   return <div className="am-page sg-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Songs"/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading"><nav className="am-breadcrumb" aria-label="Breadcrumb">{detail ? <a href="/songs">Songs</a> : <span>Songs</span>}{detail && <><span className="am-slash" aria-hidden="true">/</span><span aria-current="page">Easy</span></>}</nav><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
+    <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Songs', href: '/songs' }, { label: 'Easy' }] : [{ label: 'Songs' }]}/><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
     {children}
   </main><SiteFooter url={model.url}/></div>;
 }

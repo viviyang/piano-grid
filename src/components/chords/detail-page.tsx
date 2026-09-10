@@ -1,11 +1,12 @@
 import { getAMinorContent } from '@/lib/a-minor-content';
 import { AMinorExperience as ChordDetailExperience, PrintActions } from '../a-minor/experience';
+import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import '@/app/chords/a-minor/a-minor.css';
 import './shared.css';
 export function ChordDetailPage({model}:{model:ReturnType<typeof getAMinorContent>}) {
   const {data,blocks,byId,answer,introduction,searchSections}=model;
   const prefix=data.namespace;
-  const heading=<header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><nav className="am-breadcrumb" aria-label="Breadcrumb"><a href="/chords">Chords</a><span className="am-slash" aria-hidden="true">/</span><span aria-current="page">{data.chord.name_en}</span></nav><h1>{data.heading}</h1><p className="am-direct-answer">{answer}</p></header>;
+  const heading=<header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, { label: data.chord.name_en }]}/><h1>{data.heading}</h1><p className="am-direct-answer">{answer}</p></header>;
   const intro=introduction.length>0&&<section key="introduction" className="am-intro-rest" data-block-id={`${prefix}-intro`} aria-labelledby="root-example-heading"><h2 className="am-eyebrow" id="root-example-heading">Root-position example</h2>{introduction.map(p=><p key={p}>{p}</p>)}</section>;
   return <ChordDetailExperience data={data} heading={heading} toolNotes={byId[data.toolId].content.paragraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections}>
     {blocks.filter(b=>![`${prefix}-intro`,data.toolId,`${prefix}-next`].includes(b.block_id)).map(({block_id:id,content:c})=><section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}>{c.heading}</h2><div className="am-content-body">

@@ -48,7 +48,7 @@ try{
  await page.locator('.gd-exercise summary').click();
  check('Exercise exact answer visible',(await page.locator('.gd-exercise details p').innerText())==='Bar 1: C4 D4 E4 | Bar 2: E4 D4 C4 | Bar 3: D4 E4 F4 D4 | Bar 4: C4');
  check('Chart target exact',await page.getByRole('link',{name:'Find C4–F4 on the keyboard chart'}).getAttribute('href')==='/keyboard-notes/chart');
- await page.locator('.am-breadcrumb a').focus();for(let index=0;index<4;index+=1)await page.keyboard.press('Tab');check('TOC keyboard focus reaches final anchor',await page.locator('.gd-toc a').nth(3).evaluate(element=>element===document.activeElement));check('TOC focus visible',await page.locator('.gd-toc a').nth(3).evaluate(element=>{const style=getComputedStyle(element);return style.outlineStyle!=='none'&&parseFloat(style.outlineWidth)>0;}));
+ await page.locator('[data-slot="breadcrumb-link"]').focus();for(let index=0;index<4;index+=1)await page.keyboard.press('Tab');check('TOC keyboard focus reaches final anchor',await page.locator('.gd-toc a').nth(3).evaluate(element=>element===document.activeElement));check('TOC focus visible',await page.locator('.gd-toc a').nth(3).evaluate(element=>{const style=getComputedStyle(element);return style.outlineStyle!=='none'&&parseFloat(style.outlineWidth)>0;}));
 
  const nojs=await browser.newPage({javaScriptEnabled:false,viewport:{width:390,height:844}});
  for(const url of ['/guide','/guide/read-sheet-music']){await nojs.goto(base+url);check(`NoJS ${url} content`,await nojs.locator('h1').count()===1&&await nojs.getByRole('link',{name:'Download the PDF'}).count()===1);check(`NoJS ${url} no overflow`,await nojs.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}

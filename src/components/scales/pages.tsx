@@ -4,6 +4,7 @@ import { getScaleCenter, getScaleDetail } from '@/lib/scale-content';
 import type { ScalePageModel } from '@/lib/scale-types';
 import { ScaleCenterExperience } from './center-experience';
 import { ScaleDetailExperience } from './detail-experience';
+import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import '@/app/chords/a-minor/a-minor.css';
 import '@/components/keyboard-notes/keyboard-notes.css';
 import './scales.css';
@@ -11,7 +12,7 @@ import './scales.css';
 function ScaleShell({ model, children }: { model: ScalePageModel; children: ReactNode }) {
   const detail = model.url !== '/scales';
   return <div className="am-page sc-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Scales"/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading sc-screen"><nav className="am-breadcrumb" aria-label="Breadcrumb">{detail ? <a href="/scales">Scales</a> : <span>Scales</span>}{detail && <><span className="am-slash" aria-hidden="true">/</span><span aria-current="page">{model.url.endsWith('c-major') ? 'C major' : 'A minor'}</span></>}</nav><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
+    <header className="am-page-heading sc-screen"><PageBreadcrumb items={detail ? [{ label: 'Scales', href: '/scales' }, { label: model.url.endsWith('c-major') ? 'C major' : 'A minor' }] : [{ label: 'Scales' }]}/><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
     {children}
   </main><SiteFooter url={model.url}/></div>;
 }

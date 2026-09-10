@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { SiteFooter, SiteHeader } from '@/components/chords/site-chrome';
 import { KeyboardDiagram } from '@/components/keyboard-notes/keyboard-diagram';
 import { StaffDiagram } from '@/components/keyboard-notes/staff-diagram';
+import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { getGuideCenter, getReadingGuide } from '@/lib/guide-content';
 import type { ExerciseBar, GuideBlock, GuideModel } from '@/lib/guide-types';
 import '@/app/chords/a-minor/a-minor.css';
@@ -11,7 +12,7 @@ import './guides.css';
 function GuideShell({ model, children }: { model: GuideModel; children: ReactNode }) {
   const detail = model.url !== '/guide';
   return <div className="am-page gd-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Guide"/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading"><nav className="am-breadcrumb" aria-label="Breadcrumb"><a href="/guide">Guide</a>{detail && <><span className="am-slash" aria-hidden="true">/</span><span aria-current="page">Read sheet music</span></>}</nav><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
+    <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Guide', href: '/guide' }, { label: 'Read sheet music' }] : [{ label: 'Guide' }]}/><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
     {children}
   </main><SiteFooter url={model.url}/></div>;
 }

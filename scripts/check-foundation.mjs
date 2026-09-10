@@ -26,8 +26,9 @@ try {
   const globals = await read('src/app/globals.css');
   const tokens = await read('src/styles/tokens.css');
   const foundation = await read('src/styles/foundation.css');
-  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css');
+  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css');
   const util = await read('src/lib/utils.ts');
+  const breadcrumb = await read('src/components/ui/breadcrumb.tsx');
   const layout = await read('src/app/layout.tsx');
   const tokenManifest = JSON.parse(await read('docs/design/tokens.json'));
   const sourceManifest = JSON.parse(await read('docs/design/source-manifest.json'));
@@ -86,6 +87,8 @@ try {
   check('Root layout: no business chrome', !/<(Header|Piano|Chord|Footer)/.test(layout));
   check('Root layout: no external font', !/next\/font/.test(layout));
   check('cn registers custom text sizes', util.includes('extendTailwindMerge') && util.includes('"pr-body"'));
+  check('Shared breadcrumb uses Next Link', breadcrumb.includes("from 'next/link'") && breadcrumb.includes('data-slot="breadcrumb-link"'));
+  check('Shared breadcrumb current-page semantics', breadcrumb.includes('aria-current="page"') && breadcrumb.includes('aria-disabled="true"'));
   check('Visible focus', foundation.includes(':focus-visible') && foundation.includes('var(--pr-focus-width)'));
   check('Reduced motion', css.includes('prefers-reduced-motion') && css.includes('--pr-duration-fast: 0ms'));
   check('Forced colors focus', css.includes('forced-colors') && css.includes('Highlight'));
@@ -103,6 +106,7 @@ try {
   allowedComponents.push('src/components/blank-sheet/pages.tsx','src/components/blank-sheet/blank-sheet-tool.tsx','src/components/blank-sheet/blank-sheet.css');
   allowedComponents.push('src/components/integration/pages.tsx','src/components/integration/home-experience.tsx','src/components/integration/home-visuals.tsx','src/components/integration/integration.css','src/components/integration/home-color-repair.css','src/components/integration/home-hero-background.css');
   allowedComponents.push('src/components/site-navigation.tsx','src/components/site-navigation.css');
+  allowedComponents.push('src/components/ui/breadcrumb.tsx','src/components/ui/breadcrumb.css');
   const allowedPages=['src/app/page.tsx','src/app/tools/page.tsx','src/app/chords/page.tsx',...['a-minor','a-major','c-major'].map(n=>`src/app/chords/${n}/page.tsx`)];
   allowedPages.push('src/app/keyboard-notes/page.tsx','src/app/keyboard-notes/labeled/page.tsx','src/app/keyboard-notes/chart/page.tsx');
   allowedPages.push('src/app/scales/page.tsx','src/app/scales/c-major/page.tsx','src/app/scales/a-minor/page.tsx');
