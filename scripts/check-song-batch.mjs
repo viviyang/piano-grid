@@ -19,7 +19,8 @@ try{
  for(const url of ['/songs','/songs/easy']){
   await load(url);const source=master.pages[url];
   check(`${url} metadata title`,await page.title()===source.metadata.title,await page.title());
-  check(`${url} noindex`,(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
+  const robotsContent=await page.locator('meta[name=robots]').getAttribute('content');
+  check(`${url} indexable`,robotsContent?.includes('index')&&!robotsContent.includes('noindex'),robotsContent);
   check(`${url} canonical`,(await page.locator('link[rel=canonical]').getAttribute('href')).endsWith(url));
   check(`${url} no duplicate IDs`,await page.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(node=>node.id);return ids.length===new Set(ids).size;}));
   for(const block of source.blocks)check(`${url} block ${block.id}`,(await page.locator(`[data-block-id="${block.id}"]`).textContent()).includes(block.body));
@@ -29,7 +30,13 @@ try{
  await page.setViewportSize({width:1440,height:1000});await load('/songs');const center=master.pages['/songs'].data;
  check('Center renders every resource ID',JSON.stringify((await page.locator('[data-resource-id]').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('data-resource-id')))).sort())===JSON.stringify(center.resources.map(resource=>resource.id).sort()));
  check('Center six external resource links',await page.locator('.sg-resource-link').count()===6);
- for(const resource of center.resources){const card=page.locator(`[data-resource-id="${resource.id}"]`);const text=await card.innerText();check(`${resource.id} title and edition`,text.includes(resource.work_title)&&text.includes(resource.edition));check(`${resource.id} level basis and access`,text.includes(resource.level_basis)&&text.includes(resource.access));check(`${resource.id} exact URL`,await card.locator('.sg-resource-link').getAttribute('href')===resource.resource_url);}
+ check('Center uses decision-first cards only',await page.locator('.sg-resource-decision').count()===6);
+ check('Center shows the one publisher-noted challenge',await page.getByText('Publisher notes long phrases and wide bass-to-chord spacing.',{exact:true}).count()===1);
+ check('Center marks the other unverified exact-edition challenges',await page.getByText('No exact-edition playing challenge has been independently verified.',{exact:true}).count()===5);
+ check('Center keeps repeated version notes collapsed',await page.locator('.sg-version-details:not([open])').count()===6);
+ for(const resource of center.resources){const card=page.locator(`[data-resource-id="${resource.id}"]`);const text=await card.innerText();check(`${resource.id} title edition goal and access`,text.includes(resource.work_title)&&text.includes(resource.edition)&&text.includes(resource.why_choose)&&text.includes(resource.access));check(`${resource.id} exact URL`,await card.locator('.sg-resource-link').getAttribute('href')===resource.resource_url);check(`${resource.id} decision order`,await card.evaluate(node=>{const selectors=['h3','.sg-edition','.sg-choice-point:nth-of-type(1)','.sg-choice-point:nth-of-type(2)','.sg-resource-facts'];const elements=selectors.map(selector=>node.querySelector(selector));return elements.every(Boolean)&&elements.slice(1).every((element,index)=>Boolean(elements[index].compareDocumentPosition(element)&Node.DOCUMENT_POSITION_FOLLOWING));}));}
+ const firstDetails=page.locator('.sg-version-details').first();await firstDetails.locator('summary').click();check('Expanded details expose level basis and version checks',(await firstDetails.innerText()).includes(center.resources[0].level_basis)&&(await firstDetails.innerText()).includes(center.resources[0].first_check));await page.setViewportSize({width:390,height:950});check('Expanded version details do not overflow at 390',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await firstDetails.scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/screenshots/songs-390-expanded.png`,fullPage:false});await page.setViewportSize({width:1440,height:1000});
+ check('Center adds no unsupported beginner promise',!(/zero beginner|five.finger|ten minutes/i.test(await page.locator('.sg-resource-list').innerText())));
  const search=page.getByLabel('Search title, artist or edition',{exact:true});
  await search.fill('Minecraft');check('Search uses provided fields',await page.locator('.sg-resource').count()===1&&(await page.locator('.sg-resource h3').innerText())==='Sweden');
  await page.getByRole('button',{name:'Clear filters'}).click();check('Clear restores six',await page.locator('.sg-resource').count()===6);
@@ -42,6 +49,7 @@ try{
 
  await load('/songs/easy');const easy=master.pages['/songs/easy'].data;
  check('Easy renders nine featured versions',await page.locator('.sg-easy-chooser .sg-resource').count()===9);
+ check('Easy page retains its existing card presentation',await page.locator('.sg-easy-chooser .sg-resource-decision').count()===0);
  check('Easy renders fifty catalog resource IDs',await page.locator('.sg-catalog tbody tr').count()===50);
  check('Easy catalog numbering reaches fifty',(await page.locator('.sg-catalog tbody tr').last().locator('td').first().innerText())==='50');
  for(const resource of easy.featured_resources){const card=page.locator(`.sg-easy-chooser [data-resource-id="${resource.id}"]`);const text=await card.innerText();check(`${resource.id} title edition access`,text.includes(resource.work_title)&&text.includes(resource.edition)&&text.includes(resource.access));check(`${resource.id} exact resource URL`,await card.locator('.sg-resource-link').getAttribute('href')===resource.resource_url);}

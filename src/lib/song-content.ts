@@ -7,6 +7,10 @@ const knownBlocks: Record<SongURL, string[]> = {
   '/songs/easy': ['start', 'kids', 'c-major', 'adults', 'beautiful', 'start-check'],
 };
 
+const publisherNotedChallenges: Record<string, string> = {
+  'cr-18-1': 'Publisher notes long phrases and wide bass-to-chord spacing.',
+};
+
 function requiredString(value: unknown, label: string) {
   if (typeof value !== 'string' || !value.trim()) throw new Error(`Missing ${label}`);
   return value;
@@ -32,7 +36,7 @@ function toResource(raw: Raw): SongResource {
     level: raw.level ?? null,
     levelBasis: requiredString(raw.level_basis, `${raw.id}.level_basis`),
     key: raw.key ?? null,
-    technicalDemands: raw.technical_demands ?? null,
+    technicalDemands: raw.technical_demands ?? publisherNotedChallenges[raw.id] ?? null,
     whyChoose: raw.why_choose ?? null,
     firstCheck: raw.first_check ?? null,
     editionFeatures: raw.edition_features ?? null,

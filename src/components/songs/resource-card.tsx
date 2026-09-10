@@ -7,7 +7,34 @@ function PersonLine({ resource }: { resource: SongResource }) {
   return <p className="sg-byline">{primary}{secondary ? ` · ${secondary}` : ''}{resource.arranger ? ` · Arranged by ${resource.arranger}` : ''}</p>;
 }
 
-export function SongResourceCard({ resource, compact = false }: { resource: SongResource; compact?: boolean }) {
+export function SongResourceCard({ resource, compact = false, decisionFirst = false }: { resource: SongResource; compact?: boolean; decisionFirst?: boolean }) {
+  if (decisionFirst) return <article className="sg-resource sg-resource-decision" data-resource-id={resource.id}>
+    <div className="sg-resource-main">
+      <h3>{resource.workTitle}</h3>
+      <PersonLine resource={resource}/>
+      <p className="sg-edition"><strong>Specific edition</strong> {resource.edition}{resource.editionID ? ` · ${resource.editionID}` : ''}</p>
+      <div className="sg-choice-point"><h4>Choose this for</h4><p>{resource.whyChoose}</p></div>
+      <div className="sg-choice-point"><h4>Main playing challenge</h4><p>{resource.technicalDemands ?? 'No exact-edition playing challenge has been independently verified.'}</p></div>
+    </div>
+    <div className="sg-resource-facts">
+      <dl>
+        <div><dt>Publisher</dt><dd>{resource.publisher}</dd></div>
+        <div><dt>Publisher level</dt><dd>{resource.level ?? 'No publisher level listed'}</dd></div>
+        <div><dt>Access</dt><dd>{resource.access}</dd></div>
+      </dl>
+      <a className="am-button am-secondary sg-resource-link" href={resource.resourceURL} target="_blank" rel="noreferrer">Open publisher resource</a>
+      <details className="sg-version-details">
+        <summary>Version and use details</summary>
+        <dl>
+          <div><dt>Format</dt><dd>{resource.format}</dd></div>
+          <div><dt>Level basis</dt><dd>{resource.levelBasis}</dd></div>
+          {resource.editionFeatures && <div><dt>Edition notes</dt><dd>{resource.editionFeatures}</dd></div>}
+          {resource.firstCheck && <div><dt>Before choosing</dt><dd>{resource.firstCheck}</dd></div>}
+        </dl>
+        <p className="sg-rights">External reference only. Score and recording are not hosted here.</p>
+      </details>
+    </div>
+  </article>;
   return <article className={`sg-resource${compact ? ' sg-resource-compact' : ''}`} data-resource-id={resource.id}>
     <div className="sg-resource-main">
       <p className="sg-kicker">{resource.level ? `${resource.level} · ` : ''}{resource.format}</p>
