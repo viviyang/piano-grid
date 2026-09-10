@@ -4,13 +4,14 @@ import { locallyAvailableURLs, readAuthorizedPage, sourceAssetPath } from './sit
 import type { Destination, HomeModel, IntegrationBlock, IntegrationPageModel, PrintableDestination, ToolsModel } from './integration-types';
 
 const blockIDs: Record<string, string[]> = { '/': ['tasks','three-notes','editions'], '/tools': ['jobs','printables'] };
+const toolsMetadataDescription = 'Choose practical piano tools for keyboard notes, chord and scale references, blank sheet music, printable guides, and focused practice tasks.';
 function getModel(url: '/' | '/tools', template: 'T01' | 'T02'): { page: any; model: IntegrationPageModel } {
   const { page } = readAuthorizedPage(url);
   if (page.template_id !== template || page.metadata.canonical_path !== url) throw new Error(`Invalid integration page identity: ${url}`);
   if (page.ready_for_publish !== false || page.deployment_status !== 'planning_only') throw new Error(`Release state changed unexpectedly: ${url}`);
   const ids=blockIDs[url];
   if (page.blocks.length!==ids.length) throw new Error(`Unexpected block count: ${url}`);
-  return { page, model: { url, title: page.title, description: page.description, metadata: { title: page.metadata.title, description: page.metadata.description, canonicalPath: page.metadata.canonical_path }, blocks: page.blocks.map((block:any,index:number):IntegrationBlock=>({id:ids[index],heading:block.heading,body:block.body})) } };
+  return { page, model: { url, title: page.title, description: page.description, metadata: { title: page.metadata.title, description: url === '/tools' ? toolsMetadataDescription : page.metadata.description, canonicalPath: page.metadata.canonical_path }, blocks: page.blocks.map((block:any,index:number):IntegrationBlock=>({id:ids[index],heading:block.heading,body:block.body})) } };
 }
 const destination=(item:{label:string;url:string}):Destination=>({...item,available:locallyAvailableURLs.has(item.url)});
 const downloadableAssets:Record<string,string>={

@@ -12,6 +12,11 @@ const blockIDs: Record<GuideURL, string[]> = {
   '/guide/read-sheet-music': ['reading-order', 'anchors', 'face', 'check-yourself'],
 };
 const printableURL = '/assets/guides/piano-starter-and-reading.pdf';
+const beginnerGuideCopy = {
+  heading: 'How to Play Piano for Beginners',
+  metadataTitle: 'How to Play Piano for Beginners: First Notes and Rhythm',
+  metadataDescription: 'Learn how to play piano with C, D and E, a four-count pattern, basic staff reading, and clear beginner steps for practicing notes, rhythm and chords.',
+};
 
 function requiredString(value: unknown, label: string) {
   if (typeof value !== 'string' || !value.trim()) throw new Error(`Missing ${label}`);
@@ -23,9 +28,10 @@ function model(url: GuideURL, page: Raw): GuideModel {
   if (page.template_id !== expectedTemplate) throw new Error(`Unexpected template for ${url}`);
   const headings = page.blocks.map((block: Raw) => block.heading);
   if (headings.join('\n') !== blockHeadings[url].join('\n')) throw new Error(`Unknown or missing guide block for ${url}`);
+  const isBeginnerGuide = url === '/guide';
   return {
     url,
-    title: requiredString(page.title, `${url}.title`),
+    title: isBeginnerGuide ? beginnerGuideCopy.heading : requiredString(page.title, `${url}.title`),
     description: requiredString(page.description, `${url}.description`),
     blocks: page.blocks.map((block: Raw, index: number): GuideBlock => ({
       id: blockIDs[url][index],
@@ -34,8 +40,8 @@ function model(url: GuideURL, page: Raw): GuideModel {
       sourceIDs: Array.isArray(block.source_ids) ? block.source_ids : [],
     })),
     metadata: {
-      title: requiredString(page.metadata?.title, `${url}.metadata.title`),
-      description: requiredString(page.metadata?.description, `${url}.metadata.description`),
+      title: isBeginnerGuide ? beginnerGuideCopy.metadataTitle : requiredString(page.metadata?.title, `${url}.metadata.title`),
+      description: isBeginnerGuide ? beginnerGuideCopy.metadataDescription : requiredString(page.metadata?.description, `${url}.metadata.description`),
       canonicalPath: requiredString(page.metadata?.canonical_path, `${url}.metadata.canonical_path`),
     },
     sourceGroups: page.source_groups.map((group: Raw) => requiredString(group.id, `${url}.source_group`)),

@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-09-10T13:42:28.543Z",
+  "metadata": [
+    {
+      "path": "/chords/a-major",
+      "actual": {
+        "status": 200,
+        "title": "A Major Piano Chord: Notes, Inversions & Keyboard Diagrams",
+        "description": "Find the A major piano chord notes A, C-sharp and E. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.",
+        "h1": [
+          "A Major Piano Chord"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "path": "/chords/c-major",
+      "actual": {
+        "status": 200,
+        "title": "C Major Piano Chord: Notes, Inversions & Keyboard Diagrams",
+        "description": "Find the C major piano chord notes C, E and G. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.",
+        "h1": [
+          "C Major Piano Chord"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "path": "/guide",
+      "actual": {
+        "status": 200,
+        "title": "How to Play Piano for Beginners: First Notes and Rhythm",
+        "description": "Learn how to play piano with C, D and E, a four-count pattern, basic staff reading, and clear beginner steps for practicing notes, rhythm and chords.",
+        "h1": [
+          "How to Play Piano for Beginners"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "path": "/tools",
+      "actual": {
+        "status": 200,
+        "title": "Piano Tools and Printables",
+        "description": "Choose practical piano tools for keyboard notes, chord and scale references, blank sheet music, printable guides, and focused practice tasks.",
+        "h1": [
+          "Piano Tools and Printables"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "home": {
+    "h1": [
+      "Clear Piano References. Better Practice."
+    ],
+    "directoryCount": 1,
+    "groups": 6,
+    "hrefs": [
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "preserved": [
+      {
+        "selector": ".ph-hero",
+        "count": 1
+      },
+      {
+        "selector": ".ph-stage-wrap",
+        "count": 1
+      },
+      {
+        "selector": ".ph-task-panel",
+        "count": 1
+      },
+      {
+        "selector": ".ph-discovery-shell",
+        "count": 1
+      },
+      {
+        "selector": ".ph-music",
+        "count": 1
+      },
+      {
+        "selector": ".ph-resources",
+        "count": 1
+      },
+      {
+        "selector": ".ph-closing",
+        "count": 1
+      }
+    ],
+    "overflow": false,
+    "mobileOverflow": false,
+    "passed": true
+  },
+  "passed": true
+}

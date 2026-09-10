@@ -14,6 +14,7 @@ import { getChordCenter } from '@/lib/chord-content';
 import { getHomeModel, getToolsModel } from '@/lib/integration-content';
 import type { Destination, IntegrationBlock, IntegrationPageModel, PrintableDestination } from '@/lib/integration-types';
 import { SITE_NAME } from '@/lib/site-config';
+import { SITE_NAVIGATION } from '@/lib/site-routes';
 import '@/app/chords/a-minor/a-minor.css';
 import './integration.css';
 import './home-color-repair.css';
@@ -46,6 +47,9 @@ function PrintableCard({item}:{item:PrintableDestination}){
 function HomeFooter(){
   return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Keyboard Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top ↑</a></div></footer>;
 }
+function HomeReferenceDirectory(){
+  return <section className="pr-container ph-reference-directory" aria-labelledby="home-reference-directory-title"><div className="ph-section-heading"><div><p className="ph-eyebrow">Every published reference</p><h2 id="home-reference-directory-title">Browse every<br/>piano reference.</h2></div><p>Open a focused reference directly, or start with a section overview.</p></div><nav className="ph-reference-directory-grid" aria-label="All piano references">{SITE_NAVIGATION.map(section=><section className="ph-reference-group" key={section.href} aria-labelledby={`home-reference-${section.href.slice(1).replaceAll('/','-')}`}><h3 id={`home-reference-${section.href.slice(1).replaceAll('/','-')}`}><a href={section.href}>{section.label}<HomeArrow/></a></h3><ul>{section.children.map(child=><li key={child.href}><a href={child.href}>{child.label}</a></li>)}</ul></section>)}</nav></section>;
+}
 export function HomePage(){
   const data=getHomeModel();
   const chordData=getChordCenter();
@@ -63,6 +67,7 @@ export function HomePage(){
     <section className="pr-container ph-discovery-shell" aria-labelledby="home-discovery-title"><div className="ph-discovery"><div className="ph-discovery-copy"><p className="ph-eyebrow">A small discovery</p><h2 id="home-discovery-title">Change one note.<br/><em>Hear the difference.</em></h2><p>A minor is A, C, and E. Raise C to C♯ and you have A major. Same root. A different third.</p><a href="/chords/a-minor">Explore the A minor reference <HomeArrow/></a></div><HomeChordDiscovery chords={[minor,major]} copy={chordData.microcopy}/></div></section>
     <section className="pr-container ph-section ph-music" id="songs" aria-labelledby="home-music-title" data-block-id="editions"><div className="ph-section-heading"><div><p className="ph-eyebrow">From knowing to playing</p><h2 id="home-music-title">Make room<br/>for a little music.</h2></div><p>{blocks.editions.body}</p></div><div className="ph-editorial-grid"><a href="/songs/easy" className="ph-editorial-card"><SongsCover/><div className="ph-editorial-copy"><p>01 / Songs</p><h3>Find your next piece.</h3><p>Explore easy piano song ideas. Choose an arrangement that fits.</p><span>Explore easy piano songs <HomeArrow/></span></div></a><a href="/guide/read-sheet-music" className="ph-editorial-card"><ReadingCover/><div className="ph-editorial-copy"><p>02 / Learning guides</p><h3>Read what you play.</h3><p>Start making sense of notes, the staff, and the keyboard.</p><span>Explore the reading guide <HomeArrow/></span></div></a></div></section>
     <section className="pr-container ph-resources" aria-labelledby="home-resources-title"><div className="ph-resource-intro"><p className="ph-eyebrow">The useful little things</p><h2 id="home-resources-title">Keep them<br/>within reach.</h2><p>References for the questions that come up when you sit down to play.</p></div><div className="ph-resource-list"><a href="/keyboard-notes/chart"><span>01</span><div><h3>Piano notes chart</h3><p>Match note names, piano keys, and pitches.</p></div><HomeArrow/></a><a href="/tools/blank-sheet-music"><span>02</span><div><h3>Blank sheet music</h3><p>A clear page for your next musical idea.</p></div><HomeArrow/></a><a href="/guide"><span>03</span><div><h3>A beginner’s starting point</h3><p>Get familiar with the keyboard and the basics.</p></div><HomeArrow/></a></div></section>
+    <HomeReferenceDirectory/>
     <section className="ph-closing" aria-labelledby="home-closing-title"><div className="pr-container ph-closing-inner"><div><p className="ph-eyebrow">A clearer place for your piano time</p><h2 id="home-closing-title">Your next note<br/><em>starts here.</em></h2><a className="ph-button ph-button-primary" href="/tools">Explore Piano Tools <HomeArrow/></a></div><GrandPianoIllustration/></div></section>
   </main><HomeFooter/></div>;
 }

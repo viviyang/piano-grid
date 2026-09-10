@@ -14,8 +14,12 @@ const homeMetadata = {
   title: 'Piano Chords, Scales & Practice Tools | PianoGrid',
   description: 'Learn piano with clear chord and scale references, labeled keyboard notes, beginner songs, sheet music, and practical tools for focused practice.',
 };
-const descriptionOverrides = {
-  '/chords': 'Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.',
+const metadataOverrides = {
+  '/chords': { description: 'Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.' },
+  '/chords/a-major': { title: 'A Major Piano Chord: Notes, Inversions & Keyboard Diagrams', description: 'Find the A major piano chord notes A, C-sharp and E. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.' },
+  '/chords/c-major': { title: 'C Major Piano Chord: Notes, Inversions & Keyboard Diagrams', description: 'Find the C major piano chord notes C, E and G. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.' },
+  '/guide': { title: 'How to Play Piano for Beginners: First Notes and Rhythm', description: 'Learn how to play piano with C, D and E, a four-count pattern, basic staff reading, and clear beginner steps for practicing notes, rhythm and chords.' },
+  '/tools': { description: 'Choose practical piano tools for keyboard notes, chord and scale references, blank sheet music, printable guides, and focused practice tasks.' },
 };
 const routeSet = new Set(routes);
 const parentByRoute = {
@@ -155,8 +159,8 @@ for (const url of routes) {
   const jsonld = dom.jsonld.map((value) => { try { return { valid: true, value: JSON.parse(value) }; } catch (error) { return { valid: false, error: error.message }; } });
   const jsonldTypes = jsonld.flatMap((item) => item.valid ? [item.value?.['@type'], ...(Array.isArray(item.value?.['@graph']) ? item.value['@graph'].map((node) => node?.['@type']) : [])].filter(Boolean) : []);
   const canonicalPath = dom.canonical ? new URL(dom.canonical, base).pathname : null;
-  const sourceTitle = url === '/' ? homeMetadata.title : source.metadata?.title || null;
-  const sourceDescription = url === '/' ? homeMetadata.description : descriptionOverrides[url] || source.metadata?.description || null;
+  const sourceTitle = url === '/' ? homeMetadata.title : metadataOverrides[url]?.title || source.metadata?.title || null;
+  const sourceDescription = url === '/' ? homeMetadata.description : metadataOverrides[url]?.description || source.metadata?.description || null;
   const coverage = sourceBlockEvidence(source, dom.mainText);
   coverage.rendered_data_block_count = dom.renderedDataBlocks;
   const svgIssues = dom.svgs.filter((item) => !item.hidden && !item.label && !item.labelledby && !item.title && item.role === 'img');
