@@ -17,6 +17,13 @@ export type ScaleFingering = Record<ScaleHand, {
   descending: number[] | null;
 }>;
 
+export type ScaleSourceReference = {
+  title: string;
+  publisher: string;
+  url: string;
+  scope: string;
+};
+
 export type ScaleOption = {
   id: string;
   tonic: string;
@@ -29,7 +36,7 @@ export type ScaleOption = {
   }>;
   fingering: ScaleFingering;
   detailURL: string | null;
-  sourceIDs: string[];
+  sources: ScaleSourceReference[];
 };
 
 export type ScaleBlock = {

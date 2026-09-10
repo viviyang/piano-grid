@@ -32,7 +32,7 @@ function parts(option: ScaleOption, hand: ScaleHand, direction: ScaleDirection) 
 
 function SequenceTable({ label, pitches, fingers, sounding }: { label: string; pitches: ScalePitch[]; fingers: number[] | null; sounding: number[] }) {
   return <div className="sc-sequence-block" data-sequence={label.toLowerCase()}>
-    <div className="sc-sequence-heading"><h3>{label}</h3><span>{fingers ? 'Source-checked fingering' : 'Notes only'}</span></div>
+    <div className="sc-sequence-heading"><h3>{label}</h3><span>{fingers ? 'Fingering from the listed sources' : 'Notes only'}</span></div>
     <div className="sc-sequence-scroll" role="region" tabIndex={0} aria-label={`${label} notes and fingering`}>
       <table className="sc-sequence-table">
         <tbody>
@@ -41,8 +41,19 @@ function SequenceTable({ label, pitches, fingers, sounding }: { label: string; p
         </tbody>
       </table>
     </div>
-    {!fingers && <p className="sc-fingering-note">Fingering is not available for this hand and direction. The verified notes remain available for reference and playback.</p>}
+    {!fingers && <p className="sc-fingering-note">Fingering is not available for this hand and direction. The notes shown remain available for reference and playback.</p>}
   </div>;
+}
+
+function ScaleSources({ option, print }: { option: ScaleOption; print: boolean }) {
+  return <section className="sc-sources" aria-label="Sources and checking scope">
+    <h3>Sources and checking scope</h3>
+    <ul>{option.sources.map((source) => <li key={source.url}>
+      <a href={source.url}>{source.publisher}: {source.title}</a>
+      {print && <span className="sc-source-url"> ({source.url})</span>}
+      <span className="sc-source-scope"><strong>Checked for:</strong> {source.scope}</span>
+    </li>)}</ul>
+  </section>;
 }
 
 export function ScaleReference({ option, keyboardKeys, hand, direction, tempo, audio = null, print = false }: { option: ScaleOption; keyboardKeys: PianoKey[]; hand: ScaleHand; direction: ScaleDirection; tempo: number; audio?: Audio | null; print?: boolean }) {
@@ -75,5 +86,6 @@ export function ScaleReference({ option, keyboardKeys, hand, direction, tempo, a
       <button type="button" className="am-button am-secondary" disabled={!['loading', 'playing'].includes(audio.state)} onClick={audio.cancel}>Stop</button>
       <p role="status" className={audio.state === 'error' ? 'kn-error' : 'kn-status'}>{audio.message}</p>
     </div>}
+    <ScaleSources option={option} print={print}/>
   </div>;
 }

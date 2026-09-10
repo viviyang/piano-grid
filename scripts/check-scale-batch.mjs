@@ -24,10 +24,14 @@ try{
  for(const url of ['/scales','/scales/c-major','/scales/a-minor']){
   await load(url);const source=sourcePage(url);
   check(`${url} metadata`,await page.title()===source.metadata.title,await page.title());
-  check(`${url} noindex`,(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
+  const robotsContent=await page.locator('meta[name=robots]').getAttribute('content');
+  check(`${url} indexable`,robotsContent?.includes('index')&&!robotsContent.includes('noindex'),robotsContent);
   for(const block of source.blocks)check(`${url} block ${block.id}`,(await page.locator(`[data-block-id="${block.id}"]`).textContent()).includes(block.body));
   check(`${url} no autoplay`,await page.evaluate(()=>window.__audio.contexts===0));
   check(`${url} no duplicate IDs`,await page.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(node=>node.id);return ids.length===new Set(ids).size;}));
+  check(`${url} public source links`,await page.locator('.sc-screen .sc-sources a[href^="https://"]').count()>0);
+  check(`${url} source scope for every link`,await page.locator('.sc-screen .sc-sources a').count()===await page.locator('.sc-screen .sc-source-scope').count());
+  check(`${url} internal source IDs absent from product copy`,!(/\b(?:AC|AM|AN)-[A-Z0-9-]+\b/.test(await page.locator('.sc-page').textContent())));
   for(const width of [1440,390,320,768]){await page.setViewportSize({width,height:950});await page.waitForTimeout(80);check(`${url} no page overflow ${width}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`${out}/screenshots/${url.replaceAll('/','-').slice(1)}-${width}.png`,fullPage:true});}
   await page.evaluate(()=>document.documentElement.style.fontSize='200%');check(`${url} text 200 no page overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`${out}/screenshots/${url.replaceAll('/','-').slice(1)}-text200.png`,fullPage:true});await page.evaluate(()=>document.documentElement.style.fontSize='');
  }
@@ -59,13 +63,19 @@ try{
  await page.evaluate(()=>window.print=()=>{});await page.getByRole('button',{name:'Print current scale'}).click();check('Center print snapshot',await page.locator('[data-print-scale]').getAttribute('data-print-scale')==='major:C'&&await page.locator('[data-print-direction]').getAttribute('data-print-direction')==='up_down');await page.pdf({path:`${out}/print-pdfs/scales-center-c-major.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
 
  await load('/scales/c-major');const c=sourcePage('/scales/c-major').data;
+ check('C major source URLs match the content ledger',JSON.stringify(await page.locator('.sc-screen .sc-sources a').evaluateAll(nodes=>nodes.map(node=>node.href).sort()))===JSON.stringify([
+  'https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf',
+  'https://pulse.berklee.edu/scales/c-major-scale.html',
+  'https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf',
+ ].sort()));
  for(const hand of ['RH','LH'])for(const direction of ['ascending','descending']){
   await page.getByLabel('Hand',{exact:true}).selectOption(hand);await page.getByLabel('Direction',{exact:true}).selectOption(direction);
   check(`C major ${hand} ${direction} notes`,JSON.stringify(await rowText(direction))===JSON.stringify(c.pitch_sequences[hand][direction].map(item=>display(item.note))));
   check(`C major ${hand} ${direction} fingers`,JSON.stringify(await fingers(direction))===JSON.stringify(c.fingering[hand][direction].map(String)));
   check(`C major ${hand} ${direction} clef`,await page.locator(`.${'sc-screen'} [aria-label="${hand==='RH'?'treble':'bass'} staff notes"]`).count()===1);
  }
- await page.getByLabel('Hand',{exact:true}).selectOption('LH');await page.getByLabel('Direction',{exact:true}).selectOption('up_down');check('C major combined direction has two checked finger rows',await page.locator('.sc-screen').getByText('Source-checked fingering',{exact:true}).count()===2);
+ await page.getByLabel('Hand',{exact:true}).selectOption('LH');await page.getByLabel('Direction',{exact:true}).selectOption('up_down');check('C major combined direction has two sourced finger rows',await page.locator('.sc-screen').getByText('Fingering from the listed sources',{exact:true}).count()===2);
+ check('C major lists note and fingering sources',await page.locator('.sc-screen .sc-sources a').count()===3);
  await page.getByRole('button',{name:'Play scale'}).click();await page.waitForFunction(()=>window.__audio.nodes.length>=15);check('C major up-down schedules 15 notes',await page.evaluate(()=>window.__audio.nodes.length>=15));await page.getByRole('button',{name:'Stop'}).click();check('C major stop disconnects scheduled notes',await page.evaluate(()=>window.__audio.nodes.every(node=>node.disconnected)));
  await page.evaluate(()=>window.print=()=>{});await page.getByRole('button',{name:'Print current scale'}).click();check('C major print state',await page.locator('[data-print-hand]').getAttribute('data-print-hand')==='LH'&&await page.locator('[data-print-direction]').getAttribute('data-print-direction')==='up_down');await page.pdf({path:`${out}/print-pdfs/c-major-lh-up-down.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
 
@@ -90,6 +100,7 @@ try{
   }
  }
  await page.getByLabel('Minor form',{exact:true}).selectOption('melodic_minor_classical');await page.getByLabel('Hand',{exact:true}).selectOption('RH');await page.getByLabel('Direction',{exact:true}).selectOption('up_down');await page.getByLabel('Tempo',{exact:true}).selectOption('80');check('A melodic direction-specific spelling',(await page.locator('.sc-screen [data-sequence="ascending"]').textContent()).includes('F♯5')&&(await page.locator('.sc-screen [data-sequence="descending"]').textContent()).includes('F5'));
+ check('A melodic source list includes its fingering reference',await page.locator('.sc-screen .sc-sources a[href="https://app.hoffmanacademy.com/lessons/piano/one-octave-scale-minor/video/"]').count()===1);
  await page.getByRole('button',{name:'Play scale'}).click();await page.waitForFunction(()=>window.__audio.nodes.length>=15);await page.getByLabel('Minor form',{exact:true}).selectOption('natural_minor');check('Form switch cancels old scale',await page.evaluate(()=>window.__audio.nodes.every(node=>node.disconnected)));
  await page.getByLabel('Direction',{exact:true}).selectOption('ascending');await page.getByLabel('Tempo',{exact:true}).selectOption('40');await page.evaluate(()=>window.print=()=>{});await page.getByRole('button',{name:'Print current scale'}).click();check('A minor print state',await page.locator('[data-print-scale]').getAttribute('data-print-scale')==='natural_minor:A'&&await page.locator('[data-print-tempo]').getAttribute('data-print-tempo')==='40');await page.pdf({path:`${out}/print-pdfs/a-minor-natural-rh-ascending.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
  await page.getByLabel('Minor form',{exact:true}).selectOption('melodic_minor_classical');await page.getByLabel('Direction',{exact:true}).selectOption('descending');await page.getByLabel('Tempo',{exact:true}).selectOption('80');

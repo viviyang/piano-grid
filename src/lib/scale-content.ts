@@ -10,6 +10,7 @@ import type {
   ScaleOption,
   ScalePageModel,
   ScalePitch,
+  ScaleSourceReference,
 } from './scale-types';
 
 const blockIDs = {
@@ -29,6 +30,37 @@ const letterPitch: Record<string, number> = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9
 const blackPitchClasses = new Set([1, 3, 6, 8, 10]);
 
 type SourcePitch = { note?: string; spelling?: string; written_octave?: number; octave?: number; midi: number; key_color: 'white' | 'black' };
+type SourceRecord = { source_id: string; title: string; publisher: string; url: string };
+
+function publicSourceScope(sourceID: string, tonic: string, form: ScaleFormID) {
+  const formLabel = formLabels[form].toLowerCase();
+  const scopes: Record<string, string | null> = {
+    'AC-01': 'Major-scale whole-step and half-step pattern.',
+    'AC-02': `${tonic} ${formLabel} note pattern${form === 'melodic_minor_classical' ? ' and the classical ascending and descending convention' : ''}.`,
+    'AC-03': null,
+    'AC-04': `${tonic} major note spelling within the 12-key overview.`,
+    'AM-NOTES-C-MAJOR': 'C major note spelling and its key signature.',
+    'AM-FINGER-LMT': 'C major one-octave note spelling and fingering for both hands, ascending and descending.',
+    'AM-FINGER-MF': 'Independent comparison of that one-octave fingering for both hands and directions.',
+    'AN-HMT-A': `A ${formLabel} note spelling${form === 'melodic_minor_classical' ? ' and the classical descending form' : ''}.`,
+    'AN-PS-NAT': 'A natural minor note spelling and one-octave ascending fingering for both hands.',
+    'AN-PS-HAR': 'A harmonic minor note spelling and one-octave ascending fingering for both hands.',
+    'AN-DENTON': 'A classical melodic minor note spelling and its different ascending and descending forms.',
+    'AN-HA-A': 'One-octave ascending fingering for both hands across the A minor forms.',
+  };
+  if (!(sourceID in scopes)) throw new Error(`Scale source has no public scope: ${sourceID}`);
+  return scopes[sourceID];
+}
+
+function publicSources(master: { sources: SourceRecord[] }, sourceIDs: string[], tonic: string, form: ScaleFormID): ScaleSourceReference[] {
+  const sourceByID = new Map(master.sources.map((source) => [source.source_id, source]));
+  return [...new Set(sourceIDs)].flatMap((sourceID) => {
+    const source = sourceByID.get(sourceID);
+    if (!source?.title || !source.publisher || !source.url?.startsWith('https://')) throw new Error(`Scale source is not ready for public display: ${sourceID}`);
+    const scope = publicSourceScope(sourceID, tonic, form);
+    return scope ? [{ title: source.title, publisher: source.publisher, url: source.url, scope }] : [];
+  });
+}
 
 function accidentalOffset(accidental: string) {
   return [...accidental].reduce((sum, symbol) => sum + (symbol === '#' ? 1 : -1), 0);
@@ -127,7 +159,7 @@ function optionFromNotes({
   semitoneSteps,
   fingering = blankFingering(),
   detailURL = null,
-  sourceIDs,
+  sources,
 }: {
   tonic: string;
   form: ScaleFormID;
@@ -136,7 +168,7 @@ function optionFromNotes({
   semitoneSteps: number[];
   fingering?: ScaleFingering;
   detailURL?: string | null;
-  sourceIDs: string[];
+  sources: ScaleSourceReference[];
 }): ScaleOption {
   return {
     id: `${form}:${tonic}`,
@@ -150,11 +182,11 @@ function optionFromNotes({
     },
     fingering,
     detailURL,
-    sourceIDs,
+    sources,
   };
 }
 
-function cMajorOption(data: any): ScaleOption {
+function cMajorOption(data: any, master: { sources: SourceRecord[] }): ScaleOption {
   const fingering: ScaleFingering = {
     RH: { ascending: data.fingering.RH.ascending, descending: data.fingering.RH.descending },
     LH: { ascending: data.fingering.LH.ascending, descending: data.fingering.LH.descending },
@@ -172,11 +204,11 @@ function cMajorOption(data: any): ScaleOption {
     sequences,
     fingering,
     detailURL: '/scales/c-major',
-    sourceIDs: data.note_source_ids,
+    sources: publicSources(master, [...data.note_source_ids, ...data.fingering.source_ids], 'C', 'major'),
   };
 }
 
-function aMinorOptions(data: any): ScaleOption[] {
+function aMinorOptions(data: any, master: { sources: SourceRecord[] }): ScaleOption[] {
   return data.forms.map((form: any) => {
     const fingering: ScaleFingering = {
       RH: { ascending: form.fingering.ascending.right_hand, descending: form.fingering.descending.right_hand },
@@ -195,7 +227,7 @@ function aMinorOptions(data: any): ScaleOption[] {
       sequences,
       fingering,
       detailURL: '/scales/a-minor',
-      sourceIDs: form.source_ids,
+      sources: publicSources(master, [...form.source_ids, ...(form.fingering.source_ids ?? [])], 'A', form.id),
     };
   });
 }
@@ -205,7 +237,7 @@ function keyboardKeys(): PianoKey[] {
 }
 
 export function getScalePage(url: keyof typeof blockIDs) {
-  const { page } = readAuthorizedPage(url);
+  const { page, master } = readAuthorizedPage(url);
   const actual = page.blocks.map((block: { id: string }) => block.id);
   if (actual.join() !== blockIDs[url].join()) throw new Error(`Unknown or missing scale content block: ${url}`);
   const model: ScalePageModel = {
@@ -221,15 +253,15 @@ export function getScalePage(url: keyof typeof blockIDs) {
       block_ids: actual,
     },
   };
-  return { model, data: page.data };
+  return { model, data: page.data, master };
 }
 
 export function getScaleCenter() {
-  const { model, data } = getScalePage('/scales');
+  const { model, data, master } = getScalePage('/scales');
   const cData = getScalePage('/scales/c-major').data;
   const aData = getScalePage('/scales/a-minor').data;
-  const cOption = cMajorOption(cData);
-  const aOptions = aMinorOptions(aData);
+  const cOption = cMajorOption(cData, master);
+  const aOptions = aMinorOptions(aData, master);
   const major: ScaleOption[] = data.major_overview.map((entry: any) => {
     if (entry.tonic === 'C') return cOption;
     const ascending = [...entry.notes, entry.tonic];
@@ -239,7 +271,7 @@ export function getScaleCenter() {
       ascending,
       descending: [...ascending].reverse(),
       semitoneSteps: data.form_comparison.find((item: any) => item.id === 'major').steps_semitones,
-      sourceIDs: entry.source_ids,
+      sources: publicSources(master, entry.source_ids, entry.tonic, 'major'),
     });
   });
   const minor: ScaleOption[] = data.minor_overview.flatMap((entry: any) => ([
@@ -256,7 +288,7 @@ export function getScaleCenter() {
       ascending,
       descending,
       semitoneSteps: comparison?.steps_semitones ?? comparison?.ascending_steps_semitones,
-      sourceIDs: entry.source_ids,
+      sources: publicSources(master, entry.source_ids, entry.tonic, form),
     });
   }));
   return {
@@ -272,11 +304,11 @@ export function getScaleCenter() {
 }
 
 export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
-  const { model, data } = getScalePage(url);
+  const { model, data, master } = getScalePage(url);
   if (url === '/scales/c-major') {
     return {
       model,
-      options: [cMajorOption(data)],
+      options: [cMajorOption(data, master)],
       keyboardKeys: keyboardKeys(),
       defaultForm: 'major' as ScaleFormID,
       tempoOptions: [data.renderer_payload.default_tempo_bpm],
@@ -287,7 +319,7 @@ export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
   }
   return {
     model,
-    options: aMinorOptions(data),
+    options: aMinorOptions(data, master),
     keyboardKeys: keyboardKeys(),
     defaultForm: data.default_form as ScaleFormID,
     tempoOptions: data.print_and_audio.tempo_presets_bpm,

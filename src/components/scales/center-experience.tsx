@@ -47,7 +47,7 @@ export function ScaleCenterExperience({ options, keyboardKeys, detailURLs }: { o
     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
       <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div>
       <ScaleReference {...print} keyboardKeys={keyboardKeys} print/>
-      <p className="sc-print-foot">Current one-octave reference. Finger numbers appear only where the selected hand and direction were source-checked. Sources: {print.option.sourceIDs.join(', ')}</p>
+      <p className="sc-print-foot">Current one-octave reference. Finger numbers appear only for the hand and direction combinations covered by the sources listed above.</p>
     </div>
   </>;
 }
