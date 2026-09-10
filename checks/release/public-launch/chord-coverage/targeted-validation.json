@@ -1,0 +1,109 @@
+{
+  "executed_at": "2026-09-10T12:09:34.364Z",
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "name": "HTTP 200",
+      "passed": true,
+      "actual": 200
+    },
+    {
+      "name": "19 major/minor results",
+      "passed": true,
+      "actual": 19
+    },
+    {
+      "name": "Current metadata description",
+      "passed": true,
+      "actual": "Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references."
+    },
+    {
+      "name": "Expanded root options",
+      "passed": true,
+      "actual": [
+        "",
+        "C",
+        "C#",
+        "Cb",
+        "D",
+        "E",
+        "F",
+        "F#",
+        "G",
+        "G#",
+        "Ab",
+        "A",
+        "Bb",
+        "B"
+      ]
+    },
+    {
+      "name": "F major source notes and MIDI",
+      "passed": true,
+      "actual": {
+        "text": "F4 – A4 – C5",
+        "fMidis": [
+          65,
+          69,
+          72
+        ]
+      }
+    },
+    {
+      "name": "F major playback owns audio state",
+      "passed": true,
+      "actual": "f-major"
+    },
+    {
+      "name": "Only released detail pages are linked",
+      "passed": true,
+      "actual": [
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major"
+      ]
+    },
+    {
+      "name": "A minor card links directly to inversions",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "Current print follows explicit B major selection",
+      "passed": true,
+      "actual": [
+        "b-major--root"
+      ]
+    },
+    {
+      "name": "Original PDF scope is explicit",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "No new F detail route",
+      "passed": true,
+      "actual": ""
+    },
+    {
+      "name": "Planned by-key route remains closed",
+      "passed": true,
+      "actual": ""
+    },
+    {
+      "name": "390px has no page overflow",
+      "passed": true,
+      "actual": "390/390"
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "notes": [
+    "Existing /chords/by-key source rows are reused inside /chords; no route was opened.",
+    "The downloadable PDF intentionally remains the original verified nine-chord asset."
+  ]
+}

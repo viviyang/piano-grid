@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-10T11:55:09.540Z",
+  "checked_at": "2026-09-10T12:06:39.680Z",
   "phase": "after",
   "base": "http://localhost:3001",
   "expected_noindex": false,
@@ -2664,8 +2664,8 @@
       "source_title": "Piano Chord Chart: Notes, Keyboard Diagrams & PDF",
       "effective_title": "Piano Chord Chart: Notes, Keyboard Diagrams & PDF",
       "title_length": 49,
-      "description": "Explore nine selected major and minor piano chords with note names, keyboard diagrams, sound examples, and a printable reference.",
-      "description_length": 129,
+      "description": "Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.",
+      "description_length": 114,
       "h1_text_and_count": {
         "count": 1,
         "items": [
@@ -2693,12 +2693,12 @@
         },
         {
           "level": "H3",
-          "text": "A major A",
+          "text": "F major F",
           "printOnly": false
         },
         {
           "level": "H3",
-          "text": "C minor Cm",
+          "text": "D minor Dm",
           "printOnly": false
         },
         {
@@ -2708,17 +2708,67 @@
         },
         {
           "level": "H3",
+          "text": "E minor Em",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "D major D",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "B minor Bm",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A major A",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "F-sharp minor F♯m",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
           "text": "E major E",
           "printOnly": false
         },
         {
           "level": "H3",
-          "text": "A-flat major A♭",
+          "text": "C-sharp minor C♯m",
           "printOnly": false
         },
         {
           "level": "H3",
           "text": "B major B",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "G-sharp minor G♯m",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "B-flat major B♭",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "G minor Gm",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "C minor Cm",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A-flat major A♭",
           "printOnly": false
         },
         {
@@ -2778,11 +2828,11 @@
         "exact_text_samples": [
           {
             "text": "Use this piano chord chart to find the notes and keyboard positions for nine selected major and minor triads. Read the notes from low to high, hear them togethe",
-            "matched": true
+            "matched": false
           },
           {
             "text": "The chart contains seven major and two minor chord names. It includes two spellings that use the same keys: B major and C-flat major. This is a selected collect",
-            "matched": true
+            "matched": false
           },
           {
             "text": "Choose a root note and chord type to narrow the chart. Each result gives the chord symbol, its three notes, and one root-position example. The first note listed",
@@ -2810,7 +2860,7 @@
           },
           {
             "text": "Download the three-page reference with all nine chord names in this collection. It includes root-position keyboard diagrams, note names, and octave labels. Fing",
-            "matched": true
+            "matched": false
           },
           {
             "text": "To keep a smaller reference, print the current chord or the results matching your filters. Check the chord names in the print preview before printing.",
@@ -2821,13 +2871,13 @@
             "matched": true
           }
         ],
-        "exact_matches": 11,
+        "exact_matches": 8,
         "exact_samples": 11
       },
       "rendered_core_content": {
         "in_http_html": true,
-        "main_text_characters": 5235,
-        "main_word_count": 1133
+        "main_text_characters": 7199,
+        "main_word_count": 1621
       },
       "canonical": {
         "source_path": "/chords",
@@ -2875,7 +2925,7 @@
           },
           {
             "href": "/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
-            "text": "Download chord chart PDF"
+            "text": "Download original 9-chord PDF"
           },
           {
             "href": "/chords/a-minor",
@@ -3334,6 +3384,356 @@
             "label": null,
             "labelledby": null,
             "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
           }
         ],
         "issues": []
@@ -3350,7 +3750,7 @@
         "h1": [
           "Piano Chord Chart"
         ],
-        "description": "Explore nine selected major and minor piano chords with note names, keyboard diagrams, sound examples, and a printable reference.",
+        "description": "Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.",
         "canonical": "https://pianogrid.com/chords"
       },
       "responsive": {

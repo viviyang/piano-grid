@@ -14,6 +14,9 @@ const homeMetadata = {
   title: 'Piano Chords, Scales & Practice Tools | PianoGrid',
   description: 'Learn piano with clear chord and scale references, labeled keyboard notes, beginner songs, sheet music, and practical tools for focused practice.',
 };
+const descriptionOverrides = {
+  '/chords': 'Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.',
+};
 const routeSet = new Set(routes);
 const parentByRoute = {
   '/tools': '/', '/songs': '/', '/songs/easy': '/songs', '/tools/blank-sheet-music': '/tools',
@@ -153,7 +156,7 @@ for (const url of routes) {
   const jsonldTypes = jsonld.flatMap((item) => item.valid ? [item.value?.['@type'], ...(Array.isArray(item.value?.['@graph']) ? item.value['@graph'].map((node) => node?.['@type']) : [])].filter(Boolean) : []);
   const canonicalPath = dom.canonical ? new URL(dom.canonical, base).pathname : null;
   const sourceTitle = url === '/' ? homeMetadata.title : source.metadata?.title || null;
-  const sourceDescription = url === '/' ? homeMetadata.description : source.metadata?.description || null;
+  const sourceDescription = url === '/' ? homeMetadata.description : descriptionOverrides[url] || source.metadata?.description || null;
   const coverage = sourceBlockEvidence(source, dom.mainText);
   coverage.rendered_data_block_count = dom.renderedDataBlocks;
   const svgIssues = dom.svgs.filter((item) => !item.hidden && !item.label && !item.labelledby && !item.title && item.role === 'img');

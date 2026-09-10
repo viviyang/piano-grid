@@ -1,6 +1,6 @@
 {
-  "executed_at": "2026-09-10T11:56:11.598Z",
-  "passed": 232,
+  "executed_at": "2026-09-10T12:07:15.537Z",
+  "passed": 236,
   "failed": 0,
   "results": [
     {
@@ -935,6 +935,26 @@
     },
     {
       "name": "Blank sheet PDF flow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center exposes 19 prepared major/minor results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center F major notes and keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center F major playback starts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center A minor links directly to inversions",
       "passed": true,
       "detail": ""
     },
