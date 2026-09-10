@@ -29,7 +29,6 @@
 .ch-center .am-reading{margin-top:3rem}
 .ch-center .am-reading{container-type:inline-size;container-name:ch-reading}
 .ch-center .am-header-inner{container-type:inline-size;container-name:ch-header}
-.ch-center .am-brand{white-space:normal;min-width:0}
 .ch-filter-value{overflow-wrap:anywhere;font-size:inherit}
 @container ch-reading (max-width:40rem){.ch-center .am-content-section{display:block}.ch-center .am-content-section h2{margin-bottom:1rem}}
 @container ch-header (max-width:40rem){.ch-center .am-site-nav{display:none}.ch-center .am-search-trigger span{display:none}}

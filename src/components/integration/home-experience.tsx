@@ -7,7 +7,8 @@ import type { CenterItem, CenterModel } from '@/lib/chord-content';
 import type { PlaybackMode } from '@/lib/a-minor-types';
 import { SITE_NAME } from '@/lib/site-config';
 import { SiteNavigation } from '@/components/site-navigation';
-import { HomeArrow, HomeBrandMark, keyPosition } from './home-visuals';
+import { SiteBrand } from '@/components/ui/site-brand';
+import { HomeArrow, keyPosition } from './home-visuals';
 
 type HomeChord = Pick<CenterItem, 'id' | 'name' | 'url' | 'voicing'>;
 type AudioCopy = Pick<CenterModel, 'microcopy'>['microcopy'];
@@ -49,7 +50,7 @@ function useHomeAudio(copy: AudioCopy) {
 }
 
 export function HomeHeader(){
-  return <header className="ph-site-header"><div className="ph-header-inner"><a className="ph-brand" href="/" aria-current="page"><HomeBrandMark/><span>{SITE_NAME}</span></a><SiteNavigation variant="home"/><a className="ph-header-cta" href="/tools">Explore tools <HomeArrow/></a></div></header>;
+  return <header className="ph-site-header"><div className="ph-header-inner"><SiteBrand className="ph-brand" current/><SiteNavigation variant="home"/><a className="ph-header-cta" href="/tools">Explore tools <HomeArrow/></a></div></header>;
 }
 
 const whiteKeys=[48,50,52,53,55,57,59,60,62,64,65,67,69,71];

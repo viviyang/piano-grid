@@ -5,11 +5,11 @@ import { HomeChordDiscovery, HomeHeader, HomePianoDemo } from '@/components/inte
 import {
   GrandPianoIllustration,
   HomeArrow,
-  HomeBrandMark,
   ReadingCover,
   SongsCover,
   TaskIllustration,
 } from '@/components/integration/home-visuals';
+import { SiteBrand } from '@/components/ui/site-brand';
 import { getChordCenter } from '@/lib/chord-content';
 import { getHomeModel, getToolsModel } from '@/lib/integration-content';
 import type { Destination, IntegrationBlock, IntegrationPageModel, PrintableDestination } from '@/lib/integration-types';
@@ -44,7 +44,7 @@ function PrintableCard({item}:{item:PrintableDestination}){
   return <article className={item.available?'in-print-card':'in-print-card in-unavailable'}><div><span>{item.available?'Available now':'Not currently offered'}</span><h3>{item.label}</h3><p>{item.task}</p></div>{item.available?<div className="in-card-actions"><a href={item.url}>Open resource</a>{item.downloadURL&&<a href={item.downloadURL} download>Download PDF</a>}</div>:null}</article>;
 }
 function HomeFooter(){
-  return <footer className="ph-footer"><div className="pr-container ph-footer-main"><a className="ph-footer-brand" href="/"><HomeBrandMark/><span>{SITE_NAME}</span></a><nav aria-label="Footer navigation"><a href="/keyboard-notes">Keyboard Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top ↑</a></div></footer>;
+  return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Keyboard Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top ↑</a></div></footer>;
 }
 export function HomePage(){
   const data=getHomeModel();

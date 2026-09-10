@@ -1,9 +1,5 @@
 import type { CSSProperties } from 'react';
 
-export function HomeBrandMark() {
-  return <svg className="ph-brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 36 34 11c3-3 7-4 10-2 4 2 4 6 2 10-2 5 0 8 5 10 3 1 4 4 3 8v7H10Z" fill="currentColor"/><path d="M14 44h5v11h-5zm31 0h5v11h-5z" fill="currentColor"/><path d="M13 36h38v4H13z" className="ph-brand-cut"/></svg>;
-}
-
 export function HomeArrow() {
   return <svg className="ph-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>;
 }
