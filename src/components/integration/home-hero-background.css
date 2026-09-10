@@ -1,0 +1,138 @@
+/* Homepage Hero variant based on the supplied full-bleed East Lake reference. */
+.home-page .ph-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 720px;
+  padding: 0;
+  overflow: hidden;
+  background: var(--background);
+}
+
+.home-page .ph-hero-image {
+  z-index: -3;
+  object-fit: cover;
+  object-position: 54% center;
+  animation:
+    ph-hero-image-reveal 1.15s cubic-bezier(.2,.7,.2,1) both,
+    ph-hero-image-breathe 16s ease-in-out 1.15s infinite alternate;
+}
+
+.home-page .ph-hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--background) 99%, transparent) 0%,
+      color-mix(in srgb, var(--background) 96%, transparent) 24%,
+      color-mix(in srgb, var(--background) 84%, transparent) 39%,
+      color-mix(in srgb, var(--background) 42%, transparent) 58%,
+      transparent 78%),
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--background) 20%, transparent) 0%,
+      transparent 58%,
+      color-mix(in srgb, var(--background) 15%, transparent) 100%);
+  pointer-events: none;
+}
+
+.home-page .ph-hero-grid {
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+}
+
+.home-page .ph-hero-copy {
+  position: relative;
+  width: min(540px, 48%);
+  padding: 72px 0 64px;
+  animation: ph-hero-copy-in .72s cubic-bezier(.2,.7,.2,1) both;
+}
+
+.home-page .ph-hero h1 {
+  max-width: 520px;
+  text-wrap: balance;
+}
+
+.home-page .ph-hero-description {
+  max-width: 510px;
+  color: color-mix(in srgb, var(--foreground) 78%, transparent);
+}
+
+.home-page .ph-hero .ph-button-secondary {
+  background: color-mix(in srgb, var(--background) 72%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.home-page .ph-hero .ph-quick-links a {
+  color: color-mix(in srgb, var(--foreground) 75%, transparent);
+}
+
+@keyframes ph-hero-image-reveal {
+  from { opacity: .84; transform: scale(1.035); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes ph-hero-image-breathe {
+  from { transform: scale(1); }
+  to { transform: scale(1.018); }
+}
+
+@keyframes ph-hero-copy-in {
+  from { opacity: .18; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 800px) {
+  .home-page .ph-hero,
+  .home-page .ph-hero-grid { min-height: 760px; }
+  .home-page .ph-hero-grid { display: flex; align-items: flex-start; }
+  .home-page .ph-hero-copy { width: min(510px, 72%); padding-top: 64px; text-align: left; }
+  .home-page .ph-hero-copy > .ph-eyebrow,
+  .home-page .ph-hero-actions,
+  .home-page .ph-quick-links { justify-content: flex-start; }
+  .home-page .ph-hero-image { object-position: 60% center; }
+  .home-page .ph-hero-scrim {
+    background: linear-gradient(90deg,
+      color-mix(in srgb, var(--background) 99%, transparent) 0%,
+      color-mix(in srgb, var(--background) 92%, transparent) 39%,
+      color-mix(in srgb, var(--background) 35%, transparent) 72%,
+      transparent 100%);
+  }
+}
+
+@media (max-width: 700px) {
+  .home-page .ph-hero,
+  .home-page .ph-hero-grid { min-height: 790px; }
+  .home-page .ph-hero-copy { width: 100%; padding: 42px 0 300px; text-align: center; }
+  .home-page .ph-hero-copy > .ph-eyebrow,
+  .home-page .ph-hero-actions,
+  .home-page .ph-quick-links { justify-content: center; }
+  .home-page .ph-hero-image { object-position: 59% center; }
+  .home-page .ph-hero-scrim {
+    background: linear-gradient(180deg,
+      var(--background) 0%,
+      color-mix(in srgb, var(--background) 98%, transparent) 46%,
+      color-mix(in srgb, var(--background) 82%, transparent) 62%,
+      color-mix(in srgb, var(--background) 12%, transparent) 82%,
+      transparent 100%);
+  }
+}
+
+@media (max-width: 350px) {
+  .home-page .ph-hero,
+  .home-page .ph-hero-grid { min-height: 770px; }
+  .home-page .ph-hero-copy { padding-top: 36px; padding-bottom: 270px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page .ph-hero-image,
+  .home-page .ph-hero-copy { animation: none; }
+}
+
+@media print {
+  .home-page .ph-hero-image { display: none !important; }
+  .home-page .ph-hero { min-height: auto; }
+  .home-page .ph-hero-grid { min-height: auto; }
+  .home-page .ph-hero-copy { width: 100%; padding: 24px 0; }
+  .home-page .ph-hero-scrim { display: none; }
+}

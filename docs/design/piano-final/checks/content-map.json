@@ -1,0 +1,111 @@
+{
+  "url": "/chords/a-minor",
+  "template_id": "T07",
+  "source_group_ids": [
+    "P151"
+  ],
+  "main_keyword": "am piano chord",
+  "content_version": "1.0.0-batch-01",
+  "blocks": [
+    {
+      "block_id": "am-intro",
+      "selectors": [
+        ".page-heading .direct-answer",
+        ".intro-rest"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S08",
+        "S05"
+      ]
+    },
+    {
+      "block_id": "am-result",
+      "selectors": [
+        "#am-result"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S01",
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "block_id": "am-find-notes",
+      "selectors": [
+        "#am-find-notes"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S05",
+        "S08"
+      ]
+    },
+    {
+      "block_id": "am-inversions",
+      "selectors": [
+        "#am-inversions"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S04",
+        "S08",
+        "S14",
+        "S16"
+      ]
+    },
+    {
+      "block_id": "am-why-minor",
+      "selectors": [
+        "#am-why-minor"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S02",
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "block_id": "am-practice",
+      "selectors": [
+        "#am-practice"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "block_id": "am-print",
+      "selectors": [
+        "#am-print",
+        ".print-actions"
+      ],
+      "status": "rendered",
+      "source_ids": []
+    },
+    {
+      "block_id": "am-questions",
+      "selectors": [
+        "#am-questions"
+      ],
+      "status": "rendered",
+      "source_ids": [
+        "S01",
+        "S04",
+        "S05",
+        "S08"
+      ]
+    },
+    {
+      "block_id": "am-next",
+      "selectors": [],
+      "status": "retained_hidden_unpublished_destinations",
+      "source_ids": []
+    }
+  ],
+  "baseline_changes": []
+}

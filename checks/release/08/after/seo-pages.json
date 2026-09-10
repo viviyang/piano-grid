@@ -1,0 +1,4490 @@
+{
+  "checked_at": "2026-09-10T02:33:58.106Z",
+  "phase": "after",
+  "base": "http://127.0.0.1:3001",
+  "expected_noindex": true,
+  "expected_release_links": true,
+  "pages": [
+    {
+      "url": "/",
+      "template_id": "T01",
+      "main_keyword": null,
+      "intent_summary": "Choose the correct starting point for a piano lookup or learning task.",
+      "source_groups": [],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "task discovery",
+        "section navigation"
+      ],
+      "source_title": "Piano Reference",
+      "effective_title": "Piano Reference",
+      "title_length": 15,
+      "description": "Find the notes, chords, scales and music resources you need for the next thing you want to play.",
+      "description_length": 96,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Reference",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "What do you need at the piano?",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "What would you like to do?",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "New to piano? Try three notes",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose music with a usable edition",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 3,
+        "rendered_data_block_count": 3,
+        "exact_text_samples": [
+          {
+            "text": "Find a note on the keyboard, look up a chord, check a scale, or choose a piece to learn. Start with the task you have now; each reference gives a specific resul",
+            "matched": true
+          },
+          {
+            "text": "Find the white C key immediately left of a group of two black keys. Continue right to D and E. The beginner guide turns those three notes into a short reading a",
+            "matched": true
+          },
+          {
+            "text": "Use Songs to compare repertoire and difficulty descriptions. Use Sheet Music to inspect exact editions, formats and access conditions. The score listings distin",
+            "matched": true
+          }
+        ],
+        "exact_matches": 3,
+        "exact_samples": 3
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 1338,
+        "main_word_count": 239
+      },
+      "canonical": {
+        "source_path": "/",
+        "effective": "/",
+        "effective_path": "/",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": null,
+        "main_links": [
+          {
+            "href": "/keyboard-notes",
+            "text": "01Find a noteOpen reference"
+          },
+          {
+            "href": "/chords",
+            "text": "02Look up a chordOpen reference"
+          },
+          {
+            "href": "/scales",
+            "text": "03Check a scaleOpen reference"
+          },
+          {
+            "href": "/songs",
+            "text": "04Choose a songOpen reference"
+          },
+          {
+            "href": "/guide",
+            "text": "06Learn the basicsOpen reference"
+          },
+          {
+            "href": "/tools",
+            "text": "Tools and printablesOpen the complete working set →"
+          },
+          {
+            "href": "/guide",
+            "text": "Start the beginner guide"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 0,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Reference",
+        "h1": [
+          "Piano Reference"
+        ],
+        "description": "Find the notes, chords, scales and music resources you need for the next thing you want to play.",
+        "canonical": "/"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/tools",
+      "template_id": "T02",
+      "main_keyword": null,
+      "intent_summary": "Find the correct reference or an actual printable, without duplicate tool pages.",
+      "source_groups": [
+        "P113"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "tool discovery",
+        "authorized printable downloads"
+      ],
+      "source_title": "Piano Tools and Printables",
+      "effective_title": "Piano Tools and Printables",
+      "title_length": 26,
+      "description": "Choose a specific lookup or a printable resource for your next practice task.",
+      "description_length": 77,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Tools and Printables",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Choose the result you need",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print something useful",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Blank piano sheet music",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Starter and reading pack",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose the job",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print something useful",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 2,
+        "rendered_data_block_count": 2,
+        "exact_text_samples": [
+          {
+            "text": "Use the keyboard chart to locate a note, the chord reference to look up a known chord, and the scale reference to inspect a selected scale. If you have notes bu",
+            "matched": true
+          },
+          {
+            "text": "The original print collection includes a piano cheat sheet, blank grand staffs, a blank-keyboard worksheet, a starter and reading pack, and chord progressions i",
+            "matched": true
+          }
+        ],
+        "exact_matches": 2,
+        "exact_samples": 2
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 1217,
+        "main_word_count": 199
+      },
+      "canonical": {
+        "source_path": "/tools",
+        "effective": "/tools",
+        "effective_path": "/tools",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/",
+        "main_links": [
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "01Find a noteOpen reference"
+          },
+          {
+            "href": "/chords",
+            "text": "02Look up a chordOpen reference"
+          },
+          {
+            "href": "/scales",
+            "text": "03Check a scaleOpen reference"
+          },
+          {
+            "href": "/tools/blank-sheet-music",
+            "text": "Open resource"
+          },
+          {
+            "href": "/reference/assets/blank-piano-staff-letter.pdf",
+            "text": "Download PDF"
+          },
+          {
+            "href": "/guide",
+            "text": "Open resource"
+          },
+          {
+            "href": "/assets/guides/piano-starter-and-reading.pdf",
+            "text": "Download PDF"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 1,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Tools and Printables",
+        "h1": [
+          "Piano Tools and Printables"
+        ],
+        "description": "Choose a specific lookup or a printable resource for your next practice task.",
+        "canonical": "/tools"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/songs",
+      "template_id": "T15",
+      "main_keyword": "piano songs",
+      "intent_summary": "Choose a piece by playing goal, version, level and resource format.",
+      "source_groups": [
+        "P002",
+        "P009",
+        "P014",
+        "P018",
+        "P022",
+        "P041",
+        "P042",
+        "P043"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "edition search",
+        "level and goal filtering",
+        "external edition resources"
+      ],
+      "source_title": "Piano Songs: Find Your Next Piece",
+      "effective_title": "Piano Songs: Find Your Next Piece",
+      "title_length": 33,
+      "description": "Choose a piece by playing goal, version, level and resource format.",
+      "description_length": 67,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Songs: Find Your Next Piece",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Find a checked edition",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Gymnopédie No. 1",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "The Happy Farmer",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Addams Family Theme",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Empire State of Mind",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "All of Me",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Sweden",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose your next version",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Sad or reflective",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Happy, cool or fun",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Beautiful",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Intermediate",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Types of piece",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Sing and play",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Open the exact edition",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 8,
+        "rendered_data_block_count": 8,
+        "exact_text_samples": [
+          {
+            "text": "Choose a specific arrangement before starting. The cards below offer a reflective piece, a cheerful programme option, a familiar theme, an intermediate solo and",
+            "matched": true
+          },
+          {
+            "text": "Gymnopédie No. 1 is our reflective selection because the publisher describes long phrases and wide bass-to-chord spacing. “Sad” is an editorial listening lens; ",
+            "matched": true
+          },
+          {
+            "text": "The Happy Farmer is a cheerful-title selection. Addams Family Theme is a theme-song choice for a playful programme. Their appeal depends on your audience and pr",
+            "matched": true
+          },
+          {
+            "text": "For a spacious, reflective goal, audition the selected Gymnopédie. Choose the sound you want to work on; this is not a beauty ranking.",
+            "matched": true
+          },
+          {
+            "text": "The Gymnopédie edition is late intermediate and calls attention to long phrases and bass-to-chord spacing. Empire State of Mind is in an explicitly intermediate",
+            "matched": true
+          },
+          {
+            "text": "The catalogue includes an étude route on the challenging page, a fantasy there, soundtrack tracks such as Sweden, simplified classical excerpts and songs arrang",
+            "matched": true
+          },
+          {
+            "text": "All of Me has a vocal line and piano part with guitar chord frames. Start there when you need singing support; choose the Easy Songs page for a melody-first sol",
+            "matched": true
+          },
+          {
+            "text": "Each resource names its edition and access route. Publisher difficulty labels describe that arrangement. Use the provider’s preview before purchasing; check the",
+            "matched": true
+          }
+        ],
+        "exact_matches": 8,
+        "exact_samples": 8
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 6152,
+        "main_word_count": 901
+      },
+      "canonical": {
+        "source_path": "/songs",
+        "effective": "/songs",
+        "effective_path": "/songs",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/",
+        "main_links": [
+          {
+            "href": "/songs/easy",
+            "text": "Browse easy piano versions"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 1,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": [
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/gymnopedie-no-1",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/gymnopedie-no-1",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.halleonard.com/product/131436/first-50-classical-pieces-you-should-play-on-the-piano",
+            "status": 200,
+            "final_url": "https://www.halleonard.com/product/131436/first-50-classical-pieces-you-should-play-on-the-piano",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.halleonard.com/product/310162/the-halloween-songbook-2nd-edition",
+            "status": 200,
+            "final_url": "https://www.halleonard.com/product/310162/the-halloween-songbook-2nd-edition",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.halleonard.com/product/360950/hip-hop-for-piano-solo",
+            "status": 200,
+            "final_url": "https://www.halleonard.com/product/360950/hip-hop-for-piano-solo",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.halleonard.com/product/126844/all-of-me",
+            "status": 200,
+            "final_url": "https://www.halleonard.com/product/126844/all-of-me",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.halleonard.com/product/369016/music-from-minecraft",
+            "status": 200,
+            "final_url": "https://www.halleonard.com/product/369016/music-from-minecraft",
+            "result": "reachable"
+          }
+        ]
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Songs: Find Your Next Piece",
+        "h1": [
+          "Piano Songs: Find Your Next Piece"
+        ],
+        "description": "Choose a piece by playing goal, version, level and resource format.",
+        "canonical": "/songs"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/songs/easy",
+      "template_id": "T16",
+      "main_keyword": "easy piano songs",
+      "intent_summary": "Choose an accessible next piece by version, prerequisites, occasion and actual access.",
+      "source_groups": [
+        "P001",
+        "P006",
+        "P036",
+        "P037",
+        "P039",
+        "P040"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "goal-based edition selection",
+        "edition-backed catalog",
+        "external edition resources"
+      ],
+      "source_title": "Easy Piano Songs: Choose a Version That Fits",
+      "effective_title": "Easy Piano Songs: Choose a Version That Fits",
+      "title_length": 44,
+      "description": "Compare beginner arrangements, C-major options, adult-method pieces and exact resources before choosing your next piano song.",
+      "description_length": 125,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Easy Piano Songs: Choose a Version That Fits",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Choose by starting point",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Hot Cross Buns",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Twinkle, Twinkle, Little Star",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Twinkle, Twinkle, Little Star",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Jingle Bells",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Happy Birthday",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Ode to Joy",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Happy Birthday to You",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "The Rainbow Connection",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Nadia’s Theme",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "50 edition-backed options",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose an easy version you can actually use",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "For a child’s first few pieces",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "If you want a C-major version",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "For adult beginners",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "For a gentle piece or a small performance",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Before you commit",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 6,
+        "rendered_data_block_count": 6,
+        "exact_text_samples": [
+          {
+            "text": "Start with the arrangement, not just the song title. The featured choices below identify a specific score or lesson and explain the next thing to check. Publish",
+            "matched": true
+          },
+          {
+            "text": "Hot Cross Buns comes with first-lesson materials and a parent guide. The early-elementary Twinkle version adds a hand-position graphic and a matching tutorial. ",
+            "matched": true
+          },
+          {
+            "text": "The listed early-elementary Twinkle, Jingle Bells and Happy Birthday editions are in C major. The selected Ode to Joy arrangement is in D major, so it is outsid",
+            "matched": true
+          },
+          {
+            "text": "If you follow Alfred’s adult course, compare The Rainbow Connection or Nadia’s Theme in its Greatest Hits Book 1 with your current lesson. If you want a broader",
+            "matched": true
+          },
+          {
+            "text": "For a gentle option, compare the two Twinkle arrangements and listen to their separate samples. For a small performance, choose a meaningful occasion: Happy Bir",
+            "matched": true
+          },
+          {
+            "text": "Open the exact resource, check how to obtain it, and try a short section at a comfortable pace. Prefer a version whose instructions you understand. Several free",
+            "matched": true
+          }
+        ],
+        "exact_matches": 6,
+        "exact_samples": 6
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 22495,
+        "main_word_count": 3462
+      },
+      "canonical": {
+        "source_path": "/songs/easy",
+        "effective": "/songs/easy",
+        "effective_path": "/songs/easy",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/songs"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/songs",
+        "main_links": [
+          {
+            "href": "/songs",
+            "text": "Songs"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": [
+          {
+            "url": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-elementary-version",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-elementary-version",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/jingle-bells-early-elementary",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/jingle-bells-early-elementary",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-early-elementary-version",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-early-elementary-version",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-to-you",
+            "status": 200,
+            "final_url": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-to-you",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505",
+            "status": 200,
+            "final_url": "https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505",
+            "result": "reachable"
+          },
+          {
+            "url": "https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano",
+            "status": 200,
+            "final_url": "https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano",
+            "result": "reachable"
+          }
+        ]
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Easy Piano Songs: Choose a Version That Fits",
+        "h1": [
+          "Easy Piano Songs: Choose a Version That Fits"
+        ],
+        "description": "Compare beginner arrangements, C-major options, adult-method pieces and exact resources before choosing your next piano song.",
+        "canonical": "/songs/easy"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/tools/blank-sheet-music",
+      "template_id": "T19",
+      "main_keyword": "empty piano sheet music",
+      "intent_summary": "Get usable blank piano manuscript paper without an account.",
+      "source_groups": [
+        "P079"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "Letter/A4 selection",
+        "screen preview zoom",
+        "authorized PDF downloads"
+      ],
+      "source_title": "Blank Piano Sheet Music",
+      "effective_title": "Blank Piano Sheet Music",
+      "title_length": 23,
+      "description": "Print blank grand staffs for piano notation, lessons and composition.",
+      "description_length": 69,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Blank Piano Sheet Music",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Choose your paper",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "US Letter · 8.5 × 11 in",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print a blank piano staff",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Write your own music",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 2,
+        "rendered_data_block_count": 2,
+        "exact_text_samples": [
+          {
+            "text": "Choose Letter or A4. Each sheet has six pairs of treble and bass staves, with room to write a title and your own music. Download the PDF and print it at 100% if",
+            "matched": true
+          },
+          {
+            "text": "Add a key signature, time signature and barlines to suit your exercise. The blank pairs leave the musical choices to you.",
+            "matched": true
+          }
+        ],
+        "exact_matches": 2,
+        "exact_samples": 2
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 971,
+        "main_word_count": 180
+      },
+      "canonical": {
+        "source_path": "/tools/blank-sheet-music",
+        "effective": "/tools/blank-sheet-music",
+        "effective_path": "/tools/blank-sheet-music",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/tools"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/tools",
+        "main_links": [
+          {
+            "href": "/tools",
+            "text": "Tools"
+          },
+          {
+            "href": "/reference/assets/blank-piano-staff-letter.pdf",
+            "text": "Download US Letter"
+          },
+          {
+            "href": "/reference/assets/blank-piano-staff-a4.pdf",
+            "text": "Download A4"
+          },
+          {
+            "href": "/reference/assets/blank-piano-staff-letter.pdf",
+            "text": "Open US Letter PDF to print"
+          },
+          {
+            "href": "/reference/assets/blank-piano-staff-letter.pdf",
+            "text": "Download selected PDF"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [
+          {
+            "src": "/reference/assets/blank-piano-staff-preview.svg",
+            "alt": "Blank piano manuscript preview with 6 paired treble and bass staff systems",
+            "role": null,
+            "width": 116,
+            "height": 150
+          }
+        ],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Blank Piano Sheet Music",
+        "h1": [
+          "Blank Piano Sheet Music"
+        ],
+        "description": "Print blank grand staffs for piano notation, lessons and composition.",
+        "canonical": "/tools/blank-sheet-music"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/keyboard-notes",
+      "template_id": "T03",
+      "main_keyword": "piano keys",
+      "intent_summary": "Identify one key or find a named pitch without guessing its octave.",
+      "source_groups": [
+        "P117",
+        "P118",
+        "P120",
+        "P122",
+        "P123",
+        "P124",
+        "P127",
+        "P129",
+        "P130",
+        "P133",
+        "P134",
+        "P138",
+        "P139",
+        "P140",
+        "P141",
+        "P142",
+        "P147"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "key lookup",
+        "octave disambiguation",
+        "audio reference"
+      ],
+      "source_title": "Piano Keys and Notes: Find Any Key",
+      "effective_title": "Piano Keys and Notes: Find Any Key",
+      "title_length": 34,
+      "description": "Identify a piano key, locate a note by octave and compare verified 88-key and 61-key example ranges.",
+      "description_length": 100,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Keys and Notes: Find Any Key",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "C4",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Find a piano key or note",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Read the repeating pattern",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "How many keys and octaves?",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Black keys, sharps and flats",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Which C, A or F?",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Keep spelling and range visible",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 6,
+        "rendered_data_block_count": 6,
+        "exact_text_samples": [
+          {
+            "text": "Choose a keyboard layout, then select a key to see its note name and octave. To find a note from its name, enter a full label such as F3 or A4. A letter alone, ",
+            "matched": true
+          },
+          {
+            "text": "The white-key letters repeat A, B, C, D, E, F, G. Black keys form groups of two and three. Find C just before a two-black-key group, and F just before a three-b",
+            "matched": true
+          },
+          {
+            "text": "The standard 88-key layout shown here runs from A0 to C8: 52 white keys and 36 black keys. Its lowest-to-highest span is seven octaves plus three semitones. The",
+            "matched": true
+          },
+          {
+            "text": "A black key can have two familiar names: C♯/D♭, D♯/E♭, F♯/G♭, G♯/A♭, or A♯/B♭. These pairs point to the same piano key. Sharps and flats can also name white key",
+            "matched": true
+          },
+          {
+            "text": "This reference calls middle C C4. C3 is one octave below it; A5 is one octave above A4. F3 is the F in octave 3. An A-flat query keeps the name A♭ while offerin",
+            "matched": true
+          },
+          {
+            "text": "B♯3 shares the C4 key; B♯4 shares C5. C♭4 shares B3, not B4. Keep the written name and its octave together. D8 lies above this 88-key layout’s C8 endpoint. An o",
+            "matched": true
+          }
+        ],
+        "exact_matches": 6,
+        "exact_samples": 6
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 2834,
+        "main_word_count": 570
+      },
+      "canonical": {
+        "source_path": "/keyboard-notes",
+        "effective": "/keyboard-notes",
+        "effective_path": "/keyboard-notes",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/",
+        "main_links": [
+          {
+            "href": "/keyboard-notes/labeled",
+            "text": "Labeled keyboard and print reference"
+          },
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "Match piano notes to the staff"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 1,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Keys and Notes: Find Any Key",
+        "h1": [
+          "Piano Keys and Notes: Find Any Key"
+        ],
+        "description": "Identify a piano key, locate a note by octave and compare verified 88-key and 61-key example ranges.",
+        "canonical": "/keyboard-notes"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/keyboard-notes/labeled",
+      "template_id": "T04",
+      "main_keyword": "keys on a piano keyboard labeled",
+      "intent_summary": "Choose an accurate labeling reference matching the keyboard endpoints and prepare a readable print reference.",
+      "source_groups": [
+        "P119",
+        "P137",
+        "P223",
+        "P241"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "88/61-key labels",
+        "layout selection",
+        "print reference"
+      ],
+      "source_title": "Labeled Piano Keys: 88-Key and 61-Key References",
+      "effective_title": "Labeled Piano Keys: 88-Key and 61-Key References",
+      "title_length": 48,
+      "description": "Match letter and octave labels to a defined 88-key or 61-key layout, with clear steps for labeling your keyboard.",
+      "description_length": 113,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Labeled Piano Keys: 88-Key and 61-Key References",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "A0–B0",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C1–B1",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C2–B2",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C3–B3",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C4–B4",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C5–B5",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C6–B6",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C7–B7",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C8–C8",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose the layout that matches your keyboard",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Read letters and octave labels",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Label a small section first",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Where to start on the 61-key example",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print a reference you can read",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 5,
+        "rendered_data_block_count": 5,
+        "exact_text_samples": [
+          {
+            "text": "Start with the 88-key reference, A0–C8, or select the 61-key example, C2–C7. Both use letter names and an optional octave suffix, with middle C labeled C4. The ",
+            "matched": true
+          },
+          {
+            "text": "The white keys repeat C–D–E–F–G–A–B within each numbered octave. Turn octave labels on to distinguish C3 from C4, or A4 from A5. The black-key labels show famil",
+            "matched": true
+          },
+          {
+            "text": "First locate a group of two black keys and find the C immediately before it. Match that C to the correct octave in the reference. Next, label the following whit",
+            "matched": true
+          },
+          {
+            "text": "For the C2–C7 layout, label the leftmost white key C2. Continue through B2, then begin C3, and repeat until the final C7. This layout has six C keys but spans f",
+            "matched": true
+          },
+          {
+            "text": "Choose the same layout and octave-label setting for screen and print. Use the marked octave sections to read a long keyboard in smaller pieces. The printout is ",
+            "matched": true
+          }
+        ],
+        "exact_matches": 5,
+        "exact_samples": 5
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 3382,
+        "main_word_count": 610
+      },
+      "canonical": {
+        "source_path": "/keyboard-notes/labeled",
+        "effective": "/keyboard-notes/labeled",
+        "effective_path": "/keyboard-notes/labeled",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/keyboard-notes"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/keyboard-notes",
+        "main_links": [
+          {
+            "href": "/keyboard-notes",
+            "text": "Keyboard Notes"
+          },
+          {
+            "href": "/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+            "text": "Download reference PDF"
+          },
+          {
+            "href": "/keyboard-notes",
+            "text": "Find an individual note"
+          },
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "Notes on the staff"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Labeled Piano Keys: 88-Key and 61-Key References",
+        "h1": [
+          "Labeled Piano Keys: 88-Key and 61-Key References"
+        ],
+        "description": "Match letter and octave labels to a defined 88-key or 61-key layout, with clear steps for labeling your keyboard.",
+        "canonical": "/keyboard-notes/labeled"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/keyboard-notes/chart",
+      "template_id": "T05",
+      "main_keyword": "piano notes chart",
+      "intent_summary": "知道谱上的音叫什么、对应哪一个琴键。",
+      "source_groups": [
+        "P121",
+        "P132",
+        "P143",
+        "P145",
+        "P146"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "staff-to-key mapping",
+        "key-to-staff mapping",
+        "range and clef selection",
+        "print reference"
+      ],
+      "source_title": "Piano Notes Chart: Staff, Note Names & Keyboard",
+      "effective_title": "Piano Notes Chart: Staff, Note Names & Keyboard",
+      "title_length": 47,
+      "description": "Match treble and bass clef notes to piano keys, find middle C, and compare note names across 88-key and C2-C7 keyboard ranges.",
+      "description_length": 126,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Notes Chart: Staff, Note Names & Keyboard",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "C4",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Treble clef",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Bass clef",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Treble clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Bass clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Treble clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Bass clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Treble clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Bass clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Treble clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Bass clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Treble clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Bass clef",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Match the note to the key",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Treble clef: read from the bottom",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Bass clef: a different set of positions",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Follow the lines beyond the staff",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose the range shown on your keyboard",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Try one note in both directions",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 6,
+        "rendered_data_block_count": 6,
+        "exact_text_samples": [
+          {
+            "text": "Start with middle C, labeled C4 here. It is one ledger line below the treble staff and one ledger line above the bass staff. Both spellings point to the same pi",
+            "matched": true
+          },
+          {
+            "text": "The five treble-staff lines are E4, G4, B4, D5, and F5, read upward. The four spaces are F4, A4, C5, and E5. The curl of the clef identifies the G4 line. Use th",
+            "matched": true
+          },
+          {
+            "text": "The bass-staff lines are G2, B2, D3, F3, and A3. Its spaces are A2, C3, E3, and G3. The two dots surround the F3 line. A note in the bottom space is therefore A",
+            "matched": true
+          },
+          {
+            "text": "Ledger lines extend the same line-and-space sequence. D4 lies just below the treble staff without a ledger line; C4 uses the first ledger line below it. Above b",
+            "matched": true
+          },
+          {
+            "text": "The full-piano view uses the standard 88-key range A0-C8. The 61-key view here uses C2-C7, a layout documented by VOX and Roland. Check your instrument’s endpoi",
+            "matched": true
+          },
+          {
+            "text": "Select C4 on the staff, then locate its highlighted key. Next, select G4 on the keyboard and read its treble position. Compare C3 with C4 to check the octave. F",
+            "matched": true
+          }
+        ],
+        "exact_matches": 6,
+        "exact_samples": 6
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 2774,
+        "main_word_count": 543
+      },
+      "canonical": {
+        "source_path": "/keyboard-notes/chart",
+        "effective": "/keyboard-notes/chart",
+        "effective_path": "/keyboard-notes/chart",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/labeled",
+        "/tools"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/keyboard-notes",
+        "main_links": [
+          {
+            "href": "/keyboard-notes",
+            "text": "Keyboard Notes"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C3 to C5",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: C3 to C5",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C3 to F3",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: C3 to F3",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: F#3 to B3",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: F#3 to B3",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C4 to F4",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: C4 to F4",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: F#4 to B4",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: F#4 to B4",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C5 to C5",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: C5 to C5",
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Notes Chart: Staff, Note Names & Keyboard",
+        "h1": [
+          "Piano Notes Chart: Staff, Note Names & Keyboard"
+        ],
+        "description": "Match treble and bass clef notes to piano keys, find middle C, and compare note names across 88-key and C2-C7 keyboard ranges.",
+        "canonical": "/keyboard-notes/chart"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/chords",
+      "template_id": "T06",
+      "main_keyword": "piano chord chart",
+      "intent_summary": "Find and compare selected piano chords by name and quality.",
+      "source_groups": [
+        "P148",
+        "P154",
+        "P158",
+        "P168",
+        "P170",
+        "P171",
+        "P238",
+        "P247"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "chord filtering",
+        "keyboard diagrams",
+        "audio reference",
+        "current and collection printing"
+      ],
+      "source_title": "Piano Chord Chart: Notes, Keyboard Diagrams & PDF",
+      "effective_title": "Piano Chord Chart: Notes, Keyboard Diagrams & PDF",
+      "title_length": 49,
+      "description": "Explore nine selected major and minor piano chords with note names, keyboard diagrams, sound examples, and a printable reference.",
+      "description_length": 129,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Chord Chart",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Find a chord",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "C major C",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A minor Am",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A major A",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "C minor Cm",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "G major G",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "E major E",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A-flat major A♭",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "B major B",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "C-flat major C♭",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "How to read this piano chord chart",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Major and minor: change the third",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A major",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "A minor",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "C major",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "C minor",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print a piano chord reference",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Questions about this chart",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Explore A minor in more detail",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 7,
+        "rendered_data_block_count": 8,
+        "exact_text_samples": [
+          {
+            "text": "Use this piano chord chart to find the notes and keyboard positions for nine selected major and minor triads. Read the notes from low to high, hear them togethe",
+            "matched": true
+          },
+          {
+            "text": "The chart contains seven major and two minor chord names. It includes two spellings that use the same keys: B major and C-flat major. This is a selected collect",
+            "matched": true
+          },
+          {
+            "text": "Choose a root note and chord type to narrow the chart. Each result gives the chord symbol, its three notes, and one root-position example. The first note listed",
+            "matched": true
+          },
+          {
+            "text": "For a first comparison, use A major and A minor, or C major and C minor. Keep the root and top note the same and notice which middle note changes.",
+            "matched": true
+          },
+          {
+            "text": "A dot marks a key to play. The labels identify those pitches; a sharp (♯) raises a written note by one semitone, and a flat (♭) lowers it by one semitone.",
+            "matched": true
+          },
+          {
+            "text": "C4 means middle C. The number after a note is its octave, not a finger number. The diagrams use the same C3–C5 window so you can compare positions. A note such ",
+            "matched": true
+          },
+          {
+            "text": "A major triad places its third four semitones above the root. A minor triad places its third three semitones above the root. Both use a perfect fifth, seven sem",
+            "matched": true
+          },
+          {
+            "text": "In the A examples, C♯ becomes C while A and E stay in place. In the C examples, E becomes E♭ while C and G stay in place. The note names in the tables are chord",
+            "matched": true
+          },
+          {
+            "text": "Download the three-page reference with all nine chord names in this collection. It includes root-position keyboard diagrams, note names, and octave labels. Fing",
+            "matched": true
+          },
+          {
+            "text": "To keep a smaller reference, print the current chord or the results matching your filters. Check the chord names in the print preview before printing.",
+            "matched": true
+          },
+          {
+            "text": "See the same A-minor chord in root position, first inversion, and second inversion.",
+            "matched": true
+          }
+        ],
+        "exact_matches": 11,
+        "exact_samples": 11
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 5235,
+        "main_word_count": 1133
+      },
+      "canonical": {
+        "source_path": "/chords",
+        "effective": "/chords",
+        "effective_path": "/chords",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/",
+        "main_links": [
+          {
+            "href": "/chords/c-major",
+            "text": "Notes and inversions: C major"
+          },
+          {
+            "href": "/chords/a-minor",
+            "text": "Notes and inversions: A minor"
+          },
+          {
+            "href": "/chords/a-major",
+            "text": "Notes and inversions: A major"
+          },
+          {
+            "href": "/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+            "text": "Download chord chart PDF"
+          },
+          {
+            "href": "/chords/a-minor",
+            "text": "A minor piano chord: notes and inversions"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 1,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Chord Chart: Notes, Keyboard Diagrams & PDF",
+        "h1": [
+          "Piano Chord Chart"
+        ],
+        "description": "Explore nine selected major and minor piano chords with note names, keyboard diagrams, sound examples, and a printable reference.",
+        "canonical": "/chords"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/chords/a-major",
+      "template_id": "T07",
+      "main_keyword": "a chord piano",
+      "intent_summary": "Locate this exact triad and compare its three bass positions.",
+      "source_groups": [
+        "P149"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "three inversions",
+        "keyboard diagrams",
+        "audio reference",
+        "current-position printing"
+      ],
+      "source_title": "A major Piano Chord",
+      "effective_title": "A major Piano Chord",
+      "title_length": 19,
+      "description": "Find A major notes, intervals, keyboard positions and inversions.",
+      "description_length": 65,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "A major Piano Chord",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Notes and keyboard position",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "What to notice",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Compare three positions",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Chord reference",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print this chord reference",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Related local previews",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 3,
+        "rendered_data_block_count": 7,
+        "exact_text_samples": [
+          {
+            "text": "A major contains A–C#–E. The intervals from the root are a major third and a perfect fifth.",
+            "matched": true
+          },
+          {
+            "text": "Compare with A minor: C-sharp replaces C while A and E stay the same. The sharp is the chord’s third, so calling it D-flat would hide the stacked-third spelling",
+            "matched": true
+          },
+          {
+            "text": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger nu",
+            "matched": true
+          }
+        ],
+        "exact_matches": 3,
+        "exact_samples": 3
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 1446,
+        "main_word_count": 262
+      },
+      "canonical": {
+        "source_path": "/chords/a-major",
+        "effective": "/chords/a-major",
+        "effective_path": "/chords/a-major",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/chords"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/chords",
+        "main_links": [
+          {
+            "href": "/chords",
+            "text": "Chords"
+          },
+          {
+            "href": "/reference/assets/chord-a-major.pdf",
+            "text": "Download A major PDF"
+          },
+          {
+            "href": "/reference/assets/chord-a-major.pdf",
+            "text": "Download A major PDF"
+          },
+          {
+            "href": "/chords",
+            "text": "Piano chord chart"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "A major Piano Chord",
+        "h1": [
+          "A major Piano Chord"
+        ],
+        "description": "Find A major notes, intervals, keyboard positions and inversions.",
+        "canonical": "/chords/a-major"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved.",
+        "Named professional approval remains required by F-RELEASE-a-major; absent inversion fingerings remain intentionally undisclosed."
+      ]
+    },
+    {
+      "url": "/chords/a-minor",
+      "template_id": "T07",
+      "main_keyword": "am piano chord",
+      "intent_summary": "Find the A minor triad and compare its three inversions.",
+      "source_groups": [
+        "P151"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "three inversions",
+        "keyboard diagrams",
+        "audio reference",
+        "current-position printing"
+      ],
+      "source_title": "A Minor Piano Chord (Am): Notes, Inversions & PDF",
+      "effective_title": "A Minor Piano Chord (Am): Notes, Inversions & PDF",
+      "title_length": 49,
+      "description": "Find the A minor chord on piano: A, C, and E. Compare root position, Am/C, and Am/E with keyboard diagrams, sound examples, and a printable PDF.",
+      "description_length": 144,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "A Minor Piano Chord (Am)",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "A minor notes and keyboard positions",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Root-position example",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Find A, C, and E on the keyboard",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "A minor inversions",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "What makes this chord minor?",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Try the three positions",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print the A minor reference",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "A minor questions",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 9,
+        "rendered_data_block_count": 9,
+        "exact_text_samples": [
+          {
+            "text": "The A minor chord, written Am, contains A, C, and E. All three are white-key notes. In root position, play A as the lowest note, with C and E above it.",
+            "matched": false
+          },
+          {
+            "text": "The example below uses A3–C4–E4, with C4 as middle C. Listen to these notes together or individually, then compare the two inversions.",
+            "matched": false
+          },
+          {
+            "text": "Chord symbol: Am. Chord tones: A–C–E. A is the root, C is the minor third, and E is the perfect fifth. The root stays A in every inversion.",
+            "matched": true
+          },
+          {
+            "text": "Choose a position to change the lowest note. The keyboard diagram, note list, and playback all follow that same selection.",
+            "matched": true
+          },
+          {
+            "text": "Start with C4, middle C. A3 is two white-key steps to its left: move past B3 to A3. E4 is two white-key steps to the right of C4: move past D4 to E4.",
+            "matched": true
+          },
+          {
+            "text": "The marked keys show pitches, not a hand shape or a required fingering.",
+            "matched": true
+          },
+          {
+            "text": "An inversion changes which chord tone is lowest. First inversion puts C in the bass; second inversion puts E in the bass. The letters after the slash in Am/C an",
+            "matched": true
+          },
+          {
+            "text": "These examples use close position without doubled notes. Other spacings are possible; the lowest note determines the inversion.",
+            "matched": true
+          },
+          {
+            "text": "From A to C is a minor third: three semitone steps. From C to E is a major third: four semitone steps. Together, the outer notes A and E form a perfect fifth.",
+            "matched": true
+          },
+          {
+            "text": "Compare A minor, A–C–E, with A major, A–C♯–E. Only the third changes. A minor uses C natural; A major uses C-sharp. The interval pattern identifies the chord as",
+            "matched": true
+          },
+          {
+            "text": "Use this as a note-finding check. Work with one position at a time before moving to the next.",
+            "matched": true
+          },
+          {
+            "text": "Download the one-page reference to compare all three positions. It includes the exact pitches and keyboard diagrams shown here, with no finger numbers.",
+            "matched": true
+          },
+          {
+            "text": "Use Print this position if you only need the current selection.",
+            "matched": true
+          }
+        ],
+        "exact_matches": 11,
+        "exact_samples": 13
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 3278,
+        "main_word_count": 605
+      },
+      "canonical": {
+        "source_path": "/chords/a-minor",
+        "effective": "/chords/a-minor",
+        "effective_path": "/chords/a-minor",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/chords",
+        "/scales/a-minor"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/chords",
+        "main_links": [
+          {
+            "href": "/chords",
+            "text": "Chords"
+          },
+          {
+            "href": "/assets/chords/a-minor-notes-inversions.pdf",
+            "text": "Download A minor PDF"
+          },
+          {
+            "href": "/assets/chords/a-minor-notes-inversions.pdf",
+            "text": "Download A minor PDF"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "A Minor Piano Chord (Am): Notes, Inversions & PDF",
+        "h1": [
+          "A Minor Piano Chord (Am)"
+        ],
+        "description": "Find the A minor chord on piano: A, C, and E. Compare root position, Am/C, and Am/E with keyboard diagrams, sound examples, and a printable PDF.",
+        "canonical": "/chords/a-minor"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/chords/c-major",
+      "template_id": "T07",
+      "main_keyword": "c chords piano",
+      "intent_summary": "Locate this exact triad and compare its three bass positions.",
+      "source_groups": [
+        "P163"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "three inversions",
+        "keyboard diagrams",
+        "audio reference",
+        "current-position printing"
+      ],
+      "source_title": "C major Piano Chord",
+      "effective_title": "C major Piano Chord",
+      "title_length": 19,
+      "description": "Find C major notes, intervals, keyboard positions and inversions.",
+      "description_length": 65,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "C major Piano Chord",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Notes and keyboard position",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "What to notice",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Compare three positions",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Right-hand root-position example",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Chord reference",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print this chord reference",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Related local previews",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 3,
+        "rendered_data_block_count": 8,
+        "exact_text_samples": [
+          {
+            "text": "C major contains C–E–G. The intervals from the root are a major third and a perfect fifth.",
+            "matched": true
+          },
+          {
+            "text": "All three chord tones are white keys. Moving C above E and G gives E–G–C; E in the bass makes that first inversion, while C remains the root.",
+            "matched": true
+          },
+          {
+            "text": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger nu",
+            "matched": true
+          }
+        ],
+        "exact_matches": 3,
+        "exact_samples": 3
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 1511,
+        "main_word_count": 274
+      },
+      "canonical": {
+        "source_path": "/chords/c-major",
+        "effective": "/chords/c-major",
+        "effective_path": "/chords/c-major",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/chords"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/chords",
+        "main_links": [
+          {
+            "href": "/chords",
+            "text": "Chords"
+          },
+          {
+            "href": "/reference/assets/chord-c-major.pdf",
+            "text": "Download C major PDF"
+          },
+          {
+            "href": "/reference/assets/chord-c-major.pdf",
+            "text": "Download C major PDF"
+          },
+          {
+            "href": "/chords",
+            "text": "Piano chord chart"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "C major Piano Chord",
+        "h1": [
+          "C major Piano Chord"
+        ],
+        "description": "Find C major notes, intervals, keyboard positions and inversions.",
+        "canonical": "/chords/c-major"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved.",
+        "Named professional approval remains required by F-RELEASE-c-major; absent inversion fingerings remain intentionally undisclosed."
+      ]
+    },
+    {
+      "url": "/scales",
+      "template_id": "T11",
+      "main_keyword": "piano scales",
+      "intent_summary": "Choose a scale and understand its notes, form, fingering availability and next practice action.",
+      "source_groups": [
+        "P179",
+        "P180",
+        "P181",
+        "P190",
+        "P196",
+        "P204",
+        "P208",
+        "P210",
+        "P213",
+        "P214",
+        "P222",
+        "P224",
+        "P233",
+        "P235"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "scale selection",
+        "hand and direction selection",
+        "audio reference",
+        "current selection printing"
+      ],
+      "source_title": "Piano Scales: Notes, Patterns and Practice References",
+      "effective_title": "Piano Scales: Notes, Patterns and Practice References",
+      "title_length": 53,
+      "description": "Compare major and minor scale notes, explore other scale types, and check the exact form before practicing.",
+      "description_length": 107,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Piano Scales: Notes, Patterns and Practice References",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "C Major",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Ascending",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Keyboard",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C Major",
+          "printOnly": true
+        },
+        {
+          "level": "H3",
+          "text": "Ascending",
+          "printOnly": true
+        },
+        {
+          "level": "H3",
+          "text": "Keyboard",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Piano scales: choose a sound, then a starting note",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Read the pattern",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose the minor form",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Same notes or same tonic?",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Give each note a job",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "A few jazz scale examples",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Continue with a different type",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Try one comparison",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Print the selected reference",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 9,
+        "rendered_data_block_count": 9,
+        "exact_text_samples": [
+          {
+            "text": "Start with C major: C–D–E–F–G–A–B–C. Choose another tonic to compare its notes. The final C repeats the first note one octave higher; it is not an eighth distin",
+            "matched": true
+          },
+          {
+            "text": "For a major scale, move by whole, whole, half, whole, whole, whole, half steps. A whole step spans two adjacent-key steps; a half step spans one. Keep the note ",
+            "matched": true
+          },
+          {
+            "text": "A natural minor uses A–B–C–D–E–F–G. Harmonic minor raises G to G♯. Classical melodic minor raises F and G on the way up and returns to the natural-minor notes o",
+            "matched": true
+          },
+          {
+            "text": "C major and A natural minor share a note collection but organize it around different tonics. C major and C minor start on the same tonic; C natural minor lowers",
+            "matched": true
+          },
+          {
+            "text": "In C major the degrees are C tonic, D supertonic, E mediant, F subdominant, G dominant, A submediant and B leading tone. In natural minor, degree seven is a who",
+            "matched": true
+          },
+          {
+            "text": "Compare C Dorian (C D E♭ F G A B♭), C Mixolydian (C D E F G A B♭), and C blues (C E♭ F G♭ G B♭). Bebop dominant adds a major seventh to Mixolydian; C B B♭ A G F",
+            "matched": true
+          },
+          {
+            "text": "Use the modes page to compare seven diatonic modes. Pentatonic and blues pages show their own note collections. Chromatic practice moves through every neighbori",
+            "matched": true
+          },
+          {
+            "text": "Pick two examples and name the notes that change. Play one hand at a time at a pace you can follow. Keep the tonic visible in the result. When a fingering is av",
+            "matched": true
+          },
+          {
+            "text": "The print view should name the tonic, scale form, direction and range, and show exactly the notes in the result. Finger numbers belong on the printout only when",
+            "matched": true
+          }
+        ],
+        "exact_matches": 9,
+        "exact_samples": 9
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 4919,
+        "main_word_count": 1166
+      },
+      "canonical": {
+        "source_path": "/scales",
+        "effective": "/scales",
+        "effective_path": "/scales",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/",
+        "main_links": [
+          {
+            "href": "/scales/c-major",
+            "text": "Open C detail"
+          },
+          {
+            "href": "/scales/a-minor",
+            "text": "Open A detail"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 1,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C4 to C5",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C4 to C5",
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Piano Scales: Notes, Patterns and Practice References",
+        "h1": [
+          "Piano Scales: Notes, Patterns and Practice References"
+        ],
+        "description": "Compare major and minor scale notes, explore other scale types, and check the exact form before practicing.",
+        "canonical": "/scales"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/scales/c-major",
+      "template_id": "T12",
+      "main_keyword": "c major scale piano",
+      "intent_summary": "Find the C-major notes and learn the first one-octave hand crossing without confusing scale degrees with finger numbers.",
+      "source_groups": [
+        "P183"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "fixed-tonic scale reference",
+        "hand and direction selection",
+        "audio reference",
+        "current selection printing"
+      ],
+      "source_title": "C Major Piano Scale: Notes and Fingering",
+      "effective_title": "C Major Piano Scale: Notes and Fingering",
+      "title_length": 40,
+      "description": "See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.",
+      "description_length": 124,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "C Major Piano Scale: Notes and Fingering",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "C Major",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Ascending",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Keyboard",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "C Major",
+          "printOnly": true
+        },
+        {
+          "level": "H3",
+          "text": "Ascending",
+          "printOnly": true
+        },
+        {
+          "level": "H3",
+          "text": "Keyboard",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "C Major notes",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "White keys, unequal distances",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "One-octave fingering",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "A short practice check",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 4,
+        "rendered_data_block_count": 4,
+        "exact_text_samples": [
+          {
+            "text": "C Major contains C, D, E, F, G, A, B. Repeat C at the top to complete one octave. Its key signature has no sharps or flats.",
+            "matched": true
+          },
+          {
+            "text": "C major uses only white keys, but those keys are not equally spaced in pitch. E–F and B–C are half steps; the other adjacent pairs in the scale are whole steps.",
+            "matched": true
+          },
+          {
+            "text": "In this one-octave version, the right hand crosses from E with finger 3 to F with the thumb. The left hand crosses from G with the thumb to A with finger 3. Rea",
+            "matched": true
+          },
+          {
+            "text": "Suggested drill: play C–D–E, pause, then continue F–G–A–B–C with the printed right-hand fingers. Next, connect E–F without the pause. With the left hand, isolat",
+            "matched": true
+          }
+        ],
+        "exact_matches": 4,
+        "exact_samples": 4
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 1861,
+        "main_word_count": 360
+      },
+      "canonical": {
+        "source_path": "/scales/c-major",
+        "effective": "/scales/c-major",
+        "effective_path": "/scales/c-major",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/scales"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/scales",
+        "main_links": [
+          {
+            "href": "/scales",
+            "text": "Scales"
+          },
+          {
+            "href": "/scales",
+            "text": "All piano scales"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C4 to C5",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: C4 to C5",
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "C Major Piano Scale: Notes and Fingering",
+        "h1": [
+          "C Major Piano Scale: Notes and Fingering"
+        ],
+        "description": "See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.",
+        "canonical": "/scales/c-major"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/scales/a-minor",
+      "template_id": "T12",
+      "main_keyword": "a minor scale piano",
+      "intent_summary": "直接查看指定调性的音阶、键位、手别指法和示范。",
+      "source_groups": [
+        "P184"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "fixed-tonic scale reference",
+        "hand and direction selection",
+        "audio reference",
+        "current selection printing"
+      ],
+      "source_title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+      "effective_title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+      "title_length": 51,
+      "description": "Find the notes of A minor, compare its three forms and descending patterns, and read source-checked piano fingerings.",
+      "description_length": 117,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "A Natural minor",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Ascending",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Keyboard",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "A Natural minor",
+          "printOnly": true
+        },
+        {
+          "level": "H3",
+          "text": "Ascending",
+          "printOnly": true
+        },
+        {
+          "level": "H3",
+          "text": "Keyboard",
+          "printOnly": true
+        },
+        {
+          "level": "H2",
+          "text": "Start with A natural minor",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Listen for the changed ending",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Practice the last four notes",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Connect the scale to chords",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 4,
+        "rendered_data_block_count": 4,
+        "exact_text_samples": [
+          {
+            "text": "A natural minor uses A, B, C, D, E, F, and G. Its key signature has no sharps or flats. C major shares that signature, but A is the starting note and tonal refe",
+            "matched": true
+          },
+          {
+            "text": "Harmonic minor replaces G with G#. Classical melodic minor uses F# and G# on the way up, then F and G on the way down. Keep the form label visible when comparin",
+            "matched": true
+          },
+          {
+            "text": "Try E-F-G-A first, then E-F-G#-A, then E-F#-G#-A. Say the changed note names before playing each group. Next, start at the upper A and return through G-F-E. Kee",
+            "matched": true
+          },
+          {
+            "text": "The natural-minor triads are Am, Bdim, C, Dm, Em, F, and G. Compare Em with E major: E major contains G#, matching the raised seventh in A harmonic minor. Use t",
+            "matched": true
+          }
+        ],
+        "exact_matches": 4,
+        "exact_samples": 4
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 2387,
+        "main_word_count": 483
+      },
+      "canonical": {
+        "source_path": "/scales/a-minor",
+        "effective": "/scales/a-minor",
+        "effective_path": "/scales/a-minor",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/scales"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/scales",
+        "main_links": [
+          {
+            "href": "/scales",
+            "text": "Scales"
+          },
+          {
+            "href": "/scales",
+            "text": "All piano scales"
+          },
+          {
+            "href": "/chords/a-minor",
+            "text": "A minor chord reference"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: A4 to A5",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: A4 to A5",
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+        "h1": [
+          "A Minor Scale on Piano: Natural, Harmonic & Melodic"
+        ],
+        "description": "Find the notes of A minor, compare its three forms and descending patterns, and read source-checked piano fingerings.",
+        "canonical": "/scales/a-minor"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved."
+      ]
+    },
+    {
+      "url": "/guide",
+      "template_id": "T21",
+      "main_keyword": "how to play piano for beginners",
+      "intent_summary": "Start playing with a short ordered lesson, then select the right guide.",
+      "source_groups": [
+        "P226",
+        "P240",
+        "P255"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "ordered beginner path",
+        "first-note exercise",
+        "authorized PDF download"
+      ],
+      "source_title": "Learn Piano: Your First Useful Steps",
+      "effective_title": "Learn Piano: Your First Useful Steps",
+      "title_length": 36,
+      "description": "Find a note, read a short pattern and choose your next practice task.",
+      "description_length": 69,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "Learn Piano: Your First Useful Steps",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Find three keys, then play four counts",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Start with three keys",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Try a four-count pattern",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Choose the next step",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Piano Starter and Reading Pack",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 3,
+        "rendered_data_block_count": 3,
+        "exact_text_samples": [
+          {
+            "text": "Find a group of two black keys. The white key immediately to its left is C. On an 88-key piano, middle C is C4. Find C4, then the next two white keys to its rig",
+            "matched": true
+          },
+          {
+            "text": "Original first task: play C4 on count 1, D4 on count 2, then E4 for counts 3–4. Keep saying the counts while the last note lasts. This gives you one bar of our ",
+            "matched": true
+          },
+          {
+            "text": "Read the same notes on the staff, then clap a rhythm before learning a short piece. The printable starter pack includes both-clef note examples, two sight-readi",
+            "matched": true
+          }
+        ],
+        "exact_matches": 3,
+        "exact_samples": 3
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 1510,
+        "main_word_count": 288
+      },
+      "canonical": {
+        "source_path": "/guide",
+        "effective": "/guide",
+        "effective_path": "/guide",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/",
+        "/chords",
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/c-major",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/keyboard-notes/labeled",
+        "/scales",
+        "/scales/a-minor",
+        "/scales/c-major",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/",
+        "main_links": [
+          {
+            "href": "/guide",
+            "text": "Guide"
+          },
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "Open this step →"
+          },
+          {
+            "href": "/guide/read-sheet-music",
+            "text": "Open this step →"
+          },
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "Open the keyboard note chart"
+          },
+          {
+            "href": "/chords",
+            "text": "Open the chord guide"
+          },
+          {
+            "href": "/assets/guides/piano-starter-and-reading.pdf",
+            "text": "Download the PDF"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 1,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "Learn Piano: Your First Useful Steps",
+        "h1": [
+          "Learn Piano: Your First Useful Steps"
+        ],
+        "description": "Find a note, read a short pattern and choose your next practice task.",
+        "canonical": "/guide"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved.",
+        "Named piano-educator review remains required by the E-REVIEW release gate.",
+        "The linked four-page guide PDF remains untagged; acceptance or an accessible re-export from an editable source is required."
+      ]
+    },
+    {
+      "url": "/guide/read-sheet-music",
+      "template_id": "T22",
+      "main_keyword": "how to read sheet music piano",
+      "intent_summary": "Decode a short score and identify notes in the correct register.",
+      "source_groups": [
+        "P218",
+        "P228",
+        "P229",
+        "P236",
+        "P248",
+        "P249"
+      ],
+      "content_version": "3.0.0",
+      "implemented_capabilities": [
+        "reading order",
+        "staff anchors",
+        "practice exercise",
+        "authorized PDF download"
+      ],
+      "source_title": "How to Read Piano Sheet Music",
+      "effective_title": "How to Read Piano Sheet Music",
+      "title_length": 29,
+      "description": "Connect the clef, staff position, key and duration before you play.",
+      "description_length": 67,
+      "h1_text_and_count": {
+        "count": 1,
+        "items": [
+          {
+            "text": "How to Read Piano Sheet Music",
+            "visible": true
+          }
+        ]
+      },
+      "h2_h3_outline": [
+        {
+          "level": "H2",
+          "text": "Read in a useful order",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Use anchors, then count steps",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Treble anchors",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Bass anchors",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "FACE has a specific job",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Check yourself",
+          "printOnly": false
+        },
+        {
+          "level": "H3",
+          "text": "Steps around middle C",
+          "printOnly": false
+        },
+        {
+          "level": "H2",
+          "text": "Piano Starter and Reading Pack",
+          "printOnly": false
+        }
+      ],
+      "coverage_evidence": {
+        "source_block_count": 4,
+        "rendered_data_block_count": 4,
+        "exact_text_samples": [
+          {
+            "text": "Identify the clef first. Read the key signature and any accidental beside the note, then locate the note on a line or space. Finally read its duration. A higher",
+            "matched": true
+          },
+          {
+            "text": "In treble clef, the second line from the bottom is G4. In bass clef, the fourth line is F3. Middle C, C4, is on the first ledger line below treble or above bass",
+            "matched": true
+          },
+          {
+            "text": "F4–A4–C5–E5 names the four spaces inside the treble staff, from bottom to top. It does not name the bass spaces. For “two lines below,” first identify the clef:",
+            "matched": true
+          },
+          {
+            "text": "Name the first ledger-line note below treble, then the next two staff positions upward. Answer: C4, D4, E4. Find them on the keyboard and play the first bar of ",
+            "matched": true
+          }
+        ],
+        "exact_matches": 4,
+        "exact_samples": 4
+      },
+      "rendered_core_content": {
+        "in_http_html": true,
+        "main_text_characters": 2285,
+        "main_word_count": 429
+      },
+      "canonical": {
+        "source_path": "/guide/read-sheet-music",
+        "effective": "/guide/read-sheet-music",
+        "effective_path": "/guide/read-sheet-music",
+        "absolute_domain_pending": true
+      },
+      "robots_meta_and_header": {
+        "meta": "noindex, nofollow",
+        "x_robots_tag": null
+      },
+      "internal_inbound": [
+        "/guide"
+      ],
+      "parent_and_related_outbound": {
+        "expected_parent": "/guide",
+        "main_links": [
+          {
+            "href": "/guide",
+            "text": "Guide"
+          },
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "Find C4–F4 on the keyboard chart"
+          },
+          {
+            "href": "/assets/guides/piano-starter-and-reading.pdf",
+            "text": "Download the PDF"
+          }
+        ]
+      },
+      "reachability": {
+        "from_home_clicks": 2,
+        "reachable": true
+      },
+      "broken_links": {
+        "internal": [],
+        "external": []
+      },
+      "image_or_svg_accessibility": {
+        "images": [],
+        "svgs": [
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "treble clef: E4 to A3",
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": true,
+            "role": null,
+            "label": null,
+            "labelledby": null,
+            "title": ""
+          },
+          {
+            "hidden": false,
+            "role": "group",
+            "label": "bass clef: G2 to C2",
+            "labelledby": null,
+            "title": ""
+          }
+        ],
+        "issues": []
+      },
+      "jsonld_types_and_validity": {
+        "count": 0,
+        "types": [],
+        "valid": true,
+        "absolute_domain_pending": true
+      },
+      "crawler_parity": {
+        "status": 200,
+        "title": "How to Read Piano Sheet Music",
+        "h1": [
+          "How to Read Piano Sheet Music"
+        ],
+        "description": "Connect the clef, staff position, key and duration before you play.",
+        "canonical": "/guide/read-sheet-music"
+      },
+      "responsive": {
+        "desktop_overflow": false,
+        "mobile_390": {
+          "overflow": false,
+          "h1Size": "30px",
+          "h1LineHeight": "36px"
+        }
+      },
+      "issue_severity": null,
+      "issues": [],
+      "fix": [],
+      "after_result": "pass",
+      "release_blockers": [
+        "Formal production origin and public-index configuration are not yet approved.",
+        "Named piano-educator review remains required by the E-REVIEW release gate.",
+        "The linked four-page guide PDF remains untagged; acceptance or an accessible re-export from an editable source is required."
+      ]
+    }
+  ],
+  "site_findings": {
+    "duplicate_titles": [],
+    "duplicate_descriptions": [],
+    "runtime_errors": [],
+    "external_summary": {
+      "reachable": 15,
+      "restricted": 0,
+      "broken": 0,
+      "indeterminate": 0
+    }
+  },
+  "result": {
+    "passed_pages": 17,
+    "pages_with_issues": 0,
+    "blocking_issues": 0
+  }
+}

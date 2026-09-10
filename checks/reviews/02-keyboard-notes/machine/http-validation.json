@@ -1,0 +1,228 @@
+{
+  "executed_at": "2026-09-09T11:15:52.374Z",
+  "base": "http://127.0.0.1:3000",
+  "passed": 44,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/keyboard-notes: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes: title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: noindex/nofollow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: canonical metadata is not published",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: audit ledger does not leak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: unrelated source groups do not leak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: no client-side runtime error page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes/labeled: title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: noindex/nofollow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: canonical metadata is not published",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: audit ledger does not leak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: unrelated source groups do not leak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: no client-side runtime error page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes/chart: title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: noindex/nofollow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: canonical metadata is not published",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: audit ledger does not leak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: unrelated source groups do not leak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: no client-side runtime error page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords: regression HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-minor: regression HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-major: regression HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/c-major: regression HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/scales: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/keyboard-notes/frequencies: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/keyboard-notes/finger-numbers: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/keyboard-notes/blank: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/keyboard-notes/key-signatures: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/tools/piano-cheat-sheet: unauthorized route is 404",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-88-letters.pdf: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-88-letters.pdf: PDF content type",
+      "passed": true,
+      "detail": "application/pdf"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-88-letters.pdf: served hash matches manifest",
+      "passed": true,
+      "detail": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-88-octaves.pdf: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-88-octaves.pdf: PDF content type",
+      "passed": true,
+      "detail": "application/pdf"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-88-octaves.pdf: served hash matches manifest",
+      "passed": true,
+      "detail": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-61-letters.pdf: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-61-letters.pdf: PDF content type",
+      "passed": true,
+      "detail": "application/pdf"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-61-letters.pdf: served hash matches manifest",
+      "passed": true,
+      "detail": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-61-octaves.pdf: HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-61-octaves.pdf: PDF content type",
+      "passed": true,
+      "detail": "application/pdf"
+    },
+    {
+      "name": "/reference/generated/keyboard-notes/labeled-61-octaves.pdf: served hash matches manifest",
+      "passed": true,
+      "detail": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574"
+    }
+  ]
+}

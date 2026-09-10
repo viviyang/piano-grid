@@ -1,0 +1,119 @@
+{
+  "executed_at": "2026-09-10T00:01:59.007126+00:00",
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "name": "letter one page",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "letter exact page size",
+      "passed": true,
+      "detail": [
+        612.0,
+        792.0
+      ]
+    },
+    {
+      "name": "letter no encryption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "letter exact source bytes",
+      "passed": true,
+      "detail": 45614
+    },
+    {
+      "name": "letter public bytes",
+      "passed": true,
+      "detail": 45614
+    },
+    {
+      "name": "letter title text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "letter print instruction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "letter portrait render",
+      "passed": true,
+      "detail": [
+        1275,
+        1650
+      ]
+    },
+    {
+      "name": "letter sixty full staff lines",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "letter printable margins are clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "a4 one page",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "a4 exact page size",
+      "passed": true,
+      "detail": [
+        595.2756,
+        841.8898
+      ]
+    },
+    {
+      "name": "a4 no encryption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a4 exact source bytes",
+      "passed": true,
+      "detail": 45738
+    },
+    {
+      "name": "a4 public bytes",
+      "passed": true,
+      "detail": 45738
+    },
+    {
+      "name": "a4 title text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a4 print instruction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a4 portrait render",
+      "passed": true,
+      "detail": [
+        1241,
+        1754
+      ]
+    },
+    {
+      "name": "a4 sixty full staff lines",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "a4 printable margins are clear",
+      "passed": true,
+      "detail": 0
+    }
+  ]
+}

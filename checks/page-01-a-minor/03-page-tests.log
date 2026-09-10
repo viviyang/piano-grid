@@ -1,0 +1,36 @@
+FAIL No dead page links [
+  '#am-result',
+  '#am-find-notes',
+  '#am-inversions',
+  '#am-why-minor',
+  '#am-practice',
+  '#am-print',
+  '#am-questions',
+  '/assets/chords/a-minor-notes-inversions.pdf',
+  '/assets/chords/a-minor-notes-inversions.pdf',
+  '#main',
+  'https://nextjs.org/telemetry#error-feedback'
+]
+FAIL Hidden page cancels audio undefined
+FAIL Forced colors keeps selection and focus outlines undefined
+FAIL No runtime/console/hydration errors [
+  'Failed to load resource: the server responded with a status of 404 (Not Found)',
+  'Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. \n' +
+    '\n' +
+    'Check the render method of `AMinorExperience`.  It was passed a child from AMinorPage.',
+  'Failed to load resource: the server responded with a status of 404 (Not Found)',
+  'Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. \n' +
+    '\n' +
+    'Check the render method of `AMinorExperience`.  It was passed a child from AMinorPage.',
+  'Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. \n' +
+    '\n' +
+    'Check the render method of `AMinorExperience`.  It was passed a child from AMinorPage.',
+  'Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. \n' +
+    '\n' +
+    'Check the render method of `AMinorExperience`.  It was passed a child from AMinorPage.',
+  'Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. \n' +
+    '\n' +
+    'Check the render method of `AMinorExperience`.  It was passed a child from AMinorPage.'
+]
+Page: 158 passed, 4 failed.
+exit_code=1

@@ -1,0 +1,1256 @@
+{
+  "content_version": "1.0.0-batch-01",
+  "page": {
+    "url": "/chords/a-minor",
+    "baseline_page_id": "U078",
+    "main_keyword": "am piano chord",
+    "template_id": "T07",
+    "source_group_ids": [
+      "P151"
+    ],
+    "metadata": {
+      "title": "A Minor Piano Chord (Am): Notes, Inversions & PDF",
+      "description": "Find the A minor chord on piano: A, C, and E. Compare root position, Am/C, and Am/E with keyboard diagrams, sound examples, and a printable PDF.",
+      "canonical_path": "/chords/a-minor",
+      "canonical_absolute_url": null,
+      "locale": "en-US",
+      "publish_only_when": "visible copy promises match implemented controls and available files"
+    },
+    "batch_scope": "Am固定结果、原位/第一/第二转位、同源音图/事件/打印、针对性解释和练习",
+    "full_planning_scope": {
+      "id": "T07",
+      "name": "具体和弦页",
+      "confirmation_status": "A minor 样板已确认；其他已有对象复用模板，不等于逐页确认",
+      "user_task": "直接查某一个明确和弦的组成、键位、转位和声音。",
+      "modules": [
+        "进入即固定当前和弦，不再要求选择根音。",
+        "显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。",
+        "原位与转位同页切换，图示和播放同步；打印当前结果。",
+        "针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。"
+      ],
+      "boundary": "不复制中心页全量筛选器；不为转位/打印模式单独建页；不自动补全全部和弦组合。",
+      "acceptance": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。"
+    },
+    "current_required_delivery": "进入即固定当前和弦，不再要求选择根音。；显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。；原位与转位同页切换，图示和播放同步；打印当前结果。；针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。",
+    "status": "content_and_data_package_complete_for_declared_batch",
+    "ready_for_design": true,
+    "ready_for_design_scope": "英文文案、已核对音符/图表、交互状态文案与打印素材；不含公开指法或未制作和弦类型。",
+    "ready_for_publish": false,
+    "publish_blocker_ids": [
+      "G-AUDIO",
+      "G-PRINT-RUNTIME",
+      "G-LINKS"
+    ],
+    "blocks": [
+      {
+        "block_id": "am-intro",
+        "type": "intro",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "am piano chord",
+              "a minor piano chord",
+              "a minor chord on piano"
+            ],
+            "answers": "进入页面直接给固定和弦答案。"
+          }
+        ],
+        "content": {
+          "heading": "A Minor Piano Chord (Am)",
+          "paragraphs": [
+            "The A minor chord, written Am, contains A, C, and E. All three are white-key notes. In root position, play A as the lowest note, with C and E above it.",
+            "The example below uses A3–C4–E4, with C4 as middle C. Listen to these notes together or individually, then compare the two inversions."
+          ],
+          "steps": [],
+          "table": null,
+          "controls": [],
+          "links": []
+        },
+        "data_refs": [
+          "shared_data.chords.a-minor",
+          "shared_data.voicings.a-minor--root"
+        ],
+        "source_ids": [
+          "S08",
+          "S05"
+        ],
+        "claim_ids": [
+          "F02",
+          "F05",
+          "F07",
+          "F08"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实] / [推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-result",
+        "type": "tool",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "am on piano chord",
+              "am in piano",
+              "a minor chords piano"
+            ],
+            "answers": "固定Am且默认原位；显示结果和实际事件。"
+          }
+        ],
+        "content": {
+          "heading": "A minor notes and keyboard positions",
+          "paragraphs": [
+            "Chord symbol: Am. Chord tones: A–C–E. A is the root, C is the minor third, and E is the perfect fifth. The root stays A in every inversion.",
+            "Choose a position to change the lowest note. The keyboard diagram, note list, and playback all follow that same selection."
+          ],
+          "steps": [],
+          "table": null,
+          "controls": [
+            {
+              "control_id": "am-position",
+              "label": "Position",
+              "action": "select_voicing",
+              "parameters": {},
+              "show_when": "matching_feature_passes_acceptance",
+              "status": "copy_ready_feature_not_implemented"
+            },
+            {
+              "control_id": "am-play-together",
+              "label": "Play chord",
+              "action": "play_selected_voicing",
+              "parameters": {
+                "mode": "together"
+              },
+              "show_when": "matching_feature_passes_acceptance",
+              "status": "copy_ready_feature_not_implemented"
+            },
+            {
+              "control_id": "am-play-apart",
+              "label": "Play notes one at a time",
+              "action": "play_selected_voicing",
+              "parameters": {
+                "mode": "ascending"
+              },
+              "show_when": "matching_feature_passes_acceptance",
+              "status": "copy_ready_feature_not_implemented"
+            },
+            {
+              "control_id": "am-stop",
+              "label": "Stop",
+              "action": "stop_audio",
+              "parameters": {},
+              "show_when": "matching_feature_passes_acceptance",
+              "status": "copy_ready_feature_not_implemented"
+            }
+          ],
+          "links": []
+        },
+        "data_refs": [
+          "shared_data.chords.a-minor"
+        ],
+        "source_ids": [
+          "S01",
+          "S04",
+          "S08"
+        ],
+        "claim_ids": [
+          "F01",
+          "F02",
+          "F03",
+          "F12"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实] / [推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-find-notes",
+        "type": "instructions",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "a minor chord piano",
+              "a minor chord for piano"
+            ],
+            "answers": "按当前音区找实琴键位；不把全白键说成无需练习。"
+          }
+        ],
+        "content": {
+          "heading": "Find A, C, and E on the keyboard",
+          "paragraphs": [
+            "Start with C4, middle C. A3 is two white-key steps to its left: move past B3 to A3. E4 is two white-key steps to the right of C4: move past D4 to E4.",
+            "The marked keys show pitches, not a hand shape or a required fingering."
+          ],
+          "steps": [
+            "Locate A3, C4, and E4 using the labels.",
+            "Play them separately to check their order, then sound the three notes together.",
+            "If you use another octave, move all three notes by the same number of octaves to keep this root-position shape."
+          ],
+          "table": null,
+          "controls": [],
+          "links": []
+        },
+        "data_refs": [],
+        "source_ids": [
+          "S05",
+          "S08"
+        ],
+        "claim_ids": [
+          "F02",
+          "F05",
+          "F07",
+          "F12"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实] / [推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-inversions",
+        "type": "comparison",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "am piano chord",
+              "piano a minor chord"
+            ],
+            "answers": "提供完整三种密集排列，音区低音和slash symbol都具体。"
+          }
+        ],
+        "content": {
+          "heading": "A minor inversions",
+          "paragraphs": [
+            "An inversion changes which chord tone is lowest. First inversion puts C in the bass; second inversion puts E in the bass. The letters after the slash in Am/C and Am/E identify that bass note.",
+            "These examples use close position without doubled notes. Other spacings are possible; the lowest note determines the inversion."
+          ],
+          "steps": [],
+          "table": {
+            "columns": [
+              "Position",
+              "Symbol",
+              "Notes, low to high",
+              "Bass"
+            ],
+            "rows": [
+              [
+                "Root position",
+                "Am",
+                "A3–C4–E4",
+                "A3"
+              ],
+              [
+                "First inversion",
+                "Am/C",
+                "C4–E4–A4",
+                "C4"
+              ],
+              [
+                "Second inversion",
+                "Am/E",
+                "E4–A4–C5",
+                "E4"
+              ]
+            ]
+          },
+          "controls": [],
+          "links": []
+        },
+        "data_refs": [
+          "shared_data.voicings.a-minor--root",
+          "shared_data.voicings.a-minor--first",
+          "shared_data.voicings.a-minor--second"
+        ],
+        "source_ids": [
+          "S04",
+          "S08",
+          "S14",
+          "S16"
+        ],
+        "claim_ids": [
+          "F02",
+          "F03",
+          "F07"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实] / [推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-why-minor",
+        "type": "explanation",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "a minor piano chord"
+            ],
+            "answers": "针对A minor说明关系并用A major精确比较。"
+          }
+        ],
+        "content": {
+          "heading": "What makes this chord minor?",
+          "paragraphs": [
+            "From A to C is a minor third: three semitone steps. From C to E is a major third: four semitone steps. Together, the outer notes A and E form a perfect fifth.",
+            "Compare A minor, A–C–E, with A major, A–C♯–E. Only the third changes. A minor uses C natural; A major uses C-sharp. The interval pattern identifies the chord as minor, without needing a mood label."
+          ],
+          "steps": [],
+          "table": null,
+          "controls": [],
+          "links": []
+        },
+        "data_refs": [
+          "shared_data.comparisons.a-major-vs-minor"
+        ],
+        "source_ids": [
+          "S02",
+          "S07",
+          "S08"
+        ],
+        "claim_ids": [
+          "F01",
+          "F02",
+          "F04"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-practice",
+        "type": "practice",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "a minor chord on piano"
+            ],
+            "answers": "原创短检查练习；不给虚构训练成果。"
+          }
+        ],
+        "content": {
+          "heading": "Try the three positions",
+          "paragraphs": [
+            "Use this as a note-finding check. Work with one position at a time before moving to the next."
+          ],
+          "steps": [
+            "Play A3–C4–E4 and say “A in the bass.”",
+            "Choose first inversion and play C4–E4–A4. Say “C in the bass.”",
+            "Choose second inversion and play E4–A4–C5. Say “E in the bass.”",
+            "Without looking at the chord symbol, name the lowest note and identify the position. Check against the table."
+          ],
+          "table": null,
+          "controls": [],
+          "links": []
+        },
+        "data_refs": [],
+        "source_ids": [
+          "S04",
+          "S08"
+        ],
+        "claim_ids": [
+          "F02",
+          "F03",
+          "F12"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实] / [推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-print",
+        "type": "download",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "am piano chord"
+            ],
+            "answers": "有实际1页PDF；当前打印规则随选择，两个动作不混淆。"
+          }
+        ],
+        "content": {
+          "heading": "Print the A minor reference",
+          "paragraphs": [
+            "Download the one-page reference to compare all three positions. It includes the exact pitches and keyboard diagrams shown here, with no finger numbers.",
+            "Use Print this position if you only need the current selection."
+          ],
+          "steps": [],
+          "table": null,
+          "controls": [
+            {
+              "control_id": "am-download",
+              "label": "Download A minor PDF",
+              "action": "download_asset",
+              "parameters": {
+                "asset_id": "pdf-a-minor"
+              },
+              "show_when": "asset_is_served",
+              "status": "copy_ready_feature_not_implemented"
+            },
+            {
+              "control_id": "am-print-current",
+              "label": "Print this position",
+              "action": "print_current_voicing",
+              "parameters": {},
+              "show_when": "matching_feature_passes_acceptance",
+              "status": "copy_ready_feature_not_implemented"
+            }
+          ],
+          "links": []
+        },
+        "data_refs": [
+          "assets.pdf-a-minor",
+          "print_contract"
+        ],
+        "source_ids": [],
+        "claim_ids": [
+          "F12"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-questions",
+        "type": "faq",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "a minor piano chord",
+              "am chord on piano"
+            ],
+            "answers": "补充别名、转位、Am7区别，保持A minor三和弦边界。"
+          }
+        ],
+        "content": {
+          "heading": "A minor questions",
+          "paragraphs": [],
+          "steps": [],
+          "table": {
+            "columns": [
+              "Question",
+              "Answer"
+            ],
+            "rows": [
+              [
+                "Is Am the same as A minor?",
+                "Yes. Am is a common chord symbol for the A minor triad. You may also see A min or A−."
+              ],
+              [
+                "Does Am/C become a C chord?",
+                "No. It is still A minor, with C as the lowest note. Its chord tones are still A, C, and E."
+              ],
+              [
+                "Is Am the same as Am7?",
+                "No. Am is A–C–E; Am7 adds G. This page covers the three-note Am chord."
+              ],
+              [
+                "Are the numbers in A3, C4, and E4 finger numbers?",
+                "No. They identify octaves. The diagrams in this reference do not prescribe fingering."
+              ]
+            ]
+          },
+          "controls": [],
+          "links": []
+        },
+        "data_refs": [],
+        "source_ids": [
+          "S01",
+          "S04",
+          "S05",
+          "S08"
+        ],
+        "claim_ids": [
+          "F02",
+          "F03",
+          "F05",
+          "F10"
+        ],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[已核实] / [推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      },
+      {
+        "block_id": "am-next",
+        "type": "related",
+        "source_group_ids": [
+          "P151"
+        ],
+        "query_mapping": [
+          {
+            "source_group_id": "P151",
+            "queries": [
+              "am piano chord"
+            ],
+            "answers": "真实链接文案，按发布状态控制；无新URL。"
+          }
+        ],
+        "content": {
+          "heading": "Compare with other chords",
+          "paragraphs": [],
+          "steps": [],
+          "table": null,
+          "controls": [],
+          "links": [
+            {
+              "label": "Piano chord chart: compare major and minor",
+              "url": "/chords",
+              "show_when": "destination_is_published",
+              "published": false
+            },
+            {
+              "label": "A major piano chord",
+              "url": "/chords/a-major",
+              "show_when": "destination_is_published",
+              "published": false
+            },
+            {
+              "label": "A minor scale: notes and forms",
+              "url": "/scales/a-minor",
+              "show_when": "destination_is_published",
+              "published": false
+            }
+          ]
+        },
+        "data_refs": [],
+        "source_ids": [],
+        "claim_ids": [],
+        "verification_status": "copy_and_data_ready_for_design",
+        "evidence_record": {
+          "status": "[推断]",
+          "note": "事实见claim_ids及来源；未标为事实的操作顺序/文案为原创编辑稿。"
+        }
+      }
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S04",
+      "S05",
+      "S07",
+      "S08",
+      "S14",
+      "S16"
+    ],
+    "data": {
+      "chord_ids": [
+        "a-minor"
+      ],
+      "voicing_ids": [
+        "a-minor--root",
+        "a-minor--first",
+        "a-minor--second"
+      ]
+    },
+    "microcopy": {
+      "loading": "Preparing the sound…",
+      "audio_error": "Sound could not start. Try again.",
+      "audio_unavailable": "Sound is unavailable. You can still use the notes and diagram.",
+      "print_error": "The print preview could not open. Download the PDF instead.",
+      "selected_note_summary": "Notes from low to high",
+      "result_count_singular": "{count} chord",
+      "result_count_plural": "{count} chords",
+      "no_results": "No chord in this collection matches both choices. Change the root or chord type.",
+      "playback_note": "Simple reference tone; not a recording of an acoustic piano."
+    },
+    "verification": {
+      "checked_on": "2026-09-09",
+      "web_research_completed": true,
+      "professional_reviewer": null,
+      "functional_playback_test": null,
+      "browser_print_test": null,
+      "deployment_test": null
+    },
+    "selection": {
+      "default_voicing_id": "a-minor--root",
+      "options": [
+        {
+          "value": "a-minor--root",
+          "label": "Root position",
+          "symbol": "Am"
+        },
+        {
+          "value": "a-minor--first",
+          "label": "First inversion",
+          "symbol": "Am/C"
+        },
+        {
+          "value": "a-minor--second",
+          "label": "Second inversion",
+          "symbol": "Am/E"
+        }
+      ],
+      "root_filter": null,
+      "quality_filter": null
+    },
+    "all_planned_deliverables_complete": false,
+    "all_mapped_query_intents_covered_by_content": true
+  },
+  "chord": {
+    "chord_id": "a-minor",
+    "name_en": "A minor",
+    "symbol": "Am",
+    "root_spelling": "A",
+    "quality": "minor",
+    "canonical_url": "/chords/a-minor",
+    "note_spellings": [
+      "A",
+      "C",
+      "E"
+    ],
+    "formula_degrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "formula_semitones": [
+      0,
+      3,
+      7
+    ],
+    "source_ids": [
+      "S08",
+      "S14",
+      "S16"
+    ],
+    "claim_ids": [
+      "F01",
+      "C-a-minor"
+    ],
+    "evidence_status": "[已核实]",
+    "verification_status": "note_spelling_cross_checked",
+    "root_voicing_id": "a-minor--root",
+    "available_voicing_ids": [
+      "a-minor--root",
+      "a-minor--first",
+      "a-minor--second"
+    ],
+    "detailed_page_in_current_batch": true,
+    "detail_page_published": false
+  },
+  "voicings": {
+    "a-minor--root": {
+      "voicing_id": "a-minor--root",
+      "chord_id": "a-minor",
+      "inversion": "root",
+      "inversion_label": "Root position",
+      "chord_symbol": "Am",
+      "spacing": "close_position_no_doubling",
+      "notes_low_to_high": [
+        {
+          "spelled_pitch": "A3",
+          "display_pitch": "A3",
+          "letter": "A",
+          "accidental_semitones": 0,
+          "written_octave": 3,
+          "midi": 57,
+          "pitch_class": 9,
+          "frequency_hz": 220.0,
+          "key_color": "white",
+          "physical_key_id": "midi-57",
+          "chord_member": "root"
+        },
+        {
+          "spelled_pitch": "C4",
+          "display_pitch": "C4",
+          "letter": "C",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 60,
+          "pitch_class": 0,
+          "frequency_hz": 261.625565,
+          "key_color": "white",
+          "physical_key_id": "midi-60",
+          "chord_member": "third"
+        },
+        {
+          "spelled_pitch": "E4",
+          "display_pitch": "E4",
+          "letter": "E",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 64,
+          "pitch_class": 4,
+          "frequency_hz": 329.627557,
+          "key_color": "white",
+          "physical_key_id": "midi-64",
+          "chord_member": "fifth"
+        }
+      ],
+      "bass_spelling": "A3",
+      "display_midi": [
+        57,
+        60,
+        64
+      ],
+      "playback": {
+        "together": [
+          {
+            "event_id": "a-minor--root--together--1",
+            "spelled_pitch": "A3",
+            "midi": 57,
+            "frequency_hz": 220.0,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          },
+          {
+            "event_id": "a-minor--root--together--2",
+            "spelled_pitch": "C4",
+            "midi": 60,
+            "frequency_hz": 261.625565,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          },
+          {
+            "event_id": "a-minor--root--together--3",
+            "spelled_pitch": "E4",
+            "midi": 64,
+            "frequency_hz": 329.627557,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          }
+        ],
+        "ascending": [
+          {
+            "event_id": "a-minor--root--ascending--1",
+            "spelled_pitch": "A3",
+            "midi": 57,
+            "frequency_hz": 220.0,
+            "onset_ms": 0,
+            "duration_ms": 500
+          },
+          {
+            "event_id": "a-minor--root--ascending--2",
+            "spelled_pitch": "C4",
+            "midi": 60,
+            "frequency_hz": 261.625565,
+            "onset_ms": 600,
+            "duration_ms": 500
+          },
+          {
+            "event_id": "a-minor--root--ascending--3",
+            "spelled_pitch": "E4",
+            "midi": 64,
+            "frequency_hz": 329.627557,
+            "onset_ms": 1200,
+            "duration_ms": 500
+          }
+        ],
+        "sustain_pedal": false,
+        "autoplay": false,
+        "status": "event_data_ready_not_rendered_or_auditioned",
+        "audio_file": null
+      },
+      "diagram": {
+        "asset_id": "svg-a-minor--root",
+        "relative_path": "assets/a-minor--root.svg",
+        "highlight_midi": [
+          57,
+          60,
+          64
+        ],
+        "keyboard_range_midi": [
+          48,
+          72
+        ],
+        "keyboard_range_written": [
+          "C3",
+          "C5"
+        ],
+        "alt_text": "A minor, root position: A3, C4, E4 from low to high. Marked keys are the notes to play."
+      },
+      "print_data": {
+        "voicing_id": "a-minor--root",
+        "spelled_pitches": [
+          "A3",
+          "C4",
+          "E4"
+        ],
+        "highlight_midi": [
+          57,
+          60,
+          64
+        ]
+      },
+      "fingering": {
+        "right_hand": null,
+        "left_hand": null,
+        "display": false,
+        "status": "withheld_pending_contextual_professional_review"
+      },
+      "source_ids": [
+        "S08",
+        "S14",
+        "S16",
+        "S05",
+        "S06"
+      ],
+      "claim_ids": [
+        "F01",
+        "F02",
+        "F07",
+        "C-a-minor"
+      ],
+      "verification": {
+        "pitch_class_spelling": "cross_checked",
+        "register_assignment": "editorial_choice_checked_by_formula",
+        "audio_playback_tested": false,
+        "professional_signoff": null
+      },
+      "evidence_status": "[推断]",
+      "derivation": "和弦音名由来源直接核对；此处的具体音区和逐音/齐奏事件为据此生成的展示数据。"
+    },
+    "a-minor--first": {
+      "voicing_id": "a-minor--first",
+      "chord_id": "a-minor",
+      "inversion": "first",
+      "inversion_label": "First inversion",
+      "chord_symbol": "Am/C",
+      "spacing": "close_position_no_doubling",
+      "notes_low_to_high": [
+        {
+          "spelled_pitch": "C4",
+          "display_pitch": "C4",
+          "letter": "C",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 60,
+          "pitch_class": 0,
+          "frequency_hz": 261.625565,
+          "key_color": "white",
+          "physical_key_id": "midi-60",
+          "chord_member": "third"
+        },
+        {
+          "spelled_pitch": "E4",
+          "display_pitch": "E4",
+          "letter": "E",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 64,
+          "pitch_class": 4,
+          "frequency_hz": 329.627557,
+          "key_color": "white",
+          "physical_key_id": "midi-64",
+          "chord_member": "fifth"
+        },
+        {
+          "spelled_pitch": "A4",
+          "display_pitch": "A4",
+          "letter": "A",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 69,
+          "pitch_class": 9,
+          "frequency_hz": 440.0,
+          "key_color": "white",
+          "physical_key_id": "midi-69",
+          "chord_member": "root"
+        }
+      ],
+      "bass_spelling": "C4",
+      "display_midi": [
+        60,
+        64,
+        69
+      ],
+      "playback": {
+        "together": [
+          {
+            "event_id": "a-minor--first--together--1",
+            "spelled_pitch": "C4",
+            "midi": 60,
+            "frequency_hz": 261.625565,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          },
+          {
+            "event_id": "a-minor--first--together--2",
+            "spelled_pitch": "E4",
+            "midi": 64,
+            "frequency_hz": 329.627557,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          },
+          {
+            "event_id": "a-minor--first--together--3",
+            "spelled_pitch": "A4",
+            "midi": 69,
+            "frequency_hz": 440.0,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          }
+        ],
+        "ascending": [
+          {
+            "event_id": "a-minor--first--ascending--1",
+            "spelled_pitch": "C4",
+            "midi": 60,
+            "frequency_hz": 261.625565,
+            "onset_ms": 0,
+            "duration_ms": 500
+          },
+          {
+            "event_id": "a-minor--first--ascending--2",
+            "spelled_pitch": "E4",
+            "midi": 64,
+            "frequency_hz": 329.627557,
+            "onset_ms": 600,
+            "duration_ms": 500
+          },
+          {
+            "event_id": "a-minor--first--ascending--3",
+            "spelled_pitch": "A4",
+            "midi": 69,
+            "frequency_hz": 440.0,
+            "onset_ms": 1200,
+            "duration_ms": 500
+          }
+        ],
+        "sustain_pedal": false,
+        "autoplay": false,
+        "status": "event_data_ready_not_rendered_or_auditioned",
+        "audio_file": null
+      },
+      "diagram": {
+        "asset_id": "svg-a-minor--first",
+        "relative_path": "assets/a-minor--first.svg",
+        "highlight_midi": [
+          60,
+          64,
+          69
+        ],
+        "keyboard_range_midi": [
+          48,
+          72
+        ],
+        "keyboard_range_written": [
+          "C3",
+          "C5"
+        ],
+        "alt_text": "A minor, first inversion: C4, E4, A4 from low to high. Marked keys are the notes to play."
+      },
+      "print_data": {
+        "voicing_id": "a-minor--first",
+        "spelled_pitches": [
+          "C4",
+          "E4",
+          "A4"
+        ],
+        "highlight_midi": [
+          60,
+          64,
+          69
+        ]
+      },
+      "fingering": {
+        "right_hand": null,
+        "left_hand": null,
+        "display": false,
+        "status": "withheld_pending_contextual_professional_review"
+      },
+      "source_ids": [
+        "S04",
+        "S08",
+        "S14",
+        "S16",
+        "S05",
+        "S06"
+      ],
+      "claim_ids": [
+        "F01",
+        "F02",
+        "F07",
+        "C-a-minor"
+      ],
+      "verification": {
+        "pitch_class_spelling": "cross_checked",
+        "register_assignment": "editorial_choice_checked_by_formula",
+        "audio_playback_tested": false,
+        "professional_signoff": null
+      },
+      "evidence_status": "[推断]",
+      "derivation": "和弦音名由来源直接核对；此处的具体音区和逐音/齐奏事件为据此生成的展示数据。"
+    },
+    "a-minor--second": {
+      "voicing_id": "a-minor--second",
+      "chord_id": "a-minor",
+      "inversion": "second",
+      "inversion_label": "Second inversion",
+      "chord_symbol": "Am/E",
+      "spacing": "close_position_no_doubling",
+      "notes_low_to_high": [
+        {
+          "spelled_pitch": "E4",
+          "display_pitch": "E4",
+          "letter": "E",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 64,
+          "pitch_class": 4,
+          "frequency_hz": 329.627557,
+          "key_color": "white",
+          "physical_key_id": "midi-64",
+          "chord_member": "fifth"
+        },
+        {
+          "spelled_pitch": "A4",
+          "display_pitch": "A4",
+          "letter": "A",
+          "accidental_semitones": 0,
+          "written_octave": 4,
+          "midi": 69,
+          "pitch_class": 9,
+          "frequency_hz": 440.0,
+          "key_color": "white",
+          "physical_key_id": "midi-69",
+          "chord_member": "root"
+        },
+        {
+          "spelled_pitch": "C5",
+          "display_pitch": "C5",
+          "letter": "C",
+          "accidental_semitones": 0,
+          "written_octave": 5,
+          "midi": 72,
+          "pitch_class": 0,
+          "frequency_hz": 523.251131,
+          "key_color": "white",
+          "physical_key_id": "midi-72",
+          "chord_member": "third"
+        }
+      ],
+      "bass_spelling": "E4",
+      "display_midi": [
+        64,
+        69,
+        72
+      ],
+      "playback": {
+        "together": [
+          {
+            "event_id": "a-minor--second--together--1",
+            "spelled_pitch": "E4",
+            "midi": 64,
+            "frequency_hz": 329.627557,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          },
+          {
+            "event_id": "a-minor--second--together--2",
+            "spelled_pitch": "A4",
+            "midi": 69,
+            "frequency_hz": 440.0,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          },
+          {
+            "event_id": "a-minor--second--together--3",
+            "spelled_pitch": "C5",
+            "midi": 72,
+            "frequency_hz": 523.251131,
+            "onset_ms": 0,
+            "duration_ms": 1200
+          }
+        ],
+        "ascending": [
+          {
+            "event_id": "a-minor--second--ascending--1",
+            "spelled_pitch": "E4",
+            "midi": 64,
+            "frequency_hz": 329.627557,
+            "onset_ms": 0,
+            "duration_ms": 500
+          },
+          {
+            "event_id": "a-minor--second--ascending--2",
+            "spelled_pitch": "A4",
+            "midi": 69,
+            "frequency_hz": 440.0,
+            "onset_ms": 600,
+            "duration_ms": 500
+          },
+          {
+            "event_id": "a-minor--second--ascending--3",
+            "spelled_pitch": "C5",
+            "midi": 72,
+            "frequency_hz": 523.251131,
+            "onset_ms": 1200,
+            "duration_ms": 500
+          }
+        ],
+        "sustain_pedal": false,
+        "autoplay": false,
+        "status": "event_data_ready_not_rendered_or_auditioned",
+        "audio_file": null
+      },
+      "diagram": {
+        "asset_id": "svg-a-minor--second",
+        "relative_path": "assets/a-minor--second.svg",
+        "highlight_midi": [
+          64,
+          69,
+          72
+        ],
+        "keyboard_range_midi": [
+          48,
+          72
+        ],
+        "keyboard_range_written": [
+          "C3",
+          "C5"
+        ],
+        "alt_text": "A minor, second inversion: E4, A4, C5 from low to high. Marked keys are the notes to play."
+      },
+      "print_data": {
+        "voicing_id": "a-minor--second",
+        "spelled_pitches": [
+          "E4",
+          "A4",
+          "C5"
+        ],
+        "highlight_midi": [
+          64,
+          69,
+          72
+        ]
+      },
+      "fingering": {
+        "right_hand": null,
+        "left_hand": null,
+        "display": false,
+        "status": "withheld_pending_contextual_professional_review"
+      },
+      "source_ids": [
+        "S04",
+        "S08",
+        "S16",
+        "S05",
+        "S06"
+      ],
+      "claim_ids": [
+        "F01",
+        "F02",
+        "F07",
+        "C-a-minor"
+      ],
+      "verification": {
+        "pitch_class_spelling": "cross_checked",
+        "register_assignment": "editorial_choice_checked_by_formula",
+        "audio_playback_tested": false,
+        "professional_signoff": null
+      },
+      "evidence_status": "[推断]",
+      "derivation": "和弦音名由来源直接核对；此处的具体音区和逐音/齐奏事件为据此生成的展示数据。"
+    }
+  },
+  "conventions": {
+    "note_naming": "scientific_pitch_notation; middle C=C4",
+    "accidental_storage": "ASCII b/# retained; display may use ♭/♯",
+    "octave_rule": "octave belongs to written natural letter; Cb4 maps to MIDI59/B3",
+    "tuning": "12-tone equal temperament",
+    "a4_hz": 440,
+    "a4_midi": 69,
+    "frequency_formula": "440 * 2 ** ((midi - 69) / 12)",
+    "midi_note_formula": "12 * (written_octave + 1) + natural_pitch_class + accidental_semitones",
+    "midi_role": "Internal pitch identifier only; no MIDI-device input feature.",
+    "chord_root_vs_bass": "root_spelling is identity; bass_spelling is lowest pitch in the chosen voicing",
+    "white_pitch_classes": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11
+    ],
+    "diagram_range_midi": [
+      48,
+      72
+    ],
+    "audio_timbre": "planned synthesized reference tone, not sampled piano",
+    "rhythm_and_register": "editorial illustration, not a performance or fingering prescription"
+  },
+  "searchSections": [
+    {
+      "id": "am-result",
+      "heading": "A minor notes and keyboard positions",
+      "text": "A minor notes and keyboard positions The A minor chord, written Am, contains A, C, and E. Position Play chord Chord symbol: Am. Chord tones: A–C–E. A is the root, C is the minor third, and E is the perfect fifth. The root stays A in every inversion. Choose a position to change the lowest note. The keyboard diagram, note list, and playback all follow that same selection."
+    },
+    {
+      "id": "am-find-notes",
+      "heading": "Find A, C, and E on the keyboard",
+      "text": "Find A, C, and E on the keyboard {\"heading\": \"Find A, C, and E on the keyboard\", \"paragraphs\": [\"Start with C4, middle C. A3 is two white-key steps to its left: move past B3 to A3. E4 is two white-key steps to the right of C4: move past D4 to E4.\", \"The marked keys show pitches, not a hand shape or a required fingering.\"], \"steps\": [\"Locate A3, C4, and E4 using the labels.\", \"Play them separately to check their order, then sound the three notes together.\", \"If you use another octave, move all three notes by the same number of octaves to keep this root-position shape.\"], \"table\": null, \"controls\": [], \"links\": []}"
+    },
+    {
+      "id": "am-inversions",
+      "heading": "A minor inversions",
+      "text": "A minor inversions {\"heading\": \"A minor inversions\", \"paragraphs\": [\"An inversion changes which chord tone is lowest. First inversion puts C in the bass; second inversion puts E in the bass. The letters after the slash in Am/C and Am/E identify that bass note.\", \"These examples use close position without doubled notes. Other spacings are possible; the lowest note determines the inversion.\"], \"steps\": [], \"table\": {\"columns\": [\"Position\", \"Symbol\", \"Notes, low to high\", \"Bass\"], \"rows\": [[\"Root position\", \"Am\", \"A3–C4–E4\", \"A3\"], [\"First inversion\", \"Am/C\", \"C4–E4–A4\", \"C4\"], [\"Second inversion\", \"Am/E\", \"E4–A4–C5\", \"E4\"]]}, \"controls\": [], \"links\": []}"
+    },
+    {
+      "id": "am-why-minor",
+      "heading": "What makes this chord minor?",
+      "text": "What makes this chord minor? {\"heading\": \"What makes this chord minor?\", \"paragraphs\": [\"From A to C is a minor third: three semitone steps. From C to E is a major third: four semitone steps. Together, the outer notes A and E form a perfect fifth.\", \"Compare A minor, A–C–E, with A major, A–C♯–E. Only the third changes. A minor uses C natural; A major uses C-sharp. The interval pattern identifies the chord as minor, without needing a mood label.\"], \"steps\": [], \"table\": null, \"controls\": [], \"links\": []}"
+    },
+    {
+      "id": "am-practice",
+      "heading": "Try the three positions",
+      "text": "Try the three positions {\"heading\": \"Try the three positions\", \"paragraphs\": [\"Use this as a note-finding check. Work with one position at a time before moving to the next.\"], \"steps\": [\"Play A3–C4–E4 and say “A in the bass.”\", \"Choose first inversion and play C4–E4–A4. Say “C in the bass.”\", \"Choose second inversion and play E4–A4–C5. Say “E in the bass.”\", \"Without looking at the chord symbol, name the lowest note and identify the position. Check against the table.\"], \"table\": null, \"controls\": [], \"links\": []}"
+    },
+    {
+      "id": "am-print",
+      "heading": "Print the A minor reference",
+      "text": "Print the A minor reference {\"heading\": \"Print the A minor reference\", \"paragraphs\": [\"Download the one-page reference to compare all three positions. It includes the exact pitches and keyboard diagrams shown here, with no finger numbers.\", \"Use Print this position if you only need the current selection.\"], \"steps\": [], \"table\": null, \"controls\": [{\"control_id\": \"am-download\", \"label\": \"Download A minor PDF\", \"action\": \"download_asset\", \"parameters\": {\"asset_id\": \"pdf-a-minor\"}, \"show_when\": \"asset_is_served\", \"status\": \"copy_ready_feature_not_implemented\"}, {\"control_id\": \"am-print-current\", \"label\": \"Print this position\", \"action\": \"print_current_voicing\", \"parameters\": {}, \"show_when\": \"matching_feature_passes_acceptance\", \"status\": \"copy_ready_feature_not_implemented\"}], \"links\": []}"
+    },
+    {
+      "id": "am-questions",
+      "heading": "A minor questions",
+      "text": "A minor questions {\"heading\": \"A minor questions\", \"paragraphs\": [], \"steps\": [], \"table\": {\"columns\": [\"Question\", \"Answer\"], \"rows\": [[\"Is Am the same as A minor?\", \"Yes. Am is a common chord symbol for the A minor triad. You may also see A min or A−.\"], [\"Does Am/C become a C chord?\", \"No. It is still A minor, with C as the lowest note. Its chord tones are still A, C, and E.\"], [\"Is Am the same as Am7?\", \"No. Am is A–C–E; Am7 adds G. This page covers the three-note Am chord.\"], [\"Are the numbers in A3, C4, and E4 finger numbers?\", \"No. They identify octaves. The diagrams in this reference do not prescribe fingering.\"]]}, \"controls\": [], \"links\": []}"
+    }
+  ]
+}

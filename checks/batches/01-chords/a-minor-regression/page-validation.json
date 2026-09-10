@@ -1,0 +1,35 @@
+{
+  "executed_at": "2026-09-10T06:07:57.013Z",
+  "passed": 0,
+  "failed": 2,
+  "results": [
+    {
+      "name": "Browser execution completed",
+      "passed": false,
+      "actual": "page.waitForFunction: Timeout 30000ms exceeded.\n    at ready (C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\scripts\\check-a-minor.mjs:19:104)\n    at async file:///C:/Users/Admin/Documents/viviyang_github/piano/scripts/check-a-minor.mjs:37:101"
+    },
+    {
+      "name": "No runtime/console/hydration errors",
+      "passed": false,
+      "actual": [
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE",
+        "WebSocket connection to 'ws://127.0.0.1:3000/_next/hmr?id=lZ5pLoq_xmaXORC6Sopcz' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE"
+      ]
+    }
+  ],
+  "not_tested": [
+    "human listening",
+    "real mobile device",
+    "screen-reader audit",
+    "physical printing",
+    "production deployment"
+  ]
+}

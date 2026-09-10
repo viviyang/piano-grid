@@ -1,0 +1,258 @@
+
+> piano-reference@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+✓ Ready in 634ms
+✓ Running next.config.ts took 48ms
+
+ GET /chords 200 in 537ms (next.js: 223ms, application-code: 314ms)
+ GET /chords/a-minor 200 in 115ms (next.js: 32ms, application-code: 83ms)
+ GET /chords/a-major 200 in 151ms (next.js: 35ms, application-code: 116ms)
+ GET /chords/c-major 200 in 144ms (next.js: 30ms, application-code: 114ms)
+ GET / 404 in 81ms (next.js: 41ms, application-code: 41ms)
+ GET /chords/b-major 404 in 40ms (next.js: 9ms, application-code: 31ms)
+ GET /chords 200 in 314ms (next.js: 19ms, application-code: 295ms)
+ GET /chords 200 in 285ms (next.js: 8ms, application-code: 277ms)
+✓ Compiled in 186ms
+ GET /chords 200 in 199ms (next.js: 42ms, application-code: 156ms)
+✓ Compiled in 45ms
+✓ Compiled in 57ms
+ GET /chords 200 in 881ms (next.js: 96ms, application-code: 785ms)
+ GET /chords 200 in 755ms (next.js: 8ms, application-code: 747ms)
+ GET /chords 200 in 649ms (next.js: 10ms, application-code: 639ms)
+ GET /chords 200 in 660ms (next.js: 9ms, application-code: 651ms)
+ GET /chords 200 in 645ms (next.js: 8ms, application-code: 637ms)
+ GET /chords 200 in 669ms (next.js: 8ms, application-code: 661ms)
+ GET /chords 200 in 830ms (next.js: 9ms, application-code: 822ms)
+ GET /chords 200 in 849ms (next.js: 11ms, application-code: 838ms)
+ GET /chords 200 in 718ms (next.js: 11ms, application-code: 707ms)
+ GET /chords 200 in 736ms (next.js: 9ms, application-code: 727ms)
+ GET /chords 200 in 716ms (next.js: 12ms, application-code: 704ms)
+ GET /chords 200 in 574ms (next.js: 11ms, application-code: 563ms)
+ GET /chords 200 in 431ms (next.js: 9ms, application-code: 423ms)
+ GET /chords 200 in 288ms (next.js: 12ms, application-code: 276ms)
+ GET /chords 200 in 149ms (next.js: 10ms, application-code: 140ms)
+ GET /keyboard-notes 200 in 994ms (next.js: 652ms, application-code: 342ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="keyboard-n..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/keyboard-..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+              <SegmentViewNode type="page" pagePath="keyboard-n...">
+                <SegmentTrieNode>
+                <KeyboardLookupPage>
+                  <KeyboardPage>
+                    <div className="am-page kn...">
+                      <a>
+                      <header>
+                      <main id="main" className="pr-container" tabIndex={-1}>
+                        <header>
+                        <LookupExperience layouts={[...]}>
+                          <section className="am-tool kn..." aria-label="Find a pia...">
+                            <div className="kn-toolbar">
+                              <LayoutChoice>
+                              <form className="kn-query" onSubmit={function onSubmit}>
+                                <label className="kn-field">
+                                  <input
+                                    value=""
+                                    onChange={function onChange}
+                                    placeholder="Try F3, A4, C or A-flat"
+                                    disabled={true}
+-                                   style={{caret-color:"transparent"}}
+                                  >
+                                ...
+                            ...
+                        ...
+                      ...
+              ...
+            ...
+ 
+ GET /keyboard-notes/labeled 200 in 707ms (next.js: 375ms, application-code: 331ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="labeled/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/keyboard-..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+              <SegmentViewNode type="page" pagePath="keyboard-n...">
+                <SegmentTrieNode>
+                <LabeledKeyboardPage>
+                  <KeyboardPage>
+                    <div className="am-page kn...">
+                      <a>
+                      <header>
+                      <main id="main" className="pr-container" tabIndex={-1}>
+                        <header>
+                        <LabeledExperience layouts={[...]} sourceIDs={[...]}>
+                          <section className="am-tool kn..." aria-label="Labeled ke...">
+                            <div className="kn-toolbar">
+                              <LayoutChoice>
+                              <label className="kn-checkbox">
+                                <input
+                                  type="checkbox"
+                                  checked={true}
+                                  disabled={true}
+                                  onChange={function onChange}
+-                                 style={{caret-color:"transparent"}}
+                                >
+                                ...
+                            ...
+                          ...
+                        ...
+                        ...
+                      ...
+              ...
+            ...
+ 
+ GET /keyboard-notes/chart 200 in 612ms (next.js: 303ms, application-code: 309ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="chart/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/keyboard-..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                <SegmentViewNode type="page" pagePath="keyboard-n...">
+                  <SegmentTrieNode>
+                  <KeyboardChartPage>
+                    <KeyboardPage>
+                      <div className="am-page kn...">
+                        <a>
+                        <header>
+                        <main id="main" className="pr-container" tabIndex={-1}>
+                          <header>
+                          <ChartExperience notes={[...]} ranges={[...]} defaultNote="C4">
+                            <section className="am-tool kn..." aria-label="Staff and ...">
+                              <div className="kn-toolbar">
+                                <label>
+                                <label>
+                                <label className="kn-checkbox">
+                                  <input
+                                    type="checkbox"
+                                    checked={false}
+                                    disabled={true}
+                                    onChange={function onChange}
+-                                   style={{caret-color:"transparent"}}
+                                  >
+                                  ...
+                              ...
+                            ...
+                          ...
+                        ...
+                ...
+              ...
+ 
+ GET /keyboard-notes/labeled 200 in 228ms (next.js: 17ms, application-code: 211ms)
+ GET /keyboard-notes 200 in 163ms (next.js: 7ms, application-code: 155ms)
+ GET /keyboard-notes/labeled 200 in 154ms (next.js: 6ms, application-code: 147ms)
+ GET /keyboard-notes/chart 200 in 150ms (next.js: 7ms, application-code: 143ms)
+ GET /keyboard-notes 200 in 130ms (next.js: 5ms, application-code: 124ms)
+ GET /keyboard-notes/labeled 200 in 150ms (next.js: 7ms, application-code: 143ms)
+ GET /keyboard-notes/chart 200 in 145ms (next.js: 5ms, application-code: 140ms)
+✓ Compiled in 58ms
+ GET /chords 200 in 129ms (next.js: 8ms, application-code: 121ms)
+ GET /keyboard-notes/chart 200 in 149ms (next.js: 19ms, application-code: 131ms)
+✓ Compiled in 38ms
+ GET /keyboard-notes/chart 200 in 249ms (next.js: 24ms, application-code: 225ms)
+ GET /chords 200 in 250ms (next.js: 136ms, application-code: 114ms)
+✓ Compiled in 37ms
+ GET /keyboard-notes/chart 200 in 210ms (next.js: 20ms, application-code: 190ms)
+ GET /chords 200 in 211ms (next.js: 108ms, application-code: 103ms)
+ GET /keyboard-notes/labeled 200 in 199ms (next.js: 17ms, application-code: 182ms)
+ GET /chords/a-minor 200 in 166ms (next.js: 30ms, application-code: 137ms)
+ GET /chords/a-minor 200 in 101ms (next.js: 9ms, application-code: 92ms)
+ GET /chords/a-minor 200 in 111ms (next.js: 8ms, application-code: 103ms)
+ GET /chords/a-minor 200 in 114ms (next.js: 8ms, application-code: 106ms)
+ GET /chords/a-minor 200 in 90ms (next.js: 7ms, application-code: 84ms)
+ GET /chords/a-minor 200 in 89ms (next.js: 6ms, application-code: 83ms)
+ GET / 404 in 52ms (next.js: 18ms, application-code: 34ms)
+ GET /chords 200 in 197ms (next.js: 6ms, application-code: 191ms)
+ GET /chords/a-major 200 in 166ms (next.js: 20ms, application-code: 146ms)
+ GET /chords/c-major 200 in 172ms (next.js: 24ms, application-code: 148ms)
+ GET /chords 200 in 252ms (next.js: 7ms, application-code: 245ms)
+ GET / 404 in 38ms (next.js: 9ms, application-code: 29ms)
+ GET /chords/b-major 404 in 35ms (next.js: 8ms, application-code: 27ms)
+ GET /chords/c-minor 404 in 37ms (next.js: 9ms, application-code: 28ms)
+ GET /chords/by-key 404 in 36ms (next.js: 7ms, application-code: 30ms)
+ GET /scales 404 in 34ms (next.js: 7ms, application-code: 27ms)
+ GET /chords 200 in 227ms (next.js: 7ms, application-code: 220ms)
+ GET /chords/a-major 200 in 132ms (next.js: 6ms, application-code: 126ms)
+ GET /chords/c-major 200 in 139ms (next.js: 7ms, application-code: 132ms)
+ GET /chords 200 in 274ms (next.js: 6ms, application-code: 268ms)
+ GET /chords 200 in 260ms (next.js: 8ms, application-code: 252ms)
+ GET /chords 200 in 258ms (next.js: 8ms, application-code: 250ms)
+ GET /chords/a-major 200 in 164ms (next.js: 8ms, application-code: 157ms)
+ GET /chords/a-major 200 in 143ms (next.js: 7ms, application-code: 136ms)
+ GET /chords/a-major 200 in 165ms (next.js: 8ms, application-code: 157ms)
+ GET /chords/c-major 200 in 140ms (next.js: 7ms, application-code: 133ms)
+ GET /chords/c-major 200 in 147ms (next.js: 6ms, application-code: 140ms)
+ GET /chords/c-major 200 in 155ms (next.js: 7ms, application-code: 148ms)
+ GET /chords/a-major 200 in 133ms (next.js: 7ms, application-code: 126ms)
+ GET /keyboard-notes/chart 200 in 184ms (next.js: 5ms, application-code: 179ms)
+ GET /keyboard-notes/chart 200 in 250ms (next.js: 6ms, application-code: 244ms)
+ GET /keyboard-notes 200 in 244ms (next.js: 23ms, application-code: 221ms)
+ GET /keyboard-notes/labeled 200 in 179ms (next.js: 8ms, application-code: 172ms)
+ GET /keyboard-notes/chart 200 in 201ms (next.js: 8ms, application-code: 193ms)
+ GET /keyboard-notes 200 in 141ms (next.js: 10ms, application-code: 131ms)
+ GET /keyboard-notes/labeled 200 in 141ms (next.js: 5ms, application-code: 136ms)
+✓ Compiled in 29ms
+ GET /keyboard-notes/labeled 200 in 108ms (next.js: 12ms, application-code: 96ms)
+ GET /chords 200 in 202ms (next.js: 7ms, application-code: 195ms)
+ GET /keyboard-notes/chart 200 in 203ms (next.js: 15ms, application-code: 188ms)
+✓ Compiled in 67ms
+ GET /keyboard-notes 200 in 165ms (next.js: 14ms, application-code: 152ms)
+ GET /keyboard-notes/labeled 200 in 159ms (next.js: 6ms, application-code: 153ms)
+ GET /keyboard-notes/chart 200 in 156ms (next.js: 5ms, application-code: 151ms)
+ GET / 404 in 40ms (next.js: 8ms, application-code: 33ms)
+ GET /scales 404 in 38ms (next.js: 8ms, application-code: 30ms)
+ GET /keyboard-notes/frequencies 404 in 39ms (next.js: 8ms, application-code: 31ms)
+ GET /keyboard-notes/unknown 404 in 39ms (next.js: 8ms, application-code: 31ms)
+ GET /keyboard-notes 200 in 170ms (next.js: 8ms, application-code: 163ms)
+ GET /keyboard-notes 200 in 224ms (next.js: 11ms, application-code: 214ms)
+ GET /keyboard-notes 200 in 135ms (next.js: 9ms, application-code: 127ms)
+ GET /keyboard-notes/chart 200 in 222ms (next.js: 10ms, application-code: 211ms)
+ GET /keyboard-notes/chart 200 in 196ms (next.js: 9ms, application-code: 187ms)
+ GET /keyboard-notes/chart 200 in 203ms (next.js: 7ms, application-code: 196ms)
+ GET /keyboard-notes 200 in 129ms (next.js: 7ms, application-code: 122ms)
+ GET /keyboard-notes/chart 200 in 167ms (next.js: 6ms, application-code: 161ms)
+[?25h

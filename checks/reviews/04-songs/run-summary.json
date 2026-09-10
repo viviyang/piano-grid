@@ -1,0 +1,28 @@
+{
+  "review_id": "04-songs-independent-review",
+  "review_date": "2026-09-09",
+  "verdict": "PASS_WITH_NOTES",
+  "scope": ["/songs", "/songs/easy"],
+  "environment": {
+    "node": "v24.14.1",
+    "production_base_url": "http://127.0.0.1:3014",
+    "git_head": "29d9c472fbc675ab6a5e39d7d9ad4cd721c6c232"
+  },
+  "runs": [
+    {"name":"foundation","command":"npm run check","passed":560,"failed":0,"artifact":"machine/foundation.json"},
+    {"name":"typecheck_and_tailwind","command":"npm run check","passed":true,"failed":false,"artifact":"machine/tailwind-compile.json"},
+    {"name":"song_data","command":"node scripts/check-song-data.mjs","passed":902,"failed":0,"artifact":"machine/data-validation.json"},
+    {"name":"song_browser","command":"node scripts/check-song-batch.mjs","passed":119,"failed":0,"artifact":"machine/validation.json"},
+    {"name":"song_production","command":"node scripts/check-song-production.mjs","passed":54,"failed":0,"artifact":"machine/production-validation.json"},
+    {"name":"a_minor_regression","command":"node scripts/check-a-minor.mjs","passed":162,"failed":0,"artifact":"regression/a-minor-validation.json"},
+    {"name":"production_build","command":"npm run build","passed":true,"failed":false,"artifact":null}
+  ],
+  "findings": {"P0":0,"P1":0,"P2":0,"P3":1},
+  "not_run": [
+    "real mobile device",
+    "NVDA, JAWS, or VoiceOver end-to-end screen-reader session",
+    "third-party external-link destination availability",
+    "production deployment"
+  ],
+  "product_code_modified_by_review": false
+}

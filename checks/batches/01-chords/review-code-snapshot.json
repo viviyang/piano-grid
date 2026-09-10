@@ -1,0 +1,158 @@
+[
+  {
+    "path": "src/app/globals.css",
+    "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "sha256": "2b0fef642e8a9896516b96933d37feeacdb39d5af07df64328cf4e2b25496dd2"
+  },
+  {
+    "path": "src/app/chords/page.tsx",
+    "sha256": "fcec42ec62091cc759888ba940b76c61336813803f9778424fbc09052a0bf303"
+  },
+  {
+    "path": "src/app/chords/a-major/page.tsx",
+    "sha256": "3964e83e73861d5c53e534296439ef891b47ae9a965e7f1e424bbec9772e7810"
+  },
+  {
+    "path": "src/app/chords/a-minor/a-minor.css",
+    "sha256": "ee054c784cab7d70d6bf4eda89975c0df78593c9f33a099db230abc7548f2f9d"
+  },
+  {
+    "path": "src/app/chords/a-minor/page.tsx",
+    "sha256": "4f88899343901029479423bb0b9520f617d3b33863385f0690f3d3482fab2375"
+  },
+  {
+    "path": "src/app/chords/c-major/page.tsx",
+    "sha256": "557037634b21ada89ec41198c4744b0388e158b2fa056fa40b0872364edd27e6"
+  },
+  {
+    "path": "src/components/a-minor/experience.tsx",
+    "sha256": "5282af4b9fca2a184cf7838ff8277e18fea0af99c597f51bf17325de8575c955"
+  },
+  {
+    "path": "src/components/a-minor/icon.tsx",
+    "sha256": "46d07510c4414fbd42d0d281edc72904c1f9f786355d5f930b0badba262d95c4"
+  },
+  {
+    "path": "src/components/a-minor/keyboard.tsx",
+    "sha256": "da82e2ab30b454b1aa815a0436619f2749b34b81a1366eb08e7a5484107b398a"
+  },
+  {
+    "path": "src/components/a-minor/page-search.tsx",
+    "sha256": "b8d7dc9ea66f447a726322bd491a3f2c994860d95c9098a0f0fcd55dcd3a068b"
+  },
+  {
+    "path": "src/components/chords/center-experience.tsx",
+    "sha256": "1748f0037a00985f08402c37ebee03e53290db48193b3c662511272e7ecf23ad"
+  },
+  {
+    "path": "src/components/chords/center-page.tsx",
+    "sha256": "e01f71237bc7487cefdef672355bdd05fc82527eee1a5c7cdb98a6cd73c2caeb"
+  },
+  {
+    "path": "src/components/chords/center.css",
+    "sha256": "050971d506053bf91d3179ccf16d24bd450ee6ba65df13afa8c25783c9384252"
+  },
+  {
+    "path": "src/components/chords/detail-page.tsx",
+    "sha256": "3e1813d676b1575f2c0492c1f4c89b283d97f0295154f6983e54e0c28172cf82"
+  },
+  {
+    "path": "src/components/chords/keyboard-viewport.tsx",
+    "sha256": "ea988a705b776805ad9981dc471f0fab70c2890c42c05cb60780e6c1d9c0ffe9"
+  },
+  {
+    "path": "src/components/chords/playback-controls.tsx",
+    "sha256": "b48c49c75494809e8354c9b2f98d908591eb9de7a66b06be487e02a24ba3b6a0"
+  },
+  {
+    "path": "src/components/chords/print-voicing.tsx",
+    "sha256": "65c79b6fcb2eb34b7a649d94b52dadd175383f91699e3cdd815b37785e12d791"
+  },
+  {
+    "path": "src/components/chords/shared.css",
+    "sha256": "77ecf496d9015f201f706a705af9563474e19c4a6462bc02c404abe34baf744d"
+  },
+  {
+    "path": "src/components/chords/site-chrome.tsx",
+    "sha256": "8f8ee4b125728921219ef3d171ef89eb6917b0e667b11d23a8564a5cd2f6da9c"
+  },
+  {
+    "path": "src/components/ui/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/hooks/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/lib/a-minor-audio.ts",
+    "sha256": "ab8d657024df7277d8afa0fabc1ef0b980dafaa1bc436025c547abde41a02614"
+  },
+  {
+    "path": "src/lib/a-minor-content.ts",
+    "sha256": "8df208d63c242741ee70107671b929ddd0a2cb45724e24ca6fdd472c71614b54"
+  },
+  {
+    "path": "src/lib/a-minor-types.ts",
+    "sha256": "7a32a270dcf30af6ec561cb2a8aa0fa409142db9143e1c0e589b13070e3979a6"
+  },
+  {
+    "path": "src/lib/chord-content.ts",
+    "sha256": "9e73f8ad5016235ec3c5e367fab319f5acd337c7e53732d695eea4577607c5f9"
+  },
+  {
+    "path": "src/lib/site-content.ts",
+    "sha256": "5bb76b879ea1edcfea47db62ba8fe7aa36d3fc7b4318935e70ab8c3f7a98f6d5"
+  },
+  {
+    "path": "src/lib/utils.ts",
+    "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac"
+  },
+  {
+    "path": "src/styles/foundation.css",
+    "sha256": "f78ed427f08393b79bdbec82807249349a58daa2f2da524dc52ac888c38445b1"
+  },
+  {
+    "path": "src/styles/tokens.css",
+    "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+  },
+  {
+    "path": "scripts/check-a-minor.mjs",
+    "sha256": "28a280c3c13e50e27517b1b6540009b125b2854be252b7cd02149c1f7fa68619"
+  },
+  {
+    "path": "scripts/check-chord-batch.mjs",
+    "sha256": "ab8ed2b2113d1460cfa90a4b4009956424181b08672ced596fb48b7d1a7751f6"
+  },
+  {
+    "path": "scripts/check-chord-fallbacks.mjs",
+    "sha256": "a18f8c54fcef854fc07c1b19a70aed85ca95882fb50e4cfb70ba3f04961ae11d"
+  },
+  {
+    "path": "scripts/check-content-adapters.mjs",
+    "sha256": "9c0a559d40d4e8de74804634d8b0292dd0a769bc02085b4a680f0e04fea5c0a7"
+  },
+  {
+    "path": "scripts/check-css.mjs",
+    "sha256": "e05c6cba08c2ddb35bcf04f89a014e6c6a6c1e42c1db07a04534de2d67522ea1"
+  },
+  {
+    "path": "scripts/check-foundation.mjs",
+    "sha256": "7a55655bf717e5a4caab108b3fd1aba1ea01d5cac72d3c1503fd57867d317540"
+  },
+  {
+    "path": "scripts/export-chord-assets.mjs",
+    "sha256": "84006ff804406700563c5e5ff169c681edaaed640044d38c97f2d9f3730f3c81"
+  },
+  {
+    "path": "scripts/intake-site.mjs",
+    "sha256": "ed157ef74c8a63ea568f5ca29b0356f726d2c26236416b75a966ae8a543ace66"
+  },
+  {
+    "path": "scripts/record-chord-batch.mjs",
+    "sha256": "4b9f7f04c425f45f26d9904d54322a36fdd1d72ff5467a26d941ac5cf030957d"
+  }
+]

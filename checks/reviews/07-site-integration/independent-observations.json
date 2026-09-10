@@ -1,0 +1,24 @@
+{
+  "artifact_type": "integration-independent-observations",
+  "verdict": "NEEDS_FIX",
+  "finding_ids": [
+    "P1-oversized-integration-heading"
+  ],
+  "batch": "07-site-integration",
+  "executed_at": "2026-09-10T00:17:11.3793671Z",
+  "head": "29d9c472fbc675ab6a5e39d7d9ad4cd721c6c232",
+  "frozen_changed_files": 33,
+  "frozen_hash_mismatches": 0,
+  "manual_browser_steps": [
+    "Home page at IAB default viewport: all five available task destinations are links; Sheet Music is a non-link unavailable item.",
+    "Home navigation to Tools succeeds.",
+    "Tools disclosure expands three unavailable printable names without exposing links."
+  ],
+  "test_results": {
+    "integration_browser": "178/178",
+    "foundation": "560/560",
+    "a_minor": "162/162",
+    "production": "102/102",
+    "integration_data": "153/153"
+  }
+}

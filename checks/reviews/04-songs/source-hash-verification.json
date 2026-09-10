@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-09-09T13:00:00Z",
+  "manifest": "checks/batches/04-songs/changed-files.json",
+  "scope": "source_changes",
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {"path":"src/app/songs/easy/page.tsx","expected":"c9ae4117a9e999c698649bbf7286ede8ed289664dd8b881597d78bd1b61c47b3","actual":"c9ae4117a9e999c698649bbf7286ede8ed289664dd8b881597d78bd1b61c47b3","matches":true},
+    {"path":"src/app/songs/page.tsx","expected":"719d96c794a01ab70ee2af4b6b5579b03063699f55c3966c606f0b35e9af0fc0","actual":"719d96c794a01ab70ee2af4b6b5579b03063699f55c3966c606f0b35e9af0fc0","matches":true},
+    {"path":"src/components/chords/site-chrome.tsx","expected":"e14c094fd8b61fe76d8e3d845e802ec39df6e2a59590b166ddbe5aa590f4bba3","actual":"e14c094fd8b61fe76d8e3d845e802ec39df6e2a59590b166ddbe5aa590f4bba3","matches":true},
+    {"path":"src/components/songs/center-experience.tsx","expected":"8aa6774e4c151d3bf5381d6eaf1de29228d1f6409c6521375182395c6677f7cf","actual":"8aa6774e4c151d3bf5381d6eaf1de29228d1f6409c6521375182395c6677f7cf","matches":true},
+    {"path":"src/components/songs/easy-experience.tsx","expected":"45545fa7a00348920edda1e20d1e6dcc5a5a0b246695bacc9410f6d9a3363c22","actual":"45545fa7a00348920edda1e20d1e6dcc5a5a0b246695bacc9410f6d9a3363c22","matches":true},
+    {"path":"src/components/songs/pages.tsx","expected":"18d62e59bf4e33a7f8dc37e3c2cb1498f4478050e2a4abb0e271087601dca735","actual":"18d62e59bf4e33a7f8dc37e3c2cb1498f4478050e2a4abb0e271087601dca735","matches":true},
+    {"path":"src/components/songs/resource-card.tsx","expected":"b28807083dd90dc3ca16a9dfa008521dc063e12014f36b9fb17e5216be5ee100","actual":"b28807083dd90dc3ca16a9dfa008521dc063e12014f36b9fb17e5216be5ee100","matches":true},
+    {"path":"src/components/songs/songs.css","expected":"df7803d774822512fb4714a54efa299118e801e18a69719e6aca77db60da691b","actual":"df7803d774822512fb4714a54efa299118e801e18a69719e6aca77db60da691b","matches":true},
+    {"path":"src/lib/site-content.ts","expected":"30b598d6fa3a7a4d7a2bbada0c46fd1fb8a9fce0efbd037c786a688b61b3b577","actual":"30b598d6fa3a7a4d7a2bbada0c46fd1fb8a9fce0efbd037c786a688b61b3b577","matches":true},
+    {"path":"src/lib/song-content.ts","expected":"c93ecb1dac3c3c18d5f5d201d0faa10e0eea1452ecf38b9040b33cd6e0c568c4","actual":"c93ecb1dac3c3c18d5f5d201d0faa10e0eea1452ecf38b9040b33cd6e0c568c4","matches":true},
+    {"path":"src/lib/song-types.ts","expected":"b2aad3d274639cba6c697832c01b37a714978a8c9ec4b982933afa6e26ed8127","actual":"b2aad3d274639cba6c697832c01b37a714978a8c9ec4b982933afa6e26ed8127","matches":true}
+  ]
+}

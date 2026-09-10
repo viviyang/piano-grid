@@ -1,0 +1,18 @@
+{
+  "compiler_used": "5.8.3",
+  "scope": "Syntax transpilation only, not project typecheck or declared package installation",
+  "result": [
+    {
+      "file": "src/app/layout.tsx",
+      "syntax_errors": []
+    },
+    {
+      "file": "src/lib/utils.ts",
+      "syntax_errors": []
+    },
+    {
+      "file": "next.config.ts",
+      "syntax_errors": []
+    }
+  ]
+}

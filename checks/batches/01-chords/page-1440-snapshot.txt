@@ -1,0 +1,114 @@
+- link "Skip to chord tool":
+  - /url: "#am-result"
+- banner:
+  - text: Piano Reference
+  - navigation "Site sections (other pages not available yet)": Keyboard Notes Chords Scales Guide
+  - button "Search this page"
+- main:
+  - navigation "Breadcrumb": Chords A minor
+  - heading "A Minor Piano Chord (Am)" [level=1]
+  - paragraph: The A minor chord, written Am, contains A, C, and E.
+  - region "A minor notes and keyboard positions":
+    - heading "A minor notes and keyboard positions" [level=2]
+    - term: A minor
+    - definition: Am
+    - term: Chord tones
+    - definition: A C E
+    - term: Formula
+    - definition: 1 ♭3 5
+    - group "Position":
+      - text: Position
+      - radio "Root position" [checked]
+      - text: Root position
+      - radio "First inversion"
+      - text: First inversion
+      - radio "Second inversion"
+      - text: Second inversion
+    - text: Notes from low to high A3 C4 E4
+    - strong: Am
+    - text: "Bass: A3"
+    - figure "C4 is middle C C3–C5":
+      - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+        - 'img "A minor, root position: A3, C4, E4 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C3–C5
+    - button "Play chord"
+    - button "Play notes one at a time"
+    - button "Stop" [disabled]
+    - button "Print this position"
+    - link "Download A minor PDF":
+      - /url: /assets/chords/a-minor-notes-inversions.pdf
+    - text: Simple reference tone; not a recording of an acoustic piano.
+    - paragraph: "Chord symbol: Am. Chord tones: A–C–E. A is the root, C is the minor third, and E is the perfect fifth. The root stays A in every inversion."
+    - paragraph: Choose a position to change the lowest note. The keyboard diagram, note list, and playback all follow that same selection.
+  - status
+  - region "Root-position example":
+    - heading "Root-position example" [level=2]
+    - paragraph: All three are white-key notes. In root position, play A as the lowest note, with C and E above it.
+    - paragraph: The root-position example uses A3–C4–E4, with C4 as middle C. Listen to these notes together or individually, then compare the two inversions.
+  - region "Find A, C, and E on the keyboard":
+    - heading "Find A, C, and E on the keyboard" [level=2]
+    - paragraph: "Start with C4, middle C. A3 is two white-key steps to its left: move past B3 to A3. E4 is two white-key steps to the right of C4: move past D4 to E4."
+    - paragraph: The marked keys show pitches, not a hand shape or a required fingering.
+    - list:
+      - listitem: Locate A3, C4, and E4 using the labels.
+      - listitem: Play them separately to check their order, then sound the three notes together.
+      - listitem: If you use another octave, move all three notes by the same number of octaves to keep this root-position shape.
+  - region "A minor inversions":
+    - heading "A minor inversions" [level=2]
+    - paragraph: An inversion changes which chord tone is lowest. First inversion puts C in the bass; second inversion puts E in the bass. The letters after the slash in Am/C and Am/E identify that bass note.
+    - paragraph: These examples use close position without doubled notes. Other spacings are possible; the lowest note determines the inversion.
+    - region "A minor inversion comparison table":
+      - 'table "A minor: root position, first inversion, and second inversion"':
+        - caption: "A minor: root position, first inversion, and second inversion"
+        - rowgroup:
+          - row "Position Symbol Notes, low to high Bass":
+            - columnheader "Position"
+            - columnheader "Symbol"
+            - columnheader "Notes, low to high"
+            - columnheader "Bass"
+        - rowgroup:
+          - row "Root position , current selection Am A3–C4–E4 A3":
+            - cell "Root position , current selection"
+            - cell "Am"
+            - cell "A3–C4–E4"
+            - cell "A3"
+          - row "First inversion Am/C C4–E4–A4 C4":
+            - cell "First inversion"
+            - cell "Am/C"
+            - cell "C4–E4–A4"
+            - cell "C4"
+          - row "Second inversion Am/E E4–A4–C5 E4":
+            - cell "Second inversion"
+            - cell "Am/E"
+            - cell "E4–A4–C5"
+            - cell "E4"
+  - region "What makes this chord minor?":
+    - heading "What makes this chord minor?" [level=2]
+    - paragraph: "From A to C is a minor third: three semitone steps. From C to E is a major third: four semitone steps. Together, the outer notes A and E form a perfect fifth."
+    - paragraph: Compare A minor, A–C–E, with A major, A–C♯–E. Only the third changes. A minor uses C natural; A major uses C-sharp. The interval pattern identifies the chord as minor, without needing a mood label.
+  - region "Try the three positions":
+    - heading "Try the three positions" [level=2]
+    - paragraph: Use this as a note-finding check. Work with one position at a time before moving to the next.
+    - list:
+      - listitem: Play A3–C4–E4 and say “A in the bass.”
+      - listitem: Choose first inversion and play C4–E4–A4. Say “C in the bass.”
+      - listitem: Choose second inversion and play E4–A4–C5. Say “E in the bass.”
+      - listitem: Without looking at the chord symbol, name the lowest note and identify the position. Check against the table.
+  - region "Print the A minor reference":
+    - heading "Print the A minor reference" [level=2]
+    - paragraph: Download the one-page reference to compare all three positions. It includes the exact pitches and keyboard diagrams shown here, with no finger numbers.
+    - paragraph: Use Print this position if you only need the current selection.
+    - link "Download A minor PDF":
+      - /url: /assets/chords/a-minor-notes-inversions.pdf
+    - button "Print this position"
+  - region "A minor questions":
+    - heading "A minor questions" [level=2]
+    - group: Is Am the same as A minor?
+    - group: Does Am/C become a C chord?
+    - group: Is Am the same as Am7?
+    - group: Are the numbers in A3, C4, and E4 finger numbers?
+- contentinfo:
+  - text: Piano Reference Local page preview · /chords/a-minor
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

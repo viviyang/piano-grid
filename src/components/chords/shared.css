@@ -1,0 +1,10 @@
+/* Additional domain states, using the established Foundation; no global theme. */
+.am-page .am-tool-notes:empty{display:none}
+.am-page .am-black-label{position:absolute;top:.75rem;left:50%;transform:translateX(-50%);font-size:var(--pr-type-key-label-size);line-height:1.4;font-weight:600;color:var(--foreground);white-space:nowrap;z-index:5}
+.am-page .am-key.am-black.am-is-selected{background:var(--piano-key-black);border-color:var(--piano-key-black)}
+.am-page .am-key.am-black.am-is-selected .am-marker{background:var(--piano-note-sounding-mark)}
+.am-page .am-key.am-black .am-black-label{color:var(--piano-note-sounding-mark)}
+.am-page[data-position="Root position"] tr[data-position="Root position"],.am-page[data-position="First inversion"] tr[data-position="First inversion"],.am-page[data-position="Second inversion"] tr[data-position="Second inversion"]{background:var(--selected-hover)}
+.am-page[data-position="Root position"] tr[data-position="Root position"] .am-current-row-mark,.am-page[data-position="First inversion"] tr[data-position="First inversion"] .am-current-row-mark,.am-page[data-position="Second inversion"] tr[data-position="Second inversion"] .am-current-row-mark{visibility:visible}
+.am-page[data-position="Root position"] tr[data-position="Root position"] .am-row-selected-label,.am-page[data-position="First inversion"] tr[data-position="First inversion"] .am-row-selected-label,.am-page[data-position="Second inversion"] tr[data-position="Second inversion"] .am-row-selected-label{display:inline}
+@media print{.am-page .am-key.am-black .am-black-label{color:white!important;font-size:9pt}.am-page .am-key.am-black.am-is-selected .am-marker{background:white!important}}

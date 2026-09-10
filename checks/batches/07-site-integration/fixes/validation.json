@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-09-10T01:03:28.050763Z",
+  "batch": "07-site-integration",
+  "review_result": "NEEDS_FIX",
+  "issue": "P1",
+  "fix_status": "fix_implemented_re_review_pending",
+  "product_files_changed": [
+    "src/components/integration/integration.css"
+  ],
+  "test_files_changed": [
+    "scripts/check-integration-batch.mjs",
+    "scripts/check-integration-production.mjs"
+  ],
+  "style_before": {
+    "heading_padding_desktop": "4rem 3rem",
+    "heading_padding_mobile": "2.5rem 2rem",
+    "heading_max_width": "58rem",
+    "h1_size_desktop": "clamp(2.75rem, 7vw, 5.75rem) -> 92px at 1440",
+    "h1_size_mobile": "clamp(2.55rem, 13vw, 4rem) -> 50.7px at 390",
+    "h1_line_height": ".94",
+    "h1_max_width": "10ch"
+  },
+  "style_after": {
+    "heading_padding_desktop": "2rem 1.5rem",
+    "heading_padding_mobile": "1.5rem 1.25rem",
+    "heading_max_width": "46rem",
+    "h1_size": "var(--pr-type-h1-size) -> 36px at 1440 / 30px at 390",
+    "h1_line_height": "var(--pr-type-h1-leading) -> 43.9992px at 1440 / 36px at 390",
+    "h1_max_width": "24ch"
+  },
+  "measured_before": [
+    {
+      "url": "/",
+      "width": 1440,
+      "fontSize": "92px",
+      "lineHeight": "86.48px",
+      "maxWidth": "567.363px",
+      "h1Width": 567.359375,
+      "h1Height": 172.9375,
+      "headingHeight": 394.296875,
+      "viewportHeight": 1000,
+      "headingViewportRatio": 0.3943
+    },
+    {
+      "url": "/",
+      "width": 390,
+      "fontSize": "50.7px",
+      "lineHeight": "47.658px",
+      "maxWidth": "312.667px",
+      "h1Width": 312.65625,
+      "h1Height": 95.3125,
+      "headingHeight": 295.265625,
+      "viewportHeight": 844,
+      "headingViewportRatio": 0.3498
+    },
+    {
+      "url": "/tools",
+      "width": 1440,
+      "fontSize": "92px",
+      "lineHeight": "86.48px",
+      "maxWidth": "567.363px",
+      "h1Width": 567.359375,
+      "h1Height": 259.40625,
+      "headingHeight": 451.015625,
+      "viewportHeight": 1000,
+      "headingViewportRatio": 0.451
+    },
+    {
+      "url": "/tools",
+      "width": 390,
+      "fontSize": "50.7px",
+      "lineHeight": "47.658px",
+      "maxWidth": "312.667px",
+      "h1Width": 312.65625,
+      "h1Height": 142.96875,
+      "headingHeight": 316.890625,
+      "viewportHeight": 844,
+      "headingViewportRatio": 0.3755
+    }
+  ],
+  "measured_after": [
+    {
+      "url": "/",
+      "width": 1440,
+      "fontSize": "36px",
+      "lineHeight": "43.9992px",
+      "maxWidth": "532.828px",
+      "h1Width": 532.828125,
+      "h1Height": 43.984375,
+      "headingHeight": 209.34375,
+      "viewportHeight": 1000,
+      "headingViewportRatio": 0.2093
+    },
+    {
+      "url": "/",
+      "width": 390,
+      "fontSize": "30px",
+      "lineHeight": "36px",
+      "maxWidth": "444.023px",
+      "h1Width": 358,
+      "h1Height": 36,
+      "headingHeight": 207.953125,
+      "viewportHeight": 844,
+      "headingViewportRatio": 0.2464
+    },
+    {
+      "url": "/tools",
+      "width": 1440,
+      "fontSize": "36px",
+      "lineHeight": "43.9992px",
+      "maxWidth": "532.828px",
+      "h1Width": 532.828125,
+      "h1Height": 43.984375,
+      "headingHeight": 179.59375,
+      "viewportHeight": 1000,
+      "headingViewportRatio": 0.1796
+    },
+    {
+      "url": "/tools",
+      "width": 390,
+      "fontSize": "30px",
+      "lineHeight": "36px",
+      "maxWidth": "444.023px",
+      "h1Width": 358,
+      "h1Height": 36,
+      "headingHeight": 181.921875,
+      "viewportHeight": 844,
+      "headingViewportRatio": 0.2155
+    }
+  ],
+  "commands": [
+    {
+      "command": "npm run check:foundation",
+      "passed": 560,
+      "failed": 0
+    },
+    {
+      "command": "npm run check",
+      "passed": "Foundation 560/560; TypeScript; Tailwind v4",
+      "failed": 0
+    },
+    {
+      "command": "node scripts/check-integration-data.mjs",
+      "passed": 153,
+      "failed": 0
+    },
+    {
+      "command": "node scripts/check-integration-batch.mjs",
+      "passed": 190,
+      "failed": 0
+    },
+    {
+      "command": "npm run build",
+      "passed": true,
+      "static_business_routes": 17
+    },
+    {
+      "command": "node scripts/check-integration-production.mjs",
+      "passed": 114,
+      "failed": 0
+    }
+  ],
+  "unchanged_contracts": [
+    "URL and route set",
+    "page copy and data",
+    "links and interactions",
+    "noindex/nofollow",
+    "static assets",
+    "component boundaries",
+    "01-06 product behavior",
+    "dependencies and lockfile"
+  ],
+  "not_tested": [
+    "independent re-review",
+    "real mobile device",
+    "manual screen reader",
+    "native print dialog",
+    "physical printing",
+    "deployment"
+  ]
+}

@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('src/components/chords/center-experience.tsx');s=p.read_text(encoding='utf-8');s=s.replace('<h2 id="chart-title">Find a chord</h2>{chartIntro}','<h2 id="chart-title">Find a chord</h2>');s=s.replace('<CenterPrintActions/></div>', '<button type="button" className="am-button am-secondary" disabled={!ready||!filtered.length} onClick={()=>print(filtered)}>Print matching chords</button></div>',1);s=s.replace('  <noscript>', '  {chartIntro}<noscript>');p.write_text(s,encoding='utf-8')

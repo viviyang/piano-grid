@@ -1,0 +1,183 @@
+{
+  "baseline_note": "src changes compare captured before hashes; other touched paths recorded from performed edits (not a git diff)",
+  "source_changes": [
+    {
+      "path": "src/components/a-minor/keyboard.tsx",
+      "sha256": "648e79b50ddf6d65ee081951d1dbe7a805b57a02a6a4d4c349adc268c680d441",
+      "status": "modified"
+    },
+    {
+      "path": "src/components/chords/site-chrome.tsx",
+      "sha256": "b5625f70ff618b2f35b945fdc754c11c8bb6b95c31de8b1bcc183ae431317383",
+      "status": "modified"
+    },
+    {
+      "path": "src/lib/a-minor-audio.ts",
+      "sha256": "580cc26b6c22d0418cf848f56583fc72973d437fea593ba674a760f22fb56fee",
+      "status": "modified"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "sha256": "d619211688656fc8d4d7b24332be7eb2a26e29df66ad65c80c374be06dc7c39b",
+      "status": "modified"
+    },
+    {
+      "path": "src/app/keyboard-notes/chart/page.tsx",
+      "sha256": "6e56885570bd3b7bfa39e791acc5f363256907bf89a765618667e7d79b3d2b37",
+      "status": "added"
+    },
+    {
+      "path": "src/app/keyboard-notes/labeled/page.tsx",
+      "sha256": "0a7475a9a874f819f1bed2b57bef7a3ceb2e0b882da857506f4fabf75be1752b",
+      "status": "added"
+    },
+    {
+      "path": "src/app/keyboard-notes/page.tsx",
+      "sha256": "9f06323d8c897b29a9ac99e3b481ffd0b2a545e51a864ac52224ba323574ff5b",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/chart-experience.tsx",
+      "sha256": "250a2e64b9021c7bc89da7428beb300b6bc4fe922587f6c9b91d55f4812b7fd5",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-diagram.tsx",
+      "sha256": "07db3255685a1c627fa2e5be08d776dd79ca2998fa07e2fcb2db1ed79caac82f",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-notes.css",
+      "sha256": "5b8411e3ad6f1b44d7c91bca0f91e9345dbc39a361fb0bdd5473e205317d0a03",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/labeled-experience.tsx",
+      "sha256": "e1e46ed8e470f568a6992d9158cced2d3ada7d265ea7dfabc26f6ac5f6377edb",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/lookup-experience.tsx",
+      "sha256": "27c45032dafbdf8eae239558dbf5c76b1766e34c308fa050bd2e479a0149f0aa",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/pages.tsx",
+      "sha256": "16ce099955f4ce3ff7120ed5a5cf02df366a1da47eabfc4d271400e7c24a759c",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/staff-diagram.tsx",
+      "sha256": "b1cbef206d81c7f5365a0b8edcc8e48f1911712e718e8afc2640ad2444d035ca",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/tool-controls.tsx",
+      "sha256": "8dc72d1a69d0f1280fc4034c652d52b03d8db71eca4a9dfe1619315c77e80008",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/use-note-audio.ts",
+      "sha256": "6a20bf9d0be05d227cfba1cd8e5a33c8696afbf0816442aa87eec5f28c81f8d6",
+      "status": "added"
+    },
+    {
+      "path": "src/lib/keyboard-content.ts",
+      "sha256": "d4de40b98d55a009a8842eed398daa09fc9a66b6b80b00c9dd2782fb27d7123c",
+      "status": "added"
+    },
+    {
+      "path": "src/lib/keyboard-geometry.ts",
+      "sha256": "c9acdaa0632a5ea65f736b0b5d9a3a54fd2887f0cd8411c52e7e603a2d2260f0",
+      "status": "added"
+    },
+    {
+      "path": "src/lib/keyboard-types.ts",
+      "sha256": "a92c6fac3b2d8452eeeec1265987f82766bbcf8d40fbc2dcdd0643a5ad23d999",
+      "status": "added"
+    }
+  ],
+  "other_touched_paths": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "60fd912397ec039942404d4d6072afbc197c1fe01d2128bb87854af05d4d36c2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a873b1665673a41ef0452212d5e0ee10565127926ca3d4201bc35973e1f93095"
+    },
+    {
+      "path": "docs/project-context.md",
+      "sha256": "030b4c1e1497658135700a9ca19c8bfd7434525f8523979807d3864880a13f3c"
+    },
+    {
+      "path": "docs/tasks/site-implementation-plan.md",
+      "sha256": "0994e57f85f9f939e2cb24242099d42990701636c6cac4227e020cf2e9f1c7be"
+    },
+    {
+      "path": "docs/design/component-spec.md",
+      "sha256": "979a171f117bec7f389a8c04ef9da098f9eb025e4572e54884e6c4b8871846ca"
+    },
+    {
+      "path": "docs/design/template-map.md",
+      "sha256": "a8cc8a77344f1ec0511d257e3c89ba9d3995b2ae7f8f66770000adfcbb6f9b1c"
+    },
+    {
+      "path": "docs/content/asset-map.json",
+      "sha256": "721810fd873ddd8e0caa67e3bde81c093e7fe2c10597f1d18f9689db2cb248e0"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "sha256": "a18162a4da515e22fb72754c62bf860687daa770aa1488f3784b1fb61e396ee8"
+    },
+    {
+      "path": "scripts/check-css.mjs",
+      "sha256": "bd6eca4285c0aa9a1e027de8bc7ed8928ba1536befe43274978027ebbef6b093"
+    },
+    {
+      "path": "scripts/check-chord-batch.mjs",
+      "sha256": "ca687dc64f55c59bf9190dea40fa313a9ac06928163825d5b855ea4044484a29"
+    },
+    {
+      "path": "scripts/check-chord-fallbacks.mjs",
+      "sha256": "78bc35fd58d96b3f84a58ee3affa313d29fa6442912ccdc542262bd241a377ac"
+    },
+    {
+      "path": "scripts/check-keyboard-batch.mjs",
+      "sha256": "9381dd0c5eab4446a9ea3692f5da9a3f6ae37e5d4b9fc7c87551c68ee3c4126a"
+    },
+    {
+      "path": "scripts/check-keyboard-data.mjs",
+      "sha256": "125d42db944875b22384eb38943be403803f7db8196f7185c19a0183e59462e9"
+    },
+    {
+      "path": "scripts/check-keyboard-fallbacks.mjs",
+      "sha256": "4ab13c7f2a818af4943aefc3ba9081d9e94fa97e39f4bbd1a3410fda0e0b0173"
+    },
+    {
+      "path": "scripts/check-keyboard-production.mjs",
+      "sha256": "82c8da628d2834ea13620c27f765591efe78d08740885db4f4dbbcb9920c7bb0"
+    },
+    {
+      "path": "scripts/export-keyboard-pdfs.mjs",
+      "sha256": "2277258ac3eb246d5df0f8e915b3b4b386bc9c5b457f17bc30cc1d5cfc8f6ce1"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf",
+      "sha256": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+      "sha256": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf",
+      "sha256": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16"
+    }
+  ],
+  "evidence_directory": "checks/batches/02-keyboard-notes"
+}

@@ -1,0 +1,100 @@
+{
+  "version": "pianolab-home-v1.0.0",
+  "brand": {
+    "name": "PianoLab",
+    "status": "working_name_not_cleared",
+    "descriptor": "Piano reference & practice tools"
+  },
+  "mode": "standalone_design_preview",
+  "canonical": null,
+  "productionReleaseVerified": false,
+  "hero": {
+    "title": "Learn the notes. Find the music. Practice with purpose.",
+    "primary": {
+      "label": "Explore Piano Tools",
+      "previewHref": "#explore",
+      "productionHref": "/tools"
+    },
+    "secondary": {
+      "label": "Browse Songs",
+      "previewHref": "#songs",
+      "productionHref": "/songs"
+    },
+    "futureSecondary": {
+      "label": "Browse Sheet Music",
+      "href": "/sheet-music",
+      "enabled": false,
+      "condition": "Destination passes existing project release gate; do not auto-enable"
+    }
+  },
+  "animation": {
+    "durationMs": 7600,
+    "autoplay": "silent_when_visible",
+    "sound": "explicit_click_only",
+    "reducedMotion": "static_triad",
+    "notes": [
+      57,
+      60,
+      64
+    ],
+    "tuningHz": 440,
+    "soundType": "additive_synthesis_not_piano_recording"
+  },
+  "destinations": {
+    "/keyboard-notes": {
+      "title": "Keyboard notes",
+      "body": "Piano note names repeat in a pattern. In the reference, middle C is named C4. Start by finding the white C key just to the left of a group of two black keys.",
+      "example": "C · D · E · F · G · A · B"
+    },
+    "/chords": {
+      "title": "Piano chord reference",
+      "body": "A chord reference connects a chord name to its notes and a keyboard shape. The homepage example uses the A minor triad in root position.",
+      "example": "A minor = A · C · E"
+    },
+    "/chords/a-minor": {
+      "title": "A minor piano chord",
+      "body": "A minor contains A, C, and E. This example uses A3–C4–E4 in root position. The numbers identify octaves, not fingers.",
+      "example": "Am · A3 — C4 — E4"
+    },
+    "/scales": {
+      "title": "Piano scales",
+      "body": "Use the scales reference to explore note patterns. The C major scale contains C, D, E, F, G, A, and B before returning to C.",
+      "example": "C · D · E · F · G · A · B · C"
+    },
+    "/songs": {
+      "title": "Piano songs",
+      "body": "Explore song ideas before selecting an arrangement. This prototype does not provide a song catalog or downloadable sheet music. The existing project supplies the actual content.",
+      "example": "Find a piece. Choose an arrangement."
+    },
+    "/songs/easy": {
+      "title": "Easy piano songs",
+      "body": "Use the easy-song guide as a starting point for choosing repertoire. Difficulty depends on the specific arrangement; a familiar title does not automatically mean an easy score.",
+      "example": "A starting point, not a difficulty guarantee."
+    },
+    "/guide": {
+      "title": "Learn & practice",
+      "body": "Start with the keyboard, note names, and the basics of reading. Learning guides explain ideas; this homepage preview does not include a course, progress tracking, or a practice account.",
+      "example": "Learn one idea. Try it at the piano."
+    },
+    "/guide/read-sheet-music": {
+      "title": "Read sheet music",
+      "body": "A reading guide links the staff, written notes, and the keyboard. Illustrations on the homepage are decorative; they are not a complete reading exercise or a licensed score.",
+      "example": "Connect the page to the keyboard."
+    },
+    "/tools": {
+      "title": "Tools & printables",
+      "body": "The tools hub brings together reference tools and prepared resources. This standalone file only implements the piano demonstration and chord comparison. Production links must follow the existing release manifest.",
+      "example": "A useful reference, within reach."
+    },
+    "/keyboard-notes/chart": {
+      "title": "Piano notes chart",
+      "body": "In the A440 reference used here, MIDI note 69 is A4 at 440 Hz; MIDI note 60 is C4 at approximately 261.63 Hz. Octave labels are not finger numbers.",
+      "example": "A4 · 440 Hz | C4 · 261.63 Hz"
+    },
+    "/tools/blank-sheet-music": {
+      "title": "Blank sheet music",
+      "body": "This is the planned destination for the existing blank-sheet resource. No PDF is bundled with the homepage design. Connect the real, verified asset before offering a download.",
+      "example": "Use the existing resource, not a placeholder PDF."
+    }
+  }
+}

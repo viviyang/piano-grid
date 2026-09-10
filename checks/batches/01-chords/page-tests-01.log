@@ -1,0 +1,7 @@
+FAIL Center print error honest undefined
+FAIL No runtime/hydration/console errors [
+  'Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. \n' +
+    '\n' +
+    'Check the render method of `ChordCenterExperience`.  It was passed a child from ChordCenterPage.'
+]
+Batch: 231 passed, 2 failed

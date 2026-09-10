@@ -1,0 +1,709 @@
+{
+  "generated_by": "scripts/intake-site.mjs; export updates only approved entries",
+  "assets": [
+    {
+      "logical_id": "assets/Bravura-LICENSE.txt",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/Bravura-LICENSE.txt",
+      "sha256": "bdca252186865f3b2c0e76da4a4e335c14ba1d37f80194fca254ddfa88e84fbf",
+      "bytes": 4420,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools/blank-sheet-music"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/blank-keyboard-13-keys.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-keyboard-13-keys.svg",
+      "sha256": "febe9d82e4b992d530f555b5c2b6c32a4eeabe66bd96360d873aa021ead96333",
+      "bytes": 1516,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/keyboard-notes/blank"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/blank-keyboard-25-keys.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-keyboard-25-keys.svg",
+      "sha256": "e7dd25e5ca69822047b73a40e1d8ae7a7c0f2921cf212d5b616dae2795d8f02f",
+      "bytes": 2753,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/keyboard-notes/blank"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/blank-keyboard-worksheet-a4.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-keyboard-worksheet-a4.pdf",
+      "sha256": "5cb574ab2c08278c998e28530811ed4849a07ed64060317a57ee81a4042f56d5",
+      "bytes": 44219,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/keyboard-notes/blank"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/blank-keyboard-worksheet-letter.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-keyboard-worksheet-letter.pdf",
+      "sha256": "786bb9d316cb45d5d691e6629168d6148dc0c27e03a5c675384b74a077a483d5",
+      "bytes": 44120,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools",
+        "/keyboard-notes/blank"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/blank-piano-staff-a4.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-piano-staff-a4.pdf",
+      "sha256": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf",
+      "bytes": 45738,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools/blank-sheet-music"
+      ],
+      "output_path": "public/reference/assets/blank-piano-staff-a4.pdf",
+      "url": "/reference/assets/blank-piano-staff-a4.pdf",
+      "status": "exported_hash_verified",
+      "use_condition": "Original Piano Reference blank grand-staff asset supplied for the authorized /tools/blank-sheet-music page; PDF and SVG checks recorded separately"
+    },
+    {
+      "logical_id": "assets/blank-piano-staff-letter.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-piano-staff-letter.pdf",
+      "sha256": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa",
+      "bytes": 45614,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools",
+        "/tools/blank-sheet-music"
+      ],
+      "output_path": "public/reference/assets/blank-piano-staff-letter.pdf",
+      "url": "/reference/assets/blank-piano-staff-letter.pdf",
+      "status": "exported_hash_verified",
+      "use_condition": "Original Piano Reference blank grand-staff asset supplied for the authorized /tools/blank-sheet-music page; PDF and SVG checks recorded separately"
+    },
+    {
+      "logical_id": "assets/blank-piano-staff-preview.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/blank-piano-staff-preview.svg",
+      "sha256": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec",
+      "bytes": 17018,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools/blank-sheet-music"
+      ],
+      "output_path": "public/reference/assets/blank-piano-staff-preview.svg",
+      "url": "/reference/assets/blank-piano-staff-preview.svg",
+      "status": "exported_hash_verified",
+      "use_condition": "Original Piano Reference blank grand-staff asset supplied for the authorized /tools/blank-sheet-music page; PDF and SVG checks recorded separately"
+    },
+    {
+      "logical_id": "assets/c-major-rh-fingers.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/c-major-rh-fingers.svg",
+      "sha256": "126d12bded6666d14c6e5df8ba14d080f028e3c003b08d9f9b3a9c84ae23883a",
+      "bytes": 2228,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/guide/piano-chords"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-a-flat-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-a-flat-major.pdf",
+      "sha256": "446585e7e48b24c40d39a2cf8aed8599e3df876f78388e10c28d7cd2a250ddfb",
+      "bytes": 44648,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/a-flat-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-a-flat-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-a-flat-major.svg",
+      "sha256": "c6c1de37099ce893906a27e63d71873a55eca9f72b0e07e4c91392e6be6f5e52",
+      "bytes": 5361,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/a-flat-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-a-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-a-major.pdf",
+      "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a",
+      "bytes": 44640,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/a-major"
+      ],
+      "output_path": "public/reference/assets/chord-a-major.pdf",
+      "url": "/reference/assets/chord-a-major.pdf",
+      "status": "exported_hash_verified",
+      "use_condition": "Original reference asset supplied for this authorized chord page; PDF visual check separately recorded"
+    },
+    {
+      "logical_id": "assets/chord-a-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-a-major.svg",
+      "sha256": "4a824adf140a3f70475a9a8cf490bc228d04a45275be5a1a6c293d5a3853cf4a",
+      "bytes": 5191,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/a-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-b-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-b-major.pdf",
+      "sha256": "7a45fa2e48c05d68b1a62c4d95e48f900b08a87b1f903fdf8a34ffaa1535c207",
+      "bytes": 44631,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/b-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-b-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-b-major.svg",
+      "sha256": "79fbc3f310561376bdceef6987cabc361a096eb7f0fd8e962d89fc7bb200bf7d",
+      "bytes": 5283,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/b-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-c-flat-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-c-flat-major.pdf",
+      "sha256": "a843d9fbd378ec882fdab9b20b2d5c819720fb1ed48eb3548783e4f732058818",
+      "bytes": 44695,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/c-flat-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-c-flat-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-c-flat-major.svg",
+      "sha256": "6138cff52738b4506301d134ad6604751233031206f48985c090a464c91aba48",
+      "bytes": 5303,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/c-flat-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-c-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-c-major.pdf",
+      "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662",
+      "bytes": 44576,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/c-major"
+      ],
+      "output_path": "public/reference/assets/chord-c-major.pdf",
+      "url": "/reference/assets/chord-c-major.pdf",
+      "status": "exported_hash_verified",
+      "use_condition": "Original reference asset supplied for this authorized chord page; PDF visual check separately recorded"
+    },
+    {
+      "logical_id": "assets/chord-c-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-c-major.svg",
+      "sha256": "f76bdc1659a008d16a353d52416f9978b6109622eee09cfaedeff302dce716de",
+      "bytes": 5182,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/c-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-c-minor.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-c-minor.pdf",
+      "sha256": "e0adf857a1f11b0a7279cbc496a814a2f033481c8f8a3d2921ec3e60f3aac505",
+      "bytes": 44635,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/c-minor"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-c-minor.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-c-minor.svg",
+      "sha256": "7e03d1177e86ebe7d4e1c9f94ea4d9f3cbd0ccdf2d338765a804187d9fbabe85",
+      "bytes": 5193,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/c-minor"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-e-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-e-major.pdf",
+      "sha256": "256799a064f8207e52cc92c9c0ef5c39bb59ad1c78481a65079e90769aa4aabc",
+      "bytes": 44630,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/e-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-e-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-e-major.svg",
+      "sha256": "786791d0c53cea0ab8721585a680bec47afa7d70763e7c1e63e59bae87a74670",
+      "bytes": 5341,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/e-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-g-major.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-g-major.pdf",
+      "sha256": "d55a9e192d3e6a0a1c89507760bfee311f84dcab68f23ef2f9d663e20a94790d",
+      "bytes": 44620,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/g-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-g-major.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-g-major.svg",
+      "sha256": "33290066ec62f1eff31f082f6f961bd0c6bfa13a6c2b9e32b9c55640778932eb",
+      "bytes": 5099,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/chords/g-major"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/chord-progressions-c-e-a.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/chord-progressions-c-e-a.pdf",
+      "sha256": "362980f69ae6f0a29e93258200bf7adb44ec38236db58cb11ae37d4d0453fa05",
+      "bytes": 47384,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools",
+        "/chord-progressions"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/music-symbols.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/music-symbols.svg",
+      "sha256": "205f1fa0eef935c72e3fcd454129917fec6b26c202314f6b03fee4f8b9f77a06",
+      "bytes": 5411,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/guide/music-symbols-and-piano-terms"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/piano-cheat-sheet.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/piano-cheat-sheet.pdf",
+      "sha256": "6235a6d6c24d8d599bd9de1aa3dac4888dc18a2111259be503fd35b6d88a7296",
+      "bytes": 44321,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools",
+        "/tools/piano-cheat-sheet"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/piano-hand-position.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/piano-hand-position.svg",
+      "sha256": "3c1ba721e6fd385a1213157b8fbb877e4cc30210b5fc2ea9027d3d1292f5b6e2",
+      "bytes": 957,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/guide/piano-hand-position"
+      ],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "assets/piano-starter-and-reading.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "assets/piano-starter-and-reading.pdf",
+      "sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2",
+      "bytes": 58564,
+      "provenance": "new original reference asset",
+      "pages": [
+        "/tools",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/guide/sight-reading",
+        "/guide/learn-a-piano-song",
+        "/guide/compose-a-piano-song",
+        "/guide/note-values-and-rhythm",
+        "/guide/piano-exercises",
+        "/guide/piano-practice"
+      ],
+      "output_path": "public/assets/guides/piano-starter-and-reading.pdf",
+      "url": "/assets/guides/piano-starter-and-reading.pdf",
+      "status": "exported_hash_verified",
+      "use_condition": "Original Piano Reference starter and reading pack supplied for the authorized guide pages and /tools integration; public copy is hash-verified"
+    },
+    {
+      "logical_id": "preserved-chords/assets/a-flat-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/a-flat-major--root.svg",
+      "sha256": "a59cc0efa28d9f72c5dbeb0106e0d68819d642bbc6aab639bd0b2fd704463d89",
+      "bytes": 4468,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/a-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/a-major--root.svg",
+      "sha256": "fe80d769b13accc879bde4c0421461b51a78ac9abb09c07cc463988d003439b9",
+      "bytes": 4579,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/a-minor--first.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/a-minor--first.svg",
+      "sha256": "fec03e26eac2c68ec5cda07a8269bc05318f00efefe59a950e5acfc72dbcfd23",
+      "bytes": 4443,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/a-minor--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/a-minor--root.svg",
+      "sha256": "f2a192906e970de51754d67d4824fd8ff9eebf9c5febfc68ba4d4dad5a729cb1",
+      "bytes": 4436,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/a-minor--second.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/a-minor--second.svg",
+      "sha256": "1bd87f800320f1b65dc786d0259cf41dcfc44a309e4406c83f3e92e95eef8d5c",
+      "bytes": 4447,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/a-minor-notes-inversions.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/a-minor-notes-inversions.pdf",
+      "sha256": "b6a79a5e69f216e3f3902aca431f2b96e1b6bf3554d624a360256dd4e58104e6",
+      "bytes": 24457,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/b-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/b-major--root.svg",
+      "sha256": "03bac802238be7d8dc69980ccba5b0a1f6332133d4e97677ebabec2cdd8633d9",
+      "bytes": 4585,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/c-flat-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/c-flat-major--root.svg",
+      "sha256": "16e4c7a0c825d7f6f30da8445948d0282b138ce01473c01288b2af85627b02cd",
+      "bytes": 4612,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/c-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/c-major--root.svg",
+      "sha256": "351e3aef376cc66c9093eadc8f6e944c8ef786372eff50ee415e8d4696561cc0",
+      "bytes": 4436,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/c-minor--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/c-minor--root.svg",
+      "sha256": "37a4b7b04566889986fb77865e704ceadadaaa6087de034d4f95dfe913025283",
+      "bytes": 4442,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/e-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/e-major--root.svg",
+      "sha256": "12994bfb08dde5e039110d61fb3b8b05ea236ba2637b5529dc17ed4147acba64",
+      "bytes": 4579,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/g-major--root.svg",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/g-major--root.svg",
+      "sha256": "d2dcbf853760318a474cd014a2d03e481051d0e2f6afd8d2fdacc5a0339e5a03",
+      "bytes": 4573,
+      "provenance": "preserved existing chords artifact",
+      "pages": [],
+      "output_path": null,
+      "url": null,
+      "status": "source_verified_not_exported",
+      "use_condition": "Only authorized page assets with source usage basis; license files are not automatically exported"
+    },
+    {
+      "logical_id": "preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "source_root": "docs/content/site-master",
+      "relative_path": "preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf",
+      "bytes": 29759,
+      "provenance": "preserved existing chords artifact",
+      "pages": [
+        "/chords"
+      ],
+      "output_path": "public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "url": "/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "status": "exported_hash_verified",
+      "use_condition": "Original reference asset supplied for this authorized chord page; PDF visual check separately recorded"
+    }
+  ],
+  "existing_a_minor": {
+    "url": "/assets/chords/a-minor-notes-inversions.pdf",
+    "sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1",
+    "provenance": "existing approved design-stage derived PDF retained; original is now present and differs"
+  },
+  "generated_keyboard_notes": [
+    {
+      "logical_id": "generated:keyboard-notes:labeled:88:letters",
+      "pages": [
+        "/keyboard-notes/labeled"
+      ],
+      "source_root": "docs/content/site-master",
+      "relative_path": "page-content.master.json",
+      "source_field": "pages./keyboard-notes/labeled.data.layouts.0",
+      "provenance": "derived from supplied key arrays; original print_assets remains null",
+      "output_path": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf",
+      "url": "/reference/generated/keyboard-notes/labeled-88-letters.pdf",
+      "bytes": 60986,
+      "sha256": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60",
+      "status": "generated_and_render_checked",
+      "use_condition": "Reference diagram only; not a full-size sticker; screen and PDF share chosen layout/octave mode"
+    },
+    {
+      "logical_id": "generated:keyboard-notes:labeled:88:octaves",
+      "pages": [
+        "/keyboard-notes/labeled"
+      ],
+      "source_root": "docs/content/site-master",
+      "relative_path": "page-content.master.json",
+      "source_field": "pages./keyboard-notes/labeled.data.layouts.0",
+      "provenance": "derived from supplied key arrays; original print_assets remains null",
+      "output_path": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "url": "/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "bytes": 61190,
+      "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16",
+      "status": "generated_and_render_checked",
+      "use_condition": "Reference diagram only; not a full-size sticker; screen and PDF share chosen layout/octave mode"
+    },
+    {
+      "logical_id": "generated:keyboard-notes:labeled:61:letters",
+      "pages": [
+        "/keyboard-notes/labeled"
+      ],
+      "source_root": "docs/content/site-master",
+      "relative_path": "page-content.master.json",
+      "source_field": "pages./keyboard-notes/labeled.data.layouts.1",
+      "provenance": "derived from supplied key arrays; original print_assets remains null",
+      "output_path": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf",
+      "url": "/reference/generated/keyboard-notes/labeled-61-letters.pdf",
+      "bytes": 49504,
+      "sha256": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f",
+      "status": "generated_and_render_checked",
+      "use_condition": "Reference diagram only; not a full-size sticker; screen and PDF share chosen layout/octave mode"
+    },
+    {
+      "logical_id": "generated:keyboard-notes:labeled:61:octaves",
+      "pages": [
+        "/keyboard-notes/labeled"
+      ],
+      "source_root": "docs/content/site-master",
+      "relative_path": "page-content.master.json",
+      "source_field": "pages./keyboard-notes/labeled.data.layouts.1",
+      "provenance": "derived from supplied key arrays; original print_assets remains null",
+      "output_path": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+      "url": "/reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+      "bytes": 49696,
+      "sha256": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574",
+      "status": "generated_and_render_checked",
+      "use_condition": "Reference diagram only; not a full-size sticker; screen and PDF share chosen layout/octave mode"
+    }
+  ]
+}

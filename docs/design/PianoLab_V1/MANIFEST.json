@@ -1,0 +1,146 @@
+{
+  "version": "pianolab-home-v1.0.0",
+  "date": "2026-09-10",
+  "files": [
+    {
+      "path": "CODEX_HANDOFF.md",
+      "bytes": 5634,
+      "sha256": "ac0737aa07ec90f461691fb76a6ef1cc2449fc856aeccad28602d791ce821e45"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 16814,
+      "sha256": "0bf8c361f5fb18c7192c703e2c573bb1e03225e770c147503a5ca4003a7dafa3"
+    },
+    {
+      "path": "QA.md",
+      "bytes": 2985,
+      "sha256": "24707da74286e5e33ed7bb7cae6f2fc83469b62c65c02aaf5ea7e7dd8ac776da"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2518,
+      "sha256": "104d44fc315f395a3978570c86c5f8c5d36e85eb5963aff1ed09ec45e2681b39"
+    },
+    {
+      "path": "assets/apple-touch-icon.png",
+      "bytes": 4259,
+      "sha256": "cb7a74af0bb4627a50242c524df95ab70586b745ef4d2ed3045ab44407d3e984"
+    },
+    {
+      "path": "assets/favicon.ico",
+      "bytes": 4694,
+      "sha256": "e3c5c2c154d9cf35b065c347424110155f9fb30bd099a26ca095971d3d427763"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "bytes": 346,
+      "sha256": "916888be2f906b58c3d84cd3c7e6c3d36296f42242bba69038d6cf41ea48d427"
+    },
+    {
+      "path": "assets/grand-piano-mark.svg",
+      "bytes": 293,
+      "sha256": "d88609483795428f7d4c715c859da12a7b7b4ff8519679ae3bdf2255bd327a37"
+    },
+    {
+      "path": "assets/icon-16.png",
+      "bytes": 452,
+      "sha256": "80d017efcb430e63862901f9d8237bded435bdea7a0751fce05f4a22b96db4ff"
+    },
+    {
+      "path": "assets/icon-192.png",
+      "bytes": 4327,
+      "sha256": "de9185374f020460c85621355a23e8810a46fca1060137fc56fb7ed17d1b2d7b"
+    },
+    {
+      "path": "assets/icon-32.png",
+      "bytes": 798,
+      "sha256": "d9da5e02ee77b63a5a5f35b58cc664ba816740505d629c3ebb4f613f8bcca3b2"
+    },
+    {
+      "path": "assets/icon-48.png",
+      "bytes": 1203,
+      "sha256": "01fe204cfc75cb66d196951b4307d889b8e02af909ace490d6dcfd179f47b850"
+    },
+    {
+      "path": "assets/icon-512.png",
+      "bytes": 13041,
+      "sha256": "fb4f5a0f92c2c7fedb11f397452f534d92b1c2577bd20c42041d1f1844b1759b"
+    },
+    {
+      "path": "design/desktop-1440.png",
+      "bytes": 639162,
+      "sha256": "5561963eb8230a612086dcf8ae1606c32a185b9078ceab189c46207bb158cb5e"
+    },
+    {
+      "path": "design/desktop-hero.png",
+      "bytes": 323328,
+      "sha256": "343d3b9010e5e48a0b6b881434676dfafb63b19c3344616fb7a9926dcbf6dc8b"
+    },
+    {
+      "path": "design/favicon-preview.html",
+      "bytes": 22513,
+      "sha256": "1bc5facee68c0fe875a42720f2317370b37f8574e0db3195ff1e86f72a1d17e3"
+    },
+    {
+      "path": "design/favicon-preview.png",
+      "bytes": 55759,
+      "sha256": "999b137d3c67686a0d3f9308ac7014294e045887ff4cf2ac58f452e37903f043"
+    },
+    {
+      "path": "design/hero-motion.mp4",
+      "bytes": 203011,
+      "sha256": "dd2db5249009b6dfee2a5a2ebcdd1975b773ea602347962fdca125cd3c65c55b"
+    },
+    {
+      "path": "design/hero-motion.webm",
+      "bytes": 626788,
+      "sha256": "ff0f21921b70323b7676d447b46ce6079cf85aa9b1475ec9db542c3b9ea15ebb"
+    },
+    {
+      "path": "design/mobile-390.png",
+      "bytes": 374164,
+      "sha256": "0bad203f832b5d543650e5489d63e195aa2229bca0588f0d3a6a5caf2ee2385b"
+    },
+    {
+      "path": "design/mobile-hero.png",
+      "bytes": 141262,
+      "sha256": "4e7ad0cb39d40eaf6c29eb0cea0510e383d68d17dfa3de30ae5866b87b913e55"
+    },
+    {
+      "path": "design/overview.html",
+      "bytes": 628450,
+      "sha256": "0c6b6553b962fa1432bcbd0a7b27b4692f92a5c2ffc63c82e0835a7e497225c1"
+    },
+    {
+      "path": "design/overview.png",
+      "bytes": 394356,
+      "sha256": "03d7b5349db5ee6f2b1b3b531eaab56da5b9838ce19a9d385fdd2faa914b95e3"
+    },
+    {
+      "path": "homepage-content.json",
+      "bytes": 4423,
+      "sha256": "88bfdc3b82356f5172c1d645775d482565eb0a8c685bc3c5fe6c37ff949a3b80"
+    },
+    {
+      "path": "index.html",
+      "bytes": 73985,
+      "sha256": "5e069772dd5b448728dbea83424c139d6c4fe302788c2a40f18b64d2f79e141d"
+    },
+    {
+      "path": "qa/render_check.py",
+      "bytes": 7537,
+      "sha256": "fd5be4ebdfb6401a2d30d015160f5d127057f5d6a604d94b2314103fbde2d10a"
+    },
+    {
+      "path": "qa/report.json",
+      "bytes": 8955,
+      "sha256": "e9c6dfdc85b903c3de20ae6d9c53ff93b9cb337ffcdccb5a2608bd0e789b3586"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 1190,
+      "sha256": "93b10b3b40fd0c286774a343eb839f08657a80872980bd38a3e6002be56eb754"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "generated_at": "2026-09-10T01:03:28.050763Z",
+  "batch": "07-site-integration",
+  "status": "fix_implemented_re_review_pending",
+  "authorized_route_count": 17,
+  "routes": [
+    {
+      "url": "/",
+      "template_id": "T01",
+      "implementation_batch": "07-site-integration",
+      "implementation_status": "fix_implemented",
+      "review_status": "NEEDS_FIX P1 fixed; re-review pending",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true,
+      "h1_design_token_checked": true,
+      "first_screen_heading_ratio_under_30_percent": true
+    },
+    {
+      "url": "/tools",
+      "template_id": "T02",
+      "implementation_batch": "07-site-integration",
+      "implementation_status": "fix_implemented",
+      "review_status": "NEEDS_FIX P1 fixed; re-review pending",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true,
+      "h1_design_token_checked": true,
+      "first_screen_heading_ratio_under_30_percent": true
+    },
+    {
+      "url": "/songs",
+      "template_id": "T15",
+      "implementation_batch": "04-songs",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/songs/easy",
+      "template_id": "T16",
+      "implementation_batch": "04-songs",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/tools/blank-sheet-music",
+      "template_id": "T19",
+      "implementation_batch": "06-blank-sheet",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/keyboard-notes",
+      "template_id": "T03",
+      "implementation_batch": "02-keyboard-notes",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/keyboard-notes/labeled",
+      "template_id": "T04",
+      "implementation_batch": "02-keyboard-notes",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/keyboard-notes/chart",
+      "template_id": "T05",
+      "implementation_batch": "02-keyboard-notes",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/chords",
+      "template_id": "T06",
+      "implementation_batch": "01-chords",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/chords/a-major",
+      "template_id": "T07",
+      "implementation_batch": "01-chords",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/chords/a-minor",
+      "template_id": "T07",
+      "implementation_batch": "01-chords",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/chords/c-major",
+      "template_id": "T07",
+      "implementation_batch": "01-chords",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/scales",
+      "template_id": "T11",
+      "implementation_batch": "03-scales",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/scales/c-major",
+      "template_id": "T12",
+      "implementation_batch": "03-scales",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/scales/a-minor",
+      "template_id": "T12",
+      "implementation_batch": "03-scales",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/guide",
+      "template_id": "T21",
+      "implementation_batch": "05-guides",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    },
+    {
+      "url": "/guide/read-sheet-music",
+      "template_id": "T22",
+      "implementation_batch": "05-guides",
+      "implementation_status": "review_passed",
+      "review_status": "PASS_WITH_NOTES; user accepted",
+      "http_200": true,
+      "canonical_checked": true,
+      "noindex_checked": true,
+      "shared_navigation_checked": true,
+      "source_payload_leak_checked": true
+    }
+  ],
+  "home": {
+    "working_destinations": [
+      "/keyboard-notes",
+      "/chords",
+      "/scales",
+      "/songs",
+      "/guide"
+    ],
+    "unavailable_destinations": [
+      "/sheet-music"
+    ]
+  },
+  "tools": {
+    "working_lookups": [
+      "/keyboard-notes/chart",
+      "/chords",
+      "/scales"
+    ],
+    "working_printables": [
+      "/tools/blank-sheet-music",
+      "/assets/guides/piano-starter-and-reading.pdf"
+    ],
+    "planned_without_links": [
+      "/chords/finder",
+      "/tools/piano-cheat-sheet",
+      "/keyboard-notes/blank",
+      "/keyboard-notes/finger-numbers"
+    ]
+  },
+  "forbidden_routes_checked": [
+    "/sheet-music",
+    "/sheet-music/easy",
+    "/chords/finder",
+    "/chord-progressions",
+    "/tools/piano-cheat-sheet",
+    "/keyboard-notes/blank",
+    "/guide/sight-reading",
+    "/tools/anything"
+  ],
+  "responsive_viewports": [
+    1440,
+    390,
+    320,
+    768
+  ],
+  "text_zoom_percent": 200,
+  "no_js_checked": [
+    "/",
+    "/tools"
+  ],
+  "source_protection": {
+    "checked_files": 81,
+    "hash_mismatches": 0
+  },
+  "not_authorized": [
+    "91 later URLs",
+    "19 paused URLs",
+    "deployment",
+    "indexing changes"
+  ]
+}

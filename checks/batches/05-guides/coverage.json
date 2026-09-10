@@ -1,0 +1,41 @@
+{
+  "batch": "05-guides",
+  "status": "implementation_checked",
+  "routes": [
+    {
+      "url": "/guide",
+      "template": "T21",
+      "source_groups": ["P226", "P240", "P255"],
+      "delivered": [
+        "ordered four-step beginner path",
+        "executable C4 D4 E4 four-count example",
+        "source-backed keyboard diagram",
+        "authorized four-page printable"
+      ],
+      "pending": ["independent review", "named professional teaching and notation review"]
+    },
+    {
+      "url": "/guide/read-sheet-music",
+      "template": "T22",
+      "source_groups": ["P218", "P228", "P229", "P236", "P248", "P249"],
+      "delivered": [
+        "clef-first reading order",
+        "nine source-backed clef anchors",
+        "treble FACE scope and separate bass spaces",
+        "clef-specific second-ledger-line answers",
+        "four-bar E-SR1 exercise and exact pitch answer",
+        "keyboard chart and authorized printable links"
+      ],
+      "pending": ["independent review", "named professional teaching and notation review"]
+    }
+  ],
+  "excluded": [
+    "/guide/sight-reading",
+    "/guide/note-values-and-rhythm",
+    "/guide/learn-a-piano-song",
+    "all other guide pages",
+    "automatic scoring",
+    "accounts and course progress",
+    "deployment and indexing"
+  ]
+}

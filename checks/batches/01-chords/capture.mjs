@@ -1,0 +1,5 @@
+import {createRequire} from 'node:module';import fs from 'node:fs';
+const {chromium}=createRequire(import.meta.url)('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const browser=await chromium.launch({channel:'chrome',headless:true}),out='checks/batches/01-chords',errors=[];
+try{for(const slug of (process.env.CHORD_CAPTURE||'a-minor,a-major,c-major').split(',')){for(const width of [1440,390]){const page=await browser.newPage({viewport:{width,height:width===1440?900:844}});page.on('pageerror',e=>errors.push(e.message));await page.goto(`http://127.0.0.1:3000/chords${slug==='center'?'':'/'+slug}`);await page.waitForFunction(()=>document.querySelector('button.am-play-btn')&&!document.querySelector('button.am-play-btn').disabled);await page.waitForTimeout(200);await page.screenshot({path:`${out}/${slug}-${width}.png`,fullPage:true});await page.screenshot({path:`${out}/${slug}-${width}-top.png`});await page.close();}}}finally{await browser.close();}
+fs.writeFileSync(`${out}/capture-errors.json`,JSON.stringify(errors));if(errors.length)process.exitCode=1;

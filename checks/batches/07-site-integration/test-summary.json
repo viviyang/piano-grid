@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-09-10T01:03:28.050763Z",
+  "status": "pass_after_P1_fix_re_review_pending",
+  "final_runs": [
+    {
+      "name": "npm run check",
+      "command_or_scope": "Foundation 560/560; TypeScript; Tailwind v4",
+      "passed": 560,
+      "failed": 0
+    },
+    {
+      "name": "integration data",
+      "command_or_scope": "scripts/check-integration-data.mjs",
+      "passed": 153,
+      "failed": 0
+    },
+    {
+      "name": "integration dev browser",
+      "command_or_scope": "scripts/check-integration-batch.mjs",
+      "passed": 190,
+      "failed": 0
+    },
+    {
+      "name": "integration production browser",
+      "command_or_scope": "scripts/check-integration-production.mjs",
+      "passed": 114,
+      "failed": 0
+    },
+    {
+      "name": "01 chord browser",
+      "command_or_scope": "scripts/check-chord-batch.mjs",
+      "passed": 233,
+      "failed": 0
+    },
+    {
+      "name": "01 A minor regression",
+      "command_or_scope": "scripts/check-a-minor.mjs",
+      "passed": 162,
+      "failed": 0
+    },
+    {
+      "name": "02 keyboard data",
+      "command_or_scope": "scripts/check-keyboard-data.mjs",
+      "passed": 1709,
+      "failed": 0
+    },
+    {
+      "name": "02 keyboard fallback",
+      "command_or_scope": "scripts/check-keyboard-fallbacks.mjs",
+      "passed": 21,
+      "failed": 0
+    },
+    {
+      "name": "02 keyboard browser",
+      "command_or_scope": "scripts/check-keyboard-batch.mjs",
+      "passed": 1660,
+      "failed": 0
+    },
+    {
+      "name": "02 keyboard production",
+      "command_or_scope": "scripts/check-keyboard-production.mjs",
+      "passed": 48,
+      "failed": 0
+    },
+    {
+      "name": "03 scale data",
+      "command_or_scope": "scripts/check-scale-data.mjs",
+      "passed": 620,
+      "failed": 0
+    },
+    {
+      "name": "03 scale fallback",
+      "command_or_scope": "scripts/check-scale-fallbacks.mjs",
+      "passed": 30,
+      "failed": 0
+    },
+    {
+      "name": "03 scale PDFs",
+      "command_or_scope": "scripts/check-scale-pdfs.py",
+      "passed": 46,
+      "failed": 0
+    },
+    {
+      "name": "03 scale browser",
+      "command_or_scope": "scripts/check-scale-batch.mjs",
+      "passed": 330,
+      "failed": 0
+    },
+    {
+      "name": "03 scale production",
+      "command_or_scope": "scripts/check-scale-production.mjs",
+      "passed": 63,
+      "failed": 0
+    },
+    {
+      "name": "04 song data",
+      "command_or_scope": "scripts/check-song-data.mjs",
+      "passed": 902,
+      "failed": 0
+    },
+    {
+      "name": "04 song browser",
+      "command_or_scope": "scripts/check-song-batch.mjs",
+      "passed": 119,
+      "failed": 0
+    },
+    {
+      "name": "04 song production",
+      "command_or_scope": "scripts/check-song-production.mjs",
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "name": "05 guide data",
+      "command_or_scope": "scripts/check-guide-data.mjs",
+      "passed": 157,
+      "failed": 0
+    },
+    {
+      "name": "05 guide browser",
+      "command_or_scope": "scripts/check-guide-batch.mjs",
+      "passed": 77,
+      "failed": 0
+    },
+    {
+      "name": "05 guide production",
+      "command_or_scope": "scripts/check-guide-production.mjs",
+      "passed": 57,
+      "failed": 0
+    },
+    {
+      "name": "06 blank data",
+      "command_or_scope": "scripts/check-blank-sheet-data.mjs",
+      "passed": 119,
+      "failed": 0
+    },
+    {
+      "name": "06 blank PDFs",
+      "command_or_scope": "scripts/check-blank-sheet-pdfs.py",
+      "passed": 20,
+      "failed": 0
+    },
+    {
+      "name": "06 blank browser",
+      "command_or_scope": "scripts/check-blank-sheet-batch.mjs",
+      "passed": 60,
+      "failed": 0
+    },
+    {
+      "name": "06 blank production",
+      "command_or_scope": "scripts/check-blank-sheet-production.mjs",
+      "passed": 58,
+      "failed": 0
+    },
+    {
+      "name": "content adapters",
+      "command_or_scope": "scripts/check-content-adapters.mjs",
+      "passed": 14,
+      "failed": 0
+    },
+    {
+      "name": "chord fallbacks",
+      "command_or_scope": "scripts/check-chord-fallbacks.mjs",
+      "passed": 25,
+      "failed": 0
+    }
+  ],
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "static_business_routes": 17,
+    "not_found_route": true
+  },
+  "diagnostic_runs": [
+    {
+      "scope": "early integration browser",
+      "result": "failed before server was available; rerun after server start passed 178/178"
+    },
+    {
+      "scope": "early integration metadata and responsive checks",
+      "result": "identified missing canonicals and 200% text overflow; implementation fixed; final rerun passed"
+    },
+    {
+      "scope": "parallel legacy browser run",
+      "result": "Next dev blocked 127.0.0.1 HMR as cross-origin and two scripts timed out; sequential localhost reruns passed"
+    },
+    {
+      "scope": "legacy blank-sheet assertion",
+      "result": "desktop-width overflow assumption was invalid; assertion now measures the documented local-scroll behavior at 390px and passed 60/60"
+    }
+  ],
+  "not_tested": [
+    "real mobile devices",
+    "manual screen-reader workflow",
+    "human listening and playing",
+    "native browser print dialog",
+    "physical printing",
+    "every external publisher link",
+    "professional music/content review beyond existing batch reviews",
+    "deployment and live-domain behavior",
+    "07 independent re-review"
+  ],
+  "fix_validation": "fixes/validation.json",
+  "independent_review": "NEEDS_FIX P1 fixed; independent re-review pending"
+}

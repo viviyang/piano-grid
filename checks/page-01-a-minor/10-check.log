@@ -1,0 +1,20 @@
+
+> piano-reference@0.1.0 check
+> npm run check:foundation && npm run typecheck && npm run check:css
+
+
+> piano-reference@0.1.0 check:foundation
+> node scripts/check-foundation.mjs
+
+Foundation: 558 passed, 0 failed.
+NOTE: source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。
+
+> piano-reference@0.1.0 typecheck
+> tsc --noEmit
+
+
+> piano-reference@0.1.0 check:css
+> node scripts/check-css.mjs
+
+Tailwind v4 compilation + semantic utility + cn checks passed. No pages created.
+exit_code=0

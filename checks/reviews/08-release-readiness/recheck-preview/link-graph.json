@@ -1,0 +1,484 @@
+{
+  "routes": [
+    "/",
+    "/tools",
+    "/songs",
+    "/songs/easy",
+    "/tools/blank-sheet-music",
+    "/keyboard-notes",
+    "/keyboard-notes/labeled",
+    "/keyboard-notes/chart",
+    "/chords",
+    "/chords/a-major",
+    "/chords/a-minor",
+    "/chords/c-major",
+    "/scales",
+    "/scales/c-major",
+    "/scales/a-minor",
+    "/guide",
+    "/guide/read-sheet-music"
+  ],
+  "expect_release_links": true,
+  "edges": [
+    {
+      "from": "/",
+      "to": "/keyboard-notes",
+      "text": "01Find a noteOpen reference"
+    },
+    {
+      "from": "/",
+      "to": "/chords",
+      "text": "02Look up a chordOpen reference"
+    },
+    {
+      "from": "/",
+      "to": "/scales",
+      "text": "03Check a scaleOpen reference"
+    },
+    {
+      "from": "/",
+      "to": "/songs",
+      "text": "04Choose a songOpen reference"
+    },
+    {
+      "from": "/",
+      "to": "/guide",
+      "text": "06Learn the basicsOpen reference"
+    },
+    {
+      "from": "/",
+      "to": "/tools",
+      "text": "Tools and printablesOpen the complete working set →"
+    },
+    {
+      "from": "/",
+      "to": "/guide",
+      "text": "Start the beginner guide"
+    },
+    {
+      "from": "/tools",
+      "to": "/keyboard-notes/chart",
+      "text": "01Find a noteOpen reference"
+    },
+    {
+      "from": "/tools",
+      "to": "/chords",
+      "text": "02Look up a chordOpen reference"
+    },
+    {
+      "from": "/tools",
+      "to": "/scales",
+      "text": "03Check a scaleOpen reference"
+    },
+    {
+      "from": "/tools",
+      "to": "/tools/blank-sheet-music",
+      "text": "Open resource"
+    },
+    {
+      "from": "/tools",
+      "to": "/guide",
+      "text": "Open resource"
+    },
+    {
+      "from": "/songs",
+      "to": "/songs/easy",
+      "text": "Browse easy piano versions"
+    },
+    {
+      "from": "/songs/easy",
+      "to": "/songs",
+      "text": "Songs"
+    },
+    {
+      "from": "/tools/blank-sheet-music",
+      "to": "/tools",
+      "text": "Tools"
+    },
+    {
+      "from": "/keyboard-notes",
+      "to": "/keyboard-notes/labeled",
+      "text": "Labeled keyboard and print reference"
+    },
+    {
+      "from": "/keyboard-notes",
+      "to": "/keyboard-notes/chart",
+      "text": "Match piano notes to the staff"
+    },
+    {
+      "from": "/keyboard-notes/labeled",
+      "to": "/keyboard-notes",
+      "text": "Keyboard Notes"
+    },
+    {
+      "from": "/keyboard-notes/labeled",
+      "to": "/keyboard-notes",
+      "text": "Find an individual note"
+    },
+    {
+      "from": "/keyboard-notes/labeled",
+      "to": "/keyboard-notes/chart",
+      "text": "Notes on the staff"
+    },
+    {
+      "from": "/keyboard-notes/chart",
+      "to": "/keyboard-notes",
+      "text": "Keyboard Notes"
+    },
+    {
+      "from": "/chords",
+      "to": "/chords/c-major",
+      "text": "Notes and inversions: C major"
+    },
+    {
+      "from": "/chords",
+      "to": "/chords/a-minor",
+      "text": "Notes and inversions: A minor"
+    },
+    {
+      "from": "/chords",
+      "to": "/chords/a-major",
+      "text": "Notes and inversions: A major"
+    },
+    {
+      "from": "/chords",
+      "to": "/chords/a-minor",
+      "text": "A minor piano chord: notes and inversions"
+    },
+    {
+      "from": "/chords/a-major",
+      "to": "/chords",
+      "text": "Chords"
+    },
+    {
+      "from": "/chords/a-major",
+      "to": "/chords",
+      "text": "Piano chord chart"
+    },
+    {
+      "from": "/chords/a-minor",
+      "to": "/chords",
+      "text": "Chords"
+    },
+    {
+      "from": "/chords/c-major",
+      "to": "/chords",
+      "text": "Chords"
+    },
+    {
+      "from": "/chords/c-major",
+      "to": "/chords",
+      "text": "Piano chord chart"
+    },
+    {
+      "from": "/scales",
+      "to": "/scales/c-major",
+      "text": "Open C detail"
+    },
+    {
+      "from": "/scales",
+      "to": "/scales/a-minor",
+      "text": "Open A detail"
+    },
+    {
+      "from": "/scales/c-major",
+      "to": "/scales",
+      "text": "Scales"
+    },
+    {
+      "from": "/scales/c-major",
+      "to": "/scales",
+      "text": "All piano scales"
+    },
+    {
+      "from": "/scales/a-minor",
+      "to": "/scales",
+      "text": "Scales"
+    },
+    {
+      "from": "/scales/a-minor",
+      "to": "/scales",
+      "text": "All piano scales"
+    },
+    {
+      "from": "/scales/a-minor",
+      "to": "/chords/a-minor",
+      "text": "A minor chord reference"
+    },
+    {
+      "from": "/guide",
+      "to": "/guide",
+      "text": "Guide"
+    },
+    {
+      "from": "/guide",
+      "to": "/keyboard-notes/chart",
+      "text": "Open this step →"
+    },
+    {
+      "from": "/guide",
+      "to": "/guide/read-sheet-music",
+      "text": "Open this step →"
+    },
+    {
+      "from": "/guide",
+      "to": "/keyboard-notes/chart",
+      "text": "Open the keyboard note chart"
+    },
+    {
+      "from": "/guide",
+      "to": "/chords",
+      "text": "Open the chord guide"
+    },
+    {
+      "from": "/guide/read-sheet-music",
+      "to": "/guide",
+      "text": "Guide"
+    },
+    {
+      "from": "/guide/read-sheet-music",
+      "to": "/keyboard-notes/chart",
+      "text": "Find C4–F4 on the keyboard chart"
+    }
+  ],
+  "reachability": {
+    "/": {
+      "from_home_clicks": 0,
+      "reachable": true
+    },
+    "/tools": {
+      "from_home_clicks": 1,
+      "reachable": true
+    },
+    "/songs": {
+      "from_home_clicks": 1,
+      "reachable": true
+    },
+    "/songs/easy": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/tools/blank-sheet-music": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/keyboard-notes": {
+      "from_home_clicks": 1,
+      "reachable": true
+    },
+    "/keyboard-notes/labeled": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/keyboard-notes/chart": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/chords": {
+      "from_home_clicks": 1,
+      "reachable": true
+    },
+    "/chords/a-major": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/chords/a-minor": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/chords/c-major": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/scales": {
+      "from_home_clicks": 1,
+      "reachable": true
+    },
+    "/scales/c-major": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/scales/a-minor": {
+      "from_home_clicks": 2,
+      "reachable": true
+    },
+    "/guide": {
+      "from_home_clicks": 1,
+      "reachable": true
+    },
+    "/guide/read-sheet-music": {
+      "from_home_clicks": 2,
+      "reachable": true
+    }
+  },
+  "inbound": {
+    "/": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/tools": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/songs": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/songs/easy": [
+      "/songs"
+    ],
+    "/tools/blank-sheet-music": [
+      "/tools"
+    ],
+    "/keyboard-notes": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/keyboard-notes/labeled": [
+      "/keyboard-notes"
+    ],
+    "/keyboard-notes/chart": [
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/labeled",
+      "/tools"
+    ],
+    "/chords": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/chords/a-major": [
+      "/chords"
+    ],
+    "/chords/a-minor": [
+      "/chords",
+      "/scales/a-minor"
+    ],
+    "/chords/c-major": [
+      "/chords"
+    ],
+    "/scales": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/scales/c-major": [
+      "/scales"
+    ],
+    "/scales/a-minor": [
+      "/scales"
+    ],
+    "/guide": [
+      "/",
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/c-major",
+      "/guide",
+      "/guide/read-sheet-music",
+      "/keyboard-notes",
+      "/keyboard-notes/chart",
+      "/keyboard-notes/labeled",
+      "/scales",
+      "/scales/a-minor",
+      "/scales/c-major",
+      "/songs",
+      "/songs/easy",
+      "/tools",
+      "/tools/blank-sheet-music"
+    ],
+    "/guide/read-sheet-music": [
+      "/guide"
+    ]
+  }
+}

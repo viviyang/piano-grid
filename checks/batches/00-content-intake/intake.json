@@ -1,0 +1,146 @@
+{
+  "checked_at": "2026-09-09T08:56:53.528Z",
+  "schema": "3.0.0",
+  "version": "2.0-consolidated-final-plan",
+  "urls": 127,
+  "priorities": {
+    "先做": 17,
+    "后做": 91,
+    "暂不做": 19
+  },
+  "assets_verified": 43,
+  "new_issues": 209,
+  "legacy_gaps": 6,
+  "retained_without_url": 17,
+  "batches": [
+    {
+      "directory": "A-Scales",
+      "files": [
+        "batch-content-pack.md",
+        "batch-open-issues.md",
+        "batch-page-content.json",
+        "batch-source-ledger.md"
+      ],
+      "top_level_fields": [
+        "schema_version",
+        "date",
+        "project",
+        "batch",
+        "name",
+        "baseline_version",
+        "scope_note",
+        "pages",
+        "sources",
+        "checks"
+      ]
+    },
+    {
+      "directory": "B-Keyboard-Notes",
+      "files": [
+        "batch-content-pack.md",
+        "batch-open-issues.md",
+        "batch-page-content.json",
+        "batch-source-ledger.md"
+      ],
+      "top_level_fields": [
+        "schema_version",
+        "date",
+        "project",
+        "batch",
+        "name",
+        "baseline_version",
+        "scope_note",
+        "pages",
+        "sources",
+        "checks"
+      ]
+    },
+    {
+      "directory": "C-Songs",
+      "files": [
+        "batch-content-pack.md",
+        "batch-open-issues.md",
+        "batch-page-content.json",
+        "batch-source-ledger.md"
+      ],
+      "top_level_fields": [
+        "schema_version",
+        "date",
+        "project",
+        "batch",
+        "name",
+        "baseline_version",
+        "scope_note",
+        "pages",
+        "sources",
+        "checks"
+      ]
+    },
+    {
+      "directory": "D-Sheet-Music",
+      "files": [
+        "batch-content-pack.md",
+        "batch-open-issues.md",
+        "batch-page-content.json",
+        "batch-source-ledger.md"
+      ],
+      "top_level_fields": [
+        "schema_version",
+        "date",
+        "project",
+        "batch",
+        "name",
+        "baseline_version",
+        "scope_note",
+        "pages",
+        "sources",
+        "checks"
+      ]
+    },
+    {
+      "directory": "E-Guide-Reading-Practice",
+      "files": [
+        "batch-content-pack.md",
+        "batch-open-issues.md",
+        "batch-page-content.json",
+        "batch-source-ledger.md"
+      ],
+      "top_level_fields": [
+        "schema_version",
+        "date",
+        "project",
+        "batch",
+        "name",
+        "baseline_version",
+        "scope_note",
+        "pages",
+        "sources",
+        "checks"
+      ]
+    },
+    {
+      "directory": "F-Homepage",
+      "files": [
+        "batch-content-pack.md",
+        "batch-open-issues.md",
+        "batch-page-content.json",
+        "batch-source-ledger.md"
+      ],
+      "top_level_fields": [
+        "schema_version",
+        "date",
+        "project",
+        "batch",
+        "name",
+        "baseline_version",
+        "scope_note",
+        "pages",
+        "sources",
+        "checks"
+      ]
+    }
+  ],
+  "source_equivalence": true,
+  "source_ledger_bytes": 92249,
+  "issue_ledger_bytes": 87418
+}

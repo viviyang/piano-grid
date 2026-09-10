@@ -1,0 +1,19 @@
+'use client';
+import {useState} from 'react';
+import type {Layout,PianoKey} from '@/lib/keyboard-types';
+import {KeyboardDiagram} from './keyboard-diagram';
+import {LayoutChoice,NotePlayback} from './tool-controls';
+import {useNoteAudio} from './use-note-audio';
+export function LookupExperience({layouts}:{layouts:Layout[]}){
+  const [layoutID,setLayoutID]=useState(layouts[0].layout_id),[query,setQuery]=useState(''),[selection,setSelection]=useState<{midi:number;name:string}|null>({midi:60,name:'C4'}),[choices,setChoices]=useState<{midi:number;name:string}[]>([]),[message,setMessage]=useState(''),[side,setSide]=useState(false);
+  const audio=useNoteAudio(),layout=layouts.find(l=>l.layout_id===layoutID)!;
+  function find(raw:string){audio.cancel();setSelection(null);setChoices([]);setSide(false);const value=raw.trim().replace(/-?sharp/gi,'#').replace(/-?flat/gi,'b').replaceAll('♯','#').replaceAll('♭','b').replace(/\s/g,'');if(/black.*key.*G/i.test(raw)){setSide(true);setMessage('Which side of G?');return;}const match=value.match(/^([A-Ga-g])([#b]?)(-?\d+)?$/);if(!match){setMessage('Enter one note, such as F3, C or A-flat.');return;}const name=match[1].toUpperCase()+match[2]+(match[3]??'');const found=layout.keys.flatMap(k=>k.lookup_spellings.filter(s=>match[3]!==undefined?s===name:s.replace(/-?\d+$/,'')===name).map(s=>({midi:k.midi,name:s})));if(!found.length){setMessage(`${name}: This note is outside the selected keyboard range (${layout.lowest_note}–${layout.highest_note}).`);return;}if(match[3]===undefined){setChoices(found);setMessage('Which octave?');}else{setSelection(found[0]);setMessage('');}}
+  function choose(k:PianoKey){audio.cancel();setSelection({midi:k.midi,name:k.lookup_spellings[0]});setChoices([]);setMessage('');setSide(false);}
+  const key=layout.keys.find(k=>k.midi===selection?.midi);
+  return <section className="am-tool kn-tool" aria-label="Find a piano key"><div className="kn-toolbar"><LayoutChoice layouts={layouts} value={layoutID} ready={audio.ready} onChange={id=>{audio.cancel();setLayoutID(id);setSelection(null);setChoices([]);setSide(false);setMessage('Select a key or find a note in this layout.');}}/><form className="kn-query" onSubmit={e=>{e.preventDefault();find(query);}}><label className="kn-field">Find a note<input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Try F3, A4, C or A-flat" disabled={!audio.ready}/></label><button className="am-button am-secondary" disabled={!audio.ready}>Find</button></form></div>
+    <p className="kn-range">{layout.label} · {layout.white_key_count} white / {layout.black_key_count} black keys</p>
+    <div role="status"><p>{message}</p></div>{side&&<div className="kn-actions"><button className="am-button" onClick={()=>find('F#')}>Lower / left of G: F# / Gb</button><button className="am-button" onClick={()=>find('G#')}>Higher / right of G: G# / Ab</button></div>}{choices.length>0&&<div className="kn-actions" aria-label="Choose an octave">{choices.map(c=><button className="am-button" key={c.name} onClick={()=>{setSelection(c);setChoices([]);setMessage('');}}>{c.name}</button>)}</div>}
+    <div className="kn-result" data-selected-midi={selection?.midi??''}><h2>{selection?.name??'Choose a note'}</h2>{key&&<p>{key.label_with_octave} · {key.color} key{key.midi===60?' · Middle C':''}</p>}</div>
+    <KeyboardDiagram keys={layout.keys} selected={selection?.midi} sounding={audio.sounding} onSelect={choose} ready={audio.ready} label={layout.label}/><p className="kn-hint">Scroll to explore the full range. On a key, use ← / →, Home or End to move focus; Enter selects.</p><NotePlayback audio={audio} midi={selection?.midi??null}/><p className="kn-hint">{layout.scope_note}</p><noscript><p>JavaScript is required for selection and sound. The keyboard and reference text remain readable.</p></noscript>
+  </section>;
+}

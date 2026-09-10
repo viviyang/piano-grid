@@ -1,0 +1,310 @@
+[
+  {
+    "width": 1440,
+    "kind": "reference",
+    "status": 200,
+    "boxes": {
+      "h1": {
+        "x": 160,
+        "y": 121.015625,
+        "width": 1120,
+        "height": 43.984375,
+        "top": 121.015625,
+        "right": 1280,
+        "bottom": 165,
+        "left": 160,
+        "font": "36px"
+      },
+      "#am-result": {
+        "x": 160,
+        "y": 219.984375,
+        "width": 1120,
+        "height": 725.84375,
+        "top": 219.984375,
+        "right": 1280,
+        "bottom": 945.828125,
+        "left": 160,
+        "font": "17px"
+      },
+      "#keyboard-scroll": {
+        "x": 185,
+        "y": 438.8125,
+        "width": 1070,
+        "height": 230,
+        "top": 438.8125,
+        "right": 1255,
+        "bottom": 668.8125,
+        "left": 185,
+        "font": "17px"
+      },
+      ".key-bed": {
+        "x": 185,
+        "y": 440.8125,
+        "width": 1070,
+        "height": 196,
+        "top": 440.8125,
+        "right": 1255,
+        "bottom": 636.8125,
+        "left": 185,
+        "font": "17px"
+      },
+      ".am-key-bed": null,
+      ".controls": {
+        "x": 185,
+        "y": 718.8125,
+        "width": 1070,
+        "height": 91.015625,
+        "top": 718.8125,
+        "right": 1255,
+        "bottom": 809.828125,
+        "left": 185,
+        "font": "17px"
+      },
+      ".am-controls": null,
+      ".reading": {
+        "x": 160,
+        "y": 1157.84375,
+        "width": 1120,
+        "height": 1885.078125,
+        "top": 1157.84375,
+        "right": 1280,
+        "bottom": 3042.921875,
+        "left": 160,
+        "font": "17px"
+      },
+      ".am-reading": null
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "kind": "page",
+    "status": 200,
+    "boxes": {
+      "h1": {
+        "x": 160,
+        "y": 121.015625,
+        "width": 1120,
+        "height": 43.984375,
+        "top": 121.015625,
+        "right": 1280,
+        "bottom": 165,
+        "left": 160,
+        "font": "36px"
+      },
+      "#am-result": {
+        "x": 160,
+        "y": 219.984375,
+        "width": 1120,
+        "height": 725.84375,
+        "top": 219.984375,
+        "right": 1280,
+        "bottom": 945.828125,
+        "left": 160,
+        "font": "17px"
+      },
+      "#keyboard-scroll": {
+        "x": 185,
+        "y": 438.8125,
+        "width": 1070,
+        "height": 230,
+        "top": 438.8125,
+        "right": 1255,
+        "bottom": 668.8125,
+        "left": 185,
+        "font": "17px"
+      },
+      ".key-bed": null,
+      ".am-key-bed": {
+        "x": 185,
+        "y": 440.8125,
+        "width": 1070,
+        "height": 196,
+        "top": 440.8125,
+        "right": 1255,
+        "bottom": 636.8125,
+        "left": 185,
+        "font": "17px"
+      },
+      ".controls": null,
+      ".am-controls": {
+        "x": 185,
+        "y": 718.8125,
+        "width": 1070,
+        "height": 91.015625,
+        "top": 718.8125,
+        "right": 1255,
+        "bottom": 809.828125,
+        "left": 185,
+        "font": "17px"
+      },
+      ".reading": null,
+      ".am-reading": {
+        "x": 160,
+        "y": 1157.84375,
+        "width": 1120,
+        "height": 1885.078125,
+        "top": 1157.84375,
+        "right": 1280,
+        "bottom": 3042.921875,
+        "left": 160,
+        "font": "17px"
+      }
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "kind": "reference",
+    "status": 200,
+    "boxes": {
+      "h1": {
+        "x": 16,
+        "y": 101.015625,
+        "width": 358,
+        "height": 72,
+        "top": 101.015625,
+        "right": 374,
+        "bottom": 173.015625,
+        "left": 16,
+        "font": "30px"
+      },
+      "#am-result": {
+        "x": 16,
+        "y": 245.015625,
+        "width": 358,
+        "height": 1001.4375,
+        "top": 245.015625,
+        "right": 374,
+        "bottom": 1246.453125,
+        "left": 16,
+        "font": "16px"
+      },
+      "#keyboard-scroll": {
+        "x": 33,
+        "y": 510.453125,
+        "width": 324,
+        "height": 172,
+        "top": 510.453125,
+        "right": 357,
+        "bottom": 682.453125,
+        "left": 33,
+        "font": "16px"
+      },
+      ".key-bed": {
+        "x": -75,
+        "y": 512.453125,
+        "width": 540,
+        "height": 144,
+        "top": 512.453125,
+        "right": 465,
+        "bottom": 656.453125,
+        "left": -75,
+        "font": "16px"
+      },
+      ".am-key-bed": null,
+      ".controls": {
+        "x": 33,
+        "y": 738.453125,
+        "width": 324,
+        "height": 264,
+        "top": 738.453125,
+        "right": 357,
+        "bottom": 1002.453125,
+        "left": 33,
+        "font": "16px"
+      },
+      ".am-controls": null,
+      ".reading": {
+        "x": 16,
+        "y": 1516.46875,
+        "width": 358,
+        "height": 2632.890625,
+        "top": 1516.46875,
+        "right": 374,
+        "bottom": 4149.359375,
+        "left": 16,
+        "font": "16px"
+      },
+      ".am-reading": null
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "kind": "page",
+    "status": 200,
+    "boxes": {
+      "h1": {
+        "x": 16,
+        "y": 101.015625,
+        "width": 358,
+        "height": 72,
+        "top": 101.015625,
+        "right": 374,
+        "bottom": 173.015625,
+        "left": 16,
+        "font": "30px"
+      },
+      "#am-result": {
+        "x": 16,
+        "y": 245.015625,
+        "width": 358,
+        "height": 1001.4375,
+        "top": 245.015625,
+        "right": 374,
+        "bottom": 1246.453125,
+        "left": 16,
+        "font": "16px"
+      },
+      "#keyboard-scroll": {
+        "x": 33,
+        "y": 510.453125,
+        "width": 324,
+        "height": 172,
+        "top": 510.453125,
+        "right": 357,
+        "bottom": 682.453125,
+        "left": 33,
+        "font": "16px"
+      },
+      ".key-bed": null,
+      ".am-key-bed": {
+        "x": -75,
+        "y": 512.453125,
+        "width": 540,
+        "height": 144,
+        "top": 512.453125,
+        "right": 465,
+        "bottom": 656.453125,
+        "left": -75,
+        "font": "16px"
+      },
+      ".controls": null,
+      ".am-controls": {
+        "x": 33,
+        "y": 738.453125,
+        "width": 324,
+        "height": 264,
+        "top": 738.453125,
+        "right": 357,
+        "bottom": 1002.453125,
+        "left": 33,
+        "font": "16px"
+      },
+      ".reading": null,
+      ".am-reading": {
+        "x": 16,
+        "y": 1516.46875,
+        "width": 358,
+        "height": 2632.890625,
+        "top": 1516.46875,
+        "right": 374,
+        "bottom": 4149.359375,
+        "left": 16,
+        "font": "16px"
+      }
+    },
+    "errors": []
+  }
+]

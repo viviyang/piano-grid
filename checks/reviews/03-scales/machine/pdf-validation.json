@@ -1,0 +1,238 @@
+{
+  "executed_at": "2026-09-09T12:25:58.224166+00:00",
+  "python": "3.12.14",
+  "passed": 46,
+  "failed": 0,
+  "results": [
+    {
+      "name": "pdftoppm is available",
+      "passed": true,
+      "detail": "C:\\Users\\Admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe"
+    },
+    {
+      "name": "scales-center-c-major.pdf exists",
+      "passed": true,
+      "detail": "C:\\Users\\Admin\\AppData\\Local\\Temp\\piano-review-03-scales-9f4e2c0b7a1d4aa3b63b55a7a7c6c846\\checks\\batches\\03-scales\\print-pdfs\\scales-center-c-major.pdf"
+    },
+    {
+      "name": "scales-center-c-major.pdf has substantial bytes",
+      "passed": true,
+      "detail": "73246"
+    },
+    {
+      "name": "scales-center-c-major.pdf is one page",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "scales-center-c-major.pdf contains C Major",
+      "passed": true,
+      "detail": "Piano Reference C Major Hand Right hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C4 D4 E4 F4 G4 A4 B4 C5 Fingers 1 2 3 1 2 3 4 5 𝄞 C4 D4 E4 F4 G4 A4 B4 C5 Descending Source-checked fingering Notes C5 B4 A4 G4 F4 E4 D4 C4 Fingers 5 4 3 2 1 3 2 1 𝄞 C5 B4 A4 G4 F4 E4 D4 C4 Keyboard C4 to C5 to C4 Current one-octave reference. Finger numbers appe"
+    },
+    {
+      "name": "scales-center-c-major.pdf contains Right hand",
+      "passed": true,
+      "detail": "Piano Reference C Major Hand Right hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C4 D4 E4 F4 G4 A4 B4 C5 Fingers 1 2 3 1 2 3 4 5 𝄞 C4 D4 E4 F4 G4 A4 B4 C5 Descending Source-checked fingering Notes C5 B4 A4 G4 F4 E4 D4 C4 Fingers 5 4 3 2 1 3 2 1 𝄞 C5 B4 A4 G4 F4 E4 D4 C4 Keyboard C4 to C5 to C4 Current one-octave reference. Finger numbers appe"
+    },
+    {
+      "name": "scales-center-c-major.pdf contains Ascending",
+      "passed": true,
+      "detail": "Piano Reference C Major Hand Right hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C4 D4 E4 F4 G4 A4 B4 C5 Fingers 1 2 3 1 2 3 4 5 𝄞 C4 D4 E4 F4 G4 A4 B4 C5 Descending Source-checked fingering Notes C5 B4 A4 G4 F4 E4 D4 C4 Fingers 5 4 3 2 1 3 2 1 𝄞 C5 B4 A4 G4 F4 E4 D4 C4 Keyboard C4 to C5 to C4 Current one-octave reference. Finger numbers appe"
+    },
+    {
+      "name": "scales-center-c-major.pdf contains Descending",
+      "passed": true,
+      "detail": "Piano Reference C Major Hand Right hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C4 D4 E4 F4 G4 A4 B4 C5 Fingers 1 2 3 1 2 3 4 5 𝄞 C4 D4 E4 F4 G4 A4 B4 C5 Descending Source-checked fingering Notes C5 B4 A4 G4 F4 E4 D4 C4 Fingers 5 4 3 2 1 3 2 1 𝄞 C5 B4 A4 G4 F4 E4 D4 C4 Keyboard C4 to C5 to C4 Current one-octave reference. Finger numbers appe"
+    },
+    {
+      "name": "scales-center-c-major.pdf contains Sources: AM-NOTES-C-MAJOR, AM-FINGER-LMT",
+      "passed": true,
+      "detail": "Piano Reference C Major Hand Right hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C4 D4 E4 F4 G4 A4 B4 C5 Fingers 1 2 3 1 2 3 4 5 𝄞 C4 D4 E4 F4 G4 A4 B4 C5 Descending Source-checked fingering Notes C5 B4 A4 G4 F4 E4 D4 C4 Fingers 5 4 3 2 1 3 2 1 𝄞 C5 B4 A4 G4 F4 E4 D4 C4 Keyboard C4 to C5 to C4 Current one-octave reference. Finger numbers appe"
+    },
+    {
+      "name": "scales-center-c-major.pdf avoids all-scale PDF claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "scales-center-c-major.pdf renders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "scales-center-c-major.pdf render is nonblank",
+      "passed": true,
+      "detail": "103190"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf exists",
+      "passed": true,
+      "detail": "C:\\Users\\Admin\\AppData\\Local\\Temp\\piano-review-03-scales-9f4e2c0b7a1d4aa3b63b55a7a7c6c846\\checks\\batches\\03-scales\\print-pdfs\\c-major-lh-up-down.pdf"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf has substantial bytes",
+      "passed": true,
+      "detail": "72929"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf is one page",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf contains C Major",
+      "passed": true,
+      "detail": "Piano Reference C Major Key signature: No sharps or flats Hand Left hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C3 D3 E3 F3 G3 A3 B3 C4 Fingers 5 4 3 2 1 3 2 1 𝄢 C3 D3 E3 F3 G3 A3 B3 C4 Descending Source-checked fingering Notes C4 B3 A3 G3 F3 E3 D3 C3 Fingers 1 2 3 1 2 3 4 5 𝄢 C4 B3 A3 G3 F3 E3 D3 C3 Keyboard C3 to C4 to C3 One-octave refer"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf contains Left hand",
+      "passed": true,
+      "detail": "Piano Reference C Major Key signature: No sharps or flats Hand Left hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C3 D3 E3 F3 G3 A3 B3 C4 Fingers 5 4 3 2 1 3 2 1 𝄢 C3 D3 E3 F3 G3 A3 B3 C4 Descending Source-checked fingering Notes C4 B3 A3 G3 F3 E3 D3 C3 Fingers 1 2 3 1 2 3 4 5 𝄢 C4 B3 A3 G3 F3 E3 D3 C3 Keyboard C3 to C4 to C3 One-octave refer"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf contains Ascending",
+      "passed": true,
+      "detail": "Piano Reference C Major Key signature: No sharps or flats Hand Left hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C3 D3 E3 F3 G3 A3 B3 C4 Fingers 5 4 3 2 1 3 2 1 𝄢 C3 D3 E3 F3 G3 A3 B3 C4 Descending Source-checked fingering Notes C4 B3 A3 G3 F3 E3 D3 C3 Fingers 1 2 3 1 2 3 4 5 𝄢 C4 B3 A3 G3 F3 E3 D3 C3 Keyboard C3 to C4 to C3 One-octave refer"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf contains Descending",
+      "passed": true,
+      "detail": "Piano Reference C Major Key signature: No sharps or flats Hand Left hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C3 D3 E3 F3 G3 A3 B3 C4 Fingers 5 4 3 2 1 3 2 1 𝄢 C3 D3 E3 F3 G3 A3 B3 C4 Descending Source-checked fingering Notes C4 B3 A3 G3 F3 E3 D3 C3 Fingers 1 2 3 1 2 3 4 5 𝄢 C4 B3 A3 G3 F3 E3 D3 C3 Keyboard C3 to C4 to C3 One-octave refer"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf contains Sources: AM-NOTES-C-MAJOR, AM-FINGER-LMT",
+      "passed": true,
+      "detail": "Piano Reference C Major Key signature: No sharps or flats Hand Left hand Range 1 octave Tempo 60 BPM C – D – E – F – G – A – B – C – B – A – G – F – E – D – C Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes C3 D3 E3 F3 G3 A3 B3 C4 Fingers 5 4 3 2 1 3 2 1 𝄢 C3 D3 E3 F3 G3 A3 B3 C4 Descending Source-checked fingering Notes C4 B3 A3 G3 F3 E3 D3 C3 Fingers 1 2 3 1 2 3 4 5 𝄢 C4 B3 A3 G3 F3 E3 D3 C3 Keyboard C3 to C4 to C3 One-octave refer"
+    },
+    {
+      "name": "c-major-lh-up-down.pdf avoids all-scale PDF claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "c-major-lh-up-down.pdf renders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "c-major-lh-up-down.pdf render is nonblank",
+      "passed": true,
+      "detail": "103145"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf exists",
+      "passed": true,
+      "detail": "C:\\Users\\Admin\\AppData\\Local\\Temp\\piano-review-03-scales-9f4e2c0b7a1d4aa3b63b55a7a7c6c846\\checks\\batches\\03-scales\\print-pdfs\\a-minor-natural-rh-ascending.pdf"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf has substantial bytes",
+      "passed": true,
+      "detail": "69217"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf is one page",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf contains A Natural minor",
+      "passed": true,
+      "detail": "Piano Reference A Natural minor Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 40 BPM A – B – C – D – E – F – G – A Semitone steps: 2 – 1 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes A4 B4 C5 D5 E5 F5 G5 A5 Fingers 1 2 3 1 2 3 4 5 𝄞 A4 B4 C5 D5 E5 F5 G5 A5 Keyboard A4 to A5 One-octave reference. Finger numbers appear only for source-checked hand and direction rows. Sources: AN-HMT-A, AN-PS-NAT A4 ● B4 ● C5 ● D5 ● E5 ● F5 ● G5 ● A5 ● A#4 Bb4 C#5 Db5 D#5 Eb5"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf contains Right hand",
+      "passed": true,
+      "detail": "Piano Reference A Natural minor Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 40 BPM A – B – C – D – E – F – G – A Semitone steps: 2 – 1 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes A4 B4 C5 D5 E5 F5 G5 A5 Fingers 1 2 3 1 2 3 4 5 𝄞 A4 B4 C5 D5 E5 F5 G5 A5 Keyboard A4 to A5 One-octave reference. Finger numbers appear only for source-checked hand and direction rows. Sources: AN-HMT-A, AN-PS-NAT A4 ● B4 ● C5 ● D5 ● E5 ● F5 ● G5 ● A5 ● A#4 Bb4 C#5 Db5 D#5 Eb5"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf contains 40 BPM",
+      "passed": true,
+      "detail": "Piano Reference A Natural minor Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 40 BPM A – B – C – D – E – F – G – A Semitone steps: 2 – 1 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes A4 B4 C5 D5 E5 F5 G5 A5 Fingers 1 2 3 1 2 3 4 5 𝄞 A4 B4 C5 D5 E5 F5 G5 A5 Keyboard A4 to A5 One-octave reference. Finger numbers appear only for source-checked hand and direction rows. Sources: AN-HMT-A, AN-PS-NAT A4 ● B4 ● C5 ● D5 ● E5 ● F5 ● G5 ● A5 ● A#4 Bb4 C#5 Db5 D#5 Eb5"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf contains Fingers 1 2 3 1 2 3 4 5",
+      "passed": true,
+      "detail": "Piano Reference A Natural minor Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 40 BPM A – B – C – D – E – F – G – A Semitone steps: 2 – 1 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes A4 B4 C5 D5 E5 F5 G5 A5 Fingers 1 2 3 1 2 3 4 5 𝄞 A4 B4 C5 D5 E5 F5 G5 A5 Keyboard A4 to A5 One-octave reference. Finger numbers appear only for source-checked hand and direction rows. Sources: AN-HMT-A, AN-PS-NAT A4 ● B4 ● C5 ● D5 ● E5 ● F5 ● G5 ● A5 ● A#4 Bb4 C#5 Db5 D#5 Eb5"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf contains Sources: AN-HMT-A, AN-PS-NAT",
+      "passed": true,
+      "detail": "Piano Reference A Natural minor Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 40 BPM A – B – C – D – E – F – G – A Semitone steps: 2 – 1 – 2 – 2 – 1 – 2 – 2 Ascending Source-checked fingering Notes A4 B4 C5 D5 E5 F5 G5 A5 Fingers 1 2 3 1 2 3 4 5 𝄞 A4 B4 C5 D5 E5 F5 G5 A5 Keyboard A4 to A5 One-octave reference. Finger numbers appear only for source-checked hand and direction rows. Sources: AN-HMT-A, AN-PS-NAT A4 ● B4 ● C5 ● D5 ● E5 ● F5 ● G5 ● A5 ● A#4 Bb4 C#5 Db5 D#5 Eb5"
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf avoids all-scale PDF claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf renders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-minor-natural-rh-ascending.pdf render is nonblank",
+      "passed": true,
+      "detail": "92542"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf exists",
+      "passed": true,
+      "detail": "C:\\Users\\Admin\\AppData\\Local\\Temp\\piano-review-03-scales-9f4e2c0b7a1d4aa3b63b55a7a7c6c846\\checks\\batches\\03-scales\\print-pdfs\\a-minor-melodic-rh-descending.pdf"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf has substantial bytes",
+      "passed": true,
+      "detail": "69606"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf is one page",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf contains A Melodic minor (classical exercise)",
+      "passed": true,
+      "detail": "Piano Reference A Melodic minor (classical exercise) Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 80 BPM A – G – F – E – D – C – B – A Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2 Descending Notes only Notes A5 G5 F5 E5 D5 C5 B4 A4 Fingering is not available for this hand and direction. The verified notes remain available for reference and playback. 𝄞 A5 G5 F5 E5 D5 C5 B4 A4 Keyboard A5 to A4 One-octave reference. Finger numbers appear only for source-checked hand and dire"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf contains Right hand",
+      "passed": true,
+      "detail": "Piano Reference A Melodic minor (classical exercise) Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 80 BPM A – G – F – E – D – C – B – A Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2 Descending Notes only Notes A5 G5 F5 E5 D5 C5 B4 A4 Fingering is not available for this hand and direction. The verified notes remain available for reference and playback. 𝄞 A5 G5 F5 E5 D5 C5 B4 A4 Keyboard A5 to A4 One-octave reference. Finger numbers appear only for source-checked hand and dire"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf contains 80 BPM",
+      "passed": true,
+      "detail": "Piano Reference A Melodic minor (classical exercise) Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 80 BPM A – G – F – E – D – C – B – A Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2 Descending Notes only Notes A5 G5 F5 E5 D5 C5 B4 A4 Fingering is not available for this hand and direction. The verified notes remain available for reference and playback. 𝄞 A5 G5 F5 E5 D5 C5 B4 A4 Keyboard A5 to A4 One-octave reference. Finger numbers appear only for source-checked hand and dire"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf contains Descending Notes only",
+      "passed": true,
+      "detail": "Piano Reference A Melodic minor (classical exercise) Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 80 BPM A – G – F – E – D – C – B – A Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2 Descending Notes only Notes A5 G5 F5 E5 D5 C5 B4 A4 Fingering is not available for this hand and direction. The verified notes remain available for reference and playback. 𝄞 A5 G5 F5 E5 D5 C5 B4 A4 Keyboard A5 to A4 One-octave reference. Finger numbers appear only for source-checked hand and dire"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf contains Notes A5 G5 F5 E5 D5 C5 B4 A4",
+      "passed": true,
+      "detail": "Piano Reference A Melodic minor (classical exercise) Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 80 BPM A – G – F – E – D – C – B – A Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2 Descending Notes only Notes A5 G5 F5 E5 D5 C5 B4 A4 Fingering is not available for this hand and direction. The verified notes remain available for reference and playback. 𝄞 A5 G5 F5 E5 D5 C5 B4 A4 Keyboard A5 to A4 One-octave reference. Finger numbers appear only for source-checked hand and dire"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf contains Sources: AN-HMT-A, AN-DENTON",
+      "passed": true,
+      "detail": "Piano Reference A Melodic minor (classical exercise) Key signature: No sharps or flats Hand Right hand Range 1 octave Tempo 80 BPM A – G – F – E – D – C – B – A Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2 Descending Notes only Notes A5 G5 F5 E5 D5 C5 B4 A4 Fingering is not available for this hand and direction. The verified notes remain available for reference and playback. 𝄞 A5 G5 F5 E5 D5 C5 B4 A4 Keyboard A5 to A4 One-octave reference. Finger numbers appear only for source-checked hand and dire"
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf avoids all-scale PDF claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf renders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-minor-melodic-rh-descending.pdf render is nonblank",
+      "passed": true,
+      "detail": "96284"
+    }
+  ]
+}

@@ -1,0 +1,5102 @@
+{
+  "schema_version": "2.0.0",
+  "date": "2026-09-09",
+  "project": "Piano Reference",
+  "batch": "E",
+  "name": "Guide / Reading / Practice",
+  "baseline_version": "2.0-consolidated-final-plan",
+  "scope_note": "原URL、原词、原职责与暂停状态保留；材料状态不等于上线状态。",
+  "pages": [
+    {
+      "url": "/guide",
+      "title": "Learn Piano: Your First Useful Steps",
+      "description": "Find a note, read a short pattern and choose your next practice task.",
+      "user_task": "Start playing with a short ordered lesson, then select the right guide.",
+      "questions": [
+        "Where do I start?",
+        "What do I try at the keyboard?",
+        "Is there a printable lesson?"
+      ],
+      "blocks": [
+        {
+          "heading": "Start with three keys",
+          "body": "Find a group of two black keys. The white key immediately to its left is C. On an 88-key piano, middle C is C4. Find C4, then the next two white keys to its right: D4 and E4. Use the keyboard chart if your instrument has a different range.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-MUSICCA-NOTES",
+            "BN-PUGET-OCTAVES"
+          ]
+        },
+        {
+          "heading": "Try a four-count pattern",
+          "body": "Original first task: play C4 on count 1, D4 on count 2, then E4 for counts 3–4. Keep saying the counts while the last note lasts. This gives you one bar of our 4/4 example. Start with one hand and choose a comfortable pace.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-DURATION"
+          ]
+        },
+        {
+          "heading": "Choose the next step",
+          "body": "Read the same notes on the staff, then clap a rhythm before learning a short piece. The printable starter pack includes both-clef note examples, two sight-reading lines and two rhythm lines. For chord playing, begin with C–E–G and follow the chord guide.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-CHORD"
+          ]
+        }
+      ],
+      "data": {
+        "path": [
+          {
+            "step": 1,
+            "task": "Locate C4 D4 E4",
+            "url": "/keyboard-notes/chart"
+          },
+          {
+            "step": 2,
+            "task": "Read those notes",
+            "url": "/guide/read-sheet-music"
+          },
+          {
+            "step": 3,
+            "task": "Clap four counts",
+            "url": "/guide/note-values-and-rhythm"
+          },
+          {
+            "step": 4,
+            "task": "Learn a short phrase",
+            "url": "/guide/learn-a-piano-song"
+          }
+        ],
+        "first_example": {
+          "number": 1,
+          "events": [
+            {
+              "pitch": "C4",
+              "kind": "note",
+              "onset_quarters": 0,
+              "duration_quarters": 1,
+              "finger": null
+            },
+            {
+              "pitch": "D4",
+              "kind": "note",
+              "onset_quarters": 1,
+              "duration_quarters": 1,
+              "finger": null
+            },
+            {
+              "pitch": "E4",
+              "kind": "note",
+              "onset_quarters": 2,
+              "duration_quarters": 2,
+              "finger": null
+            }
+          ],
+          "total_quarters": 4
+        },
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "BN-MUSICCA-NOTES",
+        "BN-PUGET-OCTAVES",
+        "E-DURATION",
+        "E-CHORD"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-guide",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P226",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "简明学习顺序；每步真实示例与相关资源；已完成时提供可打印入门材料 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P240",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "真实可用的入门 PDF 才算承接 pdf 查询。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P255",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "入门路径中有键盘乐理示例，不只是把该词放在导航里。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U114",
+      "batch": "E",
+      "main_keyword": "how to play piano for beginners",
+      "keywords": [
+        "how to play piano for beginners",
+        "piano instructions for beginners",
+        "easy piano tutorial",
+        "how to play piano for dummies",
+        "keyboard piano beginner lessons",
+        "piano for starters",
+        "learn to play keyboard",
+        "learning keyboard",
+        "beginning piano",
+        "free piano lessons for beginners",
+        "learning of piano keyboard",
+        "tutorial piano keyboard",
+        "how to learn piano",
+        "how to play piano",
+        "how to teach yourself piano",
+        "piano tutorial",
+        "piano lessons for beginners pdf",
+        "piano keyboard theory",
+        "piano theory"
+      ],
+      "source_groups": [
+        {
+          "id": "P226",
+          "representative": "how to play piano for beginners",
+          "section": null,
+          "synonyms": [
+            "piano instructions for beginners",
+            "easy piano tutorial",
+            "how to play piano for dummies",
+            "keyboard piano beginner lessons",
+            "piano for starters",
+            "learn to play keyboard",
+            "learning keyboard",
+            "beginning piano",
+            "free piano lessons for beginners",
+            "learning of piano keyboard",
+            "tutorial piano keyboard",
+            "how to learn piano",
+            "how to play piano",
+            "how to teach yourself piano",
+            "piano tutorial"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1167:G1167",
+          "delivery_method": "独立页首要任务",
+          "required_output": "简明学习顺序；每步真实示例与相关资源；已完成时提供可打印入门材料",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P240",
+          "representative": "piano lessons for beginners pdf",
+          "section": "printable",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1287:G1287",
+          "delivery_method": "打印材料",
+          "required_output": "真实可用的入门 PDF 才算承接 pdf 查询。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P255",
+          "representative": "piano keyboard theory",
+          "section": "theory-basics",
+          "synonyms": [
+            "piano theory"
+          ],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L288｜beginner piano sheet music > beginner piano sheet music by level",
+          "delivery_method": "基础章节",
+          "required_output": "入门路径中有键盘乐理示例，不只是把该词放在导航里。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T21",
+      "baseline_priority": "先做",
+      "baseline_purpose": "了解学琴从哪里开始，并进入相关图表、教程和练习",
+      "final_scope": {
+        "id": "T21",
+        "name": "指南中心",
+        "confirmation_status": "本版统一规划建议；此前未逐页确认",
+        "user_task": "知道从哪里开始学，按学习问题找到相应指南与工具。",
+        "modules": [
+          "提供简明学习路径、适用对象、真实示例和指南入口。",
+          "首屏也给可执行的起步内容，不只是文章标题列表。",
+          "printable 入门资料只在完成后显示。"
+        ],
+        "boundary": "不宣称完整课程、名师指导或学习效果；不把所有指南正文塞进中心页。",
+        "acceptance": "用户能找到下一项可执行任务，入口都已发布。"
+      },
+      "required_delivery": "提供简明学习路径、适用对象、真实示例和指南入口。；首屏也给可执行的起步内容，不只是文章标题列表。；printable 入门资料只在完成后显示。",
+      "release_conditions": "用户能找到下一项可执行任务，入口都已发布。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "不承诺完整课程或替代教师；打印版本实际存在时才提供",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Learn Piano: Your First Useful Steps",
+        "description": "Find a note, read a short pattern and choose your next practice task.",
+        "canonical_path": "/guide",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/read-sheet-music",
+      "title": "How to Read Piano Sheet Music",
+      "description": "Connect the clef, staff position, key and duration before you play.",
+      "user_task": "Decode a short score and identify notes in the correct register.",
+      "questions": [
+        "How do clefs map to keys?",
+        "Where does FACE apply?",
+        "What does two ledger lines below mean?"
+      ],
+      "blocks": [
+        {
+          "heading": "Read in a useful order",
+          "body": "Identify the clef first. Read the key signature and any accidental beside the note, then locate the note on a line or space. Finally read its duration. A higher position on a staff means a higher written note; alternating lines and spaces move through successive letter names.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "BN-MUSICCA-STAFF",
+            "BN-MUSICCA-ACCIDENTALS"
+          ]
+        },
+        {
+          "heading": "Use anchors, then count steps",
+          "body": "In treble clef, the second line from the bottom is G4. In bass clef, the fourth line is F3. Middle C, C4, is on the first ledger line below treble or above bass. These two written positions represent the same piano key.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "BN-MUSICCA-CLEFS"
+          ]
+        },
+        {
+          "heading": "FACE has a specific job",
+          "body": "F4–A4–C5–E5 names the four spaces inside the treble staff, from bottom to top. It does not name the bass spaces. For “two lines below,” first identify the clef: the second ledger line below treble is A3; below bass it is C2.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "BN-PUGET-OCTAVES"
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "body": "Name the first ledger-line note below treble, then the next two staff positions upward. Answer: C4, D4, E4. Find them on the keyboard and play the first bar of Steps around middle C. The printable shows both the notation and an answer key.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS"
+          ]
+        }
+      ],
+      "data": {
+        "anchor_map": [
+          {
+            "clef": "treble",
+            "pitch": "E4",
+            "position": "bottom line"
+          },
+          {
+            "clef": "treble",
+            "pitch": "G4",
+            "position": "second line"
+          },
+          {
+            "clef": "treble",
+            "pitch": "C4",
+            "position": "first ledger line below"
+          },
+          {
+            "clef": "treble",
+            "pitch": "A3",
+            "position": "second ledger line below"
+          },
+          {
+            "clef": "bass",
+            "pitch": "G2",
+            "position": "bottom line"
+          },
+          {
+            "clef": "bass",
+            "pitch": "F3",
+            "position": "fourth line"
+          },
+          {
+            "clef": "bass",
+            "pitch": "C4",
+            "position": "first ledger line above"
+          },
+          {
+            "clef": "bass",
+            "pitch": "E2",
+            "position": "first ledger line below"
+          },
+          {
+            "clef": "bass",
+            "pitch": "C2",
+            "position": "second ledger line below"
+          }
+        ],
+        "treble_spaces": [
+          "F4",
+          "A4",
+          "C5",
+          "E5"
+        ],
+        "bass_spaces": [
+          "A2",
+          "C3",
+          "E3",
+          "G3"
+        ],
+        "exercise": {
+          "id": "E-SR1",
+          "title": "Steps around middle C",
+          "clef": "treble",
+          "meter": "4/4",
+          "key_signature": "no sharps or flats",
+          "quarter_units_per_bar": 4,
+          "bars": [
+            {
+              "number": 1,
+              "events": [
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 2,
+              "events": [
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 3,
+              "events": [
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "F4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 3,
+                  "duration_quarters": 1,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 4,
+              "events": [
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 4,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            }
+          ],
+          "goal": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+          "difficulty": {
+            "label": "introductory editorial exercise",
+            "basis": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+            "exam_grade": null
+          },
+          "tempo_bpm": null,
+          "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+          "source_ids": [
+            "E-DURATION",
+            "BN-OMT-CLEFS"
+          ],
+          "rights": {
+            "edition_status": "official / authorized",
+            "site_use": "original Piano Reference exercise; distributable"
+          },
+          "fingering_status": "not supplied; do not infer"
+        },
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "chart_url": "/keyboard-notes/chart",
+        "diagram_pages": [
+          1,
+          2
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "BN-OMT-CLEFS",
+        "BN-MUSICCA-CLEFS",
+        "BN-MUSICCA-STAFF",
+        "BN-MUSICCA-ACCIDENTALS",
+        "BN-PUGET-OCTAVES"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-read-sheet-music",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P218",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "高低谱号与键盘对照；音符/加线示例；FACE与记忆方法；练习题；链接可操作的notes chart — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P228",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "在识谱教程中提供记谱方法与实际图例。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P229",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "简单音符的谱表和键位例子与练习。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P236",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "核实 FACE 的适用范围并示例，不扩成万能记忆规则。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P248",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "给出具体谱号、音区和加线例子，不猜用户指的哪一个音。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P249",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "明确方法和练习例子，工具仅辅助查图。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U115",
+      "batch": "E",
+      "main_keyword": "how to read sheet music piano",
+      "keywords": [
+        "how to read sheet music basics",
+        "how to read sheet music",
+        "how to read sheet music piano",
+        "how can i read music",
+        "how to read piano sheet music basics",
+        "reading music",
+        "how can i read music notes",
+        "music staff notes",
+        "score reading",
+        "how to learn sheet music",
+        "how to read piano sheets",
+        "reading music notes",
+        "reading sheet music",
+        "how to read notes on sheet music",
+        "how to read piano notes",
+        "how to read piano sheet music for beginners",
+        "learn to read music",
+        "music notes on staff",
+        "sheet music how to read",
+        "reading piano sheet music",
+        "how do you read music",
+        "how do you read notes",
+        "how do you read sheet music for piano",
+        "music notes on lines",
+        "reading piano scores",
+        "what is a score in music",
+        "how to read music sheet",
+        "music notes in lines",
+        "music notes on stave",
+        "musical staff notes",
+        "how to read sheet music piano pdf",
+        "learning how to read music",
+        "line music notes",
+        "music reading",
+        "read music notes for piano",
+        "reading music notes for beginners",
+        "reading piano music notes",
+        "reading sheet music for beginners",
+        "how do you read music notes",
+        "how read piano sheet music",
+        "how to read a music sheet",
+        "how to read music sheets",
+        "how to read sheet music for piano",
+        "learn how to read music",
+        "learn to read music notes",
+        "learn to read sheet music",
+        "learning to read music",
+        "music note staff",
+        "music staff note",
+        "musical staff with notes",
+        "reading music notation",
+        "reading sheet music piano",
+        "how to read a piano sheet",
+        "how to read note sheets",
+        "learn to read piano sheet",
+        "learn to read piano sheet music",
+        "reading piano music",
+        "reading piano notes",
+        "reading the notes",
+        "sheet music reading",
+        "how to read music sheet pdf",
+        "how to read piano sheet music",
+        "piano notation",
+        "easy music notes piano",
+        "how do you read notes on a piano",
+        "simple piano notes",
+        "easy piano notes",
+        "piano musical notes for beginners",
+        "beginner piano keyboard notes",
+        "piano keys beginners",
+        "piano music notes for beginners",
+        "piano notes letter",
+        "easy music notes for piano",
+        "music notes easy piano",
+        "piano key notes for beginners",
+        "learn piano notes",
+        "basic piano keyboard notes",
+        "how to read piano keys",
+        "piano notes for beginners with letters",
+        "how to name the keys for beginners",
+        "piano notes for beginners",
+        "face music notes",
+        "how to read notes if they are two lines down",
+        "treble clef under staff and above and bass",
+        "how to remember piano notes"
+      ],
+      "source_groups": [
+        {
+          "id": "P218",
+          "representative": "how to read sheet music piano",
+          "section": null,
+          "synonyms": [
+            "how to read piano sheet music basics",
+            "how to read piano sheets",
+            "how to read piano notes",
+            "how to read piano sheet music for beginners",
+            "reading piano sheet music",
+            "how do you read sheet music for piano",
+            "reading piano scores",
+            "read music notes for piano",
+            "reading piano music notes",
+            "how read piano sheet music",
+            "how to read sheet music for piano",
+            "reading sheet music piano",
+            "how to read a piano sheet",
+            "learn to read piano sheet",
+            "learn to read piano sheet music",
+            "reading piano music",
+            "reading piano notes",
+            "how to read piano sheet music"
+          ],
+          "other_queries": [
+            "how to read sheet music basics",
+            "how to read sheet music",
+            "how can i read music",
+            "reading music",
+            "how can i read music notes",
+            "music staff notes",
+            "score reading",
+            "how to learn sheet music",
+            "reading music notes",
+            "reading sheet music",
+            "how to read notes on sheet music",
+            "learn to read music",
+            "music notes on staff",
+            "sheet music how to read",
+            "how do you read music",
+            "how do you read notes",
+            "music notes on lines",
+            "what is a score in music",
+            "how to read music sheet",
+            "music notes in lines",
+            "music notes on stave",
+            "musical staff notes",
+            "how to read sheet music piano pdf",
+            "learning how to read music",
+            "line music notes",
+            "music reading",
+            "reading music notes for beginners",
+            "reading sheet music for beginners",
+            "how do you read music notes",
+            "how to read a music sheet",
+            "how to read music sheets",
+            "learn how to read music",
+            "learn to read music notes",
+            "learn to read sheet music",
+            "learning to read music",
+            "music note staff",
+            "music staff note",
+            "musical staff with notes",
+            "reading music notation",
+            "how to read note sheets",
+            "reading the notes",
+            "sheet music reading",
+            "how to read music sheet pdf"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1041:G1041",
+          "delivery_method": "独立页首要任务",
+          "required_output": "高低谱号与键盘对照；音符/加线示例；FACE与记忆方法；练习题；链接可操作的notes chart",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P228",
+          "representative": "piano notation",
+          "section": "notation",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1060:G1060",
+          "delivery_method": "记谱章节",
+          "required_output": "在识谱教程中提供记谱方法与实际图例。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P229",
+          "representative": "simple piano notes",
+          "section": "first-notes",
+          "synonyms": [
+            "easy music notes piano",
+            "how do you read notes on a piano",
+            "easy piano notes",
+            "piano musical notes for beginners",
+            "beginner piano keyboard notes",
+            "piano keys beginners",
+            "piano music notes for beginners",
+            "piano notes letter",
+            "easy music notes for piano",
+            "music notes easy piano",
+            "piano key notes for beginners",
+            "learn piano notes",
+            "basic piano keyboard notes",
+            "how to read piano keys",
+            "piano notes for beginners"
+          ],
+          "other_queries": [
+            "piano notes for beginners with letters",
+            "how to name the keys for beginners"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A345:G345",
+          "delivery_method": "入门示例",
+          "required_output": "简单音符的谱表和键位例子与练习。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P236",
+          "representative": "face music notes",
+          "section": "memory",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1697:G1697",
+          "delivery_method": "记忆方法章节",
+          "required_output": "核实 FACE 的适用范围并示例，不扩成万能记忆规则。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P248",
+          "representative": "how to read notes if they are two lines down",
+          "section": "ledger-lines",
+          "synonyms": [],
+          "other_queries": [
+            "treble clef under staff and above and bass"
+          ],
+          "source": "关键词策略构建器数据汇总.md｜L257｜beginner piano sheet music > piano sheet music with letter notes",
+          "delivery_method": "加线章节",
+          "required_output": "给出具体谱号、音区和加线例子，不猜用户指的哪一个音。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P249",
+          "representative": "how to remember piano notes",
+          "section": "remember",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L255｜beginner piano sheet music > piano sheet music with letter notes",
+          "delivery_method": "记忆练习章节",
+          "required_output": "明确方法和练习例子，工具仅辅助查图。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "先做",
+      "baseline_purpose": "学习琴谱基础并辨认音符",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "专业内容与示例审核；截图里的阅读教程不等于练习App需求",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "How to Read Piano Sheet Music",
+        "description": "Connect the clef, staff position, key and duration before you play.",
+        "canonical_path": "/guide/read-sheet-music",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/sight-reading",
+      "title": "Piano Sight-Reading Practice",
+      "description": "Preview a short unfamiliar line, keep the pulse and review one useful detail.",
+      "user_task": "Try unfamiliar music in a continuous first reading.",
+      "questions": [
+        "How does sight-reading differ from decoding notes?",
+        "What should I inspect first?",
+        "Where are actual printable exercises?"
+      ],
+      "blocks": [
+        {
+          "heading": "Prepare before the first attempt",
+          "body": "Basic reading can stop at each symbol. In this sight-reading activity, aim to carry an unfamiliar short line through a steady pulse. Check the clef, starting note, range, meter and longest or shortest note values before playing. This is an editorial practice procedure, not an exam test.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-BOOK-SIGHT",
+            "E-DURATION"
+          ]
+        },
+        {
+          "heading": "Use one attempt, then one observation",
+          "body": "Count one empty bar and play Steps around middle C. Keep the beat through a mistake if you can. Afterwards, mark the bar that interrupted your pulse and study it separately. Once rehearsed, the line becomes reading practice; use a different line for another first attempt.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        },
+        {
+          "heading": "Read rhythm without pitch",
+          "body": "Clap E-R1 while speaking 1 2 3 4, including the rests. E-R2 adds eighth-note subdivisions. Preview the silent beats before starting. The two rhythm lines are printed separately from the melody so you can work on timing alone.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-DURATION",
+            "E-DOTS"
+          ]
+        }
+      ],
+      "data": {
+        "exercises": [
+          {
+            "id": "E-SR1",
+            "title": "Steps around middle C",
+            "clef": "treble",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "E4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "E4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "E4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "F4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          },
+          {
+            "id": "E-SR2",
+            "title": "Read the bass staff",
+            "clef": "bass",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C3",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "G2",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "C3",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D3",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "E3",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "F3",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "E3",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D3",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C3",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "G2",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C3",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "Bass clef G2–F3; adds a fourth/fifth leap and half-note changes.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "Bass clef G2–F3; adds a fourth/fifth leap and half-note changes.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          },
+          {
+            "id": "E-R1",
+            "title": "Clap and leave a beat silent",
+            "clef": "rhythm",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "Rhythm only; quarters, halves, whole notes and quarter rests. Say 1 2 3 4 through silence.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "Rhythm only; quarters, halves, whole notes and quarter rests. Say 1 2 3 4 through silence.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          },
+          {
+            "id": "E-R2",
+            "title": "Count eighth-note pairs",
+            "clef": "rhythm",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0.5,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2.0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4.0
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1.5,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4.0
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0.5,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 1.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2.0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4.0
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "Adds paired eighths and a dotted quarter followed by an eighth; count 1 & 2 & 3 & 4 &.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "Adds paired eighths and a dotted quarter followed by an eighth; count 1 & 2 & 3 & 4 &.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          }
+        ],
+        "procedure": [
+          "Preview",
+          "Count in",
+          "Play once",
+          "Identify one issue",
+          "Study separately"
+        ],
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "scoring": {
+          "midi": false,
+          "microphone": false,
+          "automatic_grade": null
+        },
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-DURATION",
+        "E-DOTS",
+        "BN-OMT-CLEFS",
+        "E-BOOK-SIGHT"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-sight-reading",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P219",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "视奏方法；有难度说明的原创/可用练习材料；节奏练习；打印；不做MIDI/麦克风评分 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P234",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "与基础识谱区分，提供具体视奏过程与材料。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P264",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "提供实际节奏材料和练法，不以旋律音名辨识题代替。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U116",
+      "batch": "E",
+      "main_keyword": "sight reading piano tips for improvement",
+      "keywords": [
+        "sight reading piano tips for improvement",
+        "sight reading piano tutorial",
+        "what is sight reading",
+        "sight reading tips",
+        "sight reading practice",
+        "sight reading music",
+        "sightreading",
+        "sight reading exercises",
+        "sight reading piano",
+        "sight read music",
+        "piano sight reading",
+        "piano sight reading practice",
+        "piano sight reading practice pdf",
+        "rhythmic sight reading"
+      ],
+      "source_groups": [
+        {
+          "id": "P219",
+          "representative": "sight reading piano tips for improvement",
+          "section": null,
+          "synonyms": [
+            "sight reading piano tutorial"
+          ],
+          "other_queries": [
+            "what is sight reading",
+            "sight reading tips"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1717:G1717",
+          "delivery_method": "独立页首要任务",
+          "required_output": "视奏方法；有难度说明的原创/可用练习材料；节奏练习；打印；不做MIDI/麦克风评分",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P234",
+          "representative": "sight reading piano",
+          "section": "practice",
+          "synonyms": [
+            "piano sight reading",
+            "piano sight reading practice"
+          ],
+          "other_queries": [
+            "sight reading practice",
+            "sight reading music",
+            "sightreading",
+            "sight reading exercises",
+            "sight read music",
+            "piano sight reading practice pdf"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1724:G1724",
+          "delivery_method": "视奏方法章节",
+          "required_output": "与基础识谱区分，提供具体视奏过程与材料。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P264",
+          "representative": "rhythmic sight reading",
+          "section": "rhythm",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L538｜piano scales > piano sight-reading",
+          "delivery_method": "节奏视奏分区",
+          "required_output": "提供实际节奏材料和练法，不以旋律音名辨识题代替。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "提高初见乐谱的演奏与节奏阅读能力",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "代表长问句Volume未获Planner支持，保持原数值但降置信；需专业复核材料；不承诺教学效果",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Piano Sight-Reading Practice",
+        "description": "Preview a short unfamiliar line, keep the pulse and review one useful detail.",
+        "canonical_path": "/guide/sight-reading",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/piano-chords",
+      "title": "How to Play Piano Chords",
+      "description": "Build a triad, hear its notes together and practise a small change.",
+      "user_task": "Learn the actions behind a chord chart.",
+      "questions": [
+        "How is a triad built?",
+        "Which fingers are documented for the example?",
+        "How can I practise changing chords?"
+      ],
+      "blocks": [
+        {
+          "heading": "Build C major",
+          "body": "C–E–G is a C major triad. From C, E is four semitones higher and G is seven semitones higher. Find the three keys, play each once, then sound them together. Yamaha gives right-hand 1–3–5 as the usual root-position fingering for this example.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-CHORD",
+            "E-TRIADS"
+          ]
+        },
+        {
+          "heading": "Change the middle note",
+          "body": "Compare C–E–G with C–E♭–G. Lowering E by one semitone gives C minor. Compare the keyboard shapes and sound; the black key is E-flat in this chord’s spelling.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-TRIADS"
+          ]
+        },
+        {
+          "heading": "Practise a connection",
+          "body": "Original exercise: play C4–E4–G4 for four counts, then C4–E4–A4 for four counts, and return. The second group is A minor in first inversion. C4 and E4 stay in place while G4 changes to A4. Plan the movement before counting in; use the chord chart to inspect each voicing. Fingering for this transition is not prescribed.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-TRIADS"
+          ]
+        }
+      ],
+      "data": {
+        "starter_chords": [
+          {
+            "name": "C major",
+            "notes": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "name": "A minor",
+            "notes": [
+              "A",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "F major",
+            "notes": [
+              "F",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "name": "G major",
+            "notes": [
+              "G",
+              "B",
+              "D"
+            ]
+          }
+        ],
+        "verified_fingering_example": {
+          "hand": "right",
+          "notes": [
+            "C",
+            "E",
+            "G"
+          ],
+          "fingers": [
+            1,
+            3,
+            5
+          ],
+          "scope": "Yamaha usual root-position C major example; no transfer to other shapes",
+          "source_ids": [
+            "E-CHORD"
+          ]
+        },
+        "finger_diagram": "assets/c-major-rh-fingers.svg",
+        "transition_voicings": [
+          [
+            "C4",
+            "E4",
+            "G4"
+          ],
+          [
+            "C4",
+            "E4",
+            "A4"
+          ],
+          [
+            "C4",
+            "E4",
+            "G4"
+          ]
+        ],
+        "transition_fingering": null,
+        "reference_url": "/chords",
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-CHORD",
+        "E-TRIADS",
+        "BR-03",
+        "BR-04"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-piano-chords",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P220",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "步骤、构成、指法示意及连接练习；链接查图工具 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P225",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P242",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U117",
+      "batch": "E",
+      "main_keyword": "how to play chords on piano",
+      "keywords": [
+        "how to play chords on piano",
+        "chord structure piano",
+        "piano playing by chords",
+        "piano chord shapes",
+        "basic piano chords",
+        "easy piano chords",
+        "piano keyboard chords for beginners",
+        "piano basic chords",
+        "piano beginner chords",
+        "basic piano chord",
+        "keyboard piano chords beginner",
+        "piano chords chart for beginners",
+        "piano chord transitions"
+      ],
+      "source_groups": [
+        {
+          "id": "P220",
+          "representative": "how to play chords on piano",
+          "section": null,
+          "synonyms": [
+            "piano playing by chords"
+          ],
+          "other_queries": [
+            "chord structure piano",
+            "piano chord shapes"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A311:G311",
+          "delivery_method": "独立页首要任务",
+          "required_output": "步骤、构成、指法示意及连接练习；链接查图工具",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P225",
+          "representative": "basic piano chords",
+          "section": "beginner",
+          "synonyms": [
+            "easy piano chords",
+            "piano keyboard chords for beginners",
+            "piano basic chords",
+            "piano beginner chords",
+            "basic piano chord",
+            "keyboard piano chords beginner"
+          ],
+          "other_queries": [
+            "piano chords chart for beginners"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A325:G325",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P242",
+          "representative": "piano chord transitions",
+          "section": "transitions",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A514:G514",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "学会基础和弦与换和弦练习",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "示例与技巧需专业复核，不以高BPM代替正确动作",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "How to Play Piano Chords",
+        "description": "Build a triad, hear its notes together and practise a small change.",
+        "canonical_path": "/guide/piano-chords",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/piano-books",
+      "title": "Choose a Piano Book for Your Goal",
+      "description": "Compare an adult course, a beginner course, intermediate repertoire and focused reference books.",
+      "user_task": "Choose an exact edition for a stated level and practice purpose.",
+      "questions": [
+        "Which course fits an adult beginner?",
+        "Which choice is intermediate?",
+        "Which books focus on scales or sight-reading?"
+      ],
+      "blocks": [
+        {
+          "heading": "Start with the kind of work you need",
+          "body": "For an adult starting from scratch, consider Alfred’s Basic Adult All-in-One Course, Book 1, item 00-5753. For a younger beginner working with a teacher, compare the separate Basic All-in-One Course, Book 1, item 00-5740. These are different products; check the series name as well as Book 1.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-BOOK-ADULT",
+            "E-BOOK-CHILD"
+          ]
+        },
+        {
+          "heading": "Add repertoire at the right level",
+          "body": "Martha Mier’s Jazz, Rags & Blues, Book 3, item 00-16871, is labelled Intermediate / Late Intermediate by Alfred. Choose it for that style once the reading and coordination in its sample feel manageable. This recommendation is based on publisher metadata, not a hands-on review.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-BOOK-JAZZ"
+          ]
+        },
+        {
+          "heading": "Choose a focused supplement",
+          "body": "For key-by-key reference, compare The Complete Book of Scales, Chords, Arpeggios & Cadences, 00-5743. For short sight-reading activities, Joining the Dots, Book 1 by Alan Bullard is the Grade 1 volume, ISBN 9781860969768. Neither serves the same job as a full beginner course.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-BOOK-SCALES",
+            "E-BOOK-SIGHT"
+          ]
+        }
+      ],
+      "data": {
+        "books": [
+          {
+            "id": "E-BOOK-ADULT",
+            "title": "Alfred’s Basic Adult All-in-One Course, Book 1",
+            "item": "00-5753",
+            "url": "https://www.alfred.com/products/alfred-s-basic-adult-all-in-one-course-book-1-00-5753",
+            "level": "adult beginner",
+            "contents": "Lesson, theory and technique in one course.",
+            "editorial_fit": "A structured starting book for an adult who wants coordinated reading and keyboard work.",
+            "fit_status": "[推断] editorial selection, no hands-on review",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "external reference only",
+              "work_status": "license unclear"
+            },
+            "price": null,
+            "source_ids": [
+              "E-BOOK-ADULT"
+            ]
+          },
+          {
+            "id": "E-BOOK-CHILD",
+            "title": "Alfred’s Basic All-in-One Course, Book 1",
+            "item": "00-5740",
+            "url": "https://www.alfred.com/products/alfred-s-basic-all-in-one-course-book-1-00-5740",
+            "level": "beginner",
+            "contents": "Combines material from the Basic Piano Library in an all-in-one course.",
+            "editorial_fit": "Choose with a teacher for a younger beginner; this is a different series from the adult course.",
+            "fit_status": "[推断] editorial selection, no hands-on review",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "external reference only",
+              "work_status": "license unclear"
+            },
+            "price": null,
+            "source_ids": [
+              "E-BOOK-CHILD"
+            ]
+          },
+          {
+            "id": "E-BOOK-SCALES",
+            "title": "The Complete Book of Scales, Chords, Arpeggios & Cadences",
+            "item": "00-5743",
+            "url": "https://www.alfred.com/products/the-complete-book-of-scales-chords-arpeggios-cadences-00-5743",
+            "level": "reference; level not independently assessed",
+            "contents": "Major and minor keys, scale fundamentals and fingering guidance.",
+            "editorial_fit": "Choose when you need a key-by-key reference alongside lessons, rather than a first reading course.",
+            "fit_status": "[推断] editorial selection, no hands-on review",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "external reference only",
+              "work_status": "license unclear"
+            },
+            "price": null,
+            "source_ids": [
+              "E-BOOK-SCALES"
+            ]
+          },
+          {
+            "id": "E-BOOK-JAZZ",
+            "title": "Jazz, Rags & Blues, Book 3",
+            "item": "00-16871",
+            "url": "https://www.alfred.com/products/jazz-rags-blues-book-3-00-16871",
+            "level": "Intermediate / Late Intermediate",
+            "contents": "Martha Mier original piano solos; Book & Online Audio.",
+            "editorial_fit": "For a player already reading both staves who wants this style; inspect a sample with a teacher before choosing.",
+            "fit_status": "[推断] editorial selection, no hands-on review",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "external reference only",
+              "work_status": "license unclear"
+            },
+            "price": null,
+            "source_ids": [
+              "E-BOOK-JAZZ"
+            ]
+          },
+          {
+            "id": "E-HANON",
+            "title": "Hanon: The Virtuoso Pianist in 60 Exercises (Complete)",
+            "item": "00-616",
+            "url": "https://www.alfred.com/products/hanon-the-virtuoso-pianist-in-60-exercises-complete-00-616",
+            "level": "Intermediate / Advanced",
+            "contents": "Charles-Louis Hanon, edited by Allan Small; complete exercises 1–60.",
+            "editorial_fit": "A targeted technique reference for teacher-selected work, not a complete beginner course.",
+            "fit_status": "[推断] editorial selection, no hands-on review",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "external reference only",
+              "work_status": "license unclear"
+            },
+            "price": null,
+            "source_ids": [
+              "E-HANON"
+            ]
+          },
+          {
+            "id": "E-BOOK-SIGHT",
+            "title": "Joining the Dots, Book 1 (Piano)",
+            "author": "Alan Bullard",
+            "isbn": "9781860969768",
+            "year": 2010,
+            "pages": 32,
+            "level": "Grade 1",
+            "url": "https://shop.abrsm.org/products/joining-the-dots-book-1-piano",
+            "editorial_fit": "For short unfamiliar pieces and key-based activities after basic note reading; not a replacement for an introductory lesson course.",
+            "format": "Book per product details and shipping data; generic digital delivery banner conflicts",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "external reference only",
+              "work_status": "license unclear"
+            },
+            "source_ids": [
+              "E-BOOK-SIGHT"
+            ]
+          }
+        ],
+        "selection_basis": "official edition metadata plus clearly labelled editorial fit; no first-hand test claims",
+        "purchase_links_external": true,
+        "professional_review": "not claimed"
+      },
+      "source_ids": [
+        "E-BOOK-ADULT",
+        "E-BOOK-CHILD",
+        "E-BOOK-SCALES",
+        "E-BOOK-JAZZ",
+        "E-HANON",
+        "E-BOOK-SIGHT"
+      ],
+      "issues": [
+        {
+          "id": "E-BOOK-FORMAT",
+          "field": "Joining the Dots delivery format",
+          "reason": "ABRSM details say Book and item requires shipping, but a generic digital banner also appears.",
+          "needed_to_resolve": "Confirm format in checkout; do not promise an instant PDF download."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P221",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "按级别和练习目标分区；适用对象与选择依据；正版获取入口 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P251",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "中级教材的真实适用条件与版本信息。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P258",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "音阶教材选择说明，不只有初学教材列表。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P260",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "视奏教材选择说明，和平台/软件推荐区分。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U118",
+      "batch": "E",
+      "main_keyword": "piano books for beginners",
+      "keywords": [
+        "piano books for beginners",
+        "beginner piano books",
+        "piano starter books",
+        "beginning piano books",
+        "piano for beginners book",
+        "beginner piano book",
+        "beginner piano books for adults",
+        "piano book for beginners",
+        "beginners piano book",
+        "piano book for adult beginners",
+        "beginner piano sheet music book",
+        "intermediate piano books",
+        "piano scales book",
+        "piano sight reading books"
+      ],
+      "source_groups": [
+        {
+          "id": "P221",
+          "representative": "piano books for beginners",
+          "section": null,
+          "synonyms": [
+            "beginner piano books",
+            "piano starter books",
+            "beginning piano books",
+            "piano for beginners book",
+            "beginner piano book",
+            "piano book for beginners",
+            "beginners piano book"
+          ],
+          "other_queries": [
+            "beginner piano books for adults",
+            "piano book for adult beginners",
+            "beginner piano sheet music book"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1144:G1144",
+          "delivery_method": "独立页首要任务",
+          "required_output": "按级别和练习目标分区；适用对象与选择依据；正版获取入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P251",
+          "representative": "intermediate piano books",
+          "section": "intermediate",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L413｜piano scales > reading piano sheet music",
+          "delivery_method": "教材水平分区",
+          "required_output": "中级教材的真实适用条件与版本信息。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P258",
+          "representative": "piano scales book",
+          "section": "scales",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第2批 图12; Google 第2批 图15",
+          "delivery_method": "教材用途分区",
+          "required_output": "音阶教材选择说明，不只有初学教材列表。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P260",
+          "representative": "piano sight reading books",
+          "section": "sight-reading",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L536｜piano scales > piano sight-reading",
+          "delivery_method": "教材用途分区",
+          "required_output": "视奏教材选择说明，和平台/软件推荐区分。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T23",
+      "baseline_priority": "后做",
+      "baseline_purpose": "选择初学/中级/音阶/视奏教材",
+      "final_scope": {
+        "id": "T23",
+        "name": "教材选择指南",
+        "confirmation_status": "本版统一规划建议；后做",
+        "user_task": "按学习阶段或练习目标选择教材。",
+        "modules": [
+          "初学、中级、音阶、视奏分别说明适用条件与选择依据。",
+          "列准确版本及正规获取入口；未实际测试不自称第一手评测。"
+        ],
+        "boundary": "不因此重启整个 Buying/Reviews 网站；不编造测试、价格和推荐排名。",
+        "acceptance": "不同原任务都有明确选择内容；不是只有一张书封列表。"
+      },
+      "required_delivery": "初学、中级、音阶、视奏分别说明适用条件与选择依据。；列准确版本及正规获取入口；未实际测试不自称第一手评测。",
+      "release_conditions": "不同原任务都有明确选择内容；不是只有一张书封列表。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "实际审阅与选择依据未具备，不编造亲测体验；外链不是免费教材承诺",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Choose a Piano Book for Your Goal",
+        "description": "Compare an adult course, a beginner course, intermediate repertoire and focused reference books.",
+        "canonical_path": "/guide/piano-books",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/learn-a-piano-song",
+      "title": "How to Learn a Piano Song",
+      "description": "Choose an achievable edition and work from a small phrase to a continuous performance.",
+      "user_task": "Turn a selected piece into a concrete practice sequence.",
+      "questions": [
+        "How do I choose a version?",
+        "What should I practise first?",
+        "How do I connect sections?"
+      ],
+      "blocks": [
+        {
+          "heading": "Choose an edition before a target speed",
+          "body": "Look at the actual score: range, note values, hand changes and chord size matter more than the song title. Use the easy-song list to select a version and the sheet-music pages to check the exact edition. Begin with a phrase you can describe before playing.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        },
+        {
+          "heading": "Try the method on an original phrase",
+          "body": "Use bars 1–2 of Steps around middle C. First speak C4 D4 E4, E4 D4 C4 while pointing to the notes. Clap each bar’s 1, 1, 2 duration pattern. Then play one bar, play the next, and join them without inserting a pause at the barline.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-DURATION",
+            "BN-OMT-CLEFS"
+          ]
+        },
+        {
+          "heading": "Build a connected run",
+          "body": "Practise the join by starting one beat before the change. Add the next phrase only when you can explain what changes. For two-hand music, inspect each part separately before combining them. Save one slow continuous run for the end and write down the next small problem to solve.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        }
+      ],
+      "data": {
+        "worked_example": {
+          "id": "E-SR1",
+          "title": "Steps around middle C",
+          "clef": "treble",
+          "meter": "4/4",
+          "key_signature": "no sharps or flats",
+          "quarter_units_per_bar": 4,
+          "bars": [
+            {
+              "number": 1,
+              "events": [
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 2,
+              "events": [
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 3,
+              "events": [
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "F4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 3,
+                  "duration_quarters": 1,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 4,
+              "events": [
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 4,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            }
+          ],
+          "goal": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+          "difficulty": {
+            "label": "introductory editorial exercise",
+            "basis": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+            "exam_grade": null
+          },
+          "tempo_bpm": null,
+          "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+          "source_ids": [
+            "E-DURATION",
+            "BN-OMT-CLEFS"
+          ],
+          "rights": {
+            "edition_status": "official / authorized",
+            "site_use": "original Piano Reference exercise; distributable"
+          },
+          "fingering_status": "not supplied; do not infer"
+        },
+        "checklist": [
+          "Confirm edition",
+          "Mark a phrase",
+          "Read pitches",
+          "Clap rhythm",
+          "Play short sections",
+          "Practise the join",
+          "Attempt a continuous run"
+        ],
+        "related": [
+          "/songs/easy",
+          "/sheet-music/easy",
+          "/guide/piano-practice"
+        ],
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-DURATION",
+        "BN-OMT-CLEFS"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-learn-a-piano-song",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P230",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "可复用方法；示例与入门步骤；链接选曲/谱源 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P232",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "初学者如何开始弹易曲；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U119",
+      "batch": "E",
+      "main_keyword": "how to play piano songs",
+      "keywords": [
+        "how to play piano songs",
+        "how to play songs on piano",
+        "piano tutorial songs",
+        "learn any song on piano",
+        "how to play easy songs on piano",
+        "how to play simple piano tunes",
+        "how to play the easiest song on the piano"
+      ],
+      "source_groups": [
+        {
+          "id": "P230",
+          "representative": "how to play piano songs",
+          "section": null,
+          "synonyms": [
+            "how to play songs on piano",
+            "piano tutorial songs",
+            "learn any song on piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1381:G1381",
+          "delivery_method": "独立页首要任务",
+          "required_output": "可复用方法；示例与入门步骤；链接选曲/谱源",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P232",
+          "representative": "how to play easy songs on piano",
+          "section": "beginner",
+          "synonyms": [
+            "how to play simple piano tunes",
+            "how to play the easiest song on the piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1404:G1404",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "初学者如何开始弹易曲；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "了解从选曲到分段练习的具体过程",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "需有准确可执行示例；不能承诺固定天数学会或自动生成热门曲教学",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "How to Learn a Piano Song",
+        "description": "Choose an achievable edition and work from a small phrase to a continuous performance.",
+        "canonical_path": "/guide/learn-a-piano-song",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/piano-scales",
+      "title": "How to Practise Piano Scales",
+      "description": "Start with one octave and one clear listening goal.",
+      "user_task": "Use a scale reference to plan short, specific practice.",
+      "questions": [
+        "Which scale can I start with?",
+        "When should I add the other hand?",
+        "What can I change when notes are uneven?"
+      ],
+      "blocks": [
+        {
+          "heading": "Choose a small starting set",
+          "body": "Editorial starting order: C major, then G major, then F major. C uses white keys; G introduces F-sharp and F introduces B-flat. This is one learning route, not a universal difficulty ranking. Open each scale’s own chart and verified fingering before playing.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "AM-NOTES-C-MAJOR",
+            "AM-NOTES-G-MAJOR",
+            "AM-THEORY"
+          ]
+        },
+        {
+          "heading": "Separate the tasks",
+          "body": "Name the scale notes first. Play one octave with one hand, pause, then check the return journey. Use the exact ascending and descending fingering shown in the selected chart; do not reverse or extend a number pattern by assumption. Add the other hand separately before trying hands together.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "AM-FINGER-LMT",
+            "AM-FINGER-MF"
+          ]
+        },
+        {
+          "heading": "Make one useful change",
+          "body": "Original five-minute plan: one minute naming C D E F G A B C; two minutes checking each hand slowly; one minute on a single uneven crossing; one minute playing and listening again. If the crossing rushes, pause before it in the isolated exercise, then restore an even pulse. This timing is a sample allocation, not a required daily dose.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        }
+      ],
+      "data": {
+        "starter_order": [
+          "/scales/c-major",
+          "/scales/g-major",
+          "/scales/f-major"
+        ],
+        "original_demo": {
+          "name": "Name then play one octave",
+          "notes": [
+            "C4",
+            "D4",
+            "E4",
+            "F4",
+            "G4",
+            "A4",
+            "B4",
+            "C5"
+          ],
+          "rhythm": "equal values chosen by learner",
+          "finger_source_page": "/scales/c-major",
+          "fingering": "use verified data there; no new inferred sequence"
+        },
+        "routine_minutes": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "common_problems": [
+          {
+            "problem": "Wrong F in G major",
+            "action": "Check F-sharp in the scale reference before restarting."
+          },
+          {
+            "problem": "Uneven crossing",
+            "action": "Isolate the join; choose a slower even pulse."
+          },
+          {
+            "problem": "Hands lose alignment",
+            "action": "Return to separate hands, then join a shorter segment."
+          }
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "AM-THEORY",
+        "AM-NOTES-C-MAJOR",
+        "AM-NOTES-G-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-piano-scales",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P231",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "起步顺序、双手练习步骤、常见问题；链接具体音阶和指法图；原创示范 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P259",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "音阶练习方法和安排，不重复参考工具完整数据。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U120",
+      "batch": "E",
+      "main_keyword": "piano scales for beginners",
+      "keywords": [
+        "piano scales for beginners",
+        "beginner piano scales",
+        "what are some popular piano scales?",
+        "how to practice piano scales",
+        "piano scales practice"
+      ],
+      "source_groups": [
+        {
+          "id": "P231",
+          "representative": "piano scales for beginners",
+          "section": null,
+          "synonyms": [
+            "beginner piano scales"
+          ],
+          "other_queries": [
+            "what are some popular piano scales?"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A91:G91",
+          "delivery_method": "独立页首要任务",
+          "required_output": "起步顺序、双手练习步骤、常见问题；链接具体音阶和指法图；原创示范",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P259",
+          "representative": "piano scales practice",
+          "section": "routine",
+          "synonyms": [],
+          "other_queries": [
+            "how to practice piano scales"
+          ],
+          "source": "关键词策略构建器数据汇总.md｜L161｜piano chord chart > piano scales; Google 第2批 图12",
+          "delivery_method": "练习方法章节",
+          "required_output": "音阶练习方法和安排，不重复参考工具完整数据。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "学习音阶练习方法与安排",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "需专业复核练习建议；不许以practice词推导计分/硬件功能",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "How to Practise Piano Scales",
+        "description": "Start with one octave and one clear listening goal.",
+        "canonical_path": "/guide/piano-scales",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/compose-a-piano-song",
+      "title": "Compose a Short Piano Piece",
+      "description": "Make a four-bar idea, keep a recognisable pattern and choose an ending.",
+      "user_task": "Write and revise a small original melody with harmony.",
+      "questions": [
+        "How can I start a melody?",
+        "How do chords support it?",
+        "What can I vary?"
+      ],
+      "blocks": [
+        {
+          "heading": "Start with a repeatable rhythm",
+          "body": "Our original Four-bar sketch uses a one-beat, one-beat, two-beat pattern for three bars. Its melody changes with C, F and G harmony, then ends over C. Play the melody alone first; the supplied lower chord notes are an optional accompaniment.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-DURATION",
+            "E-TRIADS"
+          ]
+        },
+        {
+          "heading": "Make one variation",
+          "body": "Keep bar 1, then change bar 2 to A4–F4–A4 with the same durations. Compare the contour. Next keep the original pitches but change the last bar to C4 for four counts. Decide which ending suits your idea; neither is a prescribed composition rule.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        },
+        {
+          "heading": "Write enough information to replay it",
+          "body": "Record the clef, key signature, 4/4 meter, pitches and durations. Add chord symbols above the bars if useful. Use the blank grand staff to write your revision and the chord-progressions reference to compare other harmonic choices.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "E-DURATION"
+          ]
+        }
+      ],
+      "data": {
+        "original_score": {
+          "id": "E-COMP",
+          "title": "Four-bar sketch",
+          "clef": "treble",
+          "meter": "4/4",
+          "key_signature": "no sharps or flats",
+          "quarter_units_per_bar": 4,
+          "bars": [
+            {
+              "number": 1,
+              "events": [
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "G4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 2,
+              "events": [
+                {
+                  "pitch": "F4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "A4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "F4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 3,
+              "events": [
+                {
+                  "pitch": "D4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "G4",
+                  "kind": "note",
+                  "onset_quarters": 1,
+                  "duration_quarters": 1,
+                  "finger": null
+                },
+                {
+                  "pitch": "B4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            },
+            {
+              "number": 4,
+              "events": [
+                {
+                  "pitch": "E4",
+                  "kind": "note",
+                  "onset_quarters": 0,
+                  "duration_quarters": 2,
+                  "finger": null
+                },
+                {
+                  "pitch": "C4",
+                  "kind": "note",
+                  "onset_quarters": 2,
+                  "duration_quarters": 2,
+                  "finger": null
+                }
+              ],
+              "total_quarters": 4
+            }
+          ],
+          "goal": "Original compositional example: repeated rhythm with changing pitches; not a graded sight-reading test.",
+          "difficulty": {
+            "label": "introductory editorial exercise",
+            "basis": "Original compositional example: repeated rhythm with changing pitches; not a graded sight-reading test.",
+            "exam_grade": null
+          },
+          "tempo_bpm": null,
+          "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+          "source_ids": [
+            "E-DURATION",
+            "BN-OMT-CLEFS"
+          ],
+          "rights": {
+            "edition_status": "official / authorized",
+            "site_use": "original Piano Reference exercise; distributable"
+          },
+          "fingering_status": "not supplied; do not infer",
+          "harmony": [
+            {
+              "bar": 1,
+              "symbol": "C",
+              "notes": [
+                "C3",
+                "E3",
+                "G3"
+              ],
+              "duration_quarters": 4
+            },
+            {
+              "bar": 2,
+              "symbol": "F",
+              "notes": [
+                "F2",
+                "A2",
+                "C3"
+              ],
+              "duration_quarters": 4
+            },
+            {
+              "bar": 3,
+              "symbol": "G",
+              "notes": [
+                "G2",
+                "B2",
+                "D3"
+              ],
+              "duration_quarters": 4
+            },
+            {
+              "bar": 4,
+              "symbol": "C",
+              "notes": [
+                "C3",
+                "E3",
+                "G3"
+              ],
+              "duration_quarters": 4
+            }
+          ]
+        },
+        "variation_tasks": [
+          "Change only pitches in bar 2",
+          "Change only rhythm in bar 4",
+          "Choose a different chord for bar 2 and rewrite its melody"
+        ],
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "related": [
+          "/tools/blank-sheet-music",
+          "/chord-progressions"
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-DURATION",
+        "E-TRIADS",
+        "BN-OMT-CLEFS"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-compose-a-piano-song",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P239",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "旋律与和声组织步骤；原创短例子；相关工具链接 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U121",
+      "batch": "E",
+      "main_keyword": "make a piano song",
+      "keywords": [
+        "make a piano song",
+        "composing piano"
+      ],
+      "source_groups": [
+        {
+          "id": "P239",
+          "representative": "make a piano song",
+          "section": null,
+          "synonyms": [
+            "composing piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1611:G1611",
+          "delivery_method": "独立页首要任务",
+          "required_output": "旋律与和声组织步骤；原创短例子；相关工具链接",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "学习创作钢琴曲的基础步骤",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "需要原创示例与专业核验；不能搬运现有歌曲作为可再分发示例",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Compose a Short Piano Piece",
+        "description": "Make a four-bar idea, keep a recognisable pattern and choose an ending.",
+        "canonical_path": "/guide/compose-a-piano-song",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/hanon-exercises",
+      "title": "Using Hanon Exercises with a Clear Goal",
+      "description": "Identify the edition and select a small passage for a specific technique task.",
+      "user_task": "Decide whether and how to use a verified Hanon edition.",
+      "questions": [
+        "Which edition is referenced?",
+        "Is this a beginner method?",
+        "What is a useful practice goal?"
+      ],
+      "blocks": [
+        {
+          "heading": "Check the exact book",
+          "body": "This reference is Alfred item 00-616: Charles-Louis Hanon, The Virtuoso Pianist in 60 Exercises, Complete, edited by Allan Small. Alfred labels it Intermediate / Advanced and includes exercises 1–60. It is not presented here as a first piano method.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-HANON"
+          ]
+        },
+        {
+          "heading": "Select rather than race through",
+          "body": "With a teacher, select a short passage that addresses an observed issue, such as an uneven rhythm or an unclear release. Read that edition’s notes and finger numbers before repeating it. Keep the excerpt small enough to notice a change; a speed target alone does not define success.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        },
+        {
+          "heading": "Use an observable check",
+          "body": "Editorial practice card: identify one bar, state one listening goal, play it slowly, pause, and compare the next attempt. Stop when the hand becomes uncomfortable or tense and reset with your teacher. No claim is made that repetitions prevent injury or guarantee strength.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-POSTURE"
+          ]
+        }
+      ],
+      "data": {
+        "edition": {
+          "id": "E-HANON",
+          "title": "Hanon: The Virtuoso Pianist in 60 Exercises (Complete)",
+          "item": "00-616",
+          "url": "https://www.alfred.com/products/hanon-the-virtuoso-pianist-in-60-exercises-complete-00-616",
+          "level": "Intermediate / Advanced",
+          "contents": "Charles-Louis Hanon, edited by Allan Small; complete exercises 1–60.",
+          "editorial_fit": "A targeted technique reference for teacher-selected work, not a complete beginner course.",
+          "fit_status": "[推断] editorial selection, no hands-on review",
+          "rights": {
+            "edition_status": "official / authorized",
+            "site_use": "external reference only",
+            "work_status": "license unclear"
+          },
+          "price": null,
+          "source_ids": [
+            "E-HANON"
+          ]
+        },
+        "practice_card": {
+          "selected_exercise": null,
+          "selected_bar": null,
+          "goal": "one teacher-selected issue",
+          "repetitions": null,
+          "tempo_bpm": null
+        },
+        "hosted_score": null,
+        "original_pattern_transcription": null,
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-HANON",
+        "E-POSTURE"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-hanon-exercises",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P245",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "明确版本、适用条件、练法和可用材料入口 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U122",
+      "batch": "E",
+      "main_keyword": "hanon piano exercises",
+      "keywords": [
+        "hanon piano exercises"
+      ],
+      "source_groups": [
+        {
+          "id": "P245",
+          "representative": "hanon piano exercises",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L146｜piano chord chart > piano exercises and technique; 关键词策略构建器数据汇总.md｜L360｜beginner piano sheet music > piano sheet music with fingering; 关键词策略构建器数据汇总.md｜L482｜piano scales > piano finger speed and dexterity",
+          "delivery_method": "独立页首要任务",
+          "required_output": "明确版本、适用条件、练法和可用材料入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "了解如何使用Hanon练习材料",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "具体版本来源、用途与练习说明审核；无适用依据不承诺强化或治疗效果",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Using Hanon Exercises with a Clear Goal",
+        "description": "Identify the edition and select a small passage for a specific technique task.",
+        "canonical_path": "/guide/hanon-exercises",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/note-values-and-rhythm",
+      "title": "Note Values and Rhythm",
+      "description": "Read how long to play, how long to rest and how to count a bar.",
+      "user_task": "Decode basic duration symbols and perform original rhythm exercises.",
+      "questions": [
+        "How long is each note?",
+        "What do dots and ties do?",
+        "How do 4/4 and 6/8 differ?"
+      ],
+      "blocks": [
+        {
+          "heading": "Use a stated beat unit",
+          "body": "In these 4/4 exercises, a quarter note lasts one beat: whole 4, half 2, eighth 1/2 and sixteenth 1/4. Corresponding rests use the same durations but leave silence. These beat counts depend on the chosen beat unit; a whole note does not fill every possible meter.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-DURATION",
+            "E-RHYTHM-CROSS"
+          ]
+        },
+        {
+          "heading": "Add duration carefully",
+          "body": "A dot adds half the undotted value, so a dotted quarter lasts 1.5 quarter-note units. A tie joins two notes of the same pitch into one sustained duration; do not strike the second note again. A slur is a different instruction.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-DOTS"
+          ]
+        },
+        {
+          "heading": "Count the subdivision",
+          "body": "For E-R2 say 1 & 2 & 3 & 4 &. The first bar starts with two eighth notes, then a quarter and a half. In compound 6/8, six eighth-note units are normally grouped into two dotted-quarter beats: ONE-and-a TWO-and-a. Keep that grouping distinct from the four quarter-note beats in our 4/4 lines.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-METER"
+          ]
+        },
+        {
+          "heading": "Clap, then check",
+          "body": "Try the printed rhythm lines without looking at their answer counts. Keep counting during rests. After one attempt, check that each 4/4 bar totals four quarter-note units and mark any attack that arrived early or late.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        }
+      ],
+      "data": {
+        "duration_table": [
+          {
+            "name": "whole",
+            "uk_name": "semibreve",
+            "quarter_units": 4,
+            "note_smufl": "E1D2",
+            "rest_smufl": "E4E3"
+          },
+          {
+            "name": "half",
+            "uk_name": "minim",
+            "quarter_units": 2,
+            "note_smufl": "E1D3",
+            "rest_smufl": "E4E4"
+          },
+          {
+            "name": "quarter",
+            "uk_name": "crotchet",
+            "quarter_units": 1,
+            "note_smufl": "E1D5",
+            "rest_smufl": "E4E5"
+          },
+          {
+            "name": "eighth",
+            "uk_name": "quaver",
+            "quarter_units": 0.5,
+            "note_smufl": "E1D7",
+            "rest_smufl": "E4E6"
+          },
+          {
+            "name": "sixteenth",
+            "uk_name": "semiquaver",
+            "quarter_units": 0.25,
+            "note_smufl": "E1D9",
+            "rest_smufl": "E4E7"
+          }
+        ],
+        "exercises": [
+          {
+            "id": "E-R1",
+            "title": "Clap and leave a beat silent",
+            "clef": "rhythm",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "Rhythm only; quarters, halves, whole notes and quarter rests. Say 1 2 3 4 through silence.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "Rhythm only; quarters, halves, whole notes and quarter rests. Say 1 2 3 4 through silence.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          },
+          {
+            "id": "E-R2",
+            "title": "Count eighth-note pairs",
+            "clef": "rhythm",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0.5,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2.0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4.0
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1.5,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4.0
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0.5,
+                    "duration_quarters": 0.5,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 1.0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2.0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4.0
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "Adds paired eighths and a dotted quarter followed by an eighth; count 1 & 2 & 3 & 4 &.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "Adds paired eighths and a dotted quarter followed by an eighth; count 1 & 2 & 3 & 4 &.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          }
+        ],
+        "dot_example": {
+          "base_quarters": 1,
+          "added": 0.5,
+          "total": 1.5
+        },
+        "tie_example": {
+          "pitch": "C4",
+          "durations": [
+            2,
+            1
+          ],
+          "total_quarters": 3,
+          "reattack_second": false
+        },
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-DURATION",
+        "E-RHYTHM-CROSS",
+        "E-DOTS",
+        "E-METER",
+        "BN-OMT-CLEFS"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-note-values-and-rhythm",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P227",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "时值与休止符图例；拍号/计数示例；实际节奏练习 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P252",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "学习节奏记谱；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U123",
+      "batch": "E",
+      "main_keyword": "kinds of notes music",
+      "keywords": [
+        "kinds of notes music",
+        "kinds of notes in music",
+        "different types of notes",
+        "different notes",
+        "different types of music notes",
+        "parts of a musical note",
+        "music notation rhythm"
+      ],
+      "source_groups": [
+        {
+          "id": "P227",
+          "representative": "kinds of notes music",
+          "section": null,
+          "synonyms": [
+            "kinds of notes in music",
+            "different types of notes",
+            "different notes",
+            "different types of music notes"
+          ],
+          "other_queries": [
+            "parts of a musical note"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1656:G1656",
+          "delivery_method": "独立页首要任务",
+          "required_output": "时值与休止符图例；拍号/计数示例；实际节奏练习",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P252",
+          "representative": "music notation rhythm",
+          "section": "rhythm",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L492｜piano scales > piano rhythm and notation",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "学习节奏记谱；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "理解音符类型、时值与节奏读法",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "原kinds of notes可能混有音高命名意图；保留原词不改写，发布前确认映射",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Note Values and Rhythm",
+        "description": "Read how long to play, how long to rest and how to count a bar.",
+        "canonical_path": "/guide/note-values-and-rhythm",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/piano-exercises",
+      "title": "Piano Exercises by Practice Goal",
+      "description": "Choose one short task and listen for a specific result.",
+      "user_task": "Select a small exercise for reading, timing or chord movement.",
+      "questions": [
+        "Which exercise fits my problem?",
+        "What result should I listen for?",
+        "How much repetition is needed?"
+      ],
+      "blocks": [
+        {
+          "heading": "Choose the problem first",
+          "body": "For uncertain note locations, play E-SR1 and name each starting pitch. For a pulse that stops at rests, clap E-R1 while continuing to count. For a difficult chord change, compare C4–E4–G4 with C4–E4–A4 and identify the one moving note before playing.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "E-DURATION",
+            "E-TRIADS"
+          ]
+        },
+        {
+          "heading": "Keep the feedback specific",
+          "body": "Original procedure: choose one bar, make one attempt, name one observable issue, and change one thing. If pitch is correct but time is uneven, remove pitch and clap. If the hand feels rigid, pause and revisit your sitting position instead of increasing the repetition count.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-POSTURE"
+          ]
+        },
+        {
+          "heading": "Finish with a transfer",
+          "body": "Use the same listening goal in a short phrase from your piece. The exercise has done its job when it helps that phrase. These tasks are introductory editorial examples; a teacher should adapt movement and workload to the player.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        }
+      ],
+      "data": {
+        "tasks": [
+          {
+            "goal": "note location",
+            "exercise_id": "E-SR1",
+            "success": "identify the correct octave before each bar"
+          },
+          {
+            "goal": "pulse through silence",
+            "exercise_id": "E-R1",
+            "success": "continue four equal spoken counts through rests"
+          },
+          {
+            "goal": "one-note chord change",
+            "notes": [
+              [
+                "C4",
+                "E4",
+                "G4"
+              ],
+              [
+                "C4",
+                "E4",
+                "A4"
+              ]
+            ],
+            "success": "keep common notes in the same locations",
+            "fingering": null
+          }
+        ],
+        "exercises": [
+          {
+            "id": "E-SR1",
+            "title": "Steps around middle C",
+            "clef": "treble",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "E4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "E4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "E4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "F4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "D4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          },
+          {
+            "id": "E-R1",
+            "title": "Clap and leave a beat silent",
+            "clef": "rhythm",
+            "meter": "4/4",
+            "key_signature": "no sharps or flats",
+            "quarter_units_per_bar": 4,
+            "bars": [
+              {
+                "number": 1,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 2,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 2,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 3,
+                    "duration_quarters": 1,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 3,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": null,
+                    "kind": "rest",
+                    "onset_quarters": 1,
+                    "duration_quarters": 1,
+                    "finger": null
+                  },
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 2,
+                    "duration_quarters": 2,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              },
+              {
+                "number": 4,
+                "events": [
+                  {
+                    "pitch": "C4",
+                    "kind": "note",
+                    "onset_quarters": 0,
+                    "duration_quarters": 4,
+                    "finger": null
+                  }
+                ],
+                "total_quarters": 4
+              }
+            ],
+            "goal": "Rhythm only; quarters, halves, whole notes and quarter rests. Say 1 2 3 4 through silence.",
+            "difficulty": {
+              "label": "introductory editorial exercise",
+              "basis": "Rhythm only; quarters, halves, whole notes and quarter rests. Say 1 2 3 4 through silence.",
+              "exam_grade": null
+            },
+            "tempo_bpm": null,
+            "evidence_status": "[推断] original exercise; pitch/duration arithmetic checked",
+            "source_ids": [
+              "E-DURATION",
+              "BN-OMT-CLEFS"
+            ],
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference exercise; distributable"
+            },
+            "fingering_status": "not supplied; do not infer"
+          }
+        ],
+        "fixed_repetition_dose": null,
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "BN-OMT-CLEFS",
+        "E-DURATION",
+        "E-TRIADS",
+        "E-POSTURE"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-piano-exercises",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P253",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "按明确技巧目标组织少量可执行练习；专业审核与适用说明 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P261",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "钢琴演奏技巧练习方法；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U124",
+      "batch": "E",
+      "main_keyword": "piano exercises for beginners",
+      "keywords": [
+        "piano exercises for beginners",
+        "piano technique methods"
+      ],
+      "source_groups": [
+        {
+          "id": "P253",
+          "representative": "piano exercises for beginners",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L141｜piano chord chart > piano exercises and technique; 关键词策略构建器数据汇总.md｜L356｜beginner piano sheet music > piano sheet music with fingering; 关键词策略构建器数据汇总.md｜L476｜piano scales > piano finger speed and dexterity",
+          "delivery_method": "独立页首要任务",
+          "required_output": "按明确技巧目标组织少量可执行练习；专业审核与适用说明",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P261",
+          "representative": "piano technique methods",
+          "section": "technique",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L479｜piano scales > piano finger speed and dexterity",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "钢琴演奏技巧练习方法；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "选择基础技巧练习与方法",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "无单词量仍保留来源；动作与练法需专业审核，不默认开发速度评分",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Piano Exercises by Practice Goal",
+        "description": "Choose one short task and listen for a specific result.",
+        "canonical_path": "/guide/piano-exercises",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/piano-hand-position",
+      "title": "Piano Hand Position and Sitting Setup",
+      "description": "Set up your seat, let the arms move and avoid forcing a fixed hand shape.",
+      "user_task": "Check a comfortable starting posture using a simple diagram.",
+      "questions": [
+        "How high should I sit?",
+        "How should fingers and wrists look?",
+        "Which common ideas are misleading?"
+      ],
+      "blocks": [
+        {
+          "heading": "Set up before playing",
+          "body": "Sit near the front of a stable bench, facing the keyboard. Support your feet. Adjust your height so your elbows are approximately level with the keys, with shoulders and arms relaxed. Reach the keyboard without lifting the shoulders.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-POSTURE"
+          ]
+        },
+        {
+          "heading": "Let the hand remain mobile",
+          "body": "Use gently curved fingers and a wrist that continues the general line of the forearm. The side-view diagram is a starting reference, not a fixed angle to hold throughout a piece. Key position and musical movement change how the hand travels.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-POSTURE",
+            "E-POSTURE-CROSS"
+          ]
+        },
+        {
+          "heading": "Check a single note",
+          "body": "Place a hand over a small group of keys, play one note and release. Notice whether the shoulder rises or the wrist locks. Pause and reset if the action feels forced. Avoid treating “curved fingers” as an instruction to claw tightly or “level wrist” as an instruction never to move.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-POSTURE"
+          ]
+        }
+      ],
+      "data": {
+        "diagram": {
+          "path": "assets/piano-hand-position.svg",
+          "view": "simplified side view",
+          "labels": [
+            "relaxed shoulder and arm",
+            "wrist follows forearm",
+            "gently curved fingers",
+            "keyboard surface"
+          ],
+          "is_anatomical_measurement": false
+        },
+        "teacher_checkpoints": [
+          "bench height and distance",
+          "foot support",
+          "free arm movement",
+          "unforced hand shape"
+        ],
+        "angle_degrees": null,
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-POSTURE",
+        "E-POSTURE-CROSS"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-piano-hand-position",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P254",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "原创/可用示意图、具体操作说明及应避免的误解 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U125",
+      "batch": "E",
+      "main_keyword": "piano hand posture",
+      "keywords": [
+        "piano hand position",
+        "piano hand posture"
+      ],
+      "source_groups": [
+        {
+          "id": "P254",
+          "representative": "piano hand posture",
+          "section": null,
+          "synonyms": [
+            "piano hand position"
+          ],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L142｜piano chord chart > piano exercises and technique",
+          "delivery_method": "独立页首要任务",
+          "required_output": "原创/可用示意图、具体操作说明及应避免的误解",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "了解钢琴手位与姿势的基本方法",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "需要教师复核，不作损伤诊断或疗效承诺",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Piano Hand Position and Sitting Setup",
+        "description": "Set up your seat, let the arms move and avoid forcing a fixed hand shape.",
+        "canonical_path": "/guide/piano-hand-position",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/piano-practice",
+      "title": "Plan a Useful Piano Practice Session",
+      "description": "Give each part of practice a small goal and leave a clear next step.",
+      "user_task": "Choose a short plan matched to a current goal.",
+      "questions": [
+        "What should I practise today?",
+        "How can a short session be organised?",
+        "How do I decide what to do next?"
+      ],
+      "blocks": [
+        {
+          "heading": "A ten-minute beginner plan",
+          "body": "Use two minutes to find the starting notes, three to clap and read a phrase, three to play and join two sections, and two for a continuous attempt and a written note. Treat these times as an editable example, not a minimum requirement.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "E-DURATION"
+          ]
+        },
+        {
+          "heading": "A twenty-minute developing-player plan",
+          "body": "Spend three minutes on one scale issue, five on an unfamiliar reading line, eight on one passage from your piece, and four on a familiar section and a brief log. Choose material at a manageable level so the goals stay observable.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        },
+        {
+          "heading": "Write a useful next step",
+          "body": "Replace “practise more” with a concrete observation such as “count through the rest in bar 3.” Record what improved and what still interrupted the phrase. The final page of the starter pack has a printable session checklist.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": []
+        }
+      ],
+      "data": {
+        "sample_plans": [
+          {
+            "level": "beginner",
+            "goal": "read and connect a short phrase",
+            "minutes": [
+              2,
+              3,
+              3,
+              2
+            ],
+            "tasks": [
+              "Locate starting notes",
+              "Clap and read one phrase",
+              "Play and join two short sections",
+              "One continuous attempt and a note for next time"
+            ]
+          },
+          {
+            "level": "developing player",
+            "goal": "solve one passage and retain repertoire",
+            "minutes": [
+              3,
+              5,
+              8,
+              4
+            ],
+            "tasks": [
+              "One scale goal",
+              "One unfamiliar reading line",
+              "Isolate and reconnect a piece passage",
+              "Play a familiar section and log one result"
+            ]
+          }
+        ],
+        "log_fields": [
+          "date",
+          "piece or exercise",
+          "specific goal",
+          "what changed",
+          "next small task"
+        ],
+        "related": [
+          "/guide/sight-reading",
+          "/guide/piano-scales",
+          "/guide/learn-a-piano-song"
+        ],
+        "assets": [
+          {
+            "path": "assets/piano-starter-and-reading.pdf",
+            "format": "PDF",
+            "pages": 4,
+            "access": "original printable download",
+            "rights": {
+              "edition_status": "official / authorized",
+              "site_use": "original Piano Reference material; distributable",
+              "font": "Bravura OFL; license included"
+            },
+            "visual_qa": "passed; four pages rendered and inspected, final rhythm spacing corrected"
+          }
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "BN-OMT-CLEFS",
+        "E-DURATION"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-piano-practice",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P257",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "明确水平和目标的练习安排样例；资源链接；可选打印清单 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U126",
+      "batch": "E",
+      "main_keyword": "piano practice",
+      "keywords": [
+        "piano practice"
+      ],
+      "source_groups": [
+        {
+          "id": "P257",
+          "representative": "piano practice",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L143｜piano chord chart > piano exercises and technique; 关键词策略构建器数据汇总.md｜L481｜piano scales > piano finger speed and dexterity",
+          "delivery_method": "独立页首要任务",
+          "required_output": "明确水平和目标的练习安排样例；资源链接；可选打印清单",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "组织日常钢琴练习",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "教学建议经审核；若尚无独立内容则先以/guide章节试用",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared_with_issues",
+      "metadata": {
+        "title": "Plan a Useful Piano Practice Session",
+        "description": "Give each part of practice a small goal and leave a clear next step.",
+        "canonical_path": "/guide/piano-practice",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    {
+      "url": "/guide/music-symbols-and-piano-terms",
+      "title": "Music Symbols and Piano Terms",
+      "description": "Look up a marking, its meaning and a short reading example.",
+      "user_task": "Interpret common notation and performance words without mixing them with instrument names.",
+      "questions": [
+        "What does piano mean on a score?",
+        "How do note symbols and performance words differ?",
+        "How should I interpret repeat directions?"
+      ],
+      "blocks": [
+        {
+          "heading": "Piano on a score means soft",
+          "body": "As a dynamic instruction, piano, abbreviated p, means soft. It does not ask for a different instrument. The nearby musical context tells you where the dynamic begins and how it relates to surrounding markings.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-TERMS"
+          ]
+        },
+        {
+          "heading": "Read symbols by their job",
+          "body": "A clef sets the pitch reference, an accidental changes a written pitch, and a note or rest value gives duration. A dot beside a note adds duration; a staccato dot above or below a note asks for separation. Position matters.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "BN-OMT-CLEFS",
+            "BN-MUSICCA-ACCIDENTALS",
+            "E-DURATION",
+            "E-DOTS",
+            "E-TERMS"
+          ]
+        },
+        {
+          "heading": "Follow the whole instruction",
+          "body": "D.C. asks for a return to the beginning; D.S. asks for a return to the segno. A following al Fine tells you to end at Fine after that return. Read the full direction and its destination together. Tempo words such as allegro do not specify one universal metronome number.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-TERMS"
+          ]
+        }
+      ],
+      "data": {
+        "terms": [
+          {
+            "term": "piano",
+            "abbreviation": "p",
+            "meaning": "soft",
+            "example": "Play the marked phrase softly.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "forte",
+            "abbreviation": "f",
+            "meaning": "loud",
+            "example": "Play the marked phrase loudly, with control.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "pianissimo",
+            "abbreviation": "pp",
+            "meaning": "very soft",
+            "example": "Use a softer dynamic than p in this passage.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "mezzo piano",
+            "abbreviation": "mp",
+            "meaning": "moderately soft",
+            "example": "Set a moderate soft dynamic.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "mezzo forte",
+            "abbreviation": "mf",
+            "meaning": "moderately loud",
+            "example": "Set a moderate loud dynamic.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "fortissimo",
+            "abbreviation": "ff",
+            "meaning": "very loud",
+            "example": "Use the marked strong dynamic.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "crescendo",
+            "abbreviation": "cresc.",
+            "meaning": "gradually louder",
+            "example": "Increase loudness across the marked span.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "diminuendo",
+            "abbreviation": "dim.",
+            "meaning": "gradually softer",
+            "example": "Reduce loudness across the marked span.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "allegro",
+            "abbreviation": null,
+            "meaning": "fast",
+            "example": "Treat the tempo word as context, not one fixed BPM.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "andante",
+            "abbreviation": null,
+            "meaning": "at a walking pace",
+            "example": "Choose the pulse in the context of the piece.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "adagio",
+            "abbreviation": null,
+            "meaning": "slow",
+            "example": "Use the score or edition for a metronome indication.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "legato",
+            "abbreviation": null,
+            "meaning": "smoothly connected",
+            "example": "Connect the indicated phrase.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "staccato",
+            "abbreviation": "stacc.",
+            "meaning": "shortened and separated",
+            "example": "Shorten the marked note without deleting its place in the rhythm.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "mano destra",
+            "abbreviation": "m.d.",
+            "meaning": "right hand",
+            "example": "Assign the marked passage to the right hand.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "mano sinistra",
+            "abbreviation": "m.s.",
+            "meaning": "left hand",
+            "example": "Assign the marked passage to the left hand.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "Da Capo",
+            "abbreviation": "D.C.",
+            "meaning": "from the beginning",
+            "example": "Return to the beginning when instructed.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "Dal Segno",
+            "abbreviation": "D.S.",
+            "meaning": "from the sign",
+            "example": "Return to the marked segno.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          },
+          {
+            "term": "Fine",
+            "abbreviation": null,
+            "meaning": "end",
+            "example": "Stop here after the relevant return instruction.",
+            "source_ids": [
+              "E-TERMS"
+            ]
+          }
+        ],
+        "symbols": [
+          {
+            "name": "treble clef",
+            "smufl": "E050",
+            "meaning": "G4 on second line",
+            "source_ids": [
+              "BN-OMT-CLEFS"
+            ]
+          },
+          {
+            "name": "bass clef",
+            "smufl": "E062",
+            "meaning": "F3 on fourth line",
+            "source_ids": [
+              "BN-OMT-CLEFS"
+            ]
+          },
+          {
+            "name": "sharp",
+            "smufl": "E262",
+            "meaning": "raise written pitch by a semitone",
+            "source_ids": [
+              "BN-MUSICCA-ACCIDENTALS"
+            ]
+          },
+          {
+            "name": "flat",
+            "smufl": "E260",
+            "meaning": "lower written pitch by a semitone",
+            "source_ids": [
+              "BN-MUSICCA-ACCIDENTALS"
+            ]
+          },
+          {
+            "name": "natural",
+            "smufl": "E261",
+            "meaning": "cancel the applicable sharp or flat",
+            "source_ids": [
+              "BN-MUSICCA-ACCIDENTALS"
+            ]
+          },
+          {
+            "name": "duration dot",
+            "smufl": "E1E7",
+            "meaning": "add half the undotted value",
+            "source_ids": [
+              "E-DOTS"
+            ]
+          }
+        ],
+        "duration_symbols": [
+          [
+            "whole",
+            "semibreve",
+            4,
+            "E1D2",
+            "E4E3"
+          ],
+          [
+            "half",
+            "minim",
+            2,
+            "E1D3",
+            "E4E4"
+          ],
+          [
+            "quarter",
+            "crotchet",
+            1,
+            "E1D5",
+            "E4E5"
+          ],
+          [
+            "eighth",
+            "quaver",
+            0.5,
+            "E1D7",
+            "E4E6"
+          ],
+          [
+            "sixteenth",
+            "semiquaver",
+            0.25,
+            "E1D9",
+            "E4E7"
+          ]
+        ],
+        "symbol_asset": "assets/music-symbols.svg",
+        "professional_review": "not claimed"
+      },
+      "source_ids": [
+        "E-TERMS",
+        "BN-OMT-CLEFS",
+        "BN-MUSICCA-ACCIDENTALS",
+        "E-DURATION",
+        "E-DOTS"
+      ],
+      "issues": [],
+      "coverage": [
+        {
+          "source_group_id": "P144",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "乐谱记号参考；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P256",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "说明谱面 piano 用语，区别乐器主题，不作完整新词页。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P262",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "可索引术语表；每项原意和示例；piano力度词条；不编造词义 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U127",
+      "batch": "E",
+      "main_keyword": "piano terms",
+      "keywords": [
+        "music symbols",
+        "piano meaning in music",
+        "piano terms"
+      ],
+      "source_groups": [
+        {
+          "id": "P144",
+          "representative": "music symbols",
+          "section": "symbols",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L275｜beginner piano sheet music > piano notes and keyboard charts",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "乐谱记号参考；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P256",
+          "representative": "piano meaning in music",
+          "section": "piano-dynamic",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L412｜piano scales > reading piano sheet music",
+          "delivery_method": "术语词条",
+          "required_output": "说明谱面 piano 用语，区别乐器主题，不作完整新词页。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P262",
+          "representative": "piano terms",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L409｜piano scales > reading piano sheet music",
+          "delivery_method": "独立页首要任务",
+          "required_output": "可索引术语表；每项原意和示例；piano力度词条；不编造词义",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "理解谱面上的钢琴术语和音乐记号",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "记号、释义和专业示例审核；不继承通用music symbols总量",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_and_data_prepared",
+      "metadata": {
+        "title": "Music Symbols and Piano Terms",
+        "description": "Look up a marking, its meaning and a short reading example.",
+        "canonical_path": "/guide/music-symbols-and-piano-terms",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "BN-OMT-CLEFS",
+      "title": "Reading Clefs",
+      "url": "https://viva.pressbooks.pub/openmusictheory/chapter/clefs/",
+      "publisher": "Open Music Theory / Chelsey Hamm",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "treble line and space letters",
+        "bass line and space letters",
+        "ledger lines extend the letter sequence"
+      ],
+      "locator": "Reading Treble Clef; Reading Bass Clef; Ledger Lines",
+      "web_reference": "turn240024view1"
+    },
+    {
+      "source_id": "BN-MUSICCA-CLEFS",
+      "title": "Clefs",
+      "url": "https://www.musicca.com/clefs",
+      "publisher": "Musicca",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "treble G above middle C on line 2",
+        "bass F below middle C on line 4",
+        "middle C on ledger lines in either clef",
+        "grand staff"
+      ],
+      "locator": "Treble clef; Bass clef; Grand staff",
+      "web_reference": "turn985791view0",
+      "caution": "Article text opened; linked image requests did not load in this run. Anchor facts cross-checked against OMT and Puget Sound, not claimed as visually inspected images."
+    },
+    {
+      "source_id": "BN-MUSICCA-STAFF",
+      "title": "The staff",
+      "url": "https://www.musicca.com/the-staff",
+      "publisher": "Musicca",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "five staff lines",
+        "bottom-to-top counting",
+        "ledger lines; adjacent outer spaces need no ledger line"
+      ],
+      "locator": "Staff positions; Ledger lines; Lines and spaces",
+      "web_reference": "turn829366view0"
+    },
+    {
+      "source_id": "BN-MUSICCA-NOTES",
+      "title": "Notes",
+      "url": "https://www.musicca.com/notes",
+      "publisher": "Musicca",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "C4 middle C",
+        "octave numbering changes at C",
+        "keyboard natural note order",
+        "adjacent physical keys are semitones"
+      ],
+      "locator": "Natural notes; Middle C; Octaves; Half steps and whole steps",
+      "web_reference": "turn797793view0"
+    },
+    {
+      "source_id": "BN-PUGET-OCTAVES",
+      "title": "Octave Registers",
+      "url": "https://musictheory.pugetsound.edu/mt21c/OctaveRegisters.html",
+      "publisher": "Music Theory for the 21st-Century Classroom / Robert Hutchinson, University of Puget Sound",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "C4 as middle C",
+        "B4 followed by C5",
+        "middle C ledger position in both clefs"
+      ],
+      "locator": "Section 1.3; Figure 1.3.1 and surrounding explanation",
+      "web_reference": "turn829366view3"
+    },
+    {
+      "source_id": "BN-MUSICCA-ACCIDENTALS",
+      "title": "Accidentals",
+      "url": "https://www.musicca.com/accidentals",
+      "publisher": "Musicca",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "sharp and flat alterations; natural cancellation; enharmonic spelling"
+      ],
+      "locator": "Accidental definitions and enharmonic notes",
+      "web_reference": "turn829366view1"
+    },
+    {
+      "source_id": "BR-03",
+      "title": "The Basics Of Piano Keyboard Fingering",
+      "url": "https://hub.yamaha.com/keyboards/k-how-to/the-basics-of-piano-keyboard-fingering/",
+      "publisher": "Yamaha / Jerry Kovarsky",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_text",
+      "supports": [
+        "Thumb=1, index=2, middle=3, ring=4, pinky=5"
+      ],
+      "locator": "The Basics, five-item finger list",
+      "web_reference": "turn944224view2",
+      "reuse": "external reference only; no source graphic, recording or PDF copied"
+    },
+    {
+      "source_id": "BR-04",
+      "title": "Finger Numbers — Lesson 16",
+      "url": "https://app.hoffmanacademy.com/lessons/piano/finger-numbers/video/",
+      "publisher": "Hoffman Academy / Joseph Hoffman",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_text",
+      "supports": [
+        "Both hands use finger numbers 1–5; thumbs1 and pinkies5",
+        "RH and LH meanings; hands opposite in layout"
+      ],
+      "locator": "Original lesson transcript, explanation and RH/LH examples",
+      "web_reference": "turn710741view1",
+      "reuse": "external reference only; no source graphic, recording or PDF copied"
+    },
+    {
+      "source_id": "BR-05",
+      "title": "Major Scales, Scale Degrees, and Key Signatures",
+      "url": "https://viva.pressbooks.pub/openmusictheory/chapter/major-scales/",
+      "publisher": "Open Music Theory / Chelsey Hamm and Bryn Hughes",
+      "checked_on": "2026-09-09",
+      "access_status": "search_full_chapter_text_retrieved_direct_open_failed",
+      "supports": [
+        "Scale degree identifies position relative to tonic, not a finger"
+      ],
+      "locator": "Search-retrieved chapter text: Scale Degrees, Solfège, and Scale-Degree Names",
+      "web_reference": "turn837039search0",
+      "reuse": "external reference only; no source graphic, recording or PDF copied"
+    },
+    {
+      "source_id": "AM-THEORY",
+      "title": "Scales and scale degrees",
+      "url": "https://openmusictheory.github.io/scales.html",
+      "publisher": "Open Music Theory / Hybrid Pedagogy Publishing",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "Major-scale W–W–H–W–W–W–H rule; ascending/descending scale definition; half step is adjacent keyboard pitches; tonic repeated at octave"
+      ],
+      "locator": "The major scale, lines 6 and 12–21",
+      "web_reference": "turn991343view1",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-FINGER-LMT",
+      "title": "Major and Natural Minor Scales for Piano with Fingerings",
+      "url": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
+      "publisher": "LearnMusicTheory.net / High-Yield Music Theory",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_pdf_and_visually_checked",
+      "supports": [
+        "C,D,F,G,A,E,B,Bb,Eb major: one-octave staff spelling and RH/LH ascending/descending numbers; Bb/Eb LH top finger 2; Eb RH start finger 2"
+      ],
+      "locator": "PDF page 1, major scales; RH above/LH below; visual screenshot turn781025view0",
+      "web_reference": "turn952800view1",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-FINGER-MF",
+      "title": "Major Scale Fingering Charts for Keyboards",
+      "url": "https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf",
+      "publisher": "Music Fun / Beatrice Wilder",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_pdf_and_visually_checked",
+      "supports": [
+        "Independent visual checks of one-octave RH/LH ascending/descending sequences and staff pitches for C,G,D,A,E,B,F,Bb,Eb"
+      ],
+      "locator": "PDF pages 3,4,5,6,7,8,10,11,12; the labeled key-specific pages. Screenshots: turn655244view0; turn641788view0; turn621017view2; turn699204view0; turn254414view3; turn509801view2; turn621244view6; turn206026view2; turn509801view1",
+      "web_reference": "turn688985view2",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-NOTES-C-MAJOR",
+      "title": "C Major Scale – Piano Notes & Practice",
+      "url": "https://pulse.berklee.edu/scales/c-major-scale.html",
+      "publisher": "Berklee PULSE",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "C major seven-note spelling; key signature accidental count"
+      ],
+      "locator": "Opening notes and key-signature sentences, lines 4–6",
+      "web_reference": "turn254414view0",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-NOTES-G-MAJOR",
+      "title": "G Major Scale – Piano Notes & Practice",
+      "url": "https://pulse.berklee.edu/scales/g-major-scale.html",
+      "publisher": "Berklee PULSE",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "G major seven-note spelling; key signature accidental count"
+      ],
+      "locator": "Opening notes and key-signature sentences, lines 4–6",
+      "web_reference": "turn621244view1",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "DB-02",
+      "title": "Bravura font license",
+      "url": "https://github.com/steinbergmedia/bravura/blob/master/LICENSE.txt",
+      "publisher": "Steinberg",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and license downloaded",
+      "supports": "SIL OFL music glyph source, license retained",
+      "locator": "LICENSE.txt"
+    },
+    {
+      "source_id": "E-DURATION",
+      "title": "Durational symbols",
+      "url": "https://musictheory.pugetsound.edu/mt21c/DurationalSymbols.html",
+      "publisher": "University of Puget Sound",
+      "supports": "Relative note/rest values; examples use quarter-note units in 4/4.",
+      "locator": "Section 4.2; turn48view0",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    },
+    {
+      "source_id": "E-DOTS",
+      "title": "Dots and ties",
+      "url": "https://musictheory.pugetsound.edu/mt21c/DotsAndTies.html",
+      "publisher": "University of Puget Sound",
+      "supports": "Dot adds half the original duration; tie joins same pitch.",
+      "locator": "Section 4.3; turn48view2",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    },
+    {
+      "source_id": "E-METER",
+      "title": "Meter",
+      "url": "https://musictheory.pugetsound.edu/mt21c/meter.html",
+      "publisher": "University of Puget Sound",
+      "supports": "Simple subdivision in two; compound in three; 6/8 compound duple.",
+      "locator": "Section 4.4; turn48view3",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    },
+    {
+      "source_id": "E-RHYTHM-CROSS",
+      "title": "Note duration; dots and ties",
+      "url": "https://www.musictheory.net/lessons/11",
+      "publisher": "musictheory.net",
+      "supports": "Two halves equal one whole; source crosschecks proportional duration, not site exercises.",
+      "locator": "turn46search9",
+      "checked_on": "2026-09-09",
+      "access_status": "verified search excerpt; interactive page inaccessible to text reader"
+    },
+    {
+      "source_id": "E-TERMS",
+      "title": "Italian musical terms",
+      "url": "https://www.musicca.com/musical-terms",
+      "publisher": "Musicca",
+      "supports": "Dynamics, tempo words, articulation, hand abbreviations and repeat directions.",
+      "locator": "Tables 1–5; turn49view2",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    },
+    {
+      "source_id": "E-POSTURE",
+      "title": "The correct posture for playing the piano",
+      "url": "https://www.yamaha.com/en/musical_instrument_guide/piano/play/play002.html",
+      "publisher": "Yamaha",
+      "supports": "Bench position, feet support, relaxed arms, elbow/keyboard alignment and gently curved fingers.",
+      "locator": "turn40view2; turn41view3",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    },
+    {
+      "source_id": "E-POSTURE-CROSS",
+      "title": "Top ten tips for good piano posture",
+      "url": "https://www.hoffmanacademy.com/blog/top-ten-tips-for-good-piano-posture",
+      "publisher": "Hoffman Academy",
+      "supports": "Wrist and hand alignment; not rigidly fixed.",
+      "locator": "turn42search2",
+      "checked_on": "2026-09-09",
+      "access_status": "verified search excerpt; full page returned navigation only"
+    },
+    {
+      "source_id": "E-CHORD",
+      "title": "Basic piano chords for beginners, part 1",
+      "url": "https://hub.yamaha.com/keyboards/k-how-to/basic-piano-chords-for-beginners-part-1/",
+      "publisher": "Yamaha / Jerry Kovarsky",
+      "supports": "C major C E G; RH root-position usual 1 3 5; root/third/fifth and inversion distinction.",
+      "locator": "turn49view0",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    },
+    {
+      "source_id": "E-TRIADS",
+      "title": "Triads introduction",
+      "url": "https://musictheory.pugetsound.edu/mt21c/TriadsIntroduction.html",
+      "publisher": "University of Puget Sound",
+      "supports": "Major and minor stacked-thirds structure; reused earlier verified theory.",
+      "locator": "Legacy source S03",
+      "checked_on": "2026-09-09",
+      "access_status": "reused prior verified source; not newly opened in E"
+    },
+    {
+      "source_id": "E-BOOK-ADULT",
+      "title": "Alfred’s Basic Adult All-in-One Course, Book 1",
+      "url": "https://www.alfred.com/products/alfred-s-basic-adult-all-in-one-course-book-1-00-5753",
+      "publisher": "Alfred Music",
+      "supports": "Lesson, theory and technique in one course. Publisher level: adult beginner",
+      "locator": "00-5753",
+      "checked_on": "2026-09-09",
+      "access_status": "verified official publisher search excerpt"
+    },
+    {
+      "source_id": "E-BOOK-CHILD",
+      "title": "Alfred’s Basic All-in-One Course, Book 1",
+      "url": "https://www.alfred.com/products/alfred-s-basic-all-in-one-course-book-1-00-5740",
+      "publisher": "Alfred Music",
+      "supports": "Combines material from the Basic Piano Library in an all-in-one course. Publisher level: beginner",
+      "locator": "00-5740",
+      "checked_on": "2026-09-09",
+      "access_status": "verified official publisher search excerpt"
+    },
+    {
+      "source_id": "E-BOOK-SCALES",
+      "title": "The Complete Book of Scales, Chords, Arpeggios & Cadences",
+      "url": "https://www.alfred.com/products/the-complete-book-of-scales-chords-arpeggios-cadences-00-5743",
+      "publisher": "Alfred Music",
+      "supports": "Major and minor keys, scale fundamentals and fingering guidance. Publisher level: reference; level not independently assessed",
+      "locator": "00-5743",
+      "checked_on": "2026-09-09",
+      "access_status": "verified official publisher search excerpt"
+    },
+    {
+      "source_id": "E-BOOK-JAZZ",
+      "title": "Jazz, Rags & Blues, Book 3",
+      "url": "https://www.alfred.com/products/jazz-rags-blues-book-3-00-16871",
+      "publisher": "Alfred Music",
+      "supports": "Martha Mier original piano solos; Book & Online Audio. Publisher level: Intermediate / Late Intermediate",
+      "locator": "00-16871",
+      "checked_on": "2026-09-09",
+      "access_status": "verified official publisher search excerpt"
+    },
+    {
+      "source_id": "E-HANON",
+      "title": "Hanon: The Virtuoso Pianist in 60 Exercises (Complete)",
+      "url": "https://www.alfred.com/products/hanon-the-virtuoso-pianist-in-60-exercises-complete-00-616",
+      "publisher": "Alfred Music",
+      "supports": "Charles-Louis Hanon, edited by Allan Small; complete exercises 1–60. Publisher level: Intermediate / Advanced",
+      "locator": "00-616",
+      "checked_on": "2026-09-09",
+      "access_status": "opened full publisher page"
+    },
+    {
+      "source_id": "E-BOOK-SIGHT",
+      "title": "Joining the Dots, Book 1 (Piano)",
+      "url": "https://shop.abrsm.org/products/joining-the-dots-book-1-piano",
+      "publisher": "ABRSM",
+      "supports": "Alan Bullard; Grade 1; 32 pages; 2010; ISBN 9781860969768; short sight-reading and musicianship activities.",
+      "locator": "turn49view1; details and description",
+      "checked_on": "2026-09-09",
+      "access_status": "opened and read"
+    }
+  ],
+  "checks": [
+    "14 distinct tutorial tasks; original examples separate from source facts",
+    "Every exercise bar sums to four quarter-note units",
+    "No inferred fingering; single RH C-major example explicitly sourced",
+    "Actual four-page starter PDF rendered and visually checked",
+    "Original hand-position, C-major RH-fingering and music-symbol SVGs included",
+    "URL集合与本批基线完全一致",
+    "逐页关键词与源任务原样保留",
+    "来源ID可解析",
+    "未修改已完成chords页",
+    "全部ready_for_publish=false，未将内容准备当作功能验收"
+  ]
+}

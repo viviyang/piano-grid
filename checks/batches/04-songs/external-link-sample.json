@@ -1,0 +1,39 @@
+{
+  "executed_at": "2026-09-09T12:51:23.214Z",
+  "method": "restrained direct web open of one representative resource per provider; no purchase, login, download, or media playback",
+  "checked": [
+    {
+      "provider": "Hoffman Academy",
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/gymnopedie-no-1",
+      "status": "reachable",
+      "matched": [
+        "Gymnopédie No. 1",
+        "Erik Satie",
+        "Late Intermediate",
+        "2 PDF pages",
+        "license restrictions visible"
+      ]
+    },
+    {
+      "provider": "Hal Leonard",
+      "url": "https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano",
+      "status": "reachable",
+      "matched": [
+        "HL 00131140",
+        "Easy Piano Songbook",
+        "50-title song list",
+        "digital book cannot be printed or downloaded"
+      ]
+    },
+    {
+      "provider": "Alfred Music",
+      "url": "https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505",
+      "status": "reachable",
+      "matched": [
+        "Alfred Basic Adult Piano Course Greatest Hits Book 1",
+        "00-16505"
+      ]
+    }
+  ],
+  "not_checked": "The remaining resource URLs were verified structurally against the source package but were not fetched individually to keep external access restrained."
+}

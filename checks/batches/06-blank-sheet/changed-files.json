@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-09-09T14:04:57.239Z",
+  "changed_count": 25,
+  "changes": [
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "before": "6372d651f0b1fcf4e0a1a836197de2bb238bb6130cc75ce58a58729d380cfccc",
+      "after": "92d9fa499a4f64984a1e358a77a79222885193f120bd208a5dcd9f9ee3549394"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "before": "f9de66e03151a0023658817be06ae263e19906ae6069d0f85fb0002def7cc29c",
+      "after": "89eed7155993e1905f843ca0eebb4c683fa5e8c4fb623ce603060a74d3a42dba"
+    },
+    {
+      "path": "docs/content/asset-map.json",
+      "status": "modified",
+      "before": "721810fd873ddd8e0caa67e3bde81c093e7fe2c10597f1d18f9689db2cb248e0",
+      "after": "a212a3d9906b99d2f583e14b2dffb7e7cc06030eeae059f5f0dcfc594ee69b48"
+    },
+    {
+      "path": "docs/content/content-source-map.json",
+      "status": "modified",
+      "before": "a8a43499ad600955a525af24f2eae8e5f8b3dc8e45281d487c8967a0c42908e4",
+      "after": "3ad24bc1cb6c00029a85a1b0aa533114185c194cba9c71fd1272fdb49a36eb82"
+    },
+    {
+      "path": "docs/design/component-spec.md",
+      "status": "modified",
+      "before": "e38855d3e703c0f317fd9d628b1aa233265fc234fe69025207d6bc1a14e8ce41",
+      "after": "67dd6c8868d27d1dc71b50743646fe338cf5f15e12427fb4b313a06fd16dac9f"
+    },
+    {
+      "path": "docs/design/template-map.md",
+      "status": "modified",
+      "before": "e1d7fb148e83e52bb9559a47588c610722b3b26a59493d07513cbc2a4e49ca04",
+      "after": "2dd478a7eed904964eb8ed2112c5a8a6a20af9d68f9fde268af2b2fb53327a27"
+    },
+    {
+      "path": "docs/project-context.md",
+      "status": "modified",
+      "before": "08839f865f667768ca6670fc8d249b706ba0e24cb73c65e338b812f78e1dfe32",
+      "after": "3d52ef77edb5c894bc9a23c51b77f5e17cd89527758bc962ae847e9bd305513e"
+    },
+    {
+      "path": "docs/tasks/site-implementation-plan.md",
+      "status": "modified",
+      "before": "cf44a89708db777b1de40cc5355c45e006e858f5abb2932afcc85efcc70a92a5",
+      "after": "e1a7167311c73d3760e45978ce6a678c189cfde5b84ab276d146d660a3ae781d"
+    },
+    {
+      "path": "public/reference/assets/blank-piano-staff-a4.pdf",
+      "status": "added",
+      "before": null,
+      "after": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf"
+    },
+    {
+      "path": "public/reference/assets/blank-piano-staff-letter.pdf",
+      "status": "added",
+      "before": null,
+      "after": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa"
+    },
+    {
+      "path": "public/reference/assets/blank-piano-staff-preview.svg",
+      "status": "added",
+      "before": null,
+      "after": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec"
+    },
+    {
+      "path": "scripts/check-blank-sheet-batch.mjs",
+      "status": "added",
+      "before": null,
+      "after": "9db9cc0384deb3de74f1c86b8573309b6f6efd462ef2f98bdeedecb74fc4e2de"
+    },
+    {
+      "path": "scripts/check-blank-sheet-data.mjs",
+      "status": "added",
+      "before": null,
+      "after": "cd4c62134fd7727fe95b47449b32e694c68ee4614fee4e688371a34ce3bee585"
+    },
+    {
+      "path": "scripts/check-blank-sheet-pdfs.py",
+      "status": "added",
+      "before": null,
+      "after": "d844c682d5fac932c082ec618aab232c47601ec745c177fb7d9425b87570a966"
+    },
+    {
+      "path": "scripts/check-blank-sheet-production.mjs",
+      "status": "added",
+      "before": null,
+      "after": "e13c140b7aada25d469a9bb46c4887bdbef2cfd6ad49e674381fe930d1880ff7"
+    },
+    {
+      "path": "scripts/check-css.mjs",
+      "status": "modified",
+      "before": "f4e37846b133b38ca88347a36f0b516b534af3e484694ad2407aaac7cdfa0735",
+      "after": "1797e5a53aa3c20f4f661e77780043401496a38aaa79ab0c51885f443c93f090"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "status": "modified",
+      "before": "26999e5c430a99eccfd4c74247e2139843afe2fa8e86ad5c61faeb4ddec85880",
+      "after": "1d575dc2630775f54629e6d091e4d109b04af2e60a508ae9371008195a94dc36"
+    },
+    {
+      "path": "src/app/tools/blank-sheet-music/page.tsx",
+      "status": "added",
+      "before": null,
+      "after": "26520536619a28741f9db6fba0bdb3098ce4fa04be716dd89dbeae2e0dd2d733"
+    },
+    {
+      "path": "src/components/blank-sheet/blank-sheet-tool.tsx",
+      "status": "added",
+      "before": null,
+      "after": "7600c724c78c4e175cd1bc5720dc5f4735ece35c04855fb9d90ca2abf0c8cc59"
+    },
+    {
+      "path": "src/components/blank-sheet/blank-sheet.css",
+      "status": "added",
+      "before": null,
+      "after": "abba0dc1b07f0a38adbc9b2b5c7c328d9aeeedc0a55d271fb7c0d64855c73f09"
+    },
+    {
+      "path": "src/components/blank-sheet/pages.tsx",
+      "status": "added",
+      "before": null,
+      "after": "31d2925d8a450db5e04aee3fd993f65faa1c36666fa7173b642aeb29c9692182"
+    },
+    {
+      "path": "src/components/chords/site-chrome.tsx",
+      "status": "modified",
+      "before": "331b4d634ee9334046788e0c5866f9c2893c5f54688e1736b80af2b2f3725204",
+      "after": "09c3db6abd911782f8fc41a28714064a96d502ade50ce9e7a38c493cf9234385"
+    },
+    {
+      "path": "src/lib/blank-sheet-content.ts",
+      "status": "added",
+      "before": null,
+      "after": "1eb300799a50c6634c6cfe51103637608e622a9625c6963e224792b2de45b56c"
+    },
+    {
+      "path": "src/lib/blank-sheet-types.ts",
+      "status": "added",
+      "before": null,
+      "after": "c197e563a3d6d174c1fb7fb31cde46a1817063577b4247ac47e6a2f65d162411"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "status": "modified",
+      "before": "b997dbd08efc87e41d392e677f8f938c4fb8d068107eb6a1d4f45b51fb14ba2c",
+      "after": "80dbb9a47ab567f129fcbaa90bbf22e070c6fc4406ac554c0b7dbf7797903b86"
+    }
+  ]
+}

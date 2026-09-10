@@ -1,0 +1,1875 @@
+{
+  "date": "2026-09-09",
+  "runtime": "Headless Chromium 144.0.7559.96",
+  "loading_method": "HTML bytes passed to browser set_content; file:// navigation blocked by runtime policy. No external browser deployment.",
+  "checks": [
+    {
+      "name": "320px: no page horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--root: selected keys match data",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "320px a-minor--root: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--root: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--root: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--root: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--first: selected keys match data",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "320px a-minor--first: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--first: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--first: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--first: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--second: selected keys match data",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "320px a-minor--second: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--second: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--second: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px a-minor--second: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320px: primary interactive targets >=44px",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Search this page",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "Root position",
+          "w": 246,
+          "h": 46
+        },
+        {
+          "label": "First inversion",
+          "w": 246,
+          "h": 46
+        },
+        {
+          "label": "Second inversion",
+          "w": 246,
+          "h": 46
+        },
+        {
+          "label": "Show lower keys",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "Play chord",
+          "w": 254,
+          "h": 44
+        },
+        {
+          "label": "Play notes one at a time",
+          "w": 254,
+          "h": 44
+        },
+        {
+          "label": "Stop",
+          "w": 254,
+          "h": 44
+        },
+        {
+          "label": "Print this position",
+          "w": 254,
+          "h": 44
+        },
+        {
+          "label": "Download A minor PDF",
+          "w": 254,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "name": "360px: no page horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--root: selected keys match data",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "360px a-minor--root: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--root: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--root: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--root: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--first: selected keys match data",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "360px a-minor--first: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--first: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--first: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--first: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--second: selected keys match data",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "360px a-minor--second: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--second: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--second: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px a-minor--second: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360px: primary interactive targets >=44px",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Search this page",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "Root position",
+          "w": 92.65625,
+          "h": 57
+        },
+        {
+          "label": "First inversion",
+          "w": 92.671875,
+          "h": 57
+        },
+        {
+          "label": "Second inversion",
+          "w": 92.671875,
+          "h": 57
+        },
+        {
+          "label": "Show lower keys",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "Play chord",
+          "w": 193.5625,
+          "h": 44
+        },
+        {
+          "label": "Play notes one at a time",
+          "w": 294,
+          "h": 44
+        },
+        {
+          "label": "Stop",
+          "w": 92.4375,
+          "h": 44
+        },
+        {
+          "label": "Print this position",
+          "w": 142.875,
+          "h": 44
+        },
+        {
+          "label": "Download A minor PDF",
+          "w": 178.375,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "name": "390px: no page horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--root: selected keys match data",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "390px a-minor--root: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--root: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--root: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--root: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--first: selected keys match data",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "390px a-minor--first: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--first: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--first: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--first: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--second: selected keys match data",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "390px a-minor--second: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--second: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--second: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px a-minor--second: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390px: primary interactive targets >=44px",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Search this page",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "Root position",
+          "w": 102.65625,
+          "h": 57
+        },
+        {
+          "label": "First inversion",
+          "w": 102.671875,
+          "h": 57
+        },
+        {
+          "label": "Second inversion",
+          "w": 102.671875,
+          "h": 57
+        },
+        {
+          "label": "Show lower keys",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "Play chord",
+          "w": 223.5625,
+          "h": 44
+        },
+        {
+          "label": "Play notes one at a time",
+          "w": 324,
+          "h": 44
+        },
+        {
+          "label": "Stop",
+          "w": 92.4375,
+          "h": 44
+        },
+        {
+          "label": "Print this position",
+          "w": 142.875,
+          "h": 44
+        },
+        {
+          "label": "Download A minor PDF",
+          "w": 178.375,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "name": "390x844: primary Play is inside first viewport",
+      "passed": true,
+      "detail": {
+        "x": 33,
+        "y": 751.453125,
+        "width": 223.5625,
+        "height": 44,
+        "right": 256.5625,
+        "bottom": 795.453125
+      }
+    },
+    {
+      "name": "Mobile keyboard pan works",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px: no page horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--root: selected keys match data",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "768px a-minor--root: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--root: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--root: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--root: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--first: selected keys match data",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "768px a-minor--first: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--first: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--first: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--first: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--second: selected keys match data",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "768px a-minor--second: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--second: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--second: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px a-minor--second: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768px: primary interactive targets >=44px",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Search this page",
+          "w": 150.59375,
+          "h": 44
+        },
+        {
+          "label": "Root position",
+          "w": 127.328125,
+          "h": 44
+        },
+        {
+          "label": "First inversion",
+          "w": 127.34375,
+          "h": 44
+        },
+        {
+          "label": "Second inversion",
+          "w": 127.328125,
+          "h": 44
+        },
+        {
+          "label": "Play chord",
+          "w": 136.546875,
+          "h": 44
+        },
+        {
+          "label": "Play notes one at a time",
+          "w": 232.21875,
+          "h": 44
+        },
+        {
+          "label": "Stop",
+          "w": 92.4375,
+          "h": 44
+        },
+        {
+          "label": "Print this position",
+          "w": 171.359375,
+          "h": 44
+        },
+        {
+          "label": "Download A minor PDF",
+          "w": 209.40625,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "name": "1024px: no page horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--root: selected keys match data",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "1024px a-minor--root: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--root: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--root: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--root: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--first: selected keys match data",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "1024px a-minor--first: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--first: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--first: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--first: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--second: selected keys match data",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "1024px a-minor--second: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--second: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--second: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px a-minor--second: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024px: primary interactive targets >=44px",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Search this page",
+          "w": 150.59375,
+          "h": 44
+        },
+        {
+          "label": "Root position",
+          "w": 134.828125,
+          "h": 44
+        },
+        {
+          "label": "First inversion",
+          "w": 134.828125,
+          "h": 44
+        },
+        {
+          "label": "Second inversion",
+          "w": 134.828125,
+          "h": 44
+        },
+        {
+          "label": "Play chord",
+          "w": 136.546875,
+          "h": 44
+        },
+        {
+          "label": "Play notes one at a time",
+          "w": 232.21875,
+          "h": 44
+        },
+        {
+          "label": "Stop",
+          "w": 92.4375,
+          "h": 44
+        },
+        {
+          "label": "Print this position",
+          "w": 171.359375,
+          "h": 44
+        },
+        {
+          "label": "Download A minor PDF",
+          "w": 209.40625,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "name": "1440px: no page horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--root: selected keys match data",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "1440px a-minor--root: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--root: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--root: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--root: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--first: selected keys match data",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "1440px a-minor--first: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--first: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--first: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--first: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--second: selected keys match data",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "1440px a-minor--second: symbol and bass match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--second: all current marked keys in scroll viewport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--second: ordered note text matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px a-minor--second: switching does not play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440px: primary interactive targets >=44px",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Search this page",
+          "w": 150.59375,
+          "h": 44
+        },
+        {
+          "label": "Root position",
+          "w": 146.828125,
+          "h": 44
+        },
+        {
+          "label": "First inversion",
+          "w": 146.828125,
+          "h": 44
+        },
+        {
+          "label": "Second inversion",
+          "w": 146.828125,
+          "h": 44
+        },
+        {
+          "label": "Play chord",
+          "w": 136.546875,
+          "h": 44
+        },
+        {
+          "label": "Play notes one at a time",
+          "w": 232.21875,
+          "h": 44
+        },
+        {
+          "label": "Stop",
+          "w": 92.4375,
+          "h": 44
+        },
+        {
+          "label": "Print this position",
+          "w": 171.359375,
+          "h": 44
+        },
+        {
+          "label": "Download A minor PDF",
+          "w": 209.40625,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "name": "No auto-play or AudioContext creation on load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root together: actual oscillators use event frequencies",
+      "passed": true,
+      "detail": [
+        {
+          "starts": [
+            {
+              "t": 0.035,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            1.2349999999999999
+          ],
+          "frequencyEvents": [
+            {
+              "value": 220,
+              "t": 0.035
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 0.035,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            1.2349999999999999
+          ],
+          "frequencyEvents": [
+            {
+              "value": 261.625565,
+              "t": 0.035
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 0.035,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            1.2349999999999999
+          ],
+          "frequencyEvents": [
+            {
+              "value": 329.627557,
+              "t": 0.035
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "a-minor--root together: onset and duration match ms events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root together: active note state differs from selection",
+      "passed": true,
+      "detail": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "a-minor--root together: Stop clears sound, retains selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root ascending: actual oscillators use event frequencies",
+      "passed": true,
+      "detail": [
+        {
+          "starts": [
+            {
+              "t": 0.3571768707482993,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            0.8571768707482993
+          ],
+          "frequencyEvents": [
+            {
+              "value": 220,
+              "t": 0.3571768707482993
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 0.9571768707482993,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            1.4571768707482993
+          ],
+          "frequencyEvents": [
+            {
+              "value": 261.625565,
+              "t": 0.9571768707482993
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 1.5571768707482994,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            2.0571768707482994
+          ],
+          "frequencyEvents": [
+            {
+              "value": 329.627557,
+              "t": 1.5571768707482994
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "a-minor--root ascending: onset and duration match ms events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root ascending: active note state differs from selection",
+      "passed": true,
+      "detail": [
+        57
+      ]
+    },
+    {
+      "name": "a-minor--root ascending: Stop clears sound, retains selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Stop: no late note restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first together: actual oscillators use event frequencies",
+      "passed": true,
+      "detail": [
+        {
+          "starts": [
+            {
+              "t": 2.487607709750567,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            3.6876077097505666
+          ],
+          "frequencyEvents": [
+            {
+              "value": 261.625565,
+              "t": 2.487607709750567
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 2.487607709750567,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            3.6876077097505666
+          ],
+          "frequencyEvents": [
+            {
+              "value": 329.627557,
+              "t": 2.487607709750567
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 2.487607709750567,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            3.6876077097505666
+          ],
+          "frequencyEvents": [
+            {
+              "value": 440,
+              "t": 2.487607709750567
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "a-minor--first together: onset and duration match ms events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first together: active note state differs from selection",
+      "passed": true,
+      "detail": [
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "name": "a-minor--first together: Stop clears sound, retains selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first ascending: actual oscillators use event frequencies",
+      "passed": true,
+      "detail": [
+        {
+          "starts": [
+            {
+              "t": 2.7865646258503403,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            3.2865646258503403
+          ],
+          "frequencyEvents": [
+            {
+              "value": 261.625565,
+              "t": 2.7865646258503403
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 3.3865646258503403,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            3.8865646258503403
+          ],
+          "frequencyEvents": [
+            {
+              "value": 329.627557,
+              "t": 3.3865646258503403
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 3.98656462585034,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            4.48656462585034
+          ],
+          "frequencyEvents": [
+            {
+              "value": 440,
+              "t": 3.98656462585034
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "a-minor--first ascending: onset and duration match ms events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first ascending: active note state differs from selection",
+      "passed": true,
+      "detail": [
+        60
+      ]
+    },
+    {
+      "name": "a-minor--first ascending: Stop clears sound, retains selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second together: actual oscillators use event frequencies",
+      "passed": true,
+      "detail": [
+        {
+          "starts": [
+            {
+              "t": 3.155181405895692,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            4.355181405895692
+          ],
+          "frequencyEvents": [
+            {
+              "value": 329.627557,
+              "t": 3.155181405895692
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 3.155181405895692,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            4.355181405895692
+          ],
+          "frequencyEvents": [
+            {
+              "value": 440,
+              "t": 3.155181405895692
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 3.155181405895692,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            4.355181405895692
+          ],
+          "frequencyEvents": [
+            {
+              "value": 523.251131,
+              "t": 3.155181405895692
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "a-minor--second together: onset and duration match ms events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second together: active note state differs from selection",
+      "passed": true,
+      "detail": [
+        64,
+        69,
+        72
+      ]
+    },
+    {
+      "name": "a-minor--second together: Stop clears sound, retains selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second ascending: actual oscillators use event frequencies",
+      "passed": true,
+      "detail": [
+        {
+          "starts": [
+            {
+              "t": 3.4367233560090704,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            3.9367233560090704
+          ],
+          "frequencyEvents": [
+            {
+              "value": 329.627557,
+              "t": 3.4367233560090704
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 4.0367233560090705,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            4.5367233560090705
+          ],
+          "frequencyEvents": [
+            {
+              "value": 440,
+              "t": 4.0367233560090705
+            }
+          ]
+        },
+        {
+          "starts": [
+            {
+              "t": 4.63672335600907,
+              "frequency": 440
+            }
+          ],
+          "stops": [
+            5.13672335600907
+          ],
+          "frequencyEvents": [
+            {
+              "value": 523.251131,
+              "t": 4.63672335600907
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "a-minor--second ascending: onset and duration match ms events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second ascending: active note state differs from selection",
+      "passed": true,
+      "detail": [
+        64
+      ]
+    },
+    {
+      "name": "a-minor--second ascending: Stop clears sound, retains selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Natural completion returns to idle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Changing inversion cancels old playback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Rapid replay: at most the current three nodes connected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Native radio ArrowRight selects first inversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Radio keyboard focus visible independently of selected state",
+      "passed": true,
+      "detail": {
+        "style": "solid",
+        "width": "2px"
+      }
+    },
+    {
+      "name": "FAQ: multiple items open with keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Page-local search returns actual section",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Search Escape closes modal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Search has real empty state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root: print data agrees with selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root: current print fits one page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--root: print includes position, no navigation or controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first: print data agrees with selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first: current print fits one page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--first: print includes position, no navigation or controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second: print data agrees with selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second: current print fits one page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-minor--second: print includes position, no navigation or controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Print captures click-time selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Afterprint restores current selection without false success",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PDF link downloads the actual verified asset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hidden-page event stops audio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Audio unavailable: clear source microcopy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Audio unavailable: no false playable buttons",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Audio unavailable: position and print remain usable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Audio initialization error is handled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Deferred resume shows real loading microcopy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Stop during loading prevents late scheduled audio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Print invocation failure shows microcopy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-result: exact supplied copy Chord symbol: Am. Chord tones: A–C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-result: exact supplied copy Choose a position to change the lo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-find-notes: exact supplied copy Start with C4, middle C. A3 is two",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-find-notes: exact supplied copy The marked keys show pitches, not ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-find-notes: exact supplied copy Locate A3, C4, and E4 using the la",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-find-notes: exact supplied copy Play them separately to check thei",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-find-notes: exact supplied copy If you use another octave, move al",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-inversions: exact supplied copy An inversion changes which chord t",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-inversions: exact supplied copy These examples use close position ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-why-minor: exact supplied copy From A to C is a minor third: thre",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-why-minor: exact supplied copy Compare A minor, A–C–E, with A maj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-practice: exact supplied copy Use this as a note-finding check. ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-practice: exact supplied copy Play A3–C4–E4 and say “A in the ba",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-practice: exact supplied copy Choose first inversion and play C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-practice: exact supplied copy Choose second inversion and play E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-practice: exact supplied copy Without looking at the chord symbo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-print: exact supplied copy Download the one-page reference to",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "am-print: exact supplied copy Use Print this position if you onl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FAQ original answer: Is Am the same as A minor?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FAQ original answer: Does Am/C become a C chord?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FAQ original answer: Is Am the same as Am7?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FAQ original answer: Are the numbers in A3, C4, and E4 finger numbers?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No fake related links or undefined domain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No automatic full-site page generation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "200% root font probe at390: no page overflow",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "No-JS: initial answer, root diagram, table and all FAQs present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No-JS: controls disabled, PDF a real link",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No uncaught browser errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Earlier artifact unchanged: piano-four-directions/version-d.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Earlier artifact unchanged: piano-four-directions/version-a.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Earlier artifact unchanged: piano-four-directions/version-c.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Earlier artifact unchanged: piano-four-directions/version-b.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Earlier artifact unchanged: Piano_Version_B.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Earlier artifact unchanged: Piano_Reference_Four_Designs.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Input unchanged: page-content.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Input unchanged: content-pack.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Input unchanged: url-plan.final(1).json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Input unchanged: Piano_Final_Build_Prompt.md",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "skipped": [],
+  "passed": 197,
+  "failed": [],
+  "layouts": [
+    {
+      "width": 320,
+      "height": 800,
+      "page_overflow": false,
+      "play_button": {
+        "x": 33,
+        "y": 894.453125,
+        "width": 254,
+        "height": 44,
+        "right": 287,
+        "bottom": 938.453125
+      },
+      "positions": [
+        {
+          "id": "a-minor--root",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--first",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--second",
+          "selected_keys_visible": true
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "page_overflow": false,
+      "play_button": {
+        "x": 33,
+        "y": 751.453125,
+        "width": 193.5625,
+        "height": 44,
+        "right": 226.5625,
+        "bottom": 795.453125
+      },
+      "positions": [
+        {
+          "id": "a-minor--root",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--first",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--second",
+          "selected_keys_visible": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "page_overflow": false,
+      "play_button": {
+        "x": 33,
+        "y": 751.453125,
+        "width": 223.5625,
+        "height": 44,
+        "right": 256.5625,
+        "bottom": 795.453125
+      },
+      "positions": [
+        {
+          "id": "a-minor--root",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--first",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--second",
+          "selected_keys_visible": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "page_overflow": false,
+      "play_button": {
+        "x": 57,
+        "y": 735.8125,
+        "width": 136.546875,
+        "height": 44,
+        "right": 193.546875,
+        "bottom": 779.8125
+      },
+      "positions": [
+        {
+          "id": "a-minor--root",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--first",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--second",
+          "selected_keys_visible": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "page_overflow": false,
+      "play_button": {
+        "x": 57,
+        "y": 735.8125,
+        "width": 136.546875,
+        "height": 44,
+        "right": 193.546875,
+        "bottom": 779.8125
+      },
+      "positions": [
+        {
+          "id": "a-minor--root",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--first",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--second",
+          "selected_keys_visible": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "page_overflow": false,
+      "play_button": {
+        "x": 185,
+        "y": 735.8125,
+        "width": 136.546875,
+        "height": 44,
+        "right": 321.546875,
+        "bottom": 779.8125
+      },
+      "positions": [
+        {
+          "id": "a-minor--root",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--first",
+          "selected_keys_visible": true
+        },
+        {
+          "id": "a-minor--second",
+          "selected_keys_visible": true
+        }
+      ]
+    }
+  ],
+  "not_tested": [
+    "Real iPhone/Android device",
+    "Safari / Firefox / Windows Edge",
+    "Human audio audition or speaker output",
+    "Physical printer output",
+    "Native print dialog interaction",
+    "Full screen-reader audit",
+    "Full WCAG 2.2 conformance audit",
+    "Production deployment"
+  ]
+}

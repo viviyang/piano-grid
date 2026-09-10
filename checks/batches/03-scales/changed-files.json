@@ -1,0 +1,212 @@
+{
+  "baseline_note": "Hash comparison against source-before.json; build caches, generated Next.js type files, hidden repository controls and checks artifacts are excluded to match the baseline inventory.",
+  "source_changes": [
+    {
+      "path": "src/app/scales/a-minor/page.tsx",
+      "bytes": 383,
+      "sha256": "6aaf6b8cc75fdda4a5c1efab92b9ca6e712ab9901d98a825da388725ebc66f45",
+      "status": "added"
+    },
+    {
+      "path": "src/app/scales/c-major/page.tsx",
+      "bytes": 383,
+      "sha256": "7d2a03405801b4931a3579b8a0d288da15515caf5867b0b4c640850549b75c82",
+      "status": "added"
+    },
+    {
+      "path": "src/app/scales/page.tsx",
+      "bytes": 325,
+      "sha256": "3ff10dfe52366a16a292cb19d5e02dfe433da708b917128af07add727e077096",
+      "status": "added"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-diagram.tsx",
+      "bytes": 2720,
+      "sha256": "c382ce07ddc54be77623d409719bcd6ef8d6c88901a82bc23beffb47f5eeddde",
+      "status": "modified"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-notes.css",
+      "bytes": 5322,
+      "sha256": "7bad60d795ff5b4076b0f77312f258b0672b8361b7409544832ed3a75a41aa6b",
+      "status": "modified"
+    },
+    {
+      "path": "src/components/keyboard-notes/staff-diagram.tsx",
+      "bytes": 3399,
+      "sha256": "d8838a0848bac011fc2d446f5fae09b2dcdb2a7a697354122b1bbf719cc4fa25",
+      "status": "modified"
+    },
+    {
+      "path": "src/components/scales/center-experience.tsx",
+      "bytes": 4586,
+      "sha256": "969cab0c84006fb80a4eb827ae55bea83efb58eff1c282ab9ca05810bd3674c7",
+      "status": "added"
+    },
+    {
+      "path": "src/components/scales/detail-experience.tsx",
+      "bytes": 4464,
+      "sha256": "7dd659a3baa38cd0d19ddef4bc4ceee47ad308f55c4141c6dc77f58bde5e531a",
+      "status": "added"
+    },
+    {
+      "path": "src/components/scales/pages.tsx",
+      "bytes": 5252,
+      "sha256": "ea27511e3602e024a34024d08e404180ca9516c897361d0d073146eb83ffb152",
+      "status": "added"
+    },
+    {
+      "path": "src/components/scales/scale-reference.tsx",
+      "bytes": 5955,
+      "sha256": "56fd9e40a8da88a0eefae49541d07814c4c51fe6bdb4e2cbcdc622fa0c2bf2e9",
+      "status": "added"
+    },
+    {
+      "path": "src/components/scales/scales.css",
+      "bytes": 7662,
+      "sha256": "67a9f2122796b89fa462e08e49a2c6de68409a2a731057c63a604e9eddc1332a",
+      "status": "added"
+    },
+    {
+      "path": "src/components/scales/use-scale-audio.ts",
+      "bytes": 2007,
+      "sha256": "c045c46b49f71ca5fe792451a993f41b81b3d2eef3660fc55d486d9707486a32",
+      "status": "added"
+    },
+    {
+      "path": "src/lib/scale-content.ts",
+      "bytes": 11399,
+      "sha256": "bfd34dca80ad7deff9e10df7408d884099b643484a45a93878b1c36ac120320c",
+      "status": "added"
+    },
+    {
+      "path": "src/lib/scale-types.ts",
+      "bytes": 1429,
+      "sha256": "cae0ce65cf3f6ebaacc3efa1aac397ba6b45a76e89d87e3a5701e2c869e77951",
+      "status": "added"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "bytes": 1461,
+      "sha256": "1c020536e8a224e75ffe9ededbe91417bf42059bc114a4c8731c018c54cb38b7",
+      "status": "modified"
+    }
+  ],
+  "other_touched_paths": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2551,
+      "sha256": "3e287dcdced028df98af0f0e86bc0700924b57a076cc88ea80193b90883e1ca6",
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2117,
+      "sha256": "4d79f5b1e31326222fdba4837c1d1cb40ce0110af736ecb6dd962678081ec190",
+      "status": "modified"
+    },
+    {
+      "path": "docs/content/content-source-map.json",
+      "bytes": 369879,
+      "sha256": "b10c6beb896f047a3b2dce9b022cd3fb6c4afb28d49fae446097cb6cb5a60216",
+      "status": "modified"
+    },
+    {
+      "path": "docs/design/component-spec.md",
+      "bytes": 14774,
+      "sha256": "fd44286e63cbd666ff31c3d8cc74a318336178a6a52492537ffc56ac530615ed",
+      "status": "modified"
+    },
+    {
+      "path": "docs/design/template-map.md",
+      "bytes": 15783,
+      "sha256": "6757d5fa2544cdb4a13cd2d8e98fcd4764e3cf75cb81dc568e868d89a362df1c",
+      "status": "modified"
+    },
+    {
+      "path": "docs/project-context.md",
+      "bytes": 3301,
+      "sha256": "ebb62009a002fd61a7df5e427241c2374b13367d22b95fb3cfeb47c7732b4c75",
+      "status": "modified"
+    },
+    {
+      "path": "docs/tasks/site-implementation-plan.md",
+      "bytes": 15970,
+      "sha256": "72f4689864f0173245660302cc8ac866c630f71939b9e17756e93ed839f02af9",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-chord-batch.mjs",
+      "bytes": 15151,
+      "sha256": "bad249af0b5311aed4c8ecfe1a32ff55d5ce3026945c74d8f300f1414a3d4b06",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-css.mjs",
+      "bytes": 4736,
+      "sha256": "1c75caa15677dbe3ec95152321d683c045e5974903a941c8edf824241b457c0d",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "bytes": 11376,
+      "sha256": "d4c877d7db0c7ed898f3b424c382de935fdfa1418d11cb2099fa00028619730d",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-keyboard-batch.mjs",
+      "bytes": 10190,
+      "sha256": "af9754febc9a5b048fbcfcb99a448538c9a1162067371e5bf212bf86c7a3de22",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-keyboard-data.mjs",
+      "bytes": 2500,
+      "sha256": "9c91ea5a6bbca72c4b3c9389e304fe1023987fc4cdc4838d76ba0bc096221448",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-keyboard-fallbacks.mjs",
+      "bytes": 4078,
+      "sha256": "61885b545273f3bc7f4c334399b2d8d73728d311c6deaf4ceaedf71010cefd30",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-keyboard-production.mjs",
+      "bytes": 2934,
+      "sha256": "ee248e8f3bb15fcb689ec2e916c90b652fb3b55c183a9efb3e49eafd58548eff",
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-scale-batch.mjs",
+      "bytes": 14468,
+      "sha256": "9a8909442e9b26df260b4051b6aa8eececb5b908db35feee51723413b852fe4b",
+      "status": "added"
+    },
+    {
+      "path": "scripts/check-scale-data.mjs",
+      "bytes": 8239,
+      "sha256": "e3d0d0720a2eee5133f430dc2eedccd593636c8f87748d9d4c820bc212d7ca4c",
+      "status": "added"
+    },
+    {
+      "path": "scripts/check-scale-fallbacks.mjs",
+      "bytes": 5620,
+      "sha256": "dab960d309b6c65bc9c0db8ade5c9e1eee9eeba097e01d3c3084f88228b7b0e5",
+      "status": "added"
+    },
+    {
+      "path": "scripts/check-scale-pdfs.py",
+      "bytes": 3340,
+      "sha256": "18d4b5f2d374de2e8213c778ac76c8aa1d10b3c122184072b8e2e5904a2e4b4d",
+      "status": "added"
+    },
+    {
+      "path": "scripts/check-scale-production.mjs",
+      "bytes": 3277,
+      "sha256": "c3c85595c88cd720682c8fcef0fa92dc29cb940bb1411aca4febf2de4c333dfd",
+      "status": "added"
+    }
+  ],
+  "evidence_directory": "checks/batches/03-scales"
+}

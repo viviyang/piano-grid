@@ -1,0 +1,90 @@
+[
+  {
+    width: 320,
+    scale: '100%',
+    scroll: 320,
+    viewport: 320,
+    fieldWidth: 286,
+    textWidth: 128.828125,
+    fallback: false,
+    space: 242,
+    passed: true
+  },
+  {
+    width: 320,
+    scale: '200%',
+    scroll: 320,
+    viewport: 320,
+    fieldWidth: 254,
+    textWidth: 257.65625,
+    fallback: true,
+    space: 186,
+    passed: true
+  },
+  {
+    width: 390,
+    scale: '100%',
+    scroll: 390,
+    viewport: 390,
+    fieldWidth: 190,
+    textWidth: 128.828125,
+    fallback: false,
+    space: 146,
+    passed: true
+  },
+  {
+    width: 390,
+    scale: '200%',
+    scroll: 390,
+    viewport: 390,
+    fieldWidth: 324,
+    textWidth: 257.65625,
+    fallback: true,
+    space: 256,
+    passed: true
+  },
+  {
+    width: 768,
+    scale: '100%',
+    scroll: 768,
+    viewport: 768,
+    fieldWidth: 228,
+    textWidth: 136.8798828125,
+    fallback: false,
+    space: 184,
+    passed: true
+  },
+  {
+    width: 768,
+    scale: '200%',
+    scroll: 768,
+    viewport: 768,
+    fieldWidth: 638,
+    textWidth: 273.759765625,
+    fallback: false,
+    space: 570,
+    passed: true
+  },
+  {
+    width: 1440,
+    scale: '100%',
+    scroll: 1440,
+    viewport: 1440,
+    fieldWidth: 436,
+    textWidth: 136.8798828125,
+    fallback: false,
+    space: 392,
+    passed: true
+  },
+  {
+    width: 1440,
+    scale: '200%',
+    scroll: 1440,
+    viewport: 1440,
+    fieldWidth: 412,
+    textWidth: 273.759765625,
+    fallback: false,
+    space: 344,
+    passed: true
+  }
+]

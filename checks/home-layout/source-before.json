@@ -1,0 +1,34 @@
+[
+  {
+    "path": "src/app/globals.css",
+    "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+  },
+  {
+    "path": "src/styles/tokens.css",
+    "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+  },
+  {
+    "path": "src/styles/foundation.css",
+    "sha256": "f78ed427f08393b79bdbec82807249349a58daa2f2da524dc52ac888c38445b1"
+  },
+  {
+    "path": "postcss.config.mjs",
+    "sha256": "0c2a7e345eb2bb59ff93d3b844d805f577bf7ca2628721d5af85cd8cc9977f5b"
+  },
+  {
+    "path": "src/components/integration/pages.tsx",
+    "sha256": "f2b12bb50185369676e3dd43516c289882198746cba4f36625d84d2455dc2ee5"
+  },
+  {
+    "path": "src/components/integration/integration.css",
+    "sha256": "da5d75f74bcd9b3f0bcd8ed9e6cc16e4a66d3d3b8d8277f7374a06264c857e77"
+  },
+  {
+    "path": "scripts/check-integration-batch.mjs",
+    "sha256": "93b43165a70c9991bb6c266a0cb0b7686e15212d4642ad58541149e2650be533"
+  },
+  {
+    "path": "scripts/check-integration-production.mjs",
+    "sha256": "4647896025d14650c5a55f7c794df03a6d77320f9535b66948065abadd241dbc"
+  }
+]

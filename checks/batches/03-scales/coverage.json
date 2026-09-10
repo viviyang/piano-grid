@@ -1,0 +1,197 @@
+[
+  {
+    "url": "/scales",
+    "source_group": "P179",
+    "required_output": "默认大调总览、C 大调结果、手别/方向/范围、示范和打印。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "ScaleCenterExperience defaults to major:C and exposes hand, direction, one-octave notation, playback and current print.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P180",
+    "required_output": "确有双手、初学范围和标识明确的打印资料。",
+    "first_release_scope": "后续同页补齐",
+    "status": "later_scope_preserved",
+    "implementation": "No all-scales/two-hand beginner collection exists in the source; UI and print copy retain that later-scope boundary.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P181",
+    "required_output": "默认或选定类型的可读音阶图表。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "Every prepared major/minor result renders a readable note line, sequence table, staff and keyboard.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P190",
+    "required_output": "major 选择提供核对过的数据，链接已有具体大调页。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "All 15 source major tonics are selectable; only the existing C-major detail link is enabled.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P196",
+    "required_output": "小调形式明确，不能把所有小调当一套音符或指法。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "Natural, harmonic and classical melodic minor are distinct options with direction-specific source arrays.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P204",
+    "required_output": "jazz scales 的范围与具体示例明确，不只显示一个未解释标签。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The four source jazz examples render in the center explanatory table without creating extra routes.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P208",
+    "required_output": "只开放核实过的左右手/方向/范围，未审核条件保留待补。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "C and A use source-checked fingering; all other center rows keep fingering null and show notes-only copy.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P210",
+    "required_output": "与当前已审核数据一致的 PDF；all/major and minor 等范围词需资料齐全才宣称覆盖。",
+    "first_release_scope": "已确认基础范围＋范围词待补",
+    "status": "implementation_checked_current_only",
+    "implementation": "Print current selection is implemented; all-scales and two-hand collection claims remain explicitly excluded.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P213",
+    "required_output": "显示所选类型的构成说明，并与具体结果对应。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "Current result shows form label, spelled notes and semitone steps; source form comparison remains visible.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P214",
+    "required_output": "不登录即可查询已开放的音阶数据；不是静态软件下载介绍。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "All authorized center queries work locally without sign-in or software installation.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P222",
+    "required_output": "明确音级名称与示例，不能以一排琴键替代概念说明。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The seven source scale-degree names render as a table beside the source explanation.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P224",
+    "required_output": "major/minor 的对比及实际示例，不把两个词当同义。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "Major/minor copy, form comparison and the A-minor three-form example remain distinct.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P233",
+    "required_output": "简短准确的音阶定义与例子，保留泛乐理流量归属限制。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The source definition and examples render in the original content blocks.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales",
+    "source_group": "P235",
+    "required_output": "每个开放类型都有定义和可用例子；不以目录条数代替交付。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "Every released form has a live example; the later T13 type pages remain absent.",
+    "source_issues": [
+      "A-CENTER-PRINT",
+      "A-CENTER-IMPLEMENT"
+    ]
+  },
+  {
+    "url": "/scales/c-major",
+    "source_group": "P183",
+    "required_output": "该调/类型的音符与构成；键位与谱表；适用的左右手指法和上下行；简短练习与打印",
+    "first_release_scope": "模板已确认；此实例内容待审核",
+    "status": "implementation_checked",
+    "implementation": "C-major T12 fixes tonic C and renders exact RH/LH ascending/descending pitches and one-octave fingerings, playback and current print.",
+    "source_issues": [
+      "AM-C-MAJOR-RENDER",
+      "AM-C-MAJOR-RANGE"
+    ]
+  },
+  {
+    "url": "/scales/a-minor",
+    "source_group": "P184",
+    "required_output": "该调/类型的音符与构成；键位与谱表；适用的左右手指法和上下行；简短练习与打印",
+    "first_release_scope": "模板已确认；此实例内容待审核",
+    "status": "implementation_checked",
+    "implementation": "A-minor T12 renders three direction-specific forms, 40/60/80 BPM, source ascending fingerings, null descending fingerings, playback, current print and natural-scale chords.",
+    "source_issues": [
+      "AN-U091-natural_minor-FINGER",
+      "AN-U091-harmonic_minor-FINGER",
+      "AN-U091-melodic_minor_classical-FINGER",
+      "AN-U091-RANGE",
+      "AN-U091-QA"
+    ]
+  }
+]

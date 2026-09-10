@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "path": "docs/product/url-plan.final.json",
+      "role": "product_baseline",
+      "bytes": 1377493,
+      "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+    },
+    {
+      "path": "docs/content/chords/content-pack.md",
+      "role": "content_baseline",
+      "bytes": 76784,
+      "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33"
+    },
+    {
+      "path": "docs/content/chords/page-content.json",
+      "role": "content_data",
+      "bytes": 396742,
+      "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
+    },
+    {
+      "path": "docs/design/reference/final-a-minor.html",
+      "role": "final_design_readonly",
+      "bytes": 215542,
+      "sha256": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2"
+    },
+    {
+      "path": "docs/design/reference/final-prototype.css",
+      "role": "final_design_css_readonly",
+      "bytes": 20416,
+      "sha256": "91a3714d25977682b45a047181632228f94772772934c8ca9ebd06b16ac421b9"
+    }
+  ],
+  "missing_sources": [
+    "docs/product/Piano_全站统一规划_最终版.md",
+    "docs/content/chords/assets/ original binaries"
+  ],
+  "source_files_modified": false
+}

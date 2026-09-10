@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-10",
+  "status": "pass_with_notes",
+  "commands": [
+    {"command": "npm run check", "passed": true, "detail": "Foundation 560/560; TypeScript; Tailwind v4 and CSS checks"},
+    {"command": "npm run build", "passed": true, "detail": "Next.js 16.3.4 production build; 17 business routes plus /_not-found"}
+  ],
+  "regressions": [
+    {"scope": "01-chords", "development": "235/235", "production": "235/235"},
+    {"scope": "03-a-minor", "development": "162/162", "production": "162/162"},
+    {"scope": "04-songs", "development": "120/120", "production": "54/54"},
+    {"scope": "05-guides-data", "development": "157/157"},
+    {"scope": "05-guides", "development": "77/77", "production": "57/57"},
+    {"scope": "06-blank-sheet", "development": "60/60", "production": "58/58"}
+  ],
+  "retained_notes": [
+    "The formal guide PDF remains untagged because no tagged authoring source or verified reading-order and figure-alt specification is available.",
+    "Named piano-teacher review remains pending.",
+    "Real-device, screen-reader, native-print, physical-print, listening, external-link, and deployed-domain checks remain manual."
+  ]
+}

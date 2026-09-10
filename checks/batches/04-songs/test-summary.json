@@ -1,0 +1,50 @@
+{
+  "executed_at": "2026-09-09T12:55:35.420Z",
+  "build": {
+    "passed": true,
+    "build_id": "1j9Kj0EiyvV9In4vOqdcw",
+    "routes": [
+      "/chords",
+      "/chords/a-minor",
+      "/chords/a-major",
+      "/chords/c-major",
+      "/keyboard-notes",
+      "/keyboard-notes/labeled",
+      "/keyboard-notes/chart",
+      "/scales",
+      "/scales/c-major",
+      "/scales/a-minor",
+      "/songs",
+      "/songs/easy"
+    ]
+  },
+  "suites": {
+    "foundation": {
+      "passed": 560,
+      "failed": 0,
+      "file": "foundation.json"
+    },
+    "data": {
+      "passed": 902,
+      "failed": 0,
+      "file": "data-validation.json"
+    },
+    "browser": {
+      "passed": 119,
+      "failed": 0,
+      "file": "validation.json"
+    },
+    "production": {
+      "passed": 54,
+      "failed": 0,
+      "file": "production-validation.json"
+    },
+    "aMinor": {
+      "passed": 162,
+      "failed": 0,
+      "file": "regression/a-minor/page-validation.json"
+    }
+  },
+  "screenshots": 18,
+  "external_sample": 3
+}

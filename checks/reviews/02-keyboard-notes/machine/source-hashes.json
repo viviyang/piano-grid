@@ -1,0 +1,311 @@
+{
+  "executed_at": "2026-09-09T11:15:50.895Z",
+  "git": {
+    "root": "C:/Users/Admin/Documents/viviyang_github",
+    "head": "29d9c472fbc675ab6a5e39d7d9ad4cd721c6c232",
+    "status": [
+      "M ../docs/decision-log.md",
+      " M ../docs/next-thread-handoff.md",
+      " M ../docs/okr.md",
+      " M ../docs/projects-status.md",
+      " M ../docs/roadmap-3month.md",
+      " M ../roomreset-ai/src/app/checkout/page.tsx",
+      " M ../roomreset-ai/src/app/globals.css",
+      " M ../roomreset-ai/src/app/page.tsx",
+      " M ../roomreset-ai/src/app/reset/[sessionId]/done/page.tsx",
+      " M ../roomreset-ai/src/app/reset/[sessionId]/page.tsx",
+      " M ../roomreset-ai/src/components/DemoShowcase.tsx",
+      " M ../roomreset-ai/src/components/FocusView.tsx",
+      " M ../roomreset-ai/src/components/StepChecklist.tsx",
+      " M ../roomreset-ai/src/components/UploadZone.tsx",
+      "?? ../docs/product/"
+    ]
+  },
+  "files": [
+    {
+      "path": "docs/content/asset-map.json",
+      "bytes": 30244,
+      "sha256": "721810fd873ddd8e0caa67e3bde81c093e7fe2c10597f1d18f9689db2cb248e0"
+    },
+    {
+      "path": "docs/content/content-source-map.json",
+      "bytes": 369760,
+      "sha256": "80ebb3ce26f77ed741f3f3de88b3dc0f481c8f9921219fd19235ee920b96b7f4"
+    },
+    {
+      "path": "docs/design/component-spec.md",
+      "bytes": 11567,
+      "sha256": "979a171f117bec7f389a8c04ef9da098f9eb025e4572e54884e6c4b8871846ca"
+    },
+    {
+      "path": "docs/design/template-map.md",
+      "bytes": 14726,
+      "sha256": "a8cc8a77344f1ec0511d257e3c89ba9d3995b2ae7f8f66770000adfcbb6f9b1c"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 204,
+      "sha256": "fbef8ff745dadbf95c0fa93151ae4c67194f5a1c1f0aa58ae867eafe16e5a9cc"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 57282,
+      "sha256": "4879cca1b4d73e2644a56581bc08e3c63e601984fb070bdb1a860fd644c00c35"
+    },
+    {
+      "path": "package.json",
+      "bytes": 916,
+      "sha256": "92652a107ed71f2d17e66a8da02da35915ee7a716a0ba4704845a4c3aed571f4"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf",
+      "bytes": 49504,
+      "sha256": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+      "bytes": 49696,
+      "sha256": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf",
+      "bytes": 60986,
+      "sha256": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "bytes": 61190,
+      "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16"
+    },
+    {
+      "path": "src/app/chords/a-major/page.tsx",
+      "bytes": 425,
+      "sha256": "3964e83e73861d5c53e534296439ef891b47ae9a965e7f1e424bbec9772e7810"
+    },
+    {
+      "path": "src/app/chords/a-minor/a-minor.css",
+      "bytes": 25884,
+      "sha256": "ee054c784cab7d70d6bf4eda89975c0df78593c9f33a099db230abc7548f2f9d"
+    },
+    {
+      "path": "src/app/chords/a-minor/page.tsx",
+      "bytes": 403,
+      "sha256": "4f88899343901029479423bb0b9520f617d3b33863385f0690f3d3482fab2375"
+    },
+    {
+      "path": "src/app/chords/c-major/page.tsx",
+      "bytes": 425,
+      "sha256": "557037634b21ada89ec41198c4744b0388e158b2fa056fa40b0872364edd27e6"
+    },
+    {
+      "path": "src/app/chords/page.tsx",
+      "bytes": 391,
+      "sha256": "fcec42ec62091cc759888ba940b76c61336813803f9778424fbc09052a0bf303"
+    },
+    {
+      "path": "src/app/globals.css",
+      "bytes": 7628,
+      "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+    },
+    {
+      "path": "src/app/keyboard-notes/chart/page.tsx",
+      "bytes": 334,
+      "sha256": "6e56885570bd3b7bfa39e791acc5f363256907bf89a765618667e7d79b3d2b37"
+    },
+    {
+      "path": "src/app/keyboard-notes/labeled/page.tsx",
+      "bytes": 340,
+      "sha256": "0a7475a9a874f819f1bed2b57bef7a3ceb2e0b882da857506f4fabf75be1752b"
+    },
+    {
+      "path": "src/app/keyboard-notes/page.tsx",
+      "bytes": 330,
+      "sha256": "9f06323d8c897b29a9ac99e3b481ffd0b2a545e51a864ac52224ba323574ff5b"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "bytes": 459,
+      "sha256": "2b0fef642e8a9896516b96933d37feeacdb39d5af07df64328cf4e2b25496dd2"
+    },
+    {
+      "path": "src/components/a-minor/experience.tsx",
+      "bytes": 8425,
+      "sha256": "5282af4b9fca2a184cf7838ff8277e18fea0af99c597f51bf17325de8575c955"
+    },
+    {
+      "path": "src/components/a-minor/icon.tsx",
+      "bytes": 905,
+      "sha256": "46d07510c4414fbd42d0d281edc72904c1f9f786355d5f930b0badba262d95c4"
+    },
+    {
+      "path": "src/components/a-minor/keyboard.tsx",
+      "bytes": 1844,
+      "sha256": "648e79b50ddf6d65ee081951d1dbe7a805b57a02a6a4d4c349adc268c680d441"
+    },
+    {
+      "path": "src/components/a-minor/page-search.tsx",
+      "bytes": 2281,
+      "sha256": "b8d7dc9ea66f447a726322bd491a3f2c994860d95c9098a0f0fcd55dcd3a068b"
+    },
+    {
+      "path": "src/components/chords/center-experience.tsx",
+      "bytes": 9695,
+      "sha256": "1748f0037a00985f08402c37ebee03e53290db48193b3c662511272e7ecf23ad"
+    },
+    {
+      "path": "src/components/chords/center-page.tsx",
+      "bytes": 2890,
+      "sha256": "e01f71237bc7487cefdef672355bdd05fc82527eee1a5c7cdb98a6cd73c2caeb"
+    },
+    {
+      "path": "src/components/chords/center.css",
+      "bytes": 4073,
+      "sha256": "050971d506053bf91d3179ccf16d24bd450ee6ba65df13afa8c25783c9384252"
+    },
+    {
+      "path": "src/components/chords/detail-page.tsx",
+      "bytes": 3086,
+      "sha256": "3e1813d676b1575f2c0492c1f4c89b283d97f0295154f6983e54e0c28172cf82"
+    },
+    {
+      "path": "src/components/chords/keyboard-viewport.tsx",
+      "bytes": 2550,
+      "sha256": "ea988a705b776805ad9981dc471f0fab70c2890c42c05cb60780e6c1d9c0ffe9"
+    },
+    {
+      "path": "src/components/chords/playback-controls.tsx",
+      "bytes": 1128,
+      "sha256": "b48c49c75494809e8354c9b2f98d908591eb9de7a66b06be487e02a24ba3b6a0"
+    },
+    {
+      "path": "src/components/chords/print-voicing.tsx",
+      "bytes": 1074,
+      "sha256": "65c79b6fcb2eb34b7a649d94b52dadd175383f91699e3cdd815b37785e12d791"
+    },
+    {
+      "path": "src/components/chords/shared.css",
+      "bytes": 1702,
+      "sha256": "77ecf496d9015f201f706a705af9563474e19c4a6462bc02c404abe34baf744d"
+    },
+    {
+      "path": "src/components/chords/site-chrome.tsx",
+      "bytes": 944,
+      "sha256": "b5625f70ff618b2f35b945fdc754c11c8bb6b95c31de8b1bcc183ae431317383"
+    },
+    {
+      "path": "src/components/keyboard-notes/chart-experience.tsx",
+      "bytes": 5291,
+      "sha256": "250a2e64b9021c7bc89da7428beb300b6bc4fe922587f6c9b91d55f4812b7fd5"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-diagram.tsx",
+      "bytes": 2459,
+      "sha256": "07db3255685a1c627fa2e5be08d776dd79ca2998fa07e2fcb2db1ed79caac82f"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-notes.css",
+      "bytes": 5080,
+      "sha256": "5b8411e3ad6f1b44d7c91bca0f91e9345dbc39a361fb0bdd5473e205317d0a03"
+    },
+    {
+      "path": "src/components/keyboard-notes/labeled-experience.tsx",
+      "bytes": 3030,
+      "sha256": "e1e46ed8e470f568a6992d9158cced2d3ada7d265ea7dfabc26f6ac5f6377edb"
+    },
+    {
+      "path": "src/components/keyboard-notes/lookup-experience.tsx",
+      "bytes": 3858,
+      "sha256": "27c45032dafbdf8eae239558dbf5c76b1766e34c308fa050bd2e479a0149f0aa"
+    },
+    {
+      "path": "src/components/keyboard-notes/pages.tsx",
+      "bytes": 2435,
+      "sha256": "16ce099955f4ce3ff7120ed5a5cf02df366a1da47eabfc4d271400e7c24a759c"
+    },
+    {
+      "path": "src/components/keyboard-notes/staff-diagram.tsx",
+      "bytes": 3317,
+      "sha256": "b1cbef206d81c7f5365a0b8edcc8e48f1911712e718e8afc2640ad2444d035ca"
+    },
+    {
+      "path": "src/components/keyboard-notes/tool-controls.tsx",
+      "bytes": 1057,
+      "sha256": "8dc72d1a69d0f1280fc4034c652d52b03d8db71eca4a9dfe1619315c77e80008"
+    },
+    {
+      "path": "src/components/keyboard-notes/use-note-audio.ts",
+      "bytes": 1332,
+      "sha256": "6a20bf9d0be05d227cfba1cd8e5a33c8696afbf0816442aa87eec5f28c81f8d6"
+    },
+    {
+      "path": "src/components/ui/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/hooks/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/lib/a-minor-audio.ts",
+      "bytes": 5207,
+      "sha256": "580cc26b6c22d0418cf848f56583fc72973d437fea593ba674a760f22fb56fee"
+    },
+    {
+      "path": "src/lib/a-minor-content.ts",
+      "bytes": 2581,
+      "sha256": "8df208d63c242741ee70107671b929ddd0a2cb45724e24ca6fdd472c71614b54"
+    },
+    {
+      "path": "src/lib/a-minor-types.ts",
+      "bytes": 1454,
+      "sha256": "7a32a270dcf30af6ec561cb2a8aa0fa409142db9143e1c0e589b13070e3979a6"
+    },
+    {
+      "path": "src/lib/chord-content.ts",
+      "bytes": 7169,
+      "sha256": "9e73f8ad5016235ec3c5e367fab319f5acd337c7e53732d695eea4577607c5f9"
+    },
+    {
+      "path": "src/lib/keyboard-content.ts",
+      "bytes": 3347,
+      "sha256": "d4de40b98d55a009a8842eed398daa09fc9a66b6b80b00c9dd2782fb27d7123c"
+    },
+    {
+      "path": "src/lib/keyboard-geometry.ts",
+      "bytes": 285,
+      "sha256": "c9acdaa0632a5ea65f736b0b5d9a3a54fd2887f0cd8411c52e7e603a2d2260f0"
+    },
+    {
+      "path": "src/lib/keyboard-types.ts",
+      "bytes": 1253,
+      "sha256": "a92c6fac3b2d8452eeeec1265987f82766bbcf8d40fbc2dcdd0643a5ad23d999"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "bytes": 1412,
+      "sha256": "d619211688656fc8d4d7b24332be7eb2a26e29df66ad65c80c374be06dc7c39b"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "bytes": 1016,
+      "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac"
+    },
+    {
+      "path": "src/styles/foundation.css",
+      "bytes": 5748,
+      "sha256": "f78ed427f08393b79bdbec82807249349a58daa2f2da524dc52ac888c38445b1"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "bytes": 15139,
+      "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 759,
+      "sha256": "cdfb686ea044a03fa72dfb02c4b4d7485106a92f0b4b2c3ef7731106d028ad53"
+    }
+  ]
+}

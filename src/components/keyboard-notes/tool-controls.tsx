@@ -1,0 +1,5 @@
+'use client';
+import type {Layout} from '@/lib/keyboard-types';
+import type {useNoteAudio} from './use-note-audio';
+export function LayoutChoice({layouts,value,onChange,ready}:{layouts:Layout[];value:string;onChange:(id:string)=>void;ready:boolean}){return <label className="kn-field">Keyboard layout<select value={value} disabled={!ready} onChange={e=>onChange(e.target.value)}>{layouts.map(l=><option key={l.layout_id} value={l.layout_id}>{l.label}</option>)}</select></label>;}
+export function NotePlayback({audio,midi}:{audio:ReturnType<typeof useNoteAudio>;midi:number|null}){return <div className="kn-playback"><div className="kn-actions"><button className="am-button am-primary" disabled={!audio.ready||midi===null||audio.state==='unavailable'} onClick={()=>midi!==null&&audio.play(midi)}>Play note</button><button className="am-button am-secondary" disabled={!['loading','playing'].includes(audio.state)} onClick={audio.cancel}>Stop</button></div><p role="status" className={audio.state==='error'?'kn-error':'kn-status'}>{audio.message}</p></div>;}

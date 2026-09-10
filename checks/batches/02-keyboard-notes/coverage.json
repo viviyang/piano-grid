@@ -1,0 +1,310 @@
+[
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P117",
+    "required_output": "按键或音名定位，显示音区和可读范围。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P118",
+    "required_output": "按已核对布局说明键数；不自动新建数量问答 URL。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P120",
+    "required_output": "以键位和音名为重点，谱表对应连接 chart 页。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P122",
+    "required_output": "可读键盘布局；不是复用纯歌曲资源列表。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P123",
+    "required_output": "布局与八度范围核对；正文回答已有问题。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P124",
+    "required_output": "解释本工具使用的音名；通用音乐词不计钢琴独占需求。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P127",
+    "required_output": "显示黑键位置及核实过的名称。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P129",
+    "required_output": "中央/其他 C 的音区明确，避免输入同名音时暗自猜测。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P130",
+    "required_output": "显示当前已核对布局的最低音及适用范围。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P133",
+    "required_output": "输入降 A 时定位并展示对应音区；保留原名称。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P134",
+    "required_output": "A4 由统一工具承接，显示音区；频率任务链接频率表。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P138",
+    "required_output": "B sharp 的拼写和定位需核对，不能默默改用户查询。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P139",
+    "required_output": "F3 在统一工具内查询，不自动建单音页面。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P140",
+    "required_output": "A5 在统一工具内查询。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P141",
+    "required_output": "C3 在统一工具内查询。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P142",
+    "required_output": "显示已核对布局的最高音，不承诺覆盖全部键盘型号。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes",
+    "source_group": "P147",
+    "required_output": "C flat 查询说明和位置核对；不变成 C-flat 和弦页。",
+    "first_release_scope": "已确认承接原则",
+    "status": "implementation_checked",
+    "implementation": "LookupExperience + original six content blocks; all key/spelling round trips checked; frequencies target remains unavailable",
+    "source_issues": [
+      "BK-RENDER-QA"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/labeled",
+    "source_group": "P119",
+    "required_output": "先提供核实的 61/88 键图；音名与音区编号；其他键数按数据就绪情况开放。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "LabeledExperience; original segments and six steps; 4 derived PDFs and current print",
+    "source_issues": [
+      "BK-RENDER-QA",
+      "BK-PRINT-ASSET",
+      "BK-STICKER-FIT",
+      "BK-OTHER-NUMBERS"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/labeled",
+    "source_group": "P137",
+    "required_output": "88 键参考图打印/PDF，不宣称等比例贴纸。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "LabeledExperience; original segments and six steps; 4 derived PDFs and current print",
+    "source_issues": [
+      "BK-RENDER-QA",
+      "BK-PRINT-ASSET",
+      "BK-STICKER-FIT",
+      "BK-OTHER-NUMBERS"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/labeled",
+    "source_group": "P223",
+    "required_output": "简短实琴标注步骤；不重复写一篇独立泛教程。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "LabeledExperience; original segments and six steps; 4 derived PDFs and current print",
+    "source_issues": [
+      "BK-RENDER-QA",
+      "BK-PRINT-ASSET",
+      "BK-STICKER-FIT",
+      "BK-OTHER-NUMBERS"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/labeled",
+    "source_group": "P241",
+    "required_output": "针对已核对的 61 键布局说明起始位置和标注方式。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "LabeledExperience; original segments and six steps; 4 derived PDFs and current print",
+    "source_issues": [
+      "BK-RENDER-QA",
+      "BK-PRINT-ASSET",
+      "BK-STICKER-FIT",
+      "BK-OTHER-NUMBERS"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/chart",
+    "source_group": "P121",
+    "required_output": "谱表—音名—键盘联动；打印当前范围。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "ChartExperience + StaffDiagram; both clefs, 88/focus/core ranges, current-range print; explicit ledger coordinates",
+    "source_issues": [
+      "BN-U069-SOLFEGE",
+      "BN-U069-RENDER",
+      "BN-U069-RANGE"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/chart",
+    "source_group": "P132",
+    "required_output": "61 键对应范围核对后开放；不把键数标签视为不同谱号。",
+    "first_release_scope": "后续同页补齐",
+    "status": "later_scope_preserved",
+    "implementation": "ChartExperience + StaffDiagram; both clefs, 88/focus/core ranges, current-range print; explicit ledger coordinates",
+    "source_issues": [
+      "BN-U069-SOLFEGE",
+      "BN-U069-RENDER",
+      "BN-U069-RANGE"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/chart",
+    "source_group": "P143",
+    "required_output": "可读低音谱号位置与键盘联动，不只有文字链接。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "ChartExperience + StaffDiagram; both clefs, 88/focus/core ranges, current-range print; explicit ledger coordinates",
+    "source_issues": [
+      "BN-U069-SOLFEGE",
+      "BN-U069-RENDER",
+      "BN-U069-RANGE"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/chart",
+    "source_group": "P145",
+    "required_output": "可读高音谱号位置与键盘联动。",
+    "first_release_scope": "已确认基础范围",
+    "status": "implementation_checked",
+    "implementation": "ChartExperience + StaffDiagram; both clefs, 88/focus/core ranges, current-range print; explicit ledger coordinates",
+    "source_issues": [
+      "BN-U069-SOLFEGE",
+      "BN-U069-RENDER",
+      "BN-U069-RANGE"
+    ]
+  },
+  {
+    "url": "/keyboard-notes/chart",
+    "source_group": "P146",
+    "required_output": "先明确采用哪种唱名规则，再决定显示；首版不提供含义不清的切换。",
+    "first_release_scope": "首版不开放／规则待核",
+    "status": "reserved_not_enabled",
+    "implementation": "ChartExperience + StaffDiagram; both clefs, 88/focus/core ranges, current-range print; explicit ledger coordinates",
+    "source_issues": [
+      "BN-U069-SOLFEGE",
+      "BN-U069-RENDER",
+      "BN-U069-RANGE"
+    ]
+  }
+]

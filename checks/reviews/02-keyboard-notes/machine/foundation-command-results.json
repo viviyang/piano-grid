@@ -1,0 +1,20 @@
+{
+  "executed_at": "2026-09-09T11:06:26.246Z",
+  "derivation": "Exact project check scripts with only root binding and report output path redirected into this independent review directory.",
+  "runs": [
+    {
+      "source": "scripts/check-foundation.mjs",
+      "runner": "C:/Users/Admin/Documents/viviyang_github/piano/checks/reviews/02-keyboard-notes/machine/check-foundation.review.mjs",
+      "exit_code": 0,
+      "stdout": "Foundation: 560 passed, 0 failed.\n",
+      "stderr": "NOTE: source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。\n"
+    },
+    {
+      "source": "scripts/check-css.mjs",
+      "runner": "C:/Users/Admin/Documents/viviyang_github/piano/checks/reviews/02-keyboard-notes/machine/check-css.review.mjs",
+      "exit_code": 0,
+      "stdout": "Tailwind v4 compilation + semantic utility + cn checks passed. No pages created.\n",
+      "stderr": ""
+    }
+  ]
+}

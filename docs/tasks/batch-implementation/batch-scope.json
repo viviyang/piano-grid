@@ -1,0 +1,234 @@
+{
+  "kind": "proposed_engineering_batches_not_a_publication_manifest",
+  "date": "2026-09-09",
+  "baseline_version": "2.0-consolidated-final-plan",
+  "baseline_sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455",
+  "source_root": "docs/content/site-master",
+  "existing_regression_url": "/chords/a-minor",
+  "authorization": "Each task only executes when the user explicitly invokes it. No deployment authorization.",
+  "batches": [
+    {
+      "batch_id": "01-chords",
+      "pages": [
+        {
+          "url": "/chords",
+          "template_id": "T06",
+          "priority": "先做",
+          "source_group_ids": [
+            "P148",
+            "P154",
+            "P158",
+            "P168",
+            "P170",
+            "P171",
+            "P238",
+            "P247"
+          ]
+        },
+        {
+          "url": "/chords/a-major",
+          "template_id": "T07",
+          "priority": "先做",
+          "source_group_ids": [
+            "P149"
+          ]
+        },
+        {
+          "url": "/chords/c-major",
+          "template_id": "T07",
+          "priority": "先做",
+          "source_group_ids": [
+            "P163"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "02-keyboard-notes",
+      "pages": [
+        {
+          "url": "/keyboard-notes",
+          "template_id": "T03",
+          "priority": "先做",
+          "source_group_ids": [
+            "P117",
+            "P118",
+            "P120",
+            "P122",
+            "P123",
+            "P124",
+            "P127",
+            "P129",
+            "P130",
+            "P133",
+            "P134",
+            "P138",
+            "P139",
+            "P140",
+            "P141",
+            "P142",
+            "P147"
+          ]
+        },
+        {
+          "url": "/keyboard-notes/labeled",
+          "template_id": "T04",
+          "priority": "先做",
+          "source_group_ids": [
+            "P119",
+            "P137",
+            "P223",
+            "P241"
+          ]
+        },
+        {
+          "url": "/keyboard-notes/chart",
+          "template_id": "T05",
+          "priority": "先做",
+          "source_group_ids": [
+            "P121",
+            "P132",
+            "P143",
+            "P145",
+            "P146"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "03-scales",
+      "pages": [
+        {
+          "url": "/scales",
+          "template_id": "T11",
+          "priority": "先做",
+          "source_group_ids": [
+            "P179",
+            "P180",
+            "P181",
+            "P190",
+            "P196",
+            "P204",
+            "P208",
+            "P210",
+            "P213",
+            "P214",
+            "P222",
+            "P224",
+            "P233",
+            "P235"
+          ]
+        },
+        {
+          "url": "/scales/c-major",
+          "template_id": "T12",
+          "priority": "先做",
+          "source_group_ids": [
+            "P183"
+          ]
+        },
+        {
+          "url": "/scales/a-minor",
+          "template_id": "T12",
+          "priority": "先做",
+          "source_group_ids": [
+            "P184"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "04-songs",
+      "pages": [
+        {
+          "url": "/songs",
+          "template_id": "T15",
+          "priority": "先做",
+          "source_group_ids": [
+            "P002",
+            "P009",
+            "P014",
+            "P018",
+            "P022",
+            "P041",
+            "P042",
+            "P043"
+          ]
+        },
+        {
+          "url": "/songs/easy",
+          "template_id": "T16",
+          "priority": "先做",
+          "source_group_ids": [
+            "P001",
+            "P006",
+            "P036",
+            "P037",
+            "P039",
+            "P040"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "05-guides",
+      "pages": [
+        {
+          "url": "/guide",
+          "template_id": "T21",
+          "priority": "先做",
+          "source_group_ids": [
+            "P226",
+            "P240",
+            "P255"
+          ]
+        },
+        {
+          "url": "/guide/read-sheet-music",
+          "template_id": "T22",
+          "priority": "先做",
+          "source_group_ids": [
+            "P218",
+            "P228",
+            "P229",
+            "P236",
+            "P248",
+            "P249"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "06-blank-sheet",
+      "pages": [
+        {
+          "url": "/tools/blank-sheet-music",
+          "template_id": "T19",
+          "priority": "先做",
+          "source_group_ids": [
+            "P079"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "07-site-integration",
+      "pages": [
+        {
+          "url": "/",
+          "template_id": "T01",
+          "priority": "先做",
+          "source_group_ids": []
+        },
+        {
+          "url": "/tools",
+          "template_id": "T02",
+          "priority": "先做",
+          "source_group_ids": [
+            "P113"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "captured_at": "2026-09-10T10:48:48.4810493+08:00",
+  "stage": "after-08-implementation",
+  "git_head": "29d9c472fbc675ab6a5e39d7d9ad4cd721c6c232",
+  "node": "v24.14.1",
+  "npm": "11.11.0",
+  "changed_files": [
+    {
+      "path": "docs/release/release-readiness.md",
+      "before_sha256": "f52dd98097c47b50712beed2b7e387bf7c35d79edcdd04f7e8406f94a132761b",
+      "after_sha256": "f64aa920a8ff7aa4d1ae3d7a5d6554f3fa0b17e97674e0f2878aefbbeb471c40",
+      "before_bytes": 7259,
+      "after_bytes": 7323
+    },
+    {
+      "path": "docs/tasks/site-implementation-plan.md",
+      "before_sha256": "f750c9f93d71573e4ca16676fdb0a13e7dfa5592782466d9fbb987fbee5e099e",
+      "after_sha256": "6d80e0a813ce808e34aa5424018cc9508f06e4035f616a9a6c1a236cd2d24519",
+      "before_bytes": 17641,
+      "after_bytes": 18447
+    },
+    {
+      "path": "src/app/chords/a-minor/a-minor.css",
+      "before_sha256": "ba0e746d6ba9d1c330ee46688d6530c230d582ab9f7d29513e5eec3d77725d20",
+      "after_sha256": "15c469b1adb42306dd957df24932a9023c868e7ca0e7081c4a8a3f398d44bcd2",
+      "before_bytes": 26170,
+      "after_bytes": 26245
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "before_sha256": "2b0fef642e8a9896516b96933d37feeacdb39d5af07df64328cf4e2b25496dd2",
+      "after_sha256": "61600a639b73755e904eb8f798a1539d7590fd3be291e789dbb21d9751e463e7",
+      "before_bytes": 459,
+      "after_bytes": 488
+    },
+    {
+      "path": "src/components/blank-sheet/pages.tsx",
+      "before_sha256": "31d2925d8a450db5e04aee3fd993f65faa1c36666fa7173b642aeb29c9692182",
+      "after_sha256": "e0699aecaf244aab7c5566b8d67897e8fdf40a6646a911fc394d793d236293c0",
+      "before_bytes": 1659,
+      "after_bytes": 1667
+    },
+    {
+      "path": "src/components/chords/detail-page.tsx",
+      "before_sha256": "a0043d6415c6b0a770cf2d32d214b52281f01ef87d34adcc5b5ca9625f3ea230",
+      "after_sha256": "4741b7f4c5b75c6990eb57836be6012533729f4bb4fe07b6f91d07296cfed694",
+      "before_bytes": 3101,
+      "after_bytes": 3109
+    },
+    {
+      "path": "src/components/chords/print-voicing.tsx",
+      "before_sha256": "65c79b6fcb2eb34b7a649d94b52dadd175383f91699e3cdd815b37785e12d791",
+      "after_sha256": "2617cf774f0dd25dc210d18e64b528bcf9023eff6a73275376cfeb389b556f01",
+      "before_bytes": 1074,
+      "after_bytes": 1103
+    },
+    {
+      "path": "src/components/keyboard-notes/chart-experience.tsx",
+      "before_sha256": "250a2e64b9021c7bc89da7428beb300b6bc4fe922587f6c9b91d55f4812b7fd5",
+      "after_sha256": "379e9ff0ab85c634d16e1d1b2449c89077ac1f378ece1bceda237b0101264e10",
+      "before_bytes": 5291,
+      "after_bytes": 5320
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-notes.css",
+      "before_sha256": "7bad60d795ff5b4076b0f77312f258b0672b8361b7409544832ed3a75a41aa6b",
+      "after_sha256": "b3d94fdb71254dc4f79e41ee750902daf4d01f328a030daff8a4fe687bffacdf",
+      "before_bytes": 5322,
+      "after_bytes": 5335
+    },
+    {
+      "path": "src/components/keyboard-notes/labeled-experience.tsx",
+      "before_sha256": "e1e46ed8e470f568a6992d9158cced2d3ada7d265ea7dfabc26f6ac5f6377edb",
+      "after_sha256": "e16eae38ea641102081b873e6409c3af126b0f095324a3eaac36f42ff423c73e",
+      "before_bytes": 3030,
+      "after_bytes": 3059
+    },
+    {
+      "path": "src/components/keyboard-notes/pages.tsx",
+      "before_sha256": "16ce099955f4ce3ff7120ed5a5cf02df366a1da47eabfc4d271400e7c24a759c",
+      "after_sha256": "60e7e7a91c009a0cfabf9a97ae6eeff1de66954a7a8b3a1fc3d44f2b29ffe0ee",
+      "before_bytes": 2435,
+      "after_bytes": 2509
+    },
+    {
+      "path": "src/components/scales/center-experience.tsx",
+      "before_sha256": "969cab0c84006fb80a4eb827ae55bea83efb58eff1c282ab9ca05810bd3674c7",
+      "after_sha256": "8275d98e494e65066384a035c28820c60459fc16ac291e65faad9d05a4347d58",
+      "before_bytes": 4586,
+      "after_bytes": 4667
+    },
+    {
+      "path": "src/components/scales/detail-experience.tsx",
+      "before_sha256": "7dd659a3baa38cd0d19ddef4bc4ceee47ad308f55c4141c6dc77f58bde5e531a",
+      "after_sha256": "79c9d2381e8aad5c010e727f126832133cbe7a4f416dd3f52817453a5de0a726",
+      "before_bytes": 4464,
+      "after_bytes": 4493
+    },
+    {
+      "path": "src/components/scales/pages.tsx",
+      "before_sha256": "ea27511e3602e024a34024d08e404180ca9516c897361d0d073146eb83ffb152",
+      "after_sha256": "32713fffa2f4d9737c6960f8d72181ee1284b4fdf3fb2ccd8c5a69a854f28523",
+      "before_bytes": 5252,
+      "after_bytes": 5294
+    },
+    {
+      "path": "src/components/scales/scales.css",
+      "before_sha256": "67a9f2122796b89fa462e08e49a2c6de68409a2a731057c63a604e9eddc1332a",
+      "after_sha256": "10da1ce55d4030db4ed70211568c0ce9b1619eecb6f9ec463550a3153f8123d2",
+      "before_bytes": 7662,
+      "after_bytes": 7692
+    },
+    {
+      "path": "src/components/songs/pages.tsx",
+      "before_sha256": "18d62e59bf4e33a7f8dc37e3c2cb1498f4478050e2a4abb0e271087601dca735",
+      "after_sha256": "624a3fbc1a9b9dba659f98162a879f5b6066f0cf356d80e58299b55492243d97",
+      "before_bytes": 3610,
+      "after_bytes": 3650
+    }
+  ],
+  "newly_created_scope_files": [
+    {
+      "path": "scripts/check-release-seo.mjs",
+      "bytes": 21484,
+      "sha256": "eea5fb42b3fd64328f984a4bfc1fcba6d9d023a511689183765c5bb51abfb7e7"
+    }
+  ],
+  "preexisting_files_omitted_from_before_snapshot": [
+    {
+      "path": "components.json",
+      "bytes": 451,
+      "sha256": "2cc1a8206b39ade49917b804fd9d67f95f2b9558ecc2a98bd35a211e0423b320"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "bytes": 142,
+      "sha256": "0c2a7e345eb2bb59ff93d3b844d805f577bf7ca2628721d5af85cd8cc9977f5b"
+    }
+  ],
+  "deleted_scope_files": [],
+  "artifact_summary": {
+    "file_count": 421,
+    "total_bytes": 72188589.0,
+    "seo_pages_sha256": "26fb99f12427622e3c01bdf5ed3f104b039a3296e31c1092800182d5a5ba4d06",
+    "seo_audit_sha256": "22b65df99e1d395feb278d5e4a2a31d03493cb928ef79cb14cb3118784ccb09c"
+  }
+}

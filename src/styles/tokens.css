@@ -1,0 +1,391 @@
+/* Piano Reference — final-prototype-1.0.0 visual values.
+ * Source/value provenance: docs/design/tokens.json.
+ * Light theme only. Full CSS colors; never wrap these in hsl(var(...)).
+ * Tailwind v3 compatibility channels were removed; no visual values changed.
+ */
+:root {
+  color-scheme: light;
+  /* final_prototype_source: :root --canvas */
+  --background: #FFFFFF;
+  /* final_prototype_source: :root --ink */
+  --foreground: #1D1D1F;
+  /* final_prototype_source: :root --surface */
+  --surface: #F6F7F9;
+  /* final_prototype_source: .tool / body */
+  --surface-foreground: #1D1D1F;
+  /* final_prototype_source: .tool background:var(--surface) */
+  --card: #F6F7F9;
+  /* final_prototype_source: .tool / body */
+  --card-foreground: #1D1D1F;
+  /* final_prototype_source: dialog background */
+  --popover: #FFFFFF;
+  /* final_prototype_source: dialog color */
+  --popover-foreground: #1D1D1F;
+  /* final_prototype_source: :root --action */
+  --primary: #0066CC;
+  /* final_prototype_source: .btn.primary color */
+  --primary-foreground: #FFFFFF;
+  /* final_prototype_source: :root --action-hover */
+  --primary-hover: #0057AE;
+  /* final_prototype_source: .btn background */
+  --secondary: #FFFFFF;
+  /* final_prototype_source: .btn color */
+  --secondary-foreground: #1D1D1F;
+  /* final_prototype_source: .btn.secondary:hover:not(:disabled) */
+  --secondary-hover: #E9EDF3;
+  /* final_prototype_source: :root --surface */
+  --muted: #F6F7F9;
+  /* final_prototype_source: :root --muted */
+  --muted-foreground: #5C626B;
+  /* final_prototype_source: :root --selected-bg / .btn.tertiary:hover */
+  --accent: #EAF2FF;
+  /* final_prototype_source: .btn.tertiary color */
+  --accent-foreground: #0066CC;
+  /* final_prototype_source: :root --line */
+  --border: #E1E4E8;
+  /* final_prototype_source: :root --control-border */
+  --input: #7A828E;
+  /* final_prototype_source: :focus-visible */
+  --ring: #0066CC;
+  /* final_prototype_source: .radio-label input:checked+.segment */
+  --selected: #FFFFFF;
+  /* final_prototype_source: .radio-label input:checked+.segment */
+  --selected-foreground: #0066CC;
+  /* final_prototype_source: .radio-label input:checked+.segment */
+  --selected-border: #0066CC;
+  /* final_prototype_source: .radio-label input:checked+.segment:hover */
+  --selected-hover: #EAF2FF;
+  /* final_prototype_source: .positions */
+  --control-track: #E9EBEF;
+  /* final_prototype_source: .radio-label:hover .segment */
+  --control-hover: #F2F4F7;
+  /* final_prototype_source: .radio-label:active .segment */
+  --control-pressed: #DCE8F8;
+  /* final_prototype_source: :root --disabled-bg */
+  --disabled: #E8EAEE;
+  /* final_prototype_source: .btn:disabled */
+  --disabled-foreground: #686F79;
+  /* final_prototype_source: :root --error */
+  --error: #B42318;
+  /* engineering_derived: :root --error */
+  --destructive: #B42318;
+  /* engineering_derived: .btn.primary color */
+  --destructive-foreground: #FFFFFF;
+  /* final_prototype_source: .key.white */
+  --piano-key-white: #FFFFFF;
+  /* final_prototype_source: .key.black */
+  --piano-key-black: #1D1D1F;
+  /* final_prototype_source: .key */
+  --piano-key-border: #8B919A;
+  /* final_prototype_source: :root --note-selected */
+  --piano-note-selected: #EAF2FF;
+  /* final_prototype_source: :root --note-mark */
+  --piano-note-mark: #0066CC;
+  /* final_prototype_source: :root --note-sounding */
+  --piano-note-sounding: #0066CC;
+  /* final_prototype_source: .key.is-sounding .marker / ::after */
+  --piano-note-sounding-mark: #FFFFFF;
+  /* final_prototype_source: .key-label */
+  --piano-note-label: #5C626B;
+  /* final_prototype_source: .key-label.is-selected */
+  --piano-note-label-selected: #0066CC;
+  /* final_prototype_source: @media print html,body */
+  --print-background: #FFFFFF;
+  /* final_prototype_source: @media print html,body */
+  --print-foreground: #000000;
+  /* final_prototype_source: @media print .key.black */
+  --print-key-black: #111111;
+  /* final_prototype_source: @media print .key.white */
+  --print-key-border: #555555;
+  /* final_prototype_source: @media print .print-selection */
+  --print-divider: #888888;
+  /* final_prototype_source: :root --font */
+  --pr-font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* final_prototype_source: 正文默认 */
+  --pr-weight-regular: 400;
+  /* final_prototype_source: .field-label */
+  --pr-weight-label: 450;
+  /* final_prototype_source: .formula */
+  --pr-weight-medium: 500;
+  /* final_prototype_source: .btn */
+  --pr-weight-ui: 550;
+  /* final_prototype_source: .radio-label input:checked+.segment */
+  --pr-weight-selected: 600;
+  /* final_prototype_source: h2,h3,.tone-list,.note-order */
+  --pr-weight-strong: 650;
+  /* final_prototype_source: h1 */
+  --pr-weight-heading: 700;
+  /* final_prototype_source: .brand */
+  --pr-weight-brand-observed: 750;
+  /* final_prototype_source: h1 @media mobile */
+  --pr-type-h1-size: 1.875rem;
+  /* final_prototype_source: h1 @media mobile */
+  --pr-type-h1-leading: 1.2;
+  /* final_prototype_source: h1 @media mobile */
+  --pr-type-h1-weight: 700;
+  /* final_prototype_source: h1 @media mobile */
+  --pr-type-h1-tracking: -.035em;
+  /* final_prototype_source: h2 */
+  --pr-type-h2-size: 1.5rem;
+  /* final_prototype_source: h2 */
+  --pr-type-h2-leading: 1.3333;
+  /* final_prototype_source: h2 */
+  --pr-type-h2-weight: 650;
+  /* final_prototype_source: h2 */
+  --pr-type-h2-tracking: -.02em;
+  /* final_prototype_source: .content-section h2 */
+  --pr-type-section-title-size: 1.5rem;
+  /* final_prototype_source: .content-section h2 */
+  --pr-type-section-title-leading: 1.3333;
+  /* final_prototype_source: .content-section h2 */
+  --pr-type-section-title-weight: 650;
+  /* final_prototype_source: .content-section h2 */
+  --pr-type-section-title-tracking: -.02em;
+  /* final_prototype_source: h3 */
+  --pr-type-h3-size: 1.125rem;
+  /* final_prototype_source: h3 */
+  --pr-type-h3-leading: 1.4;
+  /* final_prototype_source: h3 */
+  --pr-type-h3-weight: 650;
+  /* engineering_derived: h3 */
+  --pr-type-h3-tracking: 0em;
+  /* final_prototype_source: body */
+  --pr-type-body-size: 1rem;
+  /* final_prototype_source: body */
+  --pr-type-body-leading: 1.625;
+  /* final_prototype_source: body */
+  --pr-type-body-weight: 400;
+  /* engineering_derived: body */
+  --pr-type-body-tracking: 0em;
+  /* final_prototype_source: .tool-notes / .intro-rest */
+  --pr-type-copy-size: 1rem;
+  /* final_prototype_source: .tool-notes / .intro-rest */
+  --pr-type-copy-leading: 1.625;
+  /* final_prototype_source: .tool-notes / .intro-rest */
+  --pr-type-copy-weight: 400;
+  /* engineering_derived: .tool-notes / .intro-rest */
+  --pr-type-copy-tracking: 0em;
+  /* final_prototype_source: .field-label */
+  --pr-type-label-size: .875rem;
+  /* final_prototype_source: .field-label */
+  --pr-type-label-leading: 1.43;
+  /* final_prototype_source: .field-label */
+  --pr-type-label-weight: 450;
+  /* engineering_derived: .field-label */
+  --pr-type-label-tracking: 0em;
+  /* final_prototype_source: .btn */
+  --pr-type-ui-size: .9375rem;
+  /* final_prototype_source: .btn */
+  --pr-type-ui-leading: 1.333;
+  /* final_prototype_source: .btn */
+  --pr-type-ui-weight: 550;
+  /* engineering_derived: .btn */
+  --pr-type-ui-tracking: 0em;
+  /* final_prototype_source: .playback-feedback / .keyboard-meta */
+  --pr-type-meta-size: .8125rem;
+  /* final_prototype_source: .playback-feedback / .keyboard-meta */
+  --pr-type-meta-leading: 1.5;
+  /* final_prototype_source: .playback-feedback / .keyboard-meta */
+  --pr-type-meta-weight: 400;
+  /* engineering_derived: .playback-feedback / .keyboard-meta */
+  --pr-type-meta-tracking: 0em;
+  /* final_prototype_source: .tone-list */
+  --pr-type-notes-size: 1.75rem;
+  /* final_prototype_source: .tone-list */
+  --pr-type-notes-leading: 1.2;
+  /* final_prototype_source: .tone-list */
+  --pr-type-notes-weight: 650;
+  /* final_prototype_source: .tone-list */
+  --pr-type-notes-tracking: -.025em;
+  /* final_prototype_source: .note-order */
+  --pr-type-result-size: 1.375rem;
+  /* final_prototype_source: .note-order */
+  --pr-type-result-leading: 1.4;
+  /* final_prototype_source: .note-order */
+  --pr-type-result-weight: 650;
+  /* final_prototype_source: .note-order */
+  --pr-type-result-tracking: -.025em;
+  /* final_prototype_source: .chord-id */
+  --pr-type-chord-size: 1.5rem;
+  /* final_prototype_source: .chord-id */
+  --pr-type-chord-leading: 1.2;
+  /* final_prototype_source: .chord-id */
+  --pr-type-chord-weight: 650;
+  /* final_prototype_source: .chord-id */
+  --pr-type-chord-tracking: -.025em;
+  /* final_prototype_source: .formula */
+  --pr-type-formula-size: 1.25rem;
+  /* final_prototype_source: .formula */
+  --pr-type-formula-leading: 1.2;
+  /* final_prototype_source: .formula */
+  --pr-type-formula-weight: 500;
+  /* final_prototype_source: .formula */
+  --pr-type-formula-tracking: -.025em;
+  /* final_prototype_source: .key-label */
+  --pr-type-key-label-size: .875rem;
+  /* final_prototype_source: .key-label */
+  --pr-type-key-label-leading: 1.43;
+  /* final_prototype_source: .key-label */
+  --pr-type-key-label-weight: 400;
+  /* engineering_derived: .key-label */
+  --pr-type-key-label-tracking: 0em;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-2: 0.125rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-4: 0.25rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-6: 0.375rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-8: 0.5rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-10: 0.625rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-12: 0.75rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-14: 0.875rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-16: 1rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-20: 1.25rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-24: 1.5rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-32: 2rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-40: 2.5rem;
+  /* final_prototype_source: styles.css rem spacing */
+  --pr-space-48: 3rem;
+  /* engineering_derived: styles.css rem spacing */
+  --pr-space-64: 4rem;
+  /* final_prototype_source: :root --page-width */
+  --pr-container-tool: 70rem;
+  /* final_prototype_source: .container */
+  --pr-container-page: 70rem;
+  /* final_prototype_source: .content-body */
+  --pr-container-reading: 72ch;
+  /* final_prototype_source: .tool-notes p */
+  --pr-container-tool-copy: 65ch;
+  /* final_prototype_source: .btn/.pan-btn */
+  --pr-control-min-size: 2.75rem;
+  /* final_prototype_source: .pan-btn */
+  --pr-control-icon-size: 2.75rem;
+  /* final_prototype_source: mobile .print-actions .icon */
+  --pr-icon-small: 1rem;
+  /* final_prototype_source: .icon */
+  --pr-icon-default: 1.125rem;
+  /* final_prototype_source: mobile .search-trigger .icon */
+  --pr-icon-large: 1.25rem;
+  /* final_prototype_source: .tool,.btn,.key */
+  --pr-border-width: 1px;
+  /* final_prototype_source: .btn */
+  --pr-radius-control: .5rem;
+  /* final_prototype_source: :root --radius */
+  --pr-radius-panel: .75rem;
+  /* final_prototype_source: .positions */
+  --pr-radius-track: .625rem;
+  /* final_prototype_source: .segment */
+  --pr-radius-segment: .4375rem;
+  /* final_prototype_source: .keyboard-scroll */
+  --pr-radius-scroll: .25rem;
+  /* final_prototype_source: .key */
+  --pr-radius-key: .1875rem;
+  /* final_prototype_source: :focus-visible */
+  --pr-focus-width: 2px;
+  /* final_prototype_source: :focus-visible */
+  --pr-focus-offset: 4px;
+  /* final_prototype_source: .radio-label input:focus-visible+.segment */
+  --pr-focus-proxy-offset: 3px;
+  /* final_prototype_source: .btn / .segment transition */
+  --pr-duration-fast: 120ms;
+  /* final_prototype_source: .btn:active:not(:disabled) */
+  --pr-pressed-translate: 1px;
+  /* final_prototype_source: .keyboard */
+  --pr-piano-min-width: 33.75rem;
+  /* final_prototype_source: .key.black */
+  --pr-piano-black-height: 62%;
+  /* final_prototype_source: .key .marker */
+  --pr-piano-marker-size: .65rem;
+  /* final_prototype_source: .key.is-sounding::after */
+  --pr-piano-sounding-line: 3px;
+  /* final_prototype_source: @page */
+  --pr-print-margin: 16mm;
+  /* final_prototype_source: @media print body */
+  --pr-print-body-size: 12pt;
+  /* final_prototype_source: @media print .print-only h1 */
+  --pr-print-heading-size: 24pt;
+  /* final_prototype_source: @media print .print-notes */
+  --pr-print-note-size: 17pt;
+  /* final_prototype_source: @media print .key-label */
+  --pr-print-label-size: 9pt;
+  /* final_prototype_source: @media print .print-helper */
+  --pr-print-helper-size: 10pt;
+  /* engineering_derived: :root --radius */
+  --radius: var(--pr-radius-panel);
+  /* final_prototype_source: styles.css 未声明任何 box-shadow */
+  --pr-shadow-surface: none;
+  /* final_prototype_source: dialog::backdrop */
+  --pr-overlay: rgb(29 29 31 / 0.35);
+  /* engineering_derived: transition省略timing-function */
+  --pr-motion-ease: ease;
+  /* engineering_derived: prefers-reduced-motion */
+  --pr-motion-enabled: 1;
+  /* final_prototype_source: .container */
+  --pr-page-gutter: 1rem;
+  /* final_prototype_source: .tool */
+  --pr-tool-padding: 1rem;
+  /* final_prototype_source: .content-section */
+  --pr-section-padding: 2rem;
+  /* final_prototype_source: .reading */
+  --pr-reading-gap: 2rem;
+  /* final_prototype_source: .radio-label .segment */
+  --pr-segment-min-height: 2.875rem;
+  /* final_prototype_source: .key-bed */
+  --pr-piano-white-height: 9rem;
+  /* final_prototype_source: .key .marker */
+  --pr-piano-marker-bottom: 1rem;
+  /* final_prototype_source: @media max-width:22rem */
+  --pr-breakpoint-compact: 22rem;
+  /* final_prototype_source: @media min-width:48rem / max-width:47.999rem */
+  --pr-breakpoint-tablet: 48rem;
+  /* final_prototype_source: @media min-width:48rem and max-width:67rem */
+  --pr-breakpoint-wide: 67rem;
+  /* final_prototype_source: @container reference max-width:18rem */
+  --pr-container-reflow: 18rem;
+}
+
+/* Literal media thresholds are compile-time values; do not use var() here. */
+@media (min-width: 48rem) {
+  :root {
+    --pr-type-h1-size: 2.25rem;
+    --pr-type-h1-leading: 1.2222;
+    --pr-type-body-size: 1.0625rem;
+    --pr-type-body-leading: 1.588;
+    --pr-type-meta-size: .875rem;
+    --pr-type-meta-leading: 1.43;
+    --pr-type-notes-size: 2.125rem;
+    --pr-type-result-size: 1.5rem;
+    --pr-type-chord-size: 1.75rem;
+    --pr-type-formula-size: 1.5rem;
+    --pr-page-gutter: 2rem;
+    --pr-tool-padding: 1.5rem;
+    --pr-section-padding: 2.5rem;
+    --pr-reading-gap: 3rem;
+    --pr-segment-min-height: 2.75rem;
+    --pr-piano-white-height: 12.25rem;
+    --pr-piano-marker-bottom: 1.375rem;
+  }
+}
+@media (max-width: 22rem) {
+  :root {
+    --pr-type-section-title-size: 1.375rem;
+    --pr-type-notes-size: 1.5rem;
+    --pr-type-formula-size: 1.125rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --pr-duration-fast: 0ms;
+    --pr-motion-enabled: 0;
+    --pr-pressed-translate: 0px;
+  }
+}

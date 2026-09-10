@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-09T15:44:39.6999220+08:00",
+  "dev_server": "reused; remains running",
+  "temporary_production_server": "stopped by task-owned session Ctrl-C",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:3000/chords/a-minor",
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "http://127.0.0.1:3000/",
+      "status": 404,
+      "error": "Response status code does not indicate success: 404 (Not Found)."
+    },
+    {
+      "url": "http://127.0.0.1:3000/chords",
+      "status": 404,
+      "error": "Response status code does not indicate success: 404 (Not Found)."
+    },
+    {
+      "url": "http://127.0.0.1:3001/chords/a-minor",
+      "status": null,
+      "error": "由于目标计算机积极拒绝，无法连接。 (127.0.0.1:3001)"
+    }
+  ]
+}

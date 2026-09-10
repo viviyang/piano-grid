@@ -1,0 +1,23 @@
+{
+  "batch": "06-blank-sheet",
+  "executed_at": "2026-09-09",
+  "status": "passed",
+  "results": {
+    "foundation": { "passed": 560, "failed": 0 },
+    "blank_sheet_data": { "passed": 119, "failed": 0 },
+    "blank_sheet_pdf": { "passed": 20, "failed": 0 },
+    "blank_sheet_browser": { "passed": 60, "failed": 0 },
+    "blank_sheet_production": { "passed": 58, "failed": 0 },
+    "a_minor_regression": { "passed": 162, "failed": 0 },
+    "typecheck": "passed",
+    "tailwind_compile": "passed",
+    "next_build": "passed"
+  },
+  "total_assertions": 979,
+  "notes": [
+    "The first sandboxed build compiled but the TypeScript child process hit spawn EPERM; the permitted host rerun passed.",
+    "The first sandboxed browser launch hit spawn EPERM; permitted host runs completed.",
+    "Both original PDFs were rendered with Poppler and visually inspected.",
+    "Real browser print-dialog and physical-print checks were not run."
+  ]
+}

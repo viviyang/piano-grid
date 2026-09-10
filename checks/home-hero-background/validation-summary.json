@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "scope": "Homepage Hero only",
+  "checks": {
+    "npm run check": {
+      "passed": true,
+      "foundation": "560/560",
+      "typecheck": "passed",
+      "css": "passed"
+    },
+    "npm run build": {
+      "passed": true
+    },
+    "node scripts/check-integration-data.mjs": {
+      "passed": true,
+      "result": "153/153"
+    },
+    "Codex in-app Browser": {
+      "passed": true,
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "primaryCta": "passed",
+      "mobileMenu": "passed",
+      "consoleErrors": 0,
+      "horizontalOverflow": "none"
+    }
+  },
+  "screenshots": {
+    "hero-1440.png": {
+      "pixels": [
+        1425,
+        891
+      ],
+      "bytes": 99226
+    },
+    "hero-390.png": {
+      "pixels": [
+        375,
+        812
+      ],
+      "bytes": 39518
+    },
+    "comparison-1440.png": {
+      "pixels": [
+        2850,
+        762
+      ],
+      "bytes": 1277646
+    }
+  },
+  "assetSourceHashPreserved": true,
+  "globalThemeHashesUnchanged": true,
+  "deployment": false,
+  "indexingChanged": false
+}

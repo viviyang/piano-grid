@@ -1,0 +1,19 @@
+{
+  "executed_at": "2026-09-09T11:12:46.406Z",
+  "runs": [
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "stdout": "\n> piano-reference@0.1.0 typecheck\n> tsc --noEmit\n\n",
+      "stderr": "",
+      "error": ""
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "stdout": "\n> piano-reference@0.1.0 build\n> next build\n\n▲ Next.js 16.3.4 (Turbopack)\n✓ Running next.config.ts took 37ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1088ms\n  Running TypeScript ...\n  Finished TypeScript in 2.7s ...\n  Collecting page data using 10 workers ...\n  Generating static pages using 10 workers (0/9) ...\n  Generating static pages using 10 workers (2/9) \r\n  Generating static pages using 10 workers (4/9) \r\n  Generating static pages using 10 workers (6/9) \r\n✓ Generating static pages using 10 workers (9/9) in 2.2s\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /_not-found\n├ ○ /chords\n├ ○ /chords/a-major\n├ ○ /chords/a-minor\n├ ○ /chords/c-major\n├ ○ /keyboard-notes\n├ ○ /keyboard-notes/chart\n└ ○ /keyboard-notes/labeled\n\n\n○  (Static)  prerendered as static content\n\n",
+      "stderr": "",
+      "error": ""
+    }
+  ]
+}

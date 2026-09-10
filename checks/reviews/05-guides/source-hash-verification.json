@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-09-09T13:42:00Z",
+  "manifest": "checks/batches/05-guides/changed-files.json",
+  "passed": 21,
+  "failed": 0,
+  "results": [
+    {"path":"AGENTS.md","sha256":"6372d651f0b1fcf4e0a1a836197de2bb238bb6130cc75ce58a58729d380cfccc","matches":true},
+    {"path":"docs/content/content-source-map.json","sha256":"a8a43499ad600955a525af24f2eae8e5f8b3dc8e45281d487c8967a0c42908e4","matches":true},
+    {"path":"docs/design/component-spec.md","sha256":"e38855d3e703c0f317fd9d628b1aa233265fc234fe69025207d6bc1a14e8ce41","matches":true},
+    {"path":"docs/design/template-map.md","sha256":"e1d7fb148e83e52bb9559a47588c610722b3b26a59493d07513cbc2a4e49ca04","matches":true},
+    {"path":"docs/project-context.md","sha256":"08839f865f667768ca6670fc8d249b706ba0e24cb73c65e338b812f78e1dfe32","matches":true},
+    {"path":"docs/tasks/site-implementation-plan.md","sha256":"cf44a89708db777b1de40cc5355c45e006e858f5abb2932afcc85efcc70a92a5","matches":true},
+    {"path":"public/assets/guides/piano-starter-and-reading.pdf","sha256":"69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2","matches":true},
+    {"path":"README.md","sha256":"f9de66e03151a0023658817be06ae263e19906ae6069d0f85fb0002def7cc29c","matches":true},
+    {"path":"scripts/check-css.mjs","sha256":"f4e37846b133b38ca88347a36f0b516b534af3e484694ad2407aaac7cdfa0735","matches":true},
+    {"path":"scripts/check-foundation.mjs","sha256":"26999e5c430a99eccfd4c74247e2139843afe2fa8e86ad5c61faeb4ddec85880","matches":true},
+    {"path":"scripts/check-guide-batch.mjs","sha256":"35dd919c9a5f635e7e53dbdbe62f77fe14bc5dbf8bba01c7b1d20580a028d681","matches":true},
+    {"path":"scripts/check-guide-data.mjs","sha256":"1f9b0f1e9977d7a9efae931e72864629b2a50ba022d67ae2317db086718351d6","matches":true},
+    {"path":"scripts/check-guide-production.mjs","sha256":"1d9f25759fa291dc0ecea72c51ecc9cad83858a1a2da6875c518c54c736616c6","matches":true},
+    {"path":"src/app/guide/page.tsx","sha256":"9e36ca2bc8ac89f317c095b5e3d7279df49a504deb52fe91abca351a29bfdc48","matches":true},
+    {"path":"src/app/guide/read-sheet-music/page.tsx","sha256":"b67d33a7d4864ba81e39c571c45b478005711e47c3ca9f377f14702fa497dd38","matches":true},
+    {"path":"src/components/chords/site-chrome.tsx","sha256":"331b4d634ee9334046788e0c5866f9c2893c5f54688e1736b80af2b2f3725204","matches":true},
+    {"path":"src/components/guides/guides.css","sha256":"aa2c42f63d8e67f2a2bc374a15460a0425b14eb41a59dad2bc55bd6a39562338","matches":true},
+    {"path":"src/components/guides/pages.tsx","sha256":"a634500bda8faf51c8ba39bf3724f04c85f1a31e3dfb868c68972e7e2779fbda","matches":true},
+    {"path":"src/lib/guide-content.ts","sha256":"c7cf950044022247a1afb10ef88862a4780cdc6657f00ef6314f5ae930e5fbda","matches":true},
+    {"path":"src/lib/guide-types.ts","sha256":"def078a658a76039f1e59be0e78bb5006ff3e4155b7b0d90ea5c4250e7b9da15","matches":true},
+    {"path":"src/lib/site-content.ts","sha256":"b997dbd08efc87e41d392e677f8f938c4fb8d068107eb6a1d4f45b51fb14ba2c","matches":true}
+  ]
+}

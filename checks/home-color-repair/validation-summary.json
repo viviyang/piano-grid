@@ -1,0 +1,69 @@
+{
+  "status": "PASS_WITH_NOTE",
+  "scope": "Homepage PianoLab V1 visual restoration with existing Piano Reference colors",
+  "checks": {
+    "npm run check": {
+      "passed": true,
+      "foundation": "560/560",
+      "typecheck": "passed",
+      "css": "passed"
+    },
+    "node scripts/check-integration-data.mjs": {
+      "passed": true,
+      "result": "153/153"
+    },
+    "node scripts/check-integration-batch.mjs": {
+      "passed": true,
+      "result": "205/205"
+    },
+    "node scripts/check-integration-production.mjs": {
+      "passed": true,
+      "result": "121/121"
+    },
+    "node scripts/check-release-seo.mjs": {
+      "passed": true,
+      "result": "17/17",
+      "blocking_findings": 0,
+      "runtime_errors": 0
+    },
+    "npm run build": {
+      "passed": true,
+      "static_routes": 17
+    }
+  },
+  "screenshots": {
+    "production-home-1440.png": {
+      "width": 1440,
+      "height": 5219,
+      "bytes": 793374
+    },
+    "production-home-390.png": {
+      "width": 390,
+      "height": 6631,
+      "bytes": 454184
+    },
+    "production-home-320.png": {
+      "width": 320,
+      "height": 6888,
+      "bytes": 405293
+    },
+    "production-home-768.png": {
+      "width": 768,
+      "height": 6631,
+      "bytes": 711021
+    },
+    "production-tools-390.png": {
+      "width": 390,
+      "height": 2260,
+      "bytes": 97534
+    }
+  },
+  "theme_hashes_unchanged": true,
+  "known_note": "Existing East Lake photo has piano and playing hands but no literal window frame or curtain; no new image was generated.",
+  "manual_checks": [
+    "physical device touch",
+    "screen reader",
+    "speaker/headphone audio quality",
+    "printed output"
+  ]
+}

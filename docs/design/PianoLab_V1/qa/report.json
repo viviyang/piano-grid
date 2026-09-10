@@ -1,0 +1,404 @@
+{
+  "date": "2026-09-10",
+  "browser": "Chromium 144.0.7559.96",
+  "environment": "Linux headless, device viewport emulation; not physical Windows/iPhone testing",
+  "status": "PASS",
+  "passed": 28,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "audio_not_initialized_on_load",
+      "passed": true,
+      "details": {
+        "audioCreated": false,
+        "audioState": "not_created",
+        "notesScheduled": [],
+        "motion": "running",
+        "errors": [],
+        "previewRoutes": [],
+        "visible": true,
+        "activeOscillators": 0,
+        "selectedChord": "am",
+        "paused": false,
+        "reducedMotion": false
+      }
+    },
+    {
+      "name": "no_external_requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "single_h1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "preview_noindex",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_sheet_music_navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_account_or_paid_feature_claims",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "piano_sequence_desktop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "piano_sequence_mobile",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "responsive_no_horizontal_overflow",
+      "passed": true,
+      "details": [
+        {
+          "width": 320,
+          "client": 320,
+          "scroll": 320,
+          "h1": {
+            "x": 16,
+            "y": 131,
+            "width": 288,
+            "height": 164.53125,
+            "top": 131,
+            "right": 304,
+            "bottom": 295.53125,
+            "left": 16
+          }
+        },
+        {
+          "width": 360,
+          "client": 360,
+          "scroll": 360,
+          "h1": {
+            "x": 20,
+            "y": 131,
+            "width": 320,
+            "height": 187.0625,
+            "top": 131,
+            "right": 340,
+            "bottom": 318.0625,
+            "left": 20
+          }
+        },
+        {
+          "width": 390,
+          "client": 390,
+          "scroll": 390,
+          "h1": {
+            "x": 20,
+            "y": 131,
+            "width": 350,
+            "height": 140.625,
+            "top": 131,
+            "right": 370,
+            "bottom": 271.625,
+            "left": 20
+          }
+        },
+        {
+          "width": 600,
+          "client": 600,
+          "scroll": 600,
+          "h1": {
+            "x": 20,
+            "y": 131,
+            "width": 560,
+            "height": 140.625,
+            "top": 131,
+            "right": 580,
+            "bottom": 271.625,
+            "left": 20
+          }
+        },
+        {
+          "width": 768,
+          "client": 768,
+          "scroll": 768,
+          "h1": {
+            "x": 34,
+            "y": 141,
+            "width": 700,
+            "height": 105.65625,
+            "top": 141,
+            "right": 734,
+            "bottom": 246.65625,
+            "left": 34
+          }
+        },
+        {
+          "width": 800,
+          "client": 800,
+          "scroll": 800,
+          "h1": {
+            "x": 50,
+            "y": 141,
+            "width": 700,
+            "height": 105.65625,
+            "top": 141,
+            "right": 750,
+            "bottom": 246.65625,
+            "left": 50
+          }
+        },
+        {
+          "width": 1024,
+          "client": 1024,
+          "scroll": 1024,
+          "h1": {
+            "x": -3,
+            "y": 148,
+            "width": 1030,
+            "height": 105.53125,
+            "top": 148,
+            "right": 1027,
+            "bottom": 253.53125,
+            "left": -3
+          }
+        },
+        {
+          "width": 1440,
+          "client": 1440,
+          "scroll": 1440,
+          "h1": {
+            "x": 125,
+            "y": 148,
+            "width": 1190,
+            "height": 147.109375,
+            "top": 148,
+            "right": 1315,
+            "bottom": 295.109375,
+            "left": 125
+          }
+        },
+        {
+          "width": 1920,
+          "client": 1920,
+          "scroll": 1920,
+          "h1": {
+            "x": 365,
+            "y": 170,
+            "width": 1190,
+            "height": 156.625,
+            "top": 170,
+            "right": 1555,
+            "bottom": 326.625,
+            "left": 365
+          }
+        }
+      ]
+    },
+    {
+      "name": "mobile_menu_opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mobile_menu_closes_on_escape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "primary_cta_scrolls_to_tasks",
+      "passed": true,
+      "details": {
+        "x": 20,
+        "y": 77.59375,
+        "width": 350,
+        "height": 983.453125
+      }
+    },
+    {
+      "name": "route_preview_works",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "dialog_closes_on_escape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "dialog_focus_restored",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "major_toggle_updates_notes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "user_gesture_initializes_audio",
+      "passed": true,
+      "details": {
+        "audioCreated": true,
+        "audioState": "running",
+        "notesScheduled": [
+          {
+            "midi": 57,
+            "frequency": 220,
+            "at": 0.025
+          },
+          {
+            "midi": 61,
+            "frequency": 277.182631,
+            "at": 0.025
+          },
+          {
+            "midi": 64,
+            "frequency": 329.627557,
+            "at": 0.025
+          }
+        ],
+        "motion": "paused",
+        "errors": [],
+        "previewRoutes": [
+          "/chords"
+        ],
+        "visible": false,
+        "activeOscillators": 12,
+        "selectedChord": "a",
+        "paused": true,
+        "reducedMotion": false
+      }
+    },
+    {
+      "name": "major_audio_correct_midi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "audio_nodes_cleaned_up",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "minor_audio_correct_midi",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "keyboard_arrow_moves_by_semitone",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "keyboard_enter_schedules_pitch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reduced_motion_static",
+      "passed": true,
+      "details": {
+        "audioCreated": true,
+        "audioState": "running",
+        "notesScheduled": [
+          {
+            "midi": 57,
+            "frequency": 220,
+            "at": 0.025
+          },
+          {
+            "midi": 61,
+            "frequency": 277.182631,
+            "at": 0.025
+          },
+          {
+            "midi": 64,
+            "frequency": 329.627557,
+            "at": 0.025
+          },
+          {
+            "midi": 57,
+            "frequency": 220,
+            "at": 2.077063492063492
+          },
+          {
+            "midi": 60,
+            "frequency": 261.625565,
+            "at": 2.077063492063492
+          },
+          {
+            "midi": 64,
+            "frequency": 329.627557,
+            "at": 2.077063492063492
+          },
+          {
+            "midi": 58,
+            "frequency": 233.081881,
+            "at": 2.5762925170068027
+          }
+        ],
+        "motion": "reduced_motion_static",
+        "errors": [],
+        "previewRoutes": [
+          "/chords"
+        ],
+        "visible": true,
+        "activeOscillators": 4,
+        "selectedChord": "am",
+        "paused": true,
+        "reducedMotion": true
+      }
+    },
+    {
+      "name": "motion_pause_works",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "offscreen_motion_stops",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_route_previews_have_content",
+      "passed": true,
+      "details": [
+        "/chords",
+        "/chords/a-minor",
+        "/guide",
+        "/guide/read-sheet-music",
+        "/keyboard-notes",
+        "/keyboard-notes/chart",
+        "/scales",
+        "/songs",
+        "/songs/easy",
+        "/tools",
+        "/tools/blank-sheet-music"
+      ]
+    },
+    {
+      "name": "no_browser_exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no_js_headline_and_links_visible",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "not_tested": [
+    "Physical iPhone/Safari or Windows device",
+    "Human listening / piano timbre approval",
+    "Screen-reader testing with NVDA or VoiceOver",
+    "Existing Next.js repository build and production routes",
+    "Trademark clearance, registrability, domain availability",
+    "Live Core Web Vitals or search indexing",
+    "Independent third-party acceptance"
+  ]
+}

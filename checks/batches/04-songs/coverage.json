@@ -1,0 +1,174 @@
+[
+  {
+    "url": "/songs",
+    "source_group": "P002",
+    "required_output": "真实曲目、筛选、版本信息和可用资源入口。",
+    "first_release_scope": "中心主任务",
+    "status": "implementation_checked",
+    "implementation": "Six version-specific center resources render with source-bounded search, publisher-level and playing-goal filters, reasons, access and exact external links.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P009",
+    "required_output": "sad 分区有实际曲目和适合演奏的依据；不能只给纯聆听歌单。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The reflective filter returns the checked Gymnopédie edition and keeps mood language explicitly editorial.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P014",
+    "required_output": "明确 cool/fun 的推荐依据，不作搜索量或用户偏好的客观排名承诺。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The cheerful/playful filter returns The Happy Farmer and Addams Family Theme with separate version reasons.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P018",
+    "required_output": "beautiful 的主观选择标准和具体曲目，不能只更换形容词。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The spacious-sound filter returns the checked Gymnopédie edition without presenting beauty as a ranking.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P022",
+    "required_output": "中级曲目对应具体版本和难点，不用泛 easy 列表代替。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The intermediate filter returns the exact late-intermediate and intermediate editions with their publisher label basis.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P041",
+    "required_output": "happy 条件有对应曲目与选择说明。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The cheerful filter includes a real matching edition and the source happy guidance remains visible.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P042",
+    "required_output": "介绍作品类型并连接可弹的实际例子，不只做一个标签。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The source Types of piece block stays visible and connects the six actual formats without opening topic routes.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs",
+    "source_group": "P043",
+    "required_output": "弹唱条件有可用的伴奏/lead sheet/教程入口，不拿独奏谱直接代替。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The sing-and-play filter returns the piano/vocal All of Me edition and does not substitute a solo score.",
+    "source_issues": [
+      "C-center-review"
+    ]
+  },
+  {
+    "url": "/songs/easy",
+    "source_group": "P001",
+    "required_output": "明确适用水平、前置能力、具体版本和可开始的资源。",
+    "first_release_scope": "中心主任务",
+    "status": "implementation_checked",
+    "implementation": "Nine featured versions plus fifty exact titles from one named Easy Piano collection render with version and access boundaries; no top-50 or per-track review claim.",
+    "source_issues": [
+      "C-EASY-FIFTY-DETAIL",
+      "C-EASY-TWINKLE-PRICE",
+      "C-EASY-RIGHTS",
+      "C-EASY-SOURCE-ERROR"
+    ]
+  },
+  {
+    "url": "/songs/easy",
+    "source_group": "P006",
+    "required_output": "儿童条件对应实际曲目与适用说明；不是与成人词视为同义。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The children view returns Hot Cross Buns, early Twinkle and early Happy Birthday versions.",
+    "source_issues": [
+      "C-EASY-FIFTY-DETAIL",
+      "C-EASY-TWINKLE-PRICE",
+      "C-EASY-RIGHTS",
+      "C-EASY-SOURCE-ERROR"
+    ]
+  },
+  {
+    "url": "/songs/easy",
+    "source_group": "P036",
+    "required_output": "C 大调条件依据具体版本的调性核对，不把调性直接当作难度评级。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The C-major view returns only the three featured editions whose source key is C major.",
+    "source_issues": [
+      "C-EASY-FIFTY-DETAIL",
+      "C-EASY-TWINKLE-PRICE",
+      "C-EASY-RIGHTS",
+      "C-EASY-SOURCE-ERROR"
+    ]
+  },
+  {
+    "url": "/songs/easy",
+    "source_group": "P037",
+    "required_output": "同时满足易弹和优美选择条件；给曲目和理由。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The gentle view compares two distinct Twinkle arrangements without merging their levels or access terms.",
+    "source_issues": [
+      "C-EASY-FIFTY-DETAIL",
+      "C-EASY-TWINKLE-PRICE",
+      "C-EASY-RIGHTS",
+      "C-EASY-SOURCE-ERROR"
+    ]
+  },
+  {
+    "url": "/songs/easy",
+    "source_group": "P039",
+    "required_output": "成人条件对应曲目与选择说明；不自动套儿童教材。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The adult-method view returns two named works from Alfred’s matching Book 1 supplement.",
+    "source_issues": [
+      "C-EASY-FIFTY-DETAIL",
+      "C-EASY-TWINKLE-PRICE",
+      "C-EASY-RIGHTS",
+      "C-EASY-SOURCE-ERROR"
+    ]
+  },
+  {
+    "url": "/songs/easy",
+    "source_group": "P040",
+    "required_output": "演出效果/看起来难的查询以具体选择理由承接，不承诺学习结果。",
+    "first_release_scope": "后续同页补齐",
+    "status": "implementation_checked",
+    "implementation": "The small-performance view returns Happy Birthday and Jingle Bells with occasion-based reasons and no outcome guarantee.",
+    "source_issues": [
+      "C-EASY-FIFTY-DETAIL",
+      "C-EASY-TWINKLE-PRICE",
+      "C-EASY-RIGHTS",
+      "C-EASY-SOURCE-ERROR"
+    ]
+  }
+]

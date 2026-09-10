@@ -1,0 +1,12 @@
+{
+  "executed_at": "2026-09-10T07:11:41.241Z",
+  "passed": 0,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Integration browser runner completed",
+      "passed": false,
+      "detail": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\scripts\\check-integration-batch.mjs:13:55"
+    }
+  ]
+}

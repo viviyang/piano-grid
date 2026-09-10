@@ -1,0 +1,62 @@
+{
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Unknown route has no fallback",
+      "passed": true
+    },
+    {
+      "name": "Reject unsafe resource ../assets/test.pdf",
+      "passed": true
+    },
+    {
+      "name": "Reject unsafe resource assets/../secret",
+      "passed": true
+    },
+    {
+      "name": "Reject unsafe resource assets/x/../../secret",
+      "passed": true
+    },
+    {
+      "name": "Reject unsafe resource C:/secret",
+      "passed": true
+    },
+    {
+      "name": "Reject unsafe resource https://x/assets/a.pdf",
+      "passed": true
+    },
+    {
+      "name": "Reject unsafe resource assets\\x.pdf",
+      "passed": true
+    },
+    {
+      "name": "Legacy asset resolves exactly once",
+      "passed": true
+    },
+    {
+      "name": "New asset resolves from master root",
+      "passed": true
+    },
+    {
+      "name": "a-major typed template model",
+      "passed": true
+    },
+    {
+      "name": "c-major typed template model",
+      "passed": true
+    },
+    {
+      "name": "Center keeps nine names and equivalence is not deduplication",
+      "passed": true
+    },
+    {
+      "name": "unknown-block fails explicitly",
+      "passed": true
+    },
+    {
+      "name": "missing-data fails explicitly",
+      "passed": true
+    }
+  ]
+}

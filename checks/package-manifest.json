@@ -1,0 +1,205 @@
+{
+  "files": [
+    {
+      "path": ".editorconfig",
+      "bytes": 156,
+      "sha256": "251db34e2e35b25bcd7888df2be0f92d56e0e204a405e1374e691710ed583827"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 132,
+      "sha256": "ac0ddd6a1d16d7fd31b045ac426d801898ee3b416aa6d4d2b704672c27429eec"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 118,
+      "sha256": "f82383e9a8e8e9600bfd84a02e3f76fe5cb8c39cc4f8c09ef12e734a24051b55"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2071,
+      "sha256": "d296ca6a425458127ec48bf5d6f4a82515dfc601fa42bb3bccebe4f6489b26b8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6523,
+      "sha256": "a6818b784d02d91a62fd5c17fe0b01420266e473fb4af6eaa0b20e95e4afadd4"
+    },
+    {
+      "path": "checks/README.md",
+      "bytes": 821,
+      "sha256": "9868d27eca6744351222e221228a53351a06dabbcaf254181e19fb3414331fb7"
+    },
+    {
+      "path": "checks/css-browser.json",
+      "bytes": 4922,
+      "sha256": "e98ac61d5a389edbb469af4006bf6fe3660d1e1e67ece2786ba6e961228315f9"
+    },
+    {
+      "path": "checks/foundation-static.json",
+      "bytes": 39458,
+      "sha256": "25ea247db8e7bda2095ab5e7cccb62a1a42389b7b6b583aef432cd1c0d11b092"
+    },
+    {
+      "path": "checks/typescript-syntax.json",
+      "bytes": 363,
+      "sha256": "7b3aeeb2ca6216a958c87aa9585c20dc1e20830f7162bda059cb43937144c1d5"
+    },
+    {
+      "path": "checks/validation.json",
+      "bytes": 3298,
+      "sha256": "ceeda9f04649cbfdc8a1b4804847359fa3a07d19b2f77925d341157633cb432a"
+    },
+    {
+      "path": "components.json",
+      "bytes": 451,
+      "sha256": "2cc1a8206b39ade49917b804fd9d67f95f2b9558ecc2a98bd35a211e0423b320"
+    },
+    {
+      "path": "docs/content/chords/README.md",
+      "bytes": 495,
+      "sha256": "8d12aa7d3774871ab1012ac053463b3fbf00a1b41884da1a69e60e94c642a513"
+    },
+    {
+      "path": "docs/content/chords/content-pack.md",
+      "bytes": 76784,
+      "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33"
+    },
+    {
+      "path": "docs/content/chords/page-content.json",
+      "bytes": 396742,
+      "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
+    },
+    {
+      "path": "docs/design/design-system.md",
+      "bytes": 22721,
+      "sha256": "f5c440f2aecc4fda7e8000ed3cdec728425cb9b9373011f2377dd61e2e666bbd"
+    },
+    {
+      "path": "docs/design/inspection.md",
+      "bytes": 3837,
+      "sha256": "3d598304a08ce14363207b14f9787398dd9ed71b99df7fc271680cfe96aa2838"
+    },
+    {
+      "path": "docs/design/reference/README.md",
+      "bytes": 646,
+      "sha256": "614841688d452bba811d3e188da7b14d6b91cd951339812bc1823ec2e41a1bb4"
+    },
+    {
+      "path": "docs/design/reference/final-1440-top.png",
+      "bytes": 99397,
+      "sha256": "a697418f028568d7017b24aa89831fd457a92943c32acef2012f70e2a68df777"
+    },
+    {
+      "path": "docs/design/reference/final-390-top.png",
+      "bytes": 45962,
+      "sha256": "280fc60bb8dafa839cbefa4229590ae0c2e8cbcf8372fefe9cb061bac5ec4b3e"
+    },
+    {
+      "path": "docs/design/reference/final-a-minor.html",
+      "bytes": 215542,
+      "sha256": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2"
+    },
+    {
+      "path": "docs/design/reference/final-prototype.css",
+      "bytes": 20416,
+      "sha256": "91a3714d25977682b45a047181632228f94772772934c8ca9ebd06b16ac421b9"
+    },
+    {
+      "path": "docs/design/reference/original-design-notes.md",
+      "bytes": 5050,
+      "sha256": "3e3ec256be85a3ed68598687a447393aa7ee716993b2ed3b27e1e4b8e701c10b"
+    },
+    {
+      "path": "docs/design/source-manifest.json",
+      "bytes": 1243,
+      "sha256": "777372751e676e4597385cb35c367550935110b1a72e3cac6752a8bc00d79726"
+    },
+    {
+      "path": "docs/design/tokens.json",
+      "bytes": 57305,
+      "sha256": "39ac78c7c9ed722451522ff221bcdb40236aa3009afd348dec6faa3e34908af2"
+    },
+    {
+      "path": "docs/product/README.md",
+      "bytes": 504,
+      "sha256": "e6cb44496b58f5a9c74ef5021b5e6e8146590a0c576281abb29eb5108b568b45"
+    },
+    {
+      "path": "docs/product/url-plan.final.json",
+      "bytes": 1377493,
+      "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+    },
+    {
+      "path": "next-env.d.ts",
+      "bytes": 142,
+      "sha256": "cc162be341ef1d971644bd1f13b30b12bcbedc8d9a3746a023da0ae124822990"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 104,
+      "sha256": "ab4c61f6ee100ae43610a18512f1ebcec842bb2405431e1009266173f21cf772"
+    },
+    {
+      "path": "package.json",
+      "bytes": 916,
+      "sha256": "92652a107ed71f2d17e66a8da02da35915ee7a716a0ba4704845a4c3aed571f4"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "bytes": 142,
+      "sha256": "0c2a7e345eb2bb59ff93d3b844d805f577bf7ca2628721d5af85cd8cc9977f5b"
+    },
+    {
+      "path": "scripts/check-css.mjs",
+      "bytes": 2723,
+      "sha256": "5212444c6554c0975f1df7116b1d1d1a390c5cf766c41e651bf647fc19def38e"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "bytes": 6390,
+      "sha256": "915086b4256e173d20780124e8c25c2c0d9f0aa91e7065b93132ea58eb6ea6b6"
+    },
+    {
+      "path": "src/app/globals.css",
+      "bytes": 7550,
+      "sha256": "1eb48686499f9ff732c609fa03971462d418b3286f09a39d69b4cda9e89c2cca"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "bytes": 459,
+      "sha256": "2b0fef642e8a9896516b96933d37feeacdb39d5af07df64328cf4e2b25496dd2"
+    },
+    {
+      "path": "src/components/ui/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/hooks/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "bytes": 1010,
+      "sha256": "f18dc82a64681b150a300a2eb15ae2abd3018041f7cd944f565b017412a3151f"
+    },
+    {
+      "path": "src/styles/foundation.css",
+      "bytes": 5748,
+      "sha256": "f78ed427f08393b79bdbec82807249349a58daa2f2da524dc52ac888c38445b1"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "bytes": 15139,
+      "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 759,
+      "sha256": "cdfb686ea044a03fa72dfb02c4b4d7485106a92f0b4b2c3ef7731106d028ad53"
+    }
+  ],
+  "note": "Manifest excludes itself; all hashes are bytes before ZIP compression."
+}

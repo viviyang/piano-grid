@@ -1,0 +1,1760 @@
+{
+  "stage": "design-foundation",
+  "executed_at": "2026-09-09T06:16:33.551Z",
+  "runtime": "v22.16.0",
+  "passed": 348,
+  "failed": 0,
+  "warnings": [
+    "原全站规划 Markdown 未随包提供；放入 docs/product/。不阻止 Foundation，业务阶段前需补齐。",
+    "尚无实际 npm 锁文件；首次 npm install 后生成并提交，以后使用 npm ci。"
+  ],
+  "results": [
+    {
+      "name": "CSS variable resolves: --background",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --surface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --surface-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --card-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --popover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --popover-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --primary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --primary-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --primary-hover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --secondary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --secondary-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --secondary-hover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --muted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --muted-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --accent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --accent-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --border",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --input",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --ring",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --selected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --selected-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --selected-border",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --selected-hover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --control-track",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --control-hover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --control-pressed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --disabled-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --destructive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --destructive-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-key-white",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-key-black",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-key-border",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-note-selected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-note-mark",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-note-sounding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-note-sounding-mark",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-note-label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --piano-note-label-selected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --print-background",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --print-foreground",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --print-key-black",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --print-key-border",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --print-divider",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-page-gutter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-tool-padding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-section-padding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-reading-gap",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-control-min-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-segment-min-height",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-icon-small",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-icon-default",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-icon-large",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-container-tool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-container-tool-copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-font-sans",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-radius-panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-radius-control",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-radius-segment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-radius-track",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-radius-key",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-shadow-surface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-container-page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-container-reading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-32",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-40",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-48",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-space-64",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h1-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h1-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h1-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h1-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h2-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h2-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h2-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h2-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-section-title-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-section-title-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-section-title-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-section-title-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h3-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h3-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h3-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-h3-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-body-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-body-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-body-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-body-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-copy-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-copy-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-copy-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-copy-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-label-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-label-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-label-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-label-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-ui-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-ui-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-ui-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-ui-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-meta-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-meta-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-meta-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-meta-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-notes-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-notes-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-notes-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-notes-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-result-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-result-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-result-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-result-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-chord-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-chord-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-chord-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-chord-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-formula-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-formula-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-formula-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-formula-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-key-label-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-key-label-leading",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-key-label-weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-type-key-label-tracking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-weight-regular",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-focus-width",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-focus-offset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-duration-fast",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-motion-ease",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-print-body-size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Manifest token: --background",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --foreground",
+      "passed": true,
+      "detail": "#1D1D1F"
+    },
+    {
+      "name": "Manifest token: --surface",
+      "passed": true,
+      "detail": "#F6F7F9"
+    },
+    {
+      "name": "Manifest token: --surface-foreground",
+      "passed": true,
+      "detail": "#1D1D1F"
+    },
+    {
+      "name": "Manifest token: --card",
+      "passed": true,
+      "detail": "#F6F7F9"
+    },
+    {
+      "name": "Manifest token: --card-foreground",
+      "passed": true,
+      "detail": "#1D1D1F"
+    },
+    {
+      "name": "Manifest token: --popover",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --popover-foreground",
+      "passed": true,
+      "detail": "#1D1D1F"
+    },
+    {
+      "name": "Manifest token: --primary",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --primary-foreground",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --primary-hover",
+      "passed": true,
+      "detail": "#0057AE"
+    },
+    {
+      "name": "Manifest token: --secondary",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --secondary-foreground",
+      "passed": true,
+      "detail": "#1D1D1F"
+    },
+    {
+      "name": "Manifest token: --secondary-hover",
+      "passed": true,
+      "detail": "#E9EDF3"
+    },
+    {
+      "name": "Manifest token: --muted",
+      "passed": true,
+      "detail": "#F6F7F9"
+    },
+    {
+      "name": "Manifest token: --muted-foreground",
+      "passed": true,
+      "detail": "#5C626B"
+    },
+    {
+      "name": "Manifest token: --accent",
+      "passed": true,
+      "detail": "#EAF2FF"
+    },
+    {
+      "name": "Manifest token: --accent-foreground",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --border",
+      "passed": true,
+      "detail": "#E1E4E8"
+    },
+    {
+      "name": "Manifest token: --input",
+      "passed": true,
+      "detail": "#7A828E"
+    },
+    {
+      "name": "Manifest token: --ring",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --selected",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --selected-foreground",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --selected-border",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --selected-hover",
+      "passed": true,
+      "detail": "#EAF2FF"
+    },
+    {
+      "name": "Manifest token: --control-track",
+      "passed": true,
+      "detail": "#E9EBEF"
+    },
+    {
+      "name": "Manifest token: --control-hover",
+      "passed": true,
+      "detail": "#F2F4F7"
+    },
+    {
+      "name": "Manifest token: --control-pressed",
+      "passed": true,
+      "detail": "#DCE8F8"
+    },
+    {
+      "name": "Manifest token: --disabled",
+      "passed": true,
+      "detail": "#E8EAEE"
+    },
+    {
+      "name": "Manifest token: --disabled-foreground",
+      "passed": true,
+      "detail": "#686F79"
+    },
+    {
+      "name": "Manifest token: --error",
+      "passed": true,
+      "detail": "#B42318"
+    },
+    {
+      "name": "Manifest token: --destructive",
+      "passed": true,
+      "detail": "#B42318"
+    },
+    {
+      "name": "Manifest token: --destructive-foreground",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --piano-key-white",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --piano-key-black",
+      "passed": true,
+      "detail": "#1D1D1F"
+    },
+    {
+      "name": "Manifest token: --piano-key-border",
+      "passed": true,
+      "detail": "#8B919A"
+    },
+    {
+      "name": "Manifest token: --piano-note-selected",
+      "passed": true,
+      "detail": "#EAF2FF"
+    },
+    {
+      "name": "Manifest token: --piano-note-mark",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --piano-note-sounding",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --piano-note-sounding-mark",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --piano-note-label",
+      "passed": true,
+      "detail": "#5C626B"
+    },
+    {
+      "name": "Manifest token: --piano-note-label-selected",
+      "passed": true,
+      "detail": "#0066CC"
+    },
+    {
+      "name": "Manifest token: --print-background",
+      "passed": true,
+      "detail": "#FFFFFF"
+    },
+    {
+      "name": "Manifest token: --print-foreground",
+      "passed": true,
+      "detail": "#000000"
+    },
+    {
+      "name": "Manifest token: --print-key-black",
+      "passed": true,
+      "detail": "#111111"
+    },
+    {
+      "name": "Manifest token: --print-key-border",
+      "passed": true,
+      "detail": "#555555"
+    },
+    {
+      "name": "Manifest token: --print-divider",
+      "passed": true,
+      "detail": "#888888"
+    },
+    {
+      "name": "Manifest token: --pr-font-sans",
+      "passed": true,
+      "detail": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    },
+    {
+      "name": "Manifest token: --pr-weight-regular",
+      "passed": true,
+      "detail": "400"
+    },
+    {
+      "name": "Manifest token: --pr-weight-label",
+      "passed": true,
+      "detail": "450"
+    },
+    {
+      "name": "Manifest token: --pr-weight-medium",
+      "passed": true,
+      "detail": "500"
+    },
+    {
+      "name": "Manifest token: --pr-weight-ui",
+      "passed": true,
+      "detail": "550"
+    },
+    {
+      "name": "Manifest token: --pr-weight-selected",
+      "passed": true,
+      "detail": "600"
+    },
+    {
+      "name": "Manifest token: --pr-weight-strong",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-weight-heading",
+      "passed": true,
+      "detail": "700"
+    },
+    {
+      "name": "Manifest token: --pr-weight-brand-observed",
+      "passed": true,
+      "detail": "750"
+    },
+    {
+      "name": "Manifest token: --pr-type-h1-size",
+      "passed": true,
+      "detail": "1.875rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-h1-leading",
+      "passed": true,
+      "detail": "1.2"
+    },
+    {
+      "name": "Manifest token: --pr-type-h1-weight",
+      "passed": true,
+      "detail": "700"
+    },
+    {
+      "name": "Manifest token: --pr-type-h1-tracking",
+      "passed": true,
+      "detail": "-.035em"
+    },
+    {
+      "name": "Manifest token: --pr-type-h2-size",
+      "passed": true,
+      "detail": "1.5rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-h2-leading",
+      "passed": true,
+      "detail": "1.3333"
+    },
+    {
+      "name": "Manifest token: --pr-type-h2-weight",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-type-h2-tracking",
+      "passed": true,
+      "detail": "-.02em"
+    },
+    {
+      "name": "Manifest token: --pr-type-section-title-size",
+      "passed": true,
+      "detail": "1.5rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-section-title-leading",
+      "passed": true,
+      "detail": "1.3333"
+    },
+    {
+      "name": "Manifest token: --pr-type-section-title-weight",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-type-section-title-tracking",
+      "passed": true,
+      "detail": "-.02em"
+    },
+    {
+      "name": "Manifest token: --pr-type-h3-size",
+      "passed": true,
+      "detail": "1.125rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-h3-leading",
+      "passed": true,
+      "detail": "1.4"
+    },
+    {
+      "name": "Manifest token: --pr-type-h3-weight",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-type-h3-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-type-body-size",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-body-leading",
+      "passed": true,
+      "detail": "1.625"
+    },
+    {
+      "name": "Manifest token: --pr-type-body-weight",
+      "passed": true,
+      "detail": "400"
+    },
+    {
+      "name": "Manifest token: --pr-type-body-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-type-copy-size",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-copy-leading",
+      "passed": true,
+      "detail": "1.625"
+    },
+    {
+      "name": "Manifest token: --pr-type-copy-weight",
+      "passed": true,
+      "detail": "400"
+    },
+    {
+      "name": "Manifest token: --pr-type-copy-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-type-label-size",
+      "passed": true,
+      "detail": ".875rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-label-leading",
+      "passed": true,
+      "detail": "1.43"
+    },
+    {
+      "name": "Manifest token: --pr-type-label-weight",
+      "passed": true,
+      "detail": "450"
+    },
+    {
+      "name": "Manifest token: --pr-type-label-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-type-ui-size",
+      "passed": true,
+      "detail": ".9375rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-ui-leading",
+      "passed": true,
+      "detail": "1.333"
+    },
+    {
+      "name": "Manifest token: --pr-type-ui-weight",
+      "passed": true,
+      "detail": "550"
+    },
+    {
+      "name": "Manifest token: --pr-type-ui-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-type-meta-size",
+      "passed": true,
+      "detail": ".8125rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-meta-leading",
+      "passed": true,
+      "detail": "1.5"
+    },
+    {
+      "name": "Manifest token: --pr-type-meta-weight",
+      "passed": true,
+      "detail": "400"
+    },
+    {
+      "name": "Manifest token: --pr-type-meta-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-type-notes-size",
+      "passed": true,
+      "detail": "1.75rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-notes-leading",
+      "passed": true,
+      "detail": "1.2"
+    },
+    {
+      "name": "Manifest token: --pr-type-notes-weight",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-type-notes-tracking",
+      "passed": true,
+      "detail": "-.025em"
+    },
+    {
+      "name": "Manifest token: --pr-type-result-size",
+      "passed": true,
+      "detail": "1.375rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-result-leading",
+      "passed": true,
+      "detail": "1.4"
+    },
+    {
+      "name": "Manifest token: --pr-type-result-weight",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-type-result-tracking",
+      "passed": true,
+      "detail": "-.025em"
+    },
+    {
+      "name": "Manifest token: --pr-type-chord-size",
+      "passed": true,
+      "detail": "1.5rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-chord-leading",
+      "passed": true,
+      "detail": "1.2"
+    },
+    {
+      "name": "Manifest token: --pr-type-chord-weight",
+      "passed": true,
+      "detail": "650"
+    },
+    {
+      "name": "Manifest token: --pr-type-chord-tracking",
+      "passed": true,
+      "detail": "-.025em"
+    },
+    {
+      "name": "Manifest token: --pr-type-formula-size",
+      "passed": true,
+      "detail": "1.25rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-formula-leading",
+      "passed": true,
+      "detail": "1.2"
+    },
+    {
+      "name": "Manifest token: --pr-type-formula-weight",
+      "passed": true,
+      "detail": "500"
+    },
+    {
+      "name": "Manifest token: --pr-type-formula-tracking",
+      "passed": true,
+      "detail": "-.025em"
+    },
+    {
+      "name": "Manifest token: --pr-type-key-label-size",
+      "passed": true,
+      "detail": ".875rem"
+    },
+    {
+      "name": "Manifest token: --pr-type-key-label-leading",
+      "passed": true,
+      "detail": "1.43"
+    },
+    {
+      "name": "Manifest token: --pr-type-key-label-weight",
+      "passed": true,
+      "detail": "400"
+    },
+    {
+      "name": "Manifest token: --pr-type-key-label-tracking",
+      "passed": true,
+      "detail": "0em"
+    },
+    {
+      "name": "Manifest token: --pr-space-2",
+      "passed": true,
+      "detail": "0.125rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-4",
+      "passed": true,
+      "detail": "0.25rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-6",
+      "passed": true,
+      "detail": "0.375rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-8",
+      "passed": true,
+      "detail": "0.5rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-10",
+      "passed": true,
+      "detail": "0.625rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-12",
+      "passed": true,
+      "detail": "0.75rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-14",
+      "passed": true,
+      "detail": "0.875rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-16",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-20",
+      "passed": true,
+      "detail": "1.25rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-24",
+      "passed": true,
+      "detail": "1.5rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-32",
+      "passed": true,
+      "detail": "2rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-40",
+      "passed": true,
+      "detail": "2.5rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-48",
+      "passed": true,
+      "detail": "3rem"
+    },
+    {
+      "name": "Manifest token: --pr-space-64",
+      "passed": true,
+      "detail": "4rem"
+    },
+    {
+      "name": "Manifest token: --pr-container-tool",
+      "passed": true,
+      "detail": "70rem"
+    },
+    {
+      "name": "Manifest token: --pr-container-page",
+      "passed": true,
+      "detail": "70rem"
+    },
+    {
+      "name": "Manifest token: --pr-container-reading",
+      "passed": true,
+      "detail": "72ch"
+    },
+    {
+      "name": "Manifest token: --pr-container-tool-copy",
+      "passed": true,
+      "detail": "65ch"
+    },
+    {
+      "name": "Manifest token: --pr-control-min-size",
+      "passed": true,
+      "detail": "2.75rem"
+    },
+    {
+      "name": "Manifest token: --pr-control-icon-size",
+      "passed": true,
+      "detail": "2.75rem"
+    },
+    {
+      "name": "Manifest token: --pr-icon-small",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-icon-default",
+      "passed": true,
+      "detail": "1.125rem"
+    },
+    {
+      "name": "Manifest token: --pr-icon-large",
+      "passed": true,
+      "detail": "1.25rem"
+    },
+    {
+      "name": "Manifest token: --pr-border-width",
+      "passed": true,
+      "detail": "1px"
+    },
+    {
+      "name": "Manifest token: --pr-radius-control",
+      "passed": true,
+      "detail": ".5rem"
+    },
+    {
+      "name": "Manifest token: --pr-radius-panel",
+      "passed": true,
+      "detail": ".75rem"
+    },
+    {
+      "name": "Manifest token: --pr-radius-track",
+      "passed": true,
+      "detail": ".625rem"
+    },
+    {
+      "name": "Manifest token: --pr-radius-segment",
+      "passed": true,
+      "detail": ".4375rem"
+    },
+    {
+      "name": "Manifest token: --pr-radius-scroll",
+      "passed": true,
+      "detail": ".25rem"
+    },
+    {
+      "name": "Manifest token: --pr-radius-key",
+      "passed": true,
+      "detail": ".1875rem"
+    },
+    {
+      "name": "Manifest token: --pr-focus-width",
+      "passed": true,
+      "detail": "2px"
+    },
+    {
+      "name": "Manifest token: --pr-focus-offset",
+      "passed": true,
+      "detail": "4px"
+    },
+    {
+      "name": "Manifest token: --pr-focus-proxy-offset",
+      "passed": true,
+      "detail": "3px"
+    },
+    {
+      "name": "Manifest token: --pr-duration-fast",
+      "passed": true,
+      "detail": "120ms"
+    },
+    {
+      "name": "Manifest token: --pr-pressed-translate",
+      "passed": true,
+      "detail": "1px"
+    },
+    {
+      "name": "Manifest token: --pr-piano-min-width",
+      "passed": true,
+      "detail": "33.75rem"
+    },
+    {
+      "name": "Manifest token: --pr-piano-black-height",
+      "passed": true,
+      "detail": "62%"
+    },
+    {
+      "name": "Manifest token: --pr-piano-marker-size",
+      "passed": true,
+      "detail": ".65rem"
+    },
+    {
+      "name": "Manifest token: --pr-piano-sounding-line",
+      "passed": true,
+      "detail": "3px"
+    },
+    {
+      "name": "Manifest token: --pr-print-margin",
+      "passed": true,
+      "detail": "16mm"
+    },
+    {
+      "name": "Manifest token: --pr-print-body-size",
+      "passed": true,
+      "detail": "12pt"
+    },
+    {
+      "name": "Manifest token: --pr-print-heading-size",
+      "passed": true,
+      "detail": "24pt"
+    },
+    {
+      "name": "Manifest token: --pr-print-note-size",
+      "passed": true,
+      "detail": "17pt"
+    },
+    {
+      "name": "Manifest token: --pr-print-label-size",
+      "passed": true,
+      "detail": "9pt"
+    },
+    {
+      "name": "Manifest token: --pr-print-helper-size",
+      "passed": true,
+      "detail": "10pt"
+    },
+    {
+      "name": "Manifest token: --radius",
+      "passed": true,
+      "detail": "var(--pr-radius-panel)"
+    },
+    {
+      "name": "Manifest token: --pr-shadow-surface",
+      "passed": true,
+      "detail": "none"
+    },
+    {
+      "name": "Manifest token: --pr-overlay",
+      "passed": true,
+      "detail": "rgb(29 29 31 / 0.35)"
+    },
+    {
+      "name": "Manifest token: --pr-motion-ease",
+      "passed": true,
+      "detail": "ease"
+    },
+    {
+      "name": "Manifest token: --pr-motion-enabled",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "Manifest token: --pr-page-gutter",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-tool-padding",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-section-padding",
+      "passed": true,
+      "detail": "2rem"
+    },
+    {
+      "name": "Manifest token: --pr-reading-gap",
+      "passed": true,
+      "detail": "2rem"
+    },
+    {
+      "name": "Manifest token: --pr-segment-min-height",
+      "passed": true,
+      "detail": "2.875rem"
+    },
+    {
+      "name": "Manifest token: --pr-piano-white-height",
+      "passed": true,
+      "detail": "9rem"
+    },
+    {
+      "name": "Manifest token: --pr-piano-marker-bottom",
+      "passed": true,
+      "detail": "1rem"
+    },
+    {
+      "name": "Manifest token: --pr-breakpoint-compact",
+      "passed": true,
+      "detail": "22rem"
+    },
+    {
+      "name": "Manifest token: --pr-breakpoint-tablet",
+      "passed": true,
+      "detail": "48rem"
+    },
+    {
+      "name": "Manifest token: --pr-breakpoint-wide",
+      "passed": true,
+      "detail": "67rem"
+    },
+    {
+      "name": "Manifest token: --pr-container-reflow",
+      "passed": true,
+      "detail": "18rem"
+    },
+    {
+      "name": "Tailwind v4 selected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Matching v4 PostCSS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "React and React DOM match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real v4 PostCSS entry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tailwind import and src-only scanning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Inline semantic theme mapping",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Primary semantic mapping",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No Tailwind v3 config",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No legacy Tailwind directives",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shadcn CSS path",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shadcn config blank for v4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shadcn semantic colors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shadcn aliases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TypeScript source alias",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Root layout imports globals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Root layout: no business chrome",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Root layout: no external font",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cn registers custom text sizes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Visible focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced motion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forced colors focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No hidden main on print",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No dark palette",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No global animation dependency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No application pages/routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Only root layout TSX",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No component implementations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source unchanged: docs/product/url-plan.final.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source unchanged: docs/content/chords/content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source unchanged: docs/content/chords/page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source unchanged: docs/design/reference/final-a-minor.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source unchanged: docs/design/reference/final-prototype.css",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "not_covered": [
+    "npm dependency installation",
+    "Next build",
+    "Tailwind compilation",
+    "real component interaction",
+    "full accessibility compliance"
+  ]
+}

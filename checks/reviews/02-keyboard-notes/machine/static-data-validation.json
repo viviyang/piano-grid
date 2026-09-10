@@ -1,0 +1,5793 @@
+{
+  "executed_at": "2026-09-09T11:15:50.895Z",
+  "runtime": "v24.14.1",
+  "passed": 1157,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Master schema is 3.0.0",
+      "passed": true,
+      "detail": "3.0.0"
+    },
+    {
+      "name": "Product plan retains 127 URLs",
+      "passed": true,
+      "detail": 127
+    },
+    {
+      "name": "Content master retains 127 URLs",
+      "passed": true,
+      "detail": 127
+    },
+    {
+      "name": "/keyboard-notes: page exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: template matches T03",
+      "passed": true,
+      "detail": "T03"
+    },
+    {
+      "name": "/keyboard-notes: plan template matches",
+      "passed": true,
+      "detail": "T03"
+    },
+    {
+      "name": "/keyboard-notes: source groups match plan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: metadata title matches page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: canonical path matches",
+      "passed": true,
+      "detail": "/keyboard-notes"
+    },
+    {
+      "name": "/keyboard-notes: remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: page exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: template matches T04",
+      "passed": true,
+      "detail": "T04"
+    },
+    {
+      "name": "/keyboard-notes/labeled: plan template matches",
+      "passed": true,
+      "detail": "T04"
+    },
+    {
+      "name": "/keyboard-notes/labeled: source groups match plan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: metadata title matches page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: canonical path matches",
+      "passed": true,
+      "detail": "/keyboard-notes/labeled"
+    },
+    {
+      "name": "/keyboard-notes/labeled: remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: page exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: template matches T05",
+      "passed": true,
+      "detail": "T05"
+    },
+    {
+      "name": "/keyboard-notes/chart: plan template matches",
+      "passed": true,
+      "detail": "T05"
+    },
+    {
+      "name": "/keyboard-notes/chart: source groups match plan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: metadata title matches page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: canonical path matches",
+      "passed": true,
+      "detail": "/keyboard-notes/chart"
+    },
+    {
+      "name": "/keyboard-notes/chart: remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: only verified 88/61 layouts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: exact key count",
+      "passed": true,
+      "detail": 88
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: endpoints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: endpoint labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: contiguous MIDI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: unique key IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: white count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: black count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: declared counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: color follows pitch class",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: lookup spellings resolve to the same pitch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/88-key-A0-C8: reading segments cover each key once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: exact key count",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: endpoints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: endpoint labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: contiguous MIDI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: unique key IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: white count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: black count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: declared counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: color follows pitch class",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: lookup spellings resolve to the same pitch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/61-key-C2-C7: reading segments cover each key once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: only verified 88/61 layouts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: exact key count",
+      "passed": true,
+      "detail": 88
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: endpoints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: endpoint labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: contiguous MIDI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: unique key IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: white count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: black count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: declared counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: color follows pitch class",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: lookup spellings resolve to the same pitch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/88-key-A0-C8: reading segments cover each key once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: exact key count",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: endpoints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: endpoint labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: contiguous MIDI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: unique key IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: white count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: black count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: declared counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: color follows pitch class",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: lookup spellings resolve to the same pitch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled/61-key-C2-C7: reading segments cover each key once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B#3 resolves to middle C without respelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cb4 resolves to B3 without respelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ambiguous queries require octave choice",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Autoplay is disabled by source default",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chart contains all 88 physical pitches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chart MIDI range is A0-C8 and contiguous",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chart default is middle C",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chart has explicit treble and bass views",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "61-key chart preset remains deferred",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Solfege remains disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 21: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 21: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A0: name resolves to MIDI",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "A0/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A0/treble: staff coordinate",
+      "passed": true,
+      "detail": -25
+    },
+    {
+      "name": "A0/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22,-24"
+    },
+    {
+      "name": "A0/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A0/bass: staff coordinate",
+      "passed": true,
+      "detail": -13
+    },
+    {
+      "name": "A0/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "chart MIDI 22: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 22: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#0: name resolves to MIDI",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "A#0/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#0/treble: staff coordinate",
+      "passed": true,
+      "detail": -25
+    },
+    {
+      "name": "A#0/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22,-24"
+    },
+    {
+      "name": "A#0/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#0/bass: staff coordinate",
+      "passed": true,
+      "detail": -13
+    },
+    {
+      "name": "A#0/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "Bb0: name resolves to MIDI",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "Bb0/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb0/treble: staff coordinate",
+      "passed": true,
+      "detail": -24
+    },
+    {
+      "name": "Bb0/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22,-24"
+    },
+    {
+      "name": "Bb0/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb0/bass: staff coordinate",
+      "passed": true,
+      "detail": -12
+    },
+    {
+      "name": "Bb0/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "chart MIDI 23: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 23: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B0: name resolves to MIDI",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "B0/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B0/treble: staff coordinate",
+      "passed": true,
+      "detail": -24
+    },
+    {
+      "name": "B0/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22,-24"
+    },
+    {
+      "name": "B0/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B0/bass: staff coordinate",
+      "passed": true,
+      "detail": -12
+    },
+    {
+      "name": "B0/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "chart MIDI 24: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 24: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C1: name resolves to MIDI",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "C1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C1/treble: staff coordinate",
+      "passed": true,
+      "detail": -23
+    },
+    {
+      "name": "C1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22"
+    },
+    {
+      "name": "C1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C1/bass: staff coordinate",
+      "passed": true,
+      "detail": -11
+    },
+    {
+      "name": "C1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "chart MIDI 25: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 25: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#1: name resolves to MIDI",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "C#1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#1/treble: staff coordinate",
+      "passed": true,
+      "detail": -23
+    },
+    {
+      "name": "C#1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22"
+    },
+    {
+      "name": "C#1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#1/bass: staff coordinate",
+      "passed": true,
+      "detail": -11
+    },
+    {
+      "name": "C#1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "Db1: name resolves to MIDI",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "Db1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db1/treble: staff coordinate",
+      "passed": true,
+      "detail": -22
+    },
+    {
+      "name": "Db1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22"
+    },
+    {
+      "name": "Db1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db1/bass: staff coordinate",
+      "passed": true,
+      "detail": -10
+    },
+    {
+      "name": "Db1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "chart MIDI 26: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 26: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D1: name resolves to MIDI",
+      "passed": true,
+      "detail": 26
+    },
+    {
+      "name": "D1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D1/treble: staff coordinate",
+      "passed": true,
+      "detail": -22
+    },
+    {
+      "name": "D1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22"
+    },
+    {
+      "name": "D1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D1/bass: staff coordinate",
+      "passed": true,
+      "detail": -10
+    },
+    {
+      "name": "D1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "chart MIDI 27: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 27: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#1: name resolves to MIDI",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "D#1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#1/treble: staff coordinate",
+      "passed": true,
+      "detail": -22
+    },
+    {
+      "name": "D#1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20,-22"
+    },
+    {
+      "name": "D#1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#1/bass: staff coordinate",
+      "passed": true,
+      "detail": -10
+    },
+    {
+      "name": "D#1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "Eb1: name resolves to MIDI",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "Eb1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb1/treble: staff coordinate",
+      "passed": true,
+      "detail": -21
+    },
+    {
+      "name": "Eb1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20"
+    },
+    {
+      "name": "Eb1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb1/bass: staff coordinate",
+      "passed": true,
+      "detail": -9
+    },
+    {
+      "name": "Eb1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "chart MIDI 28: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 28: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E1: name resolves to MIDI",
+      "passed": true,
+      "detail": 28
+    },
+    {
+      "name": "E1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E1/treble: staff coordinate",
+      "passed": true,
+      "detail": -21
+    },
+    {
+      "name": "E1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20"
+    },
+    {
+      "name": "E1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E1/bass: staff coordinate",
+      "passed": true,
+      "detail": -9
+    },
+    {
+      "name": "E1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "chart MIDI 29: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 29: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F1: name resolves to MIDI",
+      "passed": true,
+      "detail": 29
+    },
+    {
+      "name": "F1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F1/treble: staff coordinate",
+      "passed": true,
+      "detail": -20
+    },
+    {
+      "name": "F1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20"
+    },
+    {
+      "name": "F1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F1/bass: staff coordinate",
+      "passed": true,
+      "detail": -8
+    },
+    {
+      "name": "F1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "chart MIDI 30: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 30: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#1: name resolves to MIDI",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "name": "F#1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#1/treble: staff coordinate",
+      "passed": true,
+      "detail": -20
+    },
+    {
+      "name": "F#1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18,-20"
+    },
+    {
+      "name": "F#1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#1/bass: staff coordinate",
+      "passed": true,
+      "detail": -8
+    },
+    {
+      "name": "F#1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "Gb1: name resolves to MIDI",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "name": "Gb1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb1/treble: staff coordinate",
+      "passed": true,
+      "detail": -19
+    },
+    {
+      "name": "Gb1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18"
+    },
+    {
+      "name": "Gb1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb1/bass: staff coordinate",
+      "passed": true,
+      "detail": -7
+    },
+    {
+      "name": "Gb1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "chart MIDI 31: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 31: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G1: name resolves to MIDI",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "name": "G1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G1/treble: staff coordinate",
+      "passed": true,
+      "detail": -19
+    },
+    {
+      "name": "G1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18"
+    },
+    {
+      "name": "G1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G1/bass: staff coordinate",
+      "passed": true,
+      "detail": -7
+    },
+    {
+      "name": "G1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "chart MIDI 32: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 32: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#1: name resolves to MIDI",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "name": "G#1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#1/treble: staff coordinate",
+      "passed": true,
+      "detail": -19
+    },
+    {
+      "name": "G#1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18"
+    },
+    {
+      "name": "G#1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#1/bass: staff coordinate",
+      "passed": true,
+      "detail": -7
+    },
+    {
+      "name": "G#1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "Ab1: name resolves to MIDI",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "name": "Ab1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab1/treble: staff coordinate",
+      "passed": true,
+      "detail": -18
+    },
+    {
+      "name": "Ab1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18"
+    },
+    {
+      "name": "Ab1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab1/bass: staff coordinate",
+      "passed": true,
+      "detail": -6
+    },
+    {
+      "name": "Ab1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "chart MIDI 33: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 33: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A1: name resolves to MIDI",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "name": "A1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A1/treble: staff coordinate",
+      "passed": true,
+      "detail": -18
+    },
+    {
+      "name": "A1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18"
+    },
+    {
+      "name": "A1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A1/bass: staff coordinate",
+      "passed": true,
+      "detail": -6
+    },
+    {
+      "name": "A1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "chart MIDI 34: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 34: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#1: name resolves to MIDI",
+      "passed": true,
+      "detail": 34
+    },
+    {
+      "name": "A#1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#1/treble: staff coordinate",
+      "passed": true,
+      "detail": -18
+    },
+    {
+      "name": "A#1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16,-18"
+    },
+    {
+      "name": "A#1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#1/bass: staff coordinate",
+      "passed": true,
+      "detail": -6
+    },
+    {
+      "name": "A#1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "Bb1: name resolves to MIDI",
+      "passed": true,
+      "detail": 34
+    },
+    {
+      "name": "Bb1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb1/treble: staff coordinate",
+      "passed": true,
+      "detail": -17
+    },
+    {
+      "name": "Bb1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16"
+    },
+    {
+      "name": "Bb1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb1/bass: staff coordinate",
+      "passed": true,
+      "detail": -5
+    },
+    {
+      "name": "Bb1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "chart MIDI 35: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 35: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B1: name resolves to MIDI",
+      "passed": true,
+      "detail": 35
+    },
+    {
+      "name": "B1/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B1/treble: staff coordinate",
+      "passed": true,
+      "detail": -17
+    },
+    {
+      "name": "B1/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16"
+    },
+    {
+      "name": "B1/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B1/bass: staff coordinate",
+      "passed": true,
+      "detail": -5
+    },
+    {
+      "name": "B1/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "chart MIDI 36: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 36: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C2: name resolves to MIDI",
+      "passed": true,
+      "detail": 36
+    },
+    {
+      "name": "C2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C2/treble: staff coordinate",
+      "passed": true,
+      "detail": -16
+    },
+    {
+      "name": "C2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16"
+    },
+    {
+      "name": "C2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C2/bass: staff coordinate",
+      "passed": true,
+      "detail": -4
+    },
+    {
+      "name": "C2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "chart MIDI 37: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 37: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#2: name resolves to MIDI",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "C#2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#2/treble: staff coordinate",
+      "passed": true,
+      "detail": -16
+    },
+    {
+      "name": "C#2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14,-16"
+    },
+    {
+      "name": "C#2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#2/bass: staff coordinate",
+      "passed": true,
+      "detail": -4
+    },
+    {
+      "name": "C#2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "Db2: name resolves to MIDI",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "Db2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db2/treble: staff coordinate",
+      "passed": true,
+      "detail": -15
+    },
+    {
+      "name": "Db2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14"
+    },
+    {
+      "name": "Db2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db2/bass: staff coordinate",
+      "passed": true,
+      "detail": -3
+    },
+    {
+      "name": "Db2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "chart MIDI 38: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 38: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D2: name resolves to MIDI",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "name": "D2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D2/treble: staff coordinate",
+      "passed": true,
+      "detail": -15
+    },
+    {
+      "name": "D2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14"
+    },
+    {
+      "name": "D2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D2/bass: staff coordinate",
+      "passed": true,
+      "detail": -3
+    },
+    {
+      "name": "D2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "chart MIDI 39: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 39: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#2: name resolves to MIDI",
+      "passed": true,
+      "detail": 39
+    },
+    {
+      "name": "D#2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#2/treble: staff coordinate",
+      "passed": true,
+      "detail": -15
+    },
+    {
+      "name": "D#2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14"
+    },
+    {
+      "name": "D#2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#2/bass: staff coordinate",
+      "passed": true,
+      "detail": -3
+    },
+    {
+      "name": "D#2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "Eb2: name resolves to MIDI",
+      "passed": true,
+      "detail": 39
+    },
+    {
+      "name": "Eb2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb2/treble: staff coordinate",
+      "passed": true,
+      "detail": -14
+    },
+    {
+      "name": "Eb2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14"
+    },
+    {
+      "name": "Eb2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb2/bass: staff coordinate",
+      "passed": true,
+      "detail": -2
+    },
+    {
+      "name": "Eb2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "chart MIDI 40: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 40: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E2: name resolves to MIDI",
+      "passed": true,
+      "detail": 40
+    },
+    {
+      "name": "E2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E2/treble: staff coordinate",
+      "passed": true,
+      "detail": -14
+    },
+    {
+      "name": "E2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12,-14"
+    },
+    {
+      "name": "E2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E2/bass: staff coordinate",
+      "passed": true,
+      "detail": -2
+    },
+    {
+      "name": "E2/bass: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "chart MIDI 41: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 41: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F2: name resolves to MIDI",
+      "passed": true,
+      "detail": 41
+    },
+    {
+      "name": "F2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F2/treble: staff coordinate",
+      "passed": true,
+      "detail": -13
+    },
+    {
+      "name": "F2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "F2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F2/bass: staff coordinate",
+      "passed": true,
+      "detail": -1
+    },
+    {
+      "name": "F2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 42: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 42: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#2: name resolves to MIDI",
+      "passed": true,
+      "detail": 42
+    },
+    {
+      "name": "F#2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#2/treble: staff coordinate",
+      "passed": true,
+      "detail": -13
+    },
+    {
+      "name": "F#2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "F#2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#2/bass: staff coordinate",
+      "passed": true,
+      "detail": -1
+    },
+    {
+      "name": "F#2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb2: name resolves to MIDI",
+      "passed": true,
+      "detail": 42
+    },
+    {
+      "name": "Gb2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb2/treble: staff coordinate",
+      "passed": true,
+      "detail": -12
+    },
+    {
+      "name": "Gb2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "Gb2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb2/bass: staff coordinate",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Gb2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 43: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 43: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G2: name resolves to MIDI",
+      "passed": true,
+      "detail": 43
+    },
+    {
+      "name": "G2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G2/treble: staff coordinate",
+      "passed": true,
+      "detail": -12
+    },
+    {
+      "name": "G2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "G2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G2/bass: staff coordinate",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "G2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 44: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 44: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#2: name resolves to MIDI",
+      "passed": true,
+      "detail": 44
+    },
+    {
+      "name": "G#2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#2/treble: staff coordinate",
+      "passed": true,
+      "detail": -12
+    },
+    {
+      "name": "G#2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10,-12"
+    },
+    {
+      "name": "G#2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#2/bass: staff coordinate",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "G#2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab2: name resolves to MIDI",
+      "passed": true,
+      "detail": 44
+    },
+    {
+      "name": "Ab2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab2/treble: staff coordinate",
+      "passed": true,
+      "detail": -11
+    },
+    {
+      "name": "Ab2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "Ab2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab2/bass: staff coordinate",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Ab2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 45: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 45: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A2: name resolves to MIDI",
+      "passed": true,
+      "detail": 45
+    },
+    {
+      "name": "A2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A2/treble: staff coordinate",
+      "passed": true,
+      "detail": -11
+    },
+    {
+      "name": "A2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "A2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A2/bass: staff coordinate",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "A2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 46: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 46: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#2: name resolves to MIDI",
+      "passed": true,
+      "detail": 46
+    },
+    {
+      "name": "A#2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#2/treble: staff coordinate",
+      "passed": true,
+      "detail": -11
+    },
+    {
+      "name": "A#2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "A#2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#2/bass: staff coordinate",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "A#2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb2: name resolves to MIDI",
+      "passed": true,
+      "detail": 46
+    },
+    {
+      "name": "Bb2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb2/treble: staff coordinate",
+      "passed": true,
+      "detail": -10
+    },
+    {
+      "name": "Bb2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "Bb2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb2/bass: staff coordinate",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "Bb2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 47: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 47: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B2: name resolves to MIDI",
+      "passed": true,
+      "detail": 47
+    },
+    {
+      "name": "B2/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B2/treble: staff coordinate",
+      "passed": true,
+      "detail": -10
+    },
+    {
+      "name": "B2/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8,-10"
+    },
+    {
+      "name": "B2/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B2/bass: staff coordinate",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "B2/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 48: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 48: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C3: name resolves to MIDI",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "name": "C3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C3/treble: staff coordinate",
+      "passed": true,
+      "detail": -9
+    },
+    {
+      "name": "C3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "C3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C3/bass: staff coordinate",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "C3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 49: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 49: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#3: name resolves to MIDI",
+      "passed": true,
+      "detail": 49
+    },
+    {
+      "name": "C#3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#3/treble: staff coordinate",
+      "passed": true,
+      "detail": -9
+    },
+    {
+      "name": "C#3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "C#3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#3/bass: staff coordinate",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "C#3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db3: name resolves to MIDI",
+      "passed": true,
+      "detail": 49
+    },
+    {
+      "name": "Db3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db3/treble: staff coordinate",
+      "passed": true,
+      "detail": -8
+    },
+    {
+      "name": "Db3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "Db3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db3/bass: staff coordinate",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Db3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 50: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 50: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D3: name resolves to MIDI",
+      "passed": true,
+      "detail": 50
+    },
+    {
+      "name": "D3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D3/treble: staff coordinate",
+      "passed": true,
+      "detail": -8
+    },
+    {
+      "name": "D3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "D3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D3/bass: staff coordinate",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "D3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 51: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 51: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#3: name resolves to MIDI",
+      "passed": true,
+      "detail": 51
+    },
+    {
+      "name": "D#3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#3/treble: staff coordinate",
+      "passed": true,
+      "detail": -8
+    },
+    {
+      "name": "D#3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6,-8"
+    },
+    {
+      "name": "D#3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#3/bass: staff coordinate",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "D#3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb3: name resolves to MIDI",
+      "passed": true,
+      "detail": 51
+    },
+    {
+      "name": "Eb3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb3/treble: staff coordinate",
+      "passed": true,
+      "detail": -7
+    },
+    {
+      "name": "Eb3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "Eb3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb3/bass: staff coordinate",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "Eb3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 52: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 52: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E3: name resolves to MIDI",
+      "passed": true,
+      "detail": 52
+    },
+    {
+      "name": "E3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E3/treble: staff coordinate",
+      "passed": true,
+      "detail": -7
+    },
+    {
+      "name": "E3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "E3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E3/bass: staff coordinate",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "E3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 53: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 53: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F3: name resolves to MIDI",
+      "passed": true,
+      "detail": 53
+    },
+    {
+      "name": "F3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F3/treble: staff coordinate",
+      "passed": true,
+      "detail": -6
+    },
+    {
+      "name": "F3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "F3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F3/bass: staff coordinate",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "F3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 54: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 54: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#3: name resolves to MIDI",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "name": "F#3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#3/treble: staff coordinate",
+      "passed": true,
+      "detail": -6
+    },
+    {
+      "name": "F#3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4,-6"
+    },
+    {
+      "name": "F#3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#3/bass: staff coordinate",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "F#3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb3: name resolves to MIDI",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "name": "Gb3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb3/treble: staff coordinate",
+      "passed": true,
+      "detail": -5
+    },
+    {
+      "name": "Gb3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "Gb3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb3/bass: staff coordinate",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "Gb3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 55: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 55: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G3: name resolves to MIDI",
+      "passed": true,
+      "detail": 55
+    },
+    {
+      "name": "G3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G3/treble: staff coordinate",
+      "passed": true,
+      "detail": -5
+    },
+    {
+      "name": "G3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "G3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G3/bass: staff coordinate",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "G3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 56: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 56: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#3: name resolves to MIDI",
+      "passed": true,
+      "detail": 56
+    },
+    {
+      "name": "G#3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#3/treble: staff coordinate",
+      "passed": true,
+      "detail": -5
+    },
+    {
+      "name": "G#3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "G#3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#3/bass: staff coordinate",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "G#3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab3: name resolves to MIDI",
+      "passed": true,
+      "detail": 56
+    },
+    {
+      "name": "Ab3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab3/treble: staff coordinate",
+      "passed": true,
+      "detail": -4
+    },
+    {
+      "name": "Ab3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "Ab3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab3/bass: staff coordinate",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "Ab3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 57: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 57: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A3: name resolves to MIDI",
+      "passed": true,
+      "detail": 57
+    },
+    {
+      "name": "A3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A3/treble: staff coordinate",
+      "passed": true,
+      "detail": -4
+    },
+    {
+      "name": "A3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "A3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A3/bass: staff coordinate",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "A3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 58: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 58: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#3: name resolves to MIDI",
+      "passed": true,
+      "detail": 58
+    },
+    {
+      "name": "A#3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#3/treble: staff coordinate",
+      "passed": true,
+      "detail": -4
+    },
+    {
+      "name": "A#3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2,-4"
+    },
+    {
+      "name": "A#3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#3/bass: staff coordinate",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "A#3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb3: name resolves to MIDI",
+      "passed": true,
+      "detail": 58
+    },
+    {
+      "name": "Bb3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb3/treble: staff coordinate",
+      "passed": true,
+      "detail": -3
+    },
+    {
+      "name": "Bb3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "Bb3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb3/bass: staff coordinate",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "Bb3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 59: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 59: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B3: name resolves to MIDI",
+      "passed": true,
+      "detail": 59
+    },
+    {
+      "name": "B3/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B3/treble: staff coordinate",
+      "passed": true,
+      "detail": -3
+    },
+    {
+      "name": "B3/treble: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "B3/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B3/bass: staff coordinate",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "B3/bass: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 60: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 60: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C4: name resolves to MIDI",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "C4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C4/treble: staff coordinate",
+      "passed": true,
+      "detail": -2
+    },
+    {
+      "name": "C4/treble: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "C4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C4/bass: staff coordinate",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "C4/bass: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "chart MIDI 61: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 61: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#4: name resolves to MIDI",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "C#4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#4/treble: staff coordinate",
+      "passed": true,
+      "detail": -2
+    },
+    {
+      "name": "C#4/treble: ledger lines",
+      "passed": true,
+      "detail": "-2"
+    },
+    {
+      "name": "C#4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#4/bass: staff coordinate",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "C#4/bass: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "Db4: name resolves to MIDI",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "Db4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db4/treble: staff coordinate",
+      "passed": true,
+      "detail": -1
+    },
+    {
+      "name": "Db4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db4/bass: staff coordinate",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "Db4/bass: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "chart MIDI 62: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 62: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D4: name resolves to MIDI",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "name": "D4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D4/treble: staff coordinate",
+      "passed": true,
+      "detail": -1
+    },
+    {
+      "name": "D4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D4/bass: staff coordinate",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "D4/bass: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "chart MIDI 63: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 63: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#4: name resolves to MIDI",
+      "passed": true,
+      "detail": 63
+    },
+    {
+      "name": "D#4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#4/treble: staff coordinate",
+      "passed": true,
+      "detail": -1
+    },
+    {
+      "name": "D#4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#4/bass: staff coordinate",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "D#4/bass: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "Eb4: name resolves to MIDI",
+      "passed": true,
+      "detail": 63
+    },
+    {
+      "name": "Eb4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb4/treble: staff coordinate",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Eb4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb4/bass: staff coordinate",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "Eb4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "chart MIDI 64: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 64: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E4: name resolves to MIDI",
+      "passed": true,
+      "detail": 64
+    },
+    {
+      "name": "E4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E4/treble: staff coordinate",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "E4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E4/bass: staff coordinate",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "E4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "chart MIDI 65: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 65: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F4: name resolves to MIDI",
+      "passed": true,
+      "detail": 65
+    },
+    {
+      "name": "F4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F4/treble: staff coordinate",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "F4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F4/bass: staff coordinate",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "F4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "chart MIDI 66: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 66: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#4: name resolves to MIDI",
+      "passed": true,
+      "detail": 66
+    },
+    {
+      "name": "F#4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#4/treble: staff coordinate",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "F#4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#4/bass: staff coordinate",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "F#4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "Gb4: name resolves to MIDI",
+      "passed": true,
+      "detail": 66
+    },
+    {
+      "name": "Gb4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb4/treble: staff coordinate",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "Gb4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb4/bass: staff coordinate",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "Gb4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "chart MIDI 67: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 67: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G4: name resolves to MIDI",
+      "passed": true,
+      "detail": 67
+    },
+    {
+      "name": "G4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G4/treble: staff coordinate",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "G4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G4/bass: staff coordinate",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "G4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "chart MIDI 68: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 68: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#4: name resolves to MIDI",
+      "passed": true,
+      "detail": 68
+    },
+    {
+      "name": "G#4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#4/treble: staff coordinate",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "G#4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#4/bass: staff coordinate",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "G#4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "Ab4: name resolves to MIDI",
+      "passed": true,
+      "detail": 68
+    },
+    {
+      "name": "Ab4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab4/treble: staff coordinate",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "Ab4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab4/bass: staff coordinate",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "Ab4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "chart MIDI 69: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 69: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A4: name resolves to MIDI",
+      "passed": true,
+      "detail": 69
+    },
+    {
+      "name": "A4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A4/treble: staff coordinate",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "A4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A4/bass: staff coordinate",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "A4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "chart MIDI 70: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 70: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#4: name resolves to MIDI",
+      "passed": true,
+      "detail": 70
+    },
+    {
+      "name": "A#4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#4/treble: staff coordinate",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "A#4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#4/bass: staff coordinate",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "A#4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "Bb4: name resolves to MIDI",
+      "passed": true,
+      "detail": 70
+    },
+    {
+      "name": "Bb4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb4/treble: staff coordinate",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Bb4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb4/bass: staff coordinate",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "Bb4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "chart MIDI 71: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 71: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B4: name resolves to MIDI",
+      "passed": true,
+      "detail": 71
+    },
+    {
+      "name": "B4/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B4/treble: staff coordinate",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "B4/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B4/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B4/bass: staff coordinate",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "B4/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "chart MIDI 72: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 72: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C5: name resolves to MIDI",
+      "passed": true,
+      "detail": 72
+    },
+    {
+      "name": "C5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C5/treble: staff coordinate",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "C5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C5/bass: staff coordinate",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "name": "C5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "chart MIDI 73: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 73: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#5: name resolves to MIDI",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "C#5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#5/treble: staff coordinate",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "C#5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#5/bass: staff coordinate",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "name": "C#5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "Db5: name resolves to MIDI",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "Db5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db5/treble: staff coordinate",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "Db5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db5/bass: staff coordinate",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "Db5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "chart MIDI 74: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 74: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D5: name resolves to MIDI",
+      "passed": true,
+      "detail": 74
+    },
+    {
+      "name": "D5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D5/treble: staff coordinate",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "D5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D5/bass: staff coordinate",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "D5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "chart MIDI 75: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 75: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#5: name resolves to MIDI",
+      "passed": true,
+      "detail": 75
+    },
+    {
+      "name": "D#5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#5/treble: staff coordinate",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "D#5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#5/bass: staff coordinate",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "D#5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "Eb5: name resolves to MIDI",
+      "passed": true,
+      "detail": 75
+    },
+    {
+      "name": "Eb5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb5/treble: staff coordinate",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "Eb5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb5/bass: staff coordinate",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "name": "Eb5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "chart MIDI 76: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 76: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E5: name resolves to MIDI",
+      "passed": true,
+      "detail": 76
+    },
+    {
+      "name": "E5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E5/treble: staff coordinate",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "E5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E5/bass: staff coordinate",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "name": "E5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "chart MIDI 77: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 77: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F5: name resolves to MIDI",
+      "passed": true,
+      "detail": 77
+    },
+    {
+      "name": "F5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F5/treble: staff coordinate",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "F5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F5/bass: staff coordinate",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "F5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "chart MIDI 78: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 78: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#5: name resolves to MIDI",
+      "passed": true,
+      "detail": 78
+    },
+    {
+      "name": "F#5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#5/treble: staff coordinate",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "F#5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#5/bass: staff coordinate",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "F#5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "Gb5: name resolves to MIDI",
+      "passed": true,
+      "detail": 78
+    },
+    {
+      "name": "Gb5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb5/treble: staff coordinate",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "Gb5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb5/bass: staff coordinate",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "Gb5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "chart MIDI 79: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 79: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G5: name resolves to MIDI",
+      "passed": true,
+      "detail": 79
+    },
+    {
+      "name": "G5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G5/treble: staff coordinate",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "G5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G5/bass: staff coordinate",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "G5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "chart MIDI 80: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 80: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#5: name resolves to MIDI",
+      "passed": true,
+      "detail": 80
+    },
+    {
+      "name": "G#5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#5/treble: staff coordinate",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "G#5/treble: ledger lines",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#5/bass: staff coordinate",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "G#5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "Ab5: name resolves to MIDI",
+      "passed": true,
+      "detail": 80
+    },
+    {
+      "name": "Ab5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab5/treble: staff coordinate",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "Ab5/treble: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "Ab5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab5/bass: staff coordinate",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "Ab5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "chart MIDI 81: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 81: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A5: name resolves to MIDI",
+      "passed": true,
+      "detail": 81
+    },
+    {
+      "name": "A5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A5/treble: staff coordinate",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "A5/treble: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "A5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A5/bass: staff coordinate",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "A5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "chart MIDI 82: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 82: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#5: name resolves to MIDI",
+      "passed": true,
+      "detail": 82
+    },
+    {
+      "name": "A#5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#5/treble: staff coordinate",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "A#5/treble: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "A#5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#5/bass: staff coordinate",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "A#5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "Bb5: name resolves to MIDI",
+      "passed": true,
+      "detail": 82
+    },
+    {
+      "name": "Bb5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb5/treble: staff coordinate",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "Bb5/treble: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "Bb5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb5/bass: staff coordinate",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "Bb5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "chart MIDI 83: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 83: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B5: name resolves to MIDI",
+      "passed": true,
+      "detail": 83
+    },
+    {
+      "name": "B5/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B5/treble: staff coordinate",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "B5/treble: ledger lines",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "B5/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B5/bass: staff coordinate",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "B5/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "chart MIDI 84: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 84: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C6: name resolves to MIDI",
+      "passed": true,
+      "detail": 84
+    },
+    {
+      "name": "C6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C6/treble: staff coordinate",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "C6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "C6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C6/bass: staff coordinate",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "C6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "chart MIDI 85: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 85: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#6: name resolves to MIDI",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "C#6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#6/treble: staff coordinate",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "C#6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "C#6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#6/bass: staff coordinate",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "C#6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "Db6: name resolves to MIDI",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "Db6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db6/treble: staff coordinate",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "Db6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "Db6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db6/bass: staff coordinate",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "Db6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "chart MIDI 86: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 86: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D6: name resolves to MIDI",
+      "passed": true,
+      "detail": 86
+    },
+    {
+      "name": "D6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D6/treble: staff coordinate",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "D6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "D6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D6/bass: staff coordinate",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "D6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "chart MIDI 87: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 87: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#6: name resolves to MIDI",
+      "passed": true,
+      "detail": 87
+    },
+    {
+      "name": "D#6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#6/treble: staff coordinate",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "D#6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12"
+    },
+    {
+      "name": "D#6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#6/bass: staff coordinate",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "D#6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "Eb6: name resolves to MIDI",
+      "passed": true,
+      "detail": 87
+    },
+    {
+      "name": "Eb6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb6/treble: staff coordinate",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "Eb6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "Eb6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb6/bass: staff coordinate",
+      "passed": true,
+      "detail": 26
+    },
+    {
+      "name": "Eb6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26"
+    },
+    {
+      "name": "chart MIDI 88: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 88: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E6: name resolves to MIDI",
+      "passed": true,
+      "detail": 88
+    },
+    {
+      "name": "E6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E6/treble: staff coordinate",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "name": "E6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "E6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E6/bass: staff coordinate",
+      "passed": true,
+      "detail": 26
+    },
+    {
+      "name": "E6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26"
+    },
+    {
+      "name": "chart MIDI 89: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 89: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F6: name resolves to MIDI",
+      "passed": true,
+      "detail": 89
+    },
+    {
+      "name": "F6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F6/treble: staff coordinate",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "F6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "F6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F6/bass: staff coordinate",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "F6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26"
+    },
+    {
+      "name": "chart MIDI 90: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 90: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#6: name resolves to MIDI",
+      "passed": true,
+      "detail": 90
+    },
+    {
+      "name": "F#6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#6/treble: staff coordinate",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "F#6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14"
+    },
+    {
+      "name": "F#6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#6/bass: staff coordinate",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "F#6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26"
+    },
+    {
+      "name": "Gb6: name resolves to MIDI",
+      "passed": true,
+      "detail": 90
+    },
+    {
+      "name": "Gb6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb6/treble: staff coordinate",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "Gb6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "Gb6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb6/bass: staff coordinate",
+      "passed": true,
+      "detail": 28
+    },
+    {
+      "name": "Gb6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28"
+    },
+    {
+      "name": "chart MIDI 91: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 91: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G6: name resolves to MIDI",
+      "passed": true,
+      "detail": 91
+    },
+    {
+      "name": "G6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G6/treble: staff coordinate",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "G6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "G6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G6/bass: staff coordinate",
+      "passed": true,
+      "detail": 28
+    },
+    {
+      "name": "G6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28"
+    },
+    {
+      "name": "chart MIDI 92: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 92: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#6: name resolves to MIDI",
+      "passed": true,
+      "detail": 92
+    },
+    {
+      "name": "G#6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#6/treble: staff coordinate",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "G#6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "G#6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#6/bass: staff coordinate",
+      "passed": true,
+      "detail": 28
+    },
+    {
+      "name": "G#6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28"
+    },
+    {
+      "name": "Ab6: name resolves to MIDI",
+      "passed": true,
+      "detail": 92
+    },
+    {
+      "name": "Ab6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab6/treble: staff coordinate",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "name": "Ab6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "Ab6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab6/bass: staff coordinate",
+      "passed": true,
+      "detail": 29
+    },
+    {
+      "name": "Ab6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28"
+    },
+    {
+      "name": "chart MIDI 93: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 93: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A6: name resolves to MIDI",
+      "passed": true,
+      "detail": 93
+    },
+    {
+      "name": "A6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A6/treble: staff coordinate",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "name": "A6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "A6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A6/bass: staff coordinate",
+      "passed": true,
+      "detail": 29
+    },
+    {
+      "name": "A6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28"
+    },
+    {
+      "name": "chart MIDI 94: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 94: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#6: name resolves to MIDI",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "name": "A#6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#6/treble: staff coordinate",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "name": "A#6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16"
+    },
+    {
+      "name": "A#6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#6/bass: staff coordinate",
+      "passed": true,
+      "detail": 29
+    },
+    {
+      "name": "A#6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28"
+    },
+    {
+      "name": "Bb6: name resolves to MIDI",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "name": "Bb6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb6/treble: staff coordinate",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "Bb6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "Bb6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb6/bass: staff coordinate",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "name": "Bb6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30"
+    },
+    {
+      "name": "chart MIDI 95: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 95: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B6: name resolves to MIDI",
+      "passed": true,
+      "detail": 95
+    },
+    {
+      "name": "B6/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B6/treble: staff coordinate",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "B6/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "B6/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B6/bass: staff coordinate",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "name": "B6/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30"
+    },
+    {
+      "name": "chart MIDI 96: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 96: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C7: name resolves to MIDI",
+      "passed": true,
+      "detail": 96
+    },
+    {
+      "name": "C7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C7/treble: staff coordinate",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "name": "C7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "C7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C7/bass: staff coordinate",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "name": "C7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30"
+    },
+    {
+      "name": "chart MIDI 97: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 97: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#7: name resolves to MIDI",
+      "passed": true,
+      "detail": 97
+    },
+    {
+      "name": "C#7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#7/treble: staff coordinate",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "name": "C#7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18"
+    },
+    {
+      "name": "C#7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C#7/bass: staff coordinate",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "name": "C#7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30"
+    },
+    {
+      "name": "Db7: name resolves to MIDI",
+      "passed": true,
+      "detail": 97
+    },
+    {
+      "name": "Db7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db7/treble: staff coordinate",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "Db7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "Db7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Db7/bass: staff coordinate",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "name": "Db7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32"
+    },
+    {
+      "name": "chart MIDI 98: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 98: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D7: name resolves to MIDI",
+      "passed": true,
+      "detail": 98
+    },
+    {
+      "name": "D7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D7/treble: staff coordinate",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "D7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "D7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D7/bass: staff coordinate",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "name": "D7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32"
+    },
+    {
+      "name": "chart MIDI 99: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 99: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#7: name resolves to MIDI",
+      "passed": true,
+      "detail": 99
+    },
+    {
+      "name": "D#7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#7/treble: staff coordinate",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "D#7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "D#7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D#7/bass: staff coordinate",
+      "passed": true,
+      "detail": 32
+    },
+    {
+      "name": "D#7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32"
+    },
+    {
+      "name": "Eb7: name resolves to MIDI",
+      "passed": true,
+      "detail": 99
+    },
+    {
+      "name": "Eb7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb7/treble: staff coordinate",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "Eb7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "Eb7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eb7/bass: staff coordinate",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "name": "Eb7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32"
+    },
+    {
+      "name": "chart MIDI 100: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 100: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E7: name resolves to MIDI",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "E7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E7/treble: staff coordinate",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "E7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20"
+    },
+    {
+      "name": "E7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E7/bass: staff coordinate",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "name": "E7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32"
+    },
+    {
+      "name": "chart MIDI 101: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 101: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F7: name resolves to MIDI",
+      "passed": true,
+      "detail": 101
+    },
+    {
+      "name": "F7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F7/treble: staff coordinate",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "F7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "F7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F7/bass: staff coordinate",
+      "passed": true,
+      "detail": 34
+    },
+    {
+      "name": "F7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34"
+    },
+    {
+      "name": "chart MIDI 102: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 102: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#7: name resolves to MIDI",
+      "passed": true,
+      "detail": 102
+    },
+    {
+      "name": "F#7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#7/treble: staff coordinate",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "F#7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "F#7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F#7/bass: staff coordinate",
+      "passed": true,
+      "detail": 34
+    },
+    {
+      "name": "F#7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34"
+    },
+    {
+      "name": "Gb7: name resolves to MIDI",
+      "passed": true,
+      "detail": 102
+    },
+    {
+      "name": "Gb7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb7/treble: staff coordinate",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "Gb7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "Gb7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Gb7/bass: staff coordinate",
+      "passed": true,
+      "detail": 35
+    },
+    {
+      "name": "Gb7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34"
+    },
+    {
+      "name": "chart MIDI 103: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 103: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G7: name resolves to MIDI",
+      "passed": true,
+      "detail": 103
+    },
+    {
+      "name": "G7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G7/treble: staff coordinate",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "G7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "G7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G7/bass: staff coordinate",
+      "passed": true,
+      "detail": 35
+    },
+    {
+      "name": "G7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34"
+    },
+    {
+      "name": "chart MIDI 104: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 104: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#7: name resolves to MIDI",
+      "passed": true,
+      "detail": 104
+    },
+    {
+      "name": "G#7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#7/treble: staff coordinate",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "G#7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22"
+    },
+    {
+      "name": "G#7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G#7/bass: staff coordinate",
+      "passed": true,
+      "detail": 35
+    },
+    {
+      "name": "G#7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34"
+    },
+    {
+      "name": "Ab7: name resolves to MIDI",
+      "passed": true,
+      "detail": 104
+    },
+    {
+      "name": "Ab7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab7/treble: staff coordinate",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "Ab7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "Ab7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ab7/bass: staff coordinate",
+      "passed": true,
+      "detail": 36
+    },
+    {
+      "name": "Ab7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34,36"
+    },
+    {
+      "name": "chart MIDI 105: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 105: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7: name resolves to MIDI",
+      "passed": true,
+      "detail": 105
+    },
+    {
+      "name": "A7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7/treble: staff coordinate",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "A7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "A7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7/bass: staff coordinate",
+      "passed": true,
+      "detail": 36
+    },
+    {
+      "name": "A7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34,36"
+    },
+    {
+      "name": "chart MIDI 106: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 106: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#7: name resolves to MIDI",
+      "passed": true,
+      "detail": 106
+    },
+    {
+      "name": "A#7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#7/treble: staff coordinate",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "A#7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "A#7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A#7/bass: staff coordinate",
+      "passed": true,
+      "detail": 36
+    },
+    {
+      "name": "A#7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34,36"
+    },
+    {
+      "name": "Bb7: name resolves to MIDI",
+      "passed": true,
+      "detail": 106
+    },
+    {
+      "name": "Bb7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb7/treble: staff coordinate",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "Bb7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "Bb7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bb7/bass: staff coordinate",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "Bb7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34,36"
+    },
+    {
+      "name": "chart MIDI 107: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 107: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B7: name resolves to MIDI",
+      "passed": true,
+      "detail": 107
+    },
+    {
+      "name": "B7/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B7/treble: staff coordinate",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "B7/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24"
+    },
+    {
+      "name": "B7/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B7/bass: staff coordinate",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "B7/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34,36"
+    },
+    {
+      "name": "chart MIDI 108: key color",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart MIDI 108: has spelling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C8: name resolves to MIDI",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "C8/treble: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C8/treble: staff coordinate",
+      "passed": true,
+      "detail": 26
+    },
+    {
+      "name": "C8/treble: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26"
+    },
+    {
+      "name": "C8/bass: pitch and clef",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C8/bass: staff coordinate",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "name": "C8/bass: ledger lines",
+      "passed": true,
+      "detail": "10,12,14,16,18,20,22,24,26,28,30,32,34,36,38"
+    },
+    {
+      "name": "Coverage contains 26 source groups",
+      "passed": true,
+      "detail": 26
+    },
+    {
+      "name": "Coverage matches the current three pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Coverage does not mark reserved source tasks complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Only seven authorized business routes exist",
+      "passed": true,
+      "detail": "src/app/chords/a-major/page.tsx, src/app/chords/a-minor/page.tsx, src/app/chords/c-major/page.tsx, src/app/chords/page.tsx, src/app/keyboard-notes/chart/page.tsx, src/app/keyboard-notes/labeled/page.tsx, src/app/keyboard-notes/page.tsx"
+    },
+    {
+      "name": "No dynamic route exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Three distinct page templates are exported",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Site chrome is actually imported",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "New keyboard imports shared geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A minor keyboard imports shared geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Client components do not read the master or filesystem",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No internal Markdown/JSON/HTML is public",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Asset map has four keyboard PDFs",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf: hash matches asset map",
+      "passed": true,
+      "detail": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60"
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf: byte count matches asset map",
+      "passed": true,
+      "detail": 60986
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf: declared generated provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf: hash matches asset map",
+      "passed": true,
+      "detail": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16"
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf: byte count matches asset map",
+      "passed": true,
+      "detail": 61190
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf: declared generated provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf: hash matches asset map",
+      "passed": true,
+      "detail": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f"
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf: byte count matches asset map",
+      "passed": true,
+      "detail": 49504
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf: declared generated provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf: hash matches asset map",
+      "passed": true,
+      "detail": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574"
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf: byte count matches asset map",
+      "passed": true,
+      "detail": 49696
+    },
+    {
+      "name": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf: declared generated provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only design source unchanged: docs/product/url-plan.final.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only design source unchanged: docs/content/chords/content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only design source unchanged: docs/content/chords/page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only design source unchanged: docs/design/reference/final-a-minor.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only design source unchanged: docs/design/reference/final-prototype.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Current reviewed files match the 02 implementation handoff snapshot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes: content source map entry exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled: content source map entry exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart: content source map entry exists",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "url": "/chords",
+    "id": "P148",
+    "required_output": "默认有图表；根音/类型选择、试听、打印及读图说明。",
+    "status": "implemented: 默认九个图表、筛选、声音、当前/集合打印与读图",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P154",
+    "required_output": "minor 选择后显示经过核对的实际和弦结果。",
+    "status": "implemented for supplied collection: 两个 minor 命名结果；不声称全量",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P158",
+    "required_output": "major 选择后显示经过核对的实际和弦结果。",
+    "status": "implemented for supplied collection: 七个 major 命名结果；不声称全量",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P168",
+    "required_output": "power chord 的实际结果与使用说明，不能只有标签。",
+    "status": "planned / withheld: power 无数据，不显示假选项",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P170",
+    "required_output": "明确 7th 涉及的类别和输出；不把它无条件改成 major7。",
+    "status": "planned / withheld: 7th 类别和结果未准备，未以 major7 替代",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P171",
+    "required_output": "jazz 相关和弦的实际示例及说明，不只加一个风格按钮。",
+    "status": "planned / withheld: jazz 未准备，不显示假风格按钮",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P238",
+    "required_output": "大小和弦对比包含音图/示例和区别，不用类型筛选器代替解释。",
+    "status": "implemented: A 与 C 两组大小三和弦具体图、音名表与原解释",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords",
+    "id": "P247",
+    "required_output": "如何读键盘图、组成音和标记；深入学习连接指南。",
+    "status": "partial: 完整读图；深入指南未授权，链接不开放",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords/a-minor",
+    "id": "P151",
+    "required_output": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+    "status": "prior approved scope preserved; full regression passed",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords/a-major",
+    "id": "P149",
+    "required_output": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+    "status": "implemented: A major 三位置、音程、齐奏/逐音、打印/PDF；指法 null，不开放未上线相关目标",
+    "release_gate": "original professional/material/release conditions unchanged"
+  },
+  {
+    "url": "/chords/c-major",
+    "id": "P163",
+    "required_output": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+    "status": "implemented: C major 三位置；已提供 RH 原位常见指法例独立说明，其余 null",
+    "release_gate": "original professional/material/release conditions unchanged"
+  }
+]

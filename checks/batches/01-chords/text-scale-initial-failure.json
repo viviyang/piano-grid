@@ -1,0 +1,9 @@
+{
+  "evidence": "Original tool output from check-filter-layout.mjs before center text-scale fix; final report is filter-layout.json",
+  "failures": [
+    {"width":320,"scale":"200%","scroll":389,"fieldWidth":254,"textWidth":257.65625,"space":186},
+    {"width":390,"scale":"200%","scroll":390,"fieldWidth":324,"textWidth":257.65625,"space":256},
+    {"width":768,"scale":"200%","scroll":1085,"fieldWidth":638,"textWidth":273.759765625,"space":570}
+  ],
+  "fix": "T06 container reflow, responsive native filter widths, full wrapping selected-value disclosure only when text is clipped. Font sizes unchanged."
+}

@@ -1,0 +1,9 @@
+{
+  "reference": "checks/batches/03-scales/changed-files.json",
+  "algorithm": "SHA-256",
+  "verified_source_file_count": 15,
+  "matched": 15,
+  "mismatched": 0,
+  "checked_at": "2026-09-09",
+  "note": "Every path in source_changes was hashed from the paused working tree and matched the developer handoff digest."
+}

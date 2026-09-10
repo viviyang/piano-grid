@@ -1,0 +1,693 @@
+{
+  "captured_at": "2026-09-10T10:20:05.6522830+08:00",
+  "stage": "before-08",
+  "git_head": "29d9c472fbc675ab6a5e39d7d9ad4cd721c6c232",
+  "git_status": [
+    " M ../docs/decision-log.md",
+    " M ../docs/next-thread-handoff.md",
+    " M ../docs/okr.md",
+    " M ../docs/projects-status.md",
+    " M ../docs/roadmap-3month.md",
+    " M ../roomreset-ai/src/app/checkout/page.tsx",
+    " M ../roomreset-ai/src/app/globals.css",
+    " M ../roomreset-ai/src/app/page.tsx",
+    " M ../roomreset-ai/src/app/reset/[sessionId]/done/page.tsx",
+    " M ../roomreset-ai/src/app/reset/[sessionId]/page.tsx",
+    " M ../roomreset-ai/src/components/DemoShowcase.tsx",
+    " M ../roomreset-ai/src/components/FocusView.tsx",
+    " M ../roomreset-ai/src/components/StepChecklist.tsx",
+    " M ../roomreset-ai/src/components/UploadZone.tsx",
+    "?? ../docs/product/"
+  ],
+  "node": "v24.14.1",
+  "npm": "11.11.0",
+  "build_command": "npm run build",
+  "production_base": "http://127.0.0.1:3001",
+  "file_hashes": [
+    {
+      "path": "docs/release/release-readiness.md",
+      "bytes": 7259,
+      "sha256": "f52dd98097c47b50712beed2b7e387bf7c35d79edcdd04f7e8406f94a132761b"
+    },
+    {
+      "path": "docs/tasks/site-implementation-plan.md",
+      "bytes": 17641,
+      "sha256": "f750c9f93d71573e4ca16676fdb0a13e7dfa5592782466d9fbb987fbee5e099e"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 204,
+      "sha256": "fbef8ff745dadbf95c0fa93151ae4c67194f5a1c1f0aa58ae867eafe16e5a9cc"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 57282,
+      "sha256": "4879cca1b4d73e2644a56581bc08e3c63e601984fb070bdb1a860fd644c00c35"
+    },
+    {
+      "path": "package.json",
+      "bytes": 916,
+      "sha256": "92652a107ed71f2d17e66a8da02da35915ee7a716a0ba4704845a4c3aed571f4"
+    },
+    {
+      "path": "public/assets/chords/a-minor-notes-inversions.pdf",
+      "bytes": 47429,
+      "sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1"
+    },
+    {
+      "path": "public/assets/guides/piano-starter-and-reading.pdf",
+      "bytes": 58564,
+      "sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2"
+    },
+    {
+      "path": "public/reference/assets/blank-piano-staff-a4.pdf",
+      "bytes": 45738,
+      "sha256": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf"
+    },
+    {
+      "path": "public/reference/assets/blank-piano-staff-letter.pdf",
+      "bytes": 45614,
+      "sha256": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa"
+    },
+    {
+      "path": "public/reference/assets/blank-piano-staff-preview.svg",
+      "bytes": 17018,
+      "sha256": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec"
+    },
+    {
+      "path": "public/reference/assets/chord-a-major.pdf",
+      "bytes": 44640,
+      "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a"
+    },
+    {
+      "path": "public/reference/assets/chord-c-major.pdf",
+      "bytes": 44576,
+      "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf",
+      "bytes": 49504,
+      "sha256": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+      "bytes": 49696,
+      "sha256": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf",
+      "bytes": 60986,
+      "sha256": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60"
+    },
+    {
+      "path": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "bytes": 61190,
+      "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16"
+    },
+    {
+      "path": "public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "bytes": 29759,
+      "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf"
+    },
+    {
+      "path": "scripts/check-a-minor.mjs",
+      "bytes": 20364,
+      "sha256": "d6a1f75a157751af91d332f24e29b6272f8e9a880a56a0ed5187535ef298a4d7"
+    },
+    {
+      "path": "scripts/check-blank-sheet-batch.mjs",
+      "bytes": 7523,
+      "sha256": "bd98d7e1fdfb1ea371477618ec4722b79411803c54aa67d9b62957610f930795"
+    },
+    {
+      "path": "scripts/check-blank-sheet-data.mjs",
+      "bytes": 4787,
+      "sha256": "cd4c62134fd7727fe95b47449b32e694c68ee4614fee4e688371a34ce3bee585"
+    },
+    {
+      "path": "scripts/check-blank-sheet-pdfs.py",
+      "bytes": 3409,
+      "sha256": "d844c682d5fac932c082ec618aab232c47601ec745c177fb7d9425b87570a966"
+    },
+    {
+      "path": "scripts/check-blank-sheet-production.mjs",
+      "bytes": 3079,
+      "sha256": "c8b8b0a6a4db99d81d2d9ef3e298d343bf67ba8dd6d8069e816d05bfb0ec5427"
+    },
+    {
+      "path": "scripts/check-chord-batch.mjs",
+      "bytes": 15356,
+      "sha256": "b4e6aaea0802c6122e51126f63131f22e72c4e2fbffbea17dee3db34d9283174"
+    },
+    {
+      "path": "scripts/check-chord-fallbacks.mjs",
+      "bytes": 4172,
+      "sha256": "78bc35fd58d96b3f84a58ee3affa313d29fa6442912ccdc542262bd241a377ac"
+    },
+    {
+      "path": "scripts/check-content-adapters.mjs",
+      "bytes": 4261,
+      "sha256": "9c0a559d40d4e8de74804634d8b0292dd0a769bc02085b4a680f0e04fea5c0a7"
+    },
+    {
+      "path": "scripts/check-css.mjs",
+      "bytes": 4760,
+      "sha256": "761e6a2bf9100621f64062f390e8aa5d2906ced11b0646775b4df6ab7a66f955"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "bytes": 12644,
+      "sha256": "2256dc7bc3d0670e7d8fbcc064a8c001173081610f31c2cbbb138f6c92654a0a"
+    },
+    {
+      "path": "scripts/check-guide-batch.mjs",
+      "bytes": 7741,
+      "sha256": "6f46a1621b97170838744214110b771014b4ea206a85f865820c4dbb0ae65ff7"
+    },
+    {
+      "path": "scripts/check-guide-data.mjs",
+      "bytes": 5879,
+      "sha256": "1f9b0f1e9977d7a9efae931e72864629b2a50ba022d67ae2317db086718351d6"
+    },
+    {
+      "path": "scripts/check-guide-production.mjs",
+      "bytes": 2882,
+      "sha256": "4b636327df257bfd0dddefd210a2b71868a517e836b476ee81cf3525205de349"
+    },
+    {
+      "path": "scripts/check-integration-batch.mjs",
+      "bytes": 8145,
+      "sha256": "93b43165a70c9991bb6c266a0cb0b7686e15212d4642ad58541149e2650be533"
+    },
+    {
+      "path": "scripts/check-integration-data.mjs",
+      "bytes": 4301,
+      "sha256": "0263247b52bafad08c2b1685ca72c85e8de9f224531e3d97010a0111d6390b1a"
+    },
+    {
+      "path": "scripts/check-integration-production.mjs",
+      "bytes": 3917,
+      "sha256": "4647896025d14650c5a55f7c794df03a6d77320f9535b66948065abadd241dbc"
+    },
+    {
+      "path": "scripts/check-keyboard-batch.mjs",
+      "bytes": 10190,
+      "sha256": "af9754febc9a5b048fbcfcb99a448538c9a1162067371e5bf212bf86c7a3de22"
+    },
+    {
+      "path": "scripts/check-keyboard-data.mjs",
+      "bytes": 2500,
+      "sha256": "9c91ea5a6bbca72c4b3c9389e304fe1023987fc4cdc4838d76ba0bc096221448"
+    },
+    {
+      "path": "scripts/check-keyboard-fallbacks.mjs",
+      "bytes": 4078,
+      "sha256": "61885b545273f3bc7f4c334399b2d8d73728d311c6deaf4ceaedf71010cefd30"
+    },
+    {
+      "path": "scripts/check-keyboard-production.mjs",
+      "bytes": 2934,
+      "sha256": "ee248e8f3bb15fcb689ec2e916c90b652fb3b55c183a9efb3e49eafd58548eff"
+    },
+    {
+      "path": "scripts/check-scale-batch.mjs",
+      "bytes": 14659,
+      "sha256": "85fc59b3534cb1e6fdf71193eb756594eacae4b6fa8cbbd4c458946429bc7c7c"
+    },
+    {
+      "path": "scripts/check-scale-data.mjs",
+      "bytes": 8239,
+      "sha256": "e3d0d0720a2eee5133f430dc2eedccd593636c8f87748d9d4c820bc212d7ca4c"
+    },
+    {
+      "path": "scripts/check-scale-fallbacks.mjs",
+      "bytes": 5620,
+      "sha256": "dab960d309b6c65bc9c0db8ade5c9e1eee9eeba097e01d3c3084f88228b7b0e5"
+    },
+    {
+      "path": "scripts/check-scale-pdfs.py",
+      "bytes": 3340,
+      "sha256": "18d4b5f2d374de2e8213c778ac76c8aa1d10b3c122184072b8e2e5904a2e4b4d"
+    },
+    {
+      "path": "scripts/check-scale-production.mjs",
+      "bytes": 3479,
+      "sha256": "14c2b7e4260e30e07ef5c69a0225bd5ea8732a62a122be91f0ce14f76ae5fbc3"
+    },
+    {
+      "path": "scripts/check-song-batch.mjs",
+      "bytes": 8973,
+      "sha256": "b9c404439744519232a3430c584624d69801246f5025ea343928ce275c876e60"
+    },
+    {
+      "path": "scripts/check-song-data.mjs",
+      "bytes": 6532,
+      "sha256": "f46c4d94f6767f8b5839f59d1ce6c80bbbe4272ef34b46a8bc4025bf176bc789"
+    },
+    {
+      "path": "scripts/check-song-production.mjs",
+      "bytes": 3086,
+      "sha256": "f6eb4002e334d3ede7d2f9b99eb84a46ea67609d64fef252a4a0886b437e4571"
+    },
+    {
+      "path": "scripts/export-chord-assets.mjs",
+      "bytes": 1446,
+      "sha256": "84006ff804406700563c5e5ff169c681edaaed640044d38c97f2d9f3730f3c81"
+    },
+    {
+      "path": "scripts/export-keyboard-pdfs.mjs",
+      "bytes": 1144,
+      "sha256": "2277258ac3eb246d5df0f8e915b3b4b386bc9c5b457f17bc30cc1d5cfc8f6ce1"
+    },
+    {
+      "path": "scripts/intake-site.mjs",
+      "bytes": 4422,
+      "sha256": "ed157ef74c8a63ea568f5ca29b0356f726d2c26236416b75a966ae8a543ace66"
+    },
+    {
+      "path": "scripts/record-chord-batch.mjs",
+      "bytes": 8087,
+      "sha256": "4b9f7f04c425f45f26d9904d54322a36fdd1d72ff5467a26d941ac5cf030957d"
+    },
+    {
+      "path": "src/app/chords/a-major/page.tsx",
+      "bytes": 472,
+      "sha256": "bbeae96d8be593b6241f17f7ab0063d337ac26215c1dc1d0e4d7263fa9a69871"
+    },
+    {
+      "path": "src/app/chords/a-minor/a-minor.css",
+      "bytes": 26170,
+      "sha256": "ba0e746d6ba9d1c330ee46688d6530c230d582ab9f7d29513e5eec3d77725d20"
+    },
+    {
+      "path": "src/app/chords/a-minor/page.tsx",
+      "bytes": 449,
+      "sha256": "44ce7b6b9d7a96ae0b471b4b7a04aef416f54301465207a09956edb95931432b"
+    },
+    {
+      "path": "src/app/chords/c-major/page.tsx",
+      "bytes": 472,
+      "sha256": "7316a71a48fd251306b0949cefdc7ea367505c8479f86d4bdc5c5000bf7f30c0"
+    },
+    {
+      "path": "src/app/chords/page.tsx",
+      "bytes": 438,
+      "sha256": "ea85819e0aad10630e5a164e445e622f8a2030647cb6063c9b009e41c5566c06"
+    },
+    {
+      "path": "src/app/globals.css",
+      "bytes": 7628,
+      "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+    },
+    {
+      "path": "src/app/guide/page.tsx",
+      "bytes": 363,
+      "sha256": "9e36ca2bc8ac89f317c095b5e3d7279df49a504deb52fe91abca351a29bfdc48"
+    },
+    {
+      "path": "src/app/guide/read-sheet-music/page.tsx",
+      "bytes": 386,
+      "sha256": "b67d33a7d4864ba81e39c571c45b478005711e47c3ca9f377f14702fa497dd38"
+    },
+    {
+      "path": "src/app/keyboard-notes/chart/page.tsx",
+      "bytes": 377,
+      "sha256": "7096c32c1472b48f965be58f436d40b00b48251d2a390b752add34275a4de09b"
+    },
+    {
+      "path": "src/app/keyboard-notes/labeled/page.tsx",
+      "bytes": 383,
+      "sha256": "59f070c5b9cc6dc87e82b06acb260e9347b6a00f8d50da27c0e29793ddee751b"
+    },
+    {
+      "path": "src/app/keyboard-notes/page.tsx",
+      "bytes": 373,
+      "sha256": "97f60576f6de1954b0a47dc19e871e71588e7b4e20d8d0ff8f330ed0aff2ff1a"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "bytes": 459,
+      "sha256": "2b0fef642e8a9896516b96933d37feeacdb39d5af07df64328cf4e2b25496dd2"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "bytes": 334,
+      "sha256": "61658d41470bbf59e58489360ef1f293c6a627c9c4484ffc8171f966635e680a"
+    },
+    {
+      "path": "src/app/scales/a-minor/page.tsx",
+      "bytes": 431,
+      "sha256": "a68aa0958e270af557594889a060de16c360a9c1487e65e1987ec799bb5dcc16"
+    },
+    {
+      "path": "src/app/scales/c-major/page.tsx",
+      "bytes": 431,
+      "sha256": "6ab63bd079e6caee260b92318fcd99f3eebc62db7c70e16f15f7346101ad4077"
+    },
+    {
+      "path": "src/app/scales/page.tsx",
+      "bytes": 373,
+      "sha256": "6e3dcdde156ea0dedd5bdfa006b78d3e77942c85422e20f6390f9db7a962b0f6"
+    },
+    {
+      "path": "src/app/songs/easy/page.tsx",
+      "bytes": 360,
+      "sha256": "c9ae4117a9e999c698649bbf7286ede8ed289664dd8b881597d78bd1b61c47b3"
+    },
+    {
+      "path": "src/app/songs/page.tsx",
+      "bytes": 359,
+      "sha256": "719d96c794a01ab70ee2af4b6b5579b03063699f55c3966c606f0b35e9af0fc0"
+    },
+    {
+      "path": "src/app/tools/blank-sheet-music/page.tsx",
+      "bytes": 376,
+      "sha256": "26520536619a28741f9db6fba0bdb3098ce4fa04be716dd89dbeae2e0dd2d733"
+    },
+    {
+      "path": "src/app/tools/page.tsx",
+      "bytes": 338,
+      "sha256": "ed8655a62d77d500e35730282911f62b1519b9d8bbf08038352faff537884d31"
+    },
+    {
+      "path": "src/components/a-minor/experience.tsx",
+      "bytes": 8425,
+      "sha256": "5282af4b9fca2a184cf7838ff8277e18fea0af99c597f51bf17325de8575c955"
+    },
+    {
+      "path": "src/components/a-minor/icon.tsx",
+      "bytes": 905,
+      "sha256": "46d07510c4414fbd42d0d281edc72904c1f9f786355d5f930b0badba262d95c4"
+    },
+    {
+      "path": "src/components/a-minor/keyboard.tsx",
+      "bytes": 1844,
+      "sha256": "648e79b50ddf6d65ee081951d1dbe7a805b57a02a6a4d4c349adc268c680d441"
+    },
+    {
+      "path": "src/components/a-minor/page-search.tsx",
+      "bytes": 2281,
+      "sha256": "b8d7dc9ea66f447a726322bd491a3f2c994860d95c9098a0f0fcd55dcd3a068b"
+    },
+    {
+      "path": "src/components/blank-sheet/blank-sheet-tool.tsx",
+      "bytes": 2444,
+      "sha256": "7600c724c78c4e175cd1bc5720dc5f4735ece35c04855fb9d90ca2abf0c8cc59"
+    },
+    {
+      "path": "src/components/blank-sheet/blank-sheet.css",
+      "bytes": 4416,
+      "sha256": "abba0dc1b07f0a38adbc9b2b5c7c328d9aeeedc0a55d271fb7c0d64855c73f09"
+    },
+    {
+      "path": "src/components/blank-sheet/pages.tsx",
+      "bytes": 1659,
+      "sha256": "31d2925d8a450db5e04aee3fd993f65faa1c36666fa7173b642aeb29c9692182"
+    },
+    {
+      "path": "src/components/chords/center-experience.tsx",
+      "bytes": 9695,
+      "sha256": "1748f0037a00985f08402c37ebee03e53290db48193b3c662511272e7ecf23ad"
+    },
+    {
+      "path": "src/components/chords/center-page.tsx",
+      "bytes": 2890,
+      "sha256": "e01f71237bc7487cefdef672355bdd05fc82527eee1a5c7cdb98a6cd73c2caeb"
+    },
+    {
+      "path": "src/components/chords/center.css",
+      "bytes": 4073,
+      "sha256": "050971d506053bf91d3179ccf16d24bd450ee6ba65df13afa8c25783c9384252"
+    },
+    {
+      "path": "src/components/chords/detail-page.tsx",
+      "bytes": 3101,
+      "sha256": "a0043d6415c6b0a770cf2d32d214b52281f01ef87d34adcc5b5ca9625f3ea230"
+    },
+    {
+      "path": "src/components/chords/keyboard-viewport.tsx",
+      "bytes": 2550,
+      "sha256": "ea988a705b776805ad9981dc471f0fab70c2890c42c05cb60780e6c1d9c0ffe9"
+    },
+    {
+      "path": "src/components/chords/playback-controls.tsx",
+      "bytes": 1128,
+      "sha256": "b48c49c75494809e8354c9b2f98d908591eb9de7a66b06be487e02a24ba3b6a0"
+    },
+    {
+      "path": "src/components/chords/print-voicing.tsx",
+      "bytes": 1074,
+      "sha256": "65c79b6fcb2eb34b7a649d94b52dadd175383f91699e3cdd815b37785e12d791"
+    },
+    {
+      "path": "src/components/chords/shared.css",
+      "bytes": 1702,
+      "sha256": "77ecf496d9015f201f706a705af9563474e19c4a6462bc02c404abe34baf744d"
+    },
+    {
+      "path": "src/components/chords/site-chrome.tsx",
+      "bytes": 1053,
+      "sha256": "ed4a994e4f807fc2930bf539efb3b9e948632bdac0b9d12ebe6314d117adf711"
+    },
+    {
+      "path": "src/components/guides/guides.css",
+      "bytes": 7152,
+      "sha256": "aa2c42f63d8e67f2a2bc374a15460a0425b14eb41a59dad2bc55bd6a39562338"
+    },
+    {
+      "path": "src/components/guides/pages.tsx",
+      "bytes": 6739,
+      "sha256": "a634500bda8faf51c8ba39bf3724f04c85f1a31e3dfb868c68972e7e2779fbda"
+    },
+    {
+      "path": "src/components/integration/integration.css",
+      "bytes": 4627,
+      "sha256": "da5d75f74bcd9b3f0bcd8ed9e6cc16e4a66d3d3b8d8277f7374a06264c857e77"
+    },
+    {
+      "path": "src/components/integration/pages.tsx",
+      "bytes": 5021,
+      "sha256": "f2b12bb50185369676e3dd43516c289882198746cba4f36625d84d2455dc2ee5"
+    },
+    {
+      "path": "src/components/keyboard-notes/chart-experience.tsx",
+      "bytes": 5291,
+      "sha256": "250a2e64b9021c7bc89da7428beb300b6bc4fe922587f6c9b91d55f4812b7fd5"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-diagram.tsx",
+      "bytes": 2720,
+      "sha256": "c382ce07ddc54be77623d409719bcd6ef8d6c88901a82bc23beffb47f5eeddde"
+    },
+    {
+      "path": "src/components/keyboard-notes/keyboard-notes.css",
+      "bytes": 5322,
+      "sha256": "7bad60d795ff5b4076b0f77312f258b0672b8361b7409544832ed3a75a41aa6b"
+    },
+    {
+      "path": "src/components/keyboard-notes/labeled-experience.tsx",
+      "bytes": 3030,
+      "sha256": "e1e46ed8e470f568a6992d9158cced2d3ada7d265ea7dfabc26f6ac5f6377edb"
+    },
+    {
+      "path": "src/components/keyboard-notes/lookup-experience.tsx",
+      "bytes": 3858,
+      "sha256": "27c45032dafbdf8eae239558dbf5c76b1766e34c308fa050bd2e479a0149f0aa"
+    },
+    {
+      "path": "src/components/keyboard-notes/pages.tsx",
+      "bytes": 2435,
+      "sha256": "16ce099955f4ce3ff7120ed5a5cf02df366a1da47eabfc4d271400e7c24a759c"
+    },
+    {
+      "path": "src/components/keyboard-notes/staff-diagram.tsx",
+      "bytes": 3399,
+      "sha256": "d8838a0848bac011fc2d446f5fae09b2dcdb2a7a697354122b1bbf719cc4fa25"
+    },
+    {
+      "path": "src/components/keyboard-notes/tool-controls.tsx",
+      "bytes": 1057,
+      "sha256": "8dc72d1a69d0f1280fc4034c652d52b03d8db71eca4a9dfe1619315c77e80008"
+    },
+    {
+      "path": "src/components/keyboard-notes/use-note-audio.ts",
+      "bytes": 1332,
+      "sha256": "6a20bf9d0be05d227cfba1cd8e5a33c8696afbf0816442aa87eec5f28c81f8d6"
+    },
+    {
+      "path": "src/components/scales/center-experience.tsx",
+      "bytes": 4586,
+      "sha256": "969cab0c84006fb80a4eb827ae55bea83efb58eff1c282ab9ca05810bd3674c7"
+    },
+    {
+      "path": "src/components/scales/detail-experience.tsx",
+      "bytes": 4464,
+      "sha256": "7dd659a3baa38cd0d19ddef4bc4ceee47ad308f55c4141c6dc77f58bde5e531a"
+    },
+    {
+      "path": "src/components/scales/pages.tsx",
+      "bytes": 5252,
+      "sha256": "ea27511e3602e024a34024d08e404180ca9516c897361d0d073146eb83ffb152"
+    },
+    {
+      "path": "src/components/scales/scale-reference.tsx",
+      "bytes": 5955,
+      "sha256": "56fd9e40a8da88a0eefae49541d07814c4c51fe6bdb4e2cbcdc622fa0c2bf2e9"
+    },
+    {
+      "path": "src/components/scales/scales.css",
+      "bytes": 7662,
+      "sha256": "67a9f2122796b89fa462e08e49a2c6de68409a2a731057c63a604e9eddc1332a"
+    },
+    {
+      "path": "src/components/scales/use-scale-audio.ts",
+      "bytes": 2007,
+      "sha256": "c045c46b49f71ca5fe792451a993f41b81b3d2eef3660fc55d486d9707486a32"
+    },
+    {
+      "path": "src/components/songs/center-experience.tsx",
+      "bytes": 3264,
+      "sha256": "8aa6774e4c151d3bf5381d6eaf1de29228d1f6409c6521375182395c6677f7cf"
+    },
+    {
+      "path": "src/components/songs/easy-experience.tsx",
+      "bytes": 1772,
+      "sha256": "45545fa7a00348920edda1e20d1e6dcc5a5a0b246695bacc9410f6d9a3363c22"
+    },
+    {
+      "path": "src/components/songs/pages.tsx",
+      "bytes": 3610,
+      "sha256": "18d62e59bf4e33a7f8dc37e3c2cb1498f4478050e2a4abb0e271087601dca735"
+    },
+    {
+      "path": "src/components/songs/resource-card.tsx",
+      "bytes": 2149,
+      "sha256": "b28807083dd90dc3ca16a9dfa008521dc063e12014f36b9fb17e5216be5ee100"
+    },
+    {
+      "path": "src/components/songs/songs.css",
+      "bytes": 7239,
+      "sha256": "fb85ebf104eb28a8832a06e16a7e514ce6e4a0e31391bb697dc1d6f5fd71cac0"
+    },
+    {
+      "path": "src/components/ui/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/hooks/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/lib/a-minor-audio.ts",
+      "bytes": 5207,
+      "sha256": "580cc26b6c22d0418cf848f56583fc72973d437fea593ba674a760f22fb56fee"
+    },
+    {
+      "path": "src/lib/a-minor-content.ts",
+      "bytes": 2603,
+      "sha256": "cd243e384b26fbce1cca19565bfd6fa2ba9f73c21e350441f0f2f3cd8b99fd6b"
+    },
+    {
+      "path": "src/lib/a-minor-types.ts",
+      "bytes": 1454,
+      "sha256": "7a32a270dcf30af6ec561cb2a8aa0fa409142db9143e1c0e589b13070e3979a6"
+    },
+    {
+      "path": "src/lib/blank-sheet-content.ts",
+      "bytes": 3059,
+      "sha256": "1eb300799a50c6634c6cfe51103637608e622a9625c6963e224792b2de45b56c"
+    },
+    {
+      "path": "src/lib/blank-sheet-types.ts",
+      "bytes": 650,
+      "sha256": "c197e563a3d6d174c1fb7fb31cde46a1817063577b4247ac47e6a2f65d162411"
+    },
+    {
+      "path": "src/lib/chord-content.ts",
+      "bytes": 7191,
+      "sha256": "d873d6ff9b54dce853c41a91bf73602b0f48348b257e8dfcdc80303b68986688"
+    },
+    {
+      "path": "src/lib/guide-content.ts",
+      "bytes": 5941,
+      "sha256": "c7cf950044022247a1afb10ef88862a4780cdc6657f00ef6314f5ae930e5fbda"
+    },
+    {
+      "path": "src/lib/guide-types.ts",
+      "bytes": 1411,
+      "sha256": "def078a658a76039f1e59be0e78bb5006ff3e4155b7b0d90ea5c4250e7b9da15"
+    },
+    {
+      "path": "src/lib/integration-content.ts",
+      "bytes": 3733,
+      "sha256": "74b6bdf904f2bd5f47f1e13e0e6a1d17e9a0094eabf3bd88067e11b33acf3c5b"
+    },
+    {
+      "path": "src/lib/integration-types.ts",
+      "bytes": 739,
+      "sha256": "a3010fcf5777bdde9ce658d180a829ae1878c56f9d36f2ed927204c753253f7c"
+    },
+    {
+      "path": "src/lib/keyboard-content.ts",
+      "bytes": 3347,
+      "sha256": "d4de40b98d55a009a8842eed398daa09fc9a66b6b80b00c9dd2782fb27d7123c"
+    },
+    {
+      "path": "src/lib/keyboard-geometry.ts",
+      "bytes": 285,
+      "sha256": "c9acdaa0632a5ea65f736b0b5d9a3a54fd2887f0cd8411c52e7e603a2d2260f0"
+    },
+    {
+      "path": "src/lib/keyboard-types.ts",
+      "bytes": 1253,
+      "sha256": "a92c6fac3b2d8452eeeec1265987f82766bbcf8d40fbc2dcdd0643a5ad23d999"
+    },
+    {
+      "path": "src/lib/scale-content.ts",
+      "bytes": 11399,
+      "sha256": "bfd34dca80ad7deff9e10df7408d884099b643484a45a93878b1c36ac120320c"
+    },
+    {
+      "path": "src/lib/scale-types.ts",
+      "bytes": 1429,
+      "sha256": "cae0ce65cf3f6ebaacc3efa1aac397ba6b45a76e89d87e3a5701e2c869e77951"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "bytes": 1635,
+      "sha256": "909bcb8af328d684f7feadd38ff7228219d1b0b6fb8db92908ceb2c4aad00a2b"
+    },
+    {
+      "path": "src/lib/song-content.ts",
+      "bytes": 7010,
+      "sha256": "c93ecb1dac3c3c18d5f5d201d0faa10e0eea1452ecf38b9040b33cd6e0c568c4"
+    },
+    {
+      "path": "src/lib/song-types.ts",
+      "bytes": 1728,
+      "sha256": "b2aad3d274639cba6c697832c01b37a714978a8c9ec4b982933afa6e26ed8127"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "bytes": 1016,
+      "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac"
+    },
+    {
+      "path": "src/styles/foundation.css",
+      "bytes": 5748,
+      "sha256": "f78ed427f08393b79bdbec82807249349a58daa2f2da524dc52ac888c38445b1"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "bytes": 15139,
+      "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 759,
+      "sha256": "cdfb686ea044a03fa72dfb02c4b4d7485106a92f0b4b2c3ef7731106d028ad53"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+from pathlib import Path
+p=Path('src/components/a-minor/experience.tsx');s=p.read_text(encoding='utf-8')
+s=s.replace("import { PageSearch } from './page-search';", "import { PageSearch } from './page-search';\nimport { SiteHeader, SiteFooter } from '../chords/site-chrome';\nimport { PlaybackControls } from '../chords/playback-controls';")
+s=s.replace("const PrintContext=createContext({ready:false,print:()=>{}});", "const PrintContext=createContext({ready:false,print:()=>{},pdf:{url:'',label:''}});")
+s=s.replace('const {ready,print}=useContext(PrintContext);','const {ready,print,pdf}=useContext(PrintContext);')
+s=s.replace('href="/assets/chords/a-minor-notes-inversions.pdf" download="a-minor-notes-inversions.pdf"','href={pdf.url} download')
+s=s.replace('<span>Download A minor PDF</span>','<span>{pdf.label}</span>')
+s=s.replace('value={{ready,print}}','value={{ready,print,pdf:data.pdf}}')
+s=s.replace('data-selected-voicing={selectedVoicingId}', 'data-selected-voicing={selectedVoicingId} data-position={voicing.inversion_label}')
+s=s.replace('href="#am-result"','href={`#${data.toolId}`}').replace('id="am-result" data-block-id="am-result"','id={data.toolId} data-block-id={data.toolId}')
+start=s.index('    <header className="am-site-header');end=s.index('\n    <main',start)
+s=s[:start]+'''    <SiteHeader search={<PageSearch ready={ready} sections={searchSections} onOpen={()=>player.current?.cancel()}/>}/>'''+s[end:]
+start=s.index('    <footer className="am-site-footer');end=s.index('\n    <article',start)
+s=s[:start]+'    <SiteFooter url={data.url}/>'+s[end:]
+start=s.index('<div className="am-playback-actions">');end=s.index('<PrintActions/>',start)
+s=s[:start]+'''<PlaybackControls ready={ready} state={audio.state} mode={audio.mode} onPlay={mode=>void player.current?.play(voicing,mode)} onStop={()=>player.current?.cancel('Playback stopped.','stopped')}/>'''+s[end:]
+s=s.replace('aria-label="Piano keyboard, C3 to C5. Use left and right arrow keys to scroll."','aria-label={`Piano keyboard, ${data.rangeLabel}. Use left and right arrow keys to scroll.`}')
+s=s.replace('<span className="am-range">C3–C5</span>','<span className="am-range">{data.rangeLabel}</span>')
+s=s.replace('/chords/a-minor · Current position reference','{data.url} · Current position reference')
+p.write_text(s,encoding='utf-8')
+p=Path('src/app/chords/a-minor/page.tsx');s=p.read_text(encoding='utf-8')
+s=s[s.index('export default function AMinorPage()'):]
+s=s.replace('export default function AMinorPage() {','export function ChordDetailPage({model}:{model:ReturnType<typeof getAMinorContent>}) {')
+s=s.replace('=getAMinorContent();','=model;\n  const prefix=data.namespace;')
+s=s.replace('data-block-id="am-intro"','data-block-id={`${prefix}-intro`}').replace('<span aria-current="page">A minor</span>','<span aria-current="page">{data.chord.name_en}</span>')
+s=s.replace('const intro=<section','const intro=introduction.length>0&&<section')
+s=s.replace("byId['am-result']",'byId[data.toolId]')
+s=s.replace("['am-intro','am-result','am-next']",'[`${prefix}-intro`,data.toolId,`${prefix}-next`]')
+s=s.replace("id==='am-inversions'",'id===`${prefix}-inversions`').replace("id==='am-questions'",'id===`${prefix}-questions`').replace("id==='am-print'",'id===`${prefix}-print`')
+s=s.replace('data-voicing-id={data.options[i].value}', 'data-voicing-id={data.options[i].value} data-position={data.options[i].label}')
+s=s.replace('A minor: root position, first inversion, and second inversion','{data.chord.name_en}: root position, first inversion, and second inversion')
+s=s.replace('      {id===`${prefix}-print`&&<PrintActions section/>}', '''      {id===`${prefix}-print`&&<PrintActions section/>}
+      {c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}''')
+s="import { getAMinorContent } from '@/lib/a-minor-content';\nimport { AMinorExperience as ChordDetailExperience, PrintActions } from '../a-minor/experience';\nimport '@/app/chords/a-minor/a-minor.css';\nimport './shared.css';\n"+s.replace('AMinorExperience','ChordDetailExperience')
+Path('src/components/chords/detail-page.tsx').write_text(s,encoding='utf-8')
+p.write_text("import {getAMinorContent} from '@/lib/a-minor-content';\nimport {ChordDetailPage} from '@/components/chords/detail-page';\nexport function generateMetadata(){const {metadata}=getAMinorContent();return {title:metadata.title,description:metadata.description,robots:{index:false,follow:false},icons:{icon:'data:,'}};}\nexport default function Page(){return <ChordDetailPage model={getAMinorContent()}/>;}\n",encoding='utf-8')

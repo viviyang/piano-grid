@@ -1,0 +1,11 @@
+
+> piano-reference@0.1.0 check
+> npm run check:foundation && npm run typecheck && npm run check:css
+
+
+> piano-reference@0.1.0 check:foundation
+> node scripts/check-foundation.mjs
+
+Foundation: 557 passed, 1 failed.
+NOTE: source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。
+FAIL: Only necessary authorized chord components 

@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-09",
+  "implemented_urls": [
+    "/chords/a-minor"
+  ],
+  "content_version": "1.0.0-batch-01",
+  "baseline_version": "2.0-consolidated-final-plan",
+  "inputs": [
+    {
+      "name": "page-content.json",
+      "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5",
+      "unchanged_from_mounted_original": true
+    },
+    {
+      "name": "Piano_Final_Build_Prompt.md",
+      "sha256": "83d52aabd0ea9c8f1b3fa7f2610b2fc5f6030defeeaf60cdb05a946407737025",
+      "unchanged_from_mounted_original": true
+    },
+    {
+      "name": "url-plan.final(1).json",
+      "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455",
+      "unchanged_from_mounted_original": true
+    },
+    {
+      "name": "content-pack.md",
+      "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33",
+      "unchanged_from_mounted_original": true
+    }
+  ],
+  "plan_markdown": {
+    "raw_file_mounted": false,
+    "retrieval": "file_library search snippets, Piano_全站统一规划_最终版.md v2.0",
+    "scope_source": "Full mounted url-plan.final(1).json, U078/T07",
+    "claimed_full_markdown_read": false
+  },
+  "pdf": {
+    "source": "New render from original page-content.json print_data; same keyboard geometry builder as screen",
+    "source_original_sha256": "b6a79a5e69f216e3f3902aca431f2b96e1b6bf3554d624a360256dd4e58104e6",
+    "actual_sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1",
+    "original_pdf_binary_available": false,
+    "generated_pdf_bytes": 47429,
+    "generated_pdf_pages": 1,
+    "third_party_artwork_or_audio": false,
+    "licensing_assigned": false
+  },
+  "production_ready": false,
+  "deployed": false
+}

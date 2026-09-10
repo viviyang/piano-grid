@@ -1,0 +1,34 @@
+/** Read-only source audit and derived integration records; no source or public mutations. */
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const root='docs/content/site-master';
+const master=read(`${root}/page-content.master.json`),plan=read('docs/product/url-plan.final.json'),old=read('docs/content/chords/page-content.json');
+const out='checks/batches/00-content-intake';fs.mkdirSync(out,{recursive:true});
+assert.equal(master.schema_version,'3.0.0');assert.equal(plan.version,master.baseline.version);
+assert.equal(hash('docs/product/url-plan.final.json'),master.baseline.sha256);
+assert.deepEqual(Object.keys(master.pages).sort(),plan.pages.map(p=>p.url).sort());assert.equal(plan.pages.length,127);
+const priorities=Object.fromEntries([...new Set(plan.pages.map(p=>p.priority))].map(k=>[k,plan.pages.filter(p=>p.priority===k).length]));
+assert.deepEqual(Object.values(priorities).sort((a,b)=>a-b),[17,19,91]);
+for(const url of ['/chords','/chords/a-minor'])assert.deepEqual(master.pages[url],old.pages[url]);
+assert.deepEqual(master.legacy_chords_support.shared_data,old.shared_data);
+assert.equal(hash('docs/content/chords/page-content.json'),hash(`${root}/preserved-chords/page-content.json`));
+for(const name of ['url-plan.final.json','Piano_全站统一规划_最终版.md'])assert.equal(hash(`docs/product/${name}`),hash(`${root}/${name}`));
+const batches=fs.readdirSync(root).filter(n=>/^[A-F]-/.test(n)).map(n=>({directory:n,files:fs.readdirSync(`${root}/${n}`),data:read(`${root}/${n}/batch-page-content.json`)}));
+assert.equal(batches.length,6);
+for(const b of batches)assert.equal(b.files.filter(f=>f.startsWith('batch-')).length,4);
+const assets=master.assets.map(a=>{
+ const absolute=path.resolve(root,a.path);assert.ok(absolute.startsWith(path.resolve(root)+path.sep));
+ const actualHash=hash(absolute),bytes=fs.statSync(absolute).size;assert.equal(actualHash,a.sha256);assert.equal(bytes,a.bytes);
+ const usedBy=Object.entries(master.pages).filter(([,p])=>JSON.stringify(p).includes(a.path.replace(/^preserved-chords\//,''))).map(([u])=>u);
+ return {logical_id:a.path,source_root:root,relative_path:a.path,sha256:actualHash,bytes,provenance:a.provenance,pages:usedBy,output_path:null,url:null,status:'source_verified_not_exported',use_condition:'Only authorized page assets with source usage basis; license files are not automatically exported'};
+});assert.equal(assets.length,43);
+const mappings=plan.pages.map(p=>({url:p.url,template_id:p.template_id,priority:p.priority,source_group_ids:p.source_groups.map(g=>g.id),source_groups:p.source_groups,schema:master.pages[p.url].blocks?.[0]?.content?'legacy':'3.0.0',source_root:root,object_pointer:`/pages/${p.url}`,source_ids:master.pages[p.url].source_ids,issues:master.pages[p.url].issues||master.legacy_gaps,implementation_status:p.url==='/chords/a-minor'?'prior_implementation_regression_pending':'queued',published:false}));
+fs.writeFileSync('docs/content/content-source-map.json',JSON.stringify({generated_by:'scripts/intake-site.mjs',master_sha256:hash(`${root}/page-content.master.json`),pages:mappings},null,2)+'\n');
+fs.writeFileSync('docs/content/asset-map.json',JSON.stringify({generated_by:'scripts/intake-site.mjs; export updates only approved entries',assets,existing_a_minor:{url:'/assets/chords/a-minor-notes-inversions.pdf',sha256:hash('public/assets/chords/a-minor-notes-inversions.pdf'),provenance:'existing approved design-stage derived PDF retained; original is now present and differs'}},null,2)+'\n');
+const report={checked_at:new Date().toISOString(),schema:master.schema_version,version:plan.version,urls:127,priorities,assets_verified:assets.length,new_issues:master.open_issues.length,legacy_gaps:master.legacy_gaps.length,retained_without_url:master.retained_without_url.length,batches:batches.map(({directory,files,data})=>({directory,files,top_level_fields:Object.keys(data)})),source_equivalence:true,source_ledger_bytes:fs.readFileSync(`${root}/source-ledger.master.md`).length,issue_ledger_bytes:fs.readFileSync(`${root}/unresolved-issues.master.md`).length};
+fs.writeFileSync(`${out}/intake.json`,JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2));

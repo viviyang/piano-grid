@@ -1,0 +1,190 @@
+{
+  "executed_at": "2026-09-09T11:15:52.549306+00:00",
+  "scope": "Independent parse and render inspection of the implementation handoff's browser-print PDF artifacts; current IAB snapshot state was checked separately.",
+  "passed": 32,
+  "failed": 0,
+  "artifacts": [
+    {
+      "path": "checks/batches/02-keyboard-notes/print-pdfs/chart-focus.pdf",
+      "bytes": 96602,
+      "sha256": "0c19cd5a632b6c0ce888ea8959fd39ce4a61ccd488296534a4d53cabbf9d71ca"
+    },
+    {
+      "path": "checks/batches/02-keyboard-notes/print-pdfs/chart-treble.pdf",
+      "bytes": 77268,
+      "sha256": "1a96646fdff3882804f1c0947140fcb6f3f1a2108270da4e5f18517d7ac75143"
+    },
+    {
+      "path": "checks/batches/02-keyboard-notes/print-pdfs/chart-bass.pdf",
+      "bytes": 77230,
+      "sha256": "5a6eeace51e59e701cc444fa190b38c338c1207cdcd1eabf146b3ab498cb567c"
+    },
+    {
+      "path": "checks/batches/02-keyboard-notes/print-pdfs/chart-88_keys.pdf",
+      "bytes": 219457,
+      "sha256": "028af0187e3f6a7f926570f15fdf95590fb7bc48d7c3a701a851bebccebdaf67"
+    }
+  ],
+  "results": [
+    {
+      "name": "chart-focus.pdf: page count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "chart-focus.pdf: no blank page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-focus.pdf: chart title on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-focus.pdf: selected pitch on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-focus.pdf: keyboard order on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-focus.pdf: notation disclaimer on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-focus.pdf: treble inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-focus.pdf: bass inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: page count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "chart-treble.pdf: no blank page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: chart title on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: selected pitch on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: keyboard order on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: notation disclaimer on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: treble inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-treble.pdf: bass inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: page count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "chart-bass.pdf: no blank page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: chart title on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: selected pitch on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: keyboard order on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: notation disclaimer on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: treble inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-bass.pdf: bass inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: page count",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "chart-88_keys.pdf: no blank page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: chart title on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: selected pitch on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: keyboard order on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: notation disclaimer on every page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: treble inclusion matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart-88_keys.pdf: bass inclusion matches",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-09T17:23:41.6870923+08:00",
+  "dev": "http://127.0.0.1:3000; running",
+  "temporary_production": "3001 stopped",
+  "requests": [
+    {
+      "url": "/chords",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "url": "/chords/a-minor",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "url": "/chords/a-major",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "url": "/chords/c-major",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "url": "/",
+      "status": 404,
+      "error": "Response status code does not indicate success: 404 (Not Found)."
+    },
+    {
+      "url": "/chords/b-major",
+      "status": 404,
+      "error": "Response status code does not indicate success: 404 (Not Found)."
+    }
+  ]
+}

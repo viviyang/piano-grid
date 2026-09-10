@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-09-10",
+  "source_path": "docs/content/site-master/assets/piano-starter-and-reading.pdf",
+  "public_path": "public/assets/guides/piano-starter-and-reading.pdf",
+  "source_sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2",
+  "public_sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2",
+  "byte_identical_to_authorized_source": true,
+  "pages": 4,
+  "catalog_keys": [
+    "/PageMode",
+    "/Pages",
+    "/Type"
+  ],
+  "marked": false,
+  "has_struct_tree_root": false,
+  "document_language": null,
+  "page_checks": [
+    {
+      "page": 1,
+      "extractable_text_chars": 870,
+      "struct_parents": null
+    },
+    {
+      "page": 2,
+      "extractable_text_chars": 856,
+      "struct_parents": null
+    },
+    {
+      "page": 3,
+      "extractable_text_chars": 971,
+      "struct_parents": null
+    },
+    {
+      "page": 4,
+      "extractable_text_chars": 1074,
+      "struct_parents": null
+    }
+  ],
+  "reliable_remediation_available": false,
+  "reason": "The repository contains only the final untagged PDF; no tagged authoring source or verified logical reading-order and figure-alt specification is available. Adding catalog flags alone would not create valid structure or PDF/UA semantics, and replacing this file would break the current byte-identity contract with the read-only authorized source."
+}

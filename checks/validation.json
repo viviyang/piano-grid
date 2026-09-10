@@ -1,0 +1,102 @@
+{
+  "version": "foundation-1.1.0-new-project",
+  "date": "2026-09-09",
+  "status": "foundation_files_created_static_and_direct_css_checks_passed_dependency_installation_and_framework_build_not_run",
+  "configured_versions": {
+    "name": "piano-reference",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Piano Reference — Design Foundation only; no business routes.",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "typecheck": "tsc --noEmit",
+      "check:foundation": "node scripts/check-foundation.mjs",
+      "check:css": "node scripts/check-css.mjs",
+      "check": "npm run check:foundation && npm run typecheck && npm run check:css"
+    },
+    "engines": {
+      "node": ">=20.9.0",
+      "npm": ">=10"
+    },
+    "dependencies": {
+      "next": "16.3.4",
+      "react": "19.2.8",
+      "react-dom": "19.2.8",
+      "clsx": "2.1.1",
+      "tailwind-merge": "3.6.0"
+    },
+    "devDependencies": {
+      "@tailwindcss/postcss": "4.3.3",
+      "tailwindcss": "4.3.3",
+      "postcss": "8.5.23",
+      "typescript": "~5.9.3",
+      "@types/node": "^22",
+      "@types/react": "^19",
+      "@types/react-dom": "^19"
+    }
+  },
+  "performed": [
+    {
+      "kind": "dependency_free_foundation_guard",
+      "passed": 348,
+      "failed": 0,
+      "report": "foundation-static.json"
+    },
+    {
+      "kind": "typescript_syntax_transpilation",
+      "compiler_used": "5.8.3",
+      "files": 3,
+      "failed": 0,
+      "report": "typescript-syntax.json",
+      "not_equivalent_to": "project typecheck with declared dependencies"
+    },
+    {
+      "kind": "css_parse",
+      "files": 3,
+      "failed": 0,
+      "report": "css-browser.json"
+    },
+    {
+      "kind": "direct_css_in_browser_memory",
+      "checks": 11,
+      "failed": 0,
+      "report": "css-browser.json",
+      "not_equivalent_to": "Tailwind compiled CSS or Next runtime"
+    },
+    {
+      "kind": "contrast_pairs",
+      "pairs": 6,
+      "failed": 0,
+      "report": "css-browser.json",
+      "not_equivalent_to": "full accessibility compliance"
+    }
+  ],
+  "not_performed": {
+    "npm_install": "Container DNS could not resolve registry.npmjs.org. No installed versions or lockfile fabricated.",
+    "package_lock_generation": "Requires actual successful npm install.",
+    "tailwind_compilation": "Requires package installation; run npm run check:css locally.",
+    "project_typecheck": "Run npm run typecheck after installation.",
+    "next_build": "Run npm run build after installation.",
+    "business_page_tests": "No business routes or components in this phase.",
+    "physical_device_or_screen_reader": "Not executed."
+  },
+  "warnings": [
+    "原全站规划 Markdown 未随包提供；放入 docs/product/。不阻止 Foundation，业务阶段前需补齐。",
+    "尚无实际 npm 锁文件；首次 npm install 后生成并提交，以后使用 npm ci。"
+  ],
+  "scope": {
+    "business_pages_created": 0,
+    "business_components_created": 0,
+    "application_tsx_files": [
+      "src/app/layout.tsx"
+    ],
+    "tailwind_config_created": false,
+    "new_theme_exploration": false,
+    "original_sources_modified": false,
+    "shadcn_cli_installed": false,
+    "animation_library_installed": false,
+    "deployed": false
+  }
+}

@@ -1,0 +1,670 @@
+[
+  {
+    "path": "src/app/chords/a-major/page.tsx",
+    "sha256": "3964e83e73861d5c53e534296439ef891b47ae9a965e7f1e424bbec9772e7810"
+  },
+  {
+    "path": "src/app/chords/a-minor/a-minor.css",
+    "sha256": "ee054c784cab7d70d6bf4eda89975c0df78593c9f33a099db230abc7548f2f9d"
+  },
+  {
+    "path": "src/app/chords/a-minor/page.tsx",
+    "sha256": "4f88899343901029479423bb0b9520f617d3b33863385f0690f3d3482fab2375"
+  },
+  {
+    "path": "src/app/chords/c-major/page.tsx",
+    "sha256": "557037634b21ada89ec41198c4744b0388e158b2fa056fa40b0872364edd27e6"
+  },
+  {
+    "path": "src/app/chords/page.tsx",
+    "sha256": "fcec42ec62091cc759888ba940b76c61336813803f9778424fbc09052a0bf303"
+  },
+  {
+    "path": "src/app/globals.css",
+    "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "sha256": "2b0fef642e8a9896516b96933d37feeacdb39d5af07df64328cf4e2b25496dd2"
+  },
+  {
+    "path": "src/components/a-minor/experience.tsx",
+    "sha256": "5282af4b9fca2a184cf7838ff8277e18fea0af99c597f51bf17325de8575c955"
+  },
+  {
+    "path": "src/components/a-minor/icon.tsx",
+    "sha256": "46d07510c4414fbd42d0d281edc72904c1f9f786355d5f930b0badba262d95c4"
+  },
+  {
+    "path": "src/components/a-minor/keyboard.tsx",
+    "sha256": "648e79b50ddf6d65ee081951d1dbe7a805b57a02a6a4d4c349adc268c680d441"
+  },
+  {
+    "path": "src/components/a-minor/page-search.tsx",
+    "sha256": "b8d7dc9ea66f447a726322bd491a3f2c994860d95c9098a0f0fcd55dcd3a068b"
+  },
+  {
+    "path": "src/components/chords/center-experience.tsx",
+    "sha256": "1748f0037a00985f08402c37ebee03e53290db48193b3c662511272e7ecf23ad"
+  },
+  {
+    "path": "src/components/chords/center-page.tsx",
+    "sha256": "e01f71237bc7487cefdef672355bdd05fc82527eee1a5c7cdb98a6cd73c2caeb"
+  },
+  {
+    "path": "src/components/chords/center.css",
+    "sha256": "050971d506053bf91d3179ccf16d24bd450ee6ba65df13afa8c25783c9384252"
+  },
+  {
+    "path": "src/components/chords/detail-page.tsx",
+    "sha256": "3e1813d676b1575f2c0492c1f4c89b283d97f0295154f6983e54e0c28172cf82"
+  },
+  {
+    "path": "src/components/chords/keyboard-viewport.tsx",
+    "sha256": "ea988a705b776805ad9981dc471f0fab70c2890c42c05cb60780e6c1d9c0ffe9"
+  },
+  {
+    "path": "src/components/chords/playback-controls.tsx",
+    "sha256": "b48c49c75494809e8354c9b2f98d908591eb9de7a66b06be487e02a24ba3b6a0"
+  },
+  {
+    "path": "src/components/chords/print-voicing.tsx",
+    "sha256": "65c79b6fcb2eb34b7a649d94b52dadd175383f91699e3cdd815b37785e12d791"
+  },
+  {
+    "path": "src/components/chords/shared.css",
+    "sha256": "77ecf496d9015f201f706a705af9563474e19c4a6462bc02c404abe34baf744d"
+  },
+  {
+    "path": "src/components/chords/site-chrome.tsx",
+    "sha256": "b5625f70ff618b2f35b945fdc754c11c8bb6b95c31de8b1bcc183ae431317383"
+  },
+  {
+    "path": "src/components/ui/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/hooks/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/lib/a-minor-audio.ts",
+    "sha256": "580cc26b6c22d0418cf848f56583fc72973d437fea593ba674a760f22fb56fee"
+  },
+  {
+    "path": "src/lib/a-minor-content.ts",
+    "sha256": "8df208d63c242741ee70107671b929ddd0a2cb45724e24ca6fdd472c71614b54"
+  },
+  {
+    "path": "src/lib/a-minor-types.ts",
+    "sha256": "7a32a270dcf30af6ec561cb2a8aa0fa409142db9143e1c0e589b13070e3979a6"
+  },
+  {
+    "path": "src/lib/chord-content.ts",
+    "sha256": "9e73f8ad5016235ec3c5e367fab319f5acd337c7e53732d695eea4577607c5f9"
+  },
+  {
+    "path": "src/lib/site-content.ts",
+    "sha256": "d619211688656fc8d4d7b24332be7eb2a26e29df66ad65c80c374be06dc7c39b"
+  },
+  {
+    "path": "src/lib/utils.ts",
+    "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac"
+  },
+  {
+    "path": "src/styles/foundation.css",
+    "sha256": "f78ed427f08393b79bdbec82807249349a58daa2f2da524dc52ac888c38445b1"
+  },
+  {
+    "path": "src/styles/tokens.css",
+    "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+  },
+  {
+    "path": "docs/product/Piano_URL规划说明.md",
+    "sha256": "ec6d9f49e58f91a212ab437d7df447bffee6199f9a6f2d9ab1e5d8c3d81364d4"
+  },
+  {
+    "path": "docs/product/Piano_全站统一规划_最终版.md",
+    "sha256": "97e30d5a5cb29f2eb975a12f16d6b375babdad3cb969a38b26f39273760853b1"
+  },
+  {
+    "path": "docs/product/Piano_全站规划附表.xlsx",
+    "sha256": "853fe1b96d75ed9fd494753b0b05a9876f7378403b0fb16a3bd55ba3bc30434b"
+  },
+  {
+    "path": "docs/product/README.md",
+    "sha256": "e6cb44496b58f5a9c74ef5021b5e6e8146590a0c576281abb29eb5108b568b45"
+  },
+  {
+    "path": "docs/product/url-plan.final.json",
+    "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+  },
+  {
+    "path": "docs/content/asset-map.json",
+    "sha256": "721810fd873ddd8e0caa67e3bde81c093e7fe2c10597f1d18f9689db2cb248e0"
+  },
+  {
+    "path": "docs/content/chords/content-pack.md",
+    "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33"
+  },
+  {
+    "path": "docs/content/chords/page-content.json",
+    "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
+  },
+  {
+    "path": "docs/content/chords/README.md",
+    "sha256": "8d12aa7d3774871ab1012ac053463b3fbf00a1b41884da1a69e60e94c642a513"
+  },
+  {
+    "path": "docs/content/content-source-map.json",
+    "sha256": "80ebb3ce26f77ed741f3f3de88b3dc0f481c8f9921219fd19235ee920b96b7f4"
+  },
+  {
+    "path": "docs/content/site-master/A-Scales/batch-content-pack.md",
+    "sha256": "12d515873f750b1a75165d2646183dc7ced2096a6eee9f786d48f8a110051de5"
+  },
+  {
+    "path": "docs/content/site-master/A-Scales/batch-open-issues.md",
+    "sha256": "1a21c82129b149ec0c17afd640cf4db8ae90f3279560bb2ae59355a65c47bb59"
+  },
+  {
+    "path": "docs/content/site-master/A-Scales/batch-page-content.json",
+    "sha256": "8a6f9681acec1a3091f1d938b15580afa9648b1e1337f1abd7f1cb3f88087580"
+  },
+  {
+    "path": "docs/content/site-master/A-Scales/batch-source-ledger.md",
+    "sha256": "ce54c4cd56ff6d27a8ccc4341952fe94ca8d116c3e30fdb9b01292299d651be3"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-keyboard-13-keys.svg",
+    "sha256": "febe9d82e4b992d530f555b5c2b6c32a4eeabe66bd96360d873aa021ead96333"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-keyboard-25-keys.svg",
+    "sha256": "e7dd25e5ca69822047b73a40e1d8ae7a7c0f2921cf212d5b616dae2795d8f02f"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-keyboard-worksheet-a4.pdf",
+    "sha256": "5cb574ab2c08278c998e28530811ed4849a07ed64060317a57ee81a4042f56d5"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-keyboard-worksheet-letter.pdf",
+    "sha256": "786bb9d316cb45d5d691e6629168d6148dc0c27e03a5c675384b74a077a483d5"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-piano-staff-a4.pdf",
+    "sha256": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-piano-staff-letter.pdf",
+    "sha256": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa"
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-piano-staff-preview.svg",
+    "sha256": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec"
+  },
+  {
+    "path": "docs/content/site-master/assets/Bravura-LICENSE.txt",
+    "sha256": "bdca252186865f3b2c0e76da4a4e335c14ba1d37f80194fca254ddfa88e84fbf"
+  },
+  {
+    "path": "docs/content/site-master/assets/c-major-rh-fingers.svg",
+    "sha256": "126d12bded6666d14c6e5df8ba14d080f028e3c003b08d9f9b3a9c84ae23883a"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-a-flat-major.pdf",
+    "sha256": "446585e7e48b24c40d39a2cf8aed8599e3df876f78388e10c28d7cd2a250ddfb"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-a-flat-major.svg",
+    "sha256": "c6c1de37099ce893906a27e63d71873a55eca9f72b0e07e4c91392e6be6f5e52"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-a-major.pdf",
+    "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-a-major.svg",
+    "sha256": "4a824adf140a3f70475a9a8cf490bc228d04a45275be5a1a6c293d5a3853cf4a"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-b-major.pdf",
+    "sha256": "7a45fa2e48c05d68b1a62c4d95e48f900b08a87b1f903fdf8a34ffaa1535c207"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-b-major.svg",
+    "sha256": "79fbc3f310561376bdceef6987cabc361a096eb7f0fd8e962d89fc7bb200bf7d"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-c-flat-major.pdf",
+    "sha256": "a843d9fbd378ec882fdab9b20b2d5c819720fb1ed48eb3548783e4f732058818"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-c-flat-major.svg",
+    "sha256": "6138cff52738b4506301d134ad6604751233031206f48985c090a464c91aba48"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-c-major.pdf",
+    "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-c-major.svg",
+    "sha256": "f76bdc1659a008d16a353d52416f9978b6109622eee09cfaedeff302dce716de"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-c-minor.pdf",
+    "sha256": "e0adf857a1f11b0a7279cbc496a814a2f033481c8f8a3d2921ec3e60f3aac505"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-c-minor.svg",
+    "sha256": "7e03d1177e86ebe7d4e1c9f94ea4d9f3cbd0ccdf2d338765a804187d9fbabe85"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-e-major.pdf",
+    "sha256": "256799a064f8207e52cc92c9c0ef5c39bb59ad1c78481a65079e90769aa4aabc"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-e-major.svg",
+    "sha256": "786791d0c53cea0ab8721585a680bec47afa7d70763e7c1e63e59bae87a74670"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-g-major.pdf",
+    "sha256": "d55a9e192d3e6a0a1c89507760bfee311f84dcab68f23ef2f9d663e20a94790d"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-g-major.svg",
+    "sha256": "33290066ec62f1eff31f082f6f961bd0c6bfa13a6c2b9e32b9c55640778932eb"
+  },
+  {
+    "path": "docs/content/site-master/assets/chord-progressions-c-e-a.pdf",
+    "sha256": "362980f69ae6f0a29e93258200bf7adb44ec38236db58cb11ae37d4d0453fa05"
+  },
+  {
+    "path": "docs/content/site-master/assets/music-symbols.svg",
+    "sha256": "205f1fa0eef935c72e3fcd454129917fec6b26c202314f6b03fee4f8b9f77a06"
+  },
+  {
+    "path": "docs/content/site-master/assets/piano-cheat-sheet.pdf",
+    "sha256": "6235a6d6c24d8d599bd9de1aa3dac4888dc18a2111259be503fd35b6d88a7296"
+  },
+  {
+    "path": "docs/content/site-master/assets/piano-hand-position.svg",
+    "sha256": "3c1ba721e6fd385a1213157b8fbb877e4cc30210b5fc2ea9027d3d1292f5b6e2"
+  },
+  {
+    "path": "docs/content/site-master/assets/piano-starter-and-reading.pdf",
+    "sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2"
+  },
+  {
+    "path": "docs/content/site-master/B-Keyboard-Notes/batch-content-pack.md",
+    "sha256": "dcc226db8f3385e815a13c6bbfc0421236289cd02a183d00ea33170411455e26"
+  },
+  {
+    "path": "docs/content/site-master/B-Keyboard-Notes/batch-open-issues.md",
+    "sha256": "4371f45f5f6c67becc94eb35850f32521a3b29e76e41740d37e7414a61d3714e"
+  },
+  {
+    "path": "docs/content/site-master/B-Keyboard-Notes/batch-page-content.json",
+    "sha256": "54ef3f422bf1fbd037d2c7acb63d767ffa23b2ccf076c8acc62b19ba74f23d3c"
+  },
+  {
+    "path": "docs/content/site-master/B-Keyboard-Notes/batch-source-ledger.md",
+    "sha256": "26a3b93c65008ad636fcf80b51f8e1cc1b117358773107c49ef220b86efc6d8b"
+  },
+  {
+    "path": "docs/content/site-master/C-Songs/batch-content-pack.md",
+    "sha256": "38b97811a3b55961c11e67c2fcc28ab15c80bc4046d97e5f11d98ea330e5c795"
+  },
+  {
+    "path": "docs/content/site-master/C-Songs/batch-open-issues.md",
+    "sha256": "b313d519c1928bda5e95be4eb8504c6ad87135f51ff4bd28ed3665c6f6dfa19f"
+  },
+  {
+    "path": "docs/content/site-master/C-Songs/batch-page-content.json",
+    "sha256": "e9f12ea0e824008afa43430a0e527d5eefb378c83d75560810a6e6191879525a"
+  },
+  {
+    "path": "docs/content/site-master/C-Songs/batch-source-ledger.md",
+    "sha256": "a2f51e1618121ffc9f11131e33808245aec912720994e976d785bbe40e92ba64"
+  },
+  {
+    "path": "docs/content/site-master/content-master-index.md",
+    "sha256": "3e630cd575ea911cdb886161ffba2b3fc0b32546405e5009bbc30b06a6dcd68e"
+  },
+  {
+    "path": "docs/content/site-master/D-Sheet-Music/batch-content-pack.md",
+    "sha256": "a2767120b03827fe8296f4d41a2ddc453e79d909001cdd1c2bf258685fbc05fc"
+  },
+  {
+    "path": "docs/content/site-master/D-Sheet-Music/batch-open-issues.md",
+    "sha256": "3e148033aef9289e64d953b04ab3481dd039f8b206d65a5fbe6205a6d3f3edcc"
+  },
+  {
+    "path": "docs/content/site-master/D-Sheet-Music/batch-page-content.json",
+    "sha256": "58e1f2206ba6c81ff4c95e961e7e0f472af65e6fe20d4962a276055e1fdc8570"
+  },
+  {
+    "path": "docs/content/site-master/D-Sheet-Music/batch-source-ledger.md",
+    "sha256": "1d27965ab17688e2a310d998917835fcc725639f196d87abf14d26418c778b26"
+  },
+  {
+    "path": "docs/content/site-master/E-Guide-Reading-Practice/batch-content-pack.md",
+    "sha256": "7f874b8fab1f43c57af4aa20517fb9237389ee94eedf2d292e9eed8b33e30bb8"
+  },
+  {
+    "path": "docs/content/site-master/E-Guide-Reading-Practice/batch-open-issues.md",
+    "sha256": "d0d433ccda28fbf864d32aeb33c4d58201bd4d1da22e4744c51b5696770ebb33"
+  },
+  {
+    "path": "docs/content/site-master/E-Guide-Reading-Practice/batch-page-content.json",
+    "sha256": "80afeebd9f79e4845a872766fb800f678c7095b802b072597eb5f7f5195f00a3"
+  },
+  {
+    "path": "docs/content/site-master/E-Guide-Reading-Practice/batch-source-ledger.md",
+    "sha256": "2f988d80af1a7b9ff103aaff02d252d30f98a806ea154122ae476bfd1783b0fa"
+  },
+  {
+    "path": "docs/content/site-master/F-Homepage/batch-content-pack.md",
+    "sha256": "7d77879c3619006c9dcedfb2bedc5694b2d99237c56fec0fa9a1e8823cea8e41"
+  },
+  {
+    "path": "docs/content/site-master/F-Homepage/batch-open-issues.md",
+    "sha256": "fa53b86dcccaa13a47d63c5205231b9ddf331063b8349ba680459840164716fa"
+  },
+  {
+    "path": "docs/content/site-master/F-Homepage/batch-page-content.json",
+    "sha256": "ed04231bc2d5671f68b904db3a9425965a75023f8e44d4b0434946e792f9b2cb"
+  },
+  {
+    "path": "docs/content/site-master/F-Homepage/batch-source-ledger.md",
+    "sha256": "4656ec226404f5b7b6b3538920ae1a738d4db7a2d06c1f16157f1c60b694e23b"
+  },
+  {
+    "path": "docs/content/site-master/page-content.master.json",
+    "sha256": "99d59d51ca444a657b10f29ebaeee2ebfb58985b7af585b400a16452298b72c7"
+  },
+  {
+    "path": "docs/content/site-master/Piano_全站统一规划_最终版.md",
+    "sha256": "97e30d5a5cb29f2eb975a12f16d6b375babdad3cb969a38b26f39273760853b1"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-flat-major--root.svg",
+    "sha256": "a59cc0efa28d9f72c5dbeb0106e0d68819d642bbc6aab639bd0b2fd704463d89"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-major--root.svg",
+    "sha256": "fe80d769b13accc879bde4c0421461b51a78ac9abb09c07cc463988d003439b9"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor--first.svg",
+    "sha256": "fec03e26eac2c68ec5cda07a8269bc05318f00efefe59a950e5acfc72dbcfd23"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor--root.svg",
+    "sha256": "f2a192906e970de51754d67d4824fd8ff9eebf9c5febfc68ba4d4dad5a729cb1"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor--second.svg",
+    "sha256": "1bd87f800320f1b65dc786d0259cf41dcfc44a309e4406c83f3e92e95eef8d5c"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor-notes-inversions.pdf",
+    "sha256": "b6a79a5e69f216e3f3902aca431f2b96e1b6bf3554d624a360256dd4e58104e6"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/b-major--root.svg",
+    "sha256": "03bac802238be7d8dc69980ccba5b0a1f6332133d4e97677ebabec2cdd8633d9"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/c-flat-major--root.svg",
+    "sha256": "16e4c7a0c825d7f6f30da8445948d0282b138ce01473c01288b2af85627b02cd"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/c-major--root.svg",
+    "sha256": "351e3aef376cc66c9093eadc8f6e944c8ef786372eff50ee415e8d4696561cc0"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/c-minor--root.svg",
+    "sha256": "37a4b7b04566889986fb77865e704ceadadaaa6087de034d4f95dfe913025283"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/e-major--root.svg",
+    "sha256": "12994bfb08dde5e039110d61fb3b8b05ea236ba2637b5529dc17ed4147acba64"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/g-major--root.svg",
+    "sha256": "d2dcbf853760318a474cd014a2d03e481051d0e2f6afd8d2fdacc5a0339e5a03"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/piano-chord-chart-selected.pdf",
+    "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/content-pack.md",
+    "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33"
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/page-content.json",
+    "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
+  },
+  {
+    "path": "docs/content/site-master/source-ledger.master.md",
+    "sha256": "5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2"
+  },
+  {
+    "path": "docs/content/site-master/unresolved-issues.master.md",
+    "sha256": "cf9a9f6d2c525fd18facf97fe4f66e9232c038a932579cddc38f6d663ed8b598"
+  },
+  {
+    "path": "docs/content/site-master/url-plan.final.json",
+    "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+  },
+  {
+    "path": "docs/design/reference/final-1440-top.png",
+    "sha256": "a697418f028568d7017b24aa89831fd457a92943c32acef2012f70e2a68df777"
+  },
+  {
+    "path": "docs/design/reference/final-390-top.png",
+    "sha256": "280fc60bb8dafa839cbefa4229590ae0c2e8cbcf8372fefe9cb061bac5ec4b3e"
+  },
+  {
+    "path": "docs/design/reference/final-a-minor.html",
+    "sha256": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2"
+  },
+  {
+    "path": "docs/design/reference/final-prototype.css",
+    "sha256": "91a3714d25977682b45a047181632228f94772772934c8ca9ebd06b16ac421b9"
+  },
+  {
+    "path": "docs/design/reference/original-design-notes.md",
+    "sha256": "3e3ec256be85a3ed68598687a447393aa7ee716993b2ed3b27e1e4b8e701c10b"
+  },
+  {
+    "path": "docs/design/reference/README.md",
+    "sha256": "614841688d452bba811d3e188da7b14d6b91cd951339812bc1823ec2e41a1bb4"
+  },
+  {
+    "path": "package.json",
+    "sha256": "92652a107ed71f2d17e66a8da02da35915ee7a716a0ba4704845a4c3aed571f4"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "4879cca1b4d73e2644a56581bc08e3c63e601984fb070bdb1a860fd644c00c35"
+  },
+  {
+    "path": "src/app/keyboard-notes/chart/page.tsx",
+    "sha256": "6e56885570bd3b7bfa39e791acc5f363256907bf89a765618667e7d79b3d2b37"
+  },
+  {
+    "path": "src/app/keyboard-notes/labeled/page.tsx",
+    "sha256": "0a7475a9a874f819f1bed2b57bef7a3ceb2e0b882da857506f4fabf75be1752b"
+  },
+  {
+    "path": "src/app/keyboard-notes/page.tsx",
+    "sha256": "9f06323d8c897b29a9ac99e3b481ffd0b2a545e51a864ac52224ba323574ff5b"
+  },
+  {
+    "path": "src/components/keyboard-notes/chart-experience.tsx",
+    "sha256": "250a2e64b9021c7bc89da7428beb300b6bc4fe922587f6c9b91d55f4812b7fd5"
+  },
+  {
+    "path": "src/components/keyboard-notes/keyboard-diagram.tsx",
+    "sha256": "07db3255685a1c627fa2e5be08d776dd79ca2998fa07e2fcb2db1ed79caac82f"
+  },
+  {
+    "path": "src/components/keyboard-notes/keyboard-notes.css",
+    "sha256": "5b8411e3ad6f1b44d7c91bca0f91e9345dbc39a361fb0bdd5473e205317d0a03"
+  },
+  {
+    "path": "src/components/keyboard-notes/labeled-experience.tsx",
+    "sha256": "e1e46ed8e470f568a6992d9158cced2d3ada7d265ea7dfabc26f6ac5f6377edb"
+  },
+  {
+    "path": "src/components/keyboard-notes/lookup-experience.tsx",
+    "sha256": "27c45032dafbdf8eae239558dbf5c76b1766e34c308fa050bd2e479a0149f0aa"
+  },
+  {
+    "path": "src/components/keyboard-notes/pages.tsx",
+    "sha256": "16ce099955f4ce3ff7120ed5a5cf02df366a1da47eabfc4d271400e7c24a759c"
+  },
+  {
+    "path": "src/components/keyboard-notes/staff-diagram.tsx",
+    "sha256": "b1cbef206d81c7f5365a0b8edcc8e48f1911712e718e8afc2640ad2444d035ca"
+  },
+  {
+    "path": "src/components/keyboard-notes/tool-controls.tsx",
+    "sha256": "8dc72d1a69d0f1280fc4034c652d52b03d8db71eca4a9dfe1619315c77e80008"
+  },
+  {
+    "path": "src/components/keyboard-notes/use-note-audio.ts",
+    "sha256": "6a20bf9d0be05d227cfba1cd8e5a33c8696afbf0816442aa87eec5f28c81f8d6"
+  },
+  {
+    "path": "src/lib/keyboard-content.ts",
+    "sha256": "d4de40b98d55a009a8842eed398daa09fc9a66b6b80b00c9dd2782fb27d7123c"
+  },
+  {
+    "path": "src/lib/keyboard-geometry.ts",
+    "sha256": "c9acdaa0632a5ea65f736b0b5d9a3a54fd2887f0cd8411c52e7e603a2d2260f0"
+  },
+  {
+    "path": "src/lib/keyboard-types.ts",
+    "sha256": "a92c6fac3b2d8452eeeec1265987f82766bbcf8d40fbc2dcdd0643a5ad23d999"
+  },
+  {
+    "path": "scripts/check-a-minor.mjs",
+    "sha256": "28a280c3c13e50e27517b1b6540009b125b2854be252b7cd02149c1f7fa68619"
+  },
+  {
+    "path": "scripts/check-chord-batch.mjs",
+    "sha256": "ca687dc64f55c59bf9190dea40fa313a9ac06928163825d5b855ea4044484a29"
+  },
+  {
+    "path": "scripts/check-chord-fallbacks.mjs",
+    "sha256": "78bc35fd58d96b3f84a58ee3affa313d29fa6442912ccdc542262bd241a377ac"
+  },
+  {
+    "path": "scripts/check-content-adapters.mjs",
+    "sha256": "9c0a559d40d4e8de74804634d8b0292dd0a769bc02085b4a680f0e04fea5c0a7"
+  },
+  {
+    "path": "scripts/check-css.mjs",
+    "sha256": "bd6eca4285c0aa9a1e027de8bc7ed8928ba1536befe43274978027ebbef6b093"
+  },
+  {
+    "path": "scripts/check-foundation.mjs",
+    "sha256": "a18162a4da515e22fb72754c62bf860687daa770aa1488f3784b1fb61e396ee8"
+  },
+  {
+    "path": "scripts/check-keyboard-batch.mjs",
+    "sha256": "9381dd0c5eab4446a9ea3692f5da9a3f6ae37e5d4b9fc7c87551c68ee3c4126a"
+  },
+  {
+    "path": "scripts/check-keyboard-data.mjs",
+    "sha256": "125d42db944875b22384eb38943be403803f7db8196f7185c19a0183e59462e9"
+  },
+  {
+    "path": "scripts/check-keyboard-fallbacks.mjs",
+    "sha256": "4ab13c7f2a818af4943aefc3ba9081d9e94fa97e39f4bbd1a3410fda0e0b0173"
+  },
+  {
+    "path": "scripts/check-keyboard-production.mjs",
+    "sha256": "82c8da628d2834ea13620c27f765591efe78d08740885db4f4dbbcb9920c7bb0"
+  },
+  {
+    "path": "scripts/export-chord-assets.mjs",
+    "sha256": "84006ff804406700563c5e5ff169c681edaaed640044d38c97f2d9f3730f3c81"
+  },
+  {
+    "path": "scripts/export-keyboard-pdfs.mjs",
+    "sha256": "2277258ac3eb246d5df0f8e915b3b4b386bc9c5b457f17bc30cc1d5cfc8f6ce1"
+  },
+  {
+    "path": "scripts/intake-site.mjs",
+    "sha256": "ed157ef74c8a63ea568f5ca29b0356f726d2c26236416b75a966ae8a543ace66"
+  },
+  {
+    "path": "scripts/record-chord-batch.mjs",
+    "sha256": "4b9f7f04c425f45f26d9904d54322a36fdd1d72ff5467a26d941ac5cf030957d"
+  },
+  {
+    "path": "public/assets/chords/a-minor-notes-inversions.pdf",
+    "sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1"
+  },
+  {
+    "path": "public/reference/assets/chord-a-major.pdf",
+    "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a"
+  },
+  {
+    "path": "public/reference/assets/chord-c-major.pdf",
+    "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662"
+  },
+  {
+    "path": "public/reference/generated/keyboard-notes/labeled-61-letters.pdf",
+    "sha256": "d253bad47d35028fb1aa4ab5992ad41b65272cffa146599819e65a411c0e6f0f"
+  },
+  {
+    "path": "public/reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+    "sha256": "ce953829715ce0e9a57a53f9047c0bfed4b51d47e054793c4ae31d352c1fc574"
+  },
+  {
+    "path": "public/reference/generated/keyboard-notes/labeled-88-letters.pdf",
+    "sha256": "43198916aed9d5cc0443f97c9822a139f3bf74a59ce97695b965c4b2304d3a60"
+  },
+  {
+    "path": "public/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+    "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16"
+  },
+  {
+    "path": "public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+    "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "60fd912397ec039942404d4d6072afbc197c1fe01d2128bb87854af05d4d36c2"
+  },
+  {
+    "path": "README.md",
+    "sha256": "a873b1665673a41ef0452212d5e0ee10565127926ca3d4201bc35973e1f93095"
+  },
+  {
+    "path": "docs/project-context.md",
+    "sha256": "030b4c1e1497658135700a9ca19c8bfd7434525f8523979807d3864880a13f3c"
+  },
+  {
+    "path": "docs/tasks/site-implementation-plan.md",
+    "sha256": "0994e57f85f9f939e2cb24242099d42990701636c6cac4227e020cf2e9f1c7be"
+  },
+  {
+    "path": "docs/design/component-spec.md",
+    "sha256": "979a171f117bec7f389a8c04ef9da098f9eb025e4572e54884e6c4b8871846ca"
+  },
+  {
+    "path": "docs/design/template-map.md",
+    "sha256": "a8cc8a77344f1ec0511d257e3c89ba9d3995b2ae7f8f66770000adfcbb6f9b1c"
+  },
+  {
+    "path": "checks/batches/02-keyboard-notes/implementation.md",
+    "sha256": "e10abbe129aff7bb4420a1d438f786c785302828ed6d1fb9132f18766d9ed3c9"
+  }
+]

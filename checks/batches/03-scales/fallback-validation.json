@@ -1,0 +1,157 @@
+{
+  "executed_at": "2026-09-10T00:02:14.862Z",
+  "passed": 30,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/scales unavailable disables sound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales unavailable explains sound state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales selection survives unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales explicit audio error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales selection survives error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales selection cancels delayed audio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales selection survives delayed-cancel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major unavailable disables sound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major unavailable explains sound state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major selection survives unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major explicit audio error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major selection survives error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major selection cancels delayed audio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major selection survives delayed-cancel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor unavailable disables sound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor unavailable explains sound state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor selection survives unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor explicit audio error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor selection survives error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor selection cancels delayed audio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor selection survives delayed-cancel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales first scale key visible after resize",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales select focus visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales forced-color focus visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major first scale key visible after resize",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major select focus visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major forced-color focus visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor first scale key visible after resize",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor select focus visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor forced-color focus visible",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

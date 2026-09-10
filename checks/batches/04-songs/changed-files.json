@@ -1,0 +1,164 @@
+{
+  "baseline_note": "Hash comparison against source-before.json; build caches, generated Next.js type files, hidden repository controls and checks artifacts are excluded to match the baseline inventory.",
+  "source_changes": [
+    {
+      "path": "src/app/songs/easy/page.tsx",
+      "sha256": "c9ae4117a9e999c698649bbf7286ede8ed289664dd8b881597d78bd1b61c47b3",
+      "bytes": 360,
+      "status": "added"
+    },
+    {
+      "path": "src/app/songs/page.tsx",
+      "sha256": "719d96c794a01ab70ee2af4b6b5579b03063699f55c3966c606f0b35e9af0fc0",
+      "bytes": 359,
+      "status": "added"
+    },
+    {
+      "path": "src/components/chords/site-chrome.tsx",
+      "sha256": "e14c094fd8b61fe76d8e3d845e802ec39df6e2a59590b166ddbe5aa590f4bba3",
+      "bytes": 952,
+      "status": "modified"
+    },
+    {
+      "path": "src/components/songs/center-experience.tsx",
+      "sha256": "8aa6774e4c151d3bf5381d6eaf1de29228d1f6409c6521375182395c6677f7cf",
+      "bytes": 3264,
+      "status": "added"
+    },
+    {
+      "path": "src/components/songs/easy-experience.tsx",
+      "sha256": "45545fa7a00348920edda1e20d1e6dcc5a5a0b246695bacc9410f6d9a3363c22",
+      "bytes": 1772,
+      "status": "added"
+    },
+    {
+      "path": "src/components/songs/pages.tsx",
+      "sha256": "18d62e59bf4e33a7f8dc37e3c2cb1498f4478050e2a4abb0e271087601dca735",
+      "bytes": 3610,
+      "status": "added"
+    },
+    {
+      "path": "src/components/songs/resource-card.tsx",
+      "sha256": "b28807083dd90dc3ca16a9dfa008521dc063e12014f36b9fb17e5216be5ee100",
+      "bytes": 2149,
+      "status": "added"
+    },
+    {
+      "path": "src/components/songs/songs.css",
+      "sha256": "df7803d774822512fb4714a54efa299118e801e18a69719e6aca77db60da691b",
+      "bytes": 7172,
+      "status": "added"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "sha256": "30b598d6fa3a7a4d7a2bbada0c46fd1fb8a9fce0efbd037c786a688b61b3b577",
+      "bytes": 1486,
+      "status": "modified"
+    },
+    {
+      "path": "src/lib/song-content.ts",
+      "sha256": "c93ecb1dac3c3c18d5f5d201d0faa10e0eea1452ecf38b9040b33cd6e0c568c4",
+      "bytes": 7010,
+      "status": "added"
+    },
+    {
+      "path": "src/lib/song-types.ts",
+      "sha256": "b2aad3d274639cba6c697832c01b37a714978a8c9ec4b982933afa6e26ed8127",
+      "bytes": 1728,
+      "status": "added"
+    }
+  ],
+  "other_touched_paths": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "1d89c4b7e492a43703aa3990a941d3be6218ff0939f71c5bd4ad33027a40f4fe",
+      "bytes": 2640,
+      "status": "modified"
+    },
+    {
+      "path": "docs/content/content-source-map.json",
+      "sha256": "626084feed2035a324ede4eaf63b1a6e8cd5f2ac53ce471e1cdf1b92aefa9edf",
+      "bytes": 369910,
+      "status": "modified"
+    },
+    {
+      "path": "docs/design/component-spec.md",
+      "sha256": "29ae22339126a1e23400860c9e3b13693cb8aad2d46d743dbd28368becf973f0",
+      "bytes": 17709,
+      "status": "modified"
+    },
+    {
+      "path": "docs/design/template-map.md",
+      "sha256": "b4fb348c6c499bf7143696122345073458786d198b080c535e0a44d532e23f7c",
+      "bytes": 17055,
+      "status": "modified"
+    },
+    {
+      "path": "docs/project-context.md",
+      "sha256": "5b7d828665c3d2a8fec20bbf38ca55b33d981f5b68c59b6d0890d3e46a1a435a",
+      "bytes": 3441,
+      "status": "modified"
+    },
+    {
+      "path": "docs/tasks/site-implementation-plan.md",
+      "sha256": "f52a1f07b985f1472716c22c1ec5c830c848dd3892c818378803fb6d5bb00ea0",
+      "bytes": 16382,
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6683332802c3be8c9ca1d9f2a0039cb9c29039f368c770fd409d8f2fd243dd8e",
+      "bytes": 2065,
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-a-minor.mjs",
+      "sha256": "7a45ba5a24989705067b1ebcc94310ee535cc6d4572460410870174dfd899165",
+      "bytes": 20052,
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-css.mjs",
+      "sha256": "ee51c81410d4dc852926ab54d3fb7219108bfba0bff5c2356e56094b2711646b",
+      "bytes": 4735,
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "sha256": "f6de67a68fd4c136346a6e857c31eb0dcd0c4ec81e88de3e199641ac0c53f771",
+      "bytes": 11658,
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-scale-batch.mjs",
+      "sha256": "85fc59b3534cb1e6fdf71193eb756594eacae4b6fa8cbbd4c458946429bc7c7c",
+      "bytes": 14659,
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-scale-production.mjs",
+      "sha256": "14c2b7e4260e30e07ef5c69a0225bd5ea8732a62a122be91f0ce14f76ae5fbc3",
+      "bytes": 3479,
+      "status": "modified"
+    },
+    {
+      "path": "scripts/check-song-batch.mjs",
+      "sha256": "a8b57a3992b2761042f9fe8ad1a3757fcaa8e23edc7720523a9baf37a8b9de30",
+      "bytes": 8599,
+      "status": "added"
+    },
+    {
+      "path": "scripts/check-song-data.mjs",
+      "sha256": "f46c4d94f6767f8b5839f59d1ce6c80bbbe4272ef34b46a8bc4025bf176bc789",
+      "bytes": 6532,
+      "status": "added"
+    },
+    {
+      "path": "scripts/check-song-production.mjs",
+      "sha256": "2a4643e0b4cf68197ffa28407ad0cc77f9a3f6112f166be7f8f9c7adb75b231a",
+      "bytes": 2921,
+      "status": "added"
+    }
+  ],
+  "evidence_directory": "checks/batches/04-songs"
+}

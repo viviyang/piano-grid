@@ -1,0 +1,188 @@
+{
+  "executed_at": "2026-09-09T19:08:00+08:00",
+  "browser": "Codex in-app browser",
+  "base_url": "http://localhost:3000",
+  "result": "PASS_WITH_NOTES",
+  "console_errors_or_warnings_observed": 0,
+  "screenshots": [
+    {
+      "id": "lookup-1440",
+      "url": "/keyboard-notes",
+      "viewport": "1440x1000",
+      "bytes": 74237,
+      "sha256": "81c3ddeb6e3d40662eb8ca501021920f0d91398e74c06f884db812f757721c64",
+      "inspection": "No document-level horizontal overflow; the long keyboard uses its intended inner viewport."
+    },
+    {
+      "id": "lookup-390",
+      "url": "/keyboard-notes",
+      "viewport": "390x844",
+      "bytes": 36844,
+      "sha256": "dbb8a4bdc5686c81280f7ab2ea0b170a1c062935fcb8af606cf6dcede5fe64d4",
+      "inspection": "No document-level horizontal overflow; controls and result content remain readable."
+    },
+    {
+      "id": "labeled-1440",
+      "url": "/keyboard-notes/labeled",
+      "viewport": "1440x1000",
+      "bytes": 66711,
+      "sha256": "13741efbcf7430de4172a42029fa9d4a9e9ddfb05c5159b6cf239ef3519f11e5",
+      "inspection": "Default 88-key chart, controls, and download action are readable."
+    },
+    {
+      "id": "labeled-390",
+      "url": "/keyboard-notes/labeled",
+      "viewport": "390x844",
+      "bytes": 38766,
+      "sha256": "9c266c9e530ddf9fd4eea141788f1abb57ac2e8ae209b2b7077e14ddf0c861f8",
+      "inspection": "No document-level horizontal overflow; controls wrap and the keyboard keeps an inner scroll area."
+    },
+    {
+      "id": "labeled-320",
+      "url": "/keyboard-notes/labeled",
+      "viewport": "320x780",
+      "bytes": 34557,
+      "sha256": "6b83aa9bda348ad5ed2d413e9ef667dd085e86714c8ad175bcdcc57aed7349c2",
+      "inspection": "Boundary-width layout remains usable without document-level horizontal overflow."
+    },
+    {
+      "id": "chart-1440",
+      "url": "/keyboard-notes/chart",
+      "viewport": "1440x1000",
+      "bytes": 75575,
+      "sha256": "57fbd1cba1323579ea9ce85a35acab95cfdfdcb541353611fb172d5774851caa",
+      "inspection": "Keyboard, both clefs, selected-note state, and controls are legible."
+    },
+    {
+      "id": "chart-390",
+      "url": "/keyboard-notes/chart",
+      "viewport": "390x844",
+      "bytes": 24591,
+      "sha256": "00cf5052b6ba8c3ef0b593a2659390a38b031a3cb20fdc1514a3046d5537c086",
+      "inspection": "No document-level horizontal overflow; the tool remains operable."
+    },
+    {
+      "id": "chart-768",
+      "url": "/keyboard-notes/chart",
+      "viewport": "768x900",
+      "bytes": 55631,
+      "sha256": "acb12d11c56ea593d312c7e6dedb86f7e109dd3439d8273708c6fda121fa2b35",
+      "inspection": "Boundary-width toolbar and chart remain readable without document-level overflow."
+    },
+    {
+      "id": "a-minor-1440-regression",
+      "url": "/chords/a-minor?review=regression-mobile",
+      "viewport": "1440x1000",
+      "bytes": 77809,
+      "sha256": "7c02f851ce93aa1a4af3fbc462a8386e8c2529f8a285be6c374a61a451954623",
+      "metrics": {
+        "inner_width": 1440,
+        "client_width": 1425,
+        "scroll_width": 1425
+      },
+      "inspection": "Current-source regression view preserves the accepted structure and has no document-level horizontal overflow."
+    },
+    {
+      "id": "a-minor-390-regression",
+      "url": "/chords/a-minor?review=regression-mobile",
+      "viewport": "390x844",
+      "bytes": 37405,
+      "sha256": "79f97e93c1ec0d7fa6cbc66df7b8cf199fa7edb2f36f569c451c5d29d6739ed8",
+      "metrics": {
+        "inner_width": 390,
+        "client_width": 375,
+        "scroll_width": 375
+      },
+      "inspection": "Current-source mobile regression view has no document-level horizontal overflow."
+    }
+  ],
+  "interaction_cases": [
+    {
+      "id": "B-001",
+      "url": "/keyboard-notes",
+      "case": "Ambiguous note lookup",
+      "observed": "Query C offered C1 through C8 and did not preselect a pitch.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-002",
+      "url": "/keyboard-notes",
+      "case": "Enharmonic spelling retention",
+      "observed": "B#3 resolved to MIDI 60/C4 while retaining B#3; Cb4 resolved to MIDI 59/B3 while retaining Cb4.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-003",
+      "url": "/keyboard-notes",
+      "case": "Black-key side disambiguation and range limit",
+      "observed": "The black key beside G asked which side, lower led to F# octave choices, and D8 was reported outside A0-C8.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-004",
+      "url": "/keyboard-notes",
+      "case": "Keyboard click, keyboard navigation, playback, and cancellation",
+      "observed": "Click selected A4/MIDI 69; ArrowRight focused A#4/Bb4 and Enter selected it; Play entered playing state and Stop cleared it.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-005",
+      "url": "/keyboard-notes/labeled",
+      "case": "Verified layouts and label modes",
+      "observed": "88-key layout rendered 88 keys in 9 segments; 61-key layout rendered 61 keys in 6 segments with C2-C7 endpoints. Letter and octave toggles selected the matching PDF URLs.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-006",
+      "url": "/keyboard-notes/labeled",
+      "case": "Section navigation and print snapshot",
+      "observed": "C4-B4 section navigation updated hash/focus. Print at 61-key octave mode produced a hidden snapshot marked 61-key-C2-C7 with octave labels and no page error.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-007",
+      "url": "/keyboard-notes/chart",
+      "case": "Staff-to-keyboard synchronization and accidental toggle",
+      "observed": "Selecting F#3 on staff selected MIDI 54 on keyboard and both staffs; flat mode displayed Gb3 for the same MIDI value.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-008",
+      "url": "/keyboard-notes/chart",
+      "case": "Keyboard-to-staff synchronization",
+      "observed": "Selecting MIDI 61 on the keyboard displayed Db4 and moved the staff selection to the same pitch.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-009",
+      "url": "/keyboard-notes/chart",
+      "case": "Clef, range, key-count, print-state, and audio state changes",
+      "observed": "Bass-only showed one staff; C2-C4 reset selection to C2 with 25 notes; 88-key mode produced 88 note controls and 15 print sheets; switching range while playing cancelled playback.",
+      "status": "PASS"
+    },
+    {
+      "id": "B-010",
+      "url": "/chords/a-minor",
+      "case": "Affected shared-component regression",
+      "observed": "First/second inversion changes worked; Play chord entered playing state and Stop reported playback stopped; 1440 and 390 layouts had no document-level overflow.",
+      "status": "PASS"
+    }
+  ],
+  "not_run": [
+    {
+      "id": "NR-001",
+      "case": "Native browser zoom at 200 percent",
+      "reason": "The in-app browser did not expose a working native zoom control; attempted keyboard zoom did not change innerWidth, devicePixelRatio, or visualViewport scale."
+    },
+    {
+      "id": "NR-002",
+      "case": "Current-run native print dialog or newly saved browser-print PDF",
+      "reason": "The in-app browser did not expose the native print dialog. The current hidden print snapshot was inspected, and implementation-handoff print PDFs were independently parsed and rendered as separate evidence."
+    },
+    {
+      "id": "NR-003",
+      "case": "Human listening, screen reader, physical device, and physical print",
+      "reason": "These require external human or device verification."
+    }
+  ]
+}

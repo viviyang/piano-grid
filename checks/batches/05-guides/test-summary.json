@@ -1,0 +1,22 @@
+{
+  "batch": "05-guides",
+  "executed_at": "2026-09-09",
+  "status": "passed",
+  "results": {
+    "foundation": { "passed": 560, "failed": 0 },
+    "guide_data": { "passed": 157, "failed": 0 },
+    "guide_browser": { "passed": 77, "failed": 0 },
+    "guide_production": { "passed": 57, "failed": 0 },
+    "a_minor_regression": { "passed": 162, "failed": 0 },
+    "typecheck": "passed",
+    "tailwind_compile": "passed",
+    "next_build": "passed"
+  },
+  "total_assertions": 1013,
+  "notes": [
+    "The first sandboxed build compiled but the TypeScript child process hit spawn EPERM; the permitted host rerun passed.",
+    "The first sandboxed browser launch hit spawn EPERM; permitted host runs completed.",
+    "The original four-page PDF was rendered with Poppler and visually inspected page by page.",
+    "Named professional educator review remains pending and is separate from programmatic notation checks."
+  ]
+}

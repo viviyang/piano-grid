@@ -1,0 +1,215 @@
+{
+  "scope": "Direct CSS parsed/rendered in browser memory; no app page written. NOT Tailwind compilation or Next runtime.",
+  "browser": "144.0.7559.96",
+  "css_parse": [
+    {
+      "file": "src/styles/tokens.css",
+      "errors": []
+    },
+    {
+      "file": "src/styles/foundation.css",
+      "errors": []
+    },
+    {
+      "file": "src/app/globals.css",
+      "errors": []
+    }
+  ],
+  "browser_checks": [
+    {
+      "test": "responsive foundational styles",
+      "width": 320,
+      "values": {
+        "h1": "30px",
+        "body": "16px",
+        "containerWidth": 288,
+        "containerX": 16,
+        "meta": "13px",
+        "hitHeight": "44px",
+        "disabledCursor": "not-allowed",
+        "hidden": "none",
+        "pageOverflow": false,
+        "colorScheme": "light"
+      },
+      "passed": true
+    },
+    {
+      "test": "responsive foundational styles",
+      "width": 360,
+      "values": {
+        "h1": "30px",
+        "body": "16px",
+        "containerWidth": 328,
+        "containerX": 16,
+        "meta": "13px",
+        "hitHeight": "44px",
+        "disabledCursor": "not-allowed",
+        "hidden": "none",
+        "pageOverflow": false,
+        "colorScheme": "light"
+      },
+      "passed": true
+    },
+    {
+      "test": "responsive foundational styles",
+      "width": 390,
+      "values": {
+        "h1": "30px",
+        "body": "16px",
+        "containerWidth": 358,
+        "containerX": 16,
+        "meta": "13px",
+        "hitHeight": "44px",
+        "disabledCursor": "not-allowed",
+        "hidden": "none",
+        "pageOverflow": false,
+        "colorScheme": "light"
+      },
+      "passed": true
+    },
+    {
+      "test": "responsive foundational styles",
+      "width": 768,
+      "values": {
+        "h1": "36px",
+        "body": "17px",
+        "containerWidth": 704,
+        "containerX": 32,
+        "meta": "14px",
+        "hitHeight": "44px",
+        "disabledCursor": "not-allowed",
+        "hidden": "none",
+        "pageOverflow": false,
+        "colorScheme": "light"
+      },
+      "passed": true
+    },
+    {
+      "test": "responsive foundational styles",
+      "width": 1024,
+      "values": {
+        "h1": "36px",
+        "body": "17px",
+        "containerWidth": 960,
+        "containerX": 32,
+        "meta": "14px",
+        "hitHeight": "44px",
+        "disabledCursor": "not-allowed",
+        "hidden": "none",
+        "pageOverflow": false,
+        "colorScheme": "light"
+      },
+      "passed": true
+    },
+    {
+      "test": "responsive foundational styles",
+      "width": 1440,
+      "values": {
+        "h1": "36px",
+        "body": "17px",
+        "containerWidth": 1120,
+        "containerX": 160,
+        "meta": "14px",
+        "hitHeight": "44px",
+        "disabledCursor": "not-allowed",
+        "hidden": "none",
+        "pageOverflow": false,
+        "colorScheme": "light"
+      },
+      "passed": true
+    },
+    {
+      "test": "keyboard focus",
+      "values": {
+        "focused": true,
+        "visible": true,
+        "width": "2px",
+        "offset": "4px",
+        "color": "rgb(0, 102, 204)"
+      },
+      "passed": true
+    },
+    {
+      "test": "reduced motion",
+      "values": {
+        "duration": "0s",
+        "flag": "0"
+      },
+      "passed": true
+    },
+    {
+      "test": "no automatic dark palette",
+      "background": "rgb(255, 255, 255)",
+      "passed": true
+    },
+    {
+      "test": "print foundation does not hide content",
+      "values": {
+        "color": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255)",
+        "containerDisplay": "block"
+      },
+      "passed": true
+    },
+    {
+      "test": "forced colors focus remains",
+      "outlineStyle": "solid",
+      "passed": true
+    }
+  ],
+  "contrast": [
+    {
+      "name": "foreground on page",
+      "foreground": "#1D1D1F",
+      "background": "#FFFFFF",
+      "ratio": 16.83,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "name": "secondary text on surface",
+      "foreground": "#5C626B",
+      "background": "#F6F7F9",
+      "ratio": 5.738,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "name": "primary white label",
+      "foreground": "#FFFFFF",
+      "background": "#0066CC",
+      "ratio": 5.567,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "name": "selected foreground",
+      "foreground": "#0066CC",
+      "background": "#FFFFFF",
+      "ratio": 5.567,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "name": "focus on surface",
+      "foreground": "#0066CC",
+      "background": "#F6F7F9",
+      "ratio": 5.193,
+      "target": 3,
+      "passed": true
+    },
+    {
+      "name": "input edge on page",
+      "foreground": "#7A828E",
+      "background": "#FFFFFF",
+      "ratio": 3.881,
+      "target": 3,
+      "passed": true
+    }
+  ],
+  "input_versions": {
+    "content": "1.0.0-batch-01",
+    "plan": "2.0-consolidated-final-plan"
+  },
+  "failed": 0
+}

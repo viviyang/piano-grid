@@ -1,0 +1,31 @@
+{
+  "batch": "06-blank-sheet",
+  "status": "implementation_checked",
+  "routes": [
+    {
+      "url": "/tools/blank-sheet-music",
+      "template": "T19",
+      "source_groups": ["P079"],
+      "delivered": [
+        "default US Letter and selectable A4",
+        "always-available downloads for both original PDFs",
+        "selected-format open-to-print and download actions",
+        "authorized six-system grand-staff SVG preview",
+        "75–150 percent screen zoom with local scrolling",
+        "no-account and no-JavaScript fallback"
+      ],
+      "pending": [
+        "independent review",
+        "real browser print dialog",
+        "physical printing"
+      ]
+    }
+  ],
+  "excluded": [
+    "/tools",
+    "/sheet-music",
+    "all other tool and sheet-music pages",
+    "upload, editing, accounts and payments",
+    "deployment and indexing"
+  ]
+}

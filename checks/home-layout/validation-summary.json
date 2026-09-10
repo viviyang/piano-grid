@@ -1,0 +1,33 @@
+{
+  "stage": "homepage-layout-only",
+  "status": "passed",
+  "reference": {
+    "desktop": "docs/design/PianoLab_V1/design/desktop-1440.png",
+    "mobile": "docs/design/PianoLab_V1/design/mobile-390.png"
+  },
+  "implementation_screenshots": {
+    "desktop_1440": "checks/home-layout/integration/screenshots/home-1440.png",
+    "mobile_390": "checks/home-layout/integration/screenshots/home-390.png"
+  },
+  "checks": [
+    { "command": "npm run check", "passed": true, "result": "Foundation 560/560; TypeScript passed; CSS check passed" },
+    { "command": "npm run build", "passed": true, "result": "17 authorized business routes statically generated" },
+    { "command": "node scripts/check-integration-data.mjs", "passed": true, "result": "153/153" },
+    { "command": "node scripts/check-integration-batch.mjs", "passed": true, "result": "194/194" },
+    { "command": "node scripts/check-integration-production.mjs", "passed": true, "result": "117/117" },
+    { "command": "node scripts/check-a-minor.mjs", "passed": true, "result": "162/162" },
+    { "command": "node scripts/check-release-seo.mjs", "passed": true, "result": "17/17 pages; 0 blocking findings; 0 runtime errors" }
+  ],
+  "theme_files_unchanged": [
+    "src/app/globals.css",
+    "src/styles/tokens.css",
+    "src/styles/foundation.css",
+    "postcss.config.mjs"
+  ],
+  "manual_checks_remaining": [
+    "physical phone crop and touch ergonomics",
+    "screen-reader phrasing",
+    "audible tone quality on speakers or headphones",
+    "printed output"
+  ]
+}

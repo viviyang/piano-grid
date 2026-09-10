@@ -1,0 +1,106 @@
+{
+  "passed": 25,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/chords unavailable disables sound",
+      "passed": true
+    },
+    {
+      "name": "/chords unavailable explanation",
+      "passed": true
+    },
+    {
+      "name": "/chords/unavailable filter survives",
+      "passed": true
+    },
+    {
+      "name": "/chords audio error explicit",
+      "passed": true
+    },
+    {
+      "name": "/chords/error filter survives",
+      "passed": true
+    },
+    {
+      "name": "/chords late resume creates no nodes",
+      "passed": true
+    },
+    {
+      "name": "/chords/delayed-cancel filter survives",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major unavailable disables sound",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major unavailable explanation",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/unavailable selection survives",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major audio error explicit",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/error selection survives",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major late resume creates no nodes",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/delayed-cancel selection survives",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major unavailable disables sound",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major unavailable explanation",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/unavailable selection survives",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major audio error explicit",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/error selection survives",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major late resume creates no nodes",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/delayed-cancel selection survives",
+      "passed": true
+    },
+    {
+      "name": "Shared detail keyboard focus visible",
+      "passed": true
+    },
+    {
+      "name": "Shared reduced motion",
+      "passed": true
+    },
+    {
+      "name": "Shared forced colors focus visible",
+      "passed": true
+    },
+    {
+      "name": "Shared search Escape restores focus",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,603 @@
+{
+  "executed_at": "2026-09-09T23:37:52.633Z",
+  "runtime": "v24.14.1",
+  "passed": 119,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Page exists in master",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Page exactly matches D batch object",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "T19 template",
+      "passed": true,
+      "detail": "T19"
+    },
+    {
+      "name": "Canonical path",
+      "passed": true,
+      "detail": "/tools/blank-sheet-music"
+    },
+    {
+      "name": "Page remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Core block order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Block get heading and body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Block get sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Block use heading and body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Block use sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Only source group P079",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P079 required delivery",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No account required",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Blank notation contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Clef contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exact preview identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exactly two PDFs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf PDF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf six systems",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf no account access",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf distributable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf exported byte-identical",
+      "passed": true,
+      "detail": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa"
+    },
+    {
+      "name": "assets/blank-piano-staff-a4.pdf PDF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-a4.pdf six systems",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-a4.pdf no account access",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-a4.pdf distributable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-a4.pdf exported byte-identical",
+      "passed": true,
+      "detail": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf"
+    },
+    {
+      "name": "SVG has accessible image label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SVG has sixty staff lines",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "SVG has six system braces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SVG has twelve clef glyph paths",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SVG has no executable or external content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SVG public copy is byte-identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only source unchanged: docs/design/reference/final-1440-top.png",
+      "passed": true,
+      "detail": "a697418f028568d7017b24aa89831fd457a92943c32acef2012f70e2a68df777"
+    },
+    {
+      "name": "Read-only source unchanged: docs/design/reference/final-390-top.png",
+      "passed": true,
+      "detail": "280fc60bb8dafa839cbefa4229590ae0c2e8cbcf8372fefe9cb061bac5ec4b3e"
+    },
+    {
+      "name": "Read-only source unchanged: docs/design/reference/final-a-minor.html",
+      "passed": true,
+      "detail": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2"
+    },
+    {
+      "name": "Read-only source unchanged: docs/design/reference/final-prototype.css",
+      "passed": true,
+      "detail": "91a3714d25977682b45a047181632228f94772772934c8ca9ebd06b16ac421b9"
+    },
+    {
+      "name": "Read-only source unchanged: docs/design/reference/original-design-notes.md",
+      "passed": true,
+      "detail": "3e3ec256be85a3ed68598687a447393aa7ee716993b2ed3b27e1e4b8e701c10b"
+    },
+    {
+      "name": "Read-only source unchanged: docs/design/reference/README.md",
+      "passed": true,
+      "detail": "614841688d452bba811d3e188da7b14d6b91cd951339812bc1823ec2e41a1bb4"
+    },
+    {
+      "name": "Read-only source unchanged: docs/product/Piano_全站规划附表.xlsx",
+      "passed": true,
+      "detail": "853fe1b96d75ed9fd494753b0b05a9876f7378403b0fb16a3bd55ba3bc30434b"
+    },
+    {
+      "name": "Read-only source unchanged: docs/product/Piano_全站统一规划_最终版.md",
+      "passed": true,
+      "detail": "97e30d5a5cb29f2eb975a12f16d6b375babdad3cb969a38b26f39273760853b1"
+    },
+    {
+      "name": "Read-only source unchanged: docs/product/Piano_URL规划说明.md",
+      "passed": true,
+      "detail": "ec6d9f49e58f91a212ab437d7df447bffee6199f9a6f2d9ab1e5d8c3d81364d4"
+    },
+    {
+      "name": "Read-only source unchanged: docs/product/README.md",
+      "passed": true,
+      "detail": "e6cb44496b58f5a9c74ef5021b5e6e8146590a0c576281abb29eb5108b568b45"
+    },
+    {
+      "name": "Read-only source unchanged: docs/product/url-plan.final.json",
+      "passed": true,
+      "detail": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-a-major.svg",
+      "passed": true,
+      "detail": "4a824adf140a3f70475a9a8cf490bc228d04a45275be5a1a6c293d5a3853cf4a"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-b-major.pdf",
+      "passed": true,
+      "detail": "7a45fa2e48c05d68b1a62c4d95e48f900b08a87b1f903fdf8a34ffaa1535c207"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-b-major.svg",
+      "passed": true,
+      "detail": "79fbc3f310561376bdceef6987cabc361a096eb7f0fd8e962d89fc7bb200bf7d"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-c-flat-major.pdf",
+      "passed": true,
+      "detail": "a843d9fbd378ec882fdab9b20b2d5c819720fb1ed48eb3548783e4f732058818"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-c-flat-major.svg",
+      "passed": true,
+      "detail": "6138cff52738b4506301d134ad6604751233031206f48985c090a464c91aba48"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-c-major.pdf",
+      "passed": true,
+      "detail": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-c-major.svg",
+      "passed": true,
+      "detail": "f76bdc1659a008d16a353d52416f9978b6109622eee09cfaedeff302dce716de"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-c-minor.pdf",
+      "passed": true,
+      "detail": "e0adf857a1f11b0a7279cbc496a814a2f033481c8f8a3d2921ec3e60f3aac505"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-c-minor.svg",
+      "passed": true,
+      "detail": "7e03d1177e86ebe7d4e1c9f94ea4d9f3cbd0ccdf2d338765a804187d9fbabe85"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-e-major.pdf",
+      "passed": true,
+      "detail": "256799a064f8207e52cc92c9c0ef5c39bb59ad1c78481a65079e90769aa4aabc"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-e-major.svg",
+      "passed": true,
+      "detail": "786791d0c53cea0ab8721585a680bec47afa7d70763e7c1e63e59bae87a74670"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-g-major.pdf",
+      "passed": true,
+      "detail": "d55a9e192d3e6a0a1c89507760bfee311f84dcab68f23ef2f9d663e20a94790d"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-g-major.svg",
+      "passed": true,
+      "detail": "33290066ec62f1eff31f082f6f961bd0c6bfa13a6c2b9e32b9c55640778932eb"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-progressions-c-e-a.pdf",
+      "passed": true,
+      "detail": "362980f69ae6f0a29e93258200bf7adb44ec38236db58cb11ae37d4d0453fa05"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-a-major.pdf",
+      "passed": true,
+      "detail": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/music-symbols.svg",
+      "passed": true,
+      "detail": "205f1fa0eef935c72e3fcd454129917fec6b26c202314f6b03fee4f8b9f77a06"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/piano-hand-position.svg",
+      "passed": true,
+      "detail": "3c1ba721e6fd385a1213157b8fbb877e4cc30210b5fc2ea9027d3d1292f5b6e2"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/piano-starter-and-reading.pdf",
+      "passed": true,
+      "detail": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-content-pack.md",
+      "passed": true,
+      "detail": "dcc226db8f3385e815a13c6bbfc0421236289cd02a183d00ea33170411455e26"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-open-issues.md",
+      "passed": true,
+      "detail": "4371f45f5f6c67becc94eb35850f32521a3b29e76e41740d37e7414a61d3714e"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-page-content.json",
+      "passed": true,
+      "detail": "54ef3f422bf1fbd037d2c7acb63d767ffa23b2ccf076c8acc62b19ba74f23d3c"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-source-ledger.md",
+      "passed": true,
+      "detail": "26a3b93c65008ad636fcf80b51f8e1cc1b117358773107c49ef220b86efc6d8b"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/C-Songs/batch-content-pack.md",
+      "passed": true,
+      "detail": "38b97811a3b55961c11e67c2fcc28ab15c80bc4046d97e5f11d98ea330e5c795"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/C-Songs/batch-open-issues.md",
+      "passed": true,
+      "detail": "b313d519c1928bda5e95be4eb8504c6ad87135f51ff4bd28ed3665c6f6dfa19f"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/C-Songs/batch-page-content.json",
+      "passed": true,
+      "detail": "e9f12ea0e824008afa43430a0e527d5eefb378c83d75560810a6e6191879525a"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/C-Songs/batch-source-ledger.md",
+      "passed": true,
+      "detail": "a2f51e1618121ffc9f11131e33808245aec912720994e976d785bbe40e92ba64"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/D-Sheet-Music/batch-content-pack.md",
+      "passed": true,
+      "detail": "a2767120b03827fe8296f4d41a2ddc453e79d909001cdd1c2bf258685fbc05fc"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/D-Sheet-Music/batch-open-issues.md",
+      "passed": true,
+      "detail": "3e148033aef9289e64d953b04ab3481dd039f8b206d65a5fbe6205a6d3f3edcc"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/D-Sheet-Music/batch-page-content.json",
+      "passed": true,
+      "detail": "58e1f2206ba6c81ff4c95e961e7e0f472af65e6fe20d4962a276055e1fdc8570"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/D-Sheet-Music/batch-source-ledger.md",
+      "passed": true,
+      "detail": "1d27965ab17688e2a310d998917835fcc725639f196d87abf14d26418c778b26"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/piano-cheat-sheet.pdf",
+      "passed": true,
+      "detail": "6235a6d6c24d8d599bd9de1aa3dac4888dc18a2111259be503fd35b6d88a7296"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-a-flat-major.svg",
+      "passed": true,
+      "detail": "c6c1de37099ce893906a27e63d71873a55eca9f72b0e07e4c91392e6be6f5e52"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/chord-a-flat-major.pdf",
+      "passed": true,
+      "detail": "446585e7e48b24c40d39a2cf8aed8599e3df876f78388e10c28d7cd2a250ddfb"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/c-major-rh-fingers.svg",
+      "passed": true,
+      "detail": "126d12bded6666d14c6e5df8ba14d080f028e3c003b08d9f9b3a9c84ae23883a"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/content-master-index.md",
+      "passed": true,
+      "detail": "3e630cd575ea911cdb886161ffba2b3fc0b32546405e5009bbc30b06a6dcd68e"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/page-content.master.json",
+      "passed": true,
+      "detail": "99d59d51ca444a657b10f29ebaeee2ebfb58985b7af585b400a16452298b72c7"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/Piano_全站统一规划_最终版.md",
+      "passed": true,
+      "detail": "97e30d5a5cb29f2eb975a12f16d6b375babdad3cb969a38b26f39273760853b1"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/source-ledger.master.md",
+      "passed": true,
+      "detail": "5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/Bravura-LICENSE.txt",
+      "passed": true,
+      "detail": "bdca252186865f3b2c0e76da4a4e335c14ba1d37f80194fca254ddfa88e84fbf"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-piano-staff-preview.svg",
+      "passed": true,
+      "detail": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-piano-staff-letter.pdf",
+      "passed": true,
+      "detail": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-piano-staff-a4.pdf",
+      "passed": true,
+      "detail": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-keyboard-worksheet-letter.pdf",
+      "passed": true,
+      "detail": "786bb9d316cb45d5d691e6629168d6148dc0c27e03a5c675384b74a077a483d5"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-keyboard-worksheet-a4.pdf",
+      "passed": true,
+      "detail": "5cb574ab2c08278c998e28530811ed4849a07ed64060317a57ee81a4042f56d5"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-content-pack.md",
+      "passed": true,
+      "detail": "7f874b8fab1f43c57af4aa20517fb9237389ee94eedf2d292e9eed8b33e30bb8"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-keyboard-25-keys.svg",
+      "passed": true,
+      "detail": "e7dd25e5ca69822047b73a40e1d8ae7a7c0f2921cf212d5b616dae2795d8f02f"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/A-Scales/batch-source-ledger.md",
+      "passed": true,
+      "detail": "ce54c4cd56ff6d27a8ccc4341952fe94ca8d116c3e30fdb9b01292299d651be3"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/A-Scales/batch-page-content.json",
+      "passed": true,
+      "detail": "8a6f9681acec1a3091f1d938b15580afa9648b1e1337f1abd7f1cb3f88087580"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/A-Scales/batch-open-issues.md",
+      "passed": true,
+      "detail": "1a21c82129b149ec0c17afd640cf4db8ae90f3279560bb2ae59355a65c47bb59"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/A-Scales/batch-content-pack.md",
+      "passed": true,
+      "detail": "12d515873f750b1a75165d2646183dc7ced2096a6eee9f786d48f8a110051de5"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/url-plan.final.json",
+      "passed": true,
+      "detail": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/unresolved-issues.master.md",
+      "passed": true,
+      "detail": "cf9a9f6d2c525fd18facf97fe4f66e9232c038a932579cddc38f6d663ed8b598"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/assets/blank-keyboard-13-keys.svg",
+      "passed": true,
+      "detail": "febe9d82e4b992d530f555b5c2b6c32a4eeabe66bd96360d873aa021ead96333"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-open-issues.md",
+      "passed": true,
+      "detail": "d0d433ccda28fbf864d32aeb33c4d58201bd4d1da22e4744c51b5696770ebb33"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-page-content.json",
+      "passed": true,
+      "detail": "80afeebd9f79e4845a872766fb800f678c7095b802b072597eb5f7f5195f00a3"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-source-ledger.md",
+      "passed": true,
+      "detail": "2f988d80af1a7b9ff103aaff02d252d30f98a806ea154122ae476bfd1783b0fa"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/F-Homepage/batch-content-pack.md",
+      "passed": true,
+      "detail": "7d77879c3619006c9dcedfb2bedc5694b2d99237c56fec0fa9a1e8823cea8e41"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/F-Homepage/batch-open-issues.md",
+      "passed": true,
+      "detail": "fa53b86dcccaa13a47d63c5205231b9ddf331063b8349ba680459840164716fa"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/F-Homepage/batch-page-content.json",
+      "passed": true,
+      "detail": "ed04231bc2d5671f68b904db3a9425965a75023f8e44d4b0434946e792f9b2cb"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/F-Homepage/batch-source-ledger.md",
+      "passed": true,
+      "detail": "4656ec226404f5b7b6b3538920ae1a738d4db7a2d06c1f16157f1c60b694e23b"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/content-pack.md",
+      "passed": true,
+      "detail": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/page-content.json",
+      "passed": true,
+      "detail": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/a-flat-major--root.svg",
+      "passed": true,
+      "detail": "a59cc0efa28d9f72c5dbeb0106e0d68819d642bbc6aab639bd0b2fd704463d89"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/a-major--root.svg",
+      "passed": true,
+      "detail": "fe80d769b13accc879bde4c0421461b51a78ac9abb09c07cc463988d003439b9"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--first.svg",
+      "passed": true,
+      "detail": "fec03e26eac2c68ec5cda07a8269bc05318f00efefe59a950e5acfc72dbcfd23"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--root.svg",
+      "passed": true,
+      "detail": "f2a192906e970de51754d67d4824fd8ff9eebf9c5febfc68ba4d4dad5a729cb1"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--second.svg",
+      "passed": true,
+      "detail": "1bd87f800320f1b65dc786d0259cf41dcfc44a309e4406c83f3e92e95eef8d5c"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/a-minor-notes-inversions.pdf",
+      "passed": true,
+      "detail": "b6a79a5e69f216e3f3902aca431f2b96e1b6bf3554d624a360256dd4e58104e6"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/b-major--root.svg",
+      "passed": true,
+      "detail": "03bac802238be7d8dc69980ccba5b0a1f6332133d4e97677ebabec2cdd8633d9"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/c-flat-major--root.svg",
+      "passed": true,
+      "detail": "16e4c7a0c825d7f6f30da8445948d0282b138ce01473c01288b2af85627b02cd"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/c-major--root.svg",
+      "passed": true,
+      "detail": "351e3aef376cc66c9093eadc8f6e944c8ef786372eff50ee415e8d4696561cc0"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/c-minor--root.svg",
+      "passed": true,
+      "detail": "37a4b7b04566889986fb77865e704ceadadaaa6087de034d4f95dfe913025283"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/e-major--root.svg",
+      "passed": true,
+      "detail": "12994bfb08dde5e039110d61fb3b8b05ea236ba2637b5529dc17ed4147acba64"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "passed": true,
+      "detail": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf"
+    },
+    {
+      "name": "Read-only source unchanged: docs/content/site-master/preserved-chords/assets/g-major--root.svg",
+      "passed": true,
+      "detail": "d2dcbf853760318a474cd014a2d03e481051d0e2f6afd8d2fdacc5a0339e5a03"
+    }
+  ]
+}
