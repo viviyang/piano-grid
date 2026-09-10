@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-10T11:42:58.084Z",
+  "checked_at": "2026-09-10T11:55:09.540Z",
   "phase": "after",
-  "base": "http://127.0.0.1:3001",
+  "base": "http://localhost:3001",
   "expected_noindex": false,
   "expected_release_links": true,
   "pages": [
@@ -656,20 +656,20 @@
         "exact_text_samples": [
           {
             "text": "Use the keyboard chart to locate a note, the chord reference to look up a known chord, and the scale reference to inspect a selected scale. If you have notes bu",
-            "matched": true
+            "matched": false
           },
           {
             "text": "The original print collection includes a piano cheat sheet, blank grand staffs, a blank-keyboard worksheet, a starter and reading pack, and chord progressions i",
-            "matched": true
+            "matched": false
           }
         ],
-        "exact_matches": 2,
+        "exact_matches": 0,
         "exact_samples": 2
       },
       "rendered_core_content": {
         "in_http_html": true,
-        "main_text_characters": 1165,
-        "main_word_count": 192
+        "main_text_characters": 845,
+        "main_word_count": 143
       },
       "canonical": {
         "source_path": "/tools",
@@ -730,6 +730,26 @@
           {
             "href": "/assets/guides/piano-starter-and-reading.pdf",
             "text": "Download PDF"
+          },
+          {
+            "href": "/keyboard-notes/chart",
+            "text": "Find a note →"
+          },
+          {
+            "href": "/chords",
+            "text": "Look up a chord →"
+          },
+          {
+            "href": "/scales",
+            "text": "Check a scale →"
+          },
+          {
+            "href": "/tools/blank-sheet-music",
+            "text": "Blank piano sheet music →"
+          },
+          {
+            "href": "/guide",
+            "text": "Starter and reading pack →"
           }
         ]
       },

@@ -11,6 +11,7 @@ Date: 2026-09-10
 - [已核实] `robots.txt` allows `/` and advertises `https://pianogrid.com/sitemap.xml`.
 - [已核实] The sitemap contains exactly the 17 authorized public page paths on `https://pianogrid.com`.
 - [已核实] Public pages no longer display `Local page preview`, `local preview`, or `in this preview` environment copy. Unreleased Sheet Music and planned printable listings remain in planning data but are not promoted in the public interface.
+- [已核实] `/tools` derives its visible cards, supporting copy, action links, and downloads from the same availability-filtered model. Its five recommended actions exactly match the three released reference cards and two released printable cards; unreleased chord finder and printable plans remain in source planning data only.
 
 ## Validation
 
@@ -21,6 +22,7 @@ Date: 2026-09-10
 - `node scripts/check-integration-batch.mjs`: PASS — 232/232.
 - `node scripts/check-release-seo.mjs`: PASS — 17/17 pages; zero blocking findings; zero runtime errors.
 - Public-copy guard: PASS — the release crawler found no stale local-preview environment labels across the 17 pages.
+- Tools actionability guard: PASS — every supporting-copy action matches a live card target, and no unreleased feature name appears in the public main content.
 - Navigation interaction: PASS — 11/11.
 - Navigation responsive and keyboard checks: PASS — 101/101 across 320, 390, 768, 800, 1024, and 1440 px representative views.
 - [已核实] Before/after comparison found no changes to the 17 page titles, descriptions, H1 text, or canonical paths.

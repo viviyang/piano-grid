@@ -23,7 +23,7 @@ function Shell({model,current,children}:{model:IntegrationPageModel;current:'Hom
   return <div className="am-page in-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current={current}/><main id="main" className="pr-container" tabIndex={-1}><header className="in-heading"><p className="in-kicker">{SITE_NAME}</p><h1>{model.title}</h1><p>{model.description}</p></header>{children}</main><SiteFooter url={model.url}/></div>;
 }
 function Reading({blocks,children}:{blocks:IntegrationBlock[];children?:(block:IntegrationBlock)=>ReactNode}){
-  return <div className="am-reading in-reading">{blocks.map(block=><section className="am-content-section" id={`in-${block.id}`} data-block-id={block.id} key={block.id} tabIndex={-1} aria-labelledby={`in-${block.id}-heading`}><h2 id={`in-${block.id}-heading`}>{block.heading}</h2><div className="am-content-body"><p>{block.body}</p>{children?.(block)}</div></section>)}</div>;
+  return <div className="am-reading in-reading">{blocks.map(block=><section className="am-content-section" id={`in-${block.id}`} data-block-id={block.id} key={block.id} tabIndex={-1} aria-labelledby={`in-${block.id}-heading`}><h2 id={`in-${block.id}-heading`}>{block.heading}</h2><div className="am-content-body"><p>{block.body}</p>{block.actions?.length?<nav className="in-reading-actions" aria-label={`${block.heading} actions`}>{block.actions.map(action=><a href={action.url} key={action.url}>{action.label} <span aria-hidden="true">→</span></a>)}</nav>:null}{children?.(block)}</div></section>)}</div>;
 }
 function DestinationCard({item,index}:{item:Destination;index:number}){
   const content=<><span className="in-card-number">{String(index+1).padStart(2,'0')}</span><strong>{item.label}</strong><span>{item.available?'Open reference':'Not yet available'}</span></>;
@@ -68,9 +68,8 @@ export function HomePage(){
 }
 export function ToolsPage(){
   const data=getToolsModel();
-  const availableLookups=data.lookupLinks.filter(item=>item.available),availablePrintables=data.printables.filter(item=>item.available);
-  return <Shell model={data.model} current="Tools"><section className="in-tool-directory" aria-labelledby="in-tools-title"><div className="in-section-head"><p>Working references</p><h2 id="in-tools-title">Choose the result you need</h2></div><div className="in-lookup-grid">{availableLookups.map((item,index)=><DestinationCard item={item} index={index} key={item.url}/>)}</div></section>
-    <section className="in-printables" aria-labelledby="in-printables-title"><div className="in-section-head"><p>Original downloads</p><h2 id="in-printables-title">Print something useful</h2></div><div className="in-print-grid">{availablePrintables.map(item=><PrintableCard item={item} key={item.url}/>)}</div></section>
-    <Reading blocks={data.model.blocks}>{block=>block.id==='jobs'?<p className="in-release-note">Use the chord reference when you already know the chord name and want its notes or keyboard position.</p>:block.id==='printables'?<p className="in-release-note">Choose a printable above to open or download it.</p>:null}</Reading>
+  return <Shell model={data.model} current="Tools"><section className="in-tool-directory" aria-labelledby="in-tools-title"><div className="in-section-head"><p>Working references</p><h2 id="in-tools-title">Choose the result you need</h2></div><div className="in-lookup-grid">{data.lookupLinks.map((item,index)=><DestinationCard item={item} index={index} key={item.url}/>)}</div></section>
+    <section className="in-printables" aria-labelledby="in-printables-title"><div className="in-section-head"><p>Original downloads</p><h2 id="in-printables-title">Print something useful</h2></div><div className="in-print-grid">{data.printables.map(item=><PrintableCard item={item} key={item.url}/>)}</div></section>
+    <Reading blocks={data.model.blocks}/>
   </Shell>;
 }

@@ -34,8 +34,13 @@ export function getHomeModel():HomeModel{
 export function getToolsModel():ToolsModel{
   const {page,model}=getModel('/tools','T02');
   if(page.data.visibility_policy!=='show destination links only when that page is released; asset availability does not imply page release')throw new Error('Tools release policy changed');
-  const lookupLinks=page.data.lookup_links.map(destination);
-  const printables=page.data.printables.map((item:{label:string;task:string;url:string;asset:string}):PrintableDestination=>{const available=locallyAvailableURLs.has(item.url),downloadURL=available?(downloadableAssets[item.asset]??null):null;if(downloadURL)verifyDownload(item.asset,downloadURL);return{label:item.label,task:item.task,url:item.url,available,downloadURL};});
-  if(lookupLinks.filter((item:Destination)=>item.available).length!==3||printables.filter((item:PrintableDestination)=>item.available).length!==2)throw new Error('Tools destination release map is invalid');
-  return {model,lookupLinks,printables};
+  const allLookupLinks:Destination[]=page.data.lookup_links.map(destination);
+  const allPrintables:PrintableDestination[]=page.data.printables.map((item:{label:string;task:string;url:string;asset:string}):PrintableDestination=>{const available=locallyAvailableURLs.has(item.url),downloadURL=available?(downloadableAssets[item.asset]??null):null;if(downloadURL)verifyDownload(item.asset,downloadURL);return{label:item.label,task:item.task,url:item.url,available,downloadURL};});
+  const lookupLinks=allLookupLinks.filter(item=>item.available);
+  const printables=allPrintables.filter(item=>item.available);
+  if(lookupLinks.length!==3||printables.length!==2)throw new Error('Tools destination release map is invalid');
+  const blocks=model.blocks.map(block=>block.id==='jobs'
+    ? {...block,body:'Choose an available reference for the task you want to complete. Every option on this page opens the matching reference.',actions:lookupLinks.map(({label,url})=>({label,url}))}
+    : {...block,body:'Choose an available printable, open its resource page for details, or download its verified PDF.',actions:printables.map(({label,url})=>({label,url}))});
+  return {model:{...model,blocks},lookupLinks,printables};
 }

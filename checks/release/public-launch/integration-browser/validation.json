@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-09-10T11:42:25.770Z",
+  "executed_at": "2026-09-10T11:56:11.598Z",
   "passed": 232,
   "failed": 0,
   "results": [
@@ -894,12 +894,27 @@
       "detail": ""
     },
     {
-      "name": "Tools block 0 exact",
+      "name": "Tools every recommendation matches a live card",
       "passed": true,
-      "detail": ""
+      "detail": {
+        "recommendedTargets": [
+          "/chords",
+          "/guide",
+          "/keyboard-notes/chart",
+          "/scales",
+          "/tools/blank-sheet-music"
+        ],
+        "cardTargets": [
+          "/chords",
+          "/guide",
+          "/keyboard-notes/chart",
+          "/scales",
+          "/tools/blank-sheet-music"
+        ]
+      }
     },
     {
-      "name": "Tools block 1 exact",
+      "name": "Tools public copy makes no unavailable feature promise",
       "passed": true,
       "detail": ""
     },
