@@ -19,8 +19,9 @@ try{
     const response=await page.goto(base+route),html=await response.text(),source=master.pages[route],homeRoute=route==='/';
     check(`${route} production 200`,response.status()===200,response.status());
     check(`${route} production title`,await page.title()===(homeRoute?homeTitle:source.metadata.title));
-    check(`${route} production noindex`,(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
-    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator(homeRoute?'.ph-desktop-nav a':'.am-site-nav a').count()===6);
+    const robots=(await page.locator('meta[name=robots]').getAttribute('content'))||'';
+    check(`${route} production index/follow`,robots.includes('index')&&robots.includes('follow')&&!robots.includes('noindex')&&!robots.includes('nofollow'),robots);
+    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===10);
     check(`${route} excludes master payload`,!html.includes('source_usage_batches')&&!html.includes('retained_without_url')&&!html.includes('needed_to_resolve'));
   }
   for(const route of ['/','/tools'])for(const width of [1440,390,320,768]){
@@ -47,6 +48,10 @@ try{
     await page.screenshot({path:`${out}/screenshots/production-${route==='/'?'home':'tools'}-${width}.png`,fullPage:true});
   }
   for(const route of forbidden)check(`production excludes ${route}`,(await page.request.get(base+route)).status()===404);
+  const robotsResponse=await page.request.get(base+'/robots.txt'),robotsText=await robotsResponse.text();
+  check('production robots allows indexing',robotsResponse.status()===200&&robotsText.includes('Allow: /')&&!robotsText.includes('Disallow: /')&&robotsText.includes('Sitemap: https://pianogrid.com/sitemap.xml'));
+  const sitemapText=await (await page.request.get(base+'/sitemap.xml')).text();
+  check('production sitemap contains 17 public routes',routes.every(route=>sitemapText.includes(`https://pianogrid.com${route}`))&&!sitemapText.includes('localhost'));
   for(const asset of ['/assets/home/east-lake-piano-hero.png','/assets/home/east-lake-grand-piano.webp','/reference/assets/blank-piano-staff-letter.pdf','/assets/guides/piano-starter-and-reading.pdf'])check(`production asset ${asset}`,(await page.request.get(base+asset)).status()===200);
   check('production has no runtime errors',errors.length===0,errors);
 }finally{await browser.close();}

@@ -1,0 +1,61 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "desktop trigger expands",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop panel visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop chord child links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop Escape closes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop Escape restores focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home mobile menu visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home mobile menu has all 16 destinations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home mobile menu no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "content mobile menu visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "content mobile menu has all 16 destinations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "content mobile menu no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

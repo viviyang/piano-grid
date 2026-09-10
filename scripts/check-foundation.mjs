@@ -102,6 +102,7 @@ try {
   allowedComponents.push('src/components/guides/pages.tsx','src/components/guides/guides.css');
   allowedComponents.push('src/components/blank-sheet/pages.tsx','src/components/blank-sheet/blank-sheet-tool.tsx','src/components/blank-sheet/blank-sheet.css');
   allowedComponents.push('src/components/integration/pages.tsx','src/components/integration/home-experience.tsx','src/components/integration/home-visuals.tsx','src/components/integration/integration.css','src/components/integration/home-color-repair.css','src/components/integration/home-hero-background.css');
+  allowedComponents.push('src/components/site-navigation.tsx','src/components/site-navigation.css');
   const allowedPages=['src/app/page.tsx','src/app/tools/page.tsx','src/app/chords/page.tsx',...['a-minor','a-major','c-major'].map(n=>`src/app/chords/${n}/page.tsx`)];
   allowedPages.push('src/app/keyboard-notes/page.tsx','src/app/keyboard-notes/labeled/page.tsx','src/app/keyboard-notes/chart/page.tsx');
   allowedPages.push('src/app/scales/page.tsx','src/app/scales/c-major/page.tsx','src/app/scales/a-minor/page.tsx');

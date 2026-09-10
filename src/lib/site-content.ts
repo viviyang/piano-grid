@@ -1,8 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
+import { PUBLIC_ROUTES } from './site-routes';
 
 // Server/build-only source access. Reading a master object never authorizes its route.
-export const authorizedURLs = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/tools/blank-sheet-music'] as const;
+export const authorizedURLs = PUBLIC_ROUTES;
 export const locallyAvailableURLs = new Set<string>(authorizedURLs);
 export const localPreview = process.env.NODE_ENV === 'development' || process.env.PIANO_LOCAL_PREVIEW === '1';
 export function readMaster() { return JSON.parse(readFileSync(resolve('docs/content/site-master/page-content.master.json'), 'utf8')); }

@@ -7,7 +7,7 @@ const { chromium } = createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT
 const base = process.env.PIANO_BASE_URL || 'http://127.0.0.1:3001';
 const out = process.env.PIANO_CHECK_OUT || 'checks/release/08';
 const phase = process.env.PIANO_AUDIT_PHASE || 'after';
-const expectReleaseLinks = process.env.PIANO_EXPECT_RELEASE_LINKS === '1';
+const expectReleaseLinks = process.env.PIANO_EXPECT_RELEASE_LINKS !== '0';
 const checkExternal = process.env.PIANO_CHECK_EXTERNAL === '1';
 const routes = ['/', '/tools', '/songs', '/songs/easy', '/tools/blank-sheet-music', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/chords', '/chords/a-major', '/chords/a-minor', '/chords/c-major', '/scales', '/scales/c-major', '/scales/a-minor', '/guide', '/guide/read-sheet-music'];
 const homeMetadata = {
@@ -67,7 +67,7 @@ function sourceGroups(page) {
 }
 
 function releaseBlockers(url) {
-  const blockers = ['Formal production origin and public-index configuration are not yet approved.'];
+  const blockers = [];
   if (url === '/chords/a-major') blockers.push('Named professional approval remains required by F-RELEASE-a-major; absent inversion fingerings remain intentionally undisclosed.');
   if (url === '/chords/c-major') blockers.push('Named professional approval remains required by F-RELEASE-c-major; absent inversion fingerings remain intentionally undisclosed.');
   if (url === '/guide' || url === '/guide/read-sheet-music') {
@@ -163,7 +163,7 @@ for (const url of routes) {
   if (!dom.description || dom.description !== sourceDescription) issues.push({ severity: 'P2', code: 'DESCRIPTION_MISMATCH', detail: { sourceDescription, effectiveDescription: dom.description } });
   if (dom.h1.length !== 1) issues.push({ severity: 'P2', code: 'H1_COUNT', detail: dom.h1 });
   if (canonicalPath !== url) issues.push({ severity: 'P1', code: 'CANONICAL_PATH', detail: dom.canonical });
-  if (!dom.robots?.includes('noindex') || !dom.robots?.includes('nofollow')) issues.push({ severity: 'P1', code: 'INDEX_GUARD', detail: dom.robots });
+  if (!dom.robots?.includes('index') || !dom.robots?.includes('follow') || dom.robots.includes('noindex') || dom.robots.includes('nofollow')) issues.push({ severity: 'P1', code: 'PUBLIC_INDEX_POLICY', detail: dom.robots });
   if (brokenInternal.length) issues.push({ severity: 'P1', code: 'BROKEN_INTERNAL_LINK', detail: brokenInternal });
   if (dom.pageOverflow) issues.push({ severity: 'P2', code: 'PAGE_OVERFLOW_1440' });
   if (imageIssues.length || svgIssues.length) issues.push({ severity: 'P2', code: 'MEDIA_ACCESSIBILITY', detail: { imageIssues, svgIssues } });
@@ -268,7 +268,7 @@ const duplicateTitles = Object.entries(Object.groupBy(pages, (page) => page.effe
 const duplicateDescriptions = Object.entries(Object.groupBy(pages, (page) => page.description)).filter(([, items]) => items.length > 1).map(([description, items]) => ({ description, urls: items.map((item) => item.url) }));
 const blocking = pages.flatMap((page) => page.issues.filter((issue) => ['P0', 'P1', 'P2'].includes(issue.severity)).map((issue) => ({ url: page.url, ...issue })));
 const linkGraph = { routes, expect_release_links: expectReleaseLinks, edges: pages.flatMap((page) => page.parent_and_related_outbound.main_links.filter((link) => routeSet.has(link.href)).map((link) => ({ from: page.url, to: link.href, text: link.text }))), reachability: Object.fromEntries(pages.map((page) => [page.url, page.reachability])), inbound: Object.fromEntries(pages.map((page) => [page.url, page.internal_inbound])) };
-const report = { checked_at: new Date().toISOString(), phase, base, expected_noindex: true, expected_release_links: expectReleaseLinks, pages, site_findings: { duplicate_titles: duplicateTitles, duplicate_descriptions: duplicateDescriptions, runtime_errors: runtimeErrors, external_summary: checkExternal ? Object.fromEntries(['reachable', 'restricted', 'broken', 'indeterminate'].map((kind) => [kind, externalResults.filter((item) => item.result === kind).length])) : null }, result: { passed_pages: pages.filter((page) => page.issues.length === 0).length, pages_with_issues: pages.filter((page) => page.issues.length).length, blocking_issues: blocking.length } };
+const report = { checked_at: new Date().toISOString(), phase, base, expected_noindex: false, expected_release_links: expectReleaseLinks, pages, site_findings: { duplicate_titles: duplicateTitles, duplicate_descriptions: duplicateDescriptions, runtime_errors: runtimeErrors, external_summary: checkExternal ? Object.fromEntries(['reachable', 'restricted', 'broken', 'indeterminate'].map((kind) => [kind, externalResults.filter((item) => item.result === kind).length])) : null }, result: { passed_pages: pages.filter((page) => page.issues.length === 0).length, pages_with_issues: pages.filter((page) => page.issues.length).length, blocking_issues: blocking.length } };
 await writeFile(join(out, phase === 'after' ? 'seo-pages.json' : `seo-pages-${phase}.json`), JSON.stringify(report, null, 2) + '\n');
 await writeFile(join(out, phase === 'after' ? 'link-graph.json' : `link-graph-${phase}.json`), JSON.stringify(linkGraph, null, 2) + '\n');
 await browser.close();

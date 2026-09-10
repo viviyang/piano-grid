@@ -1,4 +1,5 @@
-import { readAuthorizedPage, localPreview } from './site-content';
+import { readAuthorizedPage } from './site-content';
+import { isPublicRoute } from './site-routes';
 import type { KeyboardPageModel, Layout, ChartKey, StaffNote } from './keyboard-types';
 const blockIDs = {
   '/keyboard-notes': ['start','layout','key-count','black-keys','octaves','spelling-and-range'],
@@ -10,7 +11,7 @@ export function getKeyboardPage(url: keyof typeof blockIDs) {
   if (page.blocks.map((b:{id:string})=>b.id).join() !== blockIDs[url].join()) throw new Error(`Unknown or missing keyboard content block: ${url}`);
   const model:KeyboardPageModel = {url,title:page.title,description:page.description,metadata:page.metadata,
     blocks:page.blocks.map((b:{id:string;heading:string;body:string})=>({id:b.id,heading:b.heading,body:b.body})),
-    links:page.data.related_links.filter((l:{url:string})=>localPreview && Object.keys(blockIDs).includes(l.url)),
+    links:page.data.related_links.filter((l:{url:string})=>isPublicRoute(l.url) && Object.keys(blockIDs).includes(l.url)),
     provenance:{template_id:page.template_id,source_groups:page.source_groups.map((g:{id:string})=>g.id),source_ids:page.source_ids,block_ids:page.blocks.map((b:{id:string})=>b.id)}};
   return {model, data:page.data};
 }

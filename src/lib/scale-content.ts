@@ -1,6 +1,7 @@
 import { getLayouts } from './keyboard-content';
 import type { PianoKey, StaffNote } from './keyboard-types';
-import { localPreview, readAuthorizedPage } from './site-content';
+import { readAuthorizedPage } from './site-content';
+import { isPublicRoute } from './site-routes';
 import type {
   ScaleDirection,
   ScaleFingering,
@@ -266,7 +267,7 @@ export function getScaleCenter() {
     scaleDegrees: data.scale_degrees,
     jazzExamples: data.jazz_examples,
     defaultSelection: data.default_selection,
-    availableDetailURLs: localPreview ? ['/scales/c-major', '/scales/a-minor'] : [],
+    availableDetailURLs: ['/scales/c-major', '/scales/a-minor'].filter(isPublicRoute),
   };
 }
 
@@ -280,7 +281,7 @@ export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
       defaultForm: 'major' as ScaleFormID,
       tempoOptions: [data.renderer_payload.default_tempo_bpm],
       keySignature: data.key_signature.count === 0 ? 'No sharps or flats' : data.key_signature.ordered_accidentals.join(', '),
-      relatedLinks: localPreview ? data.related_links.filter((link: { url: string }) => link.url === '/scales') : [],
+      relatedLinks: data.related_links.filter((link: { url: string }) => link.url === '/scales' && isPublicRoute(link.url)),
       chords: [],
     };
   }
@@ -291,10 +292,10 @@ export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
     defaultForm: data.default_form as ScaleFormID,
     tempoOptions: data.print_and_audio.tempo_presets_bpm,
     keySignature: data.key_signature.count === 0 ? 'No sharps or flats' : data.key_signature.accidentals.join(', '),
-    relatedLinks: localPreview ? [
+    relatedLinks: [
       { url: '/scales', label: 'All piano scales' },
       { url: data.natural_scale_chords.voicing_reference_url, label: 'A minor chord reference' },
-    ] : [],
+    ].filter((link) => isPublicRoute(link.url)),
     chords: data.natural_scale_chords.items,
   };
 }

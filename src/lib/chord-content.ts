@@ -1,4 +1,5 @@
-import { readAuthorizedPage, localPreview, authorizedURLs } from './site-content';
+import { readAuthorizedPage } from './site-content';
+import { isPublicRoute } from './site-routes';
 import { getAMinorContent } from './a-minor-content';
 import type { AMData, Block, Voicing } from './a-minor-types';
 
@@ -21,7 +22,7 @@ export function getChordDetail(url:string):ReturnType<typeof getAMinorContent> {
  const blocks:Block[]=[{block_id:`${prefix}-intro`,content:{...empty(page.title),paragraphs:[page.blocks[0].body]}},{block_id:data.toolId,content:empty(page.blocks[0].heading)},{block_id:`${prefix}-notice`,content:{...empty(page.blocks[1].heading),paragraphs:[page.blocks[1].body]}},{block_id:`${prefix}-inversions`,content:{...empty(page.blocks[2].heading),paragraphs:[page.blocks[2].body],table:{columns:['Position','Symbol','Notes, low to high','Bass'],rows:voicings.map(v=>[v.inversion_label,v.chord_symbol,v.notes_low_to_high.map(n=>n.display_pitch).join('–'),v.bass_spelling])}}},{block_id:`${prefix}-reference`,content:{...empty('Chord reference'),paragraphs:[`Common names: ${d.aliases.join(', ')}.`,`Intervals from the root: ${d.intervals.join(', ')}.`]}},{block_id:`${prefix}-print`,content:empty('Print this chord reference')}];
  // Independently sourced RH example remains separate from all null inversion fingerings.
  if(d.verified_fingering_example){const f=d.verified_fingering_example;blocks.splice(4,0,{block_id:`${prefix}-fingering-example`,content:{...empty('Right-hand root-position example'),paragraphs:[`${f.scope}: ${f.notes.join('–')} → ${f.fingers.join('–')}.`]}});}
- const related=d.related.filter((u:string)=>localPreview&&(authorizedURLs as readonly string[]).includes(u));
+ const related=d.related.filter((u:string)=>isPublicRoute(u));
  if(related.length)blocks.push({block_id:`${prefix}-related`,content:{...empty('Related local previews'),links:related.map((u:string)=>({url:u,label:u==='/chords'?'Piano chord chart':u,published:true}))}});
  const byId=Object.fromEntries(blocks.map(b=>[b.block_id,b]));
  return {data,blocks,byId,metadata:page.metadata,answer:page.blocks[0].body,introduction:[],searchSections:blocks.filter(b=>b.block_id!==`${prefix}-intro`).map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)}))};
@@ -33,7 +34,7 @@ export function getChordCenter():CenterModel {
  const {page,master}=readAuthorizedPage('/chords'),shared=master.legacy_chords_support.shared_data;
  const ids=['chords-intro','chords-chart','chords-how-to-read','chords-major-minor','chords-print','chords-questions','chords-next'];
  if(JSON.stringify(page.blocks.map((b:Block)=>b.block_id))!==JSON.stringify(ids))throw new Error('Unknown/missing center block');
- const items:CenterItem[]=page.data.chord_ids.map((id:string)=>{const c=shared.chords[id],v=shared.voicings[c.root_voicing_id];if(!v)throw new Error(`Missing ${id}`);return {id,tones:c.note_spellings,formula:c.formula_degrees,name:c.name_en,root:c.root_spelling,quality:c.quality,url:localPreview&&(authorizedURLs as readonly string[]).includes(c.canonical_url)?c.canonical_url:null,voicing:{voicing_id:v.voicing_id,inversion_label:v.inversion_label,chord_symbol:v.chord_symbol,bass_spelling:v.bass_spelling,notes_low_to_high:v.notes_low_to_high.map((n:{display_pitch:string;midi:number})=>({display_pitch:n.display_pitch,midi:n.midi})),diagram:v.diagram,playback:{together:v.playback.together,ascending:v.playback.ascending},print_data:v.print_data}};});
+ const items:CenterItem[]=page.data.chord_ids.map((id:string)=>{const c=shared.chords[id],v=shared.voicings[c.root_voicing_id];if(!v)throw new Error(`Missing ${id}`);return {id,tones:c.note_spellings,formula:c.formula_degrees,name:c.name_en,root:c.root_spelling,quality:c.quality,url:isPublicRoute(c.canonical_url)?c.canonical_url:null,voicing:{voicing_id:v.voicing_id,inversion_label:v.inversion_label,chord_symbol:v.chord_symbol,bass_spelling:v.bass_spelling,notes_low_to_high:v.notes_low_to_high.map((n:{display_pitch:string;midi:number})=>({display_pitch:n.display_pitch,midi:n.midi})),diagram:v.diagram,playback:{together:v.playback.together,ascending:v.playback.ascending},print_data:v.print_data}};});
  const comparisons=Object.values(shared.comparisons).map(pair=>{const p=pair as {left:string;right:string};return {left:items.find(i=>i.voicing.voicing_id===p.left)!,right:items.find(i=>i.voicing.voicing_id===p.right)!};});
  return {title:page.blocks[0].content.heading,metadata:page.metadata,blocks:page.blocks,items,comparisons,filters:page.filters,microcopy:page.microcopy,whitePitchClasses:shared.conventions.white_pitch_classes,pdf:'/reference/preserved-chords/assets/piano-chord-chart-selected.pdf'};
 }

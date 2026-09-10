@@ -6,6 +6,7 @@ import { ReferenceAudio, type AudioStatus } from '@/lib/a-minor-audio';
 import type { CenterItem, CenterModel } from '@/lib/chord-content';
 import type { PlaybackMode } from '@/lib/a-minor-types';
 import { SITE_NAME } from '@/lib/site-config';
+import { SiteNavigation } from '@/components/site-navigation';
 import { HomeArrow, HomeBrandMark, keyPosition } from './home-visuals';
 
 type HomeChord = Pick<CenterItem, 'id' | 'name' | 'url' | 'voicing'>;
@@ -47,11 +48,8 @@ function useHomeAudio(copy: AudioCopy) {
   };
 }
 
-const navItems=[['Keyboard Notes','/keyboard-notes'],['Chords','/chords'],['Scales','/scales'],['Songs','/songs'],['Guide','/guide'],['Tools','/tools']];
 export function HomeHeader(){
-  const [open,setOpen]=useState(false);
-  useEffect(()=>{const escape=(event:globalThis.KeyboardEvent)=>{if(event.key==='Escape')setOpen(false);};const media=matchMedia('(min-width:801px)');const close=()=>{if(media.matches)setOpen(false);};document.addEventListener('keydown',escape);media.addEventListener('change',close);return()=>{document.removeEventListener('keydown',escape);media.removeEventListener('change',close);};},[]);
-  return <header className="ph-site-header"><div className="ph-header-inner"><a className="ph-brand" href="/" aria-current="page"><HomeBrandMark/><span>{SITE_NAME}</span></a><nav className="ph-desktop-nav" aria-label="Site sections">{navItems.map(([label,url])=><a key={url} href={url}>{label}</a>)}</nav><a className="ph-header-cta" href="/tools">Explore tools <HomeArrow/></a><button type="button" className="ph-menu-button" aria-expanded={open} aria-controls="ph-mobile-nav" aria-label={open?'Close navigation':'Open navigation'} onClick={()=>setOpen(value=>!value)}><svg viewBox="0 0 24 24" aria-hidden="true">{open?<path d="m6 6 12 12M6 18 18 6"/>:<path d="M4 7h16M4 12h16M4 17h16"/>}</svg></button></div><nav id="ph-mobile-nav" className="ph-mobile-nav" aria-label="Mobile site sections" hidden={!open}>{navItems.map(([label,url])=><a key={url} href={url} onClick={()=>setOpen(false)}>{label}</a>)}</nav></header>;
+  return <header className="ph-site-header"><div className="ph-header-inner"><a className="ph-brand" href="/" aria-current="page"><HomeBrandMark/><span>{SITE_NAME}</span></a><SiteNavigation variant="home"/><a className="ph-header-cta" href="/tools">Explore tools <HomeArrow/></a></div></header>;
 }
 
 const whiteKeys=[48,50,52,53,55,57,59,60,62,64,65,67,69,71];

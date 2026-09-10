@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: SITE_NAME,
   applicationName: SITE_NAME,
   manifest: "/manifest.webmanifest",
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
   icons: { icon: "data:," },
 };
 
