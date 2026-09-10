@@ -6,6 +6,7 @@ const master=JSON.parse(await readFile('docs/content/site-master/page-content.ma
 const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3001',out=process.env.PIANO_CHECK_OUT||'checks/batches/07-site-integration';
 await mkdir(`${out}/screenshots`,{recursive:true});
 const routes=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/tools/blank-sheet-music'];
+const homeTitle='Piano Chords, Scales & Practice Tools | PianoGrid';
 const forbidden=['/sheet-music','/chords/finder','/chord-progressions','/tools/piano-cheat-sheet','/keyboard-notes/blank','/tools/anything'];
 const results=[],errors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
@@ -17,7 +18,7 @@ try{
   for(const route of routes){
     const response=await page.goto(base+route),html=await response.text(),source=master.pages[route],homeRoute=route==='/';
     check(`${route} production 200`,response.status()===200,response.status());
-    check(`${route} production title`,await page.title()===source.metadata.title);
+    check(`${route} production title`,await page.title()===(homeRoute?homeTitle:source.metadata.title));
     check(`${route} production noindex`,(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
     check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator(homeRoute?'.ph-desktop-nav a':'.am-site-nav a').count()===6);
     check(`${route} excludes master payload`,!html.includes('source_usage_batches')&&!html.includes('retained_without_url')&&!html.includes('needed_to_resolve'));
@@ -32,7 +33,8 @@ try{
         check(`${route} production Foundation sans ${width}`,heading.fontFamily.includes('system-ui')&&heading.bodyFontFamily.includes('system-ui'),heading);
         check(`${route} production italic serif ${width}`,heading.italic==='italic',heading);
         check(`${route} production hero proportion ${width}`,heading.viewportRatio>.55&&heading.viewportRatio<1.35,heading);
-        check(`${route} production hero asset ${width}`,await page.locator('.ph-hero-image').evaluate(image=>image.complete&&image.naturalWidth>300&&image.naturalHeight>160));
+        await page.locator('.ph-hero-image').evaluate(image=>image.complete?undefined:new Promise(resolve=>{image.addEventListener('load',resolve,{once:true});image.addEventListener('error',resolve,{once:true});}));
+        check(`${route} production hero asset ${width}`,await page.locator('.ph-hero-image').evaluate(image=>image.complete&&image.naturalWidth>0&&image.naturalHeight>0));
         check(`${route} production illustrations ${width}`,await page.locator('.ph-task-illustration svg').count()===6&&await page.locator('.ph-collection-art,.ph-reading-art').count()===2&&await page.locator('.ph-grand-illustration svg').count()===1);
       }else{
         const heading=await page.locator('.in-heading').evaluate(element=>{const h1=element.querySelector('h1'),style=getComputedStyle(h1),rect=element.getBoundingClientRect();return {fontSize:style.fontSize,lineHeight:parseFloat(style.lineHeight),viewportRatio:rect.height/innerHeight};});

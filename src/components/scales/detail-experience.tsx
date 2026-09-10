@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import type { PianoKey } from '@/lib/keyboard-types';
 import type { ScaleDirection, ScaleFormID, ScaleHand, ScaleOption } from '@/lib/scale-types';
+import { SITE_NAME } from '@/lib/site-config';
 import { ScaleReference } from './scale-reference';
 import { useScaleAudio } from './use-scale-audio';
 
@@ -41,7 +42,7 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
       <p className="sc-scope-note">Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.</p>
     </section>
     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
-      <p className="sc-print-brand">Piano Reference</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div><p>Key signature: {keySignature}</p>
+      <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div><p>Key signature: {keySignature}</p>
       <ScaleReference {...print} keyboardKeys={keyboardKeys} print/>
       <p className="sc-print-foot">One-octave reference. Finger numbers appear only for source-checked hand and direction rows. Sources: {print.option.sourceIDs.join(', ')}</p>
     </div>

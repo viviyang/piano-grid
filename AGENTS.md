@@ -1,4 +1,4 @@
-# Piano Reference — current stage: Batch 07 targeted fix awaiting re-review
+# PianoGrid — current stage: Batch 07 targeted fix awaiting re-review
 
 用户已确认这是空项目，从本目录作为项目根目录开始，不要再寻找“旧仓库”。
 当前授权为用户明确要求的 07-site-integration P1 定点修复及必要测试，遵守 CONTINUE-HERE.md、MASTER-RULES.md、07-site-integration.md 和 COMPONENT-TEMPLATE-RULES.md。保留已验收的 Foundation 与 00–06；P1 修复后停止供独立复验。

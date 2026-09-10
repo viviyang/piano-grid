@@ -10,6 +10,10 @@ const phase = process.env.PIANO_AUDIT_PHASE || 'after';
 const expectReleaseLinks = process.env.PIANO_EXPECT_RELEASE_LINKS === '1';
 const checkExternal = process.env.PIANO_CHECK_EXTERNAL === '1';
 const routes = ['/', '/tools', '/songs', '/songs/easy', '/tools/blank-sheet-music', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/chords', '/chords/a-major', '/chords/a-minor', '/chords/c-major', '/scales', '/scales/c-major', '/scales/a-minor', '/guide', '/guide/read-sheet-music'];
+const homeMetadata = {
+  title: 'Piano Chords, Scales & Practice Tools | PianoGrid',
+  description: 'Learn piano with clear chord and scale references, labeled keyboard notes, beginner songs, sheet music, and practical tools for focused practice.',
+};
 const routeSet = new Set(routes);
 const parentByRoute = {
   '/tools': '/', '/songs': '/', '/songs/easy': '/songs', '/tools/blank-sheet-music': '/tools',
@@ -147,8 +151,8 @@ for (const url of routes) {
   const jsonld = dom.jsonld.map((value) => { try { return { valid: true, value: JSON.parse(value) }; } catch (error) { return { valid: false, error: error.message }; } });
   const jsonldTypes = jsonld.flatMap((item) => item.valid ? [item.value?.['@type'], ...(Array.isArray(item.value?.['@graph']) ? item.value['@graph'].map((node) => node?.['@type']) : [])].filter(Boolean) : []);
   const canonicalPath = dom.canonical ? new URL(dom.canonical, base).pathname : null;
-  const sourceTitle = source.metadata?.title || null;
-  const sourceDescription = source.metadata?.description || null;
+  const sourceTitle = url === '/' ? homeMetadata.title : source.metadata?.title || null;
+  const sourceDescription = url === '/' ? homeMetadata.description : source.metadata?.description || null;
   const coverage = sourceBlockEvidence(source, dom.mainText);
   coverage.rendered_data_block_count = dom.renderedDataBlocks;
   const svgIssues = dom.svgs.filter((item) => !item.hidden && !item.label && !item.labelledby && !item.title && item.role === 'img');
@@ -189,14 +193,14 @@ for (const url of routes) {
     h2_h3_outline: dom.headings,
     coverage_evidence: coverage,
     rendered_core_content: { in_http_html: sourceTitle ? rawHTML.includes(sourceTitle.replaceAll('&', '&amp;')) || rawHTML.includes(sourceTitle) : false, main_text_characters: dom.mainText.length, main_word_count: dom.mainText.split(/\s+/).filter(Boolean).length },
-    canonical: { source_path: source.metadata?.canonical_path || null, effective: dom.canonical, effective_path: canonicalPath, absolute_domain_pending: !master.baseline?.base_domain && !master.base_domain },
+    canonical: { source_path: source.metadata?.canonical_path || null, effective: dom.canonical, effective_path: canonicalPath, absolute_domain_pending: !dom.canonical || new URL(dom.canonical).origin !== 'https://pianogrid.com' },
     robots_meta_and_header: { meta: dom.robots, x_robots_tag: headers['x-robots-tag'] || null },
     internal_inbound: [],
     parent_and_related_outbound: { expected_parent: parentByRoute[url] || null, main_links: internalLinks.filter((link) => link.inMain).map((link) => ({ href: link.pathname, text: link.text })) },
     reachability: null,
     broken_links: { internal: brokenInternal, external: [] },
     image_or_svg_accessibility: { images: dom.imgs, svgs: dom.svgs, issues: [...imageIssues, ...svgIssues] },
-    jsonld_types_and_validity: { count: jsonld.length, types: jsonldTypes, valid: jsonld.every((item) => item.valid), absolute_domain_pending: jsonld.length === 0 },
+    jsonld_types_and_validity: { count: jsonld.length, types: jsonldTypes, valid: jsonld.every((item) => item.valid), absolute_domain_pending: jsonld.some((item) => item.valid && JSON.stringify(item.value).includes('localhost')) },
     crawler_parity: crawlerState,
     responsive: { desktop_overflow: dom.pageOverflow, mobile_390: mobile },
     issue_severity: issues.length ? issues.map((item) => item.severity).sort()[0] : null,
@@ -231,9 +235,9 @@ async function inspectExternal(url) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15000);
   try {
-    let response = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: controller.signal, headers: { 'user-agent': 'PianoReferenceReleaseCheck/1.0' } });
+    let response = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: controller.signal, headers: { 'user-agent': 'PianoGridReleaseCheck/1.0' } });
     if (response.status === 405 || response.status === 501) {
-      response = await fetch(url, { method: 'GET', redirect: 'follow', signal: controller.signal, headers: { range: 'bytes=0-0', 'user-agent': 'PianoReferenceReleaseCheck/1.0' } });
+      response = await fetch(url, { method: 'GET', redirect: 'follow', signal: controller.signal, headers: { range: 'bytes=0-0', 'user-agent': 'PianoGridReleaseCheck/1.0' } });
       await response.body?.cancel();
     }
     return { url, status: response.status, final_url: response.url, result: response.status === 404 || response.status === 410 ? 'broken' : response.status >= 200 && response.status < 400 ? 'reachable' : [401, 403, 429].includes(response.status) ? 'restricted' : 'indeterminate' };

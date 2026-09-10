@@ -1,7 +1,8 @@
-# Piano Reference — Project Context
+# PianoGrid — Project Context
 
 ## 当前状态
 
+- [已核实] 正式品牌为 `PianoGrid`，站点域名为 `https://pianogrid.com`；域名已写入 metadata、canonical、Open Graph、WebSite JSON-LD、manifest、robots 与 sitemap，部署和索引开放仍未执行。
 - [已核实] 本项目根目录为 `piano/`；07-site-integration 初次独立验收为 `NEEDS_FIX`；唯一 P1 已定点修复，状态为 `fix_implemented`，开发已停止等待独立复验。
 - [已核实] Foundation 与 00–06 成果保留。06 独立报告为 `PASS_WITH_NOTES`，用户已确认通过；报告中的自动化等待时序备注不阻塞 07。
 - [已核实] 首轮 17 条路由已实现：`/`、`/tools`，以及既有四条 chords、三条 keyboard-notes、三条 scales、两条 songs、两条 guide 与 `/tools/blank-sheet-music`。

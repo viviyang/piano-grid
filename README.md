@@ -1,6 +1,8 @@
-# Piano Reference
+# PianoGrid
 
 钢琴和弦、琴键、音阶、选曲、指南与打印资料参考项目。产品职责、URL和内容以 `docs/product` 与 `docs/content` 的最终资料为准。
+
+[已核实] 正式品牌为 `PianoGrid`，站点域名为 `https://pianogrid.com`；本地与构建环境仍保持 `noindex/nofollow`，尚未部署。
 
 [已核实] 当前批次 **07-site-integration** 已完成 P1 定点修复与自测，开发停止等待独立复验。Foundation 与 00–06 均保留；06 独立结论为 `PASS_WITH_NOTES`，用户已确认验收通过。首轮 17 条路由可在本地预览，仍保留 `noindex/nofollow`，尚未部署。
 

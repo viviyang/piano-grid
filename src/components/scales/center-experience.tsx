@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import type { PianoKey } from '@/lib/keyboard-types';
 import type { ScaleDirection, ScaleFormID, ScaleHand, ScaleOption } from '@/lib/scale-types';
+import { SITE_NAME } from '@/lib/site-config';
 import { ScaleReference } from './scale-reference';
 import { useScaleAudio } from './use-scale-audio';
 
@@ -44,7 +45,7 @@ export function ScaleCenterExperience({ options, keyboardKeys, detailURLs }: { o
       <p className="sc-scope-note">This release prints the current one-octave reference. It does not claim an all-scales or two-hand beginner PDF collection.</p>
     </section>
     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
-      <p className="sc-print-brand">Piano Reference</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div>
+      <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div>
       <ScaleReference {...print} keyboardKeys={keyboardKeys} print/>
       <p className="sc-print-foot">Current one-octave reference. Finger numbers appear only where the selected hand and direction were source-checked. Sources: {print.option.sourceIDs.join(', ')}</p>
     </div>
