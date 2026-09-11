@@ -9,6 +9,7 @@ export type GuideModel = {
   blocks: GuideBlock[];
   metadata: { title: string; description: string; canonicalPath: string };
   sourceGroups: string[];
+  links: { url: string; label: string }[];
 };
 export type GuidePathStep = { step: number; task: string; url: string; available: boolean };
 export type ExerciseEvent = { pitch: string; kind: 'note'; onsetQuarters: number; durationQuarters: number; finger: null };

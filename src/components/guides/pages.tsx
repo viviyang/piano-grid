@@ -15,6 +15,7 @@ function GuideShell({ model, children }: { model: GuideModel; children: ReactNod
   return <div className="am-page gd-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Guide"/><main id="main" className="pr-container" tabIndex={-1}>
     <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Guide', href: '/guide' }, { label: 'Read sheet music' }] : [{ label: 'Guide' }]}/><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
     {children}
+    {model.links.length > 0 && <nav className="gd-related" aria-label="Related published guides">{model.links.map(link => <a className="am-button am-tertiary" href={link.url} key={link.url}>{link.label}</a>)}</nav>}
   </main><SiteFooter url={model.url}/></div>;
 }
 

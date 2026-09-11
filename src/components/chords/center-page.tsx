@@ -2,12 +2,13 @@ import type {CenterModel} from '@/lib/chord-content';
 import {ChordCenterExperience,CenterPrintActions} from './center-experience';
 import {KeyboardViewport} from './keyboard-viewport';
 import {ChordPageToc,ChordSectionTitle} from './page-toc';
+import {PageBreadcrumb} from '@/components/ui/breadcrumb';
 import '@/app/chords/a-minor/a-minor.css';
 import './shared.css';
 import './center.css';
 export function ChordCenterPage({model}:{model:CenterModel}) {
  const {blocks,items,filters,microcopy,whitePitchClasses,pdf}=model,byId=Object.fromEntries(blocks.map(b=>[b.block_id,b.content]));
- const heading=<><header key="heading" className="am-page-heading" data-block-id="chords-intro"><h1><ChordSectionTitle id="chords-intro" text={model.title}/></h1><p className="ch-intro">{byId['chords-intro'].paragraphs[0]}</p></header><ChordPageToc items={[
+ const heading=<><header key="heading" className="am-page-heading" data-block-id="chords-intro"><PageBreadcrumb items={[{label:'Chords'}]}/><h1><ChordSectionTitle id="chords-intro" text={model.title}/></h1><p className="ch-intro">{byId['chords-intro'].paragraphs[0]}</p></header><ChordPageToc items={[
   {id:'chords-chart',label:'Find a chord'},
   {id:'chords-how-to-read',label:'Read the diagrams'},
   {id:'chords-major-minor',label:'Major and minor'},

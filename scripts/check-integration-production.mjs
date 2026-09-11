@@ -5,14 +5,14 @@ const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PAT
 const master=JSON.parse(await readFile('docs/content/site-master/page-content.master.json','utf8'));
 const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3001',out=process.env.PIANO_CHECK_OUT||'checks/batches/07-site-integration';
 await mkdir(`${out}/screenshots`,{recursive:true});
-const routes=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/tools/blank-sheet-music'];
+const routes=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music'];
 const homeTitle='Piano Chords, Scales & Practice Tools | PianoGrid';
 const metadataTitleOverrides={
   '/chords/a-major':'A Major Piano Chord: Notes, Inversions & Keyboard Diagrams',
   '/chords/c-major':'C Major Piano Chord: Notes, Inversions & Keyboard Diagrams',
   '/guide':'How to Play Piano for Beginners: First Notes and Rhythm',
 };
-const forbidden=['/sheet-music','/chords/finder','/chord-progressions','/tools/piano-cheat-sheet','/keyboard-notes/blank','/tools/anything'];
+const forbidden=['/sheet-music','/tools/piano-cheat-sheet','/keyboard-notes/blank','/tools/anything'];
 const results=[],errors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
 const browser=await chromium.launch({channel:'chrome',headless:true});
@@ -26,11 +26,11 @@ try{
     check(`${route} production title`,await page.title()===(homeRoute?homeTitle:metadataTitleOverrides[route]||source.metadata.title));
     const robots=(await page.locator('meta[name=robots]').getAttribute('content'))||'';
     check(`${route} production index/follow`,robots.includes('index')&&robots.includes('follow')&&!robots.includes('noindex')&&!robots.includes('nofollow'),robots);
-    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===10);
+    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===15);
     check(`${route} excludes master payload`,!html.includes('source_usage_batches')&&!html.includes('retained_without_url')&&!html.includes('needed_to_resolve'));
   }
   await page.goto(base+'/');
-  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===16);
+  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===21);
   for(const route of ['/','/tools'])for(const width of [1440,390,320,768]){
     await page.setViewportSize({width,height:950});await page.goto(base+route);
     check(`${route} production responsive ${width}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
@@ -58,7 +58,7 @@ try{
   const robotsResponse=await page.request.get(base+'/robots.txt'),robotsText=await robotsResponse.text();
   check('production robots allows indexing',robotsResponse.status()===200&&robotsText.includes('Allow: /')&&!robotsText.includes('Disallow: /')&&robotsText.includes('Sitemap: https://pianogrid.com/sitemap.xml'));
   const sitemapText=await (await page.request.get(base+'/sitemap.xml')).text();
-  check('production sitemap contains 17 public routes',routes.every(route=>sitemapText.includes(`https://pianogrid.com${route}`))&&!sitemapText.includes('localhost'));
+  check('production sitemap contains 28 public routes',routes.every(route=>sitemapText.includes(`https://pianogrid.com${route}`))&&!sitemapText.includes('localhost'));
   for(const asset of ['/assets/home/east-lake-piano-hero.png','/assets/home/east-lake-grand-piano.webp','/reference/assets/blank-piano-staff-letter.pdf','/assets/guides/piano-starter-and-reading.pdf'])check(`production asset ${asset}`,(await page.request.get(base+asset)).status()===200);
   check('production has no runtime errors',errors.length===0,errors);
 }finally{await browser.close();}

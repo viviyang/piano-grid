@@ -21,6 +21,7 @@ export type ChordDetailData = {
   voicings: Voicing[]; whitePitchClasses: number[];
   microcopy: { loading: string; audio_error: string; audio_unavailable: string; print_error: string; selected_note_summary: string; playback_note: string };
   heading: string; toolHeading: string; printDisclaimer: string;
+  fingeringStatus: 'verified_examples' | 'not_provided';
 };
 export type FingeringExample = {
   id:string;voicingId:string;hand:'right'|'left';notes:string[];fingers:number[];

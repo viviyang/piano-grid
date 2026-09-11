@@ -5652,7 +5652,7 @@
             "octave_span": {
               "complete_octave_intervals": 5,
               "remaining_semitones": 0,
-              "exact_octave_ratio": 5.0
+              "exact_octave_ratio": 5
             },
             "middle_c_key_id": "pitch-60",
             "middle_c_position_from_left": 25,
@@ -10573,7 +10573,7 @@
             "octave_span": {
               "complete_octave_intervals": 5,
               "remaining_semitones": 0,
-              "exact_octave_ratio": 5.0
+              "exact_octave_ratio": 5
             },
             "middle_c_key_id": "pitch-60",
             "middle_c_position_from_left": 25,
@@ -40268,7 +40268,7 @@
             "octave": 1,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 55.0,
+            "frequency_hz": 55,
             "frequency_display_hz": "55.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -40542,7 +40542,7 @@
             "octave": 2,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 110.0,
+            "frequency_hz": 110,
             "frequency_display_hz": "110.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -40816,7 +40816,7 @@
             "octave": 3,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 220.0,
+            "frequency_hz": 220,
             "frequency_display_hz": "220.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -41090,7 +41090,7 @@
             "octave": 4,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 440.0,
+            "frequency_hz": 440,
             "frequency_display_hz": "440.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -41364,7 +41364,7 @@
             "octave": 5,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 880.0,
+            "frequency_hz": 880,
             "frequency_display_hz": "880.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -41638,7 +41638,7 @@
             "octave": 6,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 1760.0,
+            "frequency_hz": 1760,
             "frequency_display_hz": "1760.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -41912,7 +41912,7 @@
             "octave": 7,
             "enharmonic_aliases": [],
             "key_color": "white",
-            "frequency_hz": 3520.0,
+            "frequency_hz": 3520,
             "frequency_display_hz": "3520.00",
             "frequency_evidence_status": "[推断]",
             "basis": "Computed from BR-01/BR-02 formula with A4=440; not a measurement.",
@@ -42165,14 +42165,13 @@
     },
     "/keyboard-notes/finger-numbers": {
       "url": "/keyboard-notes/finger-numbers",
-      "title": "Piano Finger Numbers: Left and Right Hand",
-      "description": "Learn piano finger numbers 1–5 for both hands and distinguish finger labels from note names and scale degrees.",
+      "title": "Piano Finger Numbers: Left & Right Hand Chart",
+      "description": "Learn piano finger numbers 1 to 5 for both hands. Read RH and LH examples and tell fingering apart from scale degrees and octave labels.",
       "user_task": "Identify the finger meant by a piano fingering number on either hand and follow the correct specific reference.",
       "questions": [
-        "Which finger is 1 on the left and right hand?",
-        "Why do the two hand diagrams read in opposite directions?",
-        "Do finger numbers name piano keys?",
-        "How are finger numbers different from scale degrees?"
+        "Is the left thumb number 5?",
+        "Does LH 3 mean the third key from the left?",
+        "Does this chart tell me how to finger any song?"
       ],
       "blocks": [
         {
@@ -42412,6 +42411,15 @@
             "source_ids": [
               "BR-05"
             ]
+          },
+          {
+            "system": "octave register",
+            "example": "C4",
+            "meaning": "C in written octave 4; not finger 4",
+            "evidence_status": "[已核实] general ASPN rule; [推断] example",
+            "source_ids": [
+              "PG-ASPN"
+            ]
           }
         ],
         "reading_examples": [
@@ -42473,9 +42481,13 @@
         "BR-03",
         "BR-04",
         "BR-05",
-        "BR-06"
+        "BR-06",
+        "PG-FINGERS",
+        "PG-C-BEGINNER",
+        "PG-ASPN",
+        "PG-OMT"
       ],
-      "status": "content_and_hand_mapping_ready; original_diagram_pending",
+      "status": "content_prepared_distinct_template_required",
       "issues": [
         {
           "id": "BR-FINGERS-DIAGRAM",
@@ -42494,6 +42506,12 @@
           "field": "data.print.pdf_asset",
           "reason": "尚未生成实际打印PDF。",
           "needed_to_resolve": "最终手图完成后生成打印版并视检；资源不存在时不显示下载承诺。"
+        },
+        {
+          "id": "NEXT-TEMPLATE-keyboard-notes-finger-numbers",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
         }
       ],
       "coverage": [
@@ -42549,8 +42567,8 @@
       "ready_for_publish": false,
       "deployment_status": "planning_only",
       "metadata": {
-        "title": "Piano Finger Numbers: Left and Right Hand",
-        "description": "Learn piano finger numbers 1–5 for both hands and distinguish finger labels from note names and scale degrees.",
+        "title": "Piano Finger Numbers: Left & Right Hand Chart",
+        "description": "Learn piano finger numbers 1 to 5 for both hands. Read RH and LH examples and tell fingering apart from scale degrees and octave labels.",
         "canonical_path": "/keyboard-notes/finger-numbers",
         "language": "en-US"
       },
@@ -42609,7 +42627,7 @@
             "geometry": [
               {
                 "kind": "white",
-                "x": 0.0,
+                "x": 0,
                 "y": 0,
                 "width": 63.75,
                 "height": 90,
@@ -42641,7 +42659,7 @@
               },
               {
                 "kind": "white",
-                "x": 255.0,
+                "x": 255,
                 "y": 0,
                 "width": 63.75,
                 "height": 90,
@@ -42720,121 +42738,121 @@
             "geometry": [
               {
                 "kind": "white",
-                "x": 0.0,
+                "x": 0,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 0
               },
               {
                 "kind": "white",
-                "x": 34.0,
+                "x": 34,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 1
               },
               {
                 "kind": "white",
-                "x": 68.0,
+                "x": 68,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 2
               },
               {
                 "kind": "white",
-                "x": 102.0,
+                "x": 102,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 3
               },
               {
                 "kind": "white",
-                "x": 136.0,
+                "x": 136,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 4
               },
               {
                 "kind": "white",
-                "x": 170.0,
+                "x": 170,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 5
               },
               {
                 "kind": "white",
-                "x": 204.0,
+                "x": 204,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 6
               },
               {
                 "kind": "white",
-                "x": 238.0,
+                "x": 238,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 7
               },
               {
                 "kind": "white",
-                "x": 272.0,
+                "x": 272,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 8
               },
               {
                 "kind": "white",
-                "x": 306.0,
+                "x": 306,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 9
               },
               {
                 "kind": "white",
-                "x": 340.0,
+                "x": 340,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 10
               },
               {
                 "kind": "white",
-                "x": 374.0,
+                "x": 374,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 11
               },
               {
                 "kind": "white",
-                "x": 408.0,
+                "x": 408,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 12
               },
               {
                 "kind": "white",
-                "x": 442.0,
+                "x": 442,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 13
               },
               {
                 "kind": "white",
-                "x": 476.0,
+                "x": 476,
                 "y": 0,
-                "width": 34.0,
+                "width": 34,
                 "height": 90,
                 "white_index": 14
               },
@@ -45760,40 +45778,44 @@
     },
     "/chords/c-flat-major": {
       "url": "/chords/c-flat-major",
-      "title": "C-flat major Piano Chord",
-      "description": "Find C-flat major notes, intervals, keyboard positions and inversions.",
+      "title": "C-flat Major Piano Chord (Cb): Notes, Inversions & PDF",
+      "description": "Read C-flat major as C-flat, E-flat and G-flat. Match C-flat4 to the B3 key, compare inversions and print an enharmonic reference.",
       "user_task": "Locate this exact triad and compare its three bass positions.",
       "questions": [
-        "Which notes form C-flat major?",
-        "How do its inversions change the bass?",
-        "Which fingerings are verified?"
+        "Is C-flat a black key?",
+        "Why is C-flat4 MIDI 59?",
+        "Is C-flat major different from C major?",
+        "Are hand-specific fingerings available?",
+        "Does the keyboard builder recognize enharmonic choices?"
       ],
       "blocks": [
         {
           "heading": "Notes and keyboard position",
-          "body": "C-flat major contains Cb–Eb–Gb. The intervals from the root are a major third and a perfect fifth.",
+          "body": "C-flat major contains C-flat, E-flat and G-flat. On an equal-tempered piano, its pitch classes match B, D-sharp and F-sharp. The displayed root-position example is C♭4–E♭4–G♭4. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[已核实] rules; [推断] register and original teaching example"
         },
         {
           "heading": "What to notice",
-          "body": "C-flat major uses C-flat, E-flat and G-flat. On an equal-tempered keyboard these match B, D-sharp and F-sharp. Cb4 sounds as B3, not B4: octave labels follow written C boundaries.",
+          "body": "A flat sign does not guarantee a black key. C-flat uses the white B key immediately below the written C. In this root example, C♭4 is the same sounding key as B3, not B4. C-flat to E-flat is a major third and C-flat to G-flat a perfect fifth. The three flat signs preserve the root–third–fifth letter pattern C–E–G. Replacing only one label with its sharp equivalent would obscure that spelling.",
           "source_ids": [
-            "F-OMT",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-CB"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] original explanation from preserved note data and cited rules"
         },
         {
           "heading": "Compare three positions",
-          "body": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.",
+          "body": "Read each bass note before selecting a position. The root-position example starts with C♭; first inversion starts with E♭; second inversion starts with G♭. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
           "source_ids": [
-            "F-OMT"
+            "PG-OMT",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
         }
       ],
       "data": {
@@ -45983,29 +46005,40 @@
         ],
         "default_voicing": "root",
         "derivation": {
-          "status": "[推断] computed from independently verified chord formulas and written pitch registers",
+          "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-OMT"
           ]
         },
         "assets": [
           {
             "path": "assets/chord-c-flat-major.svg",
             "format": "SVG",
-            "content": "three inversion keyboard diagrams"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-c-flat-major.svg",
+            "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "acf2a2795174ff0a4200812c4ef90fdf084f71ab5b7c0ab215f9d7e04fd88f8c",
+            "tagged_pdf_accessibility": null
           },
           {
             "path": "assets/chord-c-flat-major.pdf",
             "format": "PDF",
-            "pages": 1,
-            "content": "three inversion keyboard diagrams",
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-c-flat-major.pdf",
+            "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "ce772815c9572327ca13be6b7012f207a58baf6f57c2527d77d4b4a50b56531a",
+            "tagged_pdf_accessibility": "not_certified"
           }
         ],
         "related": [
           "/chords",
+          "/chords/b-major",
+          "/chords/c-major",
+          "/keyboard-notes",
           "/guide/piano-chords",
           "/chords/by-key"
         ],
@@ -46016,30 +46049,37 @@
         }
       },
       "source_ids": [
-        "F-OMT",
-        "E-TRIADS",
-        "BN-PUGET-OCTAVES"
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-ASPN",
+        "PG-CB"
       ],
       "issues": [
         {
-          "id": "F-FINGER-c-flat-major",
-          "field": "fingering",
-          "reason": "No reviewed hand-specific fingering for every displayed inversion. Unknown cells remain null.",
-          "needed_to_resolve": "Obtain explicit source or named professional review for each hand and voicing."
+          "id": "INT-c-flat-major",
+          "field": "runtime",
+          "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+          "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
         },
         {
-          "id": "F-RELEASE-c-flat-major",
-          "field": "runtime and professional review",
-          "reason": "Keyboard/playback/print interaction and named professional approval are not delivered by this content task.",
-          "needed_to_resolve": "Implement the prepared note arrays; confirm visual, playback and print consistency."
+          "id": "FINGER-INV-c-flat-major",
+          "field": "inversion fingering",
+          "reason": "No inversion fingerings are included; B3 supports root examples only.",
+          "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
+        },
+        {
+          "id": "CB-FINGER-SOURCE",
+          "field": "root fingering",
+          "reason": "Current B3 requires two sourced hand examples; no acceptable source for this exact written chord has been adopted.",
+          "needed_to_resolve": "Obtain a scoped source/professional review, or separately approve a genuine optional-fingering model. Do not fabricate or silently weaken the validator."
         }
       ],
       "coverage": [
         {
           "source_group_id": "P167",
-          "status": "content_and_data_prepared; implementation gates remain",
+          "status": "prepared_not_live",
           "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
-          "pending": "Runtime, print UI and professional release checks; see issues."
+          "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks; C-flat hand-source gate"
         }
       ],
       "baseline_page_id": "U083",
@@ -46084,10 +46124,10 @@
       "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_ready_fingering_gate_open",
       "metadata": {
-        "title": "C-flat major Piano Chord",
-        "description": "Find C-flat major notes, intervals, keyboard positions and inversions.",
+        "title": "C-flat Major Piano Chord (Cb): Notes, Inversions & PDF",
+        "description": "Read C-flat major as C-flat, E-flat and G-flat. Match C-flat4 to the B3 key, compare inversions and print an enharmonic reference.",
         "canonical_path": "/chords/c-flat-major",
         "language": "en-US"
       },
@@ -46447,13 +46487,13 @@
     },
     "/chords/by-key": {
       "url": "/chords/by-key",
-      "title": "Piano Chords by Key",
-      "description": "See all seven triads in C, G, D, E, A and F major, plus D minor.",
+      "title": "Piano Chords by Key: Major & D Minor Triad Charts",
+      "description": "Compare triads in C, G, D, A, E and F major plus D minor. Read Roman numerals, note spellings and separate natural-minor from raised-leading-tone options.",
       "user_task": "Choose a supported key and get its complete chord set.",
       "questions": [
-        "Which chords belong to this key?",
-        "What do uppercase and lowercase numerals mean?",
-        "Why can D minor use both A minor and A major?"
+        "Are chords in C major all rooted on C?",
+        "Why is there a diminished row without a detail button?",
+        "Can a minor key use a major V?"
       ],
       "blocks": [
         {
@@ -47749,7 +47789,11 @@
         "F-OMT",
         "F-MAJOR",
         "F-MINOR",
-        "AM-THEORY"
+        "AM-THEORY",
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
       ],
       "issues": [
         {
@@ -47757,6 +47801,12 @@
           "field": "selector and professional review",
           "reason": "All seven key datasets exist; interactive rendering and specialist review remain.",
           "needed_to_resolve": "Verify every selector result and retain the explicit minor-form distinction."
+        },
+        {
+          "id": "NEXT-TEMPLATE-chords-by-key",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
         }
       ],
       "coverage": [
@@ -48012,10 +48062,10 @@
       "original_release_conditions": "大小调类别及拼写正确；小调需明确采用的音阶形式",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_prepared_distinct_template_required",
       "metadata": {
-        "title": "Piano Chords by Key",
-        "description": "See all seven triads in C, G, D, E, A and F major, plus D minor.",
+        "title": "Piano Chords by Key: Major & D Minor Triad Charts",
+        "description": "Compare triads in C, G, D, A, E and F major plus D minor. Read Roman numerals, note spellings and separate natural-minor from raised-leading-tone options.",
         "canonical_path": "/chords/by-key",
         "language": "en-US"
       },
@@ -48027,13 +48077,13 @@
     },
     "/chords/finder": {
       "url": "/chords/finder",
-      "title": "Piano Chord Finder",
-      "description": "Choose played notes and compare possible names, including the bass note.",
+      "title": "Piano Chord Finder: Identify Chords from Notes",
+      "description": "Enter piano notes to inspect possible chord names. Keep bass notes and enharmonic spelling visible, and see when the supported vocabulary has no match.",
       "user_task": "Identify candidate chords from notes rather than looking up a known name.",
       "questions": [
-        "Can one group of notes have multiple names?",
-        "Does the lowest note determine the root?",
-        "What if the input lacks a third?"
+        "Why are there multiple results?",
+        "Does an empty bass field mean the bass is unknown?",
+        "Does no match mean the notes are wrong?"
       ],
       "blocks": [
         {
@@ -48152,7 +48202,7 @@
               "G4",
               "A4"
             ],
-            "bass": null,
+            "bass": "C4",
             "candidates": [
               {
                 "name": "C major sixth",
@@ -48160,12 +48210,12 @@
                 "root": "C"
               },
               {
-                "name": "A minor seventh",
-                "symbol": "Am7",
+                "name": "A minor seventh over C",
+                "symbol": "Am7/C",
                 "root": "A"
               }
             ],
-            "reason": "Same pitch-class collection; bass and context can favour one interpretation.",
+            "reason": "Exact pitches imply C4 as bass. Pitch classes support C6 or Am7, but the alternate bass-aware symbol is Am7/C.",
             "input_midi": [
               60,
               64,
@@ -48281,7 +48331,9 @@
         "normalization": {
           "deduplicate_pitch_classes_for_matching": true,
           "retain_original_spelling_and_register": true,
-          "bass_must_be_selected_note": true
+          "bass_must_be_selected_note": true,
+          "derive_bass_from_lowest_midi_when_octaves_present": true,
+          "bass_override_must_not_contradict_lowest_entered_pitch": true
         },
         "result_labels": {
           "multiple": "Possible chord names",
@@ -48293,7 +48345,11 @@
       },
       "source_ids": [
         "F-OMT",
-        "F-CHORDS"
+        "F-CHORDS",
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
       ],
       "issues": [
         {
@@ -48301,6 +48357,12 @@
           "field": "classification scope",
           "reason": "Verified examples are prepared; a general recognition engine and exhaustive vocabulary are not implemented or validated.",
           "needed_to_resolve": "Implement only reviewed vocabulary, reproduce these examples and show unsupported/ambiguous states."
+        },
+        {
+          "id": "NEXT-TEMPLATE-chords-finder",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
         }
       ],
       "coverage": [
@@ -48364,10 +48426,10 @@
       "original_release_conditions": "同一音集可能有多种命名；解释不确定性；不扩成麦克风识别或MIDI评分",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_prepared_distinct_template_required",
       "metadata": {
-        "title": "Piano Chord Finder",
-        "description": "Choose played notes and compare possible names, including the bass note.",
+        "title": "Piano Chord Finder: Identify Chords from Notes",
+        "description": "Enter piano notes to inspect possible chord names. Keep bass notes and enharmonic spelling visible, and see when the supported vocabulary has no match.",
         "canonical_path": "/chords/finder",
         "language": "en-US"
       },
@@ -48379,13 +48441,13 @@
     },
     "/chord-progressions": {
       "url": "/chord-progressions",
-      "title": "Piano Chord Progressions",
-      "description": "Try complete examples in C, E and A major and compare how they return or repeat.",
+      "title": "Piano Chord Progressions: 3 Patterns in C, E & A",
+      "description": "Compare I–V–vi–IV, I–vi–IV–V and I–IV–V–I in C, E and A major. Read exact four-bar examples and understand what the Roman numerals mean.",
       "user_task": "Choose a progression, inspect every chord and try an original realization.",
       "questions": [
-        "What is a progression?",
-        "What are the actual chords in C, E or A?",
-        "Can a progression guarantee a happy or beautiful sound?"
+        "How many progressions are included?",
+        "Does a major-key pattern always sound happy?",
+        "Do the Roman numerals tell me which fingers to use?"
       ],
       "blocks": [
         {
@@ -48506,8 +48568,10 @@
             "mood_tags": [],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -48603,8 +48667,10 @@
             ],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -48701,8 +48767,10 @@
             ],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -48796,8 +48864,10 @@
             "mood_tags": [],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -48893,8 +48963,10 @@
             ],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -48991,8 +49063,10 @@
             ],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -49086,8 +49160,10 @@
             "mood_tags": [],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -49183,8 +49259,10 @@
             ],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           },
           {
@@ -49281,8 +49359,10 @@
             ],
             "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
             "rights": {
-              "edition_status": "official / authorized",
-              "site_use": "original Piano Reference realization; distributable"
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
             }
           }
         ],
@@ -49297,7 +49377,10 @@
             "path": "assets/chord-progressions-c-e-a.pdf",
             "format": "PDF",
             "pages": 3,
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "original_intake_visual_qa_claim": "passed; every final PDF page rendered and inspected",
+            "delivery_status": "not_supplied_in_intake_and_not_generated_in_this_pack",
+            "visual_qa": "not_verified_in_this_run",
+            "show_download_action": false
           }
         ],
         "related": [
@@ -49310,7 +49393,11 @@
         "F-POP",
         "F-FUNCTION",
         "F-MAJOR",
-        "F-OMT"
+        "F-OMT",
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
       ],
       "issues": [
         {
@@ -49318,6 +49405,12 @@
           "field": "voicing and interface",
           "reason": "Original examples and printable data are prepared; performance review and key/effect selector integration remain.",
           "needed_to_resolve": "Check all nine realizations, labels and printed notes before release."
+        },
+        {
+          "id": "NEXT-TEMPLATE-chord-progressions",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
         }
       ],
       "coverage": [
@@ -49552,10 +49645,10 @@
       "original_release_conditions": "走向数据与示例审核；情绪仅作选择标签，不宣称和弦决定情绪；不预设AI生成器",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_prepared_distinct_template_required",
       "metadata": {
-        "title": "Piano Chord Progressions",
-        "description": "Try complete examples in C, E and A major and compare how they return or repeat.",
+        "title": "Piano Chord Progressions: 3 Patterns in C, E & A",
+        "description": "Compare I–V–vi–IV, I–vi–IV–V and I–IV–V–I in C, E and A major. Read exact four-bar examples and understand what the Roman numerals mean.",
         "canonical_path": "/chord-progressions",
         "language": "en-US"
       },
@@ -72348,19 +72441,19 @@
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 1.0,
+                    "onset_quarters": 1,
                     "duration_quarters": 1,
                     "finger": null
                   },
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 2.0,
+                    "onset_quarters": 2,
                     "duration_quarters": 2,
                     "finger": null
                   }
                 ],
-                "total_quarters": 4.0
+                "total_quarters": 4
               },
               {
                 "number": 2,
@@ -72382,19 +72475,19 @@
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 2.0,
+                    "onset_quarters": 2,
                     "duration_quarters": 1,
                     "finger": null
                   },
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 3.0,
+                    "onset_quarters": 3,
                     "duration_quarters": 1,
                     "finger": null
                   }
                 ],
-                "total_quarters": 4.0
+                "total_quarters": 4
               },
               {
                 "number": 3,
@@ -72416,19 +72509,19 @@
                   {
                     "pitch": null,
                     "kind": "rest",
-                    "onset_quarters": 1.0,
+                    "onset_quarters": 1,
                     "duration_quarters": 1,
                     "finger": null
                   },
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 2.0,
+                    "onset_quarters": 2,
                     "duration_quarters": 2,
                     "finger": null
                   }
                 ],
-                "total_quarters": 4.0
+                "total_quarters": 4
               },
               {
                 "number": 4,
@@ -72633,13 +72726,13 @@
     },
     "/guide/piano-chords": {
       "url": "/guide/piano-chords",
-      "title": "How to Play Piano Chords",
-      "description": "Build a triad, hear its notes together and practise a small change.",
+      "title": "How to Play Piano Chords: Notes, Hands & First Changes",
+      "description": "Start with C, Am, F and G. Learn what chord symbols mean, separate finger numbers from note names, and compare a first C-to-Am change.",
       "user_task": "Learn the actions behind a chord chart.",
       "questions": [
-        "How is a triad built?",
-        "Which fingers are documented for the example?",
-        "How can I practise changing chords?"
+        "Do I always play chords with my right hand?",
+        "Is Am/C the same as playing only C?",
+        "Can I play all four starter chords with one fixed fingering?"
       ],
       "blocks": [
         {
@@ -72720,7 +72813,7 @@
             "E-CHORD"
           ]
         },
-        "finger_diagram": "assets/c-major-rh-fingers.svg",
+        "finger_diagram": null,
         "transition_voicings": [
           [
             "C4",
@@ -72746,7 +72839,11 @@
         "E-CHORD",
         "E-TRIADS",
         "BR-03",
-        "BR-04"
+        "BR-04",
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-FINGERS",
+        "PG-C-BEGINNER"
       ],
       "issues": [
         {
@@ -72754,6 +72851,12 @@
           "field": "professional_review",
           "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
           "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        },
+        {
+          "id": "NEXT-TEMPLATE-guide-piano-chords",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
         }
       ],
       "coverage": [
@@ -72867,10 +72970,10 @@
       "original_release_conditions": "示例与技巧需专业复核，不以高BPM代替正确动作",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_prepared_distinct_template_required",
       "metadata": {
-        "title": "How to Play Piano Chords",
-        "description": "Build a triad, hear its notes together and practise a small change.",
+        "title": "How to Play Piano Chords: Notes, Hands & First Changes",
+        "description": "Start with C, Am, F and G. Learn what chord symbols mean, separate finger numbers from note names, and compare a first C-to-Am change.",
         "canonical_path": "/guide/piano-chords",
         "language": "en-US"
       },
@@ -74366,19 +74469,19 @@
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 1.0,
+                    "onset_quarters": 1,
                     "duration_quarters": 1,
                     "finger": null
                   },
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 2.0,
+                    "onset_quarters": 2,
                     "duration_quarters": 2,
                     "finger": null
                   }
                 ],
-                "total_quarters": 4.0
+                "total_quarters": 4
               },
               {
                 "number": 2,
@@ -74400,19 +74503,19 @@
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 2.0,
+                    "onset_quarters": 2,
                     "duration_quarters": 1,
                     "finger": null
                   },
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 3.0,
+                    "onset_quarters": 3,
                     "duration_quarters": 1,
                     "finger": null
                   }
                 ],
-                "total_quarters": 4.0
+                "total_quarters": 4
               },
               {
                 "number": 3,
@@ -74434,19 +74537,19 @@
                   {
                     "pitch": null,
                     "kind": "rest",
-                    "onset_quarters": 1.0,
+                    "onset_quarters": 1,
                     "duration_quarters": 1,
                     "finger": null
                   },
                   {
                     "pitch": "C4",
                     "kind": "note",
-                    "onset_quarters": 2.0,
+                    "onset_quarters": 2,
                     "duration_quarters": 2,
                     "finger": null
                   }
                 ],
-                "total_quarters": 4.0
+                "total_quarters": 4
               },
               {
                 "number": 4,
@@ -100612,7 +100715,7 @@
               "written_octave": 3,
               "midi": 57,
               "pitch_class": 9,
-              "frequency_hz": 220.0,
+              "frequency_hz": 220,
               "key_color": "white",
               "physical_key_id": "midi-57",
               "chord_member": "root"
@@ -100656,7 +100759,7 @@
                 "event_id": "a-minor--root--together--1",
                 "spelled_pitch": "A3",
                 "midi": 57,
-                "frequency_hz": 220.0,
+                "frequency_hz": 220,
                 "onset_ms": 0,
                 "duration_ms": 1200
               },
@@ -100682,7 +100785,7 @@
                 "event_id": "a-minor--root--ascending--1",
                 "spelled_pitch": "A3",
                 "midi": 57,
-                "frequency_hz": 220.0,
+                "frequency_hz": 220,
                 "onset_ms": 0,
                 "duration_ms": 500
               },
@@ -100783,7 +100886,7 @@
               "written_octave": 3,
               "midi": 57,
               "pitch_class": 9,
-              "frequency_hz": 220.0,
+              "frequency_hz": 220,
               "key_color": "white",
               "physical_key_id": "midi-57",
               "chord_member": "root"
@@ -100827,7 +100930,7 @@
                 "event_id": "a-major--root--together--1",
                 "spelled_pitch": "A3",
                 "midi": 57,
-                "frequency_hz": 220.0,
+                "frequency_hz": 220,
                 "onset_ms": 0,
                 "duration_ms": 1200
               },
@@ -100853,7 +100956,7 @@
                 "event_id": "a-major--root--ascending--1",
                 "spelled_pitch": "A3",
                 "midi": 57,
-                "frequency_hz": 220.0,
+                "frequency_hz": 220,
                 "onset_ms": 0,
                 "duration_ms": 500
               },
@@ -102005,7 +102108,7 @@
               "written_octave": 4,
               "midi": 69,
               "pitch_class": 9,
-              "frequency_hz": 440.0,
+              "frequency_hz": 440,
               "key_color": "white",
               "physical_key_id": "midi-69",
               "chord_member": "root"
@@ -102039,7 +102142,7 @@
                 "event_id": "a-minor--first--together--3",
                 "spelled_pitch": "A4",
                 "midi": 69,
-                "frequency_hz": 440.0,
+                "frequency_hz": 440,
                 "onset_ms": 0,
                 "duration_ms": 1200
               }
@@ -102065,7 +102168,7 @@
                 "event_id": "a-minor--first--ascending--3",
                 "spelled_pitch": "A4",
                 "midi": 69,
-                "frequency_hz": 440.0,
+                "frequency_hz": 440,
                 "onset_ms": 1200,
                 "duration_ms": 500
               }
@@ -102164,7 +102267,7 @@
               "written_octave": 4,
               "midi": 69,
               "pitch_class": 9,
-              "frequency_hz": 440.0,
+              "frequency_hz": 440,
               "key_color": "white",
               "physical_key_id": "midi-69",
               "chord_member": "root"
@@ -102203,7 +102306,7 @@
                 "event_id": "a-minor--second--together--2",
                 "spelled_pitch": "A4",
                 "midi": 69,
-                "frequency_hz": 440.0,
+                "frequency_hz": 440,
                 "onset_ms": 0,
                 "duration_ms": 1200
               },
@@ -102229,7 +102332,7 @@
                 "event_id": "a-minor--second--ascending--2",
                 "spelled_pitch": "A4",
                 "midi": 69,
-                "frequency_hz": 440.0,
+                "frequency_hz": 440,
                 "onset_ms": 600,
                 "duration_ms": 500
               },

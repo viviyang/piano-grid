@@ -4,6 +4,7 @@ import type { ChordDetailData, Block, Voicing, SearchSection, ChordDetailModel }
 import { isPublicRoute } from './site-routes';
 import { finalizeChordDetailModel } from './chord-detail-model';
 import { fingeringBlock, getChordLearning, practiceBlock } from './chord-learning-content';
+import { plannedLinksFor } from './support-content';
 
 // Server-only adapter. Client props contain no whole-site ledger, keywords or base64 PDF.
 export function getAMinorContent():ChordDetailModel {
@@ -13,6 +14,11 @@ export function getAMinorContent():ChordDetailModel {
   const blocks = (page.blocks as Block[]).map(block=>block.block_id==='am-next'
     ? {...block,content:{...block.content,links:block.content.links.map(link=>({...link,published:isPublicRoute(link.url)}))}}
     : {...block,content:{...block.content}});
+  const next = blocks.find(block => block.block_id === 'am-next')!;
+  for (const link of plannedLinksFor('/chords/a-minor', new Set(['L055', 'L056', 'L064']))) {
+    if (!next.content.links.some(existing => existing.url === link.url)) next.content.links.push({ url: link.url, label: link.label, published: true });
+  }
+  if (isPublicRoute('/chord-progressions') && !next.content.links.some(existing => existing.url === '/chord-progressions')) next.content.links.push({ url: '/chord-progressions', label: 'Use A minor in a progression', published: true });
   let byId = Object.fromEntries(blocks.map(block => [block.block_id, block]));
   const majorLink=byId['am-next'].content.links.find(link=>link.url==='/chords/a-major'&&link.published);
   if(majorLink)byId['am-why-minor'].content.links=[...byId['am-why-minor'].content.links,majorLink];
@@ -32,7 +38,7 @@ export function getAMinorContent():ChordDetailModel {
     defaultId: page.selection.default_voicing_id, options: page.selection.options.map((o: {value:string;label:string})=>({value:o.value,label:o.label})),
     chord: {id:chord.chord_id,slug:'a-minor',name_en:chord.name_en,symbol:chord.symbol,root_spelling:chord.root_spelling,quality:chord.quality,note_spellings:chord.note_spellings,formula_degrees:chord.formula_degrees},
     voicings, whitePitchClasses:source.shared_data.conventions.white_pitch_classes,
-    microcopy:page.microcopy,heading:intro.heading,toolHeading:byId['am-result'].content.heading,printDisclaimer:byId['am-find-notes'].content.paragraphs[1],
+    microcopy:page.microcopy,heading:intro.heading,toolHeading:byId['am-result'].content.heading,printDisclaimer:byId['am-find-notes'].content.paragraphs[1],fingeringStatus:'verified_examples',
   };
   const learning=getChordLearning('/chords/a-minor',data);
   const inversionIndex=blocks.findIndex(block=>block.block_id==='am-inversions');

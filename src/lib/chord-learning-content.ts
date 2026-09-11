@@ -1,6 +1,10 @@
+import {readFileSync} from 'node:fs';
+import {resolve} from 'node:path';
 import type {Block,ChordDetailData,ChordPractice,ChordSource,FingeringExample,Voicing} from './a-minor-types';
 import type {ChordDetailRoute} from './chord-detail-model';
-import {NEXT_CHORD_LEARNING} from './chord-learning-next';
+import {NEXT_CHORD_LEARNING,type NextChordLearning} from './chord-learning-next';
+
+const cFlatLearning=JSON.parse(readFileSync(resolve('docs/pianogrid-chords-content-next/03_learning/c-flat-major.learning.json'),'utf8')) as NextChordLearning;
 
 const sources:Record<string,ChordSource>={
   'SKOOVE-AM':{
@@ -47,6 +51,10 @@ function fingering(data:ChordDetailData,root:Voicing,hand:'right'|'left',sourceI
 }
 
 export function getChordLearning(url:ChordDetailRoute,data:ChordDetailData){
+  if(url==='/chords/c-flat-major'){
+    if(cFlatLearning.fingerings.length!==0||!cFlatLearning.sources.some(source=>source.id==='PG-CB'))throw new Error('C-flat optional fingering contract changed');
+    return cFlatLearning;
+  }
   if(url in NEXT_CHORD_LEARNING)return NEXT_CHORD_LEARNING[url as keyof typeof NEXT_CHORD_LEARNING];
   const root=data.voicings.find(voicing=>voicing.voicing_id===data.defaultId);
   if(!root)throw new Error(`Missing root-position learning voicing: ${url}`);

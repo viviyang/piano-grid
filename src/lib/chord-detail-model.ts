@@ -3,7 +3,7 @@ import {isPublicRoute} from './site-routes';
 
 export type ChordDetailRoute=
   |'/chords/a-minor'|'/chords/a-major'|'/chords/c-major'
-  |'/chords/g-major'|'/chords/c-minor'|'/chords/e-major'|'/chords/b-major'|'/chords/a-flat-major';
+  |'/chords/g-major'|'/chords/c-minor'|'/chords/e-major'|'/chords/b-major'|'/chords/a-flat-major'|'/chords/c-flat-major';
 const expectedFormula:Record<ChordQuality,string[]>={major:['1','3','5'],minor:['1','b3','5']};
 const ascii=(value:string)=>value.replaceAll('♯','#').replaceAll('♭','b');
 const pitchClass=(value:string)=>{const match=/^([A-G](?:#|b)?)-?\d*$/.exec(ascii(value));if(!match)throw new Error(`Invalid pitch spelling: ${value}`);return match[1];};
@@ -33,8 +33,12 @@ export function finalizeChordDetailModel(model:ChordDetailModel):ChordDetailMode
   for(const voicing of data.voicings)validateVoicing(model,voicing);
   const targetIds=new Set([data.toolId,...model.blocks.map(block=>block.block_id),...(model.introduction.length?[`${data.namespace}-root-example`]:[])]);
   if(model.tocItems.some(item=>!targetIds.has(item.id))||new Set(model.tocItems.map(item=>item.id)).size!==model.tocItems.length)throw new Error(`Invalid detail TOC: ${data.url}`);
-  if(model.fingeringExamples.length!==2||new Set(model.fingeringExamples.map(example=>example.id)).size!==2)throw new Error(`Incomplete/duplicate fingering examples: ${data.url}`);
-  if(!same(sorted(model.fingeringExamples.map(example=>example.hand)),['left','right']))throw new Error(`Missing hand-specific fingering: ${data.url}`);
+  if(data.fingeringStatus==='verified_examples'){
+    if(model.fingeringExamples.length!==2||new Set(model.fingeringExamples.map(example=>example.id)).size!==2)throw new Error(`Incomplete/duplicate fingering examples: ${data.url}`);
+    if(!same(sorted(model.fingeringExamples.map(example=>example.hand)),['left','right']))throw new Error(`Missing hand-specific fingering: ${data.url}`);
+  }else if(data.fingeringStatus==='not_provided'){
+    if(data.url!=='/chords/c-flat-major'||model.fingeringExamples.length!==0)throw new Error(`Invalid optional fingering state: ${data.url}`);
+  }else throw new Error(`Unknown fingering state: ${data.url}`);
   const sourceIds=new Set(model.sources.map(source=>source.id));
   if(sourceIds.size!==model.sources.length||model.sources.some(source=>!source.title||!source.publisher||!source.url.startsWith('https://')||!/^\d{4}-\d{2}-\d{2}$/.test(source.checkedOn)||!source.supports||!source.limitation))throw new Error(`Invalid fingering source record: ${data.url}`);
   for(const example of model.fingeringExamples){

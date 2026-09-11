@@ -1,6 +1,7 @@
 import { getChartData, getLayouts } from './keyboard-content';
 import { readAuthorizedPage } from './site-content';
 import type { ExerciseBar, GuideBlock, GuideCenterData, GuideModel, GuideURL, ReadingExercise, ReadingGuideData } from './guide-types';
+import { plannedLinksFor } from './support-content';
 
 type Raw = Record<string, any>;
 const blockHeadings: Record<GuideURL, string[]> = {
@@ -45,6 +46,7 @@ function model(url: GuideURL, page: Raw): GuideModel {
       canonicalPath: requiredString(page.metadata?.canonical_path, `${url}.metadata.canonical_path`),
     },
     sourceGroups: page.source_groups.map((group: Raw) => requiredString(group.id, `${url}.source_group`)),
+    links: plannedLinksFor(url).map(link => ({ url: link.url, label: link.label })),
   };
 }
 

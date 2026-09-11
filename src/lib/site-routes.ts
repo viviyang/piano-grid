@@ -10,9 +10,14 @@ export const PUBLIC_ROUTES = [
   '/chords/e-major',
   '/chords/b-major',
   '/chords/a-flat-major',
+  '/chords/c-flat-major',
+  '/chords/by-key',
+  '/chords/finder',
+  '/chord-progressions',
   '/keyboard-notes',
   '/keyboard-notes/labeled',
   '/keyboard-notes/chart',
+  '/keyboard-notes/finger-numbers',
   '/scales',
   '/scales/c-major',
   '/scales/a-minor',
@@ -20,6 +25,7 @@ export const PUBLIC_ROUTES = [
   '/songs/easy',
   '/guide',
   '/guide/read-sheet-music',
+  '/guide/piano-chords',
   '/tools/blank-sheet-music',
 ] as const;
 
@@ -32,6 +38,7 @@ export const SITE_NAVIGATION = [
     children: [
       { label: 'Labeled Keyboard', href: '/keyboard-notes/labeled' },
       { label: 'Piano Notes Chart', href: '/keyboard-notes/chart' },
+      { label: 'Finger Numbers', href: '/keyboard-notes/finger-numbers' },
     ],
   },
   {
@@ -41,6 +48,9 @@ export const SITE_NAVIGATION = [
       { label: 'A Minor Chord', href: '/chords/a-minor' },
       { label: 'A Major Chord', href: '/chords/a-major' },
       { label: 'C Major Chord', href: '/chords/c-major' },
+      { label: 'Chords by Key', href: '/chords/by-key' },
+      { label: 'Chord Progressions', href: '/chord-progressions' },
+      { label: 'Chord Finder', href: '/chords/finder' },
     ],
   },
   {
@@ -59,7 +69,10 @@ export const SITE_NAVIGATION = [
   {
     label: 'Guide',
     href: '/guide',
-    children: [{ label: 'Read Sheet Music', href: '/guide/read-sheet-music' }],
+    children: [
+      { label: 'Read Sheet Music', href: '/guide/read-sheet-music' },
+      { label: 'Piano Chords', href: '/guide/piano-chords' },
+    ],
   },
   {
     label: 'Tools',
