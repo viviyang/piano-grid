@@ -1,0 +1,679 @@
+{
+  "scope": "Read-only model consistency; not human audition, fingering suitability, or production build approval",
+  "passed": 162,
+  "failed": 6,
+  "results": [
+    {
+      "name": "/chords/c-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major--root: diagram and print",
+      "passed": false
+    },
+    {
+      "name": "/chords/a-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-major--root: diagram and print",
+      "passed": false
+    },
+    {
+      "name": "/chords/e-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-sharp-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-sharp-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-sharp-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-sharp-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-sharp-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-sharp-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-major--root: diagram and print",
+      "passed": false
+    },
+    {
+      "name": "/chords/b-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-sharp-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-sharp-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-sharp-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-sharp-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-sharp-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-sharp-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-flat-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-flat-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-flat-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-flat-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-flat-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-flat-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-minor--root: diagram and print",
+      "passed": false
+    },
+    {
+      "name": "/chords/c-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-flat-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-flat-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-flat-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-flat-major--root: diagram and print",
+      "passed": false
+    },
+    {
+      "name": "/chords/a-flat-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-flat-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-flat-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-flat-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-flat-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-flat-major--root: diagram and print",
+      "passed": false
+    },
+    {
+      "name": "/chords/c-flat-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-flat-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--first: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--first: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--first: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--first: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--first: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--first: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--second: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--second: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--second: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--second: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--second: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-minor/a-minor--second: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--first: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--first: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--first: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--first: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--first: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--first: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--second: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--second: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--second: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--second: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--second: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-major/a-major--second: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--root: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--root: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--root: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--root: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--root: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--root: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--first: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--first: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--first: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--first: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--first: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--first: audio pitches and frequencies",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--second: spelling=MIDI",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--second: strictly ascending",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--second: bass=lowest",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--second: diagram and print",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--second: print spelling after glyph normalization",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major/c-major--second: audio pitches and frequencies",
+      "passed": true
+    }
+  ]
+}

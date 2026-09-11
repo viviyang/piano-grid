@@ -1,0 +1,46 @@
+{
+  "captured_at": "2026-09-11T18:55:58+08:00",
+  "method": "Existing Chrome tab and running local service; DOM/playwright read through computer-use. No control combinations, audio, or print dialog were exercised.",
+  "local_only_warning": "127.0.0.1 is the user's machine and is not remotely accessible to a future ChatGPT session.",
+  "viewport_note": "The existing browser window was wider than 1440 CSS pixels. Reused 1440/390 full-page screenshots are stored separately under evidence/current-public.",
+  "pages": {
+    "/scales": {
+      "title": "Piano Scales: Notes, Patterns and Practice References",
+      "ready_state": "complete",
+      "body_text_length": 5611,
+      "current_scale": "major:C",
+      "selected_values": {"Scale type":"major","Starting note":"C","Hand":"RH","Direction":"ascending"},
+      "enabled_select_or_button_count": 13,
+      "disabled_select_or_button_count": 1,
+      "visible_content_headings": ["Piano scales: choose a sound, then a starting note","Read the pattern","Choose the minor form","Same notes or same tonic?","Give each note a job","A few jazz scale examples","Continue with a different type","Try one comparison","Print the selected reference"]
+    },
+    "/scales/c-major": {
+      "title": "C Major Piano Scale: Notes and Fingering",
+      "ready_state": "complete",
+      "body_text_length": 2540,
+      "current_scale": "major:C",
+      "selected_values": {"Hand":"RH","Direction":"ascending"},
+      "enabled_select_or_button_count": 11,
+      "disabled_select_or_button_count": 1,
+      "visible_content_headings": ["C Major notes","White keys, unequal distances","One-octave fingering","A short practice check"]
+    },
+    "/scales/a-minor": {
+      "title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+      "ready_state": "complete",
+      "body_text_length": 2832,
+      "current_scale": "natural_minor:A",
+      "selected_values": {"Minor form":"natural_minor","Hand":"RH","Direction":"ascending","Tempo":"60"},
+      "enabled_select_or_button_count": 13,
+      "disabled_select_or_button_count": 1,
+      "visible_content_headings": ["Start with A natural minor","Listen for the changed ending","Practice the last four notes","Connect the scale to chords"]
+    }
+  },
+  "representative_computed_styles": {
+    "body": {"color":"rgb(29, 29, 31)","backgroundColor":"rgb(255, 255, 255)","fontFamily":"system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif","fontSize":"17px","lineHeight":"26.996px"},
+    ".pr-container": {"width":"1120px"},
+    ".am-tool": {"color":"rgb(29, 29, 31)","backgroundColor":"rgb(246, 247, 249)","borderColor":"rgb(225, 228, 232)","width":"1120px"},
+    ".am-primary_enabled": {"color":"rgb(255, 255, 255)","backgroundColor":"rgb(0, 102, 204)","borderColor":"rgb(0, 102, 204)","fontSize":"15px"},
+    "select": {"color":"rgb(29, 29, 31)","backgroundColor":"rgb(255, 255, 255)","borderColor":"rgb(122, 130, 142)","fontSize":"15px"},
+    ".kn-key.kn-marked": {"color":"rgb(0, 102, 204)","backgroundColor":"rgb(234, 242, 255)","borderColor":"rgb(139, 145, 154)","fontSize":"14px"}
+  }
+}

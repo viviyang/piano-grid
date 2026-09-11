@@ -1,0 +1,340 @@
+{
+  "source_ids": [
+    "AC-01",
+    "AC-02",
+    "AC-03",
+    "AC-04",
+    "AM-BAYLOR",
+    "AM-FINGER-LMT",
+    "AM-FINGER-MF",
+    "AM-MIDI",
+    "AM-MUSICXML",
+    "AM-NOTES-C-MAJOR",
+    "AM-THEORY",
+    "AN-BMT-AS",
+    "AN-DENTON",
+    "AN-HA-A",
+    "AN-HA-A-CHORDS",
+    "AN-HA-GUIDE",
+    "AN-HMT-A",
+    "AN-OMT",
+    "AN-PKG-A-CHORDS",
+    "AN-PS-HAR",
+    "AN-PS-MEL",
+    "AN-PS-NAT"
+  ],
+  "sources": [
+    {
+      "source_id": "AC-01",
+      "title": "Scales and scale degrees",
+      "url": "https://openmusictheory.github.io/scales.html",
+      "publisher": "Open Music Theory",
+      "access_status": "full_text_read",
+      "locator": "Major scales; minor scales; scale degrees",
+      "supports": "Major step pattern, definition, minor forms and scale degree names.",
+      "web_reference": "turn2view3",
+      "checked_on": "2026-09-09"
+    },
+    {
+      "source_id": "AC-02",
+      "title": "Minor Scales, Scale Degrees, and Key Signatures",
+      "url": "https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/",
+      "publisher": "Open Music Theory / Chelsey Hamm and Bryn Hughes",
+      "access_status": "full_text_read",
+      "locator": "Key takeaways; Natural/Harmonic/Melodic Minor; relative relationships",
+      "supports": "Three minor forms, classical melodic descending convention, A/C relative relationship.",
+      "web_reference": "turn1view1",
+      "checked_on": "2026-09-09"
+    },
+    {
+      "source_id": "AC-03",
+      "title": "Scales — section 31.9",
+      "url": "https://musictheory.pugetsound.edu/mt21c/JazzScales.html",
+      "publisher": "University of Puget Sound / Robert Hutchinson",
+      "access_status": "full_text_read",
+      "locator": "31.9.1–31.9.3",
+      "supports": "Blues, Dorian, Mixolydian, bebop dominant degree formula; does not prescribe one scale for every jazz chord.",
+      "web_reference": "turn1view2",
+      "checked_on": "2026-09-09"
+    },
+    {
+      "source_id": "AC-04",
+      "title": "Piano Major Scales",
+      "url": "https://www.pianoscales.org/major.html",
+      "publisher": "Pianoscales.org",
+      "access_status": "full_text_read",
+      "locator": "Major scale structure and linked key examples",
+      "supports": "Major structure and 12 tonic pitch-class overview; source graphics not reused.",
+      "web_reference": "turn1view3",
+      "checked_on": "2026-09-09"
+    },
+    {
+      "source_id": "AM-BAYLOR",
+      "title": "23. One-Octave Major Scales",
+      "url": "https://openbooks.library.baylor.edu/pianobasics/chapter/one-octave-major-scales/",
+      "publisher": "Baylor University / Michael Clark",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "Explicit one-octave C,G,D,A,E fingering applicability; F RH crossing at Bb–C; B LH starting finger 4 and thumb E; finger-number role"
+      ],
+      "locator": "One-Octave Major Scales; CAGED, F Major, B Major, lines 336–416",
+      "web_reference": "turn688985view0",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-FINGER-LMT",
+      "title": "Major and Natural Minor Scales for Piano with Fingerings",
+      "url": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
+      "publisher": "LearnMusicTheory.net / High-Yield Music Theory",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_pdf_and_visually_checked",
+      "supports": [
+        "C,D,F,G,A,E,B,Bb,Eb major: one-octave staff spelling and RH/LH ascending/descending numbers; Bb/Eb LH top finger 2; Eb RH start finger 2"
+      ],
+      "locator": "PDF page 1, major scales; RH above/LH below; visual screenshot turn781025view0",
+      "web_reference": "turn952800view1",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-FINGER-MF",
+      "title": "Major Scale Fingering Charts for Keyboards",
+      "url": "https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf",
+      "publisher": "Music Fun / Beatrice Wilder",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_pdf_and_visually_checked",
+      "supports": [
+        "Independent visual checks of one-octave RH/LH ascending/descending sequences and staff pitches for C,G,D,A,E,B,F,Bb,Eb"
+      ],
+      "locator": "PDF pages 3,4,5,6,7,8,10,11,12; the labeled key-specific pages. Screenshots: turn655244view0; turn641788view0; turn621017view2; turn699204view0; turn254414view3; turn509801view2; turn621244view6; turn206026view2; turn509801view1",
+      "web_reference": "turn688985view2",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-MIDI",
+      "title": "Standard MIDI file format, updated — Appendix 1.3",
+      "url": "https://www.cs.cmu.edu/~music/cmsip/readings/Standard-MIDI-file-format-updated.pdf",
+      "publisher": "Carnegie Mellon University hosted technical reading",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_pdf_text",
+      "supports": [
+        "C4=60 selected octave naming convention; chromatic MIDI integer table"
+      ],
+      "locator": "Appendix 1.3: Table of MIDI Note Numbers, printed page 17, extracted lines 626–642",
+      "web_reference": "turn621017view1",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-MUSICXML",
+      "title": "The MIDI-Compatible Part of MusicXML 4.0",
+      "url": "https://www.w3.org/2021/06/musicxml40/tutorial/midi-compatible-part/",
+      "publisher": "W3C Music Notation Community Group",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "Pitch step, alter, octave; C4 convention; key signature fifths positive/negative"
+      ],
+      "locator": "Key and Pitch, lines 80–119",
+      "web_reference": "turn621017view0",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-NOTES-C-MAJOR",
+      "title": "C Major Scale – Piano Notes & Practice",
+      "url": "https://pulse.berklee.edu/scales/c-major-scale.html",
+      "publisher": "Berklee PULSE",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "C major seven-note spelling; key signature accidental count"
+      ],
+      "locator": "Opening notes and key-signature sentences, lines 4–6",
+      "web_reference": "turn254414view0",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AM-THEORY",
+      "title": "Scales and scale degrees",
+      "url": "https://openmusictheory.github.io/scales.html",
+      "publisher": "Open Music Theory / Hybrid Pedagogy Publishing",
+      "checked_on": "2026-09-09",
+      "access_status": "opened_full_text",
+      "supports": [
+        "Major-scale W–W–H–W–W–W–H rule; ascending/descending scale definition; half step is adjacent keyboard pitches; tonic repeated at octave"
+      ],
+      "locator": "The major scale, lines 6 and 12–21",
+      "web_reference": "turn991343view1",
+      "evidence_status": "[已核实]",
+      "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"
+    },
+    {
+      "source_id": "AN-BMT-AS",
+      "title": "A-sharp melodic minor scale",
+      "url": "https://m.basicmusictheory.com/a-sharp-melodic-minor-scale",
+      "publisher": "basicmusictheory.com / Veler Ltd",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "A# melodic exact spelling including F##/G##",
+        "classical descent",
+        "keyboard equivalence B#/C E#/F F##/G G##/A",
+        "C4=MIDI60 shown as middle C"
+      ],
+      "locator": "Solution note names; classical descending; steps 1, 4, 5",
+      "web_reference": "turn192907view0"
+    },
+    {
+      "source_id": "AN-DENTON",
+      "title": "Minor Scales: Natural, Harmonic and Melodic Forms",
+      "url": "https://margaretdentonpiano.com/MInors%20natural%20harmonic%20melodic.pdf",
+      "publisher": "Margaret Denton, piano",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "independent notation verification of all three forms in A E C D B F G F#",
+        "direction conventions"
+      ],
+      "locator": "PDF p.1 rules; p.2 C/D; p.3 E/F; p.4 G/A; p.5 B; p.6 F# (1-based pages), visually inspected",
+      "web_reference": "turn553093view4",
+      "caution": "No finger numbers; not used as fingering evidence. B-flat example does not authorize substituting B-flat spelling for A-sharp."
+    },
+    {
+      "source_id": "AN-HA-A",
+      "title": "One-Octave Scale: A Minor",
+      "url": "https://app.hoffmanacademy.com/lessons/piano/one-octave-scale-minor/video/",
+      "publisher": "Hoffman Academy / Joseph Hoffman",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "A minor one-octave LH/RH ascent fingers; explicitly same patterns for harmonic/melodic",
+        "natural A minor and form distinctions"
+      ],
+      "locator": "FAQ finger patterns; Lesson 164",
+      "web_reference": "turn963168view0"
+    },
+    {
+      "source_id": "AN-HA-A-CHORDS",
+      "title": "Diatonic Chords in Minor Keys",
+      "url": "https://app.hoffmanacademy.com/lessons/piano/diatonic-chords-in-minor-keys/video/",
+      "publisher": "Hoffman Academy / Joseph Hoffman",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "A natural minor diatonic triad names",
+        "harmonic minor G# distinction"
+      ],
+      "locator": "Lesson 226 transcript, sequence from A minor through G major",
+      "web_reference": "turn758335view1"
+    },
+    {
+      "source_id": "AN-HA-GUIDE",
+      "title": "Minor Scales Fingering Guide",
+      "url": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/the-ultimate-guide-to-all-minor-scales",
+      "publisher": "Hoffman Academy",
+      "checked_on": "2026-09-09",
+      "access_status": "landing_page_only_pdf_not_accessed",
+      "supports": [
+        "lead to two-octave fingering resource only; no contents verified"
+      ],
+      "locator": "Product description and name/email download gate",
+      "web_reference": "turn579523view5",
+      "caution": "PDF requires entering contact data. No submission made; landing page does not verify any finger sequence."
+    },
+    {
+      "source_id": "AN-HMT-A",
+      "title": "A Minor Scale: Natural, Harmonic and Melodic",
+      "url": "https://hellomusictheory.com/learn/a-minor-scale/",
+      "publisher": "Hello Music Theory / Dan Farrant",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "key-specific natural harmonic melodic note lists",
+        "classical melodic descent",
+        "key signature and relative major"
+      ],
+      "locator": "Named Natural/Harmonic/Melodic sections and key signature",
+      "web_reference": "turn770816view1",
+      "caution": "Repeated abbreviated natural-minor formula on site is mistyped as a major-scale pattern. That abbreviation is excluded; named note lists were cross-checked against OMT and independent piano sources."
+    },
+    {
+      "source_id": "AN-OMT",
+      "title": "Minor Scales, Scale Degrees, and Key Signatures",
+      "url": "https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/",
+      "publisher": "Open Music Theory; Chelsey Hamm and Bryn Hughes",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "interval rules",
+        "minor forms and classical directions",
+        "relative versus parallel keys"
+      ],
+      "locator": "Key Takeaways; Natural Minor; Harmonic Minor; Melodic Minor",
+      "web_reference": "turn320158view3"
+    },
+    {
+      "source_id": "AN-PKG-A-CHORDS",
+      "title": "Chords in the key of A minor",
+      "url": "https://www.piano-keyboard-guide.com/key-of-a-minor.html",
+      "publisher": "Piano Keyboard Guide / Mantius Cazaubon",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "A natural minor diatonic chords"
+      ],
+      "locator": "Natural minor chord list and Notes Of All The Chords: lines 30-39",
+      "web_reference": "turn758335view0"
+    },
+    {
+      "source_id": "AN-PS-HAR",
+      "title": "Piano Harmonic Minor Scales",
+      "url": "https://www.pianoscales.org/minor-harmonic.html",
+      "publisher": "Pianoscales.org",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "harmonic minor note lists and one-octave LH/RH ascent rows",
+        "correct theoretical enharmonic spellings in overview"
+      ],
+      "locator": "Named key sections and Harmonic Minor Scales overview",
+      "web_reference": "turn553093view1",
+      "caution": "Diagram-adjacent labels simplify some theoretical spellings, including E# and G##. Strict spelling taken from overview and independent source."
+    },
+    {
+      "source_id": "AN-PS-MEL",
+      "title": "Piano Melodic Minor Scales",
+      "url": "https://www.pianoscales.org/minor-melodic.html",
+      "publisher": "Pianoscales.org",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "classical melodic versus jazz convention",
+        "ascending pitch collections for 8 named keys"
+      ],
+      "locator": "Opening direction convention; named key sections",
+      "web_reference": "turn553093view2",
+      "caution": "Several rows labelled descending list the natural-minor pitch collection in ascending order; do not use those row orders for playback. A#/Bb section is written as Bb; not used to respell the A# route."
+    },
+    {
+      "source_id": "AN-PS-NAT",
+      "title": "Piano Minor Scales",
+      "url": "https://www.pianoscales.org/minor.html",
+      "publisher": "Pianoscales.org",
+      "checked_on": "2026-09-09",
+      "access_status": "opened",
+      "supports": [
+        "natural minor note lists and one-octave LH/RH ascent rows",
+        "strict spelling in overview",
+        "relative keys"
+      ],
+      "locator": "Named key sections, Minor Scales overview, relative keys",
+      "web_reference": "turn553093view0",
+      "caution": "Diagram-adjacent A# note labels simplify B# to C and E# to F; use the theoretical overview for spelling. Finger arrays apply only to displayed ascending one-octave note order."
+    }
+  ]
+}

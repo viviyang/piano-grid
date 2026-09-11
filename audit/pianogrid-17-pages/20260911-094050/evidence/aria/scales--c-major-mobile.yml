@@ -1,0 +1,128 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Scales":
+          - /url: /scales
+      - listitem:
+        - link "C major" [disabled]
+  - 'heading "C Major Piano Scale: Notes and Fingering" [level=1]'
+  - paragraph: See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.
+  - region "C scale reference":
+    - text: Starting note
+    - strong: C
+    - text: Key signature
+    - strong: No sharps or flats
+    - text: Range
+    - strong: 1 octave
+    - text: Hand
+    - combobox "Hand":
+      - option "Right hand" [selected]
+      - option "Left hand"
+    - text: Direction
+    - combobox "Direction":
+      - option "Ascending" [selected]
+      - option "Descending"
+      - option "Up and down"
+    - text: Tempo
+    - strong: 60 BPM
+    - text: Current scale
+    - heading "C Major" [level=2]
+    - term: Hand
+    - definition: Right hand
+    - term: Range
+    - definition: 1 octave
+    - term: Tempo
+    - definition: 60 BPM
+    - paragraph: C – D – E – F – G – A – B – C
+    - paragraph: "Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1"
+    - heading "Ascending" [level=3]
+    - text: Fingering from the listed sources
+    - region "Ascending notes and fingering":
+      - table:
+        - rowgroup:
+          - row "Notes C4 D4 E4 F4 G4 A4 B4 C5":
+            - rowheader "Notes"
+            - cell "C4"
+            - cell "D4"
+            - cell "E4"
+            - cell "F4"
+            - cell "G4"
+            - cell "A4"
+            - cell "B4"
+            - cell "C5"
+          - row "Fingers 1 2 3 1 2 3 4 5":
+            - rowheader "Fingers"
+            - cell "1"
+            - cell "2"
+            - cell "3"
+            - cell "1"
+            - cell "2"
+            - cell "3"
+            - cell "4"
+            - cell "5"
+    - region "treble staff notes":
+      - 'group "treble clef: C4 to C5"':
+        - img "C4, treble clef": C4
+        - img "D4, treble clef": D4
+        - img "E4, treble clef": E4
+        - img "F4, treble clef": F4
+        - img "G4, treble clef": G4
+        - img "A4, treble clef": A4
+        - img "B4, treble clef": B4
+        - img "C5, treble clef": C5
+    - heading "Keyboard" [level=3]
+    - text: C4 to C5
+    - region "C Major, Right hand, Ascending": C4 C#4 Db4 D4 D#4 Eb4 E4 F4 F#4 Gb4 G4 G#4 Ab4 A4 A#4 Bb4 B4 C5
+    - button "Play scale"
+    - button "Stop" [disabled]
+    - status
+    - region "Sources and checking scope":
+      - heading "Sources and checking scope" [level=3]
+      - list:
+        - listitem:
+          - 'link "Berklee PULSE: C Major Scale – Piano Notes & Practice"':
+            - /url: https://pulse.berklee.edu/scales/c-major-scale.html
+          - strong: "Checked for:"
+          - text: C major note spelling and its key signature.
+        - listitem:
+          - 'link "LearnMusicTheory.net / High-Yield Music Theory: Major and Natural Minor Scales for Piano with Fingerings"':
+            - /url: https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf
+          - strong: "Checked for:"
+          - text: C major one-octave note spelling and fingering for both hands, ascending and descending.
+        - listitem:
+          - 'link "Music Fun / Beatrice Wilder: Major Scale Fingering Charts for Keyboards"':
+            - /url: https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf
+          - strong: "Checked for:"
+          - text: Independent comparison of that one-octave fingering for both hands and directions.
+    - button "Print current scale"
+    - status
+    - paragraph: Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.
+  - region "C Major notes":
+    - heading "C Major notes" [level=2]
+    - paragraph: C Major contains C, D, E, F, G, A, B. Repeat C at the top to complete one octave. Its key signature has no sharps or flats.
+  - region "White keys, unequal distances":
+    - heading "White keys, unequal distances" [level=2]
+    - paragraph: C major uses only white keys, but those keys are not equally spaced in pitch. E–F and B–C are half steps; the other adjacent pairs in the scale are whole steps. Keep that distinction when checking the keyboard against the staff. Beginning on another white key does not preserve the C-major tonic.
+  - region "One-octave fingering":
+    - heading "One-octave fingering" [level=2]
+    - paragraph: In this one-octave version, the right hand crosses from E with finger 3 to F with the thumb. The left hand crosses from G with the thumb to A with finger 3. Read the separate descending row when coming back. Finger numbers identify the fingers, not the scale degrees.
+  - region "A short practice check":
+    - heading "A short practice check" [level=2]
+    - paragraph: "Suggested drill: play C–D–E, pause, then continue F–G–A–B–C with the printed right-hand fingers. Next, connect E–F without the pause. With the left hand, isolate G–A instead. Finish with one unhurried ascent and descent, saying each note name."
+  - navigation "Related available references":
+    - link "All piano scales":
+      - /url: /scales
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

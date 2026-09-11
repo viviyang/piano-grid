@@ -1,0 +1,96 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Keyboard Notes":
+          - /url: /keyboard-notes
+      - listitem:
+        - link "Labeled keys" [disabled]
+  - 'heading "Labeled Piano Keys: 88-Key and 61-Key References" [level=1]'
+  - paragraph: Match letter and octave labels to a defined 88-key or 61-key layout, with clear steps for labeling your keyboard.
+  - region "Labeled keyboard reference":
+    - text: Keyboard layout
+    - combobox "Keyboard layout":
+      - 'option "88 keys: A0–C8" [selected]'
+      - 'option "61 keys: C2–C7"'
+    - checkbox "Show octave numbers" [checked]
+    - text: Show octave numbers
+    - paragraph: "88 keys: A0–C8 · 52 white / 36 black keys"
+    - button "Print this reference"
+    - link "Download reference PDF":
+      - /url: /reference/generated/keyboard-notes/labeled-88-octaves.pdf
+    - status
+    - paragraph: Reference diagram—not a full-size sticker template. Octave numbers identify register, not fingers.
+    - navigation "Octave sections":
+      - link "A0–B0":
+        - /url: "#labels-section-0"
+      - link "C1–B1":
+        - /url: "#labels-section-1"
+      - link "C2–B2":
+        - /url: "#labels-section-2"
+      - link "C3–B3":
+        - /url: "#labels-section-3"
+      - link "C4–B4":
+        - /url: "#labels-section-4"
+      - link "C5–B5":
+        - /url: "#labels-section-5"
+      - link "C6–B6":
+        - /url: "#labels-section-6"
+      - link "C7–B7":
+        - /url: "#labels-section-7"
+      - link "C8–C8":
+        - /url: "#labels-section-8"
+    - heading "A0–B0" [level=2]
+    - region "A0–B0 labels": A0 A#0 Bb0 B0
+    - heading "C1–B1" [level=2]
+    - region "C1–B1 labels": C1 C#1 Db1 D1 D#1 Eb1 E1 F1 F#1 Gb1 G1 G#1 Ab1 A1 A#1 Bb1 B1
+    - heading "C2–B2" [level=2]
+    - region "C2–B2 labels": C2 C#2 Db2 D2 D#2 Eb2 E2 F2 F#2 Gb2 G2 G#2 Ab2 A2 A#2 Bb2 B2
+    - heading "C3–B3" [level=2]
+    - region "C3–B3 labels": C3 C#3 Db3 D3 D#3 Eb3 E3 F3 F#3 Gb3 G3 G#3 Ab3 A3 A#3 Bb3 B3
+    - heading "C4–B4" [level=2]
+    - region "C4–B4 labels": C4 C#4 Db4 D4 D#4 Eb4 E4 F4 F#4 Gb4 G4 G#4 Ab4 A4 A#4 Bb4 B4
+    - heading "C5–B5" [level=2]
+    - region "C5–B5 labels": C5 C#5 Db5 D5 D#5 Eb5 E5 F5 F#5 Gb5 G5 G#5 Ab5 A5 A#5 Bb5 B5
+    - heading "C6–B6" [level=2]
+    - region "C6–B6 labels": C6 C#6 Db6 D6 D#6 Eb6 E6 F6 F#6 Gb6 G6 G#6 Ab6 A6 A#6 Bb6 B6
+    - heading "C7–B7" [level=2]
+    - region "C7–B7 labels": C7 C#7 Db7 D7 D#7 Eb7 E7 F7 F#7 Gb7 G7 G#7 Ab7 A7 A#7 Bb7 B7
+    - heading "C8–C8" [level=2]
+    - region "C8–C8 labels": C8
+    - paragraph: Standard A0–C8 88-key layout; does not describe every extended-range or historical piano.
+  - list:
+    - listitem: Confirm the instrument’s lowest/highest notes and choose the matching supplied reference.
+    - listitem: Locate C before a pair of black keys; choose the correct C octave.
+    - listitem: Match and label one C–D–E–F–G–A–B white-key group.
+    - listitem: Check the F/G/A/B region against the group of three black keys.
+    - listitem: Match the black-key pairs C#/Db, D#/Eb, F#/Gb, G#/Ab and A#/Bb.
+    - listitem: Continue through the chosen range, keeping octave suffixes consistent; use the instrument/label instructions for any physical application.
+  - heading "Choose the layout that matches your keyboard" [level=2]
+  - paragraph: Start with the 88-key reference, A0–C8, or select the 61-key example, C2–C7. Both use letter names and an optional octave suffix, with middle C labeled C4. The 61-key chart describes this specific range; a key count alone does not establish the labels of every keyboard model. Compare the leftmost and rightmost notes with your instrument.
+  - heading "Read letters and octave labels" [level=2]
+  - paragraph: The white keys repeat C–D–E–F–G–A–B within each numbered octave. Turn octave labels on to distinguish C3 from C4, or A4 from A5. The black-key labels show familiar sharp/flat pairs, such as F♯/G♭. An octave number identifies the note’s register; it is not a finger number or a scale degree.
+  - heading "Label a small section first" [level=2]
+  - paragraph: First locate a group of two black keys and find the C immediately before it. Match that C to the correct octave in the reference. Next, label the following white keys D, E, F, G, A and B. Check the three-black-key group above F, G, A and B before continuing. Add the sharp/flat names only after the white-key labels match.
+  - heading "Where to start on the 61-key example" [level=2]
+  - paragraph: For the C2–C7 layout, label the leftmost white key C2. Continue through B2, then begin C3, and repeat until the final C7. This layout has six C keys but spans five C-to-C octaves. On the A0–C8 layout, the first three keys are A0, A♯0/B♭0 and B0 before C1. Do not begin that layout with C.
+  - heading "Print a reference you can read" [level=2]
+  - paragraph: Choose the same layout and octave-label setting for screen and print. Use the marked octave sections to read a long keyboard in smaller pieces. The printout is a reference diagram, not a full-size sticker template. If you use physical labels, match each one to the verified key before applying it and follow the label and instrument instructions for placement.
+  - navigation "Related keyboard references":
+    - link "Find an individual note":
+      - /url: /keyboard-notes
+    - link "Notes on the staff":
+      - /url: /keyboard-notes/chart
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

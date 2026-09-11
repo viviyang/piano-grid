@@ -1,0 +1,415 @@
+{
+  "url": "/keyboard-notes/finger-numbers",
+  "title": "Piano Finger Numbers: Left & Right Hand Chart",
+  "description": "Learn piano finger numbers 1 to 5 for both hands. Read RH and LH examples and tell fingering apart from scale degrees and octave labels.",
+  "user_task": "Identify the finger meant by a piano fingering number on either hand and follow the correct specific reference.",
+  "questions": [
+    "Is the left thumb number 5?",
+    "Does LH 3 mean the third key from the left?",
+    "Does this chart tell me how to finger any song?"
+  ],
+  "blocks": [
+    {
+      "id": "mapping",
+      "heading": "Both thumbs are 1",
+      "body": "Piano finger numbers use the same labels on both hands: thumb 1, index finger 2, middle finger 3, ring finger 4 and little finger 5. The little finger is also called the pinky. LH means left hand and RH means right hand. Start by checking the hand label as well as the number.",
+      "source_ids": [
+        "BR-03",
+        "BR-04"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "orientation",
+      "heading": "Read each hand separately",
+      "body": "The diagrams show the backs of your hands as you look down with your fingertips pointing away. The thumbs face inward. From left to right, the left-hand labels read 5, 4, 3, 2, 1, while the right-hand labels read 1, 2, 3, 4, 5. The fingers keep their identities when the picture is mirrored.",
+      "source_ids": [
+        "BR-04"
+      ],
+      "evidence_status": "[推断]"
+    },
+    {
+      "id": "not-keys",
+      "heading": "A number identifies a finger",
+      "body": "Finger 1 does not permanently mean C. A fingering mark says which finger is intended for that note in that passage. Published exercises can ask the same thumb to play C and then D. For a particular scale, chord or arpeggio, use its own stated hand, direction and range.",
+      "source_ids": [
+        "BR-03",
+        "BR-06"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "degrees",
+      "heading": "Finger numbers and scale degrees",
+      "body": "A finger number labels part of your hand. A scale degree labels a note’s position relative to the tonic. Finger 3 means the middle finger; scale degree 3 means the third degree of the scale. Reading one does not tell you the other.",
+      "source_ids": [
+        "BR-03",
+        "BR-05"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "check",
+      "heading": "Try a quick identification check",
+      "body": "Find the left thumb, then the right little finger. Name their numbers before checking the table. Next find finger 2 on each hand. This check only asks you to identify fingers; choose a specific scale or chord reference when you need instructions for playing notes.",
+      "source_ids": [
+        "BR-03",
+        "BR-04"
+      ],
+      "evidence_status": "[推断]"
+    }
+  ],
+  "data": {
+    "hands": [
+      {
+        "hand": "left",
+        "abbreviation": "LH",
+        "label": "Left hand",
+        "fingers": [
+          {
+            "number": 1,
+            "name": "thumb",
+            "aliases": [],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 2,
+            "name": "index finger",
+            "aliases": [
+              "pointer finger"
+            ],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 3,
+            "name": "middle finger",
+            "aliases": [],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 4,
+            "name": "ring finger",
+            "aliases": [],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 5,
+            "name": "little finger",
+            "aliases": [
+              "pinky"
+            ],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          }
+        ],
+        "diagram": {
+          "view": "player looking down at backs of hands; palms down; fingertips away",
+          "fingertip_numbers_left_to_right": [
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "thumb_side": "right / inward",
+          "text_must_not_be_mirrored": true,
+          "exact_anatomical_geometry": null,
+          "evidence_status": "[推断]",
+          "basis": "Diagram orientation chosen for clarity; ordering follows opposite hand layouts and verified finger identities. No hand pose or technique prescription."
+        }
+      },
+      {
+        "hand": "right",
+        "abbreviation": "RH",
+        "label": "Right hand",
+        "fingers": [
+          {
+            "number": 1,
+            "name": "thumb",
+            "aliases": [],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 2,
+            "name": "index finger",
+            "aliases": [
+              "pointer finger"
+            ],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 3,
+            "name": "middle finger",
+            "aliases": [],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 4,
+            "name": "ring finger",
+            "aliases": [],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "number": 5,
+            "name": "little finger",
+            "aliases": [
+              "pinky"
+            ],
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          }
+        ],
+        "diagram": {
+          "view": "player looking down at backs of hands; palms down; fingertips away",
+          "fingertip_numbers_left_to_right": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "thumb_side": "left / inward",
+          "text_must_not_be_mirrored": true,
+          "exact_anatomical_geometry": null,
+          "evidence_status": "[推断]",
+          "basis": "Diagram orientation chosen for clarity; ordering follows opposite hand layouts and verified finger identities. No hand pose or technique prescription."
+        }
+      }
+    ],
+    "diagram_contract": {
+      "order_on_page": [
+        "left",
+        "right"
+      ],
+      "shared_caption": "Finger numbers for piano — view from the player, backs of hands facing up.",
+      "pair_geometry": "Left-hand thumb at the inner right edge; right-hand thumb at the inner left edge.",
+      "finger_mapping_is_authoritative": true,
+      "no_fixed_key_assignment": true,
+      "must_label_both_hands": true,
+      "svg_or_image_asset": null,
+      "evidence_status": "[推断]",
+      "basis": "Editorial layout specification using verified finger identities; source artwork is not reproduced."
+    },
+    "number_system_comparison": [
+      {
+        "system": "piano fingering",
+        "example": "3",
+        "meaning": "middle finger of the indicated hand",
+        "evidence_status": "[已核实]",
+        "source_ids": [
+          "BR-03"
+        ]
+      },
+      {
+        "system": "scale degree",
+        "example": "3 (often with a caret)",
+        "meaning": "third degree relative to the tonic",
+        "evidence_status": "[已核实]",
+        "source_ids": [
+          "BR-05"
+        ]
+      },
+      {
+        "system": "octave register",
+        "example": "C4",
+        "meaning": "C in written octave 4; not finger 4",
+        "evidence_status": "[已核实] general ASPN rule; [推断] example",
+        "source_ids": [
+          "PG-ASPN"
+        ]
+      }
+    ],
+    "reading_examples": [
+      {
+        "instruction": "LH 1",
+        "answer": "left thumb",
+        "evidence_status": "[推断]",
+        "basis": "Editorial example applying verified LH and finger1 definitions.",
+        "source_ids": [
+          "BR-03",
+          "BR-04"
+        ]
+      },
+      {
+        "instruction": "RH 5",
+        "answer": "right little finger",
+        "evidence_status": "[推断]",
+        "basis": "Editorial example applying verified RH and finger5 definitions.",
+        "source_ids": [
+          "BR-03",
+          "BR-04"
+        ]
+      }
+    ],
+    "general_piece_fingering": null,
+    "specific_reference_links": [
+      {
+        "url": "/scales/c-major",
+        "label": "C major scale reference",
+        "activation_condition": "Show only after this target publishes verified hand/direction/octave fingering."
+      },
+      {
+        "url": "/chords/a-minor",
+        "label": "A minor chord reference",
+        "activation_condition": "Use existing unchanged chord package; show only its verified finger guidance."
+      },
+      {
+        "url": "/arpeggios",
+        "label": "C and G major arpeggio examples",
+        "activation_condition": "Keep each verified hand-specific fingering bound to its stated octave/register."
+      }
+    ],
+    "print": {
+      "content": [
+        "both labeled hand diagrams",
+        "five-finger mapping table",
+        "finger numbers vs scale degrees note"
+      ],
+      "pdf_asset": null
+    },
+    "related_urls": [
+      "/keyboard-notes",
+      "/scales/c-major",
+      "/chords/a-minor",
+      "/arpeggios"
+    ]
+  },
+  "source_ids": [
+    "BR-03",
+    "BR-04",
+    "BR-05",
+    "BR-06",
+    "PG-FINGERS",
+    "PG-C-BEGINNER",
+    "PG-ASPN",
+    "PG-OMT"
+  ],
+  "status": "content_prepared_distinct_template_required",
+  "issues": [
+    {
+      "id": "BR-FINGERS-DIAGRAM",
+      "field": "data.diagram_contract.svg_or_image_asset",
+      "reason": "左右手编号映射和图示方向已明确；尚未交付最终原创手图。",
+      "needed_to_resolve": "按player-view绘制并检查左右手、拇指朝内、1–5对应、文字不镜像；专业复核后使用。"
+    },
+    {
+      "id": "BR-FINGERS-SCOPE",
+      "field": "fingering_chart_intent",
+      "reason": "原词可能包含具体乐句/音阶指法需求；本基线职责为手指编号与具体参考入口。",
+      "needed_to_resolve": "保留本页职责；仅链接已有具体对象，不把编号图视为通用曲目指法方案。"
+    },
+    {
+      "id": "BR-FINGERS-PRINT",
+      "field": "data.print.pdf_asset",
+      "reason": "尚未生成实际打印PDF。",
+      "needed_to_resolve": "最终手图完成后生成打印版并视检；资源不存在时不显示下载承诺。"
+    },
+    {
+      "id": "NEXT-TEMPLATE-keyboard-notes-finger-numbers",
+      "field": "implementation",
+      "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+      "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P126",
+      "status": "content_and_mapping_ready; diagram_pending",
+      "delivered": "双手分别1–5映射、准确示意朝向、RH/LH说明、与音名/音级区别、具体参考入口条件。",
+      "pending": "最终原创左右手编号图与专业视觉复核；打印资源如需提供则实际生成。"
+    }
+  ],
+  "baseline_page_id": "U071",
+  "batch": "B",
+  "main_keyword": "piano fingering chart",
+  "keywords": [
+    "piano fingering chart",
+    "piano finger chart"
+  ],
+  "source_groups": [
+    {
+      "id": "P126",
+      "representative": "piano fingering chart",
+      "section": null,
+      "synonyms": [
+        "piano finger chart"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A45:G45",
+      "delivery_method": "独立页首要任务",
+      "required_output": "左右手编号图；基础使用说明；链接到具体和弦/音阶指法",
+      "first_release_scope": "按页面准备顺序验收",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T20",
+  "baseline_priority": "后做",
+  "baseline_purpose": "理解左右手手指编号及基础指法图",
+  "final_scope": {
+    "id": "T20",
+    "name": "补充参考／打印工具",
+    "confirmation_status": "本版统一规划建议；后做",
+    "user_task": "完成频率查询、手指编号、空白键盘、调号或综合速查这一页指定任务。",
+    "modules": [
+      "先直接交付该页自己的图表或可操作结果。",
+      "附必要基准/范围说明；打印资料须真实可用。",
+      "关联查询或学习入口，但不复制另一个中心页。"
+    ],
+    "boundary": "同样是 chart 不代表同页；调号、指编号、频率、空白模板分别按原表任务保留。",
+    "acceptance": "本页标题所承诺的那一种结果真实可用，并有审核说明。"
+  },
+  "required_delivery": "先直接交付该页自己的图表或可操作结果。；附必要基准/范围说明；打印资料须真实可用。；关联查询或学习入口，但不复制另一个中心页。",
+  "release_conditions": "本页标题所承诺的那一种结果真实可用，并有审核说明。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "原词fingering可能要求更具体的技巧；内容范围及示意须专业复核",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "metadata": {
+    "title": "Piano Finger Numbers: Left & Right Hand Chart",
+    "description": "Learn piano finger numbers 1 to 5 for both hands. Read RH and LH examples and tell fingering apart from scale degrees and octave labels.",
+    "canonical_path": "/keyboard-notes/finger-numbers",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

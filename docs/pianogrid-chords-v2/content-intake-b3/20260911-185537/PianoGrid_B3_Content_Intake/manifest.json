@@ -1,0 +1,874 @@
+{
+  "schema_version": 1,
+  "export_status": "READY_FOR_CONTENT",
+  "exported_at": "2026-09-11T11:03:26.839Z",
+  "export_timestamp_directory": "20260911-185537",
+  "repository": {
+    "head": "dd1b8849cd4c303c9ddebfe794758aa14354f507",
+    "dirty": true,
+    "git_status_entry_count": 78,
+    "b3_status": "PASS_WITH_NOTES",
+    "baseline_head": "dd1b8849cd4c303c9ddebfe794758aa14354f507",
+    "baseline_generated_at": "2026-09-11T10:42:36.277Z",
+    "version_mapping": "HEAD matched and all 56 B3 relevant SHA-256 values matched before and after export."
+  },
+  "scope": {
+    "business_source_modified": false,
+    "routes_added": false,
+    "dependencies_changed": false,
+    "product_tests_rerun": false,
+    "commit": false,
+    "deployment": false
+  },
+  "file_count": 104,
+  "files": [
+    {
+      "source_path": null,
+      "package_path": "contract/AUTHORING_CONTRACT.md",
+      "sha256": "2fd8c29433a3bb2cf7a1b831cbceb61213d8da5b170065fa3024190367bfd454",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": null,
+      "package_path": "contract/DELIVERABLES.md",
+      "sha256": "afa4b2a7e708d400834cd1f9c38f74958717d7f0b4cdd89f77f68c6197f6ee0c",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": null,
+      "package_path": "contract/EXPANSION_LIMITS.md",
+      "sha256": "55846f398013a3507916ba49dec0c439c3c05535e321a53365c9e4b759b15118",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/B3_RESULT.md",
+      "package_path": "evidence/B3_RESULT.md",
+      "sha256": "c7f392428b81d4565e98d561ebf3b58395b3d81a0c51213f63ed9392df57346b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/a-minor-regression-final/page-validation.json",
+      "package_path": "evidence/evidence/b3/a-minor-regression-final/page-validation.json",
+      "sha256": "f9008668f76ade05934a33327f3c08c5a52f72ecbef1e7064e28e996be6f634d",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/a-minor-regression-final/print-root.png",
+      "package_path": "evidence/evidence/b3/a-minor-regression-final/print-root.png",
+      "sha256": "fd148dbcec9b10ef5bf819f094901665689b05c5e6b0f11fc61d2829258dceea",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/adapter-validation.json",
+      "package_path": "evidence/evidence/b3/adapter-validation.json",
+      "sha256": "e79dcf3a7b62dcf75f80e4fe0ff68aed4290c173d1cafc5b2b9d0fcca5621bf1",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/B3_BASELINE.json",
+      "package_path": "evidence/evidence/b3/B3_BASELINE.json",
+      "sha256": "ea1a03ed3aa2250f1f42753d9ec137772e6320a861b5fd8fd99dbaba6d78f82c",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/isolated-build.json",
+      "package_path": "evidence/evidence/b3/isolated-build.json",
+      "sha256": "102b53de8dd0a65d93e88b7e8cd99e45ac9273225a0fef0f550bcfb3e515c418",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-major-fingering.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-major-fingering.png",
+      "sha256": "468c27db54d4c3e754bfd35f84a4fc0fe7ed8dfec086bd788ae52d12944621bc",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-major-practice-answer.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-major-practice-answer.png",
+      "sha256": "bbb31eb278ec50b48c1f2a48b1609d475a24f64fdb4b0bc1d23bed76c83a5330",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-major-raw.html",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-major-raw.html",
+      "sha256": "e935a7e2b89329ed606b58ef2613d1bcf06d77eaa6daa5bdd766f714322f8e42",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-minor-1440.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-minor-1440.png",
+      "sha256": "a6c8f59ce5dc1215436be99151aced0d68dbd582d66b301a822d0e2b5400eb4f",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-minor-390.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-minor-390.png",
+      "sha256": "925b1dfd7cffdb96fb91d0662ca24ba1d4f58ce3cfa60d1a539a9ca420b424ff",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-minor-fingering.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-minor-fingering.png",
+      "sha256": "6a22cf6c36574c092220350faa0afff5ba3d74737eeff008aebd94a4026351fb",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-minor-practice-answer.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-minor-practice-answer.png",
+      "sha256": "03defd08479ab7097a86725b96fcc6b5a5b6fadfe787da748ee321885e79ac85",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/a-minor-raw.html",
+      "package_path": "evidence/evidence/b3/production-browser-final/a-minor-raw.html",
+      "sha256": "0f202e51410de6e7d9563936c23a9026c4517e53d734ee52fa667946df34e9a1",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/b3-validation.json",
+      "package_path": "evidence/evidence/b3/production-browser-final/b3-validation.json",
+      "sha256": "612e2367baaf7965e1796057db22857d7ccf12a9c2e4ca0dda434affafda031d",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/c-major-fingering.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/c-major-fingering.png",
+      "sha256": "003f218b4c1c6666acf0253eb7543875adba620210e9633180dcbe0465dc3c60",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/c-major-practice-answer.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/c-major-practice-answer.png",
+      "sha256": "0669ab6cc695840e2cb5b008dddc1d3863cb94aa06e5de437498d3aea8b8ce9e",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/c-major-raw.html",
+      "package_path": "evidence/evidence/b3/production-browser-final/c-major-raw.html",
+      "sha256": "14b0925eff4ad79cf1d023ff9b98ecc8bec2598d8ebfdc6fa5a435591cefcab6",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/chords-1440.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/chords-1440.png",
+      "sha256": "9dd86c09d46d742085f8f7b32be880a967946c52e93345e2ba7242ba6e3a7337",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/chords-390.png",
+      "package_path": "evidence/evidence/b3/production-browser-final/chords-390.png",
+      "sha256": "d6a3dbb083aecab4a31d9f036aca299bb6a35ed60f3aee1ff736a94ea41352de",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/chords-raw.html",
+      "package_path": "evidence/evidence/b3/production-browser-final/chords-raw.html",
+      "sha256": "16f38212c91bb3b5d88e806efb33eb36e46770b7dcd3802d9640dcb750a1cfd0",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/pianogrid-chords-v2/implementation-log.md",
+      "package_path": "evidence/implementation-log.md",
+      "sha256": "1357f770f53d11a208bdb0759297398698f959fea7658ab58b8fd08b5bb72dd7",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/page-content.master.json + src/lib/chord-content.ts + src/lib/chord-learning-content.ts",
+      "package_path": "examples/authoring/a-major.authoring-bundle.json",
+      "sha256": "3f1bfa55d96df036d9f8b06e91e4876970b176cf66e691b2b3c1e33a4ca9a769",
+      "mode": "derived",
+      "source_pointer": "Exact records and B3 overlay assembled without renaming fields",
+      "note": null
+    },
+    {
+      "source_path": "docs/content/chords/page-content.json + src/lib/a-minor-content.ts + src/lib/chord-learning-content.ts",
+      "package_path": "examples/authoring/a-minor.authoring-bundle.json",
+      "sha256": "8f5f7ed6a82c6d8399311dc9b41da1e5b91039ced528838011365fb2a4c941be",
+      "mode": "derived",
+      "source_pointer": "Exact records and B3 overlay assembled without renaming fields",
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/page-content.master.json + src/lib/chord-content.ts + src/lib/chord-learning-content.ts",
+      "package_path": "examples/authoring/c-major.authoring-bundle.json",
+      "sha256": "183c9d6e9a129199236815cb05f05cd2d26911e95127fca1a7abc279af5c7fde",
+      "mode": "derived",
+      "source_pointer": "Exact records and B3 overlay assembled without renaming fields",
+      "note": null
+    },
+    {
+      "source_path": null,
+      "package_path": "examples/authoring/README.md",
+      "sha256": "54ac62debb6f07826bc6f0a082eec9fabfebe1a75d20fe63c245dd7426ce3082",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "current getChordCenter()",
+      "package_path": "examples/hub/chord-center.current.json",
+      "sha256": "f020244330deaec789c0c2a3d2aa573dad1f66d69e99a1a8e7482e14999d95a5",
+      "mode": "derived",
+      "source_pointer": "/items (19), /filters, /practiceLinks, /comparisons",
+      "note": null
+    },
+    {
+      "source_path": "current getChordDetail(route)",
+      "package_path": "examples/resolved/a-major.model.json",
+      "sha256": "0a66f3d0a88a62901fdff5e784445515c62e3dc5e1f876b37eca3920f8070b43",
+      "mode": "derived",
+      "source_pointer": "/chords/a-major",
+      "note": "Pure-data resolved snapshot; not a write-back format."
+    },
+    {
+      "source_path": "current getChordDetail(route)",
+      "package_path": "examples/resolved/a-minor.model.json",
+      "sha256": "34b1be7d3ab7d9bbb2b15caeeaa941156ac099527ed04448cb32ed9f566ffbf4",
+      "mode": "derived",
+      "source_pointer": "/chords/a-minor",
+      "note": "Pure-data resolved snapshot; not a write-back format."
+    },
+    {
+      "source_path": "current getChordDetail(route)",
+      "package_path": "examples/resolved/c-major.model.json",
+      "sha256": "fcab859434d195f11b7fd4a2c5dcaac2efe83f020e35a5d06d6df7971402baf9",
+      "mode": "derived",
+      "source_pointer": "/chords/c-major",
+      "note": "Pure-data resolved snapshot; not a write-back format."
+    },
+    {
+      "source_path": "docs/content/site-master/assets/chord-a-major.pdf",
+      "package_path": "existing-content/docs/content/site-master/assets/chord-a-major.pdf",
+      "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/assets/chord-c-major.pdf",
+      "package_path": "existing-content/docs/content/site-master/assets/chord-c-major.pdf",
+      "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/content-master-index.md",
+      "package_path": "existing-content/docs/content/site-master/content-master-index.md",
+      "sha256": "3e630cd575ea911cdb886161ffba2b3fc0b32546405e5009bbc30b06a6dcd68e",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/page-content.master.json",
+      "package_path": "existing-content/docs/content/site-master/page-content.master.chords-extract.json",
+      "sha256": "344ca8f48a1fd335fac264fc76aad589ac0bf01352b7f5a536af6554371614fc",
+      "mode": "excerpt",
+      "source_pointer": "/pages plus referenced sources, issues, assets and integration contract",
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/preserved-chords/assets/a-minor-notes-inversions.pdf",
+      "package_path": "existing-content/docs/content/site-master/preserved-chords/assets/a-minor-notes-inversions.pdf",
+      "sha256": "b6a79a5e69f216e3f3902aca431f2b96e1b6bf3554d624a360256dd4e58104e6",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "package_path": "existing-content/docs/content/site-master/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/preserved-chords/content-pack.md",
+      "package_path": "existing-content/docs/content/site-master/preserved-chords/content-pack.md",
+      "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/source-ledger.master.md",
+      "package_path": "existing-content/docs/content/site-master/source-ledger.master.md",
+      "sha256": "5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/site-master/unresolved-issues.master.md",
+      "package_path": "existing-content/docs/content/site-master/unresolved-issues.master.md",
+      "sha256": "cf9a9f6d2c525fd18facf97fe4f66e9232c038a932579cddc38f6d663ed8b598",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/product/Piano_全站统一规划_最终版.md",
+      "package_path": "existing-content/docs/product/Piano_全站统一规划_最终版.md",
+      "sha256": "97e30d5a5cb29f2eb975a12f16d6b375babdad3cb969a38b26f39273760853b1",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/product/Piano_URL规划说明.md",
+      "package_path": "existing-content/docs/product/Piano_URL规划说明.md",
+      "sha256": "ec6d9f49e58f91a212ab437d7df447bffee6199f9a6f2d9ab1e5d8c3d81364d4",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/tasks/batch-implementation/01-chords.md",
+      "package_path": "existing-content/docs/tasks/batch-implementation/01-chords.md",
+      "sha256": "b7065466109d6d959c001b5fa1c68fc699411f19123e3cc9e9ff8f2d161caa54",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/tasks/site-implementation-plan.md",
+      "package_path": "existing-content/docs/tasks/site-implementation-plan.md",
+      "sha256": "8af143b7cd1fd5462bf1cba7d8ad2dca2f3d3c67749559b55db91110f09a601d",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": null,
+      "package_path": "gaps.md",
+      "sha256": "283b02d9872e84f16994abb59ca42789c266daa507a7c7ee114a178db40829d1",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "current getChordCenter()",
+      "package_path": "planning/chord-catalog.md",
+      "sha256": "1cedb9bbe557246e91519011fc27da6ccb817d334bbb5d5e3fc72df094da3667",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/product/url-plan.final.json",
+      "package_path": "planning/original-plan-chord-entries.json",
+      "sha256": "509bcc83ac4be2790c47048df3fe5d67550c780cb34fcc6961f672ee39ffd849",
+      "mode": "excerpt",
+      "source_pointer": "/pages, /page_specs and /source_task_mapping filtered to listed related URLs",
+      "note": null
+    },
+    {
+      "source_path": "docs/product/url-plan.final.json + docs/content/site-master/page-content.master.json + src/lib/site-routes.ts",
+      "package_path": "planning/page-inventory.md",
+      "sha256": "fc4fa859693c6d2ae9d2b6f0ec9b6ba949614a164edc8fe96587d6ffd10d27bd",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": null,
+      "package_path": "README.md",
+      "sha256": "e80c5c156c8c04b216a9ac471e45f614e4c89140424fa3bbec033607e431c412",
+      "mode": "derived",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/chords/content-pack.md",
+      "package_path": "source/docs/content/chords/content-pack.md",
+      "sha256": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/chords/page-content.json",
+      "package_path": "source/docs/content/chords/page-content.json",
+      "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "docs/content/chords/README.md",
+      "package_path": "source/docs/content/chords/README.md",
+      "sha256": "8d12aa7d3774871ab1012ac053463b3fbf00a1b41884da1a69e60e94c642a513",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "next.config.ts",
+      "package_path": "source/next.config.ts",
+      "sha256": "450d8d6fe31cadcdec8c00f0316cc4f52f39fb7e10ba930bac4055b3fd9725d7",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "package-lock.json",
+      "package_path": "source/package-lock.json",
+      "sha256": "ae9da86dc78571eb8f0727e06389bf5d473137a76d1428a8ccf824fdb5f3ced4",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "package.json",
+      "package_path": "source/package.json",
+      "sha256": "dae672eccd03744af1f02731e390a0db7dd69937f3c287fac46879b648da072d",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "postcss.config.mjs",
+      "package_path": "source/postcss.config.mjs",
+      "sha256": "0c2a7e345eb2bb59ff93d3b844d805f577bf7ca2628721d5af85cd8cc9977f5b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "scripts/check-a-minor.mjs",
+      "package_path": "source/scripts/check-a-minor.mjs",
+      "sha256": "38387eacb4b19b11fd327a626ef67653896f260ab8a43a8966a55383e1ec193f",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "scripts/check-chord-b3.mjs",
+      "package_path": "source/scripts/check-chord-b3.mjs",
+      "sha256": "5f8369f65ab85653f63f8da9ef2780da7b53ae1a51f7d2d7a0e94f1db3f8673b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "scripts/check-chord-batch.mjs",
+      "package_path": "source/scripts/check-chord-batch.mjs",
+      "sha256": "50acb4a28a40d9e915491896417db7819063b7f02d6b89b747906b416db89cb7",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "scripts/check-content-adapters.mjs",
+      "package_path": "source/scripts/check-content-adapters.mjs",
+      "sha256": "e694ca42e0c06fa4304080baa2b3acbcaf1d0539d472452e3827e24ac334741a",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/app/chords/a-major/page.tsx",
+      "package_path": "source/src/app/chords/a-major/page.tsx",
+      "sha256": "7fbb0cf350f52c4c756a0ba64e3c5485010461b7b2f9ef29d8f77cd4b9cb344d",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/app/chords/a-minor/a-minor.css",
+      "package_path": "source/src/app/chords/a-minor/a-minor.css",
+      "sha256": "89a6b9b9bcbb31b7f9b59ef51176e7517e84faa732956bb859b4c0e6ea0a25db",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/app/chords/a-minor/page.tsx",
+      "package_path": "source/src/app/chords/a-minor/page.tsx",
+      "sha256": "9e6363797cb2db11bf587448ab91430fec4d7f3d24849bcc04d85eb218debd56",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/app/chords/c-major/page.tsx",
+      "package_path": "source/src/app/chords/c-major/page.tsx",
+      "sha256": "5312ec5b16cbec94f2b63ade0c7061d5ac3f281f07f6ad7498efcdc984164a63",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/app/chords/page.tsx",
+      "package_path": "source/src/app/chords/page.tsx",
+      "sha256": "0c0b5a52dfff721ed144d06b0a3100c8c55b09bfd25ad999690c375dbd83cb8a",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/a-minor/experience.tsx",
+      "package_path": "source/src/components/a-minor/experience.tsx",
+      "sha256": "0edbea9d093495f6f5dbf6b0f47bdb65ddbfe7e502775acc25e9e34853c9e7fd",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/a-minor/icon.tsx",
+      "package_path": "source/src/components/a-minor/icon.tsx",
+      "sha256": "46d07510c4414fbd42d0d281edc72904c1f9f786355d5f930b0badba262d95c4",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/a-minor/keyboard.tsx",
+      "package_path": "source/src/components/a-minor/keyboard.tsx",
+      "sha256": "648e79b50ddf6d65ee081951d1dbe7a805b57a02a6a4d4c349adc268c680d441",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/a-minor/page-search.tsx",
+      "package_path": "source/src/components/a-minor/page-search.tsx",
+      "sha256": "b8d7dc9ea66f447a726322bd491a3f2c994860d95c9098a0f0fcd55dcd3a068b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/center-experience.tsx",
+      "package_path": "source/src/components/chords/center-experience.tsx",
+      "sha256": "d71c7c9d95abdb6bcb4b89037ea2426742e1eb69f869083da36a83502c2d7d9b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/center-page.tsx",
+      "package_path": "source/src/components/chords/center-page.tsx",
+      "sha256": "ffc95da12e70f5e06ed4eb717cf5f725b552b33a08fb4e00e5b621168490b905",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/center.css",
+      "package_path": "source/src/components/chords/center.css",
+      "sha256": "bb5d9c8823fbc3f649d5c8f94e235e4aa98d6b95910771566a6269dc7e7f5704",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/chord-builder-practice.tsx",
+      "package_path": "source/src/components/chords/chord-builder-practice.tsx",
+      "sha256": "fb2dfcf048cbdcf5eae7c325589438744904a4787d117c41499813b5f97d9668",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/chord-learning.css",
+      "package_path": "source/src/components/chords/chord-learning.css",
+      "sha256": "67183347a7e3fe29455beab7cafb0831c4773c7c68af72ee0ed75a12fafd994a",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/detail-page.tsx",
+      "package_path": "source/src/components/chords/detail-page.tsx",
+      "sha256": "7d2bb0651d42f2c5a82fe0f113ce0fb970022b057450220d6fd323ab817ab733",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/fingering-guide.tsx",
+      "package_path": "source/src/components/chords/fingering-guide.tsx",
+      "sha256": "21cf6fb44ddd1bc0c244e8534242154aef63c127b8445cb0c0bc47d128e86c6b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/keyboard-viewport.tsx",
+      "package_path": "source/src/components/chords/keyboard-viewport.tsx",
+      "sha256": "ea988a705b776805ad9981dc471f0fab70c2890c42c05cb60780e6c1d9c0ffe9",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/page-toc.css",
+      "package_path": "source/src/components/chords/page-toc.css",
+      "sha256": "b3bf902d4b232b32d9d4e901342b827d04d91e62ab03f28511de46cd9e53687c",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/page-toc.tsx",
+      "package_path": "source/src/components/chords/page-toc.tsx",
+      "sha256": "d71359a3fbf575483bfef159395e52fb264126a431facd22c415d4913ce1e928",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/playback-controls.tsx",
+      "package_path": "source/src/components/chords/playback-controls.tsx",
+      "sha256": "670ed8b6c53d3e34b1b5291719d77ba0ca1ad937687348fcbd45bd309f4e6dd5",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/print-voicing.tsx",
+      "package_path": "source/src/components/chords/print-voicing.tsx",
+      "sha256": "5dbf36ae5d51519130919d4957ed3a5debad92645556cae7537d3f6aa437afbb",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/shared.css",
+      "package_path": "source/src/components/chords/shared.css",
+      "sha256": "daa6b027558d6375cbadc0110d80374b629c85bc3b571075066c6cfd8cdcbe9c",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/chords/site-chrome.tsx",
+      "package_path": "source/src/components/chords/site-chrome.tsx",
+      "sha256": "2b1f54a400f922d5ab0f04c1322e2f414ed9cf2a3e1f3392efaf0c4888b9ee4a",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/site-navigation.css",
+      "package_path": "source/src/components/site-navigation.css",
+      "sha256": "7590314e682701b2d2e18f5acc8c65e6640934046dde1bbd09ca46b39e64988b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/site-navigation.tsx",
+      "package_path": "source/src/components/site-navigation.tsx",
+      "sha256": "49a1ff66afdfc1b48267b97d384a08a2f7f9a67319484cad5bc62adccdf554df",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/ui/breadcrumb.css",
+      "package_path": "source/src/components/ui/breadcrumb.css",
+      "sha256": "a3f6c2318aa15ff2bfbf96b89d0cc3ed130dba2581df00284a8672fe1319710c",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/ui/breadcrumb.tsx",
+      "package_path": "source/src/components/ui/breadcrumb.tsx",
+      "sha256": "970670e1b10866941912535a0e71a35ec2adfe7ef2100d918bcd651675d9c00b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/ui/rolling-text.tsx",
+      "package_path": "source/src/components/ui/rolling-text.tsx",
+      "sha256": "021369b9ff914eed44134aac07b27f89fb98f2a510b984a5159afb45c333564b",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/ui/site-brand.css",
+      "package_path": "source/src/components/ui/site-brand.css",
+      "sha256": "4c775f57abe9b54de536bd00a802d90c3e7b106f83e3478b4a372e01c8ac29cb",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/components/ui/site-brand.tsx",
+      "package_path": "source/src/components/ui/site-brand.tsx",
+      "sha256": "f031e1612d51631c7d86262b699afe37d6e6f01bfd216e9b437ea3f0a702c2b7",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/a-minor-audio.ts",
+      "package_path": "source/src/lib/a-minor-audio.ts",
+      "sha256": "03c8577a3c443cd07956f65d4aa63e6c30a65385f04721606ba3782393d9e670",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/a-minor-content.ts",
+      "package_path": "source/src/lib/a-minor-content.ts",
+      "sha256": "6c533f2b0e7090c2e1e23399929bad595109cf964a9ad70b62fa3eb9da9181f9",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/a-minor-types.ts",
+      "package_path": "source/src/lib/a-minor-types.ts",
+      "sha256": "3af2f6974023c0849c040126f362b9b1e6ce66dc3b3235332d70703db82014bb",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/chord-content.ts",
+      "package_path": "source/src/lib/chord-content.ts",
+      "sha256": "f479db89d3fee948e2c9928be5ded5d31010742d0bd2966735d82e5f30d8b614",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/chord-detail-model.ts",
+      "package_path": "source/src/lib/chord-detail-model.ts",
+      "sha256": "57079431e13fdcb6d94a37f092ee9240cda1e5a21b0f462e2beef71ee011bde1",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/chord-learning-content.ts",
+      "package_path": "source/src/lib/chord-learning-content.ts",
+      "sha256": "d0b9a2846f2060b0554522dd6646766b9b4dde88c2735587135d6416363bfa49",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/keyboard-geometry.ts",
+      "package_path": "source/src/lib/keyboard-geometry.ts",
+      "sha256": "c9acdaa0632a5ea65f736b0b5d9a3a54fd2887f0cd8411c52e7e603a2d2260f0",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/site-config.ts",
+      "package_path": "source/src/lib/site-config.ts",
+      "sha256": "6c5a2b8a77553d304b6e8cce132356842596bdcc0872e2d323c2fc52970ede37",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/site-content.ts",
+      "package_path": "source/src/lib/site-content.ts",
+      "sha256": "acd9436e625dcc3e8d9322c2872d83261c7c1d3b24553ac38af1704d95b3bdd3",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/site-routes.ts",
+      "package_path": "source/src/lib/site-routes.ts",
+      "sha256": "526c3c87f8682a130e86116e7e09a1189c675e7c0bacbd7086961b674afbd425",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "src/lib/utils.ts",
+      "package_path": "source/src/lib/utils.ts",
+      "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    },
+    {
+      "source_path": "tsconfig.json",
+      "package_path": "source/tsconfig.json",
+      "sha256": "b32217f406ba6d6d07abadc653e540b667daf037505327b1e970360a041dbb6f",
+      "mode": "original",
+      "source_pointer": null,
+      "note": null
+    }
+  ],
+  "missing_items": [],
+  "known_gaps": [
+    {
+      "item": "staff notation",
+      "impact": "Unsupported by current model; code/product work required before intake."
+    },
+    {
+      "item": "human release gates",
+      "impact": "Audition, physical devices, screen reader, physical print, tagged PDF and independent fingering review remain open."
+    },
+    {
+      "item": "future detail routes",
+      "impact": "Hub-only chords remain unlinked until an approved batch supplies complete content and route registration."
+    }
+  ],
+  "self_hash_policy": "manifest.json and the ZIP are intentionally excluded from the files array to avoid self-reference; ZIP SHA-256 is stored beside the ZIP."
+}

@@ -1,0 +1,1374 @@
+{
+  "url": "/scales/a-minor",
+  "title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+  "description": "Find the notes of A minor, compare its three forms and descending patterns, and read source-checked piano fingerings.",
+  "user_task": "直接查看指定调性的音阶、键位、手别指法和示范。",
+  "questions": [
+    "What notes are in A natural minor?",
+    "Which notes change in A harmonic and melodic minor?",
+    "What is the descending classical melodic-minor sequence?",
+    "Which fingers are supported for each hand and range?",
+    "How do I match the keyboard, score and printed note names?",
+    "Which chords use the A natural minor scale?"
+  ],
+  "blocks": [
+    {
+      "id": "section-1",
+      "heading": "Start with A natural minor",
+      "body": "A natural minor uses A, B, C, D, E, F, and G. Its key signature has no sharps or flats. C major shares that signature, but A is the starting note and tonal reference here. The all-white-key description applies to natural minor; it does not describe every form of A minor.",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-A"
+      ]
+    },
+    {
+      "id": "section-2",
+      "heading": "Listen for the changed ending",
+      "body": "Harmonic minor replaces G with G#. Classical melodic minor uses F# and G# on the way up, then F and G on the way down. Keep the form label visible when comparing the examples: a descending melodic scale is not simply the ascending note list played backward.",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-A"
+      ]
+    },
+    {
+      "id": "section-3",
+      "heading": "Practice the last four notes",
+      "body": "Try E-F-G-A first, then E-F-G#-A, then E-F#-G#-A. Say the changed note names before playing each group. Next, start at the upper A and return through G-F-E. Keep this a note-recognition exercise; choose your own slow pace and pause between forms. Finish by naming which version you just played.",
+      "evidence_status": "[推断]",
+      "source_ids": [
+        "AN-HMT-A"
+      ],
+      "inference_basis": "本站编辑练习/实现建议；根据已核实的本调音名、上下行规则或明确指法行设计，未声称练习效果经实验验证。"
+    },
+    {
+      "id": "section-4",
+      "heading": "Connect the scale to chords",
+      "body": "The natural-minor triads are Am, Bdim, C, Dm, Em, F, and G. Compare Em with E major: E major contains G#, matching the raised seventh in A harmonic minor. Use the existing A minor chord reference for voicing and inversions; this scale page focuses on which notes the chords draw from.",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HA-A-CHORDS",
+        "AN-PKG-A-CHORDS",
+        "AN-PS-HAR"
+      ]
+    }
+  ],
+  "data": {
+    "tonic": "A",
+    "default_form": "natural_minor",
+    "key_signature": {
+      "accidentals": [],
+      "count": 0,
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-A",
+        "AN-PS-NAT"
+      ]
+    },
+    "relative_major": {
+      "name": "C major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-A",
+        "AN-PS-NAT"
+      ]
+    },
+    "forms": [
+      {
+        "id": "natural_minor",
+        "label": "Natural minor",
+        "notes_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A"
+        ],
+        "notes_descending": [
+          "A",
+          "G",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ],
+        "notes_evidence_status": "[已核实]",
+        "source_ids": [
+          "AN-HMT-A",
+          "AN-PS-NAT"
+        ],
+        "independent_note_source_count": 2,
+        "ascending_semitone_steps": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "fingering": {
+          "scope": "one_octave_separate_hands",
+          "ascending": {
+            "right_hand": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "left_hand": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1
+            ]
+          },
+          "descending": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "source_ids": [
+            "AN-PS-NAT"
+          ],
+          "evidence_status": "[已核实]",
+          "review_scope": "Only non-null finger sequences are supported. Source shows fingers aligned with eight ascending tonic-to-tonic notes; do not reverse, transpose, or extend those finger rows."
+        },
+        "pitch_mapping": {
+          "evidence_status": "[推断]",
+          "basis": "Arithmetic from verified note spelling and semitone rules; C4=MIDI60 convention from AN-BMT-AS. Display octave is an editorial choice, not a sourced performance prescription.",
+          "source_ids": [
+            "AN-HMT-A",
+            "AN-OMT",
+            "AN-BMT-AS"
+          ],
+          "right_hand_ascending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 4,
+              "midi": 71,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 5,
+              "midi": 72,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 5,
+              "midi": 74,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 5,
+              "midi": 76,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 5,
+              "midi": 77,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G",
+              "written_octave": 5,
+              "midi": 79,
+              "pitch_class": 7,
+              "physical_key_name": "G",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 5,
+              "midi": 81,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "left_hand_ascending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 3,
+              "midi": 57,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 3,
+              "midi": 59,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 4,
+              "midi": 60,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 4,
+              "midi": 62,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 4,
+              "midi": 64,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 4,
+              "midi": 65,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G",
+              "written_octave": 4,
+              "midi": 67,
+              "pitch_class": 7,
+              "physical_key_name": "G",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "right_hand_descending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 5,
+              "midi": 81,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G",
+              "written_octave": 5,
+              "midi": 79,
+              "pitch_class": 7,
+              "physical_key_name": "G",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 5,
+              "midi": 77,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 5,
+              "midi": 76,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 5,
+              "midi": 74,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 5,
+              "midi": 72,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 4,
+              "midi": 71,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "left_hand_descending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G",
+              "written_octave": 4,
+              "midi": 67,
+              "pitch_class": 7,
+              "physical_key_name": "G",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 4,
+              "midi": 65,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 4,
+              "midi": 64,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 4,
+              "midi": 62,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 4,
+              "midi": 60,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 3,
+              "midi": 59,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 3,
+              "midi": 57,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ]
+        }
+      },
+      {
+        "id": "harmonic_minor",
+        "label": "Harmonic minor",
+        "notes_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G#",
+          "A"
+        ],
+        "notes_descending": [
+          "A",
+          "G#",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ],
+        "notes_evidence_status": "[已核实]",
+        "source_ids": [
+          "AN-HMT-A",
+          "AN-PS-HAR"
+        ],
+        "independent_note_source_count": 2,
+        "ascending_semitone_steps": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "fingering": {
+          "scope": "one_octave_separate_hands",
+          "ascending": {
+            "right_hand": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "left_hand": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1
+            ]
+          },
+          "descending": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "source_ids": [
+            "AN-PS-HAR"
+          ],
+          "evidence_status": "[已核实]",
+          "review_scope": "Only non-null finger sequences are supported. Source shows fingers aligned with eight ascending tonic-to-tonic notes; do not reverse, transpose, or extend those finger rows."
+        },
+        "pitch_mapping": {
+          "evidence_status": "[推断]",
+          "basis": "Arithmetic from verified note spelling and semitone rules; C4=MIDI60 convention from AN-BMT-AS. Display octave is an editorial choice, not a sourced performance prescription.",
+          "source_ids": [
+            "AN-HMT-A",
+            "AN-OMT",
+            "AN-BMT-AS"
+          ],
+          "right_hand_ascending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 4,
+              "midi": 71,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 5,
+              "midi": 72,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 5,
+              "midi": 74,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 5,
+              "midi": 76,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 5,
+              "midi": 77,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G#",
+              "written_octave": 5,
+              "midi": 80,
+              "pitch_class": 8,
+              "physical_key_name": "G#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 5,
+              "midi": 81,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "left_hand_ascending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 3,
+              "midi": 57,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 3,
+              "midi": 59,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 4,
+              "midi": 60,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 4,
+              "midi": 62,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 4,
+              "midi": 64,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 4,
+              "midi": 65,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G#",
+              "written_octave": 4,
+              "midi": 68,
+              "pitch_class": 8,
+              "physical_key_name": "G#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "right_hand_descending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 5,
+              "midi": 81,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G#",
+              "written_octave": 5,
+              "midi": 80,
+              "pitch_class": 8,
+              "physical_key_name": "G#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 5,
+              "midi": 77,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 5,
+              "midi": 76,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 5,
+              "midi": 74,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 5,
+              "midi": 72,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 4,
+              "midi": 71,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "left_hand_descending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G#",
+              "written_octave": 4,
+              "midi": 68,
+              "pitch_class": 8,
+              "physical_key_name": "G#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 4,
+              "midi": 65,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 4,
+              "midi": 64,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 4,
+              "midi": 62,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 4,
+              "midi": 60,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 3,
+              "midi": 59,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 3,
+              "midi": 57,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ]
+        }
+      },
+      {
+        "id": "melodic_minor_classical",
+        "label": "Melodic minor (classical exercise)",
+        "notes_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#",
+          "G#",
+          "A"
+        ],
+        "notes_descending": [
+          "A",
+          "G",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ],
+        "notes_evidence_status": "[已核实]",
+        "source_ids": [
+          "AN-HMT-A",
+          "AN-DENTON"
+        ],
+        "independent_note_source_count": 2,
+        "ascending_semitone_steps": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "fingering": {
+          "scope": "one_octave_separate_hands",
+          "ascending": {
+            "right_hand": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "left_hand": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1
+            ]
+          },
+          "descending": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "source_ids": [
+            "AN-HA-A"
+          ],
+          "evidence_status": "[已核实]",
+          "review_scope": "Hoffman explicitly states the given one-octave finger patterns also apply to harmonic and melodic minor. Descending row not explicitly transcribed, remains null."
+        },
+        "pitch_mapping": {
+          "evidence_status": "[推断]",
+          "basis": "Arithmetic from verified note spelling and semitone rules; C4=MIDI60 convention from AN-BMT-AS. Display octave is an editorial choice, not a sourced performance prescription.",
+          "source_ids": [
+            "AN-HMT-A",
+            "AN-OMT",
+            "AN-BMT-AS"
+          ],
+          "right_hand_ascending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 4,
+              "midi": 71,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 5,
+              "midi": 72,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 5,
+              "midi": 74,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 5,
+              "midi": 76,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F#",
+              "written_octave": 5,
+              "midi": 78,
+              "pitch_class": 6,
+              "physical_key_name": "F#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "G#",
+              "written_octave": 5,
+              "midi": 80,
+              "pitch_class": 8,
+              "physical_key_name": "G#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 5,
+              "midi": 81,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "left_hand_ascending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 3,
+              "midi": 57,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 3,
+              "midi": 59,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 4,
+              "midi": 60,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 4,
+              "midi": 62,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 4,
+              "midi": 64,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F#",
+              "written_octave": 4,
+              "midi": 66,
+              "pitch_class": 6,
+              "physical_key_name": "F#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "G#",
+              "written_octave": 4,
+              "midi": 68,
+              "pitch_class": 8,
+              "physical_key_name": "G#",
+              "key_color": "black"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "right_hand_descending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 5,
+              "midi": 81,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G",
+              "written_octave": 5,
+              "midi": 79,
+              "pitch_class": 7,
+              "physical_key_name": "G",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 5,
+              "midi": 77,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 5,
+              "midi": 76,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 5,
+              "midi": 74,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 5,
+              "midi": 72,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 4,
+              "midi": 71,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ],
+          "left_hand_descending_example": [
+            {
+              "spelling": "A",
+              "written_octave": 4,
+              "midi": 69,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            },
+            {
+              "spelling": "G",
+              "written_octave": 4,
+              "midi": 67,
+              "pitch_class": 7,
+              "physical_key_name": "G",
+              "key_color": "white"
+            },
+            {
+              "spelling": "F",
+              "written_octave": 4,
+              "midi": 65,
+              "pitch_class": 5,
+              "physical_key_name": "F",
+              "key_color": "white"
+            },
+            {
+              "spelling": "E",
+              "written_octave": 4,
+              "midi": 64,
+              "pitch_class": 4,
+              "physical_key_name": "E",
+              "key_color": "white"
+            },
+            {
+              "spelling": "D",
+              "written_octave": 4,
+              "midi": 62,
+              "pitch_class": 2,
+              "physical_key_name": "D",
+              "key_color": "white"
+            },
+            {
+              "spelling": "C",
+              "written_octave": 4,
+              "midi": 60,
+              "pitch_class": 0,
+              "physical_key_name": "C",
+              "key_color": "white"
+            },
+            {
+              "spelling": "B",
+              "written_octave": 3,
+              "midi": 59,
+              "pitch_class": 11,
+              "physical_key_name": "B",
+              "key_color": "white"
+            },
+            {
+              "spelling": "A",
+              "written_octave": 3,
+              "midi": 57,
+              "pitch_class": 9,
+              "physical_key_name": "A",
+              "key_color": "white"
+            }
+          ]
+        }
+      }
+    ],
+    "scope": {
+      "minor_convention": "Classical scale exercise: melodic minor restores natural-minor sixth/seventh on descent. This is not a claim that compositions must always follow that direction rule.",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-OMT",
+        "AN-HA-A"
+      ],
+      "audited_note_octaves": 1,
+      "audited_finger_octaves": 1,
+      "hands_together_fingering": null,
+      "continuous_turnaround_fingering": null
+    },
+    "approved_playback_octaves": [
+      1
+    ],
+    "print_and_audio": {
+      "status": "implementation_pending",
+      "source_asset_reuse": "external reference only; no source diagrams, recordings, scores or PDFs bundled or authorized for reuse",
+      "print_fields": [
+        "page title",
+        "form",
+        "direction",
+        "hand",
+        "exact note spellings",
+        "key signature",
+        "one-octave staff events",
+        "non-null source-reviewed fingers only",
+        "source ids",
+        "checked date"
+      ],
+      "tempo_presets_bpm": [
+        40,
+        60,
+        80
+      ],
+      "tempo_presets_status": "[推断] 编辑默认值；不代表考试要求或专业建议",
+      "audio_render_contract": "Use matching selected-form selected-direction pitch events. Do not apply fingering to audio pitches or respell notes to physical-key labels. Keep display spelling separate from MIDI pitch."
+    },
+    "natural_scale_chords": {
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HA-A-CHORDS",
+        "AN-PKG-A-CHORDS"
+      ],
+      "items": [
+        {
+          "degree": 1,
+          "roman": "i",
+          "name": "A minor",
+          "notes": [
+            "A",
+            "C",
+            "E"
+          ]
+        },
+        {
+          "degree": 2,
+          "roman": "ii°",
+          "name": "B diminished",
+          "notes": [
+            "B",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "degree": 3,
+          "roman": "III",
+          "name": "C major",
+          "notes": [
+            "C",
+            "E",
+            "G"
+          ]
+        },
+        {
+          "degree": 4,
+          "roman": "iv",
+          "name": "D minor",
+          "notes": [
+            "D",
+            "F",
+            "A"
+          ]
+        },
+        {
+          "degree": 5,
+          "roman": "v",
+          "name": "E minor",
+          "notes": [
+            "E",
+            "G",
+            "B"
+          ]
+        },
+        {
+          "degree": 6,
+          "roman": "VI",
+          "name": "F major",
+          "notes": [
+            "F",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "degree": 7,
+          "roman": "VII",
+          "name": "G major",
+          "notes": [
+            "G",
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "harmonic_dominant": {
+        "name": "E major",
+        "notes": [
+          "E",
+          "G#",
+          "B"
+        ],
+        "source_ids": [
+          "AN-PS-HAR"
+        ]
+      },
+      "voicing_reference_url": "/chords/a-minor",
+      "boundary": "Scale-to-chord relation only; existing chord pack is unchanged."
+    }
+  },
+  "source_ids": [
+    "AN-BMT-AS",
+    "AN-DENTON",
+    "AN-HA-A",
+    "AN-HA-A-CHORDS",
+    "AN-HA-GUIDE",
+    "AN-HMT-A",
+    "AN-OMT",
+    "AN-PKG-A-CHORDS",
+    "AN-PS-HAR",
+    "AN-PS-MEL",
+    "AN-PS-NAT"
+  ],
+  "status": "content_and_note_data_ready_with_fingering_gaps",
+  "issues": [
+    {
+      "id": "AN-U091-natural_minor-FINGER",
+      "field": "data.forms.natural_minor.fingering",
+      "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+      "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+    },
+    {
+      "id": "AN-U091-harmonic_minor-FINGER",
+      "field": "data.forms.harmonic_minor.fingering",
+      "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+      "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+    },
+    {
+      "id": "AN-U091-melodic_minor_classical-FINGER",
+      "field": "data.forms.melodic_minor_classical.fingering",
+      "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+      "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+    },
+    {
+      "id": "AN-U091-RANGE",
+      "field": "data.approved_playback_octaves",
+      "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+      "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+    },
+    {
+      "id": "AN-U091-QA",
+      "field": "data.print_and_audio",
+      "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+      "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P184",
+      "status": "partial_content_ready_data_gaps",
+      "delivered": [
+        "本调三种小调的严格音名、构成与上下行",
+        "键位/MIDI/谱表事件数据（运算映射已标推断）",
+        "已查实的指法行；未核实组合明确为 null",
+        "独立英文说明和练习",
+        "打印字段、来源、状态与待办",
+        "a minor scale and chords：自然小调7个三和弦与和声小调属和弦对照"
+      ],
+      "pending": [
+        "缺失手别/方向指法（见本页逐项 issues）",
+        "扩大八度和连续往返连接指法审核",
+        "实际谱表/音频/打印成品一致性验收"
+      ]
+    }
+  ],
+  "baseline_page_id": "U091",
+  "batch": "A",
+  "main_keyword": "a minor scale piano",
+  "keywords": [
+    "a minor scale piano",
+    "a minor piano scale",
+    "a minor scale on piano",
+    "a minor notes piano",
+    "a minor scale and chords"
+  ],
+  "source_groups": [
+    {
+      "id": "P184",
+      "representative": "a minor scale piano",
+      "section": null,
+      "synonyms": [
+        "a minor piano scale",
+        "a minor scale on piano",
+        "a minor notes piano"
+      ],
+      "other_queries": [
+        "a minor scale and chords"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A46:G46",
+      "delivery_method": "独立页首要任务",
+      "required_output": "该调/类型的音符与构成；键位与谱表；适用的左右手指法和上下行；简短练习与打印",
+      "first_release_scope": "模板已确认；此实例内容待审核",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T12",
+  "baseline_priority": "先做",
+  "baseline_purpose": "查A小调音阶及钢琴指法",
+  "final_scope": {
+    "id": "T12",
+    "name": "具体调性音阶页",
+    "confirmation_status": "C 大调样板已确认；其他调性沿用该分工",
+    "user_task": "直接查看指定调性的音阶、键位、手别指法和示范。",
+    "modules": [
+      "页面固定当前调性；首屏给结果而非全量选择器。",
+      "同页选左右手、上下行、速度、已审核八度范围；小调形式必须标明。",
+      "展示针对当前音阶的换指与构成说明；图、声音、打印一致。",
+      "返回中心或访问相关已上线音阶。"
+    ],
+    "boundary": "不把等音拼写或不同小调形式不加说明地互换；不自动套同一指法。",
+    "acceptance": "每个调性本身完成内容审核；共享模板不意味着免审核。"
+  },
+  "required_delivery": "页面固定当前调性；首屏给结果而非全量选择器。；同页选左右手、上下行、速度、已审核八度范围；小调形式必须标明。；展示针对当前音阶的换指与构成说明；图、声音、打印一致。；返回中心或访问相关已上线音阶。",
+  "release_conditions": "每个调性本身完成内容审核；共享模板不意味着免审核。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "指法/等音拼写与上下行形式审核；minor需明确自然/和声/旋律形式；通用词需核对钢琴展示能否满足",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "metadata": {
+    "title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "description": "Find the notes of A minor, compare its three forms and descending patterns, and read source-checked piano fingerings.",
+    "canonical_path": "/scales/a-minor",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

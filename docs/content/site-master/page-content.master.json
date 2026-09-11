@@ -25627,14 +25627,43 @@
                 ]
               },
               "descending": {
-                "right_hand": null,
-                "left_hand": null
+                "right_hand": [
+                  5,
+                  4,
+                  3,
+                  2,
+                  1,
+                  3,
+                  2,
+                  1
+                ],
+                "left_hand": [
+                  1,
+                  2,
+                  3,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
               },
               "source_ids": [
-                "AN-PS-NAT"
+                "AN-PS-NAT",
+                "AM-FINGER-LMT"
               ],
               "evidence_status": "[已核实]",
-              "review_scope": "Only non-null finger sequences are supported. Source shows fingers aligned with eight ascending tonic-to-tonic notes; do not reverse, transpose, or extend those finger rows."
+              "review_scope": "Ascending rows retain their existing source scope. Natural-minor descending rows were transcribed from the A row on LearnMusicTheory PDF page 2 (printed page 40): RH 5-4-3-2-1-3-2-1 and LH 1-2-3-1-2-3-4-5. The source staff is A3-A4; PianoGrid LH matches it and RH is displayed one octave higher as an explicit register adaptation. Do not extend these rows to other forms, ranges, or hands-together playing.",
+              "descending_source_scope": {
+                "source_id": "AM-FINGER-LMT",
+                "locator": "PDF page 2 (0-based page 1), printed page 40, Natural minor scales, A row",
+                "source_register": "A3-A4",
+                "pianogrid_left_hand_register": "A3-A4",
+                "pianogrid_right_hand_register": "A4-A5",
+                "right_hand_register_status": "source_verified_with_octave_adaptation",
+                "left_hand_register_status": "source_transcribed",
+                "teacher_reviewed": false
+              }
             },
             "pitch_mapping": {
               "evidence_status": "[推断]",
@@ -26735,6 +26764,7 @@
         }
       },
       "source_ids": [
+        "AM-FINGER-LMT",
         "AN-BMT-AS",
         "AN-DENTON",
         "AN-HA-A",
@@ -26752,8 +26782,9 @@
         {
           "id": "AN-U091-natural_minor-FINGER",
           "field": "data.forms.natural_minor.fingering",
-          "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
-          "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+          "reason": "历史缺项：当时未取得并逐音核对 descending.right_hand / descending.left_hand。2026-09-11 已由 AM-FINGER-LMT 第2页 A 行的可见数字补齐；RH 的本站音区为高一八度显示适配。",
+          "needed_to_resolve": "已由 AM-FINGER-LMT 指定图页解除；独立钢琴教师对 PianoGrid 呈现的审核仍未完成，但不再作为这两条逐音来源缺失。",
+          "status": "superseded_by_2026-09-11_M01"
         },
         {
           "id": "AN-U091-harmonic_minor-FINGER",
@@ -44301,40 +44332,43 @@
     },
     "/chords/b-major": {
       "url": "/chords/b-major",
-      "title": "B major Piano Chord",
-      "description": "Find B major notes, intervals, keyboard positions and inversions.",
+      "title": "B Major Piano Chord (B): Notes, Inversions & PDF",
+      "description": "Learn B major on piano with B, D-sharp and F-sharp. Read its bass notes and inversions, try the note exercise and print the reference.",
       "user_task": "Locate this exact triad and compare its three bass positions.",
       "questions": [
-        "Which notes form B major?",
-        "How do its inversions change the bass?",
-        "Which fingerings are verified?"
+        "Is the B major chord all black keys?",
+        "What is the difference between B and Bm?",
+        "What does B/F-sharp mean?",
+        "Why do the inversion examples jump down in register?",
+        "Can C-flat major be replaced with B in written music?"
       ],
       "blocks": [
         {
           "heading": "Notes and keyboard position",
-          "body": "B major contains B–D#–F#. The intervals from the root are a major third and a perfect fifth.",
+          "body": "B major consists of B, D-sharp and F-sharp. The chord has a white-key root and two black-key chord tones. The displayed root-position example is B4–D♯5–F♯5. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[已核实] rules; [推断] register and original teaching example"
         },
         {
           "heading": "What to notice",
-          "body": "The root is a white key and the third and fifth are black keys. D-sharp and F-sharp are the written chord tones; E-flat and G-flat are keyboard equivalents but different spellings.",
+          "body": "Read both sharp signs. Using D natural changes the third and produces B minor when F-sharp stays fixed. Using F natural changes the fifth as well. The symbol B is not an instruction to use only white keys. From B, the major third is D-sharp and the perfect fifth is F-sharp. Their distances are four and seven semitones above the root. In B/D♯, D-sharp becomes the bass, but it does not replace B as the root.",
           "source_ids": [
-            "F-OMT",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] original explanation from preserved note data and cited rules"
         },
         {
           "heading": "Compare three positions",
-          "body": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.",
+          "body": "Read each bass note before selecting a position. The root-position example starts with B; first inversion starts with D♯; second inversion starts with F♯. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
           "source_ids": [
-            "F-OMT"
+            "PG-OMT",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
         }
       ],
       "data": {
@@ -44524,58 +44558,69 @@
         ],
         "default_voicing": "root",
         "derivation": {
-          "status": "[推断] computed from independently verified chord formulas and written pitch registers",
+          "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-OMT"
           ]
         },
         "assets": [
           {
             "path": "assets/chord-b-major.svg",
             "format": "SVG",
-            "content": "three inversion keyboard diagrams"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-b-major.svg",
+            "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "b6129cf55dbe7de07d9b5fe86e12d061a4c6586668959d399bbe9c43840bd1dd",
+            "tagged_pdf_accessibility": null
           },
           {
             "path": "assets/chord-b-major.pdf",
             "format": "PDF",
-            "pages": 1,
-            "content": "three inversion keyboard diagrams",
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-b-major.pdf",
+            "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "9ee60e68465be8c73b182d487c886b67819c867ef7c9c4ec2a82b06ee10d2934",
+            "tagged_pdf_accessibility": "not_certified"
           }
         ],
         "related": [
           "/chords",
+          "/chords/e-major",
+          "/chords/c-flat-major",
           "/guide/piano-chords",
           "/chords/by-key"
         ]
       },
       "source_ids": [
-        "F-OMT",
-        "E-TRIADS",
-        "BN-PUGET-OCTAVES"
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-ASPN",
+        "PG-SKOOVE-B-MAJOR"
       ],
       "issues": [
         {
-          "id": "F-FINGER-b-major",
-          "field": "fingering",
-          "reason": "No reviewed hand-specific fingering for every displayed inversion. Unknown cells remain null.",
-          "needed_to_resolve": "Obtain explicit source or named professional review for each hand and voicing."
+          "id": "INT-b-major",
+          "field": "runtime",
+          "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+          "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
         },
         {
-          "id": "F-RELEASE-b-major",
-          "field": "runtime and professional review",
-          "reason": "Keyboard/playback/print interaction and named professional approval are not delivered by this content task.",
-          "needed_to_resolve": "Implement the prepared note arrays; confirm visual, playback and print consistency."
+          "id": "FINGER-INV-b-major",
+          "field": "inversion fingering",
+          "reason": "No inversion fingerings are included; B3 supports root examples only.",
+          "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
         }
       ],
       "coverage": [
         {
           "source_group_id": "P150",
-          "status": "content_and_data_prepared; implementation gates remain",
+          "status": "prepared_not_live",
           "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
-          "pending": "Runtime, print UI and professional release checks; see issues."
+          "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
         }
       ],
       "baseline_page_id": "U077",
@@ -44641,10 +44686,10 @@
       "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_ready_adapter_required",
       "metadata": {
-        "title": "B major Piano Chord",
-        "description": "Find B major notes, intervals, keyboard positions and inversions.",
+        "title": "B Major Piano Chord (B): Notes, Inversions & PDF",
+        "description": "Learn B major on piano with B, D-sharp and F-sharp. Read its bass notes and inversions, try the note exercise and print the reference.",
         "canonical_path": "/chords/b-major",
         "language": "en-US"
       },
@@ -44656,40 +44701,43 @@
     },
     "/chords/a-flat-major": {
       "url": "/chords/a-flat-major",
-      "title": "A-flat major Piano Chord",
-      "description": "Find A-flat major notes, intervals, keyboard positions and inversions.",
+      "title": "A-flat Major Piano Chord (Ab): Notes, Inversions & PDF",
+      "description": "Find the A-flat major piano chord: A-flat, C and E-flat. Compare its inversions, keep the spelling clear and print the keyboard reference.",
       "user_task": "Locate this exact triad and compare its three bass positions.",
       "questions": [
-        "Which notes form A-flat major?",
-        "How do its inversions change the bass?",
-        "Which fingerings are verified?"
+        "Does Ab mean A-flat minor?",
+        "Which note is natural in A-flat major?",
+        "What does A-flat/C mean?",
+        "Does the PDF include finger numbers?",
+        "Does A-flat major have the same chord tones as C minor?"
       ],
       "blocks": [
         {
           "heading": "Notes and keyboard position",
-          "body": "A-flat major contains Ab–C–Eb. The intervals from the root are a major third and a perfect fifth.",
+          "body": "A-flat major is A-flat, C and E-flat. Its formula is 1–3–5, with C as the major third above A-flat. The displayed root-position example is A♭4–C5–E♭5. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[已核实] rules; [推断] register and original teaching example"
         },
         {
           "heading": "What to notice",
-          "body": "The white C lies between two black-key chord tones, A-flat and E-flat. Ab means A-flat major when used as this plain chord symbol; Abm would ask for a different third.",
+          "body": "Two chord tones use black keys, but the third C is natural. Do not lower C merely because the root name contains a flat. The accidental belongs to its written note unless another notation instruction says otherwise. From A-flat, C is four semitones higher and E-flat is seven. A-flat major is not A major with only its root lowered: moving the entire A–C♯–E shape down a semitone gives A♭–C–E♭.",
           "source_ids": [
-            "F-OMT",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] original explanation from preserved note data and cited rules"
         },
         {
           "heading": "Compare three positions",
-          "body": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.",
+          "body": "Read each bass note before selecting a position. The root-position example starts with A♭; first inversion starts with C; second inversion starts with E♭. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
           "source_ids": [
-            "F-OMT"
+            "PG-OMT",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
         }
       ],
       "data": {
@@ -44879,58 +44927,69 @@
         ],
         "default_voicing": "root",
         "derivation": {
-          "status": "[推断] computed from independently verified chord formulas and written pitch registers",
+          "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-OMT"
           ]
         },
         "assets": [
           {
             "path": "assets/chord-a-flat-major.svg",
             "format": "SVG",
-            "content": "three inversion keyboard diagrams"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-a-flat-major.svg",
+            "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "f4fccf04625614ecd7861550b618e8bde5371d9d29ec67f6e6351359eab6c5f1",
+            "tagged_pdf_accessibility": null
           },
           {
             "path": "assets/chord-a-flat-major.pdf",
             "format": "PDF",
-            "pages": 1,
-            "content": "three inversion keyboard diagrams",
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-a-flat-major.pdf",
+            "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "a1986adb149c0785be1970cc8d992e538164df63922a1a6ae88c2941d2265375",
+            "tagged_pdf_accessibility": "not_certified"
           }
         ],
         "related": [
           "/chords",
+          "/chords/a-major",
+          "/chords/c-minor",
           "/guide/piano-chords",
           "/chords/by-key"
         ]
       },
       "source_ids": [
-        "F-OMT",
-        "E-TRIADS",
-        "BN-PUGET-OCTAVES"
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-ASPN",
+        "PG-SKOOVE-A-FLAT-MAJOR"
       ],
       "issues": [
         {
-          "id": "F-FINGER-a-flat-major",
-          "field": "fingering",
-          "reason": "No reviewed hand-specific fingering for every displayed inversion. Unknown cells remain null.",
-          "needed_to_resolve": "Obtain explicit source or named professional review for each hand and voicing."
+          "id": "INT-a-flat-major",
+          "field": "runtime",
+          "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+          "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
         },
         {
-          "id": "F-RELEASE-a-flat-major",
-          "field": "runtime and professional review",
-          "reason": "Keyboard/playback/print interaction and named professional approval are not delivered by this content task.",
-          "needed_to_resolve": "Implement the prepared note arrays; confirm visual, playback and print consistency."
+          "id": "FINGER-INV-a-flat-major",
+          "field": "inversion fingering",
+          "reason": "No inversion fingerings are included; B3 supports root examples only.",
+          "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
         }
       ],
       "coverage": [
         {
           "source_group_id": "P155",
-          "status": "content_and_data_prepared; implementation gates remain",
+          "status": "prepared_not_live",
           "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
-          "pending": "Runtime, print UI and professional release checks; see issues."
+          "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
         }
       ],
       "baseline_page_id": "U079",
@@ -44988,10 +45047,10 @@
       "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_ready_adapter_required",
       "metadata": {
-        "title": "A-flat major Piano Chord",
-        "description": "Find A-flat major notes, intervals, keyboard positions and inversions.",
+        "title": "A-flat Major Piano Chord (Ab): Notes, Inversions & PDF",
+        "description": "Find the A-flat major piano chord: A-flat, C and E-flat. Compare its inversions, keep the spelling clear and print the keyboard reference.",
         "canonical_path": "/chords/a-flat-major",
         "language": "en-US"
       },
@@ -45003,40 +45062,43 @@
     },
     "/chords/e-major": {
       "url": "/chords/e-major",
-      "title": "E major Piano Chord",
-      "description": "Find E major notes, intervals, keyboard positions and inversions.",
+      "title": "E Major Piano Chord (E): Notes, Inversions & PDF",
+      "description": "Find E major on piano: E, G-sharp and B. See the keyboard positions, compare E/G-sharp and E/B, and print a three-position reference.",
       "user_task": "Locate this exact triad and compare its three bass positions.",
       "questions": [
-        "Which notes form E major?",
-        "How do its inversions change the bass?",
-        "Which fingerings are verified?"
+        "Which key is G-sharp?",
+        "Does E mean E major or E minor?",
+        "What does E/G-sharp mean?",
+        "Why is E/B still E major?",
+        "Are these piano audio recordings?"
       ],
       "blocks": [
         {
           "heading": "Notes and keyboard position",
-          "body": "E major contains E–G#–B. The intervals from the root are a major third and a perfect fifth.",
+          "body": "The E major chord uses E, G-sharp and B. G-sharp is the major third above E; B is the perfect fifth. The displayed root-position example is E4–G♯4–B4. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[已核实] rules; [推断] register and original teaching example"
         },
         {
           "heading": "What to notice",
-          "body": "G-sharp is the only black-key chord tone. Compare E minor, E–G–B: the changed third explains both the spelling and the different quality.",
+          "body": "The triad has one black key, G-sharp. The key signature of E major contains more sharps, but a chord symbol E does not ask you to play all the notes of that scale. It names this particular three-note chord. E to G-sharp is four semitones; E to B is seven. G-sharp and A-flat can share a piano key, but G-sharp is the third-letter spelling above E. An E major triad is therefore written E–G♯–B, not E–A♭–B.",
           "source_ids": [
-            "F-OMT",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] original explanation from preserved note data and cited rules"
         },
         {
           "heading": "Compare three positions",
-          "body": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.",
+          "body": "Read each bass note before selecting a position. The root-position example starts with E; first inversion starts with G♯; second inversion starts with B. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
           "source_ids": [
-            "F-OMT"
+            "PG-OMT",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
         }
       ],
       "data": {
@@ -45226,58 +45288,70 @@
         ],
         "default_voicing": "root",
         "derivation": {
-          "status": "[推断] computed from independently verified chord formulas and written pitch registers",
+          "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-OMT"
           ]
         },
         "assets": [
           {
             "path": "assets/chord-e-major.svg",
             "format": "SVG",
-            "content": "three inversion keyboard diagrams"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-e-major.svg",
+            "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "83d590fd0e28ee3974cbf5c2fc127247e9c14076cea57d3767c1985c1a5850c9",
+            "tagged_pdf_accessibility": null
           },
           {
             "path": "assets/chord-e-major.pdf",
             "format": "PDF",
-            "pages": 1,
-            "content": "three inversion keyboard diagrams",
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-e-major.pdf",
+            "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "415b2cadf7fc24d812835861078f159aae1f007e813883cfbd513529defc0e0f",
+            "tagged_pdf_accessibility": "not_certified"
           }
         ],
         "related": [
           "/chords",
+          "/chords/a-major",
+          "/chords/a-minor",
+          "/chords/b-major",
           "/guide/piano-chords",
           "/chords/by-key"
         ]
       },
       "source_ids": [
-        "F-OMT",
-        "E-TRIADS",
-        "BN-PUGET-OCTAVES"
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-ASPN",
+        "PG-SKOOVE-E-MAJOR"
       ],
       "issues": [
         {
-          "id": "F-FINGER-e-major",
-          "field": "fingering",
-          "reason": "No reviewed hand-specific fingering for every displayed inversion. Unknown cells remain null.",
-          "needed_to_resolve": "Obtain explicit source or named professional review for each hand and voicing."
+          "id": "INT-e-major",
+          "field": "runtime",
+          "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+          "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
         },
         {
-          "id": "F-RELEASE-e-major",
-          "field": "runtime and professional review",
-          "reason": "Keyboard/playback/print interaction and named professional approval are not delivered by this content task.",
-          "needed_to_resolve": "Implement the prepared note arrays; confirm visual, playback and print consistency."
+          "id": "FINGER-INV-e-major",
+          "field": "inversion fingering",
+          "reason": "No inversion fingerings are included; B3 supports root examples only.",
+          "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
         }
       ],
       "coverage": [
         {
           "source_group_id": "P162",
-          "status": "content_and_data_prepared; implementation gates remain",
+          "status": "prepared_not_live",
           "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
-          "pending": "Runtime, print UI and professional release checks; see issues."
+          "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
         }
       ],
       "baseline_page_id": "U080",
@@ -45322,10 +45396,10 @@
       "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_ready_adapter_required",
       "metadata": {
-        "title": "E major Piano Chord",
-        "description": "Find E major notes, intervals, keyboard positions and inversions.",
+        "title": "E Major Piano Chord (E): Notes, Inversions & PDF",
+        "description": "Find E major on piano: E, G-sharp and B. See the keyboard positions, compare E/G-sharp and E/B, and print a three-position reference.",
         "canonical_path": "/chords/e-major",
         "language": "en-US"
       },
@@ -45337,40 +45411,43 @@
     },
     "/chords/c-minor": {
       "url": "/chords/c-minor",
-      "title": "C minor Piano Chord",
-      "description": "Find C minor notes, intervals, keyboard positions and inversions.",
+      "title": "C Minor Piano Chord (Cm): Notes, Inversions & PDF",
+      "description": "Learn the C minor piano chord: C, E-flat and G. Compare Cm/E-flat and Cm/G, check the major-minor difference and print the keyboard diagrams.",
       "user_task": "Locate this exact triad and compare its three bass positions.",
       "questions": [
-        "Which notes form C minor?",
-        "How do its inversions change the bass?",
-        "Which fingerings are verified?"
+        "What notes make Cm?",
+        "Is Cm/E-flat a different chord from Cm?",
+        "Can I replace E-flat with D-sharp in the label?",
+        "Does the C minor chord contain every note of the C minor scale?",
+        "Are the finger numbers used for every inversion?"
       ],
       "blocks": [
         {
           "heading": "Notes and keyboard position",
-          "body": "C minor contains C–Eb–G. The intervals from the root are a minor third and a perfect fifth.",
+          "body": "C minor is C, E-flat and G. The lowered third, E-flat, distinguishes Cm from the C–E–G major triad. The displayed root-position example is C4–E♭4–G4. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[已核实] rules; [推断] register and original teaching example"
         },
         {
           "heading": "What to notice",
-          "body": "The third is E-flat, not E. C and G remain the same as in C major, so this comparison isolates the one changed key.",
+          "body": "C and G remain on white keys, while E-flat uses the black key between D and E. E-flat is the chord’s third: the letter E matters to the spelling. D-sharp can use the same physical key in equal temperament, but it is not the spelling used for the third of a C minor triad. C to E-flat spans three semitones; C to G spans seven. In the formula 1–♭3–5, the flat means the third is lowered relative to a major triad on the same root. It does not mean the root C becomes C-flat.",
           "source_ids": [
-            "F-OMT",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] original explanation from preserved note data and cited rules"
         },
         {
           "heading": "Compare three positions",
-          "body": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.",
+          "body": "Read each bass note before selecting a position. The root-position example starts with C; first inversion starts with E♭; second inversion starts with G. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
           "source_ids": [
-            "F-OMT"
+            "PG-OMT",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
         }
       ],
       "data": {
@@ -45561,58 +45638,69 @@
         ],
         "default_voicing": "root",
         "derivation": {
-          "status": "[推断] computed from independently verified chord formulas and written pitch registers",
+          "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-OMT"
           ]
         },
         "assets": [
           {
             "path": "assets/chord-c-minor.svg",
             "format": "SVG",
-            "content": "three inversion keyboard diagrams"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-c-minor.svg",
+            "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "10e34711227c3870e03cf3cc70b5bd06d27e1829c8313771b66504b3fa3d87d5",
+            "tagged_pdf_accessibility": null
           },
           {
             "path": "assets/chord-c-minor.pdf",
             "format": "PDF",
-            "pages": 1,
-            "content": "three inversion keyboard diagrams",
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-c-minor.pdf",
+            "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "2701e3d9d030070b69e979aa93288cc9b9a1bd06c1959103de24b1d08110168c",
+            "tagged_pdf_accessibility": "not_certified"
           }
         ],
         "related": [
           "/chords",
+          "/chords/c-major",
+          "/chords/a-flat-major",
           "/guide/piano-chords",
           "/chords/by-key"
         ]
       },
       "source_ids": [
-        "F-OMT",
-        "E-TRIADS",
-        "BN-PUGET-OCTAVES"
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-ASPN",
+        "PG-SKOOVE-C-MINOR"
       ],
       "issues": [
         {
-          "id": "F-FINGER-c-minor",
-          "field": "fingering",
-          "reason": "No reviewed hand-specific fingering for every displayed inversion. Unknown cells remain null.",
-          "needed_to_resolve": "Obtain explicit source or named professional review for each hand and voicing."
+          "id": "INT-c-minor",
+          "field": "runtime",
+          "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+          "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
         },
         {
-          "id": "F-RELEASE-c-minor",
-          "field": "runtime and professional review",
-          "reason": "Keyboard/playback/print interaction and named professional approval are not delivered by this content task.",
-          "needed_to_resolve": "Implement the prepared note arrays; confirm visual, playback and print consistency."
+          "id": "FINGER-INV-c-minor",
+          "field": "inversion fingering",
+          "reason": "No inversion fingerings are included; B3 supports root examples only.",
+          "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
         }
       ],
       "coverage": [
         {
           "source_group_id": "P166",
-          "status": "content_and_data_prepared; implementation gates remain",
+          "status": "prepared_not_live",
           "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
-          "pending": "Runtime, print UI and professional release checks; see issues."
+          "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
         }
       ],
       "baseline_page_id": "U082",
@@ -45657,10 +45745,10 @@
       "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_ready_adapter_required",
       "metadata": {
-        "title": "C minor Piano Chord",
-        "description": "Find C minor notes, intervals, keyboard positions and inversions.",
+        "title": "C Minor Piano Chord (Cm): Notes, Inversions & PDF",
+        "description": "Learn the C minor piano chord: C, E-flat and G. Compare Cm/E-flat and Cm/G, check the major-minor difference and print the keyboard diagrams.",
         "canonical_path": "/chords/c-minor",
         "language": "en-US"
       },
@@ -46011,40 +46099,43 @@
     },
     "/chords/g-major": {
       "url": "/chords/g-major",
-      "title": "G major Piano Chord",
-      "description": "Find G major notes, intervals, keyboard positions and inversions.",
+      "title": "G Major Piano Chord (G): Notes, Inversions & PDF",
+      "description": "Find G major on piano with G, B and D. Compare its inversions, try a note-building exercise and print the three-position keyboard reference.",
       "user_task": "Locate this exact triad and compare its three bass positions.",
       "questions": [
-        "Which notes form G major?",
-        "How do its inversions change the bass?",
-        "Which fingerings are verified?"
+        "Does a G major chord need F-sharp?",
+        "What does G/B mean?",
+        "Is G major the same as G minor?",
+        "Why does the second-inversion example sound lower?",
+        "What does the keyboard exercise check?"
       ],
       "blocks": [
         {
           "heading": "Notes and keyboard position",
-          "body": "G major contains G–B–D. The intervals from the root are a major third and a perfect fifth.",
+          "body": "The G major chord contains G, B and D. Its formula is 1–3–5: a major third and a perfect fifth above G. The displayed root-position example is G4–B4–D5. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[已核实] rules; [推断] register and original teaching example"
         },
         {
           "heading": "What to notice",
-          "body": "This triad uses only white keys even though the G major scale contains F-sharp. A triad uses scale degrees 1, 3 and 5; it does not contain every scale tone.",
+          "body": "The G major chord and the G major scale are different things. F-sharp belongs to the scale, but it is not one of the three chord tones. The triad shown here therefore uses only white keys. Adding F-sharp would change the three-note object being studied. Measured above G, B is four semitones away and D is seven. The interval formula describes the chord from its root, not the distances between every pair of currently adjacent keys. In G/B, G is still the root even though B is the lowest sounding note.",
           "source_ids": [
-            "F-OMT",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] original explanation from preserved note data and cited rules"
         },
         {
           "heading": "Compare three positions",
-          "body": "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.",
+          "body": "Read each bass note before selecting a position. The root-position example starts with G; first inversion starts with B; second inversion starts with D. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
           "source_ids": [
-            "F-OMT"
+            "PG-OMT",
+            "PG-ASPN"
           ],
-          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+          "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
         }
       ],
       "data": {
@@ -46234,58 +46325,69 @@
         ],
         "default_voicing": "root",
         "derivation": {
-          "status": "[推断] computed from independently verified chord formulas and written pitch registers",
+          "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
           "source_ids": [
-            "F-OMT",
-            "E-TRIADS",
-            "BN-PUGET-OCTAVES"
+            "PG-TRIADS",
+            "PG-ASPN",
+            "PG-OMT"
           ]
         },
         "assets": [
           {
             "path": "assets/chord-g-major.svg",
             "format": "SVG",
-            "content": "three inversion keyboard diagrams"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-g-major.svg",
+            "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "b25ec0ece894c73595a32255562821cb9f891bac854aa9f4b05b2e707dcc7ace",
+            "tagged_pdf_accessibility": null
           },
           {
             "path": "assets/chord-g-major.pdf",
             "format": "PDF",
-            "pages": 1,
-            "content": "three inversion keyboard diagrams",
-            "visual_qa": "passed; every final PDF page rendered and inspected"
+            "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+            "delivery_file": "05_assets/chord-g-major.pdf",
+            "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+            "delivery_status": "generated_in_this_package",
+            "sha256": "b61b18df64ce9a7508ad48043df6f8902576e676b0af419712115efe369f73ba",
+            "tagged_pdf_accessibility": "not_certified"
           }
         ],
         "related": [
           "/chords",
+          "/chords/c-major",
+          "/scales/c-major",
           "/guide/piano-chords",
           "/chords/by-key"
         ]
       },
       "source_ids": [
-        "F-OMT",
-        "E-TRIADS",
-        "BN-PUGET-OCTAVES"
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-ASPN",
+        "PG-SKOOVE-G-MAJOR"
       ],
       "issues": [
         {
-          "id": "F-FINGER-g-major",
-          "field": "fingering",
-          "reason": "No reviewed hand-specific fingering for every displayed inversion. Unknown cells remain null.",
-          "needed_to_resolve": "Obtain explicit source or named professional review for each hand and voicing."
+          "id": "INT-g-major",
+          "field": "runtime",
+          "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+          "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
         },
         {
-          "id": "F-RELEASE-g-major",
-          "field": "runtime and professional review",
-          "reason": "Keyboard/playback/print interaction and named professional approval are not delivered by this content task.",
-          "needed_to_resolve": "Implement the prepared note arrays; confirm visual, playback and print consistency."
+          "id": "FINGER-INV-g-major",
+          "field": "inversion fingering",
+          "reason": "No inversion fingerings are included; B3 supports root examples only.",
+          "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
         }
       ],
       "coverage": [
         {
           "source_group_id": "P169",
-          "status": "content_and_data_prepared; implementation gates remain",
+          "status": "prepared_not_live",
           "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
-          "pending": "Runtime, print UI and professional release checks; see issues."
+          "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
         }
       ],
       "baseline_page_id": "U084",
@@ -46330,10 +46432,10 @@
       "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
       "ready_for_publish": false,
       "deployment_status": "planning_only",
-      "status": "content_and_data_prepared_with_issues",
+      "status": "content_ready_adapter_required",
       "metadata": {
-        "title": "G major Piano Chord",
-        "description": "Find G major notes, intervals, keyboard positions and inversions.",
+        "title": "G Major Piano Chord (G): Notes, Inversions & PDF",
+        "description": "Find G major on piano with G, B and D. Compare its inversions, try a note-building exercise and print the three-position keyboard reference.",
         "canonical_path": "/chords/g-major",
         "language": "en-US"
       },
@@ -103988,12 +104090,13 @@
       "title": "Major and Natural Minor Scales for Piano with Fingerings",
       "url": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
       "publisher": "LearnMusicTheory.net / High-Yield Music Theory",
-      "checked_on": "2026-09-09",
+      "checked_on": "2026-09-11",
       "access_status": "opened_pdf_and_visually_checked",
       "supports": [
-        "C,D,F,G,A,E,B,Bb,Eb major: one-octave staff spelling and RH/LH ascending/descending numbers; Bb/Eb LH top finger 2; Eb RH start finger 2"
+        "C,D,F,G,A,E,B,Bb,Eb major: one-octave staff spelling and RH/LH ascending/descending numbers; Bb/Eb LH top finger 2; Eb RH start finger 2",
+        "A natural minor, PDF page 2 printed page 40 A row: one-octave RH/LH ascending and descending numbers; source staff A3-A4"
       ],
-      "locator": "PDF page 1, major scales; RH above/LH below; visual screenshot turn781025view0",
+      "locator": "PDF page 1 major scales; PDF page 2 (0-based page 1), printed page 40, Natural minor scales A row; RH above/LH below; visually checked in the approved Scales plan evidence",
       "web_reference": "turn952800view1",
       "evidence_status": "[已核实]",
       "reuse": "external reference only; musical facts transcribed; source prose, diagrams, recordings and PDF files not bundled"

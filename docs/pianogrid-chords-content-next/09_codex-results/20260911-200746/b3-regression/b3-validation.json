@@ -1,0 +1,301 @@
+{
+  "executedAt": "2026-09-11T12:16:11.285Z",
+  "base": "http://127.0.0.1:3105",
+  "passed": 71,
+  "failed": 0,
+  "results": [
+    {
+      "name": "a-minor HTTP and canonical",
+      "passed": true
+    },
+    {
+      "name": "a-minor initial DOM has theory/fingering/source/practice",
+      "passed": true
+    },
+    {
+      "name": "a-minor initial DOM has unique IDs",
+      "passed": true
+    },
+    {
+      "name": "a-minor no-JS practice is honest",
+      "passed": true
+    },
+    {
+      "name": "a-minor six-case hand controls represented",
+      "passed": true
+    },
+    {
+      "name": "a-minor right mapping",
+      "passed": true
+    },
+    {
+      "name": "a-minor left mapping",
+      "passed": true
+    },
+    {
+      "name": "a-minor inversion clears root fingering",
+      "passed": true
+    },
+    {
+      "name": "a-minor root restores chosen hand",
+      "passed": true
+    },
+    {
+      "name": "a-minor empty feedback",
+      "passed": true
+    },
+    {
+      "name": "a-minor missing feedback",
+      "passed": true
+    },
+    {
+      "name": "a-minor retry clears",
+      "passed": true
+    },
+    {
+      "name": "a-minor extra feedback",
+      "passed": true
+    },
+    {
+      "name": "a-minor correct pitch-class feedback",
+      "passed": true
+    },
+    {
+      "name": "a-minor edit invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "a-minor repeated key toggles deterministically",
+      "passed": true
+    },
+    {
+      "name": "a-minor show answer is not success",
+      "passed": true
+    },
+    {
+      "name": "a-minor practice does not change main selection",
+      "passed": true
+    },
+    {
+      "name": "a-minor mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "a-minor 200% reflow",
+      "passed": true
+    },
+    {
+      "name": "a-major HTTP and canonical",
+      "passed": true
+    },
+    {
+      "name": "a-major initial DOM has theory/fingering/source/practice",
+      "passed": true
+    },
+    {
+      "name": "a-major initial DOM has unique IDs",
+      "passed": true
+    },
+    {
+      "name": "a-major no-JS practice is honest",
+      "passed": true
+    },
+    {
+      "name": "a-major six-case hand controls represented",
+      "passed": true
+    },
+    {
+      "name": "a-major right mapping",
+      "passed": true
+    },
+    {
+      "name": "a-major left mapping",
+      "passed": true
+    },
+    {
+      "name": "a-major inversion clears root fingering",
+      "passed": true
+    },
+    {
+      "name": "a-major root restores chosen hand",
+      "passed": true
+    },
+    {
+      "name": "a-major empty feedback",
+      "passed": true
+    },
+    {
+      "name": "a-major missing feedback",
+      "passed": true
+    },
+    {
+      "name": "a-major retry clears",
+      "passed": true
+    },
+    {
+      "name": "a-major extra feedback",
+      "passed": true
+    },
+    {
+      "name": "a-major correct pitch-class feedback",
+      "passed": true
+    },
+    {
+      "name": "a-major edit invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "a-major repeated key toggles deterministically",
+      "passed": true
+    },
+    {
+      "name": "a-major show answer is not success",
+      "passed": true
+    },
+    {
+      "name": "a-major practice does not change main selection",
+      "passed": true
+    },
+    {
+      "name": "a-major mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major 200% reflow",
+      "passed": true
+    },
+    {
+      "name": "c-major HTTP and canonical",
+      "passed": true
+    },
+    {
+      "name": "c-major initial DOM has theory/fingering/source/practice",
+      "passed": true
+    },
+    {
+      "name": "c-major initial DOM has unique IDs",
+      "passed": true
+    },
+    {
+      "name": "c-major no-JS practice is honest",
+      "passed": true
+    },
+    {
+      "name": "c-major six-case hand controls represented",
+      "passed": true
+    },
+    {
+      "name": "c-major right mapping",
+      "passed": true
+    },
+    {
+      "name": "c-major left mapping",
+      "passed": true
+    },
+    {
+      "name": "c-major inversion clears root fingering",
+      "passed": true
+    },
+    {
+      "name": "c-major root restores chosen hand",
+      "passed": true
+    },
+    {
+      "name": "c-major empty feedback",
+      "passed": true
+    },
+    {
+      "name": "c-major missing feedback",
+      "passed": true
+    },
+    {
+      "name": "c-major retry clears",
+      "passed": true
+    },
+    {
+      "name": "c-major extra feedback",
+      "passed": true
+    },
+    {
+      "name": "c-major correct pitch-class feedback",
+      "passed": true
+    },
+    {
+      "name": "c-major edit invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "c-major repeated key toggles deterministically",
+      "passed": true
+    },
+    {
+      "name": "c-major show answer is not success",
+      "passed": true
+    },
+    {
+      "name": "c-major practice does not change main selection",
+      "passed": true
+    },
+    {
+      "name": "c-major mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major 200% reflow",
+      "passed": true
+    },
+    {
+      "name": "Hub initial DOM has vocabulary and practice links",
+      "passed": true
+    },
+    {
+      "name": "Hub metadata/canonical and unique IDs",
+      "passed": true
+    },
+    {
+      "name": "Hub exposes three real practice anchors",
+      "passed": true
+    },
+    {
+      "name": "Hub root filter independent",
+      "passed": true
+    },
+    {
+      "name": "Hub combined filter",
+      "passed": true
+    },
+    {
+      "name": "Hub no-match state",
+      "passed": true
+    },
+    {
+      "name": "Hub clear restores 19",
+      "passed": true
+    },
+    {
+      "name": "Hub quality filter independent",
+      "passed": true
+    },
+    {
+      "name": "Hub mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Hub 200% reflow",
+      "passed": true
+    },
+    {
+      "name": "No runtime or hydration errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "notRun": [
+    "human listening",
+    "real mobile device",
+    "screen reader",
+    "physical printing",
+    "PDF tag accessibility",
+    "independent review of PianoGrid-specific fingering presentation"
+  ]
+}

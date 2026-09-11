@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-11T10:42:36.277Z",
+  "headAtB3Start": "dd1b8849cd4c303c9ddebfe794758aa14354f507",
+  "head": "dd1b8849cd4c303c9ddebfe794758aa14354f507",
+  "dirty": true,
+  "gitStatusShort": [
+    "M .gitignore",
+    " M AGENTS.md",
+    " M README.md",
+    " M checks/batches/01-chords/adapter-validation.json",
+    " M checks/batches/07-site-integration/data-validation.json",
+    " M checks/batches/07-site-integration/foundation.compiled.css",
+    " M checks/batches/07-site-integration/foundation.json",
+    " M checks/batches/07-site-integration/screenshots/home-1440.png",
+    " M checks/batches/07-site-integration/screenshots/home-320.png",
+    " M checks/batches/07-site-integration/screenshots/home-390.png",
+    " M checks/batches/07-site-integration/screenshots/home-768.png",
+    " M checks/batches/07-site-integration/screenshots/home-text200.png",
+    " M checks/batches/07-site-integration/screenshots/tools-1440.png",
+    " M checks/batches/07-site-integration/screenshots/tools-320.png",
+    " M checks/batches/07-site-integration/screenshots/tools-390.png",
+    " M checks/batches/07-site-integration/screenshots/tools-768.png",
+    " M checks/batches/07-site-integration/screenshots/tools-text200.png",
+    " M checks/batches/07-site-integration/tailwind-compile.json",
+    " M checks/batches/07-site-integration/validation.json",
+    " M docs/release/release-readiness.md",
+    " M docs/tasks/batch-implementation/CONTINUE-HERE.md",
+    " M docs/tasks/site-implementation-plan.md",
+    " M next.config.ts",
+    " M scripts/check-a-minor.mjs",
+    " M scripts/check-chord-batch.mjs",
+    " M scripts/check-content-adapters.mjs",
+    " M scripts/check-foundation.mjs",
+    " M scripts/check-song-batch.mjs",
+    " M src/app/chords/a-major/page.tsx",
+    " M src/app/chords/a-minor/a-minor.css",
+    " M src/app/chords/a-minor/page.tsx",
+    " M src/app/chords/c-major/page.tsx",
+    " M src/app/chords/page.tsx",
+    " M src/app/layout.tsx",
+    " M src/app/manifest.ts",
+    " M src/components/a-minor/experience.tsx",
+    " M src/components/chords/center-experience.tsx",
+    " M src/components/chords/center-page.tsx",
+    " M src/components/chords/center.css",
+    " M src/components/chords/detail-page.tsx",
+    " M src/components/chords/shared.css",
+    " M src/components/songs/pages.tsx",
+    " M src/components/songs/resource-card.tsx",
+    " M src/components/songs/songs.css",
+    " M src/lib/a-minor-audio.ts",
+    " M src/lib/a-minor-content.ts",
+    " M src/lib/a-minor-types.ts",
+    " M src/lib/chord-content.ts",
+    " M src/lib/song-content.ts",
+    " M src/lib/song-types.ts",
+    " M tsconfig.json",
+    "?? .next-b3/",
+    "?? audit/",
+    "?? checks/release/current-am-selection-fix/",
+    "?? checks/release/current-song-fix/",
+    "?? checks/release/ios-safari-audio/",
+    "?? checks/release/postdeploy-current/",
+    "?? checks/release/predeploy-current/",
+    "?? checks/release/public-launch/independent-reverification/",
+    "?? checks/release/public-launch/live-verification.md",
+    "?? docs/pianogrid-chords-v2/",
+    "?? public/apple-touch-icon.png",
+    "?? public/favicon-96x96.png",
+    "?? public/favicon.ico",
+    "?? public/favicon.svg",
+    "?? public/icon-192.png",
+    "?? public/icon-512.png",
+    "?? scripts/check-chord-b2.mjs",
+    "?? scripts/check-chord-b3.mjs",
+    "?? src/components/chords/chord-builder-practice.tsx",
+    "?? src/components/chords/chord-learning.css",
+    "?? src/components/chords/fingering-guide.tsx",
+    "?? src/components/chords/page-toc.css",
+    "?? src/components/chords/page-toc.tsx",
+    "?? src/lib/chord-detail-model.ts",
+    "?? src/lib/chord-learning-content.ts"
+  ],
+  "relevantFiles": [
+    {
+      "path": "package.json",
+      "sha256": "dae672eccd03744af1f02731e390a0db7dd69937f3c287fac46879b648da072d"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "ae9da86dc78571eb8f0727e06389bf5d473137a76d1428a8ccf824fdb5f3ced4"
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "450d8d6fe31cadcdec8c00f0316cc4f52f39fb7e10ba930bac4055b3fd9725d7"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "b32217f406ba6d6d07abadc653e540b667daf037505327b1e970360a041dbb6f"
+    },
+    {
+      "path": "docs/design/design-system.md",
+      "sha256": "f5c440f2aecc4fda7e8000ed3cdec728425cb9b9373011f2377dd61e2e666bbd"
+    },
+    {
+      "path": "docs/design/tokens.json",
+      "sha256": "39ac78c7c9ed722451522ff221bcdb40236aa3009afd348dec6faa3e34908af2"
+    },
+    {
+      "path": "docs/content/chords/page-content.json",
+      "sha256": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
+    },
+    {
+      "path": "docs/content/site-master/page-content.master.json",
+      "sha256": "99d59d51ca444a657b10f29ebaeee2ebfb58985b7af585b400a16452298b72c7"
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "e7e4f2caf3d7078b70fa217a2e6dd08fab0851351bf40d2785ef90208892d305"
+    },
+    {
+      "path": "src/app/chords/page.tsx",
+      "sha256": "0c0b5a52dfff721ed144d06b0a3100c8c55b09bfd25ad999690c375dbd83cb8a"
+    },
+    {
+      "path": "src/app/chords/a-minor/page.tsx",
+      "sha256": "9e6363797cb2db11bf587448ab91430fec4d7f3d24849bcc04d85eb218debd56"
+    },
+    {
+      "path": "src/app/chords/a-minor/a-minor.css",
+      "sha256": "89a6b9b9bcbb31b7f9b59ef51176e7517e84faa732956bb859b4c0e6ea0a25db"
+    },
+    {
+      "path": "src/app/chords/a-major/page.tsx",
+      "sha256": "7fbb0cf350f52c4c756a0ba64e3c5485010461b7b2f9ef29d8f77cd4b9cb344d"
+    },
+    {
+      "path": "src/app/chords/c-major/page.tsx",
+      "sha256": "5312ec5b16cbec94f2b63ade0c7061d5ac3f281f07f6ad7498efcdc984164a63"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+    },
+    {
+      "path": "src/styles/foundation.css",
+      "sha256": "80452a0844b3e8545522368b80731502e91d901a3a75d9325a01369fa5cfcaec"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac"
+    },
+    {
+      "path": "src/lib/site-content.ts",
+      "sha256": "acd9436e625dcc3e8d9322c2872d83261c7c1d3b24553ac38af1704d95b3bdd3"
+    },
+    {
+      "path": "src/lib/site-routes.ts",
+      "sha256": "526c3c87f8682a130e86116e7e09a1189c675e7c0bacbd7086961b674afbd425"
+    },
+    {
+      "path": "src/lib/a-minor-audio.ts",
+      "sha256": "03c8577a3c443cd07956f65d4aa63e6c30a65385f04721606ba3782393d9e670"
+    },
+    {
+      "path": "src/lib/a-minor-types.ts",
+      "sha256": "3af2f6974023c0849c040126f362b9b1e6ce66dc3b3235332d70703db82014bb"
+    },
+    {
+      "path": "src/lib/a-minor-content.ts",
+      "sha256": "6c533f2b0e7090c2e1e23399929bad595109cf964a9ad70b62fa3eb9da9181f9"
+    },
+    {
+      "path": "src/lib/chord-content.ts",
+      "sha256": "f479db89d3fee948e2c9928be5ded5d31010742d0bd2966735d82e5f30d8b614"
+    },
+    {
+      "path": "src/lib/chord-detail-model.ts",
+      "sha256": "57079431e13fdcb6d94a37f092ee9240cda1e5a21b0f462e2beef71ee011bde1"
+    },
+    {
+      "path": "src/lib/chord-learning-content.ts",
+      "sha256": "d0b9a2846f2060b0554522dd6646766b9b4dde88c2735587135d6416363bfa49"
+    },
+    {
+      "path": "src/components/a-minor/experience.tsx",
+      "sha256": "0edbea9d093495f6f5dbf6b0f47bdb65ddbfe7e502775acc25e9e34853c9e7fd"
+    },
+    {
+      "path": "src/components/a-minor/icon.tsx",
+      "sha256": "46d07510c4414fbd42d0d281edc72904c1f9f786355d5f930b0badba262d95c4"
+    },
+    {
+      "path": "src/components/a-minor/page-search.tsx",
+      "sha256": "b8d7dc9ea66f447a726322bd491a3f2c994860d95c9098a0f0fcd55dcd3a068b"
+    },
+    {
+      "path": "src/components/chords/site-chrome.tsx",
+      "sha256": "2b1f54a400f922d5ab0f04c1322e2f414ed9cf2a3e1f3392efaf0c4888b9ee4a"
+    },
+    {
+      "path": "src/components/chords/playback-controls.tsx",
+      "sha256": "670ed8b6c53d3e34b1b5291719d77ba0ca1ad937687348fcbd45bd309f4e6dd5"
+    },
+    {
+      "path": "src/components/chords/keyboard-viewport.tsx",
+      "sha256": "ea988a705b776805ad9981dc471f0fab70c2890c42c05cb60780e6c1d9c0ffe9"
+    },
+    {
+      "path": "src/components/chords/print-voicing.tsx",
+      "sha256": "5dbf36ae5d51519130919d4957ed3a5debad92645556cae7537d3f6aa437afbb"
+    },
+    {
+      "path": "src/components/chords/detail-page.tsx",
+      "sha256": "7d2bb0651d42f2c5a82fe0f113ce0fb970022b057450220d6fd323ab817ab733"
+    },
+    {
+      "path": "src/components/chords/center-page.tsx",
+      "sha256": "ffc95da12e70f5e06ed4eb717cf5f725b552b33a08fb4e00e5b621168490b905"
+    },
+    {
+      "path": "src/components/chords/center-experience.tsx",
+      "sha256": "d71c7c9d95abdb6bcb4b89037ea2426742e1eb69f869083da36a83502c2d7d9b"
+    },
+    {
+      "path": "src/components/chords/page-toc.tsx",
+      "sha256": "d71359a3fbf575483bfef159395e52fb264126a431facd22c415d4913ce1e928"
+    },
+    {
+      "path": "src/components/chords/shared.css",
+      "sha256": "daa6b027558d6375cbadc0110d80374b629c85bc3b571075066c6cfd8cdcbe9c"
+    },
+    {
+      "path": "src/components/chords/center.css",
+      "sha256": "bb5d9c8823fbc3f649d5c8f94e235e4aa98d6b95910771566a6269dc7e7f5704"
+    },
+    {
+      "path": "src/components/chords/page-toc.css",
+      "sha256": "b3bf902d4b232b32d9d4e901342b827d04d91e62ab03f28511de46cd9e53687c"
+    },
+    {
+      "path": "src/components/chords/fingering-guide.tsx",
+      "sha256": "21cf6fb44ddd1bc0c244e8534242154aef63c127b8445cb0c0bc47d128e86c6b"
+    },
+    {
+      "path": "src/components/chords/chord-builder-practice.tsx",
+      "sha256": "fb2dfcf048cbdcf5eae7c325589438744904a4787d117c41499813b5f97d9668"
+    },
+    {
+      "path": "src/components/chords/chord-learning.css",
+      "sha256": "67183347a7e3fe29455beab7cafb0831c4773c7c68af72ee0ed75a12fafd994a"
+    },
+    {
+      "path": "src/components/site-navigation.tsx",
+      "sha256": "49a1ff66afdfc1b48267b97d384a08a2f7f9a67319484cad5bc62adccdf554df"
+    },
+    {
+      "path": "src/components/site-navigation.css",
+      "sha256": "7590314e682701b2d2e18f5acc8c65e6640934046dde1bbd09ca46b39e64988b"
+    },
+    {
+      "path": "src/components/ui/breadcrumb.tsx",
+      "sha256": "970670e1b10866941912535a0e71a35ec2adfe7ef2100d918bcd651675d9c00b"
+    },
+    {
+      "path": "src/components/ui/breadcrumb.css",
+      "sha256": "a3f6c2318aa15ff2bfbf96b89d0cc3ed130dba2581df00284a8672fe1319710c"
+    },
+    {
+      "path": "src/components/ui/rolling-text.tsx",
+      "sha256": "021369b9ff914eed44134aac07b27f89fb98f2a510b984a5159afb45c333564b"
+    },
+    {
+      "path": "scripts/check-foundation.mjs",
+      "sha256": "d3f5524aa0f9450027c2f9bbfa6971506d0563b1fc2c0abf9af835b09b25e585"
+    },
+    {
+      "path": "scripts/check-content-adapters.mjs",
+      "sha256": "e694ca42e0c06fa4304080baa2b3acbcaf1d0539d472452e3827e24ac334741a"
+    },
+    {
+      "path": "scripts/check-a-minor.mjs",
+      "sha256": "38387eacb4b19b11fd327a626ef67653896f260ab8a43a8966a55383e1ec193f"
+    },
+    {
+      "path": "scripts/check-chord-b2.mjs",
+      "sha256": "2b18541125788a26d10fd9aa6e40599c47cf074db4c7a6b257da602c65fc8225"
+    },
+    {
+      "path": "scripts/check-chord-b3.mjs",
+      "sha256": "5f8369f65ab85653f63f8da9ef2780da7b53ae1a51f7d2d7a0e94f1db3f8673b"
+    },
+    {
+      "path": "scripts/check-chord-batch.mjs",
+      "sha256": "50acb4a28a40d9e915491896417db7819063b7f02d6b89b747906b416db89cb7"
+    },
+    {
+      "path": "docs/pianogrid-chords-v2/B3_RESULT.md",
+      "sha256": "c7f392428b81d4565e98d561ebf3b58395b3d81a0c51213f63ed9392df57346b"
+    },
+    {
+      "path": "docs/pianogrid-chords-v2/implementation-log.md",
+      "sha256": "1357f770f53d11a208bdb0759297398698f959fea7658ab58b8fd08b5bb72dd7"
+    }
+  ],
+  "finalEvidence": [
+    "docs/pianogrid-chords-v2/B3_RESULT.md",
+    "docs/pianogrid-chords-v2/evidence/b3/isolated-build.json",
+    "docs/pianogrid-chords-v2/evidence/b3/adapter-validation.json",
+    "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/b3-validation.json",
+    "docs/pianogrid-chords-v2/evidence/b3/production-browser-final/",
+    "docs/pianogrid-chords-v2/evidence/b3/a-minor-regression-final/page-validation.json",
+    "docs/pianogrid-chords-v2/evidence/b3/b2-regression/b2-validation.json",
+    "docs/pianogrid-chords-v2/evidence/b3/chord-regression/page-validation.json",
+    "checks/batches/07-site-integration/data-validation.json",
+    "checks/batches/07-site-integration/validation.json"
+  ],
+  "excluded": [
+    ".git/",
+    ".next/",
+    ".next-b3/",
+    "node_modules/",
+    "secrets",
+    "docs/pianogrid-chords-v2/evidence/b3/B3_BASELINE.json"
+  ]
+}

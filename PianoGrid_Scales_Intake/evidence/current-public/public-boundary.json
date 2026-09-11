@@ -1,0 +1,1093 @@
+{
+  "checked_at": "2026-09-11T04:00:11.026Z",
+  "origin": "https://pianogrid.com",
+  "authorized": [
+    "/",
+    "/tools",
+    "/songs",
+    "/songs/easy",
+    "/tools/blank-sheet-music",
+    "/keyboard-notes",
+    "/keyboard-notes/labeled",
+    "/keyboard-notes/chart",
+    "/chords",
+    "/chords/a-major",
+    "/chords/a-minor",
+    "/chords/c-major",
+    "/scales",
+    "/scales/c-major",
+    "/scales/a-minor",
+    "/guide",
+    "/guide/read-sheet-music"
+  ],
+  "checks": {
+    "authorized_routes": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/tools",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/songs",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/songs/easy",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/tools/blank-sheet-music",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes/labeled",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes/chart",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/chords",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/chords/a-major",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/chords/a-minor",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/chords/c-major",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/scales",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/scales/c-major",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/scales/a-minor",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/guide",
+        "status": 200,
+        "location": null
+      },
+      {
+        "path": "/guide/read-sheet-music",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "unauthorized_planned_routes": [
+      {
+        "path": "/songs/christmas",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/challenging",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/pop",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/classical",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/easy-chords",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/anime",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/minecraft",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/rock",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/taylor-swift",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/disney",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/wedding",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/worship",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/rap",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/piano-and-guitar",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/beatles",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/coldplay",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/country",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/jazz",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/halloween",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/songs/undertale",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/easy",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/beginner",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/christmas",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/letter-notes",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/annotated",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/lead-sheets",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/pop",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/disney",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/classical",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/jazz",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/jingle-bells",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/amazing-grace",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/fur-elise",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/happy-birthday",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/hot-cross-buns",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/jesus-loves-me",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/mary-had-a-little-lamb",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/abc-song",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/ode-to-joy",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/silent-night",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/twinkle-twinkle-little-star",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes/frequencies",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes/finger-numbers",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes/blank",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/tools/piano-cheat-sheet",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/keyboard-notes/key-signatures",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/b-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/a-flat-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/e-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/c-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/c-flat-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/g-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/by-key",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chords/finder",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/chord-progressions",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/modes",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/blues",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/d-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/e-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/f-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/g-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/pentatonic",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/a-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/c-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/d-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/e-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/b-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/f-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/harmonic-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/a-sharp-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/b-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/b-flat-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/g-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/chromatic",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/e-flat-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/f-sharp-minor",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/scales/c-flat-major",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/arpeggios",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/sight-reading",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/piano-chords",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/piano-books",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/learn-a-piano-song",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/piano-scales",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/compose-a-piano-song",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/hanon-exercises",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/note-values-and-rhythm",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/piano-exercises",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/piano-hand-position",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/piano-practice",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/guide/music-symbols-and-piano-terms",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/let-it-go",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/super-mario-theme",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/thats-amore",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/black-parade",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/clocks",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/from-the-start",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/song-of-storms",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/pink-panther",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/still-dre",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/carol-of-the-bells",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/edelweiss",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/in-my-life",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/all-of-me-john-legend",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/runaway-kanye-west",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/piano-man",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/someone-like-you-adele",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/song-of-healing",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/a-whole-new-world",
+        "status": 404,
+        "location": null
+      },
+      {
+        "path": "/sheet-music/easy-on-me",
+        "status": 404,
+        "location": null
+      }
+    ],
+    "non_public_workspace_files": [
+      {
+        "path": "/docs/release/release-readiness.md",
+        "status": 404
+      },
+      {
+        "path": "/checks/release/public-launch/report.md",
+        "status": 404
+      },
+      {
+        "path": "/src/lib/site-routes.ts",
+        "status": 404
+      },
+      {
+        "path": "/package.json",
+        "status": 404
+      },
+      {
+        "path": "/next.config.ts",
+        "status": 404
+      },
+      {
+        "path": "/docs/design/reference/final-a-minor.html",
+        "status": 404
+      }
+    ],
+    "redirects": [
+      {
+        "from": "http://pianogrid.com/",
+        "status": 308,
+        "location": "https://pianogrid.com/"
+      },
+      {
+        "from": "https://www.pianogrid.com/",
+        "status": 308,
+        "location": "https://pianogrid.com/"
+      }
+    ],
+    "home_security_headers": {
+      "status": 200,
+      "server": "Vercel",
+      "strict_transport_security": "max-age=63072000",
+      "content_security_policy": null,
+      "x_content_type_options": null,
+      "referrer_policy": null,
+      "permissions_policy": null
+    },
+    "robots": {
+      "status": 200,
+      "text": "User-Agent: *\nAllow: /\n\nSitemap: https://pianogrid.com/sitemap.xml\n"
+    },
+    "sitemap": {
+      "status": 200,
+      "urls": [
+        "https://pianogrid.com/",
+        "https://pianogrid.com/tools",
+        "https://pianogrid.com/chords",
+        "https://pianogrid.com/chords/a-minor",
+        "https://pianogrid.com/chords/a-major",
+        "https://pianogrid.com/chords/c-major",
+        "https://pianogrid.com/keyboard-notes",
+        "https://pianogrid.com/keyboard-notes/labeled",
+        "https://pianogrid.com/keyboard-notes/chart",
+        "https://pianogrid.com/scales",
+        "https://pianogrid.com/scales/c-major",
+        "https://pianogrid.com/scales/a-minor",
+        "https://pianogrid.com/songs",
+        "https://pianogrid.com/songs/easy",
+        "https://pianogrid.com/guide",
+        "https://pianogrid.com/guide/read-sheet-music",
+        "https://pianogrid.com/tools/blank-sheet-music"
+      ]
+    },
+    "referenced_assets": [
+      {
+        "path": "/_next/static/immutable/chunks/00nwa89p_ssld.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 37291,
+        "sha256": "0c1a3298f69674695df1ee9a8f212d65ff796b9b778ae2991bf46e7ea9ce1f6c",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0_iz_0fgm-mj-.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 15654,
+        "sha256": "151f49e125525c086c6e6d8b6c9afe53f81d1926959330d15e00677fe68b8661",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 112594,
+        "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0g7t9q99y64c_.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 3774,
+        "sha256": "f4116961eeb539f8cb0c08e2eeb77ce40713ca28d894785ac8f008ec62e571e7",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0jlw_i6j3bndk.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 18257,
+        "sha256": "f176e9a95ce5fcce94988812802b465d9526056508f6dc255dc21cec09635c89",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0lg0ynlbv2vcx.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 23792,
+        "sha256": "61b49d21edcf0be1443bada8fc71690ad7177085376924a04ddaa263ba0edd0d",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0uiuxq00fy8az.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 8584,
+        "sha256": "1a035507a6b6347f7d862ef5b06b4e1b504947016f26437b389e82646fc2b02d",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0v6dxoofaht2t.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 176339,
+        "sha256": "7b9e290942477ad28dfe0f9736b0d5578f2b6f21967b5fc843d3618246e29b54",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0vkl8sl83a8ju.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 26231,
+        "sha256": "e4af648718b1aedc55a12b40db21ce4869fb4570aa499aea5e7cd122377dbc93",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0xloacq93qy68.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 8218,
+        "sha256": "3339d36228cfadffb5e770b517cc24c2ebdcec0f5c4aa505c5130d4053479381",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/137y06679s586.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 34702,
+        "sha256": "7172240cfd9cf50db2a992e74d5391fef73c6210beaabcf65b9c15599aff93ab",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/1gf_su_vz8ah2.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 26301,
+        "sha256": "9164c95cc525a50dd3dbedf1fc464eeeb583d9efb3edebc90afb54321ffc01ac",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/1j-4fia9-4asa.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 16941,
+        "sha256": "20cdf6915019cd2025441107d9c765ca1e57140e53ff3e45db7b66056b7e5647",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/1q56kbg3_7t0h.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 18354,
+        "sha256": "f6647d16480590c1b3d032bd620765e2435c2295d373159f839c3de4d3ecf551",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2_og-q8scpj1f.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 29814,
+        "sha256": "5fde657f149ef1cc334d79bcebbdde192fefc52e5122e3b520f4801937128b44",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2corl6wyj4669.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 14377,
+        "sha256": "34ed6abf4c6d0d1bb3dc56d3f133d2a5dbc3a3c89c791deab314e27143ac14ce",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2e7csn8jjhq9o.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 35058,
+        "sha256": "bbf285a5732befe064037c9ccfadeb4fd6faab06a38d37f9ba3f722f2f76b89d",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2he6frjooake8.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 22461,
+        "sha256": "81f1bf410e3a6d13c14faea32decd1d51812ed1920eaa56a04b48c0a11a16268",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2jcw3fcstqmlq.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 1280,
+        "sha256": "942aa2eb1843cd9e0538bfa6ec87a1a7ea67191d125db14d32e9090255c8270f",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2kd57-3x21ew2.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 4410,
+        "sha256": "4410abb5440f78abc830cbfa361b0bf47061e85fd1ff582c761038889411c05d",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2kjv0j7sm2m_g.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 7059,
+        "sha256": "7faa22f93030d265a8b02bf545aa9335534c4a69c036c07f45b968c9265222fa",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2q0b0xs6h8qqt.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 5309,
+        "sha256": "07233b3e2d9bca2e3e0d46c169ca7ac4738e27be46b7619c0223de36766c86a3",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2yu2915indp7n.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 45162,
+        "sha256": "f7a75355378fc6f9b4ed9b54f8f8ca0c4c3fa8e6ec9c3b748f115d7f10e603c6",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3f67x0f36m2n-.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 22511,
+        "sha256": "ec378c1ce196c8859eb6ad5c406953edf52ff06fc68a57d3d8e84bb145c20cc9",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3r69lzkcb1i-k.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 229383,
+        "sha256": "c49f1d1a66d28fdb04c60ac5ea63285e71376039066d35c48bace8edc39bca43",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/41poiqu4wq4es.css",
+        "status": 200,
+        "content_type": "text/css; charset=utf-8",
+        "bytes": 927,
+        "sha256": "8d869968fac5d2389f660fb3cda6e5ae1d83ef059d8f18c8e4eacd3e4642c357",
+        "local": null
+      },
+      {
+        "path": "/_next/static/immutable/chunks/turbopack-1-7nsn16n51y_.js",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 9718,
+        "sha256": "cb46e4e2995e195dcb9656ce91af6d0666c4ca2115415749c3c0c7b73e5d0faf",
+        "local": null
+      },
+      {
+        "path": "/assets/chords/a-minor-notes-inversions.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 47429,
+        "sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1",
+        "local": {
+          "bytes": 47429,
+          "sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/assets/guides/piano-starter-and-reading.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 58564,
+        "sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2",
+        "local": {
+          "bytes": 58564,
+          "sha256": "69c46e4520b9ea63f03755fb7d2a68b29b843664fe09abc628f7e35af05deac2",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/assets/blank-piano-staff-a4.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 45738,
+        "sha256": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf",
+        "local": {
+          "bytes": 45738,
+          "sha256": "af0b46df0bf7d76c59dacaaca44d45c352717eb12c92233c6f146b7f2fcf48cf",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/assets/blank-piano-staff-letter.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 45614,
+        "sha256": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa",
+        "local": {
+          "bytes": 45614,
+          "sha256": "64cd6d60ecbfaeda201b36d607033e582b90a4b95e29acdbf529b7cbb883c6fa",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/assets/blank-piano-staff-preview.svg",
+        "status": 200,
+        "content_type": "image/svg+xml",
+        "bytes": 17018,
+        "sha256": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec",
+        "local": {
+          "bytes": 17018,
+          "sha256": "5c9d4105614dc791d8dca3c3bb931b464c41b46a2ced9020341feeea4ea235ec",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/assets/chord-a-major.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 44640,
+        "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a",
+        "local": {
+          "bytes": 44640,
+          "sha256": "7b3ee8919346ca29de6a7bcfd614e02b3e6a982f8ea216341c1fc3c3fcfcc84a",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/assets/chord-c-major.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 44576,
+        "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662",
+        "local": {
+          "bytes": 44576,
+          "sha256": "fd534ca98691245b6b98a7a3ddc2e8d8574ca4fd419271cbde841e201cc7b662",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 61190,
+        "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16",
+        "local": {
+          "bytes": 61190,
+          "sha256": "3db28882c03e80f45b11efa3987f215ff4c98b422d26bc863d454633b55b1c16",
+          "matches_live": true
+        }
+      },
+      {
+        "path": "/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 29759,
+        "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf",
+        "local": {
+          "bytes": 29759,
+          "sha256": "bdae2c20e0b2dd206843f970c3eab499dc5df9a1eb4f6c52878d582cc82601bf",
+          "matches_live": true
+        }
+      }
+    ],
+    "home_html_markers": {
+      "title_present": true,
+      "canonical_present": false,
+      "index_follow_present": true
+    },
+    "tls": {
+      "authorized": true,
+      "authorization_error": null,
+      "protocol": "TLSv1.3",
+      "subject": {
+        "CN": "pianogrid.com"
+      },
+      "issuer": {
+        "C": "US",
+        "O": "Let's Encrypt",
+        "CN": "YR1"
+      },
+      "valid_from": "Sep 10 08:51:37 2026 GMT",
+      "valid_to": "Dec  9 08:51:36 2026 GMT",
+      "fingerprint256": "6B:92:86:3E:2C:79:89:10:4E:CF:A7:14:A0:17:04:E0:69:0B:C4:CF:CD:4C:8C:EC:3C:73:78:19:03:A5:D7:4B"
+    }
+  },
+  "result": {
+    "passed": true,
+    "failures": [],
+    "counts": {
+      "authorized": 17,
+      "unauthorized": 110,
+      "assets": 36
+    }
+  }
+}

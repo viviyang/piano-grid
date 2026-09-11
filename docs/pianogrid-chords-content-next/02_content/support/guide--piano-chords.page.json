@@ -1,0 +1,259 @@
+{
+  "url": "/guide/piano-chords",
+  "title": "How to Play Piano Chords: Notes, Hands & First Changes",
+  "description": "Start with C, Am, F and G. Learn what chord symbols mean, separate finger numbers from note names, and compare a first C-to-Am change.",
+  "user_task": "Learn the actions behind a chord chart.",
+  "questions": [
+    "Do I always play chords with my right hand?",
+    "Is Am/C the same as playing only C?",
+    "Can I play all four starter chords with one fixed fingering?"
+  ],
+  "blocks": [
+    {
+      "heading": "Build C major",
+      "body": "C–E–G is a C major triad. From C, E is four semitones higher and G is seven semitones higher. Find the three keys, play each once, then sound them together. Yamaha gives right-hand 1–3–5 as the usual root-position fingering for this example.",
+      "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+      "source_ids": [
+        "E-CHORD",
+        "E-TRIADS"
+      ]
+    },
+    {
+      "heading": "Change the middle note",
+      "body": "Compare C–E–G with C–E♭–G. Lowering E by one semitone gives C minor. Compare the keyboard shapes and sound; the black key is E-flat in this chord’s spelling.",
+      "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+      "source_ids": [
+        "E-TRIADS"
+      ]
+    },
+    {
+      "heading": "Practise a connection",
+      "body": "Original exercise: play C4–E4–G4 for four counts, then C4–E4–A4 for four counts, and return. The second group is A minor in first inversion. C4 and E4 stay in place while G4 changes to A4. Plan the movement before counting in; use the chord chart to inspect each voicing. Fingering for this transition is not prescribed.",
+      "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+      "source_ids": [
+        "E-TRIADS"
+      ]
+    }
+  ],
+  "data": {
+    "starter_chords": [
+      {
+        "name": "C major",
+        "notes": [
+          "C",
+          "E",
+          "G"
+        ]
+      },
+      {
+        "name": "A minor",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ]
+      },
+      {
+        "name": "F major",
+        "notes": [
+          "F",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "name": "G major",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ]
+      }
+    ],
+    "verified_fingering_example": {
+      "hand": "right",
+      "notes": [
+        "C",
+        "E",
+        "G"
+      ],
+      "fingers": [
+        1,
+        3,
+        5
+      ],
+      "scope": "Yamaha usual root-position C major example; no transfer to other shapes",
+      "source_ids": [
+        "E-CHORD"
+      ]
+    },
+    "finger_diagram": null,
+    "transition_voicings": [
+      [
+        "C4",
+        "E4",
+        "G4"
+      ],
+      [
+        "C4",
+        "E4",
+        "A4"
+      ],
+      [
+        "C4",
+        "E4",
+        "G4"
+      ]
+    ],
+    "transition_fingering": null,
+    "reference_url": "/chords",
+    "professional_review": "pending"
+  },
+  "source_ids": [
+    "E-CHORD",
+    "E-TRIADS",
+    "BR-03",
+    "BR-04",
+    "PG-TRIADS",
+    "PG-OMT",
+    "PG-FINGERS",
+    "PG-C-BEGINNER"
+  ],
+  "issues": [
+    {
+      "id": "E-REVIEW-piano-chords",
+      "field": "professional_review",
+      "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+      "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+    },
+    {
+      "id": "NEXT-TEMPLATE-guide-piano-chords",
+      "field": "implementation",
+      "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+      "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P220",
+      "status": "content_and_data_prepared; professional/implementation gates remain",
+      "delivered": "步骤、构成、指法示意及连接练习；链接查图工具 — see named modules and data below.",
+      "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+    },
+    {
+      "source_group_id": "P225",
+      "status": "content_and_data_prepared; professional/implementation gates remain",
+      "delivered": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+      "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+    },
+    {
+      "source_group_id": "P242",
+      "status": "content_and_data_prepared; professional/implementation gates remain",
+      "delivered": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+      "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+    }
+  ],
+  "baseline_page_id": "U117",
+  "batch": "E",
+  "main_keyword": "how to play chords on piano",
+  "keywords": [
+    "how to play chords on piano",
+    "chord structure piano",
+    "piano playing by chords",
+    "piano chord shapes",
+    "basic piano chords",
+    "easy piano chords",
+    "piano keyboard chords for beginners",
+    "piano basic chords",
+    "piano beginner chords",
+    "basic piano chord",
+    "keyboard piano chords beginner",
+    "piano chords chart for beginners",
+    "piano chord transitions"
+  ],
+  "source_groups": [
+    {
+      "id": "P220",
+      "representative": "how to play chords on piano",
+      "section": null,
+      "synonyms": [
+        "piano playing by chords"
+      ],
+      "other_queries": [
+        "chord structure piano",
+        "piano chord shapes"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A311:G311",
+      "delivery_method": "独立页首要任务",
+      "required_output": "步骤、构成、指法示意及连接练习；链接查图工具",
+      "first_release_scope": "按页面准备顺序验收",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P225",
+      "representative": "basic piano chords",
+      "section": "beginner",
+      "synonyms": [
+        "easy piano chords",
+        "piano keyboard chords for beginners",
+        "piano basic chords",
+        "piano beginner chords",
+        "basic piano chord",
+        "keyboard piano chords beginner"
+      ],
+      "other_queries": [
+        "piano chords chart for beginners"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A325:G325",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P242",
+      "representative": "piano chord transitions",
+      "section": "transitions",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A514:G514",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T22",
+  "baseline_priority": "后做",
+  "baseline_purpose": "学会基础和弦与换和弦练习",
+  "final_scope": {
+    "id": "T22",
+    "name": "方法教程",
+    "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+    "user_task": "解决如何学、怎么练或为什么的问题。",
+    "modules": [
+      "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+      "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+      "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+    ],
+    "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+    "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+  },
+  "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+  "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "示例与技巧需专业复核，不以高BPM代替正确动作",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_prepared_distinct_template_required",
+  "metadata": {
+    "title": "How to Play Piano Chords: Notes, Hands & First Changes",
+    "description": "Start with C, Am, F and G. Learn what chord symbols mean, separate finger numbers from note names, and compare a first C-to-Am change.",
+    "canonical_path": "/guide/piano-chords",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

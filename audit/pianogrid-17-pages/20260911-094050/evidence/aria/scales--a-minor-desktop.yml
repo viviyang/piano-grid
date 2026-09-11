@@ -1,0 +1,188 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - navigation "Site sections":
+    - link "Keyboard Notes":
+      - /url: /keyboard-notes
+    - button "Open Keyboard Notes menu"
+    - link "Chords":
+      - /url: /chords
+    - button "Open Chords menu"
+    - link "Scales":
+      - /url: /scales
+    - button "Open Scales menu"
+    - link "Songs":
+      - /url: /songs
+    - button "Open Songs menu"
+    - link "Guide":
+      - /url: /guide
+    - button "Open Guide menu"
+    - link "Tools":
+      - /url: /tools
+    - button "Open Tools menu"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Scales":
+          - /url: /scales
+      - listitem:
+        - link "A minor" [disabled]
+  - 'heading "A Minor Scale on Piano: Natural, Harmonic & Melodic" [level=1]'
+  - paragraph: Find the notes of A minor, compare its three forms and descending patterns, and read source-checked piano fingerings.
+  - region "A scale reference":
+    - text: Starting note
+    - strong: A
+    - text: Key signature
+    - strong: No sharps or flats
+    - text: Range
+    - strong: 1 octave
+    - text: Minor form
+    - combobox "Minor form":
+      - option "Natural minor" [selected]
+      - option "Harmonic minor"
+      - option "Melodic minor (classical exercise)"
+    - text: Hand
+    - combobox "Hand":
+      - option "Right hand" [selected]
+      - option "Left hand"
+    - text: Direction
+    - combobox "Direction":
+      - option "Ascending" [selected]
+      - option "Descending"
+      - option "Up and down"
+    - text: Tempo
+    - combobox "Tempo":
+      - option "40 BPM"
+      - option "60 BPM" [selected]
+      - option "80 BPM"
+    - text: Current scale
+    - heading "A Natural minor" [level=2]
+    - term: Hand
+    - definition: Right hand
+    - term: Range
+    - definition: 1 octave
+    - term: Tempo
+    - definition: 60 BPM
+    - paragraph: A – B – C – D – E – F – G – A
+    - paragraph: "Semitone steps: 2 – 1 – 2 – 2 – 1 – 2 – 2"
+    - heading "Ascending" [level=3]
+    - text: Fingering from the listed sources
+    - region "Ascending notes and fingering":
+      - table:
+        - rowgroup:
+          - row "Notes A4 B4 C5 D5 E5 F5 G5 A5":
+            - rowheader "Notes"
+            - cell "A4"
+            - cell "B4"
+            - cell "C5"
+            - cell "D5"
+            - cell "E5"
+            - cell "F5"
+            - cell "G5"
+            - cell "A5"
+          - row "Fingers 1 2 3 1 2 3 4 5":
+            - rowheader "Fingers"
+            - cell "1"
+            - cell "2"
+            - cell "3"
+            - cell "1"
+            - cell "2"
+            - cell "3"
+            - cell "4"
+            - cell "5"
+    - region "treble staff notes":
+      - 'group "treble clef: A4 to A5"':
+        - img "A4, treble clef": A4
+        - img "B4, treble clef": B4
+        - img "C5, treble clef": C5
+        - img "D5, treble clef": D5
+        - img "E5, treble clef": E5
+        - img "F5, treble clef": F5
+        - img "G5, treble clef": G5
+        - img "A5, treble clef": A5
+    - heading "Keyboard" [level=3]
+    - text: A4 to A5
+    - region "A Natural minor, Right hand, Ascending": A4 A#4 Bb4 B4 C5 C#5 Db5 D5 D#5 Eb5 E5 F5 F#5 Gb5 G5 G#5 Ab5 A5
+    - button "Play scale"
+    - button "Stop" [disabled]
+    - status
+    - region "Sources and checking scope":
+      - heading "Sources and checking scope" [level=3]
+      - list:
+        - listitem:
+          - 'link "Hello Music Theory / Dan Farrant: A Minor Scale: Natural, Harmonic and Melodic"':
+            - /url: https://hellomusictheory.com/learn/a-minor-scale/
+          - strong: "Checked for:"
+          - text: A natural minor note spelling.
+        - listitem:
+          - 'link "Pianoscales.org: Piano Minor Scales"':
+            - /url: https://www.pianoscales.org/minor.html
+          - strong: "Checked for:"
+          - text: A natural minor note spelling and one-octave ascending fingering for both hands.
+    - button "Print current scale"
+    - status
+    - paragraph: Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.
+  - region "Start with A natural minor":
+    - heading "Start with A natural minor" [level=2]
+    - paragraph: A natural minor uses A, B, C, D, E, F, and G. Its key signature has no sharps or flats. C major shares that signature, but A is the starting note and tonal reference here. The all-white-key description applies to natural minor; it does not describe every form of A minor.
+  - region "Listen for the changed ending":
+    - heading "Listen for the changed ending" [level=2]
+    - paragraph: "Harmonic minor replaces G with G#. Classical melodic minor uses F# and G# on the way up, then F and G on the way down. Keep the form label visible when comparing the examples: a descending melodic scale is not simply the ascending note list played backward."
+  - region "Practice the last four notes":
+    - heading "Practice the last four notes" [level=2]
+    - paragraph: Try E-F-G-A first, then E-F-G#-A, then E-F#-G#-A. Say the changed note names before playing each group. Next, start at the upper A and return through G-F-E. Keep this a note-recognition exercise; choose your own slow pace and pause between forms. Finish by naming which version you just played.
+  - region "Connect the scale to chords":
+    - heading "Connect the scale to chords" [level=2]
+    - paragraph: "The natural-minor triads are Am, Bdim, C, Dm, Em, F, and G. Compare Em with E major: E major contains G#, matching the raised seventh in A harmonic minor. Use the existing A minor chord reference for voicing and inversions; this scale page focuses on which notes the chords draw from."
+    - region "A natural minor scale chords":
+      - table "A natural minor scale chords":
+        - caption: A natural minor scale chords
+        - rowgroup:
+          - row "Degree Chord Notes":
+            - columnheader "Degree"
+            - columnheader "Chord"
+            - columnheader "Notes"
+        - rowgroup:
+          - row "i A minor A – C – E":
+            - cell "i"
+            - cell "A minor"
+            - cell "A – C – E"
+          - row "ii° B diminished B – D – F":
+            - cell "ii°"
+            - cell "B diminished"
+            - cell "B – D – F"
+          - row "III C major C – E – G":
+            - cell "III"
+            - cell "C major"
+            - cell "C – E – G"
+          - row "iv D minor D – F – A":
+            - cell "iv"
+            - cell "D minor"
+            - cell "D – F – A"
+          - row "v E minor E – G – B":
+            - cell "v"
+            - cell "E minor"
+            - cell "E – G – B"
+          - row "VI F major F – A – C":
+            - cell "VI"
+            - cell "F major"
+            - cell "F – A – C"
+          - row "VII G major G – B – D":
+            - cell "VII"
+            - cell "G major"
+            - cell "G – B – D"
+  - navigation "Related available references":
+    - link "All piano scales":
+      - /url: /scales
+    - link "A minor chord reference":
+      - /url: /chords/a-minor
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

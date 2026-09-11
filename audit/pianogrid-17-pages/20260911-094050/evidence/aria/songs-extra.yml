@@ -1,0 +1,184 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Songs" [disabled]
+  - 'heading "Piano Songs: Find Your Next Piece" [level=1]'
+  - paragraph: Choose a piece by playing goal, version, level and resource format.
+  - region "Choose a checked edition":
+    - paragraph: Choose by practice goal
+    - heading "Choose a checked edition" [level=2]
+    - paragraph: Start with what you want to practise, then compare the publisher level, available challenge evidence and access route for each exact edition.
+    - text: Search title, artist or edition
+    - searchbox "Search title, artist or edition"
+    - text: Publisher level
+    - combobox "Publisher level":
+      - option "All publisher levels" [selected]
+      - option "Late Intermediate"
+      - option "Easy Piano"
+      - option "Intermediate"
+    - text: Playing goal
+    - combobox "Playing goal":
+      - option "All playing goals" [selected]
+      - option "Reflective"
+      - option "Cheerful or playful"
+      - option "Spacious sound"
+      - option "Intermediate solo"
+      - option "Soundtrack"
+      - option "Sing and play"
+    - button "Clear filters" [disabled]
+    - paragraph:
+      - strong: "6"
+      - text: editions
+    - paragraph: Publisher levels are edition labels. Unverified playing demands are marked clearly.
+    - article:
+      - heading "Gymnopédie No. 1" [level=3]
+      - paragraph: Erik Satie
+      - paragraph:
+        - strong: Specific edition
+        - text: Gymnopédie No. 1 — Hoffman Academy
+      - heading "Choose this for" [level=4]
+      - paragraph: For a reflective programme; the publisher identifies long phrases and wide bass-to-chord spacing.
+      - heading "Main playing challenge" [level=4]
+      - paragraph: Publisher notes long phrases and wide bass-to-chord spacing.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Publisher level
+      - definition: Late Intermediate
+      - term: Access
+      - definition: paid PDF or included in provider Premium membership
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/gymnopedie-no-1
+      - group: Version and use details
+    - article:
+      - heading "The Happy Farmer" [level=3]
+      - paragraph:
+        - strong: Specific edition
+        - text: First 50 Classical Pieces You Should Play on the Piano, HL 00131436
+      - heading "Choose this for" [level=4]
+      - paragraph: A title for a cheerful-programme shortlist; mood is an editorial choice.
+      - heading "Main playing challenge" [level=4]
+      - paragraph: No exact-edition playing challenge has been independently verified.
+      - term: Publisher
+      - definition: Hal Leonard
+      - term: Publisher level
+      - definition: Easy Piano
+      - term: Access
+      - definition: external publisher purchase; select print/digital product and check provider conditions
+      - link "Open publisher resource":
+        - /url: https://www.halleonard.com/product/131436/first-50-classical-pieces-you-should-play-on-the-piano
+      - group: Version and use details
+    - article:
+      - heading "Addams Family Theme" [level=3]
+      - paragraph:
+        - strong: Specific edition
+        - text: The Halloween Songbook — 2nd Edition, HL 00310162
+      - heading "Choose this for" [level=4]
+      - paragraph: A theme-song option for a Halloween programme.
+      - heading "Main playing challenge" [level=4]
+      - paragraph: No exact-edition playing challenge has been independently verified.
+      - term: Publisher
+      - definition: Hal Leonard
+      - term: Publisher level
+      - definition: Easy Piano
+      - term: Access
+      - definition: external publisher purchase; select print/digital product and check provider conditions
+      - link "Open publisher resource":
+        - /url: https://www.halleonard.com/product/310162/the-halloween-songbook-2nd-edition
+      - group: Version and use details
+    - article:
+      - heading "Empire State of Mind" [level=3]
+      - paragraph: · Arranged by Logan Evan Thomas
+      - paragraph:
+        - strong: Specific edition
+        - text: Hip-Hop for Piano Solo — Intermediate Level, HL 00360950
+      - heading "Choose this for" [level=4]
+      - paragraph: A piano-solo option from an explicitly intermediate collection.
+      - heading "Main playing challenge" [level=4]
+      - paragraph: No exact-edition playing challenge has been independently verified.
+      - term: Publisher
+      - definition: Hal Leonard
+      - term: Publisher level
+      - definition: Intermediate
+      - term: Access
+      - definition: external publisher purchase; select print/digital product and check provider conditions
+      - link "Open publisher resource":
+        - /url: https://www.halleonard.com/product/360950/hip-hop-for-piano-solo
+      - group: Version and use details
+    - article:
+      - heading "All of Me" [level=3]
+      - paragraph: John Legend
+      - paragraph:
+        - strong: Specific edition
+        - text: All of Me — Piano Vocal, HL 00126844
+      - heading "Choose this for" [level=4]
+      - paragraph: Use the vocal staff for singing and the chord frames for a guitar collaborator.
+      - heading "Main playing challenge" [level=4]
+      - paragraph: No exact-edition playing challenge has been independently verified.
+      - term: Publisher
+      - definition: Hal Leonard
+      - term: Publisher level
+      - definition: No publisher level listed
+      - term: Access
+      - definition: external publisher purchase; select print/digital product and check provider conditions
+      - link "Open publisher resource":
+        - /url: https://www.halleonard.com/product/126844/all-of-me
+      - group: Version and use details
+    - article:
+      - heading "Sweden" [level=3]
+      - paragraph: Daniel Rosenfeld · C418 / Daniel Rosenfeld
+      - paragraph:
+        - strong: Specific edition
+        - text: Music from Minecraft — Easy Piano Collection, HL 00369016
+      - heading "Choose this for" [level=4]
+      - paragraph: Start with a named Volume Alpha track.
+      - heading "Main playing challenge" [level=4]
+      - paragraph: No exact-edition playing challenge has been independently verified.
+      - term: Publisher
+      - definition: Hal Leonard
+      - term: Publisher level
+      - definition: Easy Piano
+      - term: Access
+      - definition: external publisher purchase; select print/digital product and check provider conditions
+      - link "Open publisher resource":
+        - /url: https://www.halleonard.com/product/369016/music-from-minecraft
+      - group: Version and use details
+  - region "Choose your next version":
+    - heading "Choose your next version" [level=2]
+    - paragraph: Choose a specific arrangement before starting. The cards below offer a reflective piece, a cheerful programme option, a familiar theme, an intermediate solo and an accompaniment resource.
+    - link "Browse easy piano versions":
+      - /url: /songs/easy
+  - region "Sad or reflective":
+    - heading "Sad or reflective" [level=2]
+    - paragraph: Gymnopédie No. 1 is our reflective selection because the publisher describes long phrases and wide bass-to-chord spacing. “Sad” is an editorial listening lens; it is not an objective property of every performance.
+  - region "Happy, cool or fun":
+    - heading "Happy, cool or fun" [level=2]
+    - paragraph: The Happy Farmer is a cheerful-title selection. Addams Family Theme is a theme-song choice for a playful programme. Their appeal depends on your audience and preferences.
+  - region "Beautiful":
+    - heading "Beautiful" [level=2]
+    - paragraph: For a spacious, reflective goal, audition the selected Gymnopédie. Choose the sound you want to work on; this is not a beauty ranking.
+  - region "Intermediate":
+    - heading "Intermediate" [level=2]
+    - paragraph: The Gymnopédie edition is late intermediate and calls attention to long phrases and bass-to-chord spacing. Empire State of Mind is in an explicitly intermediate piano-solo collection; inspect its own sample before comparing the two.
+  - region "Types of piece":
+    - heading "Types of piece" [level=2]
+    - paragraph: The catalogue includes an étude route on the challenging page, a fantasy there, soundtrack tracks such as Sweden, simplified classical excerpts and songs arranged for singing. These labels help you choose a playing task.
+  - region "Sing and play":
+    - heading "Sing and play" [level=2]
+    - paragraph: All of Me has a vocal line and piano part with guitar chord frames. Start there when you need singing support; choose the Easy Songs page for a melody-first solo task.
+  - region "Open the exact edition":
+    - heading "Open the exact edition" [level=2]
+    - paragraph: Each resource names its edition and access route. Publisher difficulty labels describe that arrangement. Use the provider’s preview before purchasing; check the chosen digital format before expecting a printable PDF.
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

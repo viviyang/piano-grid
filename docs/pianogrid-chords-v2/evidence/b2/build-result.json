@@ -1,0 +1,13 @@
+{
+  "command": "npm run build",
+  "exitCode": 0,
+  "framework": "Next.js 16.3.4",
+  "result": "Compiled successfully; TypeScript passed; 22 static outputs generated.",
+  "verifiedChordRoutes": [
+    "/chords",
+    "/chords/a-minor",
+    "/chords/a-major",
+    "/chords/c-major"
+  ],
+  "rendering": "Static prerendered content"
+}

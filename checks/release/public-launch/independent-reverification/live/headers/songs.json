@@ -1,0 +1,22 @@
+{
+  "url": "/songs",
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "967",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "content-disposition": "inline",
+    "content-encoding": "br",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Thu, 10 Sep 2026 14:15:08 GMT",
+    "etag": "W/\"0021598b8f008566d7d9a959ae12b6b4\"",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "x-matched-path": "/songs",
+    "x-nextjs-prerender": "1",
+    "x-nextjs-stale-time": "300",
+    "x-vercel-cache": "HIT",
+    "x-vercel-id": "sfo1::gzb8r-1789049708082-41f1309af2e4"
+  }
+}

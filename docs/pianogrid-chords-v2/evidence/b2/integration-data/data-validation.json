@@ -1,0 +1,772 @@
+{
+  "executed_at": "2026-09-11T08:50:37.257Z",
+  "passed": 153,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/ master matches F batch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ template",
+      "passed": true,
+      "detail": "T01"
+    },
+    {
+      "name": "/ block count",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "/ metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ stays unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ source map implementation",
+      "passed": true,
+      "detail": "implementation_checked"
+    },
+    {
+      "name": "/ source map review pending",
+      "passed": true,
+      "detail": "independent_review_pending"
+    },
+    {
+      "name": "/tools master matches F batch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools template",
+      "passed": true,
+      "detail": "T02"
+    },
+    {
+      "name": "/tools block count",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "/tools metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools stays unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools source map implementation",
+      "passed": true,
+      "detail": "implementation_checked"
+    },
+    {
+      "name": "/tools source map review pending",
+      "passed": true,
+      "detail": "independent_review_pending"
+    },
+    {
+      "name": "Home task URLs exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home release policy exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home first action exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools lookup URLs exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools printable URLs exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools P113 exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools visibility policy exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf asset mapped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/blank-piano-staff-letter.pdf byte identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/piano-starter-and-reading.pdf asset mapped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/piano-starter-and-reading.pdf byte identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/A-Scales/batch-content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/A-Scales/batch-open-issues.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/A-Scales/batch-page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/A-Scales/batch-source-ledger.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-keyboard-13-keys.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-keyboard-25-keys.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-keyboard-worksheet-a4.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-keyboard-worksheet-letter.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-piano-staff-a4.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-piano-staff-letter.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/blank-piano-staff-preview.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/Bravura-LICENSE.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/c-major-rh-fingers.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-a-flat-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-a-flat-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-a-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-a-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-b-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-b-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-c-flat-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-c-flat-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-c-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-c-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-c-minor.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-c-minor.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-e-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-e-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-g-major.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-g-major.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/chord-progressions-c-e-a.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/music-symbols.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/piano-cheat-sheet.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/piano-hand-position.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/assets/piano-starter-and-reading.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-open-issues.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/B-Keyboard-Notes/batch-source-ledger.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/C-Songs/batch-content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/C-Songs/batch-open-issues.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/C-Songs/batch-page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/C-Songs/batch-source-ledger.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/content-master-index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/D-Sheet-Music/batch-content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/D-Sheet-Music/batch-open-issues.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/D-Sheet-Music/batch-page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/D-Sheet-Music/batch-source-ledger.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-open-issues.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/E-Guide-Reading-Practice/batch-source-ledger.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/F-Homepage/batch-content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/F-Homepage/batch-open-issues.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/F-Homepage/batch-page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/F-Homepage/batch-source-ledger.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/page-content.master.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/Piano_全站统一规划_最终版.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-flat-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--first.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--second.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor-notes-inversions.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/b-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/c-flat-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/c-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/c-minor--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/e-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/g-major--root.svg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/preserved-chords/page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/source-ledger.master.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/unresolved-issues.master.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/content/site-master/url-plan.final.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/assets/a-minor-notes-inversions.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/chords/a-minor/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/content-adaptations.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/design.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/inputs/content-pack.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/inputs/page-content.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/inputs/Piano_Final_Build_Prompt.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/inputs/url-plan.final(1).json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-1024-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-1440-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-1440.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-320-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-320.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-360-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-360.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-390-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-390.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-768-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/final-768.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/pdf-all-positions.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/print-first.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/print-root.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/print-second.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/state-audio-error.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/state-audio-loading.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/state-audio-unavailable.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/state-hover.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/state-playing.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/state-selected-focus.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/previews/text-scale-200.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/requirements-dev.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/app.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/browser_config.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/build.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/page-content.extract.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/pdf-layout.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/render.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/styles.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/piano-final/source/verify.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/reference/final-1440-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/reference/final-390-top.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/reference/final-a-minor.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/reference/final-prototype.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/reference/original-design-notes.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/design/reference/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/product/Piano_全站规划附表.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/product/Piano_全站统一规划_最终版.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/product/Piano_URL规划说明.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/product/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Protected source unchanged: docs/product/url-plan.final.json",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

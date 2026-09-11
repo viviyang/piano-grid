@@ -1,0 +1,77 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Guide" [disabled]
+  - heading "How to Play Piano for Beginners" [level=1]
+  - paragraph: Find a note, read a short pattern and choose your next practice task.
+  - region "Find three keys, then play four counts":
+    - paragraph: Start here · about 3 minutes
+    - heading "Find three keys, then play four counts" [level=2]
+    - paragraph: Locate middle C and try one complete bar before choosing another reading task.
+    - img "C4 for 1 count, D4 for 1 count, E4 for 2 counts":
+      - strong: C4
+      - text: count 1
+      - strong: D4
+      - text: count 2
+      - strong: E4
+      - text: counts 3–4
+  - region "C4, D4 and E4 on the piano keyboard": C4 C#4 Db4 D4 D#4 Eb4 E4
+  - list "Beginner learning path":
+    - listitem:
+      - text: "01"
+      - strong: Locate C4 D4 E4
+      - link "Open this step":
+        - /url: /keyboard-notes/chart
+    - listitem:
+      - text: "02"
+      - strong: Read those notes
+      - link "Open this step":
+        - /url: /guide/read-sheet-music
+    - listitem:
+      - text: "03"
+      - strong: Clap four counts
+      - text: Planned guide
+    - listitem:
+      - text: "04"
+      - strong: Learn a short phrase
+      - text: Planned guide
+  - region "Start with three keys":
+    - heading "Start with three keys" [level=2]
+    - paragraph: "Find a group of two black keys. The white key immediately to its left is C. On an 88-key piano, middle C is C4. Find C4, then the next two white keys to its right: D4 and E4. Use the keyboard chart if your instrument has a different range."
+    - link "Open the keyboard note chart":
+      - /url: /keyboard-notes/chart
+  - region "Try a four-count pattern":
+    - heading "Try a four-count pattern" [level=2]
+    - paragraph: "Original first task: play C4 on count 1, D4 on count 2, then E4 for counts 3–4. Keep saying the counts while the last note lasts. This gives you one bar of our 4/4 example. Start with one hand and choose a comfortable pace."
+    - img "C4 for 1 count, D4 for 1 count, E4 for 2 counts":
+      - strong: C4
+      - text: count 1
+      - strong: D4
+      - text: count 2
+      - strong: E4
+      - text: counts 3–4
+  - region "Choose the next step":
+    - heading "Choose the next step" [level=2]
+    - paragraph: Read the same notes on the staff, then clap a rhythm before learning a short piece. The printable starter pack includes both-clef note examples, two sight-reading lines and two rhythm lines. For chord playing, begin with C–E–G and follow the chord guide.
+    - link "Open the chord guide":
+      - /url: /chords
+  - complementary "Piano Starter and Reading Pack":
+    - paragraph: Original printable · 4 pages
+    - heading "Piano Starter and Reading Pack" [level=2]
+    - paragraph: Both-clef note examples, two short reading lines, two rhythm lines and an answer key.
+    - link "Download the PDF":
+      - /url: /assets/guides/piano-starter-and-reading.pdf
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

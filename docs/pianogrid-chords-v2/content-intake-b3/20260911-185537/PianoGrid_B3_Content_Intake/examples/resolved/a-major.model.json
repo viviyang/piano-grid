@@ -1,0 +1,763 @@
+{
+  "data": {
+    "url": "/chords/a-major",
+    "namespace": "a-major",
+    "toolId": "a-major-result",
+    "rangeLabel": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-a-major.pdf",
+      "label": "Download A major PDF"
+    },
+    "defaultId": "a-major--root",
+    "options": [
+      {
+        "value": "a-major--root",
+        "label": "Root position"
+      },
+      {
+        "value": "a-major--first",
+        "label": "First inversion"
+      },
+      {
+        "value": "a-major--second",
+        "label": "Second inversion"
+      }
+    ],
+    "chord": {
+      "id": "a-major",
+      "slug": "a-major",
+      "name_en": "A major",
+      "symbol": "A",
+      "root_spelling": "A",
+      "quality": "major",
+      "note_spellings": [
+        "A",
+        "C♯",
+        "E"
+      ],
+      "formula_degrees": [
+        "1",
+        "3",
+        "5"
+      ]
+    },
+    "voicings": [
+      {
+        "voicing_id": "a-major--root",
+        "inversion_label": "Root position",
+        "chord_symbol": "A",
+        "bass_spelling": "A4",
+        "notes_low_to_high": [
+          {
+            "display_pitch": "A4",
+            "midi": 69
+          },
+          {
+            "display_pitch": "C♯5",
+            "midi": 73
+          },
+          {
+            "display_pitch": "E5",
+            "midi": 76
+          }
+        ],
+        "diagram": {
+          "keyboard_range_midi": [
+            60,
+            84
+          ],
+          "highlight_midi": [
+            69,
+            73,
+            76
+          ],
+          "alt_text": "A major, Root position: A4, C♯5, E5 from low to high. Marked keys are the notes to play."
+        },
+        "playback": {
+          "together": [
+            {
+              "midi": 69,
+              "frequency_hz": 440,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 73,
+              "frequency_hz": 554.3652619537442,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 76,
+              "frequency_hz": 659.2551138257398,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 69,
+              "frequency_hz": 440,
+              "onset_ms": 0,
+              "duration_ms": 500
+            },
+            {
+              "midi": 73,
+              "frequency_hz": 554.3652619537442,
+              "onset_ms": 600,
+              "duration_ms": 500
+            },
+            {
+              "midi": 76,
+              "frequency_hz": 659.2551138257398,
+              "onset_ms": 1200,
+              "duration_ms": 500
+            }
+          ]
+        },
+        "print_data": {
+          "spelled_pitches": [
+            "A4",
+            "C#5",
+            "E5"
+          ],
+          "highlight_midi": [
+            69,
+            73,
+            76
+          ]
+        }
+      },
+      {
+        "voicing_id": "a-major--first",
+        "inversion_label": "First inversion",
+        "chord_symbol": "A/C♯",
+        "bass_spelling": "C♯4",
+        "notes_low_to_high": [
+          {
+            "display_pitch": "C♯4",
+            "midi": 61
+          },
+          {
+            "display_pitch": "E4",
+            "midi": 64
+          },
+          {
+            "display_pitch": "A4",
+            "midi": 69
+          }
+        ],
+        "diagram": {
+          "keyboard_range_midi": [
+            60,
+            84
+          ],
+          "highlight_midi": [
+            61,
+            64,
+            69
+          ],
+          "alt_text": "A major, First inversion: C♯4, E4, A4 from low to high. Marked keys are the notes to play."
+        },
+        "playback": {
+          "together": [
+            {
+              "midi": 61,
+              "frequency_hz": 277.1826309768721,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 69,
+              "frequency_hz": 440,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 61,
+              "frequency_hz": 277.1826309768721,
+              "onset_ms": 0,
+              "duration_ms": 500
+            },
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 600,
+              "duration_ms": 500
+            },
+            {
+              "midi": 69,
+              "frequency_hz": 440,
+              "onset_ms": 1200,
+              "duration_ms": 500
+            }
+          ]
+        },
+        "print_data": {
+          "spelled_pitches": [
+            "C#4",
+            "E4",
+            "A4"
+          ],
+          "highlight_midi": [
+            61,
+            64,
+            69
+          ]
+        }
+      },
+      {
+        "voicing_id": "a-major--second",
+        "inversion_label": "Second inversion",
+        "chord_symbol": "A/E",
+        "bass_spelling": "E4",
+        "notes_low_to_high": [
+          {
+            "display_pitch": "E4",
+            "midi": 64
+          },
+          {
+            "display_pitch": "A4",
+            "midi": 69
+          },
+          {
+            "display_pitch": "C♯5",
+            "midi": 73
+          }
+        ],
+        "diagram": {
+          "keyboard_range_midi": [
+            60,
+            84
+          ],
+          "highlight_midi": [
+            64,
+            69,
+            73
+          ],
+          "alt_text": "A major, Second inversion: E4, A4, C♯5 from low to high. Marked keys are the notes to play."
+        },
+        "playback": {
+          "together": [
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 69,
+              "frequency_hz": 440,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 73,
+              "frequency_hz": 554.3652619537442,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 0,
+              "duration_ms": 500
+            },
+            {
+              "midi": 69,
+              "frequency_hz": 440,
+              "onset_ms": 600,
+              "duration_ms": 500
+            },
+            {
+              "midi": 73,
+              "frequency_hz": 554.3652619537442,
+              "onset_ms": 1200,
+              "duration_ms": 500
+            }
+          ]
+        },
+        "print_data": {
+          "spelled_pitches": [
+            "E4",
+            "A4",
+            "C#5"
+          ],
+          "highlight_midi": [
+            64,
+            69,
+            73
+          ]
+        }
+      }
+    ],
+    "whitePitchClasses": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11
+    ],
+    "microcopy": {
+      "loading": "Preparing the sound…",
+      "audio_error": "Sound could not start. Try again.",
+      "audio_unavailable": "Sound is unavailable. You can still use the notes and diagram.",
+      "print_error": "The print preview could not open. Download the PDF instead.",
+      "selected_note_summary": "Notes from low to high",
+      "result_count_singular": "{count} chord",
+      "result_count_plural": "{count} chords",
+      "no_results": "No chord in this collection matches both choices. Change the root or chord type.",
+      "playback_note": "Simple reference tone; not a recording of an acoustic piano."
+    },
+    "heading": "A Major Piano Chord",
+    "toolHeading": "Notes and keyboard position",
+    "printDisclaimer": "The marked keys show pitches, not a hand shape or a required fingering."
+  },
+  "blocks": [
+    {
+      "block_id": "a-major-intro",
+      "content": {
+        "heading": "A Major Piano Chord",
+        "paragraphs": [
+          "A major contains A–C#–E. The intervals from the root are a major third and a perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "a-major-result",
+      "content": {
+        "heading": "Notes and keyboard position",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "a-major-notice",
+      "content": {
+        "heading": "What to notice",
+        "paragraphs": [
+          "Compare with A minor: C-sharp replaces C while A and E stay the same. The sharp is the chord’s third, so calling it D-flat would hide the stacked-third spelling."
+        ],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "url": "/chords/a-minor",
+            "label": "Compare with A minor",
+            "published": true
+          }
+        ]
+      }
+    },
+    {
+      "block_id": "a-major-inversions",
+      "content": {
+        "heading": "Compare three positions",
+        "paragraphs": [
+          "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings."
+        ],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Position",
+            "Symbol",
+            "Notes, low to high",
+            "Bass"
+          ],
+          "rows": [
+            [
+              "Root position",
+              "A",
+              "A4–C♯5–E5",
+              "A4"
+            ],
+            [
+              "First inversion",
+              "A/C♯",
+              "C♯4–E4–A4",
+              "C♯4"
+            ],
+            [
+              "Second inversion",
+              "A/E",
+              "E4–A4–C♯5",
+              "E4"
+            ]
+          ]
+        },
+        "links": []
+      }
+    },
+    {
+      "block_id": "a-major-fingering-example",
+      "content": {
+        "heading": "Root-position fingering examples",
+        "paragraphs": [
+          "These are separate one-hand starting examples for the root-position voicing. Change to an inversion and the finger numbers are intentionally withheld."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "a-major-reference",
+      "content": {
+        "heading": "Chord reference",
+        "paragraphs": [
+          "Common names: A, A major, Amaj.",
+          "Intervals from the root: perfect unison, major third, perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "practice",
+      "content": {
+        "heading": "Build A on the keyboard",
+        "paragraphs": [
+          "Select the three pitch classes that make A major, then check your answer.",
+          "This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "a-major-print",
+      "content": {
+        "heading": "Print this chord reference",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "a-major-related",
+      "content": {
+        "heading": "Related references",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "url": "/chords",
+            "label": "Piano chord chart",
+            "published": true
+          }
+        ]
+      }
+    }
+  ],
+  "byId": {
+    "a-major-intro": {
+      "block_id": "a-major-intro",
+      "content": {
+        "heading": "A Major Piano Chord",
+        "paragraphs": [
+          "A major contains A–C#–E. The intervals from the root are a major third and a perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "a-major-result": {
+      "block_id": "a-major-result",
+      "content": {
+        "heading": "Notes and keyboard position",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "a-major-notice": {
+      "block_id": "a-major-notice",
+      "content": {
+        "heading": "What to notice",
+        "paragraphs": [
+          "Compare with A minor: C-sharp replaces C while A and E stay the same. The sharp is the chord’s third, so calling it D-flat would hide the stacked-third spelling."
+        ],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "url": "/chords/a-minor",
+            "label": "Compare with A minor",
+            "published": true
+          }
+        ]
+      }
+    },
+    "a-major-inversions": {
+      "block_id": "a-major-inversions",
+      "content": {
+        "heading": "Compare three positions",
+        "paragraphs": [
+          "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings."
+        ],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Position",
+            "Symbol",
+            "Notes, low to high",
+            "Bass"
+          ],
+          "rows": [
+            [
+              "Root position",
+              "A",
+              "A4–C♯5–E5",
+              "A4"
+            ],
+            [
+              "First inversion",
+              "A/C♯",
+              "C♯4–E4–A4",
+              "C♯4"
+            ],
+            [
+              "Second inversion",
+              "A/E",
+              "E4–A4–C♯5",
+              "E4"
+            ]
+          ]
+        },
+        "links": []
+      }
+    },
+    "a-major-fingering-example": {
+      "block_id": "a-major-fingering-example",
+      "content": {
+        "heading": "Root-position fingering examples",
+        "paragraphs": [
+          "These are separate one-hand starting examples for the root-position voicing. Change to an inversion and the finger numbers are intentionally withheld."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "a-major-reference": {
+      "block_id": "a-major-reference",
+      "content": {
+        "heading": "Chord reference",
+        "paragraphs": [
+          "Common names: A, A major, Amaj.",
+          "Intervals from the root: perfect unison, major third, perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "practice": {
+      "block_id": "practice",
+      "content": {
+        "heading": "Build A on the keyboard",
+        "paragraphs": [
+          "Select the three pitch classes that make A major, then check your answer.",
+          "This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "a-major-print": {
+      "block_id": "a-major-print",
+      "content": {
+        "heading": "Print this chord reference",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "a-major-related": {
+      "block_id": "a-major-related",
+      "content": {
+        "heading": "Related references",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "url": "/chords",
+            "label": "Piano chord chart",
+            "published": true
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "title": "A Major Piano Chord: Notes, Inversions & Keyboard Diagrams",
+    "description": "Find the A major piano chord notes A, C-sharp and E. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.",
+    "canonical_path": "/chords/a-major",
+    "language": "en-US"
+  },
+  "answer": "A major contains A–C#–E. The intervals from the root are a major third and a perfect fifth.",
+  "introduction": [],
+  "fingeringExamples": [
+    {
+      "id": "a-major--root--right",
+      "voicingId": "a-major--root",
+      "hand": "right",
+      "notes": [
+        "A4",
+        "C♯5",
+        "E5"
+      ],
+      "fingers": [
+        1,
+        3,
+        5
+      ],
+      "scope": "Single-hand right-hand example for this root-position voicing.",
+      "limitation": "A starting example for a close-position triad. Hand size and musical context may call for another fingering; it is not assigned to the inversions.",
+      "sourceIds": [
+        "SKOOVE-A"
+      ],
+      "verificationStatus": "source_verified_with_octave_adaptation"
+    },
+    {
+      "id": "a-major--root--left",
+      "voicingId": "a-major--root",
+      "hand": "left",
+      "notes": [
+        "A4",
+        "C♯5",
+        "E5"
+      ],
+      "fingers": [
+        5,
+        3,
+        1
+      ],
+      "scope": "Single-hand left-hand example for this root-position voicing.",
+      "limitation": "A starting example for a close-position triad. Hand size and musical context may call for another fingering; it is not assigned to the inversions.",
+      "sourceIds": [
+        "SKOOVE-A"
+      ],
+      "verificationStatus": "source_verified_with_octave_adaptation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SKOOVE-A",
+      "title": "A major chord on piano",
+      "publisher": "Skoove; reviewed by Matthew Dickman, composer and music educator",
+      "url": "https://www.skoove.com/en/tools/piano-chords/a-major",
+      "checkedOn": "2026-09-11",
+      "supports": "A–C♯–E root position; right hand 1–3–5 and left hand 5–3–1.",
+      "limitation": "The source specifies chord tones and fingers, but not PianoGrid’s A4–C♯5–E5 octave placement."
+    }
+  ],
+  "practice": {
+    "id": "practice",
+    "heading": "Build A on the keyboard",
+    "prompt": "Select the three pitch classes that make A major, then check your answer.",
+    "scope": "This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed."
+  },
+  "searchSections": [
+    {
+      "id": "a-major-result",
+      "heading": "Notes and keyboard position",
+      "text": "{\"heading\":\"Notes and keyboard position\",\"paragraphs\":[],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "a-major-notice",
+      "heading": "What to notice",
+      "text": "{\"heading\":\"What to notice\",\"paragraphs\":[\"Compare with A minor: C-sharp replaces C while A and E stay the same. The sharp is the chord’s third, so calling it D-flat would hide the stacked-third spelling.\"],\"steps\":[],\"table\":null,\"links\":[{\"url\":\"/chords/a-minor\",\"label\":\"Compare with A minor\",\"published\":true}]}"
+    },
+    {
+      "id": "a-major-inversions",
+      "heading": "Compare three positions",
+      "text": "{\"heading\":\"Compare three positions\",\"paragraphs\":[\"The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.\"],\"steps\":[],\"table\":{\"columns\":[\"Position\",\"Symbol\",\"Notes, low to high\",\"Bass\"],\"rows\":[[\"Root position\",\"A\",\"A4–C♯5–E5\",\"A4\"],[\"First inversion\",\"A/C♯\",\"C♯4–E4–A4\",\"C♯4\"],[\"Second inversion\",\"A/E\",\"E4–A4–C♯5\",\"E4\"]]},\"links\":[]}"
+    },
+    {
+      "id": "a-major-fingering-example",
+      "heading": "Root-position fingering examples",
+      "text": "{\"heading\":\"Root-position fingering examples\",\"paragraphs\":[\"These are separate one-hand starting examples for the root-position voicing. Change to an inversion and the finger numbers are intentionally withheld.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "a-major-reference",
+      "heading": "Chord reference",
+      "text": "{\"heading\":\"Chord reference\",\"paragraphs\":[\"Common names: A, A major, Amaj.\",\"Intervals from the root: perfect unison, major third, perfect fifth.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "practice",
+      "heading": "Build A on the keyboard",
+      "text": "{\"heading\":\"Build A on the keyboard\",\"paragraphs\":[\"Select the three pitch classes that make A major, then check your answer.\",\"This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "a-major-print",
+      "heading": "Print this chord reference",
+      "text": "{\"heading\":\"Print this chord reference\",\"paragraphs\":[],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "a-major-related",
+      "heading": "Related references",
+      "text": "{\"heading\":\"Related references\",\"paragraphs\":[],\"steps\":[],\"table\":null,\"links\":[{\"url\":\"/chords\",\"label\":\"Piano chord chart\",\"published\":true}]}"
+    }
+  ],
+  "tocItems": [
+    {
+      "id": "a-major-result",
+      "label": "Chord & positions"
+    },
+    {
+      "id": "a-major-notice",
+      "label": "What to notice"
+    },
+    {
+      "id": "a-major-inversions",
+      "label": "Compare three positions"
+    },
+    {
+      "id": "a-major-fingering-example",
+      "label": "Root-position fingering examples"
+    },
+    {
+      "id": "a-major-reference",
+      "label": "Chord reference"
+    },
+    {
+      "id": "practice",
+      "label": "Build A on the keyboard"
+    },
+    {
+      "id": "a-major-print",
+      "label": "Print this chord reference"
+    },
+    {
+      "id": "a-major-related",
+      "label": "Related references"
+    }
+  ]
+}

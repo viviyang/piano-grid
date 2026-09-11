@@ -1,0 +1,174 @@
+{
+  "base": "http://127.0.0.1:3105",
+  "passed": 40,
+  "failed": 0,
+  "results": [
+    {
+      "name": "a-minor raw HTTP/static payload",
+      "passed": true
+    },
+    {
+      "name": "a-minor metadata/canonical",
+      "passed": true
+    },
+    {
+      "name": "a-minor server-rendered definition",
+      "passed": true
+    },
+    {
+      "name": "a-minor server-rendered formula/quality",
+      "passed": true
+    },
+    {
+      "name": "a-minor server-rendered keyboard/inversions",
+      "passed": true
+    },
+    {
+      "name": "a-minor server-rendered page content",
+      "passed": true
+    },
+    {
+      "name": "a-minor no-JS fallback",
+      "passed": true
+    },
+    {
+      "name": "a-minor 1440 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-minor 390 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-minor voicing 1 synchronized",
+      "passed": true
+    },
+    {
+      "name": "a-minor voicing 2 synchronized",
+      "passed": true
+    },
+    {
+      "name": "a-minor voicing 3 synchronized",
+      "passed": true
+    },
+    {
+      "name": "a-major raw HTTP/static payload",
+      "passed": true
+    },
+    {
+      "name": "a-major metadata/canonical",
+      "passed": true
+    },
+    {
+      "name": "a-major server-rendered definition",
+      "passed": true
+    },
+    {
+      "name": "a-major server-rendered formula/quality",
+      "passed": true
+    },
+    {
+      "name": "a-major server-rendered keyboard/inversions",
+      "passed": true
+    },
+    {
+      "name": "a-major server-rendered page content",
+      "passed": true
+    },
+    {
+      "name": "a-major no-JS fallback",
+      "passed": true
+    },
+    {
+      "name": "a-major 1440 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major 390 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major voicing 1 synchronized",
+      "passed": true
+    },
+    {
+      "name": "a-major voicing 2 synchronized",
+      "passed": true
+    },
+    {
+      "name": "a-major voicing 3 synchronized",
+      "passed": true
+    },
+    {
+      "name": "c-major raw HTTP/static payload",
+      "passed": true
+    },
+    {
+      "name": "c-major metadata/canonical",
+      "passed": true
+    },
+    {
+      "name": "c-major server-rendered definition",
+      "passed": true
+    },
+    {
+      "name": "c-major server-rendered formula/quality",
+      "passed": true
+    },
+    {
+      "name": "c-major server-rendered keyboard/inversions",
+      "passed": true
+    },
+    {
+      "name": "c-major server-rendered page content",
+      "passed": true
+    },
+    {
+      "name": "c-major no-JS fallback",
+      "passed": true
+    },
+    {
+      "name": "c-major 1440 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major 390 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major voicing 1 synchronized",
+      "passed": true
+    },
+    {
+      "name": "c-major voicing 2 synchronized",
+      "passed": true
+    },
+    {
+      "name": "c-major voicing 3 synchronized",
+      "passed": true
+    },
+    {
+      "name": "Hub has unified 19-item collection",
+      "passed": true
+    },
+    {
+      "name": "Hub A × minor resolves Am with real detail",
+      "passed": true
+    },
+    {
+      "name": "Hub C × major resolves C major with real detail",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "notTested": [
+    "human listening",
+    "real mobile device",
+    "screen reader",
+    "physical printing"
+  ]
+}

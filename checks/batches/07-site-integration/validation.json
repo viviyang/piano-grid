@@ -1,12 +1,967 @@
 {
-  "executed_at": "2026-09-10T07:11:41.241Z",
-  "passed": 0,
-  "failed": 1,
+  "executed_at": "2026-09-11T10:32:01.831Z",
+  "passed": 187,
+  "failed": 2,
   "results": [
+    {
+      "name": "/ HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/ title",
+      "passed": true,
+      "detail": "Piano Chords, Scales & Practice Tools | PianoGrid"
+    },
+    {
+      "name": "/ index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/ canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com"
+    },
+    {
+      "name": "/ six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/tools title",
+      "passed": true,
+      "detail": "Piano Tools and Printables"
+    },
+    {
+      "name": "/tools index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/tools canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/tools"
+    },
+    {
+      "name": "/tools six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords title",
+      "passed": true,
+      "detail": "Piano Chord Chart: Notes, Keyboard Diagrams & PDF"
+    },
+    {
+      "name": "/chords index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords"
+    },
+    {
+      "name": "/chords six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-minor title",
+      "passed": true,
+      "detail": "A Minor Piano Chord (Am): Notes, Inversions & PDF"
+    },
+    {
+      "name": "/chords/a-minor index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-minor canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/a-minor"
+    },
+    {
+      "name": "/chords/a-minor six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-major title",
+      "passed": true,
+      "detail": "A Major Piano Chord: Notes, Inversions & Keyboard Diagrams"
+    },
+    {
+      "name": "/chords/a-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/a-major"
+    },
+    {
+      "name": "/chords/a-major six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/c-major title",
+      "passed": true,
+      "detail": "C Major Piano Chord: Notes, Inversions & Keyboard Diagrams"
+    },
+    {
+      "name": "/chords/c-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-major"
+    },
+    {
+      "name": "/chords/c-major six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes title",
+      "passed": true,
+      "detail": "Piano Keys and Notes: Find Any Key"
+    },
+    {
+      "name": "/keyboard-notes index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/keyboard-notes"
+    },
+    {
+      "name": "/keyboard-notes six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes/labeled title",
+      "passed": true,
+      "detail": "Labeled Piano Keys: 88-Key and 61-Key References"
+    },
+    {
+      "name": "/keyboard-notes/labeled index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes/labeled canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/keyboard-notes/labeled"
+    },
+    {
+      "name": "/keyboard-notes/labeled six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes/chart title",
+      "passed": true,
+      "detail": "Piano Notes Chart: Staff, Note Names & Keyboard"
+    },
+    {
+      "name": "/keyboard-notes/chart index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes/chart canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/keyboard-notes/chart"
+    },
+    {
+      "name": "/keyboard-notes/chart six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales title",
+      "passed": true,
+      "detail": "Piano Scales: Notes, Patterns and Practice References"
+    },
+    {
+      "name": "/scales index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/scales canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/scales"
+    },
+    {
+      "name": "/scales six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales/c-major title",
+      "passed": true,
+      "detail": "C Major Piano Scale: Notes and Fingering"
+    },
+    {
+      "name": "/scales/c-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/scales/c-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/scales/c-major"
+    },
+    {
+      "name": "/scales/c-major six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales/a-minor title",
+      "passed": true,
+      "detail": "A Minor Scale on Piano: Natural, Harmonic & Melodic"
+    },
+    {
+      "name": "/scales/a-minor index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/scales/a-minor canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/scales/a-minor"
+    },
+    {
+      "name": "/scales/a-minor six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/songs title",
+      "passed": true,
+      "detail": "Piano Songs: Find Your Next Piece"
+    },
+    {
+      "name": "/songs index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/songs canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/songs"
+    },
+    {
+      "name": "/songs six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/songs/easy title",
+      "passed": true,
+      "detail": "Easy Piano Songs: Choose a Version That Fits"
+    },
+    {
+      "name": "/songs/easy index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/songs/easy canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/songs/easy"
+    },
+    {
+      "name": "/songs/easy six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/guide title",
+      "passed": true,
+      "detail": "How to Play Piano for Beginners: First Notes and Rhythm"
+    },
+    {
+      "name": "/guide index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/guide canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/guide"
+    },
+    {
+      "name": "/guide six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/guide/read-sheet-music title",
+      "passed": true,
+      "detail": "How to Read Piano Sheet Music"
+    },
+    {
+      "name": "/guide/read-sheet-music index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/guide/read-sheet-music canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/guide/read-sheet-music"
+    },
+    {
+      "name": "/guide/read-sheet-music six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/tools/blank-sheet-music title",
+      "passed": true,
+      "detail": "Blank Piano Sheet Music"
+    },
+    {
+      "name": "/tools/blank-sheet-music index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/tools/blank-sheet-music canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/tools/blank-sheet-music"
+    },
+    {
+      "name": "/tools/blank-sheet-music six section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music ten detail navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home brand is current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home visible brand is PianoGrid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home one H1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home H1 exact",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Home description exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home canonical absolute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home Open Graph exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home one WebSite JSON-LD",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home no visible old brand",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home six released task links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home six task illustrations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home two editorial covers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home 3D piano layers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home closing grand piano illustration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home reference directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home does not expose unreleased sheet music",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home tools link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home East Lake hero loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home block 0 exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home block 1 exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home block 2 exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home C D E first action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Manifest brand and start URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Robots allows indexing and names sitemap",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sitemap uses final domain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home task focus visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home piano arrow-key navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home keyboard chord audio starts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home keyboard chord audio stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home piano motion can resume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home piano motion can pause",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home chord comparison switches to A major",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home mobile menu opens",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home mobile menu closes with Escape",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home to tools flow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools nav current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools three live lookups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools two live printable cards",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools two download links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools hides unavailable link /chords/finder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools hides unavailable link /tools/piano-cheat-sheet",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools hides unavailable link /keyboard-notes/blank",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools hides unavailable link /chord-progressions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools every recommendation matches a live card",
+      "passed": true,
+      "detail": {
+        "recommendedTargets": [
+          "/chords",
+          "/guide",
+          "/keyboard-notes/chart",
+          "/scales",
+          "/tools/blank-sheet-music"
+        ],
+        "cardTargets": [
+          "/chords",
+          "/guide",
+          "/keyboard-notes/chart",
+          "/scales",
+          "/tools/blank-sheet-music"
+        ]
+      }
+    },
+    {
+      "name": "Tools public copy makes no unavailable feature promise",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools blank staff download exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools guide download exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tools to blank sheet flow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Blank sheet PDF flow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center exposes 19 prepared major/minor results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center F major notes and keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord center F major playback starts",
+      "passed": true,
+      "detail": ""
+    },
     {
       "name": "Integration browser runner completed",
       "passed": false,
-      "detail": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\scripts\\check-integration-batch.mjs:13:55"
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-chord-id=f-major]').getByRole('button', { name: 'Stop', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"am-button am-secondary am-stop-btn\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\scripts\\check-integration-batch.mjs:46:939"
     }
   ]
 }

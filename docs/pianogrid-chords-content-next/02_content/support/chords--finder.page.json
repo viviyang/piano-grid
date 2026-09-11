@@ -1,0 +1,364 @@
+{
+  "url": "/chords/finder",
+  "title": "Piano Chord Finder: Identify Chords from Notes",
+  "description": "Enter piano notes to inspect possible chord names. Keep bass notes and enharmonic spelling visible, and see when the supported vocabulary has no match.",
+  "user_task": "Identify candidate chords from notes rather than looking up a known name.",
+  "questions": [
+    "Why are there multiple results?",
+    "Does an empty bass field mean the bass is unknown?",
+    "Does no match mean the notes are wrong?"
+  ],
+  "blocks": [
+    {
+      "heading": "Enter what you actually play",
+      "body": "Select the notes and, if known, the lowest sounding note. Repeated notes in different octaves do not add new pitch classes, but the bass and spacing still matter. E–G–C with E lowest can be C/E: a C major chord in first inversion.",
+      "source_ids": [
+        "F-OMT"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    },
+    {
+      "heading": "Compare candidates",
+      "body": "C, E, G and A can form C6 or Am7. The same keys alone do not establish one harmonic meaning. Read the bass and surrounding chords before choosing a label. The prepared examples display both interpretations where appropriate.",
+      "source_ids": [
+        "F-CHORDS"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    },
+    {
+      "heading": "An incomplete answer can be useful",
+      "body": "C and G contain no third, so this input does not decide between a C major and C minor triad. If a collection falls outside the supported vocabulary, keep the note list visible and show that no supported match has been confirmed.",
+      "source_ids": [
+        "F-OMT"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    }
+  ],
+  "data": {
+    "input_modes": [
+      "pitch names with octaves",
+      "optional bass note"
+    ],
+    "examples": [
+      {
+        "input": [
+          "C4",
+          "E4",
+          "G4"
+        ],
+        "bass": "C4",
+        "candidates": [
+          {
+            "name": "C major",
+            "symbol": "C",
+            "root": "C"
+          }
+        ],
+        "reason": "Major triad in root position.",
+        "input_midi": [
+          60,
+          64,
+          67
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "E3",
+          "G3",
+          "C4"
+        ],
+        "bass": "E3",
+        "candidates": [
+          {
+            "name": "C major, first inversion",
+            "symbol": "C/E",
+            "root": "C"
+          }
+        ],
+        "reason": "E is the bass; the root remains C.",
+        "input_midi": [
+          52,
+          55,
+          60
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "C4",
+          "Eb4",
+          "G4"
+        ],
+        "bass": "C4",
+        "candidates": [
+          {
+            "name": "C minor",
+            "symbol": "Cm",
+            "root": "C"
+          }
+        ],
+        "reason": "The minor third is E-flat.",
+        "input_midi": [
+          60,
+          63,
+          67
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "C4",
+          "E4",
+          "G4",
+          "A4"
+        ],
+        "bass": "C4",
+        "candidates": [
+          {
+            "name": "C major sixth",
+            "symbol": "C6",
+            "root": "C"
+          },
+          {
+            "name": "A minor seventh over C",
+            "symbol": "Am7/C",
+            "root": "A"
+          }
+        ],
+        "reason": "Exact pitches imply C4 as bass. Pitch classes support C6 or Am7, but the alternate bass-aware symbol is Am7/C.",
+        "input_midi": [
+          60,
+          64,
+          67,
+          69
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "A2",
+          "C4",
+          "E4",
+          "G4"
+        ],
+        "bass": "A2",
+        "candidates": [
+          {
+            "name": "A minor seventh",
+            "symbol": "Am7",
+            "root": "A"
+          },
+          {
+            "name": "C major sixth over A",
+            "symbol": "C6/A",
+            "root": "C"
+          }
+        ],
+        "reason": "A bass favours Am7 in many contexts, but context is not supplied.",
+        "input_midi": [
+          45,
+          60,
+          64,
+          67
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "C4",
+          "G4"
+        ],
+        "bass": "C4",
+        "candidates": [],
+        "reason": "An open fifth has no third; major/minor triad quality cannot be determined.",
+        "input_midi": [
+          60,
+          67
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "C4",
+          "C5",
+          "E5",
+          "G5"
+        ],
+        "bass": "C4",
+        "candidates": [
+          {
+            "name": "C major",
+            "symbol": "C",
+            "root": "C"
+          }
+        ],
+        "reason": "Duplicated C changes spacing, not the distinct chord tones.",
+        "input_midi": [
+          60,
+          72,
+          76,
+          79
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      },
+      {
+        "input": [
+          "C4",
+          "C#4",
+          "D4"
+        ],
+        "bass": "C4",
+        "candidates": [],
+        "reason": "No match in the prepared basic-chord vocabulary; do not invent a unique label.",
+        "input_midi": [
+          60,
+          61,
+          62
+        ],
+        "source_ids": [
+          "F-OMT",
+          "F-CHORDS"
+        ],
+        "evidence_status": "[推断] example evaluated against verified formulas"
+      }
+    ],
+    "normalization": {
+      "deduplicate_pitch_classes_for_matching": true,
+      "retain_original_spelling_and_register": true,
+      "bass_must_be_selected_note": true,
+      "derive_bass_from_lowest_midi_when_octaves_present": true,
+      "bass_override_must_not_contradict_lowest_entered_pitch": true
+    },
+    "result_labels": {
+      "multiple": "Possible chord names",
+      "none": "No supported match confirmed",
+      "incomplete": "More context needed"
+    },
+    "runtime_engine": null,
+    "professional_review": "pending"
+  },
+  "source_ids": [
+    "F-OMT",
+    "F-CHORDS",
+    "PG-TRIADS",
+    "PG-OMT",
+    "PG-CHORD-VOCAB",
+    "PG-ASPN"
+  ],
+  "issues": [
+    {
+      "id": "F-FINDER-ENGINE",
+      "field": "classification scope",
+      "reason": "Verified examples are prepared; a general recognition engine and exhaustive vocabulary are not implemented or validated.",
+      "needed_to_resolve": "Implement only reviewed vocabulary, reproduce these examples and show unsupported/ambiguous states."
+    },
+    {
+      "id": "NEXT-TEMPLATE-chords-finder",
+      "field": "implementation",
+      "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+      "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P153",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "选择音符；列出可能命名、低音与拼写说明 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    }
+  ],
+  "baseline_page_id": "U086",
+  "batch": "F",
+  "main_keyword": "chord finder piano",
+  "keywords": [
+    "chord finder piano",
+    "chord namer piano",
+    "piano chord namer",
+    "what chord is this piano",
+    "name chord piano",
+    "naming chords piano"
+  ],
+  "source_groups": [
+    {
+      "id": "P153",
+      "representative": "chord finder piano",
+      "section": null,
+      "synonyms": [
+        "chord namer piano",
+        "piano chord namer",
+        "what chord is this piano",
+        "name chord piano"
+      ],
+      "other_queries": [
+        "naming chords piano"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A327:G327",
+      "delivery_method": "独立页首要任务",
+      "required_output": "选择音符；列出可能命名、低音与拼写说明",
+      "first_release_scope": "按页面准备顺序验收",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T09",
+  "baseline_priority": "后做",
+  "baseline_purpose": "输入或点选音符，判断可能的和弦名称",
+  "final_scope": {
+    "id": "T09",
+    "name": "反向和弦查找",
+    "confirmation_status": "本版统一规划建议；后做",
+    "user_task": "通过音符或按键输入，查看可能的和弦名称。",
+    "modules": [
+      "选择音符与需要的低音条件。",
+      "展示可能命名和关键区别，而不是永远输出唯一答案。",
+      "解释输入与普通名称查图的区别，连接已有和弦页。"
+    ],
+    "boundary": "不包含麦克风识别；不因和弦中心已确认就自动加入首版。",
+    "acceptance": "已审核样例能复现；模糊组合显示多种解释或未确定，不编造结果。"
+  },
+  "required_delivery": "选择音符与需要的低音条件。；展示可能命名和关键区别，而不是永远输出唯一答案。；解释输入与普通名称查图的区别，连接已有和弦页。",
+  "release_conditions": "已审核样例能复现；模糊组合显示多种解释或未确定，不编造结果。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "同一音集可能有多种命名；解释不确定性；不扩成麦克风识别或MIDI评分",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_prepared_distinct_template_required",
+  "metadata": {
+    "title": "Piano Chord Finder: Identify Chords from Notes",
+    "description": "Enter piano notes to inspect possible chord names. Keep bass notes and enharmonic spelling visible, and see when the supported vocabulary has no match.",
+    "canonical_path": "/chords/finder",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

@@ -1,0 +1,131 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Guide":
+          - /url: /guide
+      - listitem:
+        - link "Read sheet music" [disabled]
+  - heading "How to Read Piano Sheet Music" [level=1]
+  - paragraph: Connect the clef, staff position, key and duration before you play.
+  - navigation "On this page":
+    - text: On this page
+    - link "Read in a useful order":
+      - /url: "#reading-order"
+    - link "Use anchors, then count steps":
+      - /url: "#anchors"
+    - link "FACE has a specific job":
+      - /url: "#face"
+    - link "Check yourself":
+      - /url: "#check-yourself"
+  - region "Read in a useful order":
+    - heading "Read in a useful order" [level=2]
+    - paragraph: Identify the clef first. Read the key signature and any accidental beside the note, then locate the note on a line or space. Finally read its duration. A higher position on a staff means a higher written note; alternating lines and spaces move through successive letter names.
+    - list:
+      - listitem: Clef
+      - listitem: Key signature and accidentals
+      - listitem: Line or space
+      - listitem: Duration
+  - region "Use anchors, then count steps":
+    - heading "Use anchors, then count steps" [level=2]
+    - paragraph: In treble clef, the second line from the bottom is G4. In bass clef, the fourth line is F3. Middle C, C4, is on the first ledger line below treble or above bass. These two written positions represent the same piano key.
+    - heading "Treble anchors" [level=3]
+    - region "treble staff notes":
+      - 'group "treble clef: E4 to A3"':
+        - img "E4, treble clef": E4
+        - img "G4, treble clef": G4
+        - img "C4, treble clef": C4
+        - img "A3, treble clef": A3
+    - term: E4
+    - definition: bottom line
+    - term: G4
+    - definition: second line
+    - term: C4
+    - definition: first ledger line below
+    - term: A3
+    - definition: second ledger line below
+    - heading "Bass anchors" [level=3]
+    - region "bass staff notes":
+      - 'group "bass clef: G2 to C2"':
+        - img "G2, bass clef": G2
+        - img "F3, bass clef": F3
+        - img "C4, bass clef": C4
+        - img "E2, bass clef": E2
+        - img "C2, bass clef": C2
+    - term: G2
+    - definition: bottom line
+    - term: F3
+    - definition: fourth line
+    - term: C4
+    - definition: first ledger line above
+    - term: E2
+    - definition: first ledger line below
+    - term: C2
+    - definition: second ledger line below
+  - region "FACE has a specific job":
+    - heading "FACE has a specific job" [level=2]
+    - paragraph: "F4–A4–C5–E5 names the four spaces inside the treble staff, from bottom to top. It does not name the bass spaces. For “two lines below,” first identify the clef: the second ledger line below treble is A3; below bass it is C2."
+    - text: Treble spaces
+    - strong: F4 · A4 · C5 · E5
+    - paragraph: FACE applies here.
+    - text: Bass spaces
+    - strong: A2 · C3 · E3 · G3
+    - paragraph: A separate set of notes.
+  - region "Check yourself":
+    - heading "Check yourself" [level=2]
+    - paragraph: "Name the first ledger-line note below treble, then the next two staff positions upward. Answer: C4, D4, E4. Find them on the keyboard and play the first bar of Steps around middle C. The printable shows both the notation and an answer key."
+    - paragraph: treble clef · 4/4 · no sharps or flats
+    - heading "Steps around middle C" [level=3]
+    - text: introductory editorial exercise Bar 1
+    - img "C4 for 1 count, D4 for 1 count, E4 for 2 counts":
+      - strong: C4
+      - text: count 1
+      - strong: D4
+      - text: count 2
+      - strong: E4
+      - text: counts 3–4
+    - text: Bar 2
+    - img "E4 for 1 count, D4 for 1 count, C4 for 2 counts":
+      - strong: E4
+      - text: count 1
+      - strong: D4
+      - text: count 2
+      - strong: C4
+      - text: counts 3–4
+    - text: Bar 3
+    - img "D4 for 1 count, E4 for 1 count, F4 for 1 count, D4 for 1 count":
+      - strong: D4
+      - text: count 1
+      - strong: E4
+      - text: count 2
+      - strong: F4
+      - text: count 3
+      - strong: D4
+      - text: count 4
+    - text: Bar 4
+    - img "C4 for 4 counts":
+      - strong: C4
+      - text: counts 1–4
+    - group: Reveal the pitch answer
+    - paragraph: One staff, C4–F4, steps and one third, quarter/half/whole notes; no simultaneous hands. Fingering is not supplied.
+    - link "Find C4–F4 on the keyboard chart":
+      - /url: /keyboard-notes/chart
+  - complementary "Piano Starter and Reading Pack":
+    - paragraph: Original printable · 4 pages
+    - heading "Piano Starter and Reading Pack" [level=2]
+    - paragraph: Both-clef note examples, two short reading lines, two rhythm lines and an answer key.
+    - link "Download the PDF":
+      - /url: /assets/guides/piano-starter-and-reading.pdf
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

@@ -1,0 +1,70 @@
+{
+  "executed_at": "2026-09-11T04:00:12.727Z",
+  "base": "https://pianogrid.com",
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "name": "sets playback audio session",
+      "passed": true,
+      "detail": [
+        "session:playback",
+        "context:new",
+        "oscillator:start",
+        "oscillator:stop",
+        "context:resume"
+      ]
+    },
+    {
+      "name": "starts source inside activation before resume",
+      "passed": true,
+      "detail": [
+        "session:playback",
+        "context:new",
+        "oscillator:start",
+        "oscillator:stop",
+        "context:resume"
+      ]
+    },
+    {
+      "name": "mobile key reaches playing state",
+      "passed": true
+    },
+    {
+      "name": "discards context after backgrounding",
+      "passed": true,
+      "detail": [
+        "session:playback",
+        "context:new",
+        "oscillator:start",
+        "oscillator:stop",
+        "context:resume",
+        "oscillator:stop",
+        "context:close",
+        "session:playback",
+        "context:new",
+        "oscillator:start",
+        "oscillator:stop",
+        "context:resume"
+      ]
+    },
+    {
+      "name": "creates a fresh context on the next tap",
+      "passed": true,
+      "detail": [
+        "session:playback",
+        "context:new",
+        "oscillator:start",
+        "oscillator:stop",
+        "context:resume",
+        "oscillator:stop",
+        "context:close",
+        "session:playback",
+        "context:new",
+        "oscillator:start",
+        "oscillator:stop",
+        "context:resume"
+      ]
+    }
+  ]
+}

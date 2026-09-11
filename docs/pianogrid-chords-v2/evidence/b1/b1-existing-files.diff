@@ -1,0 +1,179 @@
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/scripts/check-a-minor.mjs b/scripts/check-a-minor.mjs
+index 13d1deb..1335873 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/scripts/check-a-minor.mjs
++++ b/scripts/check-a-minor.mjs
+@@ -45,7 +45,14 @@ try{
+   check('No full ledger/base64 delivered',!html.includes('data:application/pdf;base64')&&!html.includes('source_task_mapping')&&!html.includes('retained_keywords'));
+   const rendered=await page.locator('main').textContent();
+   for(const b of content.blocks){
+-    if(b.block_id==='am-next'){check('am-next hidden only because targets unpublished',b.content.links.every(l=>!l.published)&&await page.locator('[data-block-id="am-next"]').count()===0);continue;}
++    if(b.block_id==='am-next'){
++      // B1 restores the three existing destinations; historical JSON publication flags stay intact.
++      const expected=['/chords','/chords/a-major','/scales/a-minor'];
++      check('am-next restores the three published references',equal(await page.locator('#am-next a').evaluateAll(links=>links.map(a=>a.getAttribute('href'))),expected));
++      check('am-next preserves original link labels',equal(await page.locator('#am-next a').allTextContents(),b.content.links.map(l=>l.label)));
++      check('A major comparison has its real detail link',await page.locator('#am-why-minor a[href="/chords/a-major"]').count()===1);
++      continue;
++    }
+     check(`Block rendered ${b.block_id}`,await page.locator(`[data-block-id="${b.block_id}"]`).count()>0);
+     for(const [i,text] of [...b.content.paragraphs,...b.content.steps].entries()){
+       const expected=b.block_id==='am-intro'?text.replace('The example below','The root-position example'):text;
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/scripts/check-foundation.mjs b/scripts/check-foundation.mjs
+index 85b0907..936eae4 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/scripts/check-foundation.mjs
++++ b/scripts/check-foundation.mjs
+@@ -26,7 +26,7 @@ try {
+   const globals = await read('src/app/globals.css');
+   const tokens = await read('src/styles/tokens.css');
+   const foundation = await read('src/styles/foundation.css');
+-  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
++  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/chords/page-toc.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
+   const util = await read('src/lib/utils.ts');
+   const breadcrumb = await read('src/components/ui/breadcrumb.tsx');
+   const siteBrand = await read('src/components/ui/site-brand.tsx');
+@@ -100,8 +100,8 @@ try {
+   check('No global animation dependency', !Object.keys({...pkg.dependencies,...pkg.devDependencies}).some(n => /framer-motion|^motion$|^gsap$|tw-animate-css/.test(n)));
+   const srcFiles = (await walk(join(root,'src'))).map(p=>relative(root,p).replaceAll('\\','/'));
+   const allowedComponents = ['experience.tsx', 'keyboard.tsx', 'icon.tsx', 'page-search.tsx'].map(p => `src/components/a-minor/${p}`);
+-  allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience'].map(n=>`src/components/chords/${n}.tsx`));
+-  allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css');
++  allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience','page-toc'].map(n=>`src/components/chords/${n}.tsx`));
++  allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css','src/components/chords/page-toc.css');
+   allowedComponents.push(...['pages.tsx','keyboard-diagram.tsx','lookup-experience.tsx','labeled-experience.tsx','chart-experience.tsx','staff-diagram.tsx','tool-controls.tsx','use-note-audio.ts','keyboard-notes.css'].map(n=>`src/components/keyboard-notes/${n}`));
+   allowedComponents.push(...['pages.tsx','center-experience.tsx','detail-experience.tsx','scale-reference.tsx','use-scale-audio.ts','scales.css'].map(n=>`src/components/scales/${n}`));
+   allowedComponents.push(...['pages.tsx','center-experience.tsx','easy-experience.tsx','resource-card.tsx','songs.css'].map(n=>`src/components/songs/${n}`));
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/center-experience.tsx b/src/components/chords/center-experience.tsx
+index e72f65b..8e64d5b 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/center-experience.tsx
++++ b/src/components/chords/center-experience.tsx
+@@ -35,13 +35,13 @@ export function ChordCenterExperience({data,heading,chartIntro,children,searchSe
+  function print(items:CenterItem[]){if(!items.length)return;stop();setPrintError('');snapshot.current=[...items];flushSync(()=>setPrintItems(snapshot.current));try{if(typeof window.print!=='function')throw new Error('Print unavailable');window.print();}catch{snapshot.current=null;setPrintItems(null);setPrintError(data.microcopy.print_error);}}
+  return <PrintContext.Provider value={{ready,hasResults:filtered.length>0,printCurrent:()=>print(current?[current]:[]),printFiltered:()=>print(filtered),pdf:data.pdf}}><div className="am-page ch-center" data-selected-chord={selected||''} data-audio-state={audio.state} data-audio-chord={audioId||''}>
+   <a className="am-skip am-screen" href="#chords-chart">Skip to chord chart</a><SiteHeader search={<PageSearch sections={searchSections} ready={ready} onOpen={stop}/>}/>
+-  <main id="main" className="pr-container am-screen">{heading}<section id="chords-chart" data-block-id="chords-chart" className="ch-chart" tabIndex={-1} aria-labelledby="chart-title"><h2 id="chart-title">Find a chord</h2>
++  <main id="main" className="pr-container am-screen">{heading}<section id="chords-chart" data-block-id="chords-chart" className="ch-chart" tabIndex={-1} aria-labelledby="chart-title"><h2 id="chart-title">Find a chord</h2>{chartIntro}
+   <div className="ch-filters"><FilterChoice id="center-root" label="Root note" value={root} options={data.filters.root_options} ready={ready} onChange={value=>filter(value,quality)}/><FilterChoice id="center-quality" label="Chord type" value={quality} options={data.filters.quality_options} ready={ready} onChange={value=>filter(root,value)}/><button type="button" className="am-button am-secondary" disabled={!ready||(!root&&!quality)} onClick={()=>filter('','')}>Show the full collection</button></div>
+   <div className="ch-results-bar"><p role="status" aria-live="polite">{filtered.length} {filtered.length===1?'chord':'chords'}</p><button type="button" className="am-button am-secondary" disabled={!ready||!filtered.length} onClick={()=>print(filtered)}>Print matching chords</button></div>
+   <p className="ch-audio-note">{data.microcopy.playback_note}</p><div role="status" aria-live="polite" className="ch-feedback">{audio.message}{printError&&<p>{printError}</p>}</div>
+   {!filtered.length&&<p className="ch-empty">{data.microcopy.no_results}</p>}
+   <div className="ch-results" role="group" aria-label="Chord chart results">{filtered.map(item=><section className="ch-result" data-chord-id={item.id} data-current={selected===item.id} key={item.id} aria-labelledby={`center-${item.id}-title`}><div className="ch-result-heading"><h3 id={`center-${item.id}-title`}>{item.name} <span>{item.voicing.chord_symbol}</span></h3><label className="ch-select"><input type="radio" name="center-current" checked={selected===item.id} disabled={!ready} onChange={()=>choose(item.id)}/>Current chord<span className="pr-sr-only">: {item.name}</span></label></div><div className="ch-result-notes"><strong>{item.voicing.notes_low_to_high.map(n=>n.display_pitch).join(' – ')}</strong><span>Bass: {item.voicing.bass_spelling}</span></div><KeyboardViewport voicing={item.voicing} whitePitchClasses={data.whitePitchClasses} ready={ready} rangeLabel="C3–C5" sounding={audioId===item.id?sounding:[]}/><PlaybackControls ready={ready} state={audio.state==='unavailable'?'unavailable':audioId===item.id?audio.state:'idle'} mode={audioId===item.id?audio.mode:null} onPlay={mode=>play(item,mode)} onStop={stop}/><div className="ch-result-actions"><button type="button" className="am-button am-tertiary" disabled={!ready} onClick={()=>{setSelected(item.id);print([item]);}}>Print this chord</button>{item.url&&<a className="am-button am-tertiary" href={item.url}>Notes and inversions<span className="pr-sr-only">: {item.name}</span></a>}</div></section>)}</div>
+-  {chartIntro}<noscript><p>JavaScript is off. All {data.items.length} diagrams, explanations, and the original nine-chord PDF remain available. Filters and sound require JavaScript.</p></noscript></section><div className="am-reading">{children}</div></main><SiteFooter url="/chords"/>
++  <noscript><p>JavaScript is off. All {data.items.length} diagrams, explanations, and the original nine-chord PDF remain available. Filters and sound require JavaScript.</p></noscript></section><div className="am-reading">{children}</div></main><SiteFooter url="/chords"/>
+   <div className="am-print-only" id="center-print-content">{(printItems??(current?[current]:[])).map(item=><article className="ch-print-item" data-voicing-id={item.voicing.voicing_id} key={item.id}><PrintVoicing voicing={item.voicing} whitePitchClasses={data.whitePitchClasses} title={`${item.name} Piano Chord`} tones={item.tones} formula={item.formula} url="/chords" disclaimer="The marked keys show pitches, not a hand shape or a required fingering."/></article>)}{!(printItems??(current?[current]:[])).length&&<p>No matching chord to print.</p>}</div>
+  </div></PrintContext.Provider>;
+ }
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/center-page.tsx b/src/components/chords/center-page.tsx
+index 123e65c..7062cd6 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/center-page.tsx
++++ b/src/components/chords/center-page.tsx
+@@ -1,12 +1,20 @@
+ import type {CenterModel} from '@/lib/chord-content';
+ import {ChordCenterExperience,CenterPrintActions} from './center-experience';
+ import {KeyboardViewport} from './keyboard-viewport';
++import {ChordPageToc} from './page-toc';
+ import '@/app/chords/a-minor/a-minor.css';
+ import './shared.css';
+ import './center.css';
+ export function ChordCenterPage({model}:{model:CenterModel}) {
+  const {blocks,items,filters,microcopy,whitePitchClasses,pdf}=model,byId=Object.fromEntries(blocks.map(b=>[b.block_id,b.content]));
+- const heading=<header key="heading" className="am-page-heading" data-block-id="chords-intro"><h1>{model.title}</h1><p className="ch-intro">{byId['chords-intro'].paragraphs[0]}</p></header>;
++ const heading=<><header key="heading" className="am-page-heading" data-block-id="chords-intro"><h1>{model.title}</h1><p className="ch-intro">{byId['chords-intro'].paragraphs[0]}</p></header><ChordPageToc items={[
++  {id:'chords-chart',label:'Find a chord'},
++  {id:'chords-how-to-read',label:'Read the diagrams'},
++  {id:'chords-major-minor',label:'Major and minor'},
++  {id:'chords-print',label:'Print & PDF'},
++  {id:'chords-questions',label:'Questions'},
++  {id:'chords-next',label:'A minor detail'},
++ ]}/></>;
+  return <ChordCenterExperience data={{items,filters,microcopy,whitePitchClasses,pdf}} heading={heading} chartIntro={<div key="chart-introduction" className="ch-chart-notes"><div data-block-id="chords-intro">{byId['chords-intro'].paragraphs.slice(1).map(p=><p key={p}>{p}</p>)}</div>{byId['chords-chart'].paragraphs.map(p=><p key={p}>{p}</p>)}</div>} searchSections={blocks.filter(b=>b.block_id!=='chords-intro').map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)}))}>
+  {blocks.filter(b=>!['chords-intro','chords-chart'].includes(b.block_id)).map(({block_id:id,content:c})=><section className="am-content-section" key={id} id={id} data-block-id={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}>{c.heading}</h2><div className="am-content-body">{c.paragraphs.map(p=><p key={p}>{p}</p>)}{c.steps.length>0&&<ol className="am-steps">{c.steps.map(s=><li key={s}><span>{s}</span></li>)}</ol>}
+  {id==='chords-major-minor'&&<><div className="am-table-scroll" tabIndex={0} role="region" aria-label="Major and minor comparison"><table className="am-inversion-table"><thead><tr>{c.table!.columns.map(x=><th scope="col" key={x}>{x}</th>)}</tr></thead><tbody>{c.table!.rows.map(row=><tr key={row[0]}>{row.map((x,i)=><td key={i}>{x}</td>)}</tr>)}</tbody></table></div>{model.comparisons.map(pair=><div className="ch-comparison" key={pair.left.id}>{[pair.left,pair.right].map(item=><div key={item.id}><h3>{item.name}</h3><p>{item.voicing.notes_low_to_high.map(n=>n.display_pitch).join(' – ')}</p><KeyboardViewport voicing={item.voicing} whitePitchClasses={whitePitchClasses} ready rangeLabel="C3–C5"/></div>)}</div>)}</>}
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/center.css b/src/components/chords/center.css
+index 01d427c..411092d 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/center.css
++++ b/src/components/chords/center.css
+@@ -25,7 +25,7 @@
+ .ch-result .am-playback-actions{margin-top:1rem}
+ .ch-result-actions{display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+ .ch-empty{padding:1.5rem 0;border-block:1px solid var(--border)}
+-.ch-chart-notes{margin-top:2rem;max-width:var(--pr-container-reading)}.ch-chart-notes p{margin-bottom:1rem}
++.ch-chart-notes{margin-top:1rem;max-width:var(--pr-container-reading)}.ch-chart-notes p{margin-bottom:1rem}
+ .ch-center .am-reading{margin-top:3rem}
+ .ch-center .am-reading{container-type:inline-size;container-name:ch-reading}
+ .ch-center .am-header-inner{container-type:inline-size;container-name:ch-header}
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/detail-page.tsx b/src/components/chords/detail-page.tsx
+index f11dc91..bfd1e68 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/components/chords/detail-page.tsx
++++ b/src/components/chords/detail-page.tsx
+@@ -1,15 +1,26 @@
+ import { getAMinorContent } from '@/lib/a-minor-content';
+ import { AMinorExperience as ChordDetailExperience, InversionRow, PrintActions } from '../a-minor/experience';
++import { ChordPageToc } from './page-toc';
+ import { PageBreadcrumb } from '@/components/ui/breadcrumb';
+ import '@/app/chords/a-minor/a-minor.css';
+ import './shared.css';
+ export function ChordDetailPage({model}:{model:ReturnType<typeof getAMinorContent>}) {
+   const {data,blocks,byId,answer,introduction,searchSections}=model;
+   const prefix=data.namespace;
+-  const heading=<header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, { label: data.chord.name_en }]}/><h1>{data.heading}</h1><p className="am-direct-answer">{answer}</p></header>;
+-  const intro=introduction.length>0&&<section key="introduction" className="am-intro-rest" data-block-id={`${prefix}-intro`} aria-labelledby="root-example-heading"><h2 className="am-eyebrow" id="root-example-heading">Root-position example</h2>{introduction.map(p=><p key={p}>{p}</p>)}</section>;
++  const heading=<><header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, { label: data.chord.name_en }]}/><h1>{data.heading}</h1><p className="am-direct-answer">{answer}</p></header>{prefix==='am'&&<ChordPageToc items={[
++    {id:data.toolId,label:'Chord & positions'},
++    {id:'am-root-example',label:'Root-position example'},
++    {id:'am-find-notes',label:'Find the notes'},
++    {id:'am-inversions',label:'Inversions'},
++    {id:'am-why-minor',label:'Why minor?'},
++    {id:'am-practice',label:'Practice'},
++    {id:'am-print',label:'Print & PDF'},
++    {id:'am-questions',label:'Questions'},
++    {id:'am-next',label:'Next steps'},
++  ]}/>}</>;
++  const intro=introduction.length>0&&<section key="introduction" className="am-intro-rest" id={prefix==='am'?'am-root-example':undefined} tabIndex={prefix==='am'?-1:undefined} data-block-id={`${prefix}-intro`} aria-labelledby="root-example-heading"><h2 className="am-eyebrow" id="root-example-heading">Root-position example</h2>{introduction.map(p=><p key={p}>{p}</p>)}</section>;
+   return <ChordDetailExperience data={data} heading={heading} toolNotes={byId[data.toolId].content.paragraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections}>
+-    {blocks.filter(b=>![`${prefix}-intro`,data.toolId,`${prefix}-next`].includes(b.block_id)).map(({block_id:id,content:c})=><section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}>{c.heading}</h2><div className="am-content-body">
++    {blocks.filter(b=>![`${prefix}-intro`,data.toolId].includes(b.block_id)).map(({block_id:id,content:c})=><section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}>{c.heading}</h2><div className="am-content-body">
+       {c.paragraphs.map(p=><p key={p}>{p}</p>)}
+       {c.steps.length>0&&<ol className="am-steps">{c.steps.map(s=><li key={s}><span>{s}</span></li>)}</ol>}
+       {id===`${prefix}-inversions`&&c.table&&<div className="am-table-scroll" tabIndex={0} role="region" aria-label={`${data.chord.name_en} inversion comparison table`}><table className="am-inversion-table"><caption className="pr-sr-only">{data.chord.name_en}: root position, first inversion, and second inversion</caption><thead><tr>{c.table.columns.map(t=><th scope="col" key={t}>{t}</th>)}</tr></thead><tbody>{c.table.rows.map((row,i)=><InversionRow key={data.options[i].value} voicingId={data.options[i].value} position={data.options[i].label} cells={row}/>)}</tbody></table></div>}
+@@ -17,6 +28,6 @@ export function ChordDetailPage({model}:{model:ReturnType<typeof getAMinorConten
+       {id===`${prefix}-print`&&<PrintActions section/>}
+       {c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}
+     </div></section>)}
+-    {/* am-next retained in source, not rendered: every destination is unpublished. */}
++
+   </ChordDetailExperience>;
+ }
+diff --git a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/lib/a-minor-content.ts b/src/lib/a-minor-content.ts
+index f39d50d..d7ca0f6 100644
+--- a/docs/pianogrid-chords-v2/evidence/b1/source-before/src/lib/a-minor-content.ts
++++ b/src/lib/a-minor-content.ts
+@@ -1,13 +1,19 @@
+ import { readFileSync } from 'node:fs';
+ import { join } from 'node:path';
+ import type { AMData, Block, Voicing, SearchSection } from './a-minor-types';
++import { isPublicRoute } from './site-routes';
+ 
+ // Server-only adapter. Client props contain no whole-site ledger, keywords or base64 PDF.
+ export function getAMinorContent() {
+   const source = JSON.parse(readFileSync(join(process.cwd(), 'docs/content/chords/page-content.json'), 'utf8'));
+   const page = source.pages['/chords/a-minor'];
+-  const blocks = page.blocks as Block[];
++  // Publication comes from the actual route whitelist; the historical source stays intact.
++  const blocks = (page.blocks as Block[]).map(block=>block.block_id==='am-next'
++    ? {...block,content:{...block.content,links:block.content.links.map(link=>({...link,published:isPublicRoute(link.url)}))}}
++    : {...block,content:{...block.content}});
+   const byId = Object.fromEntries(blocks.map(block => [block.block_id, block]));
++  const majorLink=byId['am-next'].content.links.find(link=>link.url==='/chords/a-major'&&link.published);
++  if(majorLink)byId['am-why-minor'].content.links=[...byId['am-why-minor'].content.links,majorLink];
+   const chord = source.shared_data.chords['a-minor'];
+   const voicings: Voicing[] = page.data.voicing_ids.map((id: string) => {
+     const v = source.shared_data.voicings[id];
+@@ -26,7 +32,7 @@ export function getAMinorContent() {
+     voicings, whitePitchClasses:source.shared_data.conventions.white_pitch_classes,
+     microcopy:page.microcopy,heading:intro.heading,toolHeading:byId['am-result'].content.heading,printDisclaimer:byId['am-find-notes'].content.paragraphs[1],
+   };
+-  const searchSections: SearchSection[] = blocks.filter(b=>!['am-next','am-intro'].includes(b.block_id)).map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)}));
++  const searchSections: SearchSection[] = blocks.filter(b=>b.block_id!=='am-intro').map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)}));
+   return { metadata:page.metadata as {title:string;description:string;canonical_path:string}, blocks, byId, data, introduction,
+     answer:intro.paragraphs[0].slice(0,split), searchSections };
+ }

@@ -1,0 +1,423 @@
+{
+  "version": "2026-09-11.1",
+  "basis": "PianoGrid_B3_Content_Intake.zip",
+  "scope": "6 chord detail content records + 5 support page records + existing 4 route/metadata preservation",
+  "default_implementation_routes": [
+    "/chords/g-major",
+    "/chords/c-minor",
+    "/chords/e-major",
+    "/chords/b-major",
+    "/chords/a-flat-major"
+  ],
+  "blocked_detail": "/chords/c-flat-major: root hand-source evidence missing under current strict B3 type",
+  "keyword_rows": 215,
+  "candidate_link_edges": 105,
+  "files": [
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 4673,
+      "sha256": "db576fdc8d72dcf07d4570d2355d2117d4f04baddd65707f3054ae7b1af067f1"
+    },
+    {
+      "path": "01_planning/URL_TDH_关键词说明.md",
+      "bytes": 14386,
+      "sha256": "97c23639bbfb619aad34eb8853975d144644ab0356dcf63518f48c0d4b278784"
+    },
+    {
+      "path": "01_planning/chord-catalogue-scope.json",
+      "bytes": 6667,
+      "sha256": "9ee7118ab4df3564728ded51bd5178d61bb51cc9f4057988ece10d1c323dce27"
+    },
+    {
+      "path": "01_planning/current-four-metadata.keep.json",
+      "bytes": 1402,
+      "sha256": "22c3e8952c23ada67e5403c386126775a81be0e0580ea68623a0163ea66b2de3"
+    },
+    {
+      "path": "01_planning/internal-links.json",
+      "bytes": 70401,
+      "sha256": "1494dca6891e9c4f211b204f5c4c2a1d92db54192d17fa72690001ae454a97ee"
+    },
+    {
+      "path": "01_planning/internal-links.tsv",
+      "bytes": 27923,
+      "sha256": "3779e404d4afbf1d1eb26034a0ccb7d666f48b3cb7fe46f978c341ccfd1f8f18"
+    },
+    {
+      "path": "01_planning/keyword-task-map.json",
+      "bytes": 100981,
+      "sha256": "4bae5a00704a26886c12382c1a6a82f700fe8f467864732032e0916cb302fe7b"
+    },
+    {
+      "path": "01_planning/keyword-task-map.tsv",
+      "bytes": 36015,
+      "sha256": "b731c4cdb9abd3ed6175bcc159aa4f3d6ebd62e6a0f8a584599e935019b2372d"
+    },
+    {
+      "path": "01_planning/url-seo-keywords.master.json",
+      "bytes": 37511,
+      "sha256": "b979072ae238b589bbb11befd8565cf193637a112d24b2351a8c19f02cfbe6ea"
+    },
+    {
+      "path": "01_planning/内链与导航执行规则.md",
+      "bytes": 2547,
+      "sha256": "52da5f0518d08d5777c9dbf2bd36278d1ae38d45234bf939e2ee34f49adbc5ff"
+    },
+    {
+      "path": "02_content/details/a-flat-major.page.json",
+      "bytes": 12079,
+      "sha256": "bbfe321e1a3c3db408bc879ccc6e75c47d91938f016de8c0c1b60100b0b78529"
+    },
+    {
+      "path": "02_content/details/a-flat-major.preview.md",
+      "bytes": 6214,
+      "sha256": "76582abd286a907606aef598f812f58ef6a22327f4722fccb2dfb5078a7a46f8"
+    },
+    {
+      "path": "02_content/details/b-major.page.json",
+      "bytes": 12254,
+      "sha256": "ec0eb6e4c60e8373252e74bb053b1425ecf9ecb7e52a08da4382581a12e98ba5"
+    },
+    {
+      "path": "02_content/details/b-major.preview.md",
+      "bytes": 6302,
+      "sha256": "88d465635198bc02b2c325c51a46866b30bb70a00535b3db7c10e7e39eceab15"
+    },
+    {
+      "path": "02_content/details/c-flat-major.page.json",
+      "bytes": 12297,
+      "sha256": "08a3e64f7fce9e7d865ab5ad58beae4106fd192f907b53a415f43832a06885cc"
+    },
+    {
+      "path": "02_content/details/c-flat-major.preview.md",
+      "bytes": 6223,
+      "sha256": "3378db0b245bd7515b1e8b5b381b639f3ec74f5f425dccf1987f5c815d8d0e20"
+    },
+    {
+      "path": "02_content/details/c-minor.page.json",
+      "bytes": 11795,
+      "sha256": "69b8240f28303ef1b81f5f65520ec0834eeecc81ba7190599d423472d8c2e0eb"
+    },
+    {
+      "path": "02_content/details/c-minor.preview.md",
+      "bytes": 6336,
+      "sha256": "50d2a8a2486a022c838a3770e2fbc1bd762057977fb6dab149c6ca0289e01af5"
+    },
+    {
+      "path": "02_content/details/e-major.page.json",
+      "bytes": 11623,
+      "sha256": "cf3dc9dc1a35e7c072200f8639698ae1af22e5128adbec73e9b9c8ecf92dcf34"
+    },
+    {
+      "path": "02_content/details/e-major.preview.md",
+      "bytes": 6139,
+      "sha256": "0d5b3a5b20121ac363e0541d7d07965fbe3781eda35a9872667bc07659eefee2"
+    },
+    {
+      "path": "02_content/details/g-major.page.json",
+      "bytes": 11840,
+      "sha256": "bc599185b2b373a24afe1c5219e29a1939e6dbd45c5276ae70ecc05011f10789"
+    },
+    {
+      "path": "02_content/details/g-major.preview.md",
+      "bytes": 6379,
+      "sha256": "c83365f544d03813e452f18b43e116f42eaf95c4795ef1c7abb4d30115160056"
+    },
+    {
+      "path": "02_content/details.merge.json",
+      "bytes": 80767,
+      "sha256": "13df750d1e24cc99debbd32256aed85c856f2861a6acee05bbb0b1fb30730d1f"
+    },
+    {
+      "path": "02_content/support/chord-progressions.modules.json",
+      "bytes": 7294,
+      "sha256": "f7c6a2c970c81f32133a4a2992820fa50b3dbd187def9cc16992898cef79639b"
+    },
+    {
+      "path": "02_content/support/chord-progressions.page.json",
+      "bytes": 37276,
+      "sha256": "1730e9c1dfeaa9af15e25730ec50ebf9e5388982d82ae41290d7cc607d0df230"
+    },
+    {
+      "path": "02_content/support/chord-progressions.preview.md",
+      "bytes": 7370,
+      "sha256": "020968a02471d7bfd79a75393614670ef0869fa101f100b84e0a1e7e37ba6ebe"
+    },
+    {
+      "path": "02_content/support/chords--by-key.modules.json",
+      "bytes": 6918,
+      "sha256": "4db90e88b66e3938c1dbc70882b010c17ef31dd89c9b090e22c993a78d886b0f"
+    },
+    {
+      "path": "02_content/support/chords--by-key.page.json",
+      "bytes": 41726,
+      "sha256": "edd669e4eab9033a2764ed51bd0f5d8274170789ae600eb5ae8f9a2aa88e6e6c"
+    },
+    {
+      "path": "02_content/support/chords--by-key.preview.md",
+      "bytes": 7282,
+      "sha256": "cf4550b58f222a00e56810227d643cd025260cf1966f8f3811b1c8a22bde2a48"
+    },
+    {
+      "path": "02_content/support/chords--finder.modules.json",
+      "bytes": 6903,
+      "sha256": "6597ddd49f9a79c913e63a6ee0b4ddba67efec044f39bb9014b86690df50a209"
+    },
+    {
+      "path": "02_content/support/chords--finder.page.json",
+      "bytes": 11543,
+      "sha256": "b55e0cc008365642909038fdfe16e979f109293ca6b4c40f9111da9c88d62bbd"
+    },
+    {
+      "path": "02_content/support/chords--finder.preview.md",
+      "bytes": 4556,
+      "sha256": "02fb02ec5f3d8bf4b4b42cf3fe7a49cfeb3fed08abd4d0dd4843c5ff6fff2ab3"
+    },
+    {
+      "path": "02_content/support/guide--piano-chords.modules.json",
+      "bytes": 7957,
+      "sha256": "99fedb5db642a73d577acce9d8ffc3229f3459e61c5631b8bd01a79ce2961807"
+    },
+    {
+      "path": "02_content/support/guide--piano-chords.page.json",
+      "bytes": 10107,
+      "sha256": "f70a5766e576ceb10382edc81bc57dab0ea0ed67cb74f1b12445b25ff3af60aa"
+    },
+    {
+      "path": "02_content/support/guide--piano-chords.preview.md",
+      "bytes": 5444,
+      "sha256": "d6f8bf0365c2f4e06ff20a62e76a8db670f95151ecb084f46f3f32aae6bf9561"
+    },
+    {
+      "path": "02_content/support/keyboard-notes--finger-numbers.modules.json",
+      "bytes": 6741,
+      "sha256": "48189dc0483a43fc4a689bf32144ae00f62adb967dc291b795760b5148102863"
+    },
+    {
+      "path": "02_content/support/keyboard-notes--finger-numbers.page.json",
+      "bytes": 14811,
+      "sha256": "dc5be2fdff26863aeebaa82655f197ac61068939f3244f71a239c8b4e4ba8189"
+    },
+    {
+      "path": "02_content/support/keyboard-notes--finger-numbers.preview.md",
+      "bytes": 4483,
+      "sha256": "8cd71b5bad64ce0e26f143d31b8a310e2e18609cafb4f75e88a126faa16f2222"
+    },
+    {
+      "path": "02_content/support.merge.json",
+      "bytes": 131146,
+      "sha256": "cb9570ef77dc7f5a68866a55539181e4c5957e8dd7f4ece28bb9a9fc08aafc8c"
+    },
+    {
+      "path": "02_content/support.modules.json",
+      "bytes": 37707,
+      "sha256": "35b693f00e06c31033c7d28ad1a5c5e8e7e1d9e92036dca6c9ba9810b096ac89"
+    },
+    {
+      "path": "03_learning/a-flat-major.learning.json",
+      "bytes": 8006,
+      "sha256": "bd357490dcf945b7405ddc22f0231976bd854c233beb0e5af734b23ea8f1fc0d"
+    },
+    {
+      "path": "03_learning/adapter-bindings.json",
+      "bytes": 5103,
+      "sha256": "a522dbb00acc645de8e928517ca326541660d437711fa9cd80beb945ead3ba6c"
+    },
+    {
+      "path": "03_learning/b-major.learning.json",
+      "bytes": 8025,
+      "sha256": "df76eef109c537f6cd0fa849460e5b46cc789d5532d2d90a3db3c274f25eeb33"
+    },
+    {
+      "path": "03_learning/c-flat-major.learning.json",
+      "bytes": 6729,
+      "sha256": "6053c6116f31e05755e227f7d093603ecea6ed5c543098bf93cdd3fdeb88840e"
+    },
+    {
+      "path": "03_learning/c-minor.learning.json",
+      "bytes": 7996,
+      "sha256": "143e1bb778c593e6390f88023af32b2f78b142fab64c89a225feb7a1e9607638"
+    },
+    {
+      "path": "03_learning/chord-learning.next.ts",
+      "bytes": 38249,
+      "sha256": "c24d999283e671ec5b0f90bda7500fda3aee65bc56e416c5f01e251690ecb097"
+    },
+    {
+      "path": "03_learning/e-major.learning.json",
+      "bytes": 7877,
+      "sha256": "bd1d2934b1d0d3c4e7b2faf1edc6bdca22e056b18044955fe4df4a9651a74221"
+    },
+    {
+      "path": "03_learning/g-major.learning.json",
+      "bytes": 8031,
+      "sha256": "d92056f71a9555e03d2c125506c66fe41296adfc08e5c7d38b821f592928d16d"
+    },
+    {
+      "path": "03_learning/learning.all.json",
+      "bytes": 49207,
+      "sha256": "3d6ebcc8a98049c6be5378c96f72ef8e2e97867c67a562cb83936d04c6f368d8"
+    },
+    {
+      "path": "04_sources/block-evidence.json",
+      "bytes": 11006,
+      "sha256": "31b85f344f3d7660fa501103bb6148ea28887f0c1ccbf8d33c6d16e20db54dde"
+    },
+    {
+      "path": "04_sources/source-ledger.original.md",
+      "bytes": 92249,
+      "sha256": "5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2"
+    },
+    {
+      "path": "04_sources/sources.new.json",
+      "bytes": 11186,
+      "sha256": "3021f2992902d408c08399cc414982478f9889665cbe26633d86e1e54fdaede7"
+    },
+    {
+      "path": "04_sources/来源与证据说明.md",
+      "bytes": 9005,
+      "sha256": "efc03b17fa1aa1bdd2aea51682e019ba25ffd5c9d1628d2677ed939f3f969c4d"
+    },
+    {
+      "path": "05_assets/README.md",
+      "bytes": 927,
+      "sha256": "238f6abbdacc6d3c1f8bac7b5911a27d978f35d9be9b422248b93cf852eeb39d"
+    },
+    {
+      "path": "05_assets/chord-a-flat-major.pdf",
+      "bytes": 45967,
+      "sha256": "a1986adb149c0785be1970cc8d992e538164df63922a1a6ae88c2941d2265375"
+    },
+    {
+      "path": "05_assets/chord-a-flat-major.svg",
+      "bytes": 20834,
+      "sha256": "f4fccf04625614ecd7861550b618e8bde5371d9d29ec67f6e6351359eab6c5f1"
+    },
+    {
+      "path": "05_assets/chord-b-major.pdf",
+      "bytes": 46011,
+      "sha256": "9ee60e68465be8c73b182d487c886b67819c867ef7c9c4ec2a82b06ee10d2934"
+    },
+    {
+      "path": "05_assets/chord-b-major.svg",
+      "bytes": 20816,
+      "sha256": "b6129cf55dbe7de07d9b5fe86e12d061a4c6586668959d399bbe9c43840bd1dd"
+    },
+    {
+      "path": "05_assets/chord-c-flat-major.pdf",
+      "bytes": 46168,
+      "sha256": "ce772815c9572327ca13be6b7012f207a58baf6f57c2527d77d4b4a50b56531a"
+    },
+    {
+      "path": "05_assets/chord-c-flat-major.svg",
+      "bytes": 28606,
+      "sha256": "acf2a2795174ff0a4200812c4ef90fdf084f71ab5b7c0ab215f9d7e04fd88f8c"
+    },
+    {
+      "path": "05_assets/chord-c-minor.pdf",
+      "bytes": 45936,
+      "sha256": "2701e3d9d030070b69e979aa93288cc9b9a1bd06c1959103de24b1d08110168c"
+    },
+    {
+      "path": "05_assets/chord-c-minor.svg",
+      "bytes": 20780,
+      "sha256": "10e34711227c3870e03cf3cc70b5bd06d27e1829c8313771b66504b3fa3d87d5"
+    },
+    {
+      "path": "05_assets/chord-e-major.pdf",
+      "bytes": 46019,
+      "sha256": "415b2cadf7fc24d812835861078f159aae1f007e813883cfbd513529defc0e0f"
+    },
+    {
+      "path": "05_assets/chord-e-major.svg",
+      "bytes": 20774,
+      "sha256": "83d590fd0e28ee3974cbf5c2fc127247e9c14076cea57d3767c1985c1a5850c9"
+    },
+    {
+      "path": "05_assets/chord-g-major.pdf",
+      "bytes": 45702,
+      "sha256": "b61b18df64ce9a7508ad48043df6f8902576e676b0af419712115efe369f73ba"
+    },
+    {
+      "path": "05_assets/chord-g-major.svg",
+      "bytes": 20731,
+      "sha256": "b25ec0ece894c73595a32255562821cb9f891bac854aa9f4b05b2e707dcc7ace"
+    },
+    {
+      "path": "06_codex/01_接入五个和弦详情_完整Prompt.md",
+      "bytes": 7948,
+      "sha256": "22ad386a2189260039749885ccb5a37009ab9f3cdd6bbcf93d7ec5a98ac91632"
+    },
+    {
+      "path": "06_codex/02_系统页后续实施说明.md",
+      "bytes": 2660,
+      "sha256": "3763e2ef1b80a5039715384b6567b2c7920486d671578ae75a1625daf8d24854"
+    },
+    {
+      "path": "07_validation/content-check-results.json",
+      "bytes": 113828,
+      "sha256": "cfd2af8270ce9dc77aba7fd5a62dcc517fe5f484c80bfbe4a87fcf4660170644"
+    },
+    {
+      "path": "07_validation/isolated-typescript-result.json",
+      "bytes": 389,
+      "sha256": "48e0d48a3e01efbb2f7dbf8394a7b1b5e12f595e413852977727d318b97188d9"
+    },
+    {
+      "path": "07_validation/pdf-check-results.json",
+      "bytes": 2785,
+      "sha256": "a7b980dae8bf11d74eb00e39ba05d6ccaaedee9effb65dcadd01f02a57a5fc31"
+    },
+    {
+      "path": "07_validation/validate-content.py",
+      "bytes": 9857,
+      "sha256": "f570d1facc3b69d442a49be8fc3063bced72edb4da51ad946596df826c957d12"
+    },
+    {
+      "path": "07_validation/验证结果与边界.md",
+      "bytes": 1849,
+      "sha256": "487239df96b4da3f5741e68c7dabfacef60a09437f3c10d5dbb63ebcca5ea5c8"
+    },
+    {
+      "path": "08_baseline/AUTHORING_CONTRACT.md",
+      "bytes": 7161,
+      "sha256": "2fd8c29433a3bb2cf7a1b831cbceb61213d8da5b170065fa3024190367bfd454"
+    },
+    {
+      "path": "08_baseline/DELIVERABLES.md",
+      "bytes": 2565,
+      "sha256": "afa4b2a7e708d400834cd1f9c38f74958717d7f0b4cdd89f77f68c6197f6ee0c"
+    },
+    {
+      "path": "08_baseline/EXPANSION_LIMITS.md",
+      "bytes": 2331,
+      "sha256": "55846f398013a3507916ba49dec0c439c3c05535e321a53365c9e4b759b15118"
+    },
+    {
+      "path": "08_baseline/baseline-hashes.json",
+      "bytes": 1597,
+      "sha256": "2644ffddc07f33206a3cc3d0968ced65fb060daec175daba75e114e41914aa10"
+    },
+    {
+      "path": "08_baseline/chord-catalog.md",
+      "bytes": 4218,
+      "sha256": "1cedb9bbe557246e91519011fc27da6ccb817d334bbb5d5e3fc72df094da3667"
+    },
+    {
+      "path": "08_baseline/gaps.md",
+      "bytes": 2730,
+      "sha256": "283b02d9872e84f16994abb59ca42789c266daa507a7c7ee114a178db40829d1"
+    },
+    {
+      "path": "08_baseline/original-plan-chord-entries.json",
+      "bytes": 217492,
+      "sha256": "509bcc83ac4be2790c47048df3fe5d67550c780cb34fcc6961f672ee39ffd849"
+    },
+    {
+      "path": "08_baseline/page-inventory.md",
+      "bytes": 4298,
+      "sha256": "fc4fa859693c6d2ae9d2b6f0ec9b6ba949614a164edc8fe96587d6ffd10d27bd"
+    }
+  ],
+  "validation": "content checks and isolated type check passed; integration not performed"
+}

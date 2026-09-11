@@ -2,9 +2,11 @@
 
 钢琴和弦、琴键、音阶、选曲、指南与打印资料参考项目。产品职责、URL和内容以 `docs/product` 与 `docs/content` 的最终资料为准。
 
-[已核实] 正式品牌为 `PianoGrid`，站点域名为 `https://pianogrid.com`；本地与构建环境仍保持 `noindex/nofollow`，尚未部署。
+**在线访问：** [pianogrid.com](https://pianogrid.com)
 
-[已核实] 当前批次 **07-site-integration** 已完成 P1 定点修复与自测，开发停止等待独立复验。Foundation 与 00–06 均保留；06 独立结论为 `PASS_WITH_NOTES`，用户已确认验收通过。首轮 17 条路由可在本地预览，仍保留 `noindex/nofollow`，尚未部署。
+[已核实] 正式品牌为 `PianoGrid`，生产站点为 `https://pianogrid.com`，托管于 Vercel。17 条授权路由当前公开并输出 `index,follow`，robots 与 sitemap 已上线。
+
+[已核实] Foundation、00–08 和首轮 17 条路由均已完成；08 独立结论为 `PASS_WITH_NOTES`。最终公开构建独立复验结论同为 `PASS_WITH_NOTES`；当前仍需发布清单中保留的专业审阅和人工设备验收。
 
 ## 本地运行
 
@@ -35,5 +37,9 @@ node scripts/check-integration-production.mjs
 - [组件契约](docs/design/component-spec.md) / [模板映射](docs/design/template-map.md)
 - [续作入口](docs/tasks/batch-implementation/CONTINUE-HERE.md)
 - [06独立报告](checks/reviews/06-blank-sheet/review.md)
+- [08独立报告](checks/reviews/08-release-readiness/review.md)
+- [公开上线报告](checks/release/public-launch/report.md)
+- [最终公开构建独立复验](checks/release/public-launch/independent-reverification/review.md)
+- [当前发布门槛](docs/release/release-readiness.md)
 
-[已核实] 原始内容与只读设计参考保持原字节；总包、内部文档和参考 HTML 没有公开为路由。真人听音、真机、屏幕阅读器人工长流程、浏览器打印对话框、实体打印、部署未执行；07 初次独立验收为 `NEEDS_FIX`，P1 已修复，独立复验尚未执行。
+[已核实] 原始内容与只读设计参考保持原字节；总包、内部文档和参考 HTML 没有公开为路由。真人听音、真机、屏幕阅读器人工长流程、浏览器打印对话框、实体打印，以及指定页面的具名专业审阅仍未完成或未记录为通过。

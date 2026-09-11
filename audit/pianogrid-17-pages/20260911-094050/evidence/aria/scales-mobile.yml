@@ -1,0 +1,300 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Scales" [disabled]
+  - 'heading "Piano Scales: Notes, Patterns and Practice References" [level=1]'
+  - paragraph: Compare major and minor scale notes, explore other scale types, and check the exact form before practicing.
+  - region "Piano scale explorer":
+    - text: Scale type
+    - combobox "Scale type":
+      - option "Major" [selected]
+      - option "Natural minor"
+      - option "Harmonic minor"
+      - option "Melodic minor (classical)"
+    - text: Starting note
+    - combobox "Starting note":
+      - option "C" [selected]
+      - option "Db"
+      - option "D"
+      - option "Eb"
+      - option "E"
+      - option "F"
+      - option "F#"
+      - option "G"
+      - option "Ab"
+      - option "A"
+      - option "Bb"
+      - option "B"
+      - option "Cb"
+      - option "Gb"
+      - option "C#"
+    - text: Hand
+    - combobox "Hand":
+      - option "Right hand" [selected]
+      - option "Left hand"
+    - text: Direction
+    - combobox "Direction":
+      - option "Ascending" [selected]
+      - option "Descending"
+      - option "Up and down"
+    - text: Current scale
+    - heading "C Major" [level=2]
+    - term: Hand
+    - definition: Right hand
+    - term: Range
+    - definition: 1 octave
+    - term: Tempo
+    - definition: 60 BPM
+    - paragraph: C – D – E – F – G – A – B – C
+    - paragraph: "Semitone steps: 2 – 2 – 1 – 2 – 2 – 2 – 1"
+    - heading "Ascending" [level=3]
+    - text: Fingering from the listed sources
+    - region "Ascending notes and fingering":
+      - table:
+        - rowgroup:
+          - row "Notes C4 D4 E4 F4 G4 A4 B4 C5":
+            - rowheader "Notes"
+            - cell "C4"
+            - cell "D4"
+            - cell "E4"
+            - cell "F4"
+            - cell "G4"
+            - cell "A4"
+            - cell "B4"
+            - cell "C5"
+          - row "Fingers 1 2 3 1 2 3 4 5":
+            - rowheader "Fingers"
+            - cell "1"
+            - cell "2"
+            - cell "3"
+            - cell "1"
+            - cell "2"
+            - cell "3"
+            - cell "4"
+            - cell "5"
+    - region "treble staff notes":
+      - 'group "treble clef: C4 to C5"':
+        - img "C4, treble clef": C4
+        - img "D4, treble clef": D4
+        - img "E4, treble clef": E4
+        - img "F4, treble clef": F4
+        - img "G4, treble clef": G4
+        - img "A4, treble clef": A4
+        - img "B4, treble clef": B4
+        - img "C5, treble clef": C5
+    - heading "Keyboard" [level=3]
+    - text: C4 to C5
+    - region "C Major, Right hand, Ascending": C4 C#4 Db4 D4 D#4 Eb4 E4 F4 F#4 Gb4 G4 G#4 Ab4 A4 A#4 Bb4 B4 C5
+    - button "Play scale"
+    - button "Stop" [disabled]
+    - status
+    - region "Sources and checking scope":
+      - heading "Sources and checking scope" [level=3]
+      - list:
+        - listitem:
+          - 'link "Berklee PULSE: C Major Scale – Piano Notes & Practice"':
+            - /url: https://pulse.berklee.edu/scales/c-major-scale.html
+          - strong: "Checked for:"
+          - text: C major note spelling and its key signature.
+        - listitem:
+          - 'link "LearnMusicTheory.net / High-Yield Music Theory: Major and Natural Minor Scales for Piano with Fingerings"':
+            - /url: https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf
+          - strong: "Checked for:"
+          - text: C major one-octave note spelling and fingering for both hands, ascending and descending.
+        - listitem:
+          - 'link "Music Fun / Beatrice Wilder: Major Scale Fingering Charts for Keyboards"':
+            - /url: https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf
+          - strong: "Checked for:"
+          - text: Independent comparison of that one-octave fingering for both hands and directions.
+    - button "Print current scale"
+    - link "Open C detail":
+      - /url: /scales/c-major
+    - link "Open A detail":
+      - /url: /scales/a-minor
+    - status
+    - paragraph: This release prints the current one-octave reference. It does not claim an all-scales or two-hand beginner PDF collection.
+  - 'region "Piano scales: choose a sound, then a starting note"':
+    - 'heading "Piano scales: choose a sound, then a starting note" [level=2]'
+    - paragraph: "Start with C major: C–D–E–F–G–A–B–C. Choose another tonic to compare its notes. The final C repeats the first note one octave higher; it is not an eighth distinct scale degree."
+  - region "Read the pattern":
+    - heading "Read the pattern" [level=2]
+    - paragraph: For a major scale, move by whole, whole, half, whole, whole, whole, half steps. A whole step spans two adjacent-key steps; a half step spans one. Keep the note spelling shown for the chosen key. Fifteen conventional major-key spellings in this chart represent twelve tonic pitch classes on an equal-tempered keyboard.
+    - region "Major scale note chart":
+      - table "Major scale note chart":
+        - caption: Major scale note chart
+        - rowgroup:
+          - row "Starting note Notes, tonic to tonic":
+            - columnheader "Starting note"
+            - columnheader "Notes, tonic to tonic"
+        - rowgroup:
+          - row "C C – D – E – F – G – A – B – C":
+            - cell "C"
+            - cell "C – D – E – F – G – A – B – C"
+          - row "Db Db – Eb – F – Gb – Ab – Bb – C – Db":
+            - cell "Db"
+            - cell "Db – Eb – F – Gb – Ab – Bb – C – Db"
+          - row "D D – E – F# – G – A – B – C# – D":
+            - cell "D"
+            - cell "D – E – F# – G – A – B – C# – D"
+          - row "Eb Eb – F – G – Ab – Bb – C – D – Eb":
+            - cell "Eb"
+            - cell "Eb – F – G – Ab – Bb – C – D – Eb"
+          - row "E E – F# – G# – A – B – C# – D# – E":
+            - cell "E"
+            - cell "E – F# – G# – A – B – C# – D# – E"
+          - row "F F – G – A – Bb – C – D – E – F":
+            - cell "F"
+            - cell "F – G – A – Bb – C – D – E – F"
+          - row "F# F# – G# – A# – B – C# – D# – E# – F#":
+            - cell "F#"
+            - cell "F# – G# – A# – B – C# – D# – E# – F#"
+          - row "G G – A – B – C – D – E – F# – G":
+            - cell "G"
+            - cell "G – A – B – C – D – E – F# – G"
+          - row "Ab Ab – Bb – C – Db – Eb – F – G – Ab":
+            - cell "Ab"
+            - cell "Ab – Bb – C – Db – Eb – F – G – Ab"
+          - row "A A – B – C# – D – E – F# – G# – A":
+            - cell "A"
+            - cell "A – B – C# – D – E – F# – G# – A"
+          - row "Bb Bb – C – D – Eb – F – G – A – Bb":
+            - cell "Bb"
+            - cell "Bb – C – D – Eb – F – G – A – Bb"
+          - row "B B – C# – D# – E – F# – G# – A# – B":
+            - cell "B"
+            - cell "B – C# – D# – E – F# – G# – A# – B"
+          - row "Cb Cb – Db – Eb – Fb – Gb – Ab – Bb – Cb":
+            - cell "Cb"
+            - cell "Cb – Db – Eb – Fb – Gb – Ab – Bb – Cb"
+          - row "Gb Gb – Ab – Bb – Cb – Db – Eb – F – Gb":
+            - cell "Gb"
+            - cell "Gb – Ab – Bb – Cb – Db – Eb – F – Gb"
+          - row "C# C# – D# – E# – F# – G# – A# – B# – C#":
+            - cell "C#"
+            - cell "C# – D# – E# – F# – G# – A# – B# – C#"
+    - region "Scale form interval comparison":
+      - table "Scale form interval comparison":
+        - caption: Scale form interval comparison
+        - rowgroup:
+          - row "Form Semitone steps":
+            - columnheader "Form"
+            - columnheader "Semitone steps"
+        - rowgroup:
+          - row "major 2 – 2 – 1 – 2 – 2 – 2 – 1":
+            - cell "major"
+            - cell "2 – 2 – 1 – 2 – 2 – 2 – 1"
+          - row "natural minor 2 – 1 – 2 – 2 – 1 – 2 – 2":
+            - cell "natural minor"
+            - cell "2 – 1 – 2 – 2 – 1 – 2 – 2"
+          - row "harmonic minor 2 – 1 – 2 – 2 – 1 – 3 – 1":
+            - cell "harmonic minor"
+            - cell "2 – 1 – 2 – 2 – 1 – 3 – 1"
+          - row "melodic minor classical 2 – 1 – 2 – 2 – 2 – 2 – 1":
+            - cell "melodic minor classical"
+            - cell "2 – 1 – 2 – 2 – 2 – 2 – 1"
+  - region "Choose the minor form":
+    - heading "Choose the minor form" [level=2]
+    - paragraph: A natural minor uses A–B–C–D–E–F–G. Harmonic minor raises G to G♯. Classical melodic minor raises F and G on the way up and returns to the natural-minor notes on the way down. Select the form before comparing, listening, or printing.
+    - region "A minor form comparison":
+      - table "A minor form comparison":
+        - caption: A minor form comparison
+        - rowgroup:
+          - row "Form Ascending Descending":
+            - columnheader "Form"
+            - columnheader "Ascending"
+            - columnheader "Descending"
+        - rowgroup:
+          - row "Natural minor A – B – C – D – E – F – G – A A – G – F – E – D – C – B – A":
+            - cell "Natural minor"
+            - cell "A – B – C – D – E – F – G – A"
+            - cell "A – G – F – E – D – C – B – A"
+          - row "Harmonic minor A – B – C – D – E – F – G# – A A – G# – F – E – D – C – B – A":
+            - cell "Harmonic minor"
+            - cell "A – B – C – D – E – F – G# – A"
+            - cell "A – G# – F – E – D – C – B – A"
+          - row "Melodic minor (classical exercise) A – B – C – D – E – F# – G# – A A – G – F – E – D – C – B – A":
+            - cell "Melodic minor (classical exercise)"
+            - cell "A – B – C – D – E – F# – G# – A"
+            - cell "A – G – F – E – D – C – B – A"
+  - region "Same notes or same tonic?":
+    - heading "Same notes or same tonic?" [level=2]
+    - paragraph: C major and A natural minor share a note collection but organize it around different tonics. C major and C minor start on the same tonic; C natural minor lowers E, A and B to E♭, A♭ and B♭.
+  - region "Give each note a job":
+    - heading "Give each note a job" [level=2]
+    - paragraph: In C major the degrees are C tonic, D supertonic, E mediant, F subdominant, G dominant, A submediant and B leading tone. In natural minor, degree seven is a whole step below the tonic and is called the subtonic.
+    - region "Scale degree names":
+      - table "Scale degree names":
+        - caption: Scale degree names
+        - rowgroup:
+          - row "Degree Name":
+            - columnheader "Degree"
+            - columnheader "Name"
+        - rowgroup:
+          - row "1 tonic":
+            - cell "1"
+            - cell "tonic"
+          - row "2 supertonic":
+            - cell "2"
+            - cell "supertonic"
+          - row "3 mediant":
+            - cell "3"
+            - cell "mediant"
+          - row "4 subdominant":
+            - cell "4"
+            - cell "subdominant"
+          - row "5 dominant":
+            - cell "5"
+            - cell "dominant"
+          - row "6 submediant":
+            - cell "6"
+            - cell "submediant"
+          - row "7 leading tone":
+            - cell "7"
+            - cell "leading tone"
+  - region "A few jazz scale examples":
+    - heading "A few jazz scale examples" [level=2]
+    - paragraph: Compare C Dorian (C D E♭ F G A B♭), C Mixolydian (C D E F G A B♭), and C blues (C E♭ F G♭ G B♭). Bebop dominant adds a major seventh to Mixolydian; C B B♭ A G F E D C gives a descending example. The choice of notes still depends on the musical context.
+    - region "Jazz scale examples":
+      - table "Jazz scale examples":
+        - caption: Jazz scale examples
+        - rowgroup:
+          - row "Example Notes":
+            - columnheader "Example"
+            - columnheader "Notes"
+        - rowgroup:
+          - row "C Dorian C – D – Eb – F – G – A – Bb":
+            - cell "C Dorian"
+            - cell "C – D – Eb – F – G – A – Bb"
+          - row "C Mixolydian C – D – E – F – G – A – Bb":
+            - cell "C Mixolydian"
+            - cell "C – D – E – F – G – A – Bb"
+          - row "C blues C – Eb – F – Gb – G – Bb":
+            - cell "C blues"
+            - cell "C – Eb – F – Gb – G – Bb"
+          - row "C bebop dominant C5 – B4 – Bb4 – A4 – G4 – F4 – E4 – D4 – C4":
+            - cell "C bebop dominant"
+            - cell "C5 – B4 – Bb4 – A4 – G4 – F4 – E4 – D4 – C4"
+  - region "Continue with a different type":
+    - heading "Continue with a different type" [level=2]
+    - paragraph: Use the modes page to compare seven diatonic modes. Pentatonic and blues pages show their own note collections. Chromatic practice moves through every neighboring key. Harmonic major has its own reference page; it is not another name for harmonic minor.
+  - region "Try one comparison":
+    - heading "Try one comparison" [level=2]
+    - paragraph: Pick two examples and name the notes that change. Play one hand at a time at a pace you can follow. Keep the tonic visible in the result. When a fingering is available, use only its stated hand, direction and octave range; a blank field is not an invitation to reuse another scale’s fingering.
+  - region "Print the selected reference":
+    - heading "Print the selected reference" [level=2]
+    - paragraph: The print view should name the tonic, scale form, direction and range, and show exactly the notes in the result. Finger numbers belong on the printout only when that combination has been checked. See the individual scale reference for its available fingering.
+    - paragraph: The current one-octave selection can be printed from the explorer. An all-scales or two-hand beginner PDF is not included in this release.
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

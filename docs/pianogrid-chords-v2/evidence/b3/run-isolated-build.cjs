@@ -1,0 +1,12 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const {spawnSync}=require('node:child_process');
+const root=process.cwd();
+const target=path.join(root,'.next-b3');
+const executable=process.platform==='win32'?(process.env.ComSpec||'C:\\Windows\\System32\\cmd.exe'):'npm';
+const args=process.platform==='win32'?['/d','/s','/c','npm run build']:['run','build'];
+const env={...process.env,PIANO_NEXT_DIST_DIR:'.next-b3'};
+const run=spawnSync(executable,args,{cwd:root,encoding:'utf8',env,maxBuffer:32*1024*1024});
+const result={executedAt:new Date().toISOString(),sourceRoot:root,target,command:'PIANO_NEXT_DIST_DIR=.next-b3 npm run build',exitCode:run.status,signal:run.signal,error:run.error?.message,stdout:run.stdout,stderr:run.stderr,devOutputUntouched:path.join(root,'.next')};
+fs.writeFileSync(path.join(root,'docs/pianogrid-chords-v2/evidence/b3/isolated-build.json'),JSON.stringify(result,null,2));
+console.log(run.stdout);if(run.stderr)console.error(run.stderr);console.log(`ISOLATED_BUILD_DIR=${target}`);process.exitCode=run.status??1;

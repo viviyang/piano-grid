@@ -1,0 +1,41 @@
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 62ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 8.1s
+  Running TypeScript ...
+  Finished TypeScript in 5.5s ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/22) ...
+  Generating static pages using 11 workers (5/22) 
+  Generating static pages using 11 workers (10/22) 
+  Generating static pages using 11 workers (16/22) 
+✓ Generating static pages using 11 workers (22/22) in 2.9s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /chords
+├ ○ /chords/a-major
+├ ○ /chords/a-minor
+├ ○ /chords/c-major
+├ ○ /guide
+├ ○ /guide/read-sheet-music
+├ ○ /keyboard-notes
+├ ○ /keyboard-notes/chart
+├ ○ /keyboard-notes/labeled
+├ ○ /manifest.webmanifest
+├ ○ /robots.txt
+├ ○ /scales
+├ ○ /scales/a-minor
+├ ○ /scales/c-major
+├ ○ /sitemap.xml
+├ ○ /songs
+├ ○ /songs/easy
+├ ○ /tools
+└ ○ /tools/blank-sheet-music
+
+
+○  (Static)  prerendered as static content
+

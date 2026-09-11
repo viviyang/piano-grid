@@ -1,0 +1,196 @@
+{
+  "executed_at": "2026-09-11T02:09:19.167Z",
+  "tests": [
+    {
+      "id": "CH-Cb-filter-and-octave",
+      "route": "/chords",
+      "actual": [
+        {
+          "id": "c-flat-major",
+          "symbol": "C-flat major C♭",
+          "text": "C-flat major\nC♭\nCurrent chord\n: C-flat major\nC♭4 – E♭4 – G♭4\nBass: Cb4\nE♭4\nG♭4\nC3\nD3\nE3\nF3\nG3\nA3\nC♭4\nC4\nD4\nE4\nF4\nG4\nA4\nB4\nC5\nC4 is middle C\nC3–C5\nPlay chord\nPlay notes one at a time\nStop\nPrint this chord",
+          "bass": "Cb4"
+        }
+      ],
+      "passed": true,
+      "limit": null
+    },
+    {
+      "id": "PRINT-chords-filtered",
+      "route": "/chords",
+      "actual": {
+        "ids": [],
+        "text": "PianoGridC-flat major Piano ChordChord tones: Cb–Eb–Gb · Formula: 1, 3, 5Root positionCb4 – Eb4 – Gb4C♭Bass: Cb4E♭4G♭4C3D3E3F3G3A3C♭4C4D4E4F4G4A4B4C5Dots mark the notes to play. C4 is middle C. Numbers identify octaves, not fingers.The marked keys show pitches, not a hand shape or a required fingering./chords · Current position reference"
+      },
+      "passed": true,
+      "limit": null
+    },
+    {
+      "id": "KN-labeled-61",
+      "route": "/keyboard-notes/labeled",
+      "actual": {
+        "range": "61 keys: C2–C7",
+        "sectionLinks": [
+          "C2–B2",
+          "C3–B3",
+          "C4–B4",
+          "C5–B5",
+          "C6–B6",
+          "C7–C7"
+        ],
+        "printText": true
+      },
+      "passed": true,
+      "limit": null
+    },
+    {
+      "id": "AU-scale-stop-pagehide-technical",
+      "route": "/scales/a-minor",
+      "actual": {
+        "audioBefore": {
+          "available": true,
+          "contexts": 0,
+          "oscillators": [],
+          "pagehide": 0
+        },
+        "audioAfterStop": {
+          "available": true,
+          "contexts": 1,
+          "oscillators": [
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            }
+          ],
+          "pagehide": 0
+        },
+        "audioAfterPagehide": {
+          "available": true,
+          "contexts": 1,
+          "oscillators": [
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 2,
+              "disconnects": 1
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            },
+            {
+              "starts": 1,
+              "stops": 1,
+              "disconnects": 0
+            }
+          ],
+          "pagehide": 1
+        }
+      },
+      "passed": true,
+      "limit": "Technical event and oscillator lifecycle only; not human listening or a real iPhone test."
+    }
+  ],
+  "limits": []
+}

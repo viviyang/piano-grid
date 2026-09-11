@@ -1,0 +1,165 @@
+{
+  "fingerings": [],
+  "sources": [
+    {
+      "id": "PG-TRIADS",
+      "title": "Introduction to Triads",
+      "publisher": "Music Theory for the 21st-Century Classroom / University of Puget Sound",
+      "url": "https://musictheory.pugetsound.edu/mt21c/TriadsIntroduction.html",
+      "checkedOn": "2026-09-11",
+      "supports": "Triad construction, major/minor intervals.",
+      "limitation": "General rule; exact PianoGrid registers, diagrams, exercises and explanations are original applications."
+    },
+    {
+      "id": "PG-OMT",
+      "title": "Triads",
+      "publisher": "Open Music Theory",
+      "url": "https://openmusictheory.github.io/triads.html",
+      "checkedOn": "2026-09-11",
+      "supports": "Chord quality, chord members, inversion and lead-sheet conventions.",
+      "limitation": "Not a source for our hand-specific fingerings or recordings."
+    },
+    {
+      "id": "PG-ASPN",
+      "title": "American Standard Pitch Notation (ASPN)",
+      "publisher": "Open Music Theory",
+      "url": "https://viva.pressbooks.pub/openmusictheory/chapter/aspn/",
+      "checkedOn": "2026-09-11",
+      "supports": "Written note letters and octave numbering.",
+      "limitation": "Cb4 = MIDI 59 is a derived application of the notation rule, not a quotation of a PianoGrid example."
+    },
+    {
+      "id": "PG-CB",
+      "title": "Cb chord",
+      "publisher": "Musicca",
+      "url": "https://www.musicca.com/dictionary/chords/c-flat-major",
+      "checkedOn": "2026-09-11",
+      "supports": "C-flat major spelling Cb–Eb–Gb and major chord formula.",
+      "limitation": "No hand-number fingering is extracted. C-flat fingering is intentionally unresolved."
+    }
+  ],
+  "practice": {
+    "id": "practice",
+    "heading": "Build C♭ on the keyboard",
+    "prompt": "Select the three pitch classes that make C flat major, then check your answer.",
+    "scope": "This keyboard checks an unordered pitch-class set. Order, octave, fingering and live piano performance are not assessed."
+  },
+  "extraBlocks": [
+    {
+      "block_id": "c-flat-major-locate",
+      "content": {
+        "heading": "Find the notes on your keyboard",
+        "paragraphs": [],
+        "steps": [
+          "Locate middle C, labeled C4. Move one semitone lower to the B3 key; read it here as C♭4.",
+          "Find E♭4 and G♭4 on black keys.",
+          "Read C♭4–E♭4–G♭4 before playing. The written octave number follows the letter C even when the accidental crosses the C/B boundary."
+        ],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-flat-major-compare",
+      "content": {
+        "heading": "Match the octave before comparing with B major",
+        "paragraphs": [
+          "C♭4–E♭4–G♭4 and B3–D♯4–F♯4 have identical MIDI values: 59, 63 and 66. They describe the same physical keys with different spellings.",
+          "The prepared B-major detail page starts its root example one octave higher. Compare matched registers manually rather than assuming two page defaults should produce identical pitches."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-flat-major-connections",
+      "content": {
+        "heading": "A reference for spelling, not a new tuning system",
+        "paragraphs": [
+          "The examples use the site’s ordinary equal-tempered pitch mapping. Keeping C-flat labels does not require a special instrument or a different keyboard layout.",
+          "The first inversion is E♭4–G♭4–C♭5, labeled C♭/E♭. C♭5 uses the B4 key. Inversion and octave labels must both remain correct when these notes reach the renderer."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-flat-major-self-check",
+      "content": {
+        "heading": "Check the idea without JavaScript",
+        "paragraphs": [
+          "Name the three chord tones before looking back at the answer. Then name the bass of the first inversion. These are written self-checks, not additional scored modes."
+        ],
+        "steps": [
+          "Chord-tone answer: C♭, E♭, G♭.",
+          "First-inversion bass: E♭. The root is still C♭."
+        ],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-flat-major-questions",
+      "content": {
+        "heading": "Questions about C flat major",
+        "paragraphs": [],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Is C-flat a black key?",
+              "No. C-flat is the white key immediately below C, normally labeled B in the same sounding register."
+            ],
+            [
+              "Why is C-flat4 MIDI 59?",
+              "Octave numbers are assigned by the written letter. Lowering C4, MIDI 60, by one semitone gives C-flat4, MIDI 59, the B3 key."
+            ],
+            [
+              "Is C-flat major different from C major?",
+              "Yes. C major is C–E–G; C-flat major is C-flat–E-flat–G-flat. Every corresponding pitch is one semitone lower."
+            ],
+            [
+              "Are hand-specific fingerings available?",
+              "No verified hand-number examples have been prepared for this page. The missing evidence is not filled by copying another chord’s hand numbers."
+            ],
+            [
+              "Does the keyboard builder recognize enharmonic choices?",
+              "The existing builder checks sounding pitch classes rather than written spelling. C-flat and B can therefore count as the same pitch class; this is not a notation-spelling examination."
+            ]
+          ]
+        },
+        "links": []
+      }
+    }
+  ],
+  "binding": {
+    "h1": "C-flat Major Piano Chord (C♭)",
+    "tool_heading": "C flat major notes and inversions",
+    "answer": "C-flat major contains C-flat, E-flat and G-flat. On an equal-tempered piano, its pitch classes match B, D-sharp and F-sharp.",
+    "keyboard_range_midi": [
+      48,
+      84
+    ],
+    "range_label": "C3–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-c-flat-major.pdf",
+      "label": "Download the C flat major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "c-flat-major",
+    "voicing_id_rule": "c-flat-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "root_fingering_missing"
+  }
+}

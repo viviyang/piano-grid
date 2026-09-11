@@ -1,0 +1,11 @@
+{
+  "executedAt": "2026-09-11T10:33:45.938Z",
+  "sourceRoot": "C:\\Users\\Admin\\Documents\\viviyang_github\\piano",
+  "target": "C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\.next-b3",
+  "command": "PIANO_NEXT_DIST_DIR=.next-b3 npm run build",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "\n> piano-grid@0.1.0 build\n> next build\n\n▲ Next.js 16.3.4 (Turbopack)\n✓ Running next.config.ts took 64ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 7.5s\n  Running TypeScript ...\n\n  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.\n  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n\n  \t- include was updated to add '.next-b3/types/**/*.ts'\n  \t- include was updated to add '.next-b3/dev/types/**/*.ts'\n\n  Finished TypeScript in 7.3s ...\n  Collecting page data using 11 workers ...\n  Generating static pages using 11 workers (0/22) ...\n  Generating static pages using 11 workers (5/22) \r\n  Generating static pages using 11 workers (10/22) \r\n  Generating static pages using 11 workers (16/22) \r\n✓ Generating static pages using 11 workers (22/22) in 3.0s\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ○ /chords\n├ ○ /chords/a-major\n├ ○ /chords/a-minor\n├ ○ /chords/c-major\n├ ○ /guide\n├ ○ /guide/read-sheet-music\n├ ○ /keyboard-notes\n├ ○ /keyboard-notes/chart\n├ ○ /keyboard-notes/labeled\n├ ○ /manifest.webmanifest\n├ ○ /robots.txt\n├ ○ /scales\n├ ○ /scales/a-minor\n├ ○ /scales/c-major\n├ ○ /sitemap.xml\n├ ○ /songs\n├ ○ /songs/easy\n├ ○ /tools\n└ ○ /tools/blank-sheet-music\n\n\n○  (Static)  prerendered as static content\n\n",
+  "stderr": "",
+  "devOutputUntouched": "C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\.next"
+}

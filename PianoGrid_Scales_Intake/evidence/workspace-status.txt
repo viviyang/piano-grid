@@ -1,0 +1,81 @@
+captured_at=2026-09-11T10:58:26.981Z
+head=dd1b8849cd4c303c9ddebfe794758aa14354f507
+branch=codex/chords-b1
+
+ M .gitignore
+ M AGENTS.md
+ M README.md
+ M checks/batches/01-chords/adapter-validation.json
+ M checks/batches/07-site-integration/data-validation.json
+ M checks/batches/07-site-integration/foundation.compiled.css
+ M checks/batches/07-site-integration/foundation.json
+ M checks/batches/07-site-integration/screenshots/home-1440.png
+ M checks/batches/07-site-integration/screenshots/home-320.png
+ M checks/batches/07-site-integration/screenshots/home-390.png
+ M checks/batches/07-site-integration/screenshots/home-768.png
+ M checks/batches/07-site-integration/screenshots/home-text200.png
+ M checks/batches/07-site-integration/screenshots/tools-1440.png
+ M checks/batches/07-site-integration/screenshots/tools-320.png
+ M checks/batches/07-site-integration/screenshots/tools-390.png
+ M checks/batches/07-site-integration/screenshots/tools-768.png
+ M checks/batches/07-site-integration/screenshots/tools-text200.png
+ M checks/batches/07-site-integration/tailwind-compile.json
+ M checks/batches/07-site-integration/validation.json
+ M docs/release/release-readiness.md
+ M docs/tasks/batch-implementation/CONTINUE-HERE.md
+ M docs/tasks/site-implementation-plan.md
+ M next.config.ts
+ M scripts/check-a-minor.mjs
+ M scripts/check-chord-batch.mjs
+ M scripts/check-content-adapters.mjs
+ M scripts/check-foundation.mjs
+ M scripts/check-song-batch.mjs
+ M src/app/chords/a-major/page.tsx
+ M src/app/chords/a-minor/a-minor.css
+ M src/app/chords/a-minor/page.tsx
+ M src/app/chords/c-major/page.tsx
+ M src/app/chords/page.tsx
+ M src/app/layout.tsx
+ M src/app/manifest.ts
+ M src/components/a-minor/experience.tsx
+ M src/components/chords/center-experience.tsx
+ M src/components/chords/center-page.tsx
+ M src/components/chords/center.css
+ M src/components/chords/detail-page.tsx
+ M src/components/chords/shared.css
+ M src/components/songs/pages.tsx
+ M src/components/songs/resource-card.tsx
+ M src/components/songs/songs.css
+ M src/lib/a-minor-audio.ts
+ M src/lib/a-minor-content.ts
+ M src/lib/a-minor-types.ts
+ M src/lib/chord-content.ts
+ M src/lib/song-content.ts
+ M src/lib/song-types.ts
+ M tsconfig.json
+?? .next-b3/
+?? PianoGrid_Scales_Intake/
+?? audit/
+?? checks/release/current-am-selection-fix/
+?? checks/release/current-song-fix/
+?? checks/release/ios-safari-audio/
+?? checks/release/postdeploy-current/
+?? checks/release/predeploy-current/
+?? checks/release/public-launch/independent-reverification/
+?? checks/release/public-launch/live-verification.md
+?? docs/pianogrid-chords-v2/
+?? public/apple-touch-icon.png
+?? public/favicon-96x96.png
+?? public/favicon.ico
+?? public/favicon.svg
+?? public/icon-192.png
+?? public/icon-512.png
+?? scripts/check-chord-b2.mjs
+?? scripts/check-chord-b3.mjs
+?? src/components/chords/chord-builder-practice.tsx
+?? src/components/chords/chord-learning.css
+?? src/components/chords/fingering-guide.tsx
+?? src/components/chords/page-toc.css
+?? src/components/chords/page-toc.tsx
+?? src/lib/chord-detail-model.ts
+?? src/lib/chord-learning-content.ts

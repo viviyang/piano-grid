@@ -1,0 +1,172 @@
+{
+  "h1": "Piano Chords by Key",
+  "scope": "Seven prepared key tables, not every key and not all possible chromatic harmony.",
+  "supplemental_blocks": [
+    {
+      "block_id": "key-or-root",
+      "content": {
+        "heading": "A key is not the same filter as a chord root",
+        "paragraphs": [
+          "Choosing root C in the chord chart finds chords built on C, such as C major and C minor. Choosing the key of C major here lists triads built on each degree of the C major scale.",
+          "The prepared tables cover C, G, D, A, E and F major, plus D minor. They show a deliberately limited set of keys rather than a claim to every scale, mode or borrowed chord."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "read-degrees",
+      "content": {
+        "heading": "Read the degree before the symbol",
+        "paragraphs": [
+          "A degree number locates a chord’s root within the selected scale. Uppercase Roman numerals mark major triads, lowercase ones mark minor triads, and a diminished marker identifies the diminished triad.",
+          "In a major key the diatonic triad pattern is I–ii–iii–IV–V–vi–vii°. The note spelling changes with the key, so copying only a row’s white-key shape is not a transposition method."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "c-major-example",
+      "content": {
+        "heading": "Read C major as a complete seven-row table",
+        "paragraphs": [
+          "The C-major triads are C, Dm, Em, F, G, Am and B diminished. Their chord tones come from C, D, E, F, G, A and B. A row for B diminished belongs in this table even though the current major/minor detail template cannot render it as a full object page.",
+          "A table row may therefore be a complete written reference without having a dedicated detail link. Keep the row visible and only provide a link when the requested detail actually exists."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "minor-options",
+      "content": {
+        "heading": "Keep D natural minor and its altered options separate",
+        "paragraphs": [
+          "D natural minor uses D, E, F, G, A, B-flat and C. Its diatonic triads are Dm, E diminished, F, Gm, Am, B-flat and C.",
+          "Minor-key music can raise C to C-sharp. That change makes A major available as V and C-sharp diminished as a leading-tone triad. Show these as raised-leading-tone alternatives rather than replacing the natural-minor row without explanation."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "build-a-row",
+      "content": {
+        "heading": "Build a row instead of memorizing a shape",
+        "paragraphs": [
+          "Take a scale degree as the root, then select the third and fifth scale notes above it, cycling through the same scale. Preserve each note’s spelling and compare the intervals to identify the quality.",
+          "For example, the chord on E in C major uses E–G–B, so it is minor. In E major, the chord on E uses E–G-sharp–B, so it is major. The letter E alone does not determine the quality."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "use-the-table",
+      "content": {
+        "heading": "Turn a table into a progression",
+        "paragraphs": [
+          "Choose I–V–vi–IV in C major to obtain C–G–Am–F. Choosing the same degrees in A major gives A–E–F-sharp minor–D. These are applications of the same harmonic pattern, not the same pitches.",
+          "A key table tells you which chords belong to the stated scale collection. It does not identify a whole song’s key from a single chord or prohibit chords borrowed from elsewhere."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "questions",
+      "content": {
+        "heading": "Questions and answers",
+        "paragraphs": [],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Are chords in C major all rooted on C?",
+              "No. The table includes triads rooted on all seven scale degrees. Root C and key C major are different queries."
+            ],
+            [
+              "Why is there a diminished row without a detail button?",
+              "The table’s written data can be supported before a dedicated diminished-chord interactive template exists. Missing a detail page is not a reason to omit the scale degree."
+            ],
+            [
+              "Can a minor key use a major V?",
+              "Yes. Raising the leading tone supplies a major dominant triad. The table labels that option separately from its natural-minor basis."
+            ]
+          ]
+        },
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "evidence_status": "[推断] scoped explanation; feature statements conditional on implementation"
+    }
+  ],
+  "existing_blocks_policy": "Preserve each correct fact from raw blocks; merge duplicate sentences into these sections, do not discard correct content to fit a template.",
+  "patch_notes": [],
+  "source_ids": [
+    "PG-KEY-MAJOR",
+    "PG-KEY-MINOR",
+    "PG-OMT",
+    "PG-TRIADS"
+  ],
+  "template": "T08",
+  "runtime_status": "not_implemented_by_this_pack"
+}

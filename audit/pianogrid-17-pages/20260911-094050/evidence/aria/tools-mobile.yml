@@ -1,0 +1,72 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - paragraph: PianoGrid
+  - heading "Piano Tools and Printables" [level=1]
+  - paragraph: Choose a specific lookup or a printable resource for your next practice task.
+  - region "Choose the result you need":
+    - paragraph: Working references
+    - heading "Choose the result you need" [level=2]
+    - link "01 Find a note Open reference":
+      - /url: /keyboard-notes/chart
+      - text: "01"
+      - strong: Find a note
+      - text: Open reference
+    - link "02 Look up a chord Open reference":
+      - /url: /chords
+      - text: "02"
+      - strong: Look up a chord
+      - text: Open reference
+    - link "03 Check a scale Open reference":
+      - /url: /scales
+      - text: "03"
+      - strong: Check a scale
+      - text: Open reference
+  - region "Print something useful":
+    - paragraph: Original downloads
+    - heading "Print something useful" [level=2]
+    - article:
+      - text: Available now
+      - heading "Blank piano sheet music" [level=3]
+      - paragraph: Write on six grand staffs
+      - link "Open resource":
+        - /url: /tools/blank-sheet-music
+      - link "Download PDF":
+        - /url: /reference/assets/blank-piano-staff-letter.pdf
+    - article:
+      - text: Available now
+      - heading "Starter and reading pack" [level=3]
+      - paragraph: Read and clap original exercises
+      - link "Open resource":
+        - /url: /guide
+      - link "Download PDF":
+        - /url: /assets/guides/piano-starter-and-reading.pdf
+  - region "Choose the job":
+    - heading "Choose the job" [level=2]
+    - paragraph: Choose an available reference for the task you want to complete. Every option on this page opens the matching reference.
+    - navigation "Choose the job actions":
+      - link "Find a note":
+        - /url: /keyboard-notes/chart
+      - link "Look up a chord":
+        - /url: /chords
+      - link "Check a scale":
+        - /url: /scales
+  - region "Print something useful":
+    - heading "Print something useful" [level=2]
+    - paragraph: Choose an available printable, open its resource page for details, or download its verified PDF.
+    - navigation "Print something useful actions":
+      - link "Blank piano sheet music":
+        - /url: /tools/blank-sheet-music
+      - link "Starter and reading pack":
+        - /url: /guide
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

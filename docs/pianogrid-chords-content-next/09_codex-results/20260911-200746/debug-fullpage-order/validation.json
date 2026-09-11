@@ -1,0 +1,609 @@
+{
+  "executed_at": "2026-09-11T12:20:32.100Z",
+  "base": "http://127.0.0.1:3105",
+  "passed": 94,
+  "failed": 1,
+  "results": [
+    {
+      "name": "g-major HTTP/title/description/canonical",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "title": "G Major Piano Chord (G): Notes, Inversions & PDF"
+      }
+    },
+    {
+      "name": "g-major raw HTTP contains rendered page nodes",
+      "passed": true,
+      "actual": 124520
+    },
+    {
+      "name": "g-major H1/direct answer",
+      "passed": true,
+      "actual": {
+        "h1": "G Major Piano Chord (G)",
+        "answer": "The G major chord contains G, B and D. Its formula is 1–3–5: a major third and a perfect fifth above G."
+      }
+    },
+    {
+      "name": "g-major root notes and keyboard",
+      "passed": true,
+      "actual": {
+        "notes": [
+          "G4",
+          "B4",
+          "D5"
+        ],
+        "selectedMidi": [
+          67,
+          71,
+          74
+        ]
+      }
+    },
+    {
+      "name": "g-major three positions/FAQ/sources",
+      "passed": true
+    },
+    {
+      "name": "g-major selected crawlable links",
+      "passed": true,
+      "actual": [
+        "/chords/c-major",
+        "/scales/c-major",
+        "/chords/g-major#practice"
+      ]
+    },
+    {
+      "name": "g-major no duplicate IDs",
+      "passed": true
+    },
+    {
+      "name": "g-major no-JS practice and PDF",
+      "passed": true
+    },
+    {
+      "name": "g-major fixed three-position PDF opens",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "bytes": 45702
+      }
+    },
+    {
+      "name": "g-major root right/left fingering",
+      "passed": true
+    },
+    {
+      "name": "g-major left fingering",
+      "passed": true
+    },
+    {
+      "name": "g-major inversion hides root fingering",
+      "passed": true
+    },
+    {
+      "name": "g-major current print follows selection",
+      "passed": true,
+      "actual": "g-major--first"
+    },
+    {
+      "name": "g-major practice derives correct pitch classes",
+      "passed": true,
+      "actual": "Correct: G contains G, B, D. Octave and selection order do not affect this check."
+    },
+    {
+      "name": "g-major playback starts from user action",
+      "passed": true,
+      "actual": "playing"
+    },
+    {
+      "name": "g-major mobile no page overflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "g-major 200% reflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "c-minor HTTP/title/description/canonical",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "title": "C Minor Piano Chord (Cm): Notes, Inversions & PDF"
+      }
+    },
+    {
+      "name": "c-minor raw HTTP contains rendered page nodes",
+      "passed": true,
+      "actual": 124383
+    },
+    {
+      "name": "c-minor H1/direct answer",
+      "passed": true,
+      "actual": {
+        "h1": "C Minor Piano Chord (Cm)",
+        "answer": "C minor is C, E-flat and G. The lowered third, E-flat, distinguishes Cm from the C–E–G major triad."
+      }
+    },
+    {
+      "name": "c-minor root notes and keyboard",
+      "passed": true,
+      "actual": {
+        "notes": [
+          "C4",
+          "E♭4",
+          "G4"
+        ],
+        "selectedMidi": [
+          60,
+          63,
+          67
+        ]
+      }
+    },
+    {
+      "name": "c-minor three positions/FAQ/sources",
+      "passed": true
+    },
+    {
+      "name": "c-minor selected crawlable links",
+      "passed": true,
+      "actual": [
+        "/chords/c-major",
+        "/chords/a-flat-major",
+        "/chords/c-minor#practice"
+      ]
+    },
+    {
+      "name": "c-minor no duplicate IDs",
+      "passed": true
+    },
+    {
+      "name": "c-minor no-JS practice and PDF",
+      "passed": true
+    },
+    {
+      "name": "c-minor fixed three-position PDF opens",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "bytes": 45936
+      }
+    },
+    {
+      "name": "c-minor root right/left fingering",
+      "passed": true
+    },
+    {
+      "name": "c-minor left fingering",
+      "passed": true
+    },
+    {
+      "name": "c-minor inversion hides root fingering",
+      "passed": true
+    },
+    {
+      "name": "c-minor current print follows selection",
+      "passed": true,
+      "actual": "c-minor--first"
+    },
+    {
+      "name": "c-minor practice derives correct pitch classes",
+      "passed": true,
+      "actual": "Correct: Cm contains C, E♭, G. Octave and selection order do not affect this check."
+    },
+    {
+      "name": "c-minor playback starts from user action",
+      "passed": true,
+      "actual": "playing"
+    },
+    {
+      "name": "c-minor mobile no page overflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "c-minor 200% reflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "e-major HTTP/title/description/canonical",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "title": "E Major Piano Chord (E): Notes, Inversions & PDF"
+      }
+    },
+    {
+      "name": "e-major raw HTTP contains rendered page nodes",
+      "passed": true,
+      "actual": 124048
+    },
+    {
+      "name": "e-major H1/direct answer",
+      "passed": true,
+      "actual": {
+        "h1": "E Major Piano Chord (E)",
+        "answer": "The E major chord uses E, G-sharp and B. G-sharp is the major third above E; B is the perfect fifth."
+      }
+    },
+    {
+      "name": "e-major root notes and keyboard",
+      "passed": true,
+      "actual": {
+        "notes": [
+          "E4",
+          "G♯4",
+          "B4"
+        ],
+        "selectedMidi": [
+          64,
+          68,
+          71
+        ]
+      }
+    },
+    {
+      "name": "e-major three positions/FAQ/sources",
+      "passed": true
+    },
+    {
+      "name": "e-major selected crawlable links",
+      "passed": true,
+      "actual": [
+        "/chords/a-major",
+        "/chords/a-minor",
+        "/chords/b-major",
+        "/chords/e-major#practice"
+      ]
+    },
+    {
+      "name": "e-major no duplicate IDs",
+      "passed": true
+    },
+    {
+      "name": "e-major no-JS practice and PDF",
+      "passed": true
+    },
+    {
+      "name": "e-major fixed three-position PDF opens",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "bytes": 46019
+      }
+    },
+    {
+      "name": "e-major root right/left fingering",
+      "passed": true
+    },
+    {
+      "name": "e-major left fingering",
+      "passed": true
+    },
+    {
+      "name": "e-major inversion hides root fingering",
+      "passed": true
+    },
+    {
+      "name": "e-major current print follows selection",
+      "passed": true,
+      "actual": "e-major--first"
+    },
+    {
+      "name": "e-major practice derives correct pitch classes",
+      "passed": true,
+      "actual": "Correct: E contains E, G♯, B. Octave and selection order do not affect this check."
+    },
+    {
+      "name": "e-major playback starts from user action",
+      "passed": true,
+      "actual": "playing"
+    },
+    {
+      "name": "e-major mobile no page overflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "e-major 200% reflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "b-major HTTP/title/description/canonical",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "title": "B Major Piano Chord (B): Notes, Inversions & PDF"
+      }
+    },
+    {
+      "name": "b-major raw HTTP contains rendered page nodes",
+      "passed": true,
+      "actual": 123808
+    },
+    {
+      "name": "b-major H1/direct answer",
+      "passed": true,
+      "actual": {
+        "h1": "B Major Piano Chord (B)",
+        "answer": "B major consists of B, D-sharp and F-sharp. The chord has a white-key root and two black-key chord tones."
+      }
+    },
+    {
+      "name": "b-major root notes and keyboard",
+      "passed": true,
+      "actual": {
+        "notes": [
+          "B4",
+          "D♯5",
+          "F♯5"
+        ],
+        "selectedMidi": [
+          71,
+          75,
+          78
+        ]
+      }
+    },
+    {
+      "name": "b-major three positions/FAQ/sources",
+      "passed": true
+    },
+    {
+      "name": "b-major selected crawlable links",
+      "passed": true,
+      "actual": [
+        "/chords/e-major",
+        "/chords/b-major#practice"
+      ]
+    },
+    {
+      "name": "b-major no duplicate IDs",
+      "passed": true
+    },
+    {
+      "name": "b-major no-JS practice and PDF",
+      "passed": true
+    },
+    {
+      "name": "b-major fixed three-position PDF opens",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "bytes": 46011
+      }
+    },
+    {
+      "name": "b-major root right/left fingering",
+      "passed": true
+    },
+    {
+      "name": "b-major left fingering",
+      "passed": true
+    },
+    {
+      "name": "b-major inversion hides root fingering",
+      "passed": true
+    },
+    {
+      "name": "b-major current print follows selection",
+      "passed": true,
+      "actual": "b-major--first"
+    },
+    {
+      "name": "b-major practice derives correct pitch classes",
+      "passed": true,
+      "actual": "Correct: B contains B, D♯, F♯. Octave and selection order do not affect this check."
+    },
+    {
+      "name": "b-major playback starts from user action",
+      "passed": true,
+      "actual": "playing"
+    },
+    {
+      "name": "b-major mobile no page overflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "b-major 200% reflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "a-flat-major HTTP/title/description/canonical",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "title": "A-flat Major Piano Chord (Ab): Notes, Inversions & PDF"
+      }
+    },
+    {
+      "name": "a-flat-major raw HTTP contains rendered page nodes",
+      "passed": true,
+      "actual": 125729
+    },
+    {
+      "name": "a-flat-major H1/direct answer",
+      "passed": true,
+      "actual": {
+        "h1": "A-flat Major Piano Chord (A♭)",
+        "answer": "A-flat major is A-flat, C and E-flat. Its formula is 1–3–5, with C as the major third above A-flat."
+      }
+    },
+    {
+      "name": "a-flat-major root notes and keyboard",
+      "passed": true,
+      "actual": {
+        "notes": [
+          "A♭4",
+          "C5",
+          "E♭5"
+        ],
+        "selectedMidi": [
+          68,
+          72,
+          75
+        ]
+      }
+    },
+    {
+      "name": "a-flat-major three positions/FAQ/sources",
+      "passed": true
+    },
+    {
+      "name": "a-flat-major selected crawlable links",
+      "passed": true,
+      "actual": [
+        "/chords/a-major",
+        "/chords/c-minor",
+        "/chords/a-flat-major#practice"
+      ]
+    },
+    {
+      "name": "a-flat-major no duplicate IDs",
+      "passed": true
+    },
+    {
+      "name": "a-flat-major no-JS practice and PDF",
+      "passed": true
+    },
+    {
+      "name": "a-flat-major fixed three-position PDF opens",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "bytes": 45967
+      }
+    },
+    {
+      "name": "a-flat-major root right/left fingering",
+      "passed": true
+    },
+    {
+      "name": "a-flat-major left fingering",
+      "passed": true
+    },
+    {
+      "name": "a-flat-major inversion hides root fingering",
+      "passed": true
+    },
+    {
+      "name": "a-flat-major current print follows selection",
+      "passed": true,
+      "actual": "a-flat-major--first"
+    },
+    {
+      "name": "a-flat-major practice derives correct pitch classes",
+      "passed": true,
+      "actual": "Correct: A♭ contains A♭, C, E♭. Octave and selection order do not affect this check."
+    },
+    {
+      "name": "a-flat-major playback starts from user action",
+      "passed": true,
+      "actual": "playing"
+    },
+    {
+      "name": "a-flat-major mobile no page overflow",
+      "passed": true,
+      "actual": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "a-flat-major 200% reflow",
+      "passed": false,
+      "actual": {
+        "scrollWidth": 404,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "Hub keeps 19 objects and links exactly eight details",
+      "passed": true
+    },
+    {
+      "name": "Hub keeps C-flat collection-only",
+      "passed": true
+    },
+    {
+      "name": "Sitemap adds only five authorized chord URLs",
+      "passed": true,
+      "actual": 22
+    },
+    {
+      "name": "/chords/c-flat-major stays unpublished",
+      "passed": true,
+      "actual": 404
+    },
+    {
+      "name": "/chords/by-key stays unpublished",
+      "passed": true,
+      "actual": 404
+    },
+    {
+      "name": "/chords/finder stays unpublished",
+      "passed": true,
+      "actual": 404
+    },
+    {
+      "name": "/chord-progressions stays unpublished",
+      "passed": true,
+      "actual": 404
+    },
+    {
+      "name": "/guide/piano-chords stays unpublished",
+      "passed": true,
+      "actual": 404
+    },
+    {
+      "name": "/keyboard-notes/finger-numbers stays unpublished",
+      "passed": true,
+      "actual": 404
+    },
+    {
+      "name": "No runtime or hydration errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "not_tested": [
+    "human listening",
+    "real mobile/tablet device",
+    "screen reader",
+    "physical printing",
+    "PDF tag accessibility",
+    "independent professional review of octave-adapted fingerings"
+  ]
+}

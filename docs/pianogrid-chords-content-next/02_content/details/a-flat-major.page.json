@@ -1,0 +1,361 @@
+{
+  "url": "/chords/a-flat-major",
+  "title": "A-flat Major Piano Chord (Ab): Notes, Inversions & PDF",
+  "description": "Find the A-flat major piano chord: A-flat, C and E-flat. Compare its inversions, keep the spelling clear and print the keyboard reference.",
+  "user_task": "Locate this exact triad and compare its three bass positions.",
+  "questions": [
+    "Does Ab mean A-flat minor?",
+    "Which note is natural in A-flat major?",
+    "What does A-flat/C mean?",
+    "Does the PDF include finger numbers?",
+    "Does A-flat major have the same chord tones as C minor?"
+  ],
+  "blocks": [
+    {
+      "heading": "Notes and keyboard position",
+      "body": "A-flat major is A-flat, C and E-flat. Its formula is 1–3–5, with C as the major third above A-flat. The displayed root-position example is A♭4–C5–E♭5. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[已核实] rules; [推断] register and original teaching example"
+    },
+    {
+      "heading": "What to notice",
+      "body": "Two chord tones use black keys, but the third C is natural. Do not lower C merely because the root name contains a flat. The accidental belongs to its written note unless another notation instruction says otherwise. From A-flat, C is four semitones higher and E-flat is seven. A-flat major is not A major with only its root lowered: moving the entire A–C♯–E shape down a semitone gives A♭–C–E♭.",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original explanation from preserved note data and cited rules"
+    },
+    {
+      "heading": "Compare three positions",
+      "body": "Read each bass note before selecting a position. The root-position example starts with A♭; first inversion starts with C; second inversion starts with E♭. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
+      "source_ids": [
+        "PG-OMT",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
+    }
+  ],
+  "data": {
+    "root": "Ab",
+    "quality": "major",
+    "symbol": "Ab",
+    "aliases": [
+      "Ab",
+      "A-flat major",
+      "Abmaj"
+    ],
+    "pitch_classes": [
+      "Ab",
+      "C",
+      "Eb"
+    ],
+    "semitones_from_root": [
+      0,
+      4,
+      7
+    ],
+    "intervals": [
+      "perfect unison",
+      "major third",
+      "perfect fifth"
+    ],
+    "voicings": [
+      {
+        "id": "root",
+        "label": "Root position",
+        "notes": [
+          "Ab4",
+          "C5",
+          "Eb5"
+        ],
+        "midi": [
+          68,
+          72,
+          75
+        ],
+        "bass": "Ab4",
+        "symbol": "Ab",
+        "keyboard_highlights": [
+          {
+            "midi": 68,
+            "spelling": "Ab4"
+          },
+          {
+            "midi": 72,
+            "spelling": "C5"
+          },
+          {
+            "midi": 75,
+            "spelling": "Eb5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            68,
+            72,
+            75
+          ],
+          "ascending_midi": [
+            68,
+            72,
+            75
+          ],
+          "descending_midi": [
+            75,
+            72,
+            68
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "first",
+        "label": "First inversion",
+        "notes": [
+          "C4",
+          "Eb4",
+          "Ab4"
+        ],
+        "midi": [
+          60,
+          63,
+          68
+        ],
+        "bass": "C4",
+        "symbol": "Ab/C",
+        "keyboard_highlights": [
+          {
+            "midi": 60,
+            "spelling": "C4"
+          },
+          {
+            "midi": 63,
+            "spelling": "Eb4"
+          },
+          {
+            "midi": 68,
+            "spelling": "Ab4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            60,
+            63,
+            68
+          ],
+          "ascending_midi": [
+            60,
+            63,
+            68
+          ],
+          "descending_midi": [
+            68,
+            63,
+            60
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "second",
+        "label": "Second inversion",
+        "notes": [
+          "Eb4",
+          "Ab4",
+          "C5"
+        ],
+        "midi": [
+          63,
+          68,
+          72
+        ],
+        "bass": "Eb4",
+        "symbol": "Ab/Eb",
+        "keyboard_highlights": [
+          {
+            "midi": 63,
+            "spelling": "Eb4"
+          },
+          {
+            "midi": 68,
+            "spelling": "Ab4"
+          },
+          {
+            "midi": 72,
+            "spelling": "C5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            63,
+            68,
+            72
+          ],
+          "ascending_midi": [
+            63,
+            68,
+            72
+          ],
+          "descending_midi": [
+            72,
+            68,
+            63
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      }
+    ],
+    "default_voicing": "root",
+    "derivation": {
+      "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN",
+        "PG-OMT"
+      ]
+    },
+    "assets": [
+      {
+        "path": "assets/chord-a-flat-major.svg",
+        "format": "SVG",
+        "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+        "delivery_file": "05_assets/chord-a-flat-major.svg",
+        "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+        "delivery_status": "generated_in_this_package",
+        "sha256": "f4fccf04625614ecd7861550b618e8bde5371d9d29ec67f6e6351359eab6c5f1",
+        "tagged_pdf_accessibility": null
+      },
+      {
+        "path": "assets/chord-a-flat-major.pdf",
+        "format": "PDF",
+        "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+        "delivery_file": "05_assets/chord-a-flat-major.pdf",
+        "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+        "delivery_status": "generated_in_this_package",
+        "sha256": "a1986adb149c0785be1970cc8d992e538164df63922a1a6ae88c2941d2265375",
+        "tagged_pdf_accessibility": "not_certified"
+      }
+    ],
+    "related": [
+      "/chords",
+      "/chords/a-major",
+      "/chords/c-minor",
+      "/guide/piano-chords",
+      "/chords/by-key"
+    ]
+  },
+  "source_ids": [
+    "PG-TRIADS",
+    "PG-OMT",
+    "PG-ASPN",
+    "PG-SKOOVE-A-FLAT-MAJOR"
+  ],
+  "issues": [
+    {
+      "id": "INT-a-flat-major",
+      "field": "runtime",
+      "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+      "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
+    },
+    {
+      "id": "FINGER-INV-a-flat-major",
+      "field": "inversion fingering",
+      "reason": "No inversion fingerings are included; B3 supports root examples only.",
+      "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P155",
+      "status": "prepared_not_live",
+      "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
+      "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
+    }
+  ],
+  "baseline_page_id": "U079",
+  "batch": "F",
+  "main_keyword": "a flat chord piano",
+  "keywords": [
+    "a flat chord piano",
+    "a flat piano chord",
+    "ab chord on piano",
+    "a flat chords piano",
+    "piano a flat chord",
+    "ab chord piano",
+    "ab piano chord"
+  ],
+  "source_groups": [
+    {
+      "id": "P155",
+      "representative": "a flat chord piano",
+      "section": null,
+      "synonyms": [
+        "a flat piano chord",
+        "ab chord on piano",
+        "a flat chords piano",
+        "piano a flat chord",
+        "ab chord piano",
+        "ab piano chord"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A335:G335",
+      "delivery_method": "独立页首要任务",
+      "required_output": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "first_release_scope": "模板已确认；此实例内容待审核",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T07",
+  "baseline_priority": "后做",
+  "baseline_purpose": "查降A大三和弦键位",
+  "final_scope": {
+    "id": "T07",
+    "name": "具体和弦页",
+    "confirmation_status": "A minor 样板已确认；其他已有对象复用模板，不等于逐页确认",
+    "user_task": "直接查某一个明确和弦的组成、键位、转位和声音。",
+    "modules": [
+      "进入即固定当前和弦，不再要求选择根音。",
+      "显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。",
+      "原位与转位同页切换，图示和播放同步；打印当前结果。",
+      "针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。"
+    ],
+    "boundary": "不复制中心页全量筛选器；不为转位/打印模式单独建页；不自动补全全部和弦组合。",
+    "acceptance": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。"
+  },
+  "required_delivery": "进入即固定当前和弦，不再要求选择根音。；显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。；原位与转位同页切换，图示和播放同步；打印当前结果。；针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。",
+  "release_conditions": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_ready_adapter_required",
+  "metadata": {
+    "title": "A-flat Major Piano Chord (Ab): Notes, Inversions & PDF",
+    "description": "Find the A-flat major piano chord: A-flat, C and E-flat. Compare its inversions, keep the spelling clear and print the keyboard reference.",
+    "canonical_path": "/chords/a-flat-major",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

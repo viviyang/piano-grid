@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-09-11T12:27:24.8668666Z",
+  "reason": "Next isolated production build rewrote generated TypeScript route references; restored the exact pre-build .next configuration.",
+  "files": {
+    "next-env.d.ts": {
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+      "git_diff_empty": true
+    },
+    "tsconfig.json": {
+      "sha256": "b32217f406ba6d6d07abadc653e540b667daf037505327b1e970360a041dbb6f",
+      "git_diff_empty": true
+    }
+  }
+}

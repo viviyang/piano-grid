@@ -1,0 +1,1043 @@
+{
+  "executed_at": "2026-09-11T08:51:36.002Z",
+  "passed": 167,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Page HTTP 200",
+      "passed": true,
+      "actual": 200
+    },
+    {
+      "name": "No automatic AudioContext",
+      "passed": true
+    },
+    {
+      "name": "Metadata title",
+      "passed": true
+    },
+    {
+      "name": "Public route remains indexable",
+      "passed": true,
+      "actual": "index, follow"
+    },
+    {
+      "name": "Canonical matches the integrated route",
+      "passed": true
+    },
+    {
+      "name": "No full ledger/base64 delivered",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-intro",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-intro 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-intro 1",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-result",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-result 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-result 1",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-find-notes",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-find-notes 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-find-notes 1",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-find-notes 2",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-find-notes 3",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-find-notes 4",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-inversions",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-inversions 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-inversions 1",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-why-minor",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-why-minor 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-why-minor 1",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-practice",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-practice 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-practice 1",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-practice 2",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-practice 3",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-practice 4",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-print",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-print 0",
+      "passed": true
+    },
+    {
+      "name": "Source copy am-print 1",
+      "passed": true
+    },
+    {
+      "name": "Block rendered am-questions",
+      "passed": true
+    },
+    {
+      "name": "FAQ source Is Am the same as A minor?",
+      "passed": true
+    },
+    {
+      "name": "FAQ source Yes. Am is a common chord symb",
+      "passed": true
+    },
+    {
+      "name": "FAQ source Does Am/C become a C chord?",
+      "passed": true
+    },
+    {
+      "name": "FAQ source No. It is still A minor, with ",
+      "passed": true
+    },
+    {
+      "name": "FAQ source Is Am the same as Am7?",
+      "passed": true
+    },
+    {
+      "name": "FAQ source No. Am is A–C–E; Am7 adds G. T",
+      "passed": true
+    },
+    {
+      "name": "FAQ source Are the numbers in A3, C4, and",
+      "passed": true
+    },
+    {
+      "name": "FAQ source No. They identify octaves. The",
+      "passed": true
+    },
+    {
+      "name": "am-next restores the three published references",
+      "passed": true
+    },
+    {
+      "name": "am-next preserves original link labels",
+      "passed": true
+    },
+    {
+      "name": "A major comparison has its real detail link",
+      "passed": true
+    },
+    {
+      "name": "No dead page links",
+      "passed": true,
+      "actual": [
+        [
+          "/",
+          200
+        ],
+        [
+          "/keyboard-notes",
+          200
+        ],
+        [
+          "/keyboard-notes/labeled",
+          200
+        ],
+        [
+          "/keyboard-notes/chart",
+          200
+        ],
+        [
+          "/chords",
+          200
+        ],
+        [
+          "/chords/a-minor",
+          200
+        ],
+        [
+          "/chords/a-major",
+          200
+        ],
+        [
+          "/chords/c-major",
+          200
+        ],
+        [
+          "/scales",
+          200
+        ],
+        [
+          "/scales/c-major",
+          200
+        ],
+        [
+          "/scales/a-minor",
+          200
+        ],
+        [
+          "/songs",
+          200
+        ],
+        [
+          "/songs/easy",
+          200
+        ],
+        [
+          "/guide",
+          200
+        ],
+        [
+          "/guide/read-sheet-music",
+          200
+        ],
+        [
+          "/tools",
+          200
+        ],
+        [
+          "/tools/blank-sheet-music",
+          200
+        ],
+        [
+          "/assets/chords/a-minor-notes-inversions.pdf",
+          200
+        ]
+      ]
+    },
+    {
+      "name": "No public fingering controls",
+      "passed": true
+    },
+    {
+      "name": "root: symbol",
+      "passed": true
+    },
+    {
+      "name": "root: bass",
+      "passed": true
+    },
+    {
+      "name": "root: note order",
+      "passed": true
+    },
+    {
+      "name": "root: selected keyboard MIDI",
+      "passed": true
+    },
+    {
+      "name": "root: root identity unchanged",
+      "passed": true
+    },
+    {
+      "name": "root: one 15-white/10-black C3-C5 keyboard",
+      "passed": true
+    },
+    {
+      "name": "root: table follows selection",
+      "passed": true
+    },
+    {
+      "name": "root: only current table row is exposed as selected",
+      "passed": true
+    },
+    {
+      "name": "root/together: actual frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 220,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 261.625565,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 329.627557,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        }
+      ]
+    },
+    {
+      "name": "root/together: actual event timing",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 220,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 261.625565,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 329.627557,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        }
+      ]
+    },
+    {
+      "name": "root/together: Stop clears sound retains selection",
+      "passed": true
+    },
+    {
+      "name": "root/together: old oscillators disconnected",
+      "passed": true
+    },
+    {
+      "name": "root/ascending: actual frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 220,
+          "start": 0.035,
+          "stop": 0.535,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 261.625565,
+          "start": 0.635,
+          "stop": 1.135,
+          "disconnects": 0,
+          "frequencyTime": 0.635
+        },
+        {
+          "frequency": 329.627557,
+          "start": 1.2349999999999999,
+          "stop": 1.7349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 1.2349999999999999
+        }
+      ]
+    },
+    {
+      "name": "root/ascending: actual event timing",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 220,
+          "start": 0.035,
+          "stop": 0.535,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 261.625565,
+          "start": 0.635,
+          "stop": 1.135,
+          "disconnects": 0,
+          "frequencyTime": 0.635
+        },
+        {
+          "frequency": 329.627557,
+          "start": 1.2349999999999999,
+          "stop": 1.7349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 1.2349999999999999
+        }
+      ]
+    },
+    {
+      "name": "root/ascending: Stop clears sound retains selection",
+      "passed": true
+    },
+    {
+      "name": "root/ascending: old oscillators disconnected",
+      "passed": true
+    },
+    {
+      "name": "root: print snapshot",
+      "passed": true
+    },
+    {
+      "name": "root: print MIDI and notes",
+      "passed": true
+    },
+    {
+      "name": "root: print independent of screen crop",
+      "passed": true
+    },
+    {
+      "name": "first: symbol",
+      "passed": true
+    },
+    {
+      "name": "first: bass",
+      "passed": true
+    },
+    {
+      "name": "first: note order",
+      "passed": true
+    },
+    {
+      "name": "first: selected keyboard MIDI",
+      "passed": true
+    },
+    {
+      "name": "first: root identity unchanged",
+      "passed": true
+    },
+    {
+      "name": "first: one 15-white/10-black C3-C5 keyboard",
+      "passed": true
+    },
+    {
+      "name": "first: table follows selection",
+      "passed": true
+    },
+    {
+      "name": "first: only current table row is exposed as selected",
+      "passed": true
+    },
+    {
+      "name": "first/together: actual frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 261.625565,
+          "start": 0.9763333333333334,
+          "stop": 2.1763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 0.9763333333333334
+        },
+        {
+          "frequency": 329.627557,
+          "start": 0.9763333333333334,
+          "stop": 2.1763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 0.9763333333333334
+        },
+        {
+          "frequency": 440,
+          "start": 0.9763333333333334,
+          "stop": 2.1763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 0.9763333333333334
+        }
+      ]
+    },
+    {
+      "name": "first/together: actual event timing",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 261.625565,
+          "start": 0.9763333333333334,
+          "stop": 2.1763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 0.9763333333333334
+        },
+        {
+          "frequency": 329.627557,
+          "start": 0.9763333333333334,
+          "stop": 2.1763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 0.9763333333333334
+        },
+        {
+          "frequency": 440,
+          "start": 0.9763333333333334,
+          "stop": 2.1763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 0.9763333333333334
+        }
+      ]
+    },
+    {
+      "name": "first/together: Stop clears sound retains selection",
+      "passed": true
+    },
+    {
+      "name": "first/together: old oscillators disconnected",
+      "passed": true
+    },
+    {
+      "name": "first/ascending: actual frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 261.625565,
+          "start": 1.0963333333333332,
+          "stop": 1.5963333333333332,
+          "disconnects": 0,
+          "frequencyTime": 1.0963333333333332
+        },
+        {
+          "frequency": 329.627557,
+          "start": 1.696333333333333,
+          "stop": 2.1963333333333335,
+          "disconnects": 0,
+          "frequencyTime": 1.696333333333333
+        },
+        {
+          "frequency": 440,
+          "start": 2.296333333333333,
+          "stop": 2.796333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.296333333333333
+        }
+      ]
+    },
+    {
+      "name": "first/ascending: actual event timing",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 261.625565,
+          "start": 1.0963333333333332,
+          "stop": 1.5963333333333332,
+          "disconnects": 0,
+          "frequencyTime": 1.0963333333333332
+        },
+        {
+          "frequency": 329.627557,
+          "start": 1.696333333333333,
+          "stop": 2.1963333333333335,
+          "disconnects": 0,
+          "frequencyTime": 1.696333333333333
+        },
+        {
+          "frequency": 440,
+          "start": 2.296333333333333,
+          "stop": 2.796333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.296333333333333
+        }
+      ]
+    },
+    {
+      "name": "first/ascending: Stop clears sound retains selection",
+      "passed": true
+    },
+    {
+      "name": "first/ascending: old oscillators disconnected",
+      "passed": true
+    },
+    {
+      "name": "first: print snapshot",
+      "passed": true
+    },
+    {
+      "name": "first: print MIDI and notes",
+      "passed": true
+    },
+    {
+      "name": "first: print independent of screen crop",
+      "passed": true
+    },
+    {
+      "name": "second: symbol",
+      "passed": true
+    },
+    {
+      "name": "second: bass",
+      "passed": true
+    },
+    {
+      "name": "second: note order",
+      "passed": true
+    },
+    {
+      "name": "second: selected keyboard MIDI",
+      "passed": true
+    },
+    {
+      "name": "second: root identity unchanged",
+      "passed": true
+    },
+    {
+      "name": "second: one 15-white/10-black C3-C5 keyboard",
+      "passed": true
+    },
+    {
+      "name": "second: table follows selection",
+      "passed": true
+    },
+    {
+      "name": "second: only current table row is exposed as selected",
+      "passed": true
+    },
+    {
+      "name": "second/together: actual frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.627557,
+          "start": 2.2963333333333336,
+          "stop": 3.4963333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.2963333333333336
+        },
+        {
+          "frequency": 440,
+          "start": 2.2963333333333336,
+          "stop": 3.4963333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.2963333333333336
+        },
+        {
+          "frequency": 523.251131,
+          "start": 2.2963333333333336,
+          "stop": 3.4963333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.2963333333333336
+        }
+      ]
+    },
+    {
+      "name": "second/together: actual event timing",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.627557,
+          "start": 2.2963333333333336,
+          "stop": 3.4963333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.2963333333333336
+        },
+        {
+          "frequency": 440,
+          "start": 2.2963333333333336,
+          "stop": 3.4963333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.2963333333333336
+        },
+        {
+          "frequency": 523.251131,
+          "start": 2.2963333333333336,
+          "stop": 3.4963333333333333,
+          "disconnects": 0,
+          "frequencyTime": 2.2963333333333336
+        }
+      ]
+    },
+    {
+      "name": "second/together: Stop clears sound retains selection",
+      "passed": true
+    },
+    {
+      "name": "second/together: old oscillators disconnected",
+      "passed": true
+    },
+    {
+      "name": "second/ascending: actual frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.627557,
+          "start": 2.507,
+          "stop": 3.007,
+          "disconnects": 0,
+          "frequencyTime": 2.507
+        },
+        {
+          "frequency": 440,
+          "start": 3.107,
+          "stop": 3.607,
+          "disconnects": 0,
+          "frequencyTime": 3.107
+        },
+        {
+          "frequency": 523.251131,
+          "start": 3.707,
+          "stop": 4.207,
+          "disconnects": 0,
+          "frequencyTime": 3.707
+        }
+      ]
+    },
+    {
+      "name": "second/ascending: actual event timing",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.627557,
+          "start": 2.507,
+          "stop": 3.007,
+          "disconnects": 0,
+          "frequencyTime": 2.507
+        },
+        {
+          "frequency": 440,
+          "start": 3.107,
+          "stop": 3.607,
+          "disconnects": 0,
+          "frequencyTime": 3.107
+        },
+        {
+          "frequency": 523.251131,
+          "start": 3.707,
+          "stop": 4.207,
+          "disconnects": 0,
+          "frequencyTime": 3.707
+        }
+      ]
+    },
+    {
+      "name": "second/ascending: Stop clears sound retains selection",
+      "passed": true
+    },
+    {
+      "name": "second/ascending: old oscillators disconnected",
+      "passed": true
+    },
+    {
+      "name": "second: print snapshot",
+      "passed": true
+    },
+    {
+      "name": "second: print MIDI and notes",
+      "passed": true
+    },
+    {
+      "name": "second: print independent of screen crop",
+      "passed": true
+    },
+    {
+      "name": "Print snapshot is stable across a later selection",
+      "passed": true
+    },
+    {
+      "name": "Afterprint releases snapshot without success claim",
+      "passed": true
+    },
+    {
+      "name": "Browser direct-print uses current selection",
+      "passed": true
+    },
+    {
+      "name": "Print failure is honest and leaves PDF available",
+      "passed": true
+    },
+    {
+      "name": "Radio ArrowRight changes selection and retains focus",
+      "passed": true
+    },
+    {
+      "name": "Radio Space selects focused position",
+      "passed": true
+    },
+    {
+      "name": "Visible proxy focus ring",
+      "passed": true,
+      "actual": {
+        "width": "2px",
+        "offset": "3px"
+      }
+    },
+    {
+      "name": "FAQ keyboard expands",
+      "passed": true
+    },
+    {
+      "name": "FAQ keyboard collapses",
+      "passed": true
+    },
+    {
+      "name": "Search stays local and has results",
+      "passed": true
+    },
+    {
+      "name": "Escape closes populated search and returns focus",
+      "passed": true
+    },
+    {
+      "name": "Quick replay disconnects prior scheduled events",
+      "passed": true
+    },
+    {
+      "name": "Selection cancels without autoplay",
+      "passed": true
+    },
+    {
+      "name": "Hidden page cancels audio",
+      "passed": true
+    },
+    {
+      "name": "Pagehide disconnects all active nodes",
+      "passed": true
+    },
+    {
+      "name": "320/0: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "320/1: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "320/2: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "320: no whole-page overflow",
+      "passed": true
+    },
+    {
+      "name": "320: key labels actually 14px",
+      "passed": true
+    },
+    {
+      "name": "320: controls at least 44px",
+      "passed": true
+    },
+    {
+      "name": "390/0: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "390/1: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "390/2: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "390: no whole-page overflow",
+      "passed": true
+    },
+    {
+      "name": "390: key labels actually 14px",
+      "passed": true
+    },
+    {
+      "name": "390: controls at least 44px",
+      "passed": true
+    },
+    {
+      "name": "768/0: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "768/1: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "768/2: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "768: no whole-page overflow",
+      "passed": true
+    },
+    {
+      "name": "768: key labels actually 14px",
+      "passed": true
+    },
+    {
+      "name": "768: controls at least 44px",
+      "passed": true
+    },
+    {
+      "name": "1024/0: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "1024/1: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "1024/2: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "1024: no whole-page overflow",
+      "passed": true
+    },
+    {
+      "name": "1024: key labels actually 14px",
+      "passed": true
+    },
+    {
+      "name": "1024: controls at least 44px",
+      "passed": true
+    },
+    {
+      "name": "1440/0: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "1440/1: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "1440/2: selected keys fully visible",
+      "passed": true
+    },
+    {
+      "name": "1440: no whole-page overflow",
+      "passed": true
+    },
+    {
+      "name": "1440: key labels actually 14px",
+      "passed": true
+    },
+    {
+      "name": "1440: controls at least 44px",
+      "passed": true
+    },
+    {
+      "name": "200% text reflow without whole-page overflow",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion removes transitions",
+      "passed": true
+    },
+    {
+      "name": "Forced colors keeps selection and focus outlines",
+      "passed": true
+    },
+    {
+      "name": "PDF served exact verified bytes",
+      "passed": true,
+      "actual": {
+        "status": 200,
+        "sha256": "cb741308096528b74879b09676103c85d1b4c7584ac84e7bec7200beb133f7c1"
+      }
+    },
+    {
+      "name": "No-JS has root notes, keyboard, table, full copy",
+      "passed": true
+    },
+    {
+      "name": "No-JS disables unsupported actions, retains static PDF",
+      "passed": true
+    },
+    {
+      "name": "No-JS browser print has root-position fallback",
+      "passed": true
+    },
+    {
+      "name": "Unavailable audio is disabled and explained",
+      "passed": true
+    },
+    {
+      "name": "unavailable: switching and printing remain usable",
+      "passed": true
+    },
+    {
+      "name": "Startup error preserves correct answer",
+      "passed": true
+    },
+    {
+      "name": "error: switching and printing remain usable",
+      "passed": true
+    },
+    {
+      "name": "delayed-stop: late resume leaves no live sound",
+      "passed": true
+    },
+    {
+      "name": "delayed-stop: switching and printing remain usable",
+      "passed": true
+    },
+    {
+      "name": "delayed-selection: late resume leaves no live sound",
+      "passed": true
+    },
+    {
+      "name": "delayed-selection: switching and printing remain usable",
+      "passed": true
+    },
+    {
+      "name": "Integrated root exists",
+      "passed": true
+    },
+    {
+      "name": "Authorized chords index exists",
+      "passed": true
+    },
+    {
+      "name": "No runtime/console/hydration errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "not_tested": [
+    "human listening",
+    "real mobile device",
+    "screen-reader audit",
+    "physical printing",
+    "production deployment"
+  ]
+}

@@ -1,0 +1,2158 @@
+{
+  "url": "/scales",
+  "title": "Piano Scales: Notes, Patterns and Practice References",
+  "description": "Compare major and minor scale notes, explore other scale types, and check the exact form before practicing.",
+  "user_task": "Choose a scale and understand its notes, form, fingering availability and next practice action.",
+  "questions": [
+    "Which notes belong to my scale?",
+    "How do natural, harmonic and melodic minor differ?",
+    "What do scale degrees mean?",
+    "Which hand, direction and range does a fingering cover?",
+    "What can I listen to or print?"
+  ],
+  "blocks": [
+    {
+      "id": "start",
+      "heading": "Piano scales: choose a sound, then a starting note",
+      "body": "Start with C major: C–D–E–F–G–A–B–C. Choose another tonic to compare its notes. The final C repeats the first note one octave higher; it is not an eighth distinct scale degree.",
+      "source_ids": [
+        "AC-01",
+        "AC-04"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "formula",
+      "heading": "Read the pattern",
+      "body": "For a major scale, move by whole, whole, half, whole, whole, whole, half steps. A whole step spans two adjacent-key steps; a half step spans one. Keep the note spelling shown for the chosen key. Fifteen conventional major-key spellings in this chart represent twelve tonic pitch classes on an equal-tempered keyboard.",
+      "source_ids": [
+        "AC-01",
+        "AC-04"
+      ],
+      "evidence_status": "[推断] 由核实音程及本表15行音高类集合计算"
+    },
+    {
+      "id": "minor",
+      "heading": "Choose the minor form",
+      "body": "A natural minor uses A–B–C–D–E–F–G. Harmonic minor raises G to G♯. Classical melodic minor raises F and G on the way up and returns to the natural-minor notes on the way down. Select the form before comparing, listening, or printing.",
+      "source_ids": [
+        "AC-02"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "compare",
+      "heading": "Same notes or same tonic?",
+      "body": "C major and A natural minor share a note collection but organize it around different tonics. C major and C minor start on the same tonic; C natural minor lowers E, A and B to E♭, A♭ and B♭.",
+      "source_ids": [
+        "AC-02"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "degrees",
+      "heading": "Give each note a job",
+      "body": "In C major the degrees are C tonic, D supertonic, E mediant, F subdominant, G dominant, A submediant and B leading tone. In natural minor, degree seven is a whole step below the tonic and is called the subtonic.",
+      "source_ids": [
+        "AC-01",
+        "AC-02"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "jazz",
+      "heading": "A few jazz scale examples",
+      "body": "Compare C Dorian (C D E♭ F G A B♭), C Mixolydian (C D E F G A B♭), and C blues (C E♭ F G♭ G B♭). Bebop dominant adds a major seventh to Mixolydian; C B B♭ A G F E D C gives a descending example. The choice of notes still depends on the musical context.",
+      "source_ids": [
+        "AC-03"
+      ],
+      "evidence_status": "[已核实]"
+    },
+    {
+      "id": "types",
+      "heading": "Continue with a different type",
+      "body": "Use the modes page to compare seven diatonic modes. Pentatonic and blues pages show their own note collections. Chromatic practice moves through every neighboring key. Harmonic major has its own reference page; it is not another name for harmonic minor.",
+      "source_ids": [
+        "AC-03"
+      ],
+      "evidence_status": "[推断] 根据已规划类型页组织导航；定义以对应页来源为准"
+    },
+    {
+      "id": "practice",
+      "heading": "Try one comparison",
+      "body": "Pick two examples and name the notes that change. Play one hand at a time at a pace you can follow. Keep the tonic visible in the result. When a fingering is available, use only its stated hand, direction and octave range; a blank field is not an invitation to reuse another scale’s fingering.",
+      "source_ids": [],
+      "evidence_status": "[推断] 原创编辑练习与数据使用约束"
+    },
+    {
+      "id": "print",
+      "heading": "Print the selected reference",
+      "body": "The print view should name the tonic, scale form, direction and range, and show exactly the notes in the result. Finger numbers belong on the printout only when that combination has been checked. See the individual scale reference for its available fingering.",
+      "source_ids": [],
+      "evidence_status": "[推断] 待实现功能文案，非已上线声明"
+    }
+  ],
+  "data": {
+    "default_selection": {
+      "tonic": "C",
+      "form": "major",
+      "range_octaves": 1,
+      "hand": "right",
+      "direction": "ascending"
+    },
+    "major_overview": [
+      {
+        "tonic": "C",
+        "notes": [
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "B"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "Db",
+        "notes": [
+          "Db",
+          "Eb",
+          "F",
+          "Gb",
+          "Ab",
+          "Bb",
+          "C"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "D",
+        "notes": [
+          "D",
+          "E",
+          "F#",
+          "G",
+          "A",
+          "B",
+          "C#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "Eb",
+        "notes": [
+          "Eb",
+          "F",
+          "G",
+          "Ab",
+          "Bb",
+          "C",
+          "D"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "E",
+        "notes": [
+          "E",
+          "F#",
+          "G#",
+          "A",
+          "B",
+          "C#",
+          "D#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "F",
+        "notes": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "F#",
+        "notes": [
+          "F#",
+          "G#",
+          "A#",
+          "B",
+          "C#",
+          "D#",
+          "E#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "G",
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "Ab",
+        "notes": [
+          "Ab",
+          "Bb",
+          "C",
+          "Db",
+          "Eb",
+          "F",
+          "G"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "A",
+        "notes": [
+          "A",
+          "B",
+          "C#",
+          "D",
+          "E",
+          "F#",
+          "G#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "Bb",
+        "notes": [
+          "Bb",
+          "C",
+          "D",
+          "Eb",
+          "F",
+          "G",
+          "A"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "B",
+        "notes": [
+          "B",
+          "C#",
+          "D#",
+          "E",
+          "F#",
+          "G#",
+          "A#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "Cb",
+        "notes": [
+          "Cb",
+          "Db",
+          "Eb",
+          "Fb",
+          "Gb",
+          "Ab",
+          "Bb"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "Gb",
+        "notes": [
+          "Gb",
+          "Ab",
+          "Bb",
+          "Cb",
+          "Db",
+          "Eb",
+          "F"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      },
+      {
+        "tonic": "C#",
+        "notes": [
+          "C#",
+          "D#",
+          "E#",
+          "F#",
+          "G#",
+          "A#",
+          "B#"
+        ],
+        "evidence_status": "[推断] 用已核实大调音程及逐字母拼写规则计算；与本批具体页交叉核对",
+        "source_ids": [
+          "AC-01",
+          "AC-04"
+        ]
+      }
+    ],
+    "form_comparison": [
+      {
+        "id": "major",
+        "steps_semitones": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "C_example": [
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "id": "natural-minor",
+        "steps_semitones": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "A_example": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A"
+        ]
+      },
+      {
+        "id": "harmonic-minor",
+        "steps_semitones": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "A_example": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G#",
+          "A"
+        ]
+      },
+      {
+        "id": "melodic-minor-classical",
+        "ascending_steps_semitones": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "A_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#",
+          "G#",
+          "A"
+        ],
+        "A_descending": [
+          "A",
+          "G",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ]
+      }
+    ],
+    "scale_degrees": [
+      {
+        "degree": 1,
+        "name": "tonic"
+      },
+      {
+        "degree": 2,
+        "name": "supertonic"
+      },
+      {
+        "degree": 3,
+        "name": "mediant"
+      },
+      {
+        "degree": 4,
+        "name": "subdominant"
+      },
+      {
+        "degree": 5,
+        "name": "dominant"
+      },
+      {
+        "degree": 6,
+        "name": "submediant"
+      },
+      {
+        "degree": 7,
+        "name": "leading tone"
+      }
+    ],
+    "jazz_examples": [
+      {
+        "name": "C Dorian",
+        "notes": [
+          "C",
+          "D",
+          "Eb",
+          "F",
+          "G",
+          "A",
+          "Bb"
+        ]
+      },
+      {
+        "name": "C Mixolydian",
+        "notes": [
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "Bb"
+        ]
+      },
+      {
+        "name": "C blues",
+        "notes": [
+          "C",
+          "Eb",
+          "F",
+          "Gb",
+          "G",
+          "Bb"
+        ]
+      },
+      {
+        "name": "C bebop dominant",
+        "descending": [
+          "C5",
+          "B4",
+          "Bb4",
+          "A4",
+          "G4",
+          "F4",
+          "E4",
+          "D4",
+          "C4"
+        ]
+      }
+    ],
+    "fingering_resolution": "Reuse exact verified hand/direction/octave records from the corresponding batch-A page; no pattern inference.",
+    "print_assets": null,
+    "audio_assets": null,
+    "ui_copy": {
+      "tonic": "Starting note",
+      "form": "Scale type",
+      "direction": "Direction",
+      "hand": "Hand",
+      "range": "Octaves",
+      "play": "Play scale",
+      "stop": "Stop",
+      "print": "Print this scale",
+      "unverified_fingering": "Fingering is not available for this selection."
+    },
+    "source_ids": [
+      "AC-01",
+      "AC-02",
+      "AC-03",
+      "AC-04"
+    ],
+    "evidence_status": "[推断] 表中音阶序列依核实规则构造；来源支持规则，非对每条机器输出作独立出版核验",
+    "minor_overview": [
+      {
+        "tonic": "A",
+        "natural_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A"
+        ],
+        "natural_descending": [
+          "A",
+          "G",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ],
+        "harmonic_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G#",
+          "A"
+        ],
+        "harmonic_descending": [
+          "A",
+          "G#",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ],
+        "melodic_classical_ascending": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#",
+          "G#",
+          "A"
+        ],
+        "melodic_classical_descending": [
+          "A",
+          "G",
+          "F",
+          "E",
+          "D",
+          "C",
+          "B",
+          "A"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "E",
+        "natural_ascending": [
+          "E",
+          "F#",
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "natural_descending": [
+          "E",
+          "D",
+          "C",
+          "B",
+          "A",
+          "G",
+          "F#",
+          "E"
+        ],
+        "harmonic_ascending": [
+          "E",
+          "F#",
+          "G",
+          "A",
+          "B",
+          "C",
+          "D#",
+          "E"
+        ],
+        "harmonic_descending": [
+          "E",
+          "D#",
+          "C",
+          "B",
+          "A",
+          "G",
+          "F#",
+          "E"
+        ],
+        "melodic_classical_ascending": [
+          "E",
+          "F#",
+          "G",
+          "A",
+          "B",
+          "C#",
+          "D#",
+          "E"
+        ],
+        "melodic_classical_descending": [
+          "E",
+          "D",
+          "C",
+          "B",
+          "A",
+          "G",
+          "F#",
+          "E"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "B",
+        "natural_ascending": [
+          "B",
+          "C#",
+          "D",
+          "E",
+          "F#",
+          "G",
+          "A",
+          "B"
+        ],
+        "natural_descending": [
+          "B",
+          "A",
+          "G",
+          "F#",
+          "E",
+          "D",
+          "C#",
+          "B"
+        ],
+        "harmonic_ascending": [
+          "B",
+          "C#",
+          "D",
+          "E",
+          "F#",
+          "G",
+          "A#",
+          "B"
+        ],
+        "harmonic_descending": [
+          "B",
+          "A#",
+          "G",
+          "F#",
+          "E",
+          "D",
+          "C#",
+          "B"
+        ],
+        "melodic_classical_ascending": [
+          "B",
+          "C#",
+          "D",
+          "E",
+          "F#",
+          "G#",
+          "A#",
+          "B"
+        ],
+        "melodic_classical_descending": [
+          "B",
+          "A",
+          "G",
+          "F#",
+          "E",
+          "D",
+          "C#",
+          "B"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "F#",
+        "natural_ascending": [
+          "F#",
+          "G#",
+          "A",
+          "B",
+          "C#",
+          "D",
+          "E",
+          "F#"
+        ],
+        "natural_descending": [
+          "F#",
+          "E",
+          "D",
+          "C#",
+          "B",
+          "A",
+          "G#",
+          "F#"
+        ],
+        "harmonic_ascending": [
+          "F#",
+          "G#",
+          "A",
+          "B",
+          "C#",
+          "D",
+          "E#",
+          "F#"
+        ],
+        "harmonic_descending": [
+          "F#",
+          "E#",
+          "D",
+          "C#",
+          "B",
+          "A",
+          "G#",
+          "F#"
+        ],
+        "melodic_classical_ascending": [
+          "F#",
+          "G#",
+          "A",
+          "B",
+          "C#",
+          "D#",
+          "E#",
+          "F#"
+        ],
+        "melodic_classical_descending": [
+          "F#",
+          "E",
+          "D",
+          "C#",
+          "B",
+          "A",
+          "G#",
+          "F#"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "C#",
+        "natural_ascending": [
+          "C#",
+          "D#",
+          "E",
+          "F#",
+          "G#",
+          "A",
+          "B",
+          "C#"
+        ],
+        "natural_descending": [
+          "C#",
+          "B",
+          "A",
+          "G#",
+          "F#",
+          "E",
+          "D#",
+          "C#"
+        ],
+        "harmonic_ascending": [
+          "C#",
+          "D#",
+          "E",
+          "F#",
+          "G#",
+          "A",
+          "B#",
+          "C#"
+        ],
+        "harmonic_descending": [
+          "C#",
+          "B#",
+          "A",
+          "G#",
+          "F#",
+          "E",
+          "D#",
+          "C#"
+        ],
+        "melodic_classical_ascending": [
+          "C#",
+          "D#",
+          "E",
+          "F#",
+          "G#",
+          "A#",
+          "B#",
+          "C#"
+        ],
+        "melodic_classical_descending": [
+          "C#",
+          "B",
+          "A",
+          "G#",
+          "F#",
+          "E",
+          "D#",
+          "C#"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "G#",
+        "natural_ascending": [
+          "G#",
+          "A#",
+          "B",
+          "C#",
+          "D#",
+          "E",
+          "F#",
+          "G#"
+        ],
+        "natural_descending": [
+          "G#",
+          "F#",
+          "E",
+          "D#",
+          "C#",
+          "B",
+          "A#",
+          "G#"
+        ],
+        "harmonic_ascending": [
+          "G#",
+          "A#",
+          "B",
+          "C#",
+          "D#",
+          "E",
+          "F##",
+          "G#"
+        ],
+        "harmonic_descending": [
+          "G#",
+          "F##",
+          "E",
+          "D#",
+          "C#",
+          "B",
+          "A#",
+          "G#"
+        ],
+        "melodic_classical_ascending": [
+          "G#",
+          "A#",
+          "B",
+          "C#",
+          "D#",
+          "E#",
+          "F##",
+          "G#"
+        ],
+        "melodic_classical_descending": [
+          "G#",
+          "F#",
+          "E",
+          "D#",
+          "C#",
+          "B",
+          "A#",
+          "G#"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "D#",
+        "natural_ascending": [
+          "D#",
+          "E#",
+          "F#",
+          "G#",
+          "A#",
+          "B",
+          "C#",
+          "D#"
+        ],
+        "natural_descending": [
+          "D#",
+          "C#",
+          "B",
+          "A#",
+          "G#",
+          "F#",
+          "E#",
+          "D#"
+        ],
+        "harmonic_ascending": [
+          "D#",
+          "E#",
+          "F#",
+          "G#",
+          "A#",
+          "B",
+          "C##",
+          "D#"
+        ],
+        "harmonic_descending": [
+          "D#",
+          "C##",
+          "B",
+          "A#",
+          "G#",
+          "F#",
+          "E#",
+          "D#"
+        ],
+        "melodic_classical_ascending": [
+          "D#",
+          "E#",
+          "F#",
+          "G#",
+          "A#",
+          "B#",
+          "C##",
+          "D#"
+        ],
+        "melodic_classical_descending": [
+          "D#",
+          "C#",
+          "B",
+          "A#",
+          "G#",
+          "F#",
+          "E#",
+          "D#"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "A#",
+        "natural_ascending": [
+          "A#",
+          "B#",
+          "C#",
+          "D#",
+          "E#",
+          "F#",
+          "G#",
+          "A#"
+        ],
+        "natural_descending": [
+          "A#",
+          "G#",
+          "F#",
+          "E#",
+          "D#",
+          "C#",
+          "B#",
+          "A#"
+        ],
+        "harmonic_ascending": [
+          "A#",
+          "B#",
+          "C#",
+          "D#",
+          "E#",
+          "F#",
+          "G##",
+          "A#"
+        ],
+        "harmonic_descending": [
+          "A#",
+          "G##",
+          "F#",
+          "E#",
+          "D#",
+          "C#",
+          "B#",
+          "A#"
+        ],
+        "melodic_classical_ascending": [
+          "A#",
+          "B#",
+          "C#",
+          "D#",
+          "E#",
+          "F##",
+          "G##",
+          "A#"
+        ],
+        "melodic_classical_descending": [
+          "A#",
+          "G#",
+          "F#",
+          "E#",
+          "D#",
+          "C#",
+          "B#",
+          "A#"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "D",
+        "natural_ascending": [
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D"
+        ],
+        "natural_descending": [
+          "D",
+          "C",
+          "Bb",
+          "A",
+          "G",
+          "F",
+          "E",
+          "D"
+        ],
+        "harmonic_ascending": [
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C#",
+          "D"
+        ],
+        "harmonic_descending": [
+          "D",
+          "C#",
+          "Bb",
+          "A",
+          "G",
+          "F",
+          "E",
+          "D"
+        ],
+        "melodic_classical_ascending": [
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "B",
+          "C#",
+          "D"
+        ],
+        "melodic_classical_descending": [
+          "D",
+          "C",
+          "Bb",
+          "A",
+          "G",
+          "F",
+          "E",
+          "D"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "G",
+        "natural_ascending": [
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "Eb",
+          "F",
+          "G"
+        ],
+        "natural_descending": [
+          "G",
+          "F",
+          "Eb",
+          "D",
+          "C",
+          "Bb",
+          "A",
+          "G"
+        ],
+        "harmonic_ascending": [
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "Eb",
+          "F#",
+          "G"
+        ],
+        "harmonic_descending": [
+          "G",
+          "F#",
+          "Eb",
+          "D",
+          "C",
+          "Bb",
+          "A",
+          "G"
+        ],
+        "melodic_classical_ascending": [
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E",
+          "F#",
+          "G"
+        ],
+        "melodic_classical_descending": [
+          "G",
+          "F",
+          "Eb",
+          "D",
+          "C",
+          "Bb",
+          "A",
+          "G"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "C",
+        "natural_ascending": [
+          "C",
+          "D",
+          "Eb",
+          "F",
+          "G",
+          "Ab",
+          "Bb",
+          "C"
+        ],
+        "natural_descending": [
+          "C",
+          "Bb",
+          "Ab",
+          "G",
+          "F",
+          "Eb",
+          "D",
+          "C"
+        ],
+        "harmonic_ascending": [
+          "C",
+          "D",
+          "Eb",
+          "F",
+          "G",
+          "Ab",
+          "B",
+          "C"
+        ],
+        "harmonic_descending": [
+          "C",
+          "B",
+          "Ab",
+          "G",
+          "F",
+          "Eb",
+          "D",
+          "C"
+        ],
+        "melodic_classical_ascending": [
+          "C",
+          "D",
+          "Eb",
+          "F",
+          "G",
+          "A",
+          "B",
+          "C"
+        ],
+        "melodic_classical_descending": [
+          "C",
+          "Bb",
+          "Ab",
+          "G",
+          "F",
+          "Eb",
+          "D",
+          "C"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "F",
+        "natural_ascending": [
+          "F",
+          "G",
+          "Ab",
+          "Bb",
+          "C",
+          "Db",
+          "Eb",
+          "F"
+        ],
+        "natural_descending": [
+          "F",
+          "Eb",
+          "Db",
+          "C",
+          "Bb",
+          "Ab",
+          "G",
+          "F"
+        ],
+        "harmonic_ascending": [
+          "F",
+          "G",
+          "Ab",
+          "Bb",
+          "C",
+          "Db",
+          "E",
+          "F"
+        ],
+        "harmonic_descending": [
+          "F",
+          "E",
+          "Db",
+          "C",
+          "Bb",
+          "Ab",
+          "G",
+          "F"
+        ],
+        "melodic_classical_ascending": [
+          "F",
+          "G",
+          "Ab",
+          "Bb",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "melodic_classical_descending": [
+          "F",
+          "Eb",
+          "Db",
+          "C",
+          "Bb",
+          "Ab",
+          "G",
+          "F"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "Bb",
+        "natural_ascending": [
+          "Bb",
+          "C",
+          "Db",
+          "Eb",
+          "F",
+          "Gb",
+          "Ab",
+          "Bb"
+        ],
+        "natural_descending": [
+          "Bb",
+          "Ab",
+          "Gb",
+          "F",
+          "Eb",
+          "Db",
+          "C",
+          "Bb"
+        ],
+        "harmonic_ascending": [
+          "Bb",
+          "C",
+          "Db",
+          "Eb",
+          "F",
+          "Gb",
+          "A",
+          "Bb"
+        ],
+        "harmonic_descending": [
+          "Bb",
+          "A",
+          "Gb",
+          "F",
+          "Eb",
+          "Db",
+          "C",
+          "Bb"
+        ],
+        "melodic_classical_ascending": [
+          "Bb",
+          "C",
+          "Db",
+          "Eb",
+          "F",
+          "G",
+          "A",
+          "Bb"
+        ],
+        "melodic_classical_descending": [
+          "Bb",
+          "Ab",
+          "Gb",
+          "F",
+          "Eb",
+          "Db",
+          "C",
+          "Bb"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "Eb",
+        "natural_ascending": [
+          "Eb",
+          "F",
+          "Gb",
+          "Ab",
+          "Bb",
+          "Cb",
+          "Db",
+          "Eb"
+        ],
+        "natural_descending": [
+          "Eb",
+          "Db",
+          "Cb",
+          "Bb",
+          "Ab",
+          "Gb",
+          "F",
+          "Eb"
+        ],
+        "harmonic_ascending": [
+          "Eb",
+          "F",
+          "Gb",
+          "Ab",
+          "Bb",
+          "Cb",
+          "D",
+          "Eb"
+        ],
+        "harmonic_descending": [
+          "Eb",
+          "D",
+          "Cb",
+          "Bb",
+          "Ab",
+          "Gb",
+          "F",
+          "Eb"
+        ],
+        "melodic_classical_ascending": [
+          "Eb",
+          "F",
+          "Gb",
+          "Ab",
+          "Bb",
+          "C",
+          "D",
+          "Eb"
+        ],
+        "melodic_classical_descending": [
+          "Eb",
+          "Db",
+          "Cb",
+          "Bb",
+          "Ab",
+          "Gb",
+          "F",
+          "Eb"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      },
+      {
+        "tonic": "Ab",
+        "natural_ascending": [
+          "Ab",
+          "Bb",
+          "Cb",
+          "Db",
+          "Eb",
+          "Fb",
+          "Gb",
+          "Ab"
+        ],
+        "natural_descending": [
+          "Ab",
+          "Gb",
+          "Fb",
+          "Eb",
+          "Db",
+          "Cb",
+          "Bb",
+          "Ab"
+        ],
+        "harmonic_ascending": [
+          "Ab",
+          "Bb",
+          "Cb",
+          "Db",
+          "Eb",
+          "Fb",
+          "G",
+          "Ab"
+        ],
+        "harmonic_descending": [
+          "Ab",
+          "G",
+          "Fb",
+          "Eb",
+          "Db",
+          "Cb",
+          "Bb",
+          "Ab"
+        ],
+        "melodic_classical_ascending": [
+          "Ab",
+          "Bb",
+          "Cb",
+          "Db",
+          "Eb",
+          "F",
+          "G",
+          "Ab"
+        ],
+        "melodic_classical_descending": [
+          "Ab",
+          "Gb",
+          "Fb",
+          "Eb",
+          "Db",
+          "Cb",
+          "Bb",
+          "Ab"
+        ],
+        "fingering": null,
+        "evidence_status": "[推断] 根据双源核实的三种小调音程规则与逐字母拼写计算；非指法推算",
+        "source_ids": [
+          "AC-02",
+          "AC-03"
+        ]
+      }
+    ]
+  },
+  "source_ids": [
+    "AC-01",
+    "AC-02",
+    "AC-03",
+    "AC-04"
+  ],
+  "issues": [
+    {
+      "id": "A-CENTER-PRINT",
+      "field": "data.print_assets",
+      "reason": "本轮提供打印内容及字段；尚无涵盖全中心范围的真实PDF资产，不能宣称all/双手PDF交付。",
+      "needed_to_resolve": "由本批已核实手别/方向数据生成原创PDF并视觉验收；未核指法组合不输出数字。"
+    },
+    {
+      "id": "A-CENTER-IMPLEMENT",
+      "field": "playback/print",
+      "reason": "提供内容与选择数据；查询、播放、打印功能未开发验收。",
+      "needed_to_resolve": "Codex实现后对显示/发声/打印三者一致性验收。"
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P179",
+      "status": "partial",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": "试听与打印实现验收"
+    },
+    {
+      "source_group_id": "P180",
+      "status": "partial",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": "实际PDF文件及范围验收"
+    },
+    {
+      "source_group_id": "P181",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P190",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P196",
+      "status": "content_prepared",
+      "delivered": "15种调性拼写的三种小调上下行音名表；未推测指法",
+      "pending": "各调音图和试听的实现验收"
+    },
+    {
+      "source_group_id": "P204",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P208",
+      "status": "partial",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": "未核手别/方向的指法"
+    },
+    {
+      "source_group_id": "P210",
+      "status": "partial",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": "实际PDF文件及范围验收"
+    },
+    {
+      "source_group_id": "P213",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P214",
+      "status": "partial",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": "浏览器实际查询功能验收"
+    },
+    {
+      "source_group_id": "P222",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P224",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P233",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    },
+    {
+      "source_group_id": "P235",
+      "status": "content_prepared",
+      "delivered": "对应英文模块与data中的真实定义、例子或大调总表",
+      "pending": ""
+    }
+  ],
+  "baseline_page_id": "U088",
+  "batch": "A",
+  "main_keyword": "piano scales",
+  "keywords": [
+    "piano scales",
+    "piano scale",
+    "musical scales piano",
+    "scales piano",
+    "scales on the piano",
+    "music notes scale piano",
+    "piano key scales",
+    "all piano scales",
+    "piano key scale",
+    "piano keyboard scales",
+    "scale piano",
+    "scales on piano",
+    "what are the key scales for piano?",
+    "two hand beginner piano scales pdf",
+    "piano scales chart",
+    "music scale chart",
+    "musical scales chart piano",
+    "piano scale chart",
+    "music scales chart",
+    "music scale chart for piano",
+    "piano music note scale",
+    "piano scale notes",
+    "scales piano chart",
+    "major scale",
+    "major scales",
+    "all major scales",
+    "12 major scales",
+    "major music scales notes",
+    "all major keys",
+    "major key scales",
+    "major scale for piano",
+    "major scale notes",
+    "major scale piano",
+    "major scales piano",
+    "piano major scales",
+    "major keys piano",
+    "major musical scales",
+    "major scales on the piano",
+    "notes of major scales",
+    "notes of the major scales",
+    "what is a major scale",
+    "major scales for piano",
+    "how many major scales are there",
+    "major scale keys",
+    "major scale on piano",
+    "twelve major scales",
+    "all 12 major scales",
+    "notes in the major scales",
+    "what are the 12 piano scales?",
+    "what are the 12 scales on piano?",
+    "minor scales",
+    "minor musical scales",
+    "music scales minor",
+    "minor scale pattern",
+    "minor scales music",
+    "minor keys piano",
+    "piano minor scales",
+    "all minor scales",
+    "minor scales piano",
+    "minor scale piano",
+    "all the minor scales",
+    "minor scale chart",
+    "minor scales chart",
+    "minor piano scales",
+    "jazz scales piano",
+    "piano scale fingerings",
+    "piano scales fingering",
+    "scale sheet",
+    "piano scales pdf",
+    "all major scales piano pdf",
+    "major and minor scales piano pdf",
+    "major and minor scales piano pdf with letters",
+    "piano scales sheet music",
+    "piano scales with finger numbers pdf",
+    "major scale pattern",
+    "pattern of major scale",
+    "piano scales formula",
+    "piano scales online",
+    "degrees of a scale in music",
+    "degrees of the scale in music",
+    "names of scale degrees",
+    "names of the scale degrees",
+    "major and minor scales",
+    "major minor scales",
+    "major scale and minor scale",
+    "major scale vs minor scale",
+    "minor and major scales",
+    "major scale minor scale",
+    "how many notes in a scale",
+    "scale in music",
+    "what is a scale in music",
+    "define a scale in music",
+    "definition of a music scale",
+    "definition scale music",
+    "how many notes are in a scale",
+    "scale definition music",
+    "scale music definition",
+    "define music scale",
+    "how many notes in the musical scale",
+    "scale meaning in music",
+    "what is the meaning of scale in music",
+    "define scale in music",
+    "how many notes are in a musical scale",
+    "how many scales are there",
+    "music scale meaning",
+    "notes in a scale",
+    "scale definition in music",
+    "scale music meaning",
+    "different types of scales",
+    "kinds of scales",
+    "scale types",
+    "types of minor scales",
+    "types of scales music",
+    "kinds of scale in music",
+    "kinds of scales music",
+    "different scales",
+    "list of music scales",
+    "list of scales in music",
+    "scale types music",
+    "what are the 7 types of scales?"
+  ],
+  "source_groups": [
+    {
+      "id": "P179",
+      "representative": "piano scales",
+      "section": null,
+      "synonyms": [
+        "piano scale",
+        "musical scales piano",
+        "scales piano",
+        "scales on the piano",
+        "music notes scale piano",
+        "piano key scales",
+        "all piano scales",
+        "piano key scale",
+        "piano keyboard scales",
+        "scale piano",
+        "scales on piano"
+      ],
+      "other_queries": [
+        "what are the key scales for piano?"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A13:G13",
+      "delivery_method": "音阶查询与总表",
+      "required_output": "默认大调总览、C 大调结果、手别/方向/范围、示范和打印。",
+      "first_release_scope": "已确认基础范围",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P180",
+      "representative": "two hand beginner piano scales pdf",
+      "section": "two-hand-printable",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A25:G25",
+      "delivery_method": "打印输出",
+      "required_output": "确有双手、初学范围和标识明确的打印资料。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P181",
+      "representative": "piano scales chart",
+      "section": "chart",
+      "synonyms": [
+        "musical scales chart piano",
+        "piano scale chart",
+        "music scale chart for piano",
+        "piano music note scale",
+        "piano scale notes",
+        "scales piano chart"
+      ],
+      "other_queries": [
+        "music scale chart",
+        "music scales chart"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A34:G34",
+      "delivery_method": "总览图表",
+      "required_output": "默认或选定类型的可读音阶图表。",
+      "first_release_scope": "已确认基础范围",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P190",
+      "representative": "major scale for piano",
+      "section": "major",
+      "synonyms": [
+        "major scale piano",
+        "major scales piano",
+        "piano major scales",
+        "major scales on the piano",
+        "major scales for piano",
+        "major scale on piano"
+      ],
+      "other_queries": [
+        "major scale",
+        "major scales",
+        "all major scales",
+        "12 major scales",
+        "major music scales notes",
+        "all major keys",
+        "major key scales",
+        "major scale notes",
+        "major keys piano",
+        "major musical scales",
+        "notes of major scales",
+        "notes of the major scales",
+        "what is a major scale",
+        "how many major scales are there",
+        "major scale keys",
+        "twelve major scales",
+        "all 12 major scales",
+        "notes in the major scales",
+        "what are the 12 piano scales?",
+        "what are the 12 scales on piano?"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A57:G57",
+      "delivery_method": "类型模式",
+      "required_output": "major 选择提供核对过的数据，链接已有具体大调页。",
+      "first_release_scope": "已确认基础范围",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P196",
+      "representative": "piano minor scales",
+      "section": "minor",
+      "synonyms": [
+        "minor scales piano",
+        "minor scale piano",
+        "minor piano scales"
+      ],
+      "other_queries": [
+        "minor scales",
+        "minor musical scales",
+        "music scales minor",
+        "minor scale pattern",
+        "minor scales music",
+        "minor keys piano",
+        "all minor scales",
+        "all the minor scales",
+        "minor scale chart",
+        "minor scales chart"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A90:G90",
+      "delivery_method": "类型模式",
+      "required_output": "小调形式明确，不能把所有小调当一套音符或指法。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P204",
+      "representative": "jazz scales piano",
+      "section": "jazz",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A175:G175",
+      "delivery_method": "类型参考分区",
+      "required_output": "jazz scales 的范围与具体示例明确，不只显示一个未解释标签。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P208",
+      "representative": "piano scale fingerings",
+      "section": "fingering",
+      "synonyms": [
+        "piano scales fingering"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A236:G236",
+      "delivery_method": "指法视图",
+      "required_output": "只开放核实过的左右手/方向/范围，未审核条件保留待补。",
+      "first_release_scope": "已确认基础范围",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P210",
+      "representative": "piano scales pdf",
+      "section": "print",
+      "synonyms": [],
+      "other_queries": [
+        "scale sheet",
+        "all major scales piano pdf",
+        "major and minor scales piano pdf",
+        "major and minor scales piano pdf with letters",
+        "piano scales sheet music",
+        "piano scales with finger numbers pdf"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A284:G284",
+      "delivery_method": "打印输出",
+      "required_output": "与当前已审核数据一致的 PDF；all/major and minor 等范围词需资料齐全才宣称覆盖。",
+      "first_release_scope": "已确认基础范围＋范围词待补",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P213",
+      "representative": "piano scales formula",
+      "section": "formulas",
+      "synonyms": [],
+      "other_queries": [
+        "major scale pattern",
+        "pattern of major scale"
+      ],
+      "source": "Google 第2批 图15",
+      "delivery_method": "构成说明",
+      "required_output": "显示所选类型的构成说明，并与具体结果对应。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P214",
+      "representative": "piano scales online",
+      "section": "explore",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "Google 第2批 图15",
+      "delivery_method": "在线操作",
+      "required_output": "不登录即可查询已开放的音阶数据；不是静态软件下载介绍。",
+      "first_release_scope": "已确认基础范围",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P222",
+      "representative": "degrees of a scale in music",
+      "section": "scale-degrees",
+      "synonyms": [
+        "degrees of the scale in music",
+        "names of scale degrees",
+        "names of the scale degrees"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A30:G30",
+      "delivery_method": "音级章节",
+      "required_output": "明确音级名称与示例，不能以一排琴键替代概念说明。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P224",
+      "representative": "major and minor scales",
+      "section": "major-vs-minor",
+      "synonyms": [
+        "major minor scales",
+        "major scale and minor scale",
+        "major scale vs minor scale",
+        "minor and major scales",
+        "major scale minor scale"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A32:G32",
+      "delivery_method": "对比章节",
+      "required_output": "major/minor 的对比及实际示例，不把两个词当同义。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P233",
+      "representative": "scale in music",
+      "section": "what-is-a-scale",
+      "synonyms": [
+        "what is a scale in music",
+        "define a scale in music",
+        "definition of a music scale",
+        "definition scale music",
+        "scale definition music",
+        "scale music definition",
+        "define music scale",
+        "scale meaning in music",
+        "what is the meaning of scale in music",
+        "define scale in music",
+        "music scale meaning",
+        "scale definition in music",
+        "scale music meaning"
+      ],
+      "other_queries": [
+        "how many notes in a scale",
+        "how many notes are in a scale",
+        "how many notes in the musical scale",
+        "how many notes are in a musical scale",
+        "how many scales are there",
+        "notes in a scale"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A118:G118",
+      "delivery_method": "定义章节",
+      "required_output": "简短准确的音阶定义与例子，保留泛乐理流量归属限制。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P235",
+      "representative": "types of scales music",
+      "section": "types",
+      "synonyms": [
+        "kinds of scale in music",
+        "kinds of scales music",
+        "scale types music"
+      ],
+      "other_queries": [
+        "different types of scales",
+        "kinds of scales",
+        "scale types",
+        "types of minor scales",
+        "different scales",
+        "list of music scales",
+        "list of scales in music",
+        "what are the 7 types of scales?"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A193:G193",
+      "delivery_method": "类型目录＋说明",
+      "required_output": "每个开放类型都有定义和可用例子；不以目录条数代替交付。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T11",
+  "baseline_priority": "先做",
+  "baseline_purpose": "查钢琴音阶类型、构成和指法，取得参考图或打印资料",
+  "final_scope": {
+    "id": "T11",
+    "name": "音阶中心",
+    "confirmation_status": "用户已确认核心功能；各类型全量覆盖未逐项确认",
+    "user_task": "查音阶类型、音符、键位、左右手指法，并听示范或打印。",
+    "modules": [
+      "默认大调总览并选中 C 大调；打开即有内容。",
+      "根音和类型选择只开放已核对数据；左右手分开。",
+      "指法明确绑定手别、上下行和八度范围；示范可调方向与速度。",
+      "打印当前或一组音阶；附必要说明并链接详细页、练习指南。"
+    ],
+    "boundary": "不做自动评分、打卡、MIDI 或课程系统；未明确考试体系的 grade 1/2 不列为已支持。",
+    "acceptance": "展示、播放、指法和打印一致；每个开放选项都可用。"
+  },
+  "required_delivery": "默认大调总览并选中 C 大调；打开即有内容。；根音和类型选择只开放已核对数据；左右手分开。；指法明确绑定手别、上下行和八度范围；示范可调方向与速度。；打印当前或一组音阶；附必要说明并链接详细页、练习指南。",
+  "release_conditions": "展示、播放、指法和打印一致；每个开放选项都可用。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "各调与小调形式、左右手指法和打印需审核；通用乐理词量不计钢琴独占需求",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_and_data_prepared_with_issues",
+  "metadata": {
+    "title": "Piano Scales: Notes, Patterns and Practice References",
+    "description": "Compare major and minor scale notes, explore other scale types, and check the exact form before practicing.",
+    "canonical_path": "/scales",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

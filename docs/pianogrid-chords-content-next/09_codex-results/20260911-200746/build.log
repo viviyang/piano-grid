@@ -1,0 +1,57 @@
+
+> piano-grid@0.1.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 93ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1721ms
+  Running TypeScript ...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next-chords-next/types/**/*.ts'
+  	- include was updated to add '.next-chords-next/dev/types/**/*.ts'
+
+  Finished TypeScript in 4.0s ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/27) ...
+  Generating static pages using 11 workers (6/27) 
+  Generating static pages using 11 workers (13/27) 
+  Generating static pages using 11 workers (20/27) 
+✓ Generating static pages using 11 workers (27/27) in 3.3s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /chords
+├ ○ /chords/a-flat-major
+├ ○ /chords/a-major
+├ ○ /chords/a-minor
+├ ○ /chords/b-major
+├ ○ /chords/c-major
+├ ○ /chords/c-minor
+├ ○ /chords/e-major
+├ ○ /chords/g-major
+├ ○ /guide
+├ ○ /guide/read-sheet-music
+├ ○ /keyboard-notes
+├ ○ /keyboard-notes/chart
+├ ○ /keyboard-notes/labeled
+├ ○ /manifest.webmanifest
+├ ○ /robots.txt
+├ ○ /scales
+├ ○ /scales/a-minor
+├ ○ /scales/c-major
+├ ○ /sitemap.xml
+├ ○ /songs
+├ ○ /songs/easy
+├ ○ /tools
+└ ○ /tools/blank-sheet-music
+
+
+○  (Static)  prerendered as static content
+

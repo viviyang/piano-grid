@@ -1,0 +1,843 @@
+{
+  "checked_at": "2026-09-11T02:03:10.210Z",
+  "prior_attempts": [
+    {
+      "script": "supplement-live.mjs",
+      "status": "invalid",
+      "reason": "Playwright APIRequest response did not support allHeaders(); no HTTP conclusions taken from that output."
+    }
+  ],
+  "protocol": [
+    {
+      "url": "https://pianogrid.com/",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 97000,
+      "error": null,
+      "title": "Piano Chords, Scales &amp; Practice Tools | PianoGrid"
+    },
+    {
+      "url": "http://pianogrid.com/",
+      "status": 308,
+      "finalURL": "http://pianogrid.com/",
+      "redirected": false,
+      "location": "https://pianogrid.com/",
+      "contentType": "text/plain",
+      "bytes": 14,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://www.pianogrid.com/",
+      "status": 308,
+      "finalURL": "https://www.pianogrid.com/",
+      "redirected": false,
+      "location": "https://pianogrid.com/",
+      "contentType": "text/plain",
+      "bytes": 15,
+      "error": null,
+      "title": null
+    }
+  ],
+  "robots": {
+    "url": "https://pianogrid.com/robots.txt",
+    "status": 200,
+    "finalURL": "https://pianogrid.com/robots.txt",
+    "redirected": false,
+    "location": null,
+    "contentType": "text/plain; charset=utf-8",
+    "bytes": 67,
+    "error": null,
+    "title": null,
+    "text": "User-Agent: *\nAllow: /\n\nSitemap: https://pianogrid.com/sitemap.xml\n"
+  },
+  "sitemap": {
+    "url": "https://pianogrid.com/sitemap.xml",
+    "status": 200,
+    "finalURL": "https://pianogrid.com/sitemap.xml",
+    "redirected": false,
+    "location": null,
+    "contentType": "application/xml",
+    "bytes": 1117,
+    "error": null,
+    "title": null,
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://pianogrid.com/</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/tools</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/chords</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/chords/a-minor</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/chords/a-major</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/chords/c-major</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/keyboard-notes</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/keyboard-notes/labeled</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/keyboard-notes/chart</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/scales</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/scales/c-major</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/scales/a-minor</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/songs</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/songs/easy</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/guide</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/guide/read-sheet-music</loc>\n</url>\n<url>\n<loc>https://pianogrid.com/tools/blank-sheet-music</loc>\n</url>\n</urlset>\n",
+    "urls": [
+      "https://pianogrid.com/",
+      "https://pianogrid.com/tools",
+      "https://pianogrid.com/chords",
+      "https://pianogrid.com/chords/a-minor",
+      "https://pianogrid.com/chords/a-major",
+      "https://pianogrid.com/chords/c-major",
+      "https://pianogrid.com/keyboard-notes",
+      "https://pianogrid.com/keyboard-notes/labeled",
+      "https://pianogrid.com/keyboard-notes/chart",
+      "https://pianogrid.com/scales",
+      "https://pianogrid.com/scales/c-major",
+      "https://pianogrid.com/scales/a-minor",
+      "https://pianogrid.com/songs",
+      "https://pianogrid.com/songs/easy",
+      "https://pianogrid.com/guide",
+      "https://pianogrid.com/guide/read-sheet-music",
+      "https://pianogrid.com/tools/blank-sheet-music"
+    ],
+    "exact17": true
+  },
+  "notFound": [
+    {
+      "url": "https://pianogrid.com/audit-route-that-does-not-exist",
+      "status": 404,
+      "finalURL": "https://pianogrid.com/audit-route-that-does-not-exist",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 8884,
+      "error": null,
+      "title": "PianoGrid"
+    },
+    {
+      "url": "https://pianogrid.com/songs/pop",
+      "status": 404,
+      "finalURL": "https://pianogrid.com/songs/pop",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 8884,
+      "error": null,
+      "title": "PianoGrid"
+    },
+    {
+      "url": "https://pianogrid.com/sheet-music",
+      "status": 404,
+      "finalURL": "https://pianogrid.com/sheet-music",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 8884,
+      "error": null,
+      "title": "PianoGrid"
+    }
+  ],
+  "internalResults": [
+    {
+      "url": "https://pianogrid.com/",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 97000,
+      "error": null,
+      "title": "Piano Chords, Scales &amp; Practice Tools | PianoGrid"
+    },
+    {
+      "url": "https://pianogrid.com/assets/chords/a-minor-notes-inversions.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/assets/chords/a-minor-notes-inversions.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 47429,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/assets/guides/piano-starter-and-reading.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/assets/guides/piano-starter-and-reading.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 58564,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/chords",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/chords",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 266790,
+      "error": null,
+      "title": "Piano Chord Chart: Notes, Keyboard Diagrams &amp; PDF"
+    },
+    {
+      "url": "https://pianogrid.com/chords/a-major",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/chords/a-major",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 56412,
+      "error": null,
+      "title": "A Major Piano Chord: Notes, Inversions &amp; Keyboard Diagrams"
+    },
+    {
+      "url": "https://pianogrid.com/chords/a-minor",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/chords/a-minor",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 71792,
+      "error": null,
+      "title": "A Minor Piano Chord (Am): Notes, Inversions &amp; PDF"
+    },
+    {
+      "url": "https://pianogrid.com/chords/c-major",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/chords/c-major",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 57807,
+      "error": null,
+      "title": "C Major Piano Chord: Notes, Inversions &amp; Keyboard Diagrams"
+    },
+    {
+      "url": "https://pianogrid.com/guide",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/guide",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 33956,
+      "error": null,
+      "title": "How to Play Piano for Beginners: First Notes and Rhythm"
+    },
+    {
+      "url": "https://pianogrid.com/guide/read-sheet-music",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/guide/read-sheet-music",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 46776,
+      "error": null,
+      "title": "How to Read Piano Sheet Music"
+    },
+    {
+      "url": "https://pianogrid.com/keyboard-notes",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/keyboard-notes",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 84408,
+      "error": null,
+      "title": "Piano Keys and Notes: Find Any Key"
+    },
+    {
+      "url": "https://pianogrid.com/keyboard-notes/chart",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/keyboard-notes/chart",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 163993,
+      "error": null,
+      "title": "Piano Notes Chart: Staff, Note Names &amp; Keyboard"
+    },
+    {
+      "url": "https://pianogrid.com/keyboard-notes/labeled",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/keyboard-notes/labeled",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 106371,
+      "error": null,
+      "title": "Labeled Piano Keys: 88-Key and 61-Key References"
+    },
+    {
+      "url": "https://pianogrid.com/reference/assets/blank-piano-staff-a4.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/assets/blank-piano-staff-a4.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 45738,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/reference/assets/blank-piano-staff-letter.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/assets/blank-piano-staff-letter.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 45614,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/reference/assets/chord-a-major.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/assets/chord-a-major.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 44640,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/reference/assets/chord-c-major.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/assets/chord-c-major.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 44576,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 61190,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/preserved-chords/assets/piano-chord-chart-selected.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 29759,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/scales",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/scales",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 547850,
+      "error": null,
+      "title": "Piano Scales: Notes, Patterns and Practice References"
+    },
+    {
+      "url": "https://pianogrid.com/scales/a-minor",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/scales/a-minor",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 95822,
+      "error": null,
+      "title": "A Minor Scale on Piano: Natural, Harmonic &amp; Melodic"
+    },
+    {
+      "url": "https://pianogrid.com/scales/c-major",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/scales/c-major",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 77454,
+      "error": null,
+      "title": "C Major Piano Scale: Notes and Fingering"
+    },
+    {
+      "url": "https://pianogrid.com/songs",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/songs",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 48314,
+      "error": null,
+      "title": "Piano Songs: Find Your Next Piece"
+    },
+    {
+      "url": "https://pianogrid.com/songs/easy",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/songs/easy",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 124369,
+      "error": null,
+      "title": "Easy Piano Songs: Choose a Version That Fits"
+    },
+    {
+      "url": "https://pianogrid.com/tools",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/tools",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 27506,
+      "error": null,
+      "title": "Piano Tools and Printables"
+    },
+    {
+      "url": "https://pianogrid.com/tools/blank-sheet-music",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/tools/blank-sheet-music",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 27531,
+      "error": null,
+      "title": "Blank Piano Sheet Music"
+    }
+  ],
+  "externalResults": [
+    {
+      "url": "https://hellomusictheory.com/learn/a-minor-scale/",
+      "status": 200,
+      "finalURL": "https://hellomusictheory.com/learn/a-minor-scale/",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 303600,
+      "error": null,
+      "title": "A Minor Scale: Natural, Harmonic And Melodic"
+    },
+    {
+      "url": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
+      "status": 200,
+      "finalURL": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 116990,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pulse.berklee.edu/scales/c-major-scale.html",
+      "status": 200,
+      "finalURL": "https://pulse.berklee.edu/scales/c-major-scale.html",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html",
+      "bytes": 18641,
+      "error": null,
+      "title": "C Major Scale – Piano Notes &amp; Practice | Berklee PULSE"
+    },
+    {
+      "url": "https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505",
+      "status": 200,
+      "finalURL": "https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 757698,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://www.halleonard.com/product/126844/all-of-me",
+      "status": 200,
+      "finalURL": "https://www.halleonard.com/product/126844/all-of-me",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 94726,
+      "error": null,
+      "title": "All of Me  (Sheet Music) Piano Vocal (00126844) by Hal Leonard "
+    },
+    {
+      "url": "https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano",
+      "status": 200,
+      "finalURL": "https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 143461,
+      "error": null,
+      "title": "First 50 Popular Songs You Should Play on the Piano  (Sheet Music) Easy Piano Songbook (00131140) by Hal Leonard "
+    },
+    {
+      "url": "https://www.halleonard.com/product/131436/first-50-classical-pieces-you-should-play-on-the-piano",
+      "status": 200,
+      "finalURL": "https://www.halleonard.com/product/131436/first-50-classical-pieces-you-should-play-on-the-piano",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 146494,
+      "error": null,
+      "title": "First 50 Classical Pieces You Should Play on the Piano  (Sheet Music) Easy Piano Songbook (00131436) by Hal Leonard "
+    },
+    {
+      "url": "https://www.halleonard.com/product/310162/the-halloween-songbook-2nd-edition",
+      "status": 200,
+      "finalURL": "https://www.halleonard.com/product/310162/the-halloween-songbook-2nd-edition",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 111981,
+      "error": null,
+      "title": "The Halloween Songbook – 2nd Edition  (Sheet Music) Easy Piano Folios (00310162) by Hal Leonard "
+    },
+    {
+      "url": "https://www.halleonard.com/product/360950/hip-hop-for-piano-solo",
+      "status": 200,
+      "finalURL": "https://www.halleonard.com/product/360950/hip-hop-for-piano-solo",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 129920,
+      "error": null,
+      "title": "Hip-Hop for Piano Solo - 10 Inventive Arrangements Intermediate Level  (Sheet Music) Educational Piano Library (00360950) by Hal Leonard "
+    },
+    {
+      "url": "https://www.halleonard.com/product/369016/music-from-minecraft",
+      "status": 200,
+      "finalURL": "https://www.halleonard.com/product/369016/music-from-minecraft",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 107659,
+      "error": null,
+      "title": "Music from Minecraft - Easy Piano Collection  (Sheet Music) Easy Piano Songbook (00369016) by Hal Leonard "
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 31091,
+      "error": null,
+      "title": "Materials for Lesson 1 with Parent Guide"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/gymnopedie-no-1",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/gymnopedie-no-1",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 71976,
+      "error": null,
+      "title": "Erik Satie: Gymnopédie No. 1 Sheet Music for Piano"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-early-elementary-version",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-early-elementary-version",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 63610,
+      "error": null,
+      "title": "Happy Birthday Piano Sheet Music | Super Easy Level, Free PDF"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-to-you",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-to-you",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 63344,
+      "error": null,
+      "title": "Happy Birthday Piano Sheet Music | Free PDF Download"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/jingle-bells-early-elementary",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/jingle-bells-early-elementary",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 64728,
+      "error": null,
+      "title": "Jingle Bells Piano Sheet Music | Free PDF, Super Easy Version"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 67252,
+      "error": null,
+      "title": "Ode to Joy Piano Sheet Music, Easy Version - Beethoven"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 64122,
+      "error": null,
+      "title": "Twinkle, Twinkle, Little Star Piano Sheet Music | Super Easy, Free"
+    },
+    {
+      "url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-elementary-version",
+      "status": 200,
+      "finalURL": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-elementary-version",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 63843,
+      "error": null,
+      "title": "Twinkle, Twinkle, Little Star Piano Sheet Music, Easy Level"
+    },
+    {
+      "url": "https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf",
+      "status": 200,
+      "finalURL": "https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf",
+      "redirected": false,
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 1551760,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://www.pianoscales.org/minor.html",
+      "status": 200,
+      "finalURL": "https://www.pianoscales.org/minor.html",
+      "redirected": false,
+      "location": null,
+      "contentType": "text/html",
+      "bytes": 14169,
+      "error": null,
+      "title": "Piano Minor Scales - overview with pictures"
+    }
+  ],
+  "assetResults": [
+    {
+      "url": "https://pianogrid.com/_next/image?url=%2Fassets%2Fhome%2Feast-lake-piano-hero.png&w=1920&q=75",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/_next/image?url=%2Fassets%2Fhome%2Feast-lake-piano-hero.png&w=1920&q=75",
+      "redirected": false,
+      "location": null,
+      "contentType": "image/png",
+      "bytes": 216356,
+      "error": null,
+      "title": null
+    },
+    {
+      "url": "https://pianogrid.com/reference/assets/blank-piano-staff-preview.svg",
+      "status": 200,
+      "finalURL": "https://pianogrid.com/reference/assets/blank-piano-staff-preview.svg",
+      "redirected": false,
+      "location": null,
+      "contentType": "image/svg+xml",
+      "bytes": 17018,
+      "error": null,
+      "title": null
+    }
+  ],
+  "routeStability": [
+    {
+      "route": "/",
+      "status": 200,
+      "initialEtag": "W/\"b62a1852d2bab66444828a15d0e93708\"",
+      "recheckEtag": "W/\"b62a1852d2bab66444828a15d0e93708\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::5jdd7-1789092187836-8f25e5277c7f"
+    },
+    {
+      "route": "/tools",
+      "status": 200,
+      "initialEtag": "W/\"dcfa3abfcb25b3e2151f5f554f3638f2\"",
+      "recheckEtag": "W/\"dcfa3abfcb25b3e2151f5f554f3638f2\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::wxp28-1789092188353-84308d0e19c5"
+    },
+    {
+      "route": "/songs",
+      "status": 200,
+      "initialEtag": "W/\"65b34eb75f430b1de69f47642936025b\"",
+      "recheckEtag": "W/\"65b34eb75f430b1de69f47642936025b\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::2l2lm-1789092188334-0d717cf0a8af"
+    },
+    {
+      "route": "/songs/easy",
+      "status": 200,
+      "initialEtag": "W/\"bd0b05bfabc4104a0e80e13c15004cbd\"",
+      "recheckEtag": "W/\"bd0b05bfabc4104a0e80e13c15004cbd\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::6p79f-1789092188472-3c23d0f3f6f0"
+    },
+    {
+      "route": "/tools/blank-sheet-music",
+      "status": 200,
+      "initialEtag": "W/\"686b650392fd96792197601a7f9eafb0\"",
+      "recheckEtag": "W/\"686b650392fd96792197601a7f9eafb0\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::d5v2t-1789092188478-b17c4bb55636"
+    },
+    {
+      "route": "/keyboard-notes",
+      "status": 200,
+      "initialEtag": "W/\"5428b51c0eff5e376be9f99150039635\"",
+      "recheckEtag": "W/\"5428b51c0eff5e376be9f99150039635\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::8rgnb-1789092188490-09ce385360cc"
+    },
+    {
+      "route": "/keyboard-notes/labeled",
+      "status": 200,
+      "initialEtag": "W/\"a45650a3614d7d87bcafc1fa430a48ab\"",
+      "recheckEtag": "W/\"a45650a3614d7d87bcafc1fa430a48ab\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::r8fvp-1789092188474-41df04c226ff"
+    },
+    {
+      "route": "/keyboard-notes/chart",
+      "status": 200,
+      "initialEtag": "W/\"bb21fc9f633d3b37fa7d6baabbfcc4b2\"",
+      "recheckEtag": "W/\"bb21fc9f633d3b37fa7d6baabbfcc4b2\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::nrcxw-1789092188446-4f55e225439b"
+    },
+    {
+      "route": "/chords",
+      "status": 200,
+      "initialEtag": "W/\"931faf3d77af8799355e33cb9294f086\"",
+      "recheckEtag": "W/\"931faf3d77af8799355e33cb9294f086\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::lmwrs-1789092188356-bdaf5fc4bfd1"
+    },
+    {
+      "route": "/chords/a-major",
+      "status": 200,
+      "initialEtag": "W/\"2347721ddd9a8fc1033c021cc4990885\"",
+      "recheckEtag": "W/\"2347721ddd9a8fc1033c021cc4990885\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::j2mg9-1789092188470-429877533907"
+    },
+    {
+      "route": "/chords/a-minor",
+      "status": 200,
+      "initialEtag": "W/\"130de57badb573a3f5ce4d065450c529\"",
+      "recheckEtag": "W/\"130de57badb573a3f5ce4d065450c529\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::lmwrs-1789092188436-fedabcf9f998"
+    },
+    {
+      "route": "/chords/c-major",
+      "status": 200,
+      "initialEtag": "W/\"09e019cd4d907dc3a49d6f1aac0fc325\"",
+      "recheckEtag": "W/\"09e019cd4d907dc3a49d6f1aac0fc325\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::tcmw8-1789092188482-c5f0a75a5107"
+    },
+    {
+      "route": "/scales",
+      "status": 200,
+      "initialEtag": "W/\"77e9839c41fdc06d4e23e26ac3d6423a\"",
+      "recheckEtag": "W/\"77e9839c41fdc06d4e23e26ac3d6423a\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::j5x5k-1789092188434-a10e5c41be2f"
+    },
+    {
+      "route": "/scales/c-major",
+      "status": 200,
+      "initialEtag": "W/\"4da877732b85941abda046ce1bef688a\"",
+      "recheckEtag": "W/\"4da877732b85941abda046ce1bef688a\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::5w6lv-1789092188372-03092c901b99"
+    },
+    {
+      "route": "/scales/a-minor",
+      "status": 200,
+      "initialEtag": "W/\"2292dfaf1dfac8e466eefb76844c5dd1\"",
+      "recheckEtag": "W/\"2292dfaf1dfac8e466eefb76844c5dd1\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::6pzfd-1789092188499-d41b7e60fd3f"
+    },
+    {
+      "route": "/guide",
+      "status": 200,
+      "initialEtag": "W/\"24c8111f1847bb833e0c18eca99c3f7c\"",
+      "recheckEtag": "W/\"24c8111f1847bb833e0c18eca99c3f7c\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::pl59n-1789092188341-02eb9caad9e6"
+    },
+    {
+      "route": "/guide/read-sheet-music",
+      "status": 200,
+      "initialEtag": "W/\"0c2ddaaab2bd93a68d7bbe914c044f7c\"",
+      "recheckEtag": "W/\"0c2ddaaab2bd93a68d7bbe914c044f7c\"",
+      "sameEtag": true,
+      "vercelCache": "HIT",
+      "vercelId": "sfo1::n4qht-1789092188346-77c13fa30c62"
+    }
+  ],
+  "immutableAssets": [],
+  "deploymentEvidence": {
+    "server": [
+      "Vercel"
+    ],
+    "cache": [
+      "HIT"
+    ],
+    "vercelIds": [
+      "sfo1::pn5zq-1789091483323-662c47ee2fe7",
+      "sfo1::qv9bq-1789091490798-b597ce90bc1f",
+      "sfo1::7pb6c-1789091496858-4d060a452a50",
+      "sfo1::c98zq-1789091502806-054f8f899bca",
+      "sfo1::7zng4-1789091509897-51908bae138f",
+      "sfo1::5jdd7-1789091515784-ba3515eb57fe",
+      "sfo1::b9df5-1789091522210-fc13e3aed94e",
+      "sfo1::8dqqr-1789091528538-03f3d304ab4d",
+      "sfo1::b9df5-1789091534747-4c5fa40f1dc0",
+      "sfo1::m9xt4-1789091542732-5792878a36b9",
+      "sfo1::7475m-1789091549748-cb1afb7acbf3",
+      "sfo1::2l2lm-1789091556278-06566623ce7a",
+      "sfo1::2pswl-1789091562170-e18ac6bafd47",
+      "sfo1::6lpwf-1789091569059-ced593c051b9",
+      "sfo1::bz2xb-1789091575463-da830d85a201",
+      "sfo1::7zt8j-1789091581852-cc5a3ef8826c",
+      "sfo1::n89rm-1789091588225-282286870d62"
+    ],
+    "note": "Vercel headers, ETags and immutable asset names identify observed responses but do not prove a Git commit."
+  },
+  "analytics": {
+    "knownPatterns": [
+      "vercel/analytics",
+      "google-analytics",
+      "googletagmanager",
+      "plausible",
+      "umami",
+      "dataLayer",
+      "gtag("
+    ],
+    "matches": []
+  }
+}

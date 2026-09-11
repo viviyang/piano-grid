@@ -1,0 +1,66 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "chords production SSR content/metadata",
+      "passed": true
+    },
+    {
+      "name": "a-minor production SSR content/metadata",
+      "passed": true
+    },
+    {
+      "name": "a-major production SSR content/metadata",
+      "passed": true
+    },
+    {
+      "name": "c-major production SSR content/metadata",
+      "passed": true
+    },
+    {
+      "name": "Delayed stop: created nodes stopped/disconnected; no playing state",
+      "passed": true,
+      "actual": {
+        "nodes": [
+          {
+            "disconnected": true,
+            "stopped": true
+          },
+          {
+            "disconnected": true,
+            "stopped": true
+          },
+          {
+            "disconnected": true,
+            "stopped": true
+          }
+        ],
+        "state": "stopped",
+        "sounding": 0
+      }
+    },
+    {
+      "name": "Delayed selection: created nodes stopped/disconnected; no playing state",
+      "passed": true,
+      "actual": {
+        "nodes": [
+          {
+            "disconnected": true,
+            "stopped": true
+          },
+          {
+            "disconnected": true,
+            "stopped": true
+          },
+          {
+            "disconnected": true,
+            "stopped": true
+          }
+        ],
+        "state": "idle",
+        "sounding": 0
+      }
+    }
+  ]
+}

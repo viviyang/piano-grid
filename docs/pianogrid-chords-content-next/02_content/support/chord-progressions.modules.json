@@ -1,0 +1,179 @@
+{
+  "h1": "Piano Chord Progressions to Practice",
+  "scope": "Three patterns in three keys: nine original four-bar realizations; not an unrestricted progression generator.",
+  "supplemental_blocks": [
+    {
+      "block_id": "start-with-c",
+      "content": {
+        "heading": "Start with one four-bar example",
+        "paragraphs": [
+          "Read C–G–Am–F as four chord changes. The prepared example gives each chord one bar of 4/4, with four quarter-note beats per bar. Its pattern is I–V–vi–IV in C major.",
+          "The dataset contains three patterns in C, E and A major. Each version includes a specific register and note list. These are short teaching examples, not copied song arrangements."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "pattern-notes",
+      "content": {
+        "heading": "Separate the pattern from its voicing",
+        "paragraphs": [
+          "Roman numerals identify degrees relative to the selected key. They do not specify the octave, hand, inversion, rhythm or instrument sound. Those choices must be given by the individual realization.",
+          "Changing the key changes the pitches while retaining the degrees. Changing the voicing can retain the chord names while rearranging which notes are lowest. Neither operation should silently change an advertised example."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "three-patterns",
+      "content": {
+        "heading": "Compare three different endings",
+        "paragraphs": [
+          "I–V–vi–IV ends this four-bar unit on IV, making it useful for observing what happens when the sequence repeats. I–vi–IV–V finishes on V, so a following I changes the sense of arrival. I–IV–V–I includes that return in its final bar.",
+          "These descriptions tell you where the prepared unit starts and ends. They do not guarantee a happy, sad or beautiful effect. Tempo, texture, register, surrounding music and the listener can change that impression."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "use-the-example",
+      "content": {
+        "heading": "Read first, then try the changes",
+        "paragraphs": [
+          "Read one bar’s symbol and exact notes before moving to the next. When playback is implemented, the active bar, sounding pitches and displayed notes must use the same data. No sound should start merely because the page loads.",
+          "The current examples do not prescribe transition fingerings, a minimum practice speed or a fixed hand allocation. Work with the note references first rather than treating these arrays as a complete piano-performance lesson."
+        ],
+        "steps": [
+          "Read all four chord symbols.",
+          "Name one chord’s three tones without looking at its answer.",
+          "Compare the notes of two adjacent bars.",
+          "Try the change, then return to the first bar."
+        ],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "register-matters",
+      "content": {
+        "heading": "Low register changes the listening example",
+        "paragraphs": [
+          "Several preserved examples begin in octave 3. These are intentional reference registers, not a recommendation that every left-hand accompaniment should use close-position low triads.",
+          "An alternative with wider spacing or a separate bass would need its own note data and explanation. Do not label the same MIDI array as a new left-hand or jazz voicing."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "what-next",
+      "content": {
+        "heading": "Use individual chord pages when a change is unclear",
+        "paragraphs": [
+          "A progression should not hide uncertainty about an individual chord. Open that chord’s reference to check the third, bass or spelling, then return to the same bar of the sequence.",
+          "The reference tables remain readable without JavaScript. A transport, automatic looping or live performance feedback must not be advertised until those behaviors are actually implemented and tested."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "questions",
+      "content": {
+        "heading": "Questions and answers",
+        "paragraphs": [],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "How many progressions are included?",
+              "Three degree patterns, each realized in C, E and A major, for nine four-bar examples."
+            ],
+            [
+              "Does a major-key pattern always sound happy?",
+              "No. The pattern does not determine an emotional response on its own. Mood labels should not replace note, rhythm and context information."
+            ],
+            [
+              "Do the Roman numerals tell me which fingers to use?",
+              "No. They label harmonic degrees. Fingerings and hand allocation are separate decisions."
+            ]
+          ]
+        },
+        "links": []
+      },
+      "source_ids": [
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "evidence_status": "[推断] scoped explanation; feature statements conditional on implementation"
+    }
+  ],
+  "existing_blocks_policy": "Preserve each correct fact from raw blocks; merge duplicate sentences into these sections, do not discard correct content to fit a template.",
+  "patch_notes": [
+    "Removed misleading official/authorized label from self-authored exercises; no third-party permission is inferred."
+  ],
+  "source_ids": [
+    "PG-KEY-MAJOR",
+    "PG-PROG-1",
+    "PG-PROG-2",
+    "PG-OMT"
+  ],
+  "template": "T10",
+  "runtime_status": "not_implemented_by_this_pack"
+}

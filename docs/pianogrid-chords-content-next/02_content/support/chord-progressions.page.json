@@ -1,0 +1,1219 @@
+{
+  "url": "/chord-progressions",
+  "title": "Piano Chord Progressions: 3 Patterns in C, E & A",
+  "description": "Compare I–V–vi–IV, I–vi–IV–V and I–IV–V–I in C, E and A major. Read exact four-bar examples and understand what the Roman numerals mean.",
+  "user_task": "Choose a progression, inspect every chord and try an original realization.",
+  "questions": [
+    "How many progressions are included?",
+    "Does a major-key pattern always sound happy?",
+    "Do the Roman numerals tell me which fingers to use?"
+  ],
+  "blocks": [
+    {
+      "heading": "Hear the sequence",
+      "body": "A chord progression is an ordered sequence of harmonies. I–V–vi–IV becomes C–G–Am–F in C major, E–B–C-sharp minor–A in E major, and A–E–F-sharp minor–D in A major. The original examples below give a concrete register and four counts per chord.",
+      "source_ids": [
+        "F-POP",
+        "F-MAJOR"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    },
+    {
+      "heading": "Compare three patterns",
+      "body": "The collection includes I–V–vi–IV, I–vi–IV–V, and a four-bar I–IV–V–I practice example. Try the first two as loops, then compare the last pattern’s final return to I. The printable includes all three keys and every chord’s notes.",
+      "source_ids": [
+        "F-POP",
+        "F-FUNCTION"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    },
+    {
+      "heading": "Explore an effect",
+      "body": "For a “beautiful” starting point, try the I–vi–IV–V example slowly, sounding chord tones in sequence. For a “happy” starting point, try the I–IV–V–I example with light, even pulses. These are subjective playing suggestions: neither label is a property guaranteed by the chord order.",
+      "source_ids": [],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    }
+  ],
+  "data": {
+    "progressions": [
+      {
+        "id": "pop-loop-c-major",
+        "key": "C major",
+        "pattern": [
+          "I",
+          "V",
+          "vi",
+          "IV"
+        ],
+        "title": "Common four-chord loop",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "C",
+            "notes": [
+              "C3",
+              "E3",
+              "G3"
+            ],
+            "midi": [
+              48,
+              52,
+              55
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "V",
+            "symbol": "G",
+            "notes": [
+              "G3",
+              "B3",
+              "D4"
+            ],
+            "midi": [
+              55,
+              59,
+              62
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "vi",
+            "symbol": "Am",
+            "notes": [
+              "A3",
+              "C4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              60,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "IV",
+            "symbol": "F",
+            "notes": [
+              "F3",
+              "A3",
+              "C4"
+            ],
+            "midi": [
+              53,
+              57,
+              60
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "Compare a repeating loop with a more decisive return to I.",
+        "source_ids": [
+          "F-POP",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "fifties-c-major",
+        "key": "C major",
+        "pattern": [
+          "I",
+          "vi",
+          "IV",
+          "V"
+        ],
+        "title": "I–vi–IV–V",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "C",
+            "notes": [
+              "C3",
+              "E3",
+              "G3"
+            ],
+            "midi": [
+              48,
+              52,
+              55
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "vi",
+            "symbol": "Am",
+            "notes": [
+              "A3",
+              "C4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              60,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "IV",
+            "symbol": "F",
+            "notes": [
+              "F3",
+              "A3",
+              "C4"
+            ],
+            "midi": [
+              53,
+              57,
+              60
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "V",
+            "symbol": "G",
+            "notes": [
+              "G3",
+              "B3",
+              "D4"
+            ],
+            "midi": [
+              55,
+              59,
+              62
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "Try one chord per bar, then return to I after the final V.",
+        "source_ids": [
+          "F-FUNCTION",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [
+          "beautiful"
+        ],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "return-home-c-major",
+        "key": "C major",
+        "pattern": [
+          "I",
+          "IV",
+          "V",
+          "I"
+        ],
+        "title": "Clear return to the tonic",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "C",
+            "notes": [
+              "C3",
+              "E3",
+              "G3"
+            ],
+            "midi": [
+              48,
+              52,
+              55
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "IV",
+            "symbol": "F",
+            "notes": [
+              "F3",
+              "A3",
+              "C4"
+            ],
+            "midi": [
+              53,
+              57,
+              60
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "V",
+            "symbol": "G",
+            "notes": [
+              "G3",
+              "B3",
+              "D4"
+            ],
+            "midi": [
+              55,
+              59,
+              62
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "I",
+            "symbol": "C",
+            "notes": [
+              "C3",
+              "E3",
+              "G3"
+            ],
+            "midi": [
+              48,
+              52,
+              55
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "An original four-bar practice realization, with I in the final bar.",
+        "source_ids": [
+          "F-FUNCTION",
+          "F-MAJOR",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [
+          "happy"
+        ],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "pop-loop-e-major",
+        "key": "E major",
+        "pattern": [
+          "I",
+          "V",
+          "vi",
+          "IV"
+        ],
+        "title": "Common four-chord loop",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "V",
+            "symbol": "B",
+            "notes": [
+              "B3",
+              "D#4",
+              "F#4"
+            ],
+            "midi": [
+              59,
+              63,
+              66
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "vi",
+            "symbol": "C#m",
+            "notes": [
+              "C#3",
+              "E3",
+              "G#3"
+            ],
+            "midi": [
+              49,
+              52,
+              56
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "IV",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "Compare a repeating loop with a more decisive return to I.",
+        "source_ids": [
+          "F-POP",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "fifties-e-major",
+        "key": "E major",
+        "pattern": [
+          "I",
+          "vi",
+          "IV",
+          "V"
+        ],
+        "title": "I–vi–IV–V",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "vi",
+            "symbol": "C#m",
+            "notes": [
+              "C#3",
+              "E3",
+              "G#3"
+            ],
+            "midi": [
+              49,
+              52,
+              56
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "IV",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "V",
+            "symbol": "B",
+            "notes": [
+              "B3",
+              "D#4",
+              "F#4"
+            ],
+            "midi": [
+              59,
+              63,
+              66
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "Try one chord per bar, then return to I after the final V.",
+        "source_ids": [
+          "F-FUNCTION",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [
+          "beautiful"
+        ],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "return-home-e-major",
+        "key": "E major",
+        "pattern": [
+          "I",
+          "IV",
+          "V",
+          "I"
+        ],
+        "title": "Clear return to the tonic",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "IV",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "V",
+            "symbol": "B",
+            "notes": [
+              "B3",
+              "D#4",
+              "F#4"
+            ],
+            "midi": [
+              59,
+              63,
+              66
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "I",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "An original four-bar practice realization, with I in the final bar.",
+        "source_ids": [
+          "F-FUNCTION",
+          "F-MAJOR",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [
+          "happy"
+        ],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "pop-loop-a-major",
+        "key": "A major",
+        "pattern": [
+          "I",
+          "V",
+          "vi",
+          "IV"
+        ],
+        "title": "Common four-chord loop",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "V",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "vi",
+            "symbol": "F#m",
+            "notes": [
+              "F#3",
+              "A3",
+              "C#4"
+            ],
+            "midi": [
+              54,
+              57,
+              61
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "IV",
+            "symbol": "D",
+            "notes": [
+              "D3",
+              "F#3",
+              "A3"
+            ],
+            "midi": [
+              50,
+              54,
+              57
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "Compare a repeating loop with a more decisive return to I.",
+        "source_ids": [
+          "F-POP",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "fifties-a-major",
+        "key": "A major",
+        "pattern": [
+          "I",
+          "vi",
+          "IV",
+          "V"
+        ],
+        "title": "I–vi–IV–V",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "vi",
+            "symbol": "F#m",
+            "notes": [
+              "F#3",
+              "A3",
+              "C#4"
+            ],
+            "midi": [
+              54,
+              57,
+              61
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "IV",
+            "symbol": "D",
+            "notes": [
+              "D3",
+              "F#3",
+              "A3"
+            ],
+            "midi": [
+              50,
+              54,
+              57
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "V",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "Try one chord per bar, then return to I after the final V.",
+        "source_ids": [
+          "F-FUNCTION",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [
+          "beautiful"
+        ],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      },
+      {
+        "id": "return-home-a-major",
+        "key": "A major",
+        "pattern": [
+          "I",
+          "IV",
+          "V",
+          "I"
+        ],
+        "title": "Clear return to the tonic",
+        "bars": [
+          {
+            "bar": 1,
+            "roman": "I",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 2,
+            "roman": "IV",
+            "symbol": "D",
+            "notes": [
+              "D3",
+              "F#3",
+              "A3"
+            ],
+            "midi": [
+              50,
+              54,
+              57
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 3,
+            "roman": "V",
+            "symbol": "E",
+            "notes": [
+              "E3",
+              "G#3",
+              "B3"
+            ],
+            "midi": [
+              52,
+              56,
+              59
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          },
+          {
+            "bar": 4,
+            "roman": "I",
+            "symbol": "A",
+            "notes": [
+              "A3",
+              "C#4",
+              "E4"
+            ],
+            "midi": [
+              57,
+              61,
+              64
+            ],
+            "duration_quarters": 4,
+            "fingering": null
+          }
+        ],
+        "meter": "4/4",
+        "tempo_bpm": null,
+        "practice_goal": "An original four-bar practice realization, with I in the final bar.",
+        "source_ids": [
+          "F-FUNCTION",
+          "F-MAJOR",
+          "F-OMT"
+        ],
+        "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+        "mood_tags": [
+          "happy"
+        ],
+        "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+        "rights": {
+          "provenance": "original rule-derived teaching realization retained from the user intake",
+          "third_party_notation_or_recording_reused": false,
+          "license_declaration": null,
+          "site_use_note": "No claim of publisher authorization or a named song arrangement."
+        }
+      }
+    ],
+    "default_key": "C major",
+    "effect_tags": [
+      "beautiful",
+      "happy"
+    ],
+    "tag_policy": "subjective editorial suggestion; never a factual emotional guarantee",
+    "assets": [
+      {
+        "path": "assets/chord-progressions-c-e-a.pdf",
+        "format": "PDF",
+        "pages": 3,
+        "original_intake_visual_qa_claim": "passed; every final PDF page rendered and inspected",
+        "delivery_status": "not_supplied_in_intake_and_not_generated_in_this_pack",
+        "visual_qa": "not_verified_in_this_run",
+        "show_download_action": false
+      }
+    ],
+    "related": [
+      "/guide/piano-chords",
+      "/chords/by-key"
+    ],
+    "professional_review": "pending"
+  },
+  "source_ids": [
+    "F-POP",
+    "F-FUNCTION",
+    "F-MAJOR",
+    "F-OMT",
+    "PG-KEY-MAJOR",
+    "PG-PROG-1",
+    "PG-PROG-2",
+    "PG-OMT"
+  ],
+  "issues": [
+    {
+      "id": "F-PROGRESSION-REVIEW",
+      "field": "voicing and interface",
+      "reason": "Original examples and printable data are prepared; performance review and key/effect selector integration remain.",
+      "needed_to_resolve": "Check all nine realizations, labels and printed notes before release."
+    },
+    {
+      "id": "NEXT-TEMPLATE-chord-progressions",
+      "field": "implementation",
+      "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+      "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P172",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "常见和弦走向集合；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P173",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "常见走向列表；C/E/A调转写选择；优美/愉快效果标签；含义与使用说明；打印 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P174",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "C大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P175",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "E调常用和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P176",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "A大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P177",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查询优美钢琴和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P178",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "愉快情绪和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P237",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "说明走向是什么，附可试弹例子。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    }
+  ],
+  "baseline_page_id": "U087",
+  "batch": "F",
+  "main_keyword": "piano chord progressions",
+  "keywords": [
+    "common chord progressions",
+    "popular chord progressions",
+    "most common chord progressions",
+    "famous chord progressions",
+    "common chord patterns",
+    "common chord sequences",
+    "most common chord progression",
+    "popular chord progression",
+    "piano chord progressions",
+    "piano chords and progressions",
+    "chord progressions piano",
+    "chord sequences",
+    "piano chord sequences",
+    "piano progressions",
+    "chord patterns piano",
+    "piano progression chords",
+    "chord progression piano",
+    "piano chord progression",
+    "piano chord progressions pdf",
+    "c major chord progressions",
+    "common chord progressions key of e",
+    "a major chord progression",
+    "cool chord progressions",
+    "beautiful chord progressions",
+    "cool chord sequences",
+    "beautiful chord progressions piano",
+    "pretty piano chord progressions",
+    "happy chord progressions",
+    "what are chord progressions",
+    "how to make chord progressions"
+  ],
+  "source_groups": [
+    {
+      "id": "P172",
+      "representative": "common chord progressions",
+      "section": "common",
+      "synonyms": [
+        "popular chord progressions",
+        "most common chord progressions",
+        "famous chord progressions",
+        "common chord patterns",
+        "common chord sequences",
+        "most common chord progression",
+        "popular chord progression"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A307:G307",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "常见和弦走向集合；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P173",
+      "representative": "piano chord progressions",
+      "section": null,
+      "synonyms": [
+        "piano chords and progressions",
+        "chord progressions piano",
+        "piano chord sequences",
+        "piano progressions",
+        "chord patterns piano",
+        "piano progression chords",
+        "chord progression piano",
+        "piano chord progression"
+      ],
+      "other_queries": [
+        "chord sequences",
+        "piano chord progressions pdf"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A317:G317",
+      "delivery_method": "独立页首要任务",
+      "required_output": "常见走向列表；C/E/A调转写选择；优美/愉快效果标签；含义与使用说明；打印",
+      "first_release_scope": "按页面准备顺序验收",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P174",
+      "representative": "c major chord progressions",
+      "section": "c-major",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A377:G377",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "C大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P175",
+      "representative": "common chord progressions key of e",
+      "section": "e-major",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A380:G380",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "E调常用和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P176",
+      "representative": "a major chord progression",
+      "section": "a-major",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A416:G416",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "A大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P177",
+      "representative": "beautiful chord progressions piano",
+      "section": "beautiful",
+      "synonyms": [
+        "pretty piano chord progressions"
+      ],
+      "other_queries": [
+        "cool chord progressions",
+        "beautiful chord progressions",
+        "cool chord sequences"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A487:G487",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查询优美钢琴和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P178",
+      "representative": "happy chord progressions",
+      "section": "happy",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A495:G495",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "愉快情绪和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P237",
+      "representative": "what are chord progressions",
+      "section": "how-it-works",
+      "synonyms": [
+        "how to make chord progressions"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A444:G444",
+      "delivery_method": "含义说明",
+      "required_output": "说明走向是什么，附可试弹例子。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T10",
+  "baseline_priority": "后做",
+  "baseline_purpose": "查询常见走向，按调性和效果找到可试弹的例子",
+  "final_scope": {
+    "id": "T10",
+    "name": "和弦走向",
+    "confirmation_status": "本版统一规划建议；后做",
+    "user_task": "查询常见走向、含义、不同调性示例并试弹。",
+    "modules": [
+      "实际走向列表、用途说明和原创/可用示例。",
+      "C/E/A 等已有调性条件显示对应结果；保留优美、愉快等效果说明。",
+      "提供可用参考与打印；链接单个和弦与和弦学习指南。"
+    ],
+    "boundary": "第一版是查询参考，不自动扩大成拖拽作曲器、保存账号或收费 MIDI 商店。",
+    "acceptance": "各已映射场景有实际示例；类型标签不是空白筛选。"
+  },
+  "required_delivery": "实际走向列表、用途说明和原创/可用示例。；C/E/A 等已有调性条件显示对应结果；保留优美、愉快等效果说明。；提供可用参考与打印；链接单个和弦与和弦学习指南。",
+  "release_conditions": "各已映射场景有实际示例；类型标签不是空白筛选。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "走向数据与示例审核；情绪仅作选择标签，不宣称和弦决定情绪；不预设AI生成器",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_prepared_distinct_template_required",
+  "metadata": {
+    "title": "Piano Chord Progressions: 3 Patterns in C, E & A",
+    "description": "Compare I–V–vi–IV, I–vi–IV–V and I–IV–V–I in C, E and A major. Read exact four-bar examples and understand what the Roman numerals mean.",
+    "canonical_path": "/chord-progressions",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

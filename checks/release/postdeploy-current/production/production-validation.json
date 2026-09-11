@@ -1,0 +1,712 @@
+{
+  "executed_at": "2026-09-11T04:00:28.458Z",
+  "passed": 125,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/ production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/ production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/ production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/tools production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/tools production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-minor production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-minor production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-major production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-major production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/c-major production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-major production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes/labeled production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes/labeled production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/keyboard-notes/chart production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes/chart production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/scales production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales/c-major production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/scales/c-major production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales/a-minor production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/scales/a-minor production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/songs production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/songs production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/songs/easy production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/songs/easy production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/songs/easy excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/guide production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/guide production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/guide/read-sheet-music production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/guide/read-sheet-music production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/guide/read-sheet-music excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music production 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/tools/blank-sheet-music production title",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music production index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/tools/blank-sheet-music production nav",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools/blank-sheet-music excludes master payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production home reference directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production responsive 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production PianoLab H1 hierarchy 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": 61,
+        "lineHeight": 63.745,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.7589473684210526
+      }
+    },
+    {
+      "name": "/ production Foundation sans 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": 61,
+        "lineHeight": 63.745,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.7589473684210526
+      }
+    },
+    {
+      "name": "/ production italic serif 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": 61,
+        "lineHeight": 63.745,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.7589473684210526
+      }
+    },
+    {
+      "name": "/ production hero proportion 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": 61,
+        "lineHeight": 63.745,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.7589473684210526
+      }
+    },
+    {
+      "name": "/ production hero asset 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production illustrations 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production responsive 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production PianoLab H1 hierarchy 390",
+      "passed": true,
+      "detail": {
+        "fontSize": 40,
+        "lineHeight": 40.8,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.8470888157894737
+      }
+    },
+    {
+      "name": "/ production Foundation sans 390",
+      "passed": true,
+      "detail": {
+        "fontSize": 40,
+        "lineHeight": 40.8,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.8470888157894737
+      }
+    },
+    {
+      "name": "/ production italic serif 390",
+      "passed": true,
+      "detail": {
+        "fontSize": 40,
+        "lineHeight": 40.8,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.8470888157894737
+      }
+    },
+    {
+      "name": "/ production hero proportion 390",
+      "passed": true,
+      "detail": {
+        "fontSize": 40,
+        "lineHeight": 40.8,
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "italic": "italic",
+        "viewportRatio": 0.8470888157894737
+      }
+    },
+    {
+      "name": "/ production hero asset 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production illustrations 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production responsive 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ production responsive 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools production responsive 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools production H1 size 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": "36px",
+        "lineHeight": 43.9992,
+        "viewportRatio": 0.18904605263157895
+      }
+    },
+    {
+      "name": "/tools production H1 leading 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": "36px",
+        "lineHeight": 43.9992,
+        "viewportRatio": 0.18904605263157895
+      }
+    },
+    {
+      "name": "/tools production compact heading 1440",
+      "passed": true,
+      "detail": {
+        "fontSize": "36px",
+        "lineHeight": 43.9992,
+        "viewportRatio": 0.18904605263157895
+      }
+    },
+    {
+      "name": "/tools production responsive 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools production H1 size 390",
+      "passed": true,
+      "detail": {
+        "fontSize": "30px",
+        "lineHeight": 36,
+        "viewportRatio": 0.19149671052631578
+      }
+    },
+    {
+      "name": "/tools production H1 leading 390",
+      "passed": true,
+      "detail": {
+        "fontSize": "30px",
+        "lineHeight": 36,
+        "viewportRatio": 0.19149671052631578
+      }
+    },
+    {
+      "name": "/tools production compact heading 390",
+      "passed": true,
+      "detail": {
+        "fontSize": "30px",
+        "lineHeight": 36,
+        "viewportRatio": 0.19149671052631578
+      }
+    },
+    {
+      "name": "/tools production responsive 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools production responsive 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production excludes /sheet-music",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production excludes /chords/finder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production excludes /chord-progressions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production excludes /tools/piano-cheat-sheet",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production excludes /keyboard-notes/blank",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production excludes /tools/anything",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production robots allows indexing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production sitemap contains 17 public routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production asset /assets/home/east-lake-piano-hero.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production asset /assets/home/east-lake-grand-piano.webp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production asset /reference/assets/blank-piano-staff-letter.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production asset /assets/guides/piano-starter-and-reading.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "production has no runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-09-11T03:42:41.858Z",
+  "production": {
+    "deploymentId": "dpl_3n1YaAXaS4vpWsNARxRvYde9yiTt",
+    "deploymentUrl": "https://piano-grid-lrdkvd3b3-weiweis-projects-eb330b65.vercel.app",
+    "alias": "https://pianogrid.com",
+    "readyState": "READY"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "etag": "W/\"90e936aa0008458a94b541ebaa6f779f\"",
+      "vercelId": "sfo1::wr6qx-1789098156268-1f7a77f5c91d",
+      "title": "Piano Chords, Scales &amp; Practice Tools | PianoGrid",
+      "canonical": "https://pianogrid.com",
+      "indexFollow": true
+    },
+    {
+      "route": "/tools",
+      "status": 200,
+      "etag": "W/\"943f5a7c8838fe6457dddcfab2b9bcd3\"",
+      "vercelId": "sfo1::6p79f-1789098156669-471a92a4967a",
+      "title": "Piano Tools and Printables",
+      "canonical": "https://pianogrid.com/tools",
+      "indexFollow": true
+    },
+    {
+      "route": "/songs",
+      "status": 200,
+      "etag": "W/\"e0e108f244825b0d4ce9dc6f6de6af10\"",
+      "vercelId": "sfo1::7mjlg-1789098156874-5f719fc37279",
+      "title": "Piano Songs: Find Your Next Piece",
+      "canonical": "https://pianogrid.com/songs",
+      "indexFollow": true
+    },
+    {
+      "route": "/songs/easy",
+      "status": 200,
+      "etag": "W/\"ddd0773c7dbfdbe8b1ddf33c8d58eece\"",
+      "vercelId": "sfo1::7mjlg-1789098157080-fe68cef6bd25",
+      "title": "Easy Piano Songs: Choose a Version That Fits",
+      "canonical": "https://pianogrid.com/songs/easy",
+      "indexFollow": true
+    },
+    {
+      "route": "/tools/blank-sheet-music",
+      "status": 200,
+      "etag": "W/\"063d98e46bbef937633779a99ec29d7b\"",
+      "vercelId": "sfo1::56m7k-1789098157285-25c55afb93cf",
+      "title": "Blank Piano Sheet Music",
+      "canonical": "https://pianogrid.com/tools/blank-sheet-music",
+      "indexFollow": true
+    },
+    {
+      "route": "/keyboard-notes",
+      "status": 200,
+      "etag": "W/\"b88f91d254b74c712c6d5b9c00af9dae\"",
+      "vercelId": "sfo1::7mjlg-1789098157495-a0ca815c00e7",
+      "title": "Piano Keys and Notes: Find Any Key",
+      "canonical": "https://pianogrid.com/keyboard-notes",
+      "indexFollow": true
+    },
+    {
+      "route": "/keyboard-notes/labeled",
+      "status": 200,
+      "etag": "W/\"54875ddd2ee41d6b0223d89cba2351b9\"",
+      "vercelId": "sfo1::ww9xn-1789098157702-d39d1c53f82b",
+      "title": "Labeled Piano Keys: 88-Key and 61-Key References",
+      "canonical": "https://pianogrid.com/keyboard-notes/labeled",
+      "indexFollow": true
+    },
+    {
+      "route": "/keyboard-notes/chart",
+      "status": 200,
+      "etag": "W/\"8fdf411a4a96ec8c563c79389fccc71c\"",
+      "vercelId": "sfo1::56m7k-1789098157915-bb020406d505",
+      "title": "Piano Notes Chart: Staff, Note Names &amp; Keyboard",
+      "canonical": "https://pianogrid.com/keyboard-notes/chart",
+      "indexFollow": true
+    },
+    {
+      "route": "/chords",
+      "status": 200,
+      "etag": "W/\"6f59fc0d03e7b4b5b38a952cb0c86645\"",
+      "vercelId": "sfo1::xh9kx-1789098158119-59437db6eb32",
+      "title": "Piano Chord Chart: Notes, Keyboard Diagrams &amp; PDF",
+      "canonical": "https://pianogrid.com/chords",
+      "indexFollow": true
+    },
+    {
+      "route": "/chords/a-major",
+      "status": 200,
+      "etag": "W/\"9a5e4025dea769f7e2a566232929beee\"",
+      "vercelId": "sfo1::crhql-1789098158333-3f91a13e13c8",
+      "title": "A Major Piano Chord: Notes, Inversions &amp; Keyboard Diagrams",
+      "canonical": "https://pianogrid.com/chords/a-major",
+      "indexFollow": true
+    },
+    {
+      "route": "/chords/a-minor",
+      "status": 200,
+      "etag": "W/\"cb5288896def3961a6299519e651e5e6\"",
+      "vercelId": "sfo1::ww9xn-1789098158542-1c234dfee208",
+      "title": "A Minor Piano Chord (Am): Notes, Inversions &amp; PDF",
+      "canonical": "https://pianogrid.com/chords/a-minor",
+      "indexFollow": true
+    },
+    {
+      "route": "/chords/c-major",
+      "status": 200,
+      "etag": "W/\"a4c1cbe212aa214d1f3714411d80db87\"",
+      "vercelId": "sfo1::7mjlg-1789098158749-4ef9d633c7ec",
+      "title": "C Major Piano Chord: Notes, Inversions &amp; Keyboard Diagrams",
+      "canonical": "https://pianogrid.com/chords/c-major",
+      "indexFollow": true
+    },
+    {
+      "route": "/scales",
+      "status": 200,
+      "etag": "W/\"d1993eadd4fc16c8cd0d533ad01d1450\"",
+      "vercelId": "sfo1::xh9kx-1789098158952-26e577eac537",
+      "title": "Piano Scales: Notes, Patterns and Practice References",
+      "canonical": "https://pianogrid.com/scales",
+      "indexFollow": true
+    },
+    {
+      "route": "/scales/c-major",
+      "status": 200,
+      "etag": "W/\"451fefb3e13ef86b6b86f20b167a629e\"",
+      "vercelId": "sfo1::6p79f-1789098159162-738664bcbcfd",
+      "title": "C Major Piano Scale: Notes and Fingering",
+      "canonical": "https://pianogrid.com/scales/c-major",
+      "indexFollow": true
+    },
+    {
+      "route": "/scales/a-minor",
+      "status": 200,
+      "etag": "W/\"e5cd293fde8aa2b50fdcf6f6ef65c0cf\"",
+      "vercelId": "sfo1::6p79f-1789098159367-ec5b4f59bc81",
+      "title": "A Minor Scale on Piano: Natural, Harmonic &amp; Melodic",
+      "canonical": "https://pianogrid.com/scales/a-minor",
+      "indexFollow": true
+    },
+    {
+      "route": "/guide",
+      "status": 200,
+      "etag": "W/\"f440eb491a739749178ecb32bf62c518\"",
+      "vercelId": "sfo1::7mjlg-1789098159581-2feed27bb4d2",
+      "title": "How to Play Piano for Beginners: First Notes and Rhythm",
+      "canonical": "https://pianogrid.com/guide",
+      "indexFollow": true
+    },
+    {
+      "route": "/guide/read-sheet-music",
+      "status": 200,
+      "etag": "W/\"178ff11eb86c1d4787c1d1db142571fc\"",
+      "vercelId": "sfo1::q7bsv-1789098159784-a9551e190f3c",
+      "title": "How to Read Piano Sheet Music",
+      "canonical": "https://pianogrid.com/guide/read-sheet-music",
+      "indexFollow": true
+    }
+  ],
+  "assertions": {
+    "all17Http200": true,
+    "all17CanonicalAndIndexFollow": true,
+    "sitemapHasExactly17Locs": true,
+    "songsHasSeparatedFields": true,
+    "swedenHasDigitalBookRestriction": true,
+    "swedenDuplicateBylineAbsent": true,
+    "amRawHtmlCurrentSelectionCountNotUsedForAccessibility": 5
+  }
+}

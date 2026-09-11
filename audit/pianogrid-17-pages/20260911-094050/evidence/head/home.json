@@ -1,0 +1,45 @@
+{
+  "requested_url": "https://pianogrid.com/",
+  "final_url": "https://pianogrid.com/",
+  "http_status": 200,
+  "response_headers": {
+    "access-control-allow-origin": "*",
+    "age": "40626",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "content-disposition": "inline",
+    "content-encoding": "br",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Fri, 11 Sep 2026 01:51:23 GMT",
+    "etag": "W/\"b62a1852d2bab66444828a15d0e93708\"",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "x-matched-path": "/",
+    "x-nextjs-prerender": "1",
+    "x-nextjs-stale-time": "300",
+    "x-vercel-cache": "HIT",
+    "x-vercel-id": "sfo1::pn5zq-1789091483323-662c47ee2fe7"
+  },
+  "title": "Piano Chords, Scales & Practice Tools | PianoGrid",
+  "description": "Learn piano with clear chord and scale references, labeled keyboard notes, beginner songs, sheet music, and practical tools for focused practice.",
+  "canonical": "https://pianogrid.com/",
+  "robots": "index, follow",
+  "h1": [
+    {
+      "text": "Clear Piano References. Better Practice.",
+      "visible": true
+    }
+  ],
+  "json_ld": [
+    {
+      "valid": true,
+      "value": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://pianogrid.com/",
+        "name": "PianoGrid",
+        "alternateName": "Piano Grid"
+      }
+    }
+  ]
+}

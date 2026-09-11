@@ -1,0 +1,120 @@
+- link "Skip to chord tool":
+  - /url: "#c-major-result"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - navigation "Site sections":
+    - link "Keyboard Notes":
+      - /url: /keyboard-notes
+    - button "Open Keyboard Notes menu"
+    - link "Chords":
+      - /url: /chords
+    - button "Open Chords menu"
+    - link "Scales":
+      - /url: /scales
+    - button "Open Scales menu"
+    - link "Songs":
+      - /url: /songs
+    - button "Open Songs menu"
+    - link "Guide":
+      - /url: /guide
+    - button "Open Guide menu"
+    - link "Tools":
+      - /url: /tools
+    - button "Open Tools menu"
+  - button "Search this page"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Chords":
+          - /url: /chords
+      - listitem:
+        - link "C major" [disabled]
+  - heading "C Major Piano Chord" [level=1]
+  - paragraph: C major contains C–E–G. The intervals from the root are a major third and a perfect fifth.
+  - region "Notes and keyboard position":
+    - heading "Notes and keyboard position" [level=2]
+    - term: C major
+    - definition: C
+    - term: Chord tones
+    - definition: C E G
+    - term: Formula
+    - definition: 1 3 5
+    - group "Position":
+      - text: Position
+      - radio "Root position" [checked]
+      - text: Root position
+      - radio "First inversion"
+      - text: First inversion
+      - radio "Second inversion"
+      - text: Second inversion
+    - text: Notes from low to high C4 E4 G4
+    - strong: C
+    - text: "Bass: C4"
+    - figure "C4 is middle C C4–C6":
+      - region "Piano keyboard, C4–C6. Use left and right arrow keys to scroll.":
+        - 'img "C major, Root position: C4, E4, G4 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C4–C6
+    - button "Play chord"
+    - button "Play notes one at a time"
+    - button "Stop" [disabled]
+    - button "Print this position"
+    - link "Download C major PDF":
+      - /url: /reference/assets/chord-c-major.pdf
+    - text: Simple reference tone; not a recording of an acoustic piano.
+  - status
+  - region "What to notice":
+    - heading "What to notice" [level=2]
+    - paragraph: All three chord tones are white keys. Moving C above E and G gives E–G–C; E in the bass makes that first inversion, while C remains the root.
+  - region "Compare three positions":
+    - heading "Compare three positions" [level=2]
+    - paragraph: The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.
+    - region "C major inversion comparison table":
+      - 'table "C major: root position, first inversion, and second inversion"':
+        - caption: "C major: root position, first inversion, and second inversion"
+        - rowgroup:
+          - row "Position Symbol Notes, low to high Bass":
+            - columnheader "Position"
+            - columnheader "Symbol"
+            - columnheader "Notes, low to high"
+            - columnheader "Bass"
+        - rowgroup:
+          - row "Root position , current selection C C4–E4–G4 C4":
+            - cell "Root position , current selection"
+            - cell "C"
+            - cell "C4–E4–G4"
+            - cell "C4"
+          - row "First inversion C/E E4–G4–C5 E4":
+            - cell "First inversion"
+            - cell "C/E"
+            - cell "E4–G4–C5"
+            - cell "E4"
+          - row "Second inversion C/G G4–C5–E5 G4":
+            - cell "Second inversion"
+            - cell "C/G"
+            - cell "G4–C5–E5"
+            - cell "G4"
+  - region "Right-hand root-position example":
+    - heading "Right-hand root-position example" [level=2]
+    - paragraph: "RH root position only, usual choice from Yamaha: C–E–G → 1–3–5."
+  - region "Chord reference":
+    - heading "Chord reference" [level=2]
+    - paragraph: "Common names: C, C major, Cmaj."
+    - paragraph: "Intervals from the root: perfect unison, major third, perfect fifth."
+  - region "Print this chord reference":
+    - heading "Print this chord reference" [level=2]
+    - link "Download C major PDF":
+      - /url: /reference/assets/chord-c-major.pdf
+    - button "Print this position"
+  - region "Related references":
+    - heading "Related references" [level=2]
+    - link "Piano chord chart":
+      - /url: /chords
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

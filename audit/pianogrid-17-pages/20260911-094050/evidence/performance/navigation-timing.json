@@ -1,0 +1,62 @@
+[
+  {
+    "route": "/",
+    "conditions": "Headless Chrome, desktop 1440x1000, single audit host/network run; laboratory sample only.",
+    "wallMs": 2664,
+    "navigation": {
+      "duration": 1603.5,
+      "domContentLoaded": 1603,
+      "loadEvent": 1603.5,
+      "transferSize": 15893,
+      "encodedBodySize": 15593
+    },
+    "resourceCount": 15,
+    "transferSize": 221503,
+    "observedAt": "2026-09-11T01:54:52.245Z"
+  },
+  {
+    "route": "/keyboard-notes",
+    "conditions": "Headless Chrome, desktop 1440x1000, single audit host/network run; laboratory sample only.",
+    "wallMs": 2649,
+    "navigation": {
+      "duration": 1466.1000000089407,
+      "domContentLoaded": 1122.5,
+      "loadEvent": 1466.1000000089407,
+      "transferSize": 10972,
+      "encodedBodySize": 10672
+    },
+    "resourceCount": 17,
+    "transferSize": 203309,
+    "observedAt": "2026-09-11T01:54:55.108Z"
+  },
+  {
+    "route": "/chords/a-minor",
+    "conditions": "Headless Chrome, desktop 1440x1000, single audit host/network run; laboratory sample only.",
+    "wallMs": 2461,
+    "navigation": {
+      "duration": 1318.5999999940395,
+      "domContentLoaded": 1202.3999999910593,
+      "loadEvent": 1318.5999999940395,
+      "transferSize": 12229,
+      "encodedBodySize": 11929
+    },
+    "resourceCount": 22,
+    "transferSize": 233311,
+    "observedAt": "2026-09-11T01:54:57.766Z"
+  },
+  {
+    "route": "/scales/a-minor",
+    "conditions": "Headless Chrome, desktop 1440x1000, single audit host/network run; laboratory sample only.",
+    "wallMs": 2716,
+    "navigation": {
+      "duration": 1546.9000000059605,
+      "domContentLoaded": 1545.4000000059605,
+      "loadEvent": 1546.9000000059605,
+      "transferSize": 12046,
+      "encodedBodySize": 11746
+    },
+    "resourceCount": 20,
+    "transferSize": 225925,
+    "observedAt": "2026-09-11T01:55:00.673Z"
+  }
+]

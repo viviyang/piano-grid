@@ -1,9 +1,9 @@
 {
   "stage": "07-site-integration",
-  "executed_at": "2026-09-10T08:31:57.761Z",
+  "executed_at": "2026-09-11T12:38:53.159Z",
   "runtime": "v24.14.1",
-  "passed": 560,
-  "failed": 0,
+  "passed": 562,
+  "failed": 3,
   "warnings": [
     "source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。"
   ],
@@ -725,6 +725,11 @@
     },
     {
       "name": "CSS variable resolves: --pr-motion-ease",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS variable resolves: --pr-rolling-index",
       "passed": true,
       "detail": ""
     },
@@ -2724,6 +2729,26 @@
       "detail": ""
     },
     {
+      "name": "Shared breadcrumb uses Next Link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Shared breadcrumb current-page semantics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Shared site brand uses Next Link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Shared site brand owns piano mark and visible name",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Visible focus",
       "passed": true,
       "detail": ""
@@ -2754,18 +2779,18 @@
       "detail": ""
     },
     {
-      "name": "Only seventeen authorized routes",
+      "name": "Only twenty-two authorized routes",
       "passed": true,
       "detail": ""
     },
     {
       "name": "Only authorized layout/page/component TSX",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Only necessary authorized chord components",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -2775,7 +2800,7 @@
     },
     {
       "name": "Only authorized static assets",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {

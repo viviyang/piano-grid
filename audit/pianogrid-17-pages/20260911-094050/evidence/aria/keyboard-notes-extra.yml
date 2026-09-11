@@ -1,0 +1,145 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Keyboard Notes" [disabled]
+  - 'heading "Piano Keys and Notes: Find Any Key" [level=1]'
+  - paragraph: Identify a piano key, locate a note by octave and compare verified 88-key and 61-key example ranges.
+  - region "Find a piano key":
+    - text: Keyboard layout
+    - combobox "Keyboard layout":
+      - 'option "88 keys: A0–C8" [selected]'
+      - 'option "61 keys: C2–C7"'
+    - text: Find a note
+    - textbox "Find a note":
+      - /placeholder: Try F3, A4, C or A-flat
+    - button "Find"
+    - paragraph: "88 keys: A0–C8 · 52 white / 36 black keys"
+    - status:
+      - paragraph
+    - heading "C4" [level=2]
+    - paragraph: C4 · white key · Middle C
+    - 'region "88 keys: A0–C8"':
+      - button "A0"
+      - button "A#0 / Bb0": A#0 Bb0
+      - button "B0"
+      - button "C1"
+      - button "C#1 / Db1": C#1 Db1
+      - button "D1"
+      - button "D#1 / Eb1": D#1 Eb1
+      - button "E1"
+      - button "F1"
+      - button "F#1 / Gb1": F#1 Gb1
+      - button "G1"
+      - button "G#1 / Ab1": G#1 Ab1
+      - button "A1"
+      - button "A#1 / Bb1": A#1 Bb1
+      - button "B1"
+      - button "C2"
+      - button "C#2 / Db2": C#2 Db2
+      - button "D2"
+      - button "D#2 / Eb2": D#2 Eb2
+      - button "E2"
+      - button "F2"
+      - button "F#2 / Gb2": F#2 Gb2
+      - button "G2"
+      - button "G#2 / Ab2": G#2 Ab2
+      - button "A2"
+      - button "A#2 / Bb2": A#2 Bb2
+      - button "B2"
+      - button "C3"
+      - button "C#3 / Db3": C#3 Db3
+      - button "D3"
+      - button "D#3 / Eb3": D#3 Eb3
+      - button "E3"
+      - button "F3"
+      - button "F#3 / Gb3": F#3 Gb3
+      - button "G3"
+      - button "G#3 / Ab3": G#3 Ab3
+      - button "A3"
+      - button "A#3 / Bb3": A#3 Bb3
+      - button "B3"
+      - button "C4" [pressed]
+      - button "C#4 / Db4": C#4 Db4
+      - button "D4"
+      - button "D#4 / Eb4": D#4 Eb4
+      - button "E4"
+      - button "F4"
+      - button "F#4 / Gb4": F#4 Gb4
+      - button "G4"
+      - button "G#4 / Ab4": G#4 Ab4
+      - button "A4"
+      - button "A#4 / Bb4": A#4 Bb4
+      - button "B4"
+      - button "C5"
+      - button "C#5 / Db5": C#5 Db5
+      - button "D5"
+      - button "D#5 / Eb5": D#5 Eb5
+      - button "E5"
+      - button "F5"
+      - button "F#5 / Gb5": F#5 Gb5
+      - button "G5"
+      - button "G#5 / Ab5": G#5 Ab5
+      - button "A5"
+      - button "A#5 / Bb5": A#5 Bb5
+      - button "B5"
+      - button "C6"
+      - button "C#6 / Db6": C#6 Db6
+      - button "D6"
+      - button "D#6 / Eb6": D#6 Eb6
+      - button "E6"
+      - button "F6"
+      - button "F#6 / Gb6": F#6 Gb6
+      - button "G6"
+      - button "G#6 / Ab6": G#6 Ab6
+      - button "A6"
+      - button "A#6 / Bb6": A#6 Bb6
+      - button "B6"
+      - button "C7"
+      - button "C#7 / Db7": C#7 Db7
+      - button "D7"
+      - button "D#7 / Eb7": D#7 Eb7
+      - button "E7"
+      - button "F7"
+      - button "F#7 / Gb7": F#7 Gb7
+      - button "G7"
+      - button "G#7 / Ab7": G#7 Ab7
+      - button "A7"
+      - button "A#7 / Bb7": A#7 Bb7
+      - button "B7"
+      - button "C8"
+    - paragraph: Scroll to explore the full range. On a key, use ← / →, Home or End to move focus; Enter selects.
+    - button "Play note"
+    - button "Stop" [disabled]
+    - status
+    - paragraph: Standard A0–C8 88-key layout; does not describe every extended-range or historical piano.
+  - heading "Find a piano key or note" [level=2]
+  - paragraph: Choose a keyboard layout, then select a key to see its note name and octave. To find a note from its name, enter a full label such as F3 or A4. A letter alone, such as C, identifies several keys; choose an octave before selecting one. Use Play note when you want to hear the selected pitch.
+  - heading "Read the repeating pattern" [level=2]
+  - paragraph: The white-key letters repeat A, B, C, D, E, F, G. Black keys form groups of two and three. Find C just before a two-black-key group, and F just before a three-black-key group. Between one C and the next C are twelve semitone steps; the upper C begins the next repeat.
+  - heading "How many keys and octaves?" [level=2]
+  - paragraph: "The standard 88-key layout shown here runs from A0 to C8: 52 white keys and 36 black keys. Its lowest-to-highest span is seven octaves plus three semitones. The alternative 61-key example runs from C2 to C7, spanning five octaves with 36 white and 25 black keys. Check your instrument’s endpoints before using that example."
+  - heading "Black keys, sharps and flats" [level=2]
+  - paragraph: "A black key can have two familiar names: C♯/D♭, D♯/E♭, F♯/G♭, G♯/A♭, or A♯/B♭. These pairs point to the same piano key. Sharps and flats can also name white keys. The black key to the left of G is F♯/G♭; the one to its right is G♯/A♭."
+  - heading "Which C, A or F?" [level=2]
+  - paragraph: This reference calls middle C C4. C3 is one octave below it; A5 is one octave above A4. F3 is the F in octave 3. An A-flat query keeps the name A♭ while offering its matching octaves. For staff positions, open the notes chart; for A4 or another note in hertz, open the frequency table.
+  - heading "Keep spelling and range visible" [level=2]
+  - paragraph: B♯3 shares the C4 key; B♯4 shares C5. C♭4 shares B3, not B4. Keep the written name and its octave together. D8 lies above this 88-key layout’s C8 endpoint. An out-of-range result should stay visible as a message, rather than moving the requested note to another octave.
+  - navigation "Related keyboard references":
+    - link "Labeled keyboard and print reference":
+      - /url: /keyboard-notes/labeled
+    - link "Match piano notes to the staff":
+      - /url: /keyboard-notes/chart
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

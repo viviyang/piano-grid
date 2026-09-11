@@ -1,0 +1,174 @@
+{
+  "h1": "Piano Chord Finder",
+  "scope": "Requires a new bounded matching tool. B3’s pitch-class practice checker is not a general chord finder.",
+  "supplemental_blocks": [
+    {
+      "block_id": "how-to-enter",
+      "content": {
+        "heading": "Enter what you know, not a guessed chord name",
+        "paragraphs": [
+          "Enter pitch names with octave numbers, such as C4, E4 and G4. Keep the original spelling visible. The matcher can compare sounding pitch classes, but the result should still explain its chosen note names.",
+          "With exact octaves, the lowest supplied pitch is known. An empty optional bass field does not erase that information. A separate pitch-class-only input mode may genuinely have an unknown bass and must be labeled differently."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "read-results",
+      "content": {
+        "heading": "Read candidates, bass and scope together",
+        "paragraphs": [
+          "C4–E4–G4 supports C major. E3–G3–C4 has the same chord-tone set but places E in the bass, so C/E describes that input more precisely.",
+          "The tool needs to distinguish a chord’s root from its lowest note. It also needs a stated vocabulary: not finding a name in the supported set does not prove that the selected notes are musically invalid."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "multiple-names",
+      "content": {
+        "heading": "Some note sets have more than one useful name",
+        "paragraphs": [
+          "The pitch classes C, E, G and A can be read as C6 or Am7. With the exact input C4–E4–G4–A4, the lowest note is C, so the alternate A-minor-seventh interpretation is Am7/C.",
+          "With A2–C4–E4–G4, A is lowest; Am7 and C6/A are candidate descriptions. Musical context can favor a reading, but the supplied notes alone do not establish a unique compositional intention."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "duplicates",
+      "content": {
+        "heading": "Repeated roots change spacing, not the note set",
+        "paragraphs": [
+          "C4–C5–E5–G5 contains two Cs in different octaves. Deduplicate pitch classes for matching while retaining the full pitch list for display and the bass calculation.",
+          "Do not discard octaves before identifying the lowest pitch. Otherwise the tool can produce a valid chord class with an incorrect slash-bass label."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "no-match",
+      "content": {
+        "heading": "Show an honest no-match state",
+        "paragraphs": [
+          "C4–G4 lacks a third, so a major/minor-triad-only matcher cannot determine major versus minor. That is a scope limitation, not evidence that two notes cannot form a useful sonority.",
+          "For C4–C♯4–D4, report that no supported match was found. Do not force the nearest major chord, delete an inconvenient note or present an unverified AI-generated name as certain."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "limits",
+      "content": {
+        "heading": "This input does not identify a song key or assess playing",
+        "paragraphs": [
+          "A chord candidate is not a song-key result. A written-note input is also not microphone recognition, MIDI capture or a measurement of timing and technique.",
+          "The prepared example set includes sixth and seventh candidates as well as triads. Those types require their own matching vocabulary. They must not be passed to the current three-note B3 detail validator as though it already supports them."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original examples and pedagogy applying cited rules"
+    },
+    {
+      "block_id": "questions",
+      "content": {
+        "heading": "Questions and answers",
+        "paragraphs": [],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Why are there multiple results?",
+              "Different chord interpretations can share a pitch-class set. The bass and musical context help explain the alternatives."
+            ],
+            [
+              "Does an empty bass field mean the bass is unknown?",
+              "Not when notes include octaves. The lowest entered pitch already supplies a bass; only genuinely register-free input lacks that information."
+            ],
+            [
+              "Does no match mean the notes are wrong?",
+              "No. It means no match was found within the tool’s advertised vocabulary and rules."
+            ]
+          ]
+        },
+        "links": []
+      },
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] scoped explanation; feature statements conditional on implementation"
+    }
+  ],
+  "existing_blocks_policy": "Preserve each correct fact from raw blocks; merge duplicate sentences into these sections, do not discard correct content to fit a template.",
+  "patch_notes": [
+    "Corrected C4 E4 G4 A4 example: lowest pitch is C4, alternate full symbol Am7/C; bass=null was misleading for registered pitches."
+  ],
+  "source_ids": [
+    "PG-TRIADS",
+    "PG-OMT",
+    "PG-CHORD-VOCAB",
+    "PG-ASPN"
+  ],
+  "template": "T09",
+  "runtime_status": "not_implemented_by_this_pack"
+}

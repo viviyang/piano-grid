@@ -1,0 +1,586 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Songs":
+          - /url: /songs
+      - listitem:
+        - link "Easy" [disabled]
+  - 'heading "Easy Piano Songs: Choose a Version That Fits" [level=1]'
+  - paragraph: Compare beginner arrangements, C-major options, adult-method pieces and exact resources before choosing your next piano song.
+  - region "Choose by starting point":
+    - paragraph: Nine specific versions
+    - heading "Choose by starting point" [level=2]
+    - paragraph: Each view keeps the exact arrangement, acquisition route and reason for choosing it together.
+    - group "Show versions for":
+      - text: Show versions for
+      - radio "All featured" [checked]
+      - text: All featured
+      - radio "First pieces for children"
+      - text: First pieces for children
+      - radio "C-major versions"
+      - text: C-major versions
+      - radio "Gentle choices"
+      - text: Gentle choices
+      - radio "Adult method"
+      - text: Adult method
+      - radio "Small performance"
+      - text: Small performance
+    - paragraph: Showing 9 versions in editorial use-case order.
+    - article:
+      - paragraph: Early Elementary · PDF / Digital Print
+      - heading "Hot Cross Buns" [level=3]
+      - paragraph:
+        - strong: Edition
+        - text: Materials for Lesson 1 with Parent Guide
+      - paragraph: Start with a first-lesson package that includes a parent guide and audio.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Access
+      - definition: external free download; name/email form or provider account
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Early Elementary · PDF / Digital Print
+      - heading "Twinkle, Twinkle, Little Star" [level=3]
+      - paragraph: Anonymous (publisher attribution) · Arranged by Aron Bernstein
+      - paragraph:
+        - strong: Edition
+        - text: Twinkle, Twinkle, Little Star — Early Elementary
+      - paragraph: Use the version with a hand-position graphic and its matching tutorial.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Key
+      - definition: C major
+      - term: Access
+      - definition: external free download; name/email form or provider account
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Elementary · PDF / Digital Print
+      - heading "Twinkle, Twinkle, Little Star" [level=3]
+      - paragraph: Anonymous (publisher attribution) · Arranged by Aron Bernstein
+      - paragraph:
+        - strong: Edition
+        - text: Twinkle, Twinkle, Little Star — Elementary
+      - paragraph: Compare a second arrangement of the same melody when you want a different reading task.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Key
+      - definition: C major
+      - term: Access
+      - definition: external purchase or Premium; conflicting free wording in body, so no free badge
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-elementary-version
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Early Elementary · PDF / Digital Print
+      - heading "Jingle Bells" [level=3]
+      - paragraph: James Pierpont
+      - paragraph:
+        - strong: Edition
+        - text: Jingle Bells — Early Elementary
+      - paragraph: Choose a seasonal piece with a lesson tied to the exact edition.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Key
+      - definition: C major
+      - term: Access
+      - definition: external free download; name/email form or provider account
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/jingle-bells-early-elementary
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Early Elementary · PDF / Digital Print
+      - heading "Happy Birthday" [level=3]
+      - paragraph: Patty and Mildred Hill (publisher credit) · Arranged by Aron Bernstein
+      - paragraph:
+        - strong: Edition
+        - text: Happy Birthday — Early Elementary
+      - paragraph: Prepare a short piece for a real birthday occasion.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Key
+      - definition: C major
+      - term: Access
+      - definition: external free download; name/email form or provider account
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-early-elementary-version
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Early Elementary · PDF / Digital Print
+      - heading "Ode to Joy" [level=3]
+      - paragraph: Ludwig van Beethoven · Arranged by Joseph Hoffman
+      - paragraph:
+        - strong: Edition
+        - text: Ode to Joy
+      - paragraph: Try a clearly identified simplified classical melody.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Key
+      - definition: D major
+      - term: Access
+      - definition: external purchase or Premium
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Elementary · PDF / Digital Print
+      - heading "Happy Birthday to You" [level=3]
+      - paragraph: Patty and Mildred Hill (publisher credit)
+      - paragraph:
+        - strong: Edition
+        - text: Happy Birthday to You — Elementary lead sheet
+      - paragraph: Choose this when the goal is making an accompaniment from chord symbols.
+      - term: Publisher
+      - definition: Hoffman Academy
+      - term: Level basis
+      - definition: exact publisher product classification
+      - term: Key
+      - definition: F major
+      - term: Access
+      - definition: external free download; name/email form or provider account
+      - link "Open publisher resource":
+        - /url: https://www.hoffmanacademy.com/store/sheet-music/happy-birthday-to-you
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Adult course Book 1 · piano book
+      - heading "The Rainbow Connection" [level=3]
+      - paragraph:
+        - strong: Edition
+        - text: "Alfred’s Basic Adult Piano Course: Greatest Hits Book 1 · 00-16505"
+      - paragraph: Use an adult-method supplement when you are following the matching lesson book.
+      - term: Publisher
+      - definition: Alfred Music
+      - term: Level basis
+      - definition: publisher course correlation; not an exam grade
+      - term: Access
+      - definition: external purchased print book
+      - link "Open publisher resource":
+        - /url: https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505
+      - paragraph: External reference only. Score and recording are not hosted here.
+    - article:
+      - paragraph: Adult course Book 1 · piano book
+      - heading "Nadia’s Theme" [level=3]
+      - paragraph:
+        - strong: Edition
+        - text: "Alfred’s Basic Adult Piano Course: Greatest Hits Book 1 · 00-16505"
+      - paragraph: Use an adult-method supplement when you are following the matching lesson book.
+      - term: Publisher
+      - definition: Alfred Music
+      - term: Level basis
+      - definition: publisher course correlation; not an exam grade
+      - term: Access
+      - definition: external purchased print book
+      - link "Open publisher resource":
+        - /url: https://www.alfred.com/products/alfred-s-basic-adult-piano-course-greatest-hits-book-1-00-16505
+      - paragraph: External reference only. Score and recording are not hosted here.
+  - paragraph: One exact published collection
+  - heading "50 edition-backed options" [level=2]
+  - paragraph: These titles share one Easy Piano collection label. They have not been individually ranked or performance tested.
+  - region "First 50 Popular Songs collection titles":
+    - table "Fifty titles in First 50 Popular Songs You Should Play on the Piano":
+      - caption: Fifty titles in First 50 Popular Songs You Should Play on the Piano
+      - rowgroup:
+        - row "No. Work Edition and level Access":
+          - columnheader "No."
+          - columnheader "Work"
+          - columnheader "Edition and level"
+          - columnheader "Access"
+      - rowgroup:
+        - row "01 Against The Wind First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "01"
+          - cell "Against The Wind":
+            - link "Against The Wind":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "02 Angel First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "02"
+          - cell "Angel":
+            - link "Angel":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "03 Autumn Leaves First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "03"
+          - cell "Autumn Leaves":
+            - link "Autumn Leaves":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "04 Bad Moon Rising First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "04"
+          - cell "Bad Moon Rising":
+            - link "Bad Moon Rising":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "05 Ben First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "05"
+          - cell "Ben":
+            - link "Ben":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "06 Blackbird First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "06"
+          - cell "Blackbird":
+            - link "Blackbird":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "07 Born Free First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "07"
+          - cell "Born Free":
+            - link "Born Free":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "08 Boulevard Of Broken Dreams First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "08"
+          - cell "Boulevard Of Broken Dreams":
+            - link "Boulevard Of Broken Dreams":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "09 Candle In The Wind First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "09"
+          - cell "Candle In The Wind":
+            - link "Candle In The Wind":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "10 Chopsticks First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "10"
+          - cell "Chopsticks":
+            - link "Chopsticks":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "11 Don't Know Why First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "11"
+          - cell "Don't Know Why":
+            - link "Don't Know Why":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "12 Drops Of Jupiter (Tell Me) First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "12"
+          - cell "Drops Of Jupiter (Tell Me)":
+            - link "Drops Of Jupiter (Tell Me)":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "13 Eye Of The Tiger First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "13"
+          - cell "Eye Of The Tiger":
+            - link "Eye Of The Tiger":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "14 Falling Slowly First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "14"
+          - cell "Falling Slowly":
+            - link "Falling Slowly":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "15 Free Fallin' First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "15"
+          - cell "Free Fallin'":
+            - link "Free Fallin'":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "16 Golden Slumbers First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "16"
+          - cell "Golden Slumbers":
+            - link "Golden Slumbers":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "17 Good Riddance (Time Of Your Life) First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "17"
+          - cell "Good Riddance (Time Of Your Life)":
+            - link "Good Riddance (Time Of Your Life)":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "18 Hallelujah First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "18"
+          - cell "Hallelujah":
+            - link "Hallelujah":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "19 Happy First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "19"
+          - cell "Happy":
+            - link "Happy":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "20 Happy Birthday To You First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "20"
+          - cell "Happy Birthday To You":
+            - link "Happy Birthday To You":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "21 Heart And Soul First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "21"
+          - cell "Heart And Soul":
+            - link "Heart And Soul":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "22 Home First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "22"
+          - cell "Home":
+            - link "Home":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "23 A Horse With No Name First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "23"
+          - cell "A Horse With No Name":
+            - link "A Horse With No Name":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "24 Hotel California First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "24"
+          - cell "Hotel California":
+            - link "Hotel California":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "25 I Walk The Line First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "25"
+          - cell "I Walk The Line":
+            - link "I Walk The Line":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "26 I'm Yours First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "26"
+          - cell "I'm Yours":
+            - link "I'm Yours":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "27 If You Love Me Really Love Me (Hymne A L'amour) First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "27"
+          - cell "If You Love Me Really Love Me (Hymne A L'amour)":
+            - link "If You Love Me Really Love Me (Hymne A L'amour)":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "28 The Impossible Dream (The Quest) First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "28"
+          - cell "The Impossible Dream (The Quest)":
+            - link "The Impossible Dream (The Quest)":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "29 Just The Way You Are First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "29"
+          - cell "Just The Way You Are":
+            - link "Just The Way You Are":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "30 Lean On Me First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "30"
+          - cell "Lean On Me":
+            - link "Lean On Me":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "31 Let It Be First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "31"
+          - cell "Let It Be":
+            - link "Let It Be":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "32 Let It Go First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "32"
+          - cell "Let It Go":
+            - link "Let It Go":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "33 Love Story First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "33"
+          - cell "Love Story":
+            - link "Love Story":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "34 The Luckiest First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "34"
+          - cell "The Luckiest":
+            - link "The Luckiest":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "35 Man In The Mirror First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "35"
+          - cell "Man In The Mirror":
+            - link "Man In The Mirror":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "36 Moon River First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "36"
+          - cell "Moon River":
+            - link "Moon River":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "37 Over The Rainbow First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "37"
+          - cell "Over The Rainbow":
+            - link "Over The Rainbow":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "38 Peaceful Easy Feeling First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "38"
+          - cell "Peaceful Easy Feeling":
+            - link "Peaceful Easy Feeling":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "39 Piano Man First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "39"
+          - cell "Piano Man":
+            - link "Piano Man":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "40 Somewhere, My Love First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "40"
+          - cell "Somewhere, My Love":
+            - link "Somewhere, My Love":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "41 Stand By Me First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "41"
+          - cell "Stand By Me":
+            - link "Stand By Me":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "42 Summertime First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "42"
+          - cell "Summertime":
+            - link "Summertime":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "43 Take Me Home, Country Roads First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "43"
+          - cell "Take Me Home, Country Roads":
+            - link "Take Me Home, Country Roads":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "44 Too Little Time First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "44"
+          - cell "Too Little Time":
+            - link "Too Little Time":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "45 Unchained Melody First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "45"
+          - cell "Unchained Melody":
+            - link "Unchained Melody":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "46 We Will Rock You First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "46"
+          - cell "We Will Rock You":
+            - link "We Will Rock You":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "47 What A Wonderful World First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "47"
+          - cell "What A Wonderful World":
+            - link "What A Wonderful World":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "48 Windmills Of Your Mind First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "48"
+          - cell "Windmills Of Your Mind":
+            - link "Windmills Of Your Mind":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "49 Yesterday First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "49"
+          - cell "Yesterday":
+            - link "Yesterday":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+        - row "50 Your Song First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF":
+          - cell "50"
+          - cell "Your Song":
+            - link "Your Song":
+              - /url: https://www.halleonard.com/product/131140/first-50-popular-songs-you-should-play-on-the-piano
+          - cell "First 50 Popular Songs You Should Play on the Piano Easy Piano · publisher collection label; not independent track-by-track playing assessment"
+          - cell "Hal Leonard external paid collection; choose print book if paper is needed; publisher digital-book option is online viewing and not a printable PDF"
+  - paragraph: 50 exact edition-backed options are available; never describe them as a graded top50 ranking. A 10/30 subset must name its explicit selection criteria and preserve version metadata.
+  - region "Choose an easy version you can actually use":
+    - heading "Choose an easy version you can actually use" [level=2]
+    - paragraph: Start with the arrangement, not just the song title. The featured choices below identify a specific score or lesson and explain the next thing to check. Publisher labels such as Early Elementary and Easy Piano come from different series; treat them as starting points for comparing the actual music.
+  - region "For a child’s first few pieces":
+    - heading "For a child’s first few pieces" [level=2]
+    - paragraph: Hot Cross Buns comes with first-lesson materials and a parent guide. The early-elementary Twinkle version adds a hand-position graphic and a matching tutorial. For a birthday goal, the early-elementary Happy Birthday divides the melody between the hands. Choose the version and lesson together.
+  - region "If you want a C-major version":
+    - heading "If you want a C-major version" [level=2]
+    - paragraph: The listed early-elementary Twinkle, Jingle Bells and Happy Birthday editions are in C major. The selected Ode to Joy arrangement is in D major, so it is outside this filter. A key name alone does not describe the rhythm, hand movement or reading work.
+  - region "For adult beginners":
+    - heading "For adult beginners" [level=2]
+    - paragraph: If you follow Alfred’s adult course, compare The Rainbow Connection or Nadia’s Theme in its Greatest Hits Book 1 with your current lesson. If you want a broader menu, the edition-backed list offers fifty titles from one Easy Piano collection. Those are purchased arrangements, not fifty free downloads or fifty individually tested recommendations.
+  - region "For a gentle piece or a small performance":
+    - heading "For a gentle piece or a small performance" [level=2]
+    - paragraph: "For a gentle option, compare the two Twinkle arrangements and listen to their separate samples. For a small performance, choose a meaningful occasion: Happy Birthday gives you a clear audience and purpose. “Beautiful” and “impressive” describe your goal here; neither is a guaranteed listener response."
+  - region "Before you commit":
+    - heading "Before you commit" [level=2]
+    - paragraph: "Open the exact resource, check how to obtain it, and try a short section at a comfortable pace. Prefer a version whose instructions you understand. Several free provider downloads request your name and email. For a printed copy, check the chosen format: an online digital book and a downloadable PDF are different products."
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

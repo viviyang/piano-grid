@@ -1,0 +1,146 @@
+{
+  "captured_at": "2026-09-11T12:24:40.285Z",
+  "head": "dd1b8849cd4c303c9ddebfe794758aa14354f507",
+  "master": {
+    "page_count": 127,
+    "changed_pages": [
+      {
+        "url": "/chords/b-major",
+        "before": "aa5f5b78b77e81e45f5630bac72235919a309ca132f6e3791a86b2b33f383249",
+        "after": "0e88aa4fda14cd165d67342496fad1a3fbf43a0c649431b78523b2e96169a412"
+      },
+      {
+        "url": "/chords/a-flat-major",
+        "before": "82e0d94fea841996250588a8a07fee10ca22ed79d8beff252d27df55ea91ca23",
+        "after": "44f4b32c1121ae3d320ea1179d26893e618fe198d641fd893a0ce15104fd2215"
+      },
+      {
+        "url": "/chords/e-major",
+        "before": "63bb0a4972e090043be9df9aa253b1b1852bb8dc2e23e199dac9cf28281ca8dc",
+        "after": "70418a425a8035efa9471b9e8c78db5c6740b494ab3c4c8cbbed4cedba8290fd"
+      },
+      {
+        "url": "/chords/c-minor",
+        "before": "88f9479a92aa95b694829e442d1a2a7515541fce053752e01899405b37234f68",
+        "after": "db20e17fcea1714c73407bc3316b02ecfd119becf967011803c3effea1932230"
+      },
+      {
+        "url": "/chords/g-major",
+        "before": "ca4646a0f7118f35b3774eb49d844cc1f5ea850568c6eaeccf98a5607c5f585b",
+        "after": "61450044b1fc23b64df11fdb87ecd2e1c648f3b5ed0de3d6879deb99a6eda729"
+      }
+    ],
+    "changed_page_count": 5,
+    "c_flat_sha256": "bed917b23cfe0a3f1f682f8e44baca96fd79ab39516e12e10b1569fdf5bc8a18",
+    "c_flat_unchanged": true
+  },
+  "protected_details": {
+    "hashes": {
+      "/chords/a-minor": "f702249dcfa9cb65379a4e77ebd9c9b577a94c6f45c0ff8c3ba4fccef9a979ce",
+      "/chords/a-major": "7183db388d58d937e11705c01d2cf49bc23da840b26817c95514fb0e812e17fa",
+      "/chords/c-major": "cf024276e5278bd1628b2f310eb9608c6a0159f95edb0049f8e7c8cb7f985975"
+    },
+    "unchanged": {
+      "/chords/a-minor": true,
+      "/chords/a-major": true,
+      "/chords/c-major": true
+    }
+  },
+  "hub": {
+    "item_count": 19,
+    "item_ids": [
+      "c-major",
+      "a-minor",
+      "f-major",
+      "d-minor",
+      "g-major",
+      "e-minor",
+      "d-major",
+      "b-minor",
+      "a-major",
+      "f-sharp-minor",
+      "e-major",
+      "c-sharp-minor",
+      "b-major",
+      "g-sharp-minor",
+      "b-flat-major",
+      "g-minor",
+      "c-minor",
+      "a-flat-major",
+      "c-flat-major"
+    ],
+    "item_core_hash": "6b28f9942fd7e78b8ffa22290fc296450a388223887cd1ec23fdbfa7062f280b",
+    "item_core_unchanged": true,
+    "linked_ids": [
+      "c-major",
+      "a-minor",
+      "g-major",
+      "a-major",
+      "e-major",
+      "b-major",
+      "c-minor",
+      "a-flat-major"
+    ],
+    "c_flat_url": null
+  },
+  "assets": {
+    "public/reference/assets/chord-g-major.pdf": {
+      "bytes": 45702,
+      "sha256": "b61b18df64ce9a7508ad48043df6f8902576e676b0af419712115efe369f73ba"
+    },
+    "public/reference/assets/chord-g-major.svg": {
+      "bytes": 20731,
+      "sha256": "b25ec0ece894c73595a32255562821cb9f891bac854aa9f4b05b2e707dcc7ace"
+    },
+    "public/reference/assets/chord-c-minor.pdf": {
+      "bytes": 45936,
+      "sha256": "2701e3d9d030070b69e979aa93288cc9b9a1bd06c1959103de24b1d08110168c"
+    },
+    "public/reference/assets/chord-c-minor.svg": {
+      "bytes": 20780,
+      "sha256": "10e34711227c3870e03cf3cc70b5bd06d27e1829c8313771b66504b3fa3d87d5"
+    },
+    "public/reference/assets/chord-e-major.pdf": {
+      "bytes": 46019,
+      "sha256": "415b2cadf7fc24d812835861078f159aae1f007e813883cfbd513529defc0e0f"
+    },
+    "public/reference/assets/chord-e-major.svg": {
+      "bytes": 20774,
+      "sha256": "83d590fd0e28ee3974cbf5c2fc127247e9c14076cea57d3767c1985c1a5850c9"
+    },
+    "public/reference/assets/chord-b-major.pdf": {
+      "bytes": 46011,
+      "sha256": "9ee60e68465be8c73b182d487c886b67819c867ef7c9c4ec2a82b06ee10d2934"
+    },
+    "public/reference/assets/chord-b-major.svg": {
+      "bytes": 20816,
+      "sha256": "b6129cf55dbe7de07d9b5fe86e12d061a4c6586668959d399bbe9c43840bd1dd"
+    },
+    "public/reference/assets/chord-a-flat-major.pdf": {
+      "bytes": 45967,
+      "sha256": "a1986adb149c0785be1970cc8d992e538164df63922a1a6ae88c2941d2265375"
+    },
+    "public/reference/assets/chord-a-flat-major.svg": {
+      "bytes": 20834,
+      "sha256": "f4fccf04625614ecd7861550b618e8bde5371d9d29ec67f6e6351359eab6c5f1"
+    }
+  },
+  "validation": {
+    "package": "1098/1098",
+    "adapters": "22/22",
+    "focused_browser": "95/95",
+    "b3_regression": "71/71",
+    "b2_regression": "40/40",
+    "build": "passed"
+  },
+  "not_tested": [
+    "human listening",
+    "real mobile/tablet device",
+    "screen reader",
+    "physical printing",
+    "PDF tag accessibility",
+    "independent professional review of octave-adapted fingerings"
+  ],
+  "commit": false,
+  "deploy": false
+}

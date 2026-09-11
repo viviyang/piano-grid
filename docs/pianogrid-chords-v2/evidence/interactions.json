@@ -1,0 +1,177 @@
+[
+  {
+    "page": "c-major",
+    "position": "Root position",
+    "bass": "C4",
+    "currentRows": 1,
+    "notes": "C4–E4–G4",
+    "print": "c-major--root",
+    "symbol": "C"
+  },
+  {
+    "page": "c-major",
+    "position": "First inversion",
+    "bass": "E4",
+    "currentRows": 1,
+    "notes": "E4–G4–C5",
+    "print": "c-major--first",
+    "symbol": "C/E"
+  },
+  {
+    "page": "c-major",
+    "position": "Second inversion",
+    "bass": "G4",
+    "currentRows": 1,
+    "notes": "G4–C5–E5",
+    "print": "c-major--second",
+    "symbol": "C/G"
+  },
+  {
+    "page": "a-major",
+    "position": "Root position",
+    "bass": "A4",
+    "currentRows": 1,
+    "notes": "A4–C#5–E5",
+    "print": "a-major--root",
+    "symbol": "A"
+  },
+  {
+    "page": "a-major",
+    "position": "First inversion",
+    "bass": "C#4",
+    "currentRows": 1,
+    "notes": "C#4–E4–A4",
+    "print": "a-major--first",
+    "symbol": "A/C#"
+  },
+  {
+    "page": "a-major",
+    "position": "Second inversion",
+    "bass": "E4",
+    "currentRows": 1,
+    "notes": "E4–A4–C#5",
+    "print": "a-major--second",
+    "symbol": "A/E"
+  },
+  {
+    "page": "a-minor",
+    "position": "Root position",
+    "bass": "A3",
+    "currentRows": 1,
+    "notes": "A3–C4–E4",
+    "print": "a-minor--root",
+    "symbol": "Am"
+  },
+  {
+    "page": "a-minor",
+    "position": "First inversion",
+    "bass": "C4",
+    "currentRows": 1,
+    "notes": "C4–E4–A4",
+    "print": "a-minor--first",
+    "symbol": "Am/C"
+  },
+  {
+    "page": "a-minor",
+    "position": "Second inversion",
+    "bass": "E4",
+    "currentRows": 1,
+    "notes": "E4–A4–C5",
+    "print": "a-minor--second",
+    "symbol": "Am/E"
+  },
+  {
+    "page": "a-minor",
+    "afterStop": "Playback stopped."
+  },
+  {
+    "page": "a-minor",
+    "search": "Search this page\nFind notes, inversions, or an explanation on this page\n1 sections on this page\nA minor inversions"
+  },
+  {
+    "page": "chords",
+    "root": "A",
+    "quality": "",
+    "ids": [
+      "a-minor",
+      "a-major"
+    ],
+    "selected": "a-minor",
+    "url": "/chords"
+  },
+  {
+    "page": "chords",
+    "root": "",
+    "quality": "minor",
+    "ids": [
+      "a-minor",
+      "d-minor",
+      "e-minor",
+      "b-minor",
+      "f-sharp-minor",
+      "c-sharp-minor",
+      "g-sharp-minor",
+      "g-minor",
+      "c-minor"
+    ],
+    "selected": "a-minor",
+    "url": "/chords"
+  },
+  {
+    "page": "chords",
+    "root": "A",
+    "quality": "minor",
+    "ids": [
+      "a-minor"
+    ],
+    "selected": "a-minor",
+    "url": "/chords"
+  },
+  {
+    "page": "chords",
+    "root": "Cb",
+    "quality": "major",
+    "ids": [
+      "c-flat-major"
+    ],
+    "selected": "c-flat-major",
+    "url": "/chords"
+  },
+  {
+    "page": "chords",
+    "root": "Cb",
+    "quality": "minor",
+    "empty": "No chord in this collection matches both choices. Change the root or chord type.",
+    "ids": [],
+    "selected": "",
+    "url": "/chords"
+  },
+  {
+    "page": "chords",
+    "root": "",
+    "quality": "",
+    "ids": [
+      "c-major",
+      "a-minor",
+      "f-major",
+      "d-minor",
+      "g-major",
+      "e-minor",
+      "d-major",
+      "b-minor",
+      "a-major",
+      "f-sharp-minor",
+      "e-major",
+      "c-sharp-minor",
+      "b-major",
+      "g-sharp-minor",
+      "b-flat-major",
+      "g-minor",
+      "c-minor",
+      "a-flat-major",
+      "c-flat-major"
+    ],
+    "selected": "a-minor",
+    "url": "/chords"
+  }
+]

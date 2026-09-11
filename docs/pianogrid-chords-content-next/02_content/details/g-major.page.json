@@ -1,0 +1,348 @@
+{
+  "url": "/chords/g-major",
+  "title": "G Major Piano Chord (G): Notes, Inversions & PDF",
+  "description": "Find G major on piano with G, B and D. Compare its inversions, try a note-building exercise and print the three-position keyboard reference.",
+  "user_task": "Locate this exact triad and compare its three bass positions.",
+  "questions": [
+    "Does a G major chord need F-sharp?",
+    "What does G/B mean?",
+    "Is G major the same as G minor?",
+    "Why does the second-inversion example sound lower?",
+    "What does the keyboard exercise check?"
+  ],
+  "blocks": [
+    {
+      "heading": "Notes and keyboard position",
+      "body": "The G major chord contains G, B and D. Its formula is 1–3–5: a major third and a perfect fifth above G. The displayed root-position example is G4–B4–D5. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[已核实] rules; [推断] register and original teaching example"
+    },
+    {
+      "heading": "What to notice",
+      "body": "The G major chord and the G major scale are different things. F-sharp belongs to the scale, but it is not one of the three chord tones. The triad shown here therefore uses only white keys. Adding F-sharp would change the three-note object being studied. Measured above G, B is four semitones away and D is seven. The interval formula describes the chord from its root, not the distances between every pair of currently adjacent keys. In G/B, G is still the root even though B is the lowest sounding note.",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original explanation from preserved note data and cited rules"
+    },
+    {
+      "heading": "Compare three positions",
+      "body": "Read each bass note before selecting a position. The root-position example starts with G; first inversion starts with B; second inversion starts with D. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
+      "source_ids": [
+        "PG-OMT",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
+    }
+  ],
+  "data": {
+    "root": "G",
+    "quality": "major",
+    "symbol": "G",
+    "aliases": [
+      "G",
+      "G major",
+      "Gmaj"
+    ],
+    "pitch_classes": [
+      "G",
+      "B",
+      "D"
+    ],
+    "semitones_from_root": [
+      0,
+      4,
+      7
+    ],
+    "intervals": [
+      "perfect unison",
+      "major third",
+      "perfect fifth"
+    ],
+    "voicings": [
+      {
+        "id": "root",
+        "label": "Root position",
+        "notes": [
+          "G4",
+          "B4",
+          "D5"
+        ],
+        "midi": [
+          67,
+          71,
+          74
+        ],
+        "bass": "G4",
+        "symbol": "G",
+        "keyboard_highlights": [
+          {
+            "midi": 67,
+            "spelling": "G4"
+          },
+          {
+            "midi": 71,
+            "spelling": "B4"
+          },
+          {
+            "midi": 74,
+            "spelling": "D5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            67,
+            71,
+            74
+          ],
+          "ascending_midi": [
+            67,
+            71,
+            74
+          ],
+          "descending_midi": [
+            74,
+            71,
+            67
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "first",
+        "label": "First inversion",
+        "notes": [
+          "B4",
+          "D5",
+          "G5"
+        ],
+        "midi": [
+          71,
+          74,
+          79
+        ],
+        "bass": "B4",
+        "symbol": "G/B",
+        "keyboard_highlights": [
+          {
+            "midi": 71,
+            "spelling": "B4"
+          },
+          {
+            "midi": 74,
+            "spelling": "D5"
+          },
+          {
+            "midi": 79,
+            "spelling": "G5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            71,
+            74,
+            79
+          ],
+          "ascending_midi": [
+            71,
+            74,
+            79
+          ],
+          "descending_midi": [
+            79,
+            74,
+            71
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "second",
+        "label": "Second inversion",
+        "notes": [
+          "D4",
+          "G4",
+          "B4"
+        ],
+        "midi": [
+          62,
+          67,
+          71
+        ],
+        "bass": "D4",
+        "symbol": "G/D",
+        "keyboard_highlights": [
+          {
+            "midi": 62,
+            "spelling": "D4"
+          },
+          {
+            "midi": 67,
+            "spelling": "G4"
+          },
+          {
+            "midi": 71,
+            "spelling": "B4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            62,
+            67,
+            71
+          ],
+          "ascending_midi": [
+            62,
+            67,
+            71
+          ],
+          "descending_midi": [
+            71,
+            67,
+            62
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      }
+    ],
+    "default_voicing": "root",
+    "derivation": {
+      "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN",
+        "PG-OMT"
+      ]
+    },
+    "assets": [
+      {
+        "path": "assets/chord-g-major.svg",
+        "format": "SVG",
+        "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+        "delivery_file": "05_assets/chord-g-major.svg",
+        "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+        "delivery_status": "generated_in_this_package",
+        "sha256": "b25ec0ece894c73595a32255562821cb9f891bac854aa9f4b05b2e707dcc7ace",
+        "tagged_pdf_accessibility": null
+      },
+      {
+        "path": "assets/chord-g-major.pdf",
+        "format": "PDF",
+        "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+        "delivery_file": "05_assets/chord-g-major.pdf",
+        "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+        "delivery_status": "generated_in_this_package",
+        "sha256": "b61b18df64ce9a7508ad48043df6f8902576e676b0af419712115efe369f73ba",
+        "tagged_pdf_accessibility": "not_certified"
+      }
+    ],
+    "related": [
+      "/chords",
+      "/chords/c-major",
+      "/scales/c-major",
+      "/guide/piano-chords",
+      "/chords/by-key"
+    ]
+  },
+  "source_ids": [
+    "PG-TRIADS",
+    "PG-OMT",
+    "PG-ASPN",
+    "PG-SKOOVE-G-MAJOR"
+  ],
+  "issues": [
+    {
+      "id": "INT-g-major",
+      "field": "runtime",
+      "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+      "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
+    },
+    {
+      "id": "FINGER-INV-g-major",
+      "field": "inversion fingering",
+      "reason": "No inversion fingerings are included; B3 supports root examples only.",
+      "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P169",
+      "status": "prepared_not_live",
+      "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
+      "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
+    }
+  ],
+  "baseline_page_id": "U084",
+  "batch": "F",
+  "main_keyword": "g chord piano",
+  "keywords": [
+    "g chord piano"
+  ],
+  "source_groups": [
+    {
+      "id": "P169",
+      "representative": "g chord piano",
+      "section": null,
+      "synonyms": [],
+      "other_queries": [],
+      "source": "关键词策略构建器数据汇总.md｜L163｜piano chord chart > piano scales; 关键词策略构建器数据汇总.md｜L511｜piano scales > piano scales and fingering",
+      "delivery_method": "独立页首要任务",
+      "required_output": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "first_release_scope": "模板已确认；此实例内容待审核",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T07",
+  "baseline_priority": "后做",
+  "baseline_purpose": "查询G大三和弦",
+  "final_scope": {
+    "id": "T07",
+    "name": "具体和弦页",
+    "confirmation_status": "A minor 样板已确认；其他已有对象复用模板，不等于逐页确认",
+    "user_task": "直接查某一个明确和弦的组成、键位、转位和声音。",
+    "modules": [
+      "进入即固定当前和弦，不再要求选择根音。",
+      "显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。",
+      "原位与转位同页切换，图示和播放同步；打印当前结果。",
+      "针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。"
+    ],
+    "boundary": "不复制中心页全量筛选器；不为转位/打印模式单独建页；不自动补全全部和弦组合。",
+    "acceptance": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。"
+  },
+  "required_delivery": "进入即固定当前和弦，不再要求选择根音。；显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。；原位与转位同页切换，图示和播放同步；打印当前结果。；针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。",
+  "release_conditions": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_ready_adapter_required",
+  "metadata": {
+    "title": "G Major Piano Chord (G): Notes, Inversions & PDF",
+    "description": "Find G major on piano with G, B and D. Compare its inversions, try a note-building exercise and print the three-position keyboard reference.",
+    "canonical_path": "/chords/g-major",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

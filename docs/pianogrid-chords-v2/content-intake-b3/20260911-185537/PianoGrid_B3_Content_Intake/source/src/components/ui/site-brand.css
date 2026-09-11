@@ -1,0 +1,30 @@
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--foreground);
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 690;
+  letter-spacing: -.015em;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.site-brand-mark {
+  width: 32px;
+  height: 32px;
+  color: var(--foreground);
+  flex: 0 0 auto;
+}
+
+.site-brand-cut {
+  fill: var(--background);
+}
+
+@media (max-width: 700px) {
+  .site-brand-mark {
+    width: 29px;
+    height: 29px;
+  }
+}

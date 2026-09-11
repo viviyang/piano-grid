@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-11T11:03:33.847Z",
+  "zip_path": "docs/pianogrid-chords-v2/content-intake-b3/20260911-185537/PianoGrid_B3_Content_Intake.zip",
+  "zip_sha256": "6f87b027f670452a21eccde2f3768fe8de67a7efeedf66aa20e2ccd90c0e285e",
+  "zip_bytes": 2453457,
+  "package_file_count": 105,
+  "manifest_listed_file_count": 104,
+  "json_files_parsed": 19,
+  "hub_item_count": 19,
+  "b3_relevant_files_rechecked": 56,
+  "checks": [
+    "ZIP extracted successfully",
+    "all manifest-listed files existed and matched SHA-256",
+    "all JSON parsed as UTF-8",
+    "three authoring examples, hub, types, validator and contracts were located",
+    "no secret signature, font, node_modules, .git, .env or file over 10 MiB",
+    "B3 HEAD and relevant hashes remained unchanged"
+  ]
+}

@@ -1,0 +1,64 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Tools":
+          - /url: /tools
+      - listitem:
+        - link "Blank sheet music" [disabled]
+  - heading "Blank Piano Sheet Music" [level=1]
+  - paragraph: Print blank grand staffs for piano notation, lessons and composition.
+  - region "Choose your paper":
+    - paragraph: Printable worksheet · no account
+    - heading "Choose your paper" [level=2]
+    - paragraph: 6 blank grand-staff systems on one page.
+    - group "Paper size":
+      - text: Paper size
+      - radio "US Letter 8.5 × 11 in · 1 page Download US Letter" [checked]
+      - strong: US Letter
+      - text: 8.5 × 11 in · 1 page
+      - link "Download US Letter":
+        - /url: /reference/assets/blank-piano-staff-letter.pdf
+      - radio "A4 210 × 297 mm · 1 page Download A4"
+      - strong: A4
+      - text: 210 × 297 mm · 1 page
+      - link "Download A4":
+        - /url: /reference/assets/blank-piano-staff-a4.pdf
+    - paragraph: Sheet preview
+    - heading "US Letter · 8.5 × 11 in" [level=2]
+    - text: "Screen zoom: 100%"
+    - 'slider "Screen zoom: 100%"': "100"
+    - region "US Letter blank piano grand staff preview at 100%":
+      - img "Blank piano manuscript preview with 6 paired treble and bass staff systems"
+    - link "Open US Letter PDF to print":
+      - /url: /reference/assets/blank-piano-staff-letter.pdf
+    - link "Download selected PDF":
+      - /url: /reference/assets/blank-piano-staff-letter.pdf
+    - paragraph: Print at 100% when your printer can keep the page margins; otherwise use the printer’s printable-area option.
+  - region "Print a blank piano staff":
+    - heading "Print a blank piano staff" [level=2]
+    - paragraph: Choose Letter or A4. Each sheet has six pairs of treble and bass staves, with room to write a title and your own music. Download the PDF and print it at 100% if your printer can keep the margins.
+    - term: Systems
+    - definition: 6 grand staffs
+    - term: Staff lines
+    - definition: 5 per staff
+    - term: Clefs
+    - definition: Treble and bass
+    - term: Music
+    - definition: Blank
+  - region "Write your own music":
+    - heading "Write your own music" [level=2]
+    - paragraph: Add a key signature, time signature and barlines to suit your exercise. The blank pairs leave the musical choices to you.
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

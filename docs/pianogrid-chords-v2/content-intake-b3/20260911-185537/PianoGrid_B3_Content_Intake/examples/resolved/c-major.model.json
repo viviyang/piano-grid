@@ -1,0 +1,818 @@
+{
+  "data": {
+    "url": "/chords/c-major",
+    "namespace": "c-major",
+    "toolId": "c-major-result",
+    "rangeLabel": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-c-major.pdf",
+      "label": "Download C major PDF"
+    },
+    "defaultId": "c-major--root",
+    "options": [
+      {
+        "value": "c-major--root",
+        "label": "Root position"
+      },
+      {
+        "value": "c-major--first",
+        "label": "First inversion"
+      },
+      {
+        "value": "c-major--second",
+        "label": "Second inversion"
+      }
+    ],
+    "chord": {
+      "id": "c-major",
+      "slug": "c-major",
+      "name_en": "C major",
+      "symbol": "C",
+      "root_spelling": "C",
+      "quality": "major",
+      "note_spellings": [
+        "C",
+        "E",
+        "G"
+      ],
+      "formula_degrees": [
+        "1",
+        "3",
+        "5"
+      ]
+    },
+    "voicings": [
+      {
+        "voicing_id": "c-major--root",
+        "inversion_label": "Root position",
+        "chord_symbol": "C",
+        "bass_spelling": "C4",
+        "notes_low_to_high": [
+          {
+            "display_pitch": "C4",
+            "midi": 60
+          },
+          {
+            "display_pitch": "E4",
+            "midi": 64
+          },
+          {
+            "display_pitch": "G4",
+            "midi": 67
+          }
+        ],
+        "diagram": {
+          "keyboard_range_midi": [
+            60,
+            84
+          ],
+          "highlight_midi": [
+            60,
+            64,
+            67
+          ],
+          "alt_text": "C major, Root position: C4, E4, G4 from low to high. Marked keys are the notes to play."
+        },
+        "playback": {
+          "together": [
+            {
+              "midi": 60,
+              "frequency_hz": 261.6255653005986,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 67,
+              "frequency_hz": 391.99543598174927,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 60,
+              "frequency_hz": 261.6255653005986,
+              "onset_ms": 0,
+              "duration_ms": 500
+            },
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 600,
+              "duration_ms": 500
+            },
+            {
+              "midi": 67,
+              "frequency_hz": 391.99543598174927,
+              "onset_ms": 1200,
+              "duration_ms": 500
+            }
+          ]
+        },
+        "print_data": {
+          "spelled_pitches": [
+            "C4",
+            "E4",
+            "G4"
+          ],
+          "highlight_midi": [
+            60,
+            64,
+            67
+          ]
+        }
+      },
+      {
+        "voicing_id": "c-major--first",
+        "inversion_label": "First inversion",
+        "chord_symbol": "C/E",
+        "bass_spelling": "E4",
+        "notes_low_to_high": [
+          {
+            "display_pitch": "E4",
+            "midi": 64
+          },
+          {
+            "display_pitch": "G4",
+            "midi": 67
+          },
+          {
+            "display_pitch": "C5",
+            "midi": 72
+          }
+        ],
+        "diagram": {
+          "keyboard_range_midi": [
+            60,
+            84
+          ],
+          "highlight_midi": [
+            64,
+            67,
+            72
+          ],
+          "alt_text": "C major, First inversion: E4, G4, C5 from low to high. Marked keys are the notes to play."
+        },
+        "playback": {
+          "together": [
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 67,
+              "frequency_hz": 391.99543598174927,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 72,
+              "frequency_hz": 523.2511306011972,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 64,
+              "frequency_hz": 329.6275569128699,
+              "onset_ms": 0,
+              "duration_ms": 500
+            },
+            {
+              "midi": 67,
+              "frequency_hz": 391.99543598174927,
+              "onset_ms": 600,
+              "duration_ms": 500
+            },
+            {
+              "midi": 72,
+              "frequency_hz": 523.2511306011972,
+              "onset_ms": 1200,
+              "duration_ms": 500
+            }
+          ]
+        },
+        "print_data": {
+          "spelled_pitches": [
+            "E4",
+            "G4",
+            "C5"
+          ],
+          "highlight_midi": [
+            64,
+            67,
+            72
+          ]
+        }
+      },
+      {
+        "voicing_id": "c-major--second",
+        "inversion_label": "Second inversion",
+        "chord_symbol": "C/G",
+        "bass_spelling": "G4",
+        "notes_low_to_high": [
+          {
+            "display_pitch": "G4",
+            "midi": 67
+          },
+          {
+            "display_pitch": "C5",
+            "midi": 72
+          },
+          {
+            "display_pitch": "E5",
+            "midi": 76
+          }
+        ],
+        "diagram": {
+          "keyboard_range_midi": [
+            60,
+            84
+          ],
+          "highlight_midi": [
+            67,
+            72,
+            76
+          ],
+          "alt_text": "C major, Second inversion: G4, C5, E5 from low to high. Marked keys are the notes to play."
+        },
+        "playback": {
+          "together": [
+            {
+              "midi": 67,
+              "frequency_hz": 391.99543598174927,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 72,
+              "frequency_hz": 523.2511306011972,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            },
+            {
+              "midi": 76,
+              "frequency_hz": 659.2551138257398,
+              "onset_ms": 0,
+              "duration_ms": 1200
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 67,
+              "frequency_hz": 391.99543598174927,
+              "onset_ms": 0,
+              "duration_ms": 500
+            },
+            {
+              "midi": 72,
+              "frequency_hz": 523.2511306011972,
+              "onset_ms": 600,
+              "duration_ms": 500
+            },
+            {
+              "midi": 76,
+              "frequency_hz": 659.2551138257398,
+              "onset_ms": 1200,
+              "duration_ms": 500
+            }
+          ]
+        },
+        "print_data": {
+          "spelled_pitches": [
+            "G4",
+            "C5",
+            "E5"
+          ],
+          "highlight_midi": [
+            67,
+            72,
+            76
+          ]
+        }
+      }
+    ],
+    "whitePitchClasses": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11
+    ],
+    "microcopy": {
+      "loading": "Preparing the sound…",
+      "audio_error": "Sound could not start. Try again.",
+      "audio_unavailable": "Sound is unavailable. You can still use the notes and diagram.",
+      "print_error": "The print preview could not open. Download the PDF instead.",
+      "selected_note_summary": "Notes from low to high",
+      "result_count_singular": "{count} chord",
+      "result_count_plural": "{count} chords",
+      "no_results": "No chord in this collection matches both choices. Change the root or chord type.",
+      "playback_note": "Simple reference tone; not a recording of an acoustic piano."
+    },
+    "heading": "C Major Piano Chord",
+    "toolHeading": "Notes and keyboard position",
+    "printDisclaimer": "The marked keys show pitches, not a hand shape or a required fingering."
+  },
+  "blocks": [
+    {
+      "block_id": "c-major-intro",
+      "content": {
+        "heading": "C Major Piano Chord",
+        "paragraphs": [
+          "C major contains C–E–G. The intervals from the root are a major third and a perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-result",
+      "content": {
+        "heading": "Notes and keyboard position",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-notice",
+      "content": {
+        "heading": "What to notice",
+        "paragraphs": [
+          "All three chord tones are white keys. Moving C above E and G gives E–G–C; E in the bass makes that first inversion, while C remains the root."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-inversions",
+      "content": {
+        "heading": "Compare three positions",
+        "paragraphs": [
+          "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings."
+        ],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Position",
+            "Symbol",
+            "Notes, low to high",
+            "Bass"
+          ],
+          "rows": [
+            [
+              "Root position",
+              "C",
+              "C4–E4–G4",
+              "C4"
+            ],
+            [
+              "First inversion",
+              "C/E",
+              "E4–G4–C5",
+              "E4"
+            ],
+            [
+              "Second inversion",
+              "C/G",
+              "G4–C5–E5",
+              "G4"
+            ]
+          ]
+        },
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-fingering-example",
+      "content": {
+        "heading": "Root-position fingering examples",
+        "paragraphs": [
+          "RH root position only, usual choice from Yamaha: C–E–G → 1–3–5."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-connections",
+      "content": {
+        "heading": "Chord, scale, and shared tones",
+        "paragraphs": [
+          "The C major chord contains three pitch classes: C, E, and G. The C major scale contains seven: C, D, E, F, G, A, and B. Scale degrees 1, 3, and 5 describe positions in that scale; finger numbers describe the digits used in one specific hand example.",
+          "C major and A minor share C and E, but they remain different chords: C major is C–E–G, while A minor is A–C–E."
+        ],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "label": "See the C major scale",
+            "url": "/scales/c-major",
+            "published": true
+          },
+          {
+            "label": "Compare the shared tones with A minor",
+            "url": "/chords/a-minor",
+            "published": true
+          }
+        ]
+      }
+    },
+    {
+      "block_id": "c-major-reference",
+      "content": {
+        "heading": "Chord reference",
+        "paragraphs": [
+          "Common names: C, C major, Cmaj.",
+          "Intervals from the root: perfect unison, major third, perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "practice",
+      "content": {
+        "heading": "Build C on the keyboard",
+        "paragraphs": [
+          "Select the three pitch classes that make C major, then check your answer.",
+          "This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-print",
+      "content": {
+        "heading": "Print this chord reference",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "c-major-related",
+      "content": {
+        "heading": "Related references",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "url": "/chords",
+            "label": "Piano chord chart",
+            "published": true
+          }
+        ]
+      }
+    }
+  ],
+  "byId": {
+    "c-major-intro": {
+      "block_id": "c-major-intro",
+      "content": {
+        "heading": "C Major Piano Chord",
+        "paragraphs": [
+          "C major contains C–E–G. The intervals from the root are a major third and a perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "c-major-result": {
+      "block_id": "c-major-result",
+      "content": {
+        "heading": "Notes and keyboard position",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "c-major-notice": {
+      "block_id": "c-major-notice",
+      "content": {
+        "heading": "What to notice",
+        "paragraphs": [
+          "All three chord tones are white keys. Moving C above E and G gives E–G–C; E in the bass makes that first inversion, while C remains the root."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "c-major-inversions": {
+      "block_id": "c-major-inversions",
+      "content": {
+        "heading": "Compare three positions",
+        "paragraphs": [
+          "The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings."
+        ],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Position",
+            "Symbol",
+            "Notes, low to high",
+            "Bass"
+          ],
+          "rows": [
+            [
+              "Root position",
+              "C",
+              "C4–E4–G4",
+              "C4"
+            ],
+            [
+              "First inversion",
+              "C/E",
+              "E4–G4–C5",
+              "E4"
+            ],
+            [
+              "Second inversion",
+              "C/G",
+              "G4–C5–E5",
+              "G4"
+            ]
+          ]
+        },
+        "links": []
+      }
+    },
+    "c-major-fingering-example": {
+      "block_id": "c-major-fingering-example",
+      "content": {
+        "heading": "Root-position fingering examples",
+        "paragraphs": [
+          "RH root position only, usual choice from Yamaha: C–E–G → 1–3–5."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "c-major-connections": {
+      "block_id": "c-major-connections",
+      "content": {
+        "heading": "Chord, scale, and shared tones",
+        "paragraphs": [
+          "The C major chord contains three pitch classes: C, E, and G. The C major scale contains seven: C, D, E, F, G, A, and B. Scale degrees 1, 3, and 5 describe positions in that scale; finger numbers describe the digits used in one specific hand example.",
+          "C major and A minor share C and E, but they remain different chords: C major is C–E–G, while A minor is A–C–E."
+        ],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "label": "See the C major scale",
+            "url": "/scales/c-major",
+            "published": true
+          },
+          {
+            "label": "Compare the shared tones with A minor",
+            "url": "/chords/a-minor",
+            "published": true
+          }
+        ]
+      }
+    },
+    "c-major-reference": {
+      "block_id": "c-major-reference",
+      "content": {
+        "heading": "Chord reference",
+        "paragraphs": [
+          "Common names: C, C major, Cmaj.",
+          "Intervals from the root: perfect unison, major third, perfect fifth."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "practice": {
+      "block_id": "practice",
+      "content": {
+        "heading": "Build C on the keyboard",
+        "paragraphs": [
+          "Select the three pitch classes that make C major, then check your answer.",
+          "This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "c-major-print": {
+      "block_id": "c-major-print",
+      "content": {
+        "heading": "Print this chord reference",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    "c-major-related": {
+      "block_id": "c-major-related",
+      "content": {
+        "heading": "Related references",
+        "paragraphs": [],
+        "steps": [],
+        "table": null,
+        "links": [
+          {
+            "url": "/chords",
+            "label": "Piano chord chart",
+            "published": true
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "title": "C Major Piano Chord: Notes, Inversions & Keyboard Diagrams",
+    "description": "Find the C major piano chord notes C, E and G. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.",
+    "canonical_path": "/chords/c-major",
+    "language": "en-US"
+  },
+  "answer": "C major contains C–E–G. The intervals from the root are a major third and a perfect fifth.",
+  "introduction": [],
+  "fingeringExamples": [
+    {
+      "id": "c-major--root--right",
+      "voicingId": "c-major--root",
+      "hand": "right",
+      "notes": [
+        "C4",
+        "E4",
+        "G4"
+      ],
+      "fingers": [
+        1,
+        3,
+        5
+      ],
+      "scope": "Single-hand right-hand example for this root-position voicing.",
+      "limitation": "A starting example for a close-position triad. Hand size and musical context may call for another fingering; it is not assigned to the inversions.",
+      "sourceIds": [
+        "SKOOVE-C",
+        "E-CHORD"
+      ],
+      "verificationStatus": "source_verified_with_octave_adaptation"
+    },
+    {
+      "id": "c-major--root--left",
+      "voicingId": "c-major--root",
+      "hand": "left",
+      "notes": [
+        "C4",
+        "E4",
+        "G4"
+      ],
+      "fingers": [
+        5,
+        3,
+        1
+      ],
+      "scope": "Single-hand left-hand example for this root-position voicing.",
+      "limitation": "A starting example for a close-position triad. Hand size and musical context may call for another fingering; it is not assigned to the inversions.",
+      "sourceIds": [
+        "SKOOVE-C"
+      ],
+      "verificationStatus": "source_verified_with_octave_adaptation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SKOOVE-C",
+      "title": "C major chord on piano",
+      "publisher": "Skoove; reviewed by Matthew Dickman, composer and music educator",
+      "url": "https://www.skoove.com/en/tools/piano-chords/c-major",
+      "checkedOn": "2026-09-11",
+      "supports": "C–E–G root position; right hand 1–3–5 and left hand 5–3–1.",
+      "limitation": "The source specifies chord tones and fingers, but not PianoGrid’s C4–E4–G4 octave placement."
+    },
+    {
+      "id": "E-CHORD",
+      "title": "Basic Piano Chords for Beginners, Part 1",
+      "publisher": "Yamaha / Jerry Kovarsky",
+      "url": "https://hub.yamaha.com/keyboards/k-how-to/basic-piano-chords-for-beginners-part-1/",
+      "checkedOn": "2026-09-11",
+      "supports": "Major and minor root-position triads usually use thumb, middle finger and pinky; C major is the illustrated reference.",
+      "limitation": "The article supports the right-hand root-position convention; it does not specify PianoGrid’s octave placement or a left-hand C example."
+    }
+  ],
+  "practice": {
+    "id": "practice",
+    "heading": "Build C on the keyboard",
+    "prompt": "Select the three pitch classes that make C major, then check your answer.",
+    "scope": "This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed."
+  },
+  "searchSections": [
+    {
+      "id": "c-major-result",
+      "heading": "Notes and keyboard position",
+      "text": "{\"heading\":\"Notes and keyboard position\",\"paragraphs\":[],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "c-major-notice",
+      "heading": "What to notice",
+      "text": "{\"heading\":\"What to notice\",\"paragraphs\":[\"All three chord tones are white keys. Moving C above E and G gives E–G–C; E in the bass makes that first inversion, while C remains the root.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "c-major-inversions",
+      "heading": "Compare three positions",
+      "text": "{\"heading\":\"Compare three positions\",\"paragraphs\":[\"The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.\"],\"steps\":[],\"table\":{\"columns\":[\"Position\",\"Symbol\",\"Notes, low to high\",\"Bass\"],\"rows\":[[\"Root position\",\"C\",\"C4–E4–G4\",\"C4\"],[\"First inversion\",\"C/E\",\"E4–G4–C5\",\"E4\"],[\"Second inversion\",\"C/G\",\"G4–C5–E5\",\"G4\"]]},\"links\":[]}"
+    },
+    {
+      "id": "c-major-fingering-example",
+      "heading": "Root-position fingering examples",
+      "text": "{\"heading\":\"Root-position fingering examples\",\"paragraphs\":[\"RH root position only, usual choice from Yamaha: C–E–G → 1–3–5.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "c-major-connections",
+      "heading": "Chord, scale, and shared tones",
+      "text": "{\"heading\":\"Chord, scale, and shared tones\",\"paragraphs\":[\"The C major chord contains three pitch classes: C, E, and G. The C major scale contains seven: C, D, E, F, G, A, and B. Scale degrees 1, 3, and 5 describe positions in that scale; finger numbers describe the digits used in one specific hand example.\",\"C major and A minor share C and E, but they remain different chords: C major is C–E–G, while A minor is A–C–E.\"],\"steps\":[],\"table\":null,\"links\":[{\"label\":\"See the C major scale\",\"url\":\"/scales/c-major\",\"published\":true},{\"label\":\"Compare the shared tones with A minor\",\"url\":\"/chords/a-minor\",\"published\":true}]}"
+    },
+    {
+      "id": "c-major-reference",
+      "heading": "Chord reference",
+      "text": "{\"heading\":\"Chord reference\",\"paragraphs\":[\"Common names: C, C major, Cmaj.\",\"Intervals from the root: perfect unison, major third, perfect fifth.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "practice",
+      "heading": "Build C on the keyboard",
+      "text": "{\"heading\":\"Build C on the keyboard\",\"paragraphs\":[\"Select the three pitch classes that make C major, then check your answer.\",\"This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed.\"],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "c-major-print",
+      "heading": "Print this chord reference",
+      "text": "{\"heading\":\"Print this chord reference\",\"paragraphs\":[],\"steps\":[],\"table\":null,\"links\":[]}"
+    },
+    {
+      "id": "c-major-related",
+      "heading": "Related references",
+      "text": "{\"heading\":\"Related references\",\"paragraphs\":[],\"steps\":[],\"table\":null,\"links\":[{\"url\":\"/chords\",\"label\":\"Piano chord chart\",\"published\":true}]}"
+    }
+  ],
+  "tocItems": [
+    {
+      "id": "c-major-result",
+      "label": "Chord & positions"
+    },
+    {
+      "id": "c-major-notice",
+      "label": "What to notice"
+    },
+    {
+      "id": "c-major-inversions",
+      "label": "Compare three positions"
+    },
+    {
+      "id": "c-major-fingering-example",
+      "label": "Root-position fingering examples"
+    },
+    {
+      "id": "c-major-connections",
+      "label": "Chord, scale, and shared tones"
+    },
+    {
+      "id": "c-major-reference",
+      "label": "Chord reference"
+    },
+    {
+      "id": "practice",
+      "label": "Build C on the keyboard"
+    },
+    {
+      "id": "c-major-print",
+      "label": "Print this chord reference"
+    },
+    {
+      "id": "c-major-related",
+      "label": "Related references"
+    }
+  ]
+}

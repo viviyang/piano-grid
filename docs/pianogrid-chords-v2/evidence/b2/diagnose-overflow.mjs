@@ -1,0 +1,10 @@
+import {createRequire} from 'node:module';
+const {chromium}=createRequire(import.meta.url)('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:390,height:844}});
+await page.goto('http://127.0.0.1:3000/chords/a-minor');
+await page.waitForFunction(()=>!document.querySelector('.am-play-btn').disabled);
+await page.evaluate(()=>document.documentElement.style.fontSize='200%');
+const result=await page.evaluate(()=>({viewport:innerWidth,root:document.documentElement.scrollWidth,items:[...document.querySelectorAll('body *')].map(e=>{const r=e.getBoundingClientRect();return {tag:e.tagName,cls:e.className,id:e.id,left:r.left,right:r.right,width:r.width,scroll:e.scrollWidth,text:e.textContent?.trim().slice(0,80)}}).filter(x=>x.right>innerWidth+1||x.left<-1).sort((a,b)=>b.right-a.right).slice(0,25)}));
+console.log(JSON.stringify(result,null,2));
+await browser.close();

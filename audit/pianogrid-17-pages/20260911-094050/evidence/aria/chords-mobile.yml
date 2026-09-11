@@ -1,0 +1,442 @@
+- link "Skip to chord chart":
+  - /url: "#chords-chart"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+  - button "Search this page"
+- main:
+  - heading "Piano Chord Chart" [level=1]
+  - paragraph: Use this piano chord chart to find the notes and keyboard positions for 19 major and minor triads. Read the notes from low to high, hear them together or one at a time, and print a reference to keep beside your keyboard.
+  - region "Find a chord":
+    - heading "Find a chord" [level=2]
+    - text: Root note
+    - combobox "Root note":
+      - option "Any root" [selected]
+      - option "C"
+      - option "C♯"
+      - option "C♭"
+      - option "D"
+      - option "E"
+      - option "F"
+      - option "F♯"
+      - option "G"
+      - option "G♯"
+      - option "A♭"
+      - option "A"
+      - option "B♭"
+      - option "B"
+    - text: Chord type
+    - combobox "Chord type":
+      - option "Major and minor" [selected]
+      - option "Major"
+      - option "Minor"
+    - button "Show the full collection" [disabled]
+    - status: 19 chords
+    - button "Print matching chords"
+    - paragraph: Simple reference tone; not a recording of an acoustic piano.
+    - status
+    - group "Chord chart results":
+      - region "C major C":
+        - heading "C major C" [level=3]
+        - 'radio "Current chord : C major" [checked]'
+        - text: "Current chord : C major"
+        - strong: C4 – E4 – G4
+        - text: "Bass: C4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "C major, root position: C4, E4, G4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+        - 'link "Notes and inversions : C major"':
+          - /url: /chords/c-major
+      - region "A minor Am":
+        - heading "A minor Am" [level=3]
+        - 'radio "Current chord : A minor"'
+        - text: "Current chord : A minor"
+        - strong: A3 – C4 – E4
+        - text: "Bass: A3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "A minor, root position: A3, C4, E4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+        - 'link "Notes and inversions : A minor"':
+          - /url: /chords/a-minor
+      - region "F major F":
+        - heading "F major F" [level=3]
+        - 'radio "Current chord : F major"'
+        - text: "Current chord : F major"
+        - strong: F4 – A4 – C5
+        - text: "Bass: F4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "F major, root position: F4, A4, C5 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys" [disabled]
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "D minor Dm":
+        - heading "D minor Dm" [level=3]
+        - 'radio "Current chord : D minor"'
+        - text: "Current chord : D minor"
+        - strong: D4 – F4 – A4
+        - text: "Bass: D4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "D minor, root position: D4, F4, A4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys" [disabled]
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "G major G":
+        - heading "G major G" [level=3]
+        - 'radio "Current chord : G major"'
+        - text: "Current chord : G major"
+        - strong: G3 – B3 – D4
+        - text: "Bass: G3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "G major, root position: G3, B3, D4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "E minor Em":
+        - heading "E minor Em" [level=3]
+        - 'radio "Current chord : E minor"'
+        - text: "Current chord : E minor"
+        - strong: E4 – G4 – B4
+        - text: "Bass: E4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "E minor, root position: E4, G4, B4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys" [disabled]
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "D major D":
+        - heading "D major D" [level=3]
+        - 'radio "Current chord : D major"'
+        - text: "Current chord : D major"
+        - strong: D4 – F♯4 – A4
+        - text: "Bass: D4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "D major, root position: D4, F♯4, A4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys" [disabled]
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "B minor Bm":
+        - heading "B minor Bm" [level=3]
+        - 'radio "Current chord : B minor"'
+        - text: "Current chord : B minor"
+        - strong: B3 – D4 – F♯4
+        - text: "Bass: B3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "B minor, root position: B3, D4, F♯4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "A major A":
+        - heading "A major A" [level=3]
+        - 'radio "Current chord : A major"'
+        - text: "Current chord : A major"
+        - strong: A3 – C♯4 – E4
+        - text: "Bass: A3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "A major, root position: A3, C#4, E4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+        - 'link "Notes and inversions : A major"':
+          - /url: /chords/a-major
+      - region "F-sharp minor F♯m":
+        - heading "F-sharp minor F♯m" [level=3]
+        - 'radio "Current chord : F-sharp minor"'
+        - text: "Current chord : F-sharp minor"
+        - strong: F♯3 – A3 – C♯4
+        - text: "Bass: F♯3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "F-sharp minor, root position: F♯3, A3, C♯4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "E major E":
+        - heading "E major E" [level=3]
+        - 'radio "Current chord : E major"'
+        - text: "Current chord : E major"
+        - strong: E3 – G♯3 – B3
+        - text: "Bass: E3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "E major, root position: E3, G#3, B3 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys" [disabled]
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "C-sharp minor C♯m":
+        - heading "C-sharp minor C♯m" [level=3]
+        - 'radio "Current chord : C-sharp minor"'
+        - text: "Current chord : C-sharp minor"
+        - strong: C♯4 – E4 – G♯4
+        - text: "Bass: C♯4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "C-sharp minor, root position: C♯4, E4, G♯4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "B major B":
+        - heading "B major B" [level=3]
+        - 'radio "Current chord : B major"'
+        - text: "Current chord : B major"
+        - strong: B3 – D♯4 – F♯4
+        - text: "Bass: B3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "B major, root position: B3, D#4, F#4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "G-sharp minor G♯m":
+        - heading "G-sharp minor G♯m" [level=3]
+        - 'radio "Current chord : G-sharp minor"'
+        - text: "Current chord : G-sharp minor"
+        - strong: G♯3 – B3 – D♯4
+        - text: "Bass: G♯3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "G-sharp minor, root position: G♯3, B3, D♯4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "B-flat major B♭":
+        - heading "B-flat major B♭" [level=3]
+        - 'radio "Current chord : B-flat major"'
+        - text: "Current chord : B-flat major"
+        - strong: B♭3 – D4 – F4
+        - text: "Bass: B♭3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "B-flat major, root position: B♭3, D4, F4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "G minor Gm":
+        - heading "G minor Gm" [level=3]
+        - 'radio "Current chord : G minor"'
+        - text: "Current chord : G minor"
+        - strong: G3 – B♭3 – D4
+        - text: "Bass: G3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "G minor, root position: G3, B♭3, D4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "C minor Cm":
+        - heading "C minor Cm" [level=3]
+        - 'radio "Current chord : C minor"'
+        - text: "Current chord : C minor"
+        - strong: C4 – E♭4 – G4
+        - text: "Bass: C4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "C minor, root position: C4, Eb4, G4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "A-flat major A♭":
+        - heading "A-flat major A♭" [level=3]
+        - 'radio "Current chord : A-flat major"'
+        - text: "Current chord : A-flat major"
+        - strong: A♭3 – C4 – E♭4
+        - text: "Bass: Ab3"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "A-flat major, root position: Ab3, C4, Eb4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+      - region "C-flat major C♭":
+        - heading "C-flat major C♭" [level=3]
+        - 'radio "Current chord : C-flat major"'
+        - text: "Current chord : C-flat major"
+        - strong: C♭4 – E♭4 – G♭4
+        - text: "Bass: Cb4"
+        - figure "C4 is middle C C3–C5 Keyboard view":
+          - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+            - 'img "C-flat major, root position: Cb4, Eb4, Gb4 from low to high. Marked keys are the notes to play."'
+          - text: C4 is middle C C3–C5
+          - button "Show lower keys"
+          - button "Show higher keys"
+        - button "Play chord"
+        - button "Play notes one at a time"
+        - button "Stop" [disabled]
+        - button "Print this chord"
+    - paragraph: The chart includes the major and minor triads already prepared across six common major keys and D minor, plus selected parallel and enharmonic comparisons. It is a practical foundation, not a complete list of piano chords.
+    - paragraph: Choose a root note and chord type to narrow the chart. Each result gives the chord symbol, its three notes, and one root-position example. The first note listed is the lowest note in that example.
+    - paragraph: For a first comparison, use A major and A minor, or C major and C minor. Keep the root and top note the same and notice which middle note changes.
+  - region "How to read this piano chord chart":
+    - heading "How to read this piano chord chart" [level=2]
+    - paragraph: A dot marks a key to play. The labels identify those pitches; a sharp (♯) raises a written note by one semitone, and a flat (♭) lowers it by one semitone.
+    - paragraph: C4 means middle C. The number after a note is its octave, not a finger number. The diagrams use the same C3–C5 window so you can compare positions. A note such as C♭4 keeps the octave of its written C even though it uses the B3 key.
+    - list:
+      - listitem: Read the chord name and its note list. A symbol such as Am names the root A and the minor chord type.
+      - listitem: Match the marked keys to the labels. Notes are listed from lowest to highest.
+      - listitem: Use Play chord to hear the notes together, or Play notes one at a time to hear the same notes in ascending order.
+      - listitem: Compare the keyboard image with the printed note list before playing it on your instrument.
+  - 'region "Major and minor: change the third"':
+    - 'heading "Major and minor: change the third" [level=2]'
+    - paragraph: A major triad places its third four semitones above the root. A minor triad places its third three semitones above the root. Both use a perfect fifth, seven semitones above the root.
+    - paragraph: In the A examples, C♯ becomes C while A and E stay in place. In the C examples, E becomes E♭ while C and G stay in place. The note names in the tables are chord members, not finger numbers.
+    - region "Major and minor comparison":
+      - table:
+        - rowgroup:
+          - row "Root Major triad Minor triad What changes":
+            - columnheader "Root"
+            - columnheader "Major triad"
+            - columnheader "Minor triad"
+            - columnheader "What changes"
+        - rowgroup:
+          - row "A A–C♯–E A–C–E C♯ lowers to C":
+            - cell "A"
+            - cell "A–C♯–E"
+            - cell "A–C–E"
+            - cell "C♯ lowers to C"
+          - row "C C–E–G C–E♭–G E lowers to E♭":
+            - cell "C"
+            - cell "C–E–G"
+            - cell "C–E♭–G"
+            - cell "E lowers to E♭"
+    - heading "A major" [level=3]
+    - paragraph: A3 – C♯4 – E4
+    - figure "C4 is middle C C3–C5 Keyboard view":
+      - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+        - 'img "A major, root position: A3, C#4, E4 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C3–C5
+      - button "Show lower keys"
+      - button "Show higher keys"
+    - heading "A minor" [level=3]
+    - paragraph: A3 – C4 – E4
+    - figure "C4 is middle C C3–C5 Keyboard view":
+      - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+        - 'img "A minor, root position: A3, C4, E4 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C3–C5
+      - button "Show lower keys"
+      - button "Show higher keys"
+    - heading "C major" [level=3]
+    - paragraph: C4 – E4 – G4
+    - figure "C4 is middle C C3–C5 Keyboard view":
+      - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+        - 'img "C major, root position: C4, E4, G4 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C3–C5
+      - button "Show lower keys"
+      - button "Show higher keys"
+    - heading "C minor" [level=3]
+    - paragraph: C4 – E♭4 – G4
+    - figure "C4 is middle C C3–C5 Keyboard view":
+      - region "Piano keyboard, C3–C5. Use left and right arrow keys to scroll.":
+        - 'img "C minor, root position: C4, Eb4, G4 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C3–C5
+      - button "Show lower keys"
+      - button "Show higher keys"
+  - region "Print a piano chord reference":
+    - heading "Print a piano chord reference" [level=2]
+    - paragraph: Download the original three-page reference with nine selected chord names. The interactive chart above contains the broader 19-chord collection; use Print this chord or Print matching chords for those results.
+    - paragraph: To keep a smaller reference, print the current chord or the results matching your filters. Check the chord names in the print preview before printing.
+    - link "Download original 9-chord PDF":
+      - /url: /reference/preserved-chords/assets/piano-chord-chart-selected.pdf
+    - button "Print this chord"
+    - button "Print matching chords"
+  - region "Questions about this chart":
+    - heading "Questions about this chart" [level=2]
+    - group: Are these all the chords on piano?
+    - group: What are the 12 chords for piano?
+    - group: Does the PDF show finger positions?
+    - group: Why do B major and C-flat major use the same keys?
+  - region "Explore A minor in more detail":
+    - heading "Explore A minor in more detail" [level=2]
+    - paragraph: See the same A-minor chord in root position, first inversion, and second inversion.
+    - 'link "A minor piano chord: notes and inversions"':
+      - /url: /chords/a-minor
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

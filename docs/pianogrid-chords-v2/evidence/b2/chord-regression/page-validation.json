@@ -1,0 +1,921 @@
+{
+  "executed_at": "2026-09-11T08:39:55.736Z",
+  "base": "http://127.0.0.1:3000",
+  "passed": 156,
+  "failed": 1,
+  "results": [
+    {
+      "name": "/chords/a-major HTTP200",
+      "passed": true
+    },
+    {
+      "name": "a-major metadata",
+      "passed": true
+    },
+    {
+      "name": "a-major index/follow",
+      "passed": true
+    },
+    {
+      "name": "a-major inversion region name",
+      "passed": true
+    },
+    {
+      "name": "a-major no auto sound",
+      "passed": true
+    },
+    {
+      "name": "a-major no whole master in client",
+      "passed": true
+    },
+    {
+      "name": "a-major: source paragraph Notes and keyboard position",
+      "passed": true
+    },
+    {
+      "name": "a-major: source paragraph What to notice",
+      "passed": true
+    },
+    {
+      "name": "a-major: source paragraph Compare three positions",
+      "passed": true
+    },
+    {
+      "name": "a-major/root notes",
+      "passed": true
+    },
+    {
+      "name": "a-major/root MIDI",
+      "passed": true
+    },
+    {
+      "name": "a-major/root bass/symbol",
+      "passed": true
+    },
+    {
+      "name": "a-major/root key marks",
+      "passed": true
+    },
+    {
+      "name": "a-major/root/together native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 440,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 554.3652619537442,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 659.2551138257398,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        }
+      ]
+    },
+    {
+      "name": "a-major/root/together onset/duration",
+      "passed": true
+    },
+    {
+      "name": "a-major/root/together stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "a-major/root/ascending native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 440,
+          "start": 0.41633333333333333,
+          "stop": 0.9163333333333333,
+          "disconnects": 0,
+          "frequencyTime": 0.41633333333333333
+        },
+        {
+          "frequency": 554.3652619537442,
+          "start": 1.0163333333333333,
+          "stop": 1.5163333333333333,
+          "disconnects": 0,
+          "frequencyTime": 1.0163333333333333
+        },
+        {
+          "frequency": 659.2551138257398,
+          "start": 1.6163333333333334,
+          "stop": 2.1163333333333334,
+          "disconnects": 0,
+          "frequencyTime": 1.6163333333333334
+        }
+      ]
+    },
+    {
+      "name": "a-major/root/ascending onset/duration",
+      "passed": true
+    },
+    {
+      "name": "a-major/root/ascending stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "a-major/root print same notes",
+      "passed": true
+    },
+    {
+      "name": "a-major/root print uncropped",
+      "passed": true
+    },
+    {
+      "name": "a-major/first notes",
+      "passed": true
+    },
+    {
+      "name": "a-major/first MIDI",
+      "passed": true
+    },
+    {
+      "name": "a-major/first bass/symbol",
+      "passed": true
+    },
+    {
+      "name": "a-major/first key marks",
+      "passed": true
+    },
+    {
+      "name": "a-major/first/together native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 277.1826309768721,
+          "start": 2.4563333333333333,
+          "stop": 3.6563333333333334,
+          "disconnects": 0,
+          "frequencyTime": 2.4563333333333333
+        },
+        {
+          "frequency": 329.6275569128699,
+          "start": 2.4563333333333333,
+          "stop": 3.6563333333333334,
+          "disconnects": 0,
+          "frequencyTime": 2.4563333333333333
+        },
+        {
+          "frequency": 440,
+          "start": 2.4563333333333333,
+          "stop": 3.6563333333333334,
+          "disconnects": 0,
+          "frequencyTime": 2.4563333333333333
+        }
+      ]
+    },
+    {
+      "name": "a-major/first/together onset/duration",
+      "passed": true
+    },
+    {
+      "name": "a-major/first/together stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "a-major/first/ascending native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 277.1826309768721,
+          "start": 2.7763333333333335,
+          "stop": 3.2763333333333335,
+          "disconnects": 0,
+          "frequencyTime": 2.7763333333333335
+        },
+        {
+          "frequency": 329.6275569128699,
+          "start": 3.3763333333333336,
+          "stop": 3.8763333333333336,
+          "disconnects": 0,
+          "frequencyTime": 3.3763333333333336
+        },
+        {
+          "frequency": 440,
+          "start": 3.9763333333333337,
+          "stop": 4.476333333333334,
+          "disconnects": 0,
+          "frequencyTime": 3.9763333333333337
+        }
+      ]
+    },
+    {
+      "name": "a-major/first/ascending onset/duration",
+      "passed": true
+    },
+    {
+      "name": "a-major/first/ascending stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "a-major/first print same notes",
+      "passed": true
+    },
+    {
+      "name": "a-major/first print uncropped",
+      "passed": true
+    },
+    {
+      "name": "a-major/second notes",
+      "passed": true
+    },
+    {
+      "name": "a-major/second MIDI",
+      "passed": true
+    },
+    {
+      "name": "a-major/second bass/symbol",
+      "passed": true
+    },
+    {
+      "name": "a-major/second key marks",
+      "passed": true
+    },
+    {
+      "name": "a-major/second/together native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.6275569128699,
+          "start": 4.4270000000000005,
+          "stop": 5.627000000000001,
+          "disconnects": 0,
+          "frequencyTime": 4.4270000000000005
+        },
+        {
+          "frequency": 440,
+          "start": 4.4270000000000005,
+          "stop": 5.627000000000001,
+          "disconnects": 0,
+          "frequencyTime": 4.4270000000000005
+        },
+        {
+          "frequency": 554.3652619537442,
+          "start": 4.4270000000000005,
+          "stop": 5.627000000000001,
+          "disconnects": 0,
+          "frequencyTime": 4.4270000000000005
+        }
+      ]
+    },
+    {
+      "name": "a-major/second/together onset/duration",
+      "passed": true
+    },
+    {
+      "name": "a-major/second/together stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "a-major/second/ascending native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.6275569128699,
+          "start": 4.805666666666667,
+          "stop": 5.305666666666667,
+          "disconnects": 0,
+          "frequencyTime": 4.805666666666667
+        },
+        {
+          "frequency": 440,
+          "start": 5.405666666666667,
+          "stop": 5.905666666666667,
+          "disconnects": 0,
+          "frequencyTime": 5.405666666666667
+        },
+        {
+          "frequency": 554.3652619537442,
+          "start": 6.005666666666667,
+          "stop": 6.505666666666667,
+          "disconnects": 0,
+          "frequencyTime": 6.005666666666667
+        }
+      ]
+    },
+    {
+      "name": "a-major/second/ascending onset/duration",
+      "passed": true
+    },
+    {
+      "name": "a-major/second/ascending stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "a-major/second print same notes",
+      "passed": true
+    },
+    {
+      "name": "a-major/second print uncropped",
+      "passed": true
+    },
+    {
+      "name": "a-major null fingers not invented",
+      "passed": true
+    },
+    {
+      "name": "a-major/320/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/320/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/320/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/320 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major/320 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "a-major/390/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/390/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/390/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/390 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major/390 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "a-major/768/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/768/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/768/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/768 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major/768 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "a-major/1440/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/1440/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/1440/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "a-major/1440 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "a-major/1440 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "a-major actual static PDF",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-major HTTP200",
+      "passed": true
+    },
+    {
+      "name": "c-major metadata",
+      "passed": true
+    },
+    {
+      "name": "c-major index/follow",
+      "passed": true
+    },
+    {
+      "name": "c-major inversion region name",
+      "passed": true
+    },
+    {
+      "name": "c-major no auto sound",
+      "passed": true
+    },
+    {
+      "name": "c-major no whole master in client",
+      "passed": true
+    },
+    {
+      "name": "c-major: source paragraph Notes and keyboard position",
+      "passed": true
+    },
+    {
+      "name": "c-major: source paragraph What to notice",
+      "passed": true
+    },
+    {
+      "name": "c-major: source paragraph Compare three positions",
+      "passed": true
+    },
+    {
+      "name": "c-major/root notes",
+      "passed": true
+    },
+    {
+      "name": "c-major/root MIDI",
+      "passed": true
+    },
+    {
+      "name": "c-major/root bass/symbol",
+      "passed": true
+    },
+    {
+      "name": "c-major/root key marks",
+      "passed": true
+    },
+    {
+      "name": "c-major/root/together native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 261.6255653005986,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 329.6275569128699,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        },
+        {
+          "frequency": 391.99543598174927,
+          "start": 0.035,
+          "stop": 1.2349999999999999,
+          "disconnects": 0,
+          "frequencyTime": 0.035
+        }
+      ]
+    },
+    {
+      "name": "c-major/root/together onset/duration",
+      "passed": true
+    },
+    {
+      "name": "c-major/root/together stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "c-major/root/ascending native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 261.6255653005986,
+          "start": 0.3656666666666667,
+          "stop": 0.8656666666666667,
+          "disconnects": 0,
+          "frequencyTime": 0.3656666666666667
+        },
+        {
+          "frequency": 329.6275569128699,
+          "start": 0.9656666666666667,
+          "stop": 1.465666666666667,
+          "disconnects": 0,
+          "frequencyTime": 0.9656666666666667
+        },
+        {
+          "frequency": 391.99543598174927,
+          "start": 1.5656666666666665,
+          "stop": 2.0656666666666665,
+          "disconnects": 0,
+          "frequencyTime": 1.5656666666666665
+        }
+      ]
+    },
+    {
+      "name": "c-major/root/ascending onset/duration",
+      "passed": true
+    },
+    {
+      "name": "c-major/root/ascending stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "c-major/root print same notes",
+      "passed": true
+    },
+    {
+      "name": "c-major/root print uncropped",
+      "passed": true
+    },
+    {
+      "name": "c-major/first notes",
+      "passed": true
+    },
+    {
+      "name": "c-major/first MIDI",
+      "passed": true
+    },
+    {
+      "name": "c-major/first bass/symbol",
+      "passed": true
+    },
+    {
+      "name": "c-major/first key marks",
+      "passed": true
+    },
+    {
+      "name": "c-major/first/together native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.6275569128699,
+          "start": 1.7069999999999999,
+          "stop": 2.907,
+          "disconnects": 0,
+          "frequencyTime": 1.7069999999999999
+        },
+        {
+          "frequency": 391.99543598174927,
+          "start": 1.7069999999999999,
+          "stop": 2.907,
+          "disconnects": 0,
+          "frequencyTime": 1.7069999999999999
+        },
+        {
+          "frequency": 523.2511306011972,
+          "start": 1.7069999999999999,
+          "stop": 2.907,
+          "disconnects": 0,
+          "frequencyTime": 1.7069999999999999
+        }
+      ]
+    },
+    {
+      "name": "c-major/first/together onset/duration",
+      "passed": true
+    },
+    {
+      "name": "c-major/first/together stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "c-major/first/ascending native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 329.6275569128699,
+          "start": 1.9656666666666667,
+          "stop": 2.4656666666666665,
+          "disconnects": 0,
+          "frequencyTime": 1.9656666666666667
+        },
+        {
+          "frequency": 391.99543598174927,
+          "start": 2.5656666666666665,
+          "stop": 3.065666666666667,
+          "disconnects": 0,
+          "frequencyTime": 2.5656666666666665
+        },
+        {
+          "frequency": 523.2511306011972,
+          "start": 3.1656666666666666,
+          "stop": 3.6656666666666666,
+          "disconnects": 0,
+          "frequencyTime": 3.1656666666666666
+        }
+      ]
+    },
+    {
+      "name": "c-major/first/ascending onset/duration",
+      "passed": true
+    },
+    {
+      "name": "c-major/first/ascending stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "c-major/first print same notes",
+      "passed": true
+    },
+    {
+      "name": "c-major/first print uncropped",
+      "passed": true
+    },
+    {
+      "name": "c-major/second notes",
+      "passed": true
+    },
+    {
+      "name": "c-major/second MIDI",
+      "passed": true
+    },
+    {
+      "name": "c-major/second bass/symbol",
+      "passed": true
+    },
+    {
+      "name": "c-major/second key marks",
+      "passed": true
+    },
+    {
+      "name": "c-major/second/together native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 391.99543598174927,
+          "start": 3.565666666666667,
+          "stop": 4.765666666666667,
+          "disconnects": 0,
+          "frequencyTime": 3.565666666666667
+        },
+        {
+          "frequency": 523.2511306011972,
+          "start": 3.565666666666667,
+          "stop": 4.765666666666667,
+          "disconnects": 0,
+          "frequencyTime": 3.565666666666667
+        },
+        {
+          "frequency": 659.2551138257398,
+          "start": 3.565666666666667,
+          "stop": 4.765666666666667,
+          "disconnects": 0,
+          "frequencyTime": 3.565666666666667
+        }
+      ]
+    },
+    {
+      "name": "c-major/second/together onset/duration",
+      "passed": true
+    },
+    {
+      "name": "c-major/second/together stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "c-major/second/ascending native frequencies",
+      "passed": true,
+      "actual": [
+        {
+          "frequency": 391.99543598174927,
+          "start": 3.875,
+          "stop": 4.375,
+          "disconnects": 0,
+          "frequencyTime": 3.875
+        },
+        {
+          "frequency": 523.2511306011972,
+          "start": 4.475,
+          "stop": 4.975,
+          "disconnects": 0,
+          "frequencyTime": 4.475
+        },
+        {
+          "frequency": 659.2551138257398,
+          "start": 5.075,
+          "stop": 5.575,
+          "disconnects": 0,
+          "frequencyTime": 5.075
+        }
+      ]
+    },
+    {
+      "name": "c-major/second/ascending onset/duration",
+      "passed": true
+    },
+    {
+      "name": "c-major/second/ascending stop disconnects",
+      "passed": true
+    },
+    {
+      "name": "c-major/second print same notes",
+      "passed": true
+    },
+    {
+      "name": "c-major/second print uncropped",
+      "passed": true
+    },
+    {
+      "name": "c-major null fingers not invented",
+      "passed": true
+    },
+    {
+      "name": "c-major/320/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/320/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/320/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/320 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major/320 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "c-major/390/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/390/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/390/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/390 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major/390 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "c-major/768/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/768/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/768/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/768 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major/768 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "c-major/1440/root selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/1440/first selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/1440/second selected visible",
+      "passed": true
+    },
+    {
+      "name": "c-major/1440 no page overflow",
+      "passed": true
+    },
+    {
+      "name": "c-major/1440 key text >=14px",
+      "passed": true
+    },
+    {
+      "name": "c-major actual static PDF",
+      "passed": true
+    },
+    {
+      "name": "/chords HTTP200",
+      "passed": true
+    },
+    {
+      "name": "Center default 19 named results",
+      "passed": true
+    },
+    {
+      "name": "Center no initial audio",
+      "passed": true
+    },
+    {
+      "name": "Center metadata",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-chart",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-chart",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-how-to-read",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-how-to-read",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-how-to-read",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-how-to-read",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-how-to-read",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-how-to-read",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-major-minor",
+      "passed": true
+    },
+    {
+      "name": "Center source chords-major-minor",
+      "passed": true
+    },
+    {
+      "name": "Center expanded scope copy",
+      "passed": true
+    },
+    {
+      "name": "Center PDF scope remains explicit",
+      "passed": true
+    },
+    {
+      "name": "Center no duplicate DOM IDs",
+      "passed": true
+    },
+    {
+      "name": "c-major center note spelling",
+      "passed": true
+    },
+    {
+      "name": "c-major center keyboard",
+      "passed": true
+    },
+    {
+      "name": "c-major/together center frequency/timing",
+      "passed": true
+    },
+    {
+      "name": "c-major/ascending center frequency/timing",
+      "passed": true
+    },
+    {
+      "name": "Batch browser execution completed",
+      "passed": false,
+      "actual": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ch-result[data-chord-id=\"c-major\"]').getByRole('button', { name: 'Stop', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"am-button am-secondary am-stop-btn\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    55 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano\\scripts\\check-chord-batch.mjs:33:1060"
+    },
+    {
+      "name": "No runtime/hydration/console errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "not_run": [
+    "human audition",
+    "real mobile devices",
+    "screen reader",
+    "physical printing",
+    "independent review"
+  ]
+}

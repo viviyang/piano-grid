@@ -1,0 +1,146 @@
+{
+  "/chords/g-major": {
+    "h1": "G Major Piano Chord (G)",
+    "tool_heading": "G major notes and inversions",
+    "answer": "The G major chord contains G, B and D. Its formula is 1–3–5: a major third and a perfect fifth above G.",
+    "keyboard_range_midi": [
+      60,
+      84
+    ],
+    "range_label": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-g-major.pdf",
+      "label": "Download the G major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "g-major",
+    "voicing_id_rule": "g-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "integration_and_regression_pending"
+  },
+  "/chords/c-minor": {
+    "h1": "C Minor Piano Chord (Cm)",
+    "tool_heading": "C minor notes and inversions",
+    "answer": "C minor is C, E-flat and G. The lowered third, E-flat, distinguishes Cm from the C–E–G major triad.",
+    "keyboard_range_midi": [
+      60,
+      84
+    ],
+    "range_label": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-c-minor.pdf",
+      "label": "Download the C minor reference PDF"
+    },
+    "quality": "minor",
+    "formula_degrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "namespace": "c-minor",
+    "voicing_id_rule": "c-minor--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "integration_and_regression_pending"
+  },
+  "/chords/e-major": {
+    "h1": "E Major Piano Chord (E)",
+    "tool_heading": "E major notes and inversions",
+    "answer": "The E major chord uses E, G-sharp and B. G-sharp is the major third above E; B is the perfect fifth.",
+    "keyboard_range_midi": [
+      60,
+      84
+    ],
+    "range_label": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-e-major.pdf",
+      "label": "Download the E major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "e-major",
+    "voicing_id_rule": "e-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "integration_and_regression_pending"
+  },
+  "/chords/b-major": {
+    "h1": "B Major Piano Chord (B)",
+    "tool_heading": "B major notes and inversions",
+    "answer": "B major consists of B, D-sharp and F-sharp. The chord has a white-key root and two black-key chord tones.",
+    "keyboard_range_midi": [
+      60,
+      84
+    ],
+    "range_label": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-b-major.pdf",
+      "label": "Download the B major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "b-major",
+    "voicing_id_rule": "b-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "integration_and_regression_pending"
+  },
+  "/chords/a-flat-major": {
+    "h1": "A-flat Major Piano Chord (A♭)",
+    "tool_heading": "A flat major notes and inversions",
+    "answer": "A-flat major is A-flat, C and E-flat. Its formula is 1–3–5, with C as the major third above A-flat.",
+    "keyboard_range_midi": [
+      60,
+      84
+    ],
+    "range_label": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-a-flat-major.pdf",
+      "label": "Download the A flat major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "a-flat-major",
+    "voicing_id_rule": "a-flat-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "integration_and_regression_pending"
+  },
+  "/chords/c-flat-major": {
+    "h1": "C-flat Major Piano Chord (C♭)",
+    "tool_heading": "C flat major notes and inversions",
+    "answer": "C-flat major contains C-flat, E-flat and G-flat. On an equal-tempered piano, its pitch classes match B, D-sharp and F-sharp.",
+    "keyboard_range_midi": [
+      48,
+      84
+    ],
+    "range_label": "C3–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-c-flat-major.pdf",
+      "label": "Download the C flat major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "c-flat-major",
+    "voicing_id_rule": "c-flat-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "root_fingering_missing"
+  }
+}

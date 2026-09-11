@@ -1,0 +1,313 @@
+{
+  "executed_at": "2026-09-11T12:44:06.543Z",
+  "base": "http://127.0.0.1:3000",
+  "passed": 54,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/scales raw/noJS HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales noJS default reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales noJS staff and keyboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales noJS content/FAQ/sources/static answers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales noJS interactive controls disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales noJS real internal links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales noJS no page overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales current theme tokens",
+      "passed": true,
+      "detail": {
+        "bodyBackground": "rgb(255, 255, 255)",
+        "color": "rgb(29, 29, 31)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "toolBackground": "rgb(246, 247, 249)",
+        "buttonBackground": "rgb(123, 172, 222)",
+        "primaryToken": "#06c",
+        "radius": "12px",
+        "width": 1120
+      }
+    },
+    {
+      "name": "/scales no page overflow 1440",
+      "passed": true,
+      "detail": "1440/1440"
+    },
+    {
+      "name": "/scales no page overflow 390",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales no page overflow 320",
+      "passed": true,
+      "detail": "320/320"
+    },
+    {
+      "name": "/scales 200% no page overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales/c-major raw/noJS HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales/c-major noJS default reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major noJS staff and keyboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major noJS content/FAQ/sources/static answers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major noJS interactive controls disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major noJS real internal links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major noJS no page overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales/c-major current theme tokens",
+      "passed": true,
+      "detail": {
+        "bodyBackground": "rgb(255, 255, 255)",
+        "color": "rgb(29, 29, 31)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "toolBackground": "rgb(246, 247, 249)",
+        "buttonBackground": "rgb(194, 212, 232)",
+        "primaryToken": "#06c",
+        "radius": "12px",
+        "width": 1120
+      }
+    },
+    {
+      "name": "/scales/c-major no page overflow 1440",
+      "passed": true,
+      "detail": "1440/1440"
+    },
+    {
+      "name": "/scales/c-major no page overflow 390",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales/c-major no page overflow 320",
+      "passed": true,
+      "detail": "320/320"
+    },
+    {
+      "name": "/scales/c-major 200% no page overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales/a-minor raw/noJS HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/scales/a-minor noJS default reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor noJS staff and keyboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor noJS content/FAQ/sources/static answers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor noJS interactive controls disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor noJS real internal links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/a-minor noJS no page overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales/a-minor current theme tokens",
+      "passed": true,
+      "detail": {
+        "bodyBackground": "rgb(255, 255, 255)",
+        "color": "rgb(29, 29, 31)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "toolBackground": "rgb(246, 247, 249)",
+        "buttonBackground": "rgb(194, 212, 232)",
+        "primaryToken": "#06c",
+        "radius": "12px",
+        "width": 1120
+      }
+    },
+    {
+      "name": "/scales/a-minor no page overflow 1440",
+      "passed": true,
+      "detail": "1440/1440"
+    },
+    {
+      "name": "/scales/a-minor no page overflow 390",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "/scales/a-minor no page overflow 320",
+      "passed": true,
+      "detail": "320/320"
+    },
+    {
+      "name": "/scales/a-minor 200% no page overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "Center retains 60 objects",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Center form tonic total is 60",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "Center defaults/returns C major RH ascending",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Q1 empty feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Q1 missing and extra feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Q1 shown answer not counted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Q2 first mismatch feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A natural descending RH fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A classical descending is true direction and notes-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Q3 explains reverse-ascent distractor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Follow-along pauses with resumable state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Changing main setting cancels/remounts practice",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A print button snapshots current object",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Native beforeprint refreshes current object",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C current print state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/downloads/scales/pianogrid-scales-starter-reference.pdf opens as PDF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf opens as PDF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No runtime page errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "not_run": [
+    "human listening",
+    "real iPhone or other physical mobile device",
+    "real screen reader",
+    "physical printing",
+    "PDF tag accessibility",
+    "independent piano educator review"
+  ]
+}

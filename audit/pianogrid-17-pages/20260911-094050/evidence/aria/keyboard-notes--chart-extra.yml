@@ -1,0 +1,140 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - button "Open navigation"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Keyboard Notes":
+          - /url: /keyboard-notes
+      - listitem:
+        - link "Notes chart" [disabled]
+  - 'heading "Piano Notes Chart: Staff, Note Names & Keyboard" [level=1]'
+  - paragraph: Match treble and bass clef notes to piano keys, find middle C, and compare note names across 88-key and C2-C7 keyboard ranges.
+  - region "Staff and keyboard chart":
+    - text: Displayed range
+    - combobox "Displayed range":
+      - option "Around middle C" [selected]
+      - 'option "88 keys: A0-C8"'
+      - 'option "Treble reference: C4–C6"'
+      - 'option "Bass reference: C2–C4"'
+    - text: Clef
+    - combobox "Clef":
+      - option "Treble and bass" [selected]
+      - option "Treble"
+      - option "Bass"
+    - checkbox "Prefer flat spelling"
+    - text: Prefer flat spelling
+    - heading "C4" [level=2]
+    - paragraph: C4 · Middle C
+    - paragraph: Select a note on the staff or a key below. Scroll each diagram to explore Around middle C.
+    - heading "Treble clef" [level=3]
+    - region "treble staff notes":
+      - 'group "treble clef: C3 to C5"':
+        - button "C3, treble clef": C3
+        - button "C#3, treble clef": ♯ C#3
+        - button "D3, treble clef": D3
+        - button "D#3, treble clef": ♯ D#3
+        - button "E3, treble clef": E3
+        - button "F3, treble clef": F3
+        - button "F#3, treble clef": ♯ F#3
+        - button "G3, treble clef": G3
+        - button "G#3, treble clef": ♯ G#3
+        - button "A3, treble clef": A3
+        - button "A#3, treble clef": ♯ A#3
+        - button "B3, treble clef": B3
+        - button "C4, treble clef" [pressed]: C4
+        - button "C#4, treble clef": ♯ C#4
+        - button "D4, treble clef": D4
+        - button "D#4, treble clef": ♯ D#4
+        - button "E4, treble clef": E4
+        - button "F4, treble clef": F4
+        - button "F#4, treble clef": ♯ F#4
+        - button "G4, treble clef": G4
+        - button "G#4, treble clef": ♯ G#4
+        - button "A4, treble clef": A4
+        - button "A#4, treble clef": ♯ A#4
+        - button "B4, treble clef": B4
+        - button "C5, treble clef": C5
+    - heading "Bass clef" [level=3]
+    - region "bass staff notes":
+      - 'group "bass clef: C3 to C5"':
+        - button "C3, bass clef": C3
+        - button "C#3, bass clef": ♯ C#3
+        - button "D3, bass clef": D3
+        - button "D#3, bass clef": ♯ D#3
+        - button "E3, bass clef": E3
+        - button "F3, bass clef": F3
+        - button "F#3, bass clef": ♯ F#3
+        - button "G3, bass clef": G3
+        - button "G#3, bass clef": ♯ G#3
+        - button "A3, bass clef": A3
+        - button "A#3, bass clef": ♯ A#3
+        - button "B3, bass clef": B3
+        - button "C4, bass clef" [pressed]: C4
+        - button "C#4, bass clef": ♯ C#4
+        - button "D4, bass clef": D4
+        - button "D#4, bass clef": ♯ D#4
+        - button "E4, bass clef": E4
+        - button "F4, bass clef": F4
+        - button "F#4, bass clef": ♯ F#4
+        - button "G4, bass clef": G4
+        - button "G#4, bass clef": ♯ G#4
+        - button "A4, bass clef": A4
+        - button "A#4, bass clef": ♯ A#4
+        - button "B4, bass clef": B4
+        - button "C5, bass clef": C5
+    - region "Around middle C":
+      - button "C3"
+      - button "C#3 / Db3": C#3 Db3
+      - button "D3"
+      - button "D#3 / Eb3": D#3 Eb3
+      - button "E3"
+      - button "F3"
+      - button "F#3 / Gb3": F#3 Gb3
+      - button "G3"
+      - button "G#3 / Ab3": G#3 Ab3
+      - button "A3"
+      - button "A#3 / Bb3": A#3 Bb3
+      - button "B3"
+      - button "C4" [pressed]
+      - button "C#4 / Db4": C#4 Db4
+      - button "D4"
+      - button "D#4 / Eb4": D#4 Eb4
+      - button "E4"
+      - button "F4"
+      - button "F#4 / Gb4": F#4 Gb4
+      - button "G4"
+      - button "G#4 / Ab4": G#4 Ab4
+      - button "A4"
+      - button "A#4 / Bb4": A#4 Bb4
+      - button "B4"
+      - button "C5"
+    - button "Play note"
+    - button "Stop" [disabled]
+    - status
+    - button "Print current range"
+    - status
+    - paragraph: 61-key staff mode is reserved for a later release. The labeled reference already supports the verified C2–C7 layout.
+  - heading "Match the note to the key" [level=2]
+  - paragraph: Start with middle C, labeled C4 here. It is one ledger line below the treble staff and one ledger line above the bass staff. Both spellings point to the same piano key. The clef changes where that pitch is written; it does not create a different middle C.
+  - 'heading "Treble clef: read from the bottom" [level=2]'
+  - paragraph: The five treble-staff lines are E4, G4, B4, D5, and F5, read upward. The four spaces are F4, A4, C5, and E5. The curl of the clef identifies the G4 line. Use that anchor and the repeating musical alphabet to find nearby notes.
+  - 'heading "Bass clef: a different set of positions" [level=2]'
+  - paragraph: The bass-staff lines are G2, B2, D3, F3, and A3. Its spaces are A2, C3, E3, and G3. The two dots surround the F3 line. A note in the bottom space is therefore A2 in bass clef, while the bottom treble space is F4.
+  - heading "Follow the lines beyond the staff" [level=2]
+  - paragraph: Ledger lines extend the same line-and-space sequence. D4 lies just below the treble staff without a ledger line; C4 uses the first ledger line below it. Above bass clef, B3 needs no ledger line, and C4 uses the first one. Keep octave numbers visible when comparing notes with the same letter.
+  - heading "Choose the range shown on your keyboard" [level=2]
+  - paragraph: The full-piano view uses the standard 88-key range A0-C8. The 61-key view here uses C2-C7, a layout documented by VOX and Roland. Check your instrument’s endpoints and transpose setting before using that view. A key-count setting changes the visible keyboard range; it does not rename the clefs.
+  - heading "Try one note in both directions" [level=2]
+  - paragraph: Select C4 on the staff, then locate its highlighted key. Next, select G4 on the keyboard and read its treble position. Compare C3 with C4 to check the octave. For black keys, compare a sharp and a flat spelling while keeping the same physical key selected. Use the selected range for a readable printout.
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

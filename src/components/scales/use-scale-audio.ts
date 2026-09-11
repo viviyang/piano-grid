@@ -47,13 +47,25 @@ export function useScaleAudio() {
     message,
     sounding,
     cancel: () => audio.current?.cancel(),
-    play: (pitches: ScalePitch[], tempo: number) => {
-      const beat = 60_000 / tempo;
+    playRawEvents: (events: Array<{ midi: number; frequency_hz: number; onset_ms: number; duration_ms: number }>) => {
+      void audio.current?.play({ playback: { together: events, ascending: events } }, 'ascending');
+    },
+    playEvents: (items: Array<{ pitch: ScalePitch; onsetMs: number; durationMs: number }>) => {
+      const events = items.map(({ pitch: item, onsetMs, durationMs }) => ({
+        midi: item.midi,
+        frequency_hz: 440 * 2 ** ((item.midi - 69) / 12),
+        onset_ms: onsetMs,
+        duration_ms: durationMs,
+      }));
+      void audio.current?.play({ playback: { together: events, ascending: events } }, 'ascending');
+    },
+    play: (pitches: ScalePitch[], tempo: number, notesPerBeat: 1 | 2 = 1) => {
+      const noteMs = 60_000 / tempo / notesPerBeat;
       const events = pitches.map((item, index) => ({
         midi: item.midi,
         frequency_hz: 440 * 2 ** ((item.midi - 69) / 12),
-        onset_ms: index * beat,
-        duration_ms: Math.max(180, beat * 0.82),
+        onset_ms: index * noteMs,
+        duration_ms: Math.max(70, noteMs * 0.8),
       }));
       void audio.current?.play({ playback: { together: events, ascending: events } }, 'ascending');
     },

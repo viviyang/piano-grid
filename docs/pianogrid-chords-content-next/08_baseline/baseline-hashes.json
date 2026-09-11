@@ -1,0 +1,39 @@
+{
+  "input_zip": "PianoGrid_B3_Content_Intake.zip",
+  "input_zip_sha256": "6f87b027f670452a21eccde2f3768fe8de67a7efeedf66aa20e2ccd90c0e285e",
+  "files": [
+    {
+      "intake_path": "source/src/lib/chord-content.ts",
+      "sha256": "f479db89d3fee948e2c9928be5ded5d31010742d0bd2966735d82e5f30d8b614"
+    },
+    {
+      "intake_path": "source/src/lib/chord-learning-content.ts",
+      "sha256": "d0b9a2846f2060b0554522dd6646766b9b4dde88c2735587135d6416363bfa49"
+    },
+    {
+      "intake_path": "source/src/lib/chord-detail-model.ts",
+      "sha256": "57079431e13fdcb6d94a37f092ee9240cda1e5a21b0f462e2beef71ee011bde1"
+    },
+    {
+      "intake_path": "source/src/lib/a-minor-types.ts",
+      "sha256": "3af2f6974023c0849c040126f362b9b1e6ce66dc3b3235332d70703db82014bb"
+    },
+    {
+      "intake_path": "source/src/lib/site-routes.ts",
+      "sha256": "526c3c87f8682a130e86116e7e09a1189c675e7c0bacbd7086961b674afbd425"
+    },
+    {
+      "intake_path": "source/src/components/chords/detail-page.tsx",
+      "sha256": "7d2bb0651d42f2c5a82fe0f113ce0fb970022b057450220d6fd323ab817ab733"
+    },
+    {
+      "intake_path": "existing-content/docs/content/site-master/page-content.master.chords-extract.json",
+      "sha256": "344ca8f48a1fd335fac264fc76aad589ac0bf01352b7f5a536af6554371614fc"
+    },
+    {
+      "intake_path": "planning/original-plan-chord-entries.json",
+      "sha256": "509bcc83ac4be2790c47048df3fe5d67550c780cb34fcc6961f672ee39ffd849"
+    }
+  ],
+  "meaning": "Evidence snapshot only; compare latest repository before merging. A later unrelated change is not an automatic failure."
+}

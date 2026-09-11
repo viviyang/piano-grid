@@ -1,0 +1,1590 @@
+{
+  "url": "/chords/by-key",
+  "title": "Piano Chords by Key: Major & D Minor Triad Charts",
+  "description": "Compare triads in C, G, D, A, E and F major plus D minor. Read Roman numerals, note spellings and separate natural-minor from raised-leading-tone options.",
+  "user_task": "Choose a supported key and get its complete chord set.",
+  "questions": [
+    "Are chords in C major all rooted on C?",
+    "Why is there a diminished row without a detail button?",
+    "Can a minor key use a major V?"
+  ],
+  "blocks": [
+    {
+      "heading": "Read the table by scale degree",
+      "body": "Each row stacks alternate notes from the selected scale. In major, the resulting qualities are major, minor, minor, major, major, minor and diminished. Uppercase Roman numerals indicate major triads; lowercase indicate minor, with ° for diminished.",
+      "source_ids": [
+        "F-OMT",
+        "F-MAJOR"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    },
+    {
+      "heading": "Keep minor forms explicit",
+      "body": "The D minor table starts with natural minor: D E F G A B-flat C. It therefore includes A minor. The separate raised-leading-tone options use C-sharp, producing A major and C-sharp diminished; do not silently replace the natural-minor row.",
+      "source_ids": [
+        "F-MINOR",
+        "F-OMT"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    },
+    {
+      "heading": "Try a key-specific result",
+      "body": "In E major, I–IV–V is E–A–B. Read the complete notes in each row before playing: E–G-sharp–B, A–C-sharp–E, then B–D-sharp–F-sharp. In F major, remember B-flat in the scale and its derived chords.",
+      "source_ids": [
+        "F-MAJOR"
+      ],
+      "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+    }
+  ],
+  "data": {
+    "keys": [
+      {
+        "key": "C major",
+        "scale": [
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "B"
+        ],
+        "basis": "major",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "I",
+            "symbol": "C",
+            "quality": "major",
+            "notes": [
+              "C",
+              "E",
+              "G"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii",
+            "symbol": "Dm",
+            "quality": "minor",
+            "notes": [
+              "D",
+              "F",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "iii",
+            "symbol": "Em",
+            "quality": "minor",
+            "notes": [
+              "E",
+              "G",
+              "B"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "IV",
+            "symbol": "F",
+            "quality": "major",
+            "notes": [
+              "F",
+              "A",
+              "C"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "V",
+            "symbol": "G",
+            "quality": "major",
+            "notes": [
+              "G",
+              "B",
+              "D"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "G4",
+              "B4",
+              "D5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "vi",
+            "symbol": "Am",
+            "quality": "minor",
+            "notes": [
+              "A",
+              "C",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "vii°",
+            "symbol": "Bdim",
+            "quality": "diminished",
+            "notes": [
+              "B",
+              "D",
+              "F"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "B4",
+              "D5",
+              "F5"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MAJOR",
+          "AM-THEORY"
+        ]
+      },
+      {
+        "key": "G major",
+        "scale": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ],
+        "basis": "major",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "I",
+            "symbol": "G",
+            "quality": "major",
+            "notes": [
+              "G",
+              "B",
+              "D"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "G4",
+              "B4",
+              "D5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii",
+            "symbol": "Am",
+            "quality": "minor",
+            "notes": [
+              "A",
+              "C",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "iii",
+            "symbol": "Bm",
+            "quality": "minor",
+            "notes": [
+              "B",
+              "D",
+              "F#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "IV",
+            "symbol": "C",
+            "quality": "major",
+            "notes": [
+              "C",
+              "E",
+              "G"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "V",
+            "symbol": "D",
+            "quality": "major",
+            "notes": [
+              "D",
+              "F#",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "vi",
+            "symbol": "Em",
+            "quality": "minor",
+            "notes": [
+              "E",
+              "G",
+              "B"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "vii°",
+            "symbol": "F#dim",
+            "quality": "diminished",
+            "notes": [
+              "F#",
+              "A",
+              "C"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "F#4",
+              "A4",
+              "C5"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MAJOR",
+          "AM-THEORY"
+        ]
+      },
+      {
+        "key": "D major",
+        "scale": [
+          "D",
+          "E",
+          "F#",
+          "G",
+          "A",
+          "B",
+          "C#"
+        ],
+        "basis": "major",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "I",
+            "symbol": "D",
+            "quality": "major",
+            "notes": [
+              "D",
+              "F#",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii",
+            "symbol": "Em",
+            "quality": "minor",
+            "notes": [
+              "E",
+              "G",
+              "B"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "iii",
+            "symbol": "F#m",
+            "quality": "minor",
+            "notes": [
+              "F#",
+              "A",
+              "C#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "F#4",
+              "A4",
+              "C#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "IV",
+            "symbol": "G",
+            "quality": "major",
+            "notes": [
+              "G",
+              "B",
+              "D"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "G4",
+              "B4",
+              "D5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "V",
+            "symbol": "A",
+            "quality": "major",
+            "notes": [
+              "A",
+              "C#",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "vi",
+            "symbol": "Bm",
+            "quality": "minor",
+            "notes": [
+              "B",
+              "D",
+              "F#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "vii°",
+            "symbol": "C#dim",
+            "quality": "diminished",
+            "notes": [
+              "C#",
+              "E",
+              "G"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "C#4",
+              "E4",
+              "G4"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MAJOR",
+          "AM-THEORY"
+        ]
+      },
+      {
+        "key": "E major",
+        "scale": [
+          "E",
+          "F#",
+          "G#",
+          "A",
+          "B",
+          "C#",
+          "D#"
+        ],
+        "basis": "major",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "I",
+            "symbol": "E",
+            "quality": "major",
+            "notes": [
+              "E",
+              "G#",
+              "B"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "E4",
+              "G#4",
+              "B4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii",
+            "symbol": "F#m",
+            "quality": "minor",
+            "notes": [
+              "F#",
+              "A",
+              "C#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "F#4",
+              "A4",
+              "C#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "iii",
+            "symbol": "G#m",
+            "quality": "minor",
+            "notes": [
+              "G#",
+              "B",
+              "D#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "G#4",
+              "B4",
+              "D#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "IV",
+            "symbol": "A",
+            "quality": "major",
+            "notes": [
+              "A",
+              "C#",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "V",
+            "symbol": "B",
+            "quality": "major",
+            "notes": [
+              "B",
+              "D#",
+              "F#"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "B4",
+              "D#5",
+              "F#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "vi",
+            "symbol": "C#m",
+            "quality": "minor",
+            "notes": [
+              "C#",
+              "E",
+              "G#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "C#4",
+              "E4",
+              "G#4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "vii°",
+            "symbol": "D#dim",
+            "quality": "diminished",
+            "notes": [
+              "D#",
+              "F#",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "D#4",
+              "F#4",
+              "A4"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MAJOR",
+          "AM-THEORY"
+        ]
+      },
+      {
+        "key": "A major",
+        "scale": [
+          "A",
+          "B",
+          "C#",
+          "D",
+          "E",
+          "F#",
+          "G#"
+        ],
+        "basis": "major",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "I",
+            "symbol": "A",
+            "quality": "major",
+            "notes": [
+              "A",
+              "C#",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii",
+            "symbol": "Bm",
+            "quality": "minor",
+            "notes": [
+              "B",
+              "D",
+              "F#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "iii",
+            "symbol": "C#m",
+            "quality": "minor",
+            "notes": [
+              "C#",
+              "E",
+              "G#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "C#4",
+              "E4",
+              "G#4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "IV",
+            "symbol": "D",
+            "quality": "major",
+            "notes": [
+              "D",
+              "F#",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "V",
+            "symbol": "E",
+            "quality": "major",
+            "notes": [
+              "E",
+              "G#",
+              "B"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "E4",
+              "G#4",
+              "B4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "vi",
+            "symbol": "F#m",
+            "quality": "minor",
+            "notes": [
+              "F#",
+              "A",
+              "C#"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "F#4",
+              "A4",
+              "C#5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "vii°",
+            "symbol": "G#dim",
+            "quality": "diminished",
+            "notes": [
+              "G#",
+              "B",
+              "D"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "G#4",
+              "B4",
+              "D5"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MAJOR",
+          "AM-THEORY"
+        ]
+      },
+      {
+        "key": "F major",
+        "scale": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "basis": "major",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "I",
+            "symbol": "F",
+            "quality": "major",
+            "notes": [
+              "F",
+              "A",
+              "C"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii",
+            "symbol": "Gm",
+            "quality": "minor",
+            "notes": [
+              "G",
+              "Bb",
+              "D"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "G4",
+              "Bb4",
+              "D5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "iii",
+            "symbol": "Am",
+            "quality": "minor",
+            "notes": [
+              "A",
+              "C",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "IV",
+            "symbol": "Bb",
+            "quality": "major",
+            "notes": [
+              "Bb",
+              "D",
+              "F"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "Bb4",
+              "D5",
+              "F5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "V",
+            "symbol": "C",
+            "quality": "major",
+            "notes": [
+              "C",
+              "E",
+              "G"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "vi",
+            "symbol": "Dm",
+            "quality": "minor",
+            "notes": [
+              "D",
+              "F",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "vii°",
+            "symbol": "Edim",
+            "quality": "diminished",
+            "notes": [
+              "E",
+              "G",
+              "Bb"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MAJOR",
+          "AM-THEORY"
+        ]
+      },
+      {
+        "key": "D minor",
+        "scale": [
+          "D",
+          "E",
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C"
+        ],
+        "basis": "natural minor",
+        "chords": [
+          {
+            "degree": 1,
+            "roman": "i",
+            "symbol": "Dm",
+            "quality": "minor",
+            "notes": [
+              "D",
+              "F",
+              "A"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 2,
+            "roman": "ii°",
+            "symbol": "Edim",
+            "quality": "diminished",
+            "notes": [
+              "E",
+              "G",
+              "Bb"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              6
+            ],
+            "reference_voicing": [
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 3,
+            "roman": "III",
+            "symbol": "F",
+            "quality": "major",
+            "notes": [
+              "F",
+              "A",
+              "C"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 4,
+            "roman": "iv",
+            "symbol": "Gm",
+            "quality": "minor",
+            "notes": [
+              "G",
+              "Bb",
+              "D"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "G4",
+              "Bb4",
+              "D5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 5,
+            "roman": "v",
+            "symbol": "Am",
+            "quality": "minor",
+            "notes": [
+              "A",
+              "C",
+              "E"
+            ],
+            "semitones_from_root": [
+              0,
+              3,
+              7
+            ],
+            "reference_voicing": [
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 6,
+            "roman": "VI",
+            "symbol": "Bb",
+            "quality": "major",
+            "notes": [
+              "Bb",
+              "D",
+              "F"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "Bb4",
+              "D5",
+              "F5"
+            ],
+            "fingering": null
+          },
+          {
+            "degree": 7,
+            "roman": "VII",
+            "symbol": "C",
+            "quality": "major",
+            "notes": [
+              "C",
+              "E",
+              "G"
+            ],
+            "semitones_from_root": [
+              0,
+              4,
+              7
+            ],
+            "reference_voicing": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "fingering": null
+          }
+        ],
+        "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+        "source_ids": [
+          "F-OMT",
+          "F-MINOR",
+          "AM-THEORY"
+        ],
+        "raised_leading_tone_options": [
+          {
+            "roman": "V",
+            "symbol": "A",
+            "notes": [
+              "A",
+              "C#",
+              "E"
+            ],
+            "change": "C becomes C-sharp"
+          },
+          {
+            "roman": "vii°",
+            "symbol": "C#dim",
+            "notes": [
+              "C#",
+              "E",
+              "G"
+            ],
+            "change": "root uses raised seventh C-sharp"
+          }
+        ]
+      }
+    ],
+    "supported_keys": [
+      "C major",
+      "G major",
+      "D major",
+      "E major",
+      "A major",
+      "F major",
+      "D minor"
+    ],
+    "default_key": "C major",
+    "professional_review": "pending"
+  },
+  "source_ids": [
+    "F-OMT",
+    "F-MAJOR",
+    "F-MINOR",
+    "AM-THEORY",
+    "PG-KEY-MAJOR",
+    "PG-KEY-MINOR",
+    "PG-OMT",
+    "PG-TRIADS"
+  ],
+  "issues": [
+    {
+      "id": "F-KEY-UI",
+      "field": "selector and professional review",
+      "reason": "All seven key datasets exist; interactive rendering and specialist review remain.",
+      "needed_to_resolve": "Verify every selector result and retain the explicit minor-form distinction."
+    },
+    {
+      "id": "NEXT-TEMPLATE-chords-by-key",
+      "field": "implementation",
+      "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+      "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P152",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "有内容的调性选择器与各级和弦表；支持已有G/D/C/E/A/F及D minor任务 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P156",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查G大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P157",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查D大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P159",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查C大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P160",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查E大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P161",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查询A大调和弦集合；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P164",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查F大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    },
+    {
+      "source_group_id": "P165",
+      "status": "content_and_data_prepared; implementation gates remain",
+      "delivered": "查D小调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+      "pending": "Runtime, print UI and professional release checks; see issues."
+    }
+  ],
+  "baseline_page_id": "U085",
+  "batch": "F",
+  "main_keyword": "chords of key",
+  "keywords": [
+    "chords of key",
+    "major key chords",
+    "chords in a key",
+    "key chord chart",
+    "key chords",
+    "chords in key",
+    "key and chord chart",
+    "chords in g major scale piano",
+    "g major scale piano chords",
+    "piano chords in key of g",
+    "key of g piano chords",
+    "key of g chords piano",
+    "chords in the key of g piano",
+    "d major scale piano chords",
+    "d major scale chords piano",
+    "c major scale chords piano",
+    "c major scale piano chords",
+    "chords in the key of c piano",
+    "piano chords in the key of c",
+    "piano chords in e",
+    "e major scale chords piano",
+    "chords in the key of a",
+    "chords of a major key",
+    "a major key chords",
+    "chords in the key of a major",
+    "a major scale chords",
+    "chords for the key of a",
+    "chords key a",
+    "key of a chords",
+    "piano chords in a",
+    "chords in key of a",
+    "chords in the a major scale",
+    "chords for key of a",
+    "chords in key a",
+    "chords for a major",
+    "key of f chords piano",
+    "f major scale chords piano",
+    "key of f piano chords",
+    "piano chords in the key of f",
+    "d minor scale piano chords"
+  ],
+  "source_groups": [
+    {
+      "id": "P152",
+      "representative": "chords of key",
+      "section": null,
+      "synonyms": [
+        "major key chords",
+        "chords in a key",
+        "key chord chart",
+        "key chords",
+        "chords in key",
+        "key and chord chart"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A310:G310",
+      "delivery_method": "独立页首要任务",
+      "required_output": "有内容的调性选择器与各级和弦表；支持已有G/D/C/E/A/F及D minor任务",
+      "first_release_scope": "按页面准备顺序验收",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P156",
+      "representative": "chords in g major scale piano",
+      "section": "g-major",
+      "synonyms": [
+        "g major scale piano chords",
+        "piano chords in key of g",
+        "key of g piano chords",
+        "key of g chords piano",
+        "chords in the key of g piano"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A49:G49",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查G大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P157",
+      "representative": "d major scale piano chords",
+      "section": "d-major",
+      "synonyms": [
+        "d major scale chords piano"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A74:G74",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查D大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P159",
+      "representative": "c major scale chords piano",
+      "section": "c-major",
+      "synonyms": [
+        "c major scale piano chords",
+        "chords in the key of c piano",
+        "piano chords in the key of c"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A102:G102",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查C大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P160",
+      "representative": "piano chords in e",
+      "section": "e-major",
+      "synonyms": [
+        "e major scale chords piano"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A369:G369",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查E大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P161",
+      "representative": "piano chords in a",
+      "section": "a-major",
+      "synonyms": [],
+      "other_queries": [
+        "chords in the key of a",
+        "chords of a major key",
+        "a major key chords",
+        "chords in the key of a major",
+        "a major scale chords",
+        "chords for the key of a",
+        "chords key a",
+        "key of a chords",
+        "chords in key of a",
+        "chords in the a major scale",
+        "chords for key of a",
+        "chords in key a",
+        "chords for a major"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A388:G388",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查询A大调和弦集合；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P164",
+      "representative": "key of f chords piano",
+      "section": "f-major",
+      "synonyms": [
+        "f major scale chords piano",
+        "key of f piano chords",
+        "piano chords in the key of f"
+      ],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A712:G712",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查F大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    },
+    {
+      "id": "P165",
+      "representative": "d minor scale piano chords",
+      "section": "d-minor",
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A254:G254",
+      "delivery_method": "同页明确章节／选项",
+      "required_output": "查D小调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "first_release_scope": "后续同页补齐",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T08",
+  "baseline_priority": "后做",
+  "baseline_purpose": "按调性查看各级和弦集合",
+  "final_scope": {
+    "id": "T08",
+    "name": "按调性查和弦",
+    "confirmation_status": "本版统一规划建议，尚非用户逐项确认",
+    "user_task": "查看某一调内的各级和弦，而不是单个和弦。",
+    "modules": [
+      "在已有任务支持的调性间选择，显示各级和弦表及记号说明。",
+      "分别给出当前调的实际结果；链接到已上线的具体和弦。",
+      "保留 C/G/D/E/A/F 与 D minor 等原组的各自入口或可见选项。"
+    ],
+    "boundary": "不把同一调的所有和弦与单个根音和弦混为一页；不为所有调性自动扩 URL。",
+    "acceptance": "原映射各调有真实完整结果；不能只有一个 C 调示例就算覆盖全部。"
+  },
+  "required_delivery": "在已有任务支持的调性间选择，显示各级和弦表及记号说明。；分别给出当前调的实际结果；链接到已上线的具体和弦。；保留 C/G/D/E/A/F 与 D minor 等原组的各自入口或可见选项。",
+  "release_conditions": "原映射各调有真实完整结果；不能只有一个 C 调示例就算覆盖全部。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "大小调类别及拼写正确；小调需明确采用的音阶形式",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_prepared_distinct_template_required",
+  "metadata": {
+    "title": "Piano Chords by Key: Major & D Minor Triad Charts",
+    "description": "Compare triads in C, G, D, A, E and F major plus D minor. Read Roman numerals, note spellings and separate natural-minor from raised-leading-tone options.",
+    "canonical_path": "/chords/by-key",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

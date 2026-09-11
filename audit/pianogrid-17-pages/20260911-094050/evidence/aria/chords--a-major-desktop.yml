@@ -1,0 +1,117 @@
+- link "Skip to chord tool":
+  - /url: "#a-major-result"
+- banner:
+  - link "PianoGrid":
+    - /url: /
+  - navigation "Site sections":
+    - link "Keyboard Notes":
+      - /url: /keyboard-notes
+    - button "Open Keyboard Notes menu"
+    - link "Chords":
+      - /url: /chords
+    - button "Open Chords menu"
+    - link "Scales":
+      - /url: /scales
+    - button "Open Scales menu"
+    - link "Songs":
+      - /url: /songs
+    - button "Open Songs menu"
+    - link "Guide":
+      - /url: /guide
+    - button "Open Guide menu"
+    - link "Tools":
+      - /url: /tools
+    - button "Open Tools menu"
+  - button "Search this page"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - listitem:
+        - link "Chords":
+          - /url: /chords
+      - listitem:
+        - link "A major" [disabled]
+  - heading "A Major Piano Chord" [level=1]
+  - paragraph: A major contains A–C#–E. The intervals from the root are a major third and a perfect fifth.
+  - region "Notes and keyboard position":
+    - heading "Notes and keyboard position" [level=2]
+    - term: A major
+    - definition: A
+    - term: Chord tones
+    - definition: A C# E
+    - term: Formula
+    - definition: 1 3 5
+    - group "Position":
+      - text: Position
+      - radio "Root position" [checked]
+      - text: Root position
+      - radio "First inversion"
+      - text: First inversion
+      - radio "Second inversion"
+      - text: Second inversion
+    - text: Notes from low to high A4 C#5 E5
+    - strong: A
+    - text: "Bass: A4"
+    - figure "C4 is middle C C4–C6":
+      - region "Piano keyboard, C4–C6. Use left and right arrow keys to scroll.":
+        - 'img "A major, Root position: A4, C#5, E5 from low to high. Marked keys are the notes to play."'
+      - text: C4 is middle C C4–C6
+    - button "Play chord"
+    - button "Play notes one at a time"
+    - button "Stop" [disabled]
+    - button "Print this position"
+    - link "Download A major PDF":
+      - /url: /reference/assets/chord-a-major.pdf
+    - text: Simple reference tone; not a recording of an acoustic piano.
+  - status
+  - region "What to notice":
+    - heading "What to notice" [level=2]
+    - paragraph: "Compare with A minor: C-sharp replaces C while A and E stay the same. The sharp is the chord’s third, so calling it D-flat would hide the stacked-third spelling."
+  - region "Compare three positions":
+    - heading "Compare three positions" [level=2]
+    - paragraph: The diagrams keep the chord’s spelling while changing which chord tone is lowest. Read the bass note under each position, then compare the note order. Finger numbers are shown only where the exact example has a source; no hand shape is prescribed for the remaining voicings.
+    - region "A major inversion comparison table":
+      - 'table "A major: root position, first inversion, and second inversion"':
+        - caption: "A major: root position, first inversion, and second inversion"
+        - rowgroup:
+          - row "Position Symbol Notes, low to high Bass":
+            - columnheader "Position"
+            - columnheader "Symbol"
+            - columnheader "Notes, low to high"
+            - columnheader "Bass"
+        - rowgroup:
+          - row "Root position , current selection A A4–C#5–E5 A4":
+            - cell "Root position , current selection"
+            - cell "A"
+            - cell "A4–C#5–E5"
+            - cell "A4"
+          - row "First inversion A/C# C#4–E4–A4 C#4":
+            - cell "First inversion"
+            - cell "A/C#"
+            - cell "C#4–E4–A4"
+            - cell "C#4"
+          - row "Second inversion A/E E4–A4–C#5 E4":
+            - cell "Second inversion"
+            - cell "A/E"
+            - cell "E4–A4–C#5"
+            - cell "E4"
+  - region "Chord reference":
+    - heading "Chord reference" [level=2]
+    - paragraph: "Common names: A, A major, Amaj."
+    - paragraph: "Intervals from the root: perfect unison, major third, perfect fifth."
+  - region "Print this chord reference":
+    - heading "Print this chord reference" [level=2]
+    - link "Download A major PDF":
+      - /url: /reference/assets/chord-a-major.pdf
+    - button "Print this position"
+  - region "Related references":
+    - heading "Related references" [level=2]
+    - link "Piano chord chart":
+      - /url: /chords
+- contentinfo:
+  - link "PianoGrid":
+    - /url: /
+  - text: Clear piano references for focused practice.
+  - link "Back to top ↑":
+    - /url: "#main"
+- alert

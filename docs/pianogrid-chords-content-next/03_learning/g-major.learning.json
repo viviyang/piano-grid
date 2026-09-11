@@ -1,0 +1,208 @@
+{
+  "fingerings": [
+    {
+      "id": "g-major--root--right",
+      "voicingId": "g-major--root",
+      "hand": "right",
+      "notes": [
+        "G4",
+        "B4",
+        "D5"
+      ],
+      "fingers": [
+        1,
+        3,
+        5
+      ],
+      "scope": "Separate right-hand example for the displayed root-position voicing G4–B4–D5.",
+      "limitation": "The source supplies these chord-tone and hand-number pairings, not this octave placement. This is a starting example, not a universal rule; no fingering is assigned to the inversions.",
+      "sourceIds": [
+        "PG-SKOOVE-G-MAJOR"
+      ],
+      "verificationStatus": "source_verified_with_octave_adaptation"
+    },
+    {
+      "id": "g-major--root--left",
+      "voicingId": "g-major--root",
+      "hand": "left",
+      "notes": [
+        "G4",
+        "B4",
+        "D5"
+      ],
+      "fingers": [
+        5,
+        3,
+        1
+      ],
+      "scope": "Separate left-hand example for the displayed root-position voicing G4–B4–D5.",
+      "limitation": "The source supplies these chord-tone and hand-number pairings, not this octave placement. This is a starting example, not a universal rule; no fingering is assigned to the inversions.",
+      "sourceIds": [
+        "PG-SKOOVE-G-MAJOR"
+      ],
+      "verificationStatus": "source_verified_with_octave_adaptation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "PG-TRIADS",
+      "title": "Introduction to Triads",
+      "publisher": "Music Theory for the 21st-Century Classroom / University of Puget Sound",
+      "url": "https://musictheory.pugetsound.edu/mt21c/TriadsIntroduction.html",
+      "checkedOn": "2026-09-11",
+      "supports": "Triad construction, major/minor intervals.",
+      "limitation": "General rule; exact PianoGrid registers, diagrams, exercises and explanations are original applications."
+    },
+    {
+      "id": "PG-OMT",
+      "title": "Triads",
+      "publisher": "Open Music Theory",
+      "url": "https://openmusictheory.github.io/triads.html",
+      "checkedOn": "2026-09-11",
+      "supports": "Chord quality, chord members, inversion and lead-sheet conventions.",
+      "limitation": "Not a source for our hand-specific fingerings or recordings."
+    },
+    {
+      "id": "PG-ASPN",
+      "title": "American Standard Pitch Notation (ASPN)",
+      "publisher": "Open Music Theory",
+      "url": "https://viva.pressbooks.pub/openmusictheory/chapter/aspn/",
+      "checkedOn": "2026-09-11",
+      "supports": "Written note letters and octave numbering.",
+      "limitation": "Cb4 = MIDI 59 is a derived application of the notation rule, not a quotation of a PianoGrid example."
+    },
+    {
+      "id": "PG-SKOOVE-G-MAJOR",
+      "title": "G Major chord on piano",
+      "publisher": "Skoove",
+      "url": "https://www.skoove.com/en/tools/piano-chords/g-major",
+      "checkedOn": "2026-09-11",
+      "supports": "Root-position G–B–D; right hand 1–3–5 and left hand 5–3–1.",
+      "limitation": "The root-position hand numbers are shown by the source. It does not specify PianoGrid’s G4–B4–D5 register. We do not adopt song lists, mood labels or inversion fingerings."
+    }
+  ],
+  "practice": {
+    "id": "practice",
+    "heading": "Build G on the keyboard",
+    "prompt": "Select the three pitch classes that make G major, then check your answer.",
+    "scope": "This keyboard checks an unordered pitch-class set. Order, octave, fingering and live piano performance are not assessed."
+  },
+  "extraBlocks": [
+    {
+      "block_id": "g-major-locate",
+      "content": {
+        "heading": "Find the notes on your keyboard",
+        "paragraphs": [],
+        "steps": [
+          "Find a group of three black keys. G is the white key between its first and second black keys.",
+          "From G, locate B and D. For the root example shown here, use G4, B4 and D5.",
+          "Name the three pitches before using Play. Use the note-by-note mode to check their low-to-high order."
+        ],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "g-major-compare",
+      "content": {
+        "heading": "G major or G minor: check B",
+        "paragraphs": [
+          "Keep G and D unchanged. G major uses B; G minor uses B-flat. Only the third changes, so the root name alone is not enough to identify the chord.",
+          "For a written comparison, use G4–B4–D5 and G4–B♭4–D5. This is a self-check example, not a separate scored activity. The chart already includes G minor; no new G-minor detail URL is required."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "g-major-connections",
+      "content": {
+        "heading": "See G as a chord inside C major",
+        "paragraphs": [
+          "In the key of C major, G major is the chord built on scale degree 5. The same G–B–D chord can also appear in other keys; its identity does not determine the key of an entire song.",
+          "Compare C4–E4–G4 with B3–D4–G4. The second voicing is G/B. G4 can remain in place while C4 moves to B3 and E4 moves to D4. These are exact written examples, not a claim that this is the only or best fingering."
+        ],
+        "steps": [],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "g-major-self-check",
+      "content": {
+        "heading": "Check the idea without JavaScript",
+        "paragraphs": [
+          "Name the three chord tones before looking back at the answer. Then name the bass of the first inversion. These are written self-checks, not additional scored modes."
+        ],
+        "steps": [
+          "Chord-tone answer: G, B, D.",
+          "First-inversion bass: B. The root is still G."
+        ],
+        "table": null,
+        "links": []
+      }
+    },
+    {
+      "block_id": "g-major-questions",
+      "content": {
+        "heading": "Questions about G major",
+        "paragraphs": [],
+        "steps": [],
+        "table": {
+          "columns": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Does a G major chord need F-sharp?",
+              "No. The triad is G–B–D. F-sharp belongs to the G major scale, not to this three-note chord."
+            ],
+            [
+              "What does G/B mean?",
+              "Play a G major chord with B as its lowest sounding note. The slash identifies the bass; the chord root stays G."
+            ],
+            [
+              "Is G major the same as G minor?",
+              "No. G major contains B, whereas G minor contains B-flat. Both retain G and D."
+            ],
+            [
+              "Why does the second-inversion example sound lower?",
+              "The reference uses D4–G4–B4 to show second inversion. Inversion describes the lowest chord member, not a requirement that each example be higher than the last."
+            ],
+            [
+              "What does the keyboard exercise check?",
+              "It checks the set G, B and D. It does not grade your hands, timing, articulation or an acoustic piano performance."
+            ]
+          ]
+        },
+        "links": []
+      }
+    }
+  ],
+  "binding": {
+    "h1": "G Major Piano Chord (G)",
+    "tool_heading": "G major notes and inversions",
+    "answer": "The G major chord contains G, B and D. Its formula is 1–3–5: a major third and a perfect fifth above G.",
+    "keyboard_range_midi": [
+      60,
+      84
+    ],
+    "range_label": "C4–C6",
+    "pdf": {
+      "url": "/reference/assets/chord-g-major.pdf",
+      "label": "Download the G major reference PDF"
+    },
+    "quality": "major",
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "namespace": "g-major",
+    "voicing_id_rule": "g-major--<raw voicing id>",
+    "effective_metadata_source": "Use this raw page metadata after removing ONLY the new-route blocker in adapter. Keep existing four metadata unchanged.",
+    "detail_publish_gate": "integration_and_regression_pending"
+  }
+}

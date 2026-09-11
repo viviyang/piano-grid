@@ -1,0 +1,1004 @@
+[
+  {
+    "url": "/scales",
+    "title": "Piano Scales: Notes, Patterns and Practice References",
+    "template_id": "T11",
+    "source_group_ids": [
+      "P179",
+      "P180",
+      "P181",
+      "P190",
+      "P196",
+      "P204",
+      "P208",
+      "P210",
+      "P213",
+      "P214",
+      "P222",
+      "P224",
+      "P233",
+      "P235"
+    ],
+    "source_ids": [
+      "AC-01",
+      "AC-02",
+      "AC-03",
+      "AC-04"
+    ],
+    "content_blocks": [
+      "start",
+      "formula",
+      "minor",
+      "compare",
+      "degrees",
+      "jazz",
+      "types",
+      "practice",
+      "print"
+    ],
+    "data_fields": [
+      "default_selection",
+      "major_overview",
+      "form_comparison",
+      "scale_degrees",
+      "jazz_examples",
+      "fingering_resolution",
+      "print_assets",
+      "audio_assets",
+      "ui_copy",
+      "source_ids",
+      "evidence_status",
+      "minor_overview"
+    ],
+    "route_exists_in_current_source": true,
+    "deployment_verified_by_packaged_public_evidence": true,
+    "status_note": "Implemented route. Public deployment evidence is packaged; current dirty local tree is not claimed byte-identical to that deployment."
+  },
+  {
+    "url": "/scales/c-major",
+    "title": "C Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P183"
+    ],
+    "source_ids": [
+      "AM-NOTES-C-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": true,
+    "deployment_verified_by_packaged_public_evidence": true,
+    "status_note": "Implemented route. Public deployment evidence is packaged; current dirty local tree is not claimed byte-identical to that deployment."
+  },
+  {
+    "url": "/scales/a-minor",
+    "title": "A Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P184"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-A",
+      "AN-HA-A-CHORDS",
+      "AN-HA-GUIDE",
+      "AN-HMT-A",
+      "AN-OMT",
+      "AN-PKG-A-CHORDS",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio",
+      "natural_scale_chords"
+    ],
+    "route_exists_in_current_source": true,
+    "deployment_verified_by_packaged_public_evidence": true,
+    "status_note": "Implemented route. Public deployment evidence is packaged; current dirty local tree is not claimed byte-identical to that deployment."
+  },
+  {
+    "url": "/scales/modes",
+    "title": "Seven Scale Modes on Piano",
+    "template_id": "T13",
+    "source_group_ids": [
+      "P182"
+    ],
+    "source_ids": [
+      "AT-01",
+      "AT-02",
+      "AT-03",
+      "AT-04",
+      "AT-05",
+      "AT-06",
+      "AT-07",
+      "AT-08",
+      "AT-09"
+    ],
+    "content_blocks": [
+      "overview",
+      "differences",
+      "relationships",
+      "practice"
+    ],
+    "data_fields": [
+      "scope",
+      "examples",
+      "related_urls",
+      "content_role_note"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/blues",
+    "title": "Blues Scales on Piano: Major and Minor",
+    "template_id": "T13",
+    "source_group_ids": [
+      "P185"
+    ],
+    "source_ids": [
+      "AT-10",
+      "AT-11",
+      "AT-12",
+      "AT-13",
+      "AT-14",
+      "AT-15",
+      "AT-20"
+    ],
+    "content_blocks": [
+      "overview",
+      "spelling",
+      "context",
+      "practice"
+    ],
+    "data_fields": [
+      "scope",
+      "examples",
+      "related_urls",
+      "content_role_note"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/d-major",
+    "title": "D Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P186"
+    ],
+    "source_ids": [
+      "AM-NOTES-D-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/e-minor",
+    "title": "E Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P187"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-GUIDE",
+      "AN-HMT-E",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/f-major",
+    "title": "F Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P188"
+    ],
+    "source_ids": [
+      "AM-NOTES-F-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/g-major",
+    "title": "G Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P189"
+    ],
+    "source_ids": [
+      "AM-NOTES-G-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/pentatonic",
+    "title": "Pentatonic Scales on Piano: Major and Minor",
+    "template_id": "T13",
+    "source_group_ids": [
+      "P191"
+    ],
+    "source_ids": [
+      "AT-02",
+      "AT-16",
+      "AT-17",
+      "AT-18",
+      "AT-19",
+      "AT-20"
+    ],
+    "content_blocks": [
+      "overview",
+      "parallel",
+      "relative",
+      "practice"
+    ],
+    "data_fields": [
+      "scope",
+      "examples",
+      "related_collections",
+      "related_urls",
+      "content_role_note"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/a-major",
+    "title": "A Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P192"
+    ],
+    "source_ids": [
+      "AM-NOTES-A-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/c-minor",
+    "title": "C Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P193"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-C",
+      "AN-HA-GUIDE",
+      "AN-HMT-C",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio",
+      "additional_sourced_fingering"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/d-minor",
+    "title": "D Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P194"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-GUIDE",
+      "AN-HMT-D",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/e-major",
+    "title": "E Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P195"
+    ],
+    "source_ids": [
+      "AM-NOTES-E-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/b-minor",
+    "title": "B Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P197"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-GUIDE",
+      "AN-HMT-B",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/f-minor",
+    "title": "F Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P198"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-GUIDE",
+      "AN-HMT-F",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/harmonic-major",
+    "title": "Harmonic Major Scale on Piano",
+    "template_id": "T13",
+    "source_group_ids": [
+      "P199"
+    ],
+    "source_ids": [
+      "AT-21",
+      "AT-22",
+      "AT-23",
+      "AT-03",
+      "AT-29"
+    ],
+    "content_blocks": [
+      "overview",
+      "examples",
+      "interval",
+      "practice"
+    ],
+    "data_fields": [
+      "scope",
+      "examples",
+      "related_urls",
+      "content_role_note"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/a-sharp-minor",
+    "title": "A# Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P200"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-HA-GUIDE",
+      "AN-HMT-A-SHARP",
+      "AN-OMT",
+      "AN-PFF-AS-LH-MEL",
+      "AN-PFF-AS-LH-NAT",
+      "AN-PFF-AS-RH-NAT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/b-major",
+    "title": "B Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P201"
+    ],
+    "source_ids": [
+      "AM-NOTES-B-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI",
+      "AM-BAYLOR"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/b-flat-major",
+    "title": "B-Flat Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P202"
+    ],
+    "source_ids": [
+      "AM-NOTES-B-FLAT-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/g-minor",
+    "title": "G Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P203"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-GUIDE",
+      "AN-HMT-G",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/chromatic",
+    "title": "Chromatic Scale on Piano",
+    "template_id": "T13",
+    "source_group_ids": [
+      "P205"
+    ],
+    "source_ids": [
+      "AT-01",
+      "AT-24",
+      "AT-25"
+    ],
+    "content_blocks": [
+      "overview",
+      "c-example",
+      "spelling",
+      "practice"
+    ],
+    "data_fields": [
+      "scope",
+      "examples",
+      "related_urls",
+      "content_role_note"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/e-flat-major",
+    "title": "E-Flat Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P206"
+    ],
+    "source_ids": [
+      "AM-NOTES-E-FLAT-MAJOR",
+      "AM-FINGER-LMT",
+      "AM-FINGER-MF",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/f-sharp-minor",
+    "title": "F# Minor Scale on Piano: Natural, Harmonic & Melodic",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P207"
+    ],
+    "source_ids": [
+      "AN-BMT-AS",
+      "AN-DENTON",
+      "AN-HA-GUIDE",
+      "AN-HMT-F-SHARP",
+      "AN-OMT",
+      "AN-PS-HAR",
+      "AN-PS-MEL",
+      "AN-PS-NAT"
+    ],
+    "content_blocks": [
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4"
+    ],
+    "data_fields": [
+      "tonic",
+      "default_form",
+      "key_signature",
+      "relative_major",
+      "forms",
+      "scope",
+      "approved_playback_octaves",
+      "print_and_audio"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/scales/c-flat-major",
+    "title": "C-Flat Major Piano Scale: Notes and Fingering",
+    "template_id": "T12",
+    "source_group_ids": [
+      "P209"
+    ],
+    "source_ids": [
+      "AM-NOTES-C-FLAT-MAJOR",
+      "AM-CB-SPELLING",
+      "AM-CB-FINGER",
+      "AM-THEORY",
+      "AM-MUSICXML",
+      "AM-MIDI"
+    ],
+    "content_blocks": [
+      "notes",
+      "focus",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "tonic",
+      "scale_type",
+      "notes_ascending",
+      "notes_descending",
+      "note_spelling_status",
+      "note_source_ids",
+      "key_signature",
+      "intervals",
+      "display_register",
+      "pitch_sequences",
+      "fingering",
+      "renderer_payload",
+      "labels",
+      "related_links"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  },
+  {
+    "url": "/arpeggios",
+    "title": "Piano Arpeggios: C and G Major",
+    "template_id": "T14",
+    "source_group_ids": [
+      "P215",
+      "P216",
+      "P217"
+    ],
+    "source_ids": [
+      "AT-26",
+      "AT-27",
+      "AT-28",
+      "AT-03",
+      "AT-29"
+    ],
+    "content_blocks": [
+      "overview",
+      "c-major",
+      "g-major",
+      "fingering",
+      "practice"
+    ],
+    "data_fields": [
+      "scope",
+      "examples",
+      "related_urls",
+      "content_role_note"
+    ],
+    "route_exists_in_current_source": false,
+    "deployment_verified_by_packaged_public_evidence": false,
+    "status_note": "Planning/content object only. No route or deployment claim."
+  }
+]

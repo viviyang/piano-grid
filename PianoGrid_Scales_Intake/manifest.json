@@ -1,0 +1,635 @@
+{
+  "package": "PianoGrid_Scales_Intake",
+  "generated_at": "2026-09-11T10:58:27.151Z",
+  "workspace": {
+    "head": "dd1b8849cd4c303c9ddebfe794758aa14354f507",
+    "branch": "codex/chords-b1",
+    "dirty": true
+  },
+  "scope": [
+    "/scales",
+    "/scales/c-major",
+    "/scales/a-minor"
+  ],
+  "visual_capture": {
+    "current_local_pages_opened": true,
+    "current_local_full_page_screenshots_saved": false,
+    "reused_public_full_page_screenshots": true,
+    "reused_viewports_css_px": [
+      1440,
+      390
+    ],
+    "note": "Public screenshots/HTML belong to the packaged 2026-09-10 independent live verification. The dirty local tree was separately opened and read; byte identity with production is not claimed."
+  },
+  "exclusions": [
+    ".env and secrets",
+    "cookies/tokens/private connection data",
+    ".git",
+    "node_modules",
+    "build caches",
+    "personal documents",
+    "font files"
+  ],
+  "files": [
+    {
+      "path": "AUTHORING_INPUT.md",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 5235,
+      "sha256": "b72d6989c6b2649e4c545254ebb9a00ac03255b46fb210bb5b80bb7592fd1afe"
+    },
+    {
+      "path": "CURRENT_STATE.md",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 5855,
+      "sha256": "2df194cb72c348557b5a5a474386bd6fa24d4a9a3f494701fc7e9254b206aa89"
+    },
+    {
+      "path": "README.md",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 2857,
+      "sha256": "d2f56f2483406dfebb2848be83ea0d5a532e62061074983066e096acb0624eef"
+    },
+    {
+      "path": "THEME.md",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 2703,
+      "sha256": "51c2b266236cbc55e8255a7947637c978e212a23bf620fdeee98d935e06d84c9"
+    },
+    {
+      "path": "evidence/README.md",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 1142,
+      "sha256": "8ab6212068b3704fbb7117bcf21b24f4015e36fed792e272ea9b57ded3367b76"
+    },
+    {
+      "path": "evidence/chords-b3/B3_RESULT.md",
+      "source": "docs/pianogrid-chords-v2/B3_RESULT.md",
+      "bytes": 12766,
+      "sha256": "c7f392428b81d4565e98d561ebf3b58395b3d81a0c51213f63ed9392df57346b"
+    },
+    {
+      "path": "evidence/chords-b3/adapter-validation.json",
+      "source": "docs/pianogrid-chords-v2/evidence/b3/adapter-validation.json",
+      "bytes": 1521,
+      "sha256": "e79dcf3a7b62dcf75f80e4fe0ff68aed4290c173d1cafc5b2b9d0fcca5621bf1"
+    },
+    {
+      "path": "evidence/current-local/computed-styles.json",
+      "source": "current local browser DOM/computed-style read on 2026-09-11",
+      "bytes": 3101,
+      "sha256": "151c0b8908599cd41eeaabad84c0b74845bc9c438b5fa20b17ed3876471aeedd"
+    },
+    {
+      "path": "evidence/current-public/headers/scales--a-minor.json",
+      "source": "checks/release/public-launch/independent-reverification/live/headers/scales--a-minor.json",
+      "bytes": 767,
+      "sha256": "edb4edb78967b264c283ae9e494746383ee7262418adccf1e5553f5623749f02"
+    },
+    {
+      "path": "evidence/current-public/headers/scales--c-major.json",
+      "source": "checks/release/public-launch/independent-reverification/live/headers/scales--c-major.json",
+      "bytes": 767,
+      "sha256": "51c5ea66bbe8fb986857cc845120e826b199c9fcb6df48ad829f2f152adf8ac9"
+    },
+    {
+      "path": "evidence/current-public/headers/scales.json",
+      "source": "checks/release/public-launch/independent-reverification/live/headers/scales.json",
+      "bytes": 751,
+      "sha256": "8434d3a5df32b1342696ed0af79d4662ea6a31352b32fef24139dc41fbc990d3"
+    },
+    {
+      "path": "evidence/current-public/html/scales--a-minor.html",
+      "source": "checks/release/public-launch/independent-reverification/live/html/scales--a-minor.html",
+      "bytes": 95103,
+      "sha256": "f79bea47412af69ca9bf786d3e925d11b3f34e7812d7c0b284dceeaa9a20a15d"
+    },
+    {
+      "path": "evidence/current-public/html/scales--c-major.html",
+      "source": "checks/release/public-launch/independent-reverification/live/html/scales--c-major.html",
+      "bytes": 76735,
+      "sha256": "d6280438c73a4f309e168b376e0601c8f60ccf338f5cf99cf103d2e029d1dede"
+    },
+    {
+      "path": "evidence/current-public/html/scales.html",
+      "source": "checks/release/public-launch/independent-reverification/live/html/scales.html",
+      "bytes": 547131,
+      "sha256": "da0884be55490efcede31197b24557635566f543a552413a610617ef217dfe3a"
+    },
+    {
+      "path": "evidence/current-public/production-validation.json",
+      "source": "checks/release/public-launch/independent-reverification/live/production-validation.json",
+      "bytes": 16894,
+      "sha256": "77e0fdc57be147ca711801977157abff14ac95545a0d9516deebdc8e98bcac5f"
+    },
+    {
+      "path": "evidence/current-public/public-boundary.json",
+      "source": "checks/release/public-launch/independent-reverification/public-boundary.json",
+      "bytes": 28700,
+      "sha256": "6ea55821636e28f57a99e332589ddb4baab5e4a641961e339cda8d30fefb259b"
+    },
+    {
+      "path": "evidence/current-public/review.md",
+      "source": "checks/release/public-launch/independent-reverification/review.md",
+      "bytes": 10800,
+      "sha256": "996c3a1778997cd1361c8893d39d3515052c8f45e18a6e39149ed1f4ff98f507"
+    },
+    {
+      "path": "evidence/current-public/screenshots/scales--a-minor-1440.png",
+      "source": "checks/release/public-launch/independent-reverification/live/screenshots/scales--a-minor-1440.png",
+      "bytes": 189112,
+      "sha256": "713122a6ce5f828e257f7867e9daab9a3bead6fd3299df8e882522bc1d3c6996"
+    },
+    {
+      "path": "evidence/current-public/screenshots/scales--a-minor-390.png",
+      "source": "checks/release/public-launch/independent-reverification/live/screenshots/scales--a-minor-390.png",
+      "bytes": 165921,
+      "sha256": "e0f55e7d9128c87dc31b0cbad4d41d3c92429cf3c6a400e099a82da3ce23caea"
+    },
+    {
+      "path": "evidence/current-public/screenshots/scales--c-major-1440.png",
+      "source": "checks/release/public-launch/independent-reverification/live/screenshots/scales--c-major-1440.png",
+      "bytes": 175408,
+      "sha256": "a2e8ba2f043ac9f01361aa3b24e7d2eaaaa4d681fc5eec5168663e97a717ef4b"
+    },
+    {
+      "path": "evidence/current-public/screenshots/scales--c-major-390.png",
+      "source": "checks/release/public-launch/independent-reverification/live/screenshots/scales--c-major-390.png",
+      "bytes": 152865,
+      "sha256": "841de9c8d46a9183a9c6a269465915e17d023ed9b156eff6bfdda2d7e9ce5aec"
+    },
+    {
+      "path": "evidence/current-public/screenshots/scales-1440.png",
+      "source": "checks/release/public-launch/independent-reverification/live/screenshots/scales-1440.png",
+      "bytes": 329746,
+      "sha256": "9f10aab797b6a1ce9c6fbba8fbe81e18a69bea117530cbc620bf0e4173810317"
+    },
+    {
+      "path": "evidence/current-public/screenshots/scales-390.png",
+      "source": "checks/release/public-launch/independent-reverification/live/screenshots/scales-390.png",
+      "bytes": 303085,
+      "sha256": "3c0dcfdea23b1c662b3100c958bf24a7945792a91eed31d122ac06d701fd0c2d"
+    },
+    {
+      "path": "evidence/existing-scale-review/machine/data-validation.json",
+      "source": "checks/reviews/03-scales/machine/data-validation.json",
+      "bytes": 84553,
+      "sha256": "9b6d07b19f5382aa03cd0f84acd12b30eaa7053e22d95904705ab38c85b7d559"
+    },
+    {
+      "path": "evidence/existing-scale-review/machine/fallback-validation.json",
+      "source": "checks/reviews/03-scales/machine/fallback-validation.json",
+      "bytes": 3492,
+      "sha256": "6a03be816befebf87c62da6c1792d3ba94647462f6329dbbc4d5b7b62edfbfac"
+    },
+    {
+      "path": "evidence/existing-scale-review/machine/pdf-validation.json",
+      "source": "checks/reviews/03-scales/machine/pdf-validation.json",
+      "bytes": 18245,
+      "sha256": "ecc14f8759fdc958d8ca1e9f6cd1615d23f71ef0cb8859361d4519d2a7b0cd1a"
+    },
+    {
+      "path": "evidence/existing-scale-review/machine/production-validation.json",
+      "source": "checks/reviews/03-scales/machine/production-validation.json",
+      "bytes": 5992,
+      "sha256": "92818e424eaf3ca160fff31d77f9cface3d30c4a9f731e693e7f5ba36b7493f8"
+    },
+    {
+      "path": "evidence/existing-scale-review/machine/validation.json",
+      "source": "checks/reviews/03-scales/machine/validation.json",
+      "bytes": 38052,
+      "sha256": "c00e36eb068b130bc1e283b387aa2dae88b7dcdab923e2a02299098604441df5"
+    },
+    {
+      "path": "evidence/existing-scale-review/print-renders/a-minor-melodic-rh-descending.png",
+      "source": "checks/reviews/03-scales/print-renders/a-minor-melodic-rh-descending.png",
+      "bytes": 64713,
+      "sha256": "486d56abd1b74e4964f62359eeac6a0b2d946e7f44f3367f9724e424bf1871b8"
+    },
+    {
+      "path": "evidence/existing-scale-review/print-renders/a-minor-natural-rh-ascending.png",
+      "source": "checks/reviews/03-scales/print-renders/a-minor-natural-rh-ascending.png",
+      "bytes": 58212,
+      "sha256": "a4a64aebd1995b800606adfd4515ef2677e81f1987a9ddaffb8a2c8c257e8a23"
+    },
+    {
+      "path": "evidence/existing-scale-review/print-renders/c-major-lh-up-down.png",
+      "source": "checks/reviews/03-scales/print-renders/c-major-lh-up-down.png",
+      "bytes": 75896,
+      "sha256": "45781b2134618f1495db3922fb31758faa21b5ac9e8489adea5899140effc83a"
+    },
+    {
+      "path": "evidence/existing-scale-review/print-renders/scales-center-c-major.png",
+      "source": "checks/reviews/03-scales/print-renders/scales-center-c-major.png",
+      "bytes": 75024,
+      "sha256": "965023cccac6a1ccf364d00fef47c564aee82a65fbd309ba63ff5d5bf15cd6cc"
+    },
+    {
+      "path": "evidence/existing-scale-review/review.md",
+      "source": "checks/reviews/03-scales/review.md",
+      "bytes": 7829,
+      "sha256": "3c5d33331ea1c88324cfed7b31e426cd8bdb69455ab9a6a04f4eb5eecfd01a7b"
+    },
+    {
+      "path": "evidence/existing-scale-review/run-summary.json",
+      "source": "checks/reviews/03-scales/run-summary.json",
+      "bytes": 1190,
+      "sha256": "5712bad78ee01c16bef031964f71b7e854612695c04d3cf1e18f2252a674391a"
+    },
+    {
+      "path": "evidence/existing-scale-review/source-hash-verification.json",
+      "source": "checks/reviews/03-scales/source-hash-verification.json",
+      "bytes": 317,
+      "sha256": "cfa52ae908ae6984c664c53f17f32f07c653a4f56ef244d6e0d6d1d344e9e9fb"
+    },
+    {
+      "path": "evidence/method/package-intake.mjs",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 16072,
+      "sha256": "9320fffb628683ea947e45d3a52311e0e21f48a81ec0ace20cd873437b609a6b"
+    },
+    {
+      "path": "evidence/workspace-status.txt",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 3076,
+      "sha256": "d1f93d3e9044abc2f79ef941cb8a231aa7c9063982cea19d806fd877335f9eb0"
+    },
+    {
+      "path": "examples/README.md",
+      "source": "generated intake documentation from the packaged repository evidence",
+      "bytes": 597,
+      "sha256": "6abce8f0deda8bfbaef5c07211a0c73c4a44e1c6d75dfa7c65e919b264927d98"
+    },
+    {
+      "path": "examples/a-minor.page.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 41583,
+      "sha256": "8d1d12848097b98753e3b89882397ce70c384e6a7a38d40a75e5298c6d7947cd"
+    },
+    {
+      "path": "examples/c-major.page.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 20436,
+      "sha256": "88b2a4135d91894c3626acfe3627e7d5a35ea4b1e5081cd55f2653699fe68fc4"
+    },
+    {
+      "path": "examples/referenced-sources.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 15135,
+      "sha256": "2575a40ff405a2648b4ebf9fc8a162ec808462b06a23cacdf100ccb008a5858c"
+    },
+    {
+      "path": "examples/scales-center.page.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 53878,
+      "sha256": "f4f15b1fb258b13402baa6d789191ec94b2cef34df8bcde5183818c0fc4f56b9"
+    },
+    {
+      "path": "planning-and-content/Piano_全站统一规划_最终版.scales-arpeggios.extract.md",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 22711,
+      "sha256": "40159f267544bc03cb939a640181217dfc1bedb948f02fb8956b6ab1bd58cbb7"
+    },
+    {
+      "path": "planning-and-content/object-page-directory.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 23033,
+      "sha256": "cbf73c76d26a82d3c216c552a4d51f838d696a7a5884dd40b31288dbc566fbf5"
+    },
+    {
+      "path": "planning-and-content/original-reference-index.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 1177,
+      "sha256": "9610af129e89fca5eb7cb52df071d66c183db6f8fb4ab2c3ea73cf68eb210c30"
+    },
+    {
+      "path": "planning-and-content/originals/docs/content/site-master/A-Scales/batch-content-pack.md",
+      "source": "docs/content/site-master/A-Scales/batch-content-pack.md",
+      "bytes": 630102,
+      "sha256": "12d515873f750b1a75165d2646183dc7ced2096a6eee9f786d48f8a110051de5"
+    },
+    {
+      "path": "planning-and-content/originals/docs/content/site-master/A-Scales/batch-open-issues.md",
+      "source": "docs/content/site-master/A-Scales/batch-open-issues.md",
+      "bytes": 36809,
+      "sha256": "1a21c82129b149ec0c17afd640cf4db8ae90f3279560bb2ae59355a65c47bb59"
+    },
+    {
+      "path": "planning-and-content/originals/docs/content/site-master/A-Scales/batch-page-content.json",
+      "source": "docs/content/site-master/A-Scales/batch-page-content.json",
+      "bytes": 958523,
+      "sha256": "8a6f9681acec1a3091f1d938b15580afa9648b1e1337f1abd7f1cb3f88087580"
+    },
+    {
+      "path": "planning-and-content/originals/docs/content/site-master/A-Scales/batch-source-ledger.md",
+      "source": "docs/content/site-master/A-Scales/batch-source-ledger.md",
+      "bytes": 27010,
+      "sha256": "ce54c4cd56ff6d27a8ccc4341952fe94ca8d116c3e30fdb9b01292299d651be3"
+    },
+    {
+      "path": "planning-and-content/originals/docs/content/site-master/content-master-index.md",
+      "source": "docs/content/site-master/content-master-index.md",
+      "bytes": 16591,
+      "sha256": "3e630cd575ea911cdb886161ffba2b3fc0b32546405e5009bbc30b06a6dcd68e"
+    },
+    {
+      "path": "planning-and-content/originals/docs/release/release-readiness.md",
+      "source": "docs/release/release-readiness.md",
+      "bytes": 8249,
+      "sha256": "ac55cc145b823accfcad922dec6a9c3c734e0e927483e26298fa9edabbddbb0c"
+    },
+    {
+      "path": "planning-and-content/originals/docs/tasks/batch-implementation/03-scales.md",
+      "source": "docs/tasks/batch-implementation/03-scales.md",
+      "bytes": 2152,
+      "sha256": "825e7f89fa28fad2e9a4a12385e1c89d027047507c2ef7600f39384201495807"
+    },
+    {
+      "path": "planning-and-content/originals/docs/tasks/site-implementation-plan.md",
+      "source": "docs/tasks/site-implementation-plan.md",
+      "bytes": 17711,
+      "sha256": "8af143b7cd1fd5462bf1cba7d8ad2dca2f3d3c67749559b55db91110f09a601d"
+    },
+    {
+      "path": "planning-and-content/page-content.master.scales-current.extract.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 222979,
+      "sha256": "99644ef2925c34e053010a111e3ca3ca1b0561b4a7fcad011ef9449565a68205"
+    },
+    {
+      "path": "planning-and-content/source-ledger.master.scales-arpeggios.extract.md",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 31011,
+      "sha256": "ff02f9cb2639b708672244cb4789790ac55f63cceb6355ffa83f2cb7013ba0e9"
+    },
+    {
+      "path": "planning-and-content/unresolved-issues.master.scales-arpeggios.extract.md",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 31641,
+      "sha256": "6031086365972aec6888308d0ef9ea3ab1467971c178839827d8964aa3921cb0"
+    },
+    {
+      "path": "planning-and-content/url-plan.final.scales-arpeggios.extract.json",
+      "source": "generated from scoped repository evidence by evidence/method/package-intake.mjs",
+      "bytes": 304318,
+      "sha256": "ff7a2bc1e173df80fef7bb4cfa1222c8158d4739cef3e47c39a1d7dcbdce33eb"
+    },
+    {
+      "path": "source/docs/design/design-system.md",
+      "source": "docs/design/design-system.md",
+      "bytes": 22721,
+      "sha256": "f5c440f2aecc4fda7e8000ed3cdec728425cb9b9373011f2377dd61e2e666bbd"
+    },
+    {
+      "path": "source/docs/design/inspection.md",
+      "source": "docs/design/inspection.md",
+      "bytes": 3837,
+      "sha256": "3d598304a08ce14363207b14f9787398dd9ed71b99df7fc271680cfe96aa2838"
+    },
+    {
+      "path": "source/docs/design/tokens.json",
+      "source": "docs/design/tokens.json",
+      "bytes": 57305,
+      "sha256": "39ac78c7c9ed722451522ff221bcdb40236aa3009afd348dec6faa3e34908af2"
+    },
+    {
+      "path": "source/scripts/check-scale-batch.mjs",
+      "source": "scripts/check-scale-batch.mjs",
+      "bytes": 15900,
+      "sha256": "931318832dc54e2fa9f32cb253ce82202865382d5a752f0dce37a8fbad4a0ed9"
+    },
+    {
+      "path": "source/scripts/check-scale-data.mjs",
+      "source": "scripts/check-scale-data.mjs",
+      "bytes": 8239,
+      "sha256": "e3d0d0720a2eee5133f430dc2eedccd593636c8f87748d9d4c820bc212d7ca4c"
+    },
+    {
+      "path": "source/scripts/check-scale-fallbacks.mjs",
+      "source": "scripts/check-scale-fallbacks.mjs",
+      "bytes": 5620,
+      "sha256": "dab960d309b6c65bc9c0db8ade5c9e1eee9eeba097e01d3c3084f88228b7b0e5"
+    },
+    {
+      "path": "source/scripts/check-scale-pdfs.py",
+      "source": "scripts/check-scale-pdfs.py",
+      "bytes": 3340,
+      "sha256": "18d4b5f2d374de2e8213c778ac76c8aa1d10b3c122184072b8e2e5904a2e4b4d"
+    },
+    {
+      "path": "source/scripts/check-scale-production.mjs",
+      "source": "scripts/check-scale-production.mjs",
+      "bytes": 3479,
+      "sha256": "14c2b7e4260e30e07ef5c69a0225bd5ea8732a62a122be91f0ce14f76ae5fbc3"
+    },
+    {
+      "path": "source/src/app/chords/a-minor/a-minor.css",
+      "source": "src/app/chords/a-minor/a-minor.css",
+      "bytes": 27181,
+      "sha256": "89a6b9b9bcbb31b7f9b59ef51176e7517e84faa732956bb859b4c0e6ea0a25db"
+    },
+    {
+      "path": "source/src/app/globals.css",
+      "source": "src/app/globals.css",
+      "bytes": 7628,
+      "sha256": "47625b5d200d48278328b716e8c3e9e5ca3eca5913b2d950459ff3de55a7d2be"
+    },
+    {
+      "path": "source/src/app/layout.tsx",
+      "source": "src/app/layout.tsx",
+      "bytes": 876,
+      "sha256": "e7e4f2caf3d7078b70fa217a2e6dd08fab0851351bf40d2785ef90208892d305"
+    },
+    {
+      "path": "source/src/app/scales/a-minor/page.tsx",
+      "source": "src/app/scales/a-minor/page.tsx",
+      "bytes": 429,
+      "sha256": "f316e6454a6f6dff2dbfe85dd5031e68cf2b3c527664ee43fc2b0c9895871f0c"
+    },
+    {
+      "path": "source/src/app/scales/c-major/page.tsx",
+      "source": "src/app/scales/c-major/page.tsx",
+      "bytes": 429,
+      "sha256": "4ca94511cb070014ea5ea11bc9b6669813a9c8cc520ea557c0685cad4be132d9"
+    },
+    {
+      "path": "source/src/app/scales/page.tsx",
+      "source": "src/app/scales/page.tsx",
+      "bytes": 371,
+      "sha256": "bb8d643c00e935ca4b645c5338a9307c506d40878774b5e94249aacb89c40ec2"
+    },
+    {
+      "path": "source/src/components/chords/site-chrome.tsx",
+      "source": "src/components/chords/site-chrome.tsx",
+      "bytes": 840,
+      "sha256": "2b1f54a400f922d5ab0f04c1322e2f414ed9cf2a3e1f3392efaf0c4888b9ee4a"
+    },
+    {
+      "path": "source/src/components/keyboard-notes/keyboard-diagram.tsx",
+      "source": "src/components/keyboard-notes/keyboard-diagram.tsx",
+      "bytes": 2720,
+      "sha256": "c382ce07ddc54be77623d409719bcd6ef8d6c88901a82bc23beffb47f5eeddde"
+    },
+    {
+      "path": "source/src/components/keyboard-notes/keyboard-notes.css",
+      "source": "src/components/keyboard-notes/keyboard-notes.css",
+      "bytes": 5335,
+      "sha256": "b3d94fdb71254dc4f79e41ee750902daf4d01f328a030daff8a4fe687bffacdf"
+    },
+    {
+      "path": "source/src/components/keyboard-notes/staff-diagram.tsx",
+      "source": "src/components/keyboard-notes/staff-diagram.tsx",
+      "bytes": 3399,
+      "sha256": "d8838a0848bac011fc2d446f5fae09b2dcdb2a7a697354122b1bbf719cc4fa25"
+    },
+    {
+      "path": "source/src/components/scales/center-experience.tsx",
+      "source": "src/components/scales/center-experience.tsx",
+      "bytes": 4683,
+      "sha256": "9ecbf9498edeb946255e6757fb1d7ed6e4cea1e2c44d89f3f17def7235b77b65"
+    },
+    {
+      "path": "source/src/components/scales/detail-experience.tsx",
+      "source": "src/components/scales/detail-experience.tsx",
+      "bytes": 4524,
+      "sha256": "e3f19ddc19b8e4932bbfc1eb7dc62b8bc9d38b0390fc23826ccbc100db2086c5"
+    },
+    {
+      "path": "source/src/components/scales/pages.tsx",
+      "source": "src/components/scales/pages.tsx",
+      "bytes": 5237,
+      "sha256": "fd8a43628253daddd236076d162311016adac6556d57caf2d65d6b233760b83c"
+    },
+    {
+      "path": "source/src/components/scales/scale-reference.tsx",
+      "source": "src/components/scales/scale-reference.tsx",
+      "bytes": 6543,
+      "sha256": "4f3a30d8e251e787ecb06d11c3e497148bf5e369d2ae1a1563ef51f719356e52"
+    },
+    {
+      "path": "source/src/components/scales/scales.css",
+      "source": "src/components/scales/scales.css",
+      "bytes": 8645,
+      "sha256": "807e06521db8ad3c6f4e61e473dfdd30e6aa7684707cd06edf49f575d06e84af"
+    },
+    {
+      "path": "source/src/components/scales/use-scale-audio.ts",
+      "source": "src/components/scales/use-scale-audio.ts",
+      "bytes": 2007,
+      "sha256": "c045c46b49f71ca5fe792451a993f41b81b3d2eef3660fc55d486d9707486a32"
+    },
+    {
+      "path": "source/src/components/site-navigation.css",
+      "source": "src/components/site-navigation.css",
+      "bytes": 7461,
+      "sha256": "7590314e682701b2d2e18f5acc8c65e6640934046dde1bbd09ca46b39e64988b"
+    },
+    {
+      "path": "source/src/components/site-navigation.tsx",
+      "source": "src/components/site-navigation.tsx",
+      "bytes": 7818,
+      "sha256": "49a1ff66afdfc1b48267b97d384a08a2f7f9a67319484cad5bc62adccdf554df"
+    },
+    {
+      "path": "source/src/components/ui/breadcrumb.css",
+      "source": "src/components/ui/breadcrumb.css",
+      "bytes": 936,
+      "sha256": "a3f6c2318aa15ff2bfbf96b89d0cc3ed130dba2581df00284a8672fe1319710c"
+    },
+    {
+      "path": "source/src/components/ui/breadcrumb.tsx",
+      "source": "src/components/ui/breadcrumb.tsx",
+      "bytes": 2608,
+      "sha256": "970670e1b10866941912535a0e71a35ec2adfe7ef2100d918bcd651675d9c00b"
+    },
+    {
+      "path": "source/src/components/ui/site-brand.css",
+      "source": "src/components/ui/site-brand.css",
+      "bytes": 476,
+      "sha256": "4c775f57abe9b54de536bd00a802d90c3e7b106f83e3478b4a372e01c8ac29cb"
+    },
+    {
+      "path": "source/src/components/ui/site-brand.tsx",
+      "source": "src/components/ui/site-brand.tsx",
+      "bytes": 778,
+      "sha256": "f031e1612d51631c7d86262b699afe37d6e6f01bfd216e9b437ea3f0a702c2b7"
+    },
+    {
+      "path": "source/src/lib/a-minor-audio.ts",
+      "source": "src/lib/a-minor-audio.ts",
+      "bytes": 5958,
+      "sha256": "03c8577a3c443cd07956f65d4aa63e6c30a65385f04721606ba3782393d9e670"
+    },
+    {
+      "path": "source/src/lib/a-minor-types.ts",
+      "source": "src/lib/a-minor-types.ts",
+      "bytes": 2510,
+      "sha256": "3af2f6974023c0849c040126f362b9b1e6ce66dc3b3235332d70703db82014bb"
+    },
+    {
+      "path": "source/src/lib/keyboard-content.ts",
+      "source": "src/lib/keyboard-content.ts",
+      "bytes": 3388,
+      "sha256": "9a6fb897b8c287d67b71da7ec583e654f85c98de15ea5577b91520020fb940d7"
+    },
+    {
+      "path": "source/src/lib/keyboard-geometry.ts",
+      "source": "src/lib/keyboard-geometry.ts",
+      "bytes": 285,
+      "sha256": "c9acdaa0632a5ea65f736b0b5d9a3a54fd2887f0cd8411c52e7e603a2d2260f0"
+    },
+    {
+      "path": "source/src/lib/keyboard-types.ts",
+      "source": "src/lib/keyboard-types.ts",
+      "bytes": 1253,
+      "sha256": "a92c6fac3b2d8452eeeec1265987f82766bbcf8d40fbc2dcdd0643a5ad23d999"
+    },
+    {
+      "path": "source/src/lib/scale-content.ts",
+      "source": "src/lib/scale-content.ts",
+      "bytes": 14066,
+      "sha256": "501054e70a1fb558229d2a9d83ef59e8f6251e89d6f669ee91213185c2bcd815"
+    },
+    {
+      "path": "source/src/lib/scale-types.ts",
+      "source": "src/lib/scale-types.ts",
+      "bytes": 1552,
+      "sha256": "266d2e6c71ede938f34867d0233b8ae735ffba960e3709082e0421d7dc8c2f63"
+    },
+    {
+      "path": "source/src/lib/site-config.ts",
+      "source": "src/lib/site-config.ts",
+      "bytes": 840,
+      "sha256": "6c5a2b8a77553d304b6e8cce132356842596bdcc0872e2d323c2fc52970ede37"
+    },
+    {
+      "path": "source/src/lib/site-content.ts",
+      "source": "src/lib/site-content.ts",
+      "bytes": 1282,
+      "sha256": "acd9436e625dcc3e8d9322c2872d83261c7c1d3b24553ac38af1704d95b3bdd3"
+    },
+    {
+      "path": "source/src/lib/site-routes.ts",
+      "source": "src/lib/site-routes.ts",
+      "bytes": 1814,
+      "sha256": "526c3c87f8682a130e86116e7e09a1189c675e7c0bacbd7086961b674afbd425"
+    },
+    {
+      "path": "source/src/lib/utils.ts",
+      "source": "src/lib/utils.ts",
+      "bytes": 1016,
+      "sha256": "92aba93b0ebcf82a84f8b11497ef37d9821bc5d8887977168a35a01bfd0bc8ac"
+    },
+    {
+      "path": "source/src/styles/foundation.css",
+      "source": "src/styles/foundation.css",
+      "bytes": 7608,
+      "sha256": "80452a0844b3e8545522368b80731502e91d901a3a75d9325a01369fa5cfcaec"
+    },
+    {
+      "path": "source/src/styles/tokens.css",
+      "source": "src/styles/tokens.css",
+      "bytes": 15139,
+      "sha256": "311c4cf9f870bb6cc68cc1c40ff6a7ae9e2f1a6906b7a80ff5622df218ae52eb"
+    }
+  ]
+}

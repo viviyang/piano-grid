@@ -1,0 +1,349 @@
+{
+  "url": "/chords/e-major",
+  "title": "E Major Piano Chord (E): Notes, Inversions & PDF",
+  "description": "Find E major on piano: E, G-sharp and B. See the keyboard positions, compare E/G-sharp and E/B, and print a three-position reference.",
+  "user_task": "Locate this exact triad and compare its three bass positions.",
+  "questions": [
+    "Which key is G-sharp?",
+    "Does E mean E major or E minor?",
+    "What does E/G-sharp mean?",
+    "Why is E/B still E major?",
+    "Are these piano audio recordings?"
+  ],
+  "blocks": [
+    {
+      "heading": "Notes and keyboard position",
+      "body": "The E major chord uses E, G-sharp and B. G-sharp is the major third above E; B is the perfect fifth. The displayed root-position example is E4–G♯4–B4. Numbers after note letters identify octaves, not fingers. Use the diagram, note list and bass label together; Play chord sounds the selected notes together, while the note-by-note control sounds them from low to high.",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[已核实] rules; [推断] register and original teaching example"
+    },
+    {
+      "heading": "What to notice",
+      "body": "The triad has one black key, G-sharp. The key signature of E major contains more sharps, but a chord symbol E does not ask you to play all the notes of that scale. It names this particular three-note chord. E to G-sharp is four semitones; E to B is seven. G-sharp and A-flat can share a piano key, but G-sharp is the third-letter spelling above E. An E major triad is therefore written E–G♯–B, not E–A♭–B.",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] original explanation from preserved note data and cited rules"
+    },
+    {
+      "heading": "Compare three positions",
+      "body": "Read each bass note before selecting a position. The root-position example starts with E; first inversion starts with G♯; second inversion starts with B. The chord tones stay the same. These are independently chosen reference registers, not an ascending exercise. Switching a position must update the selected note order, diagram, sound and current-print snapshot together. Hand numbers, when available, apply only to the root example.",
+      "source_ids": [
+        "PG-OMT",
+        "PG-ASPN"
+      ],
+      "evidence_status": "[推断] derived inversion explanation; controls are implementation acceptance requirements"
+    }
+  ],
+  "data": {
+    "root": "E",
+    "quality": "major",
+    "symbol": "E",
+    "aliases": [
+      "E",
+      "E major",
+      "Emaj"
+    ],
+    "pitch_classes": [
+      "E",
+      "G#",
+      "B"
+    ],
+    "semitones_from_root": [
+      0,
+      4,
+      7
+    ],
+    "intervals": [
+      "perfect unison",
+      "major third",
+      "perfect fifth"
+    ],
+    "voicings": [
+      {
+        "id": "root",
+        "label": "Root position",
+        "notes": [
+          "E4",
+          "G#4",
+          "B4"
+        ],
+        "midi": [
+          64,
+          68,
+          71
+        ],
+        "bass": "E4",
+        "symbol": "E",
+        "keyboard_highlights": [
+          {
+            "midi": 64,
+            "spelling": "E4"
+          },
+          {
+            "midi": 68,
+            "spelling": "G#4"
+          },
+          {
+            "midi": 71,
+            "spelling": "B4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            64,
+            68,
+            71
+          ],
+          "ascending_midi": [
+            64,
+            68,
+            71
+          ],
+          "descending_midi": [
+            71,
+            68,
+            64
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "first",
+        "label": "First inversion",
+        "notes": [
+          "G#4",
+          "B4",
+          "E5"
+        ],
+        "midi": [
+          68,
+          71,
+          76
+        ],
+        "bass": "G#4",
+        "symbol": "E/G#",
+        "keyboard_highlights": [
+          {
+            "midi": 68,
+            "spelling": "G#4"
+          },
+          {
+            "midi": 71,
+            "spelling": "B4"
+          },
+          {
+            "midi": 76,
+            "spelling": "E5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            68,
+            71,
+            76
+          ],
+          "ascending_midi": [
+            68,
+            71,
+            76
+          ],
+          "descending_midi": [
+            76,
+            71,
+            68
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "second",
+        "label": "Second inversion",
+        "notes": [
+          "B4",
+          "E5",
+          "G#5"
+        ],
+        "midi": [
+          71,
+          76,
+          80
+        ],
+        "bass": "B4",
+        "symbol": "E/B",
+        "keyboard_highlights": [
+          {
+            "midi": 71,
+            "spelling": "B4"
+          },
+          {
+            "midi": 76,
+            "spelling": "E5"
+          },
+          {
+            "midi": 80,
+            "spelling": "G#5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            71,
+            76,
+            80
+          ],
+          "ascending_midi": [
+            71,
+            76,
+            80
+          ],
+          "descending_midi": [
+            80,
+            76,
+            71
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      }
+    ],
+    "default_voicing": "root",
+    "derivation": {
+      "status": "[推断] original baseline voicings retained; pitch spellings, MIDI, interval set and bass checked independently in this package",
+      "source_ids": [
+        "PG-TRIADS",
+        "PG-ASPN",
+        "PG-OMT"
+      ]
+    },
+    "assets": [
+      {
+        "path": "assets/chord-e-major.svg",
+        "format": "SVG",
+        "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+        "delivery_file": "05_assets/chord-e-major.svg",
+        "visual_qa": "same_deterministic_geometry_as_PDF; SVG_XML_checked; browser_rasterization_pending",
+        "delivery_status": "generated_in_this_package",
+        "sha256": "83d590fd0e28ee3974cbf5c2fc127247e9c14076cea57d3767c1985c1a5850c9",
+        "tagged_pdf_accessibility": null
+      },
+      {
+        "path": "assets/chord-e-major.pdf",
+        "format": "PDF",
+        "content": "three original inversion keyboard diagrams; no staff notation or fingering",
+        "delivery_file": "05_assets/chord-e-major.pdf",
+        "visual_qa": "all_six_PDF_pages_rendered_and_visually_inspected_2026-09-11",
+        "delivery_status": "generated_in_this_package",
+        "sha256": "415b2cadf7fc24d812835861078f159aae1f007e813883cfbd513529defc0e0f",
+        "tagged_pdf_accessibility": "not_certified"
+      }
+    ],
+    "related": [
+      "/chords",
+      "/chords/a-major",
+      "/chords/a-minor",
+      "/chords/b-major",
+      "/guide/piano-chords",
+      "/chords/by-key"
+    ]
+  },
+  "source_ids": [
+    "PG-TRIADS",
+    "PG-OMT",
+    "PG-ASPN",
+    "PG-SKOOVE-E-MAJOR"
+  ],
+  "issues": [
+    {
+      "id": "INT-e-major",
+      "field": "runtime",
+      "reason": "Prepared content is not yet integrated or tested in the complete repository.",
+      "needed_to_resolve": "Use the supplied integration prompt; verify raw HTML, adapter output, links, UI/audio/print and the unchanged B3 pages."
+    },
+    {
+      "id": "FINGER-INV-e-major",
+      "field": "inversion fingering",
+      "reason": "No inversion fingerings are included; B3 supports root examples only.",
+      "needed_to_resolve": "No expansion is required for this batch. Keep inversion fingers absent."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P162",
+      "status": "prepared_not_live",
+      "delivered": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接 — actual records below.",
+      "pending": "Adapter registration, effective metadata, valid PDFs, links and focused runtime checks"
+    }
+  ],
+  "baseline_page_id": "U080",
+  "batch": "F",
+  "main_keyword": "piano e chord",
+  "keywords": [
+    "piano e chord"
+  ],
+  "source_groups": [
+    {
+      "id": "P162",
+      "representative": "piano e chord",
+      "section": null,
+      "synonyms": [],
+      "other_queries": [],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A389:G389",
+      "delivery_method": "独立页首要任务",
+      "required_output": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "first_release_scope": "模板已确认；此实例内容待审核",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T07",
+  "baseline_priority": "后做",
+  "baseline_purpose": "查E大三和弦",
+  "final_scope": {
+    "id": "T07",
+    "name": "具体和弦页",
+    "confirmation_status": "A minor 样板已确认；其他已有对象复用模板，不等于逐页确认",
+    "user_task": "直接查某一个明确和弦的组成、键位、转位和声音。",
+    "modules": [
+      "进入即固定当前和弦，不再要求选择根音。",
+      "显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。",
+      "原位与转位同页切换，图示和播放同步；打印当前结果。",
+      "针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。"
+    ],
+    "boundary": "不复制中心页全量筛选器；不为转位/打印模式单独建页；不自动补全全部和弦组合。",
+    "acceptance": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。"
+  },
+  "required_delivery": "进入即固定当前和弦，不再要求选择根音。；显示名称、常见写法、组成音和键盘图；主动齐奏/逐音播放。；原位与转位同页切换，图示和播放同步；打印当前结果。；针对性解释；指法仅在专业核对后提供；链接相邻已上线对象。",
+  "release_conditions": "具体对象和音符拼写正确；所有已开放转位、音图和打印一致。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "逐页核对音名与等音拼写；指法标作情境建议而非唯一答案；音源权限与播放功能须完成",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "status": "content_ready_adapter_required",
+  "metadata": {
+    "title": "E Major Piano Chord (E): Notes, Inversions & PDF",
+    "description": "Find E major on piano: E, G-sharp and B. See the keyboard positions, compare E/G-sharp and E/B, and print a three-position reference.",
+    "canonical_path": "/chords/e-major",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

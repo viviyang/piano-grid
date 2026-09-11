@@ -1,0 +1,3854 @@
+{
+  "format": "existing-master-pages-subset",
+  "merge_target": "docs/content/site-master/page-content.master.json#/pages",
+  "replace_entire_file": false,
+  "pages": {
+    "/guide/piano-chords": {
+      "url": "/guide/piano-chords",
+      "title": "How to Play Piano Chords: Notes, Hands & First Changes",
+      "description": "Start with C, Am, F and G. Learn what chord symbols mean, separate finger numbers from note names, and compare a first C-to-Am change.",
+      "user_task": "Learn the actions behind a chord chart.",
+      "questions": [
+        "Do I always play chords with my right hand?",
+        "Is Am/C the same as playing only C?",
+        "Can I play all four starter chords with one fixed fingering?"
+      ],
+      "blocks": [
+        {
+          "heading": "Build C major",
+          "body": "C–E–G is a C major triad. From C, E is four semitones higher and G is seven semitones higher. Find the three keys, play each once, then sound them together. Yamaha gives right-hand 1–3–5 as the usual root-position fingering for this example.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-CHORD",
+            "E-TRIADS"
+          ]
+        },
+        {
+          "heading": "Change the middle note",
+          "body": "Compare C–E–G with C–E♭–G. Lowering E by one semitone gives C minor. Compare the keyboard shapes and sound; the black key is E-flat in this chord’s spelling.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-TRIADS"
+          ]
+        },
+        {
+          "heading": "Practise a connection",
+          "body": "Original exercise: play C4–E4–G4 for four counts, then C4–E4–A4 for four counts, and return. The second group is A minor in first inversion. C4 and E4 stay in place while G4 changes to A4. Plan the movement before counting in; use the chord chart to inspect each voicing. Fingering for this transition is not prescribed.",
+          "evidence_status": "[已核实] factual core; [推断] editorial exercise/method where stated",
+          "source_ids": [
+            "E-TRIADS"
+          ]
+        }
+      ],
+      "data": {
+        "starter_chords": [
+          {
+            "name": "C major",
+            "notes": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "name": "A minor",
+            "notes": [
+              "A",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "F major",
+            "notes": [
+              "F",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "name": "G major",
+            "notes": [
+              "G",
+              "B",
+              "D"
+            ]
+          }
+        ],
+        "verified_fingering_example": {
+          "hand": "right",
+          "notes": [
+            "C",
+            "E",
+            "G"
+          ],
+          "fingers": [
+            1,
+            3,
+            5
+          ],
+          "scope": "Yamaha usual root-position C major example; no transfer to other shapes",
+          "source_ids": [
+            "E-CHORD"
+          ]
+        },
+        "finger_diagram": null,
+        "transition_voicings": [
+          [
+            "C4",
+            "E4",
+            "G4"
+          ],
+          [
+            "C4",
+            "E4",
+            "A4"
+          ],
+          [
+            "C4",
+            "E4",
+            "G4"
+          ]
+        ],
+        "transition_fingering": null,
+        "reference_url": "/chords",
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "E-CHORD",
+        "E-TRIADS",
+        "BR-03",
+        "BR-04",
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-FINGERS",
+        "PG-C-BEGINNER"
+      ],
+      "issues": [
+        {
+          "id": "E-REVIEW-piano-chords",
+          "field": "professional_review",
+          "reason": "Professional teaching/notation review required by the baseline has not been performed by a named reviewer.",
+          "needed_to_resolve": "Have a qualified piano educator review the examples, fingering scope and wording before release."
+        },
+        {
+          "id": "NEXT-TEMPLATE-guide-piano-chords",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P220",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "步骤、构成、指法示意及连接练习；链接查图工具 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P225",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        },
+        {
+          "source_group_id": "P242",
+          "status": "content_and_data_prepared; professional/implementation gates remain",
+          "delivered": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。 — see named modules and data below.",
+          "pending": "Professional review where required; final asset/link integration. Specific gaps are listed in issues."
+        }
+      ],
+      "baseline_page_id": "U117",
+      "batch": "E",
+      "main_keyword": "how to play chords on piano",
+      "keywords": [
+        "how to play chords on piano",
+        "chord structure piano",
+        "piano playing by chords",
+        "piano chord shapes",
+        "basic piano chords",
+        "easy piano chords",
+        "piano keyboard chords for beginners",
+        "piano basic chords",
+        "piano beginner chords",
+        "basic piano chord",
+        "keyboard piano chords beginner",
+        "piano chords chart for beginners",
+        "piano chord transitions"
+      ],
+      "source_groups": [
+        {
+          "id": "P220",
+          "representative": "how to play chords on piano",
+          "section": null,
+          "synonyms": [
+            "piano playing by chords"
+          ],
+          "other_queries": [
+            "chord structure piano",
+            "piano chord shapes"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A311:G311",
+          "delivery_method": "独立页首要任务",
+          "required_output": "步骤、构成、指法示意及连接练习；链接查图工具",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P225",
+          "representative": "basic piano chords",
+          "section": "beginner",
+          "synonyms": [
+            "easy piano chords",
+            "piano keyboard chords for beginners",
+            "piano basic chords",
+            "piano beginner chords",
+            "basic piano chord",
+            "keyboard piano chords beginner"
+          ],
+          "other_queries": [
+            "piano chords chart for beginners"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A325:G325",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P242",
+          "representative": "piano chord transitions",
+          "section": "transitions",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A514:G514",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T22",
+      "baseline_priority": "后做",
+      "baseline_purpose": "学会基础和弦与换和弦练习",
+      "final_scope": {
+        "id": "T22",
+        "name": "方法教程",
+        "confirmation_status": "本版统一规划建议；各篇按特定学习任务交付",
+        "user_task": "解决如何学、怎么练或为什么的问题。",
+        "modules": [
+          "开头直接回答；后续按步骤、图例、示例与必要练习组织。",
+          "明确适用程度和内容来源；资料/打印只有真实可用时提供。",
+          "工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。"
+        ],
+        "boundary": "不强制固定字数，不生成换标题的长文；不自动加 MIDI、评分、AI 教师或课程账号。",
+        "acceptance": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。"
+      },
+      "required_delivery": "开头直接回答；后续按步骤、图例、示例与必要练习组织。；明确适用程度和内容来源；资料/打印只有真实可用时提供。；工具承担查询，教程承担过程；用相关链接衔接，而非重复全部功能。",
+      "release_conditions": "读者可按步骤执行；示例与指法/记谱等专业内容审核通过。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "示例与技巧需专业复核，不以高BPM代替正确动作",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_prepared_distinct_template_required",
+      "metadata": {
+        "title": "How to Play Piano Chords: Notes, Hands & First Changes",
+        "description": "Start with C, Am, F and G. Learn what chord symbols mean, separate finger numbers from note names, and compare a first C-to-Am change.",
+        "canonical_path": "/guide/piano-chords",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    "/keyboard-notes/finger-numbers": {
+      "url": "/keyboard-notes/finger-numbers",
+      "title": "Piano Finger Numbers: Left & Right Hand Chart",
+      "description": "Learn piano finger numbers 1 to 5 for both hands. Read RH and LH examples and tell fingering apart from scale degrees and octave labels.",
+      "user_task": "Identify the finger meant by a piano fingering number on either hand and follow the correct specific reference.",
+      "questions": [
+        "Is the left thumb number 5?",
+        "Does LH 3 mean the third key from the left?",
+        "Does this chart tell me how to finger any song?"
+      ],
+      "blocks": [
+        {
+          "id": "mapping",
+          "heading": "Both thumbs are 1",
+          "body": "Piano finger numbers use the same labels on both hands: thumb 1, index finger 2, middle finger 3, ring finger 4 and little finger 5. The little finger is also called the pinky. LH means left hand and RH means right hand. Start by checking the hand label as well as the number.",
+          "source_ids": [
+            "BR-03",
+            "BR-04"
+          ],
+          "evidence_status": "[已核实]"
+        },
+        {
+          "id": "orientation",
+          "heading": "Read each hand separately",
+          "body": "The diagrams show the backs of your hands as you look down with your fingertips pointing away. The thumbs face inward. From left to right, the left-hand labels read 5, 4, 3, 2, 1, while the right-hand labels read 1, 2, 3, 4, 5. The fingers keep their identities when the picture is mirrored.",
+          "source_ids": [
+            "BR-04"
+          ],
+          "evidence_status": "[推断]"
+        },
+        {
+          "id": "not-keys",
+          "heading": "A number identifies a finger",
+          "body": "Finger 1 does not permanently mean C. A fingering mark says which finger is intended for that note in that passage. Published exercises can ask the same thumb to play C and then D. For a particular scale, chord or arpeggio, use its own stated hand, direction and range.",
+          "source_ids": [
+            "BR-03",
+            "BR-06"
+          ],
+          "evidence_status": "[已核实]"
+        },
+        {
+          "id": "degrees",
+          "heading": "Finger numbers and scale degrees",
+          "body": "A finger number labels part of your hand. A scale degree labels a note’s position relative to the tonic. Finger 3 means the middle finger; scale degree 3 means the third degree of the scale. Reading one does not tell you the other.",
+          "source_ids": [
+            "BR-03",
+            "BR-05"
+          ],
+          "evidence_status": "[已核实]"
+        },
+        {
+          "id": "check",
+          "heading": "Try a quick identification check",
+          "body": "Find the left thumb, then the right little finger. Name their numbers before checking the table. Next find finger 2 on each hand. This check only asks you to identify fingers; choose a specific scale or chord reference when you need instructions for playing notes.",
+          "source_ids": [
+            "BR-03",
+            "BR-04"
+          ],
+          "evidence_status": "[推断]"
+        }
+      ],
+      "data": {
+        "hands": [
+          {
+            "hand": "left",
+            "abbreviation": "LH",
+            "label": "Left hand",
+            "fingers": [
+              {
+                "number": 1,
+                "name": "thumb",
+                "aliases": [],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 2,
+                "name": "index finger",
+                "aliases": [
+                  "pointer finger"
+                ],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 3,
+                "name": "middle finger",
+                "aliases": [],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 4,
+                "name": "ring finger",
+                "aliases": [],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 5,
+                "name": "little finger",
+                "aliases": [
+                  "pinky"
+                ],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              }
+            ],
+            "diagram": {
+              "view": "player looking down at backs of hands; palms down; fingertips away",
+              "fingertip_numbers_left_to_right": [
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              "thumb_side": "right / inward",
+              "text_must_not_be_mirrored": true,
+              "exact_anatomical_geometry": null,
+              "evidence_status": "[推断]",
+              "basis": "Diagram orientation chosen for clarity; ordering follows opposite hand layouts and verified finger identities. No hand pose or technique prescription."
+            }
+          },
+          {
+            "hand": "right",
+            "abbreviation": "RH",
+            "label": "Right hand",
+            "fingers": [
+              {
+                "number": 1,
+                "name": "thumb",
+                "aliases": [],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 2,
+                "name": "index finger",
+                "aliases": [
+                  "pointer finger"
+                ],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 3,
+                "name": "middle finger",
+                "aliases": [],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 4,
+                "name": "ring finger",
+                "aliases": [],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              },
+              {
+                "number": 5,
+                "name": "little finger",
+                "aliases": [
+                  "pinky"
+                ],
+                "evidence_status": "[已核实]",
+                "source_ids": [
+                  "BR-03",
+                  "BR-04"
+                ]
+              }
+            ],
+            "diagram": {
+              "view": "player looking down at backs of hands; palms down; fingertips away",
+              "fingertip_numbers_left_to_right": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "thumb_side": "left / inward",
+              "text_must_not_be_mirrored": true,
+              "exact_anatomical_geometry": null,
+              "evidence_status": "[推断]",
+              "basis": "Diagram orientation chosen for clarity; ordering follows opposite hand layouts and verified finger identities. No hand pose or technique prescription."
+            }
+          }
+        ],
+        "diagram_contract": {
+          "order_on_page": [
+            "left",
+            "right"
+          ],
+          "shared_caption": "Finger numbers for piano — view from the player, backs of hands facing up.",
+          "pair_geometry": "Left-hand thumb at the inner right edge; right-hand thumb at the inner left edge.",
+          "finger_mapping_is_authoritative": true,
+          "no_fixed_key_assignment": true,
+          "must_label_both_hands": true,
+          "svg_or_image_asset": null,
+          "evidence_status": "[推断]",
+          "basis": "Editorial layout specification using verified finger identities; source artwork is not reproduced."
+        },
+        "number_system_comparison": [
+          {
+            "system": "piano fingering",
+            "example": "3",
+            "meaning": "middle finger of the indicated hand",
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-03"
+            ]
+          },
+          {
+            "system": "scale degree",
+            "example": "3 (often with a caret)",
+            "meaning": "third degree relative to the tonic",
+            "evidence_status": "[已核实]",
+            "source_ids": [
+              "BR-05"
+            ]
+          },
+          {
+            "system": "octave register",
+            "example": "C4",
+            "meaning": "C in written octave 4; not finger 4",
+            "evidence_status": "[已核实] general ASPN rule; [推断] example",
+            "source_ids": [
+              "PG-ASPN"
+            ]
+          }
+        ],
+        "reading_examples": [
+          {
+            "instruction": "LH 1",
+            "answer": "left thumb",
+            "evidence_status": "[推断]",
+            "basis": "Editorial example applying verified LH and finger1 definitions.",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          },
+          {
+            "instruction": "RH 5",
+            "answer": "right little finger",
+            "evidence_status": "[推断]",
+            "basis": "Editorial example applying verified RH and finger5 definitions.",
+            "source_ids": [
+              "BR-03",
+              "BR-04"
+            ]
+          }
+        ],
+        "general_piece_fingering": null,
+        "specific_reference_links": [
+          {
+            "url": "/scales/c-major",
+            "label": "C major scale reference",
+            "activation_condition": "Show only after this target publishes verified hand/direction/octave fingering."
+          },
+          {
+            "url": "/chords/a-minor",
+            "label": "A minor chord reference",
+            "activation_condition": "Use existing unchanged chord package; show only its verified finger guidance."
+          },
+          {
+            "url": "/arpeggios",
+            "label": "C and G major arpeggio examples",
+            "activation_condition": "Keep each verified hand-specific fingering bound to its stated octave/register."
+          }
+        ],
+        "print": {
+          "content": [
+            "both labeled hand diagrams",
+            "five-finger mapping table",
+            "finger numbers vs scale degrees note"
+          ],
+          "pdf_asset": null
+        },
+        "related_urls": [
+          "/keyboard-notes",
+          "/scales/c-major",
+          "/chords/a-minor",
+          "/arpeggios"
+        ]
+      },
+      "source_ids": [
+        "BR-03",
+        "BR-04",
+        "BR-05",
+        "BR-06",
+        "PG-FINGERS",
+        "PG-C-BEGINNER",
+        "PG-ASPN",
+        "PG-OMT"
+      ],
+      "status": "content_prepared_distinct_template_required",
+      "issues": [
+        {
+          "id": "BR-FINGERS-DIAGRAM",
+          "field": "data.diagram_contract.svg_or_image_asset",
+          "reason": "左右手编号映射和图示方向已明确；尚未交付最终原创手图。",
+          "needed_to_resolve": "按player-view绘制并检查左右手、拇指朝内、1–5对应、文字不镜像；专业复核后使用。"
+        },
+        {
+          "id": "BR-FINGERS-SCOPE",
+          "field": "fingering_chart_intent",
+          "reason": "原词可能包含具体乐句/音阶指法需求；本基线职责为手指编号与具体参考入口。",
+          "needed_to_resolve": "保留本页职责；仅链接已有具体对象，不把编号图视为通用曲目指法方案。"
+        },
+        {
+          "id": "BR-FINGERS-PRINT",
+          "field": "data.print.pdf_asset",
+          "reason": "尚未生成实际打印PDF。",
+          "needed_to_resolve": "最终手图完成后生成打印版并视检；资源不存在时不显示下载承诺。"
+        },
+        {
+          "id": "NEXT-TEMPLATE-keyboard-notes-finger-numbers",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P126",
+          "status": "content_and_mapping_ready; diagram_pending",
+          "delivered": "双手分别1–5映射、准确示意朝向、RH/LH说明、与音名/音级区别、具体参考入口条件。",
+          "pending": "最终原创左右手编号图与专业视觉复核；打印资源如需提供则实际生成。"
+        }
+      ],
+      "baseline_page_id": "U071",
+      "batch": "B",
+      "main_keyword": "piano fingering chart",
+      "keywords": [
+        "piano fingering chart",
+        "piano finger chart"
+      ],
+      "source_groups": [
+        {
+          "id": "P126",
+          "representative": "piano fingering chart",
+          "section": null,
+          "synonyms": [
+            "piano finger chart"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A45:G45",
+          "delivery_method": "独立页首要任务",
+          "required_output": "左右手编号图；基础使用说明；链接到具体和弦/音阶指法",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T20",
+      "baseline_priority": "后做",
+      "baseline_purpose": "理解左右手手指编号及基础指法图",
+      "final_scope": {
+        "id": "T20",
+        "name": "补充参考／打印工具",
+        "confirmation_status": "本版统一规划建议；后做",
+        "user_task": "完成频率查询、手指编号、空白键盘、调号或综合速查这一页指定任务。",
+        "modules": [
+          "先直接交付该页自己的图表或可操作结果。",
+          "附必要基准/范围说明；打印资料须真实可用。",
+          "关联查询或学习入口，但不复制另一个中心页。"
+        ],
+        "boundary": "同样是 chart 不代表同页；调号、指编号、频率、空白模板分别按原表任务保留。",
+        "acceptance": "本页标题所承诺的那一种结果真实可用，并有审核说明。"
+      },
+      "required_delivery": "先直接交付该页自己的图表或可操作结果。；附必要基准/范围说明；打印资料须真实可用。；关联查询或学习入口，但不复制另一个中心页。",
+      "release_conditions": "本页标题所承诺的那一种结果真实可用，并有审核说明。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "原词fingering可能要求更具体的技巧；内容范围及示意须专业复核",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "metadata": {
+        "title": "Piano Finger Numbers: Left & Right Hand Chart",
+        "description": "Learn piano finger numbers 1 to 5 for both hands. Read RH and LH examples and tell fingering apart from scale degrees and octave labels.",
+        "canonical_path": "/keyboard-notes/finger-numbers",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    "/chords/by-key": {
+      "url": "/chords/by-key",
+      "title": "Piano Chords by Key: Major & D Minor Triad Charts",
+      "description": "Compare triads in C, G, D, A, E and F major plus D minor. Read Roman numerals, note spellings and separate natural-minor from raised-leading-tone options.",
+      "user_task": "Choose a supported key and get its complete chord set.",
+      "questions": [
+        "Are chords in C major all rooted on C?",
+        "Why is there a diminished row without a detail button?",
+        "Can a minor key use a major V?"
+      ],
+      "blocks": [
+        {
+          "heading": "Read the table by scale degree",
+          "body": "Each row stacks alternate notes from the selected scale. In major, the resulting qualities are major, minor, minor, major, major, minor and diminished. Uppercase Roman numerals indicate major triads; lowercase indicate minor, with ° for diminished.",
+          "source_ids": [
+            "F-OMT",
+            "F-MAJOR"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        },
+        {
+          "heading": "Keep minor forms explicit",
+          "body": "The D minor table starts with natural minor: D E F G A B-flat C. It therefore includes A minor. The separate raised-leading-tone options use C-sharp, producing A major and C-sharp diminished; do not silently replace the natural-minor row.",
+          "source_ids": [
+            "F-MINOR",
+            "F-OMT"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        },
+        {
+          "heading": "Try a key-specific result",
+          "body": "In E major, I–IV–V is E–A–B. Read the complete notes in each row before playing: E–G-sharp–B, A–C-sharp–E, then B–D-sharp–F-sharp. In F major, remember B-flat in the scale and its derived chords.",
+          "source_ids": [
+            "F-MAJOR"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        }
+      ],
+      "data": {
+        "keys": [
+          {
+            "key": "C major",
+            "scale": [
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "A",
+              "B"
+            ],
+            "basis": "major",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "I",
+                "symbol": "C",
+                "quality": "major",
+                "notes": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii",
+                "symbol": "Dm",
+                "quality": "minor",
+                "notes": [
+                  "D",
+                  "F",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "iii",
+                "symbol": "Em",
+                "quality": "minor",
+                "notes": [
+                  "E",
+                  "G",
+                  "B"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "IV",
+                "symbol": "F",
+                "quality": "major",
+                "notes": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "V",
+                "symbol": "G",
+                "quality": "major",
+                "notes": [
+                  "G",
+                  "B",
+                  "D"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "vi",
+                "symbol": "Am",
+                "quality": "minor",
+                "notes": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "vii°",
+                "symbol": "Bdim",
+                "quality": "diminished",
+                "notes": [
+                  "B",
+                  "D",
+                  "F"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "B4",
+                  "D5",
+                  "F5"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MAJOR",
+              "AM-THEORY"
+            ]
+          },
+          {
+            "key": "G major",
+            "scale": [
+              "G",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F#"
+            ],
+            "basis": "major",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "I",
+                "symbol": "G",
+                "quality": "major",
+                "notes": [
+                  "G",
+                  "B",
+                  "D"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii",
+                "symbol": "Am",
+                "quality": "minor",
+                "notes": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "iii",
+                "symbol": "Bm",
+                "quality": "minor",
+                "notes": [
+                  "B",
+                  "D",
+                  "F#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "IV",
+                "symbol": "C",
+                "quality": "major",
+                "notes": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "V",
+                "symbol": "D",
+                "quality": "major",
+                "notes": [
+                  "D",
+                  "F#",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "vi",
+                "symbol": "Em",
+                "quality": "minor",
+                "notes": [
+                  "E",
+                  "G",
+                  "B"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "vii°",
+                "symbol": "F#dim",
+                "quality": "diminished",
+                "notes": [
+                  "F#",
+                  "A",
+                  "C"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "F#4",
+                  "A4",
+                  "C5"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MAJOR",
+              "AM-THEORY"
+            ]
+          },
+          {
+            "key": "D major",
+            "scale": [
+              "D",
+              "E",
+              "F#",
+              "G",
+              "A",
+              "B",
+              "C#"
+            ],
+            "basis": "major",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "I",
+                "symbol": "D",
+                "quality": "major",
+                "notes": [
+                  "D",
+                  "F#",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii",
+                "symbol": "Em",
+                "quality": "minor",
+                "notes": [
+                  "E",
+                  "G",
+                  "B"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "iii",
+                "symbol": "F#m",
+                "quality": "minor",
+                "notes": [
+                  "F#",
+                  "A",
+                  "C#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "F#4",
+                  "A4",
+                  "C#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "IV",
+                "symbol": "G",
+                "quality": "major",
+                "notes": [
+                  "G",
+                  "B",
+                  "D"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "V",
+                "symbol": "A",
+                "quality": "major",
+                "notes": [
+                  "A",
+                  "C#",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "vi",
+                "symbol": "Bm",
+                "quality": "minor",
+                "notes": [
+                  "B",
+                  "D",
+                  "F#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "vii°",
+                "symbol": "C#dim",
+                "quality": "diminished",
+                "notes": [
+                  "C#",
+                  "E",
+                  "G"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "C#4",
+                  "E4",
+                  "G4"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MAJOR",
+              "AM-THEORY"
+            ]
+          },
+          {
+            "key": "E major",
+            "scale": [
+              "E",
+              "F#",
+              "G#",
+              "A",
+              "B",
+              "C#",
+              "D#"
+            ],
+            "basis": "major",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "I",
+                "symbol": "E",
+                "quality": "major",
+                "notes": [
+                  "E",
+                  "G#",
+                  "B"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G#4",
+                  "B4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii",
+                "symbol": "F#m",
+                "quality": "minor",
+                "notes": [
+                  "F#",
+                  "A",
+                  "C#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "F#4",
+                  "A4",
+                  "C#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "iii",
+                "symbol": "G#m",
+                "quality": "minor",
+                "notes": [
+                  "G#",
+                  "B",
+                  "D#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "G#4",
+                  "B4",
+                  "D#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "IV",
+                "symbol": "A",
+                "quality": "major",
+                "notes": [
+                  "A",
+                  "C#",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "V",
+                "symbol": "B",
+                "quality": "major",
+                "notes": [
+                  "B",
+                  "D#",
+                  "F#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "B4",
+                  "D#5",
+                  "F#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "vi",
+                "symbol": "C#m",
+                "quality": "minor",
+                "notes": [
+                  "C#",
+                  "E",
+                  "G#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "C#4",
+                  "E4",
+                  "G#4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "vii°",
+                "symbol": "D#dim",
+                "quality": "diminished",
+                "notes": [
+                  "D#",
+                  "F#",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "D#4",
+                  "F#4",
+                  "A4"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MAJOR",
+              "AM-THEORY"
+            ]
+          },
+          {
+            "key": "A major",
+            "scale": [
+              "A",
+              "B",
+              "C#",
+              "D",
+              "E",
+              "F#",
+              "G#"
+            ],
+            "basis": "major",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "I",
+                "symbol": "A",
+                "quality": "major",
+                "notes": [
+                  "A",
+                  "C#",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii",
+                "symbol": "Bm",
+                "quality": "minor",
+                "notes": [
+                  "B",
+                  "D",
+                  "F#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "iii",
+                "symbol": "C#m",
+                "quality": "minor",
+                "notes": [
+                  "C#",
+                  "E",
+                  "G#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "C#4",
+                  "E4",
+                  "G#4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "IV",
+                "symbol": "D",
+                "quality": "major",
+                "notes": [
+                  "D",
+                  "F#",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "V",
+                "symbol": "E",
+                "quality": "major",
+                "notes": [
+                  "E",
+                  "G#",
+                  "B"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G#4",
+                  "B4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "vi",
+                "symbol": "F#m",
+                "quality": "minor",
+                "notes": [
+                  "F#",
+                  "A",
+                  "C#"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "F#4",
+                  "A4",
+                  "C#5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "vii°",
+                "symbol": "G#dim",
+                "quality": "diminished",
+                "notes": [
+                  "G#",
+                  "B",
+                  "D"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MAJOR",
+              "AM-THEORY"
+            ]
+          },
+          {
+            "key": "F major",
+            "scale": [
+              "F",
+              "G",
+              "A",
+              "Bb",
+              "C",
+              "D",
+              "E"
+            ],
+            "basis": "major",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "I",
+                "symbol": "F",
+                "quality": "major",
+                "notes": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii",
+                "symbol": "Gm",
+                "quality": "minor",
+                "notes": [
+                  "G",
+                  "Bb",
+                  "D"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "G4",
+                  "Bb4",
+                  "D5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "iii",
+                "symbol": "Am",
+                "quality": "minor",
+                "notes": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "IV",
+                "symbol": "Bb",
+                "quality": "major",
+                "notes": [
+                  "Bb",
+                  "D",
+                  "F"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "Bb4",
+                  "D5",
+                  "F5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "V",
+                "symbol": "C",
+                "quality": "major",
+                "notes": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "vi",
+                "symbol": "Dm",
+                "quality": "minor",
+                "notes": [
+                  "D",
+                  "F",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "vii°",
+                "symbol": "Edim",
+                "quality": "diminished",
+                "notes": [
+                  "E",
+                  "G",
+                  "Bb"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MAJOR",
+              "AM-THEORY"
+            ]
+          },
+          {
+            "key": "D minor",
+            "scale": [
+              "D",
+              "E",
+              "F",
+              "G",
+              "A",
+              "Bb",
+              "C"
+            ],
+            "basis": "natural minor",
+            "chords": [
+              {
+                "degree": 1,
+                "roman": "i",
+                "symbol": "Dm",
+                "quality": "minor",
+                "notes": [
+                  "D",
+                  "F",
+                  "A"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 2,
+                "roman": "ii°",
+                "symbol": "Edim",
+                "quality": "diminished",
+                "notes": [
+                  "E",
+                  "G",
+                  "Bb"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  6
+                ],
+                "reference_voicing": [
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 3,
+                "roman": "III",
+                "symbol": "F",
+                "quality": "major",
+                "notes": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 4,
+                "roman": "iv",
+                "symbol": "Gm",
+                "quality": "minor",
+                "notes": [
+                  "G",
+                  "Bb",
+                  "D"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "G4",
+                  "Bb4",
+                  "D5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 5,
+                "roman": "v",
+                "symbol": "Am",
+                "quality": "minor",
+                "notes": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "semitones_from_root": [
+                  0,
+                  3,
+                  7
+                ],
+                "reference_voicing": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 6,
+                "roman": "VI",
+                "symbol": "Bb",
+                "quality": "major",
+                "notes": [
+                  "Bb",
+                  "D",
+                  "F"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "Bb4",
+                  "D5",
+                  "F5"
+                ],
+                "fingering": null
+              },
+              {
+                "degree": 7,
+                "roman": "VII",
+                "symbol": "C",
+                "quality": "major",
+                "notes": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "semitones_from_root": [
+                  0,
+                  4,
+                  7
+                ],
+                "reference_voicing": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "fingering": null
+              }
+            ],
+            "evidence_status": "[推断] explicit stacking of scale degrees 1,3,5; formula crosscheck passed",
+            "source_ids": [
+              "F-OMT",
+              "F-MINOR",
+              "AM-THEORY"
+            ],
+            "raised_leading_tone_options": [
+              {
+                "roman": "V",
+                "symbol": "A",
+                "notes": [
+                  "A",
+                  "C#",
+                  "E"
+                ],
+                "change": "C becomes C-sharp"
+              },
+              {
+                "roman": "vii°",
+                "symbol": "C#dim",
+                "notes": [
+                  "C#",
+                  "E",
+                  "G"
+                ],
+                "change": "root uses raised seventh C-sharp"
+              }
+            ]
+          }
+        ],
+        "supported_keys": [
+          "C major",
+          "G major",
+          "D major",
+          "E major",
+          "A major",
+          "F major",
+          "D minor"
+        ],
+        "default_key": "C major",
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "F-OMT",
+        "F-MAJOR",
+        "F-MINOR",
+        "AM-THEORY",
+        "PG-KEY-MAJOR",
+        "PG-KEY-MINOR",
+        "PG-OMT",
+        "PG-TRIADS"
+      ],
+      "issues": [
+        {
+          "id": "F-KEY-UI",
+          "field": "selector and professional review",
+          "reason": "All seven key datasets exist; interactive rendering and specialist review remain.",
+          "needed_to_resolve": "Verify every selector result and retain the explicit minor-form distinction."
+        },
+        {
+          "id": "NEXT-TEMPLATE-chords-by-key",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P152",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "有内容的调性选择器与各级和弦表；支持已有G/D/C/E/A/F及D minor任务 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P156",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查G大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P157",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查D大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P159",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查C大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P160",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查E大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P161",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查询A大调和弦集合；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P164",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查F大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P165",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查D小调各级和弦；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        }
+      ],
+      "baseline_page_id": "U085",
+      "batch": "F",
+      "main_keyword": "chords of key",
+      "keywords": [
+        "chords of key",
+        "major key chords",
+        "chords in a key",
+        "key chord chart",
+        "key chords",
+        "chords in key",
+        "key and chord chart",
+        "chords in g major scale piano",
+        "g major scale piano chords",
+        "piano chords in key of g",
+        "key of g piano chords",
+        "key of g chords piano",
+        "chords in the key of g piano",
+        "d major scale piano chords",
+        "d major scale chords piano",
+        "c major scale chords piano",
+        "c major scale piano chords",
+        "chords in the key of c piano",
+        "piano chords in the key of c",
+        "piano chords in e",
+        "e major scale chords piano",
+        "chords in the key of a",
+        "chords of a major key",
+        "a major key chords",
+        "chords in the key of a major",
+        "a major scale chords",
+        "chords for the key of a",
+        "chords key a",
+        "key of a chords",
+        "piano chords in a",
+        "chords in key of a",
+        "chords in the a major scale",
+        "chords for key of a",
+        "chords in key a",
+        "chords for a major",
+        "key of f chords piano",
+        "f major scale chords piano",
+        "key of f piano chords",
+        "piano chords in the key of f",
+        "d minor scale piano chords"
+      ],
+      "source_groups": [
+        {
+          "id": "P152",
+          "representative": "chords of key",
+          "section": null,
+          "synonyms": [
+            "major key chords",
+            "chords in a key",
+            "key chord chart",
+            "key chords",
+            "chords in key",
+            "key and chord chart"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A310:G310",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有内容的调性选择器与各级和弦表；支持已有G/D/C/E/A/F及D minor任务",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P156",
+          "representative": "chords in g major scale piano",
+          "section": "g-major",
+          "synonyms": [
+            "g major scale piano chords",
+            "piano chords in key of g",
+            "key of g piano chords",
+            "key of g chords piano",
+            "chords in the key of g piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A49:G49",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查G大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P157",
+          "representative": "d major scale piano chords",
+          "section": "d-major",
+          "synonyms": [
+            "d major scale chords piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A74:G74",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查D大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P159",
+          "representative": "c major scale chords piano",
+          "section": "c-major",
+          "synonyms": [
+            "c major scale piano chords",
+            "chords in the key of c piano",
+            "piano chords in the key of c"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A102:G102",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查C大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P160",
+          "representative": "piano chords in e",
+          "section": "e-major",
+          "synonyms": [
+            "e major scale chords piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A369:G369",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查E大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P161",
+          "representative": "piano chords in a",
+          "section": "a-major",
+          "synonyms": [],
+          "other_queries": [
+            "chords in the key of a",
+            "chords of a major key",
+            "a major key chords",
+            "chords in the key of a major",
+            "a major scale chords",
+            "chords for the key of a",
+            "chords key a",
+            "key of a chords",
+            "chords in key of a",
+            "chords in the a major scale",
+            "chords for key of a",
+            "chords in key a",
+            "chords for a major"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A388:G388",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查询A大调和弦集合；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P164",
+          "representative": "key of f chords piano",
+          "section": "f-major",
+          "synonyms": [
+            "f major scale chords piano",
+            "key of f piano chords",
+            "piano chords in the key of f"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A712:G712",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查F大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P165",
+          "representative": "d minor scale piano chords",
+          "section": "d-minor",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A254:G254",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查D小调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T08",
+      "baseline_priority": "后做",
+      "baseline_purpose": "按调性查看各级和弦集合",
+      "final_scope": {
+        "id": "T08",
+        "name": "按调性查和弦",
+        "confirmation_status": "本版统一规划建议，尚非用户逐项确认",
+        "user_task": "查看某一调内的各级和弦，而不是单个和弦。",
+        "modules": [
+          "在已有任务支持的调性间选择，显示各级和弦表及记号说明。",
+          "分别给出当前调的实际结果；链接到已上线的具体和弦。",
+          "保留 C/G/D/E/A/F 与 D minor 等原组的各自入口或可见选项。"
+        ],
+        "boundary": "不把同一调的所有和弦与单个根音和弦混为一页；不为所有调性自动扩 URL。",
+        "acceptance": "原映射各调有真实完整结果；不能只有一个 C 调示例就算覆盖全部。"
+      },
+      "required_delivery": "在已有任务支持的调性间选择，显示各级和弦表及记号说明。；分别给出当前调的实际结果；链接到已上线的具体和弦。；保留 C/G/D/E/A/F 与 D minor 等原组的各自入口或可见选项。",
+      "release_conditions": "原映射各调有真实完整结果；不能只有一个 C 调示例就算覆盖全部。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "大小调类别及拼写正确；小调需明确采用的音阶形式",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_prepared_distinct_template_required",
+      "metadata": {
+        "title": "Piano Chords by Key: Major & D Minor Triad Charts",
+        "description": "Compare triads in C, G, D, A, E and F major plus D minor. Read Roman numerals, note spellings and separate natural-minor from raised-leading-tone options.",
+        "canonical_path": "/chords/by-key",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    "/chord-progressions": {
+      "url": "/chord-progressions",
+      "title": "Piano Chord Progressions: 3 Patterns in C, E & A",
+      "description": "Compare I–V–vi–IV, I–vi–IV–V and I–IV–V–I in C, E and A major. Read exact four-bar examples and understand what the Roman numerals mean.",
+      "user_task": "Choose a progression, inspect every chord and try an original realization.",
+      "questions": [
+        "How many progressions are included?",
+        "Does a major-key pattern always sound happy?",
+        "Do the Roman numerals tell me which fingers to use?"
+      ],
+      "blocks": [
+        {
+          "heading": "Hear the sequence",
+          "body": "A chord progression is an ordered sequence of harmonies. I–V–vi–IV becomes C–G–Am–F in C major, E–B–C-sharp minor–A in E major, and A–E–F-sharp minor–D in A major. The original examples below give a concrete register and four counts per chord.",
+          "source_ids": [
+            "F-POP",
+            "F-MAJOR"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        },
+        {
+          "heading": "Compare three patterns",
+          "body": "The collection includes I–V–vi–IV, I–vi–IV–V, and a four-bar I–IV–V–I practice example. Try the first two as loops, then compare the last pattern’s final return to I. The printable includes all three keys and every chord’s notes.",
+          "source_ids": [
+            "F-POP",
+            "F-FUNCTION"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        },
+        {
+          "heading": "Explore an effect",
+          "body": "For a “beautiful” starting point, try the I–vi–IV–V example slowly, sounding chord tones in sequence. For a “happy” starting point, try the I–IV–V–I example with light, even pulses. These are subjective playing suggestions: neither label is a property guaranteed by the chord order.",
+          "source_ids": [],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        }
+      ],
+      "data": {
+        "progressions": [
+          {
+            "id": "pop-loop-c-major",
+            "key": "C major",
+            "pattern": [
+              "I",
+              "V",
+              "vi",
+              "IV"
+            ],
+            "title": "Common four-chord loop",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "C",
+                "notes": [
+                  "C3",
+                  "E3",
+                  "G3"
+                ],
+                "midi": [
+                  48,
+                  52,
+                  55
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "V",
+                "symbol": "G",
+                "notes": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "midi": [
+                  55,
+                  59,
+                  62
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "vi",
+                "symbol": "Am",
+                "notes": [
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  60,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "IV",
+                "symbol": "F",
+                "notes": [
+                  "F3",
+                  "A3",
+                  "C4"
+                ],
+                "midi": [
+                  53,
+                  57,
+                  60
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "Compare a repeating loop with a more decisive return to I.",
+            "source_ids": [
+              "F-POP",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "fifties-c-major",
+            "key": "C major",
+            "pattern": [
+              "I",
+              "vi",
+              "IV",
+              "V"
+            ],
+            "title": "I–vi–IV–V",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "C",
+                "notes": [
+                  "C3",
+                  "E3",
+                  "G3"
+                ],
+                "midi": [
+                  48,
+                  52,
+                  55
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "vi",
+                "symbol": "Am",
+                "notes": [
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  60,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "IV",
+                "symbol": "F",
+                "notes": [
+                  "F3",
+                  "A3",
+                  "C4"
+                ],
+                "midi": [
+                  53,
+                  57,
+                  60
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "V",
+                "symbol": "G",
+                "notes": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "midi": [
+                  55,
+                  59,
+                  62
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "Try one chord per bar, then return to I after the final V.",
+            "source_ids": [
+              "F-FUNCTION",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [
+              "beautiful"
+            ],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "return-home-c-major",
+            "key": "C major",
+            "pattern": [
+              "I",
+              "IV",
+              "V",
+              "I"
+            ],
+            "title": "Clear return to the tonic",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "C",
+                "notes": [
+                  "C3",
+                  "E3",
+                  "G3"
+                ],
+                "midi": [
+                  48,
+                  52,
+                  55
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "IV",
+                "symbol": "F",
+                "notes": [
+                  "F3",
+                  "A3",
+                  "C4"
+                ],
+                "midi": [
+                  53,
+                  57,
+                  60
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "V",
+                "symbol": "G",
+                "notes": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "midi": [
+                  55,
+                  59,
+                  62
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "I",
+                "symbol": "C",
+                "notes": [
+                  "C3",
+                  "E3",
+                  "G3"
+                ],
+                "midi": [
+                  48,
+                  52,
+                  55
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "An original four-bar practice realization, with I in the final bar.",
+            "source_ids": [
+              "F-FUNCTION",
+              "F-MAJOR",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [
+              "happy"
+            ],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "pop-loop-e-major",
+            "key": "E major",
+            "pattern": [
+              "I",
+              "V",
+              "vi",
+              "IV"
+            ],
+            "title": "Common four-chord loop",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "V",
+                "symbol": "B",
+                "notes": [
+                  "B3",
+                  "D#4",
+                  "F#4"
+                ],
+                "midi": [
+                  59,
+                  63,
+                  66
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "vi",
+                "symbol": "C#m",
+                "notes": [
+                  "C#3",
+                  "E3",
+                  "G#3"
+                ],
+                "midi": [
+                  49,
+                  52,
+                  56
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "IV",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "Compare a repeating loop with a more decisive return to I.",
+            "source_ids": [
+              "F-POP",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "fifties-e-major",
+            "key": "E major",
+            "pattern": [
+              "I",
+              "vi",
+              "IV",
+              "V"
+            ],
+            "title": "I–vi–IV–V",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "vi",
+                "symbol": "C#m",
+                "notes": [
+                  "C#3",
+                  "E3",
+                  "G#3"
+                ],
+                "midi": [
+                  49,
+                  52,
+                  56
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "IV",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "V",
+                "symbol": "B",
+                "notes": [
+                  "B3",
+                  "D#4",
+                  "F#4"
+                ],
+                "midi": [
+                  59,
+                  63,
+                  66
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "Try one chord per bar, then return to I after the final V.",
+            "source_ids": [
+              "F-FUNCTION",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [
+              "beautiful"
+            ],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "return-home-e-major",
+            "key": "E major",
+            "pattern": [
+              "I",
+              "IV",
+              "V",
+              "I"
+            ],
+            "title": "Clear return to the tonic",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "IV",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "V",
+                "symbol": "B",
+                "notes": [
+                  "B3",
+                  "D#4",
+                  "F#4"
+                ],
+                "midi": [
+                  59,
+                  63,
+                  66
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "I",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "An original four-bar practice realization, with I in the final bar.",
+            "source_ids": [
+              "F-FUNCTION",
+              "F-MAJOR",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [
+              "happy"
+            ],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "pop-loop-a-major",
+            "key": "A major",
+            "pattern": [
+              "I",
+              "V",
+              "vi",
+              "IV"
+            ],
+            "title": "Common four-chord loop",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "V",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "vi",
+                "symbol": "F#m",
+                "notes": [
+                  "F#3",
+                  "A3",
+                  "C#4"
+                ],
+                "midi": [
+                  54,
+                  57,
+                  61
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "IV",
+                "symbol": "D",
+                "notes": [
+                  "D3",
+                  "F#3",
+                  "A3"
+                ],
+                "midi": [
+                  50,
+                  54,
+                  57
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "Compare a repeating loop with a more decisive return to I.",
+            "source_ids": [
+              "F-POP",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "fifties-a-major",
+            "key": "A major",
+            "pattern": [
+              "I",
+              "vi",
+              "IV",
+              "V"
+            ],
+            "title": "I–vi–IV–V",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "vi",
+                "symbol": "F#m",
+                "notes": [
+                  "F#3",
+                  "A3",
+                  "C#4"
+                ],
+                "midi": [
+                  54,
+                  57,
+                  61
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "IV",
+                "symbol": "D",
+                "notes": [
+                  "D3",
+                  "F#3",
+                  "A3"
+                ],
+                "midi": [
+                  50,
+                  54,
+                  57
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "V",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "Try one chord per bar, then return to I after the final V.",
+            "source_ids": [
+              "F-FUNCTION",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [
+              "beautiful"
+            ],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          },
+          {
+            "id": "return-home-a-major",
+            "key": "A major",
+            "pattern": [
+              "I",
+              "IV",
+              "V",
+              "I"
+            ],
+            "title": "Clear return to the tonic",
+            "bars": [
+              {
+                "bar": 1,
+                "roman": "I",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 2,
+                "roman": "IV",
+                "symbol": "D",
+                "notes": [
+                  "D3",
+                  "F#3",
+                  "A3"
+                ],
+                "midi": [
+                  50,
+                  54,
+                  57
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 3,
+                "roman": "V",
+                "symbol": "E",
+                "notes": [
+                  "E3",
+                  "G#3",
+                  "B3"
+                ],
+                "midi": [
+                  52,
+                  56,
+                  59
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              },
+              {
+                "bar": 4,
+                "roman": "I",
+                "symbol": "A",
+                "notes": [
+                  "A3",
+                  "C#4",
+                  "E4"
+                ],
+                "midi": [
+                  57,
+                  61,
+                  64
+                ],
+                "duration_quarters": 4,
+                "fingering": null
+              }
+            ],
+            "meter": "4/4",
+            "tempo_bpm": null,
+            "practice_goal": "An original four-bar practice realization, with I in the final bar.",
+            "source_ids": [
+              "F-FUNCTION",
+              "F-MAJOR",
+              "F-OMT"
+            ],
+            "evidence_status": "[推断] original voicing/register/rhythm; sourced harmonic pattern",
+            "mood_tags": [
+              "happy"
+            ],
+            "mood_basis": "subjective editorial starting point; tempo, voicing, articulation and listener alter the effect",
+            "rights": {
+              "provenance": "original rule-derived teaching realization retained from the user intake",
+              "third_party_notation_or_recording_reused": false,
+              "license_declaration": null,
+              "site_use_note": "No claim of publisher authorization or a named song arrangement."
+            }
+          }
+        ],
+        "default_key": "C major",
+        "effect_tags": [
+          "beautiful",
+          "happy"
+        ],
+        "tag_policy": "subjective editorial suggestion; never a factual emotional guarantee",
+        "assets": [
+          {
+            "path": "assets/chord-progressions-c-e-a.pdf",
+            "format": "PDF",
+            "pages": 3,
+            "original_intake_visual_qa_claim": "passed; every final PDF page rendered and inspected",
+            "delivery_status": "not_supplied_in_intake_and_not_generated_in_this_pack",
+            "visual_qa": "not_verified_in_this_run",
+            "show_download_action": false
+          }
+        ],
+        "related": [
+          "/guide/piano-chords",
+          "/chords/by-key"
+        ],
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "F-POP",
+        "F-FUNCTION",
+        "F-MAJOR",
+        "F-OMT",
+        "PG-KEY-MAJOR",
+        "PG-PROG-1",
+        "PG-PROG-2",
+        "PG-OMT"
+      ],
+      "issues": [
+        {
+          "id": "F-PROGRESSION-REVIEW",
+          "field": "voicing and interface",
+          "reason": "Original examples and printable data are prepared; performance review and key/effect selector integration remain.",
+          "needed_to_resolve": "Check all nine realizations, labels and printed notes before release."
+        },
+        {
+          "id": "NEXT-TEMPLATE-chord-progressions",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P172",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "常见和弦走向集合；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P173",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "常见走向列表；C/E/A调转写选择；优美/愉快效果标签；含义与使用说明；打印 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P174",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "C大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P175",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "E调常用和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P176",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "A大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P177",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "查询优美钢琴和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P178",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "愉快情绪和弦走向；必须在该页提供实际结果，不只增加一个关键词。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        },
+        {
+          "source_group_id": "P237",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "说明走向是什么，附可试弹例子。 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        }
+      ],
+      "baseline_page_id": "U087",
+      "batch": "F",
+      "main_keyword": "piano chord progressions",
+      "keywords": [
+        "common chord progressions",
+        "popular chord progressions",
+        "most common chord progressions",
+        "famous chord progressions",
+        "common chord patterns",
+        "common chord sequences",
+        "most common chord progression",
+        "popular chord progression",
+        "piano chord progressions",
+        "piano chords and progressions",
+        "chord progressions piano",
+        "chord sequences",
+        "piano chord sequences",
+        "piano progressions",
+        "chord patterns piano",
+        "piano progression chords",
+        "chord progression piano",
+        "piano chord progression",
+        "piano chord progressions pdf",
+        "c major chord progressions",
+        "common chord progressions key of e",
+        "a major chord progression",
+        "cool chord progressions",
+        "beautiful chord progressions",
+        "cool chord sequences",
+        "beautiful chord progressions piano",
+        "pretty piano chord progressions",
+        "happy chord progressions",
+        "what are chord progressions",
+        "how to make chord progressions"
+      ],
+      "source_groups": [
+        {
+          "id": "P172",
+          "representative": "common chord progressions",
+          "section": "common",
+          "synonyms": [
+            "popular chord progressions",
+            "most common chord progressions",
+            "famous chord progressions",
+            "common chord patterns",
+            "common chord sequences",
+            "most common chord progression",
+            "popular chord progression"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A307:G307",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "常见和弦走向集合；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P173",
+          "representative": "piano chord progressions",
+          "section": null,
+          "synonyms": [
+            "piano chords and progressions",
+            "chord progressions piano",
+            "piano chord sequences",
+            "piano progressions",
+            "chord patterns piano",
+            "piano progression chords",
+            "chord progression piano",
+            "piano chord progression"
+          ],
+          "other_queries": [
+            "chord sequences",
+            "piano chord progressions pdf"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A317:G317",
+          "delivery_method": "独立页首要任务",
+          "required_output": "常见走向列表；C/E/A调转写选择；优美/愉快效果标签；含义与使用说明；打印",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P174",
+          "representative": "c major chord progressions",
+          "section": "c-major",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A377:G377",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "C大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P175",
+          "representative": "common chord progressions key of e",
+          "section": "e-major",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A380:G380",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "E调常用和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P176",
+          "representative": "a major chord progression",
+          "section": "a-major",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A416:G416",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "A大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P177",
+          "representative": "beautiful chord progressions piano",
+          "section": "beautiful",
+          "synonyms": [
+            "pretty piano chord progressions"
+          ],
+          "other_queries": [
+            "cool chord progressions",
+            "beautiful chord progressions",
+            "cool chord sequences"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A487:G487",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "查询优美钢琴和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P178",
+          "representative": "happy chord progressions",
+          "section": "happy",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A495:G495",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "愉快情绪和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P237",
+          "representative": "what are chord progressions",
+          "section": "how-it-works",
+          "synonyms": [
+            "how to make chord progressions"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A444:G444",
+          "delivery_method": "含义说明",
+          "required_output": "说明走向是什么，附可试弹例子。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T10",
+      "baseline_priority": "后做",
+      "baseline_purpose": "查询常见走向，按调性和效果找到可试弹的例子",
+      "final_scope": {
+        "id": "T10",
+        "name": "和弦走向",
+        "confirmation_status": "本版统一规划建议；后做",
+        "user_task": "查询常见走向、含义、不同调性示例并试弹。",
+        "modules": [
+          "实际走向列表、用途说明和原创/可用示例。",
+          "C/E/A 等已有调性条件显示对应结果；保留优美、愉快等效果说明。",
+          "提供可用参考与打印；链接单个和弦与和弦学习指南。"
+        ],
+        "boundary": "第一版是查询参考，不自动扩大成拖拽作曲器、保存账号或收费 MIDI 商店。",
+        "acceptance": "各已映射场景有实际示例；类型标签不是空白筛选。"
+      },
+      "required_delivery": "实际走向列表、用途说明和原创/可用示例。；C/E/A 等已有调性条件显示对应结果；保留优美、愉快等效果说明。；提供可用参考与打印；链接单个和弦与和弦学习指南。",
+      "release_conditions": "各已映射场景有实际示例；类型标签不是空白筛选。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "走向数据与示例审核；情绪仅作选择标签，不宣称和弦决定情绪；不预设AI生成器",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_prepared_distinct_template_required",
+      "metadata": {
+        "title": "Piano Chord Progressions: 3 Patterns in C, E & A",
+        "description": "Compare I–V–vi–IV, I–vi–IV–V and I–IV–V–I in C, E and A major. Read exact four-bar examples and understand what the Roman numerals mean.",
+        "canonical_path": "/chord-progressions",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    },
+    "/chords/finder": {
+      "url": "/chords/finder",
+      "title": "Piano Chord Finder: Identify Chords from Notes",
+      "description": "Enter piano notes to inspect possible chord names. Keep bass notes and enharmonic spelling visible, and see when the supported vocabulary has no match.",
+      "user_task": "Identify candidate chords from notes rather than looking up a known name.",
+      "questions": [
+        "Why are there multiple results?",
+        "Does an empty bass field mean the bass is unknown?",
+        "Does no match mean the notes are wrong?"
+      ],
+      "blocks": [
+        {
+          "heading": "Enter what you actually play",
+          "body": "Select the notes and, if known, the lowest sounding note. Repeated notes in different octaves do not add new pitch classes, but the bass and spacing still matter. E–G–C with E lowest can be C/E: a C major chord in first inversion.",
+          "source_ids": [
+            "F-OMT"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        },
+        {
+          "heading": "Compare candidates",
+          "body": "C, E, G and A can form C6 or Am7. The same keys alone do not establish one harmonic meaning. Read the bass and surrounding chords before choosing a label. The prepared examples display both interpretations where appropriate.",
+          "source_ids": [
+            "F-CHORDS"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        },
+        {
+          "heading": "An incomplete answer can be useful",
+          "body": "C and G contain no third, so this input does not decide between a C major and C minor triad. If a collection falls outside the supported vocabulary, keep the note list visible and show that no supported match has been confirmed.",
+          "source_ids": [
+            "F-OMT"
+          ],
+          "evidence_status": "[已核实] source formulas; [推断] original voicings/editorial examples"
+        }
+      ],
+      "data": {
+        "input_modes": [
+          "pitch names with octaves",
+          "optional bass note"
+        ],
+        "examples": [
+          {
+            "input": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "bass": "C4",
+            "candidates": [
+              {
+                "name": "C major",
+                "symbol": "C",
+                "root": "C"
+              }
+            ],
+            "reason": "Major triad in root position.",
+            "input_midi": [
+              60,
+              64,
+              67
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "E3",
+              "G3",
+              "C4"
+            ],
+            "bass": "E3",
+            "candidates": [
+              {
+                "name": "C major, first inversion",
+                "symbol": "C/E",
+                "root": "C"
+              }
+            ],
+            "reason": "E is the bass; the root remains C.",
+            "input_midi": [
+              52,
+              55,
+              60
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "C4",
+              "Eb4",
+              "G4"
+            ],
+            "bass": "C4",
+            "candidates": [
+              {
+                "name": "C minor",
+                "symbol": "Cm",
+                "root": "C"
+              }
+            ],
+            "reason": "The minor third is E-flat.",
+            "input_midi": [
+              60,
+              63,
+              67
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "C4",
+              "E4",
+              "G4",
+              "A4"
+            ],
+            "bass": "C4",
+            "candidates": [
+              {
+                "name": "C major sixth",
+                "symbol": "C6",
+                "root": "C"
+              },
+              {
+                "name": "A minor seventh over C",
+                "symbol": "Am7/C",
+                "root": "A"
+              }
+            ],
+            "reason": "Exact pitches imply C4 as bass. Pitch classes support C6 or Am7, but the alternate bass-aware symbol is Am7/C.",
+            "input_midi": [
+              60,
+              64,
+              67,
+              69
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "A2",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "bass": "A2",
+            "candidates": [
+              {
+                "name": "A minor seventh",
+                "symbol": "Am7",
+                "root": "A"
+              },
+              {
+                "name": "C major sixth over A",
+                "symbol": "C6/A",
+                "root": "C"
+              }
+            ],
+            "reason": "A bass favours Am7 in many contexts, but context is not supplied.",
+            "input_midi": [
+              45,
+              60,
+              64,
+              67
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "C4",
+              "G4"
+            ],
+            "bass": "C4",
+            "candidates": [],
+            "reason": "An open fifth has no third; major/minor triad quality cannot be determined.",
+            "input_midi": [
+              60,
+              67
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "C4",
+              "C5",
+              "E5",
+              "G5"
+            ],
+            "bass": "C4",
+            "candidates": [
+              {
+                "name": "C major",
+                "symbol": "C",
+                "root": "C"
+              }
+            ],
+            "reason": "Duplicated C changes spacing, not the distinct chord tones.",
+            "input_midi": [
+              60,
+              72,
+              76,
+              79
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          },
+          {
+            "input": [
+              "C4",
+              "C#4",
+              "D4"
+            ],
+            "bass": "C4",
+            "candidates": [],
+            "reason": "No match in the prepared basic-chord vocabulary; do not invent a unique label.",
+            "input_midi": [
+              60,
+              61,
+              62
+            ],
+            "source_ids": [
+              "F-OMT",
+              "F-CHORDS"
+            ],
+            "evidence_status": "[推断] example evaluated against verified formulas"
+          }
+        ],
+        "normalization": {
+          "deduplicate_pitch_classes_for_matching": true,
+          "retain_original_spelling_and_register": true,
+          "bass_must_be_selected_note": true,
+          "derive_bass_from_lowest_midi_when_octaves_present": true,
+          "bass_override_must_not_contradict_lowest_entered_pitch": true
+        },
+        "result_labels": {
+          "multiple": "Possible chord names",
+          "none": "No supported match confirmed",
+          "incomplete": "More context needed"
+        },
+        "runtime_engine": null,
+        "professional_review": "pending"
+      },
+      "source_ids": [
+        "F-OMT",
+        "F-CHORDS",
+        "PG-TRIADS",
+        "PG-OMT",
+        "PG-CHORD-VOCAB",
+        "PG-ASPN"
+      ],
+      "issues": [
+        {
+          "id": "F-FINDER-ENGINE",
+          "field": "classification scope",
+          "reason": "Verified examples are prepared; a general recognition engine and exhaustive vocabulary are not implemented or validated.",
+          "needed_to_resolve": "Implement only reviewed vocabulary, reproduce these examples and show unsupported/ambiguous states."
+        },
+        {
+          "id": "NEXT-TEMPLATE-chords-finder",
+          "field": "implementation",
+          "reason": "Separate page template and its genuine interactions have not been implemented by this content pack. Any unsupplied assets remain gated.",
+          "needed_to_resolve": "Use prepared copy/data; implement only approved task scope. Preserve all existing B3 behavior."
+        }
+      ],
+      "coverage": [
+        {
+          "source_group_id": "P153",
+          "status": "content_and_data_prepared; implementation gates remain",
+          "delivered": "选择音符；列出可能命名、低音与拼写说明 — actual records below.",
+          "pending": "Runtime, print UI and professional release checks; see issues."
+        }
+      ],
+      "baseline_page_id": "U086",
+      "batch": "F",
+      "main_keyword": "chord finder piano",
+      "keywords": [
+        "chord finder piano",
+        "chord namer piano",
+        "piano chord namer",
+        "what chord is this piano",
+        "name chord piano",
+        "naming chords piano"
+      ],
+      "source_groups": [
+        {
+          "id": "P153",
+          "representative": "chord finder piano",
+          "section": null,
+          "synonyms": [
+            "chord namer piano",
+            "piano chord namer",
+            "what chord is this piano",
+            "name chord piano"
+          ],
+          "other_queries": [
+            "naming chords piano"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A327:G327",
+          "delivery_method": "独立页首要任务",
+          "required_output": "选择音符；列出可能命名、低音与拼写说明",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "template_id": "T09",
+      "baseline_priority": "后做",
+      "baseline_purpose": "输入或点选音符，判断可能的和弦名称",
+      "final_scope": {
+        "id": "T09",
+        "name": "反向和弦查找",
+        "confirmation_status": "本版统一规划建议；后做",
+        "user_task": "通过音符或按键输入，查看可能的和弦名称。",
+        "modules": [
+          "选择音符与需要的低音条件。",
+          "展示可能命名和关键区别，而不是永远输出唯一答案。",
+          "解释输入与普通名称查图的区别，连接已有和弦页。"
+        ],
+        "boundary": "不包含麦克风识别；不因和弦中心已确认就自动加入首版。",
+        "acceptance": "已审核样例能复现；模糊组合显示多种解释或未确定，不编造结果。"
+      },
+      "required_delivery": "选择音符与需要的低音条件。；展示可能命名和关键区别，而不是永远输出唯一答案。；解释输入与普通名称查图的区别，连接已有和弦页。",
+      "release_conditions": "已审核样例能复现；模糊组合显示多种解释或未确定，不编造结果。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+      "original_release_conditions": "同一音集可能有多种命名；解释不确定性；不扩成麦克风识别或MIDI评分",
+      "ready_for_publish": false,
+      "deployment_status": "planning_only",
+      "status": "content_prepared_distinct_template_required",
+      "metadata": {
+        "title": "Piano Chord Finder: Identify Chords from Notes",
+        "description": "Enter piano notes to inspect possible chord names. Keep bass notes and enharmonic spelling visible, and see when the supported vocabulary has no match.",
+        "canonical_path": "/chords/finder",
+        "language": "en-US"
+      },
+      "evidence_policy": {
+        "verified": "[已核实] 有所列来源直接支持",
+        "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+        "unknown": "待确认，以null表示；不得填猜测值"
+      }
+    }
+  }
+}

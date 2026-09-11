@@ -1,0 +1,52 @@
+import fs from 'node:fs';
+import {createRequire} from 'node:module';
+const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH||'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3000';
+const out=process.env.PIANO_CHECK_OUT||'docs/pianogrid-chords-content-next/09_codex-results/latest/browser';
+fs.mkdirSync(out,{recursive:true});
+const content=JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/02_content/details.merge.json','utf8'));
+const bindings=JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/03_learning/adapter-bindings.json','utf8'));
+const learning=JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/03_learning/learning.all.json','utf8'));
+const linkPlan=JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/01_planning/internal-links.json','utf8'));
+const routes=['/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major'];
+const selectedLinkIds=new Set(['L003','L005','L008','L011','L012','L015','L018','L019','L020','L024','L027','L032','L035','L036','L039']);
+const allPublic=new Set(['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major',...routes,'/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/tools/blank-sheet-music']);
+const labels=['C pitch class','C♯ / D♭ pitch class','D pitch class','D♯ / E♭ pitch class','E pitch class','F pitch class','F♯ / G♭ pitch class','G pitch class','G♯ / A♭ pitch class','A pitch class','A♯ / B♭ pitch class','B pitch class'];
+const results=[],errors=[];
+function check(name,passed,actual){results.push({name,passed:Boolean(passed),actual});if(!passed)console.error('FAIL',name,actual);}
+const browser=await chromium.launch({channel:'chrome',headless:true});
+async function newPage(options={}){const page=await browser.newPage({viewport:{width:1440,height:900},...options});page.on('pageerror',error=>errors.push(`pageerror: ${error.message}`));page.on('console',message=>{if(message.type()==='error')errors.push(`console: ${message.text()}`);});return page;}
+try{
+ for(const route of routes){
+  const slug=route.split('/').at(-1),rawPage=content.pages[route],binding=bindings[route],learn=learning[route],root=rawPage.data.voicings.find(item=>item.id===rawPage.data.default_voicing);
+  const nojs=await newPage({javaScriptEnabled:false}),response=await nojs.goto(base+route),raw=await response.text();fs.writeFileSync(`${out}/${slug}-raw.html`,raw);
+  check(`${slug} HTTP/title/description/canonical`,response.status()===200&&(await nojs.title())===rawPage.metadata.title&&(await nojs.locator('meta[name=description]').getAttribute('content'))===rawPage.metadata.description&&(await nojs.locator('link[rel=canonical]').getAttribute('href')).endsWith(route),{status:response.status(),title:await nojs.title()});
+  check(`${slug} raw HTTP contains rendered page nodes`,raw.includes('<h1')&&raw.includes('am-direct-answer')&&raw.includes(`${slug}-questions`)&&raw.includes('ch-source-details')&&raw.includes('ch-practice'),raw.length);
+  check(`${slug} H1/direct answer`,(await nojs.locator('h1').innerText()).trim()===binding.h1&&(await nojs.locator('.am-direct-answer').innerText()).trim()===binding.answer,{h1:await nojs.locator('h1').innerText(),answer:await nojs.locator('.am-direct-answer').innerText()});
+  const selectedMidi=[...new Set(await nojs.locator('.am-key.am-is-selected').evaluateAll(items=>items.map(item=>Number(item.getAttribute('data-midi')))))].sort((a,b)=>a-b);
+  check(`${slug} root notes and keyboard`,JSON.stringify(await nojs.locator('.am-note-order .am-pitch').allTextContents())===JSON.stringify(root.notes.map(note=>note.replace(/#/g,'♯').replace(/b/g,'♭')))&&JSON.stringify(selectedMidi)===JSON.stringify([...root.midi].sort((a,b)=>a-b)),{notes:await nojs.locator('.am-note-order .am-pitch').allTextContents(),selectedMidi});
+  check(`${slug} three positions/FAQ/sources`,await nojs.locator('.am-inversion-table tbody tr').count()===3&&await nojs.locator(`#${slug}-questions .am-faq-item`).count()===learn.extraBlocks.find(block=>block.block_id===`${slug}-questions`).content.table.rows.length&&await nojs.locator('.ch-source-details a[href^="https://"]').count()>=1);
+  const expectedLinks=linkPlan.edges.filter(edge=>edge.from===route&&selectedLinkIds.has(edge.id)&&allPublic.has(edge.to)).map(edge=>edge.href);
+  check(`${slug} selected crawlable links`,expectedLinks.every(href=>raw.includes(`href="${href}"`)&&nojs.locator(`a[href="${href}"]`).count()),expectedLinks);
+  check(`${slug} no duplicate IDs`,await nojs.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(item=>item.id);return ids.length===new Set(ids).size;}));
+  check(`${slug} no-JS practice and PDF`,await nojs.getByRole('button',{name:'Check answer',exact:true}).isDisabled()&&await nojs.locator('.ch-static-answer').count()===1&&await nojs.locator(`a[href="${binding.pdf.url}"][download]`).count()===2);
+  const pdf=await nojs.request.get(base+binding.pdf.url),pdfBytes=await pdf.body();check(`${slug} fixed three-position PDF opens`,pdf.status()===200&&pdfBytes.subarray(0,4).toString()==='%PDF'&&pdfBytes.length>1000,{status:pdf.status(),bytes:pdfBytes.length});
+  await nojs.close();
+
+  const page=await newPage();await page.goto(base+route);await page.waitForFunction(()=>!document.querySelector('#practice button')?.disabled);
+  check(`${slug} root right/left fingering`,JSON.stringify(await page.locator('.ch-finger-number').allTextContents())===JSON.stringify(['1','3','5']));
+  await page.getByRole('radio',{name:'Left hand',exact:true}).check();check(`${slug} left fingering`,JSON.stringify(await page.locator('.ch-finger-number').allTextContents())===JSON.stringify(['5','3','1']));
+  await page.getByRole('radio',{name:'First inversion',exact:true}).check();check(`${slug} inversion hides root fingering`,await page.locator('.ch-finger-map').count()===0&&await page.locator('.ch-fingering-unavailable').count()===1);
+  await page.evaluate(()=>{window.__printVoicing=null;window.print=()=>{window.__printVoicing=document.querySelector('#print-content')?.getAttribute('data-voicing-id')||null;};});
+  await page.locator('.am-controls [data-print-current]').click();check(`${slug} current print follows selection`,await page.evaluate(()=>window.__printVoicing)===`${slug}--first`,await page.evaluate(()=>window.__printVoicing));
+  await page.getByRole('radio',{name:'Root position',exact:true}).check();for(const midi of root.midi)await page.getByRole('button',{name:labels[midi%12],exact:true}).click();await page.getByRole('button',{name:'Check answer',exact:true}).click();check(`${slug} practice derives correct pitch classes`,await page.locator('#practice').getAttribute('data-practice-state')==='success',await page.locator('.ch-practice-feedback').innerText());
+  await page.getByRole('button',{name:'Play chord',exact:true}).click();check(`${slug} playback starts from user action`,['playing','complete'].includes(await page.locator('.am-tool').getAttribute('data-audio-state')),await page.locator('.am-tool').getAttribute('data-audio-state'));const stop=page.getByRole('button',{name:'Stop',exact:true});if(await stop.isEnabled())await stop.click();
+  await page.setViewportSize({width:390,height:844});check(`${slug} mobile no page overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,innerWidth})));
+  await page.evaluate(()=>document.documentElement.style.fontSize='200%');await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(200);check(`${slug} 200% reflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,innerWidth})));
+  await page.evaluate(()=>document.documentElement.style.fontSize='');await page.setViewportSize({width:390,height:844});await page.screenshot({path:`${out}/${slug}-390.png`,fullPage:true});await page.setViewportSize({width:1440,height:900});await page.screenshot({path:`${out}/${slug}-1440.png`,fullPage:true});await page.close();
+ }
+ const hub=await newPage({javaScriptEnabled:false}),hubResponse=await hub.goto(base+'/chords');check('Hub keeps 19 objects and links exactly eight details',hubResponse.status()===200&&await hub.locator('.ch-result').count()===19&&JSON.stringify(await hub.locator('.ch-result a[href^="/chords/"]').evaluateAll(items=>items.map(item=>item.getAttribute('href'))))===JSON.stringify(['/chords/c-major','/chords/a-minor','/chords/g-major','/chords/a-major','/chords/e-major','/chords/b-major','/chords/c-minor','/chords/a-flat-major']));check('Hub keeps C-flat collection-only',await hub.locator('[data-chord-id="c-flat-major"] a[href="/chords/c-flat-major"]').count()===0);await hub.close();
+ const request=await browser.newPage();const sitemap=await request.request.get(base+'/sitemap.xml'),xml=await sitemap.text();check('Sitemap adds only five authorized chord URLs',routes.every(route=>xml.includes(`https://pianogrid.com${route}</loc>`))&&!xml.includes('/chords/c-flat-major</loc>')&&!xml.includes('/chords/by-key</loc>'),xml.match(/<loc>/g)?.length);
+ for(const route of ['/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/guide/piano-chords','/keyboard-notes/finger-numbers']){const response=await request.request.get(base+route);check(`${route} stays unpublished`,response.status()===404,response.status());}await request.close();
+ check('No runtime or hydration errors',errors.length===0,errors);
+}catch(error){check('Focused browser runner completed',false,error.stack);}finally{await browser.close();const report={executed_at:new Date().toISOString(),base,passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,results,not_tested:['human listening','real mobile/tablet device','screen reader','physical printing','PDF tag accessibility','independent professional review of octave-adapted fingerings']};fs.writeFileSync(`${out}/validation.json`,JSON.stringify(report,null,2)+'\n');console.log(`Chord content next: ${report.passed} passed, ${report.failed} failed`);process.exitCode=report.failed?1:0;}

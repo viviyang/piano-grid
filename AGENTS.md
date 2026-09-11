@@ -1,7 +1,7 @@
-# PianoGrid — current stage: Batch 07 targeted fix awaiting re-review
+# PianoGrid — current stage: public launch live, final public-build review and human gates pending
 
 用户已确认这是空项目，从本目录作为项目根目录开始，不要再寻找“旧仓库”。
-当前授权为用户明确要求的 07-site-integration P1 定点修复及必要测试，遵守 CONTINUE-HERE.md、MASTER-RULES.md、07-site-integration.md 和 COMPONENT-TEMPLATE-RULES.md。保留已验收的 Foundation 与 00–06；P1 修复后停止供独立复验。
+Foundation、00–08 与首轮 17 条路由已完成；08 独立结论为 `PASS_WITH_NOTES`。`https://pianogrid.com` 已部署到 Vercel，17 条路由当前公开并输出 `index,follow`，robots 与 sitemap 已上线。当前检查点是最终公开构建的独立复验，以及具名专业审阅、真机、读屏、打印、听音、PDF 无障碍决定和上线后观察。历史报告保持原貌，当前状态以 `docs/release/release-readiness.md` 与 `docs/tasks/site-implementation-plan.md` 为准。
 
 ## Read first
 
@@ -23,7 +23,7 @@
 - 不新增或升级依赖。Tailwind v4；禁止新增 `tailwind.config.ts`，不运行 shadcn init 覆盖 CSS。
 - 不下载或分发专有字体。系统字体栈，不引入动画库。
 - 原文与只读参考保持哈希不变；文档不在 public，参考 HTML 不是路由。
-- 不自动部署、不取消 `noindex/nofollow`、不生成 sitemap、不猜 canonical 域名。
+- 当前正式 origin 固定为 `https://pianogrid.com`，17 条授权路由已经公开并允许索引。不得未经明确授权重新部署、改 DNS、改 canonical origin、改变索引策略、提交搜索平台、扩大公开路由或覆盖稳定生产版本。
 
 ## Commands
 

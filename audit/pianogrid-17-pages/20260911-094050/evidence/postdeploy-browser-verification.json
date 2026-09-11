@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-11T03:43:28.119Z",
+  "route": "/chords/a-minor",
+  "states": [
+    {
+      "name": "Root position",
+      "checked": "a-minor--root",
+      "currentSelectionRows": [
+        "a-minor--root"
+      ],
+      "aria": "- 'table \"A minor: root position, first inversion, and second inversion\"':\n  - caption: \"A minor: root position, first inversion, and second inversion\"\n  - rowgroup:\n    - row \"Position Symbol Notes, low to high Bass\":\n      - columnheader \"Position\"\n      - columnheader \"Symbol\"\n      - columnheader \"Notes, low to high\"\n      - columnheader \"Bass\"\n  - rowgroup:\n    - row \"Root position , current selection Am A3–C4–E4 A3\":\n      - cell \"Root position , current selection\"\n      - cell \"Am\"\n      - cell \"A3–C4–E4\"\n      - cell \"A3\"\n    - row \"First inversion Am/C C4–E4–A4 C4\":\n      - cell \"First inversion\"\n      - cell \"Am/C\"\n      - cell \"C4–E4–A4\"\n      - cell \"C4\"\n    - row \"Second inversion Am/E E4–A4–C5 E4\":\n      - cell \"Second inversion\"\n      - cell \"Am/E\"\n      - cell \"E4–A4–C5\"\n      - cell \"E4\""
+    },
+    {
+      "name": "First inversion",
+      "checked": "a-minor--first",
+      "currentSelectionRows": [
+        "a-minor--first"
+      ],
+      "aria": "- 'table \"A minor: root position, first inversion, and second inversion\"':\n  - caption: \"A minor: root position, first inversion, and second inversion\"\n  - rowgroup:\n    - row \"Position Symbol Notes, low to high Bass\":\n      - columnheader \"Position\"\n      - columnheader \"Symbol\"\n      - columnheader \"Notes, low to high\"\n      - columnheader \"Bass\"\n  - rowgroup:\n    - row \"Root position Am A3–C4–E4 A3\":\n      - cell \"Root position\"\n      - cell \"Am\"\n      - cell \"A3–C4–E4\"\n      - cell \"A3\"\n    - row \"First inversion , current selection Am/C C4–E4–A4 C4\":\n      - cell \"First inversion , current selection\"\n      - cell \"Am/C\"\n      - cell \"C4–E4–A4\"\n      - cell \"C4\"\n    - row \"Second inversion Am/E E4–A4–C5 E4\":\n      - cell \"Second inversion\"\n      - cell \"Am/E\"\n      - cell \"E4–A4–C5\"\n      - cell \"E4\""
+    },
+    {
+      "name": "Second inversion",
+      "checked": "a-minor--second",
+      "currentSelectionRows": [
+        "a-minor--second"
+      ],
+      "aria": "- 'table \"A minor: root position, first inversion, and second inversion\"':\n  - caption: \"A minor: root position, first inversion, and second inversion\"\n  - rowgroup:\n    - row \"Position Symbol Notes, low to high Bass\":\n      - columnheader \"Position\"\n      - columnheader \"Symbol\"\n      - columnheader \"Notes, low to high\"\n      - columnheader \"Bass\"\n  - rowgroup:\n    - row \"Root position Am A3–C4–E4 A3\":\n      - cell \"Root position\"\n      - cell \"Am\"\n      - cell \"A3–C4–E4\"\n      - cell \"A3\"\n    - row \"First inversion Am/C C4–E4–A4 C4\":\n      - cell \"First inversion\"\n      - cell \"Am/C\"\n      - cell \"C4–E4–A4\"\n      - cell \"C4\"\n    - row \"Second inversion , current selection Am/E E4–A4–C5 E4\":\n      - cell \"Second inversion , current selection\"\n      - cell \"Am/E\"\n      - cell \"E4–A4–C5\"\n      - cell \"E4\""
+    }
+  ],
+  "consoleErrors": [],
+  "assertions": {
+    "eachStateHasOneDomCurrentSelection": true,
+    "eachStateAriaNamesOnlyItsCurrentRow": true,
+    "noConsoleErrors": true,
+    "songsNoWholeDocumentOverflow": true
+  },
+  "songsDesktopOverflow": false,
+  "songsMobileOverflow": false
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "foundation",
+    "args": [
+      "scripts/check-foundation.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "typecheck",
+    "args": [
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "css",
+    "args": [
+      "scripts/check-css.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "integration-data",
+    "args": [
+      "scripts/check-integration-data.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "args": [
+      "node_modules/next/dist/bin/next",
+      "build"
+    ],
+    "exitCode": 0
+  }
+]

@@ -1,0 +1,24 @@
+- 'table "A minor: root position, first inversion, and second inversion"':
+  - caption: "A minor: root position, first inversion, and second inversion"
+  - rowgroup:
+    - row "Position Symbol Notes, low to high Bass":
+      - columnheader "Position"
+      - columnheader "Symbol"
+      - columnheader "Notes, low to high"
+      - columnheader "Bass"
+  - rowgroup:
+    - row "Root position Am A3–C4–E4 A3":
+      - cell "Root position"
+      - cell "Am"
+      - cell "A3–C4–E4"
+      - cell "A3"
+    - row "First inversion Am/C C4–E4–A4 C4":
+      - cell "First inversion"
+      - cell "Am/C"
+      - cell "C4–E4–A4"
+      - cell "C4"
+    - row "Second inversion , current selection Am/E E4–A4–C5 E4":
+      - cell "Second inversion , current selection"
+      - cell "Am/E"
+      - cell "E4–A4–C5"
+      - cell "E4"

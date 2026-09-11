@@ -1,0 +1,8 @@
+{
+  "command": "tsc --noEmit --strict --target ES2022 --module ESNext --moduleResolution bundler chord-learning.next.ts",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "types_source": "B3 intake source/src/lib/a-minor-types.ts copied unchanged to isolated check folder",
+  "scope": "Only the new 5-record pure-data TS module against actual provided types. Not a repository build."
+}

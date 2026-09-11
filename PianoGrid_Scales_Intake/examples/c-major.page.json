@@ -1,0 +1,690 @@
+{
+  "url": "/scales/c-major",
+  "title": "C Major Piano Scale: Notes and Fingering",
+  "description": "See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.",
+  "user_task": "Find the C-major notes and learn the first one-octave hand crossing without confusing scale degrees with finger numbers.",
+  "questions": [
+    "What are the notes and key signature of C major?",
+    "Why are E–F and B–C closer in pitch even though the scale uses only white keys?",
+    "Which fingers are used by each hand ascending and descending over one octave?",
+    "What should I check during a short practice run?"
+  ],
+  "blocks": [
+    {
+      "id": "notes",
+      "heading": "C Major notes",
+      "body": "C Major contains C, D, E, F, G, A, B. Repeat C at the top to complete one octave. Its key signature has no sharps or flats.",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AM-NOTES-C-MAJOR",
+        "AM-FINGER-LMT"
+      ]
+    },
+    {
+      "id": "focus",
+      "heading": "White keys, unequal distances",
+      "body": "C major uses only white keys, but those keys are not equally spaced in pitch. E–F and B–C are half steps; the other adjacent pairs in the scale are whole steps. Keep that distinction when checking the keyboard against the staff. Beginning on another white key does not preserve the C-major tonic.",
+      "evidence_status": "[推断]",
+      "basis": "Explanatory relationships derived from independently checked note spelling and the verified major-scale interval rule.",
+      "source_ids": [
+        "AM-NOTES-C-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-THEORY"
+      ]
+    },
+    {
+      "id": "fingering",
+      "heading": "One-octave fingering",
+      "body": "In this one-octave version, the right hand crosses from E with finger 3 to F with the thumb. The left hand crosses from G with the thumb to A with finger 3. Read the separate descending row when coming back. Finger numbers identify the fingers, not the scale degrees.",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF"
+      ]
+    },
+    {
+      "id": "practice",
+      "heading": "A short practice check",
+      "body": "Suggested drill: play C–D–E, pause, then continue F–G–A–B–C with the printed right-hand fingers. Next, connect E–F without the pause. With the left hand, isolate G–A instead. Finish with one unhurried ascent and descent, saying each note name.",
+      "evidence_status": "[推断]",
+      "basis": "Original suggested drill using only the source-verified notes and explicit fingering for this key. No effectiveness or fixed learning-time claim.",
+      "source_ids": [
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-NOTES-C-MAJOR",
+        "AM-FINGER-LMT"
+      ]
+    }
+  ],
+  "data": {
+    "tonic": "C",
+    "scale_type": "major",
+    "notes_ascending": [
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "A",
+      "B",
+      "C"
+    ],
+    "notes_descending": [
+      "C",
+      "B",
+      "A",
+      "G",
+      "F",
+      "E",
+      "D",
+      "C"
+    ],
+    "note_spelling_status": "[已核实]",
+    "note_source_ids": [
+      "AM-NOTES-C-MAJOR",
+      "AM-FINGER-LMT"
+    ],
+    "key_signature": {
+      "fifths": 0,
+      "ordered_accidentals": [],
+      "count": 0,
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AM-NOTES-C-MAJOR",
+        "AM-FINGER-LMT"
+      ]
+    },
+    "intervals": {
+      "ascending_semitones": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "descending_semitones": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "half_step_pairs": [
+        [
+          "E",
+          "F"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "evidence_status": "[推断]",
+      "basis": "Apply the verified major-scale interval rule to the independently checked note spelling. Descending order follows the same pitches from upper tonic to lower tonic.",
+      "source_ids": [
+        "AM-NOTES-C-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-THEORY"
+      ]
+    },
+    "display_register": {
+      "RH": "tonic written in octave 4 to tonic written in octave 5",
+      "LH": "tonic written in octave 3 to tonic written in octave 4",
+      "evidence_status": "[推断]",
+      "basis": "Editorial display choice; octave labels follow MusicXML C4=middle C; each accidental remains attached to its written octave. This register choice is not asserted to be a source-prescribed exercise range.",
+      "source_ids": [
+        "AM-MUSICXML",
+        "AM-MIDI"
+      ]
+    },
+    "pitch_sequences": {
+      "RH": {
+        "ascending": [
+          {
+            "note": "C4",
+            "step": "C",
+            "alter": 0,
+            "octave": 4,
+            "midi": 60,
+            "scale_degree": 1,
+            "key_color": "white"
+          },
+          {
+            "note": "D4",
+            "step": "D",
+            "alter": 0,
+            "octave": 4,
+            "midi": 62,
+            "scale_degree": 2,
+            "key_color": "white"
+          },
+          {
+            "note": "E4",
+            "step": "E",
+            "alter": 0,
+            "octave": 4,
+            "midi": 64,
+            "scale_degree": 3,
+            "key_color": "white"
+          },
+          {
+            "note": "F4",
+            "step": "F",
+            "alter": 0,
+            "octave": 4,
+            "midi": 65,
+            "scale_degree": 4,
+            "key_color": "white"
+          },
+          {
+            "note": "G4",
+            "step": "G",
+            "alter": 0,
+            "octave": 4,
+            "midi": 67,
+            "scale_degree": 5,
+            "key_color": "white"
+          },
+          {
+            "note": "A4",
+            "step": "A",
+            "alter": 0,
+            "octave": 4,
+            "midi": 69,
+            "scale_degree": 6,
+            "key_color": "white"
+          },
+          {
+            "note": "B4",
+            "step": "B",
+            "alter": 0,
+            "octave": 4,
+            "midi": 71,
+            "scale_degree": 7,
+            "key_color": "white"
+          },
+          {
+            "note": "C5",
+            "step": "C",
+            "alter": 0,
+            "octave": 5,
+            "midi": 72,
+            "scale_degree": 1,
+            "key_color": "white"
+          }
+        ],
+        "descending": [
+          {
+            "note": "C5",
+            "step": "C",
+            "alter": 0,
+            "octave": 5,
+            "midi": 72,
+            "scale_degree": 1,
+            "key_color": "white"
+          },
+          {
+            "note": "B4",
+            "step": "B",
+            "alter": 0,
+            "octave": 4,
+            "midi": 71,
+            "scale_degree": 7,
+            "key_color": "white"
+          },
+          {
+            "note": "A4",
+            "step": "A",
+            "alter": 0,
+            "octave": 4,
+            "midi": 69,
+            "scale_degree": 6,
+            "key_color": "white"
+          },
+          {
+            "note": "G4",
+            "step": "G",
+            "alter": 0,
+            "octave": 4,
+            "midi": 67,
+            "scale_degree": 5,
+            "key_color": "white"
+          },
+          {
+            "note": "F4",
+            "step": "F",
+            "alter": 0,
+            "octave": 4,
+            "midi": 65,
+            "scale_degree": 4,
+            "key_color": "white"
+          },
+          {
+            "note": "E4",
+            "step": "E",
+            "alter": 0,
+            "octave": 4,
+            "midi": 64,
+            "scale_degree": 3,
+            "key_color": "white"
+          },
+          {
+            "note": "D4",
+            "step": "D",
+            "alter": 0,
+            "octave": 4,
+            "midi": 62,
+            "scale_degree": 2,
+            "key_color": "white"
+          },
+          {
+            "note": "C4",
+            "step": "C",
+            "alter": 0,
+            "octave": 4,
+            "midi": 60,
+            "scale_degree": 1,
+            "key_color": "white"
+          }
+        ]
+      },
+      "LH": {
+        "ascending": [
+          {
+            "note": "C3",
+            "step": "C",
+            "alter": 0,
+            "octave": 3,
+            "midi": 48,
+            "scale_degree": 1,
+            "key_color": "white"
+          },
+          {
+            "note": "D3",
+            "step": "D",
+            "alter": 0,
+            "octave": 3,
+            "midi": 50,
+            "scale_degree": 2,
+            "key_color": "white"
+          },
+          {
+            "note": "E3",
+            "step": "E",
+            "alter": 0,
+            "octave": 3,
+            "midi": 52,
+            "scale_degree": 3,
+            "key_color": "white"
+          },
+          {
+            "note": "F3",
+            "step": "F",
+            "alter": 0,
+            "octave": 3,
+            "midi": 53,
+            "scale_degree": 4,
+            "key_color": "white"
+          },
+          {
+            "note": "G3",
+            "step": "G",
+            "alter": 0,
+            "octave": 3,
+            "midi": 55,
+            "scale_degree": 5,
+            "key_color": "white"
+          },
+          {
+            "note": "A3",
+            "step": "A",
+            "alter": 0,
+            "octave": 3,
+            "midi": 57,
+            "scale_degree": 6,
+            "key_color": "white"
+          },
+          {
+            "note": "B3",
+            "step": "B",
+            "alter": 0,
+            "octave": 3,
+            "midi": 59,
+            "scale_degree": 7,
+            "key_color": "white"
+          },
+          {
+            "note": "C4",
+            "step": "C",
+            "alter": 0,
+            "octave": 4,
+            "midi": 60,
+            "scale_degree": 1,
+            "key_color": "white"
+          }
+        ],
+        "descending": [
+          {
+            "note": "C4",
+            "step": "C",
+            "alter": 0,
+            "octave": 4,
+            "midi": 60,
+            "scale_degree": 1,
+            "key_color": "white"
+          },
+          {
+            "note": "B3",
+            "step": "B",
+            "alter": 0,
+            "octave": 3,
+            "midi": 59,
+            "scale_degree": 7,
+            "key_color": "white"
+          },
+          {
+            "note": "A3",
+            "step": "A",
+            "alter": 0,
+            "octave": 3,
+            "midi": 57,
+            "scale_degree": 6,
+            "key_color": "white"
+          },
+          {
+            "note": "G3",
+            "step": "G",
+            "alter": 0,
+            "octave": 3,
+            "midi": 55,
+            "scale_degree": 5,
+            "key_color": "white"
+          },
+          {
+            "note": "F3",
+            "step": "F",
+            "alter": 0,
+            "octave": 3,
+            "midi": 53,
+            "scale_degree": 4,
+            "key_color": "white"
+          },
+          {
+            "note": "E3",
+            "step": "E",
+            "alter": 0,
+            "octave": 3,
+            "midi": 52,
+            "scale_degree": 3,
+            "key_color": "white"
+          },
+          {
+            "note": "D3",
+            "step": "D",
+            "alter": 0,
+            "octave": 3,
+            "midi": 50,
+            "scale_degree": 2,
+            "key_color": "white"
+          },
+          {
+            "note": "C3",
+            "step": "C",
+            "alter": 0,
+            "octave": 3,
+            "midi": 48,
+            "scale_degree": 1,
+            "key_color": "white"
+          }
+        ]
+      },
+      "evidence_status": "[推断]",
+      "basis": "MIDI = 12*(written_octave+1)+natural_letter_pitch_class+alter; computed from verified spelling. Cb4=59, equivalent to B3, not B4.",
+      "source_ids": [
+        "AM-NOTES-C-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-MUSICXML",
+        "AM-MIDI"
+      ]
+    },
+    "fingering": {
+      "instrument": "piano",
+      "motion": "similar motion or hands separately",
+      "octaves": 1,
+      "directions_in_performance_order": true,
+      "RH": {
+        "ascending": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "descending": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1
+        ]
+      },
+      "LH": {
+        "ascending": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1
+        ],
+        "descending": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "evidence_status": "[已核实]",
+      "verification": "explicit_two_independent_source_charts",
+      "source_ids": [
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF"
+      ],
+      "source_locator": "LearnMusicTheory PDF page 1 C major row; Music Fun PDF page 3 staff",
+      "review_status": "source_verified; professional release review pending",
+      "variant_note": "A source-documented single-octave choice, not a claim that no alternative fingering is valid. Do not extend to multiple octaves by repeating these rows.",
+      "additional_octave_fingerings": null,
+      "direction_evidence": "Both ascending and descending notes and finger numbers were read directly in each displayed source staff; descending arrays were not merely assumed from an ascending-only source.",
+      "visual_evidence_refs": [
+        "turn781025view0",
+        "turn655244view0"
+      ]
+    },
+    "renderer_payload": {
+      "clefs": {
+        "RH": "treble",
+        "LH": "bass"
+      },
+      "key_fifths": 0,
+      "mode": "major",
+      "duration_beats_per_note": 1,
+      "default_tempo_bpm": 60,
+      "tempo_status": "editorial playback default; not a sourced examination speed or promised learning target",
+      "ascending_then_descending_index_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "source_of_truth": "pitch_sequences plus same-hand fingering rows; no automatic enharmonic respelling",
+      "print_fields": [
+        "title",
+        "key_signature",
+        "note_spelling",
+        "selected_hand",
+        "one_octave_range",
+        "ascending_and_descending_staff_notes",
+        "matching_fingering",
+        "short_practice_tip",
+        "source_ids"
+      ],
+      "status": "content_and_data_handoff; notation/audio/print implementations have not been built or tested"
+    },
+    "labels": {
+      "hand": "Hand",
+      "right_hand": "Right hand",
+      "left_hand": "Left hand",
+      "both_hands": "Both hands",
+      "direction": "Direction",
+      "ascending": "Ascending",
+      "descending": "Descending",
+      "up_and_down": "Up and down",
+      "octaves": "1 octave",
+      "play": "Play scale",
+      "stop": "Stop",
+      "print": "Print current scale"
+    },
+    "related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ]
+  },
+  "source_ids": [
+    "AM-NOTES-C-MAJOR",
+    "AM-FINGER-LMT",
+    "AM-FINGER-MF",
+    "AM-THEORY",
+    "AM-MUSICXML",
+    "AM-MIDI",
+    "AM-BAYLOR"
+  ],
+  "status": "content_data_ready_with_implementation_qa_pending",
+  "issues": [
+    {
+      "id": "AM-C-MAJOR-RENDER",
+      "field": "notation_audio_print",
+      "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+      "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+    },
+    {
+      "id": "AM-C-MAJOR-RANGE",
+      "field": "fingering.additional_octave_fingerings",
+      "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+      "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+    }
+  ],
+  "coverage": [
+    {
+      "source_group_id": "P183",
+      "status": "content_data_prepared; rendered delivery pending",
+      "delivered": [
+        "independent English page content",
+        "notes and key signature cross-checked",
+        "spelled pitches with octave and MIDI mapping",
+        "source-specific one-octave RH/LH ascending and descending fingering",
+        "key-specific hand-crossing explanation",
+        "original short practice check",
+        "notation/audio/print common data payload"
+      ],
+      "pending": [
+        "professional release review",
+        "visual keyboard and staff rendering plus playback/print consistency QA"
+      ]
+    }
+  ],
+  "baseline_page_id": "U090",
+  "batch": "A",
+  "main_keyword": "c major scale piano",
+  "keywords": [
+    "scales in key of c",
+    "c major scale piano",
+    "notes in c major scale",
+    "c scale piano",
+    "key of c piano",
+    "c key piano"
+  ],
+  "source_groups": [
+    {
+      "id": "P183",
+      "representative": "c major scale piano",
+      "section": null,
+      "synonyms": [
+        "c scale piano",
+        "key of c piano",
+        "c key piano"
+      ],
+      "other_queries": [
+        "scales in key of c",
+        "notes in c major scale"
+      ],
+      "source": "piano_keyword_research_combined.xlsx｜关键词数据!A40:G40",
+      "delivery_method": "独立页首要任务",
+      "required_output": "该调/类型的音符与构成；键位与谱表；适用的左右手指法和上下行；简短练习与打印",
+      "first_release_scope": "模板已确认；此实例内容待审核",
+      "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+    }
+  ],
+  "template_id": "T12",
+  "baseline_priority": "先做",
+  "baseline_purpose": "查C大调音阶及钢琴指法",
+  "final_scope": {
+    "id": "T12",
+    "name": "具体调性音阶页",
+    "confirmation_status": "C 大调样板已确认；其他调性沿用该分工",
+    "user_task": "直接查看指定调性的音阶、键位、手别指法和示范。",
+    "modules": [
+      "页面固定当前调性；首屏给结果而非全量选择器。",
+      "同页选左右手、上下行、速度、已审核八度范围；小调形式必须标明。",
+      "展示针对当前音阶的换指与构成说明；图、声音、打印一致。",
+      "返回中心或访问相关已上线音阶。"
+    ],
+    "boundary": "不把等音拼写或不同小调形式不加说明地互换；不自动套同一指法。",
+    "acceptance": "每个调性本身完成内容审核；共享模板不意味着免审核。"
+  },
+  "required_delivery": "页面固定当前调性；首屏给结果而非全量选择器。；同页选左右手、上下行、速度、已审核八度范围；小调形式必须标明。；展示针对当前音阶的换指与构成说明；图、声音、打印一致。；返回中心或访问相关已上线音阶。",
+  "release_conditions": "每个调性本身完成内容审核；共享模板不意味着免审核。 原素材/专业审核条件仍保留于 original_release_conditions。仅开放已核对功能；规则未明/资料未齐的子任务保留待补，不自动视为已交付。",
+  "original_release_conditions": "指法/等音拼写与上下行形式审核；minor需明确自然/和声/旋律形式；通用词需核对钢琴展示能否满足",
+  "ready_for_publish": false,
+  "deployment_status": "planning_only",
+  "metadata": {
+    "title": "C Major Piano Scale: Notes and Fingering",
+    "description": "See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.",
+    "canonical_path": "/scales/c-major",
+    "language": "en-US"
+  },
+  "evidence_policy": {
+    "verified": "[已核实] 有所列来源直接支持",
+    "derived": "[推断] 应在字段或正文记录计算/编辑依据",
+    "unknown": "待确认，以null表示；不得填猜测值"
+  }
+}

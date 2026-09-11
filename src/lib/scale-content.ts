@@ -1,10 +1,13 @@
 import { getLayouts } from './keyboard-content';
+import { validateScaleAuthoringPage } from './scale-authoring';
+import { SCALE_PAGE_COPY } from './scale-page-copy';
+export { scaleSequence } from './scale-resolver';
 import type { PianoKey, StaffNote } from './keyboard-types';
 import { readAuthorizedPage } from './site-content';
 import { isPublicRoute } from './site-routes';
 import type {
-  ScaleDirection,
   ScaleFingering,
+  ScaleFingeringNote,
   ScaleFormID,
   ScaleHand,
   ScaleOption,
@@ -40,7 +43,9 @@ function publicSourceScope(sourceID: string, tonic: string, form: ScaleFormID) {
     'AC-03': null,
     'AC-04': `${tonic} major note spelling within the 12-key overview.`,
     'AM-NOTES-C-MAJOR': 'C major note spelling and its key signature.',
-    'AM-FINGER-LMT': 'C major one-octave note spelling and fingering for both hands, ascending and descending.',
+    'AM-FINGER-LMT': tonic === 'A' && form === 'natural_minor'
+      ? 'A natural minor one-octave descending fingering; source register A3-A4. The right-hand A4-A5 display is an explicit octave adaptation.'
+      : 'C major one-octave note spelling and fingering for both hands, ascending and descending.',
     'AM-FINGER-MF': 'Independent comparison of that one-octave fingering for both hands and directions.',
     'AN-HMT-A': `A ${formLabel} note spelling${form === 'melodic_minor_classical' ? ' and the classical descending form' : ''}.`,
     'AN-PS-NAT': 'A natural minor note spelling and one-octave ascending fingering for both hands.',
@@ -72,7 +77,7 @@ function splitSpelling(spelling: string) {
   return { letter: match[1], accidental: match[2] ?? '' };
 }
 
-function midiFor(spelling: string, octave: number) {
+export function midiForScalePitch(spelling: string, octave: number) {
   const { letter, accidental } = splitSpelling(spelling);
   return (octave + 1) * 12 + letterPitch[letter] + accidentalOffset(accidental);
 }
@@ -96,7 +101,7 @@ function staffFor(spelling: string, octave: number, midi: number, clef: 'treble'
 }
 
 function pitch(spelling: string, octave: number, hand: ScaleHand): ScalePitch {
-  const midi = midiFor(spelling, octave);
+  const midi = midiForScalePitch(spelling, octave);
   return {
     spelling,
     note: `${spelling}${octave}`,
@@ -110,10 +115,10 @@ function ascendingPitches(notes: string[], hand: ScaleHand) {
   let octave = hand === 'RH' ? 4 : 3;
   let previous = Number.NEGATIVE_INFINITY;
   return notes.map((spelling) => {
-    let current = midiFor(spelling, octave);
+    let current = midiForScalePitch(spelling, octave);
     while (current <= previous) {
       octave += 1;
-      current = midiFor(spelling, octave);
+      current = midiForScalePitch(spelling, octave);
     }
     previous = current;
     return pitch(spelling, octave, hand);
@@ -124,10 +129,10 @@ function descendingPitches(notes: string[], hand: ScaleHand) {
   let octave = hand === 'RH' ? 5 : 4;
   let previous = Number.POSITIVE_INFINITY;
   return notes.map((spelling) => {
-    let current = midiFor(spelling, octave);
+    let current = midiForScalePitch(spelling, octave);
     while (current >= previous) {
       octave -= 1;
-      current = midiFor(spelling, octave);
+      current = midiForScalePitch(spelling, octave);
     }
     previous = current;
     return pitch(spelling, octave, hand);
@@ -140,7 +145,7 @@ function normalizeSourcePitch(value: SourcePitch, hand: ScaleHand): ScalePitch {
   if (!match) throw new Error(`Invalid source pitch: ${note}`);
   const spelling = value.spelling ?? match[1];
   const octave = value.written_octave ?? value.octave ?? Number(match[2]);
-  if (midiFor(spelling, octave) !== value.midi) throw new Error(`Scale pitch mismatch: ${note}`);
+  if (midiForScalePitch(spelling, octave) !== value.midi) throw new Error(`Scale pitch mismatch: ${note}`);
   return { ...pitch(spelling, octave, hand), key_color: value.key_color };
 }
 
@@ -149,6 +154,12 @@ function blankFingering(): ScaleFingering {
     RH: { ascending: null, descending: null },
     LH: { ascending: null, descending: null },
   };
+}
+
+const notesOnly = 'Notes only - fingering for this form, hand, direction and range has not yet been source-checked.';
+
+function blankFingeringNote(): ScaleFingeringNote {
+  return { RH: { ascending: notesOnly, descending: notesOnly }, LH: { ascending: notesOnly, descending: notesOnly } };
 }
 
 function optionFromNotes({
@@ -181,6 +192,7 @@ function optionFromNotes({
       LH: { ascending: ascendingPitches(ascending, 'LH'), descending: descendingPitches(descending, 'LH') },
     },
     fingering,
+    fingeringNote: blankFingeringNote(),
     detailURL,
     sources,
   };
@@ -190,6 +202,10 @@ function cMajorOption(data: any, master: { sources: SourceRecord[] }): ScaleOpti
   const fingering: ScaleFingering = {
     RH: { ascending: data.fingering.RH.ascending, descending: data.fingering.RH.descending },
     LH: { ascending: data.fingering.LH.ascending, descending: data.fingering.LH.descending },
+  };
+  const fingeringNote: ScaleFingeringNote = {
+    RH: { ascending: 'Source-documented one-octave row.', descending: 'Source-documented one-octave row.' },
+    LH: { ascending: 'Source-documented one-octave row.', descending: 'Source-documented one-octave row.' },
   };
   const sequences = Object.fromEntries((['RH', 'LH'] as const).map((hand) => [hand, {
     ascending: data.pitch_sequences[hand].ascending.map((value: SourcePitch) => normalizeSourcePitch(value, hand)),
@@ -203,6 +219,7 @@ function cMajorOption(data: any, master: { sources: SourceRecord[] }): ScaleOpti
     semitoneSteps: data.intervals.ascending_semitones,
     sequences,
     fingering,
+    fingeringNote,
     detailURL: '/scales/c-major',
     sources: publicSources(master, [...data.note_source_ids, ...data.fingering.source_ids], 'C', 'major'),
   };
@@ -213,6 +230,14 @@ function aMinorOptions(data: any, master: { sources: SourceRecord[] }): ScaleOpt
     const fingering: ScaleFingering = {
       RH: { ascending: form.fingering.ascending.right_hand, descending: form.fingering.descending.right_hand },
       LH: { ascending: form.fingering.ascending.left_hand, descending: form.fingering.descending.left_hand },
+    };
+    const available = 'Source-checked one-octave row.';
+    const fingeringNote: ScaleFingeringNote = form.id === 'natural_minor' ? {
+      RH: { ascending: available, descending: 'Source checked; the displayed A4-A5 register is an octave adaptation of the source A3-A4 row.' },
+      LH: { ascending: available, descending: 'Source-transcribed one-octave row in the same A3-A4 register.' },
+    } : {
+      RH: { ascending: available, descending: notesOnly },
+      LH: { ascending: available, descending: notesOnly },
     };
     const sequences = Object.fromEntries((['RH', 'LH'] as const).map((hand) => [hand, {
       ascending: form.pitch_mapping[hand === 'RH' ? 'right_hand_ascending_example' : 'left_hand_ascending_example'].map((value: SourcePitch) => normalizeSourcePitch(value, hand)),
@@ -226,6 +251,7 @@ function aMinorOptions(data: any, master: { sources: SourceRecord[] }): ScaleOpt
       semitoneSteps: form.ascending_semitone_steps,
       sequences,
       fingering,
+      fingeringNote,
       detailURL: '/scales/a-minor',
       sources: publicSources(master, [...form.source_ids, ...(form.fingering.source_ids ?? [])], 'A', form.id),
     };
@@ -238,6 +264,7 @@ function keyboardKeys(): PianoKey[] {
 
 export function getScalePage(url: keyof typeof blockIDs) {
   const { page, master } = readAuthorizedPage(url);
+  validateScaleAuthoringPage(url, page);
   const actual = page.blocks.map((block: { id: string }) => block.id);
   if (actual.join() !== blockIDs[url].join()) throw new Error(`Unknown or missing scale content block: ${url}`);
   const model: ScalePageModel = {
@@ -245,6 +272,7 @@ export function getScalePage(url: keyof typeof blockIDs) {
     title: page.title,
     description: page.description,
     blocks: page.blocks.map((block: { id: string; heading: string; body: string }) => ({ id: block.id, heading: block.heading, body: block.body })),
+    copy: SCALE_PAGE_COPY[url],
     metadata: page.metadata,
     provenance: {
       template_id: page.template_id,
@@ -330,9 +358,4 @@ export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
     ].filter((link) => isPublicRoute(link.url)),
     chords: data.natural_scale_chords.items,
   };
-}
-
-export function scaleSequence(option: ScaleOption, hand: ScaleHand, direction: ScaleDirection) {
-  if (direction !== 'up_down') return option.sequences[hand][direction];
-  return [...option.sequences[hand].ascending, ...option.sequences[hand].descending.slice(1)];
 }
