@@ -2,7 +2,7 @@
 .home-page .ph-hero {
   position: relative;
   isolation: isolate;
-  min-height: 720px;
+  min-height: clamp(600px, calc(100svh - 76px), 680px);
   padding: 0;
   overflow: hidden;
   background: var(--background);
@@ -36,7 +36,7 @@
 }
 
 .home-page .ph-hero-grid {
-  min-height: 720px;
+  min-height: clamp(600px, calc(100svh - 76px), 680px);
   display: flex;
   align-items: center;
 }
