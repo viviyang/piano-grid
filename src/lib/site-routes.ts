@@ -2,6 +2,8 @@ export const PUBLIC_ROUTES = [
   '/',
   '/tools',
   '/chords',
+  '/chords/major',
+  '/chords/minor',
   '/chords/a-minor',
   '/chords/a-major',
   '/chords/c-major',
@@ -11,6 +13,22 @@ export const PUBLIC_ROUTES = [
   '/chords/b-major',
   '/chords/a-flat-major',
   '/chords/c-flat-major',
+  '/chords/f-major',
+  '/chords/d-minor',
+  '/chords/e-minor',
+  '/chords/d-major',
+  '/chords/b-minor',
+  '/chords/f-sharp-minor',
+  '/chords/c-sharp-minor',
+  '/chords/g-sharp-minor',
+  '/chords/b-flat-major',
+  '/chords/g-minor',
+  '/chords/d-flat-major',
+  '/chords/e-flat-major',
+  '/chords/f-sharp-major',
+  '/chords/f-minor',
+  '/chords/b-flat-minor',
+  '/chords/e-flat-minor',
   '/chords/by-key',
   '/chords/finder',
   '/chord-progressions',
@@ -45,12 +63,13 @@ export const SITE_NAVIGATION = [
     label: 'Chords',
     href: '/chords',
     children: [
-      { label: 'A Minor Chord', href: '/chords/a-minor' },
-      { label: 'A Major Chord', href: '/chords/a-major' },
-      { label: 'C Major Chord', href: '/chords/c-major' },
-      { label: 'Chords by Key', href: '/chords/by-key' },
-      { label: 'Chord Progressions', href: '/chord-progressions' },
-      { label: 'Chord Finder', href: '/chords/finder' },
+      { label: 'Major Chords', href: '/chords/major', group: 'Browse' },
+      { label: 'Minor Chords', href: '/chords/minor', group: 'Browse' },
+      { label: 'Chords by Key', href: '/chords/by-key', group: 'Explore' },
+      { label: 'Chord Progressions', href: '/chord-progressions', group: 'Explore' },
+      { label: 'Chord Finder', href: '/chords/finder', group: 'Explore' },
+      { label: 'Piano Chord Guide', href: '/guide/piano-chords', group: 'Learn' },
+      { label: 'Finger Numbers', href: '/keyboard-notes/finger-numbers', group: 'Learn' },
     ],
   },
   {
@@ -82,7 +101,7 @@ export const SITE_NAVIGATION = [
 ] as const satisfies ReadonlyArray<{
   label: string;
   href: PublicRoute;
-  children: ReadonlyArray<{ label: string; href: PublicRoute }>;
+  children: ReadonlyArray<{ label: string; href: PublicRoute; group?: 'Browse' | 'Explore' | 'Learn' }>;
 }>;
 
 const publicRouteSet = new Set<string>(PUBLIC_ROUTES);

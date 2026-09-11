@@ -6,6 +6,7 @@ import { getAMinorContent } from './a-minor-content';
 import type { ChordDetailData, ChordDetailModel, Block, ChordQuality, Voicing } from './a-minor-types';
 import { finalizeChordDetailModel, type ChordDetailRoute } from './chord-detail-model';
 import { cMajorConnectionBlock, fingeringBlock, getChordLearning, practiceBlock } from './chord-learning-content';
+import { getExpansionChordDetail, isExpansionChordDetailRoute } from './chord-expansion-content';
 
 type NewVoicing = {id:string;label:string;symbol:string;bass:string;notes:string[];midi:number[];keyboard_highlights:{midi:number;spelling:string}[];playback:{simultaneous_midi:number[];ascending_midi:number[]}};
 type DetailBinding={h1:string;tool_heading:string;answer:string;keyboard_range_midi:number[];range_label:string;pdf:{url:string;label:string};quality:ChordQuality;formula_degrees:string[];namespace:string;detail_publish_gate:string};
@@ -22,6 +23,7 @@ function splitHref(href:string){const index=href.indexOf('#');return index<0?{pa
 function canPublishLink(href:string,anchors:Set<string>){const {pathname,fragment}=splitHref(href);return isPublicRoute(pathname)&&(!fragment||anchors.has(fragment));}
 export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
  if(url==='/chords/a-minor')return getAMinorContent();
+ if(isExpansionChordDetailRoute(url))return getExpansionChordDetail(url);
  const {page,master}=readAuthorizedPage(url);
  const copy=detailCopy[url as keyof typeof detailCopy];
  const nextBinding=nextBindings[url];
@@ -70,7 +72,9 @@ export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
 
 export type CenterItem={id:string;name:string;root:string;quality:string;url:string|null;voicing:Voicing;tones:string[];formula:string[]};
 export type CenterModel={title:string;metadata:{title:string;description:string;canonical_path:string};blocks:Block[];items:CenterItem[];comparisons:{left:CenterItem;right:CenterItem}[];practiceLinks:{url:string;label:string;description:string}[];filters:{defaults:{root:string|null;quality:string|null;selected_chord_id:string};root_options:{value:string|null;label:string}[];quality_options:{value:string|null;label:string}[]};microcopy:ChordDetailData['microcopy']&{no_results:string};whitePitchClasses:number[];pdf:string};
+export type ChordCategoryModel={url:'/chords/major'|'/chords/minor';quality:'major'|'minor';title:string;directAnswer:string;metadata:{title:string;description:string;canonical_path:string};items:CenterItem[];rootOrder:string[];contentBlocks:{heading:string;body:string}[];links:{url:string;label:string}[];whitePitchClasses:number[]};
 type KeyChordSource={symbol:string;quality:'major'|'minor'|'diminished';notes:string[];semitones_from_root:number[];reference_voicing:string[];fingering:null};
+type HubAddition={id:string;name:string;symbol:string;root:string;quality:'major'|'minor';url:string;tones:string[];formula:string[];voicing:{notes:string[];midi:number[]};status:string};
 const pitchClasses:Record<string,number>={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
 const displayAccidentals=(value:string)=>value.replaceAll('#','♯').replaceAll('b','♭');
 const rootName=(root:string)=>root.replace('#','-sharp').replace('b','-flat');
@@ -94,21 +98,31 @@ export function getChordCenter():CenterModel {
  const keyPage=master.pages['/chords/by-key'];if(!keyPage||keyPage.data.keys.some((key:{evidence_status:string})=>!key.evidence_status.includes('formula crosscheck passed')))throw new Error('Key-chord source rows are not ready for reuse');
  const keyRows=new Map<string,KeyChordSource>();for(const key of keyPage.data.keys)for(const row of key.chords as KeyChordSource[]){if(!['major','minor'].includes(row.quality))continue;const identity=`${row.notes[0]}|${row.quality}`,prior=keyRows.get(identity);if(prior&&JSON.stringify([prior.notes,prior.reference_voicing])!==JSON.stringify([row.notes,row.reference_voicing]))throw new Error(`Conflicting key-chord rows: ${identity}`);keyRows.set(identity,row);}
  const itemMap=new Map(originalItems.map(item=>[item.id,item]));for(const row of keyRows.values()){const item=keyChordItem(row);if(!itemMap.has(item.id))itemMap.set(item.id,item);}
- const order=['c-major','a-minor','f-major','d-minor','g-major','e-minor','d-major','b-minor','a-major','f-sharp-minor','e-major','c-sharp-minor','b-major','g-sharp-minor','b-flat-major','g-minor','c-minor','a-flat-major','c-flat-major'];
+ const additions=JSON.parse(readFileSync(resolve('docs/pianogrid-chords-next-expansion/02_routes/hub.additions.N1.json'),'utf8')) as {new_objects:HubAddition[];expected_hub_count_after_additions:number};
+ if(additions.expected_hub_count_after_additions!==25||additions.new_objects.length!==6)throw new Error('Unexpected N1 hub additions');
+ for(const addition of additions.new_objects){
+  if(addition.status!=='add_to_hub_in_N1'||!isPublicRoute(addition.url))throw new Error(`Blocked N1 hub object: ${addition.id}`);
+  const ascii=(value:string)=>value.replaceAll('♯','#').replaceAll('♭','b');
+  const item=keyChordItem({symbol:ascii(addition.symbol),quality:addition.quality,notes:addition.tones.map(ascii),semitones_from_root:addition.quality==='major'?[0,4,7]:[0,3,7],reference_voicing:addition.voicing.notes.map(ascii),fingering:null});
+  if(item.id!==addition.id||item.url!==addition.url||JSON.stringify(item.voicing.notes_low_to_high.map(note=>note.midi))!==JSON.stringify(addition.voicing.midi))throw new Error(`N1 hub identity mismatch: ${addition.id}`);
+  itemMap.set(item.id,{...item,name:addition.name});
+ }
+ const order=['c-major','a-minor','f-major','d-minor','g-major','e-minor','d-major','b-minor','a-major','f-sharp-minor','e-major','c-sharp-minor','b-major','g-sharp-minor','b-flat-major','g-minor','c-minor','a-flat-major','c-flat-major','d-flat-major','e-flat-major','f-sharp-major','f-minor','b-flat-minor','e-flat-minor'];
  const items=order.map(id=>itemMap.get(id));if(items.some(item=>!item)||items.length!==itemMap.size)throw new Error('Expanded chord collection order is incomplete');const completeItems=items as CenterItem[];
  const comparisons=Object.values(shared.comparisons).map(pair=>{const p=pair as {left:string;right:string};return {left:completeItems.find(i=>i.voicing.voicing_id===p.left)!,right:completeItems.find(i=>i.voicing.voicing_id===p.right)!};});
  const blocks:Block[]=page.blocks.map((block:Block)=>({block_id:block.block_id,content:{...block.content,paragraphs:[...block.content.paragraphs],steps:[...block.content.steps],links:[...block.content.links],table:block.content.table?{columns:[...block.content.table.columns],rows:block.content.table.rows.map(row=>[...row])}:null}}));
  const next=blocks.find(block=>block.block_id==='chords-next')!;
  for(const edge of linkPlan.edges)if(edge.from==='/chords'&&['L053','L054','L061','L062','L063'].includes(edge.id)&&canPublishLink(edge.href,new Set()))next.content.links.push({url:edge.href,label:edge.anchor,published:true});
- blocks.find(block=>block.block_id==='chords-intro')!.content.paragraphs=['Use this piano chord chart to find the notes and keyboard positions for 19 major and minor triads. Read the notes from low to high, hear them together or one at a time, and print a reference to keep beside your keyboard.','The chart includes the major and minor triads already prepared across six common major keys and D minor, plus selected parallel and enharmonic comparisons. It is a practical foundation, not a complete list of piano chords.'];
- blocks.find(block=>block.block_id==='chords-print')!.content.paragraphs[0]='Download the original three-page reference with nine selected chord names. The interactive chart above contains the broader 19-chord collection; use Print this chord or Print matching chords for those results.';
+ next.content.links.push({url:'/chords/major',label:'Browse major chords',published:true},{url:'/chords/minor',label:'Browse minor chords',published:true});
+ blocks.find(block=>block.block_id==='chords-intro')!.content.paragraphs=['Use this piano chord chart to find the notes and keyboard positions for 25 major and minor triads. Read the notes from low to high, hear them together or one at a time, and print a reference to keep beside your keyboard.','The chart covers the practical 12 major and 12 minor pitch-class families, plus the published C-flat major written-spelling reference.'];
+ blocks.find(block=>block.block_id==='chords-print')!.content.paragraphs[0]='Download the original three-page reference with nine selected chord names. The interactive chart above contains the broader 25-chord collection; use Print this chord or Print matching chords for those results.';
  blocks.find(block=>block.block_id==='chords-how-to-read')!.content.paragraphs.push(
   'A root note names the chord’s tonal starting point; the chord type tells you the interval pattern above that root. For example, A is the root in both A major and A minor, while the type changes the third.',
   'Root position places the root as the lowest note. An inversion keeps the same chord tones but places another chord tone lowest. Right-hand and left-hand fingerings are performance examples for a particular voicing, not additional chord types.',
   'A note name identifies a pitch class, an octave number identifies its register, a scale degree describes the note’s place in a scale or chord formula, and a finger number identifies a digit on one hand.'
  );
- const faq=blocks.find(block=>block.block_id==='chords-questions')!.content.table!;faq.rows=faq.rows.map(row=>row[0]==='Are these all the chords on piano?'?[row[0],'No. This chart covers 19 major and minor triads. Diminished, seventh, power, and jazz chords are not included in this collection.']:row);
- const roots=['C','C#','Cb','D','E','F','F#','G','G#','Ab','A','Bb','B'].filter(root=>completeItems.some(item=>item.root===root));
+ const faq=blocks.find(block=>block.block_id==='chords-questions')!.content.table!;faq.rows=faq.rows.map(row=>row[0]==='Are these all the chords on piano?'?[row[0],'No. This chart covers 25 major and minor triads. Diminished, seventh, power, and jazz chords are not included in this collection.']:row);
+ const roots=['C','C#','Cb','Db','D','Eb','E','F','F#','G','G#','Ab','A','Bb','B'].filter(root=>completeItems.some(item=>item.root===root));
  const filters={...page.filters,root_options:[{value:null,label:'Any root'},...roots.map(root=>({value:root,label:displayAccidentals(root)}))]};
  const practiceLinks=[
   {url:'/chords/a-minor#practice',label:'Build A minor',description:'Choose A, C, and E.'},
@@ -118,3 +132,17 @@ export function getChordCenter():CenterModel {
  return {title:blocks[0].content.heading,metadata:{...page.metadata,description:'Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.'},blocks,items:completeItems,comparisons,practiceLinks,filters,microcopy:page.microcopy,whitePitchClasses:shared.conventions.white_pitch_classes,pdf:'/reference/preserved-chords/assets/piano-chord-chart-selected.pdf'};
 }
 
+export function getChordCategory(quality:'major'|'minor'):ChordCategoryModel {
+ const url=`/chords/${quality}` as const;
+ const raw=JSON.parse(readFileSync(resolve(`docs/pianogrid-chords-next-expansion/03_categories/${quality}.page.json`),'utf8')) as {url:string;status:string;title:string;description:string;h1:string;direct_answer:string;root_order:string[];content_blocks:{heading:string;body:string}[]};
+ if(raw.url!==url||raw.status!=='publish_in_N1'||raw.root_order.length!==12)throw new Error(`Invalid ${quality} category package`);
+ const ascii=(value:string)=>value.replaceAll('♯','#').replaceAll('♭','b');
+ const center=getChordCenter();
+ const items=raw.root_order.map(root=>center.items.find(item=>item.quality===quality&&item.root===ascii(root)));
+ if(items.some(item=>!item)||new Set(items).size!==12||items.some(item=>!item!.url))throw new Error(`Incomplete ${quality} category grid`);
+ const planned=JSON.parse(readFileSync(resolve('docs/pianogrid-chords-next-expansion/06_internal_links/internal-links.N1.json'),'utf8')) as {from:string;to:string;anchor:string}[];
+ const supportTargets=new Set(['/chords','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords']);
+ const links=planned.filter(edge=>edge.from===url&&isPublicRoute(edge.to)&&supportTargets.has(edge.to)).map(edge=>({url:edge.to,label:edge.anchor}));
+ if(quality==='major'&&isPublicRoute('/chords/c-flat-major'))links.push({url:'/chords/c-flat-major',label:'Open the C-flat major written-spelling reference'});
+ return {url,quality,title:raw.h1,directAnswer:raw.direct_answer,metadata:{title:raw.title,description:raw.description,canonical_path:url},items:items as CenterItem[],rootOrder:raw.root_order,contentBlocks:raw.content_blocks,links,whitePitchClasses:center.whitePitchClasses};
+}

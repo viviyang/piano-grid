@@ -3,7 +3,10 @@ import {isPublicRoute} from './site-routes';
 
 export type ChordDetailRoute=
   |'/chords/a-minor'|'/chords/a-major'|'/chords/c-major'
-  |'/chords/g-major'|'/chords/c-minor'|'/chords/e-major'|'/chords/b-major'|'/chords/a-flat-major'|'/chords/c-flat-major';
+  |'/chords/g-major'|'/chords/c-minor'|'/chords/e-major'|'/chords/b-major'|'/chords/a-flat-major'|'/chords/c-flat-major'
+  |'/chords/f-major'|'/chords/d-minor'|'/chords/e-minor'|'/chords/d-major'|'/chords/b-minor'
+  |'/chords/f-sharp-minor'|'/chords/c-sharp-minor'|'/chords/g-sharp-minor'|'/chords/b-flat-major'|'/chords/g-minor'
+  |'/chords/d-flat-major'|'/chords/e-flat-major'|'/chords/f-sharp-major'|'/chords/f-minor'|'/chords/b-flat-minor'|'/chords/e-flat-minor';
 const expectedFormula:Record<ChordQuality,string[]>={major:['1','3','5'],minor:['1','b3','5']};
 const ascii=(value:string)=>value.replaceAll('♯','#').replaceAll('♭','b');
 const pitchClass=(value:string)=>{const match=/^([A-G](?:#|b)?)-?\d*$/.exec(ascii(value));if(!match)throw new Error(`Invalid pitch spelling: ${value}`);return match[1];};
@@ -37,7 +40,7 @@ export function finalizeChordDetailModel(model:ChordDetailModel):ChordDetailMode
     if(model.fingeringExamples.length!==2||new Set(model.fingeringExamples.map(example=>example.id)).size!==2)throw new Error(`Incomplete/duplicate fingering examples: ${data.url}`);
     if(!same(sorted(model.fingeringExamples.map(example=>example.hand)),['left','right']))throw new Error(`Missing hand-specific fingering: ${data.url}`);
   }else if(data.fingeringStatus==='not_provided'){
-    if(data.url!=='/chords/c-flat-major'||model.fingeringExamples.length!==0)throw new Error(`Invalid optional fingering state: ${data.url}`);
+    if(model.fingeringExamples.length!==0)throw new Error(`Invalid optional fingering state: ${data.url}`);
   }else throw new Error(`Unknown fingering state: ${data.url}`);
   const sourceIds=new Set(model.sources.map(source=>source.id));
   if(sourceIds.size!==model.sources.length||model.sources.some(source=>!source.title||!source.publisher||!source.url.startsWith('https://')||!/^\d{4}-\d{2}-\d{2}$/.test(source.checkedOn)||!source.supports||!source.limitation))throw new Error(`Invalid fingering source record: ${data.url}`);

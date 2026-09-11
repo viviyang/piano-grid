@@ -1,0 +1,23 @@
+.ch-category-page .am-page-heading{margin-top:var(--pr-space-32)}
+.ch-category-intro{max-width:var(--pr-container-reading);margin-top:1rem}
+.ch-category-grid-section{margin-top:2.25rem}
+.ch-category-section-heading{display:flex;align-items:end;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--border);padding-bottom:1rem}
+.ch-category-section-heading h2{font-size:var(--pr-type-section-title-size)}
+.ch-category-section-heading>p{color:var(--muted-foreground);font-size:var(--pr-type-meta-size)}
+.ch-root-chips{display:flex;gap:.55rem;overflow-x:auto;padding:1rem 0 .4rem;scrollbar-width:thin}
+.ch-root-chips button{flex:0 0 auto;min-width:var(--pr-control-min-size);min-height:var(--pr-control-min-size);padding:.55rem .8rem;border:1px solid var(--border);border-radius:999px;background:var(--background);color:var(--foreground);font:inherit;font-size:var(--pr-type-ui-size);cursor:pointer}
+.ch-root-chips button[aria-pressed=true]{border-color:var(--selected-border);background:var(--selected-hover);color:var(--selected-foreground);font-weight:680}
+.ch-root-chips button:disabled{cursor:default}
+.ch-category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.ch-category-card{min-width:0;padding:var(--pr-tool-padding);border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--surface);container-type:inline-size}
+.ch-category-card[hidden]{display:none}
+.ch-category-card-heading{display:flex;align-items:baseline;justify-content:space-between;gap:1rem}
+.ch-category-card-heading h3{font-size:var(--pr-type-section-title-size)}
+.ch-category-card-heading span{color:var(--muted-foreground);font-size:var(--pr-type-notes-size);font-weight:680}
+.ch-category-tones{display:flex;align-items:baseline;justify-content:space-between;gap:.75rem;flex-wrap:wrap;margin:.5rem 0 0}
+.ch-category-tones strong{font-size:var(--pr-type-notes-size)}
+.ch-category-tones span{color:var(--muted-foreground);font-size:var(--pr-type-meta-size)}
+.ch-category-card>.am-button{margin-top:1rem}
+.ch-category-links{display:flex;flex-wrap:wrap;gap:.55rem}
+@media(max-width:47.999rem){.ch-category-grid{grid-template-columns:1fr}.ch-category-section-heading{align-items:start}.ch-category-card>.am-button{width:100%}}
+@media print{.ch-root-chips{display:none}.ch-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ch-category-card{break-inside:avoid}}

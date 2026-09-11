@@ -1,0 +1,79 @@
+{
+  "version": "N1",
+  "principle": "Navigate by user task and chord family; do not use a few sample chord details as the global menu.",
+  "desktop_mega_menu": {
+    "overview": {
+      "label": "Chord Chart",
+      "href": "/chords",
+      "description": "Browse all currently supported chords"
+    },
+    "groups": [
+      {
+        "heading": "Browse",
+        "items": [
+          {
+            "label": "Major Chords",
+            "href": "/chords/major"
+          },
+          {
+            "label": "Minor Chords",
+            "href": "/chords/minor"
+          }
+        ]
+      },
+      {
+        "heading": "Explore",
+        "items": [
+          {
+            "label": "Chords by Key",
+            "href": "/chords/by-key"
+          },
+          {
+            "label": "Chord Progressions",
+            "href": "/chord-progressions"
+          },
+          {
+            "label": "Chord Finder",
+            "href": "/chords/finder"
+          }
+        ]
+      },
+      {
+        "heading": "Learn",
+        "items": [
+          {
+            "label": "Piano Chord Guide",
+            "href": "/guide/piano-chords"
+          },
+          {
+            "label": "Finger Numbers",
+            "href": "/keyboard-notes/finger-numbers"
+          }
+        ]
+      }
+    ],
+    "do_not_show_as_primary_nav": [
+      "/chords/a-minor",
+      "/chords/a-major",
+      "/chords/c-major"
+    ]
+  },
+  "mobile": {
+    "label": "Chords",
+    "items_order": [
+      "/chords",
+      "/chords/major",
+      "/chords/minor",
+      "/chords/by-key",
+      "/chord-progressions",
+      "/chords/finder",
+      "/guide/piano-chords",
+      "/keyboard-notes/finger-numbers"
+    ]
+  },
+  "category_root_browse": {
+    "placement": "inside /chords, /chords/major, /chords/minor",
+    "behavior": "root chips filter/scroll within the page; they are not separate SEO routes",
+    "enharmonic_policy": "show written spellings needed by the current data; do not create duplicate enharmonic detail pages without SERP validation"
+  }
+}

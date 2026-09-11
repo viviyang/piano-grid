@@ -1,0 +1,261 @@
+{
+  "schema_version": "next-expansion-1.0",
+  "url": "/chords/d-minor",
+  "release_batch": "N1",
+  "release_status": "ready_for_codex_integration",
+  "provenance": "current_hub",
+  "title": "D Minor Piano Chord (Dm): Notes, Inversions & PDF",
+  "description": "Find the d minor chord on piano: D, F, A. See keyboard positions, compare three inversions, hear the notes and print a reference.",
+  "h1": "D Minor Piano Chord",
+  "main_keyword": "d minor chord piano",
+  "secondary_keywords": [
+    "Dm chord piano",
+    "d minor piano chord",
+    "d minor chord notes",
+    "d minor chord inversions"
+  ],
+  "keyword_volume_status": "not_revalidated_in_this_package",
+  "user_task": "Find the notes, keyboard position and inversions of the D Minor triad.",
+  "data": {
+    "root": "D",
+    "quality": "minor",
+    "symbol": "Dm",
+    "aliases": [
+      "Dm",
+      "D Minor",
+      "D minor"
+    ],
+    "pitch_classes": [
+      "D",
+      "F",
+      "A"
+    ],
+    "formula_degrees": [
+      "1",
+      "♭3",
+      "5"
+    ],
+    "semitones_from_root": [
+      0,
+      3,
+      7
+    ],
+    "voicings": [
+      {
+        "id": "root",
+        "label": "Root position",
+        "notes": [
+          "D4",
+          "F4",
+          "A4"
+        ],
+        "midi": [
+          62,
+          65,
+          69
+        ],
+        "bass": "D4",
+        "symbol": "Dm",
+        "keyboard_highlights": [
+          {
+            "midi": 62,
+            "spelling": "D4"
+          },
+          {
+            "midi": 65,
+            "spelling": "F4"
+          },
+          {
+            "midi": 69,
+            "spelling": "A4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            62,
+            65,
+            69
+          ],
+          "ascending_midi": [
+            62,
+            65,
+            69
+          ],
+          "descending_midi": [
+            69,
+            65,
+            62
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "first",
+        "label": "First inversion",
+        "notes": [
+          "F4",
+          "A4",
+          "D5"
+        ],
+        "midi": [
+          65,
+          69,
+          74
+        ],
+        "bass": "F4",
+        "symbol": "Dm/F",
+        "keyboard_highlights": [
+          {
+            "midi": 65,
+            "spelling": "F4"
+          },
+          {
+            "midi": 69,
+            "spelling": "A4"
+          },
+          {
+            "midi": 74,
+            "spelling": "D5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            65,
+            69,
+            74
+          ],
+          "ascending_midi": [
+            65,
+            69,
+            74
+          ],
+          "descending_midi": [
+            74,
+            69,
+            65
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "second",
+        "label": "Second inversion",
+        "notes": [
+          "A3",
+          "D4",
+          "F4"
+        ],
+        "midi": [
+          57,
+          62,
+          65
+        ],
+        "bass": "A3",
+        "symbol": "Dm/A",
+        "keyboard_highlights": [
+          {
+            "midi": 57,
+            "spelling": "A3"
+          },
+          {
+            "midi": 62,
+            "spelling": "D4"
+          },
+          {
+            "midi": 65,
+            "spelling": "F4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            57,
+            62,
+            65
+          ],
+          "ascending_midi": [
+            57,
+            62,
+            65
+          ],
+          "descending_midi": [
+            65,
+            62,
+            57
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      }
+    ],
+    "default_voicing": "root",
+    "fingering_policy": "null_unless_existing_verified_source_is_found",
+    "assets": {
+      "pdf": "/assets/chord-d-minor.pdf",
+      "svg": "/assets/chord-d-minor.svg",
+      "generation": "reuse_current_detail_asset_pipeline; do not claim available before generated and validated"
+    }
+  },
+  "content": {
+    "direct_answer": "The D Minor chord contains D, F, A. Its formula is 1–♭3–5.",
+    "blocks": [
+      {
+        "id": "notes-and-keyboard",
+        "heading": "Notes and keyboard position",
+        "body": "The D Minor triad uses D, F, A. Read the displayed pitches from low to high. Octave numbers identify register, not finger numbers."
+      },
+      {
+        "id": "formula",
+        "heading": "How the D Minor chord is built",
+        "body": "From D, the chord uses the root, a minor third and a perfect fifth. The scale-degree formula is 1–♭3–5."
+      },
+      {
+        "id": "inversions",
+        "heading": "Root position and inversions",
+        "body": "The same chord tones can be reordered so a different chord tone is the lowest note. The written slash symbol identifies the bass note; it does not change the chord root."
+      }
+    ],
+    "faq": [
+      {
+        "q": "What notes are in the D Minor chord?",
+        "a": "D, F, A."
+      },
+      {
+        "q": "What is the formula for D Minor?",
+        "a": "1–♭3–5."
+      },
+      {
+        "q": "Does changing the inversion make it a different chord?",
+        "a": "No. The chord tones remain the same; the lowest note changes."
+      }
+    ]
+  },
+  "related_routes": [
+    "/chords",
+    "/chords/minor",
+    "/chords/by-key",
+    "/chord-progressions",
+    "/guide/piano-chords"
+  ],
+  "evidence": {
+    "music_rule_sources": [
+      "PG-TRIADS",
+      "PG-OMT",
+      "PG-ASPN"
+    ],
+    "status": "[已核实] interval construction and MIDI checked by package validator; fingering intentionally absent unless existing verified evidence is found"
+  }
+}

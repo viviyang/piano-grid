@@ -1,0 +1,53 @@
+{
+  "url": "/chords/major",
+  "status": "publish_in_N1",
+  "title": "Major Piano Chords: Notes, Formulas & Keyboard Diagrams",
+  "description": "Browse major piano chords by root. See chord notes, formulas, keyboard diagrams and links to detailed inversion pages.",
+  "h1": "Major Piano Chords",
+  "main_keyword": "major piano chords",
+  "keywords": [
+    "major chords piano",
+    "piano major chords",
+    "major chord chart piano"
+  ],
+  "direct_answer": "A major triad uses the formula 1–3–5.",
+  "root_order": [
+    "C",
+    "D♭",
+    "D",
+    "E♭",
+    "E",
+    "F",
+    "F♯",
+    "G",
+    "A♭",
+    "A",
+    "B♭",
+    "B"
+  ],
+  "modules": [
+    "direct answer and formula",
+    "root-note browse grid",
+    "cards for every published detail in this family",
+    "major-vs-minor comparison",
+    "how inversions work",
+    "links to by-key, progressions, finder and chord guide",
+    "FAQ"
+  ],
+  "interaction": {
+    "root_filter": "client enhancement only; all cards remain in server HTML",
+    "query_params": "do not create indexable root-filter URLs",
+    "detail_links": "only public registered routes"
+  },
+  "content_blocks": [
+    {
+      "heading": "What is a major chord?",
+      "body": "A major triad contains a root, major third and perfect fifth."
+    },
+    {
+      "heading": "How to use this chart",
+      "body": "Choose a root, read the chord tones, then open a detail page to compare root position and inversions. Octave numbers describe register; finger numbers are a separate concept."
+    }
+  ],
+  "seo_note": "Keyword targets are intent-derived; search volume is not revalidated in this package."
+}

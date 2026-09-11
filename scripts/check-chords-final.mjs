@@ -9,7 +9,9 @@ await mkdir(`${out}/screenshots`, { recursive: true });
 const seo = JSON.parse(await readFile('docs/pianogrid-chords-content-next/01_planning/url-seo-keywords.master.json', 'utf8'));
 const master = JSON.parse(await readFile('docs/content/site-master/page-content.master.json', 'utf8'));
 const planned = seo.pages.map(page => page.url);
-const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music'];
+const nextRoutes = JSON.parse(await readFile('docs/pianogrid-chords-next-expansion/02_routes/routes.master.json', 'utf8')).N1;
+const nextPublished = [...nextRoutes.new_category_urls, ...nextRoutes.new_detail_urls];
+const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished];
 const details = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major'];
 const progressionDetails = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/e-major', '/chords/b-major'];
 const results = [], runtimeErrors = [];
@@ -41,10 +43,10 @@ try {
   const sitemapResponse = await page.request.get(base + '/sitemap.xml');
   const sitemapText = await sitemapResponse.text();
   const sitemapPaths = [...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match => match[1] || '/');
-  check('Sitemap contains exactly the 28 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
+  check('Sitemap contains exactly the 46 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
   check('All 15 planned URLs are in sitemap', planned.every(url => sitemapPaths.includes(url)));
   const finalScope = sitemapPaths.filter(url => url.startsWith('/chord') || ['/guide/piano-chords', '/keyboard-notes/finger-numbers'].includes(url));
-  check('No unexpected chord-system URL is published', finalScope.every(url => planned.includes(url)), finalScope.filter(url => !planned.includes(url)));
+  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished].includes(url)));
 
   const hrefs = new Set();
   for (const url of planned) {
@@ -54,8 +56,8 @@ try {
   for (const href of hrefs) check(`Internal link resolves ${href}`, (await page.request.get(base + href)).status() === 200);
 
   await page.goto(base + '/chords');
-  check('Hub exposes 19 chord objects', await page.locator('.ch-result').count() === 19);
-  check('Hub links nine published details', await page.locator('.ch-result a[href^="/chords/"]').count() === 9);
+  check('Hub exposes 25 chord objects', await page.locator('.ch-result').count() === 25);
+  check('Hub links all 25 published details', await page.locator('.ch-result a[href^="/chords/"]').count() === 25);
   check('Hub links finder, by-key and progressions', (await Promise.all(['/chords/finder', '/chords/by-key', '/chord-progressions'].map(href => page.locator(`main a[href="${href}"]`).count()))).every(count => count > 0));
   for (const url of details) {
     await page.goto(base + url);
@@ -77,7 +79,7 @@ try {
   const finderRaw = await nojs.goto(base + '/chords/finder');
   const finderHTML = await finderRaw.text();
   check('Finder server HTML includes tool and seven explanatory modules', finderRaw.status() === 200 && finderHTML.includes('Choose the keys you are playing') && await nojs.locator('.sp-reading .am-content-section').count() === 7);
-  check('Finder server HTML states bounded vocabulary', finderHTML.includes('19-chord major/minor triad catalogue') && finderHTML.includes('does not guess sixth, seventh, incomplete or extended chords'));
+  check('Finder server HTML states bounded vocabulary', finderHTML.includes('25-chord major/minor triad catalogue') && finderHTML.includes('does not guess sixth, seventh, incomplete or extended chords'));
   await nojs.close();
 
   await page.goto(base + '/chords/finder');
@@ -93,7 +95,7 @@ try {
   check('Finder no-result state', await page.locator('.fd-result').getAttribute('data-result-state') === 'none' && (await page.locator('.fd-state').innerText()).includes('No supported match confirmed'));
   await page.getByRole('button', { name: 'Clear', exact: true }).click();
   for (const pc of [0, 5, 9]) await key(pc).click();
-  check('Finder unpublished candidate has no dead link', await page.locator('.fd-candidates [data-chord-id="f-major"]').count() === 1 && await page.locator('.fd-candidates [data-chord-id="f-major"] a').count() === 0 && await page.locator('.fd-candidates [data-chord-id="f-major"] .fd-no-link').count() === 1);
+  check('Finder newly published candidate links to its detail', await page.locator('.fd-candidates [data-chord-id="f-major"]').count() === 1 && await page.locator('.fd-candidates [data-chord-id="f-major"] a[href="/chords/f-major"]').count() === 1);
   const finderText = await page.locator('main').innerText();
   check('Finder explicitly limits MIDI, microphone and performance input', /not microphone recognition, MIDI capture or a measurement of timing and technique/i.test(finderText));
   await page.setViewportSize({ width: 1440, height: 1000 }); await page.screenshot({ path: `${out}/screenshots/finder-1440.png`, fullPage: true });

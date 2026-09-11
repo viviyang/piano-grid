@@ -1,0 +1,31 @@
+{
+  "version": "target",
+  "top_level": "Chords",
+  "sections": {
+    "Browse": [
+      "/chords",
+      "/chords/major",
+      "/chords/minor"
+    ],
+    "More Chords": [
+      "/chords/seventh",
+      "/chords/extended",
+      "/chords/suspended",
+      "/chords/diminished",
+      "/chords/augmented",
+      "/chords/add",
+      "/chords/altered"
+    ],
+    "Explore": [
+      "/chords/by-key",
+      "/chord-progressions",
+      "/chords/finder"
+    ],
+    "Learn": [
+      "/guide/piano-chords",
+      "/keyboard-notes/finger-numbers"
+    ]
+  },
+  "activation_rule": "Only expose a route in navigation after it is public, passes content/functional validation and is included in the public route registry.",
+  "note": "More Chords is a navigation group, not necessarily a standalone URL."
+}

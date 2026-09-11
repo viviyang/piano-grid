@@ -1,0 +1,213 @@
+[
+  {
+    "id": "major",
+    "label": "Major Chords",
+    "url": "/chords/major",
+    "status": "publish_in_N1",
+    "formula": [
+      "1",
+      "3",
+      "5"
+    ],
+    "note_count": 3,
+    "summary": "Browse major triads by root, compare notes and inversions, and continue to key/progression practice.",
+    "main_keyword": "major piano chords",
+    "secondary_keywords": [
+      "major chords piano",
+      "piano major chords",
+      "major chord chart piano"
+    ]
+  },
+  {
+    "id": "minor",
+    "label": "Minor Chords",
+    "url": "/chords/minor",
+    "status": "publish_in_N1",
+    "formula": [
+      "1",
+      "♭3",
+      "5"
+    ],
+    "note_count": 3,
+    "summary": "Browse minor triads by root, compare notes and inversions, and contrast each chord with its parallel major form.",
+    "main_keyword": "minor piano chords",
+    "secondary_keywords": [
+      "minor chords piano",
+      "piano minor chords",
+      "minor chord chart piano"
+    ]
+  },
+  {
+    "id": "seventh",
+    "label": "Seventh Chords",
+    "url": "/chords/seventh",
+    "status": "planned_after_model_upgrade",
+    "formula_families": {
+      "dominant7": [
+        "1",
+        "3",
+        "5",
+        "♭7"
+      ],
+      "major7": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "minor7": [
+        "1",
+        "♭3",
+        "5",
+        "♭7"
+      ],
+      "half_diminished": [
+        "1",
+        "♭3",
+        "♭5",
+        "♭7"
+      ]
+    },
+    "note_count": 4,
+    "main_keyword": "piano seventh chords",
+    "secondary_keywords": [
+      "7th chords piano",
+      "piano 7th chords"
+    ]
+  },
+  {
+    "id": "extended",
+    "label": "Extended Chords",
+    "url": "/chords/extended",
+    "status": "planned_after_variable_note_model",
+    "formula_families": {
+      "9": [
+        "1",
+        "3",
+        "5",
+        "♭7",
+        "9"
+      ],
+      "11": [
+        "1",
+        "3",
+        "5",
+        "♭7",
+        "9",
+        "11"
+      ],
+      "13": [
+        "1",
+        "3",
+        "5",
+        "♭7",
+        "9",
+        "11",
+        "13"
+      ]
+    },
+    "note_count": "5+",
+    "main_keyword": "extended piano chords",
+    "secondary_keywords": [
+      "piano 9th chords",
+      "piano 11th chords",
+      "piano 13th chords"
+    ]
+  },
+  {
+    "id": "suspended",
+    "label": "Suspended Chords",
+    "url": "/chords/suspended",
+    "status": "planned_after_quality_upgrade",
+    "formula_families": {
+      "sus2": [
+        "1",
+        "2",
+        "5"
+      ],
+      "sus4": [
+        "1",
+        "4",
+        "5"
+      ]
+    },
+    "note_count": 3,
+    "main_keyword": "sus chords piano",
+    "secondary_keywords": [
+      "suspended chords piano",
+      "sus2 chord piano",
+      "sus4 chord piano"
+    ]
+  },
+  {
+    "id": "diminished",
+    "label": "Diminished Chords",
+    "url": "/chords/diminished",
+    "status": "planned_after_quality_upgrade",
+    "formula": [
+      "1",
+      "♭3",
+      "♭5"
+    ],
+    "note_count": 3,
+    "main_keyword": "diminished chords piano",
+    "secondary_keywords": [
+      "diminished piano chords",
+      "dim chord piano"
+    ]
+  },
+  {
+    "id": "augmented",
+    "label": "Augmented Chords",
+    "url": "/chords/augmented",
+    "status": "planned_after_quality_upgrade",
+    "formula": [
+      "1",
+      "3",
+      "♯5"
+    ],
+    "note_count": 3,
+    "main_keyword": "augmented chords piano",
+    "secondary_keywords": [
+      "augmented piano chords",
+      "aug chord piano"
+    ]
+  },
+  {
+    "id": "add",
+    "label": "Add Chords",
+    "url": "/chords/add",
+    "status": "planned_after_quality_upgrade",
+    "formula_families": {
+      "add9": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "madd9": [
+        "1",
+        "♭3",
+        "5",
+        "9"
+      ]
+    },
+    "note_count": 4,
+    "main_keyword": "add chords piano",
+    "secondary_keywords": [
+      "add9 chord piano",
+      "piano add9 chords"
+    ]
+  },
+  {
+    "id": "altered",
+    "label": "Altered Chords",
+    "url": "/chords/altered",
+    "status": "planned_requires_explicit_quality_rules",
+    "note_count": "variable",
+    "main_keyword": "altered chords piano",
+    "secondary_keywords": [
+      "altered dominant chords piano"
+    ]
+  }
+]

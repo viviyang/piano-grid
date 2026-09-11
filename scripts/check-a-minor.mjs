@@ -48,8 +48,8 @@ try{
     if(b.block_id==='am-next'){
       // B1 restores the three existing destinations; historical JSON publication flags stay intact.
       const expected=['/chords','/chords/a-major','/scales/a-minor'];
-      check('am-next restores the three published references',equal(await page.locator('#am-next a').evaluateAll(links=>links.map(a=>a.getAttribute('href'))),expected));
-      check('am-next preserves original link labels',equal(await page.locator('#am-next a').allTextContents(),b.content.links.map(l=>l.label)));
+      check('am-next preserves the three original published references',equal((await page.locator('#am-next a').evaluateAll(links=>links.map(a=>a.getAttribute('href')))).slice(0,3),expected));
+      check('am-next preserves original link labels',equal((await page.locator('#am-next a').allTextContents()).slice(0,3),b.content.links.map(l=>l.label)));
       check('A major comparison has its real detail link',await page.locator('#am-why-minor a[href="/chords/a-major"]').count()===1);
       continue;
     }

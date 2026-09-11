@@ -26,11 +26,11 @@ try{
     check(`${route} production title`,await page.title()===(homeRoute?homeTitle:metadataTitleOverrides[route]||source.metadata.title));
     const robots=(await page.locator('meta[name=robots]').getAttribute('content'))||'';
     check(`${route} production index/follow`,robots.includes('index')&&robots.includes('follow')&&!robots.includes('noindex')&&!robots.includes('nofollow'),robots);
-    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===15);
+    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===16);
     check(`${route} excludes master payload`,!html.includes('source_usage_batches')&&!html.includes('retained_without_url')&&!html.includes('needed_to_resolve'));
   }
   await page.goto(base+'/');
-  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===21);
+  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===22);
   for(const route of ['/','/tools'])for(const width of [1440,390,320,768]){
     await page.setViewportSize({width,height:950});await page.goto(base+route);
     check(`${route} production responsive ${width}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
@@ -58,7 +58,7 @@ try{
   const robotsResponse=await page.request.get(base+'/robots.txt'),robotsText=await robotsResponse.text();
   check('production robots allows indexing',robotsResponse.status()===200&&robotsText.includes('Allow: /')&&!robotsText.includes('Disallow: /')&&robotsText.includes('Sitemap: https://pianogrid.com/sitemap.xml'));
   const sitemapText=await (await page.request.get(base+'/sitemap.xml')).text();
-  check('production sitemap contains 28 public routes',routes.every(route=>sitemapText.includes(`https://pianogrid.com${route}`))&&!sitemapText.includes('localhost'));
+  check('production sitemap contains all registered public routes',routes.every(route=>sitemapText.includes(`https://pianogrid.com${route}`))&&!sitemapText.includes('localhost'));
   for(const asset of ['/assets/home/east-lake-piano-hero.png','/assets/home/east-lake-grand-piano.webp','/reference/assets/blank-piano-staff-letter.pdf','/assets/guides/piano-starter-and-reading.pdf'])check(`production asset ${asset}`,(await page.request.get(base+asset)).status()===200);
   check('production has no runtime errors',errors.length===0,errors);
 }finally{await browser.close();}

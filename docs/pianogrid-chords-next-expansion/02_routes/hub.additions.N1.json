@@ -1,0 +1,193 @@
+{
+  "current_hub_count_reported": 19,
+  "new_objects": [
+    {
+      "id": "d-flat-major",
+      "name": "D-flat Major",
+      "symbol": "D♭",
+      "root": "D♭",
+      "quality": "major",
+      "url": "/chords/d-flat-major",
+      "tones": [
+        "D♭",
+        "F",
+        "A♭"
+      ],
+      "formula": [
+        "1",
+        "3",
+        "5"
+      ],
+      "voicing": {
+        "notes": [
+          "D♭4",
+          "F4",
+          "A♭4"
+        ],
+        "midi": [
+          61,
+          65,
+          68
+        ]
+      },
+      "status": "add_to_hub_in_N1"
+    },
+    {
+      "id": "e-flat-major",
+      "name": "E-flat Major",
+      "symbol": "E♭",
+      "root": "E♭",
+      "quality": "major",
+      "url": "/chords/e-flat-major",
+      "tones": [
+        "E♭",
+        "G",
+        "B♭"
+      ],
+      "formula": [
+        "1",
+        "3",
+        "5"
+      ],
+      "voicing": {
+        "notes": [
+          "E♭4",
+          "G4",
+          "B♭4"
+        ],
+        "midi": [
+          63,
+          67,
+          70
+        ]
+      },
+      "status": "add_to_hub_in_N1"
+    },
+    {
+      "id": "f-sharp-major",
+      "name": "F-sharp Major",
+      "symbol": "F♯",
+      "root": "F♯",
+      "quality": "major",
+      "url": "/chords/f-sharp-major",
+      "tones": [
+        "F♯",
+        "A♯",
+        "C♯"
+      ],
+      "formula": [
+        "1",
+        "3",
+        "5"
+      ],
+      "voicing": {
+        "notes": [
+          "F♯3",
+          "A♯3",
+          "C♯4"
+        ],
+        "midi": [
+          54,
+          58,
+          61
+        ]
+      },
+      "status": "add_to_hub_in_N1"
+    },
+    {
+      "id": "f-minor",
+      "name": "F Minor",
+      "symbol": "Fm",
+      "root": "F",
+      "quality": "minor",
+      "url": "/chords/f-minor",
+      "tones": [
+        "F",
+        "A♭",
+        "C"
+      ],
+      "formula": [
+        "1",
+        "♭3",
+        "5"
+      ],
+      "voicing": {
+        "notes": [
+          "F4",
+          "A♭4",
+          "C5"
+        ],
+        "midi": [
+          65,
+          68,
+          72
+        ]
+      },
+      "status": "add_to_hub_in_N1"
+    },
+    {
+      "id": "b-flat-minor",
+      "name": "B-flat Minor",
+      "symbol": "B♭m",
+      "root": "B♭",
+      "quality": "minor",
+      "url": "/chords/b-flat-minor",
+      "tones": [
+        "B♭",
+        "D♭",
+        "F"
+      ],
+      "formula": [
+        "1",
+        "♭3",
+        "5"
+      ],
+      "voicing": {
+        "notes": [
+          "B♭3",
+          "D♭4",
+          "F4"
+        ],
+        "midi": [
+          58,
+          61,
+          65
+        ]
+      },
+      "status": "add_to_hub_in_N1"
+    },
+    {
+      "id": "e-flat-minor",
+      "name": "E-flat Minor",
+      "symbol": "E♭m",
+      "root": "E♭",
+      "quality": "minor",
+      "url": "/chords/e-flat-minor",
+      "tones": [
+        "E♭",
+        "G♭",
+        "B♭"
+      ],
+      "formula": [
+        "1",
+        "♭3",
+        "5"
+      ],
+      "voicing": {
+        "notes": [
+          "E♭4",
+          "G♭4",
+          "B♭4"
+        ],
+        "midi": [
+          63,
+          66,
+          70
+        ]
+      },
+      "status": "add_to_hub_in_N1"
+    }
+  ],
+  "expected_hub_count_after_additions": 25,
+  "link_update": "After all 16 N1 details are registered, every one of the 25 hub objects should have a detail URL."
+}

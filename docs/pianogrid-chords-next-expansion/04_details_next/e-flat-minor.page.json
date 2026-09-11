@@ -1,0 +1,261 @@
+{
+  "schema_version": "next-expansion-1.0",
+  "url": "/chords/e-flat-minor",
+  "release_batch": "N1",
+  "release_status": "ready_for_codex_integration",
+  "provenance": "new_derived",
+  "title": "E-flat Minor Piano Chord (E♭m): Notes, Inversions & PDF",
+  "description": "Find the e-flat minor chord on piano: E♭, G♭, B♭. See keyboard positions, compare three inversions, hear the notes and print a reference.",
+  "h1": "E-flat Minor Piano Chord",
+  "main_keyword": "e-flat minor chord piano",
+  "secondary_keywords": [
+    "E flat m chord piano",
+    "e-flat minor piano chord",
+    "e-flat minor chord notes",
+    "e-flat minor chord inversions"
+  ],
+  "keyword_volume_status": "not_revalidated_in_this_package",
+  "user_task": "Find the notes, keyboard position and inversions of the E-flat Minor triad.",
+  "data": {
+    "root": "E♭",
+    "quality": "minor",
+    "symbol": "E♭m",
+    "aliases": [
+      "E♭m",
+      "E-flat Minor",
+      "E♭ minor"
+    ],
+    "pitch_classes": [
+      "E♭",
+      "G♭",
+      "B♭"
+    ],
+    "formula_degrees": [
+      "1",
+      "♭3",
+      "5"
+    ],
+    "semitones_from_root": [
+      0,
+      3,
+      7
+    ],
+    "voicings": [
+      {
+        "id": "root",
+        "label": "Root position",
+        "notes": [
+          "E♭4",
+          "G♭4",
+          "B♭4"
+        ],
+        "midi": [
+          63,
+          66,
+          70
+        ],
+        "bass": "E♭4",
+        "symbol": "E♭m",
+        "keyboard_highlights": [
+          {
+            "midi": 63,
+            "spelling": "E♭4"
+          },
+          {
+            "midi": 66,
+            "spelling": "G♭4"
+          },
+          {
+            "midi": 70,
+            "spelling": "B♭4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            63,
+            66,
+            70
+          ],
+          "ascending_midi": [
+            63,
+            66,
+            70
+          ],
+          "descending_midi": [
+            70,
+            66,
+            63
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "first",
+        "label": "First inversion",
+        "notes": [
+          "G♭4",
+          "B♭4",
+          "E♭5"
+        ],
+        "midi": [
+          66,
+          70,
+          75
+        ],
+        "bass": "G♭4",
+        "symbol": "E♭m/G♭",
+        "keyboard_highlights": [
+          {
+            "midi": 66,
+            "spelling": "G♭4"
+          },
+          {
+            "midi": 70,
+            "spelling": "B♭4"
+          },
+          {
+            "midi": 75,
+            "spelling": "E♭5"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            66,
+            70,
+            75
+          ],
+          "ascending_midi": [
+            66,
+            70,
+            75
+          ],
+          "descending_midi": [
+            75,
+            70,
+            66
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "second",
+        "label": "Second inversion",
+        "notes": [
+          "B♭3",
+          "E♭4",
+          "G♭4"
+        ],
+        "midi": [
+          58,
+          63,
+          66
+        ],
+        "bass": "B♭3",
+        "symbol": "E♭m/B♭",
+        "keyboard_highlights": [
+          {
+            "midi": 58,
+            "spelling": "B♭3"
+          },
+          {
+            "midi": 63,
+            "spelling": "E♭4"
+          },
+          {
+            "midi": 66,
+            "spelling": "G♭4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            58,
+            63,
+            66
+          ],
+          "ascending_midi": [
+            58,
+            63,
+            66
+          ],
+          "descending_midi": [
+            66,
+            63,
+            58
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      }
+    ],
+    "default_voicing": "root",
+    "fingering_policy": "null_unless_existing_verified_source_is_found",
+    "assets": {
+      "pdf": "/assets/chord-e-flat-minor.pdf",
+      "svg": "/assets/chord-e-flat-minor.svg",
+      "generation": "reuse_current_detail_asset_pipeline; do not claim available before generated and validated"
+    }
+  },
+  "content": {
+    "direct_answer": "The E-flat Minor chord contains E♭, G♭, B♭. Its formula is 1–♭3–5.",
+    "blocks": [
+      {
+        "id": "notes-and-keyboard",
+        "heading": "Notes and keyboard position",
+        "body": "The E-flat Minor triad uses E♭, G♭, B♭. Read the displayed pitches from low to high. Octave numbers identify register, not finger numbers."
+      },
+      {
+        "id": "formula",
+        "heading": "How the E-flat Minor chord is built",
+        "body": "From E♭, the chord uses the root, a minor third and a perfect fifth. The scale-degree formula is 1–♭3–5."
+      },
+      {
+        "id": "inversions",
+        "heading": "Root position and inversions",
+        "body": "The same chord tones can be reordered so a different chord tone is the lowest note. The written slash symbol identifies the bass note; it does not change the chord root."
+      }
+    ],
+    "faq": [
+      {
+        "q": "What notes are in the E-flat Minor chord?",
+        "a": "E♭, G♭, B♭."
+      },
+      {
+        "q": "What is the formula for E-flat Minor?",
+        "a": "1–♭3–5."
+      },
+      {
+        "q": "Does changing the inversion make it a different chord?",
+        "a": "No. The chord tones remain the same; the lowest note changes."
+      }
+    ]
+  },
+  "related_routes": [
+    "/chords",
+    "/chords/minor",
+    "/chords/by-key",
+    "/chord-progressions",
+    "/guide/piano-chords"
+  ],
+  "evidence": {
+    "music_rule_sources": [
+      "PG-TRIADS",
+      "PG-OMT",
+      "PG-ASPN"
+    ],
+    "status": "[已核实] interval construction and MIDI checked by package validator; fingering intentionally absent unless existing verified evidence is found"
+  }
+}

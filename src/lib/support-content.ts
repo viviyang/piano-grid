@@ -237,13 +237,13 @@ export function getChordFinder(sourceChords: FinderChordSource[]) {
     const symbol = `${root}${quality === 'minor' ? 'm' : ''}`;
     return { id: chord.id, name: chord.name, symbol, root, rootPitchClass: pitchClass(root), quality, pitchClasses: pcs, tones: [...chord.tones], detailURL: chord.url && isPublicRoute(chord.url) ? chord.url : null };
   });
-  if (chords.length !== 19 || new Set(chords.map(chord => chord.id)).size !== 19) throw new Error('Finder must reuse the complete 19-chord centre catalogue');
+  if (chords.length !== 25 || new Set(chords.map(chord => chord.id)).size !== 25) throw new Error('Finder must reuse the complete 25-chord centre catalogue');
   const exampleByInput = new Map((page.data.examples as Raw[]).map(example => [example.input.join(','), example]));
   for (const input of ['C4,E4,G4', 'E3,G3,C4', 'C4,Eb4,G4', 'C4,C5,E5,G5']) if (!exampleByInput.has(input)) throw new Error(`Missing prepared finder example: ${input}`);
   const planned = plannedLinksFor('/chords/finder');
   const links = planned.some(link => link.url === '/chords/by-key') ? planned : [...planned, { id: 'FINAL-FINDER-BY-KEY', url: '/chords/by-key', label: 'Browse chords by key', placement: 'after instructions' }];
   return {
-    model: { ...baseModel, scope: 'Matches the shared 19-chord major/minor triad catalogue by sounding pitch class. It does not guess sixth, seventh, incomplete or extended chords.', links },
+    model: { ...baseModel, scope: 'Matches the shared 25-chord major/minor triad catalogue by sounding pitch class. It does not guess sixth, seventh, incomplete or extended chords.', links },
     data: { chords, labels: page.data.result_labels as { multiple: string; none: string; incomplete: string }, professionalReview: page.data.professional_review as string },
   };
 }

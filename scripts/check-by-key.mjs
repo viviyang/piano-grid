@@ -12,7 +12,7 @@ const modules = JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/0
 const seo = JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/01_planning/url-seo-keywords.master.json', 'utf8')).pages.find(page => page.url === '/chords/by-key');
 const keywordRows = JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/01_planning/keyword-task-map.json', 'utf8')).rows.filter(row => row.url === '/chords/by-key');
 const links = JSON.parse(fs.readFileSync('docs/pianogrid-chords-content-next/01_planning/internal-links.json', 'utf8')).edges;
-const publishedDetails = new Set(['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major']);
+const publishedDetails = new Set(['/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/f-major','/chords/d-minor','/chords/e-minor','/chords/d-major','/chords/b-minor','/chords/f-sharp-minor','/chords/c-sharp-minor','/chords/g-sharp-minor','/chords/b-flat-major','/chords/g-minor','/chords/d-flat-major','/chords/e-flat-major','/chords/f-sharp-major','/chords/f-minor','/chords/b-flat-minor','/chords/e-flat-minor']);
 const results = [], errors = [];
 const hash = value => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const display = value => value.replaceAll('#', '♯').replaceAll('b', '♭');
@@ -85,7 +85,7 @@ try {
 
   const sitemap = await page.request.get(base + '/sitemap.xml');
   const xml = await sitemap.text();
-  check('Sitemap has 28 routes and includes final chord tools', (xml.match(/<loc>/g) || []).length === 28 && ['/chords/by-key','/chord-progressions','/chords/finder','/chords/c-flat-major'].every(route => xml.includes(`https://pianogrid.com${route}</loc>`)), (xml.match(/<loc>/g) || []).length);
+  check('Sitemap has 46 routes and includes chord tools', (xml.match(/<loc>/g) || []).length === 46 && ['/chords/by-key','/chord-progressions','/chords/finder','/chords/c-flat-major','/chords/major','/chords/minor'].every(route => xml.includes(`https://pianogrid.com${route}</loc>`)), (xml.match(/<loc>/g) || []).length);
   for (const route of ['/chords/finder', '/chords/c-flat-major']) {
     const result = await page.request.get(base + route);
     check(`${route} is published`, result.status() === 200, result.status());

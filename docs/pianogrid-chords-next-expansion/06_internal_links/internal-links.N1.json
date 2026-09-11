@@ -1,0 +1,882 @@
+[
+  {
+    "from": "/chords",
+    "to": "/chords/major",
+    "anchor": "Browse major chords",
+    "relation": "category",
+    "placement": "after filters / learning section",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords",
+    "anchor": "Open the full piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / footer related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/by-key",
+    "anchor": "See chords in a key",
+    "relation": "application",
+    "placement": "after chord grid",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "after theory",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn how piano chords are built",
+    "relation": "learning",
+    "placement": "after direct answer",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords",
+    "to": "/chords/minor",
+    "anchor": "Browse minor chords",
+    "relation": "category",
+    "placement": "after filters / learning section",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords",
+    "anchor": "Open the full piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / footer related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/by-key",
+    "anchor": "See chords in a key",
+    "relation": "application",
+    "placement": "after chord grid",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "after theory",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn how piano chords are built",
+    "relation": "learning",
+    "placement": "after direct answer",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/f-major",
+    "anchor": "F Major chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-major",
+    "to": "/chords/major",
+    "anchor": "Browse all major chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-major",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-major",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/d-minor",
+    "anchor": "D Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/e-minor",
+    "anchor": "E Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/d-major",
+    "anchor": "D Major chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-major",
+    "to": "/chords/major",
+    "anchor": "Browse all major chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-major",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-major",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/b-minor",
+    "anchor": "B Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/f-sharp-minor",
+    "anchor": "F-sharp Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/c-sharp-minor",
+    "anchor": "C-sharp Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/c-sharp-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/c-sharp-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/c-sharp-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/c-sharp-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/g-sharp-minor",
+    "anchor": "G-sharp Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-sharp-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-sharp-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-sharp-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-sharp-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/b-flat-major",
+    "anchor": "B-flat Major chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-major",
+    "to": "/chords/major",
+    "anchor": "Browse all major chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-major",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-major",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/g-minor",
+    "anchor": "G Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/d-flat-major",
+    "anchor": "D-flat Major chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-flat-major",
+    "to": "/chords/major",
+    "anchor": "Browse all major chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-flat-major",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-flat-major",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-flat-major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/e-flat-major",
+    "anchor": "E-flat Major chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-major",
+    "to": "/chords/major",
+    "anchor": "Browse all major chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-major",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-major",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/major",
+    "to": "/chords/f-sharp-major",
+    "anchor": "F-sharp Major chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-major",
+    "to": "/chords/major",
+    "anchor": "Browse all major chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-major",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-major",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-major",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/f-minor",
+    "anchor": "F Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/b-flat-minor",
+    "anchor": "B-flat Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/minor",
+    "to": "/chords/e-flat-minor",
+    "anchor": "E-flat Minor chord",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-minor",
+    "to": "/chords/minor",
+    "anchor": "Browse all minor chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-minor",
+    "to": "/chords",
+    "anchor": "Browse the piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb / related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-minor",
+    "to": "/chords/by-key",
+    "anchor": "See this chord in key context",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-minor",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "related",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/a-major",
+    "to": "/chords/a-minor",
+    "anchor": "Compare A major with A minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/a-minor",
+    "to": "/chords/a-major",
+    "anchor": "Compare A minor with A major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/c-major",
+    "to": "/chords/c-minor",
+    "anchor": "Compare C major with C minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/c-minor",
+    "to": "/chords/c-major",
+    "anchor": "Compare C minor with C major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-major",
+    "to": "/chords/g-minor",
+    "anchor": "Compare G major with G minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-major",
+    "to": "/chords/e-minor",
+    "anchor": "Compare E major with E minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-major",
+    "to": "/chords/b-minor",
+    "anchor": "Compare B major with B minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-major",
+    "to": "/chords/f-minor",
+    "anchor": "Compare F major with F minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-minor",
+    "to": "/chords/d-major",
+    "anchor": "Compare D minor with D major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-minor",
+    "to": "/chords/e-major",
+    "anchor": "Compare E minor with E major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/d-major",
+    "to": "/chords/d-minor",
+    "anchor": "Compare D major with D minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-minor",
+    "to": "/chords/b-major",
+    "anchor": "Compare B minor with B major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-minor",
+    "to": "/chords/f-sharp-major",
+    "anchor": "Compare F♯ minor with F♯ major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-major",
+    "to": "/chords/b-flat-minor",
+    "anchor": "Compare B♭ major with B♭ minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/g-minor",
+    "to": "/chords/g-major",
+    "anchor": "Compare G minor with G major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-major",
+    "to": "/chords/e-flat-minor",
+    "anchor": "Compare E♭ major with E♭ minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-sharp-major",
+    "to": "/chords/f-sharp-minor",
+    "anchor": "Compare F♯ major with F♯ minor",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/f-minor",
+    "to": "/chords/f-major",
+    "anchor": "Compare F minor with F major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/b-flat-minor",
+    "to": "/chords/b-flat-major",
+    "anchor": "Compare B♭ minor with B♭ major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  },
+  {
+    "from": "/chords/e-flat-minor",
+    "to": "/chords/e-flat-major",
+    "anchor": "Compare E♭ minor with E♭ major",
+    "relation": "parallel_quality",
+    "placement": "comparison block",
+    "activation": "both routes public; target exists; anchor describes destination"
+  }
+]

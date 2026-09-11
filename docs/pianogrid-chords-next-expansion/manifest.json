@@ -1,0 +1,185 @@
+{
+  "package": "PianoGrid_Chords_Next_Expansion_Pack_2026-09-11",
+  "created": "2026-09-11",
+  "current_chord_urls_before_N1": 15,
+  "N1_new_urls": 18,
+  "expected_chord_urls_after_N1": 33,
+  "advanced_category_routes_planned_not_published": 7,
+  "files": [
+    {
+      "path": "00_EVIDENCE.md",
+      "bytes": 1067,
+      "sha256": "c0fdf3f7f8430359b9987355f4cda8c989d38dcf1cec4bdf23af176ab44552e9"
+    },
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 1189,
+      "sha256": "dcd47cfef1f9235aab3e41c2436a605f6a504c49de007141cf75d6b65bb8c2cc"
+    },
+    {
+      "path": "01_navigation/INFORMATION_ARCHITECTURE.md",
+      "bytes": 1572,
+      "sha256": "825a330a43f4280be4c110fe8863c84f479e4ed4bc64f4fb2ebe5020bc3607c3"
+    },
+    {
+      "path": "01_navigation/navigation.N1.json",
+      "bytes": 2018,
+      "sha256": "d73a879a1e348cbd5da125ac418d4a60dd0fdb4e4b8a8c53fc3ea031a8ce591e"
+    },
+    {
+      "path": "01_navigation/navigation.target.json",
+      "bytes": 794,
+      "sha256": "ddf6dd60e09c6e8fe2e20d23aa3ca199810018e1831ddfabba875b900fe0f833"
+    },
+    {
+      "path": "02_routes/hub.additions.N1.json",
+      "bytes": 3409,
+      "sha256": "dad8e243746ff04bf3c563ce0253087bd0ad395b489c4a788b3fe3e03a9f9fe1"
+    },
+    {
+      "path": "02_routes/routes.N1.tsv",
+      "bytes": 1441,
+      "sha256": "7fdbe20fc9a49ae309199fe0b8ac7b40372a1aec7dec2014cecc01e2d6a965b4"
+    },
+    {
+      "path": "02_routes/routes.master.json",
+      "bytes": 1719,
+      "sha256": "a3e710b0a42b7c7cb76a3fba74fddf3b341fa8368c869185d774a3095ae6c881"
+    },
+    {
+      "path": "03_categories/category-pages.master.json",
+      "bytes": 4262,
+      "sha256": "d2cda0c884a9c68ffe5cc2aaa76890b922c1dcf7f6bf228ade182909a02e38e9"
+    },
+    {
+      "path": "03_categories/major.page.json",
+      "bytes": 1644,
+      "sha256": "bdb04a31ff2a4d5c3c7630d5f812bf828a1ca8d60a0755b6990878eac5d28fdf"
+    },
+    {
+      "path": "03_categories/minor.page.json",
+      "bytes": 1720,
+      "sha256": "111a24734198cb6bd5141110c7fa97dfbcdef5bfe47ea50adb35ad348f3ffa39"
+    },
+    {
+      "path": "04_details_next/b-flat-major.page.json",
+      "bytes": 6240,
+      "sha256": "4ff2baf53e89eced3b7b1983c73d49bea66d476ea0222a08ee2c4938a5d6c906"
+    },
+    {
+      "path": "04_details_next/b-flat-minor.page.json",
+      "bytes": 6299,
+      "sha256": "fda17bdb4a678e0f656a6789de68ac657298e2f92fe584bae54f9a7a1e8ba798"
+    },
+    {
+      "path": "04_details_next/b-minor.page.json",
+      "bytes": 6145,
+      "sha256": "daff2a47c6ea505d69f2e396a3b348df887db5bbc69f7159c2c2dd298c1f02c5"
+    },
+    {
+      "path": "04_details_next/c-sharp-minor.page.json",
+      "bytes": 6311,
+      "sha256": "f1a1ad366601e4965e310719afbf212ad38e12255d9d77da30eb1e5a0cd3c562"
+    },
+    {
+      "path": "04_details_next/d-flat-major.page.json",
+      "bytes": 6279,
+      "sha256": "8fcbc30af7d58da4f933e1957f93208683bf867d0c987356d7de90df650f28cc"
+    },
+    {
+      "path": "04_details_next/d-major.page.json",
+      "bytes": 6126,
+      "sha256": "745a08c5146410dbb4f1e6ae2649951e276978b4f14f04b225db15454ddedaa2"
+    },
+    {
+      "path": "04_details_next/d-minor.page.json",
+      "bytes": 6106,
+      "sha256": "b2f702c5eb4b856a695e49e63b2f9784d5b2cb8646546760e317023ee81cf1e9"
+    },
+    {
+      "path": "04_details_next/e-flat-major.page.json",
+      "bytes": 6279,
+      "sha256": "6bedec34e338e0b10dfab2f7c6264d35fbc0ad5795a2d41fdf795ac37811b858"
+    },
+    {
+      "path": "04_details_next/e-flat-minor.page.json",
+      "bytes": 6338,
+      "sha256": "7ae7adebfe5683aa5d71c55f62ae8c4aaa28b3bb97e5ddb40a4c1f9f1e9abd7b"
+    },
+    {
+      "path": "04_details_next/e-minor.page.json",
+      "bytes": 6106,
+      "sha256": "ed3e525a9e5fa0ad339a28e04ee0d0fcee5a3c4f1b9f24aac5c59c9ec3b2d2e9"
+    },
+    {
+      "path": "04_details_next/f-major.page.json",
+      "bytes": 6087,
+      "sha256": "be2d74c09f526d9f763fac708613df4c074d24f998085d84e6c73560d72ac962"
+    },
+    {
+      "path": "04_details_next/f-minor.page.json",
+      "bytes": 6145,
+      "sha256": "82b13585b14435086247bfcb380b55754d2a21d98a3649b1f9da4293d31c4e95"
+    },
+    {
+      "path": "04_details_next/f-sharp-major.page.json",
+      "bytes": 6331,
+      "sha256": "45c9e4a1eb2a826220f4b49331bd7399cca8425894a92637273db704c49df7e3"
+    },
+    {
+      "path": "04_details_next/f-sharp-minor.page.json",
+      "bytes": 6311,
+      "sha256": "60c1757e1ebdef5959c402398c070821ffaa11327a8b750b40922d247238ac91"
+    },
+    {
+      "path": "04_details_next/g-minor.page.json",
+      "bytes": 6145,
+      "sha256": "159b2ecbce0d488d455796d8d02e1611234a5847437d30b85a679f1d34bbe404"
+    },
+    {
+      "path": "04_details_next/g-sharp-minor.page.json",
+      "bytes": 6311,
+      "sha256": "024e734ae6fc8865647cec26329e7ff5adda57c490768fd18a5261d4160948b0"
+    },
+    {
+      "path": "05_seo/README.md",
+      "bytes": 617,
+      "sha256": "0e9fd2881ee38bf79607bfcd1b087decb193078fe76d8359825dce85f7080329"
+    },
+    {
+      "path": "05_seo/url-keyword-tdh.master.json",
+      "bytes": 14221,
+      "sha256": "e1710379ae35348d7a56095b1ec8f0dbd156c85379e9791679ad266f7d0f154d"
+    },
+    {
+      "path": "06_internal_links/internal-links.N1.json",
+      "bytes": 29210,
+      "sha256": "30d482fada4ab77ceba149dac6d3ee6051e4ee05a3d278b8ff12a944684a8a11"
+    },
+    {
+      "path": "07_model/MODEL_EVOLUTION.md",
+      "bytes": 753,
+      "sha256": "bc4ea2d8a9251152b9296f9a09620579dae8b4666b1660008443e0e58c983795"
+    },
+    {
+      "path": "07_model/chord-quality-taxonomy.json",
+      "bytes": 2583,
+      "sha256": "b454143e38b6030240eb6b602050054b65cfa69aed708fca1ed3b93a852821fa"
+    },
+    {
+      "path": "08_validation/validate_next_details.py",
+      "bytes": 1283,
+      "sha256": "0427cd4428bbf7c98f14fd39eced4d4504e1a4ea881890da58f6b2cc3f0716af"
+    },
+    {
+      "path": "09_codex/01_N1_批量实施Prompt.md",
+      "bytes": 3667,
+      "sha256": "131a19e8a6bad39cf94974e47ee248b90f9fdd18d1671ca7a440d507ea329a51"
+    },
+    {
+      "path": "09_codex/02_N2_模型升级审阅Prompt.md",
+      "bytes": 1099,
+      "sha256": "27aaedff5203923f5b30714ed041cae81509c4bec5342c632d0f22e0acbb79a9"
+    }
+  ]
+}

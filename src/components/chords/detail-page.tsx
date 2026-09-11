@@ -10,7 +10,8 @@ import './chord-learning.css';
 export function ChordDetailPage({model}:{model:ChordDetailModel}) {
   const {data,blocks,byId,answer,introduction,searchSections}=model;
   const prefix=data.namespace;
-  const heading=<><header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, { label: data.chord.name_en }]}/><h1><ChordSectionTitle id={`${prefix}-intro`} text={data.heading}/></h1><p className="am-direct-answer">{answer}</p></header><ChordPageToc items={model.tocItems}/></>;
+  const category=data.chord.quality==='major'?{label:'Major Chords',href:'/chords/major'}:{label:'Minor Chords',href:'/chords/minor'};
+  const heading=<><header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, category, { label: data.chord.name_en }]}/><h1><ChordSectionTitle id={`${prefix}-intro`} text={data.heading}/></h1><p className="am-direct-answer">{answer}</p></header><ChordPageToc items={model.tocItems}/></>;
   const intro=introduction.length>0&&<section key="introduction" className="am-intro-rest am-root-example-panel" id={`${prefix}-root-example`} tabIndex={-1} data-block-id={`${prefix}-intro`} aria-labelledby={`${prefix}-root-example-heading`}><h2 className="am-eyebrow" id={`${prefix}-root-example-heading`}><ChordSectionTitle id={`${prefix}-intro`} text="Root-position example"/></h2><div className="am-root-example-copy">{introduction.map(p=><p key={p}>{p}</p>)}</div></section>;
   const toolParagraphs=[...byId[`${prefix}-intro`].content.paragraphs,...byId[data.toolId].content.paragraphs];
   return <ChordDetailExperience data={data} heading={heading} toolNotes={toolParagraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections}>

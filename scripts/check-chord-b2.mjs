@@ -28,7 +28,7 @@ try{
   await interactive.close();
  }
  const hub=await browser.newPage();await hub.goto(base+'/chords');await hub.waitForFunction(()=>!document.querySelector('.ch-result input').disabled);
- check('Hub has unified 19-item collection',await hub.locator('.ch-result').count()===19);
+ check('Hub has unified 25-item collection',await hub.locator('.ch-result').count()===25);
  await hub.getByRole('combobox',{name:'Root note',exact:true}).selectOption('A');await hub.getByRole('combobox',{name:'Chord type',exact:true}).selectOption('minor');
  check('Hub A × minor resolves Am with real detail',await hub.locator('.ch-result').count()===1&&await hub.locator('.ch-result[data-chord-id="a-minor"] a[href="/chords/a-minor"]').count()===1);
  await hub.getByRole('combobox',{name:'Root note',exact:true}).selectOption('C');await hub.getByRole('combobox',{name:'Chord type',exact:true}).selectOption('major');

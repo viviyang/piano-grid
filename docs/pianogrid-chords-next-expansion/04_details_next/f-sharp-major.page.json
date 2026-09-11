@@ -1,0 +1,261 @@
+{
+  "schema_version": "next-expansion-1.0",
+  "url": "/chords/f-sharp-major",
+  "release_batch": "N1",
+  "release_status": "ready_for_codex_integration",
+  "provenance": "new_derived",
+  "title": "F-sharp Major Piano Chord (F♯): Notes, Inversions & PDF",
+  "description": "Find the f-sharp major chord on piano: F♯, A♯, C♯. See keyboard positions, compare three inversions, hear the notes and print a reference.",
+  "h1": "F-sharp Major Piano Chord",
+  "main_keyword": "f-sharp major chord piano",
+  "secondary_keywords": [
+    "F# chord piano",
+    "f-sharp major piano chord",
+    "f-sharp major chord notes",
+    "f-sharp major chord inversions"
+  ],
+  "keyword_volume_status": "not_revalidated_in_this_package",
+  "user_task": "Find the notes, keyboard position and inversions of the F-sharp Major triad.",
+  "data": {
+    "root": "F♯",
+    "quality": "major",
+    "symbol": "F♯",
+    "aliases": [
+      "F♯",
+      "F-sharp Major",
+      "F♯ major"
+    ],
+    "pitch_classes": [
+      "F♯",
+      "A♯",
+      "C♯"
+    ],
+    "formula_degrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "semitones_from_root": [
+      0,
+      4,
+      7
+    ],
+    "voicings": [
+      {
+        "id": "root",
+        "label": "Root position",
+        "notes": [
+          "F♯3",
+          "A♯3",
+          "C♯4"
+        ],
+        "midi": [
+          54,
+          58,
+          61
+        ],
+        "bass": "F♯3",
+        "symbol": "F♯",
+        "keyboard_highlights": [
+          {
+            "midi": 54,
+            "spelling": "F♯3"
+          },
+          {
+            "midi": 58,
+            "spelling": "A♯3"
+          },
+          {
+            "midi": 61,
+            "spelling": "C♯4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            54,
+            58,
+            61
+          ],
+          "ascending_midi": [
+            54,
+            58,
+            61
+          ],
+          "descending_midi": [
+            61,
+            58,
+            54
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "first",
+        "label": "First inversion",
+        "notes": [
+          "A♯3",
+          "C♯4",
+          "F♯4"
+        ],
+        "midi": [
+          58,
+          61,
+          66
+        ],
+        "bass": "A♯3",
+        "symbol": "F♯/A♯",
+        "keyboard_highlights": [
+          {
+            "midi": 58,
+            "spelling": "A♯3"
+          },
+          {
+            "midi": 61,
+            "spelling": "C♯4"
+          },
+          {
+            "midi": 66,
+            "spelling": "F♯4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            58,
+            61,
+            66
+          ],
+          "ascending_midi": [
+            58,
+            61,
+            66
+          ],
+          "descending_midi": [
+            66,
+            61,
+            58
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      },
+      {
+        "id": "second",
+        "label": "Second inversion",
+        "notes": [
+          "C♯4",
+          "F♯4",
+          "A♯4"
+        ],
+        "midi": [
+          61,
+          66,
+          70
+        ],
+        "bass": "C♯4",
+        "symbol": "F♯/C♯",
+        "keyboard_highlights": [
+          {
+            "midi": 61,
+            "spelling": "C♯4"
+          },
+          {
+            "midi": 66,
+            "spelling": "F♯4"
+          },
+          {
+            "midi": 70,
+            "spelling": "A♯4"
+          }
+        ],
+        "fingering": {
+          "right": null,
+          "left": null
+        },
+        "playback": {
+          "simultaneous_midi": [
+            61,
+            66,
+            70
+          ],
+          "ascending_midi": [
+            61,
+            66,
+            70
+          ],
+          "descending_midi": [
+            70,
+            66,
+            61
+          ],
+          "user_initiated": true,
+          "audio_asset": null
+        }
+      }
+    ],
+    "default_voicing": "root",
+    "fingering_policy": "null_unless_existing_verified_source_is_found",
+    "assets": {
+      "pdf": "/assets/chord-f-sharp-major.pdf",
+      "svg": "/assets/chord-f-sharp-major.svg",
+      "generation": "reuse_current_detail_asset_pipeline; do not claim available before generated and validated"
+    }
+  },
+  "content": {
+    "direct_answer": "The F-sharp Major chord contains F♯, A♯, C♯. Its formula is 1–3–5.",
+    "blocks": [
+      {
+        "id": "notes-and-keyboard",
+        "heading": "Notes and keyboard position",
+        "body": "The F-sharp Major triad uses F♯, A♯, C♯. Read the displayed pitches from low to high. Octave numbers identify register, not finger numbers."
+      },
+      {
+        "id": "formula",
+        "heading": "How the F-sharp Major chord is built",
+        "body": "From F♯, the chord uses the root, a major third and a perfect fifth. The scale-degree formula is 1–3–5."
+      },
+      {
+        "id": "inversions",
+        "heading": "Root position and inversions",
+        "body": "The same chord tones can be reordered so a different chord tone is the lowest note. The written slash symbol identifies the bass note; it does not change the chord root."
+      }
+    ],
+    "faq": [
+      {
+        "q": "What notes are in the F-sharp Major chord?",
+        "a": "F♯, A♯, C♯."
+      },
+      {
+        "q": "What is the formula for F-sharp Major?",
+        "a": "1–3–5."
+      },
+      {
+        "q": "Does changing the inversion make it a different chord?",
+        "a": "No. The chord tones remain the same; the lowest note changes."
+      }
+    ]
+  },
+  "related_routes": [
+    "/chords",
+    "/chords/major",
+    "/chords/by-key",
+    "/chord-progressions",
+    "/guide/piano-chords"
+  ],
+  "evidence": {
+    "music_rule_sources": [
+      "PG-TRIADS",
+      "PG-OMT",
+      "PG-ASPN"
+    ],
+    "status": "[已核实] interval construction and MIDI checked by package validator; fingering intentionally absent unless existing verified evidence is found"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "chord_system_urls_completed": 15,
+    "published_detail_urls": [
+      "/chords/a-minor",
+      "/chords/a-major",
+      "/chords/c-major",
+      "/chords/g-major",
+      "/chords/c-minor",
+      "/chords/e-major",
+      "/chords/b-major",
+      "/chords/a-flat-major",
+      "/chords/c-flat-major"
+    ],
+    "support_urls": [
+      "/chords",
+      "/guide/piano-chords",
+      "/keyboard-notes/finger-numbers",
+      "/chords/by-key",
+      "/chord-progressions",
+      "/chords/finder"
+    ]
+  },
+  "N1": {
+    "new_category_urls": [
+      "/chords/major",
+      "/chords/minor"
+    ],
+    "new_detail_urls": [
+      "/chords/f-major",
+      "/chords/d-minor",
+      "/chords/e-minor",
+      "/chords/d-major",
+      "/chords/b-minor",
+      "/chords/f-sharp-minor",
+      "/chords/c-sharp-minor",
+      "/chords/g-sharp-minor",
+      "/chords/b-flat-major",
+      "/chords/g-minor",
+      "/chords/d-flat-major",
+      "/chords/e-flat-major",
+      "/chords/f-sharp-major",
+      "/chords/f-minor",
+      "/chords/b-flat-minor",
+      "/chords/e-flat-minor"
+    ],
+    "new_url_count": 18,
+    "expected_chord_system_total_after_N1": 33,
+    "expected_site_sitemap_if_baseline_28_and_no_other_changes": 46
+  },
+  "later_planned_category_urls": [
+    "/chords/seventh",
+    "/chords/extended",
+    "/chords/suspended",
+    "/chords/diminished",
+    "/chords/augmented",
+    "/chords/add",
+    "/chords/altered"
+  ],
+  "route_rules": [
+    "Do not change existing URLs or canonicals.",
+    "Do not create root-only SEO routes from filters.",
+    "Only public routes enter sitemap and global navigation.",
+    "Enharmonic duplicate pages require separate SERP validation before creation."
+  ]
+}

@@ -93,7 +93,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       <span className="site-nav-indicator" aria-hidden="true" style={{ '--site-nav-indicator-left': `${indicator.left}px`, '--site-nav-indicator-width': `${indicator.width}px`, opacity: indicator.visible ? 1 : 0 } as CSSProperties}/>
       {SITE_NAVIGATION.map(section => {
         const panelId = `${id}-${section.href.slice(1).replaceAll('/', '-') || 'home'}-menu`;
-        const sectionActive = pathname === section.href || section.children.some(item => pathname === item.href);
+        const sectionActive = pathname === section.href || pathname.startsWith(`${section.href}/`) || section.children.some(item => pathname === item.href);
         const expanded = openSection === section.href;
         return <div
           className="site-nav-group"
@@ -118,7 +118,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
           </div>
           <div className="site-nav-panel" id={panelId} hidden={!expanded}>
             <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>View overview →</span></a></div>
-            <div className="site-nav-panel-links">{section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>
+            <div className="site-nav-panel-links">{section.href === '/chords' ? ['Browse','Explore','Learn'].map(group => <section className="site-nav-link-group" key={group} aria-label={group}><h3>{group}</h3>{section.children.filter(item => item.group === group).map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</section>) : section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>
           </div>
         </div>;
       })}

@@ -1,0 +1,134 @@
+{
+  "triads_current_model": [
+    {
+      "id": "major",
+      "formula": [
+        "1",
+        "3",
+        "5"
+      ],
+      "note_count": 3,
+      "model_status": "supported"
+    },
+    {
+      "id": "minor",
+      "formula": [
+        "1",
+        "♭3",
+        "5"
+      ],
+      "note_count": 3,
+      "model_status": "supported"
+    }
+  ],
+  "next_model": [
+    {
+      "id": "diminished",
+      "formula": [
+        "1",
+        "♭3",
+        "♭5"
+      ],
+      "note_count": 3,
+      "model_status": "requires_quality_enum_and_content"
+    },
+    {
+      "id": "augmented",
+      "formula": [
+        "1",
+        "3",
+        "♯5"
+      ],
+      "note_count": 3,
+      "model_status": "requires_quality_enum_and_content"
+    },
+    {
+      "id": "sus2",
+      "formula": [
+        "1",
+        "2",
+        "5"
+      ],
+      "note_count": 3,
+      "model_status": "requires_quality_enum_and_content"
+    },
+    {
+      "id": "sus4",
+      "formula": [
+        "1",
+        "4",
+        "5"
+      ],
+      "note_count": 3,
+      "model_status": "requires_quality_enum_and_content"
+    },
+    {
+      "id": "dominant7",
+      "formula": [
+        "1",
+        "3",
+        "5",
+        "♭7"
+      ],
+      "note_count": 4,
+      "model_status": "requires_4_note_voicings_and_4_positions"
+    },
+    {
+      "id": "major7",
+      "formula": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "note_count": 4,
+      "model_status": "requires_4_note_voicings_and_4_positions"
+    },
+    {
+      "id": "minor7",
+      "formula": [
+        "1",
+        "♭3",
+        "5",
+        "♭7"
+      ],
+      "note_count": 4,
+      "model_status": "requires_4_note_voicings_and_4_positions"
+    },
+    {
+      "id": "half_diminished",
+      "formula": [
+        "1",
+        "♭3",
+        "♭5",
+        "♭7"
+      ],
+      "note_count": 4,
+      "model_status": "requires_4_note_voicings_and_4_positions"
+    },
+    {
+      "id": "add9",
+      "formula": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "note_count": 4,
+      "model_status": "requires_4_note_support"
+    },
+    {
+      "id": "extended",
+      "formula": "variable",
+      "note_count": "5+",
+      "model_status": "requires_variable_note_model"
+    },
+    {
+      "id": "altered",
+      "formula": "explicit subtype required",
+      "note_count": "variable",
+      "model_status": "do_not_autogenerate"
+    }
+  ],
+  "rule": "Do not widen the production detail model merely to expose planned navigation links. Upgrade and validate one chord family at a time."
+}

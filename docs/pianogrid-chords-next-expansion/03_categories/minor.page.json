@@ -1,0 +1,53 @@
+{
+  "url": "/chords/minor",
+  "status": "publish_in_N1",
+  "title": "Minor Piano Chords: Notes, Formulas & Keyboard Diagrams",
+  "description": "Browse minor piano chords by root. See chord notes, formulas, keyboard diagrams and links to detailed inversion pages.",
+  "h1": "Minor Piano Chords",
+  "main_keyword": "minor piano chords",
+  "keywords": [
+    "minor chords piano",
+    "piano minor chords",
+    "minor chord chart piano"
+  ],
+  "direct_answer": "A minor triad uses the formula 1–♭3–5.",
+  "root_order": [
+    "C",
+    "C♯",
+    "D",
+    "E♭",
+    "E",
+    "F",
+    "F♯",
+    "G",
+    "G♯",
+    "A",
+    "B♭",
+    "B"
+  ],
+  "modules": [
+    "direct answer and formula",
+    "root-note browse grid",
+    "cards for every published detail in this family",
+    "major-vs-minor comparison",
+    "how inversions work",
+    "links to by-key, progressions, finder and chord guide",
+    "FAQ"
+  ],
+  "interaction": {
+    "root_filter": "client enhancement only; all cards remain in server HTML",
+    "query_params": "do not create indexable root-filter URLs",
+    "detail_links": "only public registered routes"
+  },
+  "content_blocks": [
+    {
+      "heading": "What is a minor chord?",
+      "body": "A minor triad contains a root, minor third and perfect fifth. Compared with the parallel major triad, the third is one semitone lower."
+    },
+    {
+      "heading": "How to use this chart",
+      "body": "Choose a root, read the chord tones, then open a detail page to compare root position and inversions. Octave numbers describe register; finger numbers are a separate concept."
+    }
+  ],
+  "seo_note": "Keyword targets are intent-derived; search volume is not revalidated in this package."
+}
