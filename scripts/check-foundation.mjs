@@ -26,7 +26,7 @@ try {
   const globals = await read('src/app/globals.css');
   const tokens = await read('src/styles/tokens.css');
   const foundation = await read('src/styles/foundation.css');
-  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
+  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/chords/page-toc.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
   const util = await read('src/lib/utils.ts');
   const breadcrumb = await read('src/components/ui/breadcrumb.tsx');
   const siteBrand = await read('src/components/ui/site-brand.tsx');
@@ -100,8 +100,8 @@ try {
   check('No global animation dependency', !Object.keys({...pkg.dependencies,...pkg.devDependencies}).some(n => /framer-motion|^motion$|^gsap$|tw-animate-css/.test(n)));
   const srcFiles = (await walk(join(root,'src'))).map(p=>relative(root,p).replaceAll('\\','/'));
   const allowedComponents = ['experience.tsx', 'keyboard.tsx', 'icon.tsx', 'page-search.tsx'].map(p => `src/components/a-minor/${p}`);
-  allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience'].map(n=>`src/components/chords/${n}.tsx`));
-  allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css');
+  allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience','page-toc'].map(n=>`src/components/chords/${n}.tsx`));
+  allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css','src/components/chords/page-toc.css');
   allowedComponents.push(...['pages.tsx','keyboard-diagram.tsx','lookup-experience.tsx','labeled-experience.tsx','chart-experience.tsx','staff-diagram.tsx','tool-controls.tsx','use-note-audio.ts','keyboard-notes.css'].map(n=>`src/components/keyboard-notes/${n}`));
   allowedComponents.push(...['pages.tsx','center-experience.tsx','detail-experience.tsx','scale-reference.tsx','use-scale-audio.ts','scales.css'].map(n=>`src/components/scales/${n}`));
   allowedComponents.push(...['pages.tsx','center-experience.tsx','easy-experience.tsx','resource-card.tsx','songs.css'].map(n=>`src/components/songs/${n}`));
@@ -109,7 +109,7 @@ try {
   allowedComponents.push('src/components/blank-sheet/pages.tsx','src/components/blank-sheet/blank-sheet-tool.tsx','src/components/blank-sheet/blank-sheet.css');
   allowedComponents.push('src/components/integration/pages.tsx','src/components/integration/home-experience.tsx','src/components/integration/home-visuals.tsx','src/components/integration/integration.css','src/components/integration/home-color-repair.css','src/components/integration/home-hero-background.css');
   allowedComponents.push('src/components/site-navigation.tsx','src/components/site-navigation.css');
-  allowedComponents.push('src/components/ui/breadcrumb.tsx','src/components/ui/breadcrumb.css','src/components/ui/site-brand.tsx','src/components/ui/site-brand.css');
+  allowedComponents.push('src/components/ui/breadcrumb.tsx','src/components/ui/breadcrumb.css','src/components/ui/site-brand.tsx','src/components/ui/site-brand.css','src/components/ui/rolling-text.tsx');
   const allowedPages=['src/app/page.tsx','src/app/tools/page.tsx','src/app/chords/page.tsx',...['a-minor','a-major','c-major'].map(n=>`src/app/chords/${n}/page.tsx`)];
   allowedPages.push('src/app/keyboard-notes/page.tsx','src/app/keyboard-notes/labeled/page.tsx','src/app/keyboard-notes/chart/page.tsx');
   allowedPages.push('src/app/scales/page.tsx','src/app/scales/c-major/page.tsx','src/app/scales/a-minor/page.tsx');
@@ -121,7 +121,7 @@ try {
   check('Only necessary authorized chord components', srcFiles.filter(p => p.startsWith('src/components/') && !p.endsWith('.gitkeep')).every(p => allowedComponents.includes(p)));
   check('Next does not rewrite agent rules', (await read('next.config.ts')).includes('agentRules: false'));
   const publicFiles = await exists('public') ? (await walk(join(root,'public'))).map(p=>relative(root,p).replaceAll('\\','/')) : [];
-  check('Only authorized static assets', publicFiles.every(p => ['public/assets/home/east-lake-grand-piano.webp','public/assets/home/east-lake-piano-hero.png','public/assets/chords/a-minor-notes-inversions.pdf','public/assets/guides/piano-starter-and-reading.pdf','public/reference/assets/chord-a-major.pdf','public/reference/assets/chord-c-major.pdf','public/reference/assets/blank-piano-staff-letter.pdf','public/reference/assets/blank-piano-staff-a4.pdf','public/reference/assets/blank-piano-staff-preview.svg','public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf', ...[88,61].flatMap(n=>['octaves','letters'].map(m=>`public/reference/generated/keyboard-notes/labeled-${n}-${m}.pdf`))].includes(p)));
+  check('Only authorized static assets', publicFiles.every(p => ['public/favicon.ico','public/favicon.svg','public/favicon-96x96.png','public/apple-touch-icon.png','public/icon-192.png','public/icon-512.png','public/assets/home/east-lake-grand-piano.webp','public/assets/home/east-lake-piano-hero.png','public/assets/chords/a-minor-notes-inversions.pdf','public/assets/guides/piano-starter-and-reading.pdf','public/reference/assets/chord-a-major.pdf','public/reference/assets/chord-c-major.pdf','public/reference/assets/blank-piano-staff-letter.pdf','public/reference/assets/blank-piano-staff-a4.pdf','public/reference/assets/blank-piano-staff-preview.svg','public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf', ...[88,61].flatMap(n=>['octaves','letters'].map(m=>`public/reference/generated/keyboard-notes/labeled-${n}-${m}.pdf`))].includes(p)));
   for (const source of sourceManifest.sources) {
     const b = await readFile(join(root,source.path));
     check(`Source unchanged: ${source.path}`, createHash('sha256').update(b).digest('hex')===source.sha256);
