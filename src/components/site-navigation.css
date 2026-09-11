@@ -43,6 +43,14 @@
 .site-mobile-children a:hover,.site-mobile-children a:focus-visible,.site-mobile-nav a[aria-current="page"]{background:var(--surface);color:var(--primary)}
 .am-page .am-site-header{position:relative;z-index:40;background:var(--background)}
 
+@media(min-width:801px){
+  .am-page .am-header-inner{display:grid;grid-template-columns:minmax(11rem,1fr) auto minmax(11rem,1fr);justify-content:initial}
+  .am-page .am-header-right{justify-self:end;margin-left:0}
+  .am-page .am-site-nav{justify-self:center}
+  .am-page .am-site-nav [aria-current]{font-weight:inherit}
+  .am-page .am-site-nav [aria-current]::after{display:none}
+}
+
 @media(max-width:800px){
   .site-nav-desktop{display:none!important}
   .site-menu-button{display:flex}
