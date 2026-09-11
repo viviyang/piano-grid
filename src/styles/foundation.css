@@ -78,6 +78,16 @@
   .pr-rolling-text-next > span { transform: translateY(112%); }
   :is(.am-button, .ph-button, .ph-header-cta):is(:hover, :focus-visible):not(:disabled) .pr-rolling-text-current > span { transform: translateY(-112%); }
   :is(.am-button, .ph-button, .ph-header-cta):is(:hover, :focus-visible):not(:disabled) .pr-rolling-text-next > span { transform: translateY(0); }
+  .pr-breathe-surface {
+    position: relative;
+    z-index: 0;
+    transition: background-color .3s ease, box-shadow .3s ease;
+  }
+  .pr-breathe-surface:focus-within {
+    z-index: 1;
+    background-color: color-mix(in srgb, var(--accent) 68%, var(--background));
+    box-shadow: 0 .5rem 1.4rem color-mix(in srgb, var(--primary) 12%, transparent);
+  }
   .pr-sr-only {
     position: absolute; inline-size: 1px; block-size: 1px;
     padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%);
@@ -138,6 +148,17 @@
     letter-spacing: var(--pr-type-section-title-tracking);
   }
 }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .pr-breathe-surface:hover {
+    z-index: 1;
+    background-color: color-mix(in srgb, var(--accent) 68%, var(--background));
+    animation: pr-breathe-surface 1.9s ease-in-out infinite;
+  }
+}
+@keyframes pr-breathe-surface {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 0%, transparent); transform: translateY(0); }
+  50% { box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--primary) 15%, transparent); transform: translateY(-2px); }
+}
 @media (prefers-reduced-motion: reduce) {
   @layer base {
     :where(html) { scroll-behavior: auto !important; }
@@ -149,6 +170,7 @@
     scroll-behavior: auto !important;
   }
   .pr-rolling-text-track > span { transition: none; }
+  .pr-breathe-surface { animation: none !important; transition: none; }
 }
 @media (forced-colors: active) {
   @layer base {

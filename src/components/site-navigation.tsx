@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
 import { usePathname } from 'next/navigation';
 import { SITE_NAVIGATION } from '@/lib/site-routes';
 import './site-navigation.css';
@@ -15,10 +15,13 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
   const pathname = usePathname();
   const id = useId().replaceAll(':', '');
   const root = useRef<HTMLDivElement>(null);
+  const desktopNav = useRef<HTMLElement>(null);
   const mobileButton = useRef<HTMLButtonElement>(null);
   const triggerRefs = useRef(new Map<string, HTMLButtonElement>());
+  const closeTimer = useRef<number | null>(null);
   const [openSection, setOpenSection] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [indicator, setIndicator] = useState({ left: 0, width: 0, visible: false });
   const desktopClass = variant === 'home' ? 'ph-desktop-nav' : 'am-site-nav';
   const menuButtonClass = variant === 'home' ? 'ph-menu-button' : 'am-menu-button';
   const mobileClass = variant === 'home' ? 'ph-mobile-nav' : 'am-mobile-nav';
@@ -47,8 +50,38 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       document.removeEventListener('pointerdown', closeOutside);
       document.removeEventListener('keydown', closeOnEscape);
       media.removeEventListener('change', closeMobile);
+      if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
     };
   }, [mobileOpen, openSection]);
+
+  function cancelPendingClose() {
+    if (closeTimer.current === null) return;
+    window.clearTimeout(closeTimer.current);
+    closeTimer.current = null;
+  }
+
+  function closeAfterPointerExit() {
+    cancelPendingClose();
+    closeTimer.current = window.setTimeout(() => {
+      setOpenSection(null);
+      closeTimer.current = null;
+    }, 360);
+  }
+
+  function positionIndicator(link: HTMLAnchorElement | null) {
+    const nav = desktopNav.current;
+    if (!nav || !link) return;
+    const navBox = nav.getBoundingClientRect();
+    const linkBox = link.getBoundingClientRect();
+    setIndicator({ left: linkBox.left - navBox.left, width: linkBox.width, visible: true });
+  }
+
+  useEffect(() => {
+    const updateActiveIndicator = () => positionIndicator(desktopNav.current?.querySelector<HTMLAnchorElement>('.site-nav-group[data-active] .site-nav-parent-link') ?? null);
+    updateActiveIndicator();
+    window.addEventListener('resize', updateActiveIndicator);
+    return () => window.removeEventListener('resize', updateActiveIndicator);
+  }, [pathname]);
 
   function closeMenus() {
     setOpenSection(null);
@@ -56,7 +89,8 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
   }
 
   return <div className={`site-navigation site-navigation-${variant}`} ref={root}>
-    <nav className={`${desktopClass} site-nav-desktop`} aria-label="Site sections">
+    <nav className={`${desktopClass} site-nav-desktop`} aria-label="Site sections" ref={desktopNav} onPointerEnter={cancelPendingClose} onPointerLeave={closeAfterPointerExit}>
+      <span className="site-nav-indicator" aria-hidden="true" style={{ '--site-nav-indicator-left': `${indicator.left}px`, '--site-nav-indicator-width': `${indicator.width}px`, opacity: indicator.visible ? 1 : 0 } as CSSProperties}/>
       {SITE_NAVIGATION.map(section => {
         const panelId = `${id}-${section.href.slice(1).replaceAll('/', '-') || 'home'}-menu`;
         const sectionActive = pathname === section.href || section.children.some(item => pathname === item.href);
@@ -66,6 +100,8 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
           data-active={sectionActive || undefined}
           data-open={expanded || undefined}
           key={section.href}
+          onPointerEnter={event => { cancelPendingClose(); positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
+          onFocus={event => { positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
           onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpenSection(null); }}
         >
           <div className="site-nav-topline">
@@ -77,14 +113,12 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
               aria-label={`Open ${section.label} menu`}
               aria-expanded={expanded}
               aria-controls={panelId}
-              onClick={() => setOpenSection(current => current === section.href ? null : section.href)}
+              onClick={event => { positionIndicator(event.currentTarget.parentElement?.querySelector<HTMLAnchorElement>('.site-nav-parent-link') ?? null); setOpenSection(current => current === section.href ? null : section.href); }}
             ><Chevron/></button>
           </div>
           <div className="site-nav-panel" id={panelId} hidden={!expanded}>
-            <a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}>
-              <strong>{section.label}</strong><span>Overview</span>
-            </a>
-            {section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
+            <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>View overview →</span></a></div>
+            <div className="site-nav-panel-links">{section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>
           </div>
         </div>;
       })}
