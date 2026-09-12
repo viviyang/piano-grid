@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "sus2",
+  "expectedNoteCount": 3,
+  "url": "/chords/g-sus2",
+  "categoryRoute": "/chords/suspended",
+  "rootSpelling": "G",
+  "name": "G Suspended 2nd",
+  "symbol": "Gsus2",
+  "qualityLabel": "Suspended 2nd",
+  "definition": {
+    "toneSpellings": [
+      "G",
+      "A",
+      "D"
+    ],
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      2,
+      7
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Gsus2",
+      "notesLowToHigh": [
+        "G3",
+        "A3",
+        "D4"
+      ],
+      "midiLowToHigh": [
+        55,
+        57,
+        62
+      ],
+      "bass": "G3",
+      "keyboardHighlights": [
+        {
+          "midi": 55,
+          "writtenSpelling": "G3"
+        },
+        {
+          "midi": 57,
+          "writtenSpelling": "A3"
+        },
+        {
+          "midi": 62,
+          "writtenSpelling": "D4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 55,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 57,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 62,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "G3",
+        "A3",
+        "D4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "Gsus2/A",
+      "notesLowToHigh": [
+        "A3",
+        "D4",
+        "G4"
+      ],
+      "midiLowToHigh": [
+        57,
+        62,
+        67
+      ],
+      "bass": "A3",
+      "keyboardHighlights": [
+        {
+          "midi": 57,
+          "writtenSpelling": "A3"
+        },
+        {
+          "midi": 62,
+          "writtenSpelling": "D4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 57,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 62,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "A3",
+        "D4",
+        "G4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "Gsus2/D",
+      "notesLowToHigh": [
+        "D4",
+        "G4",
+        "A4"
+      ],
+      "midiLowToHigh": [
+        62,
+        67,
+        69
+      ],
+      "bass": "D4",
+      "keyboardHighlights": [
+        {
+          "midi": 62,
+          "writtenSpelling": "D4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 69,
+          "writtenSpelling": "A4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 62,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 69,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "D4",
+        "G4",
+        "A4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "G Suspended 2nd Piano Chord (Gsus2): Notes & Inversions",
+    "description": "Find the g suspended 2nd chord on piano: G, A, D. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "G Suspended 2nd Piano Chord",
+    "mainKeyword": "g suspended 2nd chord piano",
+    "secondaryKeywords": [
+      "Gsus2 piano chord",
+      "g suspended 2nd notes",
+      "g suspended 2nd inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The G Suspended 2nd chord contains G, A, D. Formula: 1–2–5.",
+    "theory": "The g suspended 2nd chord replaces the third with a major second.",
+    "comparison": "Compared with G major, replace the third with the second.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written note spelling shown for this chord.",
+    "faq": [
+      {
+        "q": "What notes are in Gsus2?",
+        "a": "G, A, D."
+      },
+      {
+        "q": "What is the formula for Gsus2?",
+        "a": "1–2–5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION",
+    "N2B-PC-SUS"
+  ]
+}

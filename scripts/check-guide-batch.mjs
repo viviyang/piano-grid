@@ -5,6 +5,7 @@ const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PAT
 const master=JSON.parse(await readFile('docs/content/site-master/page-content.master.json','utf8'));
 const base=process.env.PIANO_BASE_URL||'http://localhost:3000';
 const out=process.env.PIANO_CHECK_OUT||'checks/batches/05-guides';
+const metadataTitleOverrides={'/guide':'How to Play Piano for Beginners: First Notes and Rhythm'};
 await mkdir(`${out}/screenshots`,{recursive:true});
 const results=[],errors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
@@ -17,8 +18,9 @@ async function responsive(url){for(const width of [1440,390,320,768]){await page
 try{
  for(const url of ['/guide','/guide/read-sheet-music']){
   await load(url);const source=master.pages[url];
-  check(`${url} title`,await page.title()===source.metadata.title,await page.title());
-  check(`${url} noindex`,(await page.locator('meta[name=robots]').getAttribute('content')).includes('noindex'));
+  check(`${url} title`,await page.title()===(metadataTitleOverrides[url]||source.metadata.title),await page.title());
+  const robots=(await page.locator('meta[name=robots]').getAttribute('content'))||'';
+  check(`${url} index/follow`,robots.includes('index')&&robots.includes('follow')&&!robots.includes('noindex')&&!robots.includes('nofollow'),robots);
   check(`${url} canonical`,(await page.locator('link[rel=canonical]').getAttribute('href')).endsWith(url));
   check(`${url} one H1`,await page.locator('h1').count()===1);
   check(`${url} no duplicate IDs`,await page.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(node=>node.id);return ids.length===new Set(ids).size;}));

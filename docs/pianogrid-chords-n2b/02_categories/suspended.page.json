@@ -1,0 +1,55 @@
+{
+  "url": "/chords/suspended",
+  "id": "suspended",
+  "label": "Suspended Chords",
+  "title": "Suspended Piano Chords: Sus2, Sus4, Notes & Inversions",
+  "description": "Browse sus2 and sus4 piano chords by root. Compare 1–2–5 with 1–4–5, see keyboard diagrams and detailed inversion pages.",
+  "h1": "Suspended Piano Chords",
+  "mainKeyword": "suspended piano chords",
+  "secondaryKeywords": [
+    "sus chords piano",
+    "sus2 chords piano",
+    "sus4 chords piano"
+  ],
+  "formulaFamilies": {
+    "sus2": [
+      "1",
+      "2",
+      "5"
+    ],
+    "sus4": [
+      "1",
+      "4",
+      "5"
+    ]
+  },
+  "familySubtypes": [
+    "sus2",
+    "sus4"
+  ],
+  "intro": "Suspended chords replace the third: sus2 uses the second, while sus4 uses the fourth.",
+  "rootOrder": [
+    "C",
+    "D♭",
+    "D",
+    "E♭",
+    "E",
+    "F",
+    "F♯",
+    "G",
+    "A♭",
+    "A",
+    "B♭",
+    "B"
+  ],
+  "interaction": {
+    "rootFilter": "client enhancement; all cards stay in initial HTML",
+    "subtypeFilter": "only suspended page; both sus2 and sus4 stay server-rendered",
+    "queryIndexing": "filters do not create indexable canonical URLs"
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION",
+    "N2B-PC-SUS"
+  ]
+}

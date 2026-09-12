@@ -26,11 +26,11 @@ try{
     check(`${route} production title`,await page.title()===(homeRoute?homeTitle:metadataTitleOverrides[route]||source.metadata.title));
     const robots=(await page.locator('meta[name=robots]').getAttribute('content'))||'';
     check(`${route} production index/follow`,robots.includes('index')&&robots.includes('follow')&&!robots.includes('noindex')&&!robots.includes('nofollow'),robots);
-    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===16);
+    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===19);
     check(`${route} excludes master payload`,!html.includes('source_usage_batches')&&!html.includes('retained_without_url')&&!html.includes('needed_to_resolve'));
   }
   await page.goto(base+'/');
-  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===22);
+  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===25);
   for(const route of ['/','/tools'])for(const width of [1440,390,320,768]){
     await page.setViewportSize({width,height:950});await page.goto(base+route);
     check(`${route} production responsive ${width}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

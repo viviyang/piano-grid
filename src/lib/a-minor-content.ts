@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { ChordDetailData, Block, Voicing, SearchSection, ChordDetailModel } from './a-minor-types';
+import type { ChordDetailData, Block, DetailVoicing, SearchSection, ChordDetailModel } from './a-minor-types';
+import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family-model';
 import { isPublicRoute } from './site-routes';
 import { finalizeChordDetailModel } from './chord-detail-model';
 import { fingeringBlock, getChordLearning, practiceBlock } from './chord-learning-content';
@@ -23,9 +24,10 @@ export function getAMinorContent():ChordDetailModel {
   const majorLink=byId['am-next'].content.links.find(link=>link.url==='/chords/a-major'&&link.published);
   if(majorLink)byId['am-why-minor'].content.links=[...byId['am-why-minor'].content.links,majorLink];
   const chord = source.shared_data.chords['a-minor'];
-  const voicings: Voicing[] = page.data.voicing_ids.map((id: string) => {
+  const definition = resolveThreeNoteDefinition('minor');
+  const voicings: DetailVoicing[] = page.data.voicing_ids.map((id: string, index: number) => {
     const v = source.shared_data.voicings[id];
-    return { voicing_id: v.voicing_id, inversion_label: v.inversion_label, chord_symbol: v.chord_symbol,
+    return { voicing_id: v.voicing_id, inversion_label: v.inversion_label, position: positionForThreeNote(definition, index), chord_symbol: v.chord_symbol,
       bass_spelling: v.bass_spelling, notes_low_to_high: v.notes_low_to_high.map((n: {display_pitch:string;midi:number})=>({display_pitch:n.display_pitch,midi:n.midi})),
       diagram: v.diagram, playback: { together: v.playback.together, ascending: v.playback.ascending }, print_data: v.print_data };
   });
@@ -36,7 +38,7 @@ export function getAMinorContent():ChordDetailModel {
   const data: ChordDetailData = {
     url:'/chords/a-minor',namespace:'am',toolId:'am-result',pdf:{url:'/assets/chords/a-minor-notes-inversions.pdf',label:'Download A minor PDF'},rangeLabel:'C3–C5',
     defaultId: page.selection.default_voicing_id, options: page.selection.options.map((o: {value:string;label:string})=>({value:o.value,label:o.label})),
-    chord: {id:chord.chord_id,slug:'a-minor',name_en:chord.name_en,symbol:chord.symbol,root_spelling:chord.root_spelling,quality:chord.quality,note_spellings:chord.note_spellings,formula_degrees:chord.formula_degrees},
+    chord: {id:chord.chord_id,slug:'a-minor',name_en:chord.name_en,symbol:chord.symbol,root_spelling:chord.root_spelling,quality:chord.quality,note_spellings:chord.note_spellings,formula_degrees:chord.formula_degrees,definition},
     voicings, whitePitchClasses:source.shared_data.conventions.white_pitch_classes,
     microcopy:page.microcopy,heading:intro.heading,toolHeading:byId['am-result'].content.heading,printDisclaimer:byId['am-find-notes'].content.paragraphs[1],fingeringStatus:'verified_examples',
   };

@@ -3,10 +3,12 @@ import { resolve } from 'node:path';
 import { readAuthorizedPage } from './site-content';
 import { isPublicRoute } from './site-routes';
 import { getAMinorContent } from './a-minor-content';
-import type { ChordDetailData, ChordDetailModel, Block, ChordQuality, Voicing } from './a-minor-types';
+import type { ChordDetailData, ChordDetailModel, Block, ChordQuality, DetailVoicing, Voicing } from './a-minor-types';
+import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family-model';
 import { finalizeChordDetailModel, type ChordDetailRoute } from './chord-detail-model';
 import { cMajorConnectionBlock, fingeringBlock, getChordLearning, practiceBlock } from './chord-learning-content';
 import { getExpansionChordDetail, isExpansionChordDetailRoute } from './chord-expansion-content';
+import { getN2BCategory, getN2BChordDetail, isN2BChordDetailRoute, type N2BCategory } from './chord-n2b-content';
 
 type NewVoicing = {id:string;label:string;symbol:string;bass:string;notes:string[];midi:number[];keyboard_highlights:{midi:number;spelling:string}[];playback:{simultaneous_midi:number[];ascending_midi:number[]}};
 type DetailBinding={h1:string;tool_heading:string;answer:string;keyboard_range_midi:number[];range_label:string;pdf:{url:string;label:string};quality:ChordQuality;formula_degrees:string[];namespace:string;detail_publish_gate:string};
@@ -24,6 +26,7 @@ function canPublishLink(href:string,anchors:Set<string>){const {pathname,fragmen
 export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
  if(url==='/chords/a-minor')return getAMinorContent();
  if(isExpansionChordDetailRoute(url))return getExpansionChordDetail(url);
+ if(isN2BChordDetailRoute(url))return getN2BChordDetail(url);
  const {page,master}=readAuthorizedPage(url);
  const copy=detailCopy[url as keyof typeof detailCopy];
  const nextBinding=nextBindings[url];
@@ -33,19 +36,19 @@ export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
  if(binding.detail_publish_gate!=='b3_existing'&&binding.detail_publish_gate!=='integration_and_regression_pending'&&!optionalFingering)throw new Error(`Blocked detail binding: ${url}`);
  const expected=['Notes and keyboard position','What to notice','Compare three positions'];
  if(page.blocks.length!==3||page.blocks.some((b:{heading:string;body:string},i:number)=>b.heading!==expected[i]||typeof b.body!=='string'))throw new Error(`Unknown/missing core block: ${url}`);
- const prefix=url.split('/').at(-1)!,d=page.data,contract=master.legacy_chords_support.playback_contract;
+ const prefix=url.split('/').at(-1)!,d=page.data,contract=master.legacy_chords_support.playback_contract,definition=resolveThreeNoteDefinition(binding.quality);
  if(binding.namespace!==prefix||binding.quality!==d.quality)throw new Error(`Binding identity mismatch: ${url}`);
- const voicings:Voicing[]=d.voicings.map((v:NewVoicing)=>{
+ const voicings:DetailVoicing[]=d.voicings.map((v:NewVoicing,index:number)=>{
   if(v.notes.length!==3||v.midi.length!==3||JSON.stringify(v.keyboard_highlights.map(h=>h.midi))!==JSON.stringify(v.midi))throw new Error(`Missing voicing: ${url}`);
   // Full displayed registers differ between legacy and new content: never transpose to fit.
   const notes=v.notes.map((pitch,i)=>({display_pitch:displayAccidentals(pitch),midi:v.midi[i]}));
   const events=(midis:number[],mode:'together'|'ascending')=>midis.map((midi,i)=>({midi,frequency_hz:440*2**((midi-69)/12),onset_ms:mode==='together'?0:contract.ascending_onsets_ms[i],duration_ms:mode==='together'?contract.together_duration_ms:contract.ascending_duration_ms}));
-  return {voicing_id:`${prefix}--${v.id}`,inversion_label:v.label,chord_symbol:displayAccidentals(v.symbol),bass_spelling:displayAccidentals(v.bass),notes_low_to_high:notes,diagram:{keyboard_range_midi:binding.keyboard_range_midi,highlight_midi:v.keyboard_highlights.map(h=>h.midi),alt_text:`${displayAccidentals(d.root)} ${d.quality}, ${v.label}: ${v.notes.map(displayAccidentals).join(', ')} from low to high. Marked keys are the notes to play.`},playback:{together:events(v.playback.simultaneous_midi,'together'),ascending:events(v.playback.ascending_midi,'ascending')},print_data:{spelled_pitches:[...v.notes],highlight_midi:[...v.midi]}};
+  return {voicing_id:`${prefix}--${v.id}`,inversion_label:v.label,position:positionForThreeNote(definition,index),chord_symbol:displayAccidentals(v.symbol),bass_spelling:displayAccidentals(v.bass),notes_low_to_high:notes,diagram:{keyboard_range_midi:binding.keyboard_range_midi,highlight_midi:v.keyboard_highlights.map(h=>h.midi),alt_text:`${displayAccidentals(d.root)} ${d.quality}, ${v.label}: ${v.notes.map(displayAccidentals).join(', ')} from low to high. Marked keys are the notes to play.`},playback:{together:events(v.playback.simultaneous_midi,'together'),ascending:events(v.playback.ascending_midi,'ascending')},print_data:{spelled_pitches:[...v.notes],highlight_midi:[...v.midi]}};
  });
  const name=`${displayAccidentals(d.root)} ${d.quality}`;
  const expectedSemitones=binding.quality==='major'?[0,4,7]:[0,3,7];
  if(JSON.stringify(d.semitones_from_root)!==JSON.stringify(expectedSemitones)||JSON.stringify(binding.formula_degrees)!==JSON.stringify(binding.quality==='major'?['1','3','5']:['1','b3','5']))throw new Error(`Unsupported chord definition: ${url}`);
- const data:ChordDetailData={url,namespace:prefix,toolId:`${prefix}-result`,rangeLabel:binding.range_label,pdf:binding.pdf,defaultId:`${prefix}--${d.default_voicing}`,options:voicings.map(v=>({value:v.voicing_id,label:v.inversion_label})),chord:{id:prefix,slug:prefix,name_en:name,symbol:displayAccidentals(d.symbol),root_spelling:displayAccidentals(d.root),quality:binding.quality,note_spellings:d.pitch_classes.map(displayAccidentals),formula_degrees:binding.formula_degrees},voicings,whitePitchClasses:master.legacy_chords_support.shared_data.conventions.white_pitch_classes,microcopy:master.pages['/chords/a-minor'].microcopy,heading:binding.h1,toolHeading:binding.tool_heading,printDisclaimer:'The marked keys show pitches, not a hand shape or a required fingering.',fingeringStatus:optionalFingering?'not_provided':'verified_examples'};
+ const data:ChordDetailData={url,namespace:prefix,toolId:`${prefix}-result`,rangeLabel:binding.range_label,pdf:binding.pdf,defaultId:`${prefix}--${d.default_voicing}`,options:voicings.map(v=>({value:v.voicing_id,label:v.inversion_label})),chord:{id:prefix,slug:prefix,name_en:name,symbol:displayAccidentals(d.symbol),root_spelling:displayAccidentals(d.root),quality:binding.quality,note_spellings:d.pitch_classes.map(displayAccidentals),formula_degrees:binding.formula_degrees,definition},voicings,whitePitchClasses:master.legacy_chords_support.shared_data.conventions.white_pitch_classes,microcopy:master.pages['/chords/a-minor'].microcopy,heading:binding.h1,toolHeading:binding.tool_heading,printDisclaimer:'The marked keys show pitches, not a hand shape or a required fingering.',fingeringStatus:optionalFingering?'not_provided':'verified_examples'};
  const blocks:Block[]=[{block_id:`${prefix}-intro`,content:{...empty(binding.h1),paragraphs:[page.blocks[0].body]}},{block_id:data.toolId,content:empty(binding.tool_heading)},{block_id:`${prefix}-notice`,content:{...empty(page.blocks[1].heading),paragraphs:[page.blocks[1].body]}},{block_id:`${prefix}-inversions`,content:{...empty(page.blocks[2].heading),paragraphs:[page.blocks[2].body],table:{columns:['Position','Symbol','Notes, low to high','Bass'],rows:voicings.map(v=>[v.inversion_label,v.chord_symbol,v.notes_low_to_high.map(n=>n.display_pitch).join('–'),v.bass_spelling])}}},{block_id:`${prefix}-reference`,content:{...empty('Chord reference'),paragraphs:[`Common names: ${d.aliases.join(', ')}.`,`Intervals from the root: ${d.intervals.join(', ')}.`]}},{block_id:`${prefix}-print`,content:empty('Print this chord reference')}];
  const learning=getChordLearning(url,data);
  const existingFingering=d.verified_fingering_example?{block_id:`${prefix}-fingering-example`,content:{...empty('Root-position fingering examples'),paragraphs:[`${d.verified_fingering_example.scope}: ${d.verified_fingering_example.notes.map(displayAccidentals).join('–')} → ${d.verified_fingering_example.fingers.join('–')}.`]}}:undefined;
@@ -72,7 +75,8 @@ export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
 
 export type CenterItem={id:string;name:string;root:string;quality:string;url:string|null;voicing:Voicing;tones:string[];formula:string[]};
 export type CenterModel={title:string;metadata:{title:string;description:string;canonical_path:string};blocks:Block[];items:CenterItem[];comparisons:{left:CenterItem;right:CenterItem}[];practiceLinks:{url:string;label:string;description:string}[];filters:{defaults:{root:string|null;quality:string|null;selected_chord_id:string};root_options:{value:string|null;label:string}[];quality_options:{value:string|null;label:string}[]};microcopy:ChordDetailData['microcopy']&{no_results:string};whitePitchClasses:number[];pdf:string};
-export type ChordCategoryModel={url:'/chords/major'|'/chords/minor';quality:'major'|'minor';title:string;directAnswer:string;metadata:{title:string;description:string;canonical_path:string};items:CenterItem[];rootOrder:string[];contentBlocks:{heading:string;body:string}[];links:{url:string;label:string}[];whitePitchClasses:number[]};
+export type ChordCategoryId='major'|'minor'|N2BCategory;
+export type ChordCategoryModel={url:`/chords/${ChordCategoryId}`;quality:ChordCategoryId;title:string;directAnswer:string;metadata:{title:string;description:string;canonical_path:string};items:CenterItem[];rootOrder:string[];familySubtypes:string[];contentBlocks:{heading:string;body:string}[];links:{url:string;label:string}[];whitePitchClasses:number[]};
 type KeyChordSource={symbol:string;quality:'major'|'minor'|'diminished';notes:string[];semitones_from_root:number[];reference_voicing:string[];fingering:null};
 type HubAddition={id:string;name:string;symbol:string;root:string;quality:'major'|'minor';url:string;tones:string[];formula:string[];voicing:{notes:string[];midi:number[]};status:string};
 const pitchClasses:Record<string,number>={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
@@ -114,6 +118,7 @@ export function getChordCenter():CenterModel {
  const next=blocks.find(block=>block.block_id==='chords-next')!;
  for(const edge of linkPlan.edges)if(edge.from==='/chords'&&['L053','L054','L061','L062','L063'].includes(edge.id)&&canPublishLink(edge.href,new Set()))next.content.links.push({url:edge.href,label:edge.anchor,published:true});
  next.content.links.push({url:'/chords/major',label:'Browse major chords',published:true},{url:'/chords/minor',label:'Browse minor chords',published:true});
+ next.content.links.push({url:'/chords/diminished',label:'Browse diminished chords',published:true},{url:'/chords/augmented',label:'Browse augmented chords',published:true},{url:'/chords/suspended',label:'Browse suspended chords',published:true});
  blocks.find(block=>block.block_id==='chords-intro')!.content.paragraphs=['Use this piano chord chart to find the notes and keyboard positions for 25 major and minor triads. Read the notes from low to high, hear them together or one at a time, and print a reference to keep beside your keyboard.','The chart covers the practical 12 major and 12 minor pitch-class families, plus the published C-flat major written-spelling reference.'];
  blocks.find(block=>block.block_id==='chords-print')!.content.paragraphs[0]='Download the original three-page reference with nine selected chord names. The interactive chart above contains the broader 25-chord collection; use Print this chord or Print matching chords for those results.';
  blocks.find(block=>block.block_id==='chords-how-to-read')!.content.paragraphs.push(
@@ -121,7 +126,7 @@ export function getChordCenter():CenterModel {
   'Root position places the root as the lowest note. An inversion keeps the same chord tones but places another chord tone lowest. Right-hand and left-hand fingerings are performance examples for a particular voicing, not additional chord types.',
   'A note name identifies a pitch class, an octave number identifies its register, a scale degree describes the note’s place in a scale or chord formula, and a finger number identifies a digit on one hand.'
  );
- const faq=blocks.find(block=>block.block_id==='chords-questions')!.content.table!;faq.rows=faq.rows.map(row=>row[0]==='Are these all the chords on piano?'?[row[0],'No. This chart covers 25 major and minor triads. Diminished, seventh, power, and jazz chords are not included in this collection.']:row);
+ const faq=blocks.find(block=>block.block_id==='chords-questions')!.content.table!;faq.rows=faq.rows.map(row=>row[0]==='Are these all the chords on piano?'?[row[0],'No. This main chart keeps the practical 25 major and minor references. Separate category pages cover diminished, augmented, sus2 and sus4 chords; seventh and extended families are not yet included.']:row);
  const roots=['C','C#','Cb','Db','D','Eb','E','F','F#','G','G#','Ab','A','Bb','B'].filter(root=>completeItems.some(item=>item.root===root));
  const filters={...page.filters,root_options:[{value:null,label:'Any root'},...roots.map(root=>({value:root,label:displayAccidentals(root)}))]};
  const practiceLinks=[
@@ -132,7 +137,8 @@ export function getChordCenter():CenterModel {
  return {title:blocks[0].content.heading,metadata:{...page.metadata,description:'Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.'},blocks,items:completeItems,comparisons,practiceLinks,filters,microcopy:page.microcopy,whitePitchClasses:shared.conventions.white_pitch_classes,pdf:'/reference/preserved-chords/assets/piano-chord-chart-selected.pdf'};
 }
 
-export function getChordCategory(quality:'major'|'minor'):ChordCategoryModel {
+export function getChordCategory(quality:ChordCategoryId):ChordCategoryModel {
+ if(quality==='diminished'||quality==='augmented'||quality==='suspended')return getN2BCategory(quality);
  const url=`/chords/${quality}` as const;
  const raw=JSON.parse(readFileSync(resolve(`docs/pianogrid-chords-next-expansion/03_categories/${quality}.page.json`),'utf8')) as {url:string;status:string;title:string;description:string;h1:string;direct_answer:string;root_order:string[];content_blocks:{heading:string;body:string}[]};
  if(raw.url!==url||raw.status!=='publish_in_N1'||raw.root_order.length!==12)throw new Error(`Invalid ${quality} category package`);
@@ -144,5 +150,5 @@ export function getChordCategory(quality:'major'|'minor'):ChordCategoryModel {
  const supportTargets=new Set(['/chords','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords']);
  const links=planned.filter(edge=>edge.from===url&&isPublicRoute(edge.to)&&supportTargets.has(edge.to)).map(edge=>({url:edge.to,label:edge.anchor}));
  if(quality==='major'&&isPublicRoute('/chords/c-flat-major'))links.push({url:'/chords/c-flat-major',label:'Open the C-flat major written-spelling reference'});
- return {url,quality,title:raw.h1,directAnswer:raw.direct_answer,metadata:{title:raw.title,description:raw.description,canonical_path:url},items:items as CenterItem[],rootOrder:raw.root_order,contentBlocks:raw.content_blocks,links,whitePitchClasses:center.whitePitchClasses};
+ return {url,quality,title:raw.h1,directAnswer:raw.direct_answer,metadata:{title:raw.title,description:raw.description,canonical_path:url},items:items as CenterItem[],rootOrder:raw.root_order.map(ascii),familySubtypes:[quality],contentBlocks:raw.content_blocks,links,whitePitchClasses:center.whitePitchClasses};
 }

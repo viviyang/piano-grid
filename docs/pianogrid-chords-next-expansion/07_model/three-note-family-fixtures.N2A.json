@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "three-note-family-fixtures-n2a-1.0",
+  "status": "data_only_not_published",
+  "fixtures": [
+    {
+      "id": "c-diminished",
+      "status": "data_only_not_published",
+      "rootSpelling": "C",
+      "subtype": "diminished",
+      "symbol": "Cdim",
+      "noteSpellings": ["C", "E♭", "G♭"],
+      "semitonesFromRoot": [0, 3, 6],
+      "fingeringStatus": "not_provided",
+      "positions": [
+        {"id":"root","label":"Root position","inversionIndex":0,"bassDegree":"1","symbol":"Cdim","bassSpelling":"C4","notesLowToHigh":[{"displayPitch":"C4","midi":60},{"displayPitch":"E♭4","midi":63},{"displayPitch":"G♭4","midi":66}]},
+        {"id":"first","label":"First inversion","inversionIndex":1,"bassDegree":"b3","symbol":"Cdim/E♭","bassSpelling":"E♭4","notesLowToHigh":[{"displayPitch":"E♭4","midi":63},{"displayPitch":"G♭4","midi":66},{"displayPitch":"C5","midi":72}]},
+        {"id":"second","label":"Second inversion","inversionIndex":2,"bassDegree":"b5","symbol":"Cdim/G♭","bassSpelling":"G♭4","notesLowToHigh":[{"displayPitch":"G♭4","midi":66},{"displayPitch":"C5","midi":72},{"displayPitch":"E♭5","midi":75}]}
+      ]
+    },
+    {
+      "id": "c-augmented",
+      "status": "data_only_not_published",
+      "rootSpelling": "C",
+      "subtype": "augmented",
+      "symbol": "Caug",
+      "noteSpellings": ["C", "E", "G♯"],
+      "semitonesFromRoot": [0, 4, 8],
+      "fingeringStatus": "not_provided",
+      "positions": [
+        {"id":"root","label":"Root position","inversionIndex":0,"bassDegree":"1","symbol":"Caug","bassSpelling":"C4","notesLowToHigh":[{"displayPitch":"C4","midi":60},{"displayPitch":"E4","midi":64},{"displayPitch":"G♯4","midi":68}]},
+        {"id":"first","label":"First inversion","inversionIndex":1,"bassDegree":"3","symbol":"Caug/E","bassSpelling":"E4","notesLowToHigh":[{"displayPitch":"E4","midi":64},{"displayPitch":"G♯4","midi":68},{"displayPitch":"C5","midi":72}]},
+        {"id":"second","label":"Second inversion","inversionIndex":2,"bassDegree":"#5","symbol":"Caug/G♯","bassSpelling":"G♯4","notesLowToHigh":[{"displayPitch":"G♯4","midi":68},{"displayPitch":"C5","midi":72},{"displayPitch":"E5","midi":76}]}
+      ]
+    },
+    {
+      "id": "c-sus2",
+      "status": "data_only_not_published",
+      "rootSpelling": "C",
+      "subtype": "sus2",
+      "symbol": "Csus2",
+      "noteSpellings": ["C", "D", "G"],
+      "semitonesFromRoot": [0, 2, 7],
+      "fingeringStatus": "not_provided",
+      "positions": [
+        {"id":"root","label":"Root position","inversionIndex":0,"bassDegree":"1","symbol":"Csus2","bassSpelling":"C4","notesLowToHigh":[{"displayPitch":"C4","midi":60},{"displayPitch":"D4","midi":62},{"displayPitch":"G4","midi":67}]},
+        {"id":"first","label":"First inversion","inversionIndex":1,"bassDegree":"2","symbol":"Csus2/D","bassSpelling":"D4","notesLowToHigh":[{"displayPitch":"D4","midi":62},{"displayPitch":"G4","midi":67},{"displayPitch":"C5","midi":72}]},
+        {"id":"second","label":"Second inversion","inversionIndex":2,"bassDegree":"5","symbol":"Csus2/G","bassSpelling":"G4","notesLowToHigh":[{"displayPitch":"G4","midi":67},{"displayPitch":"C5","midi":72},{"displayPitch":"D5","midi":74}]}
+      ]
+    },
+    {
+      "id": "c-sus4",
+      "status": "data_only_not_published",
+      "rootSpelling": "C",
+      "subtype": "sus4",
+      "symbol": "Csus4",
+      "noteSpellings": ["C", "F", "G"],
+      "semitonesFromRoot": [0, 5, 7],
+      "fingeringStatus": "not_provided",
+      "positions": [
+        {"id":"root","label":"Root position","inversionIndex":0,"bassDegree":"1","symbol":"Csus4","bassSpelling":"C4","notesLowToHigh":[{"displayPitch":"C4","midi":60},{"displayPitch":"F4","midi":65},{"displayPitch":"G4","midi":67}]},
+        {"id":"first","label":"First inversion","inversionIndex":1,"bassDegree":"4","symbol":"Csus4/F","bassSpelling":"F4","notesLowToHigh":[{"displayPitch":"F4","midi":65},{"displayPitch":"G4","midi":67},{"displayPitch":"C5","midi":72}]},
+        {"id":"second","label":"Second inversion","inversionIndex":2,"bassDegree":"5","symbol":"Csus4/G","bassSpelling":"G4","notesLowToHigh":[{"displayPitch":"G4","midi":67},{"displayPitch":"C5","midi":72},{"displayPitch":"F5","midi":77}]}
+      ]
+    }
+  ]
+}

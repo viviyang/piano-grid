@@ -39,6 +39,13 @@ const pageSourceIds:Partial<Record<ChordDetailRoute,string[]>>={
   '/chords/c-major':['SKOOVE-C','E-CHORD'],
 };
 
+type PreparedChordLearning=Omit<NextChordLearning,'practice'>&{practice:ChordPractice};
+function prepareThreeNoteLearning(learning:NextChordLearning):PreparedChordLearning{
+  const count=learning.practice.requiredPitchClassCount??3;
+  if(count!==3)throw new Error(`Unexpected three-note practice cardinality: ${count}`);
+  return {...learning,practice:{...learning.practice,requiredPitchClassCount:count}};
+}
+
 function fingering(data:ChordDetailData,root:Voicing,hand:'right'|'left',sourceIds:string[]):FingeringExample{
   const fingers=hand==='right'?[1,3,5]:[5,3,1];
   return {
@@ -50,12 +57,12 @@ function fingering(data:ChordDetailData,root:Voicing,hand:'right'|'left',sourceI
   };
 }
 
-export function getChordLearning(url:ChordDetailRoute,data:ChordDetailData){
+export function getChordLearning(url:ChordDetailRoute,data:ChordDetailData):PreparedChordLearning{
   if(url==='/chords/c-flat-major'){
     if(cFlatLearning.fingerings.length!==0||!cFlatLearning.sources.some(source=>source.id==='PG-CB'))throw new Error('C-flat optional fingering contract changed');
-    return cFlatLearning;
+    return prepareThreeNoteLearning(cFlatLearning);
   }
-  if(url in NEXT_CHORD_LEARNING)return NEXT_CHORD_LEARNING[url as keyof typeof NEXT_CHORD_LEARNING];
+  if(url in NEXT_CHORD_LEARNING)return prepareThreeNoteLearning(NEXT_CHORD_LEARNING[url as keyof typeof NEXT_CHORD_LEARNING]);
   const root=data.voicings.find(voicing=>voicing.voicing_id===data.defaultId);
   if(!root)throw new Error(`Missing root-position learning voicing: ${url}`);
   const sourceIds=pageSourceIds[url];
@@ -66,6 +73,7 @@ export function getChordLearning(url:ChordDetailRoute,data:ChordDetailData){
     id:'practice',heading:`Build ${data.chord.symbol} on the keyboard`,
     prompt:`Select the three pitch classes that make ${data.chord.name_en}, then check your answer.`,
     scope:'This one-octave keyboard checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed.',
+    requiredPitchClassCount:3,
   };
   return {fingerings,sources:sourceIds.map(id=>sources[id]),practice,extraBlocks:[] as Block[]};
 }

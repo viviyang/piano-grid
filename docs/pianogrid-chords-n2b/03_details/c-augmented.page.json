@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "augmented",
+  "expectedNoteCount": 3,
+  "url": "/chords/c-augmented",
+  "categoryRoute": "/chords/augmented",
+  "rootSpelling": "C",
+  "name": "C Augmented",
+  "symbol": "Caug",
+  "qualityLabel": "Augmented",
+  "definition": {
+    "toneSpellings": [
+      "C",
+      "E",
+      "G♯"
+    ],
+    "formulaDegrees": [
+      "1",
+      "3",
+      "♯5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      4,
+      8
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Caug",
+      "notesLowToHigh": [
+        "C4",
+        "E4",
+        "G♯4"
+      ],
+      "midiLowToHigh": [
+        60,
+        64,
+        68
+      ],
+      "bass": "C4",
+      "keyboardHighlights": [
+        {
+          "midi": 60,
+          "writtenSpelling": "C4"
+        },
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        },
+        {
+          "midi": 68,
+          "writtenSpelling": "G♯4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 60,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 64,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 68,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "C4",
+        "E4",
+        "G♯4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "Caug/E",
+      "notesLowToHigh": [
+        "E4",
+        "G♯4",
+        "C5"
+      ],
+      "midiLowToHigh": [
+        64,
+        68,
+        72
+      ],
+      "bass": "E4",
+      "keyboardHighlights": [
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        },
+        {
+          "midi": 68,
+          "writtenSpelling": "G♯4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 64,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 68,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "E4",
+        "G♯4",
+        "C5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "Caug/G♯",
+      "notesLowToHigh": [
+        "G♯4",
+        "C5",
+        "E5"
+      ],
+      "midiLowToHigh": [
+        68,
+        72,
+        76
+      ],
+      "bass": "G♯4",
+      "keyboardHighlights": [
+        {
+          "midi": 68,
+          "writtenSpelling": "G♯4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 76,
+          "writtenSpelling": "E5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 68,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 72,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 76,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "G♯4",
+        "C5",
+        "E5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "C Augmented Piano Chord (Caug): Notes & Inversions",
+    "description": "Find the c augmented chord on piano: C, E, G♯. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "C Augmented Piano Chord",
+    "mainKeyword": "c augmented chord piano",
+    "secondaryKeywords": [
+      "Caug piano chord",
+      "c augmented notes",
+      "c augmented inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The C Augmented chord contains C, E, G♯. Formula: 1–3–♯5.",
+    "theory": "The c augmented triad uses a root, major third and augmented fifth.",
+    "comparison": "Compared with C major, raise the fifth by one semitone.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written note spelling shown for this chord.",
+    "faq": [
+      {
+        "q": "What notes are in Caug?",
+        "a": "C, E, G♯."
+      },
+      {
+        "q": "What is the formula for Caug?",
+        "a": "1–3–♯5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION"
+  ]
+}

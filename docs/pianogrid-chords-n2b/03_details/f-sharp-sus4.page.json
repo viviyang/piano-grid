@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "sus4",
+  "expectedNoteCount": 3,
+  "url": "/chords/f-sharp-sus4",
+  "categoryRoute": "/chords/suspended",
+  "rootSpelling": "F♯",
+  "name": "F♯ Suspended 4th",
+  "symbol": "F♯sus4",
+  "qualityLabel": "Suspended 4th",
+  "definition": {
+    "toneSpellings": [
+      "F♯",
+      "B",
+      "C♯"
+    ],
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      5,
+      7
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "F♯sus4",
+      "notesLowToHigh": [
+        "F♯4",
+        "B4",
+        "C♯5"
+      ],
+      "midiLowToHigh": [
+        66,
+        71,
+        73
+      ],
+      "bass": "F♯4",
+      "keyboardHighlights": [
+        {
+          "midi": 66,
+          "writtenSpelling": "F♯4"
+        },
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        },
+        {
+          "midi": 73,
+          "writtenSpelling": "C♯5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 66,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 71,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 73,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "F♯4",
+        "B4",
+        "C♯5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "F♯sus4/B",
+      "notesLowToHigh": [
+        "B4",
+        "C♯5",
+        "F♯5"
+      ],
+      "midiLowToHigh": [
+        71,
+        73,
+        78
+      ],
+      "bass": "B4",
+      "keyboardHighlights": [
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        },
+        {
+          "midi": 73,
+          "writtenSpelling": "C♯5"
+        },
+        {
+          "midi": 78,
+          "writtenSpelling": "F♯5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 71,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 73,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 78,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "B4",
+        "C♯5",
+        "F♯5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "F♯sus4/C♯",
+      "notesLowToHigh": [
+        "C♯5",
+        "F♯5",
+        "B5"
+      ],
+      "midiLowToHigh": [
+        73,
+        78,
+        83
+      ],
+      "bass": "C♯5",
+      "keyboardHighlights": [
+        {
+          "midi": 73,
+          "writtenSpelling": "C♯5"
+        },
+        {
+          "midi": 78,
+          "writtenSpelling": "F♯5"
+        },
+        {
+          "midi": 83,
+          "writtenSpelling": "B5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 73,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 78,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 83,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "C♯5",
+        "F♯5",
+        "B5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "F♯ Suspended 4th Piano Chord (F♯sus4): Notes & Inversions",
+    "description": "Find the f♯ suspended 4th chord on piano: F♯, B, C♯. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "F♯ Suspended 4th Piano Chord",
+    "mainKeyword": "f♯ suspended 4th chord piano",
+    "secondaryKeywords": [
+      "F♯sus4 piano chord",
+      "f♯ suspended 4th notes",
+      "f♯ suspended 4th inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The F♯ Suspended 4th chord contains F♯, B, C♯. Formula: 1–4–5.",
+    "theory": "The f♯ suspended 4th chord replaces the third with a perfect fourth.",
+    "comparison": "Compared with F♯ major, replace the third with the fourth.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written note spelling shown for this chord.",
+    "faq": [
+      {
+        "q": "What notes are in F♯sus4?",
+        "a": "F♯, B, C♯."
+      },
+      {
+        "q": "What is the formula for F♯sus4?",
+        "a": "1–4–5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION",
+    "N2B-PC-SUS"
+  ]
+}

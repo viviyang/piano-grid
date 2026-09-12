@@ -5,9 +5,9 @@ const { chromium } = createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT
 const base = process.env.PIANO_BASE_URL || 'http://localhost:3000';
 const out = process.env.PIANO_CHECK_OUT || 'checks/regression/shared-breadcrumb';
 const routes = [
-  ['/chords/a-major', [['Chords', '/chords'], ['A major', null]]],
-  ['/chords/a-minor', [['Chords', '/chords'], ['A minor', null]]],
-  ['/chords/c-major', [['Chords', '/chords'], ['C major', null]]],
+  ['/chords/a-major', [['Chords', '/chords'], ['Major Chords', '/chords/major'], ['A major', null]]],
+  ['/chords/a-minor', [['Chords', '/chords'], ['Minor Chords', '/chords/minor'], ['A minor', null]]],
+  ['/chords/c-major', [['Chords', '/chords'], ['Major Chords', '/chords/major'], ['C major', null]]],
   ['/keyboard-notes', [['Keyboard Notes', null]]],
   ['/keyboard-notes/labeled', [['Keyboard Notes', '/keyboard-notes'], ['Labeled keys', null]]],
   ['/keyboard-notes/chart', [['Keyboard Notes', '/keyboard-notes'], ['Notes chart', null]]],

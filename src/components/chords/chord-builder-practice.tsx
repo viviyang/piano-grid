@@ -17,9 +17,10 @@ export function ChordBuilderPractice({data,practice}:{data:ChordDetailData;pract
  const answer=useMemo(()=>root.notes_low_to_high.map(note=>pc(note.midi)),[root]);
  const answerNames=new Map(answer.map((value,index)=>[value,data.chord.note_spellings[index]]));
  const display=(value:number)=>answerNames.get(value)||KEYS.find(key=>key.pc===value)!.label;
+ const countWord=practice.requiredPitchClassCount===3?'three':String(practice.requiredPitchClassCount);
  function toggle(value:number){setSelected(current=>current.includes(value)?current.filter(item=>item!==value):[...current,value]);setFeedback(null);}
  function check(){
-  if(selected.length===0){setFeedback({kind:'error',text:`No notes selected. Choose the three pitch classes in ${data.chord.symbol}, then check again.`});return;}
+  if(selected.length===0){setFeedback({kind:'error',text:`No notes selected. Choose the ${countWord} pitch classes in ${data.chord.symbol}, then check again.`});return;}
   const missing=answer.filter(value=>!selected.includes(value)),extra=selected.filter(value=>!answer.includes(value));
   if(!missing.length&&!extra.length){setFeedback({kind:'success',text:`Correct: ${data.chord.symbol} contains ${data.chord.note_spellings.join(', ')}. Octave and selection order do not affect this check.`});return;}
   const parts=[];if(missing.length)parts.push(`Missing: ${missing.map(display).join(', ')}`);if(extra.length)parts.push(`Extra: ${extra.map(display).join(', ')}`);
@@ -30,7 +31,7 @@ export function ChordBuilderPractice({data,practice}:{data:ChordDetailData;pract
  return <section className="am-content-section ch-practice" id="practice" data-block-id="practice" data-practice-state={feedback?.kind||'unanswered'} tabIndex={-1} aria-labelledby="practice-heading">
   <div className="ch-section-heading"><div className="ch-section-kicker">Interactive practice</div><h2 id="practice-heading">{practice.heading}</h2></div>
   <div className="am-content-body ch-learning-panel"><p>{practice.prompt}</p><p>{practice.scope}</p>
-   <div className="ch-practice-task"><div><span className="ch-practice-count">3</span><strong>Choose three pitch classes</strong></div><p>One octave, C through B. Select a key again to remove it.</p></div>
+   <div className="ch-practice-task"><div><span className="ch-practice-count">{practice.requiredPitchClassCount}</span><strong>Choose {countWord} pitch classes</strong></div><p>One octave, C through B. Select a key again to remove it.</p></div>
    <fieldset className="ch-practice-fieldset" disabled={!ready}><legend className="pr-sr-only">One-octave keyboard from C through B</legend><div className="ch-practice-keyboard">
     {KEYS.map(key=><button key={key.pc} type="button" className={`ch-practice-key ${key.black?'is-black':'is-white'} key-${keyClass[key.pc]}`} aria-label={`${key.label} pitch class`} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)}><span>{key.label}</span></button>)}
    </div></fieldset>

@@ -85,7 +85,7 @@ try {
 
   const sitemap = await page.request.get(base + '/sitemap.xml');
   const xml = await sitemap.text();
-  check('Sitemap has 46 routes and includes chord tools', (xml.match(/<loc>/g) || []).length === 46 && ['/chords/by-key','/chord-progressions','/chords/finder','/chords/c-flat-major','/chords/major','/chords/minor'].every(route => xml.includes(`https://pianogrid.com${route}</loc>`)), (xml.match(/<loc>/g) || []).length);
+  check('Sitemap has 97 routes and includes chord tools', (xml.match(/<loc>/g) || []).length === 97 && ['/chords/by-key','/chord-progressions','/chords/finder','/chords/c-flat-major','/chords/major','/chords/minor'].every(route => xml.includes(`https://pianogrid.com${route}</loc>`)), (xml.match(/<loc>/g) || []).length);
   for (const route of ['/chords/finder', '/chords/c-flat-major']) {
     const result = await page.request.get(base + route);
     check(`${route} is published`, result.status() === 200, result.status());

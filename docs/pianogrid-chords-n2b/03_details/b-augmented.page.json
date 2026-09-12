@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "augmented",
+  "expectedNoteCount": 3,
+  "url": "/chords/b-augmented",
+  "categoryRoute": "/chords/augmented",
+  "rootSpelling": "B",
+  "name": "B Augmented",
+  "symbol": "Baug",
+  "qualityLabel": "Augmented",
+  "definition": {
+    "toneSpellings": [
+      "B",
+      "D♯",
+      "F𝄪"
+    ],
+    "formulaDegrees": [
+      "1",
+      "3",
+      "♯5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      4,
+      8
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Baug",
+      "notesLowToHigh": [
+        "B3",
+        "D♯4",
+        "F𝄪4"
+      ],
+      "midiLowToHigh": [
+        59,
+        63,
+        67
+      ],
+      "bass": "B3",
+      "keyboardHighlights": [
+        {
+          "midi": 59,
+          "writtenSpelling": "B3"
+        },
+        {
+          "midi": 63,
+          "writtenSpelling": "D♯4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "F𝄪4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 59,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 63,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "B3",
+        "D♯4",
+        "F𝄪4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "Baug/D♯",
+      "notesLowToHigh": [
+        "D♯4",
+        "F𝄪4",
+        "B4"
+      ],
+      "midiLowToHigh": [
+        63,
+        67,
+        71
+      ],
+      "bass": "D♯4",
+      "keyboardHighlights": [
+        {
+          "midi": 63,
+          "writtenSpelling": "D♯4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "F𝄪4"
+        },
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 63,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 71,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "D♯4",
+        "F𝄪4",
+        "B4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "Baug/F𝄪",
+      "notesLowToHigh": [
+        "F𝄪4",
+        "B4",
+        "D♯5"
+      ],
+      "midiLowToHigh": [
+        67,
+        71,
+        75
+      ],
+      "bass": "F𝄪4",
+      "keyboardHighlights": [
+        {
+          "midi": 67,
+          "writtenSpelling": "F𝄪4"
+        },
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        },
+        {
+          "midi": 75,
+          "writtenSpelling": "D♯5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 67,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 71,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 75,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "F𝄪4",
+        "B4",
+        "D♯5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "B Augmented Piano Chord (Baug): Notes & Inversions",
+    "description": "Find the b augmented chord on piano: B, D♯, F𝄪. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "B Augmented Piano Chord",
+    "mainKeyword": "b augmented chord piano",
+    "secondaryKeywords": [
+      "Baug piano chord",
+      "b augmented notes",
+      "b augmented inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The B Augmented chord contains B, D♯, F𝄪. Formula: 1–3–♯5.",
+    "theory": "The b augmented triad uses a root, major third and augmented fifth.",
+    "comparison": "Compared with B major, raise the fifth by one semitone.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written spelling F𝄪 even when it shares a piano key with a simpler enharmonic name.",
+    "faq": [
+      {
+        "q": "What notes are in Baug?",
+        "a": "B, D♯, F𝄪."
+      },
+      {
+        "q": "What is the formula for Baug?",
+        "a": "1–3–♯5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION"
+  ]
+}

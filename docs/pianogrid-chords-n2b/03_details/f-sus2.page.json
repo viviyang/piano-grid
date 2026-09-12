@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "sus2",
+  "expectedNoteCount": 3,
+  "url": "/chords/f-sus2",
+  "categoryRoute": "/chords/suspended",
+  "rootSpelling": "F",
+  "name": "F Suspended 2nd",
+  "symbol": "Fsus2",
+  "qualityLabel": "Suspended 2nd",
+  "definition": {
+    "toneSpellings": [
+      "F",
+      "G",
+      "C"
+    ],
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      2,
+      7
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Fsus2",
+      "notesLowToHigh": [
+        "F4",
+        "G4",
+        "C5"
+      ],
+      "midiLowToHigh": [
+        65,
+        67,
+        72
+      ],
+      "bass": "F4",
+      "keyboardHighlights": [
+        {
+          "midi": 65,
+          "writtenSpelling": "F4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 65,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "F4",
+        "G4",
+        "C5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "Fsus2/G",
+      "notesLowToHigh": [
+        "G4",
+        "C5",
+        "F5"
+      ],
+      "midiLowToHigh": [
+        67,
+        72,
+        77
+      ],
+      "bass": "G4",
+      "keyboardHighlights": [
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 77,
+          "writtenSpelling": "F5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 67,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 72,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 77,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "G4",
+        "C5",
+        "F5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "Fsus2/C",
+      "notesLowToHigh": [
+        "C5",
+        "F5",
+        "G5"
+      ],
+      "midiLowToHigh": [
+        72,
+        77,
+        79
+      ],
+      "bass": "C5",
+      "keyboardHighlights": [
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 77,
+          "writtenSpelling": "F5"
+        },
+        {
+          "midi": 79,
+          "writtenSpelling": "G5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 72,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 77,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 79,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "C5",
+        "F5",
+        "G5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "F Suspended 2nd Piano Chord (Fsus2): Notes & Inversions",
+    "description": "Find the f suspended 2nd chord on piano: F, G, C. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "F Suspended 2nd Piano Chord",
+    "mainKeyword": "f suspended 2nd chord piano",
+    "secondaryKeywords": [
+      "Fsus2 piano chord",
+      "f suspended 2nd notes",
+      "f suspended 2nd inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The F Suspended 2nd chord contains F, G, C. Formula: 1–2–5.",
+    "theory": "The f suspended 2nd chord replaces the third with a major second.",
+    "comparison": "Compared with F major, replace the third with the second.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written note spelling shown for this chord.",
+    "faq": [
+      {
+        "q": "What notes are in Fsus2?",
+        "a": "F, G, C."
+      },
+      {
+        "q": "What is the formula for Fsus2?",
+        "a": "1–2–5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION",
+    "N2B-PC-SUS"
+  ]
+}

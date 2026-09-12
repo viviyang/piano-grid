@@ -8,6 +8,10 @@
 .ch-root-chips button{flex:0 0 auto;min-width:var(--pr-control-min-size);min-height:var(--pr-control-min-size);padding:.55rem .8rem;border:1px solid var(--border);border-radius:999px;background:var(--background);color:var(--foreground);font:inherit;font-size:var(--pr-type-ui-size);cursor:pointer}
 .ch-root-chips button[aria-pressed=true]{border-color:var(--selected-border);background:var(--selected-hover);color:var(--selected-foreground);font-weight:680}
 .ch-root-chips button:disabled{cursor:default}
+.ch-subtype-chips{display:flex;gap:.55rem;margin-top:.65rem}
+.ch-subtype-chips button{min-height:var(--pr-control-min-size);padding:.55rem 1rem;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--foreground);font:inherit;cursor:pointer;text-transform:uppercase}
+.ch-subtype-chips button[aria-pressed=true]{border-color:var(--selected-border);background:var(--selected-hover);color:var(--selected-foreground);font-weight:680}
+.ch-subtype-chips button:disabled{cursor:default}
 .ch-category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
 .ch-category-card{min-width:0;padding:var(--pr-tool-padding);border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--surface);container-type:inline-size}
 .ch-category-card[hidden]{display:none}

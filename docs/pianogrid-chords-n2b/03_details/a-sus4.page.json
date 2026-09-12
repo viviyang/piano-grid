@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "sus4",
+  "expectedNoteCount": 3,
+  "url": "/chords/a-sus4",
+  "categoryRoute": "/chords/suspended",
+  "rootSpelling": "A",
+  "name": "A Suspended 4th",
+  "symbol": "Asus4",
+  "qualityLabel": "Suspended 4th",
+  "definition": {
+    "toneSpellings": [
+      "A",
+      "D",
+      "E"
+    ],
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      5,
+      7
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Asus4",
+      "notesLowToHigh": [
+        "A3",
+        "D4",
+        "E4"
+      ],
+      "midiLowToHigh": [
+        57,
+        62,
+        64
+      ],
+      "bass": "A3",
+      "keyboardHighlights": [
+        {
+          "midi": 57,
+          "writtenSpelling": "A3"
+        },
+        {
+          "midi": 62,
+          "writtenSpelling": "D4"
+        },
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 57,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 62,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 64,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "A3",
+        "D4",
+        "E4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "Asus4/D",
+      "notesLowToHigh": [
+        "D4",
+        "E4",
+        "A4"
+      ],
+      "midiLowToHigh": [
+        62,
+        64,
+        69
+      ],
+      "bass": "D4",
+      "keyboardHighlights": [
+        {
+          "midi": 62,
+          "writtenSpelling": "D4"
+        },
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        },
+        {
+          "midi": 69,
+          "writtenSpelling": "A4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 62,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 64,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 69,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "D4",
+        "E4",
+        "A4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "Asus4/E",
+      "notesLowToHigh": [
+        "E4",
+        "A4",
+        "D5"
+      ],
+      "midiLowToHigh": [
+        64,
+        69,
+        74
+      ],
+      "bass": "E4",
+      "keyboardHighlights": [
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        },
+        {
+          "midi": 69,
+          "writtenSpelling": "A4"
+        },
+        {
+          "midi": 74,
+          "writtenSpelling": "D5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 64,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 69,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 74,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "E4",
+        "A4",
+        "D5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "A Suspended 4th Piano Chord (Asus4): Notes & Inversions",
+    "description": "Find the a suspended 4th chord on piano: A, D, E. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "A Suspended 4th Piano Chord",
+    "mainKeyword": "a suspended 4th chord piano",
+    "secondaryKeywords": [
+      "Asus4 piano chord",
+      "a suspended 4th notes",
+      "a suspended 4th inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The A Suspended 4th chord contains A, D, E. Formula: 1–4–5.",
+    "theory": "The a suspended 4th chord replaces the third with a perfect fourth.",
+    "comparison": "Compared with A major, replace the third with the fourth.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written note spelling shown for this chord.",
+    "faq": [
+      {
+        "q": "What notes are in Asus4?",
+        "a": "A, D, E."
+      },
+      {
+        "q": "What is the formula for Asus4?",
+        "a": "1–4–5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION",
+    "N2B-PC-SUS"
+  ]
+}

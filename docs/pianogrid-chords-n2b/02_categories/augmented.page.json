@@ -1,0 +1,46 @@
+{
+  "url": "/chords/augmented",
+  "id": "augmented",
+  "label": "Augmented Chords",
+  "title": "Augmented Piano Chords: Notes, Formulas & Inversions",
+  "description": "Browse augmented piano triads by root. See notes, the 1–3–♯5 formula, keyboard diagrams and detailed inversion pages.",
+  "h1": "Augmented Piano Chords",
+  "mainKeyword": "augmented piano chords",
+  "secondaryKeywords": [
+    "augmented chords piano",
+    "aug chords piano",
+    "augmented chord chart piano"
+  ],
+  "formula": [
+    "1",
+    "3",
+    "♯5"
+  ],
+  "familySubtypes": [
+    "augmented"
+  ],
+  "intro": "An augmented triad contains a root, major third and augmented fifth.",
+  "rootOrder": [
+    "C",
+    "D♭",
+    "D",
+    "E♭",
+    "E",
+    "F",
+    "F♯",
+    "G",
+    "A♭",
+    "A",
+    "B♭",
+    "B"
+  ],
+  "interaction": {
+    "rootFilter": "client enhancement; all cards stay in initial HTML",
+    "subtypeFilter": "only suspended page; both sus2 and sus4 stay server-rendered",
+    "queryIndexing": "filters do not create indexable canonical URLs"
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION"
+  ]
+}

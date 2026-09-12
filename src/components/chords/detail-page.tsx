@@ -10,7 +10,10 @@ import './chord-learning.css';
 export function ChordDetailPage({model}:{model:ChordDetailModel}) {
   const {data,blocks,byId,answer,introduction,searchSections}=model;
   const prefix=data.namespace;
-  const category=data.chord.quality==='major'?{label:'Major Chords',href:'/chords/major'}:{label:'Minor Chords',href:'/chords/minor'};
+  const definition=data.chord.definition;
+  const category={label:definition.categoryLabel,href:definition.categoryRoute};
+  const positionNames=definition.positionLabels.map(label=>label[0].toLowerCase()+label.slice(1));
+  const positionCaption=`${positionNames.slice(0,-1).join(', ')}, and ${positionNames.at(-1)}`;
   const heading=<><header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, category, { label: data.chord.name_en }]}/><h1><ChordSectionTitle id={`${prefix}-intro`} text={data.heading}/></h1><p className="am-direct-answer">{answer}</p></header><ChordPageToc items={model.tocItems}/></>;
   const intro=introduction.length>0&&<section key="introduction" className="am-intro-rest am-root-example-panel" id={`${prefix}-root-example`} tabIndex={-1} data-block-id={`${prefix}-intro`} aria-labelledby={`${prefix}-root-example-heading`}><h2 className="am-eyebrow" id={`${prefix}-root-example-heading`}><ChordSectionTitle id={`${prefix}-intro`} text="Root-position example"/></h2><div className="am-root-example-copy">{introduction.map(p=><p key={p}>{p}</p>)}</div></section>;
   const toolParagraphs=[...byId[`${prefix}-intro`].content.paragraphs,...byId[data.toolId].content.paragraphs];
@@ -21,7 +24,7 @@ export function ChordDetailPage({model}:{model:ChordDetailModel}) {
       return <section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}><ChordSectionTitle id={id} text={c.heading}/></h2><div className={`am-content-body${prefix==='am'&&['am-why-minor','am-practice'].includes(id)?' ch-learning-panel':''}`}>
       {c.paragraphs.map(p=><p key={p}>{p}</p>)}
       {c.steps.length>0&&<ol className="am-steps">{c.steps.map(s=><li key={s}><span>{s}</span></li>)}</ol>}
-      {id===`${prefix}-inversions`&&c.table&&<div className="am-table-scroll" tabIndex={0} role="region" aria-label={`${data.chord.name_en} inversion comparison table`}><table className="am-inversion-table"><caption className="pr-sr-only">{data.chord.name_en}: root position, first inversion, and second inversion</caption><thead><tr>{c.table.columns.map(t=><th scope="col" key={t}>{t}</th>)}</tr></thead><tbody>{c.table.rows.map((row,i)=><InversionRow key={data.options[i].value} voicingId={data.options[i].value} position={data.options[i].label} cells={row}/>)}</tbody></table></div>}
+      {id===`${prefix}-inversions`&&c.table&&<div className="am-table-scroll" tabIndex={0} role="region" aria-label={`${data.chord.name_en} inversion comparison table`}><table className="am-inversion-table"><caption className="pr-sr-only">{data.chord.name_en}: {positionCaption}</caption><thead><tr>{c.table.columns.map(t=><th scope="col" key={t}>{t}</th>)}</tr></thead><tbody>{c.table.rows.map((row,i)=><InversionRow key={data.options[i].value} voicingId={data.options[i].value} position={data.options[i].label} cells={row}/>)}</tbody></table></div>}
       {id===`${prefix}-questions`&&c.table?.rows.map(([q,a])=><details className="am-faq-item" key={q}><summary><span>{q}</span><span className="am-faq-icon" aria-hidden="true"/></summary><p>{a}</p></details>)}
       {id===`${prefix}-print`&&<PrintActions section/>}
       {c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}

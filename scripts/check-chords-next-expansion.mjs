@@ -10,9 +10,10 @@ const manifest=JSON.parse(fs.readFileSync(`${pkg}/manifest.json`,'utf8'));
 const routePlan=JSON.parse(fs.readFileSync(`${pkg}/02_routes/routes.master.json`,'utf8'));
 const categories=['major','minor'].map(name=>JSON.parse(fs.readFileSync(`${pkg}/03_categories/${name}.page.json`,'utf8')));
 const details=routePlan.N1.new_detail_urls.map(url=>JSON.parse(fs.readFileSync(`${pkg}/04_details_next/${url.split('/').at(-1)}.page.json`,'utf8')));
-const expectedPublic=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music',...routePlan.N1.new_category_urls,...routePlan.N1.new_detail_urls];
-const advanced=routePlan.later_planned_category_urls;
-const expectedMobile=['/chords','/chords/major','/chords/minor','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords','/keyboard-notes/finger-numbers'];
+const n2bPublic=JSON.parse(fs.readFileSync('docs/pianogrid-chords-n2b/04_seo/N2B.url-keyword-tdh.json','utf8')).map(item=>item.url);
+const expectedPublic=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music',...routePlan.N1.new_category_urls,...routePlan.N1.new_detail_urls,...n2bPublic];
+const advanced=routePlan.later_planned_category_urls.filter(url=>!n2bPublic.includes(url));
+const expectedMobile=['/chords','/chords/major','/chords/minor','/chords/diminished','/chords/augmented','/chords/suspended','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords','/keyboard-notes/finger-numbers'];
 const results=[],runtimeErrors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
@@ -77,10 +78,10 @@ try{
  for(const href of hubLinks)check(`Hub detail ${href} resolves`,(await page.request.get(base+href)).status()===200);
  const chordGroup=page.locator('.site-nav-group').filter({has:page.locator('.site-nav-parent-link[href="/chords"]')});
  await chordGroup.hover();
- check('Desktop chord IA uses Browse Explore Learn groups',JSON.stringify(await chordGroup.locator('.site-nav-link-group h3').allTextContents())===JSON.stringify(['Browse','Explore','Learn']));
+ check('Desktop chord IA uses Browse More Chords Explore Learn groups',JSON.stringify(await chordGroup.locator('.site-nav-link-group h3').allTextContents())===JSON.stringify(['Browse','More Chords','Explore','Learn']));
  const desktopChordHrefs=await chordGroup.locator('.site-nav-child-link').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')));
  const advancedNavCounts=await Promise.all(advanced.map(href=>page.locator(`.site-navigation a[href="${href}"]`).count()));
- check('Desktop chord IA excludes sample and advanced links',desktopChordHrefs.length===7&&desktopChordHrefs.every(href=>expectedMobile.slice(1).includes(href))&&advancedNavCounts.every(count=>count===0),{desktopChordHrefs,advancedNavCounts});
+ check('Desktop chord IA excludes sample and deferred links',desktopChordHrefs.length===10&&desktopChordHrefs.every(href=>expectedMobile.slice(1).includes(href))&&advancedNavCounts.every(count=>count===0),{desktopChordHrefs,advancedNavCounts});
  const mobileSection=page.locator('.site-mobile-section').filter({has:page.locator('.site-mobile-parent[href="/chords"]')});
  const mobileHrefs=[await mobileSection.locator('.site-mobile-parent').getAttribute('href'),...await mobileSection.locator('.site-mobile-children a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')))];
  check('Mobile chord IA exact order',JSON.stringify(mobileHrefs)===JSON.stringify(expectedMobile),mobileHrefs);
@@ -88,11 +89,11 @@ try{
  await page.screenshot({path:`${out}/screenshots/hub-1440.png`,fullPage:true});await page.setViewportSize({width:390,height:844});check('Hub mobile no overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`${out}/screenshots/hub-390.png`,fullPage:true});
  const sitemapText=await (await page.request.get(base+'/sitemap.xml')).text();
  const sitemapPaths=[...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match=>match[1]||'/');
- check('Sitemap equals the 46-route registry',sitemapPaths.length===46&&JSON.stringify([...sitemapPaths].sort())===JSON.stringify([...expectedPublic].sort()),sitemapPaths);
+ check('Sitemap equals the 97-route registry',sitemapPaths.length===97&&JSON.stringify([...sitemapPaths].sort())===JSON.stringify([...expectedPublic].sort()),sitemapPaths);
  for(const href of advanced){check(`${href} remains deferred`,(await page.request.get(base+href)).status()===404&&!sitemapPaths.includes(href));}
  check('No runtime or hydration errors',runtimeErrors.length===0,runtimeErrors);
  await page.close();
 }catch(error){check('N1 browser validation completed',false,error.stack)}finally{await browser.close();}
-const report={executed_at:new Date().toISOString(),base,passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,route_counts:{planned_chord_system:33,published_site_sitemap:46,next_static_outputs:51,explanation:'The Next build output includes framework and metadata routes and groups the 16 generated details beneath one dynamic route entry; sitemap.xml lists only the 46 public business URLs.'},results,manual_checks:['real mobile/tablet touch','screen reader','human listening','physical printing','PDF tag accessibility','independent piano-teacher review']};
+const report={executed_at:new Date().toISOString(),base,passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,route_counts:{published_site_sitemap:97,explanation:'The current sitemap includes the prior 46 business URLs plus the 51-route N2B batch.'},results,manual_checks:['real mobile/tablet touch','screen reader','human listening','physical printing','PDF tag accessibility','independent piano-teacher review']};
 fs.writeFileSync(`${out}/validation.json`,JSON.stringify(report,null,2)+'\n');
 console.log(`Chords N1 expansion: ${report.passed} passed, ${report.failed} failed.`);process.exitCode=report.failed?1:0;

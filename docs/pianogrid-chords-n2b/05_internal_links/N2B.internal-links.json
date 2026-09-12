@@ -1,0 +1,2018 @@
+[
+  {
+    "from": "/chords",
+    "to": "/chords/diminished",
+    "anchor": "Browse diminished chords",
+    "relation": "family_category",
+    "placement": "family browse",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords",
+    "anchor": "Open the full piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn how piano chords are built",
+    "relation": "learn",
+    "placement": "after intro",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/finder",
+    "anchor": "Find a chord from notes",
+    "relation": "tool",
+    "placement": "after grid",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords",
+    "to": "/chords/augmented",
+    "anchor": "Browse augmented chords",
+    "relation": "family_category",
+    "placement": "family browse",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords",
+    "anchor": "Open the full piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn how piano chords are built",
+    "relation": "learn",
+    "placement": "after intro",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/finder",
+    "anchor": "Find a chord from notes",
+    "relation": "tool",
+    "placement": "after grid",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords",
+    "to": "/chords/suspended",
+    "anchor": "Browse suspended chords",
+    "relation": "family_category",
+    "placement": "family browse",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords",
+    "anchor": "Open the full piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn how piano chords are built",
+    "relation": "learn",
+    "placement": "after intro",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/finder",
+    "anchor": "Find a chord from notes",
+    "relation": "tool",
+    "placement": "after grid",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/a-augmented",
+    "anchor": "A Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/a-diminished",
+    "anchor": "A Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/a-flat-augmented",
+    "anchor": "A♭ Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/a-flat-diminished",
+    "anchor": "A♭ Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/a-flat-sus2",
+    "anchor": "A♭ Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/a-flat-sus4",
+    "anchor": "A♭ Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/a-sus2",
+    "anchor": "A Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/a-sus4",
+    "anchor": "A Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/b-augmented",
+    "anchor": "B Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/b-diminished",
+    "anchor": "B Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/b-flat-augmented",
+    "anchor": "B♭ Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/b-flat-diminished",
+    "anchor": "B♭ Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/b-flat-sus2",
+    "anchor": "B♭ Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/b-flat-sus4",
+    "anchor": "B♭ Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/b-sus2",
+    "anchor": "B Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/b-sus4",
+    "anchor": "B Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/c-augmented",
+    "anchor": "C Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/c-diminished",
+    "anchor": "C Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/c-sus2",
+    "anchor": "C Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/c-sus4",
+    "anchor": "C Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/d-augmented",
+    "anchor": "D Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/d-diminished",
+    "anchor": "D Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/d-flat-augmented",
+    "anchor": "D♭ Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/d-flat-diminished",
+    "anchor": "D♭ Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/d-flat-sus2",
+    "anchor": "D♭ Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/d-flat-sus4",
+    "anchor": "D♭ Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/d-sus2",
+    "anchor": "D Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/d-sus4",
+    "anchor": "D Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/e-augmented",
+    "anchor": "E Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/e-diminished",
+    "anchor": "E Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/e-flat-augmented",
+    "anchor": "E♭ Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/e-flat-diminished",
+    "anchor": "E♭ Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/e-flat-sus2",
+    "anchor": "E♭ Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/e-flat-sus4",
+    "anchor": "E♭ Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/e-sus2",
+    "anchor": "E Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/e-sus4",
+    "anchor": "E Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/f-augmented",
+    "anchor": "F Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/f-diminished",
+    "anchor": "F Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/f-sharp-augmented",
+    "anchor": "F♯ Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/f-sharp-diminished",
+    "anchor": "F♯ Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/f-sharp-sus2",
+    "anchor": "F♯ Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/f-sharp-sus4",
+    "anchor": "F♯ Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/f-sus2",
+    "anchor": "F Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/f-sus4",
+    "anchor": "F Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/augmented",
+    "to": "/chords/g-augmented",
+    "anchor": "G Augmented",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-augmented",
+    "to": "/chords/augmented",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-augmented",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-augmented",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/diminished",
+    "to": "/chords/g-diminished",
+    "anchor": "G Diminished",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-diminished",
+    "to": "/chords/diminished",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-diminished",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-diminished",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/g-sus2",
+    "anchor": "G Suspended 2nd",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus2",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus2",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus2",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/suspended",
+    "to": "/chords/g-sus4",
+    "anchor": "G Suspended 4th",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus4",
+    "to": "/chords/suspended",
+    "anchor": "Browse this chord family",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus4",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus4",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-diminished",
+    "to": "/chords/c-augmented",
+    "anchor": "Compare diminished and augmented on C",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-augmented",
+    "to": "/chords/c-diminished",
+    "anchor": "Compare diminished and augmented on C",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus2",
+    "to": "/chords/c-sus4",
+    "anchor": "Compare sus2 and sus4 on C",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-sus4",
+    "to": "/chords/c-sus2",
+    "anchor": "Compare sus2 and sus4 on C",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-diminished",
+    "to": "/chords/d-flat-augmented",
+    "anchor": "Compare diminished and augmented on D♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-augmented",
+    "to": "/chords/d-flat-diminished",
+    "anchor": "Compare diminished and augmented on D♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus2",
+    "to": "/chords/d-flat-sus4",
+    "anchor": "Compare sus2 and sus4 on D♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-sus4",
+    "to": "/chords/d-flat-sus2",
+    "anchor": "Compare sus2 and sus4 on D♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-diminished",
+    "to": "/chords/d-augmented",
+    "anchor": "Compare diminished and augmented on D",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-augmented",
+    "to": "/chords/d-diminished",
+    "anchor": "Compare diminished and augmented on D",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus2",
+    "to": "/chords/d-sus4",
+    "anchor": "Compare sus2 and sus4 on D",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-sus4",
+    "to": "/chords/d-sus2",
+    "anchor": "Compare sus2 and sus4 on D",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-diminished",
+    "to": "/chords/e-flat-augmented",
+    "anchor": "Compare diminished and augmented on E♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-augmented",
+    "to": "/chords/e-flat-diminished",
+    "anchor": "Compare diminished and augmented on E♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus2",
+    "to": "/chords/e-flat-sus4",
+    "anchor": "Compare sus2 and sus4 on E♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-sus4",
+    "to": "/chords/e-flat-sus2",
+    "anchor": "Compare sus2 and sus4 on E♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-diminished",
+    "to": "/chords/e-augmented",
+    "anchor": "Compare diminished and augmented on E",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-augmented",
+    "to": "/chords/e-diminished",
+    "anchor": "Compare diminished and augmented on E",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus2",
+    "to": "/chords/e-sus4",
+    "anchor": "Compare sus2 and sus4 on E",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-sus4",
+    "to": "/chords/e-sus2",
+    "anchor": "Compare sus2 and sus4 on E",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-diminished",
+    "to": "/chords/f-augmented",
+    "anchor": "Compare diminished and augmented on F",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-augmented",
+    "to": "/chords/f-diminished",
+    "anchor": "Compare diminished and augmented on F",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus2",
+    "to": "/chords/f-sus4",
+    "anchor": "Compare sus2 and sus4 on F",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sus4",
+    "to": "/chords/f-sus2",
+    "anchor": "Compare sus2 and sus4 on F",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-diminished",
+    "to": "/chords/f-sharp-augmented",
+    "anchor": "Compare diminished and augmented on F♯",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-augmented",
+    "to": "/chords/f-sharp-diminished",
+    "anchor": "Compare diminished and augmented on F♯",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus2",
+    "to": "/chords/f-sharp-sus4",
+    "anchor": "Compare sus2 and sus4 on F♯",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-sus4",
+    "to": "/chords/f-sharp-sus2",
+    "anchor": "Compare sus2 and sus4 on F♯",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-diminished",
+    "to": "/chords/g-augmented",
+    "anchor": "Compare diminished and augmented on G",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-augmented",
+    "to": "/chords/g-diminished",
+    "anchor": "Compare diminished and augmented on G",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus2",
+    "to": "/chords/g-sus4",
+    "anchor": "Compare sus2 and sus4 on G",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-sus4",
+    "to": "/chords/g-sus2",
+    "anchor": "Compare sus2 and sus4 on G",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-diminished",
+    "to": "/chords/a-flat-augmented",
+    "anchor": "Compare diminished and augmented on A♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-augmented",
+    "to": "/chords/a-flat-diminished",
+    "anchor": "Compare diminished and augmented on A♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus2",
+    "to": "/chords/a-flat-sus4",
+    "anchor": "Compare sus2 and sus4 on A♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-sus4",
+    "to": "/chords/a-flat-sus2",
+    "anchor": "Compare sus2 and sus4 on A♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-diminished",
+    "to": "/chords/a-augmented",
+    "anchor": "Compare diminished and augmented on A",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-augmented",
+    "to": "/chords/a-diminished",
+    "anchor": "Compare diminished and augmented on A",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus2",
+    "to": "/chords/a-sus4",
+    "anchor": "Compare sus2 and sus4 on A",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-sus4",
+    "to": "/chords/a-sus2",
+    "anchor": "Compare sus2 and sus4 on A",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-diminished",
+    "to": "/chords/b-flat-augmented",
+    "anchor": "Compare diminished and augmented on B♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-augmented",
+    "to": "/chords/b-flat-diminished",
+    "anchor": "Compare diminished and augmented on B♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus2",
+    "to": "/chords/b-flat-sus4",
+    "anchor": "Compare sus2 and sus4 on B♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-sus4",
+    "to": "/chords/b-flat-sus2",
+    "anchor": "Compare sus2 and sus4 on B♭",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-diminished",
+    "to": "/chords/b-augmented",
+    "anchor": "Compare diminished and augmented on B",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-augmented",
+    "to": "/chords/b-diminished",
+    "anchor": "Compare diminished and augmented on B",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus2",
+    "to": "/chords/b-sus4",
+    "anchor": "Compare sus2 and sus4 on B",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-sus4",
+    "to": "/chords/b-sus2",
+    "anchor": "Compare sus2 and sus4 on B",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  }
+]

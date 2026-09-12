@@ -6,7 +6,7 @@ import type { Block, ChordPractice, ChordSource, FingeringExample } from './a-mi
 export type NextChordLearning = {
   fingerings: FingeringExample[];
   sources: ChordSource[];
-  practice: ChordPractice;
+  practice: Omit<ChordPractice, 'requiredPitchClassCount'> & { requiredPitchClassCount?: number };
   extraBlocks: Block[];
 };
 

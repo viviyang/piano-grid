@@ -1,0 +1,45 @@
+{
+  "batch": "N2B",
+  "prerequisite": "N2A PASS_WITH_NOTES",
+  "newCategories": [
+    "/chords/diminished",
+    "/chords/augmented",
+    "/chords/suspended"
+  ],
+  "newDetailCount": 48,
+  "newUrlCount": 51,
+  "detailsBySubtype": {
+    "diminished": 12,
+    "augmented": 12,
+    "sus2": 12,
+    "sus4": 12
+  },
+  "doNotPublish": [
+    "/chords/seventh",
+    "/chords/add",
+    "/chords/extended",
+    "/chords/altered"
+  ],
+  "navigationAfterPublish": {
+    "Browse": [
+      "/chords",
+      "/chords/major",
+      "/chords/minor"
+    ],
+    "More Chords": [
+      "/chords/diminished",
+      "/chords/augmented",
+      "/chords/suspended"
+    ],
+    "Explore": [
+      "/chords/by-key",
+      "/chord-progressions",
+      "/chords/finder"
+    ],
+    "Learn": [
+      "/guide/piano-chords",
+      "/keyboard-notes/finger-numbers"
+    ]
+  },
+  "boundary": "Do not automatically widen Finder, By-key or Progressions beyond their validated scope."
+}

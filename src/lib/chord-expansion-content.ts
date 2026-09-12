@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import type { Block, ChordDetailData, ChordDetailModel, ChordPractice, ChordQuality, Voicing } from './a-minor-types';
+import type { Block, ChordDetailData, ChordDetailModel, ChordPractice, ChordQuality, DetailVoicing } from './a-minor-types';
+import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family-model';
 import { finalizeChordDetailModel, type ChordDetailRoute } from './chord-detail-model';
 import { readMaster } from './site-content';
 import { isPublicRoute } from './site-routes';
@@ -64,11 +65,12 @@ export function getExpansionChordDetail(url: (typeof EXPANSION_DETAIL_ROUTES)[nu
   const master = readMaster();
   const slug = url.split('/').at(-1)!;
   const contract = master.legacy_chords_support.playback_contract;
-  const voicings: Voicing[] = raw.data.voicings.map(voicing => {
+  const definition = resolveThreeNoteDefinition(raw.data.quality);
+  const voicings: DetailVoicing[] = raw.data.voicings.map((voicing, index) => {
     if (JSON.stringify(voicing.midi) !== JSON.stringify(voicing.keyboard_highlights.map(item => item.midi)) || JSON.stringify(voicing.notes) !== JSON.stringify(voicing.keyboard_highlights.map(item => item.spelling))) throw new Error(`N1 keyboard mismatch: ${url}/${voicing.id}`);
     const events = (midis: number[], mode: 'together' | 'ascending') => midis.map((midi, index) => ({ midi, frequency_hz: frequency(midi), onset_ms: mode === 'together' ? 0 : contract.ascending_onsets_ms[index], duration_ms: mode === 'together' ? contract.together_duration_ms : contract.ascending_duration_ms }));
     return {
-      voicing_id: `${slug}--${voicing.id}`, inversion_label: voicing.label, chord_symbol: voicing.symbol, bass_spelling: voicing.bass,
+      voicing_id: `${slug}--${voicing.id}`, inversion_label: voicing.label, position: positionForThreeNote(definition, index), chord_symbol: voicing.symbol, bass_spelling: voicing.bass,
       notes_low_to_high: voicing.notes.map((display_pitch, index) => ({ display_pitch, midi: voicing.midi[index] })),
       diagram: { keyboard_range_midi: [48, 76], highlight_midi: [...voicing.midi], alt_text: `${raw.h1}, ${voicing.label}: ${voicing.notes.join(', ')} from low to high. Marked keys are the notes to play.` },
       playback: { together: events(voicing.playback.simultaneous_midi, 'together'), ascending: events(voicing.playback.ascending_midi, 'ascending') },
@@ -79,7 +81,7 @@ export function getExpansionChordDetail(url: (typeof EXPANSION_DETAIL_ROUTES)[nu
     url, namespace: slug, toolId: `${slug}-result`, rangeLabel: 'C3–E5',
     pdf: { url: `/reference/assets/chord-${slug}.pdf`, label: `Download ${raw.data.root} ${raw.data.quality} PDF` },
     defaultId: `${slug}--${raw.data.default_voicing}`, options: voicings.map(voicing => ({ value: voicing.voicing_id, label: voicing.inversion_label })),
-    chord: { id: slug, slug, name_en: `${raw.data.root} ${raw.data.quality}`, symbol: raw.data.symbol, root_spelling: raw.data.root, quality: raw.data.quality, note_spellings: [...raw.data.pitch_classes], formula_degrees: expectedFormula },
+    chord: { id: slug, slug, name_en: `${raw.data.root} ${raw.data.quality}`, symbol: raw.data.symbol, root_spelling: raw.data.root, quality: raw.data.quality, note_spellings: [...raw.data.pitch_classes], formula_degrees: expectedFormula, definition },
     voicings, whitePitchClasses: master.legacy_chords_support.shared_data.conventions.white_pitch_classes,
     microcopy: master.pages['/chords/a-minor'].microcopy,
     heading: raw.h1, toolHeading: `${raw.data.root} ${raw.data.quality} keyboard and inversions`,
@@ -100,7 +102,7 @@ export function getExpansionChordDetail(url: (typeof EXPANSION_DETAIL_ROUTES)[nu
     { block_id: `${slug}-fingering-example`, content: { ...empty('Fingering is not provided for this reference'), paragraphs: ['No verified hand-number examples are provided for this chord. The chord tones, written spelling, keyboard positions, playback and print reference remain available without assigning a fingering.'], links: isPublicRoute('/keyboard-notes/finger-numbers') ? [{ url: '/keyboard-notes/finger-numbers', label: 'Read left- and right-hand finger numbers', published: true }] : [] } },
     { block_id: `${slug}-questions`, content: { ...empty('Questions about this chord'), table: { columns: ['Question','Answer'], rows: raw.content.faq.map(item => [item.q, item.a]) } } },
   ];
-  const practice: ChordPractice = { id: 'practice', heading: `Build ${raw.data.symbol} on the keyboard`, prompt: `Select the three pitch classes that make ${raw.data.root} ${raw.data.quality}, then check your answer.`, scope: 'This one-octave exercise checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed.' };
+  const practice: ChordPractice = { id: 'practice', heading: `Build ${raw.data.symbol} on the keyboard`, prompt: `Select the three pitch classes that make ${raw.data.root} ${raw.data.quality}, then check your answer.`, scope: 'This one-octave exercise checks pitch classes. Order and octave do not affect the result; fingering and live performance are not assessed.', requiredPitchClassCount: 3 };
   blocks.push({ block_id: practice.id, content: { ...empty(practice.heading), paragraphs: [practice.prompt, practice.scope] } });
   blocks.push({ block_id: `${slug}-print`, content: empty('Print this chord reference') });
   blocks.push({ block_id: `${slug}-related`, content: { ...empty('Related chord references'), links: [...related.values()] } });

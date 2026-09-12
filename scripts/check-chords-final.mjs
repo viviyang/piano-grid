@@ -11,7 +11,8 @@ const master = JSON.parse(await readFile('docs/content/site-master/page-content.
 const planned = seo.pages.map(page => page.url);
 const nextRoutes = JSON.parse(await readFile('docs/pianogrid-chords-next-expansion/02_routes/routes.master.json', 'utf8')).N1;
 const nextPublished = [...nextRoutes.new_category_urls, ...nextRoutes.new_detail_urls];
-const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished];
+const n2bPublished = JSON.parse(await readFile('docs/pianogrid-chords-n2b/04_seo/N2B.url-keyword-tdh.json','utf8')).map(item=>item.url);
+const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished,...n2bPublished];
 const details = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major'];
 const progressionDetails = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/e-major', '/chords/b-major'];
 const results = [], runtimeErrors = [];
@@ -43,10 +44,10 @@ try {
   const sitemapResponse = await page.request.get(base + '/sitemap.xml');
   const sitemapText = await sitemapResponse.text();
   const sitemapPaths = [...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match => match[1] || '/');
-  check('Sitemap contains exactly the 46 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
+  check('Sitemap contains exactly the 97 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
   check('All 15 planned URLs are in sitemap', planned.every(url => sitemapPaths.includes(url)));
   const finalScope = sitemapPaths.filter(url => url.startsWith('/chord') || ['/guide/piano-chords', '/keyboard-notes/finger-numbers'].includes(url));
-  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished].includes(url)));
+  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished,...n2bPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished,...n2bPublished].includes(url)));
 
   const hrefs = new Set();
   for (const url of planned) {

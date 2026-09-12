@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "N2B-1.0",
+  "releaseStatus": "publish_in_N2B",
+  "family": "triad",
+  "subtype": "sus4",
+  "expectedNoteCount": 3,
+  "url": "/chords/c-sus4",
+  "categoryRoute": "/chords/suspended",
+  "rootSpelling": "C",
+  "name": "C Suspended 4th",
+  "symbol": "Csus4",
+  "qualityLabel": "Suspended 4th",
+  "definition": {
+    "toneSpellings": [
+      "C",
+      "F",
+      "G"
+    ],
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "semitonesFromRoot": [
+      0,
+      5,
+      7
+    ]
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Csus4",
+      "notesLowToHigh": [
+        "C4",
+        "F4",
+        "G4"
+      ],
+      "midiLowToHigh": [
+        60,
+        65,
+        67
+      ],
+      "bass": "C4",
+      "keyboardHighlights": [
+        {
+          "midi": 60,
+          "writtenSpelling": "C4"
+        },
+        {
+          "midi": 65,
+          "writtenSpelling": "F4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 60,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 65,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "C4",
+        "F4",
+        "G4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "secondChordTone"
+      },
+      "symbol": "Csus4/F",
+      "notesLowToHigh": [
+        "F4",
+        "G4",
+        "C5"
+      ],
+      "midiLowToHigh": [
+        65,
+        67,
+        72
+      ],
+      "bass": "F4",
+      "keyboardHighlights": [
+        {
+          "midi": 65,
+          "writtenSpelling": "F4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 65,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 67,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "F4",
+        "G4",
+        "C5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "thirdChordTone"
+      },
+      "symbol": "Csus4/G",
+      "notesLowToHigh": [
+        "G4",
+        "C5",
+        "F5"
+      ],
+      "midiLowToHigh": [
+        67,
+        72,
+        77
+      ],
+      "bass": "G4",
+      "keyboardHighlights": [
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 77,
+          "writtenSpelling": "F5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 67,
+          "onsetMs": 0,
+          "durationMs": 1200
+        },
+        {
+          "midi": 72,
+          "onsetMs": 600,
+          "durationMs": 1200
+        },
+        {
+          "midi": 77,
+          "onsetMs": 1200,
+          "durationMs": 1200
+        }
+      ],
+      "printPitches": [
+        "G4",
+        "C5",
+        "F5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "seo": {
+    "title": "C Suspended 4th Piano Chord (Csus4): Notes & Inversions",
+    "description": "Find the c suspended 4th chord on piano: C, F, G. See keyboard positions, three inversions, sound and a printable reference.",
+    "h1": "C Suspended 4th Piano Chord",
+    "mainKeyword": "c suspended 4th chord piano",
+    "secondaryKeywords": [
+      "Csus4 piano chord",
+      "c suspended 4th notes",
+      "c suspended 4th inversions"
+    ],
+    "keywordVolume": null
+  },
+  "content": {
+    "directAnswer": "The C Suspended 4th chord contains C, F, G. Formula: 1–4–5.",
+    "theory": "The c suspended 4th chord replaces the third with a perfect fourth.",
+    "comparison": "Compared with C major, replace the third with the fourth.",
+    "inversionExplanation": "The chord tones stay the same while the lowest chord tone changes.",
+    "spellingNote": "Preserve the written note spelling shown for this chord.",
+    "faq": [
+      {
+        "q": "What notes are in Csus4?",
+        "a": "C, F, G."
+      },
+      {
+        "q": "What is the formula for Csus4?",
+        "a": "1–4–5."
+      },
+      {
+        "q": "Does an inversion change the chord root?",
+        "a": "No. The root stays the same; the lowest chord tone changes."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independent fingering dataset is authorized for N2B."
+  },
+  "sources": [
+    "N2B-OMT-TRIADS",
+    "N2B-PC-COLLECTION",
+    "N2B-PC-SUS"
+  ]
+}

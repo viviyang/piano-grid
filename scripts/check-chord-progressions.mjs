@@ -92,7 +92,7 @@ try {
   check('200% text reflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), await page.evaluate(() => ({ innerWidth, scrollWidth: document.documentElement.scrollWidth })));
   check('No runtime or hydration errors', errors.length === 0, errors);
   const sitemap = await page.request.get(base + '/sitemap.xml'), xml = await sitemap.text();
-  check('Sitemap has 46 routes and includes final chord routes', (xml.match(/<loc>/g) || []).length === 46 && ['/chord-progressions','/chords/finder','/chords/c-flat-major','/chords/major','/chords/minor'].every(route => xml.includes(`https://pianogrid.com${route}</loc>`)));
+  check('Sitemap has 97 routes and includes final chord routes', (xml.match(/<loc>/g) || []).length === 97 && ['/chord-progressions','/chords/finder','/chords/c-flat-major','/chords/major','/chords/minor'].every(route => xml.includes(`https://pianogrid.com${route}</loc>`)));
   for (const route of ['/chords/finder','/chords/c-flat-major']) { const response = await page.request.get(base + route); check(`${route} is published`, response.status() === 200, response.status()); }
   for (const source of ['/chords','/chords/by-key','/guide/piano-chords']) {
     const sourcePage = await browser.newPage({ javaScriptEnabled: false }); await sourcePage.goto(base + source);

@@ -1,21 +1,25 @@
-import type {ChordDetailModel,ChordQuality,Voicing} from './a-minor-types';
+import type {ChordDetailModel,DetailVoicing} from './a-minor-types';
+import {positionForThreeNote,validateThreeNoteDefinition} from './chord-family-model';
 import {isPublicRoute} from './site-routes';
+import type {N2BChordDetailRoute} from './chord-n2b-content';
 
 export type ChordDetailRoute=
   |'/chords/a-minor'|'/chords/a-major'|'/chords/c-major'
   |'/chords/g-major'|'/chords/c-minor'|'/chords/e-major'|'/chords/b-major'|'/chords/a-flat-major'|'/chords/c-flat-major'
   |'/chords/f-major'|'/chords/d-minor'|'/chords/e-minor'|'/chords/d-major'|'/chords/b-minor'
   |'/chords/f-sharp-minor'|'/chords/c-sharp-minor'|'/chords/g-sharp-minor'|'/chords/b-flat-major'|'/chords/g-minor'
-  |'/chords/d-flat-major'|'/chords/e-flat-major'|'/chords/f-sharp-major'|'/chords/f-minor'|'/chords/b-flat-minor'|'/chords/e-flat-minor';
-const expectedFormula:Record<ChordQuality,string[]>={major:['1','3','5'],minor:['1','b3','5']};
-const ascii=(value:string)=>value.replaceAll('♯','#').replaceAll('♭','b');
-const pitchClass=(value:string)=>{const match=/^([A-G](?:#|b)?)-?\d*$/.exec(ascii(value));if(!match)throw new Error(`Invalid pitch spelling: ${value}`);return match[1];};
+  |'/chords/d-flat-major'|'/chords/e-flat-major'|'/chords/f-sharp-major'|'/chords/f-minor'|'/chords/b-flat-minor'|'/chords/e-flat-minor'
+  |N2BChordDetailRoute;
+const ascii=(value:string)=>value.replaceAll('𝄪','##').replaceAll('𝄫','bb').replaceAll('♯','#').replaceAll('♭','b');
+const pitchClass=(value:string)=>{const match=/^([A-G](?:##|bb|#|b)?)-?\d*$/.exec(ascii(value));if(!match)throw new Error(`Invalid pitch spelling: ${value}`);return match[1];};
 const same=(a:unknown,b:unknown)=>JSON.stringify(a)===JSON.stringify(b);
 const sorted=(values:string[])=>[...values].sort();
 
-function validateVoicing(model:ChordDetailModel,voicing:Voicing){
-  const {data}=model,notes=voicing.notes_low_to_high;
-  if(notes.length!==3||new Set(notes.map(note=>note.midi)).size!==3)throw new Error(`Invalid triad voicing: ${voicing.voicing_id}`);
+function validateVoicing(model:ChordDetailModel,voicing:DetailVoicing,index:number){
+  const {data}=model,notes=voicing.notes_low_to_high,definition=data.chord.definition;
+  if(notes.length!==definition.expectedNoteCount||new Set(notes.map(note=>note.midi)).size!==definition.expectedNoteCount)throw new Error(`Invalid three-note voicing: ${voicing.voicing_id}`);
+  const expectedPosition=positionForThreeNote(definition,index);
+  if(!same(voicing.position,expectedPosition)||voicing.inversion_label!==expectedPosition.label)throw new Error(`Invalid position contract: ${voicing.voicing_id}`);
   if(!same(sorted(notes.map(note=>pitchClass(note.display_pitch))),sorted(data.chord.note_spellings.map(pitchClass))))throw new Error(`Voicing changes chord definition: ${voicing.voicing_id}`);
   if(voicing.bass_spelling!==notes[0].display_pitch)throw new Error(`Bass is not the lowest pitch: ${voicing.voicing_id}`);
   const midi=notes.map(note=>note.midi);
@@ -26,14 +30,15 @@ function validateVoicing(model:ChordDetailModel,voicing:Voicing){
 }
 
 export function finalizeChordDetailModel(model:ChordDetailModel):ChordDetailModel{
-  const {data}=model;
+  const {data}=model,definition=data.chord.definition;
   if(!isPublicRoute(data.url)||model.metadata.canonical_path!==data.url)throw new Error(`Invalid chord detail route: ${data.url}`);
   if(data.chord.slug!==data.url.split('/').at(-1)||data.chord.id!==data.chord.slug)throw new Error(`Chord identity mismatch: ${data.url}`);
-  if(!same(data.chord.formula_degrees,expectedFormula[data.chord.quality]))throw new Error(`Formula/quality mismatch: ${data.url}`);
-  if(data.chord.note_spellings.length!==3||data.voicings.length!==3||data.options.length!==3)throw new Error(`Incomplete triad detail: ${data.url}`);
+  validateThreeNoteDefinition(definition);
+  if(data.chord.quality!==definition.subtype||!same(data.chord.formula_degrees,definition.formulaDegrees))throw new Error(`Formula/quality mismatch: ${data.url}`);
+  if(data.chord.note_spellings.length!==definition.expectedNoteCount||data.voicings.length!==definition.expectedPositionCount||data.options.length!==definition.expectedPositionCount)throw new Error(`Incomplete three-note detail: ${data.url}`);
   if(!data.voicings.some(voicing=>voicing.voicing_id===data.defaultId))throw new Error(`Missing default voicing: ${data.url}`);
   if(!same(data.options.map(option=>option.value),data.voicings.map(voicing=>voicing.voicing_id))||!same(data.options.map(option=>option.label),data.voicings.map(voicing=>voicing.inversion_label)))throw new Error(`Selection/voicing drift: ${data.url}`);
-  for(const voicing of data.voicings)validateVoicing(model,voicing);
+  data.voicings.forEach((voicing,index)=>validateVoicing(model,voicing,index));
   const targetIds=new Set([data.toolId,...model.blocks.map(block=>block.block_id),...(model.introduction.length?[`${data.namespace}-root-example`]:[])]);
   if(model.tocItems.some(item=>!targetIds.has(item.id))||new Set(model.tocItems.map(item=>item.id)).size!==model.tocItems.length)throw new Error(`Invalid detail TOC: ${data.url}`);
   if(data.fingeringStatus==='verified_examples'){
@@ -52,6 +57,6 @@ export function finalizeChordDetailModel(model:ChordDetailModel):ChordDetailMode
     const expected=example.hand==='right'?[1,3,5]:[5,3,1];
     if(!same(example.fingers,expected))throw new Error(`Unexpected root-position fingering: ${data.url}`);
   }
-  if(model.practice.id!=='practice'||!model.practice.heading||!model.practice.prompt||!model.practice.scope||!model.blocks.some(block=>block.block_id==='practice'))throw new Error(`Invalid practice model: ${data.url}`);
+  if(model.practice.id!=='practice'||!model.practice.heading||!model.practice.prompt||!model.practice.scope||model.practice.requiredPitchClassCount!==definition.expectedNoteCount||!model.blocks.some(block=>block.block_id==='practice'))throw new Error(`Invalid practice model: ${data.url}`);
   return model;
 }
