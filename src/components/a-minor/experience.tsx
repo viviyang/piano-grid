@@ -15,6 +15,7 @@ import { ChordTopicIcon } from '../chords/page-toc';
 
 const PrintContext=createContext({ready:false,print:()=>{},pdf:{url:'',label:''}});
 export const SelectedVoicingContext=createContext<string|null>(null);
+export const StopPlaybackContext=createContext<()=>void>(()=>{});
 
 export function InversionRow({voicingId,position,cells}:{voicingId:string;position:string;cells:string[]}) {
   const selectedVoicingId=useContext(SelectedVoicingContext);
@@ -24,11 +25,11 @@ export function InversionRow({voicingId,position,cells}:{voicingId:string;positi
     <td>{cells[1]}</td><td className="am-pitch-cell">{cells[2]}</td><td>{cells[3]}</td>
   </tr>;
 }
-export function PrintActions({section=false}:{section?:boolean}) {
+export function PrintActions({section=false,noun='position'}:{section?:boolean;noun?:string}) {
   const {ready,print,pdf}=useContext(PrintContext);
   return <div className={section?'am-section-actions':'am-print-actions'}>
     {section&&<a className="am-button am-tertiary" href={pdf.url} download><Icon name="download"/><RollingText>{pdf.label}</RollingText></a>}
-    <button type="button" className="am-button am-tertiary am-print" data-print-current disabled={!ready} onClick={print}><Icon name="print"/><RollingText>Print this position</RollingText></button>
+    <button type="button" className="am-button am-tertiary am-print" data-print-current disabled={!ready} onClick={print}><Icon name="print"/><RollingText>{`Print this ${noun}`}</RollingText></button>
     {!section&&<a className="am-button am-tertiary" href={pdf.url} download><Icon name="download"/><RollingText>{pdf.label}</RollingText></a>}
   </div>;
 }
@@ -72,7 +73,8 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
     catch {printSnapshot.current=null;setPrintId(null);setPrintError(data.microcopy.print_error);}
   }
   const notes=voicing.notes_low_to_high;
-  return <PrintContext.Provider value={{ready,print,pdf:data.pdf}}><SelectedVoicingContext.Provider value={selectedVoicingId}><div className="am-page" data-selected-voicing={selectedVoicingId} data-position={voicing.inversion_label}>
+  const stopPlayback=()=>player.current?.cancel('Playback stopped.','stopped');
+  return <PrintContext.Provider value={{ready,print,pdf:data.pdf}}><StopPlaybackContext.Provider value={stopPlayback}><SelectedVoicingContext.Provider value={selectedVoicingId}><div className="am-page" data-selected-voicing={selectedVoicingId} data-position={voicing.inversion_label} data-note-count={data.chord.definition.expectedNoteCount} data-family={data.chord.definition.family}>
     <a className="am-skip am-screen" href={`#${data.toolId}`}>Skip to chord tool</a>
     <SiteHeader search={<PageSearch ready={ready} sections={searchSections} onOpen={()=>player.current?.cancel()}/>}/>
     <main className="pr-container am-screen" id="main">{heading}
@@ -80,10 +82,10 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
         <h2 className="pr-sr-only" id="tool-heading">{data.toolHeading}</h2>
         <dl className="am-summary"><div><dt>{data.chord.name_en}</dt><dd className="am-chord-id">{data.chord.symbol}</dd></div><div><dt>Chord tones</dt><dd className="am-tone-list">{data.chord.note_spellings.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span>{n}</span></Fragment>)}</dd></div><div><dt>Formula</dt><dd className="am-formula">{data.chord.formula_degrees.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">·</span>}<span>{degree(n)}</span></Fragment>)}</dd></div></dl>
         <dl className="am-quick-facts" aria-label="Quick facts"><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-intro`}/></span>Notes</dt><dd>{data.chord.note_spellings.join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-${data.chord.definition.subtype}`}/></span>Quality</dt><dd>{data.chord.definition.qualityLabel}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-inversions`}/></span>Formula</dt><dd>{data.chord.formula_degrees.map(degree).join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={data.toolId}/></span>Keyboard range</dt><dd>{data.rangeLabel}</dd></div></dl>
-        <div className="am-select-result"><fieldset className="am-position-fieldset" disabled={!ready}><legend>Position</legend><div className="am-positions">{data.options.map(o=><label className="am-radio-label" key={o.value}><input type="radio" name="position" value={o.value} checked={selectedVoicingId===o.value} onChange={()=>change(o.value)}/><span className="am-segment">{o.label}</span></label>)}</div></fieldset><div className="am-current-result"><div><div className="am-field-label">{data.microcopy.selected_note_summary}</div><div className="am-note-order" id="note-order" aria-label={`${data.microcopy.selected_note_summary}: ${notes.map(n=>n.display_pitch).join(', ')}`}>{notes.map((n,i)=><Fragment key={n.midi}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span data-midi={n.midi} className={cn('am-pitch',sounding.includes(n.midi)&&'am-sounding')}>{n.display_pitch}</span></Fragment>)}</div></div><div className="am-current-symbol"><strong id="current-symbol">{voicing.chord_symbol}</strong><div>Bass: <span id="current-bass">{voicing.bass_spelling}</span></div></div></div></div>
+        <div className="am-select-result"><fieldset className="am-position-fieldset" data-position-count={data.options.length} disabled={!ready}><legend>{data.selectorLegend||'Position'}</legend><div className="am-positions">{data.options.map(o=><label className="am-radio-label" key={o.value}><input type="radio" name="position" value={o.value} checked={selectedVoicingId===o.value} onChange={()=>change(o.value)}/><span className="am-segment">{o.label}</span></label>)}</div></fieldset><div className="am-current-result"><div><div className="am-field-label">{data.microcopy.selected_note_summary}</div><div className="am-note-order" id="note-order" aria-label={`${data.microcopy.selected_note_summary}: ${notes.map(n=>n.display_pitch).join(', ')}`}>{notes.map((n,i)=><Fragment key={n.midi}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span data-midi={n.midi} className={cn('am-pitch',sounding.includes(n.midi)&&'am-sounding')}>{n.display_pitch}</span></Fragment>)}</div></div><div className="am-current-symbol"><strong id="current-symbol">{voicing.chord_symbol}</strong><div>Bass: <span id="current-bass">{voicing.bass_spelling}</span></div></div></div></div>
         <KeyboardViewport id="keyboard-scroll" voicing={voicing} whitePitchClasses={data.whitePitchClasses} sounding={sounding} ready={ready} rangeLabel={data.rangeLabel}/>
-        <div className="am-controls"><div className="am-control-bar"><PlaybackControls ready={ready} state={audio.state} mode={audio.mode} onPlay={mode=>void player.current?.play(voicing,mode)} onStop={()=>player.current?.cancel('Playback stopped.','stopped')}/><PrintActions/></div><div className="am-playback-feedback"><span>{data.microcopy.playback_note}</span><div className={cn('am-playback-status',['error','unavailable'].includes(audio.state)&&'am-error')} id="audio-status" role="status" aria-live="polite" aria-atomic="true">{audio.message}</div></div><div className="am-resource-feedback" role="status">{printError}</div></div>
-        <noscript><p className="am-nojs-note">JavaScript is off. The root-position diagram, comparison table, explanations, and PDF remain available. Enable JavaScript to switch positions or play sound.</p></noscript>
+        <div className="am-controls"><div className="am-control-bar"><PlaybackControls ready={ready} state={audio.state} mode={audio.mode} onPlay={mode=>void player.current?.play(voicing,mode)} onStop={stopPlayback}/><PrintActions noun={data.selectorNoun}/></div><div className="am-playback-feedback"><span>{data.microcopy.playback_note}</span><div className={cn('am-playback-status',['error','unavailable'].includes(audio.state)&&'am-error')} id="audio-status" role="status" aria-live="polite" aria-atomic="true">{audio.message}</div></div><div className="am-resource-feedback" role="status">{printError}</div></div>
+        <noscript><p className="am-nojs-note">JavaScript is off. {data.noScriptDescription||'The root-position diagram, comparison table, explanations, and PDF remain available. Enable JavaScript to switch positions or play sound.'}</p></noscript>
         <div className="am-tool-notes">{toolNotes}</div>
       </section>
       <div className="pr-sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</div>
@@ -91,5 +93,5 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
     </main>
     <SiteFooter url={data.url}/>
     <article className="am-print-only" id="print-content" data-voicing-id={printed.voicing_id}><PrintVoicing voicing={printed} whitePitchClasses={data.whitePitchClasses} title={data.heading} tones={data.chord.note_spellings} formula={data.chord.formula_degrees} url={data.url} disclaimer={data.printDisclaimer}/></article>
-  </div></SelectedVoicingContext.Provider></PrintContext.Provider>;
+  </div></SelectedVoicingContext.Provider></StopPlaybackContext.Provider></PrintContext.Provider>;
 }

@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import type { Block, ChordDetailData, ChordDetailModel, ChordPractice, ChordQuality, DetailVoicing } from './a-minor-types';
+import type { Block, ChordDetailData, ChordDetailModel, ChordPractice, DetailVoicing, ThreeNoteSubtype } from './a-minor-types';
 import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family-model';
 import { finalizeChordDetailModel, type ChordDetailRoute } from './chord-detail-model';
 import { readMaster } from './site-content';
@@ -18,7 +18,7 @@ type RawVoicing = {
 type RawDetail = {
   schema_version: string; url: ChordDetailRoute; release_batch: 'N1'; release_status: string; provenance: 'current_hub' | 'new_derived';
   title: string; description: string; h1: string; main_keyword: string; secondary_keywords: string[]; user_task: string;
-  data: { root: string; quality: ChordQuality; symbol: string; aliases: string[]; pitch_classes: string[]; formula_degrees: string[]; semitones_from_root: number[]; voicings: RawVoicing[]; default_voicing: string; fingering_policy: string };
+  data: { root: string; quality: ThreeNoteSubtype; symbol: string; aliases: string[]; pitch_classes: string[]; formula_degrees: string[]; semitones_from_root: number[]; voicings: RawVoicing[]; default_voicing: string; fingering_policy: string };
   content: { direct_answer: string; blocks: { id: string; heading: string; body: string }[]; faq: { q: string; a: string }[] };
   related_routes: string[];
 };

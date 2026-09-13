@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 
 const { chromium } = createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH || 'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const base = process.env.PIANO_BASE_URL || 'http://127.0.0.1:3000';
@@ -12,7 +12,9 @@ const planned = seo.pages.map(page => page.url);
 const nextRoutes = JSON.parse(await readFile('docs/pianogrid-chords-next-expansion/02_routes/routes.master.json', 'utf8')).N1;
 const nextPublished = [...nextRoutes.new_category_urls, ...nextRoutes.new_detail_urls];
 const n2bPublished = JSON.parse(await readFile('docs/pianogrid-chords-n2b/04_seo/N2B.url-keyword-tdh.json','utf8')).map(item=>item.url);
-const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished,...n2bPublished];
+const n2cPublished = ['/chords/seventh',...await Promise.all((await readdir('docs/pianogrid-chords-n2c/03_details')).filter(name=>name.endsWith('.page.json')).map(async name=>JSON.parse(await readFile(`docs/pianogrid-chords-n2c/03_details/${name}`,'utf8')).url))];
+const n2dPublished = ['/chords/add',...await Promise.all((await readdir('docs/pianogrid-chords-n2d-v2/03_content/details')).filter(name=>name.endsWith('.page.json')).map(async name=>JSON.parse(await readFile(`docs/pianogrid-chords-n2d-v2/03_content/details/${name}`,'utf8')).url))];
+const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished];
 const details = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major'];
 const progressionDetails = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/e-major', '/chords/b-major'];
 const results = [], runtimeErrors = [];
@@ -44,10 +46,10 @@ try {
   const sitemapResponse = await page.request.get(base + '/sitemap.xml');
   const sitemapText = await sitemapResponse.text();
   const sitemapPaths = [...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match => match[1] || '/');
-  check('Sitemap contains exactly the 97 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
+  check('Sitemap contains exactly the 171 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
   check('All 15 planned URLs are in sitemap', planned.every(url => sitemapPaths.includes(url)));
   const finalScope = sitemapPaths.filter(url => url.startsWith('/chord') || ['/guide/piano-chords', '/keyboard-notes/finger-numbers'].includes(url));
-  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished,...n2bPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished,...n2bPublished].includes(url)));
+  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished].includes(url)));
 
   const hrefs = new Set();
   for (const url of planned) {

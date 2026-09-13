@@ -1,6 +1,6 @@
 import fs from 'node:fs';import {createRequire} from 'node:module';import crypto from 'node:crypto';
 const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH||'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
-const m=JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json')),base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3000',out=process.env.PIANO_CHECK_OUT||'checks/batches/01-chords',additionalRoutes=new Set((process.env.PIANO_ADDITIONAL_ROUTES||'').split(',').filter(Boolean));
+const m=JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json')),base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3000',out=process.env.PIANO_CHECK_OUT||'checks/batches/01-chords';
 fs.mkdirSync(out,{recursive:true});
 const results=[],errors=[];const check=(name,ok,actual)=>{results.push({name,passed:!!ok,actual});if(!ok)console.error('FAIL',name,actual);};const eq=(a,b)=>JSON.stringify(a)===JSON.stringify(b),display=value=>value.replaceAll('#','♯').replaceAll('b','♭');
 const browser=await chromium.launch({channel:'chrome',headless:true});
@@ -43,7 +43,7 @@ for(const width of [320,390,768,1440]){await p.setViewportSize({width,height:wid
 await p.setViewportSize({width:390,height:844});await p.evaluate(()=>document.documentElement.style.fontSize='200%');check('Center 200% text reflow',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.evaluate(()=>document.documentElement.style.fontSize='');
 await p.locator('#center-root').focus();await p.keyboard.press('ArrowDown');check('Center native filter keyboard focus',await p.locator('#center-root').evaluate(e=>e===document.activeElement&&getComputedStyle(e).outlineStyle!=='none'));await p.locator('.am-faq-item summary').first().focus();await p.keyboard.press('Enter');check('Center FAQ keyboard',await p.locator('.am-faq-item').first().getAttribute('open')!==null);
 const pdf=await p.request.get(base+'/reference/preserved-chords/assets/piano-chord-chart-selected.pdf');check('Center static source PDF bytes',pdf.status()===200&&eq([...await pdf.body()],[...fs.readFileSync('docs/content/site-master/preserved-chords/assets/piano-chord-chart-selected.pdf')]));
-for(const url of ['/','/chords/b-major','/chords/c-minor','/chords/by-key','/scales']){const status=(await p.request.get(base+url)).status();check(additionalRoutes.has(url)?`Later-batch route ${url} 200`:`Unauthorized ${url} 404`,status===(additionalRoutes.has(url)?200:404),status);}
+for(const url of ['/chords/extended','/chords/altered','/chords/add2','/sheet-music','/tools/piano-cheat-sheet']){const status=(await p.request.get(base+url)).status();check(`Deferred route ${url} 404`,status===404,status);}
 await p.close();
 for(const url of ['/chords','/chords/a-major','/chords/c-major']){const q=await fresh({javaScriptEnabled:false});const r=await q.goto(base+url);check(`${url} noJS readable answer`,r.status()===200&&await q.locator('.am-key.am-is-selected').count()>0);check(`${url} noJS static PDF`,await q.locator('a[download]').count()>0);check(`${url} noJS play disabled`,await q.locator('.am-play-btn').first().isDisabled());await q.close();}
 }catch(e){check('Batch browser execution completed',false,e.stack);}finally{await browser.close();}

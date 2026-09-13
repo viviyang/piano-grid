@@ -1,0 +1,79 @@
+{
+  "url": "/chords/seventh",
+  "id": "seventh",
+  "label": "Seventh Chords",
+  "title": "Seventh Piano Chords: 7, Maj7, Min7 & Half-Diminished",
+  "description": "Browse dominant 7th, major 7th, minor 7th and half-diminished piano chords by root. Compare four-note formulas, keyboard diagrams and inversions.",
+  "h1": "Seventh Piano Chords",
+  "mainKeyword": "seventh piano chords",
+  "secondaryKeywords": [
+    "7th chords piano",
+    "piano seventh chords",
+    "major 7 chords piano",
+    "minor 7 chords piano",
+    "half diminished chord piano"
+  ],
+  "familySubtypes": [
+    "dominant7",
+    "major7",
+    "minor7",
+    "halfDiminished7"
+  ],
+  "formulaFamilies": {
+    "dominant7": [
+      "1",
+      "3",
+      "5",
+      "♭7"
+    ],
+    "major7": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "minor7": [
+      "1",
+      "♭3",
+      "5",
+      "♭7"
+    ],
+    "halfDiminished7": [
+      "1",
+      "♭3",
+      "♭5",
+      "♭7"
+    ]
+  },
+  "intro": "Seventh chords add a fourth chord tone above a triad. The four families on this page differ by triad quality and the quality of the seventh.",
+  "rootOrder": [
+    "C",
+    "D♭",
+    "D",
+    "E♭",
+    "E",
+    "F",
+    "F♯",
+    "G",
+    "A♭",
+    "A",
+    "B♭",
+    "B"
+  ],
+  "subtypeOrder": [
+    "dominant7",
+    "major7",
+    "minor7",
+    "halfDiminished7"
+  ],
+  "interaction": {
+    "rootFilter": "client enhancement; all 48 cards remain in initial HTML",
+    "subtypeFilter": "client enhancement; all four subtypes remain server-rendered",
+    "queryIndexing": "filters do not create indexable canonical URLs"
+  },
+  "sources": [
+    "N2C-OMT-SEVENTH",
+    "N2C-OMT-SYMBOLS",
+    "N2C-PC-SEVENTH"
+  ]
+}

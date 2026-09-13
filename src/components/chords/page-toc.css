@@ -7,6 +7,7 @@
 .ch-page-toc a{gap:.5rem}
 .ch-page-toc ul{column-gap:1.25rem}
 .ch-section-title{display:flex;align-items:flex-start;gap:.75rem}
+.ch-section-title>span:last-child{min-width:0;overflow-wrap:anywhere}
 .ch-topic-badge{display:inline-flex;align-items:center;justify-content:center;flex:none;width:2.25rem;height:2.25rem;border-radius:var(--pr-radius-control);background:var(--selected-hover)}
 h1 .ch-section-title{align-items:center}
 h1 .ch-topic-badge{width:2.75rem;height:2.75rem}

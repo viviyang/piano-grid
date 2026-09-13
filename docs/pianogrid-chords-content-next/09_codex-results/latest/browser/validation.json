@@ -1,0 +1,21 @@
+{
+  "executed_at": "2026-09-12T14:44:34.169Z",
+  "base": "http://127.0.0.1:3000",
+  "passed": 0,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Focused browser runner completed",
+      "passed": false,
+      "actual": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/chords/g-major\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3000/chords/g-major\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano-chords-expansion-20260912\\scripts\\check-chord-content-next.mjs:22:75"
+    }
+  ],
+  "not_tested": [
+    "human listening",
+    "real mobile/tablet device",
+    "screen reader",
+    "physical printing",
+    "PDF tag accessibility",
+    "independent professional review of octave-adapted fingerings"
+  ]
+}

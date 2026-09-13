@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "N2D-2.0",
+  "id": "add",
+  "url": "/chords/add",
+  "label": "Add Chords",
+  "releaseStatus": "ready_for_repository_integration_not_deployed",
+  "subtypes": [
+    "add9",
+    "minorAdd9"
+  ],
+  "rootOrder": [
+    "C",
+    "D♭",
+    "D",
+    "E♭",
+    "E",
+    "F",
+    "F♯",
+    "G",
+    "A♭",
+    "A",
+    "B♭",
+    "B"
+  ],
+  "detailIds": [
+    "c-add9",
+    "d-flat-add9",
+    "d-add9",
+    "e-flat-add9",
+    "e-add9",
+    "f-add9",
+    "f-sharp-add9",
+    "g-add9",
+    "a-flat-add9",
+    "a-add9",
+    "b-flat-add9",
+    "b-add9",
+    "c-madd9",
+    "d-flat-madd9",
+    "d-madd9",
+    "e-flat-madd9",
+    "e-madd9",
+    "f-madd9",
+    "f-sharp-madd9",
+    "g-madd9",
+    "a-flat-madd9",
+    "a-madd9",
+    "b-flat-madd9",
+    "b-madd9"
+  ],
+  "scopeNote": "This collection covers major add9 and minor add9 at twelve reference root spellings. It does not catalogue every added-note chord.",
+  "content": {
+    "directAnswer": "Explore major add9 and minor add9: a third is retained and no seventh is included in these complete four-note references.",
+    "blocks": [
+      {
+        "id": "browse",
+        "heading": "Choose a root and added-note type",
+        "kind": "grid",
+        "paragraphs": [
+          "Open a card for its exact notes, two spacing examples, playback and two small note-selection exercises. All 24 cards remain readable without JavaScript."
+        ]
+      },
+      {
+        "id": "compare",
+        "heading": "Keep the third; do not add a seventh",
+        "kind": "formulaTable",
+        "rows": [
+          {
+            "type": "Major add9",
+            "formula": [
+              "1",
+              "3",
+              "5",
+              "9"
+            ]
+          },
+          {
+            "type": "Minor add9",
+            "formula": [
+              "1",
+              "♭3",
+              "5",
+              "9"
+            ]
+          }
+        ],
+        "paragraphs": [
+          "The added member has the pitch class of the second. The two layouts on each detail page place that member above the triad or inside it."
+        ]
+      },
+      {
+        "id": "notation",
+        "heading": "Read add9 and add2 with the arrangement",
+        "kind": "notation",
+        "paragraphs": [
+          "Open Music Theory illustrates an upper ninth and an inside-the-triad second. Musicca also lists add2 as an alternative notation. The examples show the actual registers rather than enforcing a universal label rule."
+        ],
+        "sourceIds": [
+          "OMT-ADDED-NOTES",
+          "MUSICCA-CADD9"
+        ]
+      },
+      {
+        "id": "practice",
+        "heading": "Two tasks, two kinds of feedback",
+        "kind": "learning",
+        "paragraphs": [
+          "Build the chord tones accepts the correct pitch classes in any octave. Match this example asks for the exact displayed pitches. An octave mismatch is not automatically a different chord."
+        ]
+      },
+      {
+        "id": "resources",
+        "heading": "Continue with a specific chord",
+        "kind": "related",
+        "paragraphs": [
+          "Compare the major and minor added-note forms at the same root, or return to the basic triad chart. The existing Finder and progression tools retain their separately stated coverage."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does this page cover all added-note chords?",
+        "answer": "No. This batch covers major add9 and minor add9 only. Added fourths, elevenths and other forms are outside this collection."
+      },
+      {
+        "question": "Will filters create more pages?",
+        "answer": "No. Root and type filters only change the results on this page."
+      }
+    ]
+  },
+  "interaction": {
+    "rootFilter": "All or one available root",
+    "subtypeFilter": "All, add9, minorAdd9",
+    "combination": "intersection",
+    "reset": "restore all 24 cards",
+    "noResult": "explain the current filters and offer Clear filters",
+    "ssr": "all 24 compact cards and text in initial HTML; client filters enhance them",
+    "noNewFilterRoutes": true
+  },
+  "seo": {
+    "title": "Add9 Piano Chords: Major & Minor Notes and Voicings",
+    "description": "Browse 24 major and minor add9 piano chords. Compare notes and two keyboard layouts, practise chord tones, and open printable reference pages.",
+    "h1": "Add9 Piano Chords",
+    "canonical": "https://pianogrid.com/chords/add",
+    "mainKeyword": "add9 piano chords",
+    "secondaryKeywords": [
+      "add chords piano",
+      "minor add9 chords",
+      "add9 vs add2"
+    ],
+    "keywordVolume": null,
+    "keywordEvidence": "intent-derived; not a volume or rank claim",
+    "indexPolicy": "index,follow only after repository publication gate"
+  },
+  "sourceIds": [
+    "OMT-ADDED-NOTES",
+    "MUSICCA-CADD9",
+    "PIANOCHORD-ADD"
+  ]
+}

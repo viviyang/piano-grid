@@ -1,9 +1,9 @@
 {
   "stage": "07-site-integration",
-  "executed_at": "2026-09-11T12:38:53.159Z",
+  "executed_at": "2026-09-12T14:57:24.621Z",
   "runtime": "v24.14.1",
-  "passed": 562,
-  "failed": 3,
+  "passed": 565,
+  "failed": 0,
   "warnings": [
     "source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。"
   ],
@@ -2779,18 +2779,18 @@
       "detail": ""
     },
     {
-      "name": "Only twenty-two authorized routes",
+      "name": "Only one hundred seventy-one authorized routes",
       "passed": true,
       "detail": ""
     },
     {
       "name": "Only authorized layout/page/component TSX",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Only necessary authorized chord components",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -2800,7 +2800,7 @@
     },
     {
       "name": "Only authorized static assets",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {

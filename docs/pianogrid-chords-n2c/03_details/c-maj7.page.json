@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "N2C-1.0",
+  "releaseStatus": "publish_in_N2C",
+  "family": "seventh",
+  "subtype": "major7",
+  "expectedNoteCount": 4,
+  "positionPolicy": {
+    "count": 4,
+    "labels": [
+      "Root position",
+      "First inversion",
+      "Second inversion",
+      "Third inversion"
+    ]
+  },
+  "url": "/chords/c-maj7",
+  "categoryRoute": "/chords/seventh",
+  "rootSpelling": "C",
+  "name": "C Major Seventh",
+  "symbol": "Cmaj7",
+  "qualityLabel": "Major Seventh",
+  "definition": {
+    "toneSpellings": [
+      "C",
+      "E",
+      "G",
+      "B"
+    ],
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "semitonesFromRoot": [
+      0,
+      4,
+      7,
+      11
+    ],
+    "familyConstruction": "a major triad plus a major seventh"
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "Cmaj7",
+      "notesLowToHigh": [
+        "C4",
+        "E4",
+        "G4",
+        "B4"
+      ],
+      "midiLowToHigh": [
+        60,
+        64,
+        67,
+        71
+      ],
+      "bass": "C4",
+      "keyboardHighlights": [
+        {
+          "midi": 60,
+          "writtenSpelling": "C4"
+        },
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 60,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 64,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 67,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 71,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "C4",
+        "E4",
+        "G4",
+        "B4"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "3"
+      },
+      "symbol": "Cmaj7/E",
+      "notesLowToHigh": [
+        "E4",
+        "G4",
+        "B4",
+        "C5"
+      ],
+      "midiLowToHigh": [
+        64,
+        67,
+        71,
+        72
+      ],
+      "bass": "E4",
+      "keyboardHighlights": [
+        {
+          "midi": 64,
+          "writtenSpelling": "E4"
+        },
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 64,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 67,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 71,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "E4",
+        "G4",
+        "B4",
+        "C5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "5"
+      },
+      "symbol": "Cmaj7/G",
+      "notesLowToHigh": [
+        "G4",
+        "B4",
+        "C5",
+        "E5"
+      ],
+      "midiLowToHigh": [
+        67,
+        71,
+        72,
+        76
+      ],
+      "bass": "G4",
+      "keyboardHighlights": [
+        {
+          "midi": 67,
+          "writtenSpelling": "G4"
+        },
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 76,
+          "writtenSpelling": "E5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 67,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 71,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 76,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "G4",
+        "B4",
+        "C5",
+        "E5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "third",
+      "label": "Third inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 3,
+        "bassDegree": "7"
+      },
+      "symbol": "Cmaj7/B",
+      "notesLowToHigh": [
+        "B4",
+        "C5",
+        "E5",
+        "G5"
+      ],
+      "midiLowToHigh": [
+        71,
+        72,
+        76,
+        79
+      ],
+      "bass": "B4",
+      "keyboardHighlights": [
+        {
+          "midi": 71,
+          "writtenSpelling": "B4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 76,
+          "writtenSpelling": "E5"
+        },
+        {
+          "midi": 79,
+          "writtenSpelling": "G5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 71,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 72,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 76,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 79,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "B4",
+        "C5",
+        "E5",
+        "G5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "practice": {
+    "requiredPitchClassCount": 4,
+    "answerPitchClasses": [
+      0,
+      4,
+      7,
+      11
+    ],
+    "allowInversionEquivalent": true,
+    "fingeringRequired": false
+  },
+  "seo": {
+    "title": "C Major Seventh Piano Chord (Cmaj7): Notes & Inversions",
+    "description": "Find the c major seventh chord on piano: C, E, G, B. See four positions, keyboard notes, sound and a printable reference.",
+    "h1": "C Major Seventh Piano Chord",
+    "mainKeyword": "c major seventh chord piano",
+    "secondaryKeywords": [
+      "Cmaj7 piano chord",
+      "c major seventh notes",
+      "c major seventh inversions"
+    ],
+    "keywordVolume": null,
+    "keywordEvidence": "intent-derived; volume not revalidated"
+  },
+  "content": {
+    "directAnswer": "The C Major Seventh chord contains C, E, G, B. Formula: 1–3–5–7.",
+    "theory": "A c major seventh is a major triad plus a major seventh.",
+    "comparison": "Compared with C major, add the major seventh above the root.",
+    "inversionExplanation": "A seventh chord has four chord tones and therefore four positions: root position plus three inversions. The slash symbol identifies the written bass note.",
+    "spellingNote": "Preserve the written chord spelling shown here; keyboard equivalence does not rename the chord.",
+    "faq": [
+      {
+        "q": "What notes are in Cmaj7?",
+        "a": "C, E, G, B."
+      },
+      {
+        "q": "What is the formula for Cmaj7?",
+        "a": "1–3–5–7."
+      },
+      {
+        "q": "How many inversions does a seventh chord have?",
+        "a": "Three inversions, in addition to root position."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independently authorized fingering dataset is provided for N2C."
+  },
+  "sources": [
+    "N2C-OMT-SEVENTH",
+    "N2C-OMT-SYMBOLS",
+    "N2C-PC-SEVENTH"
+  ],
+  "relatedRules": {
+    "parent": "/chords/seventh",
+    "hub": "/chords",
+    "guide": "/guide/piano-chords"
+  }
+}

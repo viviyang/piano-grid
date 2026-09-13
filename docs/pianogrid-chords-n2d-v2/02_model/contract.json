@@ -1,0 +1,38 @@
+{
+  "authoringSchemaVersion": "N2D-2.0",
+  "family": "add",
+  "subtypes": [
+    "add9",
+    "minorAdd9"
+  ],
+  "defaultExampleCount": 2,
+  "definitionAndRealizationSeparated": true,
+  "formulaRules": {
+    "add9": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "minorAdd9": [
+      "1",
+      "♭3",
+      "5",
+      "9"
+    ]
+  },
+  "registerPolicy": "Per realization, not a family-wide 14-semitone rule. The higher example uses 14; the inside example uses 2 for the same added component.",
+  "recognitionPolicy": "Pitch-class identity and exact-voicing matching are separate tasks. Do not ban pitch-class matches merely to enforce an add9/add2 label.",
+  "inversionPolicy": "No automatic four-position generation; no assertion that added-note chords lack inversions.",
+  "validationLayers": [
+    "input shape",
+    "ordered degree-to-letter spelling",
+    "degree-to-pitch-class mapping",
+    "realization membership and completeness",
+    "per-example interval/register contract",
+    "keyboard/audio/print synchronization",
+    "practice case behavior",
+    "route/asset/source integrity"
+  ],
+  "repositoryAdapter": "Reuse real types and family adapter; never parallel-maintain another runtime dictionary or import this entire package on the client."
+}

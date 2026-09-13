@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "N2C-1.0",
+  "releaseStatus": "publish_in_N2C",
+  "family": "seventh",
+  "subtype": "major7",
+  "expectedNoteCount": 4,
+  "positionPolicy": {
+    "count": 4,
+    "labels": [
+      "Root position",
+      "First inversion",
+      "Second inversion",
+      "Third inversion"
+    ]
+  },
+  "url": "/chords/d-flat-maj7",
+  "categoryRoute": "/chords/seventh",
+  "rootSpelling": "D♭",
+  "name": "D♭ Major Seventh",
+  "symbol": "D♭maj7",
+  "qualityLabel": "Major Seventh",
+  "definition": {
+    "toneSpellings": [
+      "D♭",
+      "F",
+      "A♭",
+      "C"
+    ],
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "semitonesFromRoot": [
+      0,
+      4,
+      7,
+      11
+    ],
+    "familyConstruction": "a major triad plus a major seventh"
+  },
+  "voicings": [
+    {
+      "id": "root",
+      "label": "Root position",
+      "position": {
+        "kind": "root",
+        "inversionIndex": 0,
+        "bassDegree": "1"
+      },
+      "symbol": "D♭maj7",
+      "notesLowToHigh": [
+        "D♭4",
+        "F4",
+        "A♭4",
+        "C5"
+      ],
+      "midiLowToHigh": [
+        61,
+        65,
+        68,
+        72
+      ],
+      "bass": "D♭4",
+      "keyboardHighlights": [
+        {
+          "midi": 61,
+          "writtenSpelling": "D♭4"
+        },
+        {
+          "midi": 65,
+          "writtenSpelling": "F4"
+        },
+        {
+          "midi": 68,
+          "writtenSpelling": "A♭4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 61,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 65,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 68,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "D♭4",
+        "F4",
+        "A♭4",
+        "C5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "first",
+      "label": "First inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 1,
+        "bassDegree": "3"
+      },
+      "symbol": "D♭maj7/F",
+      "notesLowToHigh": [
+        "F4",
+        "A♭4",
+        "C5",
+        "D♭5"
+      ],
+      "midiLowToHigh": [
+        65,
+        68,
+        72,
+        73
+      ],
+      "bass": "F4",
+      "keyboardHighlights": [
+        {
+          "midi": 65,
+          "writtenSpelling": "F4"
+        },
+        {
+          "midi": 68,
+          "writtenSpelling": "A♭4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 73,
+          "writtenSpelling": "D♭5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 65,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 68,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 72,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 73,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "F4",
+        "A♭4",
+        "C5",
+        "D♭5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "second",
+      "label": "Second inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 2,
+        "bassDegree": "5"
+      },
+      "symbol": "D♭maj7/A♭",
+      "notesLowToHigh": [
+        "A♭4",
+        "C5",
+        "D♭5",
+        "F5"
+      ],
+      "midiLowToHigh": [
+        68,
+        72,
+        73,
+        77
+      ],
+      "bass": "A♭4",
+      "keyboardHighlights": [
+        {
+          "midi": 68,
+          "writtenSpelling": "A♭4"
+        },
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 73,
+          "writtenSpelling": "D♭5"
+        },
+        {
+          "midi": 77,
+          "writtenSpelling": "F5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 68,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 72,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 73,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 77,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "A♭4",
+        "C5",
+        "D♭5",
+        "F5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    },
+    {
+      "id": "third",
+      "label": "Third inversion",
+      "position": {
+        "kind": "inversion",
+        "inversionIndex": 3,
+        "bassDegree": "7"
+      },
+      "symbol": "D♭maj7/C",
+      "notesLowToHigh": [
+        "C5",
+        "D♭5",
+        "F5",
+        "A♭5"
+      ],
+      "midiLowToHigh": [
+        72,
+        73,
+        77,
+        80
+      ],
+      "bass": "C5",
+      "keyboardHighlights": [
+        {
+          "midi": 72,
+          "writtenSpelling": "C5"
+        },
+        {
+          "midi": 73,
+          "writtenSpelling": "D♭5"
+        },
+        {
+          "midi": 77,
+          "writtenSpelling": "F5"
+        },
+        {
+          "midi": 80,
+          "writtenSpelling": "A♭5"
+        }
+      ],
+      "playbackEvents": [
+        {
+          "midi": 72,
+          "onsetMs": 0,
+          "durationMs": 1400
+        },
+        {
+          "midi": 73,
+          "onsetMs": 600,
+          "durationMs": 1400
+        },
+        {
+          "midi": 77,
+          "onsetMs": 1200,
+          "durationMs": 1400
+        },
+        {
+          "midi": 80,
+          "onsetMs": 1800,
+          "durationMs": 1400
+        }
+      ],
+      "printPitches": [
+        "C5",
+        "D♭5",
+        "F5",
+        "A♭5"
+      ],
+      "fingering": {
+        "status": "not_provided",
+        "right": null,
+        "left": null
+      }
+    }
+  ],
+  "practice": {
+    "requiredPitchClassCount": 4,
+    "answerPitchClasses": [
+      1,
+      5,
+      8,
+      0
+    ],
+    "allowInversionEquivalent": true,
+    "fingeringRequired": false
+  },
+  "seo": {
+    "title": "D♭ Major Seventh Piano Chord (D♭maj7): Notes & Inversions",
+    "description": "Find the d♭ major seventh chord on piano: D♭, F, A♭, C. See four positions, keyboard notes, sound and a printable reference.",
+    "h1": "D♭ Major Seventh Piano Chord",
+    "mainKeyword": "d♭ major seventh chord piano",
+    "secondaryKeywords": [
+      "D♭maj7 piano chord",
+      "d♭ major seventh notes",
+      "d♭ major seventh inversions"
+    ],
+    "keywordVolume": null,
+    "keywordEvidence": "intent-derived; volume not revalidated"
+  },
+  "content": {
+    "directAnswer": "The D♭ Major Seventh chord contains D♭, F, A♭, C. Formula: 1–3–5–7.",
+    "theory": "A d♭ major seventh is a major triad plus a major seventh.",
+    "comparison": "Compared with D♭ major, add the major seventh above the root.",
+    "inversionExplanation": "A seventh chord has four chord tones and therefore four positions: root position plus three inversions. The slash symbol identifies the written bass note.",
+    "spellingNote": "Preserve the written chord spelling shown here; keyboard equivalence does not rename the chord.",
+    "faq": [
+      {
+        "q": "What notes are in D♭maj7?",
+        "a": "D♭, F, A♭, C."
+      },
+      {
+        "q": "What is the formula for D♭maj7?",
+        "a": "1–3–5–7."
+      },
+      {
+        "q": "How many inversions does a seventh chord have?",
+        "a": "Three inversions, in addition to root position."
+      }
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "reason": "No independently authorized fingering dataset is provided for N2C."
+  },
+  "sources": [
+    "N2C-OMT-SEVENTH",
+    "N2C-OMT-SYMBOLS",
+    "N2C-PC-SEVENTH"
+  ],
+  "relatedRules": {
+    "parent": "/chords/seventh",
+    "hub": "/chords",
+    "guide": "/guide/piano-chords"
+  }
+}

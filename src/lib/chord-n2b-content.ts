@@ -61,6 +61,7 @@ function parsedNote(value:string) {
 }
 const empty = (heading:string):Block['content'] => ({heading,paragraphs:[],steps:[],table:null,links:[]});
 const frequency = (midi:number) => 440*2**((midi-69)/12);
+const correctedThreeNoteDescription = (value:string) => value.replace('See keyboard positions, three inversions, sound and a printable reference.','See three keyboard positions, sound and a printable reference.');
 
 const detailSet = new Set<string>(N2B_DETAIL_ROUTES);
 const rawDetails = new Map<N2BChordDetailRoute,RawDetail>();
@@ -80,7 +81,7 @@ export function getRawN2BDetails(){return N2B_DETAIL_ROUTES.map(url=>rawDetails.
 function validateRaw(raw:RawDetail){
   const definition=resolveThreeNoteDefinition(raw.subtype);
   if(raw.schemaVersion!=='N2B-1.0'||raw.releaseStatus!=='publish_in_N2B'||raw.family!=='triad'||raw.expectedNoteCount!==3)throw new Error(`Blocked N2B detail: ${raw.url}`);
-  // N2B source files use "triad" as a broad three-note container. The accepted N2A model keeps sus2/sus4 in the suspended family.
+  // N2B source files use "triad" as the accepted three-note family; subtype carries dim, aug, sus2 or sus4 semantics.
   if(raw.categoryRoute!==definition.categoryRoute||!same(raw.definition.formulaDegrees.map(normalizeDegree),definition.formulaDegrees)||!same(raw.definition.semitonesFromRoot,definition.semitonesFromRoot))throw new Error(`N2B family definition mismatch: ${raw.url}`);
   const root=parsedNote(raw.rootSpelling).pitchClass;
   if(raw.definition.toneSpellings.length!==3||!same(raw.definition.toneSpellings.map(note=>pc(parsedNote(note).pitchClass-root)),definition.semitonesFromRoot))throw new Error(`N2B written definition mismatch: ${raw.url}`);
@@ -133,7 +134,7 @@ export function getN2BChordDetail(url:N2BChordDetailRoute):ChordDetailModel{
   blocks.push({block_id:`${slug}-print`,content:empty('Print this chord reference')});
   blocks.push({block_id:`${slug}-related`,content:{...empty('Related chord references'),links:[...related.values()]}});
   const byId=Object.fromEntries(blocks.map(block=>[block.block_id,block]));
-  return finalizeChordDetailModel({metadata:{title:raw.seo.title,description:raw.seo.description,canonical_path:url},data,blocks,byId,answer:raw.content.directAnswer,introduction:[],fingeringExamples:[],sources:sourcesFor(raw),practice,searchSections:blocks.filter(block=>block.block_id!==`${slug}-intro`).map(block=>({id:block.block_id,heading:block.content.heading,text:JSON.stringify(block.content)})),tocItems:[{id:data.toolId,label:'Chord & positions'},...blocks.filter(block=>![`${slug}-intro`,data.toolId].includes(block.block_id)).map(block=>({id:block.block_id,label:block.content.heading}))]});
+  return finalizeChordDetailModel({metadata:{title:raw.seo.title,description:correctedThreeNoteDescription(raw.seo.description),canonical_path:url},data,blocks,byId,answer:raw.content.directAnswer,introduction:[],fingeringExamples:[],sources:sourcesFor(raw),practice,searchSections:blocks.filter(block=>block.block_id!==`${slug}-intro`).map(block=>({id:block.block_id,heading:block.content.heading,text:JSON.stringify(block.content)})),tocItems:[{id:data.toolId,label:'Chord & positions'},...blocks.filter(block=>![`${slug}-intro`,data.toolId].includes(block.block_id)).map(block=>({id:block.block_id,label:block.content.heading}))]});
 }
 
 function categoryItem(raw:RawDetail):CenterItem{

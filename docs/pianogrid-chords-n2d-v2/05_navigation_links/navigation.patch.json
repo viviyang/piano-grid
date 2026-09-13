@@ -1,0 +1,16 @@
+{
+  "operation": "add one item to existing More Chords group without replacing header implementation",
+  "item": {
+    "label": "Add Chords",
+    "href": "/chords/add"
+  },
+  "activation": "after 25 pages pass local release gates",
+  "keepExistingItems": true,
+  "deferred": [
+    "/chords/extended",
+    "/chords/altered"
+  ],
+  "hubPolicy": "retain existing 25 heavy triad cards; add a clear link to /chords/add, not 24 extra heavy cards",
+  "finderPolicy": "do not add add9 matching; do not advertise Finder as able to recognize all newly published types",
+  "scopeCopyPatch": "Where an existing tool claim is broader than its actual catalog, clarify coverage instead of silently changing recognition logic."
+}

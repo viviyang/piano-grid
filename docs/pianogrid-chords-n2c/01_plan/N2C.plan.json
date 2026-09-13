@@ -1,0 +1,31 @@
+{
+  "batch": "N2C",
+  "prerequisite": "N2B pushed; N2A family architecture stable",
+  "newCategory": [
+    "/chords/seventh"
+  ],
+  "newDetailCount": 48,
+  "newUrlCount": 49,
+  "detailsBySubtype": {
+    "dominant7": 12,
+    "major7": 12,
+    "minor7": 12,
+    "halfDiminished7": 12
+  },
+  "expectedPublicSiteUrlsIfBaseline97Unchanged": 146,
+  "expectedStaticOutputsIfFrameworkOverheadRemains5": 151,
+  "doNotImplement": [
+    "/chords/add",
+    "/chords/extended",
+    "/chords/altered"
+  ],
+  "navigationAfterPublish": {
+    "More Chords": [
+      "/chords/diminished",
+      "/chords/augmented",
+      "/chords/suspended",
+      "/chords/seventh"
+    ]
+  },
+  "boundary": "Do not automatically widen Finder, By-key or Progressions to seventh chords without dedicated family-aware logic and regression coverage."
+}

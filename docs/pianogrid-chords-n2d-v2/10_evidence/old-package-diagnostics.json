@@ -1,0 +1,49 @@
+{
+  "N2B": {
+    "source_file": "PianoGrid_Chords_N2B_Pack_2026-09-12.zip",
+    "sha256": "377548daa1cce6687de6f9574a4e9b74d1aa6f42d99cc5c248e52a4f44400373",
+    "detail_file_count": 48,
+    "metadata_three_inversions_phrase_count": 48,
+    "assessment": "Original source describes three positions as three inversions. Actual repo may already use corrected copy; inspect before changing."
+  },
+  "N2C": {
+    "source_file": "PianoGrid_Chords_N2C_Seventh_Pack_2026-09-12.zip",
+    "sha256": "7bc7c9fa921f2b815eea01e3143c7aaa2e312d5a6b72a63689b42112b939a8f3",
+    "detail_file_count": 48,
+    "bass_degree_example": {
+      "source_file": "03_details/c-m7-flat5.page.json",
+      "formula": [
+        "1",
+        "♭3",
+        "♭5",
+        "♭7"
+      ],
+      "position_values": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "assessment": "Ambiguous ordinal-versus-altered-degree semantics in supplied source. Repository may have normalized this; do not infer an on-site error."
+    }
+  },
+  "N2D": {
+    "source_file": "PianoGrid_Chords_N2D_Add_Pack_2026-09-12.zip",
+    "sha256": "1b96922871a9866ca20a7285794eec08a0779118d55bb79639ffcaf576054955",
+    "detail_file_count": 24,
+    "public_url_count": 25,
+    "maximum_midi_in_old_examples": 80,
+    "missing_realizedDegrees_count": 24,
+    "practice_modes": [
+      "exactRealization"
+    ],
+    "validator_diagnostic": {
+      "baseline_exit": 0,
+      "baseline_stdout": "PASS {'add9': 12, 'minorAdd9': 12} total 24",
+      "mutation": "Cadd9 realization E4/64 -> F4/65; sync keyboard/audio/print/practice but leave chord definition C/E/G/D intact",
+      "mutated_exit": 0,
+      "mutated_stdout": "PASS {'add9': 12, 'minorAdd9': 12} total 24",
+      "conclusion": "The supplied old package validator misses a definition-to-realization mismatch. This does not establish a defect in the user repository, which was not inspected."
+    }
+  }
+}

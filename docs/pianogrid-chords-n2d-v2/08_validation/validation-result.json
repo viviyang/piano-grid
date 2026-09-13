@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope": "authoring package only; application not run",
+  "detailDefinitions": 24,
+  "explicitRealizations": 48,
+  "plannedPublicUrls": 25,
+  "practiceCases": 384,
+  "rejectedSeededErrors": 12,
+  "checksExecutedIncludingNegativeRuns": 5013,
+  "mutationResults": [
+    {
+      "id": "definition_realization_mismatch",
+      "rejected": true,
+      "message": "c-add9:ninth-above: definition/realization membership"
+    },
+    {
+      "id": "enharmonic_wrong_diatonic_letter",
+      "rejected": true,
+      "message": "c-add9: golden spelling"
+    },
+    {
+      "id": "forbidden_seventh_annotation",
+      "rejected": true,
+      "message": "c-add9: forbidden seventh"
+    },
+    {
+      "id": "missing_realized_degree",
+      "rejected": true,
+      "message": "c-add9:ninth-above: sizes"
+    },
+    {
+      "id": "clipped_ninth",
+      "rejected": true,
+      "message": "c-add9:ninth-above: keyboard clipping"
+    },
+    {
+      "id": "wrong_bass",
+      "rejected": true,
+      "message": "c-add9:ninth-above: bass"
+    },
+    {
+      "id": "sound_mode_mixup",
+      "rejected": true,
+      "message": "c-add9:ninth-above:together: onset"
+    },
+    {
+      "id": "print_desynchronization",
+      "rejected": true,
+      "message": "c-add9:ninth-above: print"
+    },
+    {
+      "id": "false_teacher_badge",
+      "rejected": true,
+      "message": "c-add9:ninth-above: teacher status"
+    },
+    {
+      "id": "universal_exact_task",
+      "rejected": true,
+      "message": "c-add9: tone octave handling"
+    },
+    {
+      "id": "wrong_example_register",
+      "rejected": true,
+      "message": "c-add9:added-note-inside: degree ordering"
+    },
+    {
+      "id": "unknown_source",
+      "rejected": true,
+      "message": "c-add9: source reference"
+    }
+  ],
+  "repositoryBuild": "NOT_RUN",
+  "liveDeployment": "NOT_VERIFIED",
+  "humanAudioPrintScreenReaderTeacherReview": "NOT_PERFORMED"
+}

@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PianoGrid N2D v2 authoring detail contract",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "url",
+    "family",
+    "subtype",
+    "rootSpelling",
+    "definition",
+    "positionPolicy",
+    "realizations",
+    "practice",
+    "content",
+    "seo",
+    "assets",
+    "sourceIds",
+    "evidence"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "N2D-2.0"
+    },
+    "id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^/chords/[a-z0-9-]+$"
+    },
+    "family": {
+      "const": "add"
+    },
+    "subtype": {
+      "enum": [
+        "add9",
+        "minorAdd9"
+      ]
+    },
+    "rootSpelling": {
+      "type": "string",
+      "pattern": "^[A-G](♯|♭|𝄪|𝄫)?$"
+    },
+    "definition": {
+      "type": "object",
+      "required": [
+        "expectedUniquePitchClassCount",
+        "formulaDegrees",
+        "components",
+        "requiredDegrees",
+        "optionalDegrees",
+        "forbiddenDegrees"
+      ],
+      "properties": {
+        "expectedUniquePitchClassCount": {
+          "const": 4
+        },
+        "formulaDegrees": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "degree",
+              "spelling",
+              "pitchClass",
+              "semitonesMod12"
+            ],
+            "properties": {
+              "degree": {
+                "type": "string"
+              },
+              "spelling": {
+                "type": "string",
+                "pattern": "^[A-G](♯|♭|𝄪|𝄫)?$"
+              },
+              "pitchClass": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              },
+              "semitonesMod12": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              }
+            }
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    },
+    "realizations": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "bass",
+          "notesLowToHigh",
+          "midiLowToHigh",
+          "realizedDegrees",
+          "intervalsFromBassSemitones",
+          "omittedDegrees",
+          "doubledDegrees",
+          "keyboard",
+          "playback",
+          "print",
+          "provenance",
+          "fingering"
+        ],
+        "properties": {
+          "notesLowToHigh": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-G](♯|♭|𝄪|𝄫)?-?[0-9]+$"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "midiLowToHigh": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 21,
+              "maximum": 108
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "realizedDegrees": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "omittedDegrees": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "doubledDegrees": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    "practice": {
+      "type": "object",
+      "required": [
+        "defaultMode",
+        "modes"
+      ],
+      "properties": {
+        "defaultMode": {
+          "const": "chordTones"
+        },
+        "modes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "required": [
+        "title",
+        "description",
+        "h1",
+        "canonical",
+        "mainKeyword",
+        "keywordVolume"
+      ],
+      "properties": {
+        "keywordVolume": {
+          "type": "null"
+        },
+        "canonical": {
+          "type": "string",
+          "pattern": "^https://pianogrid\\.com/chords/"
+        }
+      }
+    }
+  }
+}

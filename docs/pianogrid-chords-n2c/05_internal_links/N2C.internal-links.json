@@ -1,0 +1,1858 @@
+[
+  {
+    "from": "/chords",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "family_category",
+    "placement": "family browse",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords",
+    "anchor": "Open the full piano chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn how seventh chords are built",
+    "relation": "learn",
+    "placement": "after intro",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chord-progressions",
+    "anchor": "Practice chord progressions",
+    "relation": "application",
+    "placement": "after grid",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-7",
+    "anchor": "A Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-flat-7",
+    "anchor": "A♭ Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-flat-m7-flat5",
+    "anchor": "A♭ Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-flat-m7",
+    "anchor": "A♭ Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-flat-maj7",
+    "anchor": "A♭ Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-m7-flat5",
+    "anchor": "A Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-m7",
+    "anchor": "A Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/a-maj7",
+    "anchor": "A Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-7",
+    "anchor": "B Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-flat-7",
+    "anchor": "B♭ Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-flat-m7-flat5",
+    "anchor": "B♭ Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-flat-m7",
+    "anchor": "B♭ Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-flat-maj7",
+    "anchor": "B♭ Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-m7-flat5",
+    "anchor": "B Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-m7",
+    "anchor": "B Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/b-maj7",
+    "anchor": "B Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/c-7",
+    "anchor": "C Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/c-m7-flat5",
+    "anchor": "C Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/c-m7",
+    "anchor": "C Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/c-maj7",
+    "anchor": "C Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-7",
+    "anchor": "D Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-flat-7",
+    "anchor": "D♭ Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-flat-m7-flat5",
+    "anchor": "D♭ Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-flat-m7",
+    "anchor": "D♭ Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-flat-maj7",
+    "anchor": "D♭ Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-m7-flat5",
+    "anchor": "D Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-m7",
+    "anchor": "D Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/d-maj7",
+    "anchor": "D Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-7",
+    "anchor": "E Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-flat-7",
+    "anchor": "E♭ Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-flat-m7-flat5",
+    "anchor": "E♭ Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-flat-m7",
+    "anchor": "E♭ Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-flat-maj7",
+    "anchor": "E♭ Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-m7-flat5",
+    "anchor": "E Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-m7",
+    "anchor": "E Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/e-maj7",
+    "anchor": "E Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-7",
+    "anchor": "F Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-m7-flat5",
+    "anchor": "F Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-m7",
+    "anchor": "F Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-maj7",
+    "anchor": "F Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-sharp-7",
+    "anchor": "F♯ Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-sharp-m7-flat5",
+    "anchor": "F♯ Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-sharp-m7",
+    "anchor": "F♯ Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/f-sharp-maj7",
+    "anchor": "F♯ Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/g-7",
+    "anchor": "G Dominant Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/g-m7-flat5",
+    "anchor": "G Half-Diminished Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7-flat5",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7-flat5",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7-flat5",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/g-m7",
+    "anchor": "G Minor Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/seventh",
+    "to": "/chords/g-maj7",
+    "anchor": "G Major Seventh",
+    "relation": "category_detail",
+    "placement": "matching card",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-maj7",
+    "to": "/chords/seventh",
+    "anchor": "Browse seventh chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb/related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-maj7",
+    "to": "/chords",
+    "anchor": "Browse all chords",
+    "relation": "hub",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-maj7",
+    "to": "/guide/piano-chords",
+    "anchor": "Learn chord construction",
+    "relation": "learn",
+    "placement": "related",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-7",
+    "to": "/chords/c-maj7",
+    "anchor": "Compare C seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-maj7",
+    "to": "/chords/c-m7",
+    "anchor": "Compare C seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/c-m7",
+    "to": "/chords/c-m7-flat5",
+    "anchor": "Compare C seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-7",
+    "to": "/chords/d-flat-maj7",
+    "anchor": "Compare D♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-maj7",
+    "to": "/chords/d-flat-m7",
+    "anchor": "Compare D♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-flat-m7",
+    "to": "/chords/d-flat-m7-flat5",
+    "anchor": "Compare D♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-7",
+    "to": "/chords/d-maj7",
+    "anchor": "Compare D seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-maj7",
+    "to": "/chords/d-m7",
+    "anchor": "Compare D seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/d-m7",
+    "to": "/chords/d-m7-flat5",
+    "anchor": "Compare D seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-7",
+    "to": "/chords/e-flat-maj7",
+    "anchor": "Compare E♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-maj7",
+    "to": "/chords/e-flat-m7",
+    "anchor": "Compare E♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-flat-m7",
+    "to": "/chords/e-flat-m7-flat5",
+    "anchor": "Compare E♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-7",
+    "to": "/chords/e-maj7",
+    "anchor": "Compare E seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-maj7",
+    "to": "/chords/e-m7",
+    "anchor": "Compare E seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/e-m7",
+    "to": "/chords/e-m7-flat5",
+    "anchor": "Compare E seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-7",
+    "to": "/chords/f-maj7",
+    "anchor": "Compare F seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-maj7",
+    "to": "/chords/f-m7",
+    "anchor": "Compare F seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-m7",
+    "to": "/chords/f-m7-flat5",
+    "anchor": "Compare F seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-7",
+    "to": "/chords/f-sharp-maj7",
+    "anchor": "Compare F♯ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-maj7",
+    "to": "/chords/f-sharp-m7",
+    "anchor": "Compare F♯ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/f-sharp-m7",
+    "to": "/chords/f-sharp-m7-flat5",
+    "anchor": "Compare F♯ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-7",
+    "to": "/chords/g-maj7",
+    "anchor": "Compare G seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-maj7",
+    "to": "/chords/g-m7",
+    "anchor": "Compare G seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/g-m7",
+    "to": "/chords/g-m7-flat5",
+    "anchor": "Compare G seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-7",
+    "to": "/chords/a-flat-maj7",
+    "anchor": "Compare A♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-maj7",
+    "to": "/chords/a-flat-m7",
+    "anchor": "Compare A♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-flat-m7",
+    "to": "/chords/a-flat-m7-flat5",
+    "anchor": "Compare A♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-7",
+    "to": "/chords/a-maj7",
+    "anchor": "Compare A seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-maj7",
+    "to": "/chords/a-m7",
+    "anchor": "Compare A seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/a-m7",
+    "to": "/chords/a-m7-flat5",
+    "anchor": "Compare A seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-7",
+    "to": "/chords/b-flat-maj7",
+    "anchor": "Compare B♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-maj7",
+    "to": "/chords/b-flat-m7",
+    "anchor": "Compare B♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-flat-m7",
+    "to": "/chords/b-flat-m7-flat5",
+    "anchor": "Compare B♭ seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-7",
+    "to": "/chords/b-maj7",
+    "anchor": "Compare B seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-maj7",
+    "to": "/chords/b-m7",
+    "anchor": "Compare B seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  },
+  {
+    "from": "/chords/b-m7",
+    "to": "/chords/b-m7-flat5",
+    "anchor": "Compare B seventh chord types",
+    "relation": "same_root_compare",
+    "placement": "comparison",
+    "activation": "both routes public"
+  }
+]

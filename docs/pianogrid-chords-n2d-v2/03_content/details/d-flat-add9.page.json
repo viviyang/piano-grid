@@ -1,0 +1,616 @@
+{
+  "schemaVersion": "N2D-2.0",
+  "id": "d-flat-add9",
+  "url": "/chords/d-flat-add9",
+  "categoryRoute": "/chords/add",
+  "releaseStatus": "ready_for_repository_integration_not_deployed",
+  "family": "add",
+  "subtype": "add9",
+  "rootSpelling": "D♭",
+  "name": "D-flat add9",
+  "symbol": "D♭add9",
+  "aliases": [
+    "D♭add9",
+    "D♭add2"
+  ],
+  "aliasPolicy": "Contextual notational variants only; do not make duplicate pages or universally rewrite symbols.",
+  "definition": {
+    "expectedUniquePitchClassCount": 4,
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "components": [
+      {
+        "degree": "1",
+        "spelling": "D♭",
+        "pitchClass": 1,
+        "semitonesMod12": 0
+      },
+      {
+        "degree": "3",
+        "spelling": "F",
+        "pitchClass": 5,
+        "semitonesMod12": 4
+      },
+      {
+        "degree": "5",
+        "spelling": "A♭",
+        "pitchClass": 8,
+        "semitonesMod12": 7
+      },
+      {
+        "degree": "9",
+        "spelling": "E♭",
+        "pitchClass": 3,
+        "semitonesMod12": 2
+      }
+    ],
+    "requiredDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "optionalDegrees": [],
+    "forbiddenDegrees": [
+      "7",
+      "♭7"
+    ],
+    "validationScope": "complete four-member add9/minorAdd9 references; not every possible performance omission"
+  },
+  "positionPolicy": {
+    "kind": "voicingExamples",
+    "exampleCount": 2,
+    "defaultRealizationId": "ninth-above",
+    "enumerateInversions": false,
+    "reason": "Two explicitly authored root-bass spacing examples; this is not a claim that added-note chords cannot be inverted."
+  },
+  "realizations": [
+    {
+      "id": "ninth-above",
+      "label": "Added note higher (9th layout)",
+      "chordSymbol": "D♭add9",
+      "notationHint": "D♭add9",
+      "bass": {
+        "spelling": "D♭3",
+        "midi": 49,
+        "degree": "1"
+      },
+      "notesLowToHigh": [
+        "D♭3",
+        "F3",
+        "A♭3",
+        "E♭4"
+      ],
+      "midiLowToHigh": [
+        49,
+        53,
+        56,
+        63
+      ],
+      "realizedDegrees": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "intervalsFromBassSemitones": [
+        0,
+        4,
+        7,
+        14
+      ],
+      "omittedDegrees": [],
+      "doubledDegrees": [],
+      "keyboard": {
+        "minimumMidi": 48,
+        "maximumMidi": 76,
+        "rangeLabel": "C3–E5",
+        "highlightMidi": [
+          49,
+          53,
+          56,
+          63
+        ],
+        "highlightLabels": [
+          "D♭3",
+          "F3",
+          "A♭3",
+          "E♭4"
+        ]
+      },
+      "playback": {
+        "tuningA4Hz": 440,
+        "timingOrigin": "editorial_demo_settings_not_music_identity",
+        "together": [
+          {
+            "midi": 49,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 53,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 56,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 63,
+            "onsetMs": 0,
+            "durationMs": 1400
+          }
+        ],
+        "ascending": [
+          {
+            "midi": 49,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 53,
+            "onsetMs": 600,
+            "durationMs": 1400
+          },
+          {
+            "midi": 56,
+            "onsetMs": 1200,
+            "durationMs": 1400
+          },
+          {
+            "midi": 63,
+            "onsetMs": 1800,
+            "durationMs": 1400
+          }
+        ],
+        "descending": [
+          {
+            "midi": 63,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 56,
+            "onsetMs": 600,
+            "durationMs": 1400
+          },
+          {
+            "midi": 53,
+            "onsetMs": 1200,
+            "durationMs": 1400
+          },
+          {
+            "midi": 49,
+            "onsetMs": 1800,
+            "durationMs": 1400
+          }
+        ]
+      },
+      "print": {
+        "pitches": [
+          "D♭3",
+          "F3",
+          "A♭3",
+          "E♭4"
+        ],
+        "midi": [
+          49,
+          53,
+          56,
+          63
+        ],
+        "formulaDegrees": [
+          "1",
+          "3",
+          "5",
+          "9"
+        ]
+      },
+      "provenance": {
+        "method": "formula-derived, register explicitly chosen for this reference example",
+        "formulaSourceIds": [
+          "OMT-ADDED-NOTES",
+          "PIANOCHORD-ADD"
+        ],
+        "automatedValidation": "see 08_validation/validation-result.json",
+        "teacherReviewed": false,
+        "sourceTranscription": false
+      },
+      "fingering": {
+        "status": "not_provided",
+        "left": null,
+        "right": null
+      }
+    },
+    {
+      "id": "added-note-inside",
+      "label": "Added note lower (2nd layout)",
+      "chordSymbol": "D♭add9",
+      "notationHint": "D♭add2",
+      "bass": {
+        "spelling": "D♭3",
+        "midi": 49,
+        "degree": "1"
+      },
+      "notesLowToHigh": [
+        "D♭3",
+        "E♭3",
+        "F3",
+        "A♭3"
+      ],
+      "midiLowToHigh": [
+        49,
+        51,
+        53,
+        56
+      ],
+      "realizedDegrees": [
+        "1",
+        "9",
+        "3",
+        "5"
+      ],
+      "intervalsFromBassSemitones": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "omittedDegrees": [],
+      "doubledDegrees": [],
+      "keyboard": {
+        "minimumMidi": 48,
+        "maximumMidi": 76,
+        "rangeLabel": "C3–E5",
+        "highlightMidi": [
+          49,
+          51,
+          53,
+          56
+        ],
+        "highlightLabels": [
+          "D♭3",
+          "E♭3",
+          "F3",
+          "A♭3"
+        ]
+      },
+      "playback": {
+        "tuningA4Hz": 440,
+        "timingOrigin": "editorial_demo_settings_not_music_identity",
+        "together": [
+          {
+            "midi": 49,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 51,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 53,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 56,
+            "onsetMs": 0,
+            "durationMs": 1400
+          }
+        ],
+        "ascending": [
+          {
+            "midi": 49,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 51,
+            "onsetMs": 600,
+            "durationMs": 1400
+          },
+          {
+            "midi": 53,
+            "onsetMs": 1200,
+            "durationMs": 1400
+          },
+          {
+            "midi": 56,
+            "onsetMs": 1800,
+            "durationMs": 1400
+          }
+        ],
+        "descending": [
+          {
+            "midi": 56,
+            "onsetMs": 0,
+            "durationMs": 1400
+          },
+          {
+            "midi": 53,
+            "onsetMs": 600,
+            "durationMs": 1400
+          },
+          {
+            "midi": 51,
+            "onsetMs": 1200,
+            "durationMs": 1400
+          },
+          {
+            "midi": 49,
+            "onsetMs": 1800,
+            "durationMs": 1400
+          }
+        ]
+      },
+      "print": {
+        "pitches": [
+          "D♭3",
+          "E♭3",
+          "F3",
+          "A♭3"
+        ],
+        "midi": [
+          49,
+          51,
+          53,
+          56
+        ],
+        "formulaDegrees": [
+          "1",
+          "9",
+          "3",
+          "5"
+        ]
+      },
+      "provenance": {
+        "method": "formula-derived, register explicitly chosen for this reference example",
+        "formulaSourceIds": [
+          "OMT-ADDED-NOTES",
+          "PIANOCHORD-ADD"
+        ],
+        "automatedValidation": "see 08_validation/validation-result.json",
+        "teacherReviewed": false,
+        "sourceTranscription": false
+      },
+      "fingering": {
+        "status": "not_provided",
+        "left": null,
+        "right": null
+      }
+    }
+  ],
+  "practice": {
+    "defaultMode": "chordTones",
+    "modes": [
+      {
+        "id": "chordTones",
+        "label": "Build the chord tones",
+        "matchKind": "pitchClassSet",
+        "expectedPitchClasses": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "ignoreOctave": true,
+        "allowOctaveDoublings": true,
+        "requiredUniquePitchClassCount": 4,
+        "instruction": "Choose D♭, F, A♭, E♭, in any octave."
+      },
+      {
+        "id": "matchExample",
+        "label": "Match this example",
+        "matchKind": "exactMidiSet",
+        "target": "activeRealization",
+        "ignoreOctave": false,
+        "allowOctaveDoublings": false,
+        "samePitchClassesWrongRegisterFeedback": "The chord tones are correct. Now match the octaves shown in this example.",
+        "instruction": "Match all four displayed pitches, including their octaves."
+      }
+    ],
+    "commonActions": [
+      "Check",
+      "Clear",
+      "Show answer"
+    ],
+    "modeOrExampleChange": "stop playback and clear previous answer state",
+    "scoreScope": "on-page note selections only"
+  },
+  "content": {
+    "directAnswer": "D♭add9 contains D♭, F, A♭, E♭. Use 1–3–5–9 and do not add a seventh.",
+    "blocks": [
+      {
+        "id": "notes",
+        "heading": "Notes in D♭add9",
+        "kind": "definition",
+        "paragraphs": [
+          "Use D♭, F, A♭, E♭. The formula is 1–3–5–9. Keep the F third: removing it changes the note collection to a suspended shape.",
+          "The list above names the chord members. For a specific register, read the octave numbers on the selected example below."
+        ],
+        "sourceIds": [
+          "OMT-ADDED-NOTES",
+          "PIANOCHORD-ADD"
+        ]
+      },
+      {
+        "id": "voicings",
+        "heading": "Compare two added-note layouts",
+        "kind": "realizationComparison",
+        "paragraphs": [
+          "Start with D♭3 – F3 – A♭3 – E♭4. Then switch to D♭3 – E♭3 – F3 – A♭3. The E♭ moves down one octave while the other three notes stay in place.",
+          "Both examples keep D♭ as the lowest note. This comparison changes spacing, not the bass. It is a pair of reference examples, not a complete inversion catalogue."
+        ],
+        "sourceIds": [],
+        "evidenceKind": "computed_from_explicit_examples"
+      },
+      {
+        "id": "symbol-conventions",
+        "heading": "Add9 and add2: read the context",
+        "kind": "notation",
+        "paragraphs": [
+          "Here, the higher layout is labelled D♭add9; the inside-the-triad layout is shown with the D♭add2 notation hint. This follows the textbook illustration, not a claim that every player uses the labels identically.",
+          "Musicca also lists add2 as an alternative add9 label. For an exact arrangement, use the written pitches or score. For a note-identification exercise, separate the chord members from their octaves."
+        ],
+        "sourceIds": [
+          "OMT-ADDED-NOTES",
+          "MUSICCA-CADD9"
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "D♭add9, a ninth chord, and sus2",
+        "kind": "comparisonTable",
+        "paragraphs": [
+          "This page's complete added-note examples include the third and no seventh. A ninth-chord formula includes a seventh; a sus2 collection omits the third. Compare the note lists, not just the number 9 in a symbol."
+        ],
+        "sourceIds": [
+          "OMT-ADDED-NOTES",
+          "PIANOCHORD-ADD"
+        ]
+      },
+      {
+        "id": "spelling",
+        "heading": "Read the keyboard labels",
+        "kind": "notation",
+        "paragraphs": [
+          "Read D♭, F, A♭, E♭ as four chord members. The E♭ is the added member; it is not a finger number or a new key signature.",
+          "Octave numbers such as C4 locate a register. They are separate from scale degrees and finger numbers."
+        ],
+        "sourceIds": [],
+        "evidenceKind": "formula_spelling_and_pitch_calculation"
+      },
+      {
+        "id": "practice",
+        "heading": "Check the notes, then the voicing",
+        "kind": "practice",
+        "paragraphs": [
+          "First choose the four note names in D♭add9, in any octave. Next select Match this example and reproduce the specific notes displayed. Correct chord tones in different octaves should receive a spacing hint, not a message that the chord itself is wrong.",
+          "These browser exercises check your selection on this page, not a performance on an acoustic piano. Fingerings are not supplied; the diagrams are not a prescribed one-hand stretch."
+        ],
+        "sourceIds": [],
+        "evidenceKind": "product_instruction"
+      },
+      {
+        "id": "print",
+        "heading": "Print the two reference layouts",
+        "kind": "assets",
+        "paragraphs": [
+          "The reference brings together the formula, both keyboard layouts and their octave labels. Use it beside your keyboard when comparing the two examples."
+        ],
+        "sourceIds": [],
+        "evidenceKind": "planned_asset_contract"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which notes make D♭add9?",
+        "answer": "D♭, F, A♭, E♭; the formula is 1–3–5–9."
+      },
+      {
+        "question": "Does D♭add9 include a seventh?",
+        "answer": "No seventh is included in the complete added-note examples on this page."
+      },
+      {
+        "question": "Must the ninth always stay on top?",
+        "answer": "The higher-note layout is our first example, not a universal position rule. Symbols may be used differently; an exact written voicing specifies the register."
+      },
+      {
+        "question": "Why does a correct note set sometimes get a spacing hint?",
+        "answer": "Build the chord tones checks note names without octaves. Match this example checks the displayed pitches, so the two exercises have different targets."
+      },
+      {
+        "question": "Are these the only possible voicings?",
+        "answer": "No. These two examples both have the root in the bass. Other arrangements are possible but are not catalogued here."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "symbol": "D♭add9",
+        "tones": [
+          "D♭",
+          "F",
+          "A♭",
+          "E♭"
+        ],
+        "seventhIncluded": false,
+        "thirdIncluded": true,
+        "status": "current_page_definition"
+      },
+      {
+        "symbol": "D♭9",
+        "formula": [
+          "1",
+          "3",
+          "5",
+          "♭7",
+          "9"
+        ],
+        "seventhIncluded": true,
+        "thirdIncluded": true,
+        "route": null,
+        "status": "theory_example_no_published_extended_route"
+      },
+      {
+        "symbol": "D♭sus2",
+        "formula": [
+          "1",
+          "2",
+          "5"
+        ],
+        "seventhIncluded": false,
+        "thirdIncluded": false,
+        "route": "/chords/d-flat-sus2",
+        "status": "conditional_existing_route"
+      }
+    ]
+  },
+  "seo": {
+    "title": "D♭add9 Piano Chord: Notes, Voicings & Practice",
+    "description": "Find D♭add9 notes (D♭, F, A♭, E♭), compare two keyboard layouts, hear each one and practise chord tones or an exact voicing.",
+    "h1": "D♭add9 Piano Chord",
+    "canonical": "https://pianogrid.com/chords/d-flat-add9",
+    "mainKeyword": "d-flat add9 piano chord",
+    "secondaryKeywords": [
+      "d-flat add9 chord",
+      "D♭add9 piano",
+      "d-flat add2 piano chord"
+    ],
+    "keywordVolume": null,
+    "keywordEvidence": "intent-derived authoring labels; no contemporary volume/SERP validation",
+    "indexPolicy": "index,follow only after repository publication gate"
+  },
+  "assets": {
+    "pdf": "/reference/assets/chord-d-flat-add9.pdf",
+    "svg": "/reference/assets/chord-d-flat-add9.svg",
+    "status": "to_generate_and_validate_in_repository",
+    "realizationIds": [
+      "ninth-above",
+      "added-note-inside"
+    ]
+  },
+  "fingering": {
+    "status": "not_provided",
+    "sourceIds": []
+  },
+  "sourceIds": [
+    "OMT-ADDED-NOTES",
+    "MUSICCA-CADD9",
+    "PIANOCHORD-ADD"
+  ],
+  "evidence": {
+    "formulaRules": "source_checked_this_run",
+    "notesAndRealizations": "formula_derived_and_automatically_checked_in_package",
+    "teacherReview": "not_performed",
+    "applicationTests": "not_run_in_user_repository",
+    "publishedStatus": "not_verified"
+  }
+}

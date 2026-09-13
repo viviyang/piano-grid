@@ -1,0 +1,1334 @@
+[
+  {
+    "from": "/chords",
+    "to": "/chords/add",
+    "anchor": "Browse major and minor add9 chords",
+    "relation": "family_index",
+    "placement": "family_navigation",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/guide/piano-chords",
+    "to": "/chords/add",
+    "anchor": "Compare added-note chords",
+    "relation": "learning_next_step",
+    "placement": "added_notes_section",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords",
+    "anchor": "Return to the basic chord chart",
+    "relation": "parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/guide/piano-chords",
+    "anchor": "Read the piano chord guide",
+    "relation": "learning",
+    "placement": "related",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/c-add9",
+    "anchor": "Cadd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-add9",
+    "to": "/chords/c-madd9",
+    "anchor": "Compare Cadd9 with Cm(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-add9",
+    "to": "/chords/c-major",
+    "anchor": "Start with the C major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-add9",
+    "to": "/chords/c-sus2",
+    "anchor": "Compare with Csus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-add9",
+    "to": "/chords/c-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/d-flat-add9",
+    "anchor": "D♭add9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-add9",
+    "to": "/chords/d-flat-madd9",
+    "anchor": "Compare D♭add9 with D♭m(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-add9",
+    "to": "/chords/d-flat-major",
+    "anchor": "Start with the D♭ major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-add9",
+    "to": "/chords/d-flat-sus2",
+    "anchor": "Compare with D♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-add9",
+    "to": "/chords/d-flat-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/d-add9",
+    "anchor": "Dadd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-add9",
+    "to": "/chords/d-madd9",
+    "anchor": "Compare Dadd9 with Dm(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-add9",
+    "to": "/chords/d-major",
+    "anchor": "Start with the D major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-add9",
+    "to": "/chords/d-sus2",
+    "anchor": "Compare with Dsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-add9",
+    "to": "/chords/d-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/e-flat-add9",
+    "anchor": "E♭add9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-add9",
+    "to": "/chords/e-flat-madd9",
+    "anchor": "Compare E♭add9 with E♭m(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-add9",
+    "to": "/chords/e-flat-major",
+    "anchor": "Start with the E♭ major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-add9",
+    "to": "/chords/e-flat-sus2",
+    "anchor": "Compare with E♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-add9",
+    "to": "/chords/e-flat-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/e-add9",
+    "anchor": "Eadd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-add9",
+    "to": "/chords/e-madd9",
+    "anchor": "Compare Eadd9 with Em(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-add9",
+    "to": "/chords/e-major",
+    "anchor": "Start with the E major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-add9",
+    "to": "/chords/e-sus2",
+    "anchor": "Compare with Esus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-add9",
+    "to": "/chords/e-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/f-add9",
+    "anchor": "Fadd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-add9",
+    "to": "/chords/f-madd9",
+    "anchor": "Compare Fadd9 with Fm(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-add9",
+    "to": "/chords/f-major",
+    "anchor": "Start with the F major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-add9",
+    "to": "/chords/f-sus2",
+    "anchor": "Compare with Fsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-add9",
+    "to": "/chords/f-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/f-sharp-add9",
+    "anchor": "F♯add9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-add9",
+    "to": "/chords/f-sharp-madd9",
+    "anchor": "Compare F♯add9 with F♯m(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-add9",
+    "to": "/chords/f-sharp-major",
+    "anchor": "Start with the F♯ major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-add9",
+    "to": "/chords/f-sharp-sus2",
+    "anchor": "Compare with F♯sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-add9",
+    "to": "/chords/f-sharp-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/g-add9",
+    "anchor": "Gadd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-add9",
+    "to": "/chords/g-madd9",
+    "anchor": "Compare Gadd9 with Gm(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-add9",
+    "to": "/chords/g-major",
+    "anchor": "Start with the G major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-add9",
+    "to": "/chords/g-sus2",
+    "anchor": "Compare with Gsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-add9",
+    "to": "/chords/g-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/a-flat-add9",
+    "anchor": "A♭add9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-add9",
+    "to": "/chords/a-flat-madd9",
+    "anchor": "Compare A♭add9 with A♭m(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-add9",
+    "to": "/chords/a-flat-major",
+    "anchor": "Start with the A♭ major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-add9",
+    "to": "/chords/a-flat-sus2",
+    "anchor": "Compare with A♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-add9",
+    "to": "/chords/a-flat-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/a-add9",
+    "anchor": "Aadd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-add9",
+    "to": "/chords/a-madd9",
+    "anchor": "Compare Aadd9 with Am(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-add9",
+    "to": "/chords/a-major",
+    "anchor": "Start with the A major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-add9",
+    "to": "/chords/a-sus2",
+    "anchor": "Compare with Asus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-add9",
+    "to": "/chords/a-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/b-flat-add9",
+    "anchor": "B♭add9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-add9",
+    "to": "/chords/b-flat-madd9",
+    "anchor": "Compare B♭add9 with B♭m(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-add9",
+    "to": "/chords/b-flat-major",
+    "anchor": "Start with the B♭ major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-add9",
+    "to": "/chords/b-flat-sus2",
+    "anchor": "Compare with B♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-add9",
+    "to": "/chords/b-flat-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/b-add9",
+    "anchor": "Badd9 notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-add9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-add9",
+    "to": "/chords/b-madd9",
+    "anchor": "Compare Badd9 with Bm(add9)",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-add9",
+    "to": "/chords/b-major",
+    "anchor": "Start with the B major triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-add9",
+    "to": "/chords/b-sus2",
+    "anchor": "Compare with Bsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-add9",
+    "to": "/chords/b-7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/c-madd9",
+    "anchor": "Cm(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-madd9",
+    "to": "/chords/c-add9",
+    "anchor": "Compare Cm(add9) with Cadd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-madd9",
+    "to": "/chords/c-minor",
+    "anchor": "Start with the C minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-madd9",
+    "to": "/chords/c-sus2",
+    "anchor": "Compare with Csus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/c-madd9",
+    "to": "/chords/c-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/d-flat-madd9",
+    "anchor": "D♭m(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-madd9",
+    "to": "/chords/d-flat-add9",
+    "anchor": "Compare D♭m(add9) with D♭add9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-madd9",
+    "to": "/chords/minor",
+    "anchor": "Browse minor triads (written spellings vary)",
+    "relation": "base_family",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-madd9",
+    "to": "/chords/d-flat-sus2",
+    "anchor": "Compare with D♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-flat-madd9",
+    "to": "/chords/d-flat-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/d-madd9",
+    "anchor": "Dm(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-madd9",
+    "to": "/chords/d-add9",
+    "anchor": "Compare Dm(add9) with Dadd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-madd9",
+    "to": "/chords/d-minor",
+    "anchor": "Start with the D minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-madd9",
+    "to": "/chords/d-sus2",
+    "anchor": "Compare with Dsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/d-madd9",
+    "to": "/chords/d-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/e-flat-madd9",
+    "anchor": "E♭m(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-madd9",
+    "to": "/chords/e-flat-add9",
+    "anchor": "Compare E♭m(add9) with E♭add9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-madd9",
+    "to": "/chords/e-flat-minor",
+    "anchor": "Start with the E♭ minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-madd9",
+    "to": "/chords/e-flat-sus2",
+    "anchor": "Compare with E♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-flat-madd9",
+    "to": "/chords/e-flat-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/e-madd9",
+    "anchor": "Em(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-madd9",
+    "to": "/chords/e-add9",
+    "anchor": "Compare Em(add9) with Eadd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-madd9",
+    "to": "/chords/e-minor",
+    "anchor": "Start with the E minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-madd9",
+    "to": "/chords/e-sus2",
+    "anchor": "Compare with Esus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/e-madd9",
+    "to": "/chords/e-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/f-madd9",
+    "anchor": "Fm(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-madd9",
+    "to": "/chords/f-add9",
+    "anchor": "Compare Fm(add9) with Fadd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-madd9",
+    "to": "/chords/f-minor",
+    "anchor": "Start with the F minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-madd9",
+    "to": "/chords/f-sus2",
+    "anchor": "Compare with Fsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-madd9",
+    "to": "/chords/f-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/f-sharp-madd9",
+    "anchor": "F♯m(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-madd9",
+    "to": "/chords/f-sharp-add9",
+    "anchor": "Compare F♯m(add9) with F♯add9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-madd9",
+    "to": "/chords/f-sharp-minor",
+    "anchor": "Start with the F♯ minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-madd9",
+    "to": "/chords/f-sharp-sus2",
+    "anchor": "Compare with F♯sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/f-sharp-madd9",
+    "to": "/chords/f-sharp-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/g-madd9",
+    "anchor": "Gm(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-madd9",
+    "to": "/chords/g-add9",
+    "anchor": "Compare Gm(add9) with Gadd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-madd9",
+    "to": "/chords/g-minor",
+    "anchor": "Start with the G minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-madd9",
+    "to": "/chords/g-sus2",
+    "anchor": "Compare with Gsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/g-madd9",
+    "to": "/chords/g-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/a-flat-madd9",
+    "anchor": "A♭m(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-madd9",
+    "to": "/chords/a-flat-add9",
+    "anchor": "Compare A♭m(add9) with A♭add9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-madd9",
+    "to": "/chords/minor",
+    "anchor": "Browse minor triads (written spellings vary)",
+    "relation": "base_family",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-madd9",
+    "to": "/chords/a-flat-sus2",
+    "anchor": "Compare with A♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-flat-madd9",
+    "to": "/chords/a-flat-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/a-madd9",
+    "anchor": "Am(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-madd9",
+    "to": "/chords/a-add9",
+    "anchor": "Compare Am(add9) with Aadd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-madd9",
+    "to": "/chords/a-minor",
+    "anchor": "Start with the A minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-madd9",
+    "to": "/chords/a-sus2",
+    "anchor": "Compare with Asus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/a-madd9",
+    "to": "/chords/a-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/b-flat-madd9",
+    "anchor": "B♭m(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-madd9",
+    "to": "/chords/b-flat-add9",
+    "anchor": "Compare B♭m(add9) with B♭add9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-madd9",
+    "to": "/chords/b-flat-minor",
+    "anchor": "Start with the B♭ minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-madd9",
+    "to": "/chords/b-flat-sus2",
+    "anchor": "Compare with B♭sus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-flat-madd9",
+    "to": "/chords/b-flat-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/add",
+    "to": "/chords/b-madd9",
+    "anchor": "Bm(add9) notes and voicings",
+    "relation": "category_detail",
+    "placement": "matching_card",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-madd9",
+    "to": "/chords/add",
+    "anchor": "Browse add9 and minor add9 chords",
+    "relation": "category_parent",
+    "placement": "breadcrumb",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-madd9",
+    "to": "/chords/b-add9",
+    "anchor": "Compare Bm(add9) with Badd9",
+    "relation": "same_root_third_change",
+    "placement": "comparison",
+    "requiredInTargetBatch": true,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-madd9",
+    "to": "/chords/b-minor",
+    "anchor": "Start with the B minor triad",
+    "relation": "base_triad",
+    "placement": "notes",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-madd9",
+    "to": "/chords/b-sus2",
+    "anchor": "Compare with Bsus2, which has no third",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  },
+  {
+    "from": "/chords/b-madd9",
+    "to": "/chords/b-m7",
+    "anchor": "Compare the seventh-chord notes",
+    "relation": "contrast",
+    "placement": "comparison",
+    "requiredInTargetBatch": false,
+    "renderRule": "target published in actual local registry; no dead links or placeholders"
+  }
+]

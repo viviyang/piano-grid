@@ -1,0 +1,23 @@
+{
+  "base": "http://127.0.0.1:3000",
+  "passed": 1,
+  "failed": 1,
+  "results": [
+    {
+      "name": "B2 browser execution completed",
+      "passed": false,
+      "actual": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/chords/a-minor\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3000/chords/a-minor\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano-chords-expansion-20260912\\scripts\\check-chord-b2.mjs:16:29"
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "notTested": [
+    "human listening",
+    "real mobile device",
+    "screen reader",
+    "physical printing"
+  ]
+}

@@ -1,0 +1,4898 @@
+[
+  {
+    "id": "a-add9__tones-empty",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "a-add9__tones-upper",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__tones-inner",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      59,
+      61,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__tones-other-octave",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      69,
+      73,
+      76,
+      83
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__tones-octave-doubling",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71,
+      69
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__tones-missing-added",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-add9__tones-extra-seventh",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71,
+      67
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-add9__tones-wrong-third",
+    "detailId": "a-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-add9__match-upper",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__match-reordered",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      71,
+      64,
+      61,
+      57
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__match-inner-vs-upper",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      59,
+      61,
+      64
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-add9__match-other-octave",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      69,
+      73,
+      76,
+      83
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-add9__match-missing",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-add9__match-extra-seventh",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71,
+      67
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-add9__match-inner",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      57,
+      59,
+      61,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-add9__match-upper-vs-inner",
+    "detailId": "a-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-flat-add9__tones-empty",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "a-flat-add9__tones-upper",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__tones-inner",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      58,
+      60,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__tones-other-octave",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      68,
+      72,
+      75,
+      82
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__tones-octave-doubling",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70,
+      68
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__tones-missing-added",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-add9__tones-extra-seventh",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-add9__tones-wrong-third",
+    "detailId": "a-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-add9__match-upper",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__match-reordered",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      70,
+      63,
+      60,
+      56
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__match-inner-vs-upper",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      58,
+      60,
+      63
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-flat-add9__match-other-octave",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      68,
+      72,
+      75,
+      82
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-flat-add9__match-missing",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-add9__match-extra-seventh",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-add9__match-inner",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      56,
+      58,
+      60,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-add9__match-upper-vs-inner",
+    "detailId": "a-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-flat-madd9__tones-empty",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "a-flat-madd9__tones-upper",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__tones-inner",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      58,
+      59,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__tones-other-octave",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      68,
+      71,
+      75,
+      82
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__tones-octave-doubling",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70,
+      68
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__tones-missing-added",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-madd9__tones-extra-seventh",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-madd9__tones-wrong-third",
+    "detailId": "a-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      60,
+      63,
+      70
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-madd9__match-upper",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__match-reordered",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      70,
+      63,
+      59,
+      56
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__match-inner-vs-upper",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      58,
+      59,
+      63
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-flat-madd9__match-other-octave",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      68,
+      71,
+      75,
+      82
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-flat-madd9__match-missing",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-madd9__match-extra-seventh",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-flat-madd9__match-inner",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      56,
+      58,
+      59,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-flat-madd9__match-upper-vs-inner",
+    "detailId": "a-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      56,
+      59,
+      63,
+      70
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-madd9__tones-empty",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "a-madd9__tones-upper",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__tones-inner",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      59,
+      60,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__tones-other-octave",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      69,
+      72,
+      76,
+      83
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__tones-octave-doubling",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71,
+      69
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__tones-missing-added",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-madd9__tones-extra-seventh",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71,
+      67
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-madd9__tones-wrong-third",
+    "detailId": "a-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      61,
+      64,
+      71
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-madd9__match-upper",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__match-reordered",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      71,
+      64,
+      60,
+      57
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__match-inner-vs-upper",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      59,
+      60,
+      64
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-madd9__match-other-octave",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      69,
+      72,
+      76,
+      83
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "a-madd9__match-missing",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-madd9__match-extra-seventh",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71,
+      67
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "a-madd9__match-inner",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      57,
+      59,
+      60,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "a-madd9__match-upper-vs-inner",
+    "detailId": "a-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      57,
+      60,
+      64,
+      71
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-add9__tones-empty",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "b-add9__tones-upper",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__tones-inner",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      61,
+      63,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__tones-other-octave",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      71,
+      75,
+      78,
+      85
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__tones-octave-doubling",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73,
+      71
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__tones-missing-added",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-add9__tones-extra-seventh",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73,
+      69
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-add9__tones-wrong-third",
+    "detailId": "b-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-add9__match-upper",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__match-reordered",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      73,
+      66,
+      63,
+      59
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__match-inner-vs-upper",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      61,
+      63,
+      66
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-add9__match-other-octave",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      71,
+      75,
+      78,
+      85
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-add9__match-missing",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-add9__match-extra-seventh",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73,
+      69
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-add9__match-inner",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      59,
+      61,
+      63,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-add9__match-upper-vs-inner",
+    "detailId": "b-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-flat-add9__tones-empty",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "b-flat-add9__tones-upper",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__tones-inner",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      60,
+      62,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__tones-other-octave",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      70,
+      74,
+      77,
+      84
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__tones-octave-doubling",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72,
+      70
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__tones-missing-added",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-add9__tones-extra-seventh",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72,
+      68
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-add9__tones-wrong-third",
+    "detailId": "b-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-add9__match-upper",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__match-reordered",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      72,
+      65,
+      62,
+      58
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__match-inner-vs-upper",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      60,
+      62,
+      65
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-flat-add9__match-other-octave",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      70,
+      74,
+      77,
+      84
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-flat-add9__match-missing",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-add9__match-extra-seventh",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72,
+      68
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-add9__match-inner",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      58,
+      60,
+      62,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-add9__match-upper-vs-inner",
+    "detailId": "b-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-flat-madd9__tones-empty",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "b-flat-madd9__tones-upper",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__tones-inner",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      60,
+      61,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__tones-other-octave",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      70,
+      73,
+      77,
+      84
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__tones-octave-doubling",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72,
+      70
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__tones-missing-added",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-madd9__tones-extra-seventh",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72,
+      68
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-madd9__tones-wrong-third",
+    "detailId": "b-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      62,
+      65,
+      72
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-madd9__match-upper",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__match-reordered",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      72,
+      65,
+      61,
+      58
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__match-inner-vs-upper",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      60,
+      61,
+      65
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-flat-madd9__match-other-octave",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      70,
+      73,
+      77,
+      84
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-flat-madd9__match-missing",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-madd9__match-extra-seventh",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72,
+      68
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-flat-madd9__match-inner",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      58,
+      60,
+      61,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-flat-madd9__match-upper-vs-inner",
+    "detailId": "b-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      58,
+      61,
+      65,
+      72
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-madd9__tones-empty",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "b-madd9__tones-upper",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__tones-inner",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      61,
+      62,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__tones-other-octave",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      71,
+      74,
+      78,
+      85
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__tones-octave-doubling",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73,
+      71
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__tones-missing-added",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-madd9__tones-extra-seventh",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73,
+      69
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-madd9__tones-wrong-third",
+    "detailId": "b-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      63,
+      66,
+      73
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-madd9__match-upper",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__match-reordered",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      73,
+      66,
+      62,
+      59
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__match-inner-vs-upper",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      61,
+      62,
+      66
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-madd9__match-other-octave",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      71,
+      74,
+      78,
+      85
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "b-madd9__match-missing",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-madd9__match-extra-seventh",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73,
+      69
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "b-madd9__match-inner",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      59,
+      61,
+      62,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "b-madd9__match-upper-vs-inner",
+    "detailId": "b-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      59,
+      62,
+      66,
+      73
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "c-add9__tones-empty",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "c-add9__tones-upper",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__tones-inner",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      50,
+      52,
+      55
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__tones-other-octave",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      60,
+      64,
+      67,
+      74
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__tones-octave-doubling",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62,
+      60
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__tones-missing-added",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-add9__tones-extra-seventh",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-add9__tones-wrong-third",
+    "detailId": "c-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-add9__match-upper",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__match-reordered",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      62,
+      55,
+      52,
+      48
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__match-inner-vs-upper",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      50,
+      52,
+      55
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "c-add9__match-other-octave",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      60,
+      64,
+      67,
+      74
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "c-add9__match-missing",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-add9__match-extra-seventh",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-add9__match-inner",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      48,
+      50,
+      52,
+      55
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-add9__match-upper-vs-inner",
+    "detailId": "c-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "c-madd9__tones-empty",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "c-madd9__tones-upper",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__tones-inner",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      50,
+      51,
+      55
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__tones-other-octave",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      60,
+      63,
+      67,
+      74
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__tones-octave-doubling",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62,
+      60
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__tones-missing-added",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-madd9__tones-extra-seventh",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-madd9__tones-wrong-third",
+    "detailId": "c-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-madd9__match-upper",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__match-reordered",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      62,
+      55,
+      51,
+      48
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__match-inner-vs-upper",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      50,
+      51,
+      55
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "c-madd9__match-other-octave",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      60,
+      63,
+      67,
+      74
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "c-madd9__match-missing",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-madd9__match-extra-seventh",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "c-madd9__match-inner",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      48,
+      50,
+      51,
+      55
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "c-madd9__match-upper-vs-inner",
+    "detailId": "c-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      48,
+      51,
+      55,
+      62
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-add9__tones-empty",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "d-add9__tones-upper",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__tones-inner",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      52,
+      54,
+      57
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__tones-other-octave",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      62,
+      66,
+      69,
+      76
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__tones-octave-doubling",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__tones-missing-added",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-add9__tones-extra-seventh",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-add9__tones-wrong-third",
+    "detailId": "d-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-add9__match-upper",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__match-reordered",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      64,
+      57,
+      54,
+      50
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__match-inner-vs-upper",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      52,
+      54,
+      57
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-add9__match-other-octave",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      62,
+      66,
+      69,
+      76
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-add9__match-missing",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-add9__match-extra-seventh",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-add9__match-inner",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      50,
+      52,
+      54,
+      57
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-add9__match-upper-vs-inner",
+    "detailId": "d-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-flat-add9__tones-empty",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "d-flat-add9__tones-upper",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__tones-inner",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      51,
+      53,
+      56
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__tones-other-octave",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      61,
+      65,
+      68,
+      75
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__tones-octave-doubling",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63,
+      61
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__tones-missing-added",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-add9__tones-extra-seventh",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-add9__tones-wrong-third",
+    "detailId": "d-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-add9__match-upper",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__match-reordered",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      63,
+      56,
+      53,
+      49
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__match-inner-vs-upper",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      51,
+      53,
+      56
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-flat-add9__match-other-octave",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      61,
+      65,
+      68,
+      75
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-flat-add9__match-missing",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-add9__match-extra-seventh",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-add9__match-inner",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      49,
+      51,
+      53,
+      56
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-add9__match-upper-vs-inner",
+    "detailId": "d-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-flat-madd9__tones-empty",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "d-flat-madd9__tones-upper",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__tones-inner",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      51,
+      52,
+      56
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__tones-other-octave",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      61,
+      64,
+      68,
+      75
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__tones-octave-doubling",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63,
+      61
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__tones-missing-added",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-madd9__tones-extra-seventh",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-madd9__tones-wrong-third",
+    "detailId": "d-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      53,
+      56,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-madd9__match-upper",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__match-reordered",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      63,
+      56,
+      52,
+      49
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__match-inner-vs-upper",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      51,
+      52,
+      56
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-flat-madd9__match-other-octave",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      61,
+      64,
+      68,
+      75
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-flat-madd9__match-missing",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-madd9__match-extra-seventh",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-flat-madd9__match-inner",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      49,
+      51,
+      52,
+      56
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-flat-madd9__match-upper-vs-inner",
+    "detailId": "d-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      49,
+      52,
+      56,
+      63
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-madd9__tones-empty",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "d-madd9__tones-upper",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__tones-inner",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      52,
+      53,
+      57
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__tones-other-octave",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      62,
+      65,
+      69,
+      76
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__tones-octave-doubling",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__tones-missing-added",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-madd9__tones-extra-seventh",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-madd9__tones-wrong-third",
+    "detailId": "d-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      54,
+      57,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-madd9__match-upper",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__match-reordered",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      64,
+      57,
+      53,
+      50
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__match-inner-vs-upper",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      52,
+      53,
+      57
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-madd9__match-other-octave",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      62,
+      65,
+      69,
+      76
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "d-madd9__match-missing",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-madd9__match-extra-seventh",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "d-madd9__match-inner",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      50,
+      52,
+      53,
+      57
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "d-madd9__match-upper-vs-inner",
+    "detailId": "d-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      50,
+      53,
+      57,
+      64
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-add9__tones-empty",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "e-add9__tones-upper",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__tones-inner",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      54,
+      56,
+      59
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__tones-other-octave",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      64,
+      68,
+      71,
+      78
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__tones-octave-doubling",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__tones-missing-added",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-add9__tones-extra-seventh",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-add9__tones-wrong-third",
+    "detailId": "e-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-add9__match-upper",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__match-reordered",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      66,
+      59,
+      56,
+      52
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__match-inner-vs-upper",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      54,
+      56,
+      59
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-add9__match-other-octave",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      64,
+      68,
+      71,
+      78
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-add9__match-missing",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-add9__match-extra-seventh",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-add9__match-inner",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      52,
+      54,
+      56,
+      59
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-add9__match-upper-vs-inner",
+    "detailId": "e-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-flat-add9__tones-empty",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "e-flat-add9__tones-upper",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__tones-inner",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      53,
+      55,
+      58
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__tones-other-octave",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      63,
+      67,
+      70,
+      77
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__tones-octave-doubling",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__tones-missing-added",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-add9__tones-extra-seventh",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-add9__tones-wrong-third",
+    "detailId": "e-flat-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-add9__match-upper",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__match-reordered",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      65,
+      58,
+      55,
+      51
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__match-inner-vs-upper",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      53,
+      55,
+      58
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-flat-add9__match-other-octave",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      63,
+      67,
+      70,
+      77
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-flat-add9__match-missing",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-add9__match-extra-seventh",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-add9__match-inner",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      51,
+      53,
+      55,
+      58
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-add9__match-upper-vs-inner",
+    "detailId": "e-flat-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-flat-madd9__tones-empty",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "e-flat-madd9__tones-upper",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__tones-inner",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      53,
+      54,
+      58
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__tones-other-octave",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      63,
+      66,
+      70,
+      77
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__tones-octave-doubling",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65,
+      63
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__tones-missing-added",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-madd9__tones-extra-seventh",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-madd9__tones-wrong-third",
+    "detailId": "e-flat-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      55,
+      58,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-madd9__match-upper",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__match-reordered",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      65,
+      58,
+      54,
+      51
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__match-inner-vs-upper",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      53,
+      54,
+      58
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-flat-madd9__match-other-octave",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      63,
+      66,
+      70,
+      77
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-flat-madd9__match-missing",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-madd9__match-extra-seventh",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-flat-madd9__match-inner",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      51,
+      53,
+      54,
+      58
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-flat-madd9__match-upper-vs-inner",
+    "detailId": "e-flat-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      51,
+      54,
+      58,
+      65
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-madd9__tones-empty",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "e-madd9__tones-upper",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__tones-inner",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      54,
+      55,
+      59
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__tones-other-octave",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      64,
+      67,
+      71,
+      78
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__tones-octave-doubling",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66,
+      64
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__tones-missing-added",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-madd9__tones-extra-seventh",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-madd9__tones-wrong-third",
+    "detailId": "e-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      56,
+      59,
+      66
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-madd9__match-upper",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__match-reordered",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      66,
+      59,
+      55,
+      52
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__match-inner-vs-upper",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      54,
+      55,
+      59
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-madd9__match-other-octave",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      64,
+      67,
+      71,
+      78
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "e-madd9__match-missing",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-madd9__match-extra-seventh",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "e-madd9__match-inner",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      52,
+      54,
+      55,
+      59
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "e-madd9__match-upper-vs-inner",
+    "detailId": "e-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      52,
+      55,
+      59,
+      66
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-add9__tones-empty",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "f-add9__tones-upper",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__tones-inner",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      55,
+      57,
+      60
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__tones-other-octave",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      65,
+      69,
+      72,
+      79
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__tones-octave-doubling",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__tones-missing-added",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-add9__tones-extra-seventh",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-add9__tones-wrong-third",
+    "detailId": "f-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-add9__match-upper",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__match-reordered",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      67,
+      60,
+      57,
+      53
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__match-inner-vs-upper",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      55,
+      57,
+      60
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-add9__match-other-octave",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      65,
+      69,
+      72,
+      79
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-add9__match-missing",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-add9__match-extra-seventh",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-add9__match-inner",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      53,
+      55,
+      57,
+      60
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-add9__match-upper-vs-inner",
+    "detailId": "f-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-madd9__tones-empty",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "f-madd9__tones-upper",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__tones-inner",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      55,
+      56,
+      60
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__tones-other-octave",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      65,
+      68,
+      72,
+      79
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__tones-octave-doubling",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67,
+      65
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__tones-missing-added",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-madd9__tones-extra-seventh",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-madd9__tones-wrong-third",
+    "detailId": "f-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      57,
+      60,
+      67
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-madd9__match-upper",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__match-reordered",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      67,
+      60,
+      56,
+      53
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__match-inner-vs-upper",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      55,
+      56,
+      60
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-madd9__match-other-octave",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      65,
+      68,
+      72,
+      79
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-madd9__match-missing",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-madd9__match-extra-seventh",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67,
+      63
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-madd9__match-inner",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      53,
+      55,
+      56,
+      60
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-madd9__match-upper-vs-inner",
+    "detailId": "f-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      53,
+      56,
+      60,
+      67
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-sharp-add9__tones-empty",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "f-sharp-add9__tones-upper",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__tones-inner",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      56,
+      58,
+      61
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__tones-other-octave",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      66,
+      70,
+      73,
+      80
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__tones-octave-doubling",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__tones-missing-added",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-add9__tones-extra-seventh",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-add9__tones-wrong-third",
+    "detailId": "f-sharp-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-add9__match-upper",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__match-reordered",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      68,
+      61,
+      58,
+      54
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__match-inner-vs-upper",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      56,
+      58,
+      61
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-sharp-add9__match-other-octave",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      66,
+      70,
+      73,
+      80
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-sharp-add9__match-missing",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-add9__match-extra-seventh",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-add9__match-inner",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      54,
+      56,
+      58,
+      61
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-add9__match-upper-vs-inner",
+    "detailId": "f-sharp-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-sharp-madd9__tones-empty",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "f-sharp-madd9__tones-upper",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__tones-inner",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      56,
+      57,
+      61
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__tones-other-octave",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      66,
+      69,
+      73,
+      80
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__tones-octave-doubling",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68,
+      66
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__tones-missing-added",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-madd9__tones-extra-seventh",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-madd9__tones-wrong-third",
+    "detailId": "f-sharp-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      58,
+      61,
+      68
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-madd9__match-upper",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__match-reordered",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      68,
+      61,
+      57,
+      54
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__match-inner-vs-upper",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      56,
+      57,
+      61
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-sharp-madd9__match-other-octave",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      66,
+      69,
+      73,
+      80
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "f-sharp-madd9__match-missing",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-madd9__match-extra-seventh",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68,
+      64
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "f-sharp-madd9__match-inner",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      54,
+      56,
+      57,
+      61
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "f-sharp-madd9__match-upper-vs-inner",
+    "detailId": "f-sharp-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      54,
+      57,
+      61,
+      68
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "g-add9__tones-empty",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "g-add9__tones-upper",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__tones-inner",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      57,
+      59,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__tones-other-octave",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      67,
+      71,
+      74,
+      81
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__tones-octave-doubling",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69,
+      67
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__tones-missing-added",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-add9__tones-extra-seventh",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-add9__tones-wrong-third",
+    "detailId": "g-add9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-add9__match-upper",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__match-reordered",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      69,
+      62,
+      59,
+      55
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__match-inner-vs-upper",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      57,
+      59,
+      62
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "g-add9__match-other-octave",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      67,
+      71,
+      74,
+      81
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "g-add9__match-missing",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-add9__match-extra-seventh",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-add9__match-inner",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      55,
+      57,
+      59,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-add9__match-upper-vs-inner",
+    "detailId": "g-add9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "g-madd9__tones-empty",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [],
+    "expectedStatus": "empty"
+  },
+  {
+    "id": "g-madd9__tones-upper",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__tones-inner",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      57,
+      58,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__tones-other-octave",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      67,
+      70,
+      74,
+      81
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__tones-octave-doubling",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69,
+      67
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__tones-missing-added",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-madd9__tones-extra-seventh",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-madd9__tones-wrong-third",
+    "detailId": "g-madd9",
+    "mode": "chordTones",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      59,
+      62,
+      69
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-madd9__match-upper",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__match-reordered",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      69,
+      62,
+      58,
+      55
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__match-inner-vs-upper",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      57,
+      58,
+      62
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "g-madd9__match-other-octave",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      67,
+      70,
+      74,
+      81
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  },
+  {
+    "id": "g-madd9__match-missing",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-madd9__match-extra-seventh",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "ninth-above",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69,
+      65
+    ],
+    "expectedStatus": "incorrect"
+  },
+  {
+    "id": "g-madd9__match-inner",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      55,
+      57,
+      58,
+      62
+    ],
+    "expectedStatus": "correct"
+  },
+  {
+    "id": "g-madd9__match-upper-vs-inner",
+    "detailId": "g-madd9",
+    "mode": "matchExample",
+    "activeRealizationId": "added-note-inside",
+    "selectedMidi": [
+      55,
+      58,
+      62,
+      69
+    ],
+    "expectedStatus": "same_tones_different_voicing"
+  }
+]

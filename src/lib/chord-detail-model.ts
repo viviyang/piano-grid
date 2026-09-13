@@ -1,7 +1,11 @@
-import type {ChordDetailModel,DetailVoicing} from './a-minor-types';
+import type {AddExamplePosition,ChordDefinition,ChordDetailModel,ChordPosition,DetailVoicing} from './a-minor-types';
 import {positionForThreeNote,validateThreeNoteDefinition} from './chord-family-model';
+import {positionForSeventh,validateSeventhDefinition} from './chord-seventh-model';
+import {positionForAdd,validateAddDefinition} from './chord-add-model';
 import {isPublicRoute} from './site-routes';
 import type {N2BChordDetailRoute} from './chord-n2b-content';
+import type {N2CChordDetailRoute} from './chord-n2c-content';
+import type {N2DChordDetailRoute} from './chord-n2d-content';
 
 export type ChordDetailRoute=
   |'/chords/a-minor'|'/chords/a-major'|'/chords/c-major'
@@ -9,16 +13,18 @@ export type ChordDetailRoute=
   |'/chords/f-major'|'/chords/d-minor'|'/chords/e-minor'|'/chords/d-major'|'/chords/b-minor'
   |'/chords/f-sharp-minor'|'/chords/c-sharp-minor'|'/chords/g-sharp-minor'|'/chords/b-flat-major'|'/chords/g-minor'
   |'/chords/d-flat-major'|'/chords/e-flat-major'|'/chords/f-sharp-major'|'/chords/f-minor'|'/chords/b-flat-minor'|'/chords/e-flat-minor'
-  |N2BChordDetailRoute;
+  |N2BChordDetailRoute|N2CChordDetailRoute|N2DChordDetailRoute;
 const ascii=(value:string)=>value.replaceAll('𝄪','##').replaceAll('𝄫','bb').replaceAll('♯','#').replaceAll('♭','b');
 const pitchClass=(value:string)=>{const match=/^([A-G](?:##|bb|#|b)?)-?\d*$/.exec(ascii(value));if(!match)throw new Error(`Invalid pitch spelling: ${value}`);return match[1];};
 const same=(a:unknown,b:unknown)=>JSON.stringify(a)===JSON.stringify(b);
 const sorted=(values:string[])=>[...values].sort();
+const positionForDefinition=(definition:ChordDefinition,index:number,current:DetailVoicing):ChordPosition|AddExamplePosition=>definition.family==='seventh'?positionForSeventh(definition,index):definition.family==='add'?positionForAdd(definition,index,current.position.kind==='example'?current.position.notationHint:current.chord_symbol):positionForThreeNote(definition,index);
+function validateDefinition(definition:ChordDefinition){if(definition.family==='seventh')validateSeventhDefinition(definition);else if(definition.family==='add')validateAddDefinition(definition);else validateThreeNoteDefinition(definition);}
 
 function validateVoicing(model:ChordDetailModel,voicing:DetailVoicing,index:number){
   const {data}=model,notes=voicing.notes_low_to_high,definition=data.chord.definition;
-  if(notes.length!==definition.expectedNoteCount||new Set(notes.map(note=>note.midi)).size!==definition.expectedNoteCount)throw new Error(`Invalid three-note voicing: ${voicing.voicing_id}`);
-  const expectedPosition=positionForThreeNote(definition,index);
+  if(notes.length!==definition.expectedNoteCount||new Set(notes.map(note=>note.midi)).size!==definition.expectedNoteCount)throw new Error(`Invalid chord voicing: ${voicing.voicing_id}`);
+  const expectedPosition=positionForDefinition(definition,index,voicing);
   if(!same(voicing.position,expectedPosition)||voicing.inversion_label!==expectedPosition.label)throw new Error(`Invalid position contract: ${voicing.voicing_id}`);
   if(!same(sorted(notes.map(note=>pitchClass(note.display_pitch))),sorted(data.chord.note_spellings.map(pitchClass))))throw new Error(`Voicing changes chord definition: ${voicing.voicing_id}`);
   if(voicing.bass_spelling!==notes[0].display_pitch)throw new Error(`Bass is not the lowest pitch: ${voicing.voicing_id}`);
@@ -33,9 +39,9 @@ export function finalizeChordDetailModel(model:ChordDetailModel):ChordDetailMode
   const {data}=model,definition=data.chord.definition;
   if(!isPublicRoute(data.url)||model.metadata.canonical_path!==data.url)throw new Error(`Invalid chord detail route: ${data.url}`);
   if(data.chord.slug!==data.url.split('/').at(-1)||data.chord.id!==data.chord.slug)throw new Error(`Chord identity mismatch: ${data.url}`);
-  validateThreeNoteDefinition(definition);
+  validateDefinition(definition);
   if(data.chord.quality!==definition.subtype||!same(data.chord.formula_degrees,definition.formulaDegrees))throw new Error(`Formula/quality mismatch: ${data.url}`);
-  if(data.chord.note_spellings.length!==definition.expectedNoteCount||data.voicings.length!==definition.expectedPositionCount||data.options.length!==definition.expectedPositionCount)throw new Error(`Incomplete three-note detail: ${data.url}`);
+  if(data.chord.note_spellings.length!==definition.expectedNoteCount||data.voicings.length!==definition.expectedPositionCount||data.options.length!==definition.expectedPositionCount)throw new Error(`Incomplete chord detail: ${data.url}`);
   if(!data.voicings.some(voicing=>voicing.voicing_id===data.defaultId))throw new Error(`Missing default voicing: ${data.url}`);
   if(!same(data.options.map(option=>option.value),data.voicings.map(voicing=>voicing.voicing_id))||!same(data.options.map(option=>option.label),data.voicings.map(voicing=>voicing.inversion_label)))throw new Error(`Selection/voicing drift: ${data.url}`);
   data.voicings.forEach((voicing,index)=>validateVoicing(model,voicing,index));

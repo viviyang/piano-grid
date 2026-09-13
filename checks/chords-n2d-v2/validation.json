@@ -1,0 +1,1474 @@
+{
+  "executedAt": "2026-09-12T14:58:52.859Z",
+  "base": "http://127.0.0.1:3102",
+  "passed": 190,
+  "failed": 0,
+  "counts": {
+    "definitions": 24,
+    "layouts": 48,
+    "newURLs": 25,
+    "sitemap": 171,
+    "assets": 24
+  },
+  "manualChecks": [
+    "human listening",
+    "real-device touch",
+    "screen reader",
+    "physical printing",
+    "PDF tag accessibility",
+    "independent piano-teacher review"
+  ],
+  "results": [
+    {
+      "name": "add9 family model",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "minorAdd9 family model",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add family validator rejects wrong third",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Package exposes exactly 24 definitions and 48 layouts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Scope and SEO manifests agree",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-flat-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-flat-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "a-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "b-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "b-flat-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "b-flat-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "b-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "c-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "c-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "d-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "d-flat-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "d-flat-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "d-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "e-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "e-flat-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "e-flat-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "e-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "f-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "f-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "f-sharp-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "f-sharp-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "g-add9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "g-madd9 assets synchronized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/a-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-a-add9.pdf",
+          "/reference/assets/chord-a-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/a-madd9",
+          "/chords/a-major",
+          "/chords/a-sus2",
+          "/chords/a-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/a-flat-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/a-flat-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-a-flat-add9.pdf",
+          "/reference/assets/chord-a-flat-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/a-flat-madd9",
+          "/chords/a-flat-major",
+          "/chords/a-flat-sus2",
+          "/chords/a-flat-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/a-flat-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/a-flat-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-a-flat-madd9.pdf",
+          "/reference/assets/chord-a-flat-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/a-flat-add9",
+          "/chords/minor",
+          "/chords/a-flat-sus2",
+          "/chords/a-flat-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/a-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/a-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-a-madd9.pdf",
+          "/reference/assets/chord-a-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/a-add9",
+          "/chords/a-minor",
+          "/chords/a-sus2",
+          "/chords/a-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/b-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/b-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-b-add9.pdf",
+          "/reference/assets/chord-b-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/b-madd9",
+          "/chords/b-major",
+          "/chords/b-sus2",
+          "/chords/b-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/b-flat-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/b-flat-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-b-flat-add9.pdf",
+          "/reference/assets/chord-b-flat-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/b-flat-madd9",
+          "/chords/b-flat-major",
+          "/chords/b-flat-sus2",
+          "/chords/b-flat-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/b-flat-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-flat-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/b-flat-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-b-flat-madd9.pdf",
+          "/reference/assets/chord-b-flat-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/b-flat-add9",
+          "/chords/b-flat-minor",
+          "/chords/b-flat-sus2",
+          "/chords/b-flat-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/b-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/b-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-b-madd9.pdf",
+          "/reference/assets/chord-b-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/b-add9",
+          "/chords/b-minor",
+          "/chords/b-sus2",
+          "/chords/b-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/c-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/c-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-c-add9.pdf",
+          "/reference/assets/chord-c-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/c-madd9",
+          "/chords/c-major",
+          "/chords/c-sus2",
+          "/chords/c-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/c-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/c-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-c-madd9.pdf",
+          "/reference/assets/chord-c-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/c-add9",
+          "/chords/c-minor",
+          "/chords/c-sus2",
+          "/chords/c-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/d-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/d-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-d-add9.pdf",
+          "/reference/assets/chord-d-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/d-madd9",
+          "/chords/d-major",
+          "/chords/d-sus2",
+          "/chords/d-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/d-flat-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/d-flat-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-d-flat-add9.pdf",
+          "/reference/assets/chord-d-flat-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/d-flat-madd9",
+          "/chords/d-flat-major",
+          "/chords/d-flat-sus2",
+          "/chords/d-flat-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/d-flat-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/d-flat-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-d-flat-madd9.pdf",
+          "/reference/assets/chord-d-flat-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/d-flat-add9",
+          "/chords/minor",
+          "/chords/d-flat-sus2",
+          "/chords/d-flat-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/d-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/d-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-d-madd9.pdf",
+          "/reference/assets/chord-d-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/d-add9",
+          "/chords/d-minor",
+          "/chords/d-sus2",
+          "/chords/d-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/e-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/e-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-e-add9.pdf",
+          "/reference/assets/chord-e-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/e-madd9",
+          "/chords/e-major",
+          "/chords/e-sus2",
+          "/chords/e-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/e-flat-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/e-flat-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-e-flat-add9.pdf",
+          "/reference/assets/chord-e-flat-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/e-flat-madd9",
+          "/chords/e-flat-major",
+          "/chords/e-flat-sus2",
+          "/chords/e-flat-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/e-flat-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-flat-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/e-flat-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-e-flat-madd9.pdf",
+          "/reference/assets/chord-e-flat-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/e-flat-add9",
+          "/chords/e-flat-minor",
+          "/chords/e-flat-sus2",
+          "/chords/e-flat-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/e-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/e-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-e-madd9.pdf",
+          "/reference/assets/chord-e-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/e-add9",
+          "/chords/e-minor",
+          "/chords/e-sus2",
+          "/chords/e-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/f-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/f-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-f-add9.pdf",
+          "/reference/assets/chord-f-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/f-madd9",
+          "/chords/f-major",
+          "/chords/f-sus2",
+          "/chords/f-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/f-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/f-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-f-madd9.pdf",
+          "/reference/assets/chord-f-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/f-add9",
+          "/chords/f-minor",
+          "/chords/f-sus2",
+          "/chords/f-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/f-sharp-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/f-sharp-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-f-sharp-add9.pdf",
+          "/reference/assets/chord-f-sharp-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/f-sharp-madd9",
+          "/chords/f-sharp-major",
+          "/chords/f-sharp-sus2",
+          "/chords/f-sharp-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/f-sharp-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/f-sharp-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/f-sharp-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-f-sharp-madd9.pdf",
+          "/reference/assets/chord-f-sharp-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/f-sharp-add9",
+          "/chords/f-sharp-minor",
+          "/chords/f-sharp-sus2",
+          "/chords/f-sharp-m7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/g-add9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-add9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-add9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-add9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-add9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/g-madd9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-g-add9.pdf",
+          "/reference/assets/chord-g-add9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/g-madd9",
+          "/chords/g-major",
+          "/chords/g-sus2",
+          "/chords/g-7"
+        ]
+      }
+    },
+    {
+      "name": "/chords/g-madd9 static metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-madd9 initial HTML core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-madd9 two layouts and no fingering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-madd9 asset links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-madd9 required links",
+      "passed": true,
+      "detail": {
+        "required": [
+          "/chords/add",
+          "/chords/g-add9"
+        ],
+        "actual": [
+          "/chords",
+          "/chords/add",
+          "/reference/assets/chord-g-madd9.pdf",
+          "/reference/assets/chord-g-madd9.pdf",
+          "/keyboard-notes/finger-numbers",
+          "/chords/add",
+          "/chords/g-add9",
+          "/chords/g-minor",
+          "/chords/g-sus2",
+          "/chords/g-m7"
+        ]
+      }
+    },
+    {
+      "name": "Add category no-JS 24-card SSR",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add category root filter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add category subtype intersection",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add category no overflow 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add category no overflow 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add category no overflow 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add category no overflow 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 ninth-above channels",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "/chords/c-add9 added-note-inside channels",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "/chords/c-add9 no overflow 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 no overflow 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 no overflow 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 no overflow 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-add9 200% text reflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 ninth-above channels",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "/chords/d-flat-madd9 added-note-inside channels",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "/chords/d-flat-madd9 no overflow 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 no overflow 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 no overflow 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 no overflow 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/d-flat-madd9 200% text reflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 ninth-above channels",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "/chords/b-add9 added-note-inside channels",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "/chords/b-add9 no overflow 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 no overflow 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 no overflow 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 no overflow 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-add9 200% text reflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord-tones mode accepts octave doubling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord-tones mode rejects added seventh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exact-layout mode gives octave feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exact-layout mode ignores input order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Add playback creates four simultaneous events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Example switch cancels old sound and clears feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Hub stays at 25 cards and links Add category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "More Chords adds only Add after Seventh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sitemap is exact 171-route union",
+      "passed": true,
+      "detail": 171
+    },
+    {
+      "name": "/chords/extended remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/add2 remains unpublished",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No runtime or hydration errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "aggregate": {
+    "package": {
+      "passed": 5013,
+      "failed": 0
+    },
+    "foundation": {
+      "passed": 565,
+      "failed": 0
+    },
+    "typeScript": "PASS",
+    "css": {
+      "status": "PASS",
+      "authorizedRoutes": 171
+    },
+    "contentAdapters": {
+      "passed": 26,
+      "failed": 0
+    },
+    "n2a": {
+      "passed": 13,
+      "failed": 0
+    },
+    "b2": {
+      "passed": 40,
+      "failed": 0
+    },
+    "b3": {
+      "passed": 71,
+      "failed": 0
+    },
+    "n1": {
+      "passed": 365,
+      "failed": 0
+    },
+    "n2b": {
+      "passed": 640,
+      "failed": 0
+    },
+    "n2c": {
+      "passed": 483,
+      "failed": 0
+    },
+    "n2d": {
+      "passed": 190,
+      "failed": 0
+    },
+    "chordsFinal": {
+      "passed": 246,
+      "failed": 0
+    },
+    "support": {
+      "passed": 101,
+      "failed": 0
+    },
+    "byKey": {
+      "passed": 84,
+      "failed": 0
+    },
+    "progressions": {
+      "passed": 109,
+      "failed": 0
+    },
+    "contentNext": {
+      "passed": 94,
+      "failed": 0
+    },
+    "integrationData": {
+      "passed": 152,
+      "failed": 0
+    },
+    "integrationBrowser": {
+      "passed": 323,
+      "failed": 0
+    },
+    "productionIntegration": {
+      "passed": 178,
+      "failed": 0
+    },
+    "legacyChordBatch": {
+      "passed": 251,
+      "failed": 0
+    },
+    "fallbacks": {
+      "passed": 25,
+      "failed": 0
+    },
+    "productionBuild": {
+      "status": "PASS",
+      "staticOutputs": 176,
+      "businessRoutes": 171
+    }
+  },
+  "status": "PASS"
+}
