@@ -113,6 +113,46 @@ export const PUBLIC_ROUTES = [
 
 export type PublicRoute = (typeof PUBLIC_ROUTES)[number];
 
+export const CHORD_MAJOR_NAVIGATION = [
+  { label: 'C Major', href: '/chords/c-major' },
+  { label: 'D♭ Major', href: '/chords/d-flat-major' },
+  { label: 'D Major', href: '/chords/d-major' },
+  { label: 'E♭ Major', href: '/chords/e-flat-major' },
+  { label: 'E Major', href: '/chords/e-major' },
+  { label: 'F Major', href: '/chords/f-major' },
+  { label: 'F♯ Major', href: '/chords/f-sharp-major' },
+  { label: 'G Major', href: '/chords/g-major' },
+  { label: 'A♭ Major', href: '/chords/a-flat-major' },
+  { label: 'A Major', href: '/chords/a-major' },
+  { label: 'B♭ Major', href: '/chords/b-flat-major' },
+  { label: 'B Major', href: '/chords/b-major' },
+] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
+
+export const CHORD_MINOR_NAVIGATION = [
+  { label: 'C Minor', href: '/chords/c-minor' },
+  { label: 'C♯ Minor', href: '/chords/c-sharp-minor' },
+  { label: 'D Minor', href: '/chords/d-minor' },
+  { label: 'E♭ Minor', href: '/chords/e-flat-minor' },
+  { label: 'E Minor', href: '/chords/e-minor' },
+  { label: 'F Minor', href: '/chords/f-minor' },
+  { label: 'F♯ Minor', href: '/chords/f-sharp-minor' },
+  { label: 'G Minor', href: '/chords/g-minor' },
+  { label: 'G♯ Minor', href: '/chords/g-sharp-minor' },
+  { label: 'A Minor', href: '/chords/a-minor' },
+  { label: 'B♭ Minor', href: '/chords/b-flat-minor' },
+  { label: 'B Minor', href: '/chords/b-minor' },
+] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
+
+export const CHORD_MORE_NAVIGATION = [
+  { label: 'Seventh', href: '/chords/seventh' },
+  { label: 'Diminished', href: '/chords/diminished' },
+  { label: 'Augmented', href: '/chords/augmented' },
+  { label: 'Suspended', href: '/chords/suspended' },
+  { label: 'Add', href: '/chords/add' },
+  { label: 'Extended', href: '/chords/extended' },
+  { label: 'Altered', href: '/chords/altered' },
+] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
+
 export const SITE_NAVIGATION = [
   {
     label: 'Keyboard Notes',
@@ -129,13 +169,13 @@ export const SITE_NAVIGATION = [
     children: [
       { label: 'Major Chords', href: '/chords/major', group: 'Browse' },
       { label: 'Minor Chords', href: '/chords/minor', group: 'Browse' },
-      { label: 'Diminished Chords', href: '/chords/diminished', group: 'More Chords' },
-      { label: 'Augmented Chords', href: '/chords/augmented', group: 'More Chords' },
-      { label: 'Suspended Chords', href: '/chords/suspended', group: 'More Chords' },
-      { label: 'Seventh Chords', href: '/chords/seventh', group: 'More Chords' },
-      { label: 'Add Chords', href: '/chords/add', group: 'More Chords' },
-      { label: 'Extended Chords', href: '/chords/extended', group: 'More Chords' },
-      { label: 'Altered Chords', href: '/chords/altered', group: 'More Chords' },
+      { label: 'Seventh', href: '/chords/seventh', group: 'More Chords' },
+      { label: 'Diminished', href: '/chords/diminished', group: 'More Chords' },
+      { label: 'Augmented', href: '/chords/augmented', group: 'More Chords' },
+      { label: 'Suspended', href: '/chords/suspended', group: 'More Chords' },
+      { label: 'Add', href: '/chords/add', group: 'More Chords' },
+      { label: 'Extended', href: '/chords/extended', group: 'More Chords' },
+      { label: 'Altered', href: '/chords/altered', group: 'More Chords' },
       { label: 'Chords by Key', href: '/chords/by-key', group: 'Explore' },
       { label: 'Chord Progressions', href: '/chord-progressions', group: 'Explore' },
       { label: 'Chord Finder', href: '/chords/finder', group: 'Explore' },

@@ -2,10 +2,46 @@
 
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
 import { usePathname } from 'next/navigation';
-import { SITE_NAVIGATION } from '@/lib/site-routes';
+import {
+  CHORD_MAJOR_NAVIGATION,
+  CHORD_MINOR_NAVIGATION,
+  CHORD_MORE_NAVIGATION,
+  SITE_NAVIGATION,
+  type PublicRoute,
+} from '@/lib/site-routes';
 import './site-navigation.css';
 
 type NavigationVariant = 'home' | 'content';
+type ChordMenuId = 'major' | 'minor' | 'more';
+type ChordMenu = {
+  id: ChordMenuId;
+  label: string;
+  href?: PublicRoute;
+  viewAllLabel?: string;
+  children: ReadonlyArray<{ readonly label: string; readonly href: PublicRoute }>;
+};
+
+const CHORD_MENUS: readonly ChordMenu[] = [
+  {
+    id: 'major',
+    label: 'Major Chords',
+    href: '/chords/major',
+    viewAllLabel: 'View all Major Chords',
+    children: CHORD_MAJOR_NAVIGATION,
+  },
+  {
+    id: 'minor',
+    label: 'Minor Chords',
+    href: '/chords/minor',
+    viewAllLabel: 'View all Minor Chords',
+    children: CHORD_MINOR_NAVIGATION,
+  },
+  {
+    id: 'more',
+    label: 'More Chords',
+    children: CHORD_MORE_NAVIGATION,
+  },
+];
 
 function Chevron() {
   return <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.25 3.5 3.5 3.5-3.5"/></svg>;
@@ -18,8 +54,13 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
   const desktopNav = useRef<HTMLElement>(null);
   const mobileButton = useRef<HTMLButtonElement>(null);
   const triggerRefs = useRef(new Map<string, HTMLButtonElement>());
+  const chordDesktopTriggerRefs = useRef(new Map<ChordMenuId, HTMLButtonElement>());
+  const chordMobileTriggerRefs = useRef(new Map<ChordMenuId, HTMLButtonElement>());
   const closeTimer = useRef<number | null>(null);
+  const suppressDesktopFocusOpen = useRef(false);
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const [openChordDesktopMenu, setOpenChordDesktopMenu] = useState<ChordMenuId | null>(null);
+  const [openChordMobileMenu, setOpenChordMobileMenu] = useState<ChordMenuId | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [indicator, setIndicator] = useState({ left: 0, width: 0, visible: false });
   const desktopClass = variant === 'home' ? 'ph-desktop-nav' : 'am-site-nav';
@@ -28,21 +69,41 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
 
   useEffect(() => {
     const closeOutside = (event: PointerEvent) => {
-      if (!root.current?.contains(event.target as Node)) setOpenSection(null);
+      if (!root.current?.contains(event.target as Node)) {
+        setOpenSection(null);
+        setOpenChordDesktopMenu(null);
+      }
     };
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return;
-      if (openSection) {
+      if (openChordDesktopMenu) {
+        const trigger = chordDesktopTriggerRefs.current.get(openChordDesktopMenu);
+        suppressDesktopFocusOpen.current = true;
+        setOpenChordDesktopMenu(null);
+        trigger?.focus();
+        queueMicrotask(() => { suppressDesktopFocusOpen.current = false; });
+      } else if (openChordMobileMenu) {
+        const trigger = chordMobileTriggerRefs.current.get(openChordMobileMenu);
+        setOpenChordMobileMenu(null);
+        trigger?.focus();
+      } else if (openSection) {
         const trigger = triggerRefs.current.get(openSection);
+        suppressDesktopFocusOpen.current = true;
         setOpenSection(null);
         trigger?.focus();
+        queueMicrotask(() => { suppressDesktopFocusOpen.current = false; });
       } else if (mobileOpen) {
         setMobileOpen(false);
         mobileButton.current?.focus();
       }
     };
     const media = matchMedia('(min-width: 801px)');
-    const closeMobile = () => { if (media.matches) setMobileOpen(false); };
+    const closeMobile = () => {
+      if (media.matches) {
+        setMobileOpen(false);
+        setOpenChordMobileMenu(null);
+      }
+    };
     document.addEventListener('pointerdown', closeOutside);
     document.addEventListener('keydown', closeOnEscape);
     media.addEventListener('change', closeMobile);
@@ -52,7 +113,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       media.removeEventListener('change', closeMobile);
       if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
     };
-  }, [mobileOpen, openSection]);
+  }, [mobileOpen, openChordDesktopMenu, openChordMobileMenu, openSection]);
 
   function cancelPendingClose() {
     if (closeTimer.current === null) return;
@@ -64,6 +125,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     cancelPendingClose();
     closeTimer.current = window.setTimeout(() => {
       setOpenSection(null);
+      setOpenChordDesktopMenu(null);
       closeTimer.current = null;
     }, 360);
   }
@@ -85,7 +147,101 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
 
   function closeMenus() {
     setOpenSection(null);
+    setOpenChordDesktopMenu(null);
+    setOpenChordMobileMenu(null);
     setMobileOpen(false);
+  }
+
+  function renderChordDesktopPanel() {
+    const chordsSection = SITE_NAVIGATION.find(section => section.href === '/chords');
+    if (!chordsSection) return null;
+    const directGroups = ['Explore', 'Learn'] as const;
+
+    return <div className="site-nav-panel-links site-nav-panel-links-chords">
+      <section className="site-nav-link-group site-nav-chord-browse" aria-label="Browse">
+        <h3>Browse</h3>
+        {CHORD_MENUS.map(menu => {
+          const expanded = openChordDesktopMenu === menu.id;
+          const submenuId = `${id}-chords-${menu.id}-desktop`;
+          return <div
+            className="site-nav-chord-item"
+            data-open={expanded || undefined}
+            key={menu.id}
+            onPointerEnter={() => { cancelPendingClose(); setOpenChordDesktopMenu(menu.id); }}
+            onPointerMove={() => { cancelPendingClose(); setOpenChordDesktopMenu(menu.id); }}
+            onPointerLeave={event => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpenChordDesktopMenu(null);
+            }}
+            onFocus={() => { if (!suppressDesktopFocusOpen.current) setOpenChordDesktopMenu(menu.id); }}
+            onBlur={event => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpenChordDesktopMenu(null);
+            }}
+          >
+            <div className="site-nav-chord-item-topline">
+              {menu.href
+                ? <a className="site-nav-child-link site-nav-chord-parent-link" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.label}<span aria-hidden="true">↗</span></a>
+                : <button
+                    ref={node => { if (node) chordDesktopTriggerRefs.current.set(menu.id, node); else chordDesktopTriggerRefs.current.delete(menu.id); }}
+                    className="site-nav-chord-group-button"
+                    type="button"
+                    aria-expanded={expanded}
+                    aria-controls={submenuId}
+                    onClick={() => setOpenChordDesktopMenu(menu.id)}
+                  ><span>{menu.label}</span><Chevron/></button>}
+              {menu.href ? <button
+                  ref={node => { if (node) chordDesktopTriggerRefs.current.set(menu.id, node); else chordDesktopTriggerRefs.current.delete(menu.id); }}
+                  className="site-nav-chord-submenu-trigger"
+                  type="button"
+                  aria-label={`Open ${menu.label} submenu`}
+                  aria-expanded={expanded}
+                  aria-controls={submenuId}
+                  onClick={() => setOpenChordDesktopMenu(menu.id)}
+                ><Chevron/></button> : null}
+            </div>
+            <div className="site-nav-third-panel" data-kind={menu.id} id={submenuId} hidden={!expanded}>
+              <strong className="site-nav-third-heading">{menu.label}</strong>
+              <div className="site-nav-third-links">
+                {menu.children.map(item => <a className="site-nav-third-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
+              </div>
+            </div>
+          </div>;
+        })}
+      </section>
+      <div className="site-nav-chord-direct-groups" onPointerEnter={() => setOpenChordDesktopMenu(null)} onPointerMove={() => setOpenChordDesktopMenu(null)}>
+        {directGroups.map(group => <section className="site-nav-link-group" key={group} aria-label={group}>
+          <h3>{group}</h3>
+          {chordsSection.children.filter(item => item.group === group).map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}
+        </section>)}
+      </div>
+    </div>;
+  }
+
+  function renderChordMobileChildren() {
+    const chordsSection = SITE_NAVIGATION.find(section => section.href === '/chords');
+    if (!chordsSection) return null;
+    return <div className="site-mobile-children site-mobile-children-chords">
+      {CHORD_MENUS.map(menu => {
+        const expanded = openChordMobileMenu === menu.id;
+        const panelId = `${id}-chords-${menu.id}-mobile`;
+        return <div className="site-mobile-accordion" key={menu.id} data-open={expanded || undefined}>
+          <button
+            ref={node => { if (node) chordMobileTriggerRefs.current.set(menu.id, node); else chordMobileTriggerRefs.current.delete(menu.id); }}
+            className="site-mobile-accordion-trigger"
+            type="button"
+            aria-expanded={expanded}
+            aria-controls={panelId}
+            onClick={() => setOpenChordMobileMenu(current => current === menu.id ? null : menu.id)}
+          ><span>{menu.label}</span><Chevron/></button>
+          <div className="site-mobile-accordion-panel" data-kind={menu.id} id={panelId} hidden={!expanded}>
+            {menu.href && menu.viewAllLabel ? <a className="site-mobile-view-all" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.viewAllLabel}</a> : null}
+            {menu.children.map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
+          </div>
+        </div>;
+      })}
+      <div className="site-mobile-chord-direct">
+        {chordsSection.children.filter(item => item.group === 'Explore' || item.group === 'Learn').map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
+      </div>
+    </div>;
   }
 
   return <div className={`site-navigation site-navigation-${variant}`} ref={root}>
@@ -101,8 +257,17 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
           data-open={expanded || undefined}
           key={section.href}
           onPointerEnter={event => { cancelPendingClose(); positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
-          onFocus={event => { positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
-          onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpenSection(null); }}
+          onPointerMove={event => { cancelPendingClose(); positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
+          onFocus={event => {
+            positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link'));
+            if (!suppressDesktopFocusOpen.current) setOpenSection(section.href);
+          }}
+          onBlur={event => {
+            if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+              setOpenSection(null);
+              setOpenChordDesktopMenu(null);
+            }
+          }}
         >
           <div className="site-nav-topline">
             <a className="site-nav-parent-link" href={section.href} aria-current={pathname === section.href ? 'page' : undefined}>{section.label}</a>
@@ -113,12 +278,18 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
               aria-label={`Open ${section.label} menu`}
               aria-expanded={expanded}
               aria-controls={panelId}
-              onClick={event => { positionIndicator(event.currentTarget.parentElement?.querySelector<HTMLAnchorElement>('.site-nav-parent-link') ?? null); setOpenSection(current => current === section.href ? null : section.href); }}
+              onClick={event => {
+                positionIndicator(event.currentTarget.parentElement?.querySelector<HTMLAnchorElement>('.site-nav-parent-link') ?? null);
+                setOpenSection(current => current === section.href ? null : section.href);
+                setOpenChordDesktopMenu(null);
+              }}
             ><Chevron/></button>
           </div>
-          <div className="site-nav-panel" id={panelId} hidden={!expanded}>
+          <div className={`site-nav-panel${section.href === '/chords' ? ` site-nav-panel-chords${openChordDesktopMenu ? ' site-nav-panel-chords-expanded' : ''}` : ''}`} id={panelId} hidden={!expanded}>
             <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>View overview →</span></a></div>
-            <div className="site-nav-panel-links">{section.href === '/chords' ? ['Browse','More Chords','Explore','Learn'].map(group => <section className="site-nav-link-group" key={group} aria-label={group}><h3>{group}</h3>{section.children.filter(item => item.group === group).map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</section>) : section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>
+            {section.href === '/chords'
+              ? renderChordDesktopPanel()
+              : <div className="site-nav-panel-links">{section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>}
           </div>
         </div>;
       })}
@@ -130,14 +301,19 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       aria-expanded={mobileOpen}
       aria-controls={`${id}-mobile-menu`}
       aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
-      onClick={() => setMobileOpen(value => !value)}
+      onClick={() => {
+        setMobileOpen(value => !value);
+        setOpenChordMobileMenu(null);
+      }}
     >
       <svg viewBox="0 0 24 24" aria-hidden="true">{mobileOpen ? <path d="m6 6 12 12M6 18 18 6"/> : <path d="M4 7h16M4 12h16M4 17h16"/>}</svg>
     </button>
     <nav id={`${id}-mobile-menu`} className={`${mobileClass} site-mobile-nav`} aria-label="Mobile site sections" hidden={!mobileOpen}>
       {SITE_NAVIGATION.map(section => <section className="site-mobile-section" key={section.href} aria-labelledby={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`}>
         <a id={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`} className="site-mobile-parent" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}>{section.label}</a>
-        <div className="site-mobile-children">{section.children.map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}</div>
+        {section.href === '/chords'
+          ? renderChordMobileChildren()
+          : <div className="site-mobile-children">{section.children.map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}</div>}
       </section>)}
     </nav>
   </div>;

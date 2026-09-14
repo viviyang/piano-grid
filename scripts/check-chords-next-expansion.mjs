@@ -16,7 +16,11 @@ const n2dPublic=['/chords/add',...fs.readdirSync('docs/pianogrid-chords-n2d-v2/0
 const expectedPublic=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music',...routePlan.N1.new_category_urls,...routePlan.N1.new_detail_urls,...n2bPublic,...n2cPublic,...n2dPublic,'/chords/extended','/chords/altered'];
 const completionPublic=['/chords/extended','/chords/altered'];
 const advanced=routePlan.later_planned_category_urls.filter(url=>!n2bPublic.includes(url)&&!n2cPublic.includes(url)&&!n2dPublic.includes(url)&&!completionPublic.includes(url));
-const expectedMobile=['/chords','/chords/major','/chords/minor','/chords/diminished','/chords/augmented','/chords/suspended','/chords/seventh','/chords/add','/chords/extended','/chords/altered','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords','/keyboard-notes/finger-numbers'];
+const expectedMajor=['/chords/major','/chords/c-major','/chords/d-flat-major','/chords/d-major','/chords/e-flat-major','/chords/e-major','/chords/f-major','/chords/f-sharp-major','/chords/g-major','/chords/a-flat-major','/chords/a-major','/chords/b-flat-major','/chords/b-major'];
+const expectedMinor=['/chords/minor','/chords/c-minor','/chords/c-sharp-minor','/chords/d-minor','/chords/e-flat-minor','/chords/e-minor','/chords/f-minor','/chords/f-sharp-minor','/chords/g-minor','/chords/g-sharp-minor','/chords/a-minor','/chords/b-flat-minor','/chords/b-minor'];
+const expectedMore=['/chords/seventh','/chords/diminished','/chords/augmented','/chords/suspended','/chords/add','/chords/extended','/chords/altered'];
+const expectedDirect=['/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords','/keyboard-notes/finger-numbers'];
+const expectedMobile=['/chords',...expectedMajor,...expectedMinor,...expectedMore,...expectedDirect];
 const results=[],runtimeErrors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
@@ -81,10 +85,11 @@ try{
  for(const href of hubLinks)check(`Hub detail ${href} resolves`,(await page.request.get(base+href)).status()===200);
  const chordGroup=page.locator('.site-nav-group').filter({has:page.locator('.site-nav-parent-link[href="/chords"]')});
  await chordGroup.hover();
- check('Desktop chord IA uses Browse More Chords Explore Learn groups',JSON.stringify(await chordGroup.locator('.site-nav-link-group h3').allTextContents())===JSON.stringify(['Browse','More Chords','Explore','Learn']));
+ check('Desktop chord IA uses Browse Explore Learn groups with nested chord families',JSON.stringify(await chordGroup.locator('.site-nav-link-group h3').allTextContents())===JSON.stringify(['Browse','Explore','Learn']));
  const desktopChordHrefs=await chordGroup.locator('.site-nav-child-link').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')));
  const advancedNavCounts=await Promise.all(advanced.map(href=>page.locator(`.site-navigation a[href="${href}"]`).count()));
- check('Desktop chord IA excludes sample and deferred links',desktopChordHrefs.length===14&&desktopChordHrefs.every(href=>expectedMobile.slice(1).includes(href))&&advancedNavCounts.every(count=>count===0),{desktopChordHrefs,advancedNavCounts});
+ check('Desktop chord IA exposes category parents and direct tools',JSON.stringify(desktopChordHrefs)===JSON.stringify(['/chords/major','/chords/minor',...expectedDirect])&&advancedNavCounts.every(count=>count===0),{desktopChordHrefs,advancedNavCounts});
+ check('Desktop nested IA exposes exact Major Minor and More lists',JSON.stringify(await chordGroup.locator('.site-nav-third-panel[data-kind="major"] a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href'))))===JSON.stringify(expectedMajor.slice(1))&&JSON.stringify(await chordGroup.locator('.site-nav-third-panel[data-kind="minor"] a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href'))))===JSON.stringify(expectedMinor.slice(1))&&JSON.stringify(await chordGroup.locator('.site-nav-third-panel[data-kind="more"] a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href'))))===JSON.stringify(expectedMore));
  const mobileSection=page.locator('.site-mobile-section').filter({has:page.locator('.site-mobile-parent[href="/chords"]')});
  const mobileHrefs=[await mobileSection.locator('.site-mobile-parent').getAttribute('href'),...await mobileSection.locator('.site-mobile-children a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')))];
  check('Mobile chord IA exact order',JSON.stringify(mobileHrefs)===JSON.stringify(expectedMobile),mobileHrefs);
