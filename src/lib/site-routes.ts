@@ -177,6 +177,39 @@ export const CHORD_MORE_NAVIGATION = [
   { label: 'Altered', href: '/chords/altered' },
 ] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
 
+export const SCALE_MAJOR_NAVIGATION = [
+  { label: 'C Major', href: '/scales/c-major' },
+  { label: 'D Major', href: '/scales/d-major' },
+  { label: 'E♭ Major', href: '/scales/e-flat-major' },
+  { label: 'E Major', href: '/scales/e-major' },
+  { label: 'F Major', href: '/scales/f-major' },
+  { label: 'G Major', href: '/scales/g-major' },
+  { label: 'A Major', href: '/scales/a-major' },
+  { label: 'B♭ Major', href: '/scales/b-flat-major' },
+  { label: 'B Major', href: '/scales/b-major' },
+  { label: 'C♭ Major', href: '/scales/c-flat-major' },
+] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
+
+export const SCALE_MINOR_NAVIGATION = [
+  { label: 'C Minor', href: '/scales/c-minor' },
+  { label: 'D Minor', href: '/scales/d-minor' },
+  { label: 'E Minor', href: '/scales/e-minor' },
+  { label: 'F Minor', href: '/scales/f-minor' },
+  { label: 'F♯ Minor', href: '/scales/f-sharp-minor' },
+  { label: 'G Minor', href: '/scales/g-minor' },
+  { label: 'A Minor', href: '/scales/a-minor' },
+  { label: 'A♯ Minor', href: '/scales/a-sharp-minor' },
+  { label: 'B Minor', href: '/scales/b-minor' },
+] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
+
+export const SCALE_MORE_NAVIGATION = [
+  { label: 'Modes', href: '/scales/modes' },
+  { label: 'Pentatonic Scales', href: '/scales/pentatonic' },
+  { label: 'Blues Scales', href: '/scales/blues' },
+  { label: 'Harmonic Major', href: '/scales/harmonic-major' },
+  { label: 'Chromatic Scales', href: '/scales/chromatic' },
+] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
+
 export const SITE_NAVIGATION = [
   {
     label: 'Keyboard Notes',
@@ -213,14 +246,14 @@ export const SITE_NAVIGATION = [
     children: [
       { label: 'C Major Scale', href: '/scales/c-major' },
       { label: 'A Minor Scale', href: '/scales/a-minor' },
-      { label: 'Major & Minor Scales', href: '/scales#chart' },
-      { label: 'Find by Notes', href: '/scales#find-by-notes' },
+      { label: 'Major & Minor Scales', href: '/scales#chart', group: 'Explore' },
+      { label: 'Find by Notes', href: '/scales#find-by-notes', group: 'Explore' },
       { label: 'Modes', href: '/scales/modes' },
       { label: 'Pentatonic Scales', href: '/scales/pentatonic' },
       { label: 'Blues Scales', href: '/scales/blues' },
       { label: 'Chromatic Scales', href: '/scales/chromatic' },
-      { label: 'Arpeggios', href: '/arpeggios' },
-      { label: 'Scale Practice Guide', href: '/guide/piano-scales' },
+      { label: 'Arpeggios', href: '/arpeggios', group: 'Explore' },
+      { label: 'Scale Practice Guide', href: '/guide/piano-scales', group: 'Learn' },
     ],
   },
   {

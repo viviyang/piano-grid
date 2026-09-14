@@ -6,22 +6,27 @@ import {
   CHORD_MAJOR_NAVIGATION,
   CHORD_MINOR_NAVIGATION,
   CHORD_MORE_NAVIGATION,
+  SCALE_MAJOR_NAVIGATION,
+  SCALE_MINOR_NAVIGATION,
+  SCALE_MORE_NAVIGATION,
   SITE_NAVIGATION,
   type PublicRoute,
 } from '@/lib/site-routes';
 import './site-navigation.css';
 
 type NavigationVariant = 'home' | 'content';
-type ChordMenuId = 'major' | 'minor' | 'more';
-type ChordMenu = {
-  id: ChordMenuId;
+type CatalogMenuId = 'major' | 'minor' | 'more';
+type CatalogSectionHref = '/chords' | '/scales';
+type CatalogHref = PublicRoute | `${PublicRoute}#${string}`;
+type CatalogMenu = {
+  id: CatalogMenuId;
   label: string;
-  href?: PublicRoute;
+  href?: CatalogHref;
   viewAllLabel?: string;
   children: ReadonlyArray<{ readonly label: string; readonly href: PublicRoute }>;
 };
 
-const CHORD_MENUS: readonly ChordMenu[] = [
+const CHORD_MENUS: readonly CatalogMenu[] = [
   {
     id: 'major',
     label: 'Major Chords',
@@ -43,8 +48,34 @@ const CHORD_MENUS: readonly ChordMenu[] = [
   },
 ];
 
+const SCALE_MENUS: readonly CatalogMenu[] = [
+  {
+    id: 'major',
+    label: 'Major Scales',
+    href: '/scales#chart',
+    viewAllLabel: 'View all Major Scales',
+    children: SCALE_MAJOR_NAVIGATION,
+  },
+  {
+    id: 'minor',
+    label: 'Minor Scales',
+    href: '/scales#chart',
+    viewAllLabel: 'View all Minor Scales',
+    children: SCALE_MINOR_NAVIGATION,
+  },
+  {
+    id: 'more',
+    label: 'More Scales',
+    children: SCALE_MORE_NAVIGATION,
+  },
+];
+
 function Chevron() {
   return <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.25 3.5 3.5 3.5-3.5"/></svg>;
+}
+
+function containsEventTarget(container: HTMLElement, target: EventTarget | null) {
+  return target instanceof Node && container.contains(target);
 }
 
 export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
@@ -54,13 +85,13 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
   const desktopNav = useRef<HTMLElement>(null);
   const mobileButton = useRef<HTMLButtonElement>(null);
   const triggerRefs = useRef(new Map<string, HTMLButtonElement>());
-  const chordDesktopTriggerRefs = useRef(new Map<ChordMenuId, HTMLButtonElement>());
-  const chordMobileTriggerRefs = useRef(new Map<ChordMenuId, HTMLButtonElement>());
+  const catalogDesktopTriggerRefs = useRef(new Map<string, HTMLButtonElement>());
+  const catalogMobileTriggerRefs = useRef(new Map<string, HTMLButtonElement>());
   const closeTimer = useRef<number | null>(null);
   const suppressDesktopFocusOpen = useRef(false);
   const [openSection, setOpenSection] = useState<string | null>(null);
-  const [openChordDesktopMenu, setOpenChordDesktopMenu] = useState<ChordMenuId | null>(null);
-  const [openChordMobileMenu, setOpenChordMobileMenu] = useState<ChordMenuId | null>(null);
+  const [openCatalogDesktopMenu, setOpenCatalogDesktopMenu] = useState<string | null>(null);
+  const [openCatalogMobileMenu, setOpenCatalogMobileMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [indicator, setIndicator] = useState({ left: 0, width: 0, visible: false });
   const desktopClass = variant === 'home' ? 'ph-desktop-nav' : 'am-site-nav';
@@ -71,20 +102,20 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     const closeOutside = (event: PointerEvent) => {
       if (!root.current?.contains(event.target as Node)) {
         setOpenSection(null);
-        setOpenChordDesktopMenu(null);
+        setOpenCatalogDesktopMenu(null);
       }
     };
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return;
-      if (openChordDesktopMenu) {
-        const trigger = chordDesktopTriggerRefs.current.get(openChordDesktopMenu);
+      if (openCatalogDesktopMenu) {
+        const trigger = catalogDesktopTriggerRefs.current.get(openCatalogDesktopMenu);
         suppressDesktopFocusOpen.current = true;
-        setOpenChordDesktopMenu(null);
+        setOpenCatalogDesktopMenu(null);
         trigger?.focus();
         queueMicrotask(() => { suppressDesktopFocusOpen.current = false; });
-      } else if (openChordMobileMenu) {
-        const trigger = chordMobileTriggerRefs.current.get(openChordMobileMenu);
-        setOpenChordMobileMenu(null);
+      } else if (openCatalogMobileMenu) {
+        const trigger = catalogMobileTriggerRefs.current.get(openCatalogMobileMenu);
+        setOpenCatalogMobileMenu(null);
         trigger?.focus();
       } else if (openSection) {
         const trigger = triggerRefs.current.get(openSection);
@@ -101,7 +132,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     const closeMobile = () => {
       if (media.matches) {
         setMobileOpen(false);
-        setOpenChordMobileMenu(null);
+        setOpenCatalogMobileMenu(null);
       }
     };
     document.addEventListener('pointerdown', closeOutside);
@@ -113,7 +144,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       media.removeEventListener('change', closeMobile);
       if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
     };
-  }, [mobileOpen, openChordDesktopMenu, openChordMobileMenu, openSection]);
+  }, [mobileOpen, openCatalogDesktopMenu, openCatalogMobileMenu, openSection]);
 
   function cancelPendingClose() {
     if (closeTimer.current === null) return;
@@ -125,7 +156,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     cancelPendingClose();
     closeTimer.current = window.setTimeout(() => {
       setOpenSection(null);
-      setOpenChordDesktopMenu(null);
+      setOpenCatalogDesktopMenu(null);
       closeTimer.current = null;
     }, 360);
   }
@@ -147,55 +178,56 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
 
   function closeMenus() {
     setOpenSection(null);
-    setOpenChordDesktopMenu(null);
-    setOpenChordMobileMenu(null);
+    setOpenCatalogDesktopMenu(null);
+    setOpenCatalogMobileMenu(null);
     setMobileOpen(false);
   }
 
-  function renderChordDesktopPanel() {
-    const chordsSection = SITE_NAVIGATION.find(section => section.href === '/chords');
-    if (!chordsSection) return null;
+  function renderCatalogDesktopPanel(sectionHref: CatalogSectionHref, menus: readonly CatalogMenu[]) {
+    const catalogSection = SITE_NAVIGATION.find(section => section.href === sectionHref);
+    if (!catalogSection) return null;
     const directGroups = ['Explore', 'Learn'] as const;
 
     return <div className="site-nav-panel-links site-nav-panel-links-chords">
       <section className="site-nav-link-group site-nav-chord-browse" aria-label="Browse">
         <h3>Browse</h3>
-        {CHORD_MENUS.map(menu => {
-          const expanded = openChordDesktopMenu === menu.id;
-          const submenuId = `${id}-chords-${menu.id}-desktop`;
+        {menus.map(menu => {
+          const menuKey = `${sectionHref}:${menu.id}`;
+          const expanded = openCatalogDesktopMenu === menuKey;
+          const submenuId = `${id}-${sectionHref.slice(1)}-${menu.id}-desktop`;
           return <div
             className="site-nav-chord-item"
             data-open={expanded || undefined}
             key={menu.id}
-            onPointerEnter={() => { cancelPendingClose(); setOpenChordDesktopMenu(menu.id); }}
-            onPointerMove={() => { cancelPendingClose(); setOpenChordDesktopMenu(menu.id); }}
+            onPointerEnter={() => { cancelPendingClose(); setOpenCatalogDesktopMenu(menuKey); }}
+            onPointerMove={() => { cancelPendingClose(); setOpenCatalogDesktopMenu(menuKey); }}
             onPointerLeave={event => {
-              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpenChordDesktopMenu(null);
+              if (!containsEventTarget(event.currentTarget, event.relatedTarget)) setOpenCatalogDesktopMenu(null);
             }}
-            onFocus={() => { if (!suppressDesktopFocusOpen.current) setOpenChordDesktopMenu(menu.id); }}
+            onFocus={() => { if (!suppressDesktopFocusOpen.current) setOpenCatalogDesktopMenu(menuKey); }}
             onBlur={event => {
-              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpenChordDesktopMenu(null);
+              if (!containsEventTarget(event.currentTarget, event.relatedTarget)) setOpenCatalogDesktopMenu(null);
             }}
           >
             <div className="site-nav-chord-item-topline">
               {menu.href
                 ? <a className="site-nav-child-link site-nav-chord-parent-link" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.label}<span aria-hidden="true">↗</span></a>
                 : <button
-                    ref={node => { if (node) chordDesktopTriggerRefs.current.set(menu.id, node); else chordDesktopTriggerRefs.current.delete(menu.id); }}
+                    ref={node => { if (node) catalogDesktopTriggerRefs.current.set(menuKey, node); else catalogDesktopTriggerRefs.current.delete(menuKey); }}
                     className="site-nav-chord-group-button"
                     type="button"
                     aria-expanded={expanded}
                     aria-controls={submenuId}
-                    onClick={() => setOpenChordDesktopMenu(menu.id)}
+                    onClick={() => setOpenCatalogDesktopMenu(menuKey)}
                   ><span>{menu.label}</span><Chevron/></button>}
               {menu.href ? <button
-                  ref={node => { if (node) chordDesktopTriggerRefs.current.set(menu.id, node); else chordDesktopTriggerRefs.current.delete(menu.id); }}
+                  ref={node => { if (node) catalogDesktopTriggerRefs.current.set(menuKey, node); else catalogDesktopTriggerRefs.current.delete(menuKey); }}
                   className="site-nav-chord-submenu-trigger"
                   type="button"
                   aria-label={`Open ${menu.label} submenu`}
                   aria-expanded={expanded}
                   aria-controls={submenuId}
-                  onClick={() => setOpenChordDesktopMenu(menu.id)}
+                  onClick={() => setOpenCatalogDesktopMenu(menuKey)}
                 ><Chevron/></button> : null}
             </div>
             <div className="site-nav-third-panel" data-kind={menu.id} id={submenuId} hidden={!expanded}>
@@ -207,30 +239,31 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
           </div>;
         })}
       </section>
-      <div className="site-nav-chord-direct-groups" onPointerEnter={() => setOpenChordDesktopMenu(null)} onPointerMove={() => setOpenChordDesktopMenu(null)}>
+      <div className="site-nav-chord-direct-groups" onPointerEnter={() => setOpenCatalogDesktopMenu(null)} onPointerMove={() => setOpenCatalogDesktopMenu(null)}>
         {directGroups.map(group => <section className="site-nav-link-group" key={group} aria-label={group}>
           <h3>{group}</h3>
-          {chordsSection.children.filter(item => item.group === group).map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}
+          {catalogSection.children.filter(item => 'group' in item && item.group === group).map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}
         </section>)}
       </div>
     </div>;
   }
 
-  function renderChordMobileChildren() {
-    const chordsSection = SITE_NAVIGATION.find(section => section.href === '/chords');
-    if (!chordsSection) return null;
+  function renderCatalogMobileChildren(sectionHref: CatalogSectionHref, menus: readonly CatalogMenu[]) {
+    const catalogSection = SITE_NAVIGATION.find(section => section.href === sectionHref);
+    if (!catalogSection) return null;
     return <div className="site-mobile-children site-mobile-children-chords">
-      {CHORD_MENUS.map(menu => {
-        const expanded = openChordMobileMenu === menu.id;
-        const panelId = `${id}-chords-${menu.id}-mobile`;
+      {menus.map(menu => {
+        const menuKey = `${sectionHref}:${menu.id}`;
+        const expanded = openCatalogMobileMenu === menuKey;
+        const panelId = `${id}-${sectionHref.slice(1)}-${menu.id}-mobile`;
         return <div className="site-mobile-accordion" key={menu.id} data-open={expanded || undefined}>
           <button
-            ref={node => { if (node) chordMobileTriggerRefs.current.set(menu.id, node); else chordMobileTriggerRefs.current.delete(menu.id); }}
+            ref={node => { if (node) catalogMobileTriggerRefs.current.set(menuKey, node); else catalogMobileTriggerRefs.current.delete(menuKey); }}
             className="site-mobile-accordion-trigger"
             type="button"
             aria-expanded={expanded}
             aria-controls={panelId}
-            onClick={() => setOpenChordMobileMenu(current => current === menu.id ? null : menu.id)}
+            onClick={() => setOpenCatalogMobileMenu(current => current === menuKey ? null : menuKey)}
           ><span>{menu.label}</span><Chevron/></button>
           <div className="site-mobile-accordion-panel" data-kind={menu.id} id={panelId} hidden={!expanded}>
             {menu.href && menu.viewAllLabel ? <a className="site-mobile-view-all" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.viewAllLabel}</a> : null}
@@ -239,7 +272,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
         </div>;
       })}
       <div className="site-mobile-chord-direct">
-        {chordsSection.children.filter(item => item.group === 'Explore' || item.group === 'Learn').map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
+        {catalogSection.children.filter(item => 'group' in item && (item.group === 'Explore' || item.group === 'Learn')).map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
       </div>
     </div>;
   }
@@ -263,9 +296,9 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
             if (!suppressDesktopFocusOpen.current) setOpenSection(section.href);
           }}
           onBlur={event => {
-            if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+            if (!containsEventTarget(event.currentTarget, event.relatedTarget)) {
               setOpenSection(null);
-              setOpenChordDesktopMenu(null);
+              setOpenCatalogDesktopMenu(null);
             }
           }}
         >
@@ -281,14 +314,14 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
               onClick={event => {
                 positionIndicator(event.currentTarget.parentElement?.querySelector<HTMLAnchorElement>('.site-nav-parent-link') ?? null);
                 setOpenSection(current => current === section.href ? null : section.href);
-                setOpenChordDesktopMenu(null);
+                setOpenCatalogDesktopMenu(null);
               }}
             ><Chevron/></button>
           </div>
-          <div className={`site-nav-panel${section.href === '/chords' ? ` site-nav-panel-chords${openChordDesktopMenu ? ' site-nav-panel-chords-expanded' : ''}` : ''}`} id={panelId} hidden={!expanded}>
+          <div className={`site-nav-panel${section.href === '/chords' || section.href === '/scales' ? ` site-nav-panel-chords${openCatalogDesktopMenu?.startsWith(`${section.href}:`) ? ' site-nav-panel-chords-expanded' : ''}` : ''}`} id={panelId} hidden={!expanded}>
             <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>View overview →</span></a></div>
-            {section.href === '/chords'
-              ? renderChordDesktopPanel()
+            {section.href === '/chords' || section.href === '/scales'
+              ? renderCatalogDesktopPanel(section.href, section.href === '/chords' ? CHORD_MENUS : SCALE_MENUS)
               : <div className="site-nav-panel-links">{section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>}
           </div>
         </div>;
@@ -303,7 +336,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
       onClick={() => {
         setMobileOpen(value => !value);
-        setOpenChordMobileMenu(null);
+        setOpenCatalogMobileMenu(null);
       }}
     >
       <svg viewBox="0 0 24 24" aria-hidden="true">{mobileOpen ? <path d="m6 6 12 12M6 18 18 6"/> : <path d="M4 7h16M4 12h16M4 17h16"/>}</svg>
@@ -311,8 +344,8 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     <nav id={`${id}-mobile-menu`} className={`${mobileClass} site-mobile-nav`} aria-label="Mobile site sections" hidden={!mobileOpen}>
       {SITE_NAVIGATION.map(section => <section className="site-mobile-section" key={section.href} aria-labelledby={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`}>
         <a id={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`} className="site-mobile-parent" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}>{section.label}</a>
-        {section.href === '/chords'
-          ? renderChordMobileChildren()
+        {section.href === '/chords' || section.href === '/scales'
+          ? renderCatalogMobileChildren(section.href, section.href === '/chords' ? CHORD_MENUS : SCALE_MENUS)
           : <div className="site-mobile-children">{section.children.map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}</div>}
       </section>)}
     </nav>
