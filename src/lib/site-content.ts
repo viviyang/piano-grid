@@ -1,6 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
 import { PUBLIC_ROUTES } from './site-routes';
+// @ts-expect-error Portable authoring helper is shared with the CLI.
+import { attachScaleFaqSupplement } from '../../scripts/scale-faq-contract.mjs';
 
 // Server/build-only source access. Reading a master object never authorizes its route.
 export const authorizedURLs = PUBLIC_ROUTES;
@@ -8,7 +10,8 @@ export const locallyAvailableURLs = new Set<string>(authorizedURLs);
 export function readMaster() { return JSON.parse(readFileSync(resolve('docs/content/site-master/page-content.master.json'), 'utf8')); }
 export function readAuthorizedPage(url: string) {
   if (!(authorizedURLs as readonly string[]).includes(url)) throw new Error(`Unauthorized route: ${url}`);
-  const master = readMaster(), page = master.pages[url];
+  const master = readMaster();
+  const page = attachScaleFaqSupplement({ [url]: master.pages[url] })[url];
   if (!page || !Array.isArray(page.blocks) || !page.data) throw new Error(`Missing core page data: ${url}`);
   return { page, master };
 }

@@ -1,0 +1,59 @@
+{
+  "schema": "owner-gate-template-v1",
+  "status": "UNFILLED_NOT_AUTHORIZATION",
+  "release_candidate_id": null,
+  "operator_public_name": null,
+  "contact_email": null,
+  "publisher_country_actual": null,
+  "audience_and_children_handling_confirmed": false,
+  "approved_new_support_urls": [],
+  "reuse_existing_support_urls": {},
+  "privacy_processing_facts_confirmed": false,
+  "analytics_provider": null,
+  "analytics_enable_approved": false,
+  "analytics_configuration_available_locally": false,
+  "adsense_requested": false,
+  "ads_enable_approved": false,
+  "adsense_site_status": null,
+  "publisher_id_available_locally": false,
+  "cmp_configuration_verified": false,
+  "new_paid_services_approved": false,
+  "new_dependencies_approved": false,
+  "commit_approved": false,
+  "push_approved": false,
+  "production_deploy_approved": false,
+  "conditional_ads_activation_preapproved": false,
+  "manual_checks": {
+    "iphone_safari": {
+      "status": "NOT_RUN",
+      "candidate_id": null,
+      "evidence_ref": null
+    },
+    "audio_stop_background": {
+      "status": "NOT_RUN",
+      "candidate_id": null,
+      "evidence_ref": null
+    },
+    "screen_reader_keyboard": {
+      "status": "NOT_RUN",
+      "candidate_id": null,
+      "evidence_ref": null
+    },
+    "native_print_cancel": {
+      "status": "NOT_RUN",
+      "candidate_id": null,
+      "evidence_ref": null
+    },
+    "physical_print": {
+      "status": "NOT_RUN",
+      "candidate_id": null,
+      "evidence_ref": null
+    },
+    "unassisted_core_task": {
+      "status": "NOT_RUN",
+      "candidate_id": null,
+      "evidence_ref": null
+    }
+  },
+  "secrets_note": "Do not put credentials, tokens, personal addresses or payment documents here. Configure through authorized provider/local environment."
+}

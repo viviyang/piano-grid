@@ -1,0 +1,321 @@
+[
+  {
+    "url": "/scales/modes",
+    "original_related_links": null,
+    "original_related_urls": [
+      "/scales",
+      "/scales/c-major",
+      "/scales/c-minor"
+    ],
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/c-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/a-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "C major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-A",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/blues",
+    "original_related_links": null,
+    "original_related_urls": [
+      "/scales/pentatonic",
+      "/scales"
+    ],
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/d-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/e-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "G major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-E",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/f-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/g-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/pentatonic",
+    "original_related_links": null,
+    "original_related_urls": [
+      "/scales/blues",
+      "/scales"
+    ],
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/a-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/c-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "Eb major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-C",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/d-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "F major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-D",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/e-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/b-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "D major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-B",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/f-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "Ab major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-F",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/harmonic-major",
+    "original_related_links": null,
+    "original_related_urls": [
+      "/scales",
+      "/scales/c-major",
+      "/scales/g-major",
+      "/scales/c-minor"
+    ],
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/a-sharp-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "C# major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-A-SHARP",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/b-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/b-flat-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/g-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "Bb major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-G",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/chromatic",
+    "original_related_links": null,
+    "original_related_urls": [
+      "/scales"
+    ],
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/e-flat-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/f-sharp-minor",
+    "original_related_links": null,
+    "original_related_urls": null,
+    "relative_major": {
+      "name": "A major",
+      "evidence_status": "[已核实]",
+      "source_ids": [
+        "AN-HMT-F-SHARP",
+        "AN-PS-NAT"
+      ]
+    },
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/scales/c-flat-major",
+    "original_related_links": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "original_related_urls": null,
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  },
+  {
+    "url": "/arpeggios",
+    "original_related_links": null,
+    "original_related_urls": [
+      "/scales/c-major",
+      "/scales/g-major",
+      "/chords"
+    ],
+    "relative_major": null,
+    "next_action": "Preserve existing links, materialize task-related entries only when target is candidate-ready; no string-only relation inference."
+  }
+]

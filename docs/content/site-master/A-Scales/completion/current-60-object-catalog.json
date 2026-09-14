@@ -1,0 +1,1998 @@
+{
+  "evidence_status": "[已核实] derived from the packaged current authoring bundle; catalog is not a replacement for raw input",
+  "object_count": 60,
+  "hands": [
+    "RH",
+    "LH"
+  ],
+  "directions": [
+    "ascending",
+    "descending",
+    "up_down"
+  ],
+  "playback_range_octaves": [
+    1
+  ],
+  "objects": [
+    {
+      "id": "major:C",
+      "tonic": "C",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": "/scales/c-major",
+      "route_exists": true,
+      "fingering": {
+        "RH": {
+          "ascending": true,
+          "descending": true
+        },
+        "LH": {
+          "ascending": true,
+          "descending": true
+        }
+      }
+    },
+    {
+      "id": "major:Db",
+      "tonic": "Db",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:D",
+      "tonic": "D",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:Eb",
+      "tonic": "Eb",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:E",
+      "tonic": "E",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:F",
+      "tonic": "F",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:F#",
+      "tonic": "F#",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:G",
+      "tonic": "G",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:Ab",
+      "tonic": "Ab",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:A",
+      "tonic": "A",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:Bb",
+      "tonic": "Bb",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:B",
+      "tonic": "B",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:Cb",
+      "tonic": "Cb",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:Gb",
+      "tonic": "Gb",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "major:C#",
+      "tonic": "C#",
+      "form": "major",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:A",
+      "tonic": "A",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": "/scales/a-minor",
+      "route_exists": true,
+      "fingering": {
+        "RH": {
+          "ascending": true,
+          "descending": true
+        },
+        "LH": {
+          "ascending": true,
+          "descending": true
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:A",
+      "tonic": "A",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": "/scales/a-minor",
+      "route_exists": true,
+      "fingering": {
+        "RH": {
+          "ascending": true,
+          "descending": false
+        },
+        "LH": {
+          "ascending": true,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:A",
+      "tonic": "A",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": "/scales/a-minor",
+      "route_exists": true,
+      "fingering": {
+        "RH": {
+          "ascending": true,
+          "descending": false
+        },
+        "LH": {
+          "ascending": true,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:E",
+      "tonic": "E",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:E",
+      "tonic": "E",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:E",
+      "tonic": "E",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:B",
+      "tonic": "B",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:B",
+      "tonic": "B",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:B",
+      "tonic": "B",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:F#",
+      "tonic": "F#",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:F#",
+      "tonic": "F#",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:F#",
+      "tonic": "F#",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:C#",
+      "tonic": "C#",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:C#",
+      "tonic": "C#",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:C#",
+      "tonic": "C#",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:G#",
+      "tonic": "G#",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:G#",
+      "tonic": "G#",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:G#",
+      "tonic": "G#",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:D#",
+      "tonic": "D#",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:D#",
+      "tonic": "D#",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:D#",
+      "tonic": "D#",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:A#",
+      "tonic": "A#",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:A#",
+      "tonic": "A#",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:A#",
+      "tonic": "A#",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:D",
+      "tonic": "D",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:D",
+      "tonic": "D",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:D",
+      "tonic": "D",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:G",
+      "tonic": "G",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:G",
+      "tonic": "G",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:G",
+      "tonic": "G",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:C",
+      "tonic": "C",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:C",
+      "tonic": "C",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:C",
+      "tonic": "C",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:F",
+      "tonic": "F",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:F",
+      "tonic": "F",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:F",
+      "tonic": "F",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:Bb",
+      "tonic": "Bb",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:Bb",
+      "tonic": "Bb",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:Bb",
+      "tonic": "Bb",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:Eb",
+      "tonic": "Eb",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:Eb",
+      "tonic": "Eb",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:Eb",
+      "tonic": "Eb",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "natural_minor:Ab",
+      "tonic": "Ab",
+      "form": "natural_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "harmonic_minor:Ab",
+      "tonic": "Ab",
+      "form": "harmonic_minor",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    },
+    {
+      "id": "melodic_minor_classical:Ab",
+      "tonic": "Ab",
+      "form": "melodic_minor_classical",
+      "sequence_lengths": {
+        "ascending": 8,
+        "descending": 8
+      },
+      "hands": [
+        "RH",
+        "LH"
+      ],
+      "directions": [
+        "ascending",
+        "descending",
+        "up_down"
+      ],
+      "range_octaves": [
+        1
+      ],
+      "detail_route": null,
+      "route_exists": false,
+      "fingering": {
+        "RH": {
+          "ascending": false,
+          "descending": false
+        },
+        "LH": {
+          "ascending": false,
+          "descending": false
+        }
+      }
+    }
+  ]
+}

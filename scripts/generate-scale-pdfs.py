@@ -3,17 +3,20 @@
 Uses built-in Helvetica only; no font files or third-party visual assets are copied.
 """
 from pathlib import Path
+import hashlib
 import json
+import os
+import re
 from reportlab.lib import colors
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import A4, letter
 from reportlab.pdfgen import canvas
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "docs" / "content" / "site-master" / "page-content.master.json"
-OUT = ROOT / "public" / "downloads" / "scales"
+OUT = Path(os.environ.get("PIANO_SCALE_PDF_OUT", ROOT / "public" / "downloads" / "scales"))
 OUT.mkdir(parents=True, exist_ok=True)
 
-PAGE_W, PAGE_H = letter
+PAGE_W, PAGE_H = A4 if os.environ.get("PIANO_SCALE_PDF_PAGE") == "A4" else letter
 CONTENT_W = 520  # fits inside A4 with 36pt margins as well as US Letter
 LEFT = (PAGE_W - CONTENT_W) / 2
 BLUE = colors.HexColor("#0066CC")
@@ -21,6 +24,8 @@ INK = colors.HexColor("#1D1D1F")
 MUTED = colors.HexColor("#5C626B")
 LINE = colors.HexColor("#E1E4E8")
 SURFACE = colors.HexColor("#F6F7F9")
+GENERATOR_VERSION = "2026-09-11-STEP2"
+INPUT_SHA256 = hashlib.sha256(MASTER.read_bytes()).hexdigest()
 
 
 def load_data():
@@ -67,71 +72,144 @@ def note_pc(note):
     return base % 12
 
 
-def staff(pdf, notes, x, y, width):
+def parse_note(note):
+    match = re.fullmatch(r"([A-G])([#b]{0,2})(-?\d+)", note)
+    if not match:
+        raise ValueError(f"Unsupported written pitch: {note}")
+    letter, accidental, octave_text = match.groups()
+    octave = int(octave_text)
+    midi = 12 * (octave + 1) + {"C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11}[letter]
+    midi += sum(1 if symbol == "#" else -1 for symbol in accidental)
+    return {"letter": letter, "accidental": accidental, "octave": octave, "midi": midi, "note": note}
+
+
+def draw_clef(pdf, clef, x, y):
+    """Draw original vector clef marks so no music-symbol font is embedded."""
+    pdf.saveState()
+    pdf.setStrokeColor(INK)
+    pdf.setFillColor(INK)
+    pdf.setLineWidth(1.35)
+    if clef == "treble":
+        center = x + 23
+        path = pdf.beginPath()
+        path.moveTo(center + 1, y - 9)
+        path.curveTo(center - 10, y - 6, center - 10, y + 5, center + 1, y + 10)
+        path.curveTo(center + 13, y + 15, center + 12, y + 27, center + 2, y + 31)
+        path.curveTo(center - 7, y + 35, center - 5, y + 45, center + 1, y + 48)
+        path.curveTo(center + 8, y + 44, center + 7, y + 36, center + 1, y + 29)
+        path.lineTo(center - 2, y - 10)
+        path.curveTo(center - 3, y - 16, center + 6, y - 17, center + 7, y - 10)
+        path.curveTo(center + 7, y - 4, center - 1, y - 3, center - 3, y - 8)
+        pdf.drawPath(path, fill=0, stroke=1)
+        pdf.circle(center, y + 10, 2.5, fill=1, stroke=0)
+    else:
+        center = x + 22
+        path = pdf.beginPath()
+        path.moveTo(center - 7, y + 23)
+        path.curveTo(center - 3, y + 34, center + 11, y + 31, center + 11, y + 19)
+        path.curveTo(center + 11, y + 8, center + 2, y + 2, center - 8, y + 1)
+        pdf.drawPath(path, fill=0, stroke=1)
+        pdf.circle(center - 7, y + 23, 2.8, fill=1, stroke=0)
+        pdf.circle(center + 17, y + 21, 1.7, fill=1, stroke=0)
+        pdf.circle(center + 17, y + 14, 1.7, fill=1, stroke=0)
+    pdf.restoreState()
+
+
+def staff(pdf, notes, x, y, width, clef):
+    parsed = [parse_note(note) for note in notes]
+    letters = "CDEFGAB"
+    bottom_line = 4 * 7 + 2 if clef == "treble" else 2 * 7 + 4
+    steps = [item["octave"] * 7 + letters.index(item["letter"]) - bottom_line for item in parsed]
     pdf.setStrokeColor(colors.HexColor("#8B919A"))
     for row in range(5):
         pdf.line(x, y + row * 6, x + width, y + row * 6)
-    step = width / max(len(notes), 1)
-    letters = "CDEFGAB"
-    for index, note in enumerate(notes):
-        letter = note[0]
-        octave = int(note[-1])
-        pitch_step = octave * 7 + letters.index(letter)
-        base_step = 4 * 7 + 2
-        note_y = y + (pitch_step - base_step) * 3
-        note_y = min(y + 38, max(y - 14, note_y))
-        note_x = x + step * (index + .5)
+    pdf.setFont("Helvetica-Bold", 7)
+    pdf.setFillColor(MUTED)
+    pdf.drawString(x, y + 30, "TREBLE CLEF" if clef == "treble" else "BASS CLEF")
+    draw_clef(pdf, clef, x, y)
+    usable_x = x + 66
+    step_x = (width - 70) / max(len(notes), 1)
+    for index, (item, staff_step) in enumerate(zip(parsed, steps)):
+        note_y = y + staff_step * 3
+        note_x = usable_x + step_x * (index + .5)
+        ledger_steps = list(range(-2, staff_step - 1, -2)) if staff_step < 0 else list(range(10, staff_step + 1, 2)) if staff_step > 8 else []
+        for ledger in ledger_steps:
+            pdf.setStrokeColor(INK)
+            pdf.line(note_x - 8, y + ledger * 3, note_x + 8, y + ledger * 3)
         pdf.setFillColor(INK)
         pdf.ellipse(note_x - 4, note_y - 3, note_x + 4, note_y + 3, fill=1, stroke=0)
-        if "#" in note or "b" in note:
+        if item["accidental"]:
             pdf.setFont("Helvetica", 7)
-            pdf.drawRightString(note_x - 7, note_y - 2, "#" if "#" in note else "b")
+            pdf.drawRightString(note_x - 7, note_y - 2, item["accidental"])
         pdf.setFont("Helvetica", 6.5)
-        pdf.drawCentredString(note_x, y - 25, note)
+        pdf.drawCentredString(note_x, y - 25, item["note"])
 
 
 def keyboard(pdf, notes, x, y, width):
-    pcs = {note_pc(note[:-1]) for note in notes}
-    white = [0, 2, 4, 5, 7, 9, 11, 0]
+    parsed = [parse_note(note) for note in notes]
+    labels = {item["midi"]: item["note"] for item in parsed}
+    marked = set(labels)
+    low, high = min(marked), max(marked)
+    white_pcs = {0, 2, 4, 5, 7, 9, 11}
+    white = [midi for midi in range(low, high + 1) if midi % 12 in white_pcs]
+    black = [midi for midi in range(low, high + 1) if midi % 12 not in white_pcs]
     key_w = width / len(white)
-    for index, pc in enumerate(white):
-        pdf.setFillColor(colors.HexColor("#EAF2FF") if pc in pcs else colors.white)
+    white_x = {midi: x + index * key_w for index, midi in enumerate(white)}
+    for midi in white:
+        pdf.setFillColor(colors.HexColor("#EAF2FF") if midi in marked else colors.white)
         pdf.setStrokeColor(colors.HexColor("#8B919A"))
-        pdf.rect(x + index * key_w, y, key_w, 34, fill=1, stroke=1)
-    for index, pc in enumerate([1, 3, None, 6, 8, 10, None]):
-        if pc is None:
+        pdf.rect(white_x[midi], y, key_w, 40, fill=1, stroke=1)
+        if midi in labels:
+            pdf.setFillColor(INK)
+            pdf.setFont("Helvetica-Bold", 6.5)
+            pdf.drawCentredString(white_x[midi] + key_w / 2, y + 4, labels[midi])
+    for midi in black:
+        next_white = next((value for value in white if value > midi), None)
+        previous_white = next((value for value in reversed(white) if value < midi), None)
+        if next_white is not None:
+            boundary = white_x[next_white]
+        elif previous_white is not None:
+            boundary = white_x[previous_white] + key_w
+        else:
             continue
-        bx = x + (index + 1) * key_w - key_w * .28
-        pdf.setFillColor(BLUE if pc in pcs else INK)
+        bx = boundary - key_w * .28
+        pdf.setFillColor(BLUE if midi in marked else INK)
         pdf.rect(bx, y + 14, key_w * .56, 20, fill=1, stroke=0)
+        if midi in labels:
+            pdf.setFillColor(colors.white)
+            pdf.setFont("Helvetica-Bold", 5.5)
+            pdf.drawCentredString(boundary, y + 17, labels[midi])
 
 
-def reference_section(pdf, y, title, ascending, descending, up_fingers, down_fingers, scope):
-    height = 265
+def direction_panel(pdf, y, label, notes, fingers, clef):
+    height = 252
     pdf.setFillColor(SURFACE)
     pdf.roundRect(LEFT, y - height, CONTENT_W, height, 8, fill=1, stroke=0)
     pdf.setFillColor(INK)
-    pdf.setFont("Helvetica-Bold", 12)
-    pdf.drawString(LEFT + 16, y - 23, title)
-    pdf.setFont("Helvetica", 8)
+    pdf.setFont("Helvetica-Bold", 11)
+    pdf.drawString(LEFT + 16, y - 22, label)
+    pdf.setFont("Helvetica", 8.5)
     pdf.setFillColor(MUTED)
-    pdf.drawRightString(LEFT + CONTENT_W - 16, y - 23, "1 octave · separate-hand reference")
-    current = y - 47
-    for label, notes, fingers in [("Ascending", ascending, up_fingers), ("Descending", descending, down_fingers)]:
-        pdf.setFillColor(INK)
-        pdf.setFont("Helvetica-Bold", 8.5)
-        pdf.drawString(LEFT + 16, current, label)
-        pdf.setFont("Helvetica", 8.5)
-        pdf.drawString(LEFT + 82, current, " - ".join(notes))
-        pdf.setFillColor(MUTED)
-        pdf.drawString(LEFT + 82, current - 12, "Fingers: " + (" - ".join(map(str, fingers)) if fingers else "Notes only - not source-checked for this direction"))
-        current -= 29
-    staff(pdf, ascending, LEFT + 24, current - 34, CONTENT_W - 48)
-    current -= 100
-    keyboard(pdf, ascending, LEFT + 24, current, CONTENT_W - 48)
-    current -= 20
-    wrap(pdf, scope, LEFT + 16, current, CONTENT_W - 32, size=7.5, leading=9, color=MUTED)
-    return y - height - 14
+    pdf.drawRightString(LEFT + CONTENT_W - 16, y - 22, "Actual ordered pitches")
+    wrap(pdf, "Notes: " + " - ".join(notes), LEFT + 16, y - 42, CONTENT_W - 32, size=8.5, leading=11)
+    wrap(pdf, "Fingers: " + (" - ".join(map(str, fingers)) if fingers else "Not source-checked; notes only"), LEFT + 16, y - 66, CONTENT_W - 32, size=8, leading=10, color=MUTED)
+    staff(pdf, notes, LEFT + 24, y - 142, CONTENT_W - 48, clef)
+    keyboard(pdf, notes, LEFT + 24, y - 232, CONTENT_W - 48)
+    return y - height
+
+
+def hand_page(pdf, page_number, form_name, hand_label, ascending, descending, up_fingers, down_fingers, scope):
+    clef = "treble" if hand_label == "Right hand" else "bass"
+    header(pdf, f"{form_name} · {hand_label}", "One octave · separate-hand reference · both directions shown", page_number)
+    y = PAGE_H - 92
+    y = direction_panel(pdf, y, "Ascending · low to high", ascending, up_fingers, clef) - 12
+    y = direction_panel(pdf, y, "Descending · high to low", descending, down_fingers, clef) - 16
+    wrap(pdf, scope, LEFT, y, CONTENT_W, size=7.5, leading=9, color=MUTED)
+
+
+def source_rows(master, source_ids):
+    by_id = {item["source_id"]: item for item in master["sources"]}
+    return [by_id[source_id] for source_id in source_ids if source_id in by_id]
 
 
 def mapped(form, key):
@@ -140,8 +218,10 @@ def mapped(form, key):
 
 def generate_reference(master):
     path = OUT / "pianogrid-scales-starter-reference.pdf"
-    pdf = canvas.Canvas(str(path), pagesize=letter, pageCompression=1)
+    pdf = canvas.Canvas(str(path), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
     pdf.setTitle("C Major & A Minor - One-Octave Piano Reference")
+    pdf.setAuthor("PianoGrid")
+    pdf.setSubject(f"Generator {GENERATOR_VERSION}; input SHA-256 {INPUT_SHA256}")
     header(pdf, "C Major & A Minor", "One-Octave Piano Reference · hands shown separately", 1)
     y = PAGE_H - 115
     y = wrap(pdf, "This reference contains C major plus natural, harmonic and classical melodic A minor. It is not an all-scales book, a two-octave fingering guide or a two-hand synchronization exercise.", LEFT, y, CONTENT_W, size=11, leading=16)
@@ -152,19 +232,31 @@ def generate_reference(master):
         y = wrap(pdf, item, LEFT + 14, y + 6, CONTENT_W - 14, size=10, leading=15) - 4
     pdf.setFillColor(SURFACE)
     pdf.roundRect(LEFT, 110, CONTENT_W, 150, 8, fill=1, stroke=0)
-    wrap(pdf, "Source scope", LEFT + 16, 235, CONTENT_W - 32, size=11, leading=14, font="Helvetica-Bold")
-    wrap(pdf, "Scale patterns and form conventions: Open Music Theory. C-major one-octave fingering: LearnMusicTheory and Music Fun. A-minor ascending fingering: named PianoScales/Hoffman records in PianoGrid. A-natural-minor descending fingering: LearnMusicTheory PDF page 2, printed page 40, A row. The right-hand PianoGrid display is one octave above that source staff and is marked as an adaptation.", LEFT + 16, 215, CONTENT_W - 32, size=8.5, leading=12, color=MUTED)
+    wrap(pdf, "Coverage and build identity", LEFT + 16, 235, CONTENT_W - 32, size=11, leading=14, font="Helvetica-Bold")
+    wrap(pdf, f"Generator: {GENERATOR_VERSION}. Input SHA-256: {INPUT_SHA256}. Coverage: C major plus A natural, harmonic and classical melodic minor; one octave; separate hands; ascending and descending pitch diagrams. Finger numbers are omitted when the required source scope is unavailable.", LEFT + 16, 215, CONTENT_W - 32, size=8.5, leading=12, color=MUTED)
+    pdf.showPage()
+
+    header(pdf, "Sources, rights & limits", "Human-readable URLs and source locators", 2)
+    source_ids = ["AM-NOTES-C-MAJOR", "AM-FINGER-LMT", "AM-FINGER-MF", "AN-OMT", "AN-PS-NAT", "AN-PS-HAR", "AN-PS-MEL", "AN-DENTON", "AN-HA-A"]
+    y = PAGE_H - 96
+    for source in source_rows(master, source_ids):
+        y = wrap(pdf, f"{source['source_id']} · {source['title']}", LEFT, y, CONTENT_W, size=8.5, leading=10, font="Helvetica-Bold")
+        y = wrap(pdf, source["url"], LEFT, y - 1, CONTENT_W, size=7.5, leading=9, color=BLUE)
+        y = wrap(pdf, f"Locator: {source.get('locator') or 'not supplied'}", LEFT, y - 1, CONTENT_W, size=7.5, leading=9, color=MUTED) - 7
+    y -= 2
+    y = wrap(pdf, "Rights and provenance", LEFT, y, CONTENT_W, size=9, leading=11, font="Helvetica-Bold")
+    wrap(pdf, "Scale facts, note spellings and source-scoped fingering facts are transcribed from the named references. PianoGrid created this PDF's text, diagrams and layout. No third-party source PDF, image, music engraving or font file is embedded. Helvetica is a built-in PDF base font.", LEFT, y - 2, CONTENT_W, size=7.5, leading=9, color=MUTED)
     pdf.showPage()
 
     c = master["pages"]["/scales/c-major"]["data"]
     objects = [("C major", None)] + [(form["label"].replace(" (classical exercise)", " - classical"), form) for form in master["pages"]["/scales/a-minor"]["data"]["forms"]]
-    page_number = 2
+    page_number = 3
     for name, form in objects:
-        header(pdf, name, "Actual direction order · source-scoped one-octave reference", page_number)
-        y = PAGE_H - 92
         if form is None:
             for hand, label in [("RH", "Right hand"), ("LH", "Left hand")]:
-                y = reference_section(pdf, y, label, [item["note"] for item in c["pitch_sequences"][hand]["ascending"]], [item["note"] for item in c["pitch_sequences"][hand]["descending"]], c["fingering"][hand]["ascending"], c["fingering"][hand]["descending"], "Source-documented C-major one-octave row. The displayed register is PianoGrid's labeled reference range.")
+                hand_page(pdf, page_number, name, label, [item["note"] for item in c["pitch_sequences"][hand]["ascending"]], [item["note"] for item in c["pitch_sequences"][hand]["descending"]], c["fingering"][hand]["ascending"], c["fingering"][hand]["descending"], "Source-documented C-major one-octave row. The displayed register is PianoGrid's labeled reference range.")
+                pdf.showPage()
+                page_number += 1
         else:
             fingering = form["fingering"]
             for hand, label, source_name in [("right_hand", "Right hand", "right_hand"), ("left_hand", "Left hand", "left_hand")]:
@@ -173,9 +265,9 @@ def generate_reference(master):
                     scope += " Natural-minor descending is transcribed from LearnMusicTheory page 2 A row; RH is an explicit octave adaptation." if hand == "right_hand" else " Natural-minor descending matches the source A3-A4 register."
                 else:
                     scope += " Descending fingering is not source-checked; notes only."
-                y = reference_section(pdf, y, label, mapped(form, f"{source_name}_ascending_example"), mapped(form, f"{source_name}_descending_example"), fingering["ascending"][hand], fingering["descending"][hand], scope)
-        pdf.showPage()
-        page_number += 1
+                hand_page(pdf, page_number, name, label, mapped(form, f"{source_name}_ascending_example"), mapped(form, f"{source_name}_descending_example"), fingering["ascending"][hand], fingering["descending"][hand], scope)
+                pdf.showPage()
+                page_number += 1
     pdf.save()
     return path
 
@@ -189,8 +281,10 @@ def answer_rule(pdf, y, number, answer):
 
 def generate_worksheet():
     path = OUT / "pianogrid-scales-notes-check-worksheet.pdf"
-    pdf = canvas.Canvas(str(path), pagesize=letter, pageCompression=1)
+    pdf = canvas.Canvas(str(path), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
     pdf.setTitle("Piano Scale Notes - Practice Worksheet")
+    pdf.setAuthor("PianoGrid")
+    pdf.setSubject(f"Generator {GENERATOR_VERSION}; input SHA-256 {INPUT_SHA256}")
     header(pdf, "Piano Scale Notes", "Practice Worksheet · note knowledge, not performance scoring", 1)
     pdf.setFont("Helvetica", 10)
     pdf.setFillColor(INK)
@@ -248,13 +342,64 @@ def generate_worksheet():
     y = answer_rule(pdf, y, 2, "E4 and C5. The final C is an octave above the first C.") - 22
     y = answer_rule(pdf, y, 3, "Choice A. F and G return to their natural-minor values in this classical descending exercise.") - 32
     wrap(pdf, "Reference and scope", LEFT, y, CONTENT_W, size=11, leading=14, font="Helvetica-Bold")
-    wrap(pdf, "PianoGrid Scales: C Major and A Minor. Scale-form rules are documented in the cited Open Music Theory material. This worksheet is an original note-knowledge exercise, not a teacher-reviewed performance assessment.", LEFT, y - 22, CONTENT_W, size=9, leading=14, color=MUTED)
+    y = wrap(pdf, "PianoGrid Scales: C Major and A Minor. Scale-form rules are documented in Open Music Theory: https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/ . This worksheet is an original note-knowledge exercise, not a teacher-reviewed performance assessment.", LEFT, y - 22, CONTENT_W, size=9, leading=14, color=MUTED)
+    wrap(pdf, f"Generator: {GENERATOR_VERSION}. Input SHA-256: {INPUT_SHA256}. No third-party source PDF, image, engraving or font file is embedded.", LEFT, y - 12, CONTENT_W, size=7.5, leading=10, color=MUTED)
     pdf.showPage()
     pdf.save()
     return path
 
 
+def write_generation_metadata(master, outputs):
+    c = master["pages"]["/scales/c-major"]["data"]
+    sections = []
+    for hand, label in [("RH", "right_hand"), ("LH", "left_hand")]:
+        sections.append({
+            "scale": "c_major",
+            "hand": label,
+            "ascending": [item["note"] for item in c["pitch_sequences"][hand]["ascending"]],
+            "descending": [item["note"] for item in c["pitch_sequences"][hand]["descending"]],
+            "ascending_fingering": c["fingering"][hand]["ascending"],
+            "descending_fingering": c["fingering"][hand]["descending"],
+        })
+    for form in master["pages"]["/scales/a-minor"]["data"]["forms"]:
+        for hand in ["right_hand", "left_hand"]:
+            sections.append({
+                "scale": form["id"],
+                "hand": hand,
+                "ascending": mapped(form, f"{hand}_ascending_example"),
+                "descending": mapped(form, f"{hand}_descending_example"),
+                "ascending_fingering": form["fingering"]["ascending"][hand],
+                "descending_fingering": form["fingering"]["descending"][hand],
+            })
+    for section in sections:
+        section["ascending_midi"] = [parse_note(note)["midi"] for note in section["ascending"]]
+        section["descending_midi"] = [parse_note(note)["midi"] for note in section["descending"]]
+    metadata = {
+        "generator_version": GENERATOR_VERSION,
+        "input_path": MASTER.relative_to(ROOT).as_posix(),
+        "input_sha256": INPUT_SHA256,
+        "page_format": "A4" if os.environ.get("PIANO_SCALE_PDF_PAGE") == "A4" else "LETTER",
+        "page_size_points": [PAGE_W, PAGE_H],
+        "coverage": {
+            "forms": ["c_major", "natural_minor", "harmonic_minor", "melodic_minor_classical"],
+            "hands": ["right_hand", "left_hand"],
+            "directions": ["ascending", "descending"],
+            "range": "one_octave",
+        },
+        "rights": "PianoGrid original text, diagrams and layout; source facts transcribed; no third-party source file or font file embedded.",
+        "outputs": [Path(output).name for output in outputs],
+        "sections": sections,
+    }
+    default_metadata = ROOT / "checks" / "scales-step2-final" / f"generation-metadata-{metadata['page_format'].lower()}.json"
+    path = Path(os.environ.get("PIANO_SCALE_PDF_METADATA", default_metadata))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return path
+
+
 if __name__ == "__main__":
     master = load_data()
-    for output in (generate_reference(master), generate_worksheet()):
+    outputs = (generate_reference(master), generate_worksheet())
+    metadata = write_generation_metadata(master, outputs)
+    for output in (*outputs, metadata):
         print(output.relative_to(ROOT))

@@ -75,7 +75,7 @@ export function HomePage(){
 export function ToolsPage(){
   const data=getToolsModel();
   return <Shell model={data.model} current="Tools"><section className="in-tool-directory" aria-labelledby="in-tools-title"><div className="in-section-head"><p>Working references</p><h2 id="in-tools-title">Choose the result you need</h2></div><div className="in-lookup-grid">{data.lookupLinks.map((item,index)=><DestinationCard item={item} index={index} key={item.url}/>)}</div></section>
-    <section className="in-printables" aria-labelledby="in-printables-title"><div className="in-section-head"><p>Original downloads</p><h2 id="in-printables-title">Print something useful</h2></div><div className="in-print-grid">{data.printables.map(item=><PrintableCard item={item} key={item.url}/>)}</div></section>
+    <section className="in-printables" aria-labelledby="in-printables-title"><div className="in-section-head"><p>Original downloads</p><h2 id="in-printables-title">Print something useful</h2></div><div className="in-print-grid">{data.printables.map(item=><PrintableCard item={item} key={item.downloadURL ?? item.url}/>)}</div></section>
     <Reading blocks={data.model.blocks}/>
   </Shell>;
 }

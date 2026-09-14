@@ -1,0 +1,65 @@
+{
+  "captured_from": [
+    "src/lib/scale-page-copy.ts",
+    "src/components/scales/pages.tsx",
+    "src/lib/site-routes.ts"
+  ],
+  "implemented_routes": [
+    "/scales",
+    "/scales/c-major",
+    "/scales/a-minor"
+  ],
+  "compatibility_anchors": {
+    "/scales": [
+      "two-hand-printable",
+      "chart",
+      "major",
+      "formulas",
+      "minor",
+      "fingering",
+      "jazz",
+      "explore",
+      "practice",
+      "print"
+    ],
+    "/scales/c-major": [
+      "fingering"
+    ],
+    "/scales/a-minor": [
+      "practice"
+    ]
+  },
+  "implemented_relations": [
+    {
+      "from": "/scales",
+      "to": "/scales/c-major",
+      "relation": "available detail"
+    },
+    {
+      "from": "/scales",
+      "to": "/scales/a-minor",
+      "relation": "available detail"
+    },
+    {
+      "from": "/scales/c-major",
+      "to": "/keyboard-notes/chart",
+      "relation": "read staff/keyboard notes"
+    },
+    {
+      "from": "/scales/c-major",
+      "to": "/guide/read-sheet-music",
+      "relation": "reading guide"
+    },
+    {
+      "from": "/scales/a-minor",
+      "to": "/chords/a-minor",
+      "relation": "natural-minor triads"
+    }
+  ],
+  "downloadable_resources": [
+    "/downloads/scales/pianogrid-scales-starter-reference.pdf",
+    "/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf"
+  ],
+  "unpublished_routes_enabled": [],
+  "deployment_of_this_dirty_version": "not performed or verified"
+}

@@ -101,13 +101,37 @@ export const PUBLIC_ROUTES = [
   '/keyboard-notes/chart',
   '/keyboard-notes/finger-numbers',
   '/scales',
+  '/scales/modes',
+  '/scales/blues',
+  '/scales/pentatonic',
+  '/scales/harmonic-major',
+  '/scales/chromatic',
   '/scales/c-major',
   '/scales/a-minor',
+  '/scales/d-major',
+  '/scales/e-minor',
+  '/scales/f-major',
+  '/scales/g-major',
+  '/scales/a-major',
+  '/scales/c-minor',
+  '/scales/d-minor',
+  '/scales/e-major',
+  '/scales/b-minor',
+  '/scales/f-minor',
+  '/scales/a-sharp-minor',
+  '/scales/b-major',
+  '/scales/b-flat-major',
+  '/scales/g-minor',
+  '/scales/e-flat-major',
+  '/scales/f-sharp-minor',
+  '/scales/c-flat-major',
+  '/arpeggios',
   '/songs',
   '/songs/easy',
   '/guide',
   '/guide/read-sheet-music',
   '/guide/piano-chords',
+  '/guide/piano-scales',
   '/tools/blank-sheet-music',
 ] as const;
 
@@ -189,6 +213,14 @@ export const SITE_NAVIGATION = [
     children: [
       { label: 'C Major Scale', href: '/scales/c-major' },
       { label: 'A Minor Scale', href: '/scales/a-minor' },
+      { label: 'Major & Minor Scales', href: '/scales#chart' },
+      { label: 'Find by Notes', href: '/scales#find-by-notes' },
+      { label: 'Modes', href: '/scales/modes' },
+      { label: 'Pentatonic Scales', href: '/scales/pentatonic' },
+      { label: 'Blues Scales', href: '/scales/blues' },
+      { label: 'Chromatic Scales', href: '/scales/chromatic' },
+      { label: 'Arpeggios', href: '/arpeggios' },
+      { label: 'Scale Practice Guide', href: '/guide/piano-scales' },
     ],
   },
   {
@@ -202,6 +234,7 @@ export const SITE_NAVIGATION = [
     children: [
       { label: 'Read Sheet Music', href: '/guide/read-sheet-music' },
       { label: 'Piano Chords', href: '/guide/piano-chords' },
+      { label: 'Piano Scales', href: '/guide/piano-scales' },
     ],
   },
   {
@@ -212,7 +245,7 @@ export const SITE_NAVIGATION = [
 ] as const satisfies ReadonlyArray<{
   label: string;
   href: PublicRoute;
-  children: ReadonlyArray<{ label: string; href: PublicRoute; group?: 'Browse' | 'More Chords' | 'Explore' | 'Learn' }>;
+  children: ReadonlyArray<{ label: string; href: PublicRoute | `${PublicRoute}#${string}`; group?: 'Browse' | 'More Chords' | 'Explore' | 'Learn' }>;
 }>;
 
 const publicRouteSet = new Set<string>(PUBLIC_ROUTES);

@@ -18,6 +18,11 @@ const downloadableAssets:Record<string,string>={
   'assets/blank-piano-staff-letter.pdf':'/reference/assets/blank-piano-staff-letter.pdf',
   'assets/piano-starter-and-reading.pdf':'/assets/guides/piano-starter-and-reading.pdf'
 };
+const scalePrintables: PrintableDestination[] = [
+  { label: '12 major scales', task: 'Compare one-octave notes in twelve major keys', url: '/scales', available: true, downloadURL: '/downloads/scales/pianogrid-12-major-scales-note-reference.pdf' },
+  { label: 'Major and minor note atlas', task: 'Keep all 60 current named references nearby', url: '/scales', available: true, downloadURL: '/downloads/scales/pianogrid-major-minor-note-atlas.pdf' },
+  { label: 'C major two-hand starter', task: 'Read separate one-octave references for both hands', url: '/scales/c-major', available: true, downloadURL: '/downloads/scales/pianogrid-c-major-two-hand-starter.pdf' },
+];
 function verifyDownload(relative:string,url:string){
   const source=sourceAssetPath('/tools',relative),output=`public${url}`;
   if(!existsSync(output))throw new Error(`Missing public printable: ${url}`);
@@ -38,8 +43,8 @@ export function getToolsModel():ToolsModel{
   const allLookupLinks:Destination[]=page.data.lookup_links.map(destination);
   const allPrintables:PrintableDestination[]=page.data.printables.map((item:{label:string;task:string;url:string;asset:string}):PrintableDestination=>{const downloadURL=downloadableAssets[item.asset]??null,available=locallyAvailableURLs.has(item.url)&&downloadURL!==null;if(available)verifyDownload(item.asset,downloadURL);return{label:item.label,task:item.task,url:item.url,available,downloadURL:available?downloadURL:null};});
   const lookupLinks=allLookupLinks.filter(item=>item.available);
-  const printables=allPrintables.filter(item=>item.available);
-  if(lookupLinks.length!==4||printables.length!==2)throw new Error('Tools destination release map is invalid');
+  const printables=[...allPrintables.filter(item=>item.available), ...scalePrintables.filter(item=>locallyAvailableURLs.has(item.url)&&item.downloadURL&&existsSync(`public${item.downloadURL}`))];
+  if(lookupLinks.length!==4||printables.length!==5)throw new Error('Tools destination release map is invalid');
   const blocks=model.blocks.map(block=>block.id==='jobs'
     ? {...block,body:'Choose an available reference for the task you want to complete. Every option on this page opens the matching reference.',actions:lookupLinks.map(({label,url})=>({label,url}))}
     : {...block,body:'Choose an available printable, open its resource page for details, or download its verified PDF.',actions:printables.map(({label,url})=>({label,url}))});

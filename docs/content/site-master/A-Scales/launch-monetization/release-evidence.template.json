@@ -1,0 +1,63 @@
+{
+  "candidate_id": null,
+  "changed_tree_sha256": null,
+  "fix_results": {
+    "L01": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L02": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L03": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L04": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L05": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L06": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L08": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    },
+    "L13": {
+      "status": "NOT_RUN",
+      "evidence_ref": null
+    }
+  },
+  "build": {
+    "status": "NOT_RUN",
+    "command": null,
+    "evidence_ref": null
+  },
+  "trust_and_privacy": {
+    "status": "NOT_RUN",
+    "evidence_ref": null
+  },
+  "public_deploy": {
+    "status": "NOT_RUN",
+    "release_id": null,
+    "evidence_ref": null
+  },
+  "analytics": {
+    "status": "NOT_RUN",
+    "provider": null,
+    "evidence_ref": null
+  },
+  "ads": {
+    "status": "NOT_RUN",
+    "approval_evidence_ref": null,
+    "network_and_layout_evidence_ref": null
+  },
+  "limitations": []
+}

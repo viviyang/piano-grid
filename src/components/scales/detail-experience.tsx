@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import type { PianoKey } from '@/lib/keyboard-types';
 import type { ScaleDirection, ScaleFormID, ScaleHand, ScaleOption } from '@/lib/scale-types';
@@ -8,6 +8,7 @@ import { SITE_NAME } from '@/lib/site-config';
 import { ScalePractice, ScaleQuiz } from './scale-learning';
 import { ScaleCurrentAnswer, ScaleReference } from './scale-reference';
 import { useScaleAudio } from './use-scale-audio';
+import { emitScaleEvent } from '@/lib/scale-events';
 
 type Snapshot = { option: ScaleOption; hand: ScaleHand; direction: ScaleDirection; tempo: number };
 
@@ -19,19 +20,30 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
   const [tempo, setTempo] = useState(tempoOptions.includes(60) ? 60 : tempoOptions[0]);
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
   const [printError, setPrintError] = useState('');
-  const [practiceEpoch, setPracticeEpoch] = useState(0);
   const option = options.find((item) => item.form === form) ?? options[0];
+  const lastReference = useRef(`${option.id}:${hand}:${direction}:${tempo}`);
   const print = snapshot ?? { option, hand, direction, tempo };
-  const change = (callback: () => void) => { audio.cancel(); setPrintError(''); callback(); };
+  const change = (callback: () => void) => { audio.cancel('settings'); setPrintError(''); callback(); };
   useEffect(() => {
-    const prepare = () => { audio.cancel(); flushSync(() => setSnapshot({ option, hand, direction, tempo })); };
+    emitScaleEvent('scale_reference_viewed', { object_id: option.id, form: option.form, hand, direction, range: 'one_octave', tempo });
+    // This effect intentionally records only the initially rendered reference.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    const prepare = () => { audio.cancel('printing'); flushSync(() => setSnapshot({ option, hand, direction, tempo })); };
     const release = () => setSnapshot(null);
     window.addEventListener('beforeprint', prepare); window.addEventListener('afterprint', release);
     return () => { window.removeEventListener('beforeprint', prepare); window.removeEventListener('afterprint', release); };
   }, [option, hand, direction, tempo]);
+  useEffect(() => {
+    const value = `${option.id}:${hand}:${direction}:${tempo}`;
+    if (value !== lastReference.current) emitScaleEvent('scale_reference_changed', { object_id: option.id, form: option.form, hand, direction, range: 'one_octave', tempo });
+    lastReference.current = value;
+  }, [option, hand, direction, tempo]);
   const startPrint = () => {
-    audio.cancel();
+    audio.cancel('printing');
     flushSync(() => setSnapshot({ option, hand, direction, tempo }));
+    emitScaleEvent('scale_print_requested', { asset_id: 'browser_print_current_scale', object_id: option.id, hand, direction });
     try { window.print(); } catch { setPrintError('Printing could not start. Please use your browser’s print command.'); }
   };
 
@@ -45,12 +57,12 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
         <label className="kn-field">Direction<select aria-label="Direction" value={direction} disabled={!audio.ready} onChange={(event) => change(() => setDirection(event.target.value as ScaleDirection))}><option value="ascending">Ascending</option><option value="descending">Descending</option><option value="up_down">Up and down</option></select></label>
         {tempoOptions.length > 1 ? <label className="kn-field">Tempo<select aria-label="Tempo" value={tempo} disabled={!audio.ready} onChange={(event) => change(() => setTempo(Number(event.target.value)))}>{tempoOptions.map((value) => <option key={value} value={value}>{value} BPM</option>)}</select></label> : <div className="sc-static-field"><span>Tempo</span><strong>{tempo} BPM</strong></div>}
       </div>
-      <ScaleReference option={option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={tempo} audio={audio} showSummary={false} onBeforePlay={() => flushSync(() => setPracticeEpoch((value) => value + 1))}/>
+      <ScaleReference option={option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={tempo} audio={audio} showSummary={false}/>
       <div className="sc-print-bar"><button type="button" className="am-button am-secondary" disabled={!audio.ready} onClick={startPrint}>Print current scale</button></div>
       <p role="status" className="kn-error">{printError}</p>
       <p className="sc-scope-note">Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.</p>
       <ScaleQuiz key={`quiz:${option.id}:${hand}:${direction}`} option={option} hand={hand} direction={direction} keyboardKeys={keyboardKeys} ready={audio.ready}/>
-      <ScalePractice key={`practice:${option.id}:${hand}:${direction}:${practiceEpoch}`} option={option} hand={hand} direction={direction} audio={audio} ready={audio.ready}/>
+      <ScalePractice key={`practice:${option.id}:${hand}:${direction}`} option={option} hand={hand} direction={direction} audio={audio} ready={audio.ready}/>
     </section>
     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
       <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div><p>Key signature: {keySignature}</p>

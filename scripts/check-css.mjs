@@ -64,7 +64,7 @@ try {
     assert.equal(cn('text-pr-body', size), size);
   }
   await writeFile(join(out,'tailwind-compile.json'),JSON.stringify({executed_at:new Date().toISOString(),passed:true,css_bytes:Buffer.byteLength(compiled),semantic_utilities:candidates.split(' '),declaration_checks:expected.size,cn_checks:5 + sizes.length * 3,authorized_routes:173},null,2)+'\n');
-  console.log('Tailwind v4 compilation + semantic utility + cn checks passed for the 173 authorized routes.');
+  console.log('Tailwind v4 compilation + semantic utility + cn checks passed for the explicitly authorized routes.');
 } catch(e) {
   const error = e instanceof Error ? e.message : String(e);
   await mkdir(out,{recursive:true});

@@ -1,0 +1,20 @@
+{
+  "candidate_id": "scales-launch-79faa6c539d6",
+  "changed_tree_sha256": "79faa6c539d6bd87bf8a90cee549dec607ceb7fd0b15090d1b14a200f0668363",
+  "fix_results": {
+    "L01": { "status": "PASS_WITH_NOTE", "evidence_ref": "checks/launch-monetization/browser/print-validation.json", "note": "Six final PDFs/7 rendered pages pass; initial HTML is complete, but Tabbit disallowed a secondary JavaScript-disabled context." },
+    "L02": { "status": "PASS", "evidence_ref": "checks/launch-monetization/contract-validation.json" },
+    "L03": { "status": "PASS", "evidence_ref": "checks/launch-monetization/whole-site-scan.json" },
+    "L04": { "status": "PASS", "evidence_ref": "checks/launch-monetization/browser/browser-validation.json" },
+    "L05_L07": { "status": "PASS_LOCAL_BLOCKED_ACCOUNT", "evidence_ref": "checks/launch-monetization/events/validation.json" },
+    "L06": { "status": "PASS", "evidence_ref": "checks/launch-monetization/contract-validation.json" },
+    "L08": { "status": "DRAFT_READY_UNPUBLISHED", "evidence_ref": "docs/release/scales-launch/TRUST_PRIVACY_DRAFTS.md" },
+    "L13": { "status": "PASS", "evidence_ref": "checks/launch-monetization/browser/browser-validation.json" }
+  },
+  "build": { "status": "PASS_WITH_INFRA_NOTE", "command": "PIANO_NEXT_DIST_DIR=.next-launch-final npx next build --webpack", "outputs": 202, "evidence_ref": "docs/release/scales-launch/BUILD_AND_ROLLBACK.md" },
+  "trust_and_privacy": { "status": "DRAFT_READY_UNPUBLISHED", "evidence_ref": "docs/release/scales-launch/TRUST_PRIVACY_DRAFTS.md" },
+  "public_deploy": { "status": "NOT_RUN_NOT_AUTHORIZED", "release_id": null, "evidence_ref": "checks/launch-monetization/production-baseline.json" },
+  "analytics": { "status": "BLOCKED_ACCOUNT", "provider": null, "evidence_ref": "docs/release/scales-launch/MEASUREMENT_EVENT_DICTIONARY.md" },
+  "ads": { "status": "BLOCKED_ACCOUNT_DEFAULT_OFF", "approval_evidence_ref": null, "network_and_layout_evidence_ref": null },
+  "limitations": ["No commit, push or deployment authorization.", "No real analytics, GSC, CMP or AdSense account evidence.", "Six owner/device/manual checks remain NOT_RUN."]
+}

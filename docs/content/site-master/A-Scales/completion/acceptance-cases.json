@@ -1,0 +1,582 @@
+{
+  "artifact_kind": "independent_acceptance_spec_NOT_production_authoring_or_test_results",
+  "case_count": 36,
+  "cases": [
+    {
+      "id": "M01",
+      "layer": "music",
+      "fixture": {
+        "written_note": "Cb4"
+      },
+      "expected": {
+        "midi": 59,
+        "key_color": "white"
+      },
+      "basis": "已核实规则派生：自然C4=60，flat=-1；对应实际键为B3。非指法证据。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M02",
+      "layer": "music",
+      "fixture": {
+        "written_note": "B#3"
+      },
+      "expected": {
+        "midi": 60,
+        "key_color": "white"
+      },
+      "basis": "已核实规则派生：B3=59，sharp=+1；written_octave仍3。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M03",
+      "layer": "music",
+      "fixture": {
+        "written_note": "E#4"
+      },
+      "expected": {
+        "midi": 65,
+        "key_color": "white"
+      },
+      "basis": "已核实规则派生：E4=64，sharp=+1；对应F4琴键。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M04",
+      "layer": "music",
+      "fixture": {
+        "object": "A classical melodic minor",
+        "direction": "descending",
+        "hand": "RH"
+      },
+      "expected": {
+        "notes": [
+          "A5",
+          "G5",
+          "F5",
+          "E5",
+          "D5",
+          "C5",
+          "B4",
+          "A4"
+        ],
+        "reject_ascending_reversed": true
+      },
+      "basis": "W01/W02形式规则＋原A-minor pitch_sequences展示音区。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M05",
+      "layer": "music",
+      "fixture": {
+        "object": "A-sharp classical melodic minor",
+        "direction": "ascending"
+      },
+      "expected": {
+        "spelled_pitch_classes": [
+          "A#",
+          "B#",
+          "C#",
+          "D#",
+          "E#",
+          "F##",
+          "G##"
+        ],
+        "descending_sixth_seventh": [
+          "F#",
+          "G#"
+        ]
+      },
+      "basis": "原A-sharp-minor完整记录与形式规则；不提供指法。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M06",
+      "layer": "music",
+      "fixture": {
+        "objects": [
+          "C major",
+          "A natural minor",
+          "A harmonic minor"
+        ]
+      },
+      "expected": {
+        "first_two_same_pitch_class_set": true,
+        "first_and_third_same_pitch_class_set": false
+      },
+      "basis": "原定义逐项对比，W01。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M07",
+      "layer": "sequence",
+      "fixture": {
+        "distinct_notes": 3,
+        "octaves": 1,
+        "top_endpoint_shared_once": true
+      },
+      "expected": {
+        "ascending_event_count": 4,
+        "descending_event_count": 4,
+        "up_down_event_count": 7
+      },
+      "basis": "序列端点计数推导，不是固定8音数组或任意指法授权。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M08",
+      "layer": "sequence",
+      "fixture": {
+        "distinct_notes": 5,
+        "octaves": 1,
+        "top_endpoint_shared_once": true
+      },
+      "expected": {
+        "ascending_event_count": 6,
+        "descending_event_count": 6,
+        "up_down_event_count": 11
+      },
+      "basis": "序列端点计数推导，不是固定8音数组或任意指法授权。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M09",
+      "layer": "sequence",
+      "fixture": {
+        "distinct_notes": 6,
+        "octaves": 1,
+        "top_endpoint_shared_once": true
+      },
+      "expected": {
+        "ascending_event_count": 7,
+        "descending_event_count": 7,
+        "up_down_event_count": 13
+      },
+      "basis": "序列端点计数推导，不是固定8音数组或任意指法授权。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M10",
+      "layer": "sequence",
+      "fixture": {
+        "distinct_notes": 7,
+        "octaves": 1,
+        "top_endpoint_shared_once": true
+      },
+      "expected": {
+        "ascending_event_count": 8,
+        "descending_event_count": 8,
+        "up_down_event_count": 15
+      },
+      "basis": "序列端点计数推导，不是固定8音数组或任意指法授权。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M11",
+      "layer": "sequence",
+      "fixture": {
+        "distinct_notes": 12,
+        "octaves": 1,
+        "top_endpoint_shared_once": true
+      },
+      "expected": {
+        "ascending_event_count": 13,
+        "descending_event_count": 13,
+        "up_down_event_count": 25
+      },
+      "basis": "序列端点计数推导，不是固定8音数组或任意指法授权。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "M12",
+      "layer": "timing",
+      "fixture": {
+        "bpm": 60,
+        "notes_per_beat": 2
+      },
+      "expected": {
+        "interval_seconds": 0.5
+      },
+      "basis": "60/(BPM×每拍音数)；项目速度单位。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "V01",
+      "layer": "validation",
+      "fixture": {
+        "mutation": "C4 key_color black"
+      },
+      "expected": "REJECT",
+      "basis": "历史probe已复现两入口接受；本次修复应拒绝。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "V02",
+      "layer": "validation",
+      "fixture": {
+        "mutation": "C major second pitch D#4 but definition D"
+      },
+      "expected": "REJECT",
+      "basis": "历史probe。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "V03",
+      "layer": "validation",
+      "fixture": {
+        "mutation": "nested note_source_ids NONEXISTENT-SOURCE"
+      },
+      "expected": "REJECT",
+      "basis": "历史probe。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "V04",
+      "layer": "validation",
+      "fixture": {
+        "mutation": "A harmonic descending null fingers -> arbitrary numbers without exact source scope"
+      },
+      "expected": "REJECT",
+      "basis": "历史probe；来源存在与支持此格不同。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "V05",
+      "layer": "validation",
+      "fixture": {
+        "mutation": "swap first two ascending events"
+      },
+      "expected": "REJECT_IN_BOTH_ENTRY_POINTS",
+      "basis": "历史CLI接受runtime拒绝；统一不变量。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "Q01",
+      "layer": "quiz",
+      "fixture": {
+        "object": "A harmonic minor",
+        "answer_note_set": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G"
+        ]
+      },
+      "expected": {
+        "missing": [
+          "G#"
+        ],
+        "extra": [
+          "G"
+        ],
+        "order_ignored": true
+      },
+      "basis": "原A harmonic音乐真值。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "Q02",
+      "layer": "quiz",
+      "fixture": {
+        "object": "C major RH ascending",
+        "last_answer": "C4"
+      },
+      "expected": {
+        "expected_last": "C5",
+        "feedback_category": "wrong_register"
+      },
+      "basis": "当前Cmajor一八度实际音高。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "Q03",
+      "layer": "quiz",
+      "fixture": {
+        "action": "show answer"
+      },
+      "expected": {
+        "attempt_status": "revealed",
+        "independently_correct": false
+      },
+      "basis": "设计判定。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "Q04",
+      "layer": "quiz",
+      "fixture": {
+        "actions": [
+          "create question",
+          "change form",
+          "submit old answer"
+        ]
+      },
+      "expected": {
+        "stale_submission_rejected": true,
+        "new_question_required": true
+      },
+      "basis": "设计判定。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "Q05",
+      "layer": "quiz",
+      "fixture": {
+        "object": "chromatic",
+        "question_type": "select note set"
+      },
+      "expected": {
+        "generate_question": false,
+        "alternative": "sequence"
+      },
+      "basis": "设计限制：12键全集的选音题不具判别价值。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "F01",
+      "layer": "finder",
+      "fixture": {
+        "mode": "exact",
+        "pitch_classes": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      },
+      "expected": {
+        "must_include": [
+          "C major",
+          "A natural minor"
+        ],
+        "unique_song_key_claim": false
+      },
+      "basis": "原两集合相同；同集合其他已批准候选不可删。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "F02",
+      "layer": "finder",
+      "fixture": {
+        "mode": "contains",
+        "pitch_classes": [
+          0,
+          4,
+          7
+        ]
+      },
+      "expected": {
+        "must_include": [
+          "C major",
+          "G major",
+          "A natural minor"
+        ],
+        "remaining_notes_shown": true
+      },
+      "basis": "原已有集合的子集检查；不是全部候选穷举。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "F03",
+      "layer": "finder",
+      "fixture": {
+        "mode": "exact",
+        "pitch_classes": []
+      },
+      "expected": {
+        "status": "empty_input",
+        "results": []
+      },
+      "basis": "设计判定；不得把空集匹配所有作为成功。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "F04",
+      "layer": "finder",
+      "fixture": {
+        "mode": "contains",
+        "pitch_classes": [
+          0
+        ]
+      },
+      "expected": {
+        "status": "many_possibilities",
+        "explanation_required": true
+      },
+      "basis": "设计判定，不输出唯一曲调。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "F05",
+      "layer": "finder",
+      "fixture": {
+        "inputs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": {
+        "unique_pitch_class_count": 1,
+        "spelling_inferred_from_candidate_only": true
+      },
+      "basis": "琴键集合去重规则。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "F06",
+      "layer": "finder",
+      "fixture": {
+        "mode": "exact",
+        "pitch_classes": [
+          9,
+          11,
+          0,
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "expected": {
+        "matching_label": "A classical melodic minor ascending collection",
+        "not_matching_label": "A classical melodic minor descending collection"
+      },
+      "basis": "W01/W02的A上/下集不同；同集其他命名可保留。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "S01",
+      "layer": "session",
+      "fixture": {
+        "actions": [
+          "start count-in",
+          "print",
+          "cancel print",
+          "wait all scheduled timeouts"
+        ]
+      },
+      "expected": {
+        "audio_restarts": 0,
+        "completion_self_reports": 0
+      },
+      "basis": "历史定时器缺陷定向回归；这是测试规格不是当前运行结果。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "S02",
+      "layer": "session",
+      "fixture": {
+        "actions": [
+          "start looping",
+          "change object",
+          "wait old callbacks"
+        ]
+      },
+      "expected": {
+        "state": "idle",
+        "old_audio_events_after_cancel": 0
+      },
+      "basis": "设计判定。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "S03",
+      "layer": "session",
+      "fixture": {
+        "actions": [
+          "play",
+          "background",
+          "foreground"
+        ]
+      },
+      "expected": {
+        "auto_resume": false
+      },
+      "basis": "设计判定。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "S04",
+      "layer": "session",
+      "fixture": {
+        "object_before": "C major verified fingers",
+        "object_after": "unknown fingers"
+      },
+      "expected": {
+        "visible_old_fingers": false,
+        "notes_only_message": true
+      },
+      "basis": "设计判定。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "P01",
+      "layer": "print",
+      "fixture": {
+        "resource": "R-ATLAS60"
+      },
+      "expected": {
+        "named_record_count": 60,
+        "major": 15,
+        "minor_forms": 45,
+        "claims_all_possible_scales": false
+      },
+      "basis": "原中心目录＋本次资源规格。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "P02",
+      "layer": "print",
+      "fixture": {
+        "resource": "R-MAJ12"
+      },
+      "expected": {
+        "distinct_tonic_pitch_classes": 12,
+        "major_spelling_entries": 12
+      },
+      "basis": "本次明确资源清单，原15拼写不删除。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "P03",
+      "layer": "print",
+      "fixture": {
+        "resource": "R-TWOHAND-C"
+      },
+      "expected": {
+        "right_hand_register": [
+          "C4",
+          "C5"
+        ],
+        "left_hand_register": [
+          "C3",
+          "C4"
+        ],
+        "separate_fingering_rows": true,
+        "guided_two_hand_engine_claim": false
+      },
+      "basis": "原Cmajor已核实输入＋本次排版规格。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    },
+    {
+      "id": "R01",
+      "layer": "routing",
+      "fixture": {
+        "release_plan": "27 approved original paths"
+      },
+      "expected": {
+        "new_html_paths_outside_original_plan": 0,
+        "automatically_publish_drafts": false
+      },
+      "basis": "原127路径/权限约束。",
+      "execution_status": "NOT_RUN_ON_CURRENT_REPOSITORY"
+    }
+  ]
+}

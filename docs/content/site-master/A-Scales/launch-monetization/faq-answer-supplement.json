@@ -1,0 +1,1090 @@
+{
+  "format": "proposed-keyed-faq-supplement-v1-NOT-runtime-import",
+  "authority": "Supplement to current 27-page authoring bundle; Codex must integrate explicitly into actual validated authoring contract. Do not pass to import-scale-authoring.mjs unchanged.",
+  "basis": "Same-version original question lists, note/pitch/fingering records and cited sources. No new source-chart transcription or teacher review.",
+  "routes": [
+    {
+      "url": "/scales/modes",
+      "template_id": "T13",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AT-01",
+        "AT-02",
+        "AT-03",
+        "AT-04",
+        "AT-05",
+        "AT-06",
+        "AT-07",
+        "AT-08",
+        "AT-09"
+      ],
+      "items": [
+        {
+          "id": "scales-modes-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in each mode on C?",
+          "answer_en": "The examples keep C as tonic. C Ionian: C–D–E–F–G–A–B–C; C Dorian: C–D–Eb–F–G–A–Bb–C; C Phrygian: C–Db–Eb–F–G–Ab–Bb–C; C Lydian: C–D–E–F#–G–A–B–C; C Mixolydian: C–D–E–F–G–A–Bb–C; C Aeolian: C–D–Eb–F–G–Ab–Bb–C; C Locrian: C–Db–Eb–F–Gb–Ab–Bb–C. The last C repeats the tonic one octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-modes-faq-02",
+          "original_question_index": 1,
+          "question": "Which scale degrees change?",
+          "answer_en": "Compared with major (Ionian), Dorian lowers 3 and 7; Phrygian lowers 2, 3, 6 and 7; Lydian raises 4; Mixolydian lowers 7; Aeolian lowers 3, 6 and 7; Locrian lowers 2, 3, 5, 6 and 7. These are comparisons to the same tonic, not to each mode’s relative major.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-modes-faq-03",
+          "original_question_index": 2,
+          "question": "How are parallel modes different from relative modes?",
+          "answer_en": "Parallel examples share C as their tonic. Relative examples share a pitch collection but have different tonal centers. For instance, C Dorian and B-flat major use the same pitch classes. That relationship helps identify notes; it does not establish that a passage is in C Dorian simply because those notes appear.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-modes-faq-04",
+          "original_question_index": 3,
+          "question": "Which example can I compare next?",
+          "answer_en": "Play C Ionian, then C Lydian. Pause on F and F-sharp and return to C after each example. Next compare the A-flat in C Aeolian with the A-natural in C Dorian. Keep the comparison short and use the note lists as your check.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/blues",
+      "template_id": "T13",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AT-10",
+        "AT-11",
+        "AT-12",
+        "AT-13",
+        "AT-14",
+        "AT-15",
+        "AT-20"
+      ],
+      "items": [
+        {
+          "id": "scales-blues-faq-01",
+          "original_question_index": 0,
+          "question": "What is the minor blues formula?",
+          "answer_en": "The minor blues formula used here is 1–b3–4–b5–5–b7. In C, the one-octave reference is C–Eb–F–Gb–G–Bb–C. The last C is the repeated tonic, not a seventh distinct pitch class.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-blues-faq-02",
+          "original_question_index": 1,
+          "question": "What changes in the major blues scale?",
+          "answer_en": "The major blues formula used here is 1–2–b3–3–5–6. C major blues is C–D–Eb–E–G–A–C; the added Eb lies between D and E. It is not the C minor blues collection with its title changed.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-blues-faq-03",
+          "original_question_index": 2,
+          "question": "Where is the extra note compared with pentatonic?",
+          "answer_en": "Compared with minor pentatonic, minor blues adds the flat fifth between degrees 4 and 5: Gb between F and G in C. Compared with major pentatonic, major blues adds a chromatic passing pitch between degrees 2 and 3: Eb between D and E in C. Keep the spelling convention shown for the selected example.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-blues-faq-04",
+          "original_question_index": 3,
+          "question": "Does a scale name determine every chord it can accompany?",
+          "answer_en": "Minor blues vocabulary can occur over major blues harmony. A major or minor label therefore does not provide a rule that every note will fit every chord in the same way. These note collections are a starting reference; phrasing and the accompanying harmony still matter.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/d-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-D-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI",
+        "AM-BAYLOR"
+      ],
+      "items": [
+        {
+          "id": "scales-d-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of D major?",
+          "answer_en": "The one-octave ascending notes are D–E–F#–G–A–B–C#–D. The key signature contains 2 sharps: F#, C#. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-major-faq-02",
+          "original_question_index": 1,
+          "question": "Do F-sharp and C-sharp stay sharp when D major descends?",
+          "answer_en": "Yes. F# and C# are part of D major in both directions. The descending sequence is D–C#–B–A–G–F#–E–D.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–1–2–3–4–5 and descending 5–4–3–2–1–3–2–1; left hand ascending 5–4–3–2–1–3–2–1 and descending 1–2–3–1–2–3–4–5. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: locate F♯ and C♯ without playing the whole scale. Then play D–E–F♯–G and A–B–C♯–D as two listening groups. Join them at the same pulse, turn around at the upper D, and check that neither sharp has become a natural on the descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/e-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-GUIDE",
+        "AN-HMT-E",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-e-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in E natural minor?",
+          "answer_en": "E natural minor contains E, F#, G, A, B, C, D. One octave is E–F#–G–A–B–C–D–E. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in E harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from D to D#: E–F#–G–A–B–C–D#–E. In the classical melodic-minor ascent, degree 6 changes from C to C# and degree 7 is D#: E–F#–G–A–B–C#–D#–E.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend E–D–C–B–A–G–F#–E. In the displayed right-hand register that is E5–D5–C5–B4–A4–G4–F#4–E4. Degrees 6 and 7 return to their natural-minor values, C and D. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/f-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-F-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI",
+        "AM-BAYLOR"
+      ],
+      "items": [
+        {
+          "id": "scales-f-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of F major?",
+          "answer_en": "The one-octave ascending notes are F–G–A–Bb–C–D–E–F. The key signature contains 1 flats: Bb. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-major-faq-02",
+          "original_question_index": 1,
+          "question": "Why does the right hand use finger 4 on B-flat?",
+          "answer_en": "In the cited one-octave version, right-hand finger 4 plays Bb and the thumb plays the following C. The ascent is 1–2–3–4–1–2–3–4. This explains the B-flat-to-C crossing in this version; it does not make it the only possible fingering for every phrase.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–4–1–2–3–4 and descending 4–3–2–1–4–3–2–1; left hand ascending 5–4–3–2–1–3–2–1 and descending 1–2–3–1–2–3–4–5. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: with the right hand, practice A–B♭–C–D using 3–4–1–2, then return using 2–1–4–3. Add the surrounding notes only after you can follow those numbers without stopping. In the left hand, check the separate C–D crossing before joining the hands.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/g-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-G-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI",
+        "AM-BAYLOR"
+      ],
+      "items": [
+        {
+          "id": "scales-g-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of G major?",
+          "answer_en": "The one-octave ascending notes are G–A–B–C–D–E–F#–G. The key signature contains 1 sharps: F#. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-major-faq-02",
+          "original_question_index": 1,
+          "question": "Why is playing all the white keys from G to G not a G-major scale?",
+          "answer_en": "G major requires F#, giving G–A–B–C–D–E–F#–G. White keys alone would produce F natural and therefore a different interval pattern.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–1–2–3–4–5 and descending 5–4–3–2–1–3–2–1; left hand ascending 5–4–3–2–1–3–2–1 and descending 1–2–3–1–2–3–4–5. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: play E–F♯–G, then G–F♯–E, keeping F♯ in both directions. Next, start the full scale from the lower G and name the two half-step pairs as you reach them. Use the descending finger row rather than restarting the ascending row from the top.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/pentatonic",
+      "template_id": "T13",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AT-02",
+        "AT-16",
+        "AT-17",
+        "AT-18",
+        "AT-19",
+        "AT-20"
+      ],
+      "items": [
+        {
+          "id": "scales-pentatonic-faq-01",
+          "original_question_index": 0,
+          "question": "Which five notes belong to major and minor pentatonic?",
+          "answer_en": "The major formula is 1–2–3–5–6; the minor formula is 1–b3–4–5–b7. C major pentatonic: C–D–E–G–A; A minor pentatonic: A–C–D–E–G; G major pentatonic: G–A–B–D–E; E minor pentatonic: E–G–A–B–D; C minor pentatonic: C–Eb–F–G–Bb. Each displayed octave repeats its tonic at the end.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-pentatonic-faq-02",
+          "original_question_index": 1,
+          "question": "How do C major and C minor pentatonic differ?",
+          "answer_en": "C major pentatonic uses C–D–E–G–A. C minor pentatonic uses C–Eb–F–G–Bb. They have the same tonic, but different third, fourth/second and sixth/seventh choices; they are not the same note set.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-pentatonic-faq-03",
+          "original_question_index": 2,
+          "question": "Why do C major and A minor pentatonic share notes?",
+          "answer_en": "C major pentatonic (C–D–E–G–A) and A minor pentatonic (A–C–D–E–G) contain the same five pitch classes, ordered around different tonics. The shared collection does not mean C and A function as the same tonal center.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-pentatonic-faq-04",
+          "original_question_index": 3,
+          "question": "Which notes are omitted from the seven-note scale?",
+          "answer_en": "Major pentatonic omits degrees 4 and 7 of the major scale: F and B in C major. Minor pentatonic omits degrees 2 and 6 of natural minor: D and Ab in C natural minor. These comparisons use the matching tonic and the named seven-note form.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/a-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-A-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI",
+        "AM-BAYLOR"
+      ],
+      "items": [
+        {
+          "id": "scales-a-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of A major?",
+          "answer_en": "The one-octave ascending notes are A–B–C#–D–E–F#–G#–A. The key signature contains 3 sharps: F#, C#, G#. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-major-faq-02",
+          "original_question_index": 1,
+          "question": "Why is F-sharp first in the key signature when C-sharp comes first in the scale?",
+          "answer_en": "Key signatures use an established accidental order; A major lists F#, C# and G#. The scale starts on A, so its ascending note order is A–B–C#–D–E–F#–G#–A. The order of sharps in the signature is not the order in which they are encountered from the tonic.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–1–2–3–4–5 and descending 5–4–3–2–1–3–2–1; left hand ascending 5–4–3–2–1–3–2–1 and descending 1–2–3–1–2–3–4–5. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: point to the three altered notes in the note list, then play A–B–C♯–D followed by E–F♯–G♯–A. During a return run, say G-sharp and F-sharp aloud. Finish by checking the same passage on the staff without adding unnecessary accidental symbols beside every note.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/c-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-C",
+        "AN-HA-GUIDE",
+        "AN-HMT-C",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-c-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in C natural minor?",
+          "answer_en": "C natural minor contains C, D, Eb, F, G, Ab, Bb. One octave is C–D–Eb–F–G–Ab–Bb–C. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in C harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from Bb to B: C–D–Eb–F–G–Ab–B–C. In the classical melodic-minor ascent, degree 6 changes from Ab to A and degree 7 is B: C–D–Eb–F–G–A–B–C.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend C–Bb–Ab–G–F–Eb–D–C. In the displayed right-hand register that is C5–Bb4–Ab4–G4–F4–Eb4–D4–C4. Degrees 6 and 7 return to their natural-minor values, Ab and Bb. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/d-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-GUIDE",
+        "AN-HMT-D",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-d-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in D natural minor?",
+          "answer_en": "D natural minor contains D, E, F, G, A, Bb, C. One octave is D–E–F–G–A–Bb–C–D. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in D harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from C to C#: D–E–F–G–A–Bb–C#–D. In the classical melodic-minor ascent, degree 6 changes from Bb to B and degree 7 is C#: D–E–F–G–A–B–C#–D.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend D–C–Bb–A–G–F–E–D. In the displayed right-hand register that is D5–C5–Bb4–A4–G4–F4–E4–D4. Degrees 6 and 7 return to their natural-minor values, Bb and C. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-d-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/e-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-E-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI",
+        "AM-BAYLOR"
+      ],
+      "items": [
+        {
+          "id": "scales-e-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of E major?",
+          "answer_en": "The one-octave ascending notes are E–F#–G#–A–B–C#–D#–E. The key signature contains 4 sharps: F#, C#, G#, D#. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-major-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes remain natural in the four-sharp key of E major?",
+          "answer_en": "E, A and B remain natural. The full octave is E–F#–G#–A–B–C#–D#–E; F#, C#, G# and D# are its key-signature sharps.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–1–2–3–4–5 and descending 5–4–3–2–1–3–2–1; left hand ascending 5–4–3–2–1–3–2–1 and descending 1–2–3–1–2–3–4–5. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: locate E, A, and B first, then fill in the intervening scale notes. Play G♯–A and D♯–E separately and listen to each half step. Finally, run from E to E and back while checking that the four sharp names survive the change of direction.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/b-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-GUIDE",
+        "AN-HMT-B",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-b-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in B natural minor?",
+          "answer_en": "B natural minor contains B, C#, D, E, F#, G, A. One octave is B–C#–D–E–F#–G–A–B. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in B harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from A to A#: B–C#–D–E–F#–G–A#–B. In the classical melodic-minor ascent, degree 6 changes from G to G# and degree 7 is A#: B–C#–D–E–F#–G#–A#–B.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend B–A–G–F#–E–D–C#–B. In the displayed right-hand register that is B5–A5–G5–F#5–E5–D5–C#5–B4. Degrees 6 and 7 return to their natural-minor values, G and A. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 4–3–2–1–4–3–2–1. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 4–3–2–1–4–3–2–1. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/f-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-GUIDE",
+        "AN-HMT-F",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-f-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in F natural minor?",
+          "answer_en": "F natural minor contains F, G, Ab, Bb, C, Db, Eb. One octave is F–G–Ab–Bb–C–Db–Eb–F. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in F harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from Eb to E: F–G–Ab–Bb–C–Db–E–F. In the classical melodic-minor ascent, degree 6 changes from Db to D and degree 7 is E: F–G–Ab–Bb–C–D–E–F.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend F–Eb–Db–C–Bb–Ab–G–F. In the displayed right-hand register that is F5–Eb5–Db5–C5–Bb4–Ab4–G4–F4. Degrees 6 and 7 return to their natural-minor values, Db and Eb. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 1–2–3–4–1–2–3–4; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 1–2–3–4–1–2–3–4; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/harmonic-major",
+      "template_id": "T13",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AT-21",
+        "AT-22",
+        "AT-23",
+        "AT-03",
+        "AT-29"
+      ],
+      "items": [
+        {
+          "id": "scales-harmonic-major-faq-01",
+          "original_question_index": 0,
+          "question": "What changes from the major scale?",
+          "answer_en": "Harmonic major lowers degree 6 of a major scale and keeps its major third and leading tone. C major changes A to Ab, giving C–D–E–F–G–Ab–B–C.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-harmonic-major-faq-02",
+          "original_question_index": 1,
+          "question": "What are the notes in C and G harmonic major?",
+          "answer_en": "C harmonic major: C–D–E–F–G–Ab–B–C; G harmonic major: G–A–B–C–D–Eb–F#–G. The repeated tonic completes each octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-harmonic-major-faq-03",
+          "original_question_index": 2,
+          "question": "Where is the augmented second?",
+          "answer_en": "The augmented second is between lowered degree 6 and degree 7: Ab–B in C harmonic major and Eb–F# in G harmonic major. It spans three semitones while using consecutive scale-letter names.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-harmonic-major-faq-04",
+          "original_question_index": 3,
+          "question": "How is harmonic major different from harmonic minor?",
+          "answer_en": "With the same tonic, harmonic major has a major third and harmonic minor has a minor third. Compare C harmonic major C–D–E–F–G–Ab–B with C harmonic minor C–D–Eb–F–G–Ab–B. Both collections have Ab and B, but E versus Eb changes the third.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/a-sharp-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-HA-GUIDE",
+        "AN-HMT-A-SHARP",
+        "AN-OMT",
+        "AN-PFF-AS-LH-MEL",
+        "AN-PFF-AS-LH-NAT",
+        "AN-PFF-AS-RH-NAT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-a-sharp-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in A# natural minor?",
+          "answer_en": "A# natural minor contains A#, B#, C#, D#, E#, F#, G#. One octave is A#–B#–C#–D#–E#–F#–G#–A#. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-sharp-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in A# harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from G# to G##: A#–B#–C#–D#–E#–F#–G##–A#. In the classical melodic-minor ascent, degree 6 changes from F# to F## and degree 7 is G##: A#–B#–C#–D#–E#–F##–G##–A#.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-sharp-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend A#–G#–F#–E#–D#–C#–B#–A#. In the displayed right-hand register that is A#5–G#5–F#5–E#5–D#5–C#5–B#4–A#4. Degrees 6 and 7 return to their natural-minor values, F# and G#. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-sharp-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 2–1–2–3–1–2–3–4; left hand ascending 2–1–3–2–1–4–3–2. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 2–1–2–3–1–2–3–4; left hand ascending 2–1–3–2–1–4–3–2. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): left hand ascending 3–2–1–4–3–2–1–3; left hand descending 3–4–3–1–2–3–1–2. Notes-only combinations: right hand ascending, right hand descending. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-sharp-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-a-sharp-minor-faq-06",
+          "original_question_index": 5,
+          "question": "Why are B#, E#, F## and G## retained instead of respelling the key?",
+          "answer_en": "A-sharp minor uses a distinct letter for each degree: A#–B#–C#–D#–E#–F#–G#. Harmonic minor raises G# to G##; classical melodic minor also raises F# to F## in ascent. B# shares a piano key with C, E# with F, F## with G and G## with A, but replacing those spellings would obscure the degree structure. In descent the classical exercise returns to F# and G#.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/b-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-B-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI",
+        "AM-BAYLOR"
+      ],
+      "items": [
+        {
+          "id": "scales-b-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of B major?",
+          "answer_en": "The one-octave ascending notes are B–C#–D#–E–F#–G#–A#–B. The key signature contains 5 sharps: F#, C#, G#, D#, A#. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-major-faq-02",
+          "original_question_index": 1,
+          "question": "Why does the left hand start B major with finger 4?",
+          "answer_en": "The cited left-hand row begins 4–3–2–1 on B–C#–D#–E, then continues 4–3–2–1 on F#–G#–A#–B. Starting with finger 4 belongs to that documented grouping. Do not replace it with the C-major pattern or claim it is the only choice in all musical contexts.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–1–2–3–4–5 and descending 5–4–3–2–1–3–2–1; left hand ascending 4–3–2–1–4–3–2–1 and descending 1–2–3–4–1–2–3–4. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: practice the left-hand opening four notes, then connect E to F♯ using 1–4. On the return, check F♯–E with 4–1. Complete one octave before increasing the range. Keep the B-major spelling in the staff and note labels even when comparing with an enharmonic scale.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/b-flat-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-B-FLAT-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI"
+      ],
+      "items": [
+        {
+          "id": "scales-b-flat-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of B-flat major?",
+          "answer_en": "The one-octave ascending notes are Bb–C–D–Eb–F–G–A–Bb. The key signature contains 2 flats: Bb, Eb. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-flat-major-faq-02",
+          "original_question_index": 1,
+          "question": "Which fingers start and turn around in this one-octave B-flat-major version?",
+          "answer_en": "In this documented one-octave version, the right hand starts on Bb with finger 2 and reaches the upper Bb with finger 4. The left hand starts with finger 3 and reaches the upper Bb with finger 2. Keep these exact turnaround choices rather than silently substituting another source’s variant.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-flat-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 2–1–2–3–1–2–3–4 and descending 4–3–2–1–3–2–1–2; left hand ascending 3–2–1–4–3–2–1–2 and descending 2–1–2–3–4–1–2–3. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-b-flat-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: play the right-hand pairs B♭–C and E♭–F with 2–1 and 3–1. Then rehearse the top A–B♭–A using 3–4–3 in the right hand and 1–2–1 in the left. Keep this selected fingering attached to its one-octave scope; do not extend it by simply repeating the row.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/g-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-GUIDE",
+        "AN-HMT-G",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-g-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in G natural minor?",
+          "answer_en": "G natural minor contains G, A, Bb, C, D, Eb, F. One octave is G–A–Bb–C–D–Eb–F–G. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in G harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from F to F#: G–A–Bb–C–D–Eb–F#–G. In the classical melodic-minor ascent, degree 6 changes from Eb to E and degree 7 is F#: G–A–Bb–C–D–E–F#–G.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend G–F–Eb–D–C–Bb–A–G. In the displayed right-hand register that is G5–F5–Eb5–D5–C5–Bb4–A4–G4. Degrees 6 and 7 return to their natural-minor values, Eb and F. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 1–2–3–1–2–3–4–5; left hand ascending 5–4–3–2–1–3–2–1. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-g-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/chromatic",
+      "template_id": "T13",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AT-01",
+        "AT-24",
+        "AT-25"
+      ],
+      "items": [
+        {
+          "id": "scales-chromatic-faq-01",
+          "original_question_index": 0,
+          "question": "How many different pitches are in a chromatic octave?",
+          "answer_en": "A chromatic octave contains 12 distinct pitch classes. A written ascent has 13 note events because it includes the starting note again one octave higher. Every adjacent step is one semitone.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-chromatic-faq-02",
+          "original_question_index": 1,
+          "question": "Which white keys are already a half step apart?",
+          "answer_en": "E–F and B–C are adjacent white-key pairs separated by one semitone. There is no intervening black key in either pair.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-chromatic-faq-03",
+          "original_question_index": 2,
+          "question": "Must ascending notes use sharps and descending notes use flats?",
+          "answer_en": "Ascending sharp spellings and descending flat spellings are common, but they are not a universal rule. The displayed G example uses F for the key that the source names E-sharp. That is an editorial spelling choice; it does not change which key sounds. The descending examples use flats where appropriate for this reference.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-chromatic-faq-04",
+          "original_question_index": 3,
+          "question": "Does starting on G change the interval pattern?",
+          "answer_en": "No. Starting on G changes the starting pitch and the note-name sequence, but each step is still one semitone. This page gives both C-starting and G-starting references; follow the displayed spellings in each direction.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/e-flat-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-E-FLAT-MAJOR",
+        "AM-FINGER-LMT",
+        "AM-FINGER-MF",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI"
+      ],
+      "items": [
+        {
+          "id": "scales-e-flat-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of E-flat major?",
+          "answer_en": "The one-octave ascending notes are Eb–F–G–Ab–Bb–C–D–Eb. The key signature contains 3 flats: Bb, Eb, Ab. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-flat-major-faq-02",
+          "original_question_index": 1,
+          "question": "How do the right-hand fingers move from A-flat and B-flat to C?",
+          "answer_en": "In the cited right-hand ascent, Ab–Bb–C uses 3–4–1. In descending order, C–Bb–Ab uses 1–4–3. These numbers belong to the displayed one-octave row, whose initial Eb uses finger 2.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-flat-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 2–1–2–3–4–1–2–3 and descending 3–2–1–4–3–2–1–2; left hand ascending 3–2–1–4–3–2–1–2 and descending 2–1–2–3–4–1–2–3. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-e-flat-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: play G–A♭–B♭–C in the right hand with 2–3–4–1, then return with 1–4–3–2. Follow this with a left-hand G–A♭ connection. Once those changes are clear, combine each fragment into a complete one-octave run while retaining the flat spellings.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/f-sharp-minor",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AN-BMT-AS",
+        "AN-DENTON",
+        "AN-HA-GUIDE",
+        "AN-HMT-F-SHARP",
+        "AN-OMT",
+        "AN-PS-HAR",
+        "AN-PS-MEL",
+        "AN-PS-NAT"
+      ],
+      "items": [
+        {
+          "id": "scales-f-sharp-minor-faq-01",
+          "original_question_index": 0,
+          "question": "What notes are in F# natural minor?",
+          "answer_en": "F# natural minor contains F#, G#, A, B, C#, D, E. One octave is F#–G#–A–B–C#–D–E–F#. The final tonic repeats the starting note an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-sharp-minor-faq-02",
+          "original_question_index": 1,
+          "question": "Which notes change in F# harmonic and melodic minor?",
+          "answer_en": "Harmonic minor changes degree 7 from E to E#: F#–G#–A–B–C#–D–E#–F#. In the classical melodic-minor ascent, degree 6 changes from D to D# and degree 7 is E#: F#–G#–A–B–C#–D#–E#–F#.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-sharp-minor-faq-03",
+          "original_question_index": 2,
+          "question": "What is the descending classical melodic-minor sequence?",
+          "answer_en": "For the classical scale-exercise convention, descend F#–E–D–C#–B–A–G#–F#. In the displayed right-hand register that is F#5–E5–D5–C#5–B4–A4–G#4–F#4. Degrees 6 and 7 return to their natural-minor values, D and E. Do not simply reverse the raised ascending form; the jazz melodic-minor convention is a different choice.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-sharp-minor-faq-04",
+          "original_question_index": 3,
+          "question": "Which fingers are supported for each hand and range?",
+          "answer_en": "Natural minor: right hand ascending 2–3–1–2–3–1–2–3; left hand ascending 4–3–2–1–3–2–1–4. Notes-only combinations: right hand descending, left hand descending. Harmonic minor: right hand ascending 2–3–1–2–3–1–2–3; left hand ascending 4–3–2–1–3–2–1–4. Notes-only combinations: right hand descending, left hand descending. Melodic minor (classical exercise): notes only; no fingering row is source-checked. All supported finger rows here cover one octave with hands separately. A missing row is not permission to reverse or borrow another form’s fingering.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-sharp-minor-faq-05",
+          "original_question_index": 4,
+          "question": "How do I match the keyboard, score and printed note names?",
+          "answer_en": "First match the tonic, minor form, hand or view, direction and one-octave range. Then read the ordered note names with their octave numbers and compare each to the staff and highlighted key. The printout should state the same selection; a fixed PDF has its own named coverage. Keep written accidentals even when they share a physical key with another spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-f-sharp-minor-faq-06",
+          "original_question_index": 5,
+          "question": "Why does E# use the physical F key?",
+          "answer_en": "E# is E raised by one semitone, so it shares the physical F key on an equal-tempered piano. In F# harmonic minor and the classical melodic ascent, the seventh degree is written E#, not F, to retain the correct letter sequence. E#4 is the same key as F4.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/scales/c-flat-major",
+      "template_id": "T12",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AM-NOTES-C-FLAT-MAJOR",
+        "AM-CB-SPELLING",
+        "AM-CB-FINGER",
+        "AM-THEORY",
+        "AM-MUSICXML",
+        "AM-MIDI"
+      ],
+      "items": [
+        {
+          "id": "scales-c-flat-major-faq-01",
+          "original_question_index": 0,
+          "question": "What are the notes and key signature of C-flat major?",
+          "answer_en": "The one-octave ascending notes are Cb–Db–Eb–Fb–Gb–Ab–Bb–Cb. The key signature contains 7 flats: Bb, Eb, Ab, Db, Gb, Cb, Fb. These accidentals also apply in descent.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-flat-major-faq-02",
+          "original_question_index": 1,
+          "question": "Why does the scale say C-flat and F-flat instead of B and E?",
+          "answer_en": "C-flat major keeps one of each letter name: Cb–Db–Eb–Fb–Gb–Ab–Bb. On an equal-tempered piano Cb shares a key with B, and Fb with E, but their scale-degree spellings stay Cb and Fb. Written octave labels also matter: Cb4 is the physical B3 key, not B4.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-flat-major-faq-03",
+          "original_question_index": 2,
+          "question": "Which fingers are used by each hand ascending and descending over one octave?",
+          "answer_en": "This source-documented one-octave reference shows right hand ascending 1–2–3–1–2–3–4–5 and descending 5–4–3–2–1–3–2–1; left hand ascending 4–3–2–1–4–3–2–1 and descending 1–2–3–4–1–2–3–4. Read each row in playing order. These are sourced choices, not the only possible fingerings, and must not be repeated mechanically for a second octave.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "scales-c-flat-major-faq-04",
+          "original_question_index": 3,
+          "question": "What should I check during a short practice run?",
+          "answer_en": "Suggested drill: say the flat name of every note before playing it. Pay special attention to E♭–F♭ and B♭–C♭, the half-step pairs. With octave labels enabled, compare C♭4 with B3: they identify the same sounding key under this notation convention. Do not relabel C♭4 as B4.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    },
+    {
+      "url": "/arpeggios",
+      "template_id": "T14",
+      "original_questions_preserved": true,
+      "source_ids": [
+        "AT-26",
+        "AT-27",
+        "AT-28",
+        "AT-03",
+        "AT-29"
+      ],
+      "items": [
+        {
+          "id": "arpeggios-faq-01",
+          "original_question_index": 0,
+          "question": "What does arpeggio mean?",
+          "answer_en": "An arpeggio presents chord tones in succession rather than all at once. These references use root-position major-triad tones, with the tonic repeated an octave higher.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "arpeggios-faq-02",
+          "original_question_index": 1,
+          "question": "How does the C major arpeggio differ from its scale?",
+          "answer_en": "The C major scale is C–D–E–F–G–A–B–C. The C major arpeggio selects scale degrees 1, 3 and 5, then repeats the tonic: C–E–G–C. It skips the intervening scale tones rather than changing their spelling.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "arpeggios-faq-03",
+          "original_question_index": 2,
+          "question": "Which notes are in G major?",
+          "answer_en": "The G major arpeggio uses G–B–D–G. The G major scale, by contrast, uses G–A–B–C–D–E–F#–G. F# belongs to that scale but is not a tone of the G major triad.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        },
+        {
+          "id": "arpeggios-faq-04",
+          "original_question_index": 3,
+          "question": "Which exact hand and octave does each fingering cover?",
+          "answer_en": "The sourced C example is right hand, C4–E4–G4–C5–G4–E4–C4, with 1–2–3–5–3–2–1. The sourced G example is left hand, G2–B2–D3–G3–D3–B2–G2, with 5–3–2–1–2–3–5. The separate G4–G5 treble reference is notes-only, with no assigned hand or fingering. Select one view; do not transfer the low-register G fingering to the treble reference. These are single-source, one-octave examples, not two-octave or teacher-reviewed prescriptions.",
+          "evidence_status": "[推断] 基于同版原始音符/指法记录与已核查来源整理的答案；不是新增教师审阅。"
+        }
+      ]
+    }
+  ]
+}

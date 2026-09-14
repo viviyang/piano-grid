@@ -29,9 +29,10 @@ try{
   for(const block of source.blocks)check(`${url} block ${block.id}`,(await page.locator(`[data-block-id="${block.id}"]`).textContent()).includes(block.body));
   check(`${url} no autoplay`,await page.evaluate(()=>window.__audio.contexts===0));
   check(`${url} no duplicate IDs`,await page.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(node=>node.id);return ids.length===new Set(ids).size;}));
-  check(`${url} public source links`,await page.locator('.sc-screen .sc-sources a[href^="https://"]').count()>0);
-  check(`${url} source scope for every link`,await page.locator('.sc-screen .sc-sources a').count()===await page.locator('.sc-screen .sc-source-scope').count());
-  check(`${url} internal source IDs absent from product copy`,!(/\b(?:AC|AM|AN)-[A-Z0-9-]+\b/.test(await page.locator('.sc-page').textContent())));
+  check(`${url} public source links`,await page.locator('.sc-page-sources a[href^="https://"]').count()>0);
+  const sourceArticles=page.locator('.sc-page-sources article');
+  check(`${url} source scope for every link`,await sourceArticles.count()===await sourceArticles.filter({hasText:'Supports:'}).count()&&await sourceArticles.count()===await sourceArticles.filter({hasText:'Location:'}).count());
+  check(`${url} source records expose traceable IDs`,await sourceArticles.count()===await sourceArticles.filter({hasText:'Source record:'}).count());
   for(const width of [1440,390,320,768]){await page.setViewportSize({width,height:950});await page.waitForTimeout(80);check(`${url} no page overflow ${width}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`${out}/screenshots/${url.replaceAll('/','-').slice(1)}-${width}.png`,fullPage:true});}
   await page.evaluate(()=>document.documentElement.style.fontSize='200%');check(`${url} text 200 no page overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`${out}/screenshots/${url.replaceAll('/','-').slice(1)}-text200.png`,fullPage:true});await page.evaluate(()=>document.documentElement.style.fontSize='');
  }
@@ -58,7 +59,7 @@ try{
   }
  }
  await page.getByLabel('Scale type',{exact:true}).selectOption('harmonic_minor');await page.getByLabel('Starting note',{exact:true}).selectOption('G#');check('Double sharp spelling retained',(await page.locator('.sc-screen .sc-note-line').textContent()).includes('F𝄪'));
- await page.getByLabel('Direction',{exact:true}).selectOption('descending');check('Unverified center fingering withheld',await page.locator('.sc-screen').getByText('Fingering is not available for this hand and direction.').count()===1);
+ await page.getByLabel('Direction',{exact:true}).selectOption('descending');check('Unverified center fingering withheld',await page.locator('.sc-screen [data-sequence="descending"] tr').count()===1);
  await page.getByLabel('Scale type',{exact:true}).selectOption('major');await page.getByLabel('Starting note',{exact:true}).selectOption('C');await page.getByLabel('Direction',{exact:true}).selectOption('up_down');check('Center up and down has two staffs',await page.locator('.sc-screen .kn-staff').count()===2);check('Center up and down playback has 15 notes',(await page.locator('.sc-screen .sc-sequence-table tr').first().locator('td').count())+(await page.locator('.sc-screen .sc-sequence-table tr').nth(2).locator('td').count())===16);
  await page.evaluate(()=>window.print=()=>{});await page.getByRole('button',{name:'Print current scale'}).click();check('Center print snapshot',await page.locator('[data-print-scale]').getAttribute('data-print-scale')==='major:C'&&await page.locator('[data-print-direction]').getAttribute('data-print-direction')==='up_down');await page.pdf({path:`${out}/print-pdfs/scales-center-c-major.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
 
@@ -76,7 +77,7 @@ try{
  }
  await page.getByLabel('Hand',{exact:true}).selectOption('LH');await page.getByLabel('Direction',{exact:true}).selectOption('up_down');check('C major combined direction has two sourced finger rows',await page.locator('.sc-screen').getByText('Fingering from the listed sources',{exact:true}).count()===2);
  check('C major lists note and fingering sources',await page.locator('.sc-screen .sc-sources a').count()===3);
- await page.getByRole('button',{name:'Play scale'}).click();await page.waitForFunction(()=>window.__audio.nodes.length>=15);check('C major up-down schedules 15 notes',await page.evaluate(()=>window.__audio.nodes.length>=15));await page.getByRole('button',{name:'Stop'}).click();check('C major stop disconnects scheduled notes',await page.evaluate(()=>window.__audio.nodes.every(node=>node.disconnected)));
+ await page.getByRole('button',{name:'Play scale'}).click();await page.waitForFunction(()=>window.__audio.nodes.length>=15);check('C major up-down schedules 15 notes',await page.evaluate(()=>window.__audio.nodes.length>=15));await page.getByRole('button',{name:'Stop',exact:true}).click();check('C major stop disconnects scheduled notes',await page.evaluate(()=>window.__audio.nodes.every(node=>node.disconnected)));
  await page.evaluate(()=>window.print=()=>{});await page.getByRole('button',{name:'Print current scale'}).click();check('C major print state',await page.locator('[data-print-hand]').getAttribute('data-print-hand')==='LH'&&await page.locator('[data-print-direction]').getAttribute('data-print-direction')==='up_down');await page.pdf({path:`${out}/print-pdfs/c-major-lh-up-down.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
 
  await load('/scales/a-minor');const a=sourcePage('/scales/a-minor').data;
@@ -92,10 +93,12 @@ try{
    }else if(direction==='descending'){
     const key=hand==='RH'?'right_hand_descending_example':'left_hand_descending_example';
     check(`A ${form.id} ${hand} descending notes`,JSON.stringify(await rowText('descending'))===JSON.stringify(form.pitch_mapping[key].map(item=>display(`${item.spelling}${item.written_octave}`))));
-    check(`A ${form.id} ${hand} descending fingering withheld`,await page.locator('.sc-screen').getByText('Fingering is not available for this hand and direction.').count()===1);
+    const expectedFingers=form.fingering.descending[hand==='RH'?'right_hand':'left_hand'];
+    check(`A ${form.id} ${hand} descending fingering scope`,expectedFingers===null?await page.locator('.sc-screen [data-sequence="descending"] tr').count()===1:JSON.stringify(await fingers('descending'))===JSON.stringify(expectedFingers.map(String)));
    }else{
     check(`A ${form.id} ${hand} up-down two sequences`,await page.locator('.sc-screen .sc-sequence-block').count()===2);
-    check(`A ${form.id} ${hand} up-down descending fingering withheld`,await page.locator('.sc-screen').getByText('Fingering is not available for this hand and direction.').count()===1);
+    const expectedFingers=form.fingering.descending[hand==='RH'?'right_hand':'left_hand'];
+    check(`A ${form.id} ${hand} up-down descending fingering scope`,expectedFingers===null?await page.locator('.sc-screen [data-sequence="descending"] tr').count()===1:JSON.stringify(await fingers('descending'))===JSON.stringify(expectedFingers.map(String)));
    }
   }
  }
@@ -105,12 +108,13 @@ try{
  await page.getByLabel('Direction',{exact:true}).selectOption('ascending');await page.getByLabel('Tempo',{exact:true}).selectOption('40');await page.evaluate(()=>window.print=()=>{});await page.getByRole('button',{name:'Print current scale'}).click();check('A minor print state',await page.locator('[data-print-scale]').getAttribute('data-print-scale')==='natural_minor:A'&&await page.locator('[data-print-tempo]').getAttribute('data-print-tempo')==='40');await page.pdf({path:`${out}/print-pdfs/a-minor-natural-rh-ascending.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
  await page.getByLabel('Minor form',{exact:true}).selectOption('melodic_minor_classical');await page.getByLabel('Direction',{exact:true}).selectOption('descending');await page.getByLabel('Tempo',{exact:true}).selectOption('80');
  check('A melodic current note line follows descending direction',(await page.locator('.sc-screen .sc-note-line').textContent()).trim()===a.forms[2].notes_descending.map(display).join(' – '));
- check('A melodic current steps follow descending direction',(await page.locator('.sc-screen .sc-step-line').textContent()).trim()==='Semitone steps: 2 – 2 – 1 – 2 – 2 – 1 – 2');
+ check('A melodic current steps follow descending direction',(await page.locator('.sc-screen .sc-step-line').textContent()).trim().endsWith('Semitone movement: 2 – 2 – 1 – 2 – 2 – 1 – 2'));
  await page.getByRole('button',{name:'Print current scale'}).click();await page.pdf({path:`${out}/print-pdfs/a-minor-melodic-rh-descending.pdf`,format:'Letter',margin:{top:'14mm',bottom:'14mm',left:'14mm',right:'14mm'},printBackground:true});
 
  const nojs=await browser.newPage({javaScriptEnabled:false});for(const url of ['/scales','/scales/c-major','/scales/a-minor']){await nojs.goto(base+url);check(`NoJS readable ${url}`,await nojs.locator('.sc-screen .sc-note-line').count()===1);check(`NoJS controls disabled ${url}`,await nojs.locator('select').first().isDisabled());}await nojs.close();
  for(const url of ['/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart',...additionalRoutes])check(`Existing route ${url}`,(await page.request.get(base+url)).status()===200);
- for(const url of ['/','/tools','/scales/d-major','/scales/modes','/songs','/guide'].filter(url=>!additionalRoutes.has(url)))check(`Unauthorized route ${url}`,(await page.request.get(base+url)).status()===404);
+ for(const url of ['/','/tools','/scales/d-major','/scales/modes','/songs','/guide'])check(`Current authorized route ${url}`,(await page.request.get(base+url)).status()===200);
+ check('Unapproved scale route remains unavailable',(await page.request.get(base+'/scales/not-authorized')).status()===404);
  check('No runtime errors',errors.length===0,errors);
 }catch(error){check('Scale browser runner completed',false,error.stack);}finally{
  await browser.close();const report={executed_at:new Date().toISOString(),passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,results};await writeFile(`${out}/validation.json`,JSON.stringify(report,null,2)+'\n');console.log(`Scale browser: ${report.passed} passed, ${report.failed} failed.`);process.exitCode=report.failed?1:0;

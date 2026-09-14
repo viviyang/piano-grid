@@ -1,0 +1,962 @@
+{
+  "artifact_kind": "historical_issues_NOT_current_failures",
+  "items": [
+    {
+      "url": "/scales",
+      "original_issue": {
+        "id": "A-CENTER-PRINT",
+        "field": "data.print_assets",
+        "reason": "本轮提供打印内容及字段；尚无涵盖全中心范围的真实PDF资产，不能宣称all/双手PDF交付。",
+        "needed_to_resolve": "由本批已核实手别/方向数据生成原创PDF并视觉验收；未核指法组合不输出数字。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales",
+      "original_issue": {
+        "id": "A-CENTER-IMPLEMENT",
+        "field": "playback/print",
+        "reason": "提供内容与选择数据；查询、播放、打印功能未开发验收。",
+        "needed_to_resolve": "Codex实现后对显示/发声/打印三者一致性验收。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-major",
+      "original_issue": {
+        "id": "AM-C-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-major",
+      "original_issue": {
+        "id": "AM-C-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-minor",
+      "original_issue": {
+        "id": "AN-U091-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-minor",
+      "original_issue": {
+        "id": "AN-U091-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-minor",
+      "original_issue": {
+        "id": "AN-U091-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-minor",
+      "original_issue": {
+        "id": "AN-U091-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-minor",
+      "original_issue": {
+        "id": "AN-U091-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/modes",
+      "original_issue": {
+        "id": "AT-scales-modes-FINGERING",
+        "field": "data.examples[*].fingering",
+        "reason": "缺少对应对象、手别、方向、八度范围的完整专业指法来源；不得由模式补写。",
+        "needed_to_resolve": "逐个选择明确标注全部音符指法的正规教学资料，并经钢琴教师复核；已明确收录的例外见对象数据。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/modes",
+      "original_issue": {
+        "id": "AT-scales-modes-OUTPUT",
+        "field": "rendered_staff_keyboard_audio_pdf",
+        "reason": "已提供音符与渲染数据；本轮未生成并视检实际谱表/键盘图、音频或打印PDF，不能声称这些功能已可用。",
+        "needed_to_resolve": "实现时用本页数据渲染并逐音视检/试听；PDF生成检查成功后才显示下载入口。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/modes",
+      "original_issue": {
+        "id": "AT-scales-modes-PRACTICE",
+        "field": "blocks.practice",
+        "reason": "练习是基于已核实音符的编辑提议，未通过专业教学效果或动作审核。",
+        "needed_to_resolve": "钢琴教师核对适用水平和练习安排；不承诺学习效果。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/blues",
+      "original_issue": {
+        "id": "AT-scales-blues-FINGERING",
+        "field": "data.examples[*].fingering",
+        "reason": "缺少对应对象、手别、方向、八度范围的完整专业指法来源；不得由模式补写。",
+        "needed_to_resolve": "逐个选择明确标注全部音符指法的正规教学资料，并经钢琴教师复核；已明确收录的例外见对象数据。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/blues",
+      "original_issue": {
+        "id": "AT-scales-blues-OUTPUT",
+        "field": "rendered_staff_keyboard_audio_pdf",
+        "reason": "已提供音符与渲染数据；本轮未生成并视检实际谱表/键盘图、音频或打印PDF，不能声称这些功能已可用。",
+        "needed_to_resolve": "实现时用本页数据渲染并逐音视检/试听；PDF生成检查成功后才显示下载入口。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/blues",
+      "original_issue": {
+        "id": "AT-scales-blues-PRACTICE",
+        "field": "blocks.practice",
+        "reason": "练习是基于已核实音符的编辑提议，未通过专业教学效果或动作审核。",
+        "needed_to_resolve": "钢琴教师核对适用水平和练习安排；不承诺学习效果。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-major",
+      "original_issue": {
+        "id": "AM-D-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-major",
+      "original_issue": {
+        "id": "AM-D-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-minor",
+      "original_issue": {
+        "id": "AN-U094-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-minor",
+      "original_issue": {
+        "id": "AN-U094-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-minor",
+      "original_issue": {
+        "id": "AN-U094-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-minor",
+      "original_issue": {
+        "id": "AN-U094-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-minor",
+      "original_issue": {
+        "id": "AN-U094-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-major",
+      "original_issue": {
+        "id": "AM-F-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-major",
+      "original_issue": {
+        "id": "AM-F-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-major",
+      "original_issue": {
+        "id": "AM-G-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-major",
+      "original_issue": {
+        "id": "AM-G-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/pentatonic",
+      "original_issue": {
+        "id": "AT-scales-pentatonic-FINGERING",
+        "field": "data.examples[*].fingering",
+        "reason": "缺少对应对象、手别、方向、八度范围的完整专业指法来源；不得由模式补写。",
+        "needed_to_resolve": "逐个选择明确标注全部音符指法的正规教学资料，并经钢琴教师复核；已明确收录的例外见对象数据。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/pentatonic",
+      "original_issue": {
+        "id": "AT-scales-pentatonic-OUTPUT",
+        "field": "rendered_staff_keyboard_audio_pdf",
+        "reason": "已提供音符与渲染数据；本轮未生成并视检实际谱表/键盘图、音频或打印PDF，不能声称这些功能已可用。",
+        "needed_to_resolve": "实现时用本页数据渲染并逐音视检/试听；PDF生成检查成功后才显示下载入口。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/pentatonic",
+      "original_issue": {
+        "id": "AT-scales-pentatonic-PRACTICE",
+        "field": "blocks.practice",
+        "reason": "练习是基于已核实音符的编辑提议，未通过专业教学效果或动作审核。",
+        "needed_to_resolve": "钢琴教师核对适用水平和练习安排；不承诺学习效果。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-major",
+      "original_issue": {
+        "id": "AM-A-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-major",
+      "original_issue": {
+        "id": "AM-A-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-minor",
+      "original_issue": {
+        "id": "AN-U099-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-minor",
+      "original_issue": {
+        "id": "AN-U099-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-minor",
+      "original_issue": {
+        "id": "AN-U099-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-minor",
+      "original_issue": {
+        "id": "AN-U099-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-minor",
+      "original_issue": {
+        "id": "AN-U099-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-minor",
+      "original_issue": {
+        "id": "AN-U100-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-minor",
+      "original_issue": {
+        "id": "AN-U100-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-minor",
+      "original_issue": {
+        "id": "AN-U100-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-minor",
+      "original_issue": {
+        "id": "AN-U100-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/d-minor",
+      "original_issue": {
+        "id": "AN-U100-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-major",
+      "original_issue": {
+        "id": "AM-E-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-major",
+      "original_issue": {
+        "id": "AM-E-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-minor",
+      "original_issue": {
+        "id": "AN-U102-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-minor",
+      "original_issue": {
+        "id": "AN-U102-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-minor",
+      "original_issue": {
+        "id": "AN-U102-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-minor",
+      "original_issue": {
+        "id": "AN-U102-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-minor",
+      "original_issue": {
+        "id": "AN-U102-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-minor",
+      "original_issue": {
+        "id": "AN-U103-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-minor",
+      "original_issue": {
+        "id": "AN-U103-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-minor",
+      "original_issue": {
+        "id": "AN-U103-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-minor",
+      "original_issue": {
+        "id": "AN-U103-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-minor",
+      "original_issue": {
+        "id": "AN-U103-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/harmonic-major",
+      "original_issue": {
+        "id": "AT-scales-harmonic-major-FINGERING",
+        "field": "data.examples[*].fingering",
+        "reason": "缺少对应对象、手别、方向、八度范围的完整专业指法来源；不得由模式补写。",
+        "needed_to_resolve": "逐个选择明确标注全部音符指法的正规教学资料，并经钢琴教师复核；已明确收录的例外见对象数据。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/harmonic-major",
+      "original_issue": {
+        "id": "AT-scales-harmonic-major-OUTPUT",
+        "field": "rendered_staff_keyboard_audio_pdf",
+        "reason": "已提供音符与渲染数据；本轮未生成并视检实际谱表/键盘图、音频或打印PDF，不能声称这些功能已可用。",
+        "needed_to_resolve": "实现时用本页数据渲染并逐音视检/试听；PDF生成检查成功后才显示下载入口。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/harmonic-major",
+      "original_issue": {
+        "id": "AT-scales-harmonic-major-PRACTICE",
+        "field": "blocks.practice",
+        "reason": "练习是基于已核实音符的编辑提议，未通过专业教学效果或动作审核。",
+        "needed_to_resolve": "钢琴教师核对适用水平和练习安排；不承诺学习效果。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-sharp-minor",
+      "original_issue": {
+        "id": "AN-U105-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-sharp-minor",
+      "original_issue": {
+        "id": "AN-U105-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-sharp-minor",
+      "original_issue": {
+        "id": "AN-U105-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, descending.right_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-sharp-minor",
+      "original_issue": {
+        "id": "AN-U105-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/a-sharp-minor",
+      "original_issue": {
+        "id": "AN-U105-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-major",
+      "original_issue": {
+        "id": "AM-B-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-major",
+      "original_issue": {
+        "id": "AM-B-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-flat-major",
+      "original_issue": {
+        "id": "AM-B-FLAT-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/b-flat-major",
+      "original_issue": {
+        "id": "AM-B-FLAT-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-minor",
+      "original_issue": {
+        "id": "AN-U108-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-minor",
+      "original_issue": {
+        "id": "AN-U108-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-minor",
+      "original_issue": {
+        "id": "AN-U108-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-minor",
+      "original_issue": {
+        "id": "AN-U108-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/g-minor",
+      "original_issue": {
+        "id": "AN-U108-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/chromatic",
+      "original_issue": {
+        "id": "AT-scales-chromatic-FINGERING",
+        "field": "data.examples[*].fingering",
+        "reason": "缺少对应对象、手别、方向、八度范围的完整专业指法来源；不得由模式补写。",
+        "needed_to_resolve": "逐个选择明确标注全部音符指法的正规教学资料，并经钢琴教师复核；已明确收录的例外见对象数据。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/chromatic",
+      "original_issue": {
+        "id": "AT-scales-chromatic-OUTPUT",
+        "field": "rendered_staff_keyboard_audio_pdf",
+        "reason": "已提供音符与渲染数据；本轮未生成并视检实际谱表/键盘图、音频或打印PDF，不能声称这些功能已可用。",
+        "needed_to_resolve": "实现时用本页数据渲染并逐音视检/试听；PDF生成检查成功后才显示下载入口。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/chromatic",
+      "original_issue": {
+        "id": "AT-scales-chromatic-PRACTICE",
+        "field": "blocks.practice",
+        "reason": "练习是基于已核实音符的编辑提议，未通过专业教学效果或动作审核。",
+        "needed_to_resolve": "钢琴教师核对适用水平和练习安排；不承诺学习效果。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-flat-major",
+      "original_issue": {
+        "id": "AM-E-FLAT-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/e-flat-major",
+      "original_issue": {
+        "id": "AM-E-FLAT-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-sharp-minor",
+      "original_issue": {
+        "id": "AN-U111-natural_minor-FINGER",
+        "field": "data.forms.natural_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-sharp-minor",
+      "original_issue": {
+        "id": "AN-U111-harmonic_minor-FINGER",
+        "field": "data.forms.harmonic_minor.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-sharp-minor",
+      "original_issue": {
+        "id": "AN-U111-melodic_minor_classical-FINGER",
+        "field": "data.forms.melodic_minor_classical.fingering",
+        "reason": "未取得并逐音核对以下手别/方向的明确指法：ascending.right_hand, ascending.left_hand, descending.right_hand, descending.left_hand。不从上行倒推，不从另一形式套用。",
+        "needed_to_resolve": "取得本调本形式明确标注一八度、手别和方向的教学谱/图，或钢琴教师逐音审核；AN-HA-GUIDE 仅为需用户领取的资料线索。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-sharp-minor",
+      "original_issue": {
+        "id": "AN-U111-RANGE",
+        "field": "data.approved_playback_octaves",
+        "reason": "现有主要指法证据为一八度；多八度、连续转向的连接指法和手型尚未逐项审定。",
+        "needed_to_resolve": "按具体调性、形式、左右手分别审核更大范围及上下行连接；不得重复拼接一八度终止指法。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/f-sharp-minor",
+      "original_issue": {
+        "id": "AN-U111-QA",
+        "field": "data.print_and_audio",
+        "reason": "本包交付音符、谱表事件和打印字段；实际键盘绘图、谱表排版、声音文件/合成输出与 PDF 尚未制作验收。",
+        "needed_to_resolve": "Codex 依据同一 notes/pitch_mapping 数据实现后逐音对齐视觉、播放和打印，保留 E#/B#/双升号并检查谱号、八度和临时记号。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-flat-major",
+      "original_issue": {
+        "id": "AM-C-FLAT-MAJOR-RENDER",
+        "field": "notation_audio_print",
+        "reason": "[已核实] This deliverable contains content and the common rendering data, not rendered keyboard/staff images, tested audio or an exported PDF. Source assets are external references only.",
+        "needed_to_resolve": "Codex must render from these same pitches/fingers, then compare staff, keyboard, playback direction and print against this page’s source row before release."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-flat-major",
+      "original_issue": {
+        "id": "AM-C-FLAT-MAJOR-RANGE",
+        "field": "fingering.additional_octave_fingerings",
+        "reason": "[已核实] Only one-octave fingering was transcribed for this handoff. No verified multi-octave sequence is included.",
+        "needed_to_resolve": "Keep octave selector at 1; if a larger range is to be enabled, obtain and review the exact hand/direction/range-specific source chart."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/scales/c-flat-major",
+      "original_issue": {
+        "id": "AM-CB-SECOND-FINGERING",
+        "field": "fingering.verification",
+        "reason": "[已核实] The C-flat-specific source explicitly supplies both hands and directions for one octave. An independently readable second C-flat fingering source was not obtained. This is not a guessed B-major substitution.",
+        "needed_to_resolve": "Cross-check the transcribed C-flat one-octave numbers with a second C-flat-specific teaching chart or qualified pianist before marking professional review complete."
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/arpeggios",
+      "original_issue": {
+        "id": "AT-arpeggios-FINGERING",
+        "field": "data.examples[*].fingering",
+        "reason": "缺少对应对象、手别、方向、八度范围的完整专业指法来源；不得由模式补写。",
+        "needed_to_resolve": "逐个选择明确标注全部音符指法的正规教学资料，并经钢琴教师复核；已明确收录的例外见对象数据。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/arpeggios",
+      "original_issue": {
+        "id": "AT-arpeggios-OUTPUT",
+        "field": "rendered_staff_keyboard_audio_pdf",
+        "reason": "已提供音符与渲染数据；本轮未生成并视检实际谱表/键盘图、音频或打印PDF，不能声称这些功能已可用。",
+        "needed_to_resolve": "实现时用本页数据渲染并逐音视检/试听；PDF生成检查成功后才显示下载入口。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/arpeggios",
+      "original_issue": {
+        "id": "AT-arpeggios-PRACTICE",
+        "field": "blocks.practice",
+        "reason": "练习是基于已核实音符的编辑提议，未通过专业教学效果或动作审核。",
+        "needed_to_resolve": "钢琴教师核对适用水平和练习安排；不承诺学习效果。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    },
+    {
+      "url": "/arpeggios",
+      "original_issue": {
+        "id": "AT-arpeggios-FINGER-CROSSCHECK",
+        "field": "data.examples[*].fingering",
+        "reason": "Faber 两个单八度完整序列均已逐音看图核验，但没有第二处相同范围、逐音明确的指法来源；Denton 为双八度且只印关键数字。Baylor 正文403。",
+        "needed_to_resolve": "补同手别同八度的可靠来源或教师确认。G左手单八度3指选择不得套用为双八度常规4指。"
+      },
+      "status": "RECONCILE_WITH_NEWER_EVIDENCE",
+      "note": "原样保留；C/A 旧渲染与 A natural 下行可能已被 Sep11 final 替代。不得机械再报一次未完成。"
+    }
+  ]
+}

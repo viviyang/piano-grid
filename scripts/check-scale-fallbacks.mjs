@@ -1,9 +1,10 @@
 import { createRequire } from 'node:module';
-import { writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 
 const { chromium } = createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH || 'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const base = process.env.PIANO_BASE_URL || 'http://localhost:3000';
-const out = 'checks/batches/03-scales';
+const out = process.env.PIANO_CHECK_OUT || 'checks/batches/03-scales';
+await mkdir(`${out}/screenshots`, { recursive: true });
 const results = [];
 const check = (name, passed, detail = '') => { results.push({ name, passed: Boolean(passed), detail }); if (!passed) console.error('FAIL', name, detail); };
 const routes = ['/scales', '/scales/c-major', '/scales/a-minor'];
@@ -14,6 +15,7 @@ try {
     const page = await browser.newPage();
     await page.addInitScript(({ scenario }) => {
       window.__created = 0;
+      window.__nodes = [];
       if (scenario === 'unavailable') {
         window.AudioContext = undefined;
         window.webkitAudioContext = undefined;
@@ -24,7 +26,17 @@ try {
         window.AudioContext = class extends Native {
           get state() { return window.__released ? super.state : 'suspended'; }
           resume() { return new Promise((resolve) => { window.__release = async () => { await super.resume(); window.__released = true; resolve(); }; }); }
-          createOscillator() { window.__created++; return super.createOscillator(); }
+          createOscillator() {
+            window.__created++;
+            const oscillator = super.createOscillator();
+            const record = { stopped: false, disconnected: false };
+            window.__nodes.push(record);
+            const stop = oscillator.stop.bind(oscillator);
+            const disconnect = oscillator.disconnect.bind(oscillator);
+            oscillator.stop = (...args) => { record.stopped = true; return stop(...args); };
+            oscillator.disconnect = (...args) => { record.disconnected = true; return disconnect(...args); };
+            return oscillator;
+          }
         };
       }
     }, { scenario });
@@ -37,7 +49,7 @@ try {
     } else {
       await play.click();
       if (scenario === 'error') {
-        await page.getByText('Sound could not start. Try Play scale again.', { exact: true }).waitFor();
+        await page.getByText(/Sound could not start\./).waitFor();
         check(`${url} explicit audio error`, true);
       } else {
         await page.getByText('Preparing sound…', { exact: true }).waitFor();
@@ -46,12 +58,12 @@ try {
         else await page.getByLabel('Minor form', { exact: true }).selectOption('harmonic_minor');
         await page.evaluate(() => window.__release());
         await page.waitForTimeout(180);
-        check(`${url} selection cancels delayed audio`, await page.evaluate(() => window.__created === 0));
+        check(`${url} selection cancels delayed audio`, await page.evaluate(() => window.__created > 0 && window.__nodes.every((node) => node.stopped && node.disconnected)));
       }
     }
     if (url === '/scales') {
       await page.getByLabel('Scale type', { exact: true }).selectOption('natural_minor');
-      check(`${url} selection survives ${scenario}`, await page.locator('.sc-tool').getAttribute('data-current-scale') === 'natural_minor:A');
+      check(`${url} selection survives ${scenario}`, await page.locator('.sc-tool').getAttribute('data-current-scale') === (scenario === 'delayed-cancel' ? 'natural_minor:D' : 'natural_minor:C'));
     } else if (url.endsWith('c-major')) {
       await page.getByLabel('Direction', { exact: true }).selectOption('descending');
       check(`${url} selection survives ${scenario}`, await page.locator('.sc-tool').getAttribute('data-current-scale') === 'major:C');

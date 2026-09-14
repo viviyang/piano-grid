@@ -1,0 +1,22 @@
+{
+  "version": "launch-operations-v1",
+  "period_start": null,
+  "period_end": null,
+  "release_id": null,
+  "candidate_id": "scales-launch-79faa6c539d6",
+  "statuses": {
+    "PRODUCT_READY": "PASS_LOCAL_CANDIDATE",
+    "PUBLIC_LIVE": "EXISTING_BASELINE_ONLY",
+    "MEASUREMENT_LIVE": "BLOCKED_ACCOUNT",
+    "ADS_APPLICATION_READY": "BLOCKED_OWNER_FACTS",
+    "ADS_LIVE": "BLOCKED_ACCOUNT_DEFAULT_OFF",
+    "REVENUE_OBSERVED": "NOT_OBSERVED"
+  },
+  "gsc": { "impressions": null, "clicks": null, "top_queries": [], "source_evidence": null },
+  "analytics": { "provider": null, "consent_scope": null, "reference_views": null, "resource_requests": null, "unassisted_first_attempts": null, "unassisted_first_correct": null, "assisted_attempts": null, "practice_self_completions": null, "sample_limitations": "No approved live provider or backend evidence." },
+  "ads": { "website_approval_status": null, "platform_pageviews": null, "ad_impressions": null, "page_rpm_usd": null, "estimated_revenue_usd": null, "finalized_revenue_usd": null, "income_evidence": null },
+  "user_feedback": [],
+  "distribution_actions": [],
+  "next_one_change": null,
+  "note": "null means not observed, not zero. PDF requests are not completed downloads; self-reported practice is not performance accuracy."
+}

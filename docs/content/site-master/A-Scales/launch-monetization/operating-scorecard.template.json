@@ -1,0 +1,44 @@
+{
+  "version": "launch-operations-v1",
+  "period_start": null,
+  "period_end": null,
+  "release_id": null,
+  "statuses": {
+    "PRODUCT_READY": "NOT_VERIFIED",
+    "PUBLIC_LIVE": "NOT_VERIFIED",
+    "MEASUREMENT_LIVE": "NOT_VERIFIED",
+    "ADS_APPLICATION_READY": "NOT_VERIFIED",
+    "ADS_LIVE": "NOT_VERIFIED",
+    "REVENUE_OBSERVED": "NOT_VERIFIED"
+  },
+  "gsc": {
+    "impressions": null,
+    "clicks": null,
+    "top_queries": [],
+    "source_evidence": null
+  },
+  "analytics": {
+    "provider": null,
+    "consent_scope": null,
+    "reference_views": null,
+    "resource_requests": null,
+    "unassisted_first_attempts": null,
+    "unassisted_first_correct": null,
+    "assisted_attempts": null,
+    "practice_self_completions": null,
+    "sample_limitations": null
+  },
+  "ads": {
+    "website_approval_status": null,
+    "platform_pageviews": null,
+    "ad_impressions": null,
+    "page_rpm_usd": null,
+    "estimated_revenue_usd": null,
+    "finalized_revenue_usd": null,
+    "income_evidence": null
+  },
+  "user_feedback": [],
+  "distribution_actions": [],
+  "next_one_change": null,
+  "note": "null means not observed, not zero. Do not substitute clicks for completed print/download or self-reported practice for performance accuracy."
+}

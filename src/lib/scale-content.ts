@@ -11,6 +11,9 @@ import type {
   ScaleFormID,
   ScaleHand,
   ScaleOption,
+  AMinorAuthoringPage,
+  CMajorAuthoringPage,
+  ScaleCenterAuthoringPage,
   ScalePageModel,
   ScalePitch,
   ScaleSourceReference,
@@ -22,6 +25,12 @@ const blockIDs = {
   '/scales/a-minor': ['section-1', 'section-2', 'section-3', 'section-4'],
 } as const;
 
+type ScaleAuthoringPageByURL = {
+  '/scales': ScaleCenterAuthoringPage;
+  '/scales/c-major': CMajorAuthoringPage;
+  '/scales/a-minor': AMinorAuthoringPage;
+};
+
 const formLabels: Record<ScaleFormID, string> = {
   major: 'Major',
   natural_minor: 'Natural minor',
@@ -29,11 +38,31 @@ const formLabels: Record<ScaleFormID, string> = {
   melodic_minor_classical: 'Melodic minor (classical)',
 };
 
+const readyDetailByObject: Record<string, string> = {
+  'major:C': '/scales/c-major', 'major:D': '/scales/d-major', 'major:F': '/scales/f-major', 'major:G': '/scales/g-major',
+  'major:A': '/scales/a-major', 'major:E': '/scales/e-major', 'major:B': '/scales/b-major', 'major:Bb': '/scales/b-flat-major',
+  'major:Eb': '/scales/e-flat-major', 'major:Cb': '/scales/c-flat-major',
+  'natural_minor:A': '/scales/a-minor', 'harmonic_minor:A': '/scales/a-minor', 'melodic_minor_classical:A': '/scales/a-minor',
+  'natural_minor:E': '/scales/e-minor', 'harmonic_minor:E': '/scales/e-minor', 'melodic_minor_classical:E': '/scales/e-minor',
+  'natural_minor:C': '/scales/c-minor', 'harmonic_minor:C': '/scales/c-minor', 'melodic_minor_classical:C': '/scales/c-minor',
+  'natural_minor:D': '/scales/d-minor', 'harmonic_minor:D': '/scales/d-minor', 'melodic_minor_classical:D': '/scales/d-minor',
+  'natural_minor:B': '/scales/b-minor', 'harmonic_minor:B': '/scales/b-minor', 'melodic_minor_classical:B': '/scales/b-minor',
+  'natural_minor:F': '/scales/f-minor', 'harmonic_minor:F': '/scales/f-minor', 'melodic_minor_classical:F': '/scales/f-minor',
+  'natural_minor:A#': '/scales/a-sharp-minor', 'harmonic_minor:A#': '/scales/a-sharp-minor', 'melodic_minor_classical:A#': '/scales/a-sharp-minor',
+  'natural_minor:G': '/scales/g-minor', 'harmonic_minor:G': '/scales/g-minor', 'melodic_minor_classical:G': '/scales/g-minor',
+  'natural_minor:F#': '/scales/f-sharp-minor', 'harmonic_minor:F#': '/scales/f-sharp-minor', 'melodic_minor_classical:F#': '/scales/f-sharp-minor',
+};
+
+function readyDetailURL(tonic: string, form: ScaleFormID) {
+  const url = readyDetailByObject[`${form}:${tonic}`];
+  return url && isPublicRoute(url) ? url : null;
+}
+
 const letterPitch: Record<string, number> = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
 const blackPitchClasses = new Set([1, 3, 6, 8, 10]);
 
 type SourcePitch = { note?: string; spelling?: string; written_octave?: number; octave?: number; midi: number; key_color: 'white' | 'black' };
-type SourceRecord = { source_id: string; title: string; publisher: string; url: string };
+type SourceRecord = { source_id: string; title: string; publisher: string; url: string; locator?: string; supports?: string | string[] };
 
 function publicSourceScope(sourceID: string, tonic: string, form: ScaleFormID) {
   const formLabel = formLabels[form].toLowerCase();
@@ -63,7 +92,30 @@ function publicSources(master: { sources: SourceRecord[] }, sourceIDs: string[],
     const source = sourceByID.get(sourceID);
     if (!source?.title || !source.publisher || !source.url?.startsWith('https://')) throw new Error(`Scale source is not ready for public display: ${sourceID}`);
     const scope = publicSourceScope(sourceID, tonic, form);
-    return scope ? [{ title: source.title, publisher: source.publisher, url: source.url, scope }] : [];
+    return scope ? [{ sourceID, title: source.title, publisher: source.publisher, url: source.url, scope, locator: publicLocator(source.locator) }] : [];
+  });
+}
+
+function publicLocator(locator?: string) {
+  if (!locator) return 'See the named section in the source.';
+  const withoutInternalScreens = locator.split(/;?\s*Screenshots?:/i)[0].trim();
+  return withoutInternalScreens.replace(/;?\s*turn\d+[a-z0-9_-]*/gi, '').trim() || 'See the cited publication location in the source record.';
+}
+
+function publicPageSources(master: { sources: SourceRecord[] }, sourceIDs: string[]): ScaleSourceReference[] {
+  const sourceByID = new Map(master.sources.map((source) => [source.source_id, source]));
+  return [...new Set(sourceIDs)].map((sourceID) => {
+    const source = sourceByID.get(sourceID);
+    if (!source?.title || !source.publisher || !source.url?.startsWith('https://')) throw new Error(`Scale page source is not ready for public display: ${sourceID}`);
+    const supports = Array.isArray(source.supports) ? source.supports.join(' ') : source.supports;
+    return {
+      sourceID,
+      title: source.title,
+      publisher: source.publisher,
+      url: source.url,
+      scope: supports ?? 'Supports the page claims associated with this source record.',
+      locator: publicLocator(source.locator),
+    };
   });
 }
 
@@ -262,26 +314,32 @@ function keyboardKeys(): PianoKey[] {
   return getLayouts('/keyboard-notes')[0].keys;
 }
 
-export function getScalePage(url: keyof typeof blockIDs) {
+export function getScalePage<U extends keyof typeof blockIDs>(url: U): {
+  model: ScalePageModel;
+  data: ScaleAuthoringPageByURL[U]['data'];
+  master: { sources: SourceRecord[] };
+} {
   const { page, master } = readAuthorizedPage(url);
   validateScaleAuthoringPage(url, page);
-  const actual = page.blocks.map((block: { id: string }) => block.id);
+  const typedPage = page as ScaleAuthoringPageByURL[U];
+  const actual = typedPage.blocks.map((block: { id: string }) => block.id);
   if (actual.join() !== blockIDs[url].join()) throw new Error(`Unknown or missing scale content block: ${url}`);
   const model: ScalePageModel = {
     url,
-    title: page.title,
-    description: page.description,
-    blocks: page.blocks.map((block: { id: string; heading: string; body: string }) => ({ id: block.id, heading: block.heading, body: block.body })),
+    title: typedPage.title,
+    description: typedPage.description,
+    blocks: typedPage.blocks.map((block: { id: string; heading: string; body: string }) => ({ id: block.id, heading: block.heading, body: block.body })),
     copy: SCALE_PAGE_COPY[url],
-    metadata: page.metadata,
+    pageSources: publicPageSources(master, typedPage.source_ids),
+    metadata: typedPage.metadata,
     provenance: {
-      template_id: page.template_id,
-      source_groups: page.source_groups.map((group: { id: string }) => group.id),
-      source_ids: page.source_ids,
+      template_id: typedPage.template_id,
+      source_groups: typedPage.source_groups.map((group: { id: string }) => group.id),
+      source_ids: typedPage.source_ids,
       block_ids: actual,
     },
   };
-  return { model, data: page.data, master };
+  return { model, data: typedPage.data, master };
 }
 
 export function getScaleCenter() {
@@ -290,6 +348,8 @@ export function getScaleCenter() {
   const aData = getScalePage('/scales/a-minor').data;
   const cOption = cMajorOption(cData, master);
   const aOptions = aMinorOptions(aData, master);
+  const majorSteps = data.form_comparison.find((item) => item.id === 'major')?.steps_semitones;
+  if (!majorSteps) throw new Error('Scale center major form is missing its step sequence.');
   const major: ScaleOption[] = data.major_overview.map((entry: any) => {
     if (entry.tonic === 'C') return cOption;
     const ascending = [...entry.notes, entry.tonic];
@@ -298,7 +358,8 @@ export function getScaleCenter() {
       form: 'major',
       ascending,
       descending: [...ascending].reverse(),
-      semitoneSteps: data.form_comparison.find((item: any) => item.id === 'major').steps_semitones,
+      semitoneSteps: majorSteps,
+      detailURL: readyDetailURL(entry.tonic, 'major'),
       sources: publicSources(master, entry.source_ids, entry.tonic, 'major'),
     });
   });
@@ -310,12 +371,15 @@ export function getScaleCenter() {
     const verified = entry.tonic === 'A' ? aOptions.find((option) => option.form === form) : null;
     if (verified) return verified;
     const comparison = data.form_comparison.find((item: any) => item.id.replaceAll('-', '_') === form);
+    const semitoneSteps = comparison?.steps_semitones ?? comparison?.ascending_steps_semitones;
+    if (!semitoneSteps) throw new Error(`Scale center ${form} is missing its step sequence.`);
     return optionFromNotes({
       tonic: entry.tonic,
       form,
       ascending,
       descending,
-      semitoneSteps: comparison?.steps_semitones ?? comparison?.ascending_steps_semitones,
+      semitoneSteps,
+      detailURL: readyDetailURL(entry.tonic, form),
       sources: publicSources(master, entry.source_ids, entry.tonic, form),
     });
   }));
@@ -327,13 +391,13 @@ export function getScaleCenter() {
     scaleDegrees: data.scale_degrees,
     jazzExamples: data.jazz_examples,
     defaultSelection: data.default_selection,
-    availableDetailURLs: ['/scales/c-major', '/scales/a-minor'].filter(isPublicRoute),
+    availableDetailURLs: [...new Set([...major, ...minor].flatMap((option) => option.detailURL ? [option.detailURL] : []))],
   };
 }
 
 export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
-  const { model, data, master } = getScalePage(url);
   if (url === '/scales/c-major') {
+    const { model, data, master } = getScalePage('/scales/c-major');
     return {
       model,
       options: [cMajorOption(data, master)],
@@ -345,6 +409,7 @@ export function getScaleDetail(url: '/scales/c-major' | '/scales/a-minor') {
       chords: [],
     };
   }
+  const { model, data, master } = getScalePage('/scales/a-minor');
   return {
     model,
     options: aMinorOptions(data, master),
