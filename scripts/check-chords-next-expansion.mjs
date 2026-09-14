@@ -13,9 +13,10 @@ const details=routePlan.N1.new_detail_urls.map(url=>JSON.parse(fs.readFileSync(`
 const n2bPublic=JSON.parse(fs.readFileSync('docs/pianogrid-chords-n2b/04_seo/N2B.url-keyword-tdh.json','utf8')).map(item=>item.url);
 const n2cPublic=['/chords/seventh',...fs.readdirSync('docs/pianogrid-chords-n2c/03_details').filter(name=>name.endsWith('.page.json')).map(name=>JSON.parse(fs.readFileSync(`docs/pianogrid-chords-n2c/03_details/${name}`,'utf8')).url)];
 const n2dPublic=['/chords/add',...fs.readdirSync('docs/pianogrid-chords-n2d-v2/03_content/details').filter(name=>name.endsWith('.page.json')).map(name=>JSON.parse(fs.readFileSync(`docs/pianogrid-chords-n2d-v2/03_content/details/${name}`,'utf8')).url)];
-const expectedPublic=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music',...routePlan.N1.new_category_urls,...routePlan.N1.new_detail_urls,...n2bPublic,...n2cPublic,...n2dPublic];
-const advanced=routePlan.later_planned_category_urls.filter(url=>!n2bPublic.includes(url)&&!n2cPublic.includes(url)&&!n2dPublic.includes(url));
-const expectedMobile=['/chords','/chords/major','/chords/minor','/chords/diminished','/chords/augmented','/chords/suspended','/chords/seventh','/chords/add','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords','/keyboard-notes/finger-numbers'];
+const expectedPublic=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music',...routePlan.N1.new_category_urls,...routePlan.N1.new_detail_urls,...n2bPublic,...n2cPublic,...n2dPublic,'/chords/extended','/chords/altered'];
+const completionPublic=['/chords/extended','/chords/altered'];
+const advanced=routePlan.later_planned_category_urls.filter(url=>!n2bPublic.includes(url)&&!n2cPublic.includes(url)&&!n2dPublic.includes(url)&&!completionPublic.includes(url));
+const expectedMobile=['/chords','/chords/major','/chords/minor','/chords/diminished','/chords/augmented','/chords/suspended','/chords/seventh','/chords/add','/chords/extended','/chords/altered','/chords/by-key','/chord-progressions','/chords/finder','/guide/piano-chords','/keyboard-notes/finger-numbers'];
 const results=[],runtimeErrors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
@@ -83,7 +84,7 @@ try{
  check('Desktop chord IA uses Browse More Chords Explore Learn groups',JSON.stringify(await chordGroup.locator('.site-nav-link-group h3').allTextContents())===JSON.stringify(['Browse','More Chords','Explore','Learn']));
  const desktopChordHrefs=await chordGroup.locator('.site-nav-child-link').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')));
  const advancedNavCounts=await Promise.all(advanced.map(href=>page.locator(`.site-navigation a[href="${href}"]`).count()));
- check('Desktop chord IA excludes sample and deferred links',desktopChordHrefs.length===12&&desktopChordHrefs.every(href=>expectedMobile.slice(1).includes(href))&&advancedNavCounts.every(count=>count===0),{desktopChordHrefs,advancedNavCounts});
+ check('Desktop chord IA excludes sample and deferred links',desktopChordHrefs.length===14&&desktopChordHrefs.every(href=>expectedMobile.slice(1).includes(href))&&advancedNavCounts.every(count=>count===0),{desktopChordHrefs,advancedNavCounts});
  const mobileSection=page.locator('.site-mobile-section').filter({has:page.locator('.site-mobile-parent[href="/chords"]')});
  const mobileHrefs=[await mobileSection.locator('.site-mobile-parent').getAttribute('href'),...await mobileSection.locator('.site-mobile-children a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')))];
  check('Mobile chord IA exact order',JSON.stringify(mobileHrefs)===JSON.stringify(expectedMobile),mobileHrefs);
@@ -91,11 +92,11 @@ try{
  await page.screenshot({path:`${out}/screenshots/hub-1440.png`,fullPage:true});await page.setViewportSize({width:390,height:844});check('Hub mobile no overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:`${out}/screenshots/hub-390.png`,fullPage:true});
  const sitemapText=await (await page.request.get(base+'/sitemap.xml')).text();
  const sitemapPaths=[...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match=>match[1]||'/');
- check('Sitemap equals the 171-route registry',sitemapPaths.length===171&&JSON.stringify([...sitemapPaths].sort())===JSON.stringify([...expectedPublic].sort()),sitemapPaths);
+ check('Sitemap equals the 173-route registry',sitemapPaths.length===173&&JSON.stringify([...sitemapPaths].sort())===JSON.stringify([...expectedPublic].sort()),sitemapPaths);
  for(const href of advanced){check(`${href} remains deferred`,(await page.request.get(base+href)).status()===404&&!sitemapPaths.includes(href));}
  check('No runtime or hydration errors',runtimeErrors.length===0,runtimeErrors);
  await page.close();
 }catch(error){check('N1 browser validation completed',false,error.stack)}finally{await browser.close();}
-const report={executed_at:new Date().toISOString(),base,passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,route_counts:{published_site_sitemap:171,explanation:'The sitemap includes the 146-route N2C baseline plus the 25-route N2D Add batch.'},results,manual_checks:['real mobile/tablet touch','screen reader','human listening','physical printing','PDF tag accessibility','independent piano-teacher review']};
+const report={executed_at:new Date().toISOString(),base,passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,route_counts:{published_site_sitemap:173,explanation:'The sitemap includes the 146-route N2C baseline plus the 25-route N2D Add batch and two completion categories.'},results,manual_checks:['real mobile/tablet touch','screen reader','human listening','physical printing','PDF tag accessibility','independent piano-teacher review']};
 fs.writeFileSync(`${out}/validation.json`,JSON.stringify(report,null,2)+'\n');
 console.log(`Chords N1 expansion: ${report.passed} passed, ${report.failed} failed.`);process.exitCode=report.failed?1:0;

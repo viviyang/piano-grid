@@ -1,0 +1,104 @@
+{
+  "explicitLinks": [
+    {
+      "from": "/chords",
+      "to": "/chords/extended",
+      "anchor": "Extended Piano Chords",
+      "relationship": "family_reference"
+    },
+    {
+      "from": "/chords",
+      "to": "/chords/altered",
+      "anchor": "Altered Piano Chords",
+      "relationship": "family_reference"
+    },
+    {
+      "from": "/chords/extended",
+      "to": "/chords",
+      "anchor": "Browse the supported chord collection",
+      "relationship": "task_continuation",
+      "requiresCapability": "public_page"
+    },
+    {
+      "from": "/chords/extended",
+      "to": "/guide/piano-chords",
+      "anchor": "Learn chord formulas and voicings",
+      "relationship": "task_continuation",
+      "requiresCapability": "public_page"
+    },
+    {
+      "from": "/chords/extended",
+      "to": "/chords/finder",
+      "anchor": "Find possible names from your notes",
+      "relationship": "task_continuation",
+      "requiresCapability": "cross_family_finder"
+    },
+    {
+      "from": "/chords/altered",
+      "to": "/chords",
+      "anchor": "Browse the supported chord collection",
+      "relationship": "task_continuation",
+      "requiresCapability": "public_page"
+    },
+    {
+      "from": "/chords/altered",
+      "to": "/guide/piano-chords",
+      "anchor": "Learn chord formulas and voicings",
+      "relationship": "task_continuation",
+      "requiresCapability": "public_page"
+    },
+    {
+      "from": "/chords/altered",
+      "to": "/chords/finder",
+      "anchor": "Find possible names from your notes",
+      "relationship": "task_continuation",
+      "requiresCapability": "cross_family_finder"
+    },
+    {
+      "from": "/guide/piano-chords#extensions",
+      "to": "/chords/extended#ref-c-dominant13",
+      "anchor": "Compare the C13 formula and playing example",
+      "relationship": "worked_example"
+    },
+    {
+      "from": "/guide/piano-chords#alterations",
+      "to": "/chords/altered#ref-c-dominant7Flat9",
+      "anchor": "Hear C7 with a flat ninth",
+      "relationship": "worked_example"
+    },
+    {
+      "from": "/chords#jazz",
+      "to": "/chord-progressions#color-ii-v-i",
+      "anchor": "Try the Dm9–G13–Cmaj9 example",
+      "relationship": "practice_context"
+    },
+    {
+      "from": "/chords#power",
+      "to": "/guide/piano-chords#numbers",
+      "anchor": "Distinguish chord symbols from octave and finger numbers",
+      "relationship": "explanation"
+    }
+  ],
+  "parameterizedRules": [
+    {
+      "from": "existing_detail",
+      "to": "family",
+      "rule": "categoryRoute from runtime model, not major/minor ternary"
+    },
+    {
+      "from": "existing_detail",
+      "to": "same_root_other_supported_type",
+      "rule": "actual registry + meaningful comparison; no absent root detail"
+    },
+    {
+      "from": "by_key_or_progression",
+      "to": "actual_chord_reference",
+      "rule": "spell-aware reference resolver; keep contextual tones"
+    },
+    {
+      "from": "finder_result",
+      "to": "detail_or_embedded_reference",
+      "rule": "only after same input interpretation is preserved"
+    }
+  ]
+}

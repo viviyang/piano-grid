@@ -14,7 +14,8 @@ const nextPublished = [...nextRoutes.new_category_urls, ...nextRoutes.new_detail
 const n2bPublished = JSON.parse(await readFile('docs/pianogrid-chords-n2b/04_seo/N2B.url-keyword-tdh.json','utf8')).map(item=>item.url);
 const n2cPublished = ['/chords/seventh',...await Promise.all((await readdir('docs/pianogrid-chords-n2c/03_details')).filter(name=>name.endsWith('.page.json')).map(async name=>JSON.parse(await readFile(`docs/pianogrid-chords-n2c/03_details/${name}`,'utf8')).url))];
 const n2dPublished = ['/chords/add',...await Promise.all((await readdir('docs/pianogrid-chords-n2d-v2/03_content/details')).filter(name=>name.endsWith('.page.json')).map(async name=>JSON.parse(await readFile(`docs/pianogrid-chords-n2d-v2/03_content/details/${name}`,'utf8')).url))];
-const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished];
+const completionPublished = ['/chords/extended','/chords/altered'];
+const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished,...completionPublished];
 const details = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major'];
 const progressionDetails = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/e-major', '/chords/b-major'];
 const results = [], runtimeErrors = [];
@@ -32,7 +33,8 @@ try {
     (response.status() === 200 ? published : deferred).push(record.url);
     check(`${record.url} HTTP 200`, response.status() === 200, response.status());
     check(`${record.url} title`, await page.title() === record.title, await page.title());
-    check(`${record.url} description`, await page.locator('meta[name="description"]').getAttribute('content') === record.description);
+    const description=await page.locator('meta[name="description"]').getAttribute('content');
+    check(`${record.url} description`, record.url==='/chords'?description==='Explore piano chords by name, root and type with note names, keyboard examples, sound and printable references.':description===record.description,description);
     check(`${record.url} H1`, (await page.locator('h1').allTextContents()).join('').trim() === record.h1, await page.locator('h1').allTextContents());
     check(`${record.url} canonical`, await page.locator('link[rel="canonical"]').getAttribute('href') === record.canonical);
     const robots = (await page.locator('meta[name="robots"]').getAttribute('content')) || '';
@@ -46,10 +48,10 @@ try {
   const sitemapResponse = await page.request.get(base + '/sitemap.xml');
   const sitemapText = await sitemapResponse.text();
   const sitemapPaths = [...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match => match[1] || '/');
-  check('Sitemap contains exactly the 171 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
+  check('Sitemap contains exactly the 173 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
   check('All 15 planned URLs are in sitemap', planned.every(url => sitemapPaths.includes(url)));
   const finalScope = sitemapPaths.filter(url => url.startsWith('/chord') || ['/guide/piano-chords', '/keyboard-notes/finger-numbers'].includes(url));
-  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished].includes(url)));
+  check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished,...completionPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished,...completionPublished].includes(url)));
 
   const hrefs = new Set();
   for (const url of planned) {
@@ -82,20 +84,20 @@ try {
   const finderRaw = await nojs.goto(base + '/chords/finder');
   const finderHTML = await finderRaw.text();
   check('Finder server HTML includes tool and seven explanatory modules', finderRaw.status() === 200 && finderHTML.includes('Choose the keys you are playing') && await nojs.locator('.sp-reading .am-content-section').count() === 7);
-  check('Finder server HTML states bounded vocabulary', finderHTML.includes('25-chord major/minor triad catalogue') && finderHTML.includes('does not guess sixth, seventh, incomplete or extended chords'));
+  check('Finder server HTML states bounded vocabulary', finderHTML.includes('433 objects in the supported registry') && finderHTML.includes('does not infer missing tones freely'));
   await nojs.close();
 
   await page.goto(base + '/chords/finder');
   const key = pc => page.locator(`.fd-key[data-pitch-class="${pc}"]`);
   for (const pc of [0, 4, 7]) await key(pc).click();
-  check('Finder exact C-major lookup', await page.locator('.fd-candidates [data-chord-id="c-major"]').count() === 1 && await page.locator('.fd-candidates [data-chord-id="c-major"]').getAttribute('data-match') === 'exact');
+  check('Finder exact C-major lookup', await page.locator('.fd-candidates [data-chord-id="c-major"]').count() === 1 && await page.locator('.fd-candidates [data-chord-id="c-major"]').getAttribute('data-match') === 'exact_formula');
   check('Finder published detail link', await page.locator('.fd-candidates [data-chord-id="c-major"] a[href="/chords/c-major"]').count() === 1);
   await page.locator('#finder-bass').selectOption('4');
-  check('Finder inversion-equivalent lookup', await page.locator('.fd-candidates [data-chord-id="c-major"]').getAttribute('data-match') === 'inversion' && (await page.locator('.fd-candidates [data-chord-id="c-major"] h4').textContent()) === 'C/E');
+  check('Finder inversion-equivalent lookup', await page.locator('.fd-candidates [data-chord-id="c-major"]').getAttribute('data-match') === 'exact_formula' && (await page.locator('.fd-candidates [data-chord-id="c-major"] h4').textContent()) === 'C/E');
   await page.getByRole('button', { name: 'Clear', exact: true }).click();
   check('Finder clear/reset', await page.locator('.fd-result').getAttribute('data-result-state') === 'empty' && await page.locator('.fd-key[aria-pressed="true"]').count() === 0);
   for (const pc of [0, 1, 2]) await key(pc).click();
-  check('Finder no-result state', await page.locator('.fd-result').getAttribute('data-result-state') === 'none' && (await page.locator('.fd-state').innerText()).includes('No supported match confirmed'));
+  check('Finder no-result state', await page.locator('.fd-result').getAttribute('data-result-state') === 'none' && (await page.locator('.fd-state').innerText()).includes('no matching complete formula'));
   await page.getByRole('button', { name: 'Clear', exact: true }).click();
   for (const pc of [0, 5, 9]) await key(pc).click();
   check('Finder newly published candidate links to its detail', await page.locator('.fd-candidates [data-chord-id="f-major"]').count() === 1 && await page.locator('.fd-candidates [data-chord-id="f-major"] a[href="/chords/f-major"]').count() === 1);

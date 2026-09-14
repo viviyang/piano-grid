@@ -1,0 +1,45 @@
+{
+  "packageVersion": "2026-09-13-completion-v1",
+  "authorization": {
+    "implementation": true,
+    "commit": false,
+    "push": false,
+    "deploy": false
+  },
+  "currentStage": "A",
+  "completedStages": [],
+  "completedFeatureIds": [],
+  "remainingFeatureIds": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17"
+  ],
+  "baselineHead": null,
+  "actualPublicBusinessUrlCount": null,
+  "actualChordUrlCount": null,
+  "blockers": [],
+  "manualPending": [
+    "real_audio",
+    "real_device",
+    "screen_reader",
+    "physical_print",
+    "PDF_tags",
+    "independent_music_review"
+  ],
+  "nextCommand": "Read 08_codex/00_一次执行到工程收尾.md and current repository; record baseline once.",
+  "status": "not_executed"
+}

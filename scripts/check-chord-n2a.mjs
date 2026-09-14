@@ -75,10 +75,10 @@ try{
   const routes=await import(pathToFileURL(compile('site-routes')));
   check('N2A model remains compatible with the N2C publication boundary',()=>{
     const published=['/chords/suspended','/chords/diminished','/chords/augmented','/chords/seventh','/chords/add'];
-    const deferred=['/chords/extended','/chords/altered'];
-    assert.equal(routes.PUBLIC_ROUTES.length,171);
+    const completion=['/chords/extended','/chords/altered'];
+    assert.equal(routes.PUBLIC_ROUTES.length,173);
     assert.equal(published.every(route=>routes.PUBLIC_ROUTES.includes(route)),true);
-    assert.equal(deferred.some(route=>routes.PUBLIC_ROUTES.includes(route)),false);
+    assert.equal(completion.every(route=>routes.PUBLIC_ROUTES.includes(route)),true);
   });
 }finally{
   fs.rmSync(temp,{recursive:true,force:true});

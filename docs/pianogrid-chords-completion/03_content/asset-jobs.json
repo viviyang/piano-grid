@@ -1,0 +1,69 @@
+{
+  "existingAssets": "preserve all actual assets; count from runtime manifest, not forced to145",
+  "jobs": [
+    {
+      "id": "extended-starter",
+      "output": "chords-extended-starter-reference.pdf",
+      "objectIds": [
+        "c-dominant9",
+        "c-major9",
+        "c-minor9",
+        "c-dominant11",
+        "c-major11",
+        "c-minor11",
+        "c-dominant13",
+        "c-major13",
+        "c-minor13"
+      ],
+      "scopeLabel": "Nine extended structures on C: formula and example",
+      "printRule": "show full inventory and rooted example with omitted degrees; allow multiple pages"
+    },
+    {
+      "id": "altered-starter",
+      "output": "chords-altered-starter-reference.pdf",
+      "objectIds": [
+        "c-dominant7Flat9",
+        "c-dominant7Sharp9",
+        "c-dominant7Flat5",
+        "c-dominant7Sharp5",
+        "c-dominant7Sharp11",
+        "c-dominant7Flat13",
+        "c-dominant7Flat9Flat13",
+        "c-dominant7Sharp5Sharp9"
+      ],
+      "scopeLabel": "Eight explicit altered structures on C",
+      "printRule": "retain written altered intervals; do not call this all altered chords"
+    },
+    {
+      "id": "power-reference",
+      "output": "piano-power-fifths-reference.pdf",
+      "sourceFilter": {
+        "subtype": "power5"
+      },
+      "scopeLabel": "Twelve root-and-fifth examples with optional octave doubling",
+      "printRule": "distinguish chord symbol C5 from the individual pitch C5"
+    },
+    {
+      "id": "practice-starter",
+      "output": "piano-chord-practice-starter.pdf",
+      "lessonIds": [
+        "beginner",
+        "inversions",
+        "transitions"
+      ],
+      "scopeLabel": "Three starting tasks and answers",
+      "printRule": "question and answer clearly separated; original reference exercises, no copied songs"
+    }
+  ],
+  "newObjectCurrentPrint": "required for all supported objects using selected realization snapshot",
+  "downloadLinkRule": "only render after file exists and validated; browser print is not a downloadable PDF",
+  "validation": [
+    "render generated pages",
+    "inspect glyphs and clipping",
+    "selectable text where supported",
+    "document title/language",
+    "honest untagged status",
+    "physical print still pending"
+  ],
+  "noFullRootMatrixStaticPDFPromise": true
+}

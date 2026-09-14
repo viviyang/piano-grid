@@ -1,0 +1,924 @@
+[
+  {
+    "subtype": "dominant9",
+    "family": "extended",
+    "name": "dominant 9th",
+    "symbolSuffix": "9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "9"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "9"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "9"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": []
+  },
+  {
+    "subtype": "dominant11",
+    "family": "extended",
+    "name": "dominant 11th",
+    "symbolSuffix": "11",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "9",
+      "11"
+    ],
+    "playDegrees": [
+      "1",
+      "b7",
+      "9",
+      "11"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "3",
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b7",
+      "9",
+      "11"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": [
+      "The supplied playing example omits the third and fifth. Its sound also admits a suspended/upper-triad interpretation; C11(no3,no5) and B♭/C describe the C example. Do not relabel all C11 definitions as sus."
+    ]
+  },
+  {
+    "subtype": "dominant13",
+    "family": "extended",
+    "name": "dominant 13th",
+    "symbolSuffix": "13",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "9",
+      "11",
+      "13"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "9",
+      "13"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5",
+      "11"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "9",
+      "13"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": []
+  },
+  {
+    "subtype": "major9",
+    "family": "extended",
+    "name": "major 9th",
+    "symbolSuffix": "maj9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "7",
+      "9"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "7",
+      "9"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": []
+  },
+  {
+    "subtype": "major11",
+    "family": "extended",
+    "name": "major 11th",
+    "symbolSuffix": "maj11",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "7",
+      "11"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5",
+      "9"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "7",
+      "11"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": [
+      "The natural 11 is retained. This demonstration includes tension between the major third and natural 11; it is not silently sharpened and is not labelled a universally preferred voicing."
+    ]
+  },
+  {
+    "subtype": "major13",
+    "family": "extended",
+    "name": "major 13th",
+    "symbolSuffix": "maj13",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "7",
+      "9",
+      "13"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5",
+      "11"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "7",
+      "9",
+      "13"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": []
+  },
+  {
+    "subtype": "minor9",
+    "family": "extended",
+    "name": "minor 9th",
+    "symbolSuffix": "m9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7",
+      "9"
+    ],
+    "playDegrees": [
+      "1",
+      "b3",
+      "b7",
+      "9"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b3",
+      "b7",
+      "9"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": []
+  },
+  {
+    "subtype": "minor11",
+    "family": "extended",
+    "name": "minor 11th",
+    "symbolSuffix": "m11",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7",
+      "9",
+      "11"
+    ],
+    "playDegrees": [
+      "1",
+      "b3",
+      "b7",
+      "9",
+      "11"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b3",
+      "b7",
+      "9",
+      "11"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": []
+  },
+  {
+    "subtype": "minor13",
+    "family": "extended",
+    "name": "minor 13th",
+    "symbolSuffix": "m13",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7",
+      "9",
+      "11",
+      "13"
+    ],
+    "playDegrees": [
+      "1",
+      "b3",
+      "b7",
+      "9",
+      "13"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5",
+      "11"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b3",
+      "b7",
+      "9",
+      "13"
+    ],
+    "categoryRoute": "/chords/extended",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "editorialNotes": [
+      "The unaltered 13 is a major thirteenth above the root. It is not automatically the sixth of a natural-minor key."
+    ]
+  },
+  {
+    "subtype": "dominant7Flat9",
+    "family": "altered",
+    "name": "dominant 7 flat 9",
+    "symbolSuffix": "7(♭9)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "b9"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "b9"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "b9"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Sharp9",
+    "family": "altered",
+    "name": "dominant 7 sharp 9",
+    "symbolSuffix": "7(♯9)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "#9"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "#9"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "#9"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Flat5",
+    "family": "altered",
+    "name": "dominant 7 flat 5",
+    "symbolSuffix": "7(♭5)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "b5",
+      "b7"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b5",
+      "b7"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b5",
+      "b7"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Sharp5",
+    "family": "altered",
+    "name": "dominant 7 sharp 5",
+    "symbolSuffix": "7(♯5)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5",
+      "b7"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "#5",
+      "b7"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "#5",
+      "b7"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Sharp11",
+    "family": "altered",
+    "name": "dominant 7 sharp 11",
+    "symbolSuffix": "7(♯11)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "#11"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "#11"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "#11"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Flat13",
+    "family": "altered",
+    "name": "dominant 7 flat 13",
+    "symbolSuffix": "7(♭13)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "b13"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "b13"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "b13"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Flat9Flat13",
+    "family": "altered",
+    "name": "dominant 7 flat 9 flat 13",
+    "symbolSuffix": "7(♭9,♭13)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7",
+      "b9",
+      "b13"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "b7",
+      "b9",
+      "b13"
+    ],
+    "allowedOmissionsForSuppliedExample": [
+      "5"
+    ],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "b7",
+      "b9",
+      "b13"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "dominant7Sharp5Sharp9",
+    "family": "altered",
+    "name": "dominant 7 sharp 5 sharp 9",
+    "symbolSuffix": "7(♯5,♯9)",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5",
+      "b7",
+      "#9"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "#5",
+      "b7",
+      "#9"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "#5",
+      "b7",
+      "#9"
+    ],
+    "categoryRoute": "/chords/altered",
+    "sourceIds": [
+      "OMT-SYMBOLS",
+      "OMT-ALTERED",
+      "MUSICCA-C7B9"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "genericAltIsNotExactDefinition": true,
+    "preserveAlteredFifths": true
+  },
+  {
+    "subtype": "power5",
+    "family": "power",
+    "name": "power fifth",
+    "symbolSuffix": "5",
+    "formulaDegrees": [
+      "1",
+      "5"
+    ],
+    "playDegrees": [
+      "1",
+      "5"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "5"
+    ],
+    "categoryRoute": "/chords",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  },
+  {
+    "subtype": "major6",
+    "family": "sixth",
+    "name": "major sixth",
+    "symbolSuffix": "6",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "categoryRoute": "/chords/major",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  },
+  {
+    "subtype": "minor6",
+    "family": "sixth",
+    "name": "minor sixth",
+    "symbolSuffix": "m6",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "6"
+    ],
+    "playDegrees": [
+      "1",
+      "b3",
+      "5",
+      "6"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b3",
+      "5",
+      "6"
+    ],
+    "categoryRoute": "/chords/minor",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  },
+  {
+    "subtype": "sixNine",
+    "family": "sixth",
+    "name": "six nine",
+    "symbolSuffix": "6/9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "playDegrees": [
+      "1",
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "categoryRoute": "/chords/add",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  },
+  {
+    "subtype": "diminished7",
+    "family": "seventh",
+    "name": "diminished seventh",
+    "symbolSuffix": "dim7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "bb7"
+    ],
+    "playDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "bb7"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b3",
+      "b5",
+      "bb7"
+    ],
+    "categoryRoute": "/chords/seventh",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  },
+  {
+    "subtype": "minorMajor7",
+    "family": "seventh",
+    "name": "minor major seventh",
+    "symbolSuffix": "m(maj7)",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "7"
+    ],
+    "playDegrees": [
+      "1",
+      "b3",
+      "5",
+      "7"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "b3",
+      "5",
+      "7"
+    ],
+    "categoryRoute": "/chords/seventh",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH",
+      "PC-MINOR-MAJOR"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  },
+  {
+    "subtype": "dominant7sus4",
+    "family": "suspended",
+    "name": "dominant seventh sus4",
+    "symbolSuffix": "7sus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5",
+      "b7"
+    ],
+    "playDegrees": [
+      "1",
+      "4",
+      "5",
+      "b7"
+    ],
+    "allowedOmissionsForSuppliedExample": [],
+    "requiredInSuppliedPlayingExample": [
+      "1",
+      "4",
+      "5",
+      "b7"
+    ],
+    "categoryRoute": "/chords/suspended",
+    "sourceIds": [
+      "MUSICCA-CHORDS",
+      "OMT-SYMBOLS",
+      "OMT-SEVENTH"
+    ],
+    "ruleStatus": "source_grounded_rule_with_editorial_realization",
+    "scope": "policy_for_supplied_examples_not_universal_music_law",
+    "supportsBlanketRootlessInference": false,
+    "supplementNoNewURL": true
+  }
+]

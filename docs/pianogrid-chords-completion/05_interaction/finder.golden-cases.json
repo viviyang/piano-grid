@@ -1,0 +1,189 @@
+[
+  {
+    "id": "ambiguous-sixth",
+    "selectedMidi": [
+      60,
+      64,
+      67,
+      69
+    ],
+    "expectSymbols": [
+      "C6",
+      "Am7"
+    ],
+    "note": "Keep both exact pitch-class interpretations."
+  },
+  {
+    "id": "augmented-symmetry",
+    "selectedMidi": [
+      60,
+      64,
+      68
+    ],
+    "expectSymbols": [
+      "Caug",
+      "Eaug",
+      "A♭aug"
+    ],
+    "note": "Keep written roots; add bass labels rather than declaring a unique root."
+  },
+  {
+    "id": "sus-symmetry",
+    "selectedMidi": [
+      60,
+      62,
+      67
+    ],
+    "expectSymbols": [
+      "Csus2",
+      "Gsus4"
+    ],
+    "note": "C is the actual lowest pitch; inversion display is separate from pitch-class match."
+  },
+  {
+    "id": "add-octave-independent",
+    "selectedMidi": [
+      60,
+      62,
+      64,
+      67
+    ],
+    "expectSymbols": [
+      "Cadd9"
+    ],
+    "note": "Correct formula pitch classes; different from one example is not wrong chord identity."
+  },
+  {
+    "id": "minor-vs-major-add",
+    "selectedMidi": [
+      60,
+      62,
+      63,
+      67
+    ],
+    "expectSymbols": [
+      "Cmadd9"
+    ],
+    "rejectSymbols": [
+      "Cadd9"
+    ]
+  },
+  {
+    "id": "dom13-approved-omissions",
+    "selectedMidi": [
+      48,
+      52,
+      58,
+      62,
+      69
+    ],
+    "expectSymbols": [
+      "C13"
+    ],
+    "matchKind": "approved_omission_example",
+    "omittedDegrees": [
+      "5",
+      "11"
+    ]
+  },
+  {
+    "id": "full-c13",
+    "selectedMidi": [
+      48,
+      52,
+      55,
+      58,
+      62,
+      65,
+      69
+    ],
+    "expectSymbols": [
+      "C13"
+    ],
+    "matchKind": "exact_formula"
+  },
+  {
+    "id": "sharp9-not-minor",
+    "selectedMidi": [
+      48,
+      52,
+      58,
+      63
+    ],
+    "expectSymbols": [
+      "C7(♯9)"
+    ],
+    "matchKind": "approved_omission_example"
+  },
+  {
+    "id": "no-root-context",
+    "selectedMidi": [
+      52,
+      58,
+      62,
+      69
+    ],
+    "doNotClaimUnique": "C13",
+    "note": "No unrestricted rootless inference; may show only curated contextual candidates with explicit omitted-root label."
+  },
+  {
+    "id": "empty",
+    "selectedMidi": [],
+    "expectState": "empty"
+  },
+  {
+    "id": "single",
+    "selectedMidi": [
+      60
+    ],
+    "expectState": "need_more_notes"
+  },
+  {
+    "id": "extra-wrong-note",
+    "selectedMidi": [
+      48,
+      52,
+      58,
+      62,
+      66,
+      69
+    ],
+    "doNotClaimExact": "C13"
+  },
+  {
+    "id": "repeated-pc",
+    "selectedMidi": [
+      48,
+      60,
+      64,
+      67
+    ],
+    "expectSymbols": [
+      "C"
+    ],
+    "note": "Doubling root does not invalidate chord-tone task."
+  },
+  {
+    "id": "nonchord-slash",
+    "selectedMidi": [
+      49,
+      60,
+      64,
+      67
+    ],
+    "note": "Optional slash-bass mode may show C/D♭ as triad over non-chord bass, not a standard C inversion."
+  },
+  {
+    "id": "dim7-doubleflat",
+    "selectedMidi": [
+      60,
+      63,
+      66,
+      69
+    ],
+    "expectSymbols": [
+      "Cdim7"
+    ],
+    "spelling": "C E♭ G♭ B𝄫"
+  }
+]

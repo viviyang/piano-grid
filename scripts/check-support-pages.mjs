@@ -73,7 +73,7 @@ try {
   const requestPage = await browser.newPage();
   const sitemap = await requestPage.request.get(base + '/sitemap.xml');
   const xml = await sitemap.text();
-  check('Sitemap has exactly 171 public routes including both support pages', (xml.match(/<loc>/g) || []).length === 171 && routes.every(route => xml.includes(`https://pianogrid.com${route}</loc>`)), (xml.match(/<loc>/g) || []).length);
+  check('Sitemap has exactly 173 public routes including both support pages', (xml.match(/<loc>/g) || []).length === 173 && routes.every(route => xml.includes(`https://pianogrid.com${route}</loc>`)), (xml.match(/<loc>/g) || []).length);
   for (const route of ['/chords/finder', '/chords/c-flat-major']) {
     const response = await requestPage.request.get(base + route);
     check(`${route} is published`, response.status() === 200, response.status());

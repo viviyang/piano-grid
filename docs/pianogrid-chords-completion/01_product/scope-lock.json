@@ -1,0 +1,25 @@
+{
+  "version": "completion-v1",
+  "existingURLAction": "preserve",
+  "newURLAllowlist": [
+    "/chords/extended",
+    "/chords/altered"
+  ],
+  "newReferenceObjects": 288,
+  "referenceObjectsCreatePages": false,
+  "preserveOriginal127": true,
+  "keepExistingTheme": true,
+  "canonicalRoutingChangesAuthorized": false,
+  "copyCompetitorContent": false,
+  "newAccountsPaymentsMIDIRecordingAuthorized": false,
+  "GitWritesAuthorized": false,
+  "DeployAuthorized": false,
+  "coreGoal": "complete declared chord lookup/understanding/browser-practice workflow",
+  "universalAllMusicClaim": false,
+  "uncertaintyRules": [
+    "source material facts != deployed state",
+    "package test != app test",
+    "app test != human test",
+    "SEO readiness != rankings"
+  ]
+}

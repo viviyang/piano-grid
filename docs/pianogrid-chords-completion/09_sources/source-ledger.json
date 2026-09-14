@@ -1,0 +1,230 @@
+[
+  {
+    "id": "PLAN",
+    "title": "原五份规划材料",
+    "url": "baseline/url-plan.final.json",
+    "support": "2026-09-08 planning; original terms/URLs/metrics only",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "OMT-SYMBOLS",
+    "title": "Chord Symbols — Open Music Theory",
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/chord-symbols/",
+    "support": "extensions, explicit accidentals, symbols versus key context; search-extracted body read (direct open returned403)",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "OMT-JAZZ-VOICINGS",
+    "title": "Jazz Voicings — Open Music Theory",
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/jazz-voicings/",
+    "support": "rooted examples, fifth omission, voice-leading guidelines; not universal constraints",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "OMT-ALTERED",
+    "title": "Altered and Extended Chords — Open Music Theory",
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/altered-and-extended-dominant-chords/",
+    "support": "context-specific altered fifths and classical extended-chord treatment; not universal jazz-root-position rule",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "OMT-SEVENTH",
+    "title": "Seventh Chords — Open Music Theory",
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/seventh-chords/",
+    "support": "fully diminished versus half diminished; quality and key context",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "OMT-ROMAN",
+    "title": "Roman Numerals — Open Music Theory",
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/roman-numerals/",
+    "support": "relative chord functions; spelling and quality labels",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "MUSICCA-CHORDS",
+    "title": "Chords — Musicca",
+    "url": "https://www.musicca.com/chords",
+    "support": "sixth, suspended, extended and altered definitions; declared omission examples",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "MUSICCA-C7B9",
+    "title": "C7(b9) — Musicca",
+    "url": "https://www.musicca.com/dictionary/chords/c-dominant-minor-ninth",
+    "support": "C E G B-flat D-flat; possible omission of fifth",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "PC-ROOT-C",
+    "title": "C chords — PianoChord",
+    "url": "https://www.pianochord.org/c.html",
+    "support": "competitor category coverage incl dim7, mMaj7, 6, 6/9 and fifths",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "PC-HOME",
+    "title": "PianoChord home",
+    "url": "https://www.pianochord.org/",
+    "support": "competitor browsing, finder, progressions, hands, print and exercises; public pages only",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "PC-EXTENDED",
+    "title": "Extended chords — PianoChord",
+    "url": "https://www.pianochord.org/extended.html",
+    "support": "competitor 9/11/13 structures and explicit omissions; not adopting every recommendation",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "G-HELPFUL",
+    "title": "Google helpful content guidance",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "support": "satisfying tasks, no fixed word count, no ranking guarantee",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "G-LINKS",
+    "title": "Google link best practices",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "support": "real href links and descriptive anchors",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "G-FACETS",
+    "title": "Managing faceted navigation",
+    "url": "https://developers.google.com/crawling/docs/faceted-navigation",
+    "support": "avoid unbounded filter URLs; fragments are UI state not separate SEO pages",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "G-PERFORMANCE",
+    "title": "Search Console Performance report",
+    "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+    "support": "clicks, impressions, CTR and topmost-result average position",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "G-VITALS",
+    "title": "Web Vitals",
+    "url": "https://web.dev/articles/vitals",
+    "support": "field LCP/INP/CLS, not replaceable by one Lighthouse score",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "WAI-STATUS",
+    "title": "WCAG status messages",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+    "support": "programmatic status announcements without unnecessary focus changes",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "VERCEL-GIT",
+    "title": "Vercel Git deployments",
+    "url": "https://vercel.com/docs/git",
+    "support": "push may deploy depending on connected branch; actual user config unknown",
+    "checkedDate": "2026-09-13",
+    "doesNotProve": [
+      "teacher_review_of_generated_voicings",
+      "current_project_runtime_correctness",
+      "SEO_outcome"
+    ]
+  },
+  {
+    "id": "PC-MINOR-MAJOR",
+    "title": "PianoChord — A minor major seventh",
+    "url": "https://www.pianochord.org/aminmaj7.html",
+    "checkedDate": "2026-09-13",
+    "support": "root + minor third + perfect fifth + major seventh; A C E G-sharp example",
+    "doesNotProve": [
+      "a_unique_fingering_for_all_roots",
+      "teacher_review_of_our_examples",
+      "material_reuse_license"
+    ]
+  }
+]

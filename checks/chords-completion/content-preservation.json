@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "packageZipSha256": "51d4fc353d352749eb20116f174ff1e154bc9aa7a4142d59db508dac751567b5",
+  "packageValidation": "PASS_FOR_HANDOFF_DATA_ONLY",
+  "legacyDefinitionOracle": {
+    "objects": 145,
+    "status": "PASS",
+    "test": "scripts/check-content-adapters.mjs"
+  },
+  "existingChordAssets": {
+    "baselineCount": 286,
+    "unchangedCount": 286,
+    "changed": [],
+    "missing": []
+  },
+  "correctExistingContentPolicy": "Existing 145 definitions are checked against the completion oracle; source package remains a separate immutable input directory.",
+  "contentLocations": [
+    {
+      "area": "Chord Hub",
+      "result": "25 original reference cards and reading blocks retained; 433-object compact SSR lookup and visible power/jazz modules appended."
+    },
+    {
+      "area": "Finder",
+      "result": "Original route and explanatory content retained; matching now uses unified 433-object data and names formula, supplied-voicing and bass constraints separately."
+    },
+    {
+      "area": "By-key",
+      "result": "Original planning/support copy retained; table expanded to 24 contexts and 336 validated rows."
+    },
+    {
+      "area": "Progressions",
+      "result": "Original planning/support copy retained; 96 validated examples and eight patterns now drive the shared view."
+    },
+    {
+      "area": "Guide",
+      "result": "Existing complete article remains; completion learning modules are merged by stable section IDs."
+    },
+    {
+      "area": "N2B wording correction",
+      "result": "Runtime metadata changes “three inversions” to “three keyboard positions” for three-note root/first/second pages; authoring package is not overwritten."
+    }
+  ],
+  "intentionalCorrections": [
+    "N2B three-note position terminology",
+    "Finder scope wording formerly limited to B3 triads",
+    "Progression Roman numeral display now uses the package Roman field rather than numeric degree"
+  ]
+}

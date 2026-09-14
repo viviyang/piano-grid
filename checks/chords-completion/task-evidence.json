@@ -1,0 +1,541 @@
+{
+  "status": "PASS",
+  "count": 38,
+  "verified": 38,
+  "duplicateIds": {},
+  "items": [
+    {
+      "id": "P148",
+      "representative": "piano chord chart",
+      "target": "/chords",
+      "criterion": "默认有图表；根音/类型选择、试听、打印及读图说明。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P154",
+      "representative": "minor chords piano",
+      "target": "/chords/minor",
+      "criterion": "minor 选择后显示经过核对的实际和弦结果。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P158",
+      "representative": "major chords piano",
+      "target": "/chords/major",
+      "criterion": "major 选择后显示经过核对的实际和弦结果。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P168",
+      "representative": "power chords piano",
+      "target": "/chords#power",
+      "criterion": "power chord 的实际结果与使用说明，不能只有标签。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P170",
+      "representative": "piano chord chart 7th",
+      "target": "/chords/seventh",
+      "criterion": "明确 7th 涉及的类别和输出；不把它无条件改成 major7。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P171",
+      "representative": "piano chord chart jazz",
+      "target": "/chords#jazz",
+      "criterion": "jazz 相关和弦的实际示例及说明，不只加一个风格按钮。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P238",
+      "representative": "major and minor chords piano",
+      "target": "/chords#major-vs-minor",
+      "criterion": "大小和弦对比包含音图/示例和区别，不用类型筛选器代替解释。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P247",
+      "representative": "how to read a piano chord chart?",
+      "target": "/chords#how-to-read",
+      "criterion": "如何读键盘图、组成音和标记；深入学习连接指南。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P149",
+      "representative": "a chord piano",
+      "target": "/chords/a-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P151",
+      "representative": "am piano chord",
+      "target": "/chords/a-minor",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P163",
+      "representative": "c chords piano",
+      "target": "/chords/c-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P126",
+      "representative": "piano fingering chart",
+      "target": "/keyboard-notes/finger-numbers",
+      "criterion": "左右手编号图；基础使用说明；链接到具体和弦/音阶指法",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P150",
+      "representative": "b chord piano",
+      "target": "/chords/b-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P155",
+      "representative": "a flat chord piano",
+      "target": "/chords/a-flat-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P162",
+      "representative": "piano e chord",
+      "target": "/chords/e-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P166",
+      "representative": "c minor in piano",
+      "target": "/chords/c-minor",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P167",
+      "representative": "cb piano chord",
+      "target": "/chords/c-flat-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P169",
+      "representative": "g chord piano",
+      "target": "/chords/g-major",
+      "criterion": "当前和弦的音名/键位/音程；原位和转位；可用时播放；清晰指法说明；相关查询链接",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P152",
+      "representative": "chords of key",
+      "target": "/chords/by-key",
+      "criterion": "有内容的调性选择器与各级和弦表；支持已有G/D/C/E/A/F及D minor任务",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P156",
+      "representative": "chords in g major scale piano",
+      "target": "/chords/by-key#g-major",
+      "criterion": "查G大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P157",
+      "representative": "d major scale piano chords",
+      "target": "/chords/by-key#d-major",
+      "criterion": "查D大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P159",
+      "representative": "c major scale chords piano",
+      "target": "/chords/by-key#c-major",
+      "criterion": "查C大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P160",
+      "representative": "piano chords in e",
+      "target": "/chords/by-key#e-major",
+      "criterion": "查E大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P161",
+      "representative": "piano chords in a",
+      "target": "/chords/by-key#a-major",
+      "criterion": "查询A大调和弦集合；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P164",
+      "representative": "key of f chords piano",
+      "target": "/chords/by-key#f-major",
+      "criterion": "查F大调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P165",
+      "representative": "d minor scale piano chords",
+      "target": "/chords/by-key#d-minor",
+      "criterion": "查D小调各级和弦；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P153",
+      "representative": "chord finder piano",
+      "target": "/chords/finder",
+      "criterion": "选择音符；列出可能命名、低音与拼写说明",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P172",
+      "representative": "common chord progressions",
+      "target": "/chord-progressions#common",
+      "criterion": "常见和弦走向集合；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P173",
+      "representative": "piano chord progressions",
+      "target": "/chord-progressions",
+      "criterion": "常见走向列表；C/E/A调转写选择；优美/愉快效果标签；含义与使用说明；打印",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P174",
+      "representative": "c major chord progressions",
+      "target": "/chord-progressions#c-major",
+      "criterion": "C大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P175",
+      "representative": "common chord progressions key of e",
+      "target": "/chord-progressions#e-major",
+      "criterion": "E调常用和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P176",
+      "representative": "a major chord progression",
+      "target": "/chord-progressions#a-major",
+      "criterion": "A大调和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P177",
+      "representative": "beautiful chord progressions piano",
+      "target": "/chord-progressions#beautiful",
+      "criterion": "查询优美钢琴和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P178",
+      "representative": "happy chord progressions",
+      "target": "/chord-progressions#happy",
+      "criterion": "愉快情绪和弦走向；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P237",
+      "representative": "what are chord progressions",
+      "target": "/chord-progressions#how-it-works",
+      "criterion": "说明走向是什么，附可试弹例子。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P220",
+      "representative": "how to play chords on piano",
+      "target": "/guide/piano-chords",
+      "criterion": "步骤、构成、指法示意及连接练习；链接查图工具",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P225",
+      "representative": "basic piano chords",
+      "target": "/guide/piano-chords#beginner",
+      "criterion": "初学钢琴基础和弦选择与弹法；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    },
+    {
+      "id": "P242",
+      "representative": "piano chord transitions",
+      "target": "/guide/piano-chords#transitions",
+      "criterion": "练习钢琴和弦连接/换和弦动作；必须在该页提供实际结果，不只增加一个关键词。",
+      "httpStatus": 200,
+      "anchorPresent": true,
+      "status": "AUTOMATED_TARGET_VERIFIED",
+      "evidence": [
+        "production build HTML",
+        "relevant browser regression",
+        "package content validator"
+      ]
+    }
+  ],
+  "scope": "URL/anchor and regression evidence; human usefulness and ranking are not inferred"
+}

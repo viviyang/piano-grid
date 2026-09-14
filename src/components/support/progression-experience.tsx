@@ -1,49 +1,17 @@
 'use client';
-
-import { useEffect, useState } from 'react';
-import type { ByKeyChord, ByKeyTable, ProgressionPattern } from '@/lib/support-content';
-
-const display = (value: string) => value.replaceAll('#', '♯').replaceAll('b', '♭');
-
-function ChordSymbol({ chord }: { chord: ByKeyChord }) {
-  return chord.detailURL
-    ? <a href={chord.detailURL} aria-label={`View ${display(chord.symbol)} chord details`}>{display(chord.symbol)}</a>
-    : <strong>{display(chord.symbol)}</strong>;
-}
-
-function PatternCard({ pattern, keyTable }: { pattern: ProgressionPattern; keyTable: ByKeyTable }) {
-  const chords = pattern.romans.map(roman => {
-    const chord = keyTable.chords.find(item => item.roman === roman);
-    if (!chord) throw new Error(`Missing ${roman} in ${keyTable.key}`);
-    return chord;
-  });
-  return <article className="pg-pattern" data-pattern={pattern.romans.join('-')}>
-    <header><div><p className="sp-overline">{pattern.romans.length} chord positions</p><h3>{pattern.title}</h3></div><strong>{pattern.romans.join('–')}</strong></header>
-    <p className="pg-pattern-note">{pattern.explanation}</p>
-    <ol className="pg-chord-line" aria-label={`${pattern.romans.join('–')} in ${keyTable.key}`}>
-      {chords.map((chord, index) => <li key={`${pattern.id}-${index}`}>
-        <span className="pg-position">{index + 1}</span>
-        <div className="pg-roman"><small>Roman numeral</small><b>{pattern.romans[index]}</b></div>
-        <div className="pg-symbol"><small>Chord symbol</small><ChordSymbol chord={chord}/></div>
-        <div className="pg-notes"><small>Chord notes</small><span>{display(chord.notes.join(' · '))}</span></div>
-        <div className="pg-quality"><small>Quality</small><span>{chord.quality}</span></div>
-      </li>)}
-    </ol>
-    <footer><strong>How to practice</strong><p>{pattern.practice}</p><small>No fingering is assigned by this progression.</small></footer>
-  </article>;
-}
-
-export function ProgressionExperience({ keys, patterns, defaultKey }: { keys: ByKeyTable[]; patterns: ProgressionPattern[]; defaultKey: string }) {
-  const [selectedKey, setSelectedKey] = useState(defaultKey);
-  const [ready, setReady] = useState(false);
-  useEffect(() => setReady(true), []);
-  const selected = keys.find(key => key.key === selectedKey) || keys[0];
-  return <section className="sp-result pg-result" aria-labelledby="progression-examples-heading">
-    <div className="sp-result-head"><div><p className="sp-overline">Shared by-key chord source</p><h2 id="progression-examples-heading">Choose a key and map each degree</h2></div><p>The pattern keeps its Roman numerals. The selected key supplies each chord symbol, quality and note spelling.</p></div>
-    <div className="pg-picker"><label htmlFor="progression-key">Key</label><select id="progression-key" value={selectedKey} onChange={event => setSelectedKey(event.target.value)}>{keys.map(key => <option key={key.key}>{key.key}</option>)}</select><p aria-live="polite"><strong>{selected.key}</strong><span>{display(selected.scale.join(' · '))}</span></p></div>
-    <div className="pg-key-panels">{keys.map(key => <section className="pg-key-panel" data-key={key.key} hidden={ready && key.key !== selectedKey} key={key.key} aria-labelledby={`progressions-${key.key.replace(' ', '-')}`}>
-      <header><p className="sp-overline">Selected key</p><h3 id={`progressions-${key.key.replace(' ', '-')}`}>{key.key} progression map</h3><p>Key: <strong>{key.key}</strong> · Scale notes: {display(key.scale.join(' · '))}</p></header>
-      <div className="pg-patterns">{patterns.map(pattern => <PatternCard pattern={pattern} keyTable={key} key={pattern.id}/>)}</div>
-    </section>)}</div>
-  </section>;
+import {useEffect,useMemo,useRef,useState} from 'react';
+import type{ProgressionExample,ProgressionPattern,ProgressionStep}from'@/lib/support-content';
+const display=(value:string)=>value.replaceAll('#','♯').replaceAll('b','♭');
+function common(a:ProgressionStep,b:ProgressionStep){const set=new Set(a.midi.map(x=>x%12));return b.referenceTones.filter((_,i)=>set.has((b.midi[i]??-1)%12));}
+function Step({step,index,active,next}:{step:ProgressionStep;index:number;active:boolean;next?:ProgressionStep}){return <li data-active={active} data-diatonic={!step.nonDiatonicTones.length} data-degree={step.degree}><span className="pg-position">{index+1}</span><div className="pg-roman"><small>Roman numeral</small><b>{step.roman}</b></div><div className="pg-symbol"><small>Chord symbol</small>{step.destination?<a href={step.destination}>{display(step.symbol)}</a>:<strong>{display(step.symbol)}</strong>}</div><div className="pg-notes"><small>Chord notes</small><span>{display(step.referenceTones.join(' · '))}</span></div><div className="pg-quality"><small>Quality</small><span>{step.subtype}</span></div>{step.notDiatonicReason&&<p className="pg-warning">Outside the named scale: {display(step.nonDiatonicTones.join(', '))}. {step.notDiatonicReason}</p>}{next&&<p className="pg-common"><small>Common tones with next chord</small> {display(common(step,next).join(' · ')||'None')}</p>}</li>}
+export function ProgressionExperience({patterns,examples,defaultExample}:{patterns:ProgressionPattern[];examples:ProgressionExample[];defaultExample:string}){
+ const[selectedId,setSelectedId]=useState(defaultExample),[patternId,setPatternId]=useState(examples.find(x=>x.id===defaultExample)!.patternId),[tempo,setTempo]=useState(60),[mode,setMode]=useState<'block'|'broken'>('block'),[loop,setLoop]=useState(false),[active,setActive]=useState(-1),[status,setStatus]=useState(''),[ready,setReady]=useState(false);const context=useRef<AudioContext|null>(null),generation=useRef(0),timers=useRef<number[]>([]);
+ const patternExamples=useMemo(()=>examples.filter(x=>x.patternId===patternId),[examples,patternId]);const selected=examples.find(x=>x.id===selectedId&&x.patternId===patternId)||patternExamples[0];
+ useEffect(()=>{setReady(true);return()=>stop(false);},[]);
+ function stop(announce=true){generation.current++;timers.current.forEach(clearTimeout);timers.current=[];context.current?.close().catch(()=>{});context.current=null;setActive(-1);if(announce)setStatus('Playback stopped.');}
+ function scheduleChord(ctx:AudioContext,step:ProgressionStep,start:number,duration:number){step.midi.forEach((midi,n)=>{const offset=mode==='broken'?n*.12:0,osc=ctx.createOscillator(),gain=ctx.createGain(),begin=start+offset,end=start+duration;osc.frequency.value=440*2**((midi-69)/12);gain.gain.setValueAtTime(0,begin);gain.gain.linearRampToValueAtTime(.08,begin+.01);gain.gain.setValueAtTime(.08,Math.max(begin+.02,end-.05));gain.gain.linearRampToValueAtTime(0,end);osc.connect(gain);gain.connect(ctx.destination);osc.start(begin);osc.stop(end);});}
+ function play(){stop(false);const Ctor=window.AudioContext||(window as Window&{webkitAudioContext?:typeof AudioContext}).webkitAudioContext;if(!Ctor){setStatus('Sound is unavailable in this browser.');return;}const ctx=new Ctor();context.current=ctx;const token=++generation.current,beat=60/tempo,bar=beat*4,total=selected.steps.length*bar,origin=ctx.currentTime+.05;selected.steps.forEach((step,index)=>{scheduleChord(ctx,step,origin+index*bar,bar-.08);timers.current.push(window.setTimeout(()=>{if(generation.current===token)setActive(index);},(index*bar+.02)*1000));});timers.current.push(window.setTimeout(()=>{if(generation.current!==token)return;if(loop){setActive(-1);play();}else{setActive(-1);setStatus('Playback complete.');}},total*1000));setStatus(`Playing ${selected.name} in ${selected.tonic}.`);}
+ function selectPattern(id:string){stop(false);setPatternId(id);const next=examples.find(x=>x.patternId===id)!;setSelectedId(next.id);setTempo(next.tempoBpmDefault);}
+ const pick=(id:string)=>examples.find(example=>example.id===id)!;const summary=(id:string)=>pick(id).steps.map(step=>`${step.roman} ${display(step.symbol)} (${display(step.referenceTones.join('–'))})`).join(' → ');
+ return <section className="sp-result pg-result" aria-labelledby="progression-examples-heading"><div className="sp-result-head"><div><p className="sp-overline">96 validated progression examples</p><h2 id="progression-examples-heading">Choose a pattern and key context</h2></div><p>Each step preserves its Roman numeral, actual chord symbol, written notes and diatonic status.</p></div><section className="pg-task-map" aria-label="Progression task examples"><article id="how-it-works"><h3>How chord progressions work</h3><p>A pattern keeps its Roman numerals while the selected key maps each degree to an actual chord symbol and validated note spelling.</p></article><article id="common"><h3>Common progression examples</h3><p>{summary('pop-four-c-major')}</p><p>{summary('basic-cadence-c-major')}</p></article>{[['c-major','C'],['e-major','E'],['a-major','A']].map(([id,key])=><article id={id} key={id}><h3>{key} major progression</h3><p>{summary(`pop-four-${id}`)}</p></article>)}<article id="beautiful"><span id="color-ii-v-i" aria-hidden="true"/><h3>“Beautiful” color example</h3><p>{summary('color-ii-v-i-c-major')}</p><small>This is a subjective practice label, not a guaranteed listener response.</small></article><article id="happy"><h3>“Happy” cadence example</h3><p>{summary('basic-cadence-c-major')}</p><small>This is a subjective practice label; tempo, register and musical context change the effect.</small></article></section><div className="pg-picker"><label>Pattern<select value={patternId} onChange={e=>selectPattern(e.target.value)}>{patterns.map(p=><option value={p.id} key={p.id}>{p.title}</option>)}</select></label><label>Key context<select value={selected.id} onChange={e=>{stop(false);setSelectedId(e.target.value);const next=examples.find(x=>x.id===e.target.value)!;setTempo(next.tempoBpmDefault);}}>{patternExamples.map(x=><option value={x.id} key={x.id}>{x.tonic} · {x.keyId.includes('natural_minor')?'natural minor':'major'}</option>)}</select></label><label>Tempo<input type="number" min={selected.bpmRange[0]} max={selected.bpmRange[1]} value={tempo} onChange={e=>setTempo(Math.min(selected.bpmRange[1],Math.max(selected.bpmRange[0],Number(e.target.value))))}/></label><label>Playback<select value={mode} onChange={e=>setMode(e.target.value as 'block'|'broken')}><option value="block">Block chords</option><option value="broken">Broken chords</option></select></label></div><div className="pg-actions"><button className="am-button am-primary" type="button" disabled={!ready} onClick={play}>Play</button><button className="am-button am-secondary" type="button" disabled={!ready} onClick={()=>stop()}>Stop</button><label><input type="checkbox" checked={loop} onChange={e=>setLoop(e.target.checked)}/> Loop full pattern</label><button className="am-button am-tertiary" type="button" onClick={()=>window.print()}>Print current example</button></div><p role="status" aria-live="polite">{status}</p><div className="pg-key-panels">{examples.map(example=><section className="pg-key-panel" data-example={example.id} hidden={ready&&example.id!==selected.id} key={example.id} aria-labelledby={`progression-${example.id}`}><header><p className="sp-overline">{example.keyId.includes('natural_minor')?'Natural-minor context':'Major-key context'}</p><h3 id={`progression-${example.id}`}>{example.name} in {example.tonic}</h3><p>{example.moodDisclaimer}</p></header><ol className="pg-chord-line">{example.steps.map((step,index)=><Step key={`${example.id}-${index}`} step={step} index={index} active={active===index} next={example.steps[index+1]}/>)}</ol><footer><strong>How to practise</strong><p>Start with block chords, name each symbol before it sounds, then switch to broken chords. Slow the tempo until every change is deliberate. No fingering is assigned.</p></footer></section>)}</div><noscript><p>All 96 progression examples, symbols and written notes are present above. Enable JavaScript for key selection and sound.</p></noscript></section>;
 }

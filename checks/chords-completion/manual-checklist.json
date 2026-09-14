@@ -1,0 +1,85 @@
+{
+  "status": "[未核实] PENDING",
+  "items": [
+    {
+      "id": "M01",
+      "test": "人耳7种代表和弦",
+      "owner": "owner/reviewer",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M02",
+      "test": "iPhone Safari完整任务链",
+      "owner": "owner",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M03",
+      "test": "具名读屏输入/反馈/焦点",
+      "owner": "accessibility tester",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M04",
+      "test": "US Letter/A4实际打印",
+      "owner": "owner",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M05",
+      "test": "PDF标签与辅助技术",
+      "owner": "accessibility tester",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M06",
+      "test": "关键音理论独立审阅",
+      "owner": "music reviewer",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M07",
+      "test": "5位目标用户任务观察",
+      "owner": "owner",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    },
+    {
+      "id": "M08",
+      "test": "实际部署/自动发布权限",
+      "owner": "owner",
+      "status": "pending",
+      "testedBuild": null,
+      "deviceAndVersion": null,
+      "evidence": null,
+      "evidenceStatus": "[未核实]"
+    }
+  ]
+}

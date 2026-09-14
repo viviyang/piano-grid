@@ -1,0 +1,71 @@
+{
+  "url": "/chords/altered",
+  "title": "Altered Piano Chords: ♭9, ♯9, ♭5, ♯5 & More | PianoGrid",
+  "description": "Compare explicit altered dominant chords on piano. Read changed degrees, hear written-note voicings, check omissions and practise a selected example.",
+  "h1": "Altered Piano Chords",
+  "primaryKeyword": "altered chords piano",
+  "secondaryKeywords": [
+    "altered dominant chords piano",
+    "7b9 piano chord",
+    "7 sharp 9 piano chord"
+  ],
+  "keywordEvidence": "product-intent hypothesis; no fresh volume or per-keyword SERP approval",
+  "defaultObjectId": "c-dominant7Flat9",
+  "data": "04_music/altered.objects.json",
+  "sections": [
+    {
+      "id": "what",
+      "heading": "Choose an explicit alteration",
+      "paragraphs": [
+        "This collection covers named dominant-seventh alterations: flat or sharp ninth, flat or sharp fifth, sharp eleventh, flat thirteenth and two specific combined examples. “Alt” is not resolved to a single compulsory note set."
+      ]
+    },
+    {
+      "id": "intervals",
+      "heading": "The accidental changes the interval",
+      "paragraphs": [
+        "A flat or sharp in the suffix changes the named degree relative to the chord root. The resulting note is not necessarily written with the same accidental. Read the formula and written note list together."
+      ]
+    },
+    {
+      "id": "sharp9",
+      "heading": "Why ♯9 is not written as the minor third",
+      "paragraphs": [
+        "For the C7(♯9) example, the altered ninth is written D♯ while the major third remains E. D♯ and E♭ use the same piano key in this reference tuning, but the written intervals carry different roles."
+      ]
+    },
+    {
+      "id": "fifths",
+      "heading": "Do not omit the alteration you are studying",
+      "paragraphs": [
+        "A reduced example may omit an unaltered fifth. It does not omit a specifically named flat fifth or sharp fifth and still claim to demonstrate that alteration. The validator checks the actual notes against the selected subtype."
+      ]
+    },
+    {
+      "id": "ambiguous",
+      "heading": "Some note sets admit more than one name",
+      "paragraphs": [
+        "A sharp-eleventh voicing with the fifth omitted can sound like an enharmonically related flat-fifth chord. The finder may return more than one explanation; neither the keyboard nor a single chord symbol establishes the entire musical context."
+      ]
+    },
+    {
+      "id": "practice",
+      "heading": "Compare, listen and check",
+      "paragraphs": [
+        "Compare the ordinary dominant-seventh structure with the selected alteration. Use formula-tone and example-layout tasks separately, and keep the omissions visible in both the screen and printout."
+      ]
+    },
+    {
+      "id": "all-roots",
+      "heading": "Supported altered references",
+      "paragraphs": [
+        "The 96 entries below cover this declared collection across twelve roots. They are not a claim to exhaust every possible altered harmony."
+      ]
+    }
+  ],
+  "sourceIds": [
+    "OMT-SYMBOLS",
+    "OMT-ALTERED",
+    "MUSICCA-C7B9"
+  ]
+}

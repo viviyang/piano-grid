@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PianoGrid completion reference object",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "family",
+    "subtype",
+    "rootSpelling",
+    "symbol",
+    "navigation",
+    "definition",
+    "realizations",
+    "sources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "chords-completion-1.0"
+    },
+    "id": {
+      "type": "string"
+    },
+    "family": {
+      "enum": [
+        "extended",
+        "altered",
+        "power",
+        "sixth",
+        "seventh",
+        "suspended"
+      ]
+    },
+    "subtype": {
+      "type": "string"
+    },
+    "rootSpelling": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "navigation": {
+      "type": "object",
+      "required": [
+        "categoryRoute",
+        "anchorId",
+        "destination",
+        "detailUrl"
+      ],
+      "properties": {
+        "detailUrl": {
+          "type": "null"
+        }
+      }
+    },
+    "definition": {
+      "type": "object",
+      "required": [
+        "formulaDegrees",
+        "toneSpellings",
+        "referenceCompoundIntervals",
+        "uniquePitchClassCount"
+      ]
+    },
+    "realizations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "purpose",
+          "notesLowToHigh",
+          "midiLowToHigh",
+          "realizedDegrees",
+          "omittedDegrees",
+          "doubledDegrees",
+          "bass",
+          "audio",
+          "keyboard",
+          "printPitches",
+          "fingering",
+          "evidence"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$comment": "Structural authoring schema only. Run 07_validation/validate_pack.py for spelling, definition-to-realization, omission, bass, audio and negative tests. Adapt to current repo; do not rewrite runtime to this exact shape."
+}

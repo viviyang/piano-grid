@@ -1,0 +1,79 @@
+[
+  {
+    "control": "lookup",
+    "trigger": "Type a supported symbol or choose root/type",
+    "transition": "Match explicit aliases, preserve m versus maj; decode6/9 before slash bass",
+    "fallback": "SSR catalogue and core answer stay present without JS",
+    "boundary": "Unsupported spelling → explain scope and offer names; not no such chord"
+  },
+  {
+    "control": "select-object",
+    "trigger": "Choose result",
+    "transition": "Resolve single object/realization; cancel sound; update note list/keyboard/source/print",
+    "fallback": "Real href to existing detail; embedded new objects use visible section anchors",
+    "boundary": "No unavailable details link"
+  },
+  {
+    "control": "realization",
+    "trigger": "Formula / Playing example",
+    "transition": "Show omitted/doubled degrees; update all outputs",
+    "fallback": "Both explanation and full reference table are in HTML",
+    "boundary": "Never call arbitrary omission a wrong chord outside named task"
+  },
+  {
+    "control": "bass",
+    "trigger": "Choose or auto-detect lowest sounded key",
+    "transition": "Pitch-class-only input needs explicit bass to infer inversion; clicked pitches supply actual MIDI minimum",
+    "fallback": "Text explanation available",
+    "boundary": "Non-member bass is slash/pedal context, not numbered inversion"
+  },
+  {
+    "control": "finder",
+    "trigger": "Select notes / clear",
+    "transition": "Exact definitions first; curated omission matches separately; keep equal sets and enharmonic candidates",
+    "fallback": "Examples and scope in HTML",
+    "boundary": "No match in current catalogue is not not a chord"
+  },
+  {
+    "control": "play",
+    "trigger": "User presses play",
+    "transition": "One audio controller; lazy audio init; block/ascending/time controls; stop cancels queued events",
+    "fallback": "No autoplay fallback text",
+    "boundary": "Audio unavailable notice with note reference preserved"
+  },
+  {
+    "control": "practice",
+    "trigger": "Choose task and submit",
+    "transition": "Separate formula_PC vs example_PC vs exact_MIDI; explicit feedback and reset/show answer",
+    "fallback": "Instruction/answer reference in HTML",
+    "boundary": "Touch/mouse input does not measure physical piano accuracy"
+  },
+  {
+    "control": "progression",
+    "trigger": "Change key/tempo/loop",
+    "transition": "Resolved degrees/notes beat events; stop old stream; count-in optional",
+    "fallback": "Initial complete example and all headings in HTML",
+    "boundary": "Editorial mood not objective label; altered notes labelled"
+  },
+  {
+    "control": "print",
+    "trigger": "Print current / prepared PDF",
+    "transition": "Freeze selection snapshot; include context/omissions/spelling/source",
+    "fallback": "Printable static reference remains",
+    "boundary": "Print dialog opened is not physical print completed"
+  },
+  {
+    "control": "nav",
+    "trigger": "Open menu/select tab",
+    "transition": "Keyboard focus/Escape/return; section links use real IDs; no hover-only access",
+    "fallback": "Public route links always crawlable",
+    "boundary": "No link for unfinished category"
+  },
+  {
+    "control": "persist",
+    "trigger": "Save recent object/settings locally",
+    "transition": "Versioned small local storage, clear/export optional",
+    "fallback": "All core use works without persistence",
+    "boundary": "No login/history promises and no secret or personal data"
+  }
+]

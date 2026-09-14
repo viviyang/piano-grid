@@ -1,0 +1,182 @@
+{
+  "url": "/guide/piano-chords",
+  "mergePolicy": "retain_correct_existing_blocks; add_missing_modules; never replace full prose with link cards",
+  "modules": [
+    {
+      "id": "beginner",
+      "title": "Start with a chord you can name",
+      "goal": "Locate three chord tones and distinguish a name from a voicing.",
+      "body": [
+        "C major uses C, E and G. Select C in the chord chart and read the note names before using sound. The octave number tells you which occurrence of a note is shown; it is not a finger number.",
+        "Choose “Build formula tones” and select C, E and G anywhere in the displayed range. Then choose “Match this example” and match the exact displayed keys. The first task checks note identities; the second checks the particular register."
+      ],
+      "demo": {
+        "symbol": "C",
+        "notes": [
+          "C4",
+          "E4",
+          "G4"
+        ]
+      },
+      "next": "/chords/c-major",
+      "sourceIds": [
+        "OMT-SYMBOLS"
+      ]
+    },
+    {
+      "id": "major-minor",
+      "title": "Change the third, keep the other notes",
+      "goal": "Compare the same root without changing register at the same time.",
+      "body": [
+        "Compare A–C–E with A–C♯–E. Keep A and E fixed and listen to the change in the middle note. The symbol Am names the first collection; A names the major triad.",
+        "Use the comparison controls rather than assuming that a mood word defines either chord. A listener’s impression depends on the musical passage as well as the notes."
+      ],
+      "demo": {
+        "left": "Am",
+        "right": "A"
+      },
+      "next": "/chords/a-minor",
+      "sourceIds": [
+        "OMT-SYMBOLS"
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Three different kinds of numbers",
+      "goal": "Keep fingers, octaves and chord degrees separate.",
+      "body": [
+        "In C4, the number identifies an octave. In a formula such as 1–3–5, numbers describe intervals from the chord root. In a hand diagram, finger numbers identify fingers.",
+        "Changing a voicing does not create a universal new fingering rule. Use the specific verified fingering attached to an example when one is supplied; otherwise read the notes and do not treat a blank fingering field as permission to invent one."
+      ],
+      "next": "/keyboard-notes/finger-numbers",
+      "sourceIds": [
+        "PLAN"
+      ]
+    },
+    {
+      "id": "inversions",
+      "title": "Find the actual lowest note",
+      "goal": "Read a slash bass and distinguish it from the chord root.",
+      "body": [
+        "C–E–G and E–G–C contain the same three note names. When E is the lowest sounding note, C/E describes a first-inversion C triad. Root and bass are different fields.",
+        "Use actual low-to-high pitches when both hands are involved. A right-hand shape alone does not determine the inversion of a larger texture containing a lower left-hand note."
+      ],
+      "next": "/chords/c-major",
+      "sourceIds": [
+        "OMT-SEVENTH",
+        "OMT-SYMBOLS"
+      ]
+    },
+    {
+      "id": "seventh",
+      "title": "Add a seventh without changing its name",
+      "goal": "Distinguish C7, Cmaj7, Cm7, Cm7♭5 and Cdim7.",
+      "body": [
+        "Compare the fourth chord tone and the quality of the underlying triad. Do not treat the bare symbol “7” as another spelling of “maj7”.",
+        "Choose a named subtype in the seventh reference. Read its formula, then compare the lowest note in each displayed position. A four-tone seventh chord has root position and three inversions, not four inversions."
+      ],
+      "next": "/chords/seventh",
+      "sourceIds": [
+        "OMT-SEVENTH"
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "Separate the formula from what is played",
+      "goal": "Understand a named omission instead of guessing missing notes.",
+      "body": [
+        "Open C13. The formula view lists C, E, G, B♭, D, F and A. The supplied playing example uses C, E, B♭, D and A; G and F are explicitly omitted.",
+        "Try both views. In the playing-example exercise, an approved omission is part of that example. In the full-formula exercise, all reference pitch classes are required. Neither task establishes a universal rule for every performance of C13."
+      ],
+      "next": "/chords/extended#ref-c-dominant13",
+      "sourceIds": [
+        "OMT-JAZZ-VOICINGS",
+        "MUSICCA-CHORDS"
+      ]
+    },
+    {
+      "id": "alterations",
+      "title": "Read the changed degree",
+      "goal": "Keep altered intervals and actual key names distinct.",
+      "body": [
+        "Compare C7(♭9) with C7(♯9). They change the ninth in different directions while retaining the major third and minor seventh. The written ♯9 is D♯, even though its piano key is also called E♭.",
+        "A generic “alt” label needs a chosen interpretation. This collection offers explicit combinations instead of pretending that one fixed group of notes is the only altered dominant chord."
+      ],
+      "next": "/chords/altered",
+      "sourceIds": [
+        "OMT-SYMBOLS",
+        "MUSICCA-C7B9"
+      ]
+    },
+    {
+      "id": "transitions",
+      "title": "Connect two chords without losing the common notes",
+      "goal": "Use an explicit transition, not just read a tip.",
+      "body": [
+        "For a first comparison, play C4–E4–G4, then C4–E4–A4. The note names C and E stay in place; G moves to A. The second voicing is Am/C, not root-position Am.",
+        "Listen to the two blocks, then loop them at a pace you can follow. Use the common-tone highlight to check the relationship. Try on the piano without trying to satisfy a website speed target."
+      ],
+      "demo": {
+        "from": [
+          "C4",
+          "E4",
+          "G4"
+        ],
+        "to": [
+          "C4",
+          "E4",
+          "A4"
+        ],
+        "symbols": [
+          "C",
+          "Am/C"
+        ],
+        "beatsEach": 4
+      },
+      "next": "/chord-progressions",
+      "sourceIds": [
+        "OMT-JAZZ-VOICINGS"
+      ]
+    },
+    {
+      "id": "jazz",
+      "title": "Hear a seventh-chord progression in context",
+      "goal": "Connect the jazz reference to an actual sequence.",
+      "body": [
+        "Begin with Dm7–G7–Cmaj7 in C major. Compare it with the named Dm9–G13–Cmaj9 color-tone example. Use the displayed formulas and voicing notes to see exactly what changed.",
+        "The jazz section is an introduction using particular examples, not an exhaustive style dictionary. Check any altered or omitted note before assuming it comes directly from the selected key."
+      ],
+      "next": "/chord-progressions#color-ii-v-i",
+      "sourceIds": [
+        "OMT-JAZZ-VOICINGS"
+      ]
+    },
+    {
+      "id": "power",
+      "title": "A root and fifth without a third",
+      "goal": "Use the original power-chord task, with a real output.",
+      "body": [
+        "In the power-fifth reference, C5 contains C and G. Here “5” is part of a chord symbol; it does not mean the single pitch C5. The optional octave-doubled example plays C3–G3–C4.",
+        "Because the third is absent, do not label this pair as major or minor. Compare it with the complete C major and C minor examples to hear the added third."
+      ],
+      "next": "/chords#power",
+      "sourceIds": [
+        "MUSICCA-CHORDS",
+        "PC-ROOT-C"
+      ]
+    },
+    {
+      "id": "practice",
+      "title": "Finish a small practice task",
+      "goal": "Complete a bounded session and understand the feedback.",
+      "body": [
+        "Pick one task: build chord tones, identify the lowest note, match an example, or connect two named voicings. Use reset and show answer deliberately; the session summary distinguishes answers shown from answers solved.",
+        "The browser records only interactions with its own controls. A correct click pattern is not evidence that your hand position, timing or acoustic-piano performance has been assessed."
+      ],
+      "next": "/chords#find-a-chord",
+      "sourceIds": [
+        "PLAN"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "executedAt": "2026-09-13T02:44:38.838Z",
+  "base": "http://127.0.0.1:3101",
+  "passed": 49,
+  "failed": 0,
+  "counts": {
+    "newRoutes": 2,
+    "newReferences": 288,
+    "supportedRegistry": 433,
+    "keyContexts": 24,
+    "byKeyRows": 336,
+    "progressionExamples": 96,
+    "progressionSteps": 432,
+    "sitemap": 173,
+    "buildOutputs": 178
+  },
+  "results": [
+    {
+      "name": "/chords/extended 200/static",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/extended metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/extended no meta keywords",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/extended all references without JS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/extended core copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/extended unique anchors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/extended asset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered 200/static",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered no meta keywords",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered all references without JS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered core copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered unique anchors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered asset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Hub default 25 and supported 433 SSR",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords supplement anchors",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "/chords/major supplement anchors",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "/chords/minor supplement anchors",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "/chords/add supplement anchors",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "/chords/suspended supplement anchors",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "/chords/seventh supplement anchors",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "By-key 24 contexts / 336 rows SSR",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Progressions 96 examples / 432 steps SSR",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module beginner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module inversions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module seventh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module extensions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module alterations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module transitions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module jazz",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module power",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guide module practice",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Finder C6/Am7 ambiguity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Finder exact/add and supplied extended",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Finder no-result state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Finder clear/reset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chord navigation final IA",
+      "passed": true,
+      "detail": [
+        "/chords/major",
+        "/chords/minor",
+        "/chords/diminished",
+        "/chords/augmented",
+        "/chords/suspended",
+        "/chords/seventh",
+        "/chords/add",
+        "/chords/extended",
+        "/chords/altered",
+        "/chords/by-key",
+        "/chord-progressions",
+        "/chords/finder",
+        "/guide/piano-chords",
+        "/keyboard-notes/finger-numbers"
+      ]
+    },
+    {
+      "name": "Sitemap exact 173 route registry",
+      "passed": true,
+      "detail": 173
+    },
+    {
+      "name": "/chords/extended 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/chords/altered 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/chords 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/chords/finder 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/chords/by-key 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/chord-progressions 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/guide/piano-chords 390px no overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "/chords/extended 320px no overflow",
+      "passed": true,
+      "detail": [
+        320,
+        320
+      ]
+    },
+    {
+      "name": "/chords/altered 320px no overflow",
+      "passed": true,
+      "detail": [
+        320,
+        320
+      ]
+    },
+    {
+      "name": "/chords/finder 320px no overflow",
+      "passed": true,
+      "detail": [
+        320,
+        320
+      ]
+    },
+    {
+      "name": "No runtime or hydration errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "runtimeErrors": []
+}

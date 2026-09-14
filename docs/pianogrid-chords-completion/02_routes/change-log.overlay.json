@@ -1,0 +1,39 @@
+[
+  {
+    "id": "CHG-01",
+    "scope": "P154/P158/P170",
+    "before": "同页模式 /chords#minor/#major/#seventh",
+    "after": "保留Hub实际示例和兼容锚点；分类主意图分别由/minor /major /seventh承接",
+    "basis": "user-approved N1/N2C expansion",
+    "seoEvidence": "not_independently_SERP_revalidated"
+  },
+  {
+    "id": "CHG-02",
+    "scope": "detail coverage",
+    "before": "原9个对象详情",
+    "after": "保留报告实现的145个详情；新增136属后续明确扩展，不归入原127",
+    "basis": "delivery manifests N1-N2D_v2"
+  },
+  {
+    "id": "CHG-03",
+    "scope": "practice",
+    "before": "原工具第一版不含评分",
+    "after": "保留用户后续批准的网页知识练习；不声称评估实体钢琴弹奏",
+    "basis": "B3-N2D_v2 reports"
+  },
+  {
+    "id": "CHG-04",
+    "scope": "Hub/Finder",
+    "before": "先前批次暂不扩到新families",
+    "after": "本完成计划明确授权统一已支持库；按匹配语义分阶段集成并验收",
+    "basis": "current user request for usable complete module"
+  },
+  {
+    "id": "CHG-05",
+    "scope": "N2E/N2F URL",
+    "before": "此前仅承诺完整包，尚无本两批确认的详情路由表",
+    "after": "本版新增2个category/explorer；完整根音数据在同页查练，不再自动乘成独立详情",
+    "basis": "original finite-route policy + demonstrated large-library/tool-scope gap",
+    "seoEvidence": "product decision, not ranking claim"
+  }
+]

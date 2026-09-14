@@ -1,0 +1,17 @@
+{
+  "newFingerings": [],
+  "preserveVerifiedExisting": true,
+  "handDistributionIsNotFingering": true,
+  "sameNotesDoNotImplySameFingers": true,
+  "full_fingering_claim_allowed": false,
+  "completion_boundary": "v1 reference + note/voicing practice; not comprehensive technique teaching",
+  "futureEvidenceFields": [
+    "teacher_or_source",
+    "exact_voicing",
+    "hand",
+    "octave",
+    "finger_sequence",
+    "scope",
+    "review_date"
+  ]
+}

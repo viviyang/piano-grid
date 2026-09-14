@@ -1,0 +1,328 @@
+{
+  "package": "PianoGrid Chords Completion v1",
+  "created": "2026-09-13",
+  "entry": "08_codex/00_一次执行到工程收尾.md",
+  "sourceOfReportedCounts": "User RESULT through N2D v2 and original supplied plan",
+  "originalPlanUrls": 127,
+  "reportedChordUrls": 158,
+  "newRouteAllowlist": 2,
+  "newReferenceObjects": 288,
+  "notExecutionResult": true,
+  "files": [
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 3418,
+      "sha256": "7fecb4c36f1c1cb273066877139c03b3d07e6ca0faf6dafd035183be7e0486c1"
+    },
+    {
+      "path": "01_product/feature-plan.json",
+      "bytes": 5059,
+      "sha256": "9a5e725f0d76cc5ca03e891e49fd18eac3912e9e4ffdf03165da269511cd0a90"
+    },
+    {
+      "path": "01_product/scope-lock.json",
+      "bytes": 761,
+      "sha256": "ee56a5bf6367a646373e82ed8d22e36a7439c1568a853e6a497f4816d4c55c0e"
+    },
+    {
+      "path": "01_product/产品负责人结论与完成边界.md",
+      "bytes": 5575,
+      "sha256": "d0aa45ed48b2f913257df847b301f5648e1d9e897e8d72e1693bd1996904294c"
+    },
+    {
+      "path": "01_product/连续完成路线图.md",
+      "bytes": 1893,
+      "sha256": "86137d281230423836d829aec7fc8e710fc3b744c54388f790bb726f772121fe"
+    },
+    {
+      "path": "02_routes/158条当前和弦URL_来源对照.tsv",
+      "bytes": 32592,
+      "sha256": "f766854b0c117294ca95cf2133d0115fa7cf0bdf56826c1df5a99cedff763ec4"
+    },
+    {
+      "path": "02_routes/38个原任务_不以URL代替完成.tsv",
+      "bytes": 16454,
+      "sha256": "d65adf9680691ddf5542a815f917332c75748571f2c410ec3fa60fe55a123243"
+    },
+    {
+      "path": "02_routes/Chords_规划与完成对照.xlsx",
+      "bytes": 46665,
+      "sha256": "8588cef2a2eb4b2bc459a5a691c73e2dc6c0908deef98726ffc5495cae48e34d"
+    },
+    {
+      "path": "02_routes/change-log.overlay.json",
+      "bytes": 1492,
+      "sha256": "758a9a2b3a8aadcd4df2909bc52f7bba843259c1cdf8c0681e51eb8cce389f02"
+    },
+    {
+      "path": "02_routes/current-chord-routes.reported.json",
+      "bytes": 71699,
+      "sha256": "b221b16b416519a677c86ec0ca419cec1332fa8bf326c97023325c459cbc03cb"
+    },
+    {
+      "path": "02_routes/new-routes.allowlist.json",
+      "bytes": 335,
+      "sha256": "a024c027fd5d26b7cb198a81b41000081fe642042b7db7190b8a6253576e2235"
+    },
+    {
+      "path": "02_routes/original-keywords.immutable.json",
+      "bytes": 274993,
+      "sha256": "c7b21d61465b6e32af821c673cd463d9d4ccf4c43085bdc2945cf62d90ebaa48"
+    },
+    {
+      "path": "02_routes/original127.reconciliation.json",
+      "bytes": 53038,
+      "sha256": "42e143d86bac3caf5d8a41f50bcfe572835980792553bf6c9e6827a2f027bcd0"
+    },
+    {
+      "path": "02_routes/original38.tasks.json",
+      "bytes": 42776,
+      "sha256": "13391f6d50f3a6b599e2dc683132129b32f79d1c88e2ff0cf9a2b5125f696b9a"
+    },
+    {
+      "path": "02_routes/scope-counts.json",
+      "bytes": 898,
+      "sha256": "8d4155c78a62a36cbcc68e5283a0f0505f5044e983e92f032278275a573840b7"
+    },
+    {
+      "path": "02_routes/原127URL_模块责任对照.tsv",
+      "bytes": 22896,
+      "sha256": "d2fa4bdcc1a0410b2d688eeac4998f2b5d9db250ebb39cc0a1dc171169ae5dc7"
+    },
+    {
+      "path": "02_routes/原关键词保留台账.tsv",
+      "bytes": 127037,
+      "sha256": "930ce6a547fe06fb2d72eddaaa20ae9fdc1aa176a210835ef789d935c0db9679"
+    },
+    {
+      "path": "02_routes/对照结论_做了少了又加了什么.md",
+      "bytes": 3788,
+      "sha256": "87fde78aa60f2644924e8fa7f64bbcf7f9f2cc4b5d1c4e459c7594f9e7aeabbe"
+    },
+    {
+      "path": "03_content/altered.page.json",
+      "bytes": 3114,
+      "sha256": "962f3e2508d32b181caba5f05cff038315b2687a87cec677323b4d205b23448e"
+    },
+    {
+      "path": "03_content/asset-jobs.json",
+      "bytes": 2293,
+      "sha256": "18e2b2947b32645d34c4b2bd2bc1fdd5d68ce08ddf06c4ac6730b2845b2947d3"
+    },
+    {
+      "path": "03_content/extended.page.json",
+      "bytes": 3625,
+      "sha256": "af81433638de7f05c5e4d93a38e9f9a51cdd14fe64faa4ef4fa4fe05bb3eb93e"
+    },
+    {
+      "path": "03_content/guide.piano-chords.modules.json",
+      "bytes": 8134,
+      "sha256": "0c6e8da96310682f809612191b59e74f54d38d8b24fe0000d1f07017599d603b"
+    },
+    {
+      "path": "03_content/hub.modules.json",
+      "bytes": 3567,
+      "sha256": "beeeb19170c6f56c6e9091cc7faf5c560e88ae0cec158033a8652165544eaa7f"
+    },
+    {
+      "path": "04_music/altered.objects.json",
+      "bytes": 962015,
+      "sha256": "c317e4b7a17d27464d9ba685a645e5660fbc53526c38b349c51cfd08c019deb9"
+    },
+    {
+      "path": "04_music/by-key.contexts.json",
+      "bytes": 211459,
+      "sha256": "b0fe465293093041e5dc609a0fae567794f12d90849e8fa13a6491c380d37e26"
+    },
+    {
+      "path": "04_music/extended.objects.json",
+      "bytes": 1143957,
+      "sha256": "03db3f4f4a93796677d9a43123f98543f0de489af8e9ea463a4343947d2c40dc"
+    },
+    {
+      "path": "04_music/family-policies.json",
+      "bytes": 19789,
+      "sha256": "2e44b30aaa6c4a3d339bba0ff6b578403977b0341ec6c132bc38689835708346"
+    },
+    {
+      "path": "04_music/fingering-policy.json",
+      "bytes": 449,
+      "sha256": "7a9a513cf2e6c088b4e8abee5936af9be07c78ee4f0f8fa83cf03f1326eeee9a"
+    },
+    {
+      "path": "04_music/new-data-counts.json",
+      "bytes": 244,
+      "sha256": "168b01b91aafd898f721fc75ad718c68ddd088f98112822e83b7554318ba0155"
+    },
+    {
+      "path": "04_music/progressions.examples.json",
+      "bytes": 274538,
+      "sha256": "28851ad6bd1798259023cc4dd40f1410e99490482147a603f13a5ee34394abc3"
+    },
+    {
+      "path": "04_music/progressions.patterns.json",
+      "bytes": 2795,
+      "sha256": "a24a9546b899b31d2d8e5eca9195c458b71d793478819a9d56174f2ecf106431"
+    },
+    {
+      "path": "04_music/reference-object.schema.json",
+      "bytes": 2030,
+      "sha256": "d5518d4cd0de5bfee7fd62d8d90c2ba1d0ee3a4e64ccef8b8c6731eb3b02cfbb"
+    },
+    {
+      "path": "04_music/supplement.objects.json",
+      "bytes": 837016,
+      "sha256": "980e24ee52c9f36337ac8a38496bd5fe26e1b03bc376a4f44dc624524c969191"
+    },
+    {
+      "path": "05_interaction/finder.golden-cases.json",
+      "bytes": 3070,
+      "sha256": "6b90729b9653b9a2a78ac599cbf56c8f05481baac888d8ab63867d55df4a2267"
+    },
+    {
+      "path": "05_interaction/interaction-contract.json",
+      "bytes": 3455,
+      "sha256": "42578f6471806cfd0b17b6f845015bbc8969c408c22f61a816046f359352d26c"
+    },
+    {
+      "path": "05_interaction/navigation.final.json",
+      "bytes": 1878,
+      "sha256": "f83fa88a4128b77bcf60baee956f992e90168773632285672e6ce45386186a86"
+    },
+    {
+      "path": "05_interaction/布局与交互规格.md",
+      "bytes": 2839,
+      "sha256": "162fc10eafeabe88b10a33e9838f8bf50e4897cd9fa4b337585c224a6af30a3e"
+    },
+    {
+      "path": "06_seo/SEO执行与成功判断.md",
+      "bytes": 3396,
+      "sha256": "4309641b5425eec9f9f5e2a44083404d5780db1c6a32950c6c47ee3a6775a1d8"
+    },
+    {
+      "path": "06_seo/internal-links.patch.json",
+      "bytes": 3092,
+      "sha256": "2875b7d767f50fe74f398b34ef8b91034851fe6fcbce1e296df3e8c4763920fe"
+    },
+    {
+      "path": "06_seo/page-owners-and-metadata.json",
+      "bytes": 7139,
+      "sha256": "27553d751cd8e89de5eda3dd87e55940fc1d3d0188e4fad98b5254f829ce9cd7"
+    },
+    {
+      "path": "07_validation/README.md",
+      "bytes": 1216,
+      "sha256": "f53561aeff78d9d36f4eb80ca82239980aac7189fefb4ce385391dad59bf482c"
+    },
+    {
+      "path": "07_validation/audit_routes.py",
+      "bytes": 5572,
+      "sha256": "f4cdc64683927b9d812028a130f1686ea33a73c698b24f897f77a9b0332cdbf8"
+    },
+    {
+      "path": "07_validation/legacy145.definitions.oracle.json",
+      "bytes": 66302,
+      "sha256": "3a2169f02b271c8296d65f7954e188efaa9996e89c11aab53ab2cc5eaf7a912a"
+    },
+    {
+      "path": "07_validation/manifest-check.json",
+      "bytes": 435,
+      "sha256": "c3a18611141ad0e1b99dbd2354225d50a342da7b9538399cff8f7cb898e281bf"
+    },
+    {
+      "path": "07_validation/package-validation.json",
+      "bytes": 4962,
+      "sha256": "cd23f63d4ee45d18e25a0fbe27d84437616152d099ffd2edf3419ed5579585dd"
+    },
+    {
+      "path": "07_validation/route-script-selftest.json",
+      "bytes": 75,
+      "sha256": "2d369dd5682ed0d26b245e052a90989e69582f28a208e5687b4fe4ad839278db"
+    },
+    {
+      "path": "07_validation/validate_pack.py",
+      "bytes": 16106,
+      "sha256": "5fcf6776a2be969473a3f3ccced3f3904d095207023869439dde4c25812ae29e"
+    },
+    {
+      "path": "08_codex/00_一次执行到工程收尾.md",
+      "bytes": 17443,
+      "sha256": "47c43eb67573a9e03c48e88af53ea6a6ead315a18868eca20d080303fb06b8da"
+    },
+    {
+      "path": "08_codex/01_工程完成后_人工与授权发布.md",
+      "bytes": 1173,
+      "sha256": "0ccefa86c9d9f6e6c4fc20d502a6c860a50a8d8afea7730f4ccc4ee37f2086cf"
+    },
+    {
+      "path": "08_codex/EXECUTION_STATE.template.json",
+      "bytes": 868,
+      "sha256": "1e919a92125db1aa7764dd4197fbecaf0bca7f3c8bcd924334eb3941c2b01915"
+    },
+    {
+      "path": "09_sources/input-manifest.json",
+      "bytes": 1253,
+      "sha256": "dd5951affbe050eb339155efbfbc3bcd5fa6734529f04a5112b560a3d5f14f6b"
+    },
+    {
+      "path": "09_sources/source-ledger.json",
+      "bytes": 7752,
+      "sha256": "b41fcb2ac075292e7d836abdda407d29d956e625419a074491245daa4b2fde60"
+    },
+    {
+      "path": "09_sources/本轮取证边界.md",
+      "bytes": 738,
+      "sha256": "edf89f0737609e89de3cd647ece6b5c6bc29664719ef4dcbe366a7736d3cd4f4"
+    },
+    {
+      "path": "09_sources/来源说明.md",
+      "bytes": 908,
+      "sha256": "0b2e88612b1b1af4e15d5751a1197218293541bf88efafc50be6c089e1bec921"
+    },
+    {
+      "path": "10_operations/events.contract.json",
+      "bytes": 3125,
+      "sha256": "9831a28573e17200eb526e40c7f648edea0f2184512d1c91893ecb0d3251e655"
+    },
+    {
+      "path": "10_operations/manual-checklist.json",
+      "bytes": 1587,
+      "sha256": "00aec08ea7a4e7c7a36ccc5e5a665d0f53cdca9d7e503211597fd3526e851049"
+    },
+    {
+      "path": "10_operations/人工验收与实际成功判断.md",
+      "bytes": 2904,
+      "sha256": "011159046cfbbad24eb77ccebcff93237b1ca16270aab91c396ceb391b04ae3b"
+    },
+    {
+      "path": "baseline/Piano_URL规划说明.md",
+      "bytes": 10137,
+      "sha256": "ec6d9f49e58f91a212ab437d7df447bffee6199f9a6f2d9ab1e5d8c3d81364d4"
+    },
+    {
+      "path": "baseline/Piano_全站统一规划_最终版.md",
+      "bytes": 92298,
+      "sha256": "97e30d5a5cb29f2eb975a12f16d6b375babdad3cb969a38b26f39273760853b1"
+    },
+    {
+      "path": "baseline/Piano_全站规划附表.xlsx",
+      "bytes": 621465,
+      "sha256": "853fe1b96d75ed9fd494753b0b05a9876f7378403b0fb16a3bd55ba3bc30434b"
+    },
+    {
+      "path": "baseline/README.original.md",
+      "bytes": 504,
+      "sha256": "e6cb44496b58f5a9c74ef5021b5e6e8146590a0c576281abb29eb5108b568b45"
+    },
+    {
+      "path": "baseline/READ_ME_BEFORE_USE.md",
+      "bytes": 419,
+      "sha256": "721a2a6898dee7f8224f67c5a5a24cab12380a67482374ad4bf1f49cec79212b"
+    },
+    {
+      "path": "baseline/url-plan.final.json",
+      "bytes": 1377493,
+      "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+    }
+  ]
+}

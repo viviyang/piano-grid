@@ -1,0 +1,214 @@
+[
+  {
+    "id": "pop-four",
+    "name": "Four-chord comparison",
+    "mode": "major",
+    "steps": [
+      [
+        1,
+        "major"
+      ],
+      [
+        5,
+        "major"
+      ],
+      [
+        6,
+        "minor"
+      ],
+      [
+        4,
+        "major"
+      ]
+    ],
+    "moodTags": []
+  },
+  {
+    "id": "basic-cadence",
+    "name": "I–IV–V–I",
+    "mode": "major",
+    "steps": [
+      [
+        1,
+        "major"
+      ],
+      [
+        4,
+        "major"
+      ],
+      [
+        5,
+        "major"
+      ],
+      [
+        1,
+        "major"
+      ]
+    ],
+    "moodTags": [
+      "happy_example_subjective"
+    ]
+  },
+  {
+    "id": "rotated-four",
+    "name": "vi–IV–I–V",
+    "mode": "major",
+    "steps": [
+      [
+        6,
+        "minor"
+      ],
+      [
+        4,
+        "major"
+      ],
+      [
+        1,
+        "major"
+      ],
+      [
+        5,
+        "major"
+      ]
+    ],
+    "moodTags": []
+  },
+  {
+    "id": "triad-ii-v-i",
+    "name": "ii–V–I with triads",
+    "mode": "major",
+    "steps": [
+      [
+        2,
+        "minor"
+      ],
+      [
+        5,
+        "major"
+      ],
+      [
+        1,
+        "major"
+      ]
+    ],
+    "moodTags": []
+  },
+  {
+    "id": "jazz-ii-v-i",
+    "name": "ii7–V7–Imaj7",
+    "mode": "major",
+    "steps": [
+      [
+        2,
+        "minor7"
+      ],
+      [
+        5,
+        "dominant7"
+      ],
+      [
+        1,
+        "major7"
+      ]
+    ],
+    "moodTags": []
+  },
+  {
+    "id": "color-ii-v-i",
+    "name": "ii9–V13–Imaj9",
+    "mode": "major",
+    "steps": [
+      [
+        2,
+        "minor9"
+      ],
+      [
+        5,
+        "dominant13"
+      ],
+      [
+        1,
+        "major9"
+      ]
+    ],
+    "moodTags": [
+      "beautiful_example_subjective"
+    ]
+  },
+  {
+    "id": "minor-cadence",
+    "name": "iiø7–V7–i",
+    "mode": "natural_minor",
+    "steps": [
+      [
+        2,
+        "halfDiminished7"
+      ],
+      [
+        5,
+        "dominant7"
+      ],
+      [
+        1,
+        "minor"
+      ]
+    ],
+    "moodTags": []
+  },
+  {
+    "id": "blues-twelve",
+    "name": "Twelve-bar dominant-seventh study",
+    "mode": "major",
+    "steps": [
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        4,
+        "dominant7"
+      ],
+      [
+        4,
+        "dominant7"
+      ],
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        5,
+        "dominant7"
+      ],
+      [
+        4,
+        "dominant7"
+      ],
+      [
+        1,
+        "dominant7"
+      ],
+      [
+        5,
+        "dominant7"
+      ]
+    ],
+    "moodTags": []
+  }
+]

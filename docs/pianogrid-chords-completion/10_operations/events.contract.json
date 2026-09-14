@@ -1,0 +1,131 @@
+{
+  "events": [
+    {
+      "name": "chord_lookup",
+      "trigger": "query submitted / filter committed",
+      "properties": [
+        "inputKind",
+        "familyFilter"
+      ],
+      "meaning": "intent_not_success"
+    },
+    {
+      "name": "chord_result_selected",
+      "trigger": "actual result chosen",
+      "properties": [
+        "objectId",
+        "family",
+        "origin"
+      ],
+      "meaning": "usage_proxy"
+    },
+    {
+      "name": "finder_no_match",
+      "trigger": "valid input returned no supported match",
+      "properties": [
+        "pitchClassCount",
+        "bassProvided"
+      ],
+      "meaning": "coverage_gap_proxy"
+    },
+    {
+      "name": "finder_result_selected",
+      "trigger": "candidate interpreted and selected",
+      "properties": [
+        "objectId",
+        "matchKind",
+        "candidateCount"
+      ],
+      "meaning": "usage_proxy"
+    },
+    {
+      "name": "chord_audio_start",
+      "trigger": "user playback actually scheduled",
+      "properties": [
+        "objectId",
+        "realizationId",
+        "mode"
+      ],
+      "meaning": "usage_proxy"
+    },
+    {
+      "name": "chord_audio_error",
+      "trigger": "audio initialization/scheduling fails",
+      "properties": [
+        "errorCode"
+      ],
+      "meaning": "error"
+    },
+    {
+      "name": "practice_started",
+      "trigger": "user starts named task",
+      "properties": [
+        "objectId",
+        "taskMode"
+      ],
+      "meaning": "practice_intent"
+    },
+    {
+      "name": "practice_answer",
+      "trigger": "explicit check action",
+      "properties": [
+        "taskMode",
+        "outcome",
+        "answerShown"
+      ],
+      "meaning": "browser_task_only"
+    },
+    {
+      "name": "practice_completed",
+      "trigger": "declared session tasks finished",
+      "properties": [
+        "taskCount",
+        "solvedCount",
+        "shownCount"
+      ],
+      "meaning": "browser_task_only"
+    },
+    {
+      "name": "print_opened",
+      "trigger": "browser print requested",
+      "properties": [
+        "objectId",
+        "realizationId"
+      ],
+      "meaning": "not_physical_print_success"
+    },
+    {
+      "name": "reference_download_clicked",
+      "trigger": "validated asset link clicked",
+      "properties": [
+        "assetId"
+      ],
+      "meaning": "click_not_confirmed_download"
+    },
+    {
+      "name": "task_feedback",
+      "trigger": "voluntary found-what-needed response",
+      "properties": [
+        "taskKind",
+        "answer"
+      ],
+      "meaning": "self_report"
+    }
+  ],
+  "privacy": [
+    "no raw arbitrary text",
+    "no emails or identity",
+    "no fingerings/medical observations about users",
+    "no cross-site profile",
+    "honor current consent and analytics settings",
+    "no new SDK without permission"
+  ],
+  "implementation": "reuse existing analytics adapter; otherwise no-op event interface with unit tests; do not claim production telemetry exists",
+  "localConvenience": {
+    "recentMax": 10,
+    "optionalPinnedMax": 20,
+    "versioned": true,
+    "clearControl": true,
+    "failureDoesNotBlockCore": true
+  }
+}

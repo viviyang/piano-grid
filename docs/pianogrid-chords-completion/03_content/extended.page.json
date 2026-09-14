@@ -1,0 +1,74 @@
+{
+  "url": "/chords/extended",
+  "title": "Extended Piano Chords: 9ths, 11ths & 13ths | PianoGrid",
+  "description": "Explore ninth, eleventh and thirteenth piano chords. Compare full formulas with explicit voicing examples, hear the notes and practise a selected layout.",
+  "h1": "Extended Piano Chords",
+  "primaryKeyword": "extended piano chords",
+  "secondaryKeywords": [
+    "9th chords piano",
+    "11th chords piano",
+    "13th chords piano",
+    "extended chord voicings piano"
+  ],
+  "keywordEvidence": "product-intent hypothesis; no fresh volume or per-keyword SERP approval",
+  "defaultObjectId": "c-dominant9",
+  "data": "04_music/extended.objects.json",
+  "sections": [
+    {
+      "id": "what",
+      "heading": "What is an extended chord?",
+      "paragraphs": [
+        "This reference explores ninth, eleventh and thirteenth structures built on dominant, major-seventh and minor-seventh foundations. A chord name specifies a structure; a pianist still chooses a particular arrangement of the notes."
+      ]
+    },
+    {
+      "id": "formula-vs-voicing",
+      "heading": "Formula and actual voicing are different views",
+      "paragraphs": [
+        "Choose Formula to read the complete reference inventory. Choose Playing example to see the exact notes that the audio and printout use. Every omitted or repeated degree is listed. These named examples are bounded practice targets, not the only correct way to play a chord."
+      ]
+    },
+    {
+      "id": "ninths",
+      "heading": "Ninth chords",
+      "paragraphs": [
+        "Start by comparing C9, Cmaj9 and Cm9. Follow the third and seventh in the written note list; the ninth alone does not tell you the chord quality. The compact rooted examples leave out the unaltered fifth."
+      ]
+    },
+    {
+      "id": "elevenths",
+      "heading": "Natural elevenths need context",
+      "paragraphs": [
+        "The formula inventory for C11 contains a natural third and a natural eleventh. Its supplied reduced example omits the third and fifth, and can also be heard as a suspended or upper-triad texture. The omission label stays visible.",
+        "The major-eleventh study retains its natural eleventh instead of silently turning it into a sharp eleventh. Listen to the tension intentionally; it is not labelled a universally preferred voicing."
+      ]
+    },
+    {
+      "id": "thirteenths",
+      "heading": "Thirteenths without an unreadable stack",
+      "paragraphs": [
+        "The rooted thirteenth examples retain the root, third, seventh, ninth and thirteenth, omitting the unaltered fifth and eleventh. Compare the shorter note list with the full formula view before practising.",
+        "In a minor-thirteenth symbol, the unaltered thirteenth is a major thirteenth from the chord root. Do not automatically lower it to match a natural-minor scale."
+      ]
+    },
+    {
+      "id": "practice",
+      "heading": "Practise the reference you selected",
+      "paragraphs": [
+        "Build formula tones checks all formula pitch classes. Match this example checks the exact displayed keys. The example-tone task checks the named reduced note set; feedback does not mislabel a different valid voicing as a wrong chord."
+      ]
+    },
+    {
+      "id": "all-roots",
+      "heading": "Browse the supported roots and qualities",
+      "paragraphs": [
+        "All 108 entries are listed below as readable note-and-formula references. Selecting one updates the working example above; the table remains available without JavaScript."
+      ]
+    }
+  ],
+  "sourceIds": [
+    "OMT-SYMBOLS",
+    "OMT-JAZZ-VOICINGS",
+    "MUSICCA-CHORDS"
+  ]
+}

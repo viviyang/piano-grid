@@ -1,0 +1,83 @@
+{
+  "heading": "Chords",
+  "groups": [
+    {
+      "name": "Browse",
+      "links": [
+        {
+          "label": "Chord Chart",
+          "url": "/chords"
+        },
+        {
+          "label": "Major Chords",
+          "url": "/chords/major"
+        },
+        {
+          "label": "Minor Chords",
+          "url": "/chords/minor"
+        }
+      ]
+    },
+    {
+      "name": "More Chords",
+      "links": [
+        {
+          "label": "Seventh Chords",
+          "url": "/chords/seventh"
+        },
+        {
+          "label": "Suspended Chords",
+          "url": "/chords/suspended"
+        },
+        {
+          "label": "Diminished Chords",
+          "url": "/chords/diminished"
+        },
+        {
+          "label": "Augmented Chords",
+          "url": "/chords/augmented"
+        },
+        {
+          "label": "Added-note Chords",
+          "url": "/chords/add"
+        },
+        {
+          "label": "Extended Chords",
+          "url": "/chords/extended"
+        },
+        {
+          "label": "Altered Chords",
+          "url": "/chords/altered"
+        }
+      ]
+    },
+    {
+      "name": "Use & Learn",
+      "links": [
+        {
+          "label": "Chords by Key",
+          "url": "/chords/by-key"
+        },
+        {
+          "label": "Chord Progressions",
+          "url": "/chord-progressions"
+        },
+        {
+          "label": "Chord Finder",
+          "url": "/chords/finder"
+        },
+        {
+          "label": "Learn Chords",
+          "url": "/guide/piano-chords"
+        },
+        {
+          "label": "Finger Numbers",
+          "url": "/keyboard-notes/finger-numbers"
+        }
+      ]
+    }
+  ],
+  "activation": "route + main task tested; apply actual theme; no empty More group",
+  "mobile": "same hierarchy, keyboard-operable disclosure, no hover requirement",
+  "rootBrowsing": "in-module filter; not 12 global nav menus"
+}

@@ -1,0 +1,176 @@
+{
+  "status": "PASS_WITH_NOTES",
+  "validatedAt": "2026-09-13T02:46:46.998780+00:00",
+  "testedHead": "49e003e11571a4dd29e428236d3cd13da0f6ed70",
+  "base": "http://127.0.0.1:3101",
+  "counts": {
+    "packageObjects": 288,
+    "extended": 108,
+    "altered": 96,
+    "supplement": 84,
+    "supportedRegistry": 433,
+    "publicRoutes": 173,
+    "buildOutputs": 178,
+    "keyContexts": 24,
+    "byKeyRows": 336,
+    "progressionExamples": 96,
+    "progressionSteps": 432,
+    "taskTargets": 38,
+    "generatedPdfs": 4
+  },
+  "checks": [
+    {
+      "name": "package validator",
+      "command": "python docs/pianogrid-chords-completion/07_validation/validate_pack.py",
+      "result": "PASS_FOR_HANDOFF_DATA_ONLY",
+      "exitCode": 0
+    },
+    {
+      "name": "Foundation",
+      "command": "npm run check:foundation",
+      "result": "565/565",
+      "exitCode": 0
+    },
+    {
+      "name": "TypeScript",
+      "command": "npm run typecheck",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "name": "CSS",
+      "command": "npm run check:css",
+      "result": "PASS; 173 routes",
+      "exitCode": 0
+    },
+    {
+      "name": "content adapters and legacy oracle",
+      "command": "node scripts/check-content-adapters.mjs",
+      "result": "27/27",
+      "exitCode": 0
+    },
+    {
+      "name": "B2",
+      "result": "40/40",
+      "exitCode": 0
+    },
+    {
+      "name": "B3",
+      "result": "71/71",
+      "exitCode": 0
+    },
+    {
+      "name": "content package",
+      "result": "94/94",
+      "exitCode": 0
+    },
+    {
+      "name": "N1",
+      "result": "365/365",
+      "exitCode": 0
+    },
+    {
+      "name": "N2A",
+      "result": "13/13",
+      "exitCode": 0
+    },
+    {
+      "name": "N2B",
+      "result": "640/640",
+      "exitCode": 0
+    },
+    {
+      "name": "N2C",
+      "result": "483/483",
+      "exitCode": 0
+    },
+    {
+      "name": "N2D",
+      "result": "188/188",
+      "exitCode": 0
+    },
+    {
+      "name": "support pages",
+      "result": "105/105",
+      "exitCode": 0
+    },
+    {
+      "name": "chord batch",
+      "result": "249/249",
+      "exitCode": 0
+    },
+    {
+      "name": "A minor/detail",
+      "result": "167/167",
+      "exitCode": 0
+    },
+    {
+      "name": "fallbacks",
+      "result": "25/25",
+      "exitCode": 0
+    },
+    {
+      "name": "completion",
+      "command": "node scripts/check-chords-completion.mjs",
+      "result": "49/49",
+      "exitCode": 0
+    },
+    {
+      "name": "By-key",
+      "command": "node scripts/check-by-key.mjs",
+      "result": "135/135",
+      "exitCode": 0
+    },
+    {
+      "name": "Progressions",
+      "command": "node scripts/check-chord-progressions.mjs",
+      "result": "89/89",
+      "exitCode": 0
+    },
+    {
+      "name": "final chords",
+      "command": "node scripts/check-chords-final.mjs",
+      "result": "368/368",
+      "exitCode": 0
+    },
+    {
+      "name": "production integration",
+      "command": "node scripts/check-integration-production.mjs",
+      "result": "178/178",
+      "exitCode": 0
+    },
+    {
+      "name": "38 task targets",
+      "result": "38/38 URL/anchor targets",
+      "exitCode": 0
+    },
+    {
+      "name": "production build",
+      "command": "npm run build",
+      "result": "PASS; 178/178 static outputs",
+      "exitCode": 0
+    },
+    {
+      "name": "PDF render",
+      "result": "PASS; 7 pages rendered across 4 PDFs; representative pages visually inspected",
+      "exitCode": 0
+    },
+    {
+      "name": "git diff whitespace",
+      "command": "git diff --check",
+      "result": "PASS; line-ending notices only",
+      "exitCode": 0
+    }
+  ],
+  "scopeNote": "Older suites were run on this working tree before the final anchor-only content patch. After that patch, npm run check, production build, and all directly affected Hub/By-key/Progressions/final/production suites were rerun.",
+  "manualNotVerified": [
+    "human hearing",
+    "real-device touch",
+    "named screen reader",
+    "physical printing",
+    "PDF tagging with assistive technology",
+    "independent piano teacher/music-theory review",
+    "Search Console and GA4 outcomes",
+    "5-user task observation"
+  ]
+}

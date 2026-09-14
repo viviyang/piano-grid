@@ -11,6 +11,7 @@ import { getExpansionChordDetail, isExpansionChordDetailRoute } from './chord-ex
 import { getN2BCategory, getN2BChordDetail, isN2BChordDetailRoute, type N2BCategory } from './chord-n2b-content';
 import { getN2CCategory, getN2CChordDetail, isN2CChordDetailRoute, type N2CCategory } from './chord-n2c-content';
 import { getN2DCategory, getN2DChordDetail, isN2DChordDetailRoute } from './chord-n2d-content';
+import { getSupportedChordRegistry } from './chord-completion-content';
 
 type NewVoicing = {id:string;label:string;symbol:string;bass:string;notes:string[];midi:number[];keyboard_highlights:{midi:number;spelling:string}[];playback:{simultaneous_midi:number[];ascending_midi:number[]}};
 type DetailBinding={h1:string;tool_heading:string;answer:string;keyboard_range_midi:number[];range_label:string;pdf:{url:string;label:string};quality:ThreeNoteSubtype;formula_degrees:string[];namespace:string;detail_publish_gate:string};
@@ -78,7 +79,8 @@ export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
 }
 
 export type CenterItem={id:string;name:string;root:string;quality:string;url:string|null;voicing:Voicing;tones:string[];formula:string[]};
-export type CenterModel={title:string;metadata:{title:string;description:string;canonical_path:string};blocks:Block[];items:CenterItem[];comparisons:{left:CenterItem;right:CenterItem}[];practiceLinks:{url:string;label:string;description:string}[];filters:{defaults:{root:string|null;quality:string|null;selected_chord_id:string};root_options:{value:string|null;label:string}[];quality_options:{value:string|null;label:string}[]};microcopy:ChordDetailData['microcopy']&{no_results:string};whitePitchClasses:number[];pdf:string};
+export type CenterLibraryItem={id:string;name:string;symbol:string;root:string;family:string;aliases:string[];formula:string[];tones:string[];destination:string};
+export type CenterModel={title:string;metadata:{title:string;description:string;canonical_path:string};blocks:Block[];items:CenterItem[];library:CenterLibraryItem[];comparisons:{left:CenterItem;right:CenterItem}[];practiceLinks:{url:string;label:string;description:string}[];filters:{defaults:{root:string|null;quality:string|null;selected_chord_id:string};root_options:{value:string|null;label:string}[];quality_options:{value:string|null;label:string}[]};microcopy:ChordDetailData['microcopy']&{no_results:string};whitePitchClasses:number[];pdf:string};
 export type ChordCategoryId='major'|'minor'|N2BCategory|N2CCategory|'add';
 export type ChordCategoryModel={url:`/chords/${ChordCategoryId}`;quality:ChordCategoryId;title:string;directAnswer:string;metadata:{title:string;description:string;canonical_path:string};items:CenterItem[];rootOrder:string[];familySubtypes:string[];contentBlocks:{heading:string;body:string}[];links:{url:string;label:string}[];whitePitchClasses:number[]};
 type KeyChordSource={symbol:string;quality:'major'|'minor'|'diminished';notes:string[];semitones_from_root:number[];reference_voicing:string[];fingering:null};
@@ -125,6 +127,7 @@ export function getChordCenter():CenterModel {
  next.content.links.push({url:'/chords/diminished',label:'Browse diminished chords',published:true},{url:'/chords/augmented',label:'Browse augmented chords',published:true},{url:'/chords/suspended',label:'Browse suspended chords',published:true});
  next.content.links.push({url:'/chords/seventh',label:'Browse seventh chords',published:true});
  next.content.links.push({url:'/chords/add',label:'Browse major and minor add9 chords',published:true});
+ next.content.links.push({url:'/chords/extended',label:'Browse extended piano chords',published:true},{url:'/chords/altered',label:'Browse altered piano chords',published:true});
  blocks.find(block=>block.block_id==='chords-intro')!.content.paragraphs=['Use this piano chord chart to find the notes and keyboard positions for 25 major and minor triads. Read the notes from low to high, hear them together or one at a time, and print a reference to keep beside your keyboard.','The chart covers the practical 12 major and 12 minor pitch-class families, plus the published C-flat major written-spelling reference.'];
  blocks.find(block=>block.block_id==='chords-print')!.content.paragraphs[0]='Download the original three-page reference with nine selected chord names. The interactive chart above contains the broader 25-chord collection; use Print this chord or Print matching chords for those results.';
  blocks.find(block=>block.block_id==='chords-how-to-read')!.content.paragraphs.push(
@@ -132,7 +135,7 @@ export function getChordCenter():CenterModel {
   'Root position places the root as the lowest note. An inversion keeps the same chord tones but places another chord tone lowest. Right-hand and left-hand fingerings are performance examples for a particular voicing, not additional chord types.',
   'A note name identifies a pitch class, an octave number identifies its register, a scale degree describes the note’s place in a scale or chord formula, and a finger number identifies a digit on one hand.'
  );
- const faq=blocks.find(block=>block.block_id==='chords-questions')!.content.table!;faq.rows=faq.rows.map(row=>row[0]==='Are these all the chords on piano?'?[row[0],'No. This main chart keeps the practical 25 major and minor references. Separate category pages cover diminished, augmented, suspended, seventh and add9 chords; extended families are not yet included.']:row);
+ const faq=blocks.find(block=>block.block_id==='chords-questions')!.content.table!;faq.rows=faq.rows.map(row=>row[0]==='Are these all the chords on piano?'?[row[0],'No. The main chart keeps 25 practical major and minor references. The supported-library index also includes published details and embedded power, sixth, extended and altered references. It is still a bounded collection.']:row);
  const roots=['C','C#','Cb','Db','D','Eb','E','F','F#','G','G#','Ab','A','Bb','B'].filter(root=>completeItems.some(item=>item.root===root));
  const filters={...page.filters,root_options:[{value:null,label:'Any root'},...roots.map(root=>({value:root,label:displayAccidentals(root)}))]};
  const practiceLinks=[
@@ -140,7 +143,8 @@ export function getChordCenter():CenterModel {
   {url:'/chords/a-major#practice',label:'Build A major',description:'Choose A, C♯, and E.'},
   {url:'/chords/c-major#practice',label:'Build C major',description:'Choose C, E, and G.'},
  ];
- return {title:blocks[0].content.heading,metadata:{...page.metadata,description:'Explore major and minor piano chords with note names, keyboard diagrams, sound examples, and printable references.'},blocks,items:completeItems,comparisons,practiceLinks,filters,microcopy:page.microcopy,whitePitchClasses:shared.conventions.white_pitch_classes,pdf:'/reference/preserved-chords/assets/piano-chord-chart-selected.pdf'};
+ const library=getSupportedChordRegistry(completeItems).map(item=>({id:item.id,name:item.name,symbol:item.symbol,root:item.root,family:item.family,aliases:item.aliases,formula:item.definition.displayFormula,tones:item.definition.toneSpellings,destination:item.destination}));
+ return {title:blocks[0].content.heading,metadata:{...page.metadata,description:'Explore piano chords by name, root and type with note names, keyboard examples, sound and printable references.'},blocks,items:completeItems,library,comparisons,practiceLinks,filters,microcopy:page.microcopy,whitePitchClasses:shared.conventions.white_pitch_classes,pdf:'/reference/preserved-chords/assets/piano-chord-chart-selected.pdf'};
 }
 
 export function getChordCategory(quality:ChordCategoryId):ChordCategoryModel {

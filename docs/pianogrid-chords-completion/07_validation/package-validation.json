@@ -1,0 +1,256 @@
+{
+  "status": "PASS_FOR_HANDOFF_DATA_ONLY",
+  "objectsValidated": 288,
+  "realizationsValidated": 588,
+  "independentGoldenDefinitions": 10,
+  "negativeTestsRejected": 16,
+  "negativeTests": [
+    {
+      "test": "wrong tone synced across outputs",
+      "result": "rejected"
+    },
+    {
+      "test": "wrong formula",
+      "result": "rejected"
+    },
+    {
+      "test": "wrong sharp9 letter enharmonic",
+      "result": "rejected"
+    },
+    {
+      "test": "major11 silently sharp",
+      "result": "rejected"
+    },
+    {
+      "test": "minor13 silently natural-minor b13",
+      "result": "rejected"
+    },
+    {
+      "test": "hidden omitted11",
+      "result": "rejected"
+    },
+    {
+      "test": "drop altered fifth from policy",
+      "result": "rejected"
+    },
+    {
+      "test": "wrong bass midi",
+      "result": "rejected"
+    },
+    {
+      "test": "wrong bass degree",
+      "result": "rejected"
+    },
+    {
+      "test": "clipped keyboard",
+      "result": "rejected"
+    },
+    {
+      "test": "print stale",
+      "result": "rejected"
+    },
+    {
+      "test": "audio truncated",
+      "result": "rejected"
+    },
+    {
+      "test": "invented fingering",
+      "result": "rejected"
+    },
+    {
+      "test": "invented teacher",
+      "result": "rejected"
+    },
+    {
+      "test": "default missing",
+      "result": "rejected"
+    },
+    {
+      "test": "unannounced doubling",
+      "result": "rejected"
+    }
+  ],
+  "finderCases": [
+    {
+      "id": "ambiguous-sixth",
+      "matches": [
+        [
+          "Am7",
+          "exact_formula"
+        ],
+        [
+          "C6",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "augmented-symmetry",
+      "matches": [
+        [
+          "A♭aug",
+          "exact_formula"
+        ],
+        [
+          "Caug",
+          "exact_formula"
+        ],
+        [
+          "Eaug",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "sus-symmetry",
+      "matches": [
+        [
+          "Csus2",
+          "exact_formula"
+        ],
+        [
+          "Gsus4",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "add-octave-independent",
+      "matches": [
+        [
+          "Cadd9",
+          "exact_formula"
+        ],
+        [
+          "D11",
+          "approved_omission_example"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "minor-vs-major-add",
+      "matches": [
+        [
+          "Cmadd9",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "dom13-approved-omissions",
+      "matches": [
+        [
+          "C13",
+          "approved_omission_example"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "full-c13",
+      "matches": [
+        [
+          "C13",
+          "exact_formula"
+        ],
+        [
+          "Fmaj13",
+          "exact_formula"
+        ],
+        [
+          "Gm13",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "sharp9-not-minor",
+      "matches": [
+        [
+          "C7(♯9)",
+          "approved_omission_example"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "no-root-context",
+      "matches": [],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "empty",
+      "matches": [],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "single",
+      "matches": [],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "extra-wrong-note",
+      "matches": [],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "repeated-pc",
+      "matches": [
+        [
+          "C",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    },
+    {
+      "id": "nonchord-slash",
+      "matches": [],
+      "status": "input_fixture_for_project_UI_test"
+    },
+    {
+      "id": "dim7-doubleflat",
+      "matches": [
+        [
+          "Cdim7",
+          "exact_formula"
+        ],
+        [
+          "E♭dim7",
+          "exact_formula"
+        ],
+        [
+          "F♯dim7",
+          "exact_formula"
+        ],
+        [
+          "Adim7",
+          "exact_formula"
+        ]
+      ],
+      "status": "reference_set_assertions_passed"
+    }
+  ],
+  "contextKeys": 24,
+  "diatonicRows": 336,
+  "progressionExamples": 96,
+  "progressionStepsValidated": 432,
+  "sourceIdsResolvable": true,
+  "notVerified": [
+    "current_repository",
+    "current_deployment",
+    "actual_audio",
+    "touch_device",
+    "screen_reader",
+    "physical_print",
+    "PDF_tags",
+    "teacher_review",
+    "Search_Console_or_GA4"
+  ]
+}

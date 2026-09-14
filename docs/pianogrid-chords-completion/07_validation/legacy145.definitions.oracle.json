@@ -1,0 +1,3046 @@
+[
+  {
+    "id": "a-7",
+    "url": "/chords/a-7",
+    "rootSpelling": "A",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "A7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "A",
+      "C♯",
+      "E",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-add9",
+    "url": "/chords/a-add9",
+    "rootSpelling": "A",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Aadd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "A",
+      "C♯",
+      "E",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-augmented",
+    "url": "/chords/a-augmented",
+    "rootSpelling": "A",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Aaug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "A",
+      "C♯",
+      "E♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-diminished",
+    "url": "/chords/a-diminished",
+    "rootSpelling": "A",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Adim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "A",
+      "C",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-7",
+    "url": "/chords/a-flat-7",
+    "rootSpelling": "A♭",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "A♭7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C",
+      "E♭",
+      "G♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-add9",
+    "url": "/chords/a-flat-add9",
+    "rootSpelling": "A♭",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "A♭add9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C",
+      "E♭",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-augmented",
+    "url": "/chords/a-flat-augmented",
+    "rootSpelling": "A♭",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "A♭aug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-diminished",
+    "url": "/chords/a-flat-diminished",
+    "rootSpelling": "A♭",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "A♭dim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C♭",
+      "E𝄫"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-m7",
+    "url": "/chords/a-flat-m7",
+    "rootSpelling": "A♭",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "A♭m7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C♭",
+      "E♭",
+      "G♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-m7-flat5",
+    "url": "/chords/a-flat-m7-flat5",
+    "rootSpelling": "A♭",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "A♭m7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C♭",
+      "E𝄫",
+      "G♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-madd9",
+    "url": "/chords/a-flat-madd9",
+    "rootSpelling": "A♭",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "A♭madd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C♭",
+      "E♭",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-maj7",
+    "url": "/chords/a-flat-maj7",
+    "rootSpelling": "A♭",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "A♭maj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C",
+      "E♭",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-major",
+    "url": "/chords/a-flat-major",
+    "rootSpelling": "A♭",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "A♭",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "C",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-sus2",
+    "url": "/chords/a-flat-sus2",
+    "rootSpelling": "A♭",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "A♭sus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "B♭",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-flat-sus4",
+    "url": "/chords/a-flat-sus4",
+    "rootSpelling": "A♭",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "A♭sus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "A♭",
+      "D♭",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-m7",
+    "url": "/chords/a-m7",
+    "rootSpelling": "A",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Am7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "A",
+      "C",
+      "E",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-m7-flat5",
+    "url": "/chords/a-m7-flat5",
+    "rootSpelling": "A",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Am7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "A",
+      "C",
+      "E♭",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-madd9",
+    "url": "/chords/a-madd9",
+    "rootSpelling": "A",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Amadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "A",
+      "C",
+      "E",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-maj7",
+    "url": "/chords/a-maj7",
+    "rootSpelling": "A",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Amaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "A",
+      "C♯",
+      "E",
+      "G♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-major",
+    "url": "/chords/a-major",
+    "rootSpelling": "A",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "A",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "A",
+      "C♯",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-minor",
+    "url": "/chords/a-minor",
+    "rootSpelling": "A",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Am",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "A",
+      "C",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-sus2",
+    "url": "/chords/a-sus2",
+    "rootSpelling": "A",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Asus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "A",
+      "B",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "a-sus4",
+    "url": "/chords/a-sus4",
+    "rootSpelling": "A",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Asus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "A",
+      "D",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-7",
+    "url": "/chords/b-7",
+    "rootSpelling": "B",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "B7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "B",
+      "D♯",
+      "F♯",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-add9",
+    "url": "/chords/b-add9",
+    "rootSpelling": "B",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Badd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "B",
+      "D♯",
+      "F♯",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-augmented",
+    "url": "/chords/b-augmented",
+    "rootSpelling": "B",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Baug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "B",
+      "D♯",
+      "F𝄪"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-diminished",
+    "url": "/chords/b-diminished",
+    "rootSpelling": "B",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Bdim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "B",
+      "D",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-7",
+    "url": "/chords/b-flat-7",
+    "rootSpelling": "B♭",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "B♭7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D",
+      "F",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-add9",
+    "url": "/chords/b-flat-add9",
+    "rootSpelling": "B♭",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "B♭add9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D",
+      "F",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-augmented",
+    "url": "/chords/b-flat-augmented",
+    "rootSpelling": "B♭",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "B♭aug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-diminished",
+    "url": "/chords/b-flat-diminished",
+    "rootSpelling": "B♭",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "B♭dim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D♭",
+      "F♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-m7",
+    "url": "/chords/b-flat-m7",
+    "rootSpelling": "B♭",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "B♭m7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D♭",
+      "F",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-m7-flat5",
+    "url": "/chords/b-flat-m7-flat5",
+    "rootSpelling": "B♭",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "B♭m7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D♭",
+      "F♭",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-madd9",
+    "url": "/chords/b-flat-madd9",
+    "rootSpelling": "B♭",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "B♭madd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D♭",
+      "F",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-maj7",
+    "url": "/chords/b-flat-maj7",
+    "rootSpelling": "B♭",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "B♭maj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D",
+      "F",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-major",
+    "url": "/chords/b-flat-major",
+    "rootSpelling": "B♭",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "B♭",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-minor",
+    "url": "/chords/b-flat-minor",
+    "rootSpelling": "B♭",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "B♭m",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "D♭",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-sus2",
+    "url": "/chords/b-flat-sus2",
+    "rootSpelling": "B♭",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "B♭sus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "C",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-flat-sus4",
+    "url": "/chords/b-flat-sus4",
+    "rootSpelling": "B♭",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "B♭sus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "B♭",
+      "E♭",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-m7",
+    "url": "/chords/b-m7",
+    "rootSpelling": "B",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Bm7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "B",
+      "D",
+      "F♯",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-m7-flat5",
+    "url": "/chords/b-m7-flat5",
+    "rootSpelling": "B",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Bm7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "B",
+      "D",
+      "F",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-madd9",
+    "url": "/chords/b-madd9",
+    "rootSpelling": "B",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Bmadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "B",
+      "D",
+      "F♯",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-maj7",
+    "url": "/chords/b-maj7",
+    "rootSpelling": "B",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Bmaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "B",
+      "D♯",
+      "F♯",
+      "A♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-major",
+    "url": "/chords/b-major",
+    "rootSpelling": "B",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "B",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "B",
+      "D♯",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-minor",
+    "url": "/chords/b-minor",
+    "rootSpelling": "B",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Bm",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "B",
+      "D",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-sus2",
+    "url": "/chords/b-sus2",
+    "rootSpelling": "B",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Bsus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "B",
+      "C♯",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "b-sus4",
+    "url": "/chords/b-sus4",
+    "rootSpelling": "B",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Bsus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "B",
+      "E",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-7",
+    "url": "/chords/c-7",
+    "rootSpelling": "C",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "C7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "C",
+      "E",
+      "G",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-add9",
+    "url": "/chords/c-add9",
+    "rootSpelling": "C",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Cadd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "C",
+      "E",
+      "G",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-augmented",
+    "url": "/chords/c-augmented",
+    "rootSpelling": "C",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Caug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "C",
+      "E",
+      "G♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-diminished",
+    "url": "/chords/c-diminished",
+    "rootSpelling": "C",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Cdim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "C",
+      "E♭",
+      "G♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-flat-major",
+    "url": "/chords/c-flat-major",
+    "rootSpelling": "C♭",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "C♭",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "C♭",
+      "E♭",
+      "G♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-m7",
+    "url": "/chords/c-m7",
+    "rootSpelling": "C",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Cm7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "C",
+      "E♭",
+      "G",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-m7-flat5",
+    "url": "/chords/c-m7-flat5",
+    "rootSpelling": "C",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Cm7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "C",
+      "E♭",
+      "G♭",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-madd9",
+    "url": "/chords/c-madd9",
+    "rootSpelling": "C",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Cmadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "C",
+      "E♭",
+      "G",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-maj7",
+    "url": "/chords/c-maj7",
+    "rootSpelling": "C",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Cmaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "C",
+      "E",
+      "G",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-major",
+    "url": "/chords/c-major",
+    "rootSpelling": "C",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "C",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "C",
+      "E",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-minor",
+    "url": "/chords/c-minor",
+    "rootSpelling": "C",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Cm",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "C",
+      "E♭",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-sharp-minor",
+    "url": "/chords/c-sharp-minor",
+    "rootSpelling": "C♯",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "C♯m",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "C♯",
+      "E",
+      "G♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-sus2",
+    "url": "/chords/c-sus2",
+    "rootSpelling": "C",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Csus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "C",
+      "D",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "c-sus4",
+    "url": "/chords/c-sus4",
+    "rootSpelling": "C",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Csus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "C",
+      "F",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-7",
+    "url": "/chords/d-7",
+    "rootSpelling": "D",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "D7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "D",
+      "F♯",
+      "A",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-add9",
+    "url": "/chords/d-add9",
+    "rootSpelling": "D",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Dadd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "D",
+      "F♯",
+      "A",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-augmented",
+    "url": "/chords/d-augmented",
+    "rootSpelling": "D",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Daug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "D",
+      "F♯",
+      "A♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-diminished",
+    "url": "/chords/d-diminished",
+    "rootSpelling": "D",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Ddim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "D",
+      "F",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-7",
+    "url": "/chords/d-flat-7",
+    "rootSpelling": "D♭",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "D♭7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F",
+      "A♭",
+      "C♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-add9",
+    "url": "/chords/d-flat-add9",
+    "rootSpelling": "D♭",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "D♭add9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F",
+      "A♭",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-augmented",
+    "url": "/chords/d-flat-augmented",
+    "rootSpelling": "D♭",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "D♭aug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-diminished",
+    "url": "/chords/d-flat-diminished",
+    "rootSpelling": "D♭",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "D♭dim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F♭",
+      "A𝄫"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-m7",
+    "url": "/chords/d-flat-m7",
+    "rootSpelling": "D♭",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "D♭m7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F♭",
+      "A♭",
+      "C♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-m7-flat5",
+    "url": "/chords/d-flat-m7-flat5",
+    "rootSpelling": "D♭",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "D♭m7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F♭",
+      "A𝄫",
+      "C♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-madd9",
+    "url": "/chords/d-flat-madd9",
+    "rootSpelling": "D♭",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "D♭madd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F♭",
+      "A♭",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-maj7",
+    "url": "/chords/d-flat-maj7",
+    "rootSpelling": "D♭",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "D♭maj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F",
+      "A♭",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-major",
+    "url": "/chords/d-flat-major",
+    "rootSpelling": "D♭",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "D♭",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "F",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-sus2",
+    "url": "/chords/d-flat-sus2",
+    "rootSpelling": "D♭",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "D♭sus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "E♭",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-flat-sus4",
+    "url": "/chords/d-flat-sus4",
+    "rootSpelling": "D♭",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "D♭sus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "D♭",
+      "G♭",
+      "A♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-m7",
+    "url": "/chords/d-m7",
+    "rootSpelling": "D",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Dm7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "D",
+      "F",
+      "A",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-m7-flat5",
+    "url": "/chords/d-m7-flat5",
+    "rootSpelling": "D",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Dm7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "D",
+      "F",
+      "A♭",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-madd9",
+    "url": "/chords/d-madd9",
+    "rootSpelling": "D",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Dmadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "D",
+      "F",
+      "A",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-maj7",
+    "url": "/chords/d-maj7",
+    "rootSpelling": "D",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Dmaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "D",
+      "F♯",
+      "A",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-major",
+    "url": "/chords/d-major",
+    "rootSpelling": "D",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "D",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "D",
+      "F♯",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-minor",
+    "url": "/chords/d-minor",
+    "rootSpelling": "D",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Dm",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "D",
+      "F",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-sus2",
+    "url": "/chords/d-sus2",
+    "rootSpelling": "D",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Dsus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "D",
+      "E",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "d-sus4",
+    "url": "/chords/d-sus4",
+    "rootSpelling": "D",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Dsus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "D",
+      "G",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-7",
+    "url": "/chords/e-7",
+    "rootSpelling": "E",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "E7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "E",
+      "G♯",
+      "B",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-add9",
+    "url": "/chords/e-add9",
+    "rootSpelling": "E",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Eadd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "E",
+      "G♯",
+      "B",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-augmented",
+    "url": "/chords/e-augmented",
+    "rootSpelling": "E",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Eaug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "E",
+      "G♯",
+      "B♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-diminished",
+    "url": "/chords/e-diminished",
+    "rootSpelling": "E",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Edim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "E",
+      "G",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-7",
+    "url": "/chords/e-flat-7",
+    "rootSpelling": "E♭",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "E♭7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G",
+      "B♭",
+      "D♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-add9",
+    "url": "/chords/e-flat-add9",
+    "rootSpelling": "E♭",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "E♭add9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G",
+      "B♭",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-augmented",
+    "url": "/chords/e-flat-augmented",
+    "rootSpelling": "E♭",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "E♭aug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-diminished",
+    "url": "/chords/e-flat-diminished",
+    "rootSpelling": "E♭",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "E♭dim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G♭",
+      "B𝄫"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-m7",
+    "url": "/chords/e-flat-m7",
+    "rootSpelling": "E♭",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "E♭m7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G♭",
+      "B♭",
+      "D♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-m7-flat5",
+    "url": "/chords/e-flat-m7-flat5",
+    "rootSpelling": "E♭",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "E♭m7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G♭",
+      "B𝄫",
+      "D♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-madd9",
+    "url": "/chords/e-flat-madd9",
+    "rootSpelling": "E♭",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "E♭madd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G♭",
+      "B♭",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-maj7",
+    "url": "/chords/e-flat-maj7",
+    "rootSpelling": "E♭",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "E♭maj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G",
+      "B♭",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-major",
+    "url": "/chords/e-flat-major",
+    "rootSpelling": "E♭",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "E♭",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-minor",
+    "url": "/chords/e-flat-minor",
+    "rootSpelling": "E♭",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "E♭m",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "G♭",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-sus2",
+    "url": "/chords/e-flat-sus2",
+    "rootSpelling": "E♭",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "E♭sus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "F",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-flat-sus4",
+    "url": "/chords/e-flat-sus4",
+    "rootSpelling": "E♭",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "E♭sus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "E♭",
+      "A♭",
+      "B♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-m7",
+    "url": "/chords/e-m7",
+    "rootSpelling": "E",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Em7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "E",
+      "G",
+      "B",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-m7-flat5",
+    "url": "/chords/e-m7-flat5",
+    "rootSpelling": "E",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Em7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "E",
+      "G",
+      "B♭",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-madd9",
+    "url": "/chords/e-madd9",
+    "rootSpelling": "E",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Emadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "E",
+      "G",
+      "B",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-maj7",
+    "url": "/chords/e-maj7",
+    "rootSpelling": "E",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Emaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "E",
+      "G♯",
+      "B",
+      "D♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-major",
+    "url": "/chords/e-major",
+    "rootSpelling": "E",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "E",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "E",
+      "G♯",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-minor",
+    "url": "/chords/e-minor",
+    "rootSpelling": "E",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Em",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "E",
+      "G",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-sus2",
+    "url": "/chords/e-sus2",
+    "rootSpelling": "E",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Esus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "E",
+      "F♯",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "e-sus4",
+    "url": "/chords/e-sus4",
+    "rootSpelling": "E",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Esus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "E",
+      "A",
+      "B"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-7",
+    "url": "/chords/f-7",
+    "rootSpelling": "F",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "F7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "F",
+      "A",
+      "C",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-add9",
+    "url": "/chords/f-add9",
+    "rootSpelling": "F",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Fadd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "F",
+      "A",
+      "C",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-augmented",
+    "url": "/chords/f-augmented",
+    "rootSpelling": "F",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Faug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "F",
+      "A",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-diminished",
+    "url": "/chords/f-diminished",
+    "rootSpelling": "F",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Fdim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "F",
+      "A♭",
+      "C♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-m7",
+    "url": "/chords/f-m7",
+    "rootSpelling": "F",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Fm7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "F",
+      "A♭",
+      "C",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-m7-flat5",
+    "url": "/chords/f-m7-flat5",
+    "rootSpelling": "F",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Fm7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "F",
+      "A♭",
+      "C♭",
+      "E♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-madd9",
+    "url": "/chords/f-madd9",
+    "rootSpelling": "F",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Fmadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "F",
+      "A♭",
+      "C",
+      "G"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-maj7",
+    "url": "/chords/f-maj7",
+    "rootSpelling": "F",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Fmaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "F",
+      "A",
+      "C",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-major",
+    "url": "/chords/f-major",
+    "rootSpelling": "F",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "F",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "F",
+      "A",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-minor",
+    "url": "/chords/f-minor",
+    "rootSpelling": "F",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Fm",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "F",
+      "A♭",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-7",
+    "url": "/chords/f-sharp-7",
+    "rootSpelling": "F♯",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "F♯7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A♯",
+      "C♯",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-add9",
+    "url": "/chords/f-sharp-add9",
+    "rootSpelling": "F♯",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "F♯add9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A♯",
+      "C♯",
+      "G♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-augmented",
+    "url": "/chords/f-sharp-augmented",
+    "rootSpelling": "F♯",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "F♯aug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A♯",
+      "C𝄪"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-diminished",
+    "url": "/chords/f-sharp-diminished",
+    "rootSpelling": "F♯",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "F♯dim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-m7",
+    "url": "/chords/f-sharp-m7",
+    "rootSpelling": "F♯",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "F♯m7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A",
+      "C♯",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-m7-flat5",
+    "url": "/chords/f-sharp-m7-flat5",
+    "rootSpelling": "F♯",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "F♯m7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A",
+      "C",
+      "E"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-madd9",
+    "url": "/chords/f-sharp-madd9",
+    "rootSpelling": "F♯",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "F♯madd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A",
+      "C♯",
+      "G♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-maj7",
+    "url": "/chords/f-sharp-maj7",
+    "rootSpelling": "F♯",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "F♯maj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A♯",
+      "C♯",
+      "E♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-major",
+    "url": "/chords/f-sharp-major",
+    "rootSpelling": "F♯",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "F♯",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A♯",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-minor",
+    "url": "/chords/f-sharp-minor",
+    "rootSpelling": "F♯",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "F♯m",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "A",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-sus2",
+    "url": "/chords/f-sharp-sus2",
+    "rootSpelling": "F♯",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "F♯sus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "G♯",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sharp-sus4",
+    "url": "/chords/f-sharp-sus4",
+    "rootSpelling": "F♯",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "F♯sus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "F♯",
+      "B",
+      "C♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sus2",
+    "url": "/chords/f-sus2",
+    "rootSpelling": "F",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Fsus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "F",
+      "G",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "f-sus4",
+    "url": "/chords/f-sus4",
+    "rootSpelling": "F",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Fsus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "F",
+      "B♭",
+      "C"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-7",
+    "url": "/chords/g-7",
+    "rootSpelling": "G",
+    "family": "seventh",
+    "subtype": "7",
+    "symbol": "G7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "G",
+      "B",
+      "D",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-add9",
+    "url": "/chords/g-add9",
+    "rootSpelling": "G",
+    "family": "add",
+    "subtype": "add9",
+    "symbol": "Gadd9",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "G",
+      "B",
+      "D",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-augmented",
+    "url": "/chords/g-augmented",
+    "rootSpelling": "G",
+    "family": "triad",
+    "subtype": "augmented",
+    "symbol": "Gaug",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "#5"
+    ],
+    "toneSpellings": [
+      "G",
+      "B",
+      "D♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-diminished",
+    "url": "/chords/g-diminished",
+    "rootSpelling": "G",
+    "family": "triad",
+    "subtype": "diminished",
+    "symbol": "Gdim",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5"
+    ],
+    "toneSpellings": [
+      "G",
+      "B♭",
+      "D♭"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-m7",
+    "url": "/chords/g-m7",
+    "rootSpelling": "G",
+    "family": "seventh",
+    "subtype": "m7",
+    "symbol": "Gm7",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "G",
+      "B♭",
+      "D",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-m7-flat5",
+    "url": "/chords/g-m7-flat5",
+    "rootSpelling": "G",
+    "family": "seventh",
+    "subtype": "m7-flat5",
+    "symbol": "Gm7b5",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "b5",
+      "b7"
+    ],
+    "toneSpellings": [
+      "G",
+      "B♭",
+      "D♭",
+      "F"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-madd9",
+    "url": "/chords/g-madd9",
+    "rootSpelling": "G",
+    "family": "add",
+    "subtype": "madd9",
+    "symbol": "Gmadd9",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5",
+      "9"
+    ],
+    "toneSpellings": [
+      "G",
+      "B♭",
+      "D",
+      "A"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-maj7",
+    "url": "/chords/g-maj7",
+    "rootSpelling": "G",
+    "family": "seventh",
+    "subtype": "maj7",
+    "symbol": "Gmaj7",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "toneSpellings": [
+      "G",
+      "B",
+      "D",
+      "F♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-major",
+    "url": "/chords/g-major",
+    "rootSpelling": "G",
+    "family": "triad",
+    "subtype": "major",
+    "symbol": "G",
+    "formulaDegrees": [
+      "1",
+      "3",
+      "5"
+    ],
+    "toneSpellings": [
+      "G",
+      "B",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-minor",
+    "url": "/chords/g-minor",
+    "rootSpelling": "G",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "Gm",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "G",
+      "B♭",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-sharp-minor",
+    "url": "/chords/g-sharp-minor",
+    "rootSpelling": "G♯",
+    "family": "triad",
+    "subtype": "minor",
+    "symbol": "G♯m",
+    "formulaDegrees": [
+      "1",
+      "b3",
+      "5"
+    ],
+    "toneSpellings": [
+      "G♯",
+      "B",
+      "D♯"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-sus2",
+    "url": "/chords/g-sus2",
+    "rootSpelling": "G",
+    "family": "triad",
+    "subtype": "sus2",
+    "symbol": "Gsus2",
+    "formulaDegrees": [
+      "1",
+      "2",
+      "5"
+    ],
+    "toneSpellings": [
+      "G",
+      "A",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  },
+  {
+    "id": "g-sus4",
+    "url": "/chords/g-sus4",
+    "rootSpelling": "G",
+    "family": "triad",
+    "subtype": "sus4",
+    "symbol": "Gsus4",
+    "formulaDegrees": [
+      "1",
+      "4",
+      "5"
+    ],
+    "toneSpellings": [
+      "G",
+      "C",
+      "D"
+    ],
+    "evidence": "reference_formula_reconstruction_not_current_runtime_payload",
+    "purpose": "semantic_regression_oracle_only_do_not_replace_page_data"
+  }
+]

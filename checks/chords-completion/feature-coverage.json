@@ -1,0 +1,175 @@
+{
+  "status": "PASS_WITH_NOTES",
+  "features": {
+    "F01": {
+      "id": "F01",
+      "priority": "P0",
+      "phase": "A",
+      "name": "基线与任务覆盖",
+      "work": "记录真实Git/route/sitemap，保留旧127快照与38任务，不重跑全部旧测试",
+      "acceptance": "158条报告路由与实际差异可解释",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F02": {
+      "id": "F02",
+      "priority": "P0",
+      "phase": "B",
+      "name": "Extended",
+      "work": "9种明确子类型，理论式＋实际排列，2套视图",
+      "acceptance": "108对象语义和输入输出一致",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F03": {
+      "id": "F03",
+      "priority": "P0",
+      "phase": "C",
+      "name": "Altered",
+      "work": "8种显式变音，generic alt返回范围解释",
+      "acceptance": "96对象，变音/省略/拼写负例通过",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F04": {
+      "id": "F04",
+      "priority": "P0",
+      "phase": "B",
+      "name": "原power缺口与常见结构补齐",
+      "work": "84对象同页嵌入已有关联入口",
+      "acceptance": "无额外详情URL，power允许2音类及根音重复",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F05": {
+      "id": "F05",
+      "priority": "P0",
+      "phase": "D",
+      "name": "Hub全库查阅",
+      "work": "默认25轻卡，所有supported对象可按根音与类型找到",
+      "acceptance": "可以从首页Chords找到C13/C7b9/Cdim7，而非只有目录",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F06": {
+      "id": "F06",
+      "priority": "P0",
+      "phase": "D",
+      "name": "Finder",
+      "work": "音符输入＋可选实际低音；精确、已定义省略、多解释分开",
+      "acceptance": "等音/对称/重复/斜杠/不支持输入不误导",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F07": {
+      "id": "F07",
+      "priority": "P1",
+      "phase": "D",
+      "name": "By-key",
+      "work": "24个大调与自然小调，三音＋七和弦表",
+      "acceptance": "336行真实结果；和弦root不同于key；小调变化明确",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F08": {
+      "id": "F08",
+      "priority": "P1",
+      "phase": "D",
+      "name": "Progressions",
+      "work": "8套进行×12调，loop/速度/当前音与共同音",
+      "acceptance": "96例；情绪仅主观标签；无真实演奏评分",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F09": {
+      "id": "F09",
+      "priority": "P0",
+      "phase": "E",
+      "name": "Guide学习路径",
+      "work": "从三和弦→转位→七和弦→省略→进行，真实例子",
+      "acceptance": "原beginner/transitions保留，新增知识不删除原正确正文",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F10": {
+      "id": "F10",
+      "priority": "P0",
+      "phase": "E",
+      "name": "练习判定",
+      "work": "formula_pitch_classes、example_midi_set、example_pitch_classes分别命名",
+      "acceptance": "无音区误判和省略语义混淆",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F11": {
+      "id": "F11",
+      "priority": "P0",
+      "phase": "F",
+      "name": "打印和资产",
+      "work": "保留旧145详情PDF/SVG；当前例子打印；专题材料生成",
+      "acceptance": "生成资产不冒充人工打印；文件/图/音/定义一致",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F12": {
+      "id": "F12",
+      "priority": "P0",
+      "phase": "F",
+      "name": "无障碍",
+      "work": "焦点、触控、错误/结果朗读、文字缩放、动效偏好",
+      "acceptance": "键盘可完整操作；手动读屏检查另记录",
+      "status": "AUTOMATED_PASS_MANUAL_SCREEN_READER_PENDING",
+      "owner": "Codex"
+    },
+    "F13": {
+      "id": "F13",
+      "priority": "P1",
+      "phase": "F",
+      "name": "SEO",
+      "work": "保持旧URL；原191词追溯；每类意图owner；rawHTML及内链",
+      "acceptance": "只2新增；不使用meta keywords；不制造参数URL",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F14": {
+      "id": "F14",
+      "priority": "P1",
+      "phase": "F",
+      "name": "产品信任",
+      "work": "来源/规则派生/作者/审阅状态与范围说明",
+      "acceptance": "无虚假教师/首创/全覆盖承诺",
+      "status": "ENGINEERING_PASS",
+      "owner": "Codex"
+    },
+    "F15": {
+      "id": "F15",
+      "priority": "P1",
+      "phase": "F",
+      "name": "事件与本地便利",
+      "work": "复用当前分析器，白名单事件；可选最近使用",
+      "acceptance": "无PII/重复埋点，无analytics权限照常可用",
+      "status": "PASS_LOCAL_EVENTS_RECENT_USE_OPTION_NOT_IMPLEMENTED",
+      "owner": "Codex"
+    },
+    "F16": {
+      "id": "F16",
+      "priority": "P0",
+      "phase": "G",
+      "name": "真实环境与发布",
+      "work": "同一构建人工抽检及部署权限",
+      "acceptance": "检查结果、未测项、版本不混",
+      "status": "[未核实] PENDING_OWNER_OR_REAL_TESTERS",
+      "owner": "owner_and_real_testers"
+    },
+    "F17": {
+      "id": "F17",
+      "priority": "P1",
+      "phase": "H",
+      "name": "真实使用验证",
+      "work": "目标用户任务观察与7/28/56天数据",
+      "acceptance": "不把曝光等于任务成功，不保证排名",
+      "status": "[未核实] PENDING_OWNER_OR_REAL_TESTERS",
+      "owner": "owner_and_real_testers"
+    }
+  }
+}

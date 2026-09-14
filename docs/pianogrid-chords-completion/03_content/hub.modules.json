@@ -1,0 +1,86 @@
+{
+  "url": "/chords",
+  "defaultCollection": "existing_practical25",
+  "searchCollection": "all_supported_registry",
+  "originalTaskIds": [
+    "P148",
+    "P168",
+    "P170",
+    "P171",
+    "P238",
+    "P247"
+  ],
+  "copy": {
+    "intro": "Find the notes and keyboard positions for chords in the supported collection. Start with familiar major and minor examples, or choose another family to compare formulas, hear a voicing and practise.",
+    "noMatch": "No match in the supported collection. Check the note selection or browse the chord families.",
+    "fullCoverageDisclaimer": "A reference collection, not every possible voicing or chord name."
+  },
+  "modules": [
+    {
+      "id": "major-minor",
+      "title": "Change the third, keep the other notes",
+      "goal": "Compare the same root without changing register at the same time.",
+      "body": [
+        "Compare A–C–E with A–C♯–E. Keep A and E fixed and listen to the change in the middle note. The symbol Am names the first collection; A names the major triad.",
+        "Use the comparison controls rather than assuming that a mood word defines either chord. A listener’s impression depends on the musical passage as well as the notes."
+      ],
+      "demo": {
+        "left": "Am",
+        "right": "A"
+      },
+      "next": "/chords/a-minor",
+      "sourceIds": [
+        "OMT-SYMBOLS"
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Three different kinds of numbers",
+      "goal": "Keep fingers, octaves and chord degrees separate.",
+      "body": [
+        "In C4, the number identifies an octave. In a formula such as 1–3–5, numbers describe intervals from the chord root. In a hand diagram, finger numbers identify fingers.",
+        "Changing a voicing does not create a universal new fingering rule. Use the specific verified fingering attached to an example when one is supplied; otherwise read the notes and do not treat a blank fingering field as permission to invent one."
+      ],
+      "next": "/keyboard-notes/finger-numbers",
+      "sourceIds": [
+        "PLAN"
+      ]
+    },
+    {
+      "id": "jazz",
+      "title": "Hear a seventh-chord progression in context",
+      "goal": "Connect the jazz reference to an actual sequence.",
+      "body": [
+        "Begin with Dm7–G7–Cmaj7 in C major. Compare it with the named Dm9–G13–Cmaj9 color-tone example. Use the displayed formulas and voicing notes to see exactly what changed.",
+        "The jazz section is an introduction using particular examples, not an exhaustive style dictionary. Check any altered or omitted note before assuming it comes directly from the selected key."
+      ],
+      "next": "/chord-progressions#color-ii-v-i",
+      "sourceIds": [
+        "OMT-JAZZ-VOICINGS"
+      ]
+    },
+    {
+      "id": "power",
+      "title": "A root and fifth without a third",
+      "goal": "Use the original power-chord task, with a real output.",
+      "body": [
+        "In the power-fifth reference, C5 contains C and G. Here “5” is part of a chord symbol; it does not mean the single pitch C5. The optional octave-doubled example plays C3–G3–C4.",
+        "Because the third is absent, do not label this pair as major or minor. Compare it with the complete C major and C minor examples to hear the added third."
+      ],
+      "next": "/chords#power",
+      "sourceIds": [
+        "MUSICCA-CHORDS",
+        "PC-ROOT-C"
+      ]
+    }
+  ],
+  "compatibilityAnchors": [
+    "minor",
+    "major",
+    "power",
+    "seventh",
+    "jazz",
+    "major-vs-minor",
+    "how-to-read"
+  ]
+}
