@@ -5,6 +5,8 @@ Foundation、00–08 与首轮 17 条路由已完成；08 独立结论为 `PASS_
 
 ## Read first
 
+页面规划、内容、TDH、导航及 SEO 修改还必须读取 `docs/seo/TDH-RULES.md`。这是 PianoGrid 专属规则；不要把本站路由、关键词或代码入口推广到其他项目。
+
 1. docs/design/design-system.md
 2. docs/design/inspection.md
 3. docs/design/tokens.json

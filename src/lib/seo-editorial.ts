@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 // Future Sheet Music copy lives in the plan until its destination is available.
 type Copy = { title: string; description: string; h1?: string };
 export const SEO_COPY: Record<string, Copy> = {
-  '/': { title: 'Learn Piano: Chords, Scales & Practice Tools | PianoGrid', description: 'Find piano notes, explore chords and scales, choose songs, and follow beginner guides—with blank staff paper and practical tools to help you play.' },
+  '/': { title: 'Learn Piano: Chords, Scales & Practice Tools | PianoGrid', description: 'Explore piano notes, chords, scales, songs, and sheet music. Start playing with beginner guides, blank staff paper, and practical tools on PianoGrid.' },
   '/keyboard-notes': { title: 'Piano Keys and Notes: Names & Keyboard Layout', h1: 'Piano Keys and Notes', description: 'Find piano key names, locate notes by octave, and explore 88-key and 61-key layouts. Start with middle C, then check the black and white keys.' },
   '/keyboard-notes/labeled': { title: 'Labeled Piano Keys: 88-Key & 61-Key Layouts', h1: 'Labeled Piano Keys', description: 'See letter names and octave labels on 88-key and 61-key piano layouts, then use the guide to label the keys on your own keyboard.' },
   '/keyboard-notes/chart': { title: 'Piano Notes Chart: Staff Notes to Keyboard', h1: 'Piano Notes Chart', description: 'Match treble and bass clef notes to piano keys. Locate middle C and compare note names and octaves across the supported keyboard ranges.' },

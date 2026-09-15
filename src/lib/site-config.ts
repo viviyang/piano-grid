@@ -4,7 +4,7 @@ export const SITE_ORIGIN = "https://pianogrid.com";
 
 export const HOME_TITLE = "Learn Piano: Chords, Scales & Practice Tools | PianoGrid";
 export const HOME_DESCRIPTION =
-  "Find piano notes, explore chords and scales, choose songs, and follow beginner guides—with blank staff paper and practical tools to help you play.";
+  "Explore piano notes, chords, scales, songs, and sheet music. Start playing with beginner guides, blank staff paper, and practical tools on PianoGrid.";
 export const HOME_OPEN_GRAPH_TITLE = HOME_TITLE;
 export const HOME_OPEN_GRAPH_DESCRIPTION =
   HOME_DESCRIPTION;
