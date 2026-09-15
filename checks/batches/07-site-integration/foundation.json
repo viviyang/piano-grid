@@ -1,9 +1,9 @@
 {
   "stage": "07-site-integration",
-  "executed_at": "2026-09-12T14:57:24.621Z",
+  "executed_at": "2026-09-15T05:50:21.844Z",
   "runtime": "v24.14.1",
-  "passed": 565,
-  "failed": 0,
+  "passed": 563,
+  "failed": 2,
   "warnings": [
     "source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。"
   ],
@@ -2779,18 +2779,18 @@
       "detail": ""
     },
     {
-      "name": "Only one hundred seventy-one authorized routes",
+      "name": "Only explicitly authorized route entry files",
       "passed": true,
       "detail": ""
     },
     {
       "name": "Only authorized layout/page/component TSX",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Only necessary authorized chord components",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -2806,27 +2806,27 @@
     {
       "name": "Source unchanged: docs/product/url-plan.final.json",
       "passed": true,
-      "detail": ""
+      "detail": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
     },
     {
       "name": "Source unchanged: docs/content/chords/content-pack.md",
       "passed": true,
-      "detail": ""
+      "detail": "43236f6fc4f8668b5edbeae5437595107c77b951f4ccaa43df3b0ae3aaf09c33"
     },
     {
       "name": "Source unchanged: docs/content/chords/page-content.json",
       "passed": true,
-      "detail": ""
+      "detail": "e77879a06ceccd66f0a8328961a0222651ba906568adc7c5cb6216b17dd15cc5"
     },
     {
       "name": "Source unchanged: docs/design/reference/final-a-minor.html",
       "passed": true,
-      "detail": ""
+      "detail": "ba72fe547c261819e80a32c4504aabdde694ed6157a9fa6e6f26800c2db6a810 (LF-normalized 3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2)"
     },
     {
       "name": "Source unchanged: docs/design/reference/final-prototype.css",
       "passed": true,
-      "detail": ""
+      "detail": "91a3714d25977682b45a047181632228f94772772934c8ca9ebd06b16ac421b9"
     },
     {
       "name": "Planning Markdown matches content baseline hash",

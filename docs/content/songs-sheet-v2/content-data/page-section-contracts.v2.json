@@ -1,0 +1,829 @@
+[
+  {
+    "url": "/songs",
+    "original_block_ids": [
+      "start",
+      "section-0",
+      "section-1",
+      "section-2",
+      "section-3",
+      "section-4",
+      "section-5",
+      "resource-use"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P002",
+        "representative": "piano songs",
+        "section": null,
+        "synonyms": [
+          "songs to play on piano",
+          "songs to play on the piano",
+          "song to play on the piano",
+          "recommended piano songs",
+          "song to play on piano",
+          "songs to learn on piano",
+          "best songs for piano",
+          "best songs to play on piano",
+          "best songs to learn on piano",
+          "good piano song",
+          "piano songs to learn",
+          "good songs on piano",
+          "good songs to learn on piano",
+          "piano songs to play",
+          "good piano songs to play",
+          "good songs to play on the piano",
+          "names of piano pieces",
+          "good piano songs to learn",
+          "good songs to play on piano",
+          "songs for piano",
+          "songs on the piano",
+          "piano songs list",
+          "piano songs piano"
+        ],
+        "other_queries": [
+          "famous piano songs",
+          "good piano songs",
+          "popular piano songs",
+          "great piano songs",
+          "best songs on piano",
+          "famous piano pieces",
+          "famous pieces of piano music",
+          "piano music famous songs",
+          "popular piano pieces",
+          "piano songs popular",
+          "top piano songs",
+          "well known piano songs",
+          "most famous piano songs",
+          "most popular piano songs",
+          "piano most popular songs",
+          "popular piano compositions",
+          "popular piano songs to play",
+          "famous piano compositions",
+          "famous piano tunes",
+          "iconic piano pieces",
+          "known piano songs",
+          "most famous piano pieces",
+          "piano famous music",
+          "popular songs on piano",
+          "piano songs everyone knows",
+          "what are some popular piano songs?"
+        ],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1308:G1308",
+        "delivery_method": "选曲列表",
+        "required_output": "真实曲目、筛选、版本信息和可用资源入口。",
+        "first_release_scope": "中心主任务",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P009",
+        "representative": "sad piano songs",
+        "section": "sad",
+        "synonyms": [
+          "piano sad song",
+          "saddest piano songs"
+        ],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1367:G1367",
+        "delivery_method": "情绪分区",
+        "required_output": "sad 分区有实际曲目和适合演奏的依据；不能只给纯聆听歌单。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P014",
+        "representative": "cool songs to play on piano",
+        "section": "fun",
+        "synonyms": [
+          "cool piano songs",
+          "cool songs to learn on piano",
+          "fun piano songs",
+          "fun songs to play on piano",
+          "awesome songs on piano",
+          "awesome songs on the piano",
+          "interesting piano songs",
+          "awesome piano songs to play",
+          "awesome songs to play on the piano"
+        ],
+        "other_queries": [
+          "fun easy songs to play on piano"
+        ],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1395:G1395",
+        "delivery_method": "选曲分区",
+        "required_output": "明确 cool/fun 的推荐依据，不作搜索量或用户偏好的客观排名承诺。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P018",
+        "representative": "beautiful piano songs",
+        "section": "beautiful",
+        "synonyms": [
+          "pretty piano songs",
+          "most beautiful piano pieces",
+          "beautiful songs on the piano"
+        ],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1418:G1418",
+        "delivery_method": "选曲分区",
+        "required_output": "beautiful 的主观选择标准和具体曲目，不能只更换形容词。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P022",
+        "representative": "intermediate piano songs",
+        "section": "intermediate",
+        "synonyms": [
+          "moderate piano songs"
+        ],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1477:G1477",
+        "delivery_method": "水平分区",
+        "required_output": "中级曲目对应具体版本和难点，不用泛 easy 列表代替。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P041",
+        "representative": "happy piano music",
+        "section": "happy",
+        "synonyms": [
+          "happy piano songs"
+        ],
+        "other_queries": [],
+        "source": "关键词策略构建器数据汇总.md｜L63｜piano chord chart > easy piano songs",
+        "delivery_method": "情绪分区",
+        "required_output": "happy 条件有对应曲目与选择说明。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P042",
+        "representative": "piano pieces types",
+        "section": "types",
+        "synonyms": [],
+        "other_queries": [
+          "types of piano compositions"
+        ],
+        "source": "关键词策略构建器数据汇总.md｜L427｜piano scales > piano songs by genre and level",
+        "delivery_method": "内容章节",
+        "required_output": "介绍作品类型并连接可弹的实际例子，不只做一个标签。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P043",
+        "representative": "songs to sing and play piano",
+        "section": "sing-and-play",
+        "synonyms": [],
+        "other_queries": [],
+        "source": "关键词策略构建器数据汇总.md｜L60｜piano chord chart > easy piano songs",
+        "delivery_method": "演奏方式分区",
+        "required_output": "弹唱条件有可用的伴奏/lead sheet/教程入口，不拿独奏谱直接代替。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [
+      {
+        "id": "reflective",
+        "resource_ids": [
+          "cr-18-1"
+        ]
+      },
+      {
+        "id": "happy",
+        "resource_ids": [
+          "cr-17-3"
+        ]
+      },
+      {
+        "id": "fun",
+        "resource_ids": [
+          "cr-16-1"
+        ]
+      },
+      {
+        "id": "beautiful",
+        "resource_ids": [
+          "cr-18-1"
+        ]
+      },
+      {
+        "id": "intermediate",
+        "resource_ids": [
+          "cr-18-1",
+          "cr-14-1"
+        ]
+      },
+      {
+        "id": "soundtrack",
+        "resource_ids": [
+          "cr-04-1"
+        ]
+      },
+      {
+        "id": "sing-and-play",
+        "resource_ids": [
+          "cr-19-1"
+        ]
+      }
+    ],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1songs/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-ext-0a05b7954f5256",
+      "learn-arr-ext-c3a78b0c5cb213",
+      "learn-arr-ext-a60b8d92c5a325"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "full_start_steps",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/songs/easy",
+    "original_block_ids": [
+      "start",
+      "kids",
+      "c-major",
+      "adults",
+      "beautiful",
+      "start-check"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P001",
+        "representative": "easy piano songs",
+        "section": null,
+        "synonyms": [
+          "easiest songs on piano for beginners",
+          "piano easy beginner songs",
+          "piano for beginners easy songs",
+          "simple tunes on the piano",
+          "easy piano songs for beginners",
+          "easy piano tunes to play",
+          "easy songs to play on piano",
+          "piano simple songs to play",
+          "beginner piano songs",
+          "piano songs for beginners",
+          "easiest songs for piano",
+          "simple piano songs",
+          "basic piano songs",
+          "easiest piano songs",
+          "easy piano music",
+          "piano songs easy",
+          "easy tunes to play on piano",
+          "piano songs beginners easy",
+          "basic piano song",
+          "basic songs to learn on piano",
+          "easy songs to learn on piano",
+          "easy songs to play on the piano",
+          "starter piano songs",
+          "easy beginner piano songs",
+          "easy piano song",
+          "easy songs on piano",
+          "piano easy songs",
+          "song for beginner piano",
+          "basic piano songs to learn",
+          "easy piano tunes to learn",
+          "simple piano music",
+          "easy keyboard songs",
+          "easy piano songs to play",
+          "easy piano tunes",
+          "easy song to play on piano",
+          "easy songs on the piano",
+          "beginner songs for piano",
+          "easiest song to play on piano",
+          "easiest songs to learn on piano",
+          "easy piano songs to learn",
+          "easy songs for beginners on the piano",
+          "easy starter piano songs",
+          "easy to play piano songs",
+          "piano basic songs",
+          "piano pieces for beginners",
+          "piano song easy",
+          "simple piano songs to play",
+          "easy songs on the piano to learn",
+          "easy songs to learn on the piano",
+          "piano music easy to play",
+          "simple piano songs to learn",
+          "simple songs on the piano",
+          "beginner songs on piano",
+          "easy music to play on piano",
+          "easy piano pieces",
+          "good beginner piano songs",
+          "simple piano songs for beginners",
+          "beginner pieces for piano",
+          "best beginner piano songs",
+          "easiest piano songs to play",
+          "easiest songs to play on piano",
+          "easy music to play on the piano",
+          "easy piano compositions",
+          "easy piano music for beginners",
+          "easy song on piano",
+          "easy to learn piano music",
+          "good songs on piano for beginners",
+          "keyboard songs for beginners",
+          "simple piano music for beginners",
+          "simple piano pieces",
+          "simple songs for beginners on piano",
+          "simple songs on piano",
+          "simplified piano pieces",
+          "very easy piano songs",
+          "piano beginner songs",
+          "super easy piano songs"
+        ],
+        "other_queries": [
+          "piano music for beginners",
+          "piano music for beginner",
+          "30 easy piano songs",
+          "10 easy piano songs",
+          "can you give me 30 easy piano songs?",
+          "top 50 easy piano songs",
+          "what are some easy piano songs for beginners?",
+          "what is the easiest song on piano for beginners?",
+          "what is the easiest song to play on piano?",
+          "what songs should i play on piano as a beginner?"
+        ],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1126:G1126",
+        "delivery_method": "易弹选曲列表",
+        "required_output": "明确适用水平、前置能力、具体版本和可开始的资源。",
+        "first_release_scope": "中心主任务",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P006",
+        "representative": "easy piano songs for kids",
+        "section": "kids",
+        "synonyms": [
+          "children's piano songs",
+          "easy children's songs for piano"
+        ],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1345:G1345",
+        "delivery_method": "人群分区",
+        "required_output": "儿童条件对应实际曲目与适用说明；不是与成人词视为同义。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P036",
+        "representative": "c major scale piano songs",
+        "section": "c-major",
+        "synonyms": [],
+        "other_queries": [],
+        "source": "关键词策略构建器数据汇总.md｜L452｜piano scales > easy piano songs",
+        "delivery_method": "调性筛选",
+        "required_output": "C 大调条件依据具体版本的调性核对，不把调性直接当作难度评级。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P037",
+        "representative": "easy beautiful piano songs",
+        "section": "beautiful",
+        "synonyms": [],
+        "other_queries": [
+          "beautiful piano pieces for beginners"
+        ],
+        "source": "关键词策略构建器数据汇总.md｜L59｜piano chord chart > easy piano songs",
+        "delivery_method": "选曲分区",
+        "required_output": "同时满足易弹和优美选择条件；给曲目和理由。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P039",
+        "representative": "easy piano songs for adults",
+        "section": "adults",
+        "synonyms": [],
+        "other_queries": [],
+        "source": "Google 第1批 图05; Google 第1批 图07; Google 第1批 图08",
+        "delivery_method": "人群分区",
+        "required_output": "成人条件对应曲目与选择说明；不自动套儿童教材。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P040",
+        "representative": "easy piano songs to impress your friends",
+        "section": "impress",
+        "synonyms": [],
+        "other_queries": [
+          "easy piano songs that sound hard",
+          "piano songs that sound hard but are easy"
+        ],
+        "source": "关键词策略构建器数据汇总.md｜L448｜piano scales > easy piano songs; Google 第1批 图05",
+        "delivery_method": "场景分区",
+        "required_output": "演出效果/看起来难的查询以具体选择理由承接，不承诺学习结果。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": {
+      "kids": [
+        "ce-hot-cross-buns",
+        "ce-twinkle-early",
+        "ce-birthday-early"
+      ],
+      "c-major": [
+        "ce-twinkle-early",
+        "ce-jingle-early",
+        "ce-birthday-early"
+      ],
+      "beautiful": [
+        "ce-twinkle-early",
+        "ce-twinkle-elementary"
+      ],
+      "adults": [
+        "ce-adult-rainbow",
+        "ce-adult-nadia"
+      ],
+      "impress": [
+        "ce-birthday-early",
+        "ce-jingle-early"
+      ]
+    },
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1songs~1easy/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-pg-step-and-hold-v1",
+      "learn-arr-pg-left-hand-answer-v1",
+      "learn-arr-pg-one-hand-at-a-time-v1",
+      "learn-arr-ext-0a05b7954f5256",
+      "learn-arr-ext-c3a78b0c5cb213",
+      "learn-arr-ext-a60b8d92c5a325"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "full_start_steps",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/sheet-music",
+    "original_block_ids": [
+      "b0",
+      "b1",
+      "b2"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P047",
+        "representative": "piano music sheet",
+        "section": null,
+        "synonyms": [
+          "piano sheet music",
+          "piano songs sheet music",
+          "sheet music piano sheet music"
+        ],
+        "other_queries": [
+          "piano sheet music pdf"
+        ],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1044:G1044",
+        "delivery_method": "独立页首要任务",
+        "required_output": "版本、难度、免费/付费获取方式；中级、Gospel、Worship分区；真实可用谱源",
+        "first_release_scope": "按页面准备顺序验收",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P048",
+        "representative": "free piano sheet music songs",
+        "section": "free",
+        "synonyms": [
+          "free printable piano music",
+          "piano sheet for free",
+          "free sheet piano"
+        ],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1045:G1045",
+        "delivery_method": "免费资源筛选",
+        "required_output": "实际存在的可免费获取版本，不以付费外链冒充。",
+        "first_release_scope": "资源就绪后开放",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P060",
+        "representative": "easy contemporary gospel sheet music for the piano",
+        "section": "gospel",
+        "synonyms": [],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1160:G1160",
+        "delivery_method": "Gospel资源分区",
+        "required_output": "有对应作品和具体可用版本。",
+        "first_release_scope": "资源就绪后开放",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P063",
+        "representative": "free easy contemporary praise and worship sheet music for piano",
+        "section": "worship",
+        "synonyms": [],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1176:G1176",
+        "delivery_method": "Worship资源分区",
+        "required_output": "满足 easy/free 条件的真实版本，不能用普通谱库替代。",
+        "first_release_scope": "资源就绪后开放",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P070",
+        "representative": "medium piano sheet music",
+        "section": "intermediate",
+        "synonyms": [
+          "intermediate piano sheet music"
+        ],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1074:G1074",
+        "delivery_method": "中级资源分区",
+        "required_output": "具体版本有难度依据和真实获取方式。",
+        "first_release_scope": "资源就绪后开放",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [
+      "free",
+      "easy",
+      "intermediate",
+      "worship",
+      "hymns",
+      "gospel"
+    ],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1sheet-music/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-pg-step-and-hold-v1",
+      "learn-arr-pg-left-hand-answer-v1",
+      "learn-arr-pg-one-hand-at-a-time-v1",
+      "learn-arr-ext-0a05b7954f5256",
+      "learn-arr-ext-c3a78b0c5cb213",
+      "learn-arr-ext-a60b8d92c5a325"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "summary_and_same_arrangement_backlink",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/sheet-music/easy",
+    "original_block_ids": [
+      "b0",
+      "b1"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P044",
+        "representative": "easy piano sheet music",
+        "section": null,
+        "synonyms": [
+          "easy piano sheet music for beginners",
+          "easy piano scores",
+          "easy piano sheet",
+          "easy piano songs sheet music",
+          "easy sheet music for piano",
+          "piano easy sheet music",
+          "easy keyboard music sheet",
+          "easy piano songs sheet",
+          "sheet music for piano easy",
+          "simple piano songs sheet music",
+          "piano sheet music easy",
+          "simple sheet music for beginners",
+          "easy keyboard sheet music",
+          "easy sheet music for beginners",
+          "simple piano sheet music"
+        ],
+        "other_queries": [
+          "easy piano sheet free",
+          "piano sheets free easy",
+          "simple piano sheet music free",
+          "easy piano sheet music free",
+          "easy free piano sheet music",
+          "easy piano sheet music pdf",
+          "easy piano sheet music pdf free",
+          "what is the easiest sheet music for piano?"
+        ],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1127:G1127",
+        "delivery_method": "独立页首要任务",
+        "required_output": "具体版本预览与难度说明；成人/儿童筛选；可打印或正规获取方式",
+        "first_release_scope": "按页面准备顺序验收",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P110",
+        "representative": "easy piano sheet music for adults",
+        "section": "adults",
+        "synonyms": [],
+        "other_queries": [
+          "beginner piano sheet music for adults",
+          "beginner piano sheet music for adults free",
+          "free beginner piano sheet music for adults pdf"
+        ],
+        "source": "Google 第1批 图09; Google 第1批 图10; Google 第1批 图11; Google 第1批 图12",
+        "delivery_method": "同页明确章节／选项",
+        "required_output": "成人初学者可用的钢琴曲谱；必须在该页提供实际结果，不只增加一个关键词。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P111",
+        "representative": "easy piano sheet music for kids",
+        "section": "kids",
+        "synonyms": [],
+        "other_queries": [
+          "beginner piano sheet music for kids"
+        ],
+        "source": "Google 第1批 图09; Google 第1批 图10; Google 第1批 图19",
+        "delivery_method": "同页明确章节／选项",
+        "required_output": "儿童初学钢琴曲谱；必须在该页提供实际结果，不只增加一个关键词。",
+        "first_release_scope": "后续同页补齐",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [
+      "children",
+      "adults"
+    ],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1sheet-music~1easy/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-pg-step-and-hold-v1",
+      "learn-arr-pg-left-hand-answer-v1",
+      "learn-arr-pg-one-hand-at-a-time-v1",
+      "learn-arr-ext-0a05b7954f5256",
+      "learn-arr-ext-c3a78b0c5cb213",
+      "learn-arr-ext-a60b8d92c5a325"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "summary_and_same_arrangement_backlink",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/sheet-music/beginner",
+    "original_block_ids": [
+      "b0",
+      "b1"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P045",
+        "representative": "beginner piano sheet music",
+        "section": null,
+        "synonyms": [
+          "piano sheet music for beginners",
+          "beginner piano songs sheet music",
+          "keyboard sheet music for beginners",
+          "basic piano sheet music",
+          "easy starter piano sheet music",
+          "piano sheets for beginners",
+          "easy beginner piano sheet music",
+          "piano sheet for beginners",
+          "beginning piano sheet music",
+          "beginner piano sheets",
+          "beginner sheet music piano",
+          "piano beginner sheet music"
+        ],
+        "other_queries": [
+          "free music piano sheets for beginners",
+          "free piano sheet music for beginners",
+          "keyboard sheet music free beginners",
+          "easy keyboard sheet music free",
+          "beginner piano music sheets free",
+          "keyboard sheet music for beginners free",
+          "free beginner piano sheet music",
+          "free sheet music for piano beginners",
+          "piano sheet music free for beginners",
+          "free piano sheets for beginners",
+          "piano sheet music for beginners free",
+          "beginner piano sheet music for beginners pdf",
+          "beginner piano sheet music free",
+          "beginner piano sheet music pdf free",
+          "what are some good beginner piano sheet music songs?"
+        ],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1128:G1128",
+        "delivery_method": "独立页首要任务",
+        "required_output": "基础能力说明；曲谱资源；有指法编号的版本筛选；免费/打印方式",
+        "first_release_scope": "按页面准备顺序验收",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      },
+      {
+        "id": "P106",
+        "representative": "beginner piano sheet music with finger numbers",
+        "section": "finger-numbers",
+        "synonyms": [],
+        "other_queries": [
+          "beginner piano sheet music with finger numbers pdf"
+        ],
+        "source": "Google 第1批 图14; Google 第1批 图15; Google 第1批 图16; Google 第1批 图17",
+        "delivery_method": "指法版本筛选",
+        "required_output": "资源本身有核对后的指法编号；不是全站开关即可满足。",
+        "first_release_scope": "资源就绪后开放",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [
+      "verified-finger-guides",
+      "first-lessons"
+    ],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1sheet-music~1beginner/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-pg-step-and-hold-v1",
+      "learn-arr-pg-left-hand-answer-v1",
+      "learn-arr-pg-one-hand-at-a-time-v1",
+      "learn-arr-ext-0a05b7954f5256",
+      "learn-arr-ext-c3a78b0c5cb213",
+      "learn-arr-ext-a60b8d92c5a325"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "summary_and_same_arrangement_backlink",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/sheet-music/hot-cross-buns",
+    "original_block_ids": [
+      "b0",
+      "b1"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P091",
+        "representative": "hot cross buns piano keys",
+        "section": null,
+        "synonyms": [],
+        "other_queries": [],
+        "source": "piano_keyword_research_combined.xlsx｜关键词数据!A830:G830",
+        "delivery_method": "独立页首要任务",
+        "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+        "first_release_scope": "按页面准备顺序验收",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1sheet-music~1hot-cross-buns/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-ext-0a05b7954f5256"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "summary_and_same_arrangement_backlink",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/sheet-music/twinkle-twinkle-little-star",
+    "original_block_ids": [
+      "b0",
+      "b1"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P116",
+        "representative": "twinkle twinkle little star piano sheet music",
+        "section": null,
+        "synonyms": [],
+        "other_queries": [],
+        "source": "关键词策略构建器数据汇总.md｜L37｜piano chord chart > easy piano sheet music; 关键词策略构建器数据汇总.md｜L252｜beginner piano sheet music > piano sheet music with letter notes; 关键词策略构建器数据汇总.md｜L407｜piano scales > reading piano sheet music",
+        "delivery_method": "独立页首要任务",
+        "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+        "first_release_scope": "按页面准备顺序验收",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1sheet-music~1twinkle-twinkle-little-star/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-ext-c3a78b0c5cb213"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "summary_and_same_arrangement_backlink",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  },
+  {
+    "url": "/sheet-music/ode-to-joy",
+    "original_block_ids": [
+      "b0",
+      "b1"
+    ],
+    "required_source_groups": [
+      {
+        "id": "P114",
+        "representative": "ode to joy easy piano sheet music",
+        "section": null,
+        "synonyms": [],
+        "other_queries": [],
+        "source": "Google 第1批 图13",
+        "delivery_method": "独立页首要任务",
+        "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+        "first_release_scope": "按页面准备顺序验收",
+        "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+      }
+    ],
+    "original_sections": [],
+    "original_resources_ref": "evidence/current/pages.CD.readonly.json#/pages/~1sheet-music~1ode-to-joy/data",
+    "additive_patch_ref": "content-data/english/pages.patch.json",
+    "new_learning_cards": [
+      "learn-arr-ext-a60b8d92c5a325"
+    ],
+    "public_gate": "Required-now main tasks have truthful concrete results; activated sub-tasks satisfy their evidence; deferred source groups remain tracked; every exposed action independently passes asset/rights gate.",
+    "learning_render_mode": "summary_and_same_arrangement_backlink",
+    "scope_rule": "Respect original first_release_scope per task. Preserve deferred tasks without claiming covered; do not force every future optional section into first release or silently drop a required main task."
+  }
+]

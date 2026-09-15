@@ -1,0 +1,37 @@
+{
+  "access_labels": {
+    "LOCAL_FREE": "Free on PianoGrid",
+    "EXTERNAL_FREE": "External free resource",
+    "EXTERNAL_FREE_FORM_OR_ACCOUNT": "External free — form or account required",
+    "EXTERNAL_PAID_OR_MEMBERSHIP": "External paid or membership resource",
+    "EXTERNAL_PAID": "External paid resource",
+    "UNKNOWN": "Access not verified"
+  },
+  "buttons": {
+    "play": "Play demonstration",
+    "stop": "Stop",
+    "reset": "Reset",
+    "share": "Share this version",
+    "copy": "Copy link",
+    "print_a4": "Print A4 score",
+    "print_letter": "Print US Letter score",
+    "open_provider": "Open provider’s page",
+    "read_notes": "Read the note-by-note score"
+  },
+  "player_notice": "This is a sound demonstration. It does not listen to or assess your playing.",
+  "synth_notice": "Synthesized tones, not a recorded piano performance.",
+  "states": {
+    "audio_unavailable": "Audio is unavailable for this version. You can still read the score when it is available.",
+    "audio_permission": "Tap Play to enable sound. Check your device volume if you cannot hear it.",
+    "audio_error": "The sound could not start. Try again, or use the written score.",
+    "score_error": "The preview could not load. Try the available PDF or open the provider’s page.",
+    "pdf_error": "The score file is unavailable. Please try again later.",
+    "not_verified": "Not verified",
+    "no_matches": "No verified versions match these choices. Clear a filter to see more options.",
+    "share_success": "Link copied. It opens the same version and supported section.",
+    "share_unavailable": "Sharing is unavailable here. Copy the page link instead.",
+    "invalid_share": "That saved practice selection is unavailable. Choose a version below.",
+    "external_notice": "This resource opens on another website. Its access and licence conditions apply.",
+    "original_notice": "AI-generated original exercise. Not a named-song arrangement. Not teacher-reviewed."
+  }
+}

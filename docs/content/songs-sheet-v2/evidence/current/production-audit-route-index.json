@@ -1,0 +1,1166 @@
+{
+  "checked_at": "2026-09-14T03:25:26.410Z",
+  "reported_overall": "PASS_WITH_NOTES",
+  "source_sha256": "25fa166721bcedb0a4829c77759f741cdaf4047bc62235e279d00451cb15ad94",
+  "note": "Historical HTTP audit, not current Git tree inspection or proof of absent routes",
+  "urls": [
+    "https://pianogrid.com/",
+    "https://pianogrid.com/tools",
+    "https://pianogrid.com/chords",
+    "https://pianogrid.com/chords/major",
+    "https://pianogrid.com/chords/minor",
+    "https://pianogrid.com/chords/diminished",
+    "https://pianogrid.com/chords/augmented",
+    "https://pianogrid.com/chords/suspended",
+    "https://pianogrid.com/chords/seventh",
+    "https://pianogrid.com/chords/add",
+    "https://pianogrid.com/chords/extended",
+    "https://pianogrid.com/chords/altered",
+    "https://pianogrid.com/chords/c-add9",
+    "https://pianogrid.com/chords/d-flat-add9",
+    "https://pianogrid.com/chords/d-add9",
+    "https://pianogrid.com/chords/e-flat-add9",
+    "https://pianogrid.com/chords/e-add9",
+    "https://pianogrid.com/chords/f-add9",
+    "https://pianogrid.com/chords/f-sharp-add9",
+    "https://pianogrid.com/chords/g-add9",
+    "https://pianogrid.com/chords/a-flat-add9",
+    "https://pianogrid.com/chords/a-add9",
+    "https://pianogrid.com/chords/b-flat-add9",
+    "https://pianogrid.com/chords/b-add9",
+    "https://pianogrid.com/chords/c-madd9",
+    "https://pianogrid.com/chords/d-flat-madd9",
+    "https://pianogrid.com/chords/d-madd9",
+    "https://pianogrid.com/chords/e-flat-madd9",
+    "https://pianogrid.com/chords/e-madd9",
+    "https://pianogrid.com/chords/f-madd9",
+    "https://pianogrid.com/chords/f-sharp-madd9",
+    "https://pianogrid.com/chords/g-madd9",
+    "https://pianogrid.com/chords/a-flat-madd9",
+    "https://pianogrid.com/chords/a-madd9",
+    "https://pianogrid.com/chords/b-flat-madd9",
+    "https://pianogrid.com/chords/b-madd9",
+    "https://pianogrid.com/chords/a-7",
+    "https://pianogrid.com/chords/a-flat-7",
+    "https://pianogrid.com/chords/a-flat-m7",
+    "https://pianogrid.com/chords/a-flat-m7-flat5",
+    "https://pianogrid.com/chords/a-flat-maj7",
+    "https://pianogrid.com/chords/a-m7",
+    "https://pianogrid.com/chords/a-m7-flat5",
+    "https://pianogrid.com/chords/a-maj7",
+    "https://pianogrid.com/chords/b-7",
+    "https://pianogrid.com/chords/b-flat-7",
+    "https://pianogrid.com/chords/b-flat-m7",
+    "https://pianogrid.com/chords/b-flat-m7-flat5",
+    "https://pianogrid.com/chords/b-flat-maj7",
+    "https://pianogrid.com/chords/b-m7",
+    "https://pianogrid.com/chords/b-m7-flat5",
+    "https://pianogrid.com/chords/b-maj7",
+    "https://pianogrid.com/chords/c-7",
+    "https://pianogrid.com/chords/c-m7",
+    "https://pianogrid.com/chords/c-m7-flat5",
+    "https://pianogrid.com/chords/c-maj7",
+    "https://pianogrid.com/chords/d-7",
+    "https://pianogrid.com/chords/d-flat-7",
+    "https://pianogrid.com/chords/d-flat-m7",
+    "https://pianogrid.com/chords/d-flat-m7-flat5",
+    "https://pianogrid.com/chords/d-flat-maj7",
+    "https://pianogrid.com/chords/d-m7",
+    "https://pianogrid.com/chords/d-m7-flat5",
+    "https://pianogrid.com/chords/d-maj7",
+    "https://pianogrid.com/chords/e-7",
+    "https://pianogrid.com/chords/e-flat-7",
+    "https://pianogrid.com/chords/e-flat-m7",
+    "https://pianogrid.com/chords/e-flat-m7-flat5",
+    "https://pianogrid.com/chords/e-flat-maj7",
+    "https://pianogrid.com/chords/e-m7",
+    "https://pianogrid.com/chords/e-m7-flat5",
+    "https://pianogrid.com/chords/e-maj7",
+    "https://pianogrid.com/chords/f-7",
+    "https://pianogrid.com/chords/f-m7",
+    "https://pianogrid.com/chords/f-m7-flat5",
+    "https://pianogrid.com/chords/f-maj7",
+    "https://pianogrid.com/chords/f-sharp-7",
+    "https://pianogrid.com/chords/f-sharp-m7",
+    "https://pianogrid.com/chords/f-sharp-m7-flat5",
+    "https://pianogrid.com/chords/f-sharp-maj7",
+    "https://pianogrid.com/chords/g-7",
+    "https://pianogrid.com/chords/g-m7",
+    "https://pianogrid.com/chords/g-m7-flat5",
+    "https://pianogrid.com/chords/g-maj7",
+    "https://pianogrid.com/chords/a-augmented",
+    "https://pianogrid.com/chords/a-diminished",
+    "https://pianogrid.com/chords/a-flat-augmented",
+    "https://pianogrid.com/chords/a-flat-diminished",
+    "https://pianogrid.com/chords/a-flat-sus2",
+    "https://pianogrid.com/chords/a-flat-sus4",
+    "https://pianogrid.com/chords/a-sus2",
+    "https://pianogrid.com/chords/a-sus4",
+    "https://pianogrid.com/chords/b-augmented",
+    "https://pianogrid.com/chords/b-diminished",
+    "https://pianogrid.com/chords/b-flat-augmented",
+    "https://pianogrid.com/chords/b-flat-diminished",
+    "https://pianogrid.com/chords/b-flat-sus2",
+    "https://pianogrid.com/chords/b-flat-sus4",
+    "https://pianogrid.com/chords/b-sus2",
+    "https://pianogrid.com/chords/b-sus4",
+    "https://pianogrid.com/chords/c-augmented",
+    "https://pianogrid.com/chords/c-diminished",
+    "https://pianogrid.com/chords/c-sus2",
+    "https://pianogrid.com/chords/c-sus4",
+    "https://pianogrid.com/chords/d-augmented",
+    "https://pianogrid.com/chords/d-diminished",
+    "https://pianogrid.com/chords/d-flat-augmented",
+    "https://pianogrid.com/chords/d-flat-diminished",
+    "https://pianogrid.com/chords/d-flat-sus2",
+    "https://pianogrid.com/chords/d-flat-sus4",
+    "https://pianogrid.com/chords/d-sus2",
+    "https://pianogrid.com/chords/d-sus4",
+    "https://pianogrid.com/chords/e-augmented",
+    "https://pianogrid.com/chords/e-diminished",
+    "https://pianogrid.com/chords/e-flat-augmented",
+    "https://pianogrid.com/chords/e-flat-diminished",
+    "https://pianogrid.com/chords/e-flat-sus2",
+    "https://pianogrid.com/chords/e-flat-sus4",
+    "https://pianogrid.com/chords/e-sus2",
+    "https://pianogrid.com/chords/e-sus4",
+    "https://pianogrid.com/chords/f-augmented",
+    "https://pianogrid.com/chords/f-diminished",
+    "https://pianogrid.com/chords/f-sharp-augmented",
+    "https://pianogrid.com/chords/f-sharp-diminished",
+    "https://pianogrid.com/chords/f-sharp-sus2",
+    "https://pianogrid.com/chords/f-sharp-sus4",
+    "https://pianogrid.com/chords/f-sus2",
+    "https://pianogrid.com/chords/f-sus4",
+    "https://pianogrid.com/chords/g-augmented",
+    "https://pianogrid.com/chords/g-diminished",
+    "https://pianogrid.com/chords/g-sus2",
+    "https://pianogrid.com/chords/g-sus4",
+    "https://pianogrid.com/chords/a-minor",
+    "https://pianogrid.com/chords/a-major",
+    "https://pianogrid.com/chords/c-major",
+    "https://pianogrid.com/chords/g-major",
+    "https://pianogrid.com/chords/c-minor",
+    "https://pianogrid.com/chords/e-major",
+    "https://pianogrid.com/chords/b-major",
+    "https://pianogrid.com/chords/a-flat-major",
+    "https://pianogrid.com/chords/c-flat-major",
+    "https://pianogrid.com/chords/f-major",
+    "https://pianogrid.com/chords/d-minor",
+    "https://pianogrid.com/chords/e-minor",
+    "https://pianogrid.com/chords/d-major",
+    "https://pianogrid.com/chords/b-minor",
+    "https://pianogrid.com/chords/f-sharp-minor",
+    "https://pianogrid.com/chords/c-sharp-minor",
+    "https://pianogrid.com/chords/g-sharp-minor",
+    "https://pianogrid.com/chords/b-flat-major",
+    "https://pianogrid.com/chords/g-minor",
+    "https://pianogrid.com/chords/d-flat-major",
+    "https://pianogrid.com/chords/e-flat-major",
+    "https://pianogrid.com/chords/f-sharp-major",
+    "https://pianogrid.com/chords/f-minor",
+    "https://pianogrid.com/chords/b-flat-minor",
+    "https://pianogrid.com/chords/e-flat-minor",
+    "https://pianogrid.com/chords/by-key",
+    "https://pianogrid.com/chords/finder",
+    "https://pianogrid.com/chord-progressions",
+    "https://pianogrid.com/keyboard-notes",
+    "https://pianogrid.com/keyboard-notes/labeled",
+    "https://pianogrid.com/keyboard-notes/chart",
+    "https://pianogrid.com/keyboard-notes/finger-numbers",
+    "https://pianogrid.com/scales",
+    "https://pianogrid.com/scales/c-major",
+    "https://pianogrid.com/scales/a-minor",
+    "https://pianogrid.com/songs",
+    "https://pianogrid.com/songs/easy",
+    "https://pianogrid.com/guide",
+    "https://pianogrid.com/guide/read-sheet-music",
+    "https://pianogrid.com/guide/piano-chords",
+    "https://pianogrid.com/tools/blank-sheet-music"
+  ],
+  "songs_sheet_pages": [
+    {
+      "url": "https://pianogrid.com/songs",
+      "status": 200,
+      "final_url": "https://pianogrid.com/songs",
+      "redirected": false,
+      "redirect_chain": [],
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "x_robots_tag": null,
+      "meta_robots": "index, follow",
+      "indexable": true,
+      "title": "Piano Songs: Find Your Next Piece",
+      "title_length": 33,
+      "description": "Choose a piece by playing goal, version, level and resource format.",
+      "description_length": 67,
+      "h1_count": 1,
+      "h1_text": [
+        "Piano Songs: Find Your Next Piece"
+      ],
+      "body_text_characters": 32797,
+      "canonical": "https://pianogrid.com/songs",
+      "canonical_absolute": "https://pianogrid.com/songs",
+      "canonical_count": 1,
+      "internal_links": [
+        {
+          "href": "/",
+          "targetUrl": "https://pianogrid.com/"
+        },
+        {
+          "href": "/keyboard-notes",
+          "targetUrl": "https://pianogrid.com/keyboard-notes"
+        },
+        {
+          "href": "/keyboard-notes",
+          "targetUrl": "https://pianogrid.com/keyboard-notes"
+        },
+        {
+          "href": "/keyboard-notes/labeled",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/labeled"
+        },
+        {
+          "href": "/keyboard-notes/chart",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/chart"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/chords",
+          "targetUrl": "https://pianogrid.com/chords"
+        },
+        {
+          "href": "/chords",
+          "targetUrl": "https://pianogrid.com/chords"
+        },
+        {
+          "href": "/chords/major",
+          "targetUrl": "https://pianogrid.com/chords/major"
+        },
+        {
+          "href": "/chords/c-major",
+          "targetUrl": "https://pianogrid.com/chords/c-major"
+        },
+        {
+          "href": "/chords/d-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/d-flat-major"
+        },
+        {
+          "href": "/chords/d-major",
+          "targetUrl": "https://pianogrid.com/chords/d-major"
+        },
+        {
+          "href": "/chords/e-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-major"
+        },
+        {
+          "href": "/chords/e-major",
+          "targetUrl": "https://pianogrid.com/chords/e-major"
+        },
+        {
+          "href": "/chords/f-major",
+          "targetUrl": "https://pianogrid.com/chords/f-major"
+        },
+        {
+          "href": "/chords/f-sharp-major",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-major"
+        },
+        {
+          "href": "/chords/g-major",
+          "targetUrl": "https://pianogrid.com/chords/g-major"
+        },
+        {
+          "href": "/chords/a-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/a-flat-major"
+        },
+        {
+          "href": "/chords/a-major",
+          "targetUrl": "https://pianogrid.com/chords/a-major"
+        },
+        {
+          "href": "/chords/b-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-major"
+        },
+        {
+          "href": "/chords/b-major",
+          "targetUrl": "https://pianogrid.com/chords/b-major"
+        },
+        {
+          "href": "/chords/minor",
+          "targetUrl": "https://pianogrid.com/chords/minor"
+        },
+        {
+          "href": "/chords/c-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-minor"
+        },
+        {
+          "href": "/chords/c-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-sharp-minor"
+        },
+        {
+          "href": "/chords/d-minor",
+          "targetUrl": "https://pianogrid.com/chords/d-minor"
+        },
+        {
+          "href": "/chords/e-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-minor"
+        },
+        {
+          "href": "/chords/e-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-minor"
+        },
+        {
+          "href": "/chords/f-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-minor"
+        },
+        {
+          "href": "/chords/f-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-minor"
+        },
+        {
+          "href": "/chords/g-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-minor"
+        },
+        {
+          "href": "/chords/g-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-sharp-minor"
+        },
+        {
+          "href": "/chords/a-minor",
+          "targetUrl": "https://pianogrid.com/chords/a-minor"
+        },
+        {
+          "href": "/chords/b-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-minor"
+        },
+        {
+          "href": "/chords/b-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-minor"
+        },
+        {
+          "href": "/chords/seventh",
+          "targetUrl": "https://pianogrid.com/chords/seventh"
+        },
+        {
+          "href": "/chords/diminished",
+          "targetUrl": "https://pianogrid.com/chords/diminished"
+        },
+        {
+          "href": "/chords/augmented",
+          "targetUrl": "https://pianogrid.com/chords/augmented"
+        },
+        {
+          "href": "/chords/suspended",
+          "targetUrl": "https://pianogrid.com/chords/suspended"
+        },
+        {
+          "href": "/chords/add",
+          "targetUrl": "https://pianogrid.com/chords/add"
+        },
+        {
+          "href": "/chords/extended",
+          "targetUrl": "https://pianogrid.com/chords/extended"
+        },
+        {
+          "href": "/chords/altered",
+          "targetUrl": "https://pianogrid.com/chords/altered"
+        },
+        {
+          "href": "/chords/by-key",
+          "targetUrl": "https://pianogrid.com/chords/by-key"
+        },
+        {
+          "href": "/chord-progressions",
+          "targetUrl": "https://pianogrid.com/chord-progressions"
+        },
+        {
+          "href": "/chords/finder",
+          "targetUrl": "https://pianogrid.com/chords/finder"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/scales",
+          "targetUrl": "https://pianogrid.com/scales"
+        },
+        {
+          "href": "/scales",
+          "targetUrl": "https://pianogrid.com/scales"
+        },
+        {
+          "href": "/scales/c-major",
+          "targetUrl": "https://pianogrid.com/scales/c-major"
+        },
+        {
+          "href": "/scales/a-minor",
+          "targetUrl": "https://pianogrid.com/scales/a-minor"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/songs/easy",
+          "targetUrl": "https://pianogrid.com/songs/easy"
+        },
+        {
+          "href": "/guide",
+          "targetUrl": "https://pianogrid.com/guide"
+        },
+        {
+          "href": "/guide",
+          "targetUrl": "https://pianogrid.com/guide"
+        },
+        {
+          "href": "/guide/read-sheet-music",
+          "targetUrl": "https://pianogrid.com/guide/read-sheet-music"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/tools",
+          "targetUrl": "https://pianogrid.com/tools"
+        },
+        {
+          "href": "/tools",
+          "targetUrl": "https://pianogrid.com/tools"
+        },
+        {
+          "href": "/tools/blank-sheet-music",
+          "targetUrl": "https://pianogrid.com/tools/blank-sheet-music"
+        },
+        {
+          "href": "/keyboard-notes",
+          "targetUrl": "https://pianogrid.com/keyboard-notes"
+        },
+        {
+          "href": "/keyboard-notes/labeled",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/labeled"
+        },
+        {
+          "href": "/keyboard-notes/chart",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/chart"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/chords",
+          "targetUrl": "https://pianogrid.com/chords"
+        },
+        {
+          "href": "/chords/major",
+          "targetUrl": "https://pianogrid.com/chords/major"
+        },
+        {
+          "href": "/chords/c-major",
+          "targetUrl": "https://pianogrid.com/chords/c-major"
+        },
+        {
+          "href": "/chords/d-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/d-flat-major"
+        },
+        {
+          "href": "/chords/d-major",
+          "targetUrl": "https://pianogrid.com/chords/d-major"
+        },
+        {
+          "href": "/chords/e-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-major"
+        },
+        {
+          "href": "/chords/e-major",
+          "targetUrl": "https://pianogrid.com/chords/e-major"
+        },
+        {
+          "href": "/chords/f-major",
+          "targetUrl": "https://pianogrid.com/chords/f-major"
+        },
+        {
+          "href": "/chords/f-sharp-major",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-major"
+        },
+        {
+          "href": "/chords/g-major",
+          "targetUrl": "https://pianogrid.com/chords/g-major"
+        },
+        {
+          "href": "/chords/a-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/a-flat-major"
+        },
+        {
+          "href": "/chords/a-major",
+          "targetUrl": "https://pianogrid.com/chords/a-major"
+        },
+        {
+          "href": "/chords/b-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-major"
+        },
+        {
+          "href": "/chords/b-major",
+          "targetUrl": "https://pianogrid.com/chords/b-major"
+        },
+        {
+          "href": "/chords/minor",
+          "targetUrl": "https://pianogrid.com/chords/minor"
+        },
+        {
+          "href": "/chords/c-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-minor"
+        },
+        {
+          "href": "/chords/c-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-sharp-minor"
+        },
+        {
+          "href": "/chords/d-minor",
+          "targetUrl": "https://pianogrid.com/chords/d-minor"
+        },
+        {
+          "href": "/chords/e-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-minor"
+        },
+        {
+          "href": "/chords/e-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-minor"
+        },
+        {
+          "href": "/chords/f-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-minor"
+        },
+        {
+          "href": "/chords/f-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-minor"
+        },
+        {
+          "href": "/chords/g-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-minor"
+        },
+        {
+          "href": "/chords/g-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-sharp-minor"
+        },
+        {
+          "href": "/chords/a-minor",
+          "targetUrl": "https://pianogrid.com/chords/a-minor"
+        },
+        {
+          "href": "/chords/b-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-minor"
+        },
+        {
+          "href": "/chords/b-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-minor"
+        },
+        {
+          "href": "/chords/seventh",
+          "targetUrl": "https://pianogrid.com/chords/seventh"
+        },
+        {
+          "href": "/chords/diminished",
+          "targetUrl": "https://pianogrid.com/chords/diminished"
+        },
+        {
+          "href": "/chords/augmented",
+          "targetUrl": "https://pianogrid.com/chords/augmented"
+        },
+        {
+          "href": "/chords/suspended",
+          "targetUrl": "https://pianogrid.com/chords/suspended"
+        },
+        {
+          "href": "/chords/add",
+          "targetUrl": "https://pianogrid.com/chords/add"
+        },
+        {
+          "href": "/chords/extended",
+          "targetUrl": "https://pianogrid.com/chords/extended"
+        },
+        {
+          "href": "/chords/altered",
+          "targetUrl": "https://pianogrid.com/chords/altered"
+        },
+        {
+          "href": "/chords/by-key",
+          "targetUrl": "https://pianogrid.com/chords/by-key"
+        },
+        {
+          "href": "/chord-progressions",
+          "targetUrl": "https://pianogrid.com/chord-progressions"
+        },
+        {
+          "href": "/chords/finder",
+          "targetUrl": "https://pianogrid.com/chords/finder"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/scales",
+          "targetUrl": "https://pianogrid.com/scales"
+        },
+        {
+          "href": "/scales/c-major",
+          "targetUrl": "https://pianogrid.com/scales/c-major"
+        },
+        {
+          "href": "/scales/a-minor",
+          "targetUrl": "https://pianogrid.com/scales/a-minor"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/songs/easy",
+          "targetUrl": "https://pianogrid.com/songs/easy"
+        },
+        {
+          "href": "/guide",
+          "targetUrl": "https://pianogrid.com/guide"
+        },
+        {
+          "href": "/guide/read-sheet-music",
+          "targetUrl": "https://pianogrid.com/guide/read-sheet-music"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/tools",
+          "targetUrl": "https://pianogrid.com/tools"
+        },
+        {
+          "href": "/tools/blank-sheet-music",
+          "targetUrl": "https://pianogrid.com/tools/blank-sheet-music"
+        },
+        {
+          "href": "/songs/easy",
+          "targetUrl": "https://pianogrid.com/songs/easy"
+        },
+        {
+          "href": "/",
+          "targetUrl": "https://pianogrid.com/"
+        }
+      ],
+      "robots_blocked": false,
+      "issues": [
+        {
+          "severity": "WARN",
+          "check": "Description length",
+          "problem": "Description length is 67 characters.",
+          "recommendation": "Review truncation or lack of useful context; length is advisory."
+        }
+      ]
+    },
+    {
+      "url": "https://pianogrid.com/songs/easy",
+      "status": 200,
+      "final_url": "https://pianogrid.com/songs/easy",
+      "redirected": false,
+      "redirect_chain": [],
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "x_robots_tag": null,
+      "meta_robots": "index, follow",
+      "indexable": true,
+      "title": "Easy Piano Songs: Choose a Version That Fits",
+      "title_length": 44,
+      "description": "Compare beginner arrangements, C-major options, adult-method pieces and exact resources before choosing your next piano song.",
+      "description_length": 125,
+      "h1_count": 1,
+      "h1_text": [
+        "Easy Piano Songs: Choose a Version That Fits"
+      ],
+      "body_text_characters": 103168,
+      "canonical": "https://pianogrid.com/songs/easy",
+      "canonical_absolute": "https://pianogrid.com/songs/easy",
+      "canonical_count": 1,
+      "internal_links": [
+        {
+          "href": "/",
+          "targetUrl": "https://pianogrid.com/"
+        },
+        {
+          "href": "/keyboard-notes",
+          "targetUrl": "https://pianogrid.com/keyboard-notes"
+        },
+        {
+          "href": "/keyboard-notes",
+          "targetUrl": "https://pianogrid.com/keyboard-notes"
+        },
+        {
+          "href": "/keyboard-notes/labeled",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/labeled"
+        },
+        {
+          "href": "/keyboard-notes/chart",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/chart"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/chords",
+          "targetUrl": "https://pianogrid.com/chords"
+        },
+        {
+          "href": "/chords",
+          "targetUrl": "https://pianogrid.com/chords"
+        },
+        {
+          "href": "/chords/major",
+          "targetUrl": "https://pianogrid.com/chords/major"
+        },
+        {
+          "href": "/chords/c-major",
+          "targetUrl": "https://pianogrid.com/chords/c-major"
+        },
+        {
+          "href": "/chords/d-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/d-flat-major"
+        },
+        {
+          "href": "/chords/d-major",
+          "targetUrl": "https://pianogrid.com/chords/d-major"
+        },
+        {
+          "href": "/chords/e-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-major"
+        },
+        {
+          "href": "/chords/e-major",
+          "targetUrl": "https://pianogrid.com/chords/e-major"
+        },
+        {
+          "href": "/chords/f-major",
+          "targetUrl": "https://pianogrid.com/chords/f-major"
+        },
+        {
+          "href": "/chords/f-sharp-major",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-major"
+        },
+        {
+          "href": "/chords/g-major",
+          "targetUrl": "https://pianogrid.com/chords/g-major"
+        },
+        {
+          "href": "/chords/a-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/a-flat-major"
+        },
+        {
+          "href": "/chords/a-major",
+          "targetUrl": "https://pianogrid.com/chords/a-major"
+        },
+        {
+          "href": "/chords/b-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-major"
+        },
+        {
+          "href": "/chords/b-major",
+          "targetUrl": "https://pianogrid.com/chords/b-major"
+        },
+        {
+          "href": "/chords/minor",
+          "targetUrl": "https://pianogrid.com/chords/minor"
+        },
+        {
+          "href": "/chords/c-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-minor"
+        },
+        {
+          "href": "/chords/c-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-sharp-minor"
+        },
+        {
+          "href": "/chords/d-minor",
+          "targetUrl": "https://pianogrid.com/chords/d-minor"
+        },
+        {
+          "href": "/chords/e-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-minor"
+        },
+        {
+          "href": "/chords/e-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-minor"
+        },
+        {
+          "href": "/chords/f-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-minor"
+        },
+        {
+          "href": "/chords/f-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-minor"
+        },
+        {
+          "href": "/chords/g-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-minor"
+        },
+        {
+          "href": "/chords/g-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-sharp-minor"
+        },
+        {
+          "href": "/chords/a-minor",
+          "targetUrl": "https://pianogrid.com/chords/a-minor"
+        },
+        {
+          "href": "/chords/b-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-minor"
+        },
+        {
+          "href": "/chords/b-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-minor"
+        },
+        {
+          "href": "/chords/seventh",
+          "targetUrl": "https://pianogrid.com/chords/seventh"
+        },
+        {
+          "href": "/chords/diminished",
+          "targetUrl": "https://pianogrid.com/chords/diminished"
+        },
+        {
+          "href": "/chords/augmented",
+          "targetUrl": "https://pianogrid.com/chords/augmented"
+        },
+        {
+          "href": "/chords/suspended",
+          "targetUrl": "https://pianogrid.com/chords/suspended"
+        },
+        {
+          "href": "/chords/add",
+          "targetUrl": "https://pianogrid.com/chords/add"
+        },
+        {
+          "href": "/chords/extended",
+          "targetUrl": "https://pianogrid.com/chords/extended"
+        },
+        {
+          "href": "/chords/altered",
+          "targetUrl": "https://pianogrid.com/chords/altered"
+        },
+        {
+          "href": "/chords/by-key",
+          "targetUrl": "https://pianogrid.com/chords/by-key"
+        },
+        {
+          "href": "/chord-progressions",
+          "targetUrl": "https://pianogrid.com/chord-progressions"
+        },
+        {
+          "href": "/chords/finder",
+          "targetUrl": "https://pianogrid.com/chords/finder"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/scales",
+          "targetUrl": "https://pianogrid.com/scales"
+        },
+        {
+          "href": "/scales",
+          "targetUrl": "https://pianogrid.com/scales"
+        },
+        {
+          "href": "/scales/c-major",
+          "targetUrl": "https://pianogrid.com/scales/c-major"
+        },
+        {
+          "href": "/scales/a-minor",
+          "targetUrl": "https://pianogrid.com/scales/a-minor"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/songs/easy",
+          "targetUrl": "https://pianogrid.com/songs/easy"
+        },
+        {
+          "href": "/guide",
+          "targetUrl": "https://pianogrid.com/guide"
+        },
+        {
+          "href": "/guide",
+          "targetUrl": "https://pianogrid.com/guide"
+        },
+        {
+          "href": "/guide/read-sheet-music",
+          "targetUrl": "https://pianogrid.com/guide/read-sheet-music"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/tools",
+          "targetUrl": "https://pianogrid.com/tools"
+        },
+        {
+          "href": "/tools",
+          "targetUrl": "https://pianogrid.com/tools"
+        },
+        {
+          "href": "/tools/blank-sheet-music",
+          "targetUrl": "https://pianogrid.com/tools/blank-sheet-music"
+        },
+        {
+          "href": "/keyboard-notes",
+          "targetUrl": "https://pianogrid.com/keyboard-notes"
+        },
+        {
+          "href": "/keyboard-notes/labeled",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/labeled"
+        },
+        {
+          "href": "/keyboard-notes/chart",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/chart"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/chords",
+          "targetUrl": "https://pianogrid.com/chords"
+        },
+        {
+          "href": "/chords/major",
+          "targetUrl": "https://pianogrid.com/chords/major"
+        },
+        {
+          "href": "/chords/c-major",
+          "targetUrl": "https://pianogrid.com/chords/c-major"
+        },
+        {
+          "href": "/chords/d-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/d-flat-major"
+        },
+        {
+          "href": "/chords/d-major",
+          "targetUrl": "https://pianogrid.com/chords/d-major"
+        },
+        {
+          "href": "/chords/e-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-major"
+        },
+        {
+          "href": "/chords/e-major",
+          "targetUrl": "https://pianogrid.com/chords/e-major"
+        },
+        {
+          "href": "/chords/f-major",
+          "targetUrl": "https://pianogrid.com/chords/f-major"
+        },
+        {
+          "href": "/chords/f-sharp-major",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-major"
+        },
+        {
+          "href": "/chords/g-major",
+          "targetUrl": "https://pianogrid.com/chords/g-major"
+        },
+        {
+          "href": "/chords/a-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/a-flat-major"
+        },
+        {
+          "href": "/chords/a-major",
+          "targetUrl": "https://pianogrid.com/chords/a-major"
+        },
+        {
+          "href": "/chords/b-flat-major",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-major"
+        },
+        {
+          "href": "/chords/b-major",
+          "targetUrl": "https://pianogrid.com/chords/b-major"
+        },
+        {
+          "href": "/chords/minor",
+          "targetUrl": "https://pianogrid.com/chords/minor"
+        },
+        {
+          "href": "/chords/c-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-minor"
+        },
+        {
+          "href": "/chords/c-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/c-sharp-minor"
+        },
+        {
+          "href": "/chords/d-minor",
+          "targetUrl": "https://pianogrid.com/chords/d-minor"
+        },
+        {
+          "href": "/chords/e-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-flat-minor"
+        },
+        {
+          "href": "/chords/e-minor",
+          "targetUrl": "https://pianogrid.com/chords/e-minor"
+        },
+        {
+          "href": "/chords/f-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-minor"
+        },
+        {
+          "href": "/chords/f-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/f-sharp-minor"
+        },
+        {
+          "href": "/chords/g-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-minor"
+        },
+        {
+          "href": "/chords/g-sharp-minor",
+          "targetUrl": "https://pianogrid.com/chords/g-sharp-minor"
+        },
+        {
+          "href": "/chords/a-minor",
+          "targetUrl": "https://pianogrid.com/chords/a-minor"
+        },
+        {
+          "href": "/chords/b-flat-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-flat-minor"
+        },
+        {
+          "href": "/chords/b-minor",
+          "targetUrl": "https://pianogrid.com/chords/b-minor"
+        },
+        {
+          "href": "/chords/seventh",
+          "targetUrl": "https://pianogrid.com/chords/seventh"
+        },
+        {
+          "href": "/chords/diminished",
+          "targetUrl": "https://pianogrid.com/chords/diminished"
+        },
+        {
+          "href": "/chords/augmented",
+          "targetUrl": "https://pianogrid.com/chords/augmented"
+        },
+        {
+          "href": "/chords/suspended",
+          "targetUrl": "https://pianogrid.com/chords/suspended"
+        },
+        {
+          "href": "/chords/add",
+          "targetUrl": "https://pianogrid.com/chords/add"
+        },
+        {
+          "href": "/chords/extended",
+          "targetUrl": "https://pianogrid.com/chords/extended"
+        },
+        {
+          "href": "/chords/altered",
+          "targetUrl": "https://pianogrid.com/chords/altered"
+        },
+        {
+          "href": "/chords/by-key",
+          "targetUrl": "https://pianogrid.com/chords/by-key"
+        },
+        {
+          "href": "/chord-progressions",
+          "targetUrl": "https://pianogrid.com/chord-progressions"
+        },
+        {
+          "href": "/chords/finder",
+          "targetUrl": "https://pianogrid.com/chords/finder"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/keyboard-notes/finger-numbers",
+          "targetUrl": "https://pianogrid.com/keyboard-notes/finger-numbers"
+        },
+        {
+          "href": "/scales",
+          "targetUrl": "https://pianogrid.com/scales"
+        },
+        {
+          "href": "/scales/c-major",
+          "targetUrl": "https://pianogrid.com/scales/c-major"
+        },
+        {
+          "href": "/scales/a-minor",
+          "targetUrl": "https://pianogrid.com/scales/a-minor"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/songs/easy",
+          "targetUrl": "https://pianogrid.com/songs/easy"
+        },
+        {
+          "href": "/guide",
+          "targetUrl": "https://pianogrid.com/guide"
+        },
+        {
+          "href": "/guide/read-sheet-music",
+          "targetUrl": "https://pianogrid.com/guide/read-sheet-music"
+        },
+        {
+          "href": "/guide/piano-chords",
+          "targetUrl": "https://pianogrid.com/guide/piano-chords"
+        },
+        {
+          "href": "/tools",
+          "targetUrl": "https://pianogrid.com/tools"
+        },
+        {
+          "href": "/tools/blank-sheet-music",
+          "targetUrl": "https://pianogrid.com/tools/blank-sheet-music"
+        },
+        {
+          "href": "/songs",
+          "targetUrl": "https://pianogrid.com/songs"
+        },
+        {
+          "href": "/",
+          "targetUrl": "https://pianogrid.com/"
+        }
+      ],
+      "robots_blocked": false,
+      "issues": []
+    }
+  ]
+}

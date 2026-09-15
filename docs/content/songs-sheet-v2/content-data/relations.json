@@ -1,0 +1,117 @@
+{
+  "relations": [
+    {
+      "from_page": "/songs/easy",
+      "to_page": "/sheet-music/hot-cross-buns",
+      "arrangement_id": "arr-ext-0a05b7954f5256",
+      "relation": "same_exact_version",
+      "availability_gate": "target_route_verified"
+    },
+    {
+      "from_page": "/songs/easy",
+      "to_page": "/sheet-music/twinkle-twinkle-little-star",
+      "arrangement_id": "arr-ext-c3a78b0c5cb213",
+      "relation": "same_exact_version",
+      "availability_gate": "target_route_verified"
+    },
+    {
+      "from_page": "/songs/easy",
+      "to_page": "/sheet-music/ode-to-joy",
+      "arrangement_id": "arr-ext-a60b8d92c5a325",
+      "relation": "same_exact_version",
+      "availability_gate": "target_route_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-step-and-hold-v1",
+      "to_page": "/keyboard-notes",
+      "relation": "locate_actual_written_pitches",
+      "pitch_set": [
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4"
+      ],
+      "basis": "events.json and independently checked score",
+      "availability_gate": "target_route_and_parameter_contract_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-step-and-hold-v1",
+      "to_page": "/guide/read-sheet-music",
+      "relation": "read_actual_clef_and_note_values",
+      "basis": "MusicXML clef and duration notation",
+      "availability_gate": "target_route_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-step-and-hold-v1",
+      "to_page": "/scales/c-major",
+      "relation": "optional_note-set_reference_not_full_scale_performance",
+      "basis": "All written pitches are natural C/D/E/F/G subsets; exercise does not contain every C-major scale degree.",
+      "availability_gate": "target_route_verified",
+      "public_label": "Find these notes in C major"
+    },
+    {
+      "from_arrangement_id": "arr-pg-left-hand-answer-v1",
+      "to_page": "/keyboard-notes",
+      "relation": "locate_actual_written_pitches",
+      "pitch_set": [
+        "C3",
+        "D3",
+        "E3",
+        "F3",
+        "G3"
+      ],
+      "basis": "events.json and independently checked score",
+      "availability_gate": "target_route_and_parameter_contract_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-left-hand-answer-v1",
+      "to_page": "/guide/read-sheet-music",
+      "relation": "read_actual_clef_and_note_values",
+      "basis": "MusicXML clef and duration notation",
+      "availability_gate": "target_route_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-left-hand-answer-v1",
+      "to_page": "/scales/c-major",
+      "relation": "optional_note-set_reference_not_full_scale_performance",
+      "basis": "All written pitches are natural C/D/E/F/G subsets; exercise does not contain every C-major scale degree.",
+      "availability_gate": "target_route_verified",
+      "public_label": "Find these notes in C major"
+    },
+    {
+      "from_arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+      "to_page": "/keyboard-notes",
+      "relation": "locate_actual_written_pitches",
+      "pitch_set": [
+        "C3",
+        "D3",
+        "E3",
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4"
+      ],
+      "basis": "events.json and independently checked score",
+      "availability_gate": "target_route_and_parameter_contract_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+      "to_page": "/guide/read-sheet-music",
+      "relation": "read_actual_clef_and_note_values",
+      "basis": "MusicXML clef and duration notation",
+      "availability_gate": "target_route_verified"
+    },
+    {
+      "from_arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+      "to_page": "/scales/c-major",
+      "relation": "optional_note-set_reference_not_full_scale_performance",
+      "basis": "All written pitches are natural C/D/E/F/G subsets; exercise does not contain every C-major scale degree.",
+      "availability_gate": "target_route_verified",
+      "public_label": "Find these notes in C major"
+    }
+  ],
+  "chord_links_for_first_batch": [],
+  "chord_links_note": "No verified chord symbols or simultaneous chord events in delivered exercises; do not fabricate song chord relationships. Existing separately verified baseline chord inventories remain preserved."
+}

@@ -1,6 +1,6 @@
 import type { PlaybackMode, Voicing } from './a-minor-types';
 export type AudioStatus = 'idle'|'loading'|'playing'|'stopped'|'error'|'unavailable';
-type AudioWindow = Window & { webkitAudioContext?: typeof AudioContext };
+type AudioWindow = Window & { webkitAudioContext?: typeof AudioContext; __pianoGridAudioOwner?: () => void };
 type AudioNavigator = Navigator & { audioSession?: { type: string } };
 
 // Lifecycle-owned, cancellable Web Audio scheduler. No browser access at module load.
@@ -12,9 +12,12 @@ export class ReferenceAudio {
   private nodes = new Set<{oscillator:OscillatorNode;gain:GainNode}>();
   private state: AudioStatus = 'idle';
   private disposed = false;
+  private volume = .12;
+  private readonly ownerCancel = () => this.cancel('Playback stopped.');
   constructor(private status:(state:AudioStatus,message:string,mode:PlaybackMode|null)=>void, private mark:(midi:number[])=>void,
     private copy:{loading:string;audio_error:string;audio_unavailable:string}) {}
   get available() { return Boolean(window.AudioContext || (window as AudioWindow).webkitAudioContext); }
+  setVolume(value:number) { this.volume=Math.max(0,Math.min(1,value))*.18; }
   private describe(state:AudioStatus,message='',mode:PlaybackMode|null=null) {
     this.state=state;
     if(!this.disposed) this.status(state,message,mode);
@@ -33,6 +36,7 @@ export class ReferenceAudio {
       try{node.gain.disconnect();node.oscillator.stop();node.oscillator.disconnect();}catch{}
     }
     this.nodes.clear();
+    if(typeof window!=='undefined'&&(window as AudioWindow).__pianoGridAudioOwner===this.ownerCancel)delete (window as AudioWindow).__pianoGridAudioOwner;
     // WebKit can report a resumed context as running while its output remains
     // silent after the page has been backgrounded. Do not reuse that context.
     if(typeof document!=='undefined'&&document.hidden)this.releaseContext();
@@ -41,6 +45,9 @@ export class ReferenceAudio {
   }
   async play(voicing:Pick<Voicing, 'playback'>,mode:PlaybackMode) {
     this.cancel('', 'idle', false);
+    const audioWindow=window as AudioWindow;
+    if(audioWindow.__pianoGridAudioOwner&&audioWindow.__pianoGridAudioOwner!==this.ownerCancel)audioWindow.__pianoGridAudioOwner();
+    audioWindow.__pianoGridAudioOwner=this.ownerCancel;
     const generation=this.generation;
     const Constructor=window.AudioContext||(window as AudioWindow).webkitAudioContext;
     if(!Constructor){this.describe('unavailable',this.copy.audio_unavailable);return;}
@@ -69,8 +76,8 @@ export class ReferenceAudio {
         const oscillator=context.createOscillator(),gain=context.createGain();
         const node={oscillator,gain};this.nodes.add(node);
         oscillator.type='sine';oscillator.frequency.setValueAtTime(event.frequency_hz,event.start);
-        gain.gain.setValueAtTime(0,event.start);gain.gain.linearRampToValueAtTime(.12,event.start+.008);
-        gain.gain.setValueAtTime(.12,event.end-.035);gain.gain.linearRampToValueAtTime(0,event.end);
+        gain.gain.setValueAtTime(0,event.start);gain.gain.linearRampToValueAtTime(this.volume,event.start+.008);
+        gain.gain.setValueAtTime(this.volume,event.end-.035);gain.gain.linearRampToValueAtTime(0,event.end);
         oscillator.connect(gain);gain.connect(context.destination);
         oscillator.addEventListener('ended',()=>{oscillator.disconnect();gain.disconnect();this.nodes.delete(node);},{once:true});
         oscillator.start(event.start);oscillator.stop(event.end);

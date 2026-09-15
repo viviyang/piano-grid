@@ -34,7 +34,7 @@ export function getHomeModel():HomeModel{
   if(page.data.navigation_release_policy!=='render a link only if its destination has passed the baseline release gate')throw new Error('Homepage release policy changed');
   const primaryTasks=page.data.primary_tasks.map(destination);
   const secondaryLink=destination(page.data.secondary_link);
-  if(primaryTasks.filter((item:Destination)=>item.available).length!==5||primaryTasks.find((item:Destination)=>item.url==='/sheet-music')?.available)throw new Error('Homepage destination release map is invalid');
+  if(primaryTasks.filter((item:Destination)=>item.available).length!==6||!primaryTasks.find((item:Destination)=>item.url==='/sheet-music')?.available)throw new Error('Homepage destination release map is invalid');
   return {model,primaryTasks,secondaryLink,firstAction:page.data.first_action};
 }
 export function getToolsModel():ToolsModel{

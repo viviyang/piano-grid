@@ -1,0 +1,29 @@
+.ss-preserved {
+  border-top: 2px solid var(--foreground);
+  padding: 1.25rem 0 3rem;
+}
+
+.ss-legacy-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ss-legacy-blocks article {
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.ss-legacy-blocks h3 { font-size: 1rem; }
+.ss-legacy-blocks p {
+  margin-top: .45rem;
+  color: var(--muted-foreground);
+  font-size: .875rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 67rem) {
+  .ss-legacy-blocks { grid-template-columns: 1fr; }
+}

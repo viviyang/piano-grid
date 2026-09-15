@@ -1,5 +1,7 @@
 import { editorialHeading } from './seo-editorial';
 import { readAuthorizedPage } from './site-content';
+import { getPagePatch } from './songs-sheet-content';
+import { resolveFirstCheckFields } from './songs-sheet-contracts';
 import type { EasySongsData, SongBlock, SongCenterData, SongGoal, SongPageModel, SongResource, SongURL } from './song-types';
 
 type Raw = Record<string, any>;
@@ -28,6 +30,7 @@ function toResource(raw: Raw): SongResource {
   }
   const resourceURL = requiredString(raw.resource_url, `${raw.id}.resource_url`);
   if (!/^https:\/\//.test(resourceURL)) throw new Error(`Song resource must be an HTTPS external URL: ${raw.id}`);
+  const resolvedFirstCheck = resolveFirstCheckFields(raw.first_check, raw.prerequisites_or_first_check);
   return {
     id: requiredString(raw.id, 'resource id'),
     workTitle: requiredString(raw.work_title, `${raw.id}.work_title`),
@@ -43,7 +46,8 @@ function toResource(raw: Raw): SongResource {
     key: raw.key ?? null,
     technicalDemands: raw.technical_demands ?? publisherNotedChallenges[raw.id] ?? null,
     whyChoose: raw.why_choose ?? null,
-    firstCheck: raw.first_check ?? null,
+    firstCheck: resolvedFirstCheck.value,
+    firstCheckConflict: resolvedFirstCheck.conflict,
     editionFeatures: raw.edition_features ?? null,
     access: requiredString(raw.access, `${raw.id}.access`),
     acquisitionFormat: verifiedAcquisitionFormats[raw.id] ?? requiredString(raw.access, `${raw.id}.access`),
@@ -55,6 +59,7 @@ function toResource(raw: Raw): SongResource {
 }
 
 function model(url: SongURL, page: Raw): SongPageModel {
+  const patch = getPagePatch(url);
   const expectedTemplate = url === '/songs' ? 'T15' : 'T16';
   if (page.template_id !== expectedTemplate) throw new Error(`Unexpected template for ${url}`);
   const ids = page.blocks.map((block: Raw) => block.id ?? block.block_id);
@@ -62,13 +67,13 @@ function model(url: SongURL, page: Raw): SongPageModel {
   return {
     url,
     templateID: expectedTemplate,
-    title: editorialHeading(url, requiredString(page.title, `${url}.title`)),
-    description: requiredString(page.description, `${url}.description`),
+    title: patch.h1 || editorialHeading(url, requiredString(page.title, `${url}.title`)),
+    description: patch.intro || requiredString(page.description, `${url}.description`),
     userTask: requiredString(page.user_task, `${url}.user_task`),
     metadata: {
-      title: requiredString(page.metadata?.title, `${url}.metadata.title`),
-      description: requiredString(page.metadata?.description, `${url}.metadata.description`),
-      canonicalPath: requiredString(page.metadata?.canonical_path, `${url}.metadata.canonical_path`),
+      title: requiredString(patch.metadata.title, `${url}.patch.metadata.title`),
+      description: requiredString(patch.metadata.description, `${url}.patch.metadata.description`),
+      canonicalPath: requiredString(patch.metadata.canonical_path, `${url}.patch.metadata.canonical_path`),
     },
     blocks: page.blocks.map((block: Raw): SongBlock => ({
       id: block.id ?? block.block_id,

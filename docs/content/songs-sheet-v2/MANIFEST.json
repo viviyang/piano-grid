@@ -1,0 +1,686 @@
+{
+  "package": "PianoGrid Songs + Sheet Music v2.1",
+  "production_ancestor_commit": "1e3fdecd6e9426999689df361a4f47aa2d378848",
+  "implementation_base_policy": "keyboard_accepted_baseline_from_latest_result_or_integration_handoff",
+  "implementation_base_commit": null,
+  "status": "SPEC_AND_CONTENT_PACK_WITH_BLOCKERS",
+  "generated_date": "2026-09-15",
+  "file_count_excluding_this_manifest": 135,
+  "files": [
+    {
+      "path": "01_MASTER_CONTEXT.md",
+      "bytes": 4786,
+      "sha256": "d299728f62878a319ca94158b3ac546fed486f5b099c459ffcf002040225d10a"
+    },
+    {
+      "path": "BASELINE_CHANGE_v2_1.md",
+      "bytes": 1132,
+      "sha256": "fd75482432feea67c951d2cadc8c243b409d1d1cc12e08fd257659b7a9bc07d9"
+    },
+    {
+      "path": "CODEX_PROMPT.md",
+      "bytes": 15110,
+      "sha256": "4ebf3f54ab28cb96b89f55fd305fcc9f95f42d2939d70bd02a558d818d7143a4"
+    },
+    {
+      "path": "CONTENT_SUPPLY_AND_RIGHTS.md",
+      "bytes": 5549,
+      "sha256": "edf57082678728186df94d6068a97f0a62c391788d1afca3229071d75a84c9f8"
+    },
+    {
+      "path": "DATA_CONTRACT.md",
+      "bytes": 8815,
+      "sha256": "9b7d82534e34cb8085f250f02b1fb5c98903bde330385a2cd38072dd0397a7be"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW_PROMPT.md",
+      "bytes": 2757,
+      "sha256": "1148bc5c03a1bcbd4893ec5e8f30428479d9cdce804d7c2dd726b334e8615076"
+    },
+    {
+      "path": "MONETIZATION.md",
+      "bytes": 3813,
+      "sha256": "97d3379af50098ca6c46c53bf61cba04bfb4974c5869e1a2d71a21bc2f3ec8a2"
+    },
+    {
+      "path": "PAGE_UX.md",
+      "bytes": 6047,
+      "sha256": "05b9175f154bb462e485fca867bdb11429d262f3149638b24c5235bbe6b9fb3d"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 21447,
+      "sha256": "8b57b2e94787b0000544f2c32faed1c75a7bf102569c7ed38b97e90832449607"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4167,
+      "sha256": "c9f34884cc2d81de3b453583562c53f35e0934edcb95419ec67307b1b0931664"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 6068,
+      "sha256": "fc0f40345eeef2e2383a4d49568996fd04706537718a90651ea2b1fa7136a07b"
+    },
+    {
+      "path": "URL_DIFF.md",
+      "bytes": 8226,
+      "sha256": "0276b1a340d6d390e003b0855e037e38b03e0a54f47a59106b3b78fb8825a855"
+    },
+    {
+      "path": "content-data/FONT_NOTICE.md",
+      "bytes": 657,
+      "sha256": "1f02217bbf21e903930898707726835dd0c2bf2ca7cc781d1b59e0fb71fb7458"
+    },
+    {
+      "path": "content-data/FULL_SCOPE.md",
+      "bytes": 27438,
+      "sha256": "385fc8a1faf31d2657b73feb1e92406551ca8f5e3ad39e775c030054cebb6c2f"
+    },
+    {
+      "path": "content-data/README.md",
+      "bytes": 1380,
+      "sha256": "61d467767ad6a7b178da115b9baa6e86fba61f6c374d7c776acb6f67d12aa2b8"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/accessible-score.md",
+      "bytes": 428,
+      "sha256": "cb085a4d70c4699cb2d19003cfd3e023f4d5b37c0ff3e8d1d9ded7079914c5a2"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/demo.wav",
+      "bytes": 551294,
+      "sha256": "d70d6d106976e42ef1b3fb3f2e32378d55ddce56692a2a66cd0cbc1cb89a81c8"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/events.json",
+      "bytes": 2135,
+      "sha256": "329c14eab9da481fcb38999dc2fbf4c82f95ac2bcb4108c7cd044b60cfac5826"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/score-a4.pdf",
+      "bytes": 5631,
+      "sha256": "d643ea1efc5905d05fe1192772a568cbd78e34b1f72864d6ef90ceb58c54b0cf"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/score-letter.pdf",
+      "bytes": 5601,
+      "sha256": "22957b11fab1b1084480ece7c8678944277171588162d910e7241d84c3ded623"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/score.mid",
+      "bytes": 151,
+      "sha256": "8bb881aa9461b677e494dde069b00b2244c42bd3545965831e41ae68fa3a0eda"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/score.musicxml",
+      "bytes": 3394,
+      "sha256": "3bae39a2c792fcc3438d93646e02c9750ca35cb67a33497da7fef65310456634"
+    },
+    {
+      "path": "content-data/assets/pg-left-hand-answer-v1/score.svg",
+      "bytes": 8610,
+      "sha256": "9387ea46e464830f49415e122d6d6acb8b4ebb69909a6767ba8fd86524427593"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/accessible-score.md",
+      "bytes": 502,
+      "sha256": "a8376f18aa5027ceaf70c54fab8411c974c251d9c954ff9c6a8d16f52e096a25"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/demo.wav",
+      "bytes": 610094,
+      "sha256": "8b137cab8a3b347bea5230ef287ffc0c5562038bdb4e2bcd578677d9c2d7409a"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/events.json",
+      "bytes": 2614,
+      "sha256": "885ec65c89b90c09d85741438d90a4b7d4283d051aedeb16af990fd2aeddf3c1"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/score-a4.pdf",
+      "bytes": 8176,
+      "sha256": "602d6bc6563f3393aaab613e5af22fc160c6f2dbfefcb1dc595192311e042a46"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/score-letter.pdf",
+      "bytes": 8142,
+      "sha256": "fc446d4e6df3815eb688b912053c8d68a16f9284d163ba4e985e7d7bf48bc1a1"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/score.mid",
+      "bytes": 206,
+      "sha256": "afc86059cb07da8b606c5ea6e879423c9985a048c4ca85dabb54f3878cc2a689"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/score.musicxml",
+      "bytes": 5284,
+      "sha256": "8640093f25a8c62bd6095f6f4f0af2ba7e79550358b265c23c6ddcb4439a18c6"
+    },
+    {
+      "path": "content-data/assets/pg-one-hand-at-a-time-v1/score.svg",
+      "bytes": 15817,
+      "sha256": "fb68524a2714d301d38588daa56a93c444500df89741fc27a3cc11f4ed772a5a"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/accessible-score.md",
+      "bytes": 509,
+      "sha256": "62a9e94b4a73fd2d556f7ce406fce9fca5e6f1b1d98cb9786fc5cc2ac7ef6e03"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/demo.wav",
+      "bytes": 727694,
+      "sha256": "dc0cdf84416e5415ad0713cb8025828b7c208214daa7b7aa0c034076292dfd8a"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/events.json",
+      "bytes": 2596,
+      "sha256": "1fd387eeaf046d192abe30710fcb105d58f4260184d8d27767a3d30034fe7d2e"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/score-a4.pdf",
+      "bytes": 6822,
+      "sha256": "2c147f7787b6e33fba84f27110a78edbe30a0813ce8c4db899381d542fe4a647"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/score-letter.pdf",
+      "bytes": 6792,
+      "sha256": "ca70c858a1abc2730b5df09ff307c9a6ba5ba9544e75972d11347f6a85a40823"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/score.mid",
+      "bytes": 179,
+      "sha256": "48a4f03cec15aef8b70fd5ec52144597ccf1268d0954ec23bd5aef15cdf4062b"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/score.musicxml",
+      "bytes": 4037,
+      "sha256": "1b7ae44e7b3b145e346f999f6c02ec69f1bbe1eec6e0d0b324dde162d27e81d1"
+    },
+    {
+      "path": "content-data/assets/pg-step-and-hold-v1/score.svg",
+      "bytes": 11121,
+      "sha256": "dcc5bd1446e45948fe5c856fc353d31f6479ecefcad686d3bcf53bd566b67a4b"
+    },
+    {
+      "path": "content-data/baseline/approved-scope.readonly.json",
+      "bytes": 642351,
+      "sha256": "c99692edfd86da1c45d985e686b5efe3e4cb8ad1a7dab7690da79a55573de491"
+    },
+    {
+      "path": "content-data/baseline/pages.CD.readonly.json",
+      "bytes": 922367,
+      "sha256": "1ea737de5c4dd50215d473d1d52aa621c94d85d5658f595f4ef1808e2778d217"
+    },
+    {
+      "path": "content-data/baseline/resource-occurrences.readonly.json",
+      "bytes": 402967,
+      "sha256": "512192df67530bf75179e772b7dc34ca72d586fbb7fd9d1ed33038bc82123c1d"
+    },
+    {
+      "path": "content-data/baseline/sources.CD.readonly.json",
+      "bytes": 37285,
+      "sha256": "72df6c05e084913bf58d5a0b3569095baeebe26f97f23dd19f6f01d8413d7927"
+    },
+    {
+      "path": "content-data/catalog.registry.json",
+      "bytes": 493675,
+      "sha256": "ab63979cb530bd2b3301e08fd2463b0c60458b7a9ddbd1d76f554320cc1e1ef8"
+    },
+    {
+      "path": "content-data/catalog.v2.json",
+      "bytes": 979594,
+      "sha256": "63337dbae0ff2eae56c4a5808ab502b9424e58de7e50b15e8704f6e5d2f2759b"
+    },
+    {
+      "path": "content-data/english/learning-cards.v2.json",
+      "bytes": 10933,
+      "sha256": "df440f6afc7d3fb98a83e6dccbf85d46c58630b1c7289c7665d137cb9ed15cb9"
+    },
+    {
+      "path": "content-data/english/pages.patch.json",
+      "bytes": 19879,
+      "sha256": "e51c6f62aaeca1525d75e4710bee9d5a3fe2c5ff8db2dd4b520f46a407d3f4c9"
+    },
+    {
+      "path": "content-data/english/sheet-music.md",
+      "bytes": 1092,
+      "sha256": "f1ae4178e54b60ec07615d877b7a216d5bd214111581be5ba68e9892d63c5f22"
+    },
+    {
+      "path": "content-data/english/sheet-music__beginner.md",
+      "bytes": 1406,
+      "sha256": "78183a7a2a237f85af8b58f527f380611281dc6b546a218a308586e63dc83811"
+    },
+    {
+      "path": "content-data/english/sheet-music__easy.md",
+      "bytes": 896,
+      "sha256": "63924053001dbed30beeac8f7b12d92fd230f7b90a326fb75547a701776ad51a"
+    },
+    {
+      "path": "content-data/english/sheet-music__hot-cross-buns.md",
+      "bytes": 1280,
+      "sha256": "9258bfc43ff507a201999bfde1cd1a2d3629b1ac7526de5759ef3863e6d2e568"
+    },
+    {
+      "path": "content-data/english/sheet-music__ode-to-joy.md",
+      "bytes": 1253,
+      "sha256": "fc565cb15ccccc4d98718dc2d94e3d738b4ed306dac7825380b1ceadf8e87ba1"
+    },
+    {
+      "path": "content-data/english/sheet-music__twinkle-twinkle-little-star.md",
+      "bytes": 1340,
+      "sha256": "be6053e146766fe255f2b2a41fabedeaf61621a426b402fc03fe82a9ce125484"
+    },
+    {
+      "path": "content-data/english/songs.md",
+      "bytes": 1217,
+      "sha256": "ee53f6fad4db829a09427382265a1754f3ddbe394810c1763c2eb3bd638727b7"
+    },
+    {
+      "path": "content-data/english/songs__easy.md",
+      "bytes": 1717,
+      "sha256": "b8ea21aa44162b01317321f356e7846669295e853a6960e47429d19616c3a9f9"
+    },
+    {
+      "path": "content-data/english/ui-copy.json",
+      "bytes": 1978,
+      "sha256": "6ab7824e1cdda853f30f024bed53db2b42239073a064b02f66593c15c3d9e91f"
+    },
+    {
+      "path": "content-data/expansion-roadmap.json",
+      "bytes": 86252,
+      "sha256": "2a3727166ba6ce5acffc0678973f5b407000188ec07865624e7635264588cbf7"
+    },
+    {
+      "path": "content-data/first-three-candidates.json",
+      "bytes": 4173,
+      "sha256": "10a2abe01d7a0b21cfce7e828e269ae14565cf4d43a25b42915ca7bc2f3c5083"
+    },
+    {
+      "path": "content-data/inventory-summary.json",
+      "bytes": 401,
+      "sha256": "9d6ceec7c080e59eaa054cf4be23509872e113eb7ecde70d7908e0140095cebe"
+    },
+    {
+      "path": "content-data/original-exercises.json",
+      "bytes": 8086,
+      "sha256": "f688e42c5bc87397c83662f529e0c913ed5cc2b7919e920c4342711f23f04e84"
+    },
+    {
+      "path": "content-data/page-section-contracts.v2.json",
+      "bytes": 34746,
+      "sha256": "1f64b39e6a47ff46882788173792d402613a3e12ec58e6fa1e7735409d3e0110"
+    },
+    {
+      "path": "content-data/public-observations.json",
+      "bytes": 1555,
+      "sha256": "59e2d931c1bd8ca51cf492f6710fae81fc984ab18980b65514827c283bd6e653"
+    },
+    {
+      "path": "content-data/public-observations.v2.json",
+      "bytes": 3260,
+      "sha256": "81b32b765997786a38271db6f4d55d5ea95b4d5597f888d4e9fb194db0241d64"
+    },
+    {
+      "path": "content-data/relations.json",
+      "bytes": 4278,
+      "sha256": "3ebff61ffa105a1051d1896b5d4a74560f033d16ee590407ffd2b167a38c0aaf"
+    },
+    {
+      "path": "content-data/rights-ledger.json",
+      "bytes": 7119,
+      "sha256": "f04fb3d9310aaaa456da981652810795afcb75ab85acb9419fdd1aa0d980ac00"
+    },
+    {
+      "path": "content-data/rights-request.en.md",
+      "bytes": 1626,
+      "sha256": "19c95659af9d348d414e4a75ddf3551fd85586420d9907576f5e420ca13f5ba6"
+    },
+    {
+      "path": "content-data/route-diff.json",
+      "bytes": 86460,
+      "sha256": "5a4c8c198df368148bccc0f4d92a5556db6bdd66115f5b99a29cd2f03bbee68f"
+    },
+    {
+      "path": "content-data/scope-ledger.json",
+      "bytes": 169112,
+      "sha256": "0eba6f13dedab4de0c60f89bc5f5d4d9a1c22c976ea6bfd13778fb411caa4a76"
+    },
+    {
+      "path": "content-data/sources.current.json",
+      "bytes": 15734,
+      "sha256": "ffe79d7c2b136d0d22de74302d5f6c1d65e478bb9f991db9e5ecebaefddd8c93"
+    },
+    {
+      "path": "content-data/sources.v2.json",
+      "bytes": 9043,
+      "sha256": "a1c96547ed1dd94cbac7bb89231568a657a0807e4a268db5a6d73b5fa8c348ab"
+    },
+    {
+      "path": "contracts/catalog.types.ts",
+      "bytes": 3329,
+      "sha256": "11c566e601b7f8dfc37ec3eb43344562af9da5813d17814f0831c2eb72eecf6f"
+    },
+    {
+      "path": "contracts/gates.mjs",
+      "bytes": 8101,
+      "sha256": "62ae7db0c963056281b6405a3c2f2873f0dccfbfac2f00570ac8c4c759699215"
+    },
+    {
+      "path": "evidence/INPUT_AND_DIFF.json",
+      "bytes": 1513,
+      "sha256": "712ebe82a0a5bcff662615b0f5d250c5d3e1bda8d9fd8048bbe30344a5256380"
+    },
+    {
+      "path": "evidence/current/HANDOFF_SUMMARY.md",
+      "bytes": 1055,
+      "sha256": "dfdf5e320a36db384355aa7bed69674dcfbb655f8af3ef90b495770ed4377dab"
+    },
+    {
+      "path": "evidence/current/PROJECT_HANDOFF.md",
+      "bytes": 8018,
+      "sha256": "5c95e28d462c96421c37ba01f963287923006eef6313d1ce065e63f6c734d86c"
+    },
+    {
+      "path": "evidence/current/SOURCE_INDEX.md",
+      "bytes": 1754,
+      "sha256": "db3d31aa93a018a91cbfb2530894f83a08acee3895303bb49300a4247c10f3fb"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/keyboard-notes/chart/page.tsx",
+      "bytes": 375,
+      "sha256": "91aa78b2086bc92c9fb5e6f34576c1200511a0fb1472b1da81660fe5c899df24"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/keyboard-notes/finger-numbers/page.tsx",
+      "bytes": 491,
+      "sha256": "064fb1dbe6e7a293285c252e665c11f8643716ebc314bd76d4b1d642a89371b2"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/keyboard-notes/labeled/page.tsx",
+      "bytes": 381,
+      "sha256": "4ea0dbe40d26c7ca6f5a942bf9ea23a6860282177f263b8e4f0ec9e68141ef93"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/keyboard-notes/page.tsx",
+      "bytes": 371,
+      "sha256": "0a847fc33a34a489560df3dcae476a5d8bf9521ccdc9aedcda692b4b1c95f50a"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/songs/easy/page.tsx",
+      "bytes": 358,
+      "sha256": "303cc607f9f7fd6ba8a58550dd5c1f5343617be9c6ed1f533f13b5ece7d6a66c"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/songs/page.tsx",
+      "bytes": 357,
+      "sha256": "62fba846c2f8945012dd495a5889239a98c6d0a97546a20a28d98b8259f85d2f"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/tools/blank-sheet-music/page.tsx",
+      "bytes": 374,
+      "sha256": "55766d640820102e29f36b914eb45d328db4df23cced551ec3360a385ad7d5de"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/app/tools/page.tsx",
+      "bytes": 336,
+      "sha256": "3d83ca37c91324748bbb659eaf6050d45c9202010abd2ce663db7b61db3f0fe5"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/blank-sheet/blank-sheet-tool.tsx",
+      "bytes": 2444,
+      "sha256": "7600c724c78c4e175cd1bc5720dc5f4735ece35c04855fb9d90ca2abf0c8cc59"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/blank-sheet/pages.tsx",
+      "bytes": 1631,
+      "sha256": "3e5052bcc02896c5bb28e3da397992b6c09f973d2fa0090d5086b40e2ec5f2a9"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/integration/home-experience.tsx",
+      "bytes": 9471,
+      "sha256": "8e6a6fa2ffa18b1d4fc97408a6346d584cbb77eb6657dbb6a6bdda9e74822430"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/integration/pages.tsx",
+      "bytes": 12755,
+      "sha256": "3f2410822513c9e7e26721d652479eb5ecf58e42349d8b2d3d00c2bd0357f979"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/keyboard-notes/keyboard-diagram.tsx",
+      "bytes": 2720,
+      "sha256": "c382ce07ddc54be77623d409719bcd6ef8d6c88901a82bc23beffb47f5eeddde"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/keyboard-notes/pages.tsx",
+      "bytes": 2480,
+      "sha256": "682b8f4624c7676fefc8719d7a7f0260818f7104411bcf38a38f4fee7157794c"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/keyboard-notes/staff-diagram.tsx",
+      "bytes": 3399,
+      "sha256": "d8838a0848bac011fc2d446f5fae09b2dcdb2a7a697354122b1bbf719cc4fa25"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/keyboard-notes/use-note-audio.ts",
+      "bytes": 1332,
+      "sha256": "6a20bf9d0be05d227cfba1cd8e5a33c8696afbf0816442aa87eec5f28c81f8d6"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/songs/center-experience.tsx",
+      "bytes": 3346,
+      "sha256": "aa4cb6b7466fa89beed04f1d97e2c00ba0737b8eb4e842dd96ee595a760df317"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/songs/easy-experience.tsx",
+      "bytes": 1772,
+      "sha256": "45545fa7a00348920edda1e20d1e6dcc5a5a0b246695bacc9410f6d9a3363c22"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/components/songs/pages.tsx",
+      "bytes": 3717,
+      "sha256": "b8a0f6d0d562d38ff44d22a88065e6228c29b3debc5f7ed71ceefd29fb43569b"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/blank-sheet-content.ts",
+      "bytes": 3059,
+      "sha256": "1eb300799a50c6634c6cfe51103637608e622a9625c6963e224792b2de45b56c"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/blank-sheet-types.ts",
+      "bytes": 650,
+      "sha256": "c197e563a3d6d174c1fb7fb31cde46a1817063577b4247ac47e6a2f65d162411"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/integration-content.ts",
+      "bytes": 4511,
+      "sha256": "fda151ba0b3114af7d6bcb106a7068744873b4ba9b3ae2a48c11d1b8200d20f0"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/integration-types.ts",
+      "bytes": 834,
+      "sha256": "a5a44c68b20355387ae848acebba5eec68aca9288fa2d6d0d182d2bfb47f1bc9"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/keyboard-content.ts",
+      "bytes": 3657,
+      "sha256": "4fa5186912e7b34449ce59a9dd2b0c84053bfe6d6cf65320343cd3a4bcfa80e1"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/keyboard-types.ts",
+      "bytes": 1253,
+      "sha256": "a92c6fac3b2d8452eeeec1265987f82766bbcf8d40fbc2dcdd0643a5ad23d999"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/site-content.ts",
+      "bytes": 1282,
+      "sha256": "acd9436e625dcc3e8d9322c2872d83261c7c1d3b24553ac38af1704d95b3bdd3"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/site-routes.ts",
+      "bytes": 2409,
+      "sha256": "547a9f005fd5f74919c0addc9e1a6c75e27865532840bb9902c0094f060ef63f"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/song-content.ts",
+      "bytes": 7487,
+      "sha256": "a5f930786b90ad123fb9d87eabd4c93417c2726bf474f7fb002eef66a996ec86"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/song-types.ts",
+      "bytes": 1757,
+      "sha256": "d905430c7379fea141a9241f9876f1c475790399c5e9051f40d8df0db12f47a1"
+    },
+    {
+      "path": "evidence/current/dirty-snapshots/src/lib/support-content.ts",
+      "bytes": 18620,
+      "sha256": "a31a5cc4c1f7f3296c877eccc6769ea2212c8641bfeb47f670e5c3518392dee6"
+    },
+    {
+      "path": "evidence/current/handoff/planning/release-readiness.md",
+      "bytes": 8249,
+      "sha256": "ac55cc145b823accfcad922dec6a9c3c734e0e927483e26298fa9edabbddbb0c"
+    },
+    {
+      "path": "evidence/current/handoff/planning/site-implementation-plan.md",
+      "bytes": 17711,
+      "sha256": "8af143b7cd1fd5462bf1cba7d8ad2dca2f3d3c67749559b55db91110f09a601d"
+    },
+    {
+      "path": "evidence/current/handoff/results/SCALES_RESULT.md",
+      "bytes": 5981,
+      "sha256": "ff30051c63b014286c9b37e1f9f68b87f0f9ccffccba35662e2107ad9b622a24"
+    },
+    {
+      "path": "evidence/current/handoff/results/TECHNICAL_SEO_AUDIT_REPORT.md",
+      "bytes": 3806,
+      "sha256": "4845d4f3db50771f97611336141650945e497a00a94e388918ea1782e55c4a85"
+    },
+    {
+      "path": "evidence/current/handoff/worktree/WORKTREE_SNAPSHOT.md",
+      "bytes": 551,
+      "sha256": "da3ccb35ff536a50f4c9ab59844ab7de9df6ccd6c3d2bd09d669c4366cc903bc"
+    },
+    {
+      "path": "evidence/current/http-attempts-environment-failed.json",
+      "bytes": 4544,
+      "sha256": "b6f3b561defdb542ab3a77f83b63539c4459675b414a1b54faf87f733ee6c06e"
+    },
+    {
+      "path": "evidence/current/pages.CD.readonly.json",
+      "bytes": 922438,
+      "sha256": "a389ea8e205141bf760470bc9c723de7161d7d06d13c69c7e143acfed6a2f64c"
+    },
+    {
+      "path": "evidence/current/production-audit-route-index.json",
+      "bytes": 38314,
+      "sha256": "32354afb904bb42a2338bdc46f640911973738cc8c28be3ab5a6435dd2d26ccb"
+    },
+    {
+      "path": "evidence/current/url-plan.final.json",
+      "bytes": 1377493,
+      "sha256": "15c429be68e624a84825ef63def185b5ec831e1aeec2203f775b8d02a5104455"
+    },
+    {
+      "path": "evidence/historical/01_MASTER_CONTROL.md",
+      "bytes": 11631,
+      "sha256": "41d08f6e8897fe941d42180c3f2347ae3a960f7c3b31cad90ae036bfcca2a8e6"
+    },
+    {
+      "path": "evidence/historical/04_CHAT_SONGS_SHEET_MUSIC.md",
+      "bytes": 7669,
+      "sha256": "23a0d6ce3d53fcf8301406850e6b09e412db3f7b92a8ecf580ab438082967625"
+    },
+    {
+      "path": "evidence/historical/COMMERCIAL_BOUNDARY.md",
+      "bytes": 2293,
+      "sha256": "6e8c6723b1a406a906df02cbe60a72924fcc360ac7f073417be6df9b2f5ed285"
+    },
+    {
+      "path": "evidence/historical/READ_ONLY.md",
+      "bytes": 1098,
+      "sha256": "710c15e7a15e220abc46aae81004f420cf8b509bf33bcae677c56b6548e62217"
+    },
+    {
+      "path": "evidence/historical/SOURCES_AND_RIGHTS.md",
+      "bytes": 2735,
+      "sha256": "585ea4ce35f2275ac2afc1e32d3593aa49a86f091f5f0977d43664a66926d09a"
+    },
+    {
+      "path": "qa/MANUAL_ACCEPTANCE.md",
+      "bytes": 2633,
+      "sha256": "64e5f9f9238ed87402995c03371774779cde653c8c9a86981ebccb11bb7602f5"
+    },
+    {
+      "path": "qa/PACKAGE_QA.md",
+      "bytes": 3045,
+      "sha256": "11cbf65d576bd1355176ae34448997f2adbeb3bd0f26645041172415d83713d0"
+    },
+    {
+      "path": "qa/check_music.py",
+      "bytes": 8450,
+      "sha256": "1c3fde3fcf9f39f524ea5c096312ad0ef7ddad75cfcbf19cf68d0ea5b2261cdf"
+    },
+    {
+      "path": "qa/check_package.py",
+      "bytes": 5616,
+      "sha256": "ec75b05ab76e305f65d64411d98a4effdd15fd4739d6b1e1647ee4fc41460277"
+    },
+    {
+      "path": "qa/contracts-results-v2_1.tap",
+      "bytes": 2462,
+      "sha256": "06e8297ce7757571df98a4d439cfa319bead19b9ac848da66e07a1f25658f2b4"
+    },
+    {
+      "path": "qa/contracts.test.mjs",
+      "bytes": 3270,
+      "sha256": "2cd25f10ef169bbb53f135a6baed2862f8f83aac70223506b70278de6e19dd6a"
+    },
+    {
+      "path": "qa/engraving-changes.v2.json",
+      "bytes": 3216,
+      "sha256": "f055bee7672ba28d76054e49a6d7b58c28354457b23d44a54629af32eda6a235"
+    },
+    {
+      "path": "qa/gates-results-v2_1.tap",
+      "bytes": 4792,
+      "sha256": "fd04694803dc4da0add8296cd333dc97ebb1b6e8d201efc3c299f27b7679e00d"
+    },
+    {
+      "path": "qa/gates-results.tap",
+      "bytes": 4796,
+      "sha256": "a6b61481f9e693dcc0d1b1b9f79458d131dac2cf0ae80db3a6d282b17c0f3eb6"
+    },
+    {
+      "path": "qa/gates.test.mjs",
+      "bytes": 8318,
+      "sha256": "76de2028f96a127d9a300393fd253ea3ea7f08ebb3a25da51ab63bc8583ad901"
+    },
+    {
+      "path": "qa/music-check-results.v2.json",
+      "bytes": 2771,
+      "sha256": "24f9d921b6ca55df604ab1e9023eb474c2792f9ca8b4bc11568848f40d3db287"
+    },
+    {
+      "path": "qa/package-check-results.v2.json",
+      "bytes": 66408,
+      "sha256": "5c14076d84d6b855ce99eac7a97027963f5c82c9e1e20b4cffffc8c925d71c65"
+    },
+    {
+      "path": "qa/pdf-render-checks.v2.json",
+      "bytes": 2975,
+      "sha256": "aa9d02e9fc0bde690fc4462a4ba9dd08c242c1cf91195bbfe86527585ac64f4d"
+    },
+    {
+      "path": "tools/build_original_assets.py",
+      "bytes": 17138,
+      "sha256": "8c7ca79a8899dec11a071f9e6d4b75284226e989125d7c00d0ad10f9e54c84a6"
+    },
+    {
+      "path": "tools/contracts.mjs",
+      "bytes": 3359,
+      "sha256": "9ef1927c2e51cb80af448e4d9400d93882a2e15b4d0a883b74f377bbee059676"
+    }
+  ]
+}

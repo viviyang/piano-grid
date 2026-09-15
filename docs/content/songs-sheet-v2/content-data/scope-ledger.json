@@ -1,0 +1,3685 @@
+{
+  "scope_status": "FULL_INPUT_SCOPE_RETAINED_NOT_ALL_BUILT",
+  "pages": [
+    {
+      "url": "/songs",
+      "baseline_id": "U003",
+      "batch": "C",
+      "original_priority": "先做",
+      "original_purpose": "找可学习的曲目，并按难度、情绪、演奏方式筛选",
+      "source_group_ids": [
+        "P002",
+        "P009",
+        "P014",
+        "P018",
+        "P022",
+        "P041",
+        "P042",
+        "P043"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "PAGE_TEXT_OBSERVED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-center-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P002",
+          "representative": "piano songs",
+          "section": null,
+          "synonyms": [
+            "songs to play on piano",
+            "songs to play on the piano",
+            "song to play on the piano",
+            "recommended piano songs",
+            "song to play on piano",
+            "songs to learn on piano",
+            "best songs for piano",
+            "best songs to play on piano",
+            "best songs to learn on piano",
+            "good piano song",
+            "piano songs to learn",
+            "good songs on piano",
+            "good songs to learn on piano",
+            "piano songs to play",
+            "good piano songs to play",
+            "good songs to play on the piano",
+            "names of piano pieces",
+            "good piano songs to learn",
+            "good songs to play on piano",
+            "songs for piano",
+            "songs on the piano",
+            "piano songs list",
+            "piano songs piano"
+          ],
+          "other_queries": [
+            "famous piano songs",
+            "good piano songs",
+            "popular piano songs",
+            "great piano songs",
+            "best songs on piano",
+            "famous piano pieces",
+            "famous pieces of piano music",
+            "piano music famous songs",
+            "popular piano pieces",
+            "piano songs popular",
+            "top piano songs",
+            "well known piano songs",
+            "most famous piano songs",
+            "most popular piano songs",
+            "piano most popular songs",
+            "popular piano compositions",
+            "popular piano songs to play",
+            "famous piano compositions",
+            "famous piano tunes",
+            "iconic piano pieces",
+            "known piano songs",
+            "most famous piano pieces",
+            "piano famous music",
+            "popular songs on piano",
+            "piano songs everyone knows",
+            "what are some popular piano songs?"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1308:G1308",
+          "delivery_method": "选曲列表",
+          "required_output": "真实曲目、筛选、版本信息和可用资源入口。",
+          "first_release_scope": "中心主任务",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P009",
+          "representative": "sad piano songs",
+          "section": "sad",
+          "synonyms": [
+            "piano sad song",
+            "saddest piano songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1367:G1367",
+          "delivery_method": "情绪分区",
+          "required_output": "sad 分区有实际曲目和适合演奏的依据；不能只给纯聆听歌单。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P014",
+          "representative": "cool songs to play on piano",
+          "section": "fun",
+          "synonyms": [
+            "cool piano songs",
+            "cool songs to learn on piano",
+            "fun piano songs",
+            "fun songs to play on piano",
+            "awesome songs on piano",
+            "awesome songs on the piano",
+            "interesting piano songs",
+            "awesome piano songs to play",
+            "awesome songs to play on the piano"
+          ],
+          "other_queries": [
+            "fun easy songs to play on piano"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1395:G1395",
+          "delivery_method": "选曲分区",
+          "required_output": "明确 cool/fun 的推荐依据，不作搜索量或用户偏好的客观排名承诺。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P018",
+          "representative": "beautiful piano songs",
+          "section": "beautiful",
+          "synonyms": [
+            "pretty piano songs",
+            "most beautiful piano pieces",
+            "beautiful songs on the piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1418:G1418",
+          "delivery_method": "选曲分区",
+          "required_output": "beautiful 的主观选择标准和具体曲目，不能只更换形容词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P022",
+          "representative": "intermediate piano songs",
+          "section": "intermediate",
+          "synonyms": [
+            "moderate piano songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1477:G1477",
+          "delivery_method": "水平分区",
+          "required_output": "中级曲目对应具体版本和难点，不用泛 easy 列表代替。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P041",
+          "representative": "happy piano music",
+          "section": "happy",
+          "synonyms": [
+            "happy piano songs"
+          ],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L63｜piano chord chart > easy piano songs",
+          "delivery_method": "情绪分区",
+          "required_output": "happy 条件有对应曲目与选择说明。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P042",
+          "representative": "piano pieces types",
+          "section": "types",
+          "synonyms": [],
+          "other_queries": [
+            "types of piano compositions"
+          ],
+          "source": "关键词策略构建器数据汇总.md｜L427｜piano scales > piano songs by genre and level",
+          "delivery_method": "内容章节",
+          "required_output": "介绍作品类型并连接可弹的实际例子，不只做一个标签。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P043",
+          "representative": "songs to sing and play piano",
+          "section": "sing-and-play",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L60｜piano chord chart > easy piano songs",
+          "delivery_method": "演奏方式分区",
+          "required_output": "弹唱条件有可用的伴奏/lead sheet/教程入口，不拿独奏谱直接代替。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 6
+    },
+    {
+      "url": "/songs/easy",
+      "baseline_id": "U004",
+      "batch": "C",
+      "original_priority": "先做",
+      "original_purpose": "挑选当前能开始练习的简单曲目",
+      "source_group_ids": [
+        "P001",
+        "P006",
+        "P036",
+        "P037",
+        "P039",
+        "P040"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "PAGE_TEXT_OBSERVED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-EASY-FIFTY-DETAIL",
+          "field": "data.additional_catalog_options[].creator/key/technical_demands",
+          "reason": "50条有精确合集与出版社Easy Piano标签，但未逐首读取全部谱页/个别同名作品署名。不能作为50首已逐曲专业评测的榜单。",
+          "needed_to_resolve": "对拟重点推荐的曲目读取出版方预览/目录版权页确认署名及技术难点；未核数据保持null。"
+        },
+        {
+          "id": "C-EASY-TWINKLE-PRICE",
+          "field": "ce-twinkle-elementary.access",
+          "reason": "正文写Free，但商品面板为单次付费/Premium。",
+          "needed_to_resolve": "页面不加免费标签；用户获取时以出版方所选许可/结账条件为准。"
+        },
+        {
+          "id": "C-EASY-RIGHTS",
+          "field": "resources.rights",
+          "reason": "已找到原作者/出版社版本；未取得本站复制乐谱/音频许可。",
+          "needed_to_resolve": "本阶段仅提供明确外部资源入口；若需本地乐谱，逐版本取得再分发依据后再制作。"
+        },
+        {
+          "id": "C-EASY-SOURCE-ERROR",
+          "field": "ce-birthday-lead.chord_notes",
+          "reason": "Hoffman lead-sheet说明将C7写为C-E-G，缺少七音；本包不沿用该错误。",
+          "needed_to_resolve": "该字段不取该页FAQ；和弦组成使用独立已核实乐理数据。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P001",
+          "representative": "easy piano songs",
+          "section": null,
+          "synonyms": [
+            "easiest songs on piano for beginners",
+            "piano easy beginner songs",
+            "piano for beginners easy songs",
+            "simple tunes on the piano",
+            "easy piano songs for beginners",
+            "easy piano tunes to play",
+            "easy songs to play on piano",
+            "piano simple songs to play",
+            "beginner piano songs",
+            "piano songs for beginners",
+            "easiest songs for piano",
+            "simple piano songs",
+            "basic piano songs",
+            "easiest piano songs",
+            "easy piano music",
+            "piano songs easy",
+            "easy tunes to play on piano",
+            "piano songs beginners easy",
+            "basic piano song",
+            "basic songs to learn on piano",
+            "easy songs to learn on piano",
+            "easy songs to play on the piano",
+            "starter piano songs",
+            "easy beginner piano songs",
+            "easy piano song",
+            "easy songs on piano",
+            "piano easy songs",
+            "song for beginner piano",
+            "basic piano songs to learn",
+            "easy piano tunes to learn",
+            "simple piano music",
+            "easy keyboard songs",
+            "easy piano songs to play",
+            "easy piano tunes",
+            "easy song to play on piano",
+            "easy songs on the piano",
+            "beginner songs for piano",
+            "easiest song to play on piano",
+            "easiest songs to learn on piano",
+            "easy piano songs to learn",
+            "easy songs for beginners on the piano",
+            "easy starter piano songs",
+            "easy to play piano songs",
+            "piano basic songs",
+            "piano pieces for beginners",
+            "piano song easy",
+            "simple piano songs to play",
+            "easy songs on the piano to learn",
+            "easy songs to learn on the piano",
+            "piano music easy to play",
+            "simple piano songs to learn",
+            "simple songs on the piano",
+            "beginner songs on piano",
+            "easy music to play on piano",
+            "easy piano pieces",
+            "good beginner piano songs",
+            "simple piano songs for beginners",
+            "beginner pieces for piano",
+            "best beginner piano songs",
+            "easiest piano songs to play",
+            "easiest songs to play on piano",
+            "easy music to play on the piano",
+            "easy piano compositions",
+            "easy piano music for beginners",
+            "easy song on piano",
+            "easy to learn piano music",
+            "good songs on piano for beginners",
+            "keyboard songs for beginners",
+            "simple piano music for beginners",
+            "simple piano pieces",
+            "simple songs for beginners on piano",
+            "simple songs on piano",
+            "simplified piano pieces",
+            "very easy piano songs",
+            "piano beginner songs",
+            "super easy piano songs"
+          ],
+          "other_queries": [
+            "piano music for beginners",
+            "piano music for beginner",
+            "30 easy piano songs",
+            "10 easy piano songs",
+            "can you give me 30 easy piano songs?",
+            "top 50 easy piano songs",
+            "what are some easy piano songs for beginners?",
+            "what is the easiest song on piano for beginners?",
+            "what is the easiest song to play on piano?",
+            "what songs should i play on piano as a beginner?"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1126:G1126",
+          "delivery_method": "易弹选曲列表",
+          "required_output": "明确适用水平、前置能力、具体版本和可开始的资源。",
+          "first_release_scope": "中心主任务",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P006",
+          "representative": "easy piano songs for kids",
+          "section": "kids",
+          "synonyms": [
+            "children's piano songs",
+            "easy children's songs for piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1345:G1345",
+          "delivery_method": "人群分区",
+          "required_output": "儿童条件对应实际曲目与适用说明；不是与成人词视为同义。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P036",
+          "representative": "c major scale piano songs",
+          "section": "c-major",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L452｜piano scales > easy piano songs",
+          "delivery_method": "调性筛选",
+          "required_output": "C 大调条件依据具体版本的调性核对，不把调性直接当作难度评级。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P037",
+          "representative": "easy beautiful piano songs",
+          "section": "beautiful",
+          "synonyms": [],
+          "other_queries": [
+            "beautiful piano pieces for beginners"
+          ],
+          "source": "关键词策略构建器数据汇总.md｜L59｜piano chord chart > easy piano songs",
+          "delivery_method": "选曲分区",
+          "required_output": "同时满足易弹和优美选择条件；给曲目和理由。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P039",
+          "representative": "easy piano songs for adults",
+          "section": "adults",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第1批 图05; Google 第1批 图07; Google 第1批 图08",
+          "delivery_method": "人群分区",
+          "required_output": "成人条件对应曲目与选择说明；不自动套儿童教材。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P040",
+          "representative": "easy piano songs to impress your friends",
+          "section": "impress",
+          "synonyms": [],
+          "other_queries": [
+            "easy piano songs that sound hard",
+            "piano songs that sound hard but are easy"
+          ],
+          "source": "关键词策略构建器数据汇总.md｜L448｜piano scales > easy piano songs; Google 第1批 图05",
+          "delivery_method": "场景分区",
+          "required_output": "演出效果/看起来难的查询以具体选择理由承接，不承诺学习结果。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 59
+    },
+    {
+      "url": "/tools/blank-sheet-music",
+      "baseline_id": "U036",
+      "batch": "D",
+      "original_priority": "先做",
+      "original_purpose": "获取并打印空白钢琴五线谱纸",
+      "source_group_ids": [
+        "P079"
+      ],
+      "historical_content_status": "content_and_data_prepared",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "CROSS_MODULE_HANDOFF",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [],
+      "original_tasks": [
+        {
+          "id": "P079",
+          "representative": "empty piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [
+            "blank sheet music"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1248:G1248",
+          "delivery_method": "独立页首要任务",
+          "required_output": "钢琴大谱表预览；基础打印/PDF导出；无须账号",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 0
+    },
+    {
+      "url": "/songs/christmas",
+      "baseline_id": "U005",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "按水平选择圣诞演奏曲目",
+      "source_group_ids": [
+        "P003",
+        "P008"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-christmas-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P003",
+          "representative": "easy christmas songs in piano",
+          "section": "easy",
+          "synonyms": [
+            "easy xmas songs for piano",
+            "christmas songs piano beginners",
+            "easy christmas songs piano",
+            "easy christmas piano songs",
+            "easy piano christmas songs",
+            "easiest christmas song on piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1317:G1317",
+          "delivery_method": "独立页首要任务",
+          "required_output": "圣诞曲目集合；easy难度筛选；版本与示范链接",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P008",
+          "representative": "piano music for christmas songs",
+          "section": null,
+          "synonyms": [
+            "xmas piano songs",
+            "christmas piano songs",
+            "christmas songs piano",
+            "christmas songs in piano",
+            "christmas songs on piano",
+            "piano christmas songs",
+            "piano music christmas songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1365:G1365",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/challenging",
+      "baseline_id": "U006",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "选择高难度或速度快的曲目",
+      "source_group_ids": [
+        "P004",
+        "P025"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-challenging-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        },
+        {
+          "id": "C-challenging-tech",
+          "field": "P004/P025 speed and technical examples",
+          "reason": "出版方等级已确认，逐曲具体速度/技术段落未核，当前为选曲基础记录，未完全满足该源任务。",
+          "needed_to_resolve": "按合法版本逐段核验速度标记、实际难点及示范；不补写最难排名。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P004",
+          "representative": "hardest piano song",
+          "section": null,
+          "synonyms": [
+            "hardest song for piano",
+            "hard songs on the piano",
+            "hard piano songs",
+            "hardest piano songs",
+            "hardest song to play on piano",
+            "hardest song played on piano",
+            "hardest songs on piano",
+            "what is the hardest song to play on piano",
+            "what is the hardest song to play on the piano",
+            "hardest piano song to play",
+            "what is the hardest piano song"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1326:G1326",
+          "delivery_method": "独立页首要任务",
+          "required_output": "分别标注速度与技术难点；样例与资源",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P025",
+          "representative": "fast piano songs",
+          "section": "fast",
+          "synonyms": [
+            "fast songs on the piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1508:G1508",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/pop",
+      "baseline_id": "U007",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "按水平选择流行钢琴曲",
+      "source_group_ids": [
+        "P005",
+        "P013",
+        "P026"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-pop-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P005",
+          "representative": "easiest pop piano songs",
+          "section": "easy",
+          "synonyms": [
+            "easiest piano pop songs",
+            "pop songs for beginners on piano",
+            "easy popular songs to play on piano for beginners",
+            "easy popular piano songs",
+            "easy pop music for piano",
+            "easy piano music pop songs",
+            "easy piano pop songs",
+            "easy pop songs on piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1159:G1159",
+          "delivery_method": "独立页首要任务",
+          "required_output": "easy、现代流行等可见筛选；版本说明与正规入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P013",
+          "representative": "piano pop songs",
+          "section": null,
+          "synonyms": [
+            "pop songs for piano",
+            "pop songs to play on piano"
+          ],
+          "other_queries": [
+            "popular songs to play on piano"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1387:G1387",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P026",
+          "representative": "modern piano pop songs",
+          "section": "modern",
+          "synonyms": [
+            "popular modern piano songs",
+            "famous piano songs modern",
+            "piano modern songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1524:G1524",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/songs/classical",
+      "baseline_id": "U008",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "按难度选择古典钢琴作品",
+      "source_group_ids": [
+        "P007",
+        "P015"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-classical-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P007",
+          "representative": "classical piano songs",
+          "section": null,
+          "synonyms": [
+            "classical piano song"
+          ],
+          "other_queries": [
+            "classic piano songs",
+            "popular classical piano songs",
+            "famous classical songs on piano",
+            "best classical piano songs",
+            "classical piano songs famous",
+            "common classical piano songs",
+            "famous classical piano songs",
+            "famous piano songs classical",
+            "top 50 classical piano pieces"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1356:G1356",
+          "delivery_method": "独立页首要任务",
+          "required_output": "作品信息、难点标签、easy筛选、示范或谱源",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P015",
+          "representative": "easy classical piano songs",
+          "section": "easy",
+          "synonyms": [
+            "simple classical piano songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1397:G1397",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 54
+    },
+    {
+      "url": "/songs/easy-chords",
+      "baseline_id": "U009",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "找能用基础和弦弹的歌曲",
+      "source_group_ids": [
+        "P010"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-easy-chords-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P010",
+          "representative": "easy chords songs for beginners piano",
+          "section": null,
+          "synonyms": [
+            "easy piano chord songs",
+            "easy chords piano songs",
+            "easy piano chords songs",
+            "basic piano chords songs",
+            "easy chord song piano",
+            "simple piano chords songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A350:G350",
+          "delivery_method": "独立页首要任务",
+          "required_output": "曲目、所需和弦与版本入口；不复制完整受限歌词/谱面",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/anime",
+      "baseline_id": "U010",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "选择动漫音乐的钢琴曲目",
+      "source_group_ids": [
+        "P011"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-anime-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P011",
+          "representative": "most lovely piano anime songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1384:G1384",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/minecraft",
+      "baseline_id": "U011",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "选择Minecraft配乐的钢琴曲目",
+      "source_group_ids": [
+        "P012"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-minecraft-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P012",
+          "representative": "piano minecraft songs",
+          "section": null,
+          "synonyms": [
+            "minecraft song piano",
+            "minecraft piano song"
+          ],
+          "other_queries": [
+            "minecraft theme song piano"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1386:G1386",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/rock",
+      "baseline_id": "U012",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "选择摇滚风格钢琴曲目",
+      "source_group_ids": [
+        "P016"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-rock-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P016",
+          "representative": "piano rock songs",
+          "section": null,
+          "synonyms": [
+            "rock for piano",
+            "best piano rock music",
+            "best piano rock songs",
+            "great piano rock songs"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1408:G1408",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/taylor-swift",
+      "baseline_id": "U013",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "选择该艺人曲目，并按easy难度筛选",
+      "source_group_ids": [
+        "P017",
+        "P031"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-taylor-swift-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P017",
+          "representative": "taylor swift piano songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1413:G1413",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P031",
+          "representative": "easy taylor swift piano songs",
+          "section": "easy",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1585:G1585",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/songs/disney",
+      "baseline_id": "U014",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "选择Disney钢琴曲目，并按easy难度筛选",
+      "source_group_ids": [
+        "P019",
+        "P021"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-disney-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P019",
+          "representative": "disney easy piano songs",
+          "section": "easy",
+          "synonyms": [
+            "easy disney piano songs",
+            "piano disney songs easy",
+            "easy disney songs on piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1424:G1424",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P021",
+          "representative": "disney piano songs",
+          "section": null,
+          "synonyms": [
+            "disney songs piano music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1468:G1468",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/wedding",
+      "baseline_id": "U015",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "为婚礼演奏挑选曲目",
+      "source_group_ids": [
+        "P020"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-wedding-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P020",
+          "representative": "piano wedding songs",
+          "section": null,
+          "synonyms": [
+            "wedding ceremony songs for piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1450:G1450",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/worship",
+      "baseline_id": "U016",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "为敬拜演奏挑选曲目，并按easy难度筛选",
+      "source_group_ids": [
+        "P023",
+        "P032"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-worship-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P023",
+          "representative": "piano worship songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1488:G1488",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P032",
+          "representative": "easy worship songs on piano",
+          "section": "easy",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1586:G1586",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 6
+    },
+    {
+      "url": "/songs/rap",
+      "baseline_id": "U017",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选适合钢琴演奏的Rap曲目",
+      "source_group_ids": [
+        "P024"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-rap-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P024",
+          "representative": "rap songs for piano",
+          "section": null,
+          "synonyms": [
+            "rap songs in piano"
+          ],
+          "other_queries": [
+            "rap songs with piano"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1491:G1491",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/piano-and-guitar",
+      "baseline_id": "U018",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选钢琴与吉他合奏曲目",
+      "source_group_ids": [
+        "P027"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-piano-and-guitar-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P027",
+          "representative": "piano and guitar songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1531:G1531",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/songs/beatles",
+      "baseline_id": "U019",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选The Beatles曲目的钢琴版本",
+      "source_group_ids": [
+        "P028"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-beatles-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P028",
+          "representative": "beatles piano songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1566:G1566",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/songs/coldplay",
+      "baseline_id": "U020",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选Coldplay曲目的钢琴版本",
+      "source_group_ids": [
+        "P029"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-coldplay-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P029",
+          "representative": "coldplay piano songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1575:G1575",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 5
+    },
+    {
+      "url": "/songs/country",
+      "baseline_id": "U021",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选Country风格钢琴曲目",
+      "source_group_ids": [
+        "P030"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-country-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P030",
+          "representative": "country music piano songs",
+          "section": null,
+          "synonyms": [
+            "country piano songs",
+            "piano songs country"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1576:G1576",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/jazz",
+      "baseline_id": "U022",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选爵士钢琴曲目，并按easy难度筛选",
+      "source_group_ids": [
+        "P033",
+        "P038"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-jazz-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P033",
+          "representative": "jazz piano songs",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1604:G1604",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P038",
+          "representative": "easy jazz piano songs",
+          "section": "easy",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第1批 图07",
+          "delivery_method": "专题内的条件分区",
+          "required_output": "当前原任务条件下有实际曲目、具体版本和选择依据；不以标签代替内容。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/halloween",
+      "baseline_id": "U023",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "为万圣节场合选择钢琴曲目",
+      "source_group_ids": [
+        "P034"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-halloween-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P034",
+          "representative": "piano songs for halloween",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1628:G1628",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/songs/undertale",
+      "baseline_id": "U024",
+      "batch": "C",
+      "original_priority": "后做",
+      "original_purpose": "挑选Undertale配乐的钢琴版本",
+      "source_group_ids": [
+        "P035"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "C-undertale-review",
+          "field": "per-arrangement technical profile and reuse",
+          "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+          "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P035",
+          "representative": "undertale songs on piano",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1642:G1642",
+          "delivery_method": "独立页首要任务",
+          "required_output": "有实际曲目和选择依据的集合；示范/可用版本入口；有来源的难度标签",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/sheet-music",
+      "baseline_id": "U025",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "按难度、风格和是否可免费获取找到可用钢琴谱",
+      "source_group_ids": [
+        "P047",
+        "P048",
+        "P060",
+        "P063",
+        "P070"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-sheet-music-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P047",
+          "representative": "piano music sheet",
+          "section": null,
+          "synonyms": [
+            "piano sheet music",
+            "piano songs sheet music",
+            "sheet music piano sheet music"
+          ],
+          "other_queries": [
+            "piano sheet music pdf"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1044:G1044",
+          "delivery_method": "独立页首要任务",
+          "required_output": "版本、难度、免费/付费获取方式；中级、Gospel、Worship分区；真实可用谱源",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P048",
+          "representative": "free piano sheet music songs",
+          "section": "free",
+          "synonyms": [
+            "free printable piano music",
+            "piano sheet for free",
+            "free sheet piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1045:G1045",
+          "delivery_method": "免费资源筛选",
+          "required_output": "实际存在的可免费获取版本，不以付费外链冒充。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P060",
+          "representative": "easy contemporary gospel sheet music for the piano",
+          "section": "gospel",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1160:G1160",
+          "delivery_method": "Gospel资源分区",
+          "required_output": "有对应作品和具体可用版本。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P063",
+          "representative": "free easy contemporary praise and worship sheet music for piano",
+          "section": "worship",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1176:G1176",
+          "delivery_method": "Worship资源分区",
+          "required_output": "满足 easy/free 条件的真实版本，不能用普通谱库替代。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P070",
+          "representative": "medium piano sheet music",
+          "section": "intermediate",
+          "synonyms": [
+            "intermediate piano sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1074:G1074",
+          "delivery_method": "中级资源分区",
+          "required_output": "具体版本有难度依据和真实获取方式。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 7
+    },
+    {
+      "url": "/sheet-music/easy",
+      "baseline_id": "U026",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取简化、易弹的钢琴曲谱",
+      "source_group_ids": [
+        "P044",
+        "P110",
+        "P111"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-easy-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P044",
+          "representative": "easy piano sheet music",
+          "section": null,
+          "synonyms": [
+            "easy piano sheet music for beginners",
+            "easy piano scores",
+            "easy piano sheet",
+            "easy piano songs sheet music",
+            "easy sheet music for piano",
+            "piano easy sheet music",
+            "easy keyboard music sheet",
+            "easy piano songs sheet",
+            "sheet music for piano easy",
+            "simple piano songs sheet music",
+            "piano sheet music easy",
+            "simple sheet music for beginners",
+            "easy keyboard sheet music",
+            "easy sheet music for beginners",
+            "simple piano sheet music"
+          ],
+          "other_queries": [
+            "easy piano sheet free",
+            "piano sheets free easy",
+            "simple piano sheet music free",
+            "easy piano sheet music free",
+            "easy free piano sheet music",
+            "easy piano sheet music pdf",
+            "easy piano sheet music pdf free",
+            "what is the easiest sheet music for piano?"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1127:G1127",
+          "delivery_method": "独立页首要任务",
+          "required_output": "具体版本预览与难度说明；成人/儿童筛选；可打印或正规获取方式",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P110",
+          "representative": "easy piano sheet music for adults",
+          "section": "adults",
+          "synonyms": [],
+          "other_queries": [
+            "beginner piano sheet music for adults",
+            "beginner piano sheet music for adults free",
+            "free beginner piano sheet music for adults pdf"
+          ],
+          "source": "Google 第1批 图09; Google 第1批 图10; Google 第1批 图11; Google 第1批 图12",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "成人初学者可用的钢琴曲谱；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P111",
+          "representative": "easy piano sheet music for kids",
+          "section": "kids",
+          "synonyms": [],
+          "other_queries": [
+            "beginner piano sheet music for kids"
+          ],
+          "source": "Google 第1批 图09; Google 第1批 图10; Google 第1批 图19",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "儿童初学钢琴曲谱；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/beginner",
+      "baseline_id": "U027",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取初学阶段能使用的钢琴谱",
+      "source_group_ids": [
+        "P045",
+        "P106"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-beginner-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P045",
+          "representative": "beginner piano sheet music",
+          "section": null,
+          "synonyms": [
+            "piano sheet music for beginners",
+            "beginner piano songs sheet music",
+            "keyboard sheet music for beginners",
+            "basic piano sheet music",
+            "easy starter piano sheet music",
+            "piano sheets for beginners",
+            "easy beginner piano sheet music",
+            "piano sheet for beginners",
+            "beginning piano sheet music",
+            "beginner piano sheets",
+            "beginner sheet music piano",
+            "piano beginner sheet music"
+          ],
+          "other_queries": [
+            "free music piano sheets for beginners",
+            "free piano sheet music for beginners",
+            "keyboard sheet music free beginners",
+            "easy keyboard sheet music free",
+            "beginner piano music sheets free",
+            "keyboard sheet music for beginners free",
+            "free beginner piano sheet music",
+            "free sheet music for piano beginners",
+            "piano sheet music free for beginners",
+            "free piano sheets for beginners",
+            "piano sheet music for beginners free",
+            "beginner piano sheet music for beginners pdf",
+            "beginner piano sheet music free",
+            "beginner piano sheet music pdf free",
+            "what are some good beginner piano sheet music songs?"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1128:G1128",
+          "delivery_method": "独立页首要任务",
+          "required_output": "基础能力说明；曲谱资源；有指法编号的版本筛选；免费/打印方式",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P106",
+          "representative": "beginner piano sheet music with finger numbers",
+          "section": "finger-numbers",
+          "synonyms": [],
+          "other_queries": [
+            "beginner piano sheet music with finger numbers pdf"
+          ],
+          "source": "Google 第1批 图14; Google 第1批 图15; Google 第1批 图16; Google 第1批 图17",
+          "delivery_method": "指法版本筛选",
+          "required_output": "资源本身有核对后的指法编号；不是全站开关即可满足。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/sheet-music/christmas",
+      "baseline_id": "U028",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取圣诞曲目的钢琴谱",
+      "source_group_ids": [
+        "P046",
+        "P065"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-christmas-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P046",
+          "representative": "christmas songs piano score",
+          "section": null,
+          "synonyms": [
+            "christmas songs sheets piano",
+            "christmas piano song sheet",
+            "christmas songs piano sheet music",
+            "christmas song piano sheet",
+            "christmas song piano sheet music free"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1314:G1314",
+          "delivery_method": "独立页首要任务",
+          "required_output": "同一圣诞谱库；难度筛选；各版本来源及使用条件",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P065",
+          "representative": "easy christmas carols piano sheet music",
+          "section": "easy",
+          "synonyms": [
+            "piano easy christmas sheet music",
+            "easy christmas piano sheet music",
+            "beginner christmas piano sheet music",
+            "beginner piano christmas sheet music",
+            "easy piano christmas sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1189:G1189",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "获取简化圣诞钢琴曲谱；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/letter-notes",
+      "baseline_id": "U029",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "不依赖常规读谱，获取歌曲字母音名资源",
+      "source_group_ids": [
+        "P050",
+        "P051",
+        "P097"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-letter-notes-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P050",
+          "representative": "songs with letters piano",
+          "section": null,
+          "synonyms": [
+            "piano notes songs",
+            "keyboard piano songs with letters",
+            "piano notes for songs",
+            "keyboard notes songs",
+            "piano keys and songs",
+            "piano song notes",
+            "songs with piano letters",
+            "letter piano music",
+            "notes for piano songs",
+            "songs with piano notes",
+            "piano keyboard keys songs",
+            "piano songs notes",
+            "piano songs with letters"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1331:G1331",
+          "delivery_method": "独立页首要任务",
+          "required_output": "真实字母音名版本；音区/节奏说明；easy/popular筛选；播放示范按来源条件提供",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P051",
+          "representative": "easy piano songs with letters",
+          "section": "easy",
+          "synonyms": [
+            "piano easy songs letters",
+            "piano letters easy songs",
+            "letter easy piano songs",
+            "easy piano songs for beginners with letters",
+            "simple piano songs for beginners with letters",
+            "simple piano songs with letters"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1333:G1333",
+          "delivery_method": "字母资源分区",
+          "required_output": "交付可实际使用的易弹字母音名资源，不只是曲名推荐。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P097",
+          "representative": "piano notes with letters for popular songs",
+          "section": "popular",
+          "synonyms": [
+            "piano pop songs letters"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1623:G1623",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "流行歌曲字母音名资源；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/annotated",
+      "baseline_id": "U030",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取五线谱上标有字母音名的曲谱",
+      "source_group_ids": [
+        "P054",
+        "P061"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-annotated-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P054",
+          "representative": "piano sheet music with letters",
+          "section": null,
+          "synonyms": [
+            "piano music with letters",
+            "music sheet piano with letters",
+            "piano sheets with letters",
+            "sheet music using letters",
+            "sheet music with letters",
+            "music sheet with letters",
+            "sheet music with letters piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1048:G1048",
+          "delivery_method": "独立页首要任务",
+          "required_output": "可看见五线谱与字母的版本；easy难度筛选；解释与纯字母谱的区别",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P061",
+          "representative": "easy piano sheet music with letters",
+          "section": "easy",
+          "synonyms": [
+            "basic piano sheet music with letters",
+            "beginner piano sheet music with letters",
+            "piano sheets for beginners with letters"
+          ],
+          "other_queries": [
+            "easy piano sheet music with letters free",
+            "free piano sheet music pdf for beginners with letters"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1162:G1162",
+          "delivery_method": "标注谱面筛选",
+          "required_output": "谱面实际同时有五线谱和字母标注，不等于纯字母文本。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/sheet-music/lead-sheets",
+      "baseline_id": "U031",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取歌曲和弦资料或旋律加和弦的lead sheets",
+      "source_group_ids": [
+        "P062",
+        "P071"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-lead-sheets-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P062",
+          "representative": "piano chords songs",
+          "section": null,
+          "synonyms": [
+            "piano songs with chords",
+            "song piano chords",
+            "chords for piano songs",
+            "piano chords for songs",
+            "piano music chords for songs"
+          ],
+          "other_queries": [
+            "piano chords popular songs"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A332:G332",
+          "delivery_method": "独立页首要任务",
+          "required_output": "在同一目录明确标注chord-only与melody+chords；具体曲目和正规获取方式",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P071",
+          "representative": "piano lead sheets",
+          "section": "melody-and-chords",
+          "synonyms": [
+            "lead sheet music for piano"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1075:G1075",
+          "delivery_method": "资源类型分区",
+          "required_output": "区分 melody+chords 与 chord-only 资料，分别展示实际资源。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/pop",
+      "baseline_id": "U032",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "查找流行歌曲钢琴谱及简化版本",
+      "source_group_ids": [
+        "P076",
+        "P112"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-pop-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P076",
+          "representative": "popular piano sheet music",
+          "section": null,
+          "synonyms": [
+            "pop piano sheet music",
+            "pop songs piano sheet music",
+            "popular songs piano sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1083:G1083",
+          "delivery_method": "独立页首要任务",
+          "required_output": "具体歌曲/版本、easy筛选、获取方式",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P112",
+          "representative": "easy piano sheet music popular songs",
+          "section": "easy",
+          "synonyms": [],
+          "other_queries": [
+            "beginner piano sheet music popular songs",
+            "easy piano sheet music free popular songs"
+          ],
+          "source": "Google 第1批 图09; Google 第1批 图10; Google 第1批 图11; Google 第1批 图12",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "易弹流行钢琴曲谱集合；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/disney",
+      "baseline_id": "U033",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "查Disney钢琴谱，按难度与字母标注方式选择",
+      "source_group_ids": [
+        "P078",
+        "P087"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-disney-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P078",
+          "representative": "disney song piano sheet for beginners",
+          "section": null,
+          "synonyms": [
+            "beginner disney piano sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1506:G1506",
+          "delivery_method": "独立页首要任务",
+          "required_output": "初学谱与字母谱分区；版本与来源",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P087",
+          "representative": "disney songs on piano with letters",
+          "section": "letter-notes",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1578:G1578",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "Disney歌曲字母音名资源；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/classical",
+      "baseline_id": "U034",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "查古典钢琴谱并选择初学版本",
+      "source_group_ids": [
+        "P105",
+        "P107"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-classical-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P105",
+          "representative": "beginner classical piano sheet music",
+          "section": "beginner",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第1批 图16",
+          "delivery_method": "同页明确章节／选项",
+          "required_output": "初学古典钢琴曲谱；必须在该页提供实际结果，不只增加一个关键词。",
+          "first_release_scope": "后续同页补齐",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P107",
+          "representative": "classical piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L339｜beginner piano sheet music > free printable piano sheet music",
+          "delivery_method": "独立页首要任务",
+          "required_output": "作品/版本、难度筛选、来源与下载条件",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 4
+    },
+    {
+      "url": "/sheet-music/jazz",
+      "baseline_id": "U035",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取易弹爵士钢琴谱",
+      "source_group_ids": [
+        "P108"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-jazz-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P108",
+          "representative": "easy jazz piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [
+            "beginner jazz piano sheet music"
+          ],
+          "source": "Google 第1批 图12",
+          "delivery_method": "独立页首要任务",
+          "required_output": "版本、难点、可用谱源",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/sheet-music/jingle-bells",
+      "baseline_id": "U037",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取Jingle Bells钢琴曲谱",
+      "source_group_ids": [
+        "P049",
+        "P053",
+        "P074"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-jingle-bells-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P049",
+          "representative": "jingle bells song sheet for piano",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1322:G1322",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P053",
+          "representative": "jingle bells piano keys easy",
+          "section": "letter-notes",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A557:G557",
+          "delivery_method": "同作品的版本／记谱形式",
+          "required_output": "当前原词对应的版本/记谱形式需真实存在、可获取；不同版本清楚标示，不视为同义词。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P074",
+          "representative": "jingle bells piano sheet music for beginners",
+          "section": "beginner",
+          "synonyms": [
+            "jingle bells easy piano sheet music",
+            "easy jingle bells piano sheet music",
+            "jingle bells beginner piano sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1306:G1306",
+          "delivery_method": "同作品的版本／记谱形式",
+          "required_output": "当前原词对应的版本/记谱形式需真实存在、可获取；不同版本清楚标示，不视为同义词。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/sheet-music/amazing-grace",
+      "baseline_id": "U041",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取Amazing Grace钢琴曲谱",
+      "source_group_ids": [
+        "P057"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-amazing-grace-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P057",
+          "representative": "amazing grace song sheet for piano",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1337:G1337",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/sheet-music/fur-elise",
+      "baseline_id": "U045",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Für Elise简化钢琴谱",
+      "source_group_ids": [
+        "P066"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-fur-elise-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P066",
+          "representative": "fur elise piano sheet music easy",
+          "section": null,
+          "synonyms": [
+            "fur elise easy piano sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1195:G1195",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/sheet-music/happy-birthday",
+      "baseline_id": "U048",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Happy Birthday简化钢琴谱",
+      "source_group_ids": [
+        "P073",
+        "P083"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-happy-birthday-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P073",
+          "representative": "happy birthday sheet music piano easy",
+          "section": null,
+          "synonyms": [
+            "easy piano happy birthday sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1226:G1226",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P083",
+          "representative": "piano keys for happy birthday song",
+          "section": "letter-notes",
+          "synonyms": [
+            "happy birthday song piano notes"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A797:G797",
+          "delivery_method": "同作品的版本／记谱形式",
+          "required_output": "当前原词对应的版本/记谱形式需真实存在、可获取；不同版本清楚标示，不视为同义词。",
+          "first_release_scope": "资源就绪后开放",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 3
+    },
+    {
+      "url": "/sheet-music/hot-cross-buns",
+      "baseline_id": "U052",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Hot Cross Buns琴键/音名",
+      "source_group_ids": [
+        "P091"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-hot-cross-buns-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P091",
+          "representative": "hot cross buns piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A830:G830",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/jesus-loves-me",
+      "baseline_id": "U054",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Jesus Loves Me琴键/音名",
+      "source_group_ids": [
+        "P093"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-jesus-loves-me-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P093",
+          "representative": "jesus loves me piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A840:G840",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/mary-had-a-little-lamb",
+      "baseline_id": "U061",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Mary Had a Little Lamb琴键/音名",
+      "source_group_ids": [
+        "P102"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-mary-had-a-little-lamb-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P102",
+          "representative": "mary had a little lamb piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A956:G956",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/abc-song",
+      "baseline_id": "U062",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取ABC Song钢琴谱",
+      "source_group_ids": [
+        "P104"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-abc-song-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P104",
+          "representative": "abc song piano sheet",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L256｜beginner piano sheet music > piano sheet music with letter notes",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/ode-to-joy",
+      "baseline_id": "U064",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Ode to Joy简化钢琴谱",
+      "source_group_ids": [
+        "P114"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-ode-to-joy-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P114",
+          "representative": "ode to joy easy piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第1批 图13",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/silent-night",
+      "baseline_id": "U065",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "Silent Night初学钢琴曲谱",
+      "source_group_ids": [
+        "P115"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "ROLLING_APPROVED_SCOPE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-silent-night-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P115",
+          "representative": "silent night beginner piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第1批 图17",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/twinkle-twinkle-little-star",
+      "baseline_id": "U066",
+      "batch": "D",
+      "original_priority": "后做",
+      "original_purpose": "获取Twinkle Twinkle Little Star钢琴谱",
+      "source_group_ids": [
+        "P116"
+      ],
+      "historical_content_status": "content_and_data_prepared_with_issues",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "FIRST_BATCH",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-twinkle-twinkle-little-star-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P116",
+          "representative": "twinkle twinkle little star piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "关键词策略构建器数据汇总.md｜L37｜piano chord chart > easy piano sheet music; 关键词策略构建器数据汇总.md｜L252｜beginner piano sheet music > piano sheet music with letter notes; 关键词策略构建器数据汇总.md｜L407｜piano scales > reading piano sheet music",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "按页面准备顺序验收",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/sheet-music/let-it-go",
+      "baseline_id": "U038",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Let It Go的简化钢琴谱",
+      "source_group_ids": [
+        "P052",
+        "P081"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-let-it-go-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        },
+        {
+          "id": "D-let-it-go-free",
+          "field": "free PDF / letter-note intent",
+          "reason": "已核正规付费版本；未确认免费PDF和纯字母谱版本，不能声称已满足这些限定。",
+          "needed_to_resolve": "取得明确可免费使用的准确版本及目标记谱形式，保留原暂停状态。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P052",
+          "representative": "frozen let it go piano sheet music easy free pdf",
+          "section": null,
+          "synonyms": [
+            "let it go piano sheet music easy",
+            "sheet music for piano let it go frozen easy"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1151:G1151",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P081",
+          "representative": "let it go piano keys easy",
+          "section": "letter-notes",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A779:G779",
+          "delivery_method": "同作品的版本／记谱形式",
+          "required_output": "当前原词对应的版本/记谱形式需真实存在、可获取；不同版本清楚标示，不视为同义词。",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/super-mario-theme",
+      "baseline_id": "U039",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Super Mario Theme的简化钢琴谱",
+      "source_group_ids": [
+        "P055",
+        "P084"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-super-mario-theme-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        },
+        {
+          "id": "D-super-mario-theme-free",
+          "field": "free PDF / letter-note intent",
+          "reason": "已核正规付费版本；未确认免费PDF和纯字母谱版本，不能声称已满足这些限定。",
+          "needed_to_resolve": "取得明确可免费使用的准确版本及目标记谱形式，保留原暂停状态。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P055",
+          "representative": "super mario theme piano sheet music easy free pdf",
+          "section": null,
+          "synonyms": [
+            "super mario theme piano sheet music easy free"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1156:G1156",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P084",
+          "representative": "super mario theme song piano sheet",
+          "section": "beginner",
+          "synonyms": [
+            "super mario bros theme song piano sheet"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1554:G1554",
+          "delivery_method": "同作品的版本／记谱形式",
+          "required_output": "当前原词对应的版本/记谱形式需真实存在、可获取；不同版本清楚标示，不视为同义词。",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/thats-amore",
+      "baseline_id": "U040",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "That's Amore的钢琴键位/音名",
+      "source_group_ids": [
+        "P056"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-thats-amore-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P056",
+          "representative": "what are the piano keys to thats amore",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A566:G566",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/black-parade",
+      "baseline_id": "U042",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Welcome to the Black Parade钢琴音名",
+      "source_group_ids": [
+        "P058"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-black-parade-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P058",
+          "representative": "black parade keys piano",
+          "section": null,
+          "synonyms": [
+            "welcome to the black parade piano keys"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A568:G568",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/clocks",
+      "baseline_id": "U043",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Clocks钢琴键位",
+      "source_group_ids": [
+        "P059"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-clocks-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P059",
+          "representative": "clocks piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A570:G570",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/from-the-start",
+      "baseline_id": "U044",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "From the Start钢琴谱",
+      "source_group_ids": [
+        "P064"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-from-the-start-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        },
+        {
+          "id": "D-from-direct",
+          "field": "direct score URL",
+          "reason": "出版社目录列出了准确P/V/G产品；跳转目标当前未能访问。",
+          "needed_to_resolve": "上线前完成HL 1000742930所连Sheet Music Direct产品访问核验。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P064",
+          "representative": "from the start piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1184:G1184",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/song-of-storms",
+      "baseline_id": "U046",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "获取Song of Storms钢琴曲谱",
+      "source_group_ids": [
+        "P068"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-song-of-storms-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P068",
+          "representative": "song of storms piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1411:G1411",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/pink-panther",
+      "baseline_id": "U047",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "获取Pink Panther钢琴曲谱",
+      "source_group_ids": [
+        "P072",
+        "P098"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-pink-panther-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P072",
+          "representative": "pink panther theme song piano sheet",
+          "section": null,
+          "synonyms": [
+            "pink panther theme song piano sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1451:G1451",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        },
+        {
+          "id": "P098",
+          "representative": "pink panther piano keys",
+          "section": "letter-notes",
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A883:G883",
+          "delivery_method": "同作品的版本／记谱形式",
+          "required_output": "当前原词对应的版本/记谱形式需真实存在、可获取；不同版本清楚标示，不视为同义词。",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/sheet-music/still-dre",
+      "baseline_id": "U049",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Still D.R.E.钢琴键位",
+      "source_group_ids": [
+        "P075"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-still-dre-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P075",
+          "representative": "piano keys for still dre",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A737:G737",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/carol-of-the-bells",
+      "baseline_id": "U050",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Carol of the Bells简化钢琴谱",
+      "source_group_ids": [
+        "P077"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-carol-of-the-bells-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P077",
+          "representative": "carol of the bells easy piano sheet music",
+          "section": null,
+          "synonyms": [
+            "easy piano sheet music for carol of the bells"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1241:G1241",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/edelweiss",
+      "baseline_id": "U051",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "获取Edelweiss钢琴曲谱",
+      "source_group_ids": [
+        "P088"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-edelweiss-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P088",
+          "representative": "edelweiss song piano sheet",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1587:G1587",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/in-my-life",
+      "baseline_id": "U053",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "In My Life钢琴谱",
+      "source_group_ids": [
+        "P092"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-in-my-life-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P092",
+          "representative": "in my life piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1282:G1282",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/all-of-me-john-legend",
+      "baseline_id": "U055",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "John Legend All of Me琴键/音名",
+      "source_group_ids": [
+        "P094"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-all-of-me-john-legend-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P094",
+          "representative": "john legend all of me piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A841:G841",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 2
+    },
+    {
+      "url": "/sheet-music/runaway-kanye-west",
+      "baseline_id": "U056",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Kanye West Runaway的琴键/音名",
+      "source_group_ids": [
+        "P095"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-runaway-kanye-west-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P095",
+          "representative": "piano keys for runaway kanye west",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [
+            "runaway piano keys"
+          ],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A872:G872",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/piano-man",
+      "baseline_id": "U057",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Piano Man简化钢琴谱",
+      "source_group_ids": [
+        "P096"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-piano-man-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P096",
+          "representative": "piano man sheet music easy",
+          "section": null,
+          "synonyms": [
+            "easy piano man sheet music"
+          ],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1288:G1288",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/someone-like-you-adele",
+      "baseline_id": "U058",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Adele Someone Like You琴键/音名",
+      "source_group_ids": [
+        "P099"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-someone-like-you-adele-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P099",
+          "representative": "someone like you adele piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A887:G887",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/song-of-healing",
+      "baseline_id": "U059",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "获取Song of Healing钢琴曲谱",
+      "source_group_ids": [
+        "P100"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-song-of-healing-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        },
+        {
+          "id": "D-healing-score",
+          "field": "usable specific sheet edition",
+          "reason": "只确认匹配作品的演示/教程，未确认可获取的具体谱版本；Spirit Tracks同名曲不可替代。",
+          "needed_to_resolve": "核实Majora’s Mask Song of Healing的正规具体乐谱SKU和获取方式。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P100",
+          "representative": "song of healing piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A1634:G1634",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/a-whole-new-world",
+      "baseline_id": "U060",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "A Whole New World琴键/音名",
+      "source_group_ids": [
+        "P101"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-a-whole-new-world-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P101",
+          "representative": "a whole new world piano keys",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "piano_keyword_research_combined.xlsx｜关键词数据!A905:G905",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    },
+    {
+      "url": "/sheet-music/easy-on-me",
+      "baseline_id": "U063",
+      "batch": "D",
+      "original_priority": "暂不做",
+      "original_purpose": "Easy On Me曲名对应钢琴谱",
+      "source_group_ids": [
+        "P109"
+      ],
+      "historical_content_status": "baseline_paused_content_researched",
+      "public_status": "UNVERIFIED",
+      "repository_status": "UNVERIFIED_NO_SOURCE_ACCESS",
+      "phase": "RESERVED_BLOCKED_DO_NOT_ACTIVATE",
+      "delivery_this_round": "preserve entire prior record; first-batch pages additionally receive additive verified metadata/copy; never assume live state",
+      "original_issues": [
+        {
+          "id": "D-easy-on-me-reuse",
+          "field": "self-hosted scores/audio and unfilled edition fields",
+          "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+          "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+        }
+      ],
+      "original_tasks": [
+        {
+          "id": "P109",
+          "representative": "easy on me piano sheet music",
+          "section": null,
+          "synonyms": [],
+          "other_queries": [],
+          "source": "Google 第1批 图12",
+          "delivery_method": "独立页首要任务",
+          "required_output": "确认作品/作者/编曲版本；预览与难度信息；明确记谱形式；真实可用下载或正规版本入口",
+          "first_release_scope": "供给未确认／当前暂停",
+          "merge_decision_status": "语义分组/同页承接建议；非同义词保持区别"
+        }
+      ],
+      "resource_occurrence_count": 1
+    }
+  ],
+  "unassigned_tasks": [
+    {
+      "source_group_id": "P067",
+      "keyword": "piano tab",
+      "keywords": [
+        "piano tab",
+        "keyboard music tabs",
+        "piano tablature"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "Tab/数字/字母的实际记谱体系与交付对象未明确；不能直接等同钢琴五线谱、电脑键盘谱或手指编号",
+      "next_step": "确认原查询对应的记谱形式后，再决定并入letter-notes/annotated或独立任务"
+    },
+    {
+      "source_group_id": "P103",
+      "keyword": "piano sheet numbers letters",
+      "keywords": [
+        "piano sheet numbers letters",
+        "piano song notes in numbers"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "Tab/数字/字母的实际记谱体系与交付对象未明确；不能直接等同钢琴五线谱、电脑键盘谱或手指编号",
+      "next_step": "确认原查询对应的记谱形式后，再决定并入letter-notes/annotated或独立任务"
+    },
+    {
+      "source_group_id": "P069",
+      "keyword": "hallelujah song piano chords",
+      "keywords": [
+        "hallelujah song piano chords"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P080",
+      "keyword": "for good piano sheet music",
+      "keywords": [
+        "for good piano sheet music"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P082",
+      "keyword": "milonga with lover song piano sheet music",
+      "keywords": [
+        "milonga with lover song piano sheet music"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P085",
+      "keyword": "up theme song piano sheet music",
+      "keywords": [
+        "up theme song piano sheet music"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P086",
+      "keyword": "charlie brown theme song piano sheet music",
+      "keywords": [
+        "charlie brown theme song piano sheet music"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P089",
+      "keyword": "golden piano sheet music easy",
+      "keywords": [
+        "golden piano sheet music easy",
+        "golden easy piano sheet music"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P090",
+      "keyword": "hallelujah song piano sheet music",
+      "keywords": [
+        "hallelujah song piano sheet music"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "现有资料不足以唯一确认具体作品、主题或版本；同名词不应被直接固化成一张曲谱页",
+      "next_step": "核对作品/作者/编曲和可获取版本；保留所有原词，不扩写歌手或标题"
+    },
+    {
+      "source_group_id": "P135",
+      "keyword": "number keys piano",
+      "keywords": [
+        "number keys piano",
+        "piano key numbering",
+        "piano key numbers",
+        "piano keyboard numbered",
+        "piano numbers",
+        "numbered piano keys",
+        "numbered piano notes",
+        "piano keyboard numbers",
+        "number notes piano",
+        "number piano notes",
+        "piano keys number",
+        "piano keys labeled with numbers"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "number keys piano尚不能唯一确定是键号、音级还是手指编号",
+      "next_step": "确认数字所指对象；在正确标注/指法页承接，不先制造独立数字页面"
+    },
+    {
+      "source_group_id": "P211",
+      "keyword": "grade 1 piano scales",
+      "keywords": [
+        "grade 1 piano scales"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "grade 1/2未提供考试体系、版本和适用年份，无法确定准确音阶清单",
+      "next_step": "确认体系与版本后再定义页面；暂不擅自生成ABRSM或Trinity URL"
+    },
+    {
+      "source_group_id": "P212",
+      "keyword": "grade 2 piano scales",
+      "keywords": [
+        "grade 2 piano scales"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "grade 1/2未提供考试体系、版本和适用年份，无法确定准确音阶清单",
+      "next_step": "确认体系与版本后再定义页面；暂不擅自生成ABRSM或Trinity URL"
+    },
+    {
+      "source_group_id": "P243",
+      "keyword": "piano substitute chords on bb key",
+      "keywords": [
+        "piano substitute chords on bb key"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "降B调替代和弦的问题范围和专业材料尚未明确",
+      "next_step": "先确认查询任务与可用案例；可补入走向页，不预先承诺独立教程"
+    },
+    {
+      "source_group_id": "P246",
+      "keyword": "how to play golden hour on piano",
+      "keywords": [
+        "how to play golden hour on piano"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "Golden Hour的作品版本与可用教学素材未核实",
+      "next_step": "核对作品与可使用示例，再决定歌曲资源页或教程"
+    },
+    {
+      "source_group_id": "P250",
+      "keyword": "how to use scales in any song",
+      "keywords": [
+        "how to use scales in any song"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "仅有视频标题提取，尚无独立Google查询与量化支持",
+      "next_step": "保留需求线索；核实搜索表达和任务后再决定独立页或音阶练习章节"
+    },
+    {
+      "source_group_id": "P263",
+      "keyword": "play along piano",
+      "keywords": [
+        "play along piano"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "play along piano未明确是伴奏、跟弹视频、谱面同步还是软件功能",
+      "next_step": "确认用户想获得的输出，不默认设计新App或页面"
+    },
+    {
+      "source_group_id": "P265",
+      "keyword": "what are some difficult music notes to learn",
+      "keywords": [
+        "what are some difficult music notes to learn"
+      ],
+      "priority": "暂不做",
+      "url": null,
+      "reason": "哪些音符难学的问题未限定谱号、音区或读谱障碍",
+      "next_step": "先留在问题库；明确后合入read-sheet-music或其他准确页面"
+    }
+  ],
+  "historical_unmapped_evidence": [
+    {
+      "keyword": "am7 piano chord",
+      "suggested_category": "chords",
+      "url": null,
+      "source": "本对话用户2026-09-08第一轮8词手查截图；旧规划说明第7节",
+      "status": "历史手查证据保留，当前265任务基表未纳入",
+      "note": "不删除该线索，不算进127URL/1437词；需要并回时先核对原记录与映射，不自动复制任意Volume。Am7不是A minor三和弦的同义词。"
+    },
+    {
+      "keyword": "bohemian rhapsody piano sheet music",
+      "suggested_category": "sheet_music",
+      "url": null,
+      "source": "本对话用户2026-09-08第一轮8词手查截图；旧规划说明第7节",
+      "status": "历史手查证据保留，当前265任务基表未纳入",
+      "note": "单列历史待回挂项；不默认能提供谱面，也不把它自动加进当前页面数或曲谱总量。"
+    }
+  ]
+}

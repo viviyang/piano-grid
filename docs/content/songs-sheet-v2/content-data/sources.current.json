@@ -1,0 +1,282 @@
+[
+  {
+    "source_id": "PG-HOME-20260915",
+    "title": "PianoGrid homepage",
+    "url": "https://pianogrid.com/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "web page text",
+    "observed": "Public navigation and product entry links were readable.",
+    "not_proved": "Repository files, current deployment hash, real-device interaction and audio not inspected."
+  },
+  {
+    "source_id": "PG-SONGS-20260915",
+    "title": "PianoGrid Songs",
+    "url": "https://pianogrid.com/songs",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "web page text",
+    "observed": "Version-oriented external resource cards and selection controls are visible in parsed text.",
+    "not_proved": "No browser interaction or filtering correctness test."
+  },
+  {
+    "source_id": "PG-EASY-20260915",
+    "title": "PianoGrid Easy Songs",
+    "url": "https://pianogrid.com/songs/easy",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "web page text",
+    "observed": "Featured versions explicitly identify external resources; a separate publisher collection supplies 50 track options.",
+    "not_proved": "No evidence that those PDFs or recordings are locally hosted; no independent playing assessment."
+  },
+  {
+    "source_id": "8N-LIST-20260915",
+    "title": "8notes beginner piano list",
+    "url": "https://www.8notes.com/piano/sheet_music/?difficulty=1",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "web page text",
+    "observed": "Difficulty and free/premium resource categories are exposed.",
+    "not_proved": "Their classification is not an independent grade or proof of traffic impact."
+  },
+  {
+    "source_id": "8N-ODE-20260915",
+    "title": "8notes Ode to Joy (Beginners)",
+    "url": "https://www.8notes.com/scores/12180.asp",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "web page text",
+    "observed": "Version metadata lists C major and 4/4. UI exposes playback speed, practice loops and printing; PDF download is labelled Premium. Digital copying/sharing needs permission.",
+    "not_proved": "Controls not operated; source notation and audio not redistributed. A daily-limit dialog in HTML does not prove this session exhausted listening."
+  },
+  {
+    "source_id": "HA-HOT-20260915",
+    "title": "Hoffman Materials for Lesson 1",
+    "url": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "publisher page text",
+    "observed": "Hot Cross Buns package: early-elementary material, sheet music, parent guidance and listening/practice tracks; free form/sign-in access.",
+    "not_proved": "Exact key, register, metre and complete notation not available in inspected product metadata. No account, form submission or download."
+  },
+  {
+    "source_id": "HA-TWINKLE-20260915",
+    "title": "Hoffman Twinkle early elementary",
+    "url": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "publisher page text",
+    "observed": "Aron Bernstein edition; C major, 4/4, one page, hand-position graphic, sample/tutoring links, free form/sign-in access.",
+    "not_proved": "No local redistribution permission; exact pitches, fingering and audio contents not fully inspected."
+  },
+  {
+    "source_id": "HA-TWINKLE-LESSON-20260915",
+    "title": "Hoffman Twinkle matching lesson",
+    "url": "https://app.hoffmanacademy.com/lessons/piano/twinkle-twinkle-little-star/video/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "linked lesson page text",
+    "observed": "Describes a melody passed between hands and a leap of a fifth; describes six C-major note names.",
+    "not_proved": "General harmonization suggestions do not prove chords in the exact early-elementary score."
+  },
+  {
+    "source_id": "HA-ODE-20260915",
+    "title": "Hoffman Ode to Joy",
+    "url": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "publisher page text",
+    "observed": "Joseph Hoffman one-page early-elementary edition; D major, 4/4; paid or included with Premium; sample and two lesson links. Single-user/studio licences restrict file distribution.",
+    "not_proved": "Not a free PianoGrid PDF; complete notation, range and fingering not inspected."
+  },
+  {
+    "source_id": "HA-ODE-LESSON-20260915",
+    "title": "Hoffman Lesson 78",
+    "url": "https://app.hoffmanacademy.com/lessons/piano/ode-to-joy-unit-4/video/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "lesson transcript and overview",
+    "observed": "The lesson teaches dotted-quarter and flagged-eighth-note rhythm.",
+    "not_proved": "No independently performed or scored rendition; no video copied."
+  },
+  {
+    "source_id": "HA-TERMS-20260915",
+    "title": "Hoffman Terms of Service",
+    "url": "https://app.hoffmanacademy.com/terms-of-service/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "publisher terms; last updated 2025-02-13",
+    "observed": "User and teacher-studio permissions do not authorize general website redistribution; broader use requires prior written permission.",
+    "not_proved": "No licence has been issued to PianoGrid."
+  },
+  {
+    "source_id": "MN-VERSION-20260915",
+    "title": "Musicnotes Twinkle MN0127923",
+    "url": "https://www.musicnotes.com/sheetmusic/traditional-french/twinkle-twinkle-little-star/MN0127923",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "publisher product page text",
+    "observed": "Identifies product ID, Beginner Notes, C-major original key, one page, sample, interactive copy and separately offered high-resolution PDF. Product-specific print/performance claims differ from other editions.",
+    "not_proved": "No purchase, listening or full-score check; the displayed voice range is not used as the piano range. Not permission to rehost."
+  },
+  {
+    "source_id": "MN-TERMS-20260915",
+    "title": "Musicnotes Terms",
+    "url": "https://www.musicnotes.com/secure/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "publisher legal text",
+    "observed": "General service terms govern access and licensed arrangements; public listing does not establish PianoGrid redistribution rights.",
+    "not_proved": "Do not infer permission from its consumer purchase, embed box or unlimited-print label."
+  },
+  {
+    "source_id": "MN-AFFILIATE-20260915",
+    "title": "Musicnotes affiliate programme",
+    "url": "https://www.musicnotes.com/affiliates/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official programme page",
+    "observed": "A Rakuten-powered programme is advertised, currently with a 5% headline rate.",
+    "not_proved": "No PianoGrid approval, private advertiser conditions, final contract, tracking ID or payable commission verified; no enrolment performed."
+  },
+  {
+    "source_id": "RA-APPLY-20260915",
+    "title": "Rakuten apply to advertiser programmes",
+    "url": "https://pubhelp.rakutenadvertising.com/hc/en-us/articles/360049778112-Find-and-Apply-to-Advertiser-Programs",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official help",
+    "observed": "Publisher reviews advertiser-specific offers/terms and applies; some advertisers have prerequisite conditions; acceptance is separate from network registration.",
+    "not_proved": "Musicnotes-specific private admission criteria are not visible here."
+  },
+  {
+    "source_id": "RA-REVIEW-20260915",
+    "title": "Rakuten partnership review",
+    "url": "https://pubhelp.rakutenadvertising.com/hc/en-us/articles/360060739111-Partnership-Application-Review-Process",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official help",
+    "observed": "Advertiser decides approval/decline; approved publishers may post advertiser links.",
+    "not_proved": "No guaranteed decision date or approval for this project."
+  },
+  {
+    "source_id": "WIPO-TERRITORY-20260915",
+    "title": "WIPO Copyright FAQ",
+    "url": "https://www.wipo.int/en/web/copyright/faq-copyright",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official general legal guidance",
+    "observed": "Copyright duration and applicable protection depend on national law.",
+    "not_proved": "Not a work-specific global clearance."
+  },
+  {
+    "source_id": "USCO-SEPARATE-20260915",
+    "title": "Copyright Office: musicians",
+    "url": "https://www.copyright.gov/engage/musicians/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official copyright guidance",
+    "observed": "Musical composition and a sound recording are separate works for copyright purposes.",
+    "not_proved": "US guidance is not a worldwide licence."
+  },
+  {
+    "source_id": "USCO-AI-20260915",
+    "title": "Copyright Office AI output report announcement",
+    "url": "https://www.copyright.gov/newsnet/2025/1060.html",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official report announcement",
+    "observed": "Human expressive authorship determines protectability of AI-assisted output; prompts alone are not enough under the stated US analysis.",
+    "not_proved": "Does not forbid using original AI output, and does not promise worldwide exclusive rights."
+  },
+  {
+    "source_id": "OPENAI-OUTPUT-ROW-20260915",
+    "title": "OpenAI Terms of Use (ROW)",
+    "url": "https://openai.com/policies/row-terms-of-use/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official terms effective 2026-01-01",
+    "observed": "As between user and OpenAI, output rights if any are assigned to the user to the extent law permits; output may not be unique and third-party output is excluded.",
+    "not_proved": "No third-party music rights are granted; applicable account/jurisdiction terms still govern."
+  },
+  {
+    "source_id": "OPENAI-OUTPUT-EU-20260915",
+    "title": "OpenAI Europe Terms of Use",
+    "url": "https://openai.com/policies/terms-of-use/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official terms page",
+    "observed": "Alternative regional terms also address output ownership and limits.",
+    "not_proved": "Do not assume user residence or override third-party rights."
+  },
+  {
+    "source_id": "MUTOPIA-528-20260915",
+    "title": "Mutopia Ode to Joy hymn",
+    "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=528",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "entry page text",
+    "observed": "Lists a SATB hymn, contributor, Public Domain label and nonspecific source Various.",
+    "not_proved": "Not the Hoffman piano arrangement, not a verified worldwide-rights chain; no files downloaded or reused."
+  },
+  {
+    "source_id": "MUTOPIA-LEGAL-20260915",
+    "title": "Mutopia licensing",
+    "url": "https://www.mutopiaproject.org/legal.html",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "site licensing text",
+    "observed": "Describes permitted reuse for its different contributor licences and public-domain contributions.",
+    "not_proved": "A general site policy does not resolve an individual entry’s historical source, modern arrangement authorship or all territories."
+  },
+  {
+    "source_id": "W3C-MUSICXML-DIV",
+    "title": "MusicXML divisions",
+    "url": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/divisions/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official standard",
+    "observed": "Divisions are units per quarter note.",
+    "not_proved": "Not a verification of our individual notes."
+  },
+  {
+    "source_id": "W3C-MUSICXML-DUR",
+    "title": "MusicXML duration",
+    "url": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/duration/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official standard",
+    "observed": "Duration moves musical position; notated and performed duration are distinct.",
+    "not_proved": "Our WAV uses a stated 90% sounding gate; onset grid and notated durations remain exact."
+  },
+  {
+    "source_id": "W3C-MUSICXML-BACKUP",
+    "title": "MusicXML backup",
+    "url": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/backup/",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official standard",
+    "observed": "Backup moves position between voices/staves within a measure.",
+    "not_proved": "Not independent professional review."
+  },
+  {
+    "source_id": "GOOGLE-FACETS-20260915",
+    "title": "Google faceted navigation",
+    "url": "https://developers.google.com/search/blog/2024/12/crawling-december-faceted-nav",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official documentation",
+    "observed": "Filter URLs can multiply crawl space; fragments are a suggested option for nonindexed filters.",
+    "not_proved": "No ranking or indexing guarantee."
+  },
+  {
+    "source_id": "NOTO-MUSIC-OFL",
+    "title": "Noto Music licence",
+    "url": "https://github.com/notofonts/music",
+    "checked_on_utc": "2026-09-15",
+    "evidence_status": "[已核实] readable source content unless marked as failed",
+    "inspection_method": "official font repository",
+    "observed": "Noto Music is published under SIL Open Font License 1.1.",
+    "not_proved": "Only clef outlines occur in generated scores; no font binaries are bundled."
+  }
+]

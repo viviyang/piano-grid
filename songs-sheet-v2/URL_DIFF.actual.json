@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-15T13:53:06.4477629+08:00",
+  "evidence_status": "verified_local_and_verified_public_http",
+  "base_commit": "fb842864dafb35763c51a5b0a2bb62c62b5efc0d",
+  "end_head": "fb842864dafb35763c51a5b0a2bb62c62b5efc0d",
+  "songs_sheet_changes_uncommitted": true,
+  "deployed": false,
+  "scope": {
+    "planned_urls": 64,
+    "songs": 22,
+    "sheet_music": 41,
+    "tool_coordination": 1,
+    "first_batch": 8,
+    "remaining": 55,
+    "remaining_regular": 36,
+    "remaining_paused_rights": 19,
+    "full_scope_source": "docs/content/songs-sheet-v2/content-data/route-diff.json"
+  },
+  "routes": [
+    {"url":"/songs","change_type":"modified","base_git_route_exists":true,"local_final_status":200,"public_http_status":200,"canonical":"https://pianogrid.com/songs","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/songs/easy","change_type":"modified","base_git_route_exists":true,"local_final_status":200,"public_http_status":200,"canonical":"https://pianogrid.com/songs/easy","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/sheet-music","change_type":"added_from_existing_plan","base_git_route_exists":false,"local_final_status":200,"public_http_status":404,"canonical":"https://pianogrid.com/sheet-music","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/sheet-music/easy","change_type":"added_from_existing_plan","base_git_route_exists":false,"local_final_status":200,"public_http_status":404,"canonical":"https://pianogrid.com/sheet-music/easy","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/sheet-music/beginner","change_type":"added_from_existing_plan","base_git_route_exists":false,"local_final_status":200,"public_http_status":404,"canonical":"https://pianogrid.com/sheet-music/beginner","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/sheet-music/hot-cross-buns","change_type":"added_from_existing_plan","base_git_route_exists":false,"local_final_status":200,"public_http_status":404,"canonical":"https://pianogrid.com/sheet-music/hot-cross-buns","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/sheet-music/twinkle-twinkle-little-star","change_type":"added_from_existing_plan","base_git_route_exists":false,"local_final_status":200,"public_http_status":404,"canonical":"https://pianogrid.com/sheet-music/twinkle-twinkle-little-star","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"},
+    {"url":"/sheet-music/ode-to-joy","change_type":"added_from_existing_plan","base_git_route_exists":false,"local_final_status":200,"public_http_status":404,"canonical":"https://pianogrid.com/sheet-music/ode-to-joy","indexability":"index,follow","local_sitemap":true,"deployment_status":"not_deployed"}
+  ],
+  "preserved_not_published": {
+    "count": 55,
+    "representative_verified_404": ["/songs/christmas", "/sheet-music/christmas"],
+    "staging_asset_url_verified_404": "/content-data/assets/pg-step-and-hold-v1/score-a4.pdf",
+    "source_of_complete_list": "docs/content/songs-sheet-v2/content-data/route-diff.json"
+  }
+}

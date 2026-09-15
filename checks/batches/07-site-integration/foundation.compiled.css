@@ -234,6 +234,9 @@
   .resize {
     resize: both;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-lg {
     border-radius: var(--pr-radius-panel);
   }

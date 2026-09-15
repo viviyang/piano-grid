@@ -1,0 +1,25 @@
+{
+  "executed_at": "2026-09-15T13:49:24.7032595+08:00",
+  "command": "$env:PIANO_NEXT_DIST_DIR='.next-songs-sheet-v2'; npm run build",
+  "exit_code": 0,
+  "next_version": "16.3.4",
+  "static_pages_generated": 210,
+  "first_batch_routes_generated": [
+    "/songs",
+    "/songs/easy",
+    "/sheet-music",
+    "/sheet-music/easy",
+    "/sheet-music/beginner",
+    "/sheet-music/hot-cross-buns",
+    "/sheet-music/twinkle-twinkle-little-star",
+    "/sheet-music/ode-to-joy"
+  ],
+  "staging_asset_leakage": {
+    "public_file_matches": 0,
+    "client_static_matches": 0,
+    "source_map_matches": 0,
+    "output_file_trace_matches": 0,
+    "prerender_html_matches": 0
+  },
+  "custom_build_directory_removed_after_verification": true
+}

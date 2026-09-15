@@ -1,0 +1,417 @@
+[
+  {
+    "url": "/songs",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Piano Songs by Version and Playing Skills | PianoGrid",
+      "description": "Choose a piano piece by its specific arrangement, playing demands and resource access. Compare beginner options and see where to get each version.",
+      "canonical_path": "/songs",
+      "inLanguage": "en-US"
+    },
+    "h1": "Piano Songs: Choose Your Next Piece",
+    "intro": "Start with a version you can use, not just a song you recognize. Compare the arrangement, the skills it asks for and where its materials are available.",
+    "sections": [
+      {
+        "id": "choose-version",
+        "heading": "Choose a version, not just a title",
+        "body": "The same song may have a one-hand melody, an alternating-hands arrangement or a fuller piano part. Difficulty belongs to the version. Publisher level labels are kept separate from PianoGrid’s skill descriptions."
+      },
+      {
+        "id": "availability",
+        "heading": "Know where the learning happens",
+        "body": "An external version opens on its provider’s website. A local practice exercise has its own score and sound demonstration here only after those materials are available. Neither route claims to listen to your playing."
+      },
+      {
+        "id": "first-options",
+        "heading": "First-lesson and early-elementary options",
+        "arrangement_ids": [
+          "arr-ext-0a05b7954f5256",
+          "arr-ext-c3a78b0c5cb213",
+          "arr-ext-a60b8d92c5a325"
+        ]
+      },
+      {
+        "id": "preserve-topics",
+        "heading": "More music to explore",
+        "render_existing": "Keep the approved topical collections and every useful existing reference. Hide links only when the destination is genuinely unavailable, not because it was not inspected in this research."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://pianogrid.com/songs",
+      "name": "Piano Songs: Choose Your Next Piece",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/songs/easy",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Easy Piano Songs: Compare Beginner Versions | PianoGrid",
+      "description": "Compare specific beginner piano arrangements by the skills, guidance and access they offer. Find the matching sheet-music resource without mixing editions.",
+      "canonical_path": "/songs/easy",
+      "inLanguage": "en-US"
+    },
+    "h1": "Easy Piano Songs for Beginners",
+    "intro": "Choose a specific arrangement and one achievable goal. “Easy” is not a promise that every version of a song will suit your current skills.",
+    "sections": [
+      {
+        "id": "starter-versions",
+        "heading": "Three versions to compare",
+        "arrangement_ids": [
+          "arr-ext-0a05b7954f5256",
+          "arr-ext-c3a78b0c5cb213",
+          "arr-ext-a60b8d92c5a325"
+        ],
+        "render": "Shared registry facts plus original editorial guidance; local score/audio buttons remain absent for these external editions."
+      },
+      {
+        "id": "how-to-choose",
+        "heading": "Choose by what you can already do",
+        "body": "Use known hand use, rhythm demands and access conditions to narrow the choices. A missing detail means “not verified”, not “easy”. When only a publisher’s level is available, inspect the provider’s sample before committing to the version."
+      },
+      {
+        "id": "original-exercises",
+        "heading": "Short original practice exercises",
+        "body": "These exercises were created for PianoGrid. They are not arrangements of Hot Cross Buns, Twinkle, Twinkle, Little Star or Ode to Joy.",
+        "arrangement_ids": [
+          "arr-pg-step-and-hold-v1",
+          "arr-pg-left-hand-answer-v1",
+          "arr-pg-one-hand-at-a-time-v1"
+        ],
+        "visibility_gate": "LOCAL_EXERCISES_RELEASE_APPROVED"
+      },
+      {
+        "id": "more-approved-options",
+        "heading": "More versions and collections",
+        "render_existing": "Preserve the original nine featured versions, all 50 named collection tracks and kids/C-major/beautiful/adults/impress tasks. Do not relabel the 50 tracks as individually graded or tested."
+      },
+      {
+        "id": "faq",
+        "heading": "Before you start",
+        "faqs": [
+          {
+            "question": "Does “free” mean I can download a PDF here?",
+            "answer": "No. An external free resource may require a form or account on its provider’s website. Only a resource explicitly labelled “Free on PianoGrid” offers local materials."
+          },
+          {
+            "question": "Does playback check my playing?",
+            "answer": "No. Playback demonstrates the selected version or exercise. There is no microphone or MIDI performance assessment in this module."
+          }
+        ]
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://pianogrid.com/songs/easy",
+      "name": "Easy Piano Songs for Beginners",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/sheet-music",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Piano Sheet Music: Versions and Access | PianoGrid",
+      "description": "Identify a specific piano edition, review its format and access conditions, and find its preview or provider. Local and external resources are clearly separated.",
+      "canonical_path": "/sheet-music",
+      "inLanguage": "en-US"
+    },
+    "h1": "Piano Sheet Music",
+    "intro": "Find the exact edition you intend to learn. Check its notation, the available preview and the conditions for getting your own copy.",
+    "sections": [
+      {
+        "id": "version-first",
+        "heading": "Match the score to the version",
+        "body": "Keep the arranger, edition and key together. A tutorial or audio example from another version may use different notes, hand positions or rhythms."
+      },
+      {
+        "id": "access",
+        "heading": "Choose the right access route",
+        "body": "Free on PianoGrid, external free, external free with a form or account, external paid, and access not verified are different categories. A provider’s free download is not a permission for this site to redistribute it."
+      },
+      {
+        "id": "beginner-route",
+        "heading": "Starting with beginner material",
+        "link": "/sheet-music/beginner",
+        "body": "Compare identified first-lesson and early-elementary resources. Local original exercises, when available, have their own score and sound demonstration."
+      },
+      {
+        "id": "existing",
+        "heading": "Browse the approved collections",
+        "render_existing": "Keep all approved Sheet Music categories and exact-song tasks; do not activate paused pages automatically."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://pianogrid.com/sheet-music",
+      "name": "Piano Sheet Music",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/sheet-music/easy",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Easy Piano Sheet Music: Check the Edition | PianoGrid",
+      "description": "Compare easy piano editions without treating every easy label as the same level. Check the notation, preview and provider’s printing or download conditions.",
+      "canonical_path": "/sheet-music/easy",
+      "inLanguage": "en-US"
+    },
+    "h1": "Easy Piano Sheet Music",
+    "intro": "An easy-piano label can cover different reading and coordination demands. Use the exact edition and its sample to decide whether it is suitable.",
+    "sections": [
+      {
+        "id": "level",
+        "heading": "Publisher level and playing demands",
+        "body": "Publisher labels are reproduced as labels, not converted into exam grades. When range, rhythm or hand information has not been verified, that field stays unfilled."
+      },
+      {
+        "id": "starting-out",
+        "heading": "Need a first-lesson option?",
+        "link": "/sheet-music/beginner",
+        "body": "Use the beginner collection for a narrower starting point, including identified introductory versions and separately labelled original exercises."
+      },
+      {
+        "id": "existing",
+        "heading": "Easy editions and access details",
+        "render_existing": "Preserve original easy resources; each card resolves the shared arrangement rather than duplicating its licence, key or preview."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://pianogrid.com/sheet-music/easy",
+      "name": "Easy Piano Sheet Music",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/sheet-music/beginner",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Beginner Piano Sheet Music: Clear Versions and Access | PianoGrid",
+      "description": "Find identified beginner piano resources, check how to obtain the exact edition, and distinguish local practice scores from external free or paid materials.",
+      "canonical_path": "/sheet-music/beginner",
+      "inLanguage": "en-US"
+    },
+    "h1": "Beginner Piano Sheet Music",
+    "intro": "Choose material with a clear starting point and a known access route. Where exact playing demands are unknown, check the provider’s sample rather than assuming a familiar tune is simple.",
+    "sections": [
+      {
+        "id": "versions",
+        "heading": "Identified beginner versions",
+        "arrangement_ids": [
+          "arr-ext-0a05b7954f5256",
+          "arr-ext-c3a78b0c5cb213",
+          "arr-ext-a60b8d92c5a325"
+        ]
+      },
+      {
+        "id": "original-exercises",
+        "heading": "Original PianoGrid practice scores",
+        "body": "Short, newly created exercises for counting, bass-clef reading and alternating hands. These are not famous-song arrangements.",
+        "arrangement_ids": [
+          "arr-pg-step-and-hold-v1",
+          "arr-pg-left-hand-answer-v1",
+          "arr-pg-one-hand-at-a-time-v1"
+        ],
+        "visibility_gate": "LOCAL_EXERCISES_RELEASE_APPROVED"
+      },
+      {
+        "id": "read-before-print",
+        "heading": "Before you print",
+        "body": "Confirm the title and version, then choose A4 or US Letter when offered. Check that every staff, note label and return link is visible in the print preview. External copies must be obtained under the provider’s conditions."
+      },
+      {
+        "id": "finger-numbers",
+        "heading": "Looking for finger numbers?",
+        "body": "Only versions with verified finger-number notation belong in that filter. A keyboard-position graphic or a beginner label does not prove that every note has a finger number.",
+        "render_existing": "Keep P106 and the existing beginner task; do not count the original exercises as verified fingering coverage."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://pianogrid.com/sheet-music/beginner",
+      "name": "Beginner Piano Sheet Music",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/sheet-music/hot-cross-buns",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Hot Cross Buns Piano Sheet Music: Version & Access | PianoGrid",
+      "description": "Check the identified Hot Cross Buns edition, its learning context and provider access. This is an external resource, not a PianoGrid score download.",
+      "canonical_path": "/sheet-music/hot-cross-buns",
+      "inLanguage": "en-US"
+    },
+    "h1": "Hot Cross Buns Piano Sheet Music",
+    "intro": "Use the exact edition below so that the score and tutorial refer to the same arrangement.",
+    "sections": [
+      {
+        "id": "identified-version",
+        "heading": "Which version is this?",
+        "arrangement_ids": [
+          "arr-ext-0a05b7954f5256"
+        ],
+        "body": "The details shown are the provider’s published metadata. Empty fields have not been verified from the complete score."
+      },
+      {
+        "id": "preview-access",
+        "heading": "Preview and get your own copy",
+        "body": "Open the provider’s page to review its sample and access conditions. No third-party score or audio file is hosted on this page.",
+        "cta": {
+          "label": "View this version at Hoffman Academy",
+          "href": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+          "kind": "external_provider"
+        }
+      },
+      {
+        "id": "learning",
+        "heading": "Choose it for your next practice goal",
+        "body": "Follow the provider’s first lesson and identify the keys used in its version.",
+        "link": "/songs/easy#pg-arr=arr-ext-0a05b7954f5256&segment=all"
+      },
+      {
+        "id": "permission",
+        "heading": "What the access label means",
+        "body": "The provider offers this resource free through a form or account. Obtain your own copy there; free access does not authorize redistribution here."
+      },
+      {
+        "id": "other-existing-versions",
+        "heading": "Other existing references",
+        "render_existing": "Preserve any original version or tutorial references already mapped to this approved page; identify each independently, retaining uncertain rights labels."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://pianogrid.com/sheet-music/hot-cross-buns",
+      "name": "Hot Cross Buns Piano Sheet Music",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/sheet-music/twinkle-twinkle-little-star",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Twinkle, Twinkle, Little Star Piano Sheet Music: Version & Access | PianoGrid",
+      "description": "Check the identified Twinkle, Twinkle, Little Star edition, its learning context and provider access. This is an external resource, not a PianoGrid score download.",
+      "canonical_path": "/sheet-music/twinkle-twinkle-little-star",
+      "inLanguage": "en-US"
+    },
+    "h1": "Twinkle, Twinkle, Little Star Piano Sheet Music",
+    "intro": "Use the exact edition below so that the score and tutorial refer to the same arrangement.",
+    "sections": [
+      {
+        "id": "identified-version",
+        "heading": "Which version is this?",
+        "arrangement_ids": [
+          "arr-ext-c3a78b0c5cb213"
+        ],
+        "body": "The details shown are the provider’s published metadata. Empty fields have not been verified from the complete score."
+      },
+      {
+        "id": "preview-access",
+        "heading": "Preview and get your own copy",
+        "body": "Open the provider’s page to review its sample and access conditions. No third-party score or audio file is hosted on this page.",
+        "cta": {
+          "label": "View this version at Hoffman Academy",
+          "href": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+          "kind": "external_provider"
+        }
+      },
+      {
+        "id": "learning",
+        "heading": "Choose it for your next practice goal",
+        "body": "Follow the hand transfer and practise the opening fifth using the provider’s exact fingering guide.",
+        "link": "/songs/easy#pg-arr=arr-ext-c3a78b0c5cb213&segment=all"
+      },
+      {
+        "id": "permission",
+        "heading": "What the access label means",
+        "body": "The provider offers this resource free through a form or account. Obtain your own copy there; free access does not authorize redistribution here."
+      },
+      {
+        "id": "other-existing-versions",
+        "heading": "Other existing references",
+        "render_existing": "Preserve any original version or tutorial references already mapped to this approved page; identify each independently, retaining uncertain rights labels."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://pianogrid.com/sheet-music/twinkle-twinkle-little-star",
+      "name": "Twinkle, Twinkle, Little Star Piano Sheet Music",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  },
+  {
+    "url": "/sheet-music/ode-to-joy",
+    "patch_mode": "ADDITIVE_PRESERVE_EXISTING_TASKS_AND_RESOURCES",
+    "metadata": {
+      "title": "Ode to Joy Piano Sheet Music: Version & Access | PianoGrid",
+      "description": "Check the identified Ode to Joy edition, its learning context and provider access. This is an external resource, not a PianoGrid score download.",
+      "canonical_path": "/sheet-music/ode-to-joy",
+      "inLanguage": "en-US"
+    },
+    "h1": "Ode to Joy Piano Sheet Music",
+    "intro": "Use the exact edition below so that the score and tutorial refer to the same arrangement.",
+    "sections": [
+      {
+        "id": "identified-version",
+        "heading": "Which version is this?",
+        "arrangement_ids": [
+          "arr-ext-a60b8d92c5a325"
+        ],
+        "body": "The details shown are the provider’s published metadata. Empty fields have not been verified from the complete score."
+      },
+      {
+        "id": "preview-access",
+        "heading": "Preview and get your own copy",
+        "body": "Open the provider’s page to review its sample and access conditions. No third-party score or audio file is hosted on this page.",
+        "cta": {
+          "label": "View this version at Hoffman Academy",
+          "href": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+          "kind": "external_provider"
+        }
+      },
+      {
+        "id": "learning",
+        "heading": "Choose it for your next practice goal",
+        "body": "Recognize the dotted-quarter/eighth-note pattern in the Joseph Hoffman version.",
+        "link": "/songs/easy#pg-arr=arr-ext-a60b8d92c5a325&segment=all"
+      },
+      {
+        "id": "permission",
+        "heading": "What the access label means",
+        "body": "The provider offers this edition through purchase or a qualifying membership. A teacher-studio licence is not a licence to post the files on a public website."
+      },
+      {
+        "id": "other-existing-versions",
+        "heading": "Other existing references",
+        "render_existing": "Preserve any original version or tutorial references already mapped to this approved page; identify each independently, retaining uncertain rights labels."
+      }
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://pianogrid.com/sheet-music/ode-to-joy",
+      "name": "Ode to Joy Piano Sheet Music",
+      "inLanguage": "en-US"
+    },
+    "public_release": "Requires actual content rendering, correct capability gating and route checks"
+  }
+]

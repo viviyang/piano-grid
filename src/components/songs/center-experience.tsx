@@ -29,6 +29,6 @@ export function SongCenterExperience({ resources, goals }: { resources: SongReso
       <button className="am-button am-secondary" type="button" onClick={clear} disabled={!ready || (!query && level === 'all' && goal === 'all')}>Clear filters</button>
     </div>
     <div className="sg-results-heading"><p aria-live="polite"><strong>{shown.length}</strong> {shown.length === 1 ? 'edition' : 'editions'}</p><p>Publisher levels are edition labels. Unverified playing demands are marked clearly.</p></div>
-    {shown.length ? <div className="sg-resource-list">{shown.map((resource) => <SongResourceCard resource={resource} decisionFirst key={resource.id}/>)}</div> : <div className="sg-empty"><h3>No checked edition matches</h3><p>Clear one or more filters to return to the six available editions.</p><button className="am-button am-primary" type="button" onClick={clear}>Show all editions</button></div>}
+    {shown.length ? <div className="sg-resource-list">{shown.map((resource) => <SongResourceCard resource={resource} decisionFirst key={resource.id}/>)}</div> : <div className="sg-empty"><h3>No checked edition matches</h3><p>Clear one or more filters to return to the available editions.</p><button className="am-button am-primary" type="button" onClick={clear}>Show all editions</button></div>}
   </section>;
 }

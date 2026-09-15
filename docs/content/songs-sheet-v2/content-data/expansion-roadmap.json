@@ -1,0 +1,1755 @@
+[
+  {
+    "url": "/songs",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-1b3f3dd0b5ec99",
+      "arr-ext-23e3200e3c785f",
+      "arr-ext-7554e265df95f7",
+      "arr-ext-a2e808803c67cf",
+      "arr-ext-4cc7ce876b3d2c",
+      "arr-ext-c54cb9270d7dee"
+    ],
+    "source_groups": [
+      "P002",
+      "P009",
+      "P014",
+      "P018",
+      "P022",
+      "P041",
+      "P042",
+      "P043"
+    ],
+    "done_when": "打开即有真实曲目，不只是分类按钮。；按已收录曲库提供搜索、水平/风格/情绪等筛选。；卡片说明具体版本、难度依据、为什么选和实际可用资源。；提供示范或正规资源入口；已经独立的专题直接链接，不复制相同长文。",
+    "pending_evidence": [
+      {
+        "id": "C-center-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/songs/easy",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-0a05b7954f5256",
+      "arr-ext-c3a78b0c5cb213",
+      "arr-ext-4bc8c7e71e95dd",
+      "arr-ext-5008393c71166f",
+      "arr-ext-a234719ce3d627",
+      "arr-ext-a60b8d92c5a325",
+      "arr-ext-545d0ebe92eafe",
+      "arr-ext-cefa1c9c04bde0",
+      "arr-ext-30ec54851dfad5",
+      "arr-ext-0baf5efa765b9e",
+      "arr-ext-c9202d98dd3960",
+      "arr-ext-0fe58b3a8ae19f",
+      "arr-ext-95b9a8a0f42022",
+      "arr-ext-d66665fc986a12",
+      "arr-ext-7f7e126045ce88",
+      "arr-ext-df80bc2abae831",
+      "arr-ext-ba673bd99a1bf5",
+      "arr-ext-2e3f53ea4b7aa8",
+      "arr-ext-f5a8952afeff22",
+      "arr-ext-4c16c7862ffbed",
+      "arr-ext-3467d3607676f2",
+      "arr-ext-a16ccc9934f7da",
+      "arr-ext-5b5c21d022ba3b",
+      "arr-ext-398696dfb80172",
+      "arr-ext-3155d90994d9a4",
+      "arr-ext-a5630482fa1bc9",
+      "arr-ext-4749c46badb384",
+      "arr-ext-356e7c99a64357",
+      "arr-ext-76744c404bba5c",
+      "arr-ext-1b122ee57f7975",
+      "arr-ext-342fef3178c7e6",
+      "arr-ext-13108a5e86cf1b",
+      "arr-ext-7b163004ed8864",
+      "arr-ext-9d2910992d55df",
+      "arr-ext-81f51fd735bc07",
+      "arr-ext-5d6b1080d6ebdf",
+      "arr-ext-e6dce44fcfaff8",
+      "arr-ext-3ad32cc62e6028",
+      "arr-ext-96fc569488ffbf",
+      "arr-ext-04c78032b0c8cf",
+      "arr-ext-7015b6da1b55b6",
+      "arr-ext-4f4489226ef4bd",
+      "arr-ext-fc0af7ec5e10c5",
+      "arr-ext-57df9717ed6c32",
+      "arr-ext-eb34045d7d6535",
+      "arr-ext-3739f76fcf7e84",
+      "arr-ext-b6b508482bdda1",
+      "arr-ext-89f81abab55eb2",
+      "arr-ext-d90e891e5ffa55",
+      "arr-ext-0b47cc0824f073",
+      "arr-ext-e4734dfd83851c",
+      "arr-ext-57b04f9c806182",
+      "arr-ext-02460de6161236",
+      "arr-ext-0fa1932aa596cb",
+      "arr-ext-c065bdb20627eb",
+      "arr-ext-c3c489710553cf",
+      "arr-ext-e2271de4e28eec",
+      "arr-ext-0ed185a7b81878",
+      "arr-ext-09faf06fddd0d5"
+    ],
+    "source_groups": [
+      "P001",
+      "P006",
+      "P036",
+      "P037",
+      "P039",
+      "P040"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-EASY-FIFTY-DETAIL",
+        "field": "data.additional_catalog_options[].creator/key/technical_demands",
+        "reason": "50条有精确合集与出版社Easy Piano标签，但未逐首读取全部谱页/个别同名作品署名。不能作为50首已逐曲专业评测的榜单。",
+        "needed_to_resolve": "对拟重点推荐的曲目读取出版方预览/目录版权页确认署名及技术难点；未核数据保持null。"
+      },
+      {
+        "id": "C-EASY-TWINKLE-PRICE",
+        "field": "ce-twinkle-elementary.access",
+        "reason": "正文写Free，但商品面板为单次付费/Premium。",
+        "needed_to_resolve": "页面不加免费标签；用户获取时以出版方所选许可/结账条件为准。"
+      },
+      {
+        "id": "C-EASY-RIGHTS",
+        "field": "resources.rights",
+        "reason": "已找到原作者/出版社版本；未取得本站复制乐谱/音频许可。",
+        "needed_to_resolve": "本阶段仅提供明确外部资源入口；若需本地乐谱，逐版本取得再分发依据后再制作。"
+      },
+      {
+        "id": "C-EASY-SOURCE-ERROR",
+        "field": "ce-birthday-lead.chord_notes",
+        "reason": "Hoffman lead-sheet说明将C7写为C-E-G，缺少七音；本包不沿用该错误。",
+        "needed_to_resolve": "该字段不取该页FAQ；和弦组成使用独立已核实乐理数据。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/tools/blank-sheet-music",
+    "wave": "COLLAB_ONLY",
+    "preserved_arrangement_ids": [],
+    "source_groups": [
+      "P079"
+    ],
+    "done_when": "默认钢琴大谱表预览；提供必要打印/PDF输出。；模板可读且版面一致；不设账号门槛。",
+    "pending_evidence": [],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/christmas",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-7a92e706c5cba1",
+      "arr-ext-0883de56c16ed5",
+      "arr-ext-bc2439605e2614"
+    ],
+    "source_groups": [
+      "P003",
+      "P008"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-christmas-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/challenging",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-0cd9fec3535c4b",
+      "arr-ext-2b6e4e5af689b7",
+      "arr-ext-549ca9ffd13e63"
+    ],
+    "source_groups": [
+      "P004",
+      "P025"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-challenging-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      },
+      {
+        "id": "C-challenging-tech",
+        "field": "P004/P025 speed and technical examples",
+        "reason": "出版方等级已确认，逐曲具体速度/技术段落未核，当前为选曲基础记录，未完全满足该源任务。",
+        "needed_to_resolve": "按合法版本逐段核验速度标记、实际难点及示范；不补写最难排名。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/pop",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-7ffeddfbae1cd2",
+      "arr-ext-c2b5927a6cbbf1",
+      "arr-ext-1f0c2e14b71fa3",
+      "arr-ext-7b65826b4488c4"
+    ],
+    "source_groups": [
+      "P005",
+      "P013",
+      "P026"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-pop-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/classical",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-1b3f3dd0b5ec99",
+      "arr-ext-23e3200e3c785f",
+      "arr-ext-886edaf688ab2a",
+      "arr-ext-5a219765c2047e",
+      "arr-ext-61dc1eac51ed18",
+      "arr-ext-889ed6e63c4074",
+      "arr-ext-abe9e06b913067",
+      "arr-ext-e2d474b09dbcff",
+      "arr-ext-3eb07e4f059e8e",
+      "arr-ext-e2ff6308a0a320",
+      "arr-ext-99501935b09f71",
+      "arr-ext-82d2f27fefb2e6",
+      "arr-ext-857dbb5120ba23",
+      "arr-ext-46ddfaf4af196a",
+      "arr-ext-e28c042d71fcc4",
+      "arr-ext-74e70eabc01670",
+      "arr-ext-1d67146a2d5871",
+      "arr-ext-68017bc3400521",
+      "arr-ext-3e24ec84b67492",
+      "arr-ext-38250fc65f0c09",
+      "arr-ext-646524d6862f04",
+      "arr-ext-d0704f3e5d5699",
+      "arr-ext-6fc156a6d256fc",
+      "arr-ext-2c98dffaacb5b4",
+      "arr-ext-d44d19ea6070cd",
+      "arr-ext-dd3b7e2761c738",
+      "arr-ext-f1f4730b489e0b",
+      "arr-ext-fc92c5fd2323cc",
+      "arr-ext-3fe02588493136",
+      "arr-ext-6d507e95e527a7",
+      "arr-ext-e9174a17264d09",
+      "arr-ext-952b2e4313f117",
+      "arr-ext-e853745c2c91d9",
+      "arr-ext-a991fbc27506dc",
+      "arr-ext-c78cfc94aa9be7",
+      "arr-ext-c11da8c617d286",
+      "arr-ext-2cf4a77cc71fb2",
+      "arr-ext-b735668fcb468a",
+      "arr-ext-721d9d31d041a6",
+      "arr-ext-cea8f49a86583b",
+      "arr-ext-b67c83b8dcf5a3",
+      "arr-ext-a621c9571e372b",
+      "arr-ext-9101a25a0bdbfc",
+      "arr-ext-c7d1c698f15a16",
+      "arr-ext-919d0a7aa20918",
+      "arr-ext-2210f7b58dfe4f",
+      "arr-ext-f159efe0ccadc6",
+      "arr-ext-71d9e11a0ef24a",
+      "arr-ext-313ad1b0bb1a33",
+      "arr-ext-00e6ea6d4726a9",
+      "arr-ext-2bc1e5bfc9a004",
+      "arr-ext-2b6016f3bfecc0"
+    ],
+    "source_groups": [
+      "P007",
+      "P015"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-classical-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/easy-chords",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-ecc0c3afd49d72",
+      "arr-ext-a79779a9876935",
+      "arr-ext-00f257998dc49b"
+    ],
+    "source_groups": [
+      "P010"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-easy-chords-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/anime",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-4f886afe7e5d05",
+      "arr-ext-2c4da2dae9df03",
+      "arr-ext-c85d7e1cf97bb0"
+    ],
+    "source_groups": [
+      "P011"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-anime-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/minecraft",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-c54cb9270d7dee",
+      "arr-ext-34ec374b8f7b0e",
+      "arr-ext-c072df9b694cd8"
+    ],
+    "source_groups": [
+      "P012"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-minecraft-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/rock",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-865681a556bb0e",
+      "arr-ext-0f226e7df99786",
+      "arr-ext-f76fcb0699ace0"
+    ],
+    "source_groups": [
+      "P016"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-rock-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/taylor-swift",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-24031f6602d80a",
+      "arr-ext-090388becf2eb1",
+      "arr-ext-244e90d6ec4048",
+      "arr-ext-d58fe6957c5b4e"
+    ],
+    "source_groups": [
+      "P017",
+      "P031"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-taylor-swift-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/disney",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-b9bd3e56eb2177",
+      "arr-ext-99bc15b7164c10",
+      "arr-ext-7b38bbcfaf767d"
+    ],
+    "source_groups": [
+      "P019",
+      "P021"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-disney-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/wedding",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-4cc7ce876b3d2c",
+      "arr-ext-b1c3139a847461",
+      "arr-ext-20f2e74e381efb"
+    ],
+    "source_groups": [
+      "P020"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-wedding-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/worship",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-d380991d0df2c2",
+      "arr-ext-74d7cd03d22199",
+      "arr-ext-a513564dd6d42c",
+      "arr-ext-d01e7617cb06a1",
+      "arr-ext-a39a4e85ad48e1",
+      "arr-ext-9928ed2ee3e0d9"
+    ],
+    "source_groups": [
+      "P023",
+      "P032"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-worship-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/rap",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-a2e808803c67cf",
+      "arr-ext-a7bfb745ffb785",
+      "arr-ext-1e282aec7fc1e7"
+    ],
+    "source_groups": [
+      "P024"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-rap-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/piano-and-guitar",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-4cc7ce876b3d2c",
+      "arr-ext-20f2e74e381efb"
+    ],
+    "source_groups": [
+      "P027"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-piano-and-guitar-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/beatles",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-9ce2a4c23d33cd",
+      "arr-ext-5b3405ed2e1584",
+      "arr-ext-9164440eda97bd",
+      "arr-ext-d41dc9970170a5"
+    ],
+    "source_groups": [
+      "P028"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-beatles-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/coldplay",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-042e7e5517c75d",
+      "arr-ext-efd997e0811aa3",
+      "arr-ext-964e1feb90905a",
+      "arr-ext-b0091cb97eba26",
+      "arr-ext-bb2d7fc3115848"
+    ],
+    "source_groups": [
+      "P029"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-coldplay-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/country",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-853c4efcd632e7",
+      "arr-ext-dae4e1fa987297",
+      "arr-ext-5a69856d69898f"
+    ],
+    "source_groups": [
+      "P030"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-country-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/jazz",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-8f9ba5c7d778e4",
+      "arr-ext-fb0fa21ced5b49",
+      "arr-ext-b9bb5f9cb11363"
+    ],
+    "source_groups": [
+      "P033",
+      "P038"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-jazz-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/halloween",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-7554e265df95f7",
+      "arr-ext-2ec4352fe06c4e",
+      "arr-ext-012bafa6ee030e"
+    ],
+    "source_groups": [
+      "P034"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-halloween-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/songs/undertale",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-4981adc0298311",
+      "arr-ext-b06507993f22d5",
+      "arr-ext-b17d1ce46bd36f"
+    ],
+    "source_groups": [
+      "P035"
+    ],
+    "done_when": "首屏直接给符合条件的曲目与选择理由。；标记具体版本和难点，连接可用谱面/教程/示范。；不同条件保留实际可见分区；同一曲目资源页供多个集合链接。",
+    "pending_evidence": [
+      {
+        "id": "C-undertale-review",
+        "field": "per-arrangement technical profile and reuse",
+        "reason": "未阅读全文的具体编配，不填调性、速度或指法。资源为外部参考，未取得本网站转载授权。",
+        "needed_to_resolve": "若需这些字段或自托管谱面，检查合法取得的准确版本及其授权；目录现可用来源信息。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-1b3f3dd0b5ec99",
+      "arr-ext-a2e808803c67cf",
+      "arr-ext-d380991d0df2c2",
+      "arr-ext-d01e7617cb06a1",
+      "arr-ext-8b912f5a7183e9",
+      "arr-ext-11c484075abb59",
+      "arr-ext-b8a2848647e9b8"
+    ],
+    "source_groups": [
+      "P047",
+      "P048",
+      "P060",
+      "P063",
+      "P070"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-sheet-music-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/sheet-music/easy",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-0a05b7954f5256",
+      "arr-ext-cefa1c9c04bde0",
+      "arr-ext-30ec54851dfad5",
+      "arr-ext-8b912f5a7183e9"
+    ],
+    "source_groups": [
+      "P044",
+      "P110",
+      "P111"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-easy-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/sheet-music/beginner",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-0a05b7954f5256",
+      "arr-ext-8b912f5a7183e9",
+      "arr-ext-11c484075abb59"
+    ],
+    "source_groups": [
+      "P045",
+      "P106"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-beginner-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/sheet-music/christmas",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-5008393c71166f",
+      "arr-ext-7a92e706c5cba1",
+      "arr-ext-11c484075abb59",
+      "arr-ext-b67938d6b023ac"
+    ],
+    "source_groups": [
+      "P046",
+      "P065"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-christmas-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/letter-notes",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-11d1f59a7fb062",
+      "arr-ext-7074f7bf26feda",
+      "arr-ext-4db249c9ba7711",
+      "arr-ext-f84548a1325b6f"
+    ],
+    "source_groups": [
+      "P050",
+      "P051",
+      "P097"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-letter-notes-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/annotated",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-7ffeddfbae1cd2",
+      "arr-ext-8b912f5a7183e9",
+      "arr-ext-4102dfa2719acf"
+    ],
+    "source_groups": [
+      "P054",
+      "P061"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-annotated-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/lead-sheets",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-545d0ebe92eafe",
+      "arr-ext-ecc0c3afd49d72",
+      "arr-ext-a79779a9876935",
+      "arr-ext-00f257998dc49b"
+    ],
+    "source_groups": [
+      "P062",
+      "P071"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-lead-sheets-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/pop",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-4cc7ce876b3d2c",
+      "arr-ext-7ffeddfbae1cd2",
+      "arr-ext-7b65826b4488c4",
+      "arr-ext-90107c470915a5"
+    ],
+    "source_groups": [
+      "P076",
+      "P112"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-pop-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/disney",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-b9bd3e56eb2177",
+      "arr-ext-99bc15b7164c10",
+      "arr-ext-4102dfa2719acf",
+      "arr-ext-203dbf85d38e55"
+    ],
+    "source_groups": [
+      "P078",
+      "P087"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-disney-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/classical",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-1b3f3dd0b5ec99",
+      "arr-ext-a60b8d92c5a325",
+      "arr-ext-5a219765c2047e",
+      "arr-ext-281b874ff03314"
+    ],
+    "source_groups": [
+      "P105",
+      "P107"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-classical-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/jazz",
+    "wave": "S3_TOPIC_COLLECTIONS",
+    "preserved_arrangement_ids": [
+      "arr-ext-8f9ba5c7d778e4",
+      "arr-ext-fb0fa21ced5b49",
+      "arr-ext-b9bb5f9cb11363"
+    ],
+    "source_groups": [
+      "P108"
+    ],
+    "done_when": "默认列出可用资源；标明作品、具体版本、难度、记谱形式及获取方式。；按已有任务提供 easy/beginner/人群/类型筛选。；纯字母谱、带字母的五线谱、和弦资料/lead sheets 分清输出。；免费、本地下载、外部购买或外部查看明确标注。",
+    "pending_evidence": [
+      {
+        "id": "D-jazz-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": false,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/jingle-bells",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-5008393c71166f",
+      "arr-ext-7074f7bf26feda"
+    ],
+    "source_groups": [
+      "P049",
+      "P053",
+      "P074"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-jingle-bells-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/amazing-grace",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-8b912f5a7183e9",
+      "arr-ext-116517c9dfbb2a"
+    ],
+    "source_groups": [
+      "P057"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-amazing-grace-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/fur-elise",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-886edaf688ab2a",
+      "arr-ext-281b874ff03314"
+    ],
+    "source_groups": [
+      "P066"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-fur-elise-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/happy-birthday",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-a234719ce3d627",
+      "arr-ext-545d0ebe92eafe",
+      "arr-ext-9f43c16cd3ccbe"
+    ],
+    "source_groups": [
+      "P073",
+      "P083"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-happy-birthday-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/hot-cross-buns",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-0a05b7954f5256"
+    ],
+    "source_groups": [
+      "P091"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-hot-cross-buns-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/sheet-music/jesus-loves-me",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-2e88bad0b14022"
+    ],
+    "source_groups": [
+      "P093"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-jesus-loves-me-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/mary-had-a-little-lamb",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-7ec281e6c03806"
+    ],
+    "source_groups": [
+      "P102"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-mary-had-a-little-lamb-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/abc-song",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-dad60734b0e34d"
+    ],
+    "source_groups": [
+      "P104"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-abc-song-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/ode-to-joy",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-a60b8d92c5a325"
+    ],
+    "source_groups": [
+      "P114"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-ode-to-joy-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/sheet-music/silent-night",
+    "wave": "S2_REPERTOIRE",
+    "preserved_arrangement_ids": [
+      "arr-ext-11c484075abb59"
+    ],
+    "source_groups": [
+      "P115"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-silent-night-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/twinkle-twinkle-little-star",
+    "wave": "S0_FIRST_IMPLEMENTATION",
+    "preserved_arrangement_ids": [
+      "arr-ext-c3a78b0c5cb213",
+      "arr-ext-11d1f59a7fb062"
+    ],
+    "source_groups": [
+      "P116"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-twinkle-twinkle-little-star-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": true,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": true
+  },
+  {
+    "url": "/sheet-music/let-it-go",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-b9bd3e56eb2177"
+    ],
+    "source_groups": [
+      "P052",
+      "P081"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-let-it-go-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      },
+      {
+        "id": "D-let-it-go-free",
+        "field": "free PDF / letter-note intent",
+        "reason": "已核正规付费版本；未确认免费PDF和纯字母谱版本，不能声称已满足这些限定。",
+        "needed_to_resolve": "取得明确可免费使用的准确版本及目标记谱形式，保留原暂停状态。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/super-mario-theme",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-350e5385b6cd20"
+    ],
+    "source_groups": [
+      "P055",
+      "P084"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-super-mario-theme-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      },
+      {
+        "id": "D-super-mario-theme-free",
+        "field": "free PDF / letter-note intent",
+        "reason": "已核正规付费版本；未确认免费PDF和纯字母谱版本，不能声称已满足这些限定。",
+        "needed_to_resolve": "取得明确可免费使用的准确版本及目标记谱形式，保留原暂停状态。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/thats-amore",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-b86574e4483fd1"
+    ],
+    "source_groups": [
+      "P056"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-thats-amore-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/black-parade",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-35b870e09213c8"
+    ],
+    "source_groups": [
+      "P058"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-black-parade-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/clocks",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-964e1feb90905a"
+    ],
+    "source_groups": [
+      "P059"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-clocks-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/from-the-start",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-02ca9e41cbf8e8"
+    ],
+    "source_groups": [
+      "P064"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-from-the-start-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      },
+      {
+        "id": "D-from-direct",
+        "field": "direct score URL",
+        "reason": "出版社目录列出了准确P/V/G产品；跳转目标当前未能访问。",
+        "needed_to_resolve": "上线前完成HL 1000742930所连Sheet Music Direct产品访问核验。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/song-of-storms",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-6d4dd0dbfc2a1b"
+    ],
+    "source_groups": [
+      "P068"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-song-of-storms-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/pink-panther",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-f84548a1325b6f",
+      "arr-ext-eb4a1565419ccd"
+    ],
+    "source_groups": [
+      "P072",
+      "P098"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-pink-panther-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/still-dre",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-100c9faa3a7b28"
+    ],
+    "source_groups": [
+      "P075"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-still-dre-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/carol-of-the-bells",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-b67938d6b023ac"
+    ],
+    "source_groups": [
+      "P077"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-carol-of-the-bells-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/edelweiss",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-847b6a1145f7fa"
+    ],
+    "source_groups": [
+      "P088"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-edelweiss-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/in-my-life",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-d41dc9970170a5"
+    ],
+    "source_groups": [
+      "P092"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-in-my-life-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/all-of-me-john-legend",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-4cc7ce876b3d2c",
+      "arr-ext-4db249c9ba7711"
+    ],
+    "source_groups": [
+      "P094"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-all-of-me-john-legend-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/runaway-kanye-west",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-36dc69691320cc"
+    ],
+    "source_groups": [
+      "P095"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-runaway-kanye-west-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/piano-man",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-89f81abab55eb2"
+    ],
+    "source_groups": [
+      "P096"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-piano-man-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/someone-like-you-adele",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-90107c470915a5"
+    ],
+    "source_groups": [
+      "P099"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-someone-like-you-adele-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/song-of-healing",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-f7d866d8d8892f"
+    ],
+    "source_groups": [
+      "P100"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-song-of-healing-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      },
+      {
+        "id": "D-healing-score",
+        "field": "usable specific sheet edition",
+        "reason": "只确认匹配作品的演示/教程，未确认可获取的具体谱版本；Spirit Tracks同名曲不可替代。",
+        "needed_to_resolve": "核实Majora’s Mask Song of Healing的正规具体乐谱SKU和获取方式。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/a-whole-new-world",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-99bc15b7164c10"
+    ],
+    "source_groups": [
+      "P101"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-a-whole-new-world-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  },
+  {
+    "url": "/sheet-music/easy-on-me",
+    "wave": "PRESERVE_PAUSED_RIGHTS",
+    "preserved_arrangement_ids": [
+      "arr-ext-7b65826b4488c4"
+    ],
+    "source_groups": [
+      "P109"
+    ],
+    "done_when": "确认作品身份；列表区分现有简化版、原谱、字母音名等实际版本。；对每版给准确难度/形式、可用预览或说明、对应获取入口。；示范必须说明所对应版本；标注资料来源和核查状态。；同作品优先同页分版本，不重复建近似下载页。",
+    "pending_evidence": [
+      {
+        "id": "D-easy-on-me-reuse",
+        "field": "self-hosted scores/audio and unfilled edition fields",
+        "reason": "未取得本站转载授权；只有具体已核字段可用于页面。null调性/速度/完整作者或指法不可自动补齐。",
+        "needed_to_resolve": "若需自托管或新增技术字段，取得明确权利并核对指定版本；当前交付为真实外部版本资料。"
+      }
+    ],
+    "independent_gate": "Exact version/rights evidence for every claimed capability; no copied protected files",
+    "can_ship_as_external_directory": false,
+    "local_learning_required_for_product_goal": true,
+    "allow_activation_this_run": false
+  }
+]

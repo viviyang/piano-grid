@@ -1,0 +1,172 @@
+[
+  {
+    "rights_id": "RIGHTS-arr-ext-0a05b7954f5256",
+    "work_id": "work-hot-cross-buns",
+    "arrangement_id": "arr-ext-0a05b7954f5256",
+    "territory_clearance": [],
+    "layers": {
+      "underlying_composition": {
+        "status": "NOT_CLEARED_FOR_THIS_SELF_HOSTING_PLAN",
+        "basis": "Title and historical attribution alone are insufficient for a global-use conclusion. A new arrangement can use a separately cleared historical source; that is a different route, not the selected provider edition."
+      },
+      "arrangement": {
+        "status": "REHOSTING_BLOCKED",
+        "basis": "HA-TERMS-20260915; exact provider edition is not assigned to PianoGrid"
+      },
+      "engraving_score_file": {
+        "status": "NO_LOCAL_ASSET_NO_REHOST_GRANT",
+        "score_asset_id": null
+      },
+      "recording": {
+        "status": "NO_LOCAL_ASSET_NO_STREAMING_GRANT",
+        "audio_asset_id": null
+      },
+      "instrument_samples": {
+        "status": "UNKNOWN_FOR_PROVIDER_RECORDING; NONE_USED_LOCALLY"
+      }
+    },
+    "permissions_for_pianogrid": {
+      "describe_metadata_and_link": true,
+      "display_third_party_score": false,
+      "download_third_party_score": false,
+      "play_third_party_audio_locally": false,
+      "commercially_reuse_assets": false
+    },
+    "source_ids": [
+      "HA-TERMS-20260915",
+      "WIPO-TERRITORY-20260915",
+      "USCO-SEPARATE-20260915"
+    ],
+    "status": "BLOCKED_FOR_LOCAL_ASSETS; KEEP_USEFUL_EXTERNAL_REFERENCE"
+  },
+  {
+    "rights_id": "RIGHTS-arr-ext-c3a78b0c5cb213",
+    "work_id": "work-twinkle-twinkle-little-star",
+    "arrangement_id": "arr-ext-c3a78b0c5cb213",
+    "territory_clearance": [],
+    "layers": {
+      "underlying_composition": {
+        "status": "NOT_CLEARED_FOR_THIS_SELF_HOSTING_PLAN",
+        "basis": "Title and historical attribution alone are insufficient for a global-use conclusion. A new arrangement can use a separately cleared historical source; that is a different route, not the selected provider edition."
+      },
+      "arrangement": {
+        "status": "REHOSTING_BLOCKED",
+        "basis": "HA-TERMS-20260915; exact provider edition is not assigned to PianoGrid"
+      },
+      "engraving_score_file": {
+        "status": "NO_LOCAL_ASSET_NO_REHOST_GRANT",
+        "score_asset_id": null
+      },
+      "recording": {
+        "status": "NO_LOCAL_ASSET_NO_STREAMING_GRANT",
+        "audio_asset_id": null
+      },
+      "instrument_samples": {
+        "status": "UNKNOWN_FOR_PROVIDER_RECORDING; NONE_USED_LOCALLY"
+      }
+    },
+    "permissions_for_pianogrid": {
+      "describe_metadata_and_link": true,
+      "display_third_party_score": false,
+      "download_third_party_score": false,
+      "play_third_party_audio_locally": false,
+      "commercially_reuse_assets": false
+    },
+    "source_ids": [
+      "HA-TERMS-20260915",
+      "WIPO-TERRITORY-20260915",
+      "USCO-SEPARATE-20260915"
+    ],
+    "status": "BLOCKED_FOR_LOCAL_ASSETS; KEEP_USEFUL_EXTERNAL_REFERENCE"
+  },
+  {
+    "rights_id": "RIGHTS-arr-ext-a60b8d92c5a325",
+    "work_id": "work-ode-to-joy",
+    "arrangement_id": "arr-ext-a60b8d92c5a325",
+    "territory_clearance": [],
+    "layers": {
+      "underlying_composition": {
+        "status": "NOT_CLEARED_FOR_THIS_SELF_HOSTING_PLAN",
+        "basis": "Title and historical attribution alone are insufficient for a global-use conclusion. A new arrangement can use a separately cleared historical source; that is a different route, not the selected provider edition."
+      },
+      "arrangement": {
+        "status": "REHOSTING_BLOCKED",
+        "basis": "HA-TERMS-20260915; exact provider edition is not assigned to PianoGrid"
+      },
+      "engraving_score_file": {
+        "status": "NO_LOCAL_ASSET_NO_REHOST_GRANT",
+        "score_asset_id": null
+      },
+      "recording": {
+        "status": "NO_LOCAL_ASSET_NO_STREAMING_GRANT",
+        "audio_asset_id": null
+      },
+      "instrument_samples": {
+        "status": "UNKNOWN_FOR_PROVIDER_RECORDING; NONE_USED_LOCALLY"
+      }
+    },
+    "permissions_for_pianogrid": {
+      "describe_metadata_and_link": true,
+      "display_third_party_score": false,
+      "download_third_party_score": false,
+      "play_third_party_audio_locally": false,
+      "commercially_reuse_assets": false
+    },
+    "source_ids": [
+      "HA-TERMS-20260915",
+      "WIPO-TERRITORY-20260915",
+      "USCO-SEPARATE-20260915"
+    ],
+    "status": "BLOCKED_FOR_LOCAL_ASSETS; KEEP_USEFUL_EXTERNAL_REFERENCE"
+  },
+  {
+    "rights_id": "RIGHTS-PG-ORIGINAL-20260915",
+    "scope": "Only the three newly created original exercise folders and their generated music/copy, not the baseline or competitor materials",
+    "layers": {
+      "underlying_composition": {
+        "status": "NEW_AI_GENERATED_EXERCISE",
+        "basis": "Created in tools/build_original_assets.py for this request; no third-party tune, lyrics or score supplied to that generator."
+      },
+      "arrangement": {
+        "status": "NEW_AI_GENERATED_EVENT_SPECIFICATION",
+        "basis": "Same new work; not an adaptation of any of the three known songs."
+      },
+      "engraving_score_file": {
+        "status": "GENERATED_FOR_THIS_PROJECT",
+        "basis": "Vector notes/staves rendered from local event data. Noto Music clef outlines under OFL; system font files excluded."
+      },
+      "recording": {
+        "status": "GENERATED_TONE_SIGNAL",
+        "basis": "New mathematical additive oscillator output. Not a recorded piano performance."
+      },
+      "instrument_samples": {
+        "status": "NONE",
+        "basis": "No soundfont, piano sample, recording or third-party audio file was used."
+      }
+    },
+    "requested_site_actions": {
+      "display": true,
+      "download": true,
+      "play": true,
+      "use_on_commercial_site": true
+    },
+    "permission_basis": "User-requested generated output, subject to applicable OpenAI output terms and law; this record does not convey rights in third-party material.",
+    "territory_note": "No assertion of global public-domain status or exclusive copyright. Contractual output allocation is subject to applicable law; no country-specific third-party asset licence is relied on.",
+    "public_notice": "AI-generated original exercise. Not a named-song arrangement. Not teacher-reviewed.",
+    "rights_owner_label": "Created for PianoGrid; do not state that a human teacher composed or reviewed it.",
+    "downstream_teacher_licence": "NOT_CREATED; do not sell exclusive permissions over AI output or charge for existing free downloads.",
+    "independent_music_review": "qa/check_music.py uses fixed literal expectations, independent format decoders and audio spectral estimation; same assistant, not independent personnel.",
+    "release_gate": [
+      "independent implementation acceptance",
+      "real-device playback smoke test",
+      "print and visual notation review"
+    ],
+    "source_ids": [
+      "OPENAI-OUTPUT-ROW-20260915",
+      "OPENAI-OUTPUT-EU-20260915",
+      "USCO-AI-20260915",
+      "NOTO-MUSIC-OFL"
+    ],
+    "status": "ASSET_PROVENANCE_DOCUMENTED; NOT_A_GLOBAL_LEGAL_OPINION"
+  }
+]
