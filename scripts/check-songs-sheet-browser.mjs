@@ -38,6 +38,10 @@ try{
     const schemaText=await schemas.first().textContent();
     check(`${route} JSON-LD parses`,Boolean(schemaText)&&Boolean(JSON.parse(schemaText)['@type']),schemaText||'');
     check(`${route} no local media action`,await page.getByRole('button',{name:/Play demonstration|Print A4 score|Print US Letter score/}).count()===0);
+    if(route.startsWith('/songs')){
+      const cardStyle=await page.locator('.ss-version-card').first().evaluate(element=>{const style=getComputedStyle(element);return{padding:parseFloat(style.paddingTop),border:style.borderTopStyle,radius:parseFloat(style.borderTopLeftRadius)};});
+      check(`${route} shared arrangement cards styled`,cardStyle.padding>0&&cardStyle.border!=='none'&&cardStyle.radius>0,JSON.stringify(cardStyle));
+    }
     const html=await page.content();
     check(`${route} no staging path`,!html.includes('content-data/assets/')&&!html.includes('score-a4.pdf')&&!html.includes('demo.wav'));
     for(const width of [320,390,1440]){

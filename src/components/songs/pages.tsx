@@ -9,6 +9,7 @@ import { getLaunchExternalViews, getPagePatch } from '@/lib/songs-sheet-content'
 import { ArrangementFocus } from '@/components/songs-sheet/arrangement-focus';
 import { ExternalArrangementCard } from '@/components/songs-sheet/external-arrangement-card';
 import '@/app/chords/a-minor/a-minor.css';
+import '@/components/sheet-music/sheet-music.css';
 import './songs.css';
 
 function SongShell({ model, children }: { model: SongPageModel; children: ReactNode }) {
