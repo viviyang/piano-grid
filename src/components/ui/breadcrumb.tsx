@@ -37,8 +37,10 @@ function BreadcrumbEllipsis({ className, ...props }: ComponentProps<'span'>) {
 export type BreadcrumbEntry = { label: string; href?: string };
 
 function PageBreadcrumb({ items, className }: { items: BreadcrumbEntry[]; className?: string }) {
-  return <Breadcrumb className={className}><BreadcrumbList>{items.map((item, index) => {
-    const current = index === items.length - 1;
+  const entries = items.map(item => ({ ...item, label: item.label === 'Guide' ? 'Learn' : item.label === 'Keyboard Notes' ? 'Piano Notes' : item.label }));
+  if (entries[0]?.href !== '/') entries.unshift({ label: 'Home', href: '/' });
+  return <Breadcrumb className={className}><BreadcrumbList>{entries.map((item, index) => {
+    const current = index === entries.length - 1;
     return <Fragment key={`${item.href ?? 'current'}-${item.label}`}>
       {index > 0 && <BreadcrumbSeparator/>}
       <BreadcrumbItem>{current ? <BreadcrumbPage>{item.label}</BreadcrumbPage> : <BreadcrumbLink href={item.href!}>{item.label}</BreadcrumbLink>}</BreadcrumbItem>

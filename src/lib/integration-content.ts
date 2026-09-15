@@ -47,6 +47,6 @@ export function getToolsModel():ToolsModel{
   if(lookupLinks.length!==4||printables.length!==5)throw new Error('Tools destination release map is invalid');
   const blocks=model.blocks.map(block=>block.id==='jobs'
     ? {...block,body:'Choose an available reference for the task you want to complete. Every option on this page opens the matching reference.',actions:lookupLinks.map(({label,url})=>({label,url}))}
-    : {...block,body:'Choose an available printable, open its resource page for details, or download its verified PDF.',actions:printables.map(({label,url})=>({label,url}))});
+    : {...block,heading:'How to use your printouts',body:'Choose a printable for the notes or patterns you want to practice. Open its resource page for instructions, or download the PDF to keep beside your keyboard.',actions:printables.map(({label,url})=>({label,url}))});
   return {model:{...model,blocks},lookupLinks,printables};
 }

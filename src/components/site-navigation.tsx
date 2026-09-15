@@ -282,7 +282,9 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       <span className="site-nav-indicator" aria-hidden="true" style={{ '--site-nav-indicator-left': `${indicator.left}px`, '--site-nav-indicator-width': `${indicator.width}px`, opacity: indicator.visible ? 1 : 0 } as CSSProperties}/>
       {SITE_NAVIGATION.map(section => {
         const panelId = `${id}-${section.href.slice(1).replaceAll('/', '-') || 'home'}-menu`;
-        const sectionActive = pathname === section.href || pathname.startsWith(`${section.href}/`) || section.children.some(item => pathname === item.href);
+        const sectionActive = pathname === section.href || pathname.startsWith(`${section.href}/`)
+          || (section.href === '/chords' && pathname === '/chord-progressions')
+          || (section.href === '/scales' && pathname === '/arpeggios');
         const expanded = openSection === section.href;
         return <div
           className="site-nav-group"

@@ -1,3 +1,4 @@
+import { editorialMetadata } from '@/lib/seo-editorial';
 import { ChordFinderPage } from '@/components/support/support-pages';
 import { getChordFinder } from '@/lib/support-content';
 import { getChordCenter } from '@/lib/chord-content';
@@ -9,7 +10,7 @@ function model() {
 
 export function generateMetadata() {
   const { metadata } = model();
-  return { title: metadata.title, description: metadata.description, alternates: { canonical: metadata.canonicalPath }, robots: { index: true, follow: true } };
+  return editorialMetadata({ title: metadata.title, description: metadata.description, alternates: { canonical: metadata.canonicalPath }, robots: { index: true, follow: true } });
 }
 
 export default function Page() { return <ChordFinderPage/>; }

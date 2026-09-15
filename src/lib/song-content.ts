@@ -1,3 +1,4 @@
+import { editorialHeading } from './seo-editorial';
 import { readAuthorizedPage } from './site-content';
 import type { EasySongsData, SongBlock, SongCenterData, SongGoal, SongPageModel, SongResource, SongURL } from './song-types';
 
@@ -61,7 +62,7 @@ function model(url: SongURL, page: Raw): SongPageModel {
   return {
     url,
     templateID: expectedTemplate,
-    title: requiredString(page.title, `${url}.title`),
+    title: editorialHeading(url, requiredString(page.title, `${url}.title`)),
     description: requiredString(page.description, `${url}.description`),
     userTask: requiredString(page.user_task, `${url}.user_task`),
     metadata: {

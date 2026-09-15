@@ -1,6 +1,7 @@
+import { editorialMetadata } from '@/lib/seo-editorial';
 import { GuideCenterPage } from '@/components/guides/pages';
 import { getGuidePage } from '@/lib/guide-content';
 
 const { metadata: meta } = getGuidePage('/guide');
-export const metadata = { title: meta.title, description: meta.description, alternates: { canonical: meta.canonicalPath }, robots: { index: true, follow: true } };
+export const metadata = editorialMetadata({ title: meta.title, description: meta.description, alternates: { canonical: meta.canonicalPath }, robots: { index: true, follow: true } });
 export default GuideCenterPage;

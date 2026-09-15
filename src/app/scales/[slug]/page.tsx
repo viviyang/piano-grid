@@ -1,3 +1,4 @@
+import { editorialMetadata } from '@/lib/seo-editorial';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ScaleDetailPage, ScaleFamilyPage } from '@/components/scales/pages';
@@ -17,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   if (detailSet.has(slug)) {
     const page = getCompletionScaleDetail(`/scales/${slug}` as ScaleDetailRoute).model.metadata;
-    return { title: page.title, description: page.description, alternates: { canonical: page.canonical_path }, robots: { index: true, follow: true } };
+    return editorialMetadata({ title: page.title, description: page.description, alternates: { canonical: page.canonical_path }, robots: { index: true, follow: true } });
   }
   if (familySet.has(slug)) {
     const page = getScaleFamily(`/scales/${slug}` as ScaleFamilyRoute).model.metadata;
-    return { title: page.title, description: page.description, alternates: { canonical: page.canonical_path }, robots: { index: true, follow: true } };
+    return editorialMetadata({ title: page.title, description: page.description, alternates: { canonical: page.canonical_path }, robots: { index: true, follow: true } });
   }
   return {};
 }

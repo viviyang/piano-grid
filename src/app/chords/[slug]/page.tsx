@@ -1,3 +1,4 @@
+import { editorialMetadata } from '@/lib/seo-editorial';
 import { notFound } from 'next/navigation';
 import { ChordDetailPage } from '@/components/chords/detail-page';
 import { getChordDetail } from '@/lib/chord-content';
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const url = `/chords/${slug}`;
   if (!isExpansionChordDetailRoute(url) && !isN2BChordDetailRoute(url) && !isN2CChordDetailRoute(url) && !isN2DChordDetailRoute(url)) notFound();
   const { metadata } = getChordDetail(url);
-  return { title: metadata.title, description: metadata.description, alternates: { canonical: metadata.canonical_path }, robots: { index: true, follow: true } };
+  return editorialMetadata({ title: metadata.title, description: metadata.description, alternates: { canonical: metadata.canonical_path }, robots: { index: true, follow: true } });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

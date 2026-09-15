@@ -1,9 +1,10 @@
+import { editorialMetadata } from '@/lib/seo-editorial';
 import { ChordCategoryPage } from '@/components/chords/category-page';
 import { getChordCategory } from '@/lib/chord-content';
 
 export function generateMetadata() {
   const { metadata } = getChordCategory('seventh');
-  return { title: metadata.title, description: metadata.description, alternates: { canonical: metadata.canonical_path }, robots: { index: true, follow: true } };
+  return editorialMetadata({ title: metadata.title, description: metadata.description, alternates: { canonical: metadata.canonical_path }, robots: { index: true, follow: true } });
 }
 
 export default function Page() {

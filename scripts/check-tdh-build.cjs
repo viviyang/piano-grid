@@ -1,0 +1,30 @@
+const fs=require('node:fs');
+const cp=require('node:child_process');
+const ts=require('typescript');
+const baseline=cp.execFileSync('git',['show','4bfd070:src/lib/site-routes.ts'],{encoding:'utf8'});
+const routes=s=>[...s.split('] as const')[0].matchAll(/'([^']+)'/g)].map(m=>m[1]);
+const expected=routes(baseline),actual=routes(fs.readFileSync('src/lib/site-routes.ts','utf8'));
+const dist=process.env.PIANO_NEXT_DIST_DIR||'.next';
+const errors=[];const check=(ok,msg)=>{if(!ok)errors.push(msg);};
+check(JSON.stringify(expected)===JSON.stringify(actual),'Public route inventory changed');
+const clean=s=>s.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
+const exportsCopy={};new Function('exports',ts.transpileModule(fs.readFileSync('src/lib/seo-editorial.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(exportsCopy);
+const rows=actual.map(url=>{
+ const h=fs.readFileSync(`${dist}/server/app/${url==='/'?'index':url.slice(1)}.html`,'utf8');
+ const title=clean(h.match(/<title>(.*?)<\/title>/s)?.[1]||'');
+ const description=clean(h.match(/<meta name="description" content="([^"]*)"/)?.[1]||'');
+ const h1=[...h.matchAll(/<h1[^>]*>(.*?)<\/h1>/gs)].map(m=>clean(m[1]));
+ check(!!title&&!!description,`${url}: missing TD`);check(h1.length===1,`${url}: H1 count ${h1.length}`);
+ check(h.includes(`rel="canonical" href="https://pianogrid.com${url==='/'?'':url}"`)||h.includes(`rel="canonical" href="https://pianogrid.com${url}"`),`${url}: canonical`);
+ check(/<meta name="robots" content="index,\s*follow"/.test(h),`${url}: robots`);
+ check(clean(h.match(/<meta property="og:title" content="([^"]*)"/)?.[1]||'')===title,`${url}: OG title drift`);
+ check(clean(h.match(/<meta name="twitter:description" content="([^"]*)"/)?.[1]||'')===description,`${url}: Twitter description drift`);
+ const copy=exportsCopy.SEO_COPY[url];if(copy){check(description===copy.description,`${url}: editorial description`);if(copy.h1)check(h1[0]===copy.h1,`${url}: editorial H1`);}
+ check(!h.includes('href="/sheet-music"'),`${url}: unavailable Sheet Music link`);
+ return {url,title,description,h1};
+});
+for(const field of ['title','description'])check(new Set(rows.map(r=>r[field])).size===rows.length,`Duplicate ${field}`);
+check(cp.execFileSync('git',['diff','--name-only','4bfd070','--','docs/content','docs/product','docs/design','public','src/app/sitemap.ts'],{encoding:'utf8'}).trim()==='','Protected content, assets or sitemap changed');
+const report={checkedAt:new Date().toISOString(),baseline:'4bfd070',count:rows.length,errors,rows};
+fs.mkdirSync('checks/tdh',{recursive:true});fs.writeFileSync('checks/tdh/build-audit.json',JSON.stringify(report,null,2));
+console.log(JSON.stringify({pages:rows.length,errors}));process.exitCode=errors.length?1:0;
