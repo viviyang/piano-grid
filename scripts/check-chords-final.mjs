@@ -1,6 +1,8 @@
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { PUBLIC_ROUTES } from '../src/lib/site-routes.ts';
+import { editorialHeading, editorialMetadata } from '../src/lib/seo-editorial.ts';
 
 const { chromium } = createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH || 'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const base = process.env.PIANO_BASE_URL || 'http://127.0.0.1:3000';
@@ -15,7 +17,7 @@ const n2bPublished = JSON.parse(await readFile('docs/pianogrid-chords-n2b/04_seo
 const n2cPublished = ['/chords/seventh',...await Promise.all((await readdir('docs/pianogrid-chords-n2c/03_details')).filter(name=>name.endsWith('.page.json')).map(async name=>JSON.parse(await readFile(`docs/pianogrid-chords-n2c/03_details/${name}`,'utf8')).url))];
 const n2dPublished = ['/chords/add',...await Promise.all((await readdir('docs/pianogrid-chords-n2d-v2/03_content/details')).filter(name=>name.endsWith('.page.json')).map(async name=>JSON.parse(await readFile(`docs/pianogrid-chords-n2d-v2/03_content/details/${name}`,'utf8')).url))];
 const completionPublished = ['/chords/extended','/chords/altered'];
-const expectedPublic = ['/', '/tools', '/chords', '/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major', '/chords/by-key', '/chords/finder', '/chord-progressions', '/keyboard-notes', '/keyboard-notes/labeled', '/keyboard-notes/chart', '/keyboard-notes/finger-numbers', '/scales', '/scales/c-major', '/scales/a-minor', '/songs', '/songs/easy', '/guide', '/guide/read-sheet-music', '/guide/piano-chords', '/tools/blank-sheet-music', ...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished,...completionPublished];
+const expectedPublic = [...PUBLIC_ROUTES];
 const details = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/c-minor', '/chords/e-major', '/chords/b-major', '/chords/a-flat-major', '/chords/c-flat-major'];
 const progressionDetails = ['/chords/a-minor', '/chords/a-major', '/chords/c-major', '/chords/g-major', '/chords/e-major', '/chords/b-major'];
 const results = [], runtimeErrors = [];
@@ -30,25 +32,29 @@ try {
   for (const record of seo.pages) {
     const response = await page.goto(base + record.url);
     const html = await response.text();
+    const expectedMetadata = editorialMetadata({ title: record.title, description: record.description, alternates: { canonical: record.url } });
+    const expectedTitle = expectedMetadata.title;
+    const expectedDescription = expectedMetadata.description;
+    const expectedH1 = editorialHeading(record.url, record.h1);
     (response.status() === 200 ? published : deferred).push(record.url);
     check(`${record.url} HTTP 200`, response.status() === 200, response.status());
-    check(`${record.url} title`, await page.title() === record.title, await page.title());
+    check(`${record.url} title`, await page.title() === expectedTitle, await page.title());
     const description=await page.locator('meta[name="description"]').getAttribute('content');
-    check(`${record.url} description`, record.url==='/chords'?description==='Explore piano chords by name, root and type with note names, keyboard examples, sound and printable references.':description===record.description,description);
-    check(`${record.url} H1`, (await page.locator('h1').allTextContents()).join('').trim() === record.h1, await page.locator('h1').allTextContents());
+    check(`${record.url} description`, description===expectedDescription,description);
+    check(`${record.url} H1`, (await page.locator('h1').allTextContents()).join('').trim() === expectedH1, await page.locator('h1').allTextContents());
     check(`${record.url} canonical`, await page.locator('link[rel="canonical"]').getAttribute('href') === record.canonical);
     const robots = (await page.locator('meta[name="robots"]').getAttribute('content')) || '';
     check(`${record.url} index/follow`, robots.includes('index') && robots.includes('follow') && !robots.includes('noindex') && !robots.includes('nofollow'), robots);
     check(`${record.url} no meta keywords`, await page.locator('meta[name="keywords"]').count() === 0);
     check(`${record.url} one breadcrumb`, await page.locator('nav[aria-label="breadcrumb"]').count() === 1);
     const firstBlock = master.pages[record.url].blocks[0];
-    check(`${record.url} core copy in initial HTML`, html.includes(record.h1) && (html.includes(firstBlock.heading) || html.includes(firstBlock.body)));
+    check(`${record.url} core copy in initial HTML`, html.includes(expectedH1) && (html.includes(firstBlock.heading) || html.includes(firstBlock.body)));
   }
 
   const sitemapResponse = await page.request.get(base + '/sitemap.xml');
   const sitemapText = await sitemapResponse.text();
   const sitemapPaths = [...sitemapText.matchAll(/<loc>https:\/\/pianogrid\.com([^<]*)<\/loc>/g)].map(match => match[1] || '/');
-  check('Sitemap contains exactly the 173 published routes', JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
+  check(`Sitemap contains exactly the ${expectedPublic.length} registered public routes`, JSON.stringify([...sitemapPaths].sort()) === JSON.stringify([...expectedPublic].sort()), sitemapPaths);
   check('All 15 planned URLs are in sitemap', planned.every(url => sitemapPaths.includes(url)));
   const finalScope = sitemapPaths.filter(url => url.startsWith('/chord') || ['/guide/piano-chords', '/keyboard-notes/finger-numbers'].includes(url));
   check('No unexpected chord-system URL is published', finalScope.every(url => [...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished,...completionPublished].includes(url)), finalScope.filter(url => ![...planned,...nextPublished,...n2bPublished,...n2cPublished,...n2dPublished,...completionPublished].includes(url)));

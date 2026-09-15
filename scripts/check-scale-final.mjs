@@ -1,10 +1,13 @@
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { buildPracticeEvents, evaluateOrderedPitches, evaluatePitchClasses } from '../src/lib/scale-practice.ts';
 import { scaleSequence } from '../src/lib/scale-resolver.ts';
 import { validateScaleAuthoringBundle } from './scale-authoring-contract.mjs';
 
 const master = JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json', 'utf8'));
-const authoring = JSON.parse(fs.readFileSync('checks/launch-monetization/current-authoring-bundle.json', 'utf8'));
+const authoringPath = process.env.PIANO_SCALE_AUTHORING_BUNDLE || 'checks/scales-completion/current-authoring-bundle.json';
+if (!process.env.PIANO_SCALE_AUTHORING_BUNDLE) execFileSync(process.execPath, ['scripts/export-scale-authoring.mjs', '--output', authoringPath], { stdio: 'pipe' });
+const authoring = JSON.parse(fs.readFileSync(authoringPath, 'utf8'));
 const results = [];
 const check = (name, passed, detail = '') => {
   results.push({ name, passed: Boolean(passed), detail });

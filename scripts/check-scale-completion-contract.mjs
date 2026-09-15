@@ -1,7 +1,10 @@
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { validateScaleAuthoringBundle } from './scale-authoring-contract.mjs';
 
-const input = JSON.parse(fs.readFileSync('checks/launch-monetization/current-authoring-bundle.json', 'utf8'));
+const inputPath = process.env.PIANO_SCALE_AUTHORING_BUNDLE || 'checks/scales-completion/current-authoring-bundle.json';
+if (!process.env.PIANO_SCALE_AUTHORING_BUNDLE) execFileSync(process.execPath, ['scripts/export-scale-authoring.mjs', '--output', inputPath], { stdio: 'pipe' });
+const input = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
 const master = JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json', 'utf8'));
 const clone = () => structuredClone(input);
 const results = [];
