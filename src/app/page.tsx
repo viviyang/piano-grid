@@ -1,3 +1,4 @@
+import { editorialMetadata } from '@/lib/seo-editorial';
 import type { Metadata } from 'next';
 import { HomePage } from '@/components/integration/pages';
 import {
@@ -9,7 +10,7 @@ import {
   WEBSITE_JSON_LD,
 } from '@/lib/site-config';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = editorialMetadata({
   title: HOME_TITLE,
   description: HOME_DESCRIPTION,
   alternates: { canonical: '/' },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     title: HOME_OPEN_GRAPH_TITLE,
     description: HOME_OPEN_GRAPH_DESCRIPTION,
   },
-};
+});
 
 export default function Page() {
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_JSON_LD) }} /><HomePage /></>;

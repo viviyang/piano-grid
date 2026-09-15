@@ -179,7 +179,7 @@ export const CHORD_MORE_NAVIGATION = [
 
 export const SITE_NAVIGATION = [
   {
-    label: 'Keyboard Notes',
+    label: 'Piano Notes',
     href: '/keyboard-notes',
     children: [
       { label: 'Labeled Keyboard', href: '/keyboard-notes/labeled' },
@@ -203,7 +203,7 @@ export const SITE_NAVIGATION = [
       { label: 'Chords by Key', href: '/chords/by-key', group: 'Explore' },
       { label: 'Chord Progressions', href: '/chord-progressions', group: 'Explore' },
       { label: 'Chord Finder', href: '/chords/finder', group: 'Explore' },
-      { label: 'Piano Chord Guide', href: '/guide/piano-chords', group: 'Learn' },
+      { label: 'Learn Piano Chords', href: '/guide/piano-chords', group: 'Learn' },
       { label: 'Finger Numbers', href: '/keyboard-notes/finger-numbers', group: 'Learn' },
     ],
   },
@@ -229,18 +229,18 @@ export const SITE_NAVIGATION = [
     children: [{ label: 'Easy Piano Songs', href: '/songs/easy' }],
   },
   {
-    label: 'Guide',
+    label: 'Learn',
     href: '/guide',
     children: [
       { label: 'Read Sheet Music', href: '/guide/read-sheet-music' },
-      { label: 'Piano Chords', href: '/guide/piano-chords' },
-      { label: 'Piano Scales', href: '/guide/piano-scales' },
+      { label: 'Learn Piano Chords', href: '/guide/piano-chords' },
+      { label: 'Practice Piano Scales', href: '/guide/piano-scales' },
     ],
   },
   {
     label: 'Tools',
     href: '/tools',
-    children: [{ label: 'Blank Sheet Music', href: '/tools/blank-sheet-music' }],
+    children: [{ label: 'Chord Finder', href: '/chords/finder' }, { label: 'Find Scale Notes', href: '/scales#find-by-notes' }, { label: 'Blank Sheet Music', href: '/tools/blank-sheet-music' }],
   },
 ] as const satisfies ReadonlyArray<{
   label: string;

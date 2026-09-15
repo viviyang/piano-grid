@@ -1,3 +1,4 @@
+import { editorialHeading } from './seo-editorial';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { readAuthorizedPage } from './site-content';
@@ -103,7 +104,7 @@ function base(url: SupportRoute) {
   if (planned.meta_keywords !== null) throw new Error(`Unexpected meta keywords: ${url}`);
   return {
     url,
-    title: requiredString(prepared.h1, `${url}.h1`),
+    title: editorialHeading(url, requiredString(prepared.h1, `${url}.h1`)),
     description: requiredString(page.description, `${url}.description`),
     scope: requiredString(prepared.scope, `${url}.scope`),
     metadata: { title: planned.title as string, description: planned.description as string, canonicalPath: url },
