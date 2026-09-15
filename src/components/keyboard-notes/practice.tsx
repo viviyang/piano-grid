@@ -31,7 +31,7 @@ export function FindNotePractice({ layout }: { layout: Layout }) {
   const [level, setLevel] = useState<PracticeLevel>('1'), [run, setRun] = useState(0);
   const seed = 20260915 + run * 97 + Number(level);
   const targets = useMemo(() => generateFindPractice(layout, level, seed), [layout, level, seed]);
-  return <section className="kn-practice" aria-labelledby="find-practice-title"><div className="kn-practice-heading"><div><h2 id="find-practice-title">Find this note</h2><p>See a note name, then select the matching piano key. The octave matters.</p></div><LevelChoice prefix="find" value={level} onChange={value => { setLevel(value); setRun(current => current + 1); }}/></div><Session key={`${layout.layout_id}-${level}-${run}`} sessionKey={`${level}-${run}`} targets={targets} keys={layout.keys} onRetry={() => setRun(value => value + 1)}/></section>;
+  return <section className="kn-practice" id="note-trainer" tabIndex={-1} aria-labelledby="find-practice-title"><div className="kn-practice-heading"><div><h2 id="find-practice-title">Find this note</h2><p>See a note name, then select the matching piano key. The octave matters.</p></div><LevelChoice prefix="find" value={level} onChange={value => { setLevel(value); setRun(current => current + 1); }}/></div><Session key={`${layout.layout_id}-${level}-${run}`} sessionKey={`${level}-${run}`} targets={targets} keys={layout.keys} onRetry={() => setRun(value => value + 1)}/></section>;
 }
 
 function chartKeys(notes: ChartKey[]): PianoKey[] {

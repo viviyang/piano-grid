@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-09-15",
+  "project": "PianoGrid",
+  "scope": "Practical Tools completion",
+  "code_truth": {
+    "production_revision": "main@1e3fdec",
+    "dirty_reference_only": "codex/chords-b1@bdcc2e1"
+  },
+  "page": {
+    "url": "/tools",
+    "title": "Piano Tools: Notes, Chords, Scales & Printables | PianoGrid",
+    "description": "Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub.",
+    "h1": "Piano Tools and Printables",
+    "intro": "Find the task you need, then open the PianoGrid page that owns it. Use the practice timer here when you simply want to set aside a focused block of piano time."
+  },
+  "groups": [
+    {
+      "id": "find-identify",
+      "heading": "Find or identify",
+      "items": [
+        {
+          "id": "note-lookup",
+          "label": "Find a piano note",
+          "owner": "keyboard",
+          "target": "/keyboard-notes",
+          "decision": "REUSE"
+        },
+        {
+          "id": "staff-note-key",
+          "label": "Match a staff note to a key",
+          "owner": "keyboard",
+          "target": "/keyboard-notes/chart",
+          "decision": "REUSE"
+        },
+        {
+          "id": "chord-lookup",
+          "label": "Look up a chord",
+          "owner": "chords",
+          "target": "/chords",
+          "decision": "REUSE"
+        },
+        {
+          "id": "chord-finder",
+          "label": "Identify a chord from notes",
+          "owner": "chords",
+          "target": "/chords/finder",
+          "decision": "REUSE"
+        },
+        {
+          "id": "scale-lookup",
+          "label": "Look up a scale",
+          "owner": "scales",
+          "target": "/scales",
+          "decision": "REUSE"
+        },
+        {
+          "id": "scale-finder",
+          "label": "Find a scale by notes",
+          "owner": "scales",
+          "target": "/scales",
+          "target_mode": "stable-owner-section-anchor-if-present",
+          "decision": "REUSE"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "heading": "Practice",
+      "items": [
+        {
+          "id": "scale-pulse",
+          "label": "Practice a scale with a pulse",
+          "owner": "scales",
+          "target": "/scales",
+          "target_mode": "stable-owner-section-anchor-if-present",
+          "decision": "REUSE"
+        },
+        {
+          "id": "practice-timer",
+          "label": "Practice Timer",
+          "owner": "tools",
+          "target": "/tools#practice-timer",
+          "decision": "ADD"
+        },
+        {
+          "id": "note-trainer",
+          "label": "Note Trainer",
+          "owner": "keyboard",
+          "target": null,
+          "decision": "REUSE",
+          "visibility": "only-if-latest-keyboard-handoff-proves-released-canonical-owner"
+        },
+        {
+          "id": "progressions",
+          "label": "Explore chord progressions",
+          "owner": "progressions",
+          "target": "/chord-progressions",
+          "decision": "REUSE",
+          "priority": "secondary"
+        }
+      ]
+    },
+    {
+      "id": "print",
+      "heading": "Print and download",
+      "items": [
+        {
+          "id": "blank-sheet",
+          "label": "Blank piano sheet music",
+          "owner": "tools",
+          "target": "/tools/blank-sheet-music",
+          "decision": "EXISTS"
+        },
+        {
+          "id": "labeled-keyboard",
+          "label": "Labeled piano keyboard",
+          "owner": "keyboard",
+          "target": "/keyboard-notes/labeled",
+          "decision": "REUSE"
+        },
+        {
+          "id": "notes-chart",
+          "label": "Piano notes chart",
+          "owner": "keyboard",
+          "target": "/keyboard-notes/chart",
+          "decision": "REUSE"
+        },
+        {
+          "id": "scale-print",
+          "label": "Print the current scale",
+          "owner": "scales",
+          "target": "/scales",
+          "decision": "REUSE"
+        }
+      ]
+    }
+  ],
+  "practice_timer": {
+    "route": "/tools",
+    "anchor": "practice-timer",
+    "default_minutes": 10,
+    "preset_minutes": [
+      5,
+      10,
+      15,
+      20,
+      30
+    ],
+    "custom_minutes": {
+      "min": 1,
+      "max": 120,
+      "integer_only": true
+    },
+    "states": [
+      "idle",
+      "running",
+      "paused",
+      "complete"
+    ],
+    "actions": [
+      "Start",
+      "Pause",
+      "Resume",
+      "Reset",
+      "Start again"
+    ],
+    "boundary_copy": "This timer tracks elapsed practice time. It does not set tempo or listen to your piano.",
+    "complete_copy": "Practice block complete.",
+    "share_state": false,
+    "print": false,
+    "new_public_route": false
+  },
+  "classification": {
+    "chord_finder": "REUSE",
+    "scale_lookup_finder": "REUSE",
+    "keyboard_note_lookup": "REUSE",
+    "metronome_rhythm": "DEFER",
+    "blank_sheet_music": "EXISTS",
+    "practice_timer": "ADD",
+    "sight_reading": "DEFER",
+    "circle_of_fifths": "DEFER",
+    "transposer": "DEFER",
+    "chord_progression_generator": "DROP",
+    "tools_hub": "FIX"
+  },
+  "blank_sheet_metadata": {
+    "title": "Blank Piano Sheet Music PDF — Letter & A4 | PianoGrid",
+    "description": "Download free blank piano sheet music with six grand-staff systems. Choose US Letter or A4, preview the page, and print without an account.",
+    "h1": "Blank Piano Sheet Music"
+  },
+  "commercial_policy": {
+    "current_ads": "NO",
+    "current_affiliate": "NO",
+    "current_pro": "NO",
+    "ad_free_workspaces": [
+      "practice timer controls/countdown",
+      "chord finder input/results",
+      "scale finder/check/pulse controls",
+      "keyboard lookup/trainer controls",
+      "blank sheet selector/preview/download controls"
+    ],
+    "future_pro_candidates": [
+      "practice timer history",
+      "saved practice blocks",
+      "practice streak/progress summary",
+      "note trainer history",
+      "scale practice history"
+    ]
+  },
+  "do_not_build_this_batch": [
+    "generic metronome",
+    "sight-reading tool",
+    "circle of fifths",
+    "transposer",
+    "chord progression generator",
+    "MIDI input",
+    "microphone recognition",
+    "AI tutor",
+    "login",
+    "cloud practice history",
+    "subscription/paywall"
+  ]
+}

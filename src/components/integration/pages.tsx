@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import Image from 'next/image';
 import { SiteFooter, SiteHeader } from '@/components/chords/site-chrome';
 import { HomeChordDiscovery, HomeHeader, HomePianoDemo } from '@/components/integration/home-experience';
+import { PracticeTimer } from '@/components/integration/practice-timer';
 import {
   GrandPianoIllustration,
   HomeArrow,
@@ -13,7 +14,7 @@ import { SiteBrand } from '@/components/ui/site-brand';
 import { RollingText } from '@/components/ui/rolling-text';
 import { getChordCenter } from '@/lib/chord-content';
 import { getHomeModel, getToolsModel } from '@/lib/integration-content';
-import type { Destination, IntegrationBlock, IntegrationPageModel, PrintableDestination } from '@/lib/integration-types';
+import type { Destination, IntegrationBlock, IntegrationPageModel, ToolDestination, ToolResource } from '@/lib/integration-types';
 import { SITE_NAME } from '@/lib/site-config';
 import { SITE_NAVIGATION } from '@/lib/site-routes';
 import '@/app/chords/a-minor/a-minor.css';
@@ -42,8 +43,11 @@ const taskDescriptions: Record<string,string> = {
 function HomeTaskCard({item,index}:{item:Destination;index:number}){
   return <a className="ph-task pr-breathe-surface pr-breathe-surface-tint" href={item.url}><div className="ph-task-top"><span>{String(index+1).padStart(2,'0')}</span><HomeArrow/></div><div className="ph-task-illustration"><TaskIllustration route={item.url}/></div><h3>{item.label}</h3><p>{taskDescriptions[item.url]}</p></a>;
 }
-function PrintableCard({item}:{item:PrintableDestination}){
-  return <article className={item.available?'in-print-card':'in-print-card in-unavailable'}><div><span>{item.available?'Available now':'Not currently offered'}</span><h3>{item.label}</h3><p>{item.task}</p></div>{item.available?<div className="in-card-actions"><a href={item.url}>Open resource</a>{item.downloadURL&&<a href={item.downloadURL} download>Download PDF</a>}</div>:null}</article>;
+function ToolTaskCard({item,index}:{item:ToolDestination;index:number}){
+  return <a className="in-task-card in-tool-task-card" href={item.url}><span className="in-card-number">{String(index+1).padStart(2,'0')}</span><span><strong>{item.label}</strong><small>{item.description}</small></span><span>Open task <span aria-hidden="true">→</span></span></a>;
+}
+function ToolResourceCard({item}:{item:ToolResource}){
+  return <article className="in-print-card"><div><span>Available now</span><h3>{item.label}</h3><p>{item.description}</p></div><div className="in-card-actions"><a href={item.url}>Open resource</a>{item.downloads.map(download=><a href={download.url} download key={download.url}>{download.label}</a>)}</div></article>;
 }
 function HomeFooter(){
   return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Piano Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top ↑</a></div></footer>;
@@ -74,8 +78,9 @@ export function HomePage(){
 }
 export function ToolsPage(){
   const data=getToolsModel();
-  return <Shell model={data.model} current="Tools"><section className="in-tool-directory" aria-labelledby="in-tools-title"><div className="in-section-head"><p>Working references</p><h2 id="in-tools-title">Choose the result you need</h2></div><div className="in-lookup-grid">{data.lookupLinks.map((item,index)=><DestinationCard item={item} index={index} key={item.url}/>)}</div></section>
-    <section className="in-printables" aria-labelledby="in-printables-title"><div className="in-section-head"><p>Original downloads</p><h2 id="in-printables-title">Available printables</h2></div><div className="in-print-grid">{data.printables.map(item=><PrintableCard item={item} key={item.downloadURL ?? item.url}/>)}</div></section>
-    <Reading blocks={data.model.blocks}/>
+  return <Shell model={data.model} current="Tools"><section className="in-tool-directory" aria-labelledby="in-find-title"><div className="in-section-head"><p>Find the right reference</p><h2 id="in-find-title">Find or identify</h2></div><div className="in-lookup-grid">{data.findLinks.map((item,index)=><ToolTaskCard item={item} index={index} key={item.id}/>)}</div></section>
+    <section className="in-tool-directory in-practice-directory" aria-labelledby="in-practice-title"><div className="in-section-head"><p>Work on one skill</p><h2 id="in-practice-title">Practice</h2></div><div className="in-lookup-grid">{data.practiceLinks.map((item,index)=><ToolTaskCard item={item} index={index} key={item.id}/>)}</div></section>
+    <PracticeTimer/>
+    <section className="in-printables" aria-labelledby="in-printables-title"><div className="in-section-head"><p>References to keep nearby</p><h2 id="in-printables-title">Print and download</h2></div><div className="in-print-grid">{data.printResources.map(item=><ToolResourceCard item={item} key={item.id}/>)}</div></section>
   </Shell>;
 }

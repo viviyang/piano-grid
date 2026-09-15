@@ -28,8 +28,8 @@ export const SEO_COPY: Record<string, Copy> = {
   '/chords/by-key': { title: 'Piano Chords by Key: Triads & Seventh Chords', description: 'Compare triads and seventh chords in the available keys. Read Roman numerals and chord notes, and distinguish natural-minor from altered options.' },
   '/chord-progressions': { title: 'Piano Chord Progressions: Patterns & Practice', h1: 'Piano Chord Progressions', description: 'Explore piano chord progressions, read Roman numerals and chord notes, and compare the available key examples before practicing each change.' },
   '/chords/finder': { title: 'Piano Chord Finder: Identify Chords from Notes', description: 'Select piano notes to find possible chord names. Compare bass notes and alternative spellings, and see when your notes fall outside the supported library.' },
-  '/tools': { title: 'Piano Tools & Printables for Practice', description: 'Choose a piano tool for finding chords, checking notes or exploring scales. Find blank staff paper and printable resources for your next practice.' },
-  '/tools/blank-sheet-music': { title: 'Blank Piano Sheet Music: A4 & Letter PDF', description: 'Choose A4 or US Letter blank piano staff paper. Preview the grand staffs, then download a PDF or print a page for lessons, notation or composition.' },
+  '/tools': { title: 'Piano Tools: Notes, Chords, Scales & Printables | PianoGrid', description: 'Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub.' },
+  '/tools/blank-sheet-music': { title: 'Blank Piano Sheet Music PDF — Letter & A4 | PianoGrid', h1: 'Blank Piano Sheet Music', description: 'Download free blank piano sheet music with six grand-staff systems. Choose US Letter or A4, preview the page, and print without an account.' },
   '/arpeggios': { title: 'Piano Arpeggios: C & G Major Notes and Fingering', description: 'Explore C and G major arpeggio notes, compare chord tones with scales, and use the available fingering examples to plan a short practice.' },
 };
 
