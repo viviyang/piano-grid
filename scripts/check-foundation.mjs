@@ -26,7 +26,7 @@ try {
   const globals = await read('src/app/globals.css');
   const tokens = await read('src/styles/tokens.css');
   const foundation = await read('src/styles/foundation.css');
-  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/chords/category.css') + await read('src/components/chords/page-toc.css') + await read('src/components/chords/chord-learning.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/guides/guides.css') + await read('src/components/support/support-pages.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
+  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/chords/category.css') + await read('src/components/chords/page-toc.css') + await read('src/components/chords/chord-learning.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/sheet-music/sheet-music.css') + await read('src/components/sheet-music/preserved.css') + await read('src/components/guides/guides.css') + await read('src/components/support/support-pages.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
   const util = await read('src/lib/utils.ts');
   const breadcrumb = await read('src/components/ui/breadcrumb.tsx');
   const siteBrand = await read('src/components/ui/site-brand.tsx');
@@ -105,6 +105,8 @@ try {
   allowedComponents.push(...['pages.tsx','keyboard-diagram.tsx','lookup-experience.tsx','labeled-experience.tsx','chart-experience.tsx','staff-diagram.tsx','tool-controls.tsx','use-note-audio.ts','practice.tsx','share-control.tsx','frequency-experience.tsx','blank-experience.tsx','keyboard-notes.css'].map(n=>`src/components/keyboard-notes/${n}`));
   allowedComponents.push(...['pages.tsx','center-experience.tsx','detail-experience.tsx','scale-learning.tsx','scale-reference.tsx','use-scale-audio.ts','scale-collection-experience.tsx','scale-finder.tsx','scale-guide-page.tsx','scales.css'].map(n=>`src/components/scales/${n}`));
   allowedComponents.push(...['pages.tsx','center-experience.tsx','easy-experience.tsx','resource-card.tsx','songs.css'].map(n=>`src/components/songs/${n}`));
+  allowedComponents.push(...['arrangement-focus.tsx','arrangement-share.tsx','external-arrangement-card.tsx','original-exercise-player.tsx'].map(n=>`src/components/songs-sheet/${n}`));
+  allowedComponents.push(...['pages.tsx','sheet-music.css','preserved.css'].map(n=>`src/components/sheet-music/${n}`));
   allowedComponents.push('src/components/guides/pages.tsx','src/components/guides/guides.css');
   allowedComponents.push('src/components/support/support-pages.tsx','src/components/support/by-key-experience.tsx','src/components/support/progression-experience.tsx','src/components/support/finder-experience.tsx','src/components/support/support-pages.css');
   allowedComponents.push('src/components/blank-sheet/pages.tsx','src/components/blank-sheet/blank-sheet-tool.tsx','src/components/blank-sheet/blank-sheet.css');
@@ -115,6 +117,7 @@ try {
   allowedPages.push('src/app/keyboard-notes/page.tsx','src/app/keyboard-notes/labeled/page.tsx','src/app/keyboard-notes/chart/page.tsx','src/app/keyboard-notes/finger-numbers/page.tsx','src/app/keyboard-notes/blank/page.tsx','src/app/keyboard-notes/frequencies/page.tsx');
   allowedPages.push('src/app/scales/page.tsx','src/app/scales/c-major/page.tsx','src/app/scales/a-minor/page.tsx','src/app/scales/[slug]/page.tsx','src/app/arpeggios/page.tsx');
   allowedPages.push('src/app/songs/page.tsx','src/app/songs/easy/page.tsx');
+  allowedPages.push('src/app/sheet-music/page.tsx','src/app/sheet-music/easy/page.tsx','src/app/sheet-music/beginner/page.tsx','src/app/sheet-music/hot-cross-buns/page.tsx','src/app/sheet-music/twinkle-twinkle-little-star/page.tsx','src/app/sheet-music/ode-to-joy/page.tsx');
   allowedPages.push('src/app/guide/page.tsx','src/app/guide/read-sheet-music/page.tsx','src/app/guide/piano-chords/page.tsx','src/app/guide/piano-scales/page.tsx');
   allowedPages.push('src/app/tools/blank-sheet-music/page.tsx');
   allowedPages.push('src/app/chord-progressions/page.tsx');

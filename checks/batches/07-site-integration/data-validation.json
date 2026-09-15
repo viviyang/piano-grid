@@ -1,7 +1,7 @@
 {
-  "executed_at": "2026-09-12T14:44:28.793Z",
-  "passed": 152,
-  "failed": 0,
+  "executed_at": "2026-09-15T05:09:43.055Z",
+  "passed": 129,
+  "failed": 23,
   "results": [
     {
       "name": "/ master matches F batch",
@@ -150,12 +150,12 @@
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/assets/blank-keyboard-13-keys.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/assets/blank-keyboard-25-keys.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/assets/Bravura-LICENSE.txt",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -410,27 +410,27 @@
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-flat-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--first.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/a-minor--second.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -440,32 +440,32 @@
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/b-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/c-flat-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/c-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/c-minor--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/e-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/content/site-master/preserved-chords/assets/g-major--root.svg",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -505,7 +505,7 @@
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/chords/a-minor/index.html",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -520,7 +520,7 @@
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/index.html",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -665,22 +665,22 @@
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/requirements-dev.txt",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/source/app.js",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/source/browser_config.py",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/source/build.py",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -695,7 +695,7 @@
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/source/render.py",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -705,7 +705,7 @@
     },
     {
       "name": "Protected source unchanged: docs/design/piano-final/source/verify.py",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -720,7 +720,7 @@
     },
     {
       "name": "Protected source unchanged: docs/design/reference/final-a-minor.html",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {

@@ -1,0 +1,190 @@
+TAP version 13
+# Subtest: real catalog IDs and asset ownership resolve
+ok 1 - real catalog IDs and asset ownership resolve
+  ---
+  duration_ms: 3.022733
+  type: 'test'
+  ...
+# Subtest: real catalog has no runtime grants
+ok 2 - real catalog has no runtime grants
+  ---
+  duration_ms: 0.137237
+  type: 'test'
+  ...
+# Subtest: all real local resources remain off publicly
+ok 3 - all real local resources remain off publicly
+  ---
+  duration_ms: 1.094081
+  type: 'test'
+  ...
+# Subtest: external resource opens provider but cannot expose local capability
+ok 4 - external resource opens provider but cannot expose local capability
+  ---
+  duration_ms: 0.142575
+  type: 'test'
+  ...
+# Subtest: synthetic approved record matches only its precise action
+ok 5 - synthetic approved record matches only its precise action
+  ---
+  duration_ms: 8.97716
+  type: 'test'
+  ...
+# Subtest: staging blocks despite a matching synthetic grant
+ok 6 - staging blocks despite a matching synthetic grant
+  ---
+  duration_ms: 5.460673
+  type: 'test'
+  ...
+# Subtest: asset hash mutation invalidates grant
+ok 7 - asset hash mutation invalidates grant
+  ---
+  duration_ms: 5.030833
+  type: 'test'
+  ...
+# Subtest: arrangement revision mutation invalidates grant
+ok 8 - arrangement revision mutation invalidates grant
+  ---
+  duration_ms: 4.850221
+  type: 'test'
+  ...
+# Subtest: grant cannot cross arrangement
+ok 9 - grant cannot cross arrangement
+  ---
+  duration_ms: 4.183214
+  type: 'test'
+  ...
+# Subtest: US permission does not allow global CDN
+ok 10 - US permission does not allow global CDN
+  ---
+  duration_ms: 5.639352
+  type: 'test'
+  ...
+# Subtest: region-only use requires actual territorial enforcement
+ok 11 - region-only use requires actual territorial enforcement
+  ---
+  duration_ms: 3.86915
+  type: 'test'
+  ...
+# Subtest: expired grant blocks
+ok 12 - expired grant blocks
+  ---
+  duration_ms: 4.364517
+  type: 'test'
+  ...
+# Subtest: future grant blocks
+ok 13 - future grant blocks
+  ---
+  duration_ms: 3.620805
+  type: 'test'
+  ...
+# Subtest: revoked grant blocks
+ok 14 - revoked grant blocks
+  ---
+  duration_ms: 4.309124
+  type: 'test'
+  ...
+# Subtest: noncommercial grant cannot authorize commercial site
+ok 15 - noncommercial grant cannot authorize commercial site
+  ---
+  duration_ms: 4.58441
+  type: 'test'
+  ...
+# Subtest: unknown arrangement rights block
+ok 16 - unknown arrangement rights block
+  ---
+  duration_ms: 4.75713
+  type: 'test'
+  ...
+# Subtest: unresolvable rights evidence blocks
+ok 17 - unresolvable rights evidence blocks
+  ---
+  duration_ms: 5.415564
+  type: 'test'
+  ...
+# Subtest: missing real approval record blocks
+ok 18 - missing real approval record blocks
+  ---
+  duration_ms: 4.231567
+  type: 'test'
+  ...
+# Subtest: independent music review pending blocks
+ok 19 - independent music review pending blocks
+  ---
+  duration_ms: 3.906446
+  type: 'test'
+  ...
+# Subtest: audio needs real listening
+ok 20 - audio needs real listening
+  ---
+  duration_ms: 4.65788
+  type: 'test'
+  ...
+# Subtest: downloadable printable needs physical print check
+ok 21 - downloadable printable needs physical print check
+  ---
+  duration_ms: 4.668667
+  type: 'test'
+  ...
+# Subtest: unsafe provider URLs rejected
+ok 22 - unsafe provider URLs rejected
+  ---
+  duration_ms: 0.323608
+  type: 'test'
+  ...
+# Subtest: asset traversal and duplicate IDs are rejected
+ok 23 - asset traversal and duplicate IDs are rejected
+  ---
+  duration_ms: 3.853927
+  type: 'test'
+  ...
+# Subtest: wrong ownership is rejected
+ok 24 - wrong ownership is rejected
+  ---
+  duration_ms: 4.26711
+  type: 'test'
+  ...
+# Subtest: version and segment restoration never auto plays
+ok 25 - version and segment restoration never auto plays
+  ---
+  duration_ms: 0.53659
+  type: 'test'
+  ...
+# Subtest: old printed aliases preserved
+ok 26 - old printed aliases preserved
+  ---
+  duration_ms: 0.310319
+  type: 'test'
+  ...
+# Subtest: external edition only supports selection not local segment playback
+ok 27 - external edition only supports selection not local segment playback
+  ---
+  duration_ms: 0.133231
+  type: 'test'
+  ...
+# Subtest: unknown duplicate mixed and unapproved share fields fail closed
+ok 28 - unknown duplicate mixed and unapproved share fields fail closed
+  ---
+  duration_ms: 0.328636
+  type: 'test'
+  ...
+# Subtest: share URL destinations are explicitly approved and roundtrip same version
+ok 29 - share URL destinations are explicitly approved and roundtrip same version
+  ---
+  duration_ms: 0.423259
+  type: 'test'
+  ...
+# Subtest: no performance detector or checkout falsely enabled
+ok 30 - no performance detector or checkout falsely enabled
+  ---
+  duration_ms: 4.022873
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 123.852561

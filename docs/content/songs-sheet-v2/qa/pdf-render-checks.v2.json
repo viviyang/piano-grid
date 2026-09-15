@@ -1,0 +1,98 @@
+[
+  {
+    "file": "content-data/assets/pg-left-hand-answer-v1/score-a4.pdf",
+    "pages": 1,
+    "width_pt": 595.2755737304688,
+    "height_pt": 841.8897705078125,
+    "links": [
+      "https://pianogrid.com/sheet-music/beginner#pg-ex=left-hand-answer"
+    ],
+    "checks": {
+      "one_page": true,
+      "return_link_present": true
+    },
+    "render_tool": "PyMuPDF",
+    "model_visual_review": "render_inspected_no_visible_clipping; not print or teacher acceptance",
+    "physical_print": "not_run"
+  },
+  {
+    "file": "content-data/assets/pg-left-hand-answer-v1/score-letter.pdf",
+    "pages": 1,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "links": [
+      "https://pianogrid.com/sheet-music/beginner#pg-ex=left-hand-answer"
+    ],
+    "checks": {
+      "one_page": true,
+      "return_link_present": true
+    },
+    "render_tool": "PyMuPDF",
+    "model_visual_review": "render_inspected_no_visible_clipping; not print or teacher acceptance",
+    "physical_print": "not_run"
+  },
+  {
+    "file": "content-data/assets/pg-one-hand-at-a-time-v1/score-a4.pdf",
+    "pages": 1,
+    "width_pt": 595.2755737304688,
+    "height_pt": 841.8897705078125,
+    "links": [
+      "https://pianogrid.com/sheet-music/beginner#pg-ex=one-hand-at-a-time"
+    ],
+    "checks": {
+      "one_page": true,
+      "return_link_present": true
+    },
+    "render_tool": "PyMuPDF",
+    "model_visual_review": "render_inspected_no_visible_clipping; not print or teacher acceptance",
+    "physical_print": "not_run"
+  },
+  {
+    "file": "content-data/assets/pg-one-hand-at-a-time-v1/score-letter.pdf",
+    "pages": 1,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "links": [
+      "https://pianogrid.com/sheet-music/beginner#pg-ex=one-hand-at-a-time"
+    ],
+    "checks": {
+      "one_page": true,
+      "return_link_present": true
+    },
+    "render_tool": "PyMuPDF",
+    "model_visual_review": "render_inspected_no_visible_clipping; not print or teacher acceptance",
+    "physical_print": "not_run"
+  },
+  {
+    "file": "content-data/assets/pg-step-and-hold-v1/score-a4.pdf",
+    "pages": 1,
+    "width_pt": 595.2755737304688,
+    "height_pt": 841.8897705078125,
+    "links": [
+      "https://pianogrid.com/sheet-music/beginner#pg-ex=step-and-hold"
+    ],
+    "checks": {
+      "one_page": true,
+      "return_link_present": true
+    },
+    "render_tool": "PyMuPDF",
+    "model_visual_review": "render_inspected_no_visible_clipping; not print or teacher acceptance",
+    "physical_print": "not_run"
+  },
+  {
+    "file": "content-data/assets/pg-step-and-hold-v1/score-letter.pdf",
+    "pages": 1,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "links": [
+      "https://pianogrid.com/sheet-music/beginner#pg-ex=step-and-hold"
+    ],
+    "checks": {
+      "one_page": true,
+      "return_link_present": true
+    },
+    "render_tool": "PyMuPDF",
+    "model_visual_review": "render_inspected_no_visible_clipping; not print or teacher acceptance",
+    "physical_print": "not_run"
+  }
+]

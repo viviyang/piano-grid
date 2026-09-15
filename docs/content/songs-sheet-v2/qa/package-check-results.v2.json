@@ -1,0 +1,2383 @@
+{
+  "scope": "Delivery package integrity only; not website/rights/teacher/manual/production acceptance",
+  "status": "PASS_PACKAGE_INTEGRITY",
+  "checks_passed": 594,
+  "checks": [
+    {
+      "check": "All JSON files parse",
+      "passed": true
+    },
+    {
+      "check": "64 C/D pages equal current handoff extract",
+      "passed": true
+    },
+    {
+      "check": "All 64 approved route/task records retained",
+      "passed": true
+    },
+    {
+      "check": "22 songs and 41 sheet plus one tool",
+      "passed": true
+    },
+    {
+      "check": "265 old resource locations mapped",
+      "passed": true
+    },
+    {
+      "check": "200 external + 3 original arrangements",
+      "passed": true
+    },
+    {
+      "check": "No runtime grants manufactured",
+      "passed": true
+    },
+    {
+      "check": "Actual local file count 24",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-step-and-hold-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-step-and-hold-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-step-and-hold-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-step-and-hold-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: audio-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: audio-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: audio-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: audio-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-step-and-hold-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-step-and-hold-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-step-and-hold-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-step-and-hold-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-step-and-hold-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-step-and-hold-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-step-and-hold-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-step-and-hold-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-step-and-hold-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-step-and-hold-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-step-and-hold-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-step-and-hold-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-step-and-hold-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-step-and-hold-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-step-and-hold-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-step-and-hold-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: score-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: score-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: score-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: score-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-step-and-hold-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-step-and-hold-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-step-and-hold-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-step-and-hold-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-left-hand-answer-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-left-hand-answer-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-left-hand-answer-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-left-hand-answer-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: audio-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: audio-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: audio-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: audio-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-left-hand-answer-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-left-hand-answer-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-left-hand-answer-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-left-hand-answer-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-left-hand-answer-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-left-hand-answer-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-left-hand-answer-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-left-hand-answer-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-left-hand-answer-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-left-hand-answer-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-left-hand-answer-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-left-hand-answer-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-left-hand-answer-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-left-hand-answer-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-left-hand-answer-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-left-hand-answer-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: score-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: score-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: score-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: score-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-left-hand-answer-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-left-hand-answer-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-left-hand-answer-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-left-hand-answer-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-one-hand-at-a-time-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-one-hand-at-a-time-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-one-hand-at-a-time-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-one-hand-at-a-time-v1-score-mid",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: audio-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: audio-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: audio-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: audio-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-one-hand-at-a-time-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-one-hand-at-a-time-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-one-hand-at-a-time-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-one-hand-at-a-time-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-one-hand-at-a-time-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-one-hand-at-a-time-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-one-hand-at-a-time-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-one-hand-at-a-time-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-one-hand-at-a-time-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-one-hand-at-a-time-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-one-hand-at-a-time-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-one-hand-at-a-time-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-one-hand-at-a-time-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-one-hand-at-a-time-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-one-hand-at-a-time-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-one-hand-at-a-time-v1-events-json",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: score-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: score-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: score-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: score-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "check": "asset exists inside package: pg-one-hand-at-a-time-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset bytes/hash: pg-one-hand-at-a-time-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset same arrangement/resource: pg-one-hand-at-a-time-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "asset not prematurely published: pg-one-hand-at-a-time-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-1b3f3dd0b5ec99",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-23e3200e3c785f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7554e265df95f7",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a2e808803c67cf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4cc7ce876b3d2c",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c54cb9270d7dee",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0a05b7954f5256",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c3a78b0c5cb213",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4bc8c7e71e95dd",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-5008393c71166f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a234719ce3d627",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a60b8d92c5a325",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-545d0ebe92eafe",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-cefa1c9c04bde0",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-30ec54851dfad5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0baf5efa765b9e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c9202d98dd3960",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0fe58b3a8ae19f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-95b9a8a0f42022",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d66665fc986a12",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7f7e126045ce88",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-df80bc2abae831",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-ba673bd99a1bf5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2e3f53ea4b7aa8",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-f5a8952afeff22",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4c16c7862ffbed",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3467d3607676f2",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a16ccc9934f7da",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-5b5c21d022ba3b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-398696dfb80172",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3155d90994d9a4",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a5630482fa1bc9",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4749c46badb384",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-356e7c99a64357",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-76744c404bba5c",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-1b122ee57f7975",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-342fef3178c7e6",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-13108a5e86cf1b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7b163004ed8864",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-9d2910992d55df",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-81f51fd735bc07",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-5d6b1080d6ebdf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e6dce44fcfaff8",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3ad32cc62e6028",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-96fc569488ffbf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-04c78032b0c8cf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7015b6da1b55b6",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4f4489226ef4bd",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-fc0af7ec5e10c5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-57df9717ed6c32",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-eb34045d7d6535",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3739f76fcf7e84",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b6b508482bdda1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-89f81abab55eb2",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d90e891e5ffa55",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0b47cc0824f073",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e4734dfd83851c",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-57b04f9c806182",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-02460de6161236",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0fa1932aa596cb",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c065bdb20627eb",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c3c489710553cf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e2271de4e28eec",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0ed185a7b81878",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-09faf06fddd0d5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7a92e706c5cba1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0883de56c16ed5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-bc2439605e2614",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0cd9fec3535c4b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2b6e4e5af689b7",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-549ca9ffd13e63",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7ffeddfbae1cd2",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c2b5927a6cbbf1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-1f0c2e14b71fa3",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7b65826b4488c4",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-886edaf688ab2a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-5a219765c2047e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-61dc1eac51ed18",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-889ed6e63c4074",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-abe9e06b913067",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e2d474b09dbcff",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3eb07e4f059e8e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e2ff6308a0a320",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-99501935b09f71",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-82d2f27fefb2e6",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-857dbb5120ba23",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-46ddfaf4af196a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e28c042d71fcc4",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-74e70eabc01670",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-1d67146a2d5871",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-68017bc3400521",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3e24ec84b67492",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-38250fc65f0c09",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-646524d6862f04",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d0704f3e5d5699",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-6fc156a6d256fc",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2c98dffaacb5b4",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d44d19ea6070cd",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-dd3b7e2761c738",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-f1f4730b489e0b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-fc92c5fd2323cc",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-3fe02588493136",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-6d507e95e527a7",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e9174a17264d09",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-952b2e4313f117",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-e853745c2c91d9",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a991fbc27506dc",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c78cfc94aa9be7",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c11da8c617d286",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2cf4a77cc71fb2",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b735668fcb468a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-721d9d31d041a6",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-cea8f49a86583b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b67c83b8dcf5a3",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a621c9571e372b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-9101a25a0bdbfc",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c7d1c698f15a16",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-919d0a7aa20918",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2210f7b58dfe4f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-f159efe0ccadc6",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-71d9e11a0ef24a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-313ad1b0bb1a33",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-00e6ea6d4726a9",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2bc1e5bfc9a004",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2b6016f3bfecc0",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-ecc0c3afd49d72",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a79779a9876935",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-00f257998dc49b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4f886afe7e5d05",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2c4da2dae9df03",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c85d7e1cf97bb0",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-34ec374b8f7b0e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-c072df9b694cd8",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-865681a556bb0e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-0f226e7df99786",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-f76fcb0699ace0",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-24031f6602d80a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-090388becf2eb1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-244e90d6ec4048",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d58fe6957c5b4e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b9bd3e56eb2177",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-99bc15b7164c10",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7b38bbcfaf767d",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b1c3139a847461",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-20f2e74e381efb",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d380991d0df2c2",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-74d7cd03d22199",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a513564dd6d42c",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d01e7617cb06a1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a39a4e85ad48e1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-9928ed2ee3e0d9",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-a7bfb745ffb785",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-1e282aec7fc1e7",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-9ce2a4c23d33cd",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-5b3405ed2e1584",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-9164440eda97bd",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-d41dc9970170a5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-042e7e5517c75d",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-efd997e0811aa3",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-964e1feb90905a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b0091cb97eba26",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-bb2d7fc3115848",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-853c4efcd632e7",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-dae4e1fa987297",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-5a69856d69898f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-8f9ba5c7d778e4",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-fb0fa21ced5b49",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b9bb5f9cb11363",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2ec4352fe06c4e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-012bafa6ee030e",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4981adc0298311",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b06507993f22d5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b17d1ce46bd36f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-8b912f5a7183e9",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-11c484075abb59",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b8a2848647e9b8",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b67938d6b023ac",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-11d1f59a7fb062",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7074f7bf26feda",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4db249c9ba7711",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-f84548a1325b6f",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-4102dfa2719acf",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-90107c470915a5",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-203dbf85d38e55",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-281b874ff03314",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-116517c9dfbb2a",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-9f43c16cd3ccbe",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-2e88bad0b14022",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-7ec281e6c03806",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-dad60734b0e34d",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-350e5385b6cd20",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-b86574e4483fd1",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-35b870e09213c8",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-02ca9e41cbf8e8",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-6d4dd0dbfc2a1b",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-eb4a1565419ccd",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-100c9faa3a7b28",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-847b6a1145f7fa",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-36dc69691320cc",
+      "passed": true
+    },
+    {
+      "check": "external has no local score/audio: arr-ext-f7d866d8d8892f",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/data/resources/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/data/resources/5",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/5",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/6",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/7",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/featured_resources/8",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/5",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/6",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/7",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/8",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/9",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/10",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/11",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/12",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/13",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/14",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/15",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/16",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/17",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/18",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/19",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/20",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/21",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/22",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/23",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/24",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/25",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/26",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/27",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/28",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/29",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/30",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/31",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/32",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/33",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/34",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/35",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/36",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/37",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/38",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/39",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/40",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/41",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/42",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/43",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/44",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/45",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/46",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/47",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/48",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy/data/additional_catalog_options/49",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/christmas/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/christmas/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/christmas/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/challenging/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/challenging/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/challenging/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/pop/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/pop/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/pop/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/pop/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/5",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/6",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/7",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/8",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/9",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/10",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/11",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/12",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/13",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/14",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/15",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/16",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/17",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/18",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/19",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/20",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/21",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/22",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/23",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/24",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/25",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/26",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/27",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/28",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/29",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/30",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/31",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/32",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/33",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/34",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/35",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/36",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/37",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/38",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/39",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/40",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/41",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/42",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/43",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/44",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/45",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/46",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/47",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/48",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/classical/data/additional_catalog_options/49",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy-chords/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy-chords/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/easy-chords/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/anime/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/anime/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/anime/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/minecraft/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/minecraft/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/minecraft/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/rock/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/rock/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/rock/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/taylor-swift/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/taylor-swift/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/taylor-swift/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/taylor-swift/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/disney/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/disney/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/disney/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/wedding/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/wedding/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/wedding/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/worship/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/worship/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/worship/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/worship/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/worship/data/resources/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/worship/data/resources/5",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/rap/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/rap/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/rap/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/piano-and-guitar/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/piano-and-guitar/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/beatles/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/beatles/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/beatles/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/beatles/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/coldplay/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/coldplay/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/coldplay/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/coldplay/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/coldplay/data/resources/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/country/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/country/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/country/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/jazz/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/jazz/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/jazz/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/halloween/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/halloween/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/halloween/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/undertale/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/undertale/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /songs/undertale/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/4",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/5",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/data/resources/6",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/easy/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/easy/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/easy/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/easy/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/beginner/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/beginner/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/beginner/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/christmas/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/christmas/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/christmas/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/christmas/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/letter-notes/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/letter-notes/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/letter-notes/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/letter-notes/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/annotated/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/annotated/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/annotated/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/lead-sheets/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/lead-sheets/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/lead-sheets/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/lead-sheets/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/pop/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/pop/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/pop/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/pop/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/disney/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/disney/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/disney/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/disney/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/classical/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/classical/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/classical/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/classical/data/resources/3",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/jazz/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/jazz/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/jazz/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/jingle-bells/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/jingle-bells/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/amazing-grace/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/amazing-grace/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/fur-elise/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/fur-elise/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/happy-birthday/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/happy-birthday/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/happy-birthday/data/resources/2",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/hot-cross-buns/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/jesus-loves-me/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/mary-had-a-little-lamb/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/abc-song/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/ode-to-joy/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/silent-night/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/twinkle-twinkle-little-star/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/twinkle-twinkle-little-star/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/let-it-go/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/super-mario-theme/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/thats-amore/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/black-parade/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/clocks/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/from-the-start/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/song-of-storms/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/pink-panther/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/pink-panther/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/still-dre/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/carol-of-the-bells/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/edelweiss/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/in-my-life/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/all-of-me-john-legend/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/all-of-me-john-legend/data/resources/1",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/runaway-kanye-west/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/piano-man/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/someone-like-you-adele/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/song-of-healing/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/a-whole-new-world/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "alias loc resolves: /sheet-music/easy-on-me/data/resources/0",
+      "passed": true
+    },
+    {
+      "check": "Exactly 8 first page patches and contracts",
+      "passed": true
+    },
+    {
+      "check": "Six real learning cards resolve",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /songs",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /songs",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /songs/easy",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /songs/easy",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /sheet-music",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /sheet-music",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /sheet-music/easy",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /sheet-music/easy",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /sheet-music/beginner",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /sheet-music/beginner",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /sheet-music/hot-cross-buns",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /sheet-music/hot-cross-buns",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /sheet-music/twinkle-twinkle-little-star",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /sheet-music/twinkle-twinkle-little-star",
+      "passed": true
+    },
+    {
+      "check": "original source groups retained: /sheet-music/ode-to-joy",
+      "passed": true
+    },
+    {
+      "check": "shared cards resolve: /sheet-music/ode-to-joy",
+      "passed": true
+    },
+    {
+      "check": "19 paused rows retained",
+      "passed": true
+    },
+    {
+      "check": "17 unassigned tasks and 2 historical clues retained",
+      "passed": true
+    },
+    {
+      "check": "All A-O chapters delivered",
+      "passed": true
+    },
+    {
+      "check": "No font binaries bundled",
+      "passed": true
+    },
+    {
+      "check": "No pre-filled website RESULT.md",
+      "passed": true
+    },
+    {
+      "check": "Three music checks passed and three mutations caught",
+      "passed": true
+    },
+    {
+      "check": "Six one-page PDFs and preserved return links",
+      "passed": true
+    }
+  ]
+}

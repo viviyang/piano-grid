@@ -33,6 +33,9 @@ export type SongResource = {
   technicalDemands: string | null;
   whyChoose: string | null;
   firstCheck: string | null;
+  firstCheckConflict: boolean;
+  verificationStatus?: string;
+  editionKicker?: string;
   editionFeatures: string | null;
   access: string;
   acquisitionFormat: string;

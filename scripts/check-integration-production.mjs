@@ -13,8 +13,10 @@ const metadataTitleOverrides={
   '/guide':'How to Play Piano for Beginners: First Notes and Rhythm',
   '/keyboard-notes/blank':'Blank Piano Keyboard Worksheet | PianoGrid',
   '/keyboard-notes/frequencies':'Piano Note Frequency Chart: A0–C8 | PianoGrid',
+  '/songs':'Piano Songs by Version and Playing Skills | PianoGrid',
+  '/songs/easy':'Easy Piano Songs: Compare Beginner Versions | PianoGrid',
 };
-const forbidden=['/sheet-music','/tools/piano-cheat-sheet','/tools/anything'];
+const forbidden=['/tools/piano-cheat-sheet','/tools/anything'];
 const results=[],errors=[];
 const check=(name,passed,detail='')=>{results.push({name,passed:Boolean(passed),detail});if(!passed)console.error('FAIL',name,detail);};
 const browser=await chromium.launch({channel:'chrome',headless:true});
@@ -28,11 +30,11 @@ try{
     check(`${route} production title`,await page.title()===(homeRoute?homeTitle:metadataTitleOverrides[route]||source.metadata.title));
     const robots=(await page.locator('meta[name=robots]').getAttribute('content'))||'';
     check(`${route} production index/follow`,robots.includes('index')&&robots.includes('follow')&&!robots.includes('noindex')&&!robots.includes('nofollow'),robots);
-    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===6&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===16);
+    check(`${route} production nav`,await page.locator(homeRoute?'.ph-brand[href="/"]':'.am-brand[href="/"]').count()===1&&await page.locator('.site-nav-desktop .site-nav-parent-link').count()===7&&await page.locator('.site-nav-desktop .site-nav-child-link').count()===30);
     check(`${route} excludes master payload`,!html.includes('source_usage_batches')&&!html.includes('retained_without_url')&&!html.includes('needed_to_resolve'));
   }
   await page.goto(base+'/');
-  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===6&&await page.locator('.ph-reference-directory a[href]').count()===29);
+  check('production home reference directory',await page.locator('.ph-reference-directory .ph-reference-group').count()===7&&await page.locator('.ph-reference-directory a[href]').count()===48);
   for(const route of ['/','/tools'])for(const width of [1440,390,320,768]){
     await page.setViewportSize({width,height:950});await page.goto(base+route);
     check(`${route} production responsive ${width}`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

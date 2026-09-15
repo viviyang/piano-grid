@@ -1,0 +1,136 @@
+{
+  "arrangement_id": "arr-pg-step-and-hold-v1",
+  "title": "Step and Hold",
+  "key": "C major",
+  "meter": [
+    4,
+    4
+  ],
+  "tempo_bpm": 60,
+  "measure_count": 4,
+  "duration_quarters": 16,
+  "events": [
+    {
+      "measure": 1,
+      "onset_quarters": 0,
+      "duration_quarters": 1,
+      "pitch": "C4",
+      "midi": 60,
+      "hand": "right"
+    },
+    {
+      "measure": 1,
+      "onset_quarters": 1,
+      "duration_quarters": 1,
+      "pitch": "D4",
+      "midi": 62,
+      "hand": "right"
+    },
+    {
+      "measure": 1,
+      "onset_quarters": 2,
+      "duration_quarters": 2,
+      "pitch": "E4",
+      "midi": 64,
+      "hand": "right"
+    },
+    {
+      "measure": 2,
+      "onset_quarters": 4,
+      "duration_quarters": 1,
+      "pitch": "G4",
+      "midi": 67,
+      "hand": "right"
+    },
+    {
+      "measure": 2,
+      "onset_quarters": 5,
+      "duration_quarters": 1,
+      "pitch": "F4",
+      "midi": 65,
+      "hand": "right"
+    },
+    {
+      "measure": 2,
+      "onset_quarters": 6,
+      "duration_quarters": 2,
+      "pitch": "E4",
+      "midi": 64,
+      "hand": "right"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 8,
+      "duration_quarters": 1,
+      "pitch": "D4",
+      "midi": 62,
+      "hand": "right"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 9,
+      "duration_quarters": 1,
+      "pitch": "E4",
+      "midi": 64,
+      "hand": "right"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 10,
+      "duration_quarters": 1,
+      "pitch": "C4",
+      "midi": 60,
+      "hand": "right"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 11,
+      "duration_quarters": 1,
+      "pitch": "D4",
+      "midi": 62,
+      "hand": "right"
+    },
+    {
+      "measure": 4,
+      "onset_quarters": 12,
+      "duration_quarters": 2,
+      "pitch": "E4",
+      "midi": 64,
+      "hand": "right"
+    },
+    {
+      "measure": 4,
+      "onset_quarters": 14,
+      "duration_quarters": 2,
+      "pitch": "C4",
+      "midi": 60,
+      "hand": "right"
+    }
+  ],
+  "audio_render": {
+    "sample_rate_hz": 22050,
+    "duration_seconds": 16.5,
+    "leading_silence_seconds": 0.25,
+    "trailing_silence_seconds": 0.25,
+    "gate_ratio": 0.9,
+    "timbre": "mathematically synthesized additive tone; no recorded samples",
+    "peak": 0.2536917317252137
+  },
+  "segments": [
+    {
+      "id": "all",
+      "start_measure": 1,
+      "end_measure": 4
+    },
+    {
+      "id": "bars-1-2",
+      "start_measure": 1,
+      "end_measure": 2
+    },
+    {
+      "id": "bars-3-4",
+      "start_measure": 3,
+      "end_measure": 4
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "Package assets only; not site, teacher review, device listening or physical printing",
+  "status": "PASS",
+  "results": [
+    {
+      "slug": "step-and-hold",
+      "status": "PASS_FORMAT_AND_SIGNAL_CHECKS",
+      "note_events": 12,
+      "checks": [
+        "MusicXML pitches/octaves/durations",
+        "time/key/tempo/clefs",
+        "all voices fill bars; rests correct",
+        "notated type and dot match duration",
+        "JSON event timeline vs independent oracle",
+        "MIDI decoded note-on/off timing; no stuck notes",
+        "MIDI tempo and hand tracks",
+        "WAV independently estimated spectral pitches",
+        "WAV duration, envelope gaps, silence and no clipping",
+        "SVG notehead/dot inventory (visual staff placement separately inspected)"
+      ],
+      "max_pitch_error_cents": 0.20377382021190146,
+      "professional_review": false,
+      "human_listening": false
+    },
+    {
+      "slug": "left-hand-answer",
+      "status": "PASS_FORMAT_AND_SIGNAL_CHECKS",
+      "note_events": 9,
+      "checks": [
+        "MusicXML pitches/octaves/durations",
+        "time/key/tempo/clefs",
+        "all voices fill bars; rests correct",
+        "notated type and dot match duration",
+        "JSON event timeline vs independent oracle",
+        "MIDI decoded note-on/off timing; no stuck notes",
+        "MIDI tempo and hand tracks",
+        "WAV independently estimated spectral pitches",
+        "WAV duration, envelope gaps, silence and no clipping",
+        "SVG notehead/dot inventory (visual staff placement separately inspected)"
+      ],
+      "max_pitch_error_cents": 0.36299803752612547,
+      "professional_review": false,
+      "human_listening": false
+    },
+    {
+      "slug": "one-hand-at-a-time",
+      "status": "PASS_FORMAT_AND_SIGNAL_CHECKS",
+      "note_events": 12,
+      "checks": [
+        "MusicXML pitches/octaves/durations",
+        "time/key/tempo/clefs",
+        "all voices fill bars; rests correct",
+        "notated type and dot match duration",
+        "JSON event timeline vs independent oracle",
+        "MIDI decoded note-on/off timing; no stuck notes",
+        "MIDI tempo and hand tracks",
+        "WAV independently estimated spectral pitches",
+        "WAV duration, envelope gaps, silence and no clipping",
+        "SVG notehead/dot inventory (visual staff placement separately inspected)"
+      ],
+      "max_pitch_error_cents": 0.3603903153167921,
+      "professional_review": false,
+      "human_listening": false
+    }
+  ],
+  "negative_controls_detected": [
+    "xml_pitch",
+    "midi_pitch",
+    "audio_silence"
+  ],
+  "independence_limit": "Different decoding methods and fixed literals; same assistant supplied the specification and checks, not an independent human reviewer."
+}

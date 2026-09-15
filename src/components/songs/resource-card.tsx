@@ -32,6 +32,7 @@ export function SongResourceCard({ resource, compact = false, decisionFirst = fa
           <div><dt>Difficulty basis</dt><dd>{resource.levelBasis}</dd></div>
           {resource.editionFeatures && <div><dt>Edition notes</dt><dd>{resource.editionFeatures}</dd></div>}
           {resource.firstCheck && <div><dt>Before choosing</dt><dd>{resource.firstCheck}</dd></div>}
+          {resource.firstCheckConflict && <div><dt>Source note</dt><dd>Two source fields disagree about the first check; both remain in the source ledger pending editorial resolution.</dd></div>}
         </dl>
         <p className="sg-rights">External reference only. Score and recording are not hosted here.</p>
       </details>
@@ -39,12 +40,13 @@ export function SongResourceCard({ resource, compact = false, decisionFirst = fa
   </article>;
   return <article className={`sg-resource${compact ? ' sg-resource-compact' : ''}`} data-resource-id={resource.id}>
     <div className="sg-resource-main">
-      <p className="sg-kicker">Checked edition</p>
+      <p className="sg-kicker">{resource.editionKicker ?? 'Specific external edition'}</p>
       <h3>{resource.workTitle}</h3>
       <PersonLine resource={resource}/>
       <p className="sg-edition"><strong>Edition</strong> {resource.edition}{resource.editionID ? ` · ${resource.editionID}` : ''}</p>
       {!compact && resource.whyChoose && <p className="sg-reason">{resource.whyChoose}</p>}
       {!compact && resource.firstCheck && <p className="sg-check"><strong>Check first</strong> {resource.firstCheck}</p>}
+      {!compact && resource.firstCheckConflict && <p className="sg-check"><strong>Source conflict</strong> The two supplied first-check fields differ and require editorial resolution.</p>}
     </div>
     <div className="sg-resource-facts">
       <dl>

@@ -1,0 +1,318 @@
+{
+  "passed": 78,
+  "failed": 0,
+  "results": [
+    {
+      "name": "catalog counts",
+      "passed": true
+    },
+    {
+      "name": "scope counts",
+      "passed": true
+    },
+    {
+      "name": "runtime grants start empty",
+      "passed": true
+    },
+    {
+      "name": "production catalog validates",
+      "passed": true
+    },
+    {
+      "name": "eight page patches",
+      "passed": true
+    },
+    {
+      "name": "eight section contracts",
+      "passed": true
+    },
+    {
+      "name": "all first batch canonicals exact",
+      "passed": true
+    },
+    {
+      "name": "all first batch routes public",
+      "passed": true
+    },
+    {
+      "name": "old Songs content preserved",
+      "passed": true
+    },
+    {
+      "name": "unassigned and historical clues retained",
+      "passed": true
+    },
+    {
+      "name": "no dynamic songs or sheet route",
+      "passed": true
+    },
+    {
+      "name": "arr-ext-0a05b7954f5256 external identity",
+      "passed": true
+    },
+    {
+      "name": "arr-ext-0a05b7954f5256 external capability",
+      "passed": true
+    },
+    {
+      "name": "arr-ext-c3a78b0c5cb213 external identity",
+      "passed": true
+    },
+    {
+      "name": "arr-ext-c3a78b0c5cb213 external capability",
+      "passed": true
+    },
+    {
+      "name": "arr-ext-a60b8d92c5a325 external identity",
+      "passed": true
+    },
+    {
+      "name": "arr-ext-a60b8d92c5a325 external capability",
+      "passed": true
+    },
+    {
+      "name": "arr-pg-step-and-hold-v1 separate original",
+      "passed": true
+    },
+    {
+      "name": "arr-pg-step-and-hold-v1 locked without grant",
+      "passed": true
+    },
+    {
+      "name": "arr-pg-left-hand-answer-v1 separate original",
+      "passed": true
+    },
+    {
+      "name": "arr-pg-left-hand-answer-v1 locked without grant",
+      "passed": true
+    },
+    {
+      "name": "arr-pg-one-hand-at-a-time-v1 separate original",
+      "passed": true
+    },
+    {
+      "name": "arr-pg-one-hand-at-a-time-v1 locked without grant",
+      "passed": true
+    },
+    {
+      "name": "staging pg-step-and-hold-v1-score-mid",
+      "passed": true
+    },
+    {
+      "name": "staging audio-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "name": "staging pg-step-and-hold-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "name": "staging pg-step-and-hold-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "name": "staging pg-step-and-hold-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "name": "staging pg-step-and-hold-v1-events-json",
+      "passed": true
+    },
+    {
+      "name": "staging score-pg-step-and-hold-v1",
+      "passed": true
+    },
+    {
+      "name": "staging pg-step-and-hold-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "name": "staging pg-left-hand-answer-v1-score-mid",
+      "passed": true
+    },
+    {
+      "name": "staging audio-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "name": "staging pg-left-hand-answer-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "name": "staging pg-left-hand-answer-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "name": "staging pg-left-hand-answer-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "name": "staging pg-left-hand-answer-v1-events-json",
+      "passed": true
+    },
+    {
+      "name": "staging score-pg-left-hand-answer-v1",
+      "passed": true
+    },
+    {
+      "name": "staging pg-left-hand-answer-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "name": "staging pg-one-hand-at-a-time-v1-score-mid",
+      "passed": true
+    },
+    {
+      "name": "staging audio-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "name": "staging pg-one-hand-at-a-time-v1-score-a4-pdf",
+      "passed": true
+    },
+    {
+      "name": "staging pg-one-hand-at-a-time-v1-score-musicxml",
+      "passed": true
+    },
+    {
+      "name": "staging pg-one-hand-at-a-time-v1-accessible-score-md",
+      "passed": true
+    },
+    {
+      "name": "staging pg-one-hand-at-a-time-v1-events-json",
+      "passed": true
+    },
+    {
+      "name": "staging score-pg-one-hand-at-a-time-v1",
+      "passed": true
+    },
+    {
+      "name": "staging pg-one-hand-at-a-time-v1-score-letter-pdf",
+      "passed": true
+    },
+    {
+      "name": "display grant matches only exact score asset and action",
+      "passed": true
+    },
+    {
+      "name": "download never substitutes for print permission",
+      "passed": true
+    },
+    {
+      "name": "print grant matches one precise PDF",
+      "passed": true
+    },
+    {
+      "name": "audio grant without event grant cannot enable tempo or segments",
+      "passed": true
+    },
+    {
+      "name": "audio and exact event grants enable scheduled segments",
+      "passed": true
+    },
+    {
+      "name": "wrong hash rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong revision rejected",
+      "passed": true
+    },
+    {
+      "name": "US-only permission rejected for worldwide deployment",
+      "passed": true
+    },
+    {
+      "name": "non-commercial rejected",
+      "passed": true
+    },
+    {
+      "name": "revoked rejected",
+      "passed": true
+    },
+    {
+      "name": "expired rejected",
+      "passed": true
+    },
+    {
+      "name": "blank or duplicated layer labels cannot satisfy structured rights layers",
+      "passed": true
+    },
+    {
+      "name": "unrelated public asset cannot release arrangement actions",
+      "passed": true
+    },
+    {
+      "name": "staging storage stays disabled even with matching grant",
+      "passed": true
+    },
+    {
+      "name": "event adapter keeps all source events",
+      "passed": true
+    },
+    {
+      "name": "segment uses exact measures",
+      "passed": true
+    },
+    {
+      "name": "speed changes time not pitch",
+      "passed": true
+    },
+    {
+      "name": "segment rebases onset to zero",
+      "passed": true
+    },
+    {
+      "name": "unknown segment rejected",
+      "passed": true
+    },
+    {
+      "name": "first_check primary",
+      "passed": true
+    },
+    {
+      "name": "first_check compatibility fallback",
+      "passed": true
+    },
+    {
+      "name": "valid exact version share",
+      "passed": true
+    },
+    {
+      "name": "unknown version rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate key rejected",
+      "passed": true
+    },
+    {
+      "name": "redirect rejected",
+      "passed": true
+    },
+    {
+      "name": "external explicit default speed accepted",
+      "passed": true
+    },
+    {
+      "name": "external non-default speed rejected",
+      "passed": true
+    },
+    {
+      "name": "oversized share fragment rejected",
+      "passed": true
+    },
+    {
+      "name": "legacy local share resolves exact exercise",
+      "passed": true
+    },
+    {
+      "name": "share URL canonical path and fragment",
+      "passed": true
+    },
+    {
+      "name": "share URL rejects unapproved path and query",
+      "passed": true
+    }
+  ]
+}

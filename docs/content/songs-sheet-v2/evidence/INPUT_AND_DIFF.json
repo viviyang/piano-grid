@@ -1,0 +1,42 @@
+{
+  "created_on_utc": "2026-09-15",
+  "base_commit": "1e3fdecd6e9426999689df361a4f47aa2d378848",
+  "inputs": [
+    {
+      "path": "01_MASTER_CONTEXT(2).md",
+      "bytes": 4786,
+      "sha256": "d299728f62878a319ca94158b3ac546fed486f5b099c459ffcf002040225d10a"
+    },
+    {
+      "path": "PianoGrid_Current_Handoff(1).zip",
+      "bytes": 16437897,
+      "sha256": "d1591b87e7abd2d4534607493c30668d25582f2dbb0a2d890f99bf5d5f121379"
+    },
+    {
+      "path": "PianoGrid_Songs_SheetMusic_Execution_2026-09-15.zip",
+      "bytes": 1796738,
+      "sha256": "a04c3572eaafeea8f8c67df893253a1dc447070579a863e4b22ca906b0a593ac"
+    }
+  ],
+  "comparison": {
+    "cd_pages_deep_equal": true,
+    "compared_page_count": 64,
+    "different_urls": [],
+    "scope_rows": 64,
+    "preserved_external_occurrences": 265,
+    "external_arrangement_candidates": 200,
+    "works_in_v2": 199,
+    "arrangements_in_v2": 203,
+    "resources_in_v2": 203,
+    "actual_local_files": 24
+  },
+  "limits": [
+    "No full production Git checkout in this environment",
+    "Dirty snapshots only; runtime contract needs verification at fixed production revision",
+    "No website implementation, deployment, purchase, provider login or licensing application performed"
+  ],
+  "production_ancestor_commit": "1e3fdecd6e9426999689df361a4f47aa2d378848",
+  "implementation_base_policy": "keyboard_accepted_baseline_from_latest_result_or_integration_handoff",
+  "implementation_base_commit": null,
+  "base_commit_role": "production_ancestor_only"
+}

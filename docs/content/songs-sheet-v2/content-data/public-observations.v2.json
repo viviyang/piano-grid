@@ -1,0 +1,88 @@
+[
+  {
+    "source_id": "LIVE-SONGS",
+    "url": "https://pianogrid.com/songs",
+    "checked_on_utc": "2026-09-15",
+    "method": "web.run parsed public HTML; no browser playback test",
+    "status": "OPENED",
+    "facts": [
+      "6 edition cards and title/artist/edition, publisher level, playing goal controls",
+      "external-reference notices; no evidence of local score/audio supplied by the inspected cards"
+    ],
+    "commit_identity": "NOT_PROVED"
+  },
+  {
+    "source_id": "LIVE-EASY",
+    "url": "https://pianogrid.com/songs/easy",
+    "checked_on_utc": "2026-09-15",
+    "method": "web.run parsed public HTML; no browser playback test",
+    "status": "OPENED",
+    "facts": [
+      "9 featured versions, original use-case sections, edition-backed catalog retained",
+      "The provider versions are expressly external references"
+    ],
+    "commit_identity": "NOT_PROVED"
+  },
+  {
+    "source_id": "LIVE-sheet-music",
+    "url": "https://pianogrid.com/sheet-music",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "reason": "web safety/cache fetch error; container DNS unavailable",
+    "http_status": null,
+    "conclusion": "NOT_VERIFIED; not evidence of 404 or missing route"
+  },
+  {
+    "source_id": "LIVE-sheet-music-easy",
+    "url": "https://pianogrid.com/sheet-music/easy",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "reason": "web safety/cache fetch error; container DNS unavailable",
+    "http_status": null,
+    "conclusion": "NOT_VERIFIED; not evidence of 404 or missing route"
+  },
+  {
+    "source_id": "LIVE-sheet-music-beginner",
+    "url": "https://pianogrid.com/sheet-music/beginner",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "reason": "web safety/cache fetch error; container DNS unavailable",
+    "http_status": null,
+    "conclusion": "NOT_VERIFIED; not evidence of 404 or missing route"
+  },
+  {
+    "source_id": "LIVE-sheet-music-hot-cross-buns",
+    "url": "https://pianogrid.com/sheet-music/hot-cross-buns",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "reason": "web safety/cache fetch error; container DNS unavailable",
+    "http_status": null,
+    "conclusion": "NOT_VERIFIED; not evidence of 404 or missing route"
+  },
+  {
+    "source_id": "LIVE-sheet-music-twinkle-twinkle-little-star",
+    "url": "https://pianogrid.com/sheet-music/twinkle-twinkle-little-star",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "reason": "web safety/cache fetch error; container DNS unavailable",
+    "http_status": null,
+    "conclusion": "NOT_VERIFIED; not evidence of 404 or missing route"
+  },
+  {
+    "source_id": "LIVE-sheet-music-ode-to-joy",
+    "url": "https://pianogrid.com/sheet-music/ode-to-joy",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "reason": "web safety/cache fetch error; container DNS unavailable",
+    "http_status": null,
+    "conclusion": "NOT_VERIFIED; not evidence of 404 or missing route"
+  },
+  {
+    "source_id": "LIVE-SITEMAP",
+    "url": "https://pianogrid.com/sitemap.xml",
+    "checked_on_utc": "2026-09-15",
+    "status": "FETCH_FAILED",
+    "http_status": null,
+    "conclusion": "Do not treat 2026-09-14 count 173 as current fixed count"
+  }
+]

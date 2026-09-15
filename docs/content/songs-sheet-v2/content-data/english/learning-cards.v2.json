@@ -1,0 +1,191 @@
+[
+  {
+    "card_id": "learn-arr-pg-step-and-hold-v1",
+    "arrangement_id": "arr-pg-step-and-hold-v1",
+    "display_title": "Step and Hold",
+    "eyebrow": "PianoGrid original exercise — not a song arrangement",
+    "suitable_when": "A first right-hand reading task",
+    "why_it_fits": "Keep an even count while moving between quarter notes and half notes.",
+    "before_you_start": "Find the five named keys and keep counting while a note lasts two beats.",
+    "first_hand": "Right hand first. This score has no left-hand part.",
+    "demands_summary": "One hand; quarter and half notes; C4 to G4.",
+    "steps": [
+      "Find C4, D4, E4, F4 and G4. Middle C is C4 in this score.",
+      "Count 1-2-3-4 through each bar. Hold every half note for two beats.",
+      "Practise bars 1-2, then bars 3-4. Join them without changing the pulse."
+    ],
+    "self_check": "You can name the keys and repeat bars 1–2 at a comfortable pace while counting aloud.",
+    "self_check_type": "self_report_not_performance_detection",
+    "local_practice": {
+      "kind": "same_arrangement",
+      "arrangement_id": "arr-pg-step-and-hold-v1",
+      "default_segment": "bars-1-2",
+      "default_speed_percent": 75,
+      "enabled_only_after": "public_asset_gate"
+    },
+    "score_target": {
+      "path": "/sheet-music/beginner",
+      "arrangement_id": "arr-pg-step-and-hold-v1",
+      "gate": "destination_public"
+    },
+    "notes_from": "arrangement.music.note_inventory",
+    "chords_from": "arrangement.music.chord_inventory",
+    "scale_relationship": "optional_pitch_subset_reference_not_prerequisite",
+    "evidence_status": "[已核实] file-specific music facts; [推断] editorial learning guidance",
+    "teacher_review": false
+  },
+  {
+    "card_id": "learn-arr-pg-left-hand-answer-v1",
+    "arrangement_id": "arr-pg-left-hand-answer-v1",
+    "display_title": "Left-Hand Answer",
+    "eyebrow": "PianoGrid original exercise — not a song arrangement",
+    "suitable_when": "A first bass-clef reading task",
+    "why_it_fits": "Read a short bass-clef phrase and keep three beats in each bar.",
+    "before_you_start": "Match the bass-clef notes to C3–G3 and count three beats in each bar.",
+    "first_hand": "Left hand first. This score has no right-hand part.",
+    "demands_summary": "One hand; quarter, half and dotted-half notes; C3 to G3.",
+    "steps": [
+      "Find C3, D3, E3, F3 and G3. C3 is one octave below middle C.",
+      "Count 1-2-3 in each bar; the final dotted half note lasts all three beats.",
+      "Practise bars 1-2, then bars 3-4. Keep your hand comfortable; no pedal is needed."
+    ],
+    "self_check": "You can count 1–2–3 without shortening the final three-beat note.",
+    "self_check_type": "self_report_not_performance_detection",
+    "local_practice": {
+      "kind": "same_arrangement",
+      "arrangement_id": "arr-pg-left-hand-answer-v1",
+      "default_segment": "bars-1-2",
+      "default_speed_percent": 75,
+      "enabled_only_after": "public_asset_gate"
+    },
+    "score_target": {
+      "path": "/sheet-music/beginner",
+      "arrangement_id": "arr-pg-left-hand-answer-v1",
+      "gate": "destination_public"
+    },
+    "notes_from": "arrangement.music.note_inventory",
+    "chords_from": "arrangement.music.chord_inventory",
+    "scale_relationship": "optional_pitch_subset_reference_not_prerequisite",
+    "evidence_status": "[已核实] file-specific music facts; [推断] editorial learning guidance",
+    "teacher_review": false
+  },
+  {
+    "card_id": "learn-arr-pg-one-hand-at-a-time-v1",
+    "arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+    "display_title": "One Hand at a Time",
+    "eyebrow": "PianoGrid original exercise — not a song arrangement",
+    "suitable_when": "A hand-switching task, not hands-together playing",
+    "why_it_fits": "Switch hands between bars without playing both hands together.",
+    "before_you_start": "Prepare both written registers and change hands at the bar line.",
+    "first_hand": "Right hand in bars 1 and 3; left hand in bars 2 and 4.",
+    "demands_summary": "Alternating hands; quarter and half notes; rests in the other hand.",
+    "steps": [
+      "Prepare right-hand C4-G4 and left-hand C3-E3. Use the written registers.",
+      "The right hand plays bars 1 and 3; the left hand plays bars 2 and 4. Rest the other hand.",
+      "Practise bars 1-2, then bars 3-4. Stop and reset before replaying a section."
+    ],
+    "self_check": "You can switch hands between the two-bar sections while keeping the same count.",
+    "self_check_type": "self_report_not_performance_detection",
+    "local_practice": {
+      "kind": "same_arrangement",
+      "arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+      "default_segment": "bars-1-2",
+      "default_speed_percent": 75,
+      "enabled_only_after": "public_asset_gate"
+    },
+    "score_target": {
+      "path": "/sheet-music/beginner",
+      "arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+      "gate": "destination_public"
+    },
+    "notes_from": "arrangement.music.note_inventory",
+    "chords_from": "arrangement.music.chord_inventory",
+    "scale_relationship": "optional_pitch_subset_reference_not_prerequisite",
+    "evidence_status": "[已核实] file-specific music facts; [推断] editorial learning guidance",
+    "teacher_review": false
+  },
+  {
+    "card_id": "learn-arr-ext-0a05b7954f5256",
+    "arrangement_id": "arr-ext-0a05b7954f5256",
+    "display_title": "Hot Cross Buns",
+    "eyebrow": "External publisher edition",
+    "why_it_fits": "Choose this when you want a first-lesson package with a parent guide and listening and practice tracks.",
+    "before_you_start": "Use the provider’s Lesson 1 keyboard introduction. The exact notes, hand order and rhythm of this edition have not been transcribed and verified here.",
+    "first_hand": "Follow the hand instructions in the exact Lesson 1 materials. Hand order is not verified on PianoGrid.",
+    "steps": [
+      "Open the Materials for Lesson 1 package from Hoffman Academy. The free resource uses a form or provider account.",
+      "Use its keyboard-introduction page, then listen to its matching track on the provider’s service.",
+      "Follow the first task in that lesson; do not replace its notes with a different Hot Cross Buns arrangement."
+    ],
+    "local_practice": {
+      "kind": "optional_general_warmup_not_song",
+      "arrangement_id": "arr-pg-step-and-hold-v1",
+      "label": "Try a separate counting / key-finding exercise",
+      "reason": "Optional general key-finding and counting practice. This is not the melody, key or hand assignment of the Hoffman edition.",
+      "enabled_only_after": "public_asset_gate"
+    },
+    "song_playback_here": false,
+    "song_segment_here": null,
+    "notes_from": "verified_exact_arrangement_only_currently_unknown",
+    "chords_from": "verified_exact_arrangement_only_currently_unknown",
+    "scale_relationship": "key_signature_background_only_not_verified_song_pitch_inventory",
+    "evidence_status": "[已核实] publisher facts cited by arrangement; [推断] original learning advice",
+    "teacher_review": false
+  },
+  {
+    "card_id": "learn-arr-ext-c3a78b0c5cb213",
+    "arrangement_id": "arr-ext-c3a78b0c5cb213",
+    "display_title": "Twinkle, Twinkle, Little Star",
+    "eyebrow": "External publisher edition",
+    "why_it_fits": "Choose the specifically named Early Elementary arrangement when you want its hand-position graphic and linked tutorial.",
+    "before_you_start": "Check the printed hand-position graphic. This version is listed in C major and 4/4; those labels do not prove a particular note range or fingering.",
+    "first_hand": "Use the exact version’s hand-position graphic and tutorial; a verified note-by-note hand assignment is not supplied here.",
+    "steps": [
+      "Choose the Early Elementary version by Aron Bernstein, not the Elementary or duet product.",
+      "Open its matching tutorial and compare the starting hand positions with your own copy.",
+      "Practise the opening phrase following that version’s instructions before joining sections. PianoGrid has not supplied a verified bar-level transcription of it."
+    ],
+    "local_practice": {
+      "kind": "optional_general_warmup_not_song",
+      "arrangement_id": "arr-pg-one-hand-at-a-time-v1",
+      "label": "Try a separate counting / key-finding exercise",
+      "reason": "Optional general hand-switching practice. It is a separate original exercise, not a Twinkle excerpt or substitute for the provider tutorial.",
+      "enabled_only_after": "public_asset_gate"
+    },
+    "song_playback_here": false,
+    "song_segment_here": null,
+    "notes_from": "verified_exact_arrangement_only_currently_unknown",
+    "chords_from": "verified_exact_arrangement_only_currently_unknown",
+    "scale_relationship": "key_signature_background_only_not_verified_song_pitch_inventory",
+    "evidence_status": "[已核实] publisher facts cited by arrangement; [推断] original learning advice",
+    "teacher_review": false
+  },
+  {
+    "card_id": "learn-arr-ext-a60b8d92c5a325",
+    "arrangement_id": "arr-ext-a60b8d92c5a325",
+    "display_title": "Ode to Joy",
+    "eyebrow": "External publisher edition",
+    "why_it_fits": "Choose a named simplified classical version with separate provider lessons for melody/rhythm and hands together.",
+    "before_you_start": "The Joseph Hoffman arrangement is in D major and 4/4 and its page tags dotted rhythms. The actual pitch set, chord part and fingering still require this exact score.",
+    "first_hand": "Use the provider’s melody/rhythm lesson first, then its hands-together lesson. The starting hand has not been independently confirmed here.",
+    "steps": [
+      "Open the Joseph Hoffman edition and check the single-user or teacher-studio access offered by the provider.",
+      "Use the linked melody-and-rhythm lesson before the hands-together lesson.",
+      "Work from the same D-major score throughout. Do not substitute a C-major online arrangement without naming it as a different version."
+    ],
+    "local_practice": {
+      "kind": "optional_general_warmup_not_song",
+      "arrangement_id": "arr-pg-step-and-hold-v1",
+      "label": "Try a separate counting / key-finding exercise",
+      "reason": "Optional general counting practice only. This C-major original exercise does not teach the D-major notes, dotted rhythm or accompaniment of the Hoffman version.",
+      "enabled_only_after": "public_asset_gate"
+    },
+    "song_playback_here": false,
+    "song_segment_here": null,
+    "notes_from": "verified_exact_arrangement_only_currently_unknown",
+    "chords_from": "verified_exact_arrangement_only_currently_unknown",
+    "scale_relationship": "key_signature_background_only_not_verified_song_pitch_inventory",
+    "evidence_status": "[已核实] publisher facts cited by arrangement; [推断] original learning advice",
+    "teacher_review": false
+  }
+]

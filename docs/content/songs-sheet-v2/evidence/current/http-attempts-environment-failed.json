@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://pianogrid.com/sitemap.xml",
+    "checked_at": "2026-09-15T02:00:48.572793+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/songs",
+    "checked_at": "2026-09-15T02:00:48.573204+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /songs (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/songs/easy",
+    "checked_at": "2026-09-15T02:00:48.573512+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /songs/easy (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/sheet-music",
+    "checked_at": "2026-09-15T02:00:48.573965+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sheet-music (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/sheet-music/easy",
+    "checked_at": "2026-09-15T02:00:48.574811+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sheet-music/easy (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/sheet-music/beginner",
+    "checked_at": "2026-09-15T02:00:53.578659+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sheet-music/beginner (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/sheet-music/hot-cross-buns",
+    "checked_at": "2026-09-15T02:00:53.580297+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sheet-music/hot-cross-buns (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/sheet-music/twinkle-twinkle-little-star",
+    "checked_at": "2026-09-15T02:00:53.580452+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sheet-music/twinkle-twinkle-little-star (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://pianogrid.com/sheet-music/ode-to-joy",
+    "checked_at": "2026-09-15T02:00:53.583405+00:00",
+    "method": "HTTP GET (no authenticated session; not browser interaction)",
+    "status": null,
+    "error": "HTTPSConnectionPool(host='pianogrid.com', port=443): Max retries exceeded with url: /sheet-music/ode-to-joy (Caused by NameResolutionError(\"HTTPSConnection(host='pianogrid.com', port=443): Failed to resolve 'pianogrid.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  }
+]

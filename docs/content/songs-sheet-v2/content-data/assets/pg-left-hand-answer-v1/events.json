@@ -1,0 +1,112 @@
+{
+  "arrangement_id": "arr-pg-left-hand-answer-v1",
+  "title": "Left-Hand Answer",
+  "key": "C major",
+  "meter": [
+    3,
+    4
+  ],
+  "tempo_bpm": 60,
+  "measure_count": 4,
+  "duration_quarters": 12,
+  "events": [
+    {
+      "measure": 1,
+      "onset_quarters": 0,
+      "duration_quarters": 1,
+      "pitch": "G3",
+      "midi": 55,
+      "hand": "left"
+    },
+    {
+      "measure": 1,
+      "onset_quarters": 1,
+      "duration_quarters": 1,
+      "pitch": "E3",
+      "midi": 52,
+      "hand": "left"
+    },
+    {
+      "measure": 1,
+      "onset_quarters": 2,
+      "duration_quarters": 1,
+      "pitch": "C3",
+      "midi": 48,
+      "hand": "left"
+    },
+    {
+      "measure": 2,
+      "onset_quarters": 3,
+      "duration_quarters": 2,
+      "pitch": "D3",
+      "midi": 50,
+      "hand": "left"
+    },
+    {
+      "measure": 2,
+      "onset_quarters": 5,
+      "duration_quarters": 1,
+      "pitch": "E3",
+      "midi": 52,
+      "hand": "left"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 6,
+      "duration_quarters": 1,
+      "pitch": "F3",
+      "midi": 53,
+      "hand": "left"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 7,
+      "duration_quarters": 1,
+      "pitch": "E3",
+      "midi": 52,
+      "hand": "left"
+    },
+    {
+      "measure": 3,
+      "onset_quarters": 8,
+      "duration_quarters": 1,
+      "pitch": "D3",
+      "midi": 50,
+      "hand": "left"
+    },
+    {
+      "measure": 4,
+      "onset_quarters": 9,
+      "duration_quarters": 3,
+      "pitch": "C3",
+      "midi": 48,
+      "hand": "left"
+    }
+  ],
+  "audio_render": {
+    "sample_rate_hz": 22050,
+    "duration_seconds": 12.5,
+    "leading_silence_seconds": 0.25,
+    "trailing_silence_seconds": 0.25,
+    "gate_ratio": 0.9,
+    "timbre": "mathematically synthesized additive tone; no recorded samples",
+    "peak": 0.253691731770338
+  },
+  "segments": [
+    {
+      "id": "all",
+      "start_measure": 1,
+      "end_measure": 4
+    },
+    {
+      "id": "bars-1-2",
+      "start_measure": 1,
+      "end_measure": 2
+    },
+    {
+      "id": "bars-3-4",
+      "start_measure": 3,
+      "end_measure": 4
+    }
+  ]
+}
