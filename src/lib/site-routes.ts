@@ -100,6 +100,8 @@ export const PUBLIC_ROUTES = [
   '/keyboard-notes/labeled',
   '/keyboard-notes/chart',
   '/keyboard-notes/finger-numbers',
+  '/keyboard-notes/blank',
+  '/keyboard-notes/frequencies',
   '/scales',
   '/scales/modes',
   '/scales/blues',
@@ -218,6 +220,8 @@ export const SITE_NAVIGATION = [
       { label: 'Labeled Keyboard', href: '/keyboard-notes/labeled' },
       { label: 'Piano Notes Chart', href: '/keyboard-notes/chart' },
       { label: 'Finger Numbers', href: '/keyboard-notes/finger-numbers' },
+      { label: 'Blank Keyboard', href: '/keyboard-notes/blank' },
+      { label: 'Note Frequencies', href: '/keyboard-notes/frequencies' },
     ],
   },
   {

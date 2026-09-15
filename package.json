@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "check:foundation": "node scripts/check-foundation.mjs",
     "check:css": "node scripts/check-css.mjs",
+    "check:keyboard-completion": "node --experimental-strip-types scripts/check-keyboard-completion.ts",
     "check": "npm run check:foundation && npm run typecheck && npm run check:css"
   },
   "engines": {

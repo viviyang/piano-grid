@@ -1,0 +1,90 @@
+{
+  "passed": 21,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/keyboard-notes unavailable disabled",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes unavailable explained",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes selection survives unavailable",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes explicit error",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes selection survives error",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes cancelled late resume",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes selection survives delayed-cancel",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart unavailable disabled",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart unavailable explained",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart selection survives unavailable",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart explicit error",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart selection survives error",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart cancelled late resume",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart selection survives delayed-cancel",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes selected key visible after resize",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes visible key focus",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes forced color focus",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart selected key visible after resize",
+      "passed": true
+    },
+    {
+      "name": "selected staff visible after resize",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart visible key focus",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/chart forced color focus",
+      "passed": true
+    }
+  ]
+}

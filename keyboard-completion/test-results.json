@@ -1,0 +1,166 @@
+{
+  "passed": 40,
+  "failed": 0,
+  "results": [
+    {
+      "name": "88-key invariant",
+      "passed": true
+    },
+    {
+      "name": "61-key invariant",
+      "passed": true
+    },
+    {
+      "name": "resolve A0",
+      "passed": true
+    },
+    {
+      "name": "resolve C4",
+      "passed": true
+    },
+    {
+      "name": "resolve A4",
+      "passed": true
+    },
+    {
+      "name": "resolve C8",
+      "passed": true
+    },
+    {
+      "name": "resolve B#3",
+      "passed": true
+    },
+    {
+      "name": "resolve B#4",
+      "passed": true
+    },
+    {
+      "name": "resolve Cb4",
+      "passed": true
+    },
+    {
+      "name": "resolve Ab4",
+      "passed": true
+    },
+    {
+      "name": "resolve G#4",
+      "passed": true
+    },
+    {
+      "name": "B-sharp spelling retained",
+      "passed": true
+    },
+    {
+      "name": "C-flat spelling retained",
+      "passed": true
+    },
+    {
+      "name": "D8 outside range",
+      "passed": true
+    },
+    {
+      "name": "C candidates 88",
+      "passed": true
+    },
+    {
+      "name": "C candidates 61",
+      "passed": true
+    },
+    {
+      "name": "Ab candidates 88",
+      "passed": true
+    },
+    {
+      "name": "B# candidates 61",
+      "passed": true
+    },
+    {
+      "name": "Cb candidates 61",
+      "passed": true
+    },
+    {
+      "name": "invalid empty",
+      "passed": true
+    },
+    {
+      "name": "invalid H4",
+      "passed": true
+    },
+    {
+      "name": "compound query",
+      "passed": true
+    },
+    {
+      "name": "layout re-resolution",
+      "passed": true
+    },
+    {
+      "name": "share serialize restore",
+      "passed": true
+    },
+    {
+      "name": "bad share params safe",
+      "passed": true
+    },
+    {
+      "name": "F#4/Gb4 identity and staff letters",
+      "passed": true
+    },
+    {
+      "name": "C4 two clefs",
+      "passed": true
+    },
+    {
+      "name": "61 chart mode approved",
+      "passed": true
+    },
+    {
+      "name": "find practice deterministic 10",
+      "passed": true
+    },
+    {
+      "name": "practice correct",
+      "passed": true
+    },
+    {
+      "name": "practice wrong octave",
+      "passed": true
+    },
+    {
+      "name": "practice wrong note",
+      "passed": true
+    },
+    {
+      "name": "read practice deterministic 10",
+      "passed": true
+    },
+    {
+      "name": "read practice has canonical staff events",
+      "passed": true
+    },
+    {
+      "name": "A4 formula",
+      "passed": true
+    },
+    {
+      "name": "88 formula rows finite",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-13-keys.svg",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-25-keys.svg",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-worksheet-letter.pdf",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-worksheet-a4.pdf",
+      "passed": true
+    }
+  ]
+}
