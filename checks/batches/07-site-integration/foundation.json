@@ -1,9 +1,9 @@
 {
   "stage": "07-site-integration",
-  "executed_at": "2026-09-16T06:59:20.955Z",
+  "executed_at": "2026-09-16T14:18:58.436Z",
   "runtime": "v24.14.1",
-  "passed": 564,
-  "failed": 1,
+  "passed": 565,
+  "failed": 0,
   "warnings": [
     "source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。"
   ],
@@ -2790,7 +2790,7 @@
     },
     {
       "name": "Only necessary authorized chord components",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {

@@ -4,9 +4,12 @@ import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { ArrangementFocus } from '@/components/songs-sheet/arrangement-focus';
 import { ExternalArrangementCard } from '@/components/songs-sheet/external-arrangement-card';
 import { OriginalExercisePlayer } from '@/components/songs-sheet/original-exercise-player';
+import { SheetEditionAccess } from './edition-access';
 import { SongResourceCard } from '@/components/songs/resource-card';
 import { canPublishAsset, capabilities, practiceUrl, publicDeploymentContext } from '@/lib/songs-sheet-contracts';
 import { getLaunchExternalViews, getLegacySheetContent, getLockedOriginalViews, getPagePatch, getSongsSheetCatalog } from '@/lib/songs-sheet-content';
+import { editorialHeading } from '@/lib/seo-editorial';
+import { getLeadCopy, getPageSeo } from '@/lib/b07-content';
 import type { ArrangementView, SheetMusicURL, SheetSection } from '@/lib/songs-sheet-types';
 import '@/app/chords/a-minor/a-minor.css';
 import '@/components/songs/songs.css';
@@ -25,12 +28,51 @@ function JsonLd({ value }: { value: Record<string, unknown> }) {
 
 function SheetShell({ url, children }: { url: SheetMusicURL; children: ReactNode }) {
   const page = getPagePatch(url);
-  const crumbs = url === '/sheet-music' ? [{ label: 'Sheet Music' }] : [{ label: 'Sheet Music', href: '/sheet-music' }, { label: page.h1.replace('Piano Sheet Music', '').trim() || page.h1 }];
+  const heading = editorialHeading(url, page.h1);
+  const intro = getLeadCopy(url, page.intro);
+  const crumbs = url === '/sheet-music' ? [{ label: 'Sheet Music' }] : [{ label: 'Sheet Music', href: '/sheet-music' }, { label: heading.replace(' Piano Sheet Music', '') || heading }];
   return <div className="am-page sg-page ss-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Sheet Music"/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading"><PageBreadcrumb items={crumbs}/><h1>{page.h1}</h1><p className="am-direct-answer">{page.intro}</p></header>
+    <header className="am-page-heading"><PageBreadcrumb items={crumbs}/><h1>{heading}</h1><p className="am-direct-answer">{intro}</p></header>
     {children}
     <JsonLd value={page.schema}/>
   </main><SiteFooter url={url}/></div>;
+}
+
+function SheetHubIntent({ url }: { url: SheetMusicURL }) {
+  const seo = getPageSeo(url);
+  if (!seo?.sections?.length) return null;
+  const preserved = new Set((seo.sections ?? []).filter((section) => section.preserveSlot).map((section) => section.h2));
+  const editorial = seo.sections.filter((section) => section.body || (section.h3 && section.h3.length));
+  if (!editorial.length) return null;
+  const practiceLink =
+    url === '/sheet-music'
+      ? { href: '/songs/easy', label: 'Choose a beginner practice goal', onH2: 'Beginner starting points' }
+      : url === '/sheet-music/easy'
+        ? { href: '/songs/easy', label: 'Choose what to practice first', onH2: 'Choose an easy edition' }
+        : url === '/sheet-music/beginner'
+          ? { href: '/songs/easy#first-10-minutes', label: 'Use a short practice plan', onH2: 'What to check before starting' }
+          : null;
+  return (
+    <div className="am-reading ss-reading ss-b07-intent">
+      {editorial.map((section) => (
+        <section className="am-content-section ss-section" id={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} key={section.h2} aria-labelledby={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-h`}>
+          <h2 id={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-h`}>{section.h2}</h2>
+          <div className="am-content-body">
+            {section.body ? <p>{section.body}</p> : null}
+            {preserved.has(section.h2) ? <p className="ss-preserve-note">The existing collection, filters and edition cards for this page remain below.</p> : null}
+            {section.h3?.length ? (
+              <ul className="ss-intent-points">
+                {section.h3.map((item) => <li key={item}><strong>{item}</strong></li>)}
+              </ul>
+            ) : null}
+            {practiceLink && practiceLink.onH2 === section.h2 ? (
+              <p><a className="am-button am-tertiary" href={practiceLink.href}>{practiceLink.label}</a></p>
+            ) : null}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }
 
 function Directory() {
@@ -100,10 +142,15 @@ export function SheetMusicPage({ url }: { url: SheetMusicURL }) {
   const page = getPagePatch(url);
   const isRoot = url === '/sheet-music';
   const isCollection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
+  const isHub = isRoot || isCollection;
   const sections = page.sections.filter((section) => !section.arrangement_ids?.some((id) => id.startsWith('arr-ext-')));
   return <SheetShell url={url}>
     {isRoot && <Directory/>}
-    {!isRoot && <section className="ss-primary" aria-labelledby="ss-primary-heading"><div className="sg-discovery-head"><div><p className="sg-overline">{isCollection ? 'Verified version comparison' : 'One exact external edition'}</p><h2 id="ss-primary-heading">{isCollection ? 'Compare identified editions' : 'Edition, access and learning path'}</h2></div><p>No third-party score or recording is hosted here. Musical details are shown only when supported for this exact edition.</p></div><LaunchCards url={url}/></section>}
+    {url === '/sheet-music/twinkle-twinkle-little-star' && <SheetEditionAccess editionKey="twinkle" />}
+    {url === '/sheet-music/hot-cross-buns' && <SheetEditionAccess editionKey="hot-cross-buns" />}
+    {url === '/sheet-music/ode-to-joy' && <SheetEditionAccess editionKey="ode-to-joy" />}
+    {isHub && <SheetHubIntent url={url}/>}
+    {!isRoot && isCollection && <section className="ss-primary" aria-labelledby="ss-primary-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Verified version comparison</p><h2 id="ss-primary-heading">Compare identified editions</h2></div><p>No third-party score or recording is hosted here. Musical details are shown only when supported for this exact edition.</p></div><LaunchCards url={url}/></section>}
     <PreservedSheetContent url={url}/>
     <div className="am-reading ss-reading">{sections.map((section) => <SectionBody section={section} url={url} key={section.id}/>)}</div>
   </SheetShell>;

@@ -1,0 +1,651 @@
+[
+  {
+    "url": "/songs",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Piano Songs: Choose a Version to Practice | PianoGrid",
+    "description": "Compare piano pieces by edition, playing demands and access. Find a beginner starting point or browse versions for your next practice session.",
+    "h1": "Piano Songs: Choose Your Next Piece",
+    "h2": [
+      "Looking for a place to start?",
+      "Browse piano versions",
+      "Choose an arrangement, not just a title"
+    ],
+    "intent": "piano songs",
+    "batch": "b05",
+    "canonical": "https://pianogrid.com/songs",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Piano Songs: Choose Your Next Piece",
+    "ogDescription": "Compare piano pieces by edition, playing demands and access. Find a beginner starting point or browse versions for your next practice session.",
+    "titleLengthDiagnosticOnly": 53,
+    "descriptionLengthDiagnosticOnly": 142,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Choose a piece, then check the exact arrangement and how to get its music. Start with the beginner selection or browse the full catalogue.",
+    "sections": [
+      {
+        "h2": "Looking for a place to start?",
+        "body": "Compare three beginner editions, or use a short practice plan for one version of Twinkle, Twinkle, Little Star.",
+        "h3": [
+          "Twinkle, Twinkle, Little Star",
+          "Hot Cross Buns",
+          "Ode to Joy"
+        ]
+      },
+      {
+        "h2": "Browse piano versions",
+        "body": "Use the existing collection to find a piece and then compare its exact edition. The same song can be arranged in different ways.",
+        "h3": [],
+        "preserveSlot": "EXISTING_FULL_CATALOG_AND_FILTERS"
+      },
+      {
+        "h2": "Choose an arrangement, not just a title",
+        "body": "Before you choose, check the edition’s level, available sample, instructions and access conditions. A familiar title does not make every arrangement equally approachable.",
+        "h3": [
+          "Check the exact edition",
+          "Check how to get the music"
+        ]
+      }
+    ],
+    "h3": [
+      "Twinkle, Twinkle, Little Star",
+      "Hot Cross Buns",
+      "Ode to Joy",
+      "Check the exact edition",
+      "Check how to get the music"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/songs/easy",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid",
+    "description": "Compare three beginner piano editions, check how to access the music, and start a focused 10-minute plan for one version of Twinkle, Twinkle, Little Star.",
+    "h1": "Easy Piano Songs for Beginners",
+    "h2": [
+      "Choose a starting point",
+      "Your first 10 minutes",
+      "Browse more easy editions",
+      "Understand your starting point"
+    ],
+    "intent": "easy piano songs / beginner piano songs",
+    "batch": "b05",
+    "canonical": "https://pianogrid.com/songs/easy",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "A small plan for your next piano session",
+    "ogDescription": "Five steps for one Early Elementary Twinkle edition. Check the publisher materials, then choose one small practice goal.",
+    "titleLengthDiagnosticOnly": 56,
+    "descriptionLengthDiagnosticOnly": 154,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Choose one edition and one small goal for your next session.",
+    "sections": [
+      {
+        "h2": "Choose a starting point",
+        "body": "These editions are available on the publisher’s website. Check the access details before you start.",
+        "h3": [
+          "Twinkle, Twinkle, Little Star",
+          "Hot Cross Buns",
+          "Ode to Joy"
+        ]
+      },
+      {
+        "h2": "Your first 10 minutes",
+        "body": "A short plan for using one Early Elementary edition. Ten minutes is a focused start, not a promise to learn the whole piece.",
+        "h3": [
+          "Get the right edition",
+          "Find the starting position",
+          "Choose one short phrase",
+          "Repeat one small section",
+          "Choose what to revisit"
+        ]
+      },
+      {
+        "h2": "Browse more easy editions",
+        "body": "Compare more versions using the existing catalogue. Check the stated level and materials for each one.",
+        "h3": [],
+        "preserveSlot": "EXISTING_EASY_CATALOG_AND_FILTERS"
+      },
+      {
+        "h2": "Understand your starting point",
+        "body": "",
+        "h3": [
+          "What makes an arrangement a useful starting point?",
+          "Make a small practice goal",
+          "Do I need chords and scales first?",
+          "Where do I get the music?"
+        ]
+      }
+    ],
+    "h3": [
+      "Twinkle, Twinkle, Little Star",
+      "Hot Cross Buns",
+      "Ode to Joy",
+      "Get the right edition",
+      "Find the starting position",
+      "Choose one short phrase",
+      "Repeat one small section",
+      "Choose what to revisit",
+      "What makes an arrangement a useful starting point?",
+      "Make a small practice goal",
+      "Do I need chords and scales first?",
+      "Where do I get the music?"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry.",
+    "ogImageDesignRef": "design/social/song-plan.png",
+    "ogImageAlt": "PianoGrid five-step practice plan for one Twinkle edition; materials supplied externally."
+  },
+  {
+    "url": "/sheet-music",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Piano Sheet Music: Find an Edition | PianoGrid",
+    "description": "Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.",
+    "h1": "Piano Sheet Music",
+    "h2": [
+      "Find the edition you need",
+      "Beginner starting points",
+      "Check access before you print"
+    ],
+    "intent": "piano sheet music",
+    "batch": "b07",
+    "canonical": "https://pianogrid.com/sheet-music",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Piano Sheet Music",
+    "ogDescription": "Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.",
+    "titleLengthDiagnosticOnly": 46,
+    "descriptionLengthDiagnosticOnly": 151,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Find an edition and check how its music is supplied. Compare the provider, level and available formats before you download, print or begin.",
+    "sections": [
+      {
+        "h2": "Find the edition you need",
+        "body": "Choose from the existing collection. Each detail page identifies a specific edition and explains where to obtain it.",
+        "h3": [],
+        "preserveSlot": "EXISTING_SHEET_COLLECTION_AND_FILTERS"
+      },
+      {
+        "h2": "Beginner starting points",
+        "body": "Start by comparing the edition, not just the title. These three pages identify the publisher materials and explain their access routes.",
+        "h3": [
+          "Twinkle, Twinkle, Little Star",
+          "Hot Cross Buns",
+          "Ode to Joy"
+        ]
+      },
+      {
+        "h2": "Check access before you print",
+        "body": "Use the edition’s stated source and current access terms. An external link is not a score download hosted by PianoGrid.",
+        "h3": [
+          "On PianoGrid or on another site?",
+          "Which edition does the file belong to?"
+        ]
+      }
+    ],
+    "h3": [
+      "Twinkle, Twinkle, Little Star",
+      "Hot Cross Buns",
+      "Ode to Joy",
+      "On PianoGrid or on another site?",
+      "Which edition does the file belong to?"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/sheet-music/easy",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Easy Piano Sheet Music: Compare Editions | PianoGrid",
+    "description": "Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.",
+    "h1": "Easy Piano Sheet Music",
+    "h2": [
+      "Choose an easy edition",
+      "Compare playing demands",
+      "Check the format and access"
+    ],
+    "intent": "easy piano sheet music",
+    "batch": "b07",
+    "canonical": "https://pianogrid.com/sheet-music/easy",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Easy Piano Sheet Music",
+    "ogDescription": "Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.",
+    "titleLengthDiagnosticOnly": 52,
+    "descriptionLengthDiagnosticOnly": 149,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Compare editions described as easy or early level by their providers. Check the sample and the playing demands of the particular version.",
+    "sections": [
+      {
+        "h2": "Choose an easy edition",
+        "body": "Browse the existing editions and open their detail pages for source and access information.",
+        "h3": [],
+        "preserveSlot": "EXISTING_EASY_SHEET_COLLECTION"
+      },
+      {
+        "h2": "Compare playing demands",
+        "body": "The useful question is whether this version fits what you can work on now. Follow the edition’s own instructions and available preview.",
+        "h3": [
+          "Check hand movement",
+          "Check notation and rhythm"
+        ]
+      },
+      {
+        "h2": "Check the format and access",
+        "body": "Find out whether the materials are a PDF, a tutorial or another supplied format, and whether the provider asks for an account or payment.",
+        "h3": [
+          "Preview before choosing",
+          "Use the named edition"
+        ]
+      }
+    ],
+    "h3": [
+      "Check hand movement",
+      "Check notation and rhythm",
+      "Preview before choosing",
+      "Use the named edition"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/sheet-music/beginner",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Beginner Piano Sheet Music: Where to Start | PianoGrid",
+    "description": "Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.",
+    "h1": "Beginner Piano Sheet Music",
+    "h2": [
+      "Three beginner editions",
+      "What to check before starting",
+      "Get help with piano notation"
+    ],
+    "intent": "beginner piano sheet music",
+    "batch": "b07",
+    "canonical": "https://pianogrid.com/sheet-music/beginner",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Beginner Piano Sheet Music",
+    "ogDescription": "Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.",
+    "titleLengthDiagnosticOnly": 54,
+    "descriptionLengthDiagnosticOnly": 142,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Choose a specific beginner edition and find out what you need to start. These pages separate version details, access conditions and a practical next step.",
+    "sections": [
+      {
+        "h2": "Three beginner editions",
+        "body": "Compare the named publisher materials below. Publisher levels describe the editions; they are not a guarantee that every learner will find them easy.",
+        "h3": [
+          "Twinkle, Twinkle, Little Star",
+          "Hot Cross Buns",
+          "Ode to Joy"
+        ],
+        "preserveSlot": "PRESERVE_ADDITIONAL_BEGINNER_EDITION_LIST"
+      },
+      {
+        "h2": "What to check before starting",
+        "body": "Open the exact version and check its instructions. Use the Twinkle plan only with the version it names.",
+        "h3": [
+          "Locate the starting position",
+          "Choose one short section"
+        ]
+      },
+      {
+        "h2": "Get help with piano notation",
+        "body": "Use a reference when a specific symbol or key name is unfamiliar. You do not have to finish every reference topic before beginning a small practice task.",
+        "h3": [
+          "Find a key or octave",
+          "Understand finger numbers"
+        ]
+      }
+    ],
+    "h3": [
+      "Twinkle, Twinkle, Little Star",
+      "Hot Cross Buns",
+      "Ode to Joy",
+      "Locate the starting position",
+      "Choose one short section",
+      "Find a key or octave",
+      "Understand finger numbers"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/sheet-music/twinkle-twinkle-little-star",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid",
+    "description": "Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.",
+    "h1": "Twinkle, Twinkle, Little Star Piano Sheet Music",
+    "h2": [
+      "Edition and access",
+      "A focused way to begin",
+      "Source and notation notes"
+    ],
+    "intent": "twinkle twinkle little star piano sheet music",
+    "batch": "b05",
+    "canonical": "https://pianogrid.com/sheet-music/twinkle-twinkle-little-star",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Twinkle, Twinkle, Little Star Piano Sheet Music",
+    "ogDescription": "Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.",
+    "titleLengthDiagnosticOnly": 62,
+    "descriptionLengthDiagnosticOnly": 158,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Check the Early Elementary edition and its external access route, then use a short plan to organize your first session.",
+    "sections": [
+      {
+        "h2": "Edition and access",
+        "body": "Use the Hoffman Academy Early Elementary version identified here. Obtain the music through the linked publisher page.",
+        "h3": [
+          "Early Elementary Version",
+          "Materials and access requirements"
+        ]
+      },
+      {
+        "h2": "A focused way to begin",
+        "body": "Open the same edition’s hand-position graphic and matching tutorial, then use the five-step plan to choose one small section. The plan does not listen to or grade your playing.",
+        "h3": [
+          "Your first 10 minutes",
+          "Help with the starting position"
+        ]
+      },
+      {
+        "h2": "Source and notation notes",
+        "body": "The edition name and access information come from the linked publisher page. Only musical details supported for this version should appear below.",
+        "h3": [
+          "What this page covers",
+          "Musical details for this edition"
+        ]
+      }
+    ],
+    "h3": [
+      "Early Elementary Version",
+      "Materials and access requirements",
+      "Your first 10 minutes",
+      "Help with the starting position",
+      "What this page covers",
+      "Musical details for this edition"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/sheet-music/hot-cross-buns",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid",
+    "description": "Check Hoffman Academy’s Lesson 1 materials for Hot Cross Buns, including its parent-guide context, external access route and beginner practice links.",
+    "h1": "Hot Cross Buns Piano Sheet Music",
+    "h2": [
+      "Edition and access",
+      "Begin with the Lesson 1 materials",
+      "Source and notation notes"
+    ],
+    "intent": "hot cross buns piano sheet music",
+    "batch": "b05",
+    "canonical": "https://pianogrid.com/sheet-music/hot-cross-buns",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Hot Cross Buns Piano Sheet Music",
+    "ogDescription": "Check Hoffman Academy’s Lesson 1 materials for Hot Cross Buns, including its parent-guide context, external access route and beginner practice links.",
+    "titleLengthDiagnosticOnly": 62,
+    "descriptionLengthDiagnosticOnly": 149,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Check the Lesson 1 materials and parent-guide context from Hoffman Academy before choosing what to practice.",
+    "sections": [
+      {
+        "h2": "Edition and access",
+        "body": "This entry points to the publisher’s Materials for Lesson 1 with Parent Guide. Obtain the supplied music and tracks through that source.",
+        "h3": [
+          "Materials for Lesson 1",
+          "Materials and access requirements"
+        ]
+      },
+      {
+        "h2": "Begin with the Lesson 1 materials",
+        "body": "Follow the instructions and matching tracks in the package. A different Hot Cross Buns arrangement may start in a different place.",
+        "h3": [
+          "Read the parent-guide instructions",
+          "Use the matching materials"
+        ]
+      },
+      {
+        "h2": "Source and notation notes",
+        "body": "Keep version-specific facts attached to this source. Do not substitute note sequences or hand instructions from another arrangement.",
+        "h3": [
+          "What this page covers",
+          "Musical details for this edition"
+        ]
+      }
+    ],
+    "h3": [
+      "Materials for Lesson 1",
+      "Materials and access requirements",
+      "Read the parent-guide instructions",
+      "Use the matching materials",
+      "What this page covers",
+      "Musical details for this edition"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/sheet-music/ode-to-joy",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid",
+    "description": "Check the Early Elementary Ode to Joy edition from Hoffman Academy. See access conditions and version details before choosing materials for practice.",
+    "h1": "Ode to Joy Piano Sheet Music",
+    "h2": [
+      "Edition and access",
+      "Check the edition before practicing",
+      "Source and notation notes"
+    ],
+    "intent": "ode to joy piano sheet music",
+    "batch": "b05",
+    "canonical": "https://pianogrid.com/sheet-music/ode-to-joy",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Ode to Joy Piano Sheet Music",
+    "ogDescription": "Check the Early Elementary Ode to Joy edition from Hoffman Academy. See access conditions and version details before choosing materials for practice.",
+    "titleLengthDiagnosticOnly": 58,
+    "descriptionLengthDiagnosticOnly": 149,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Check the Early Elementary edition, its available materials and the provider’s access conditions before you begin.",
+    "sections": [
+      {
+        "h2": "Edition and access",
+        "body": "This entry identifies Hoffman Academy’s Early Elementary edition. Check the publisher’s current paid or membership access options.",
+        "h3": [
+          "Early Elementary arrangement",
+          "Materials and access requirements"
+        ]
+      },
+      {
+        "h2": "Check the edition before practicing",
+        "body": "Use this edition’s sample and instructions to choose a suitable starting section. The title alone does not describe its hand or reading demands.",
+        "h3": [
+          "Look at the available preview",
+          "Choose a small practice goal"
+        ]
+      },
+      {
+        "h2": "Source and notation notes",
+        "body": "The source page identifies this edition. Keep unconfirmed fingering or other technical details clearly separate from verified information.",
+        "h3": [
+          "What this page covers",
+          "Musical details for this edition"
+        ]
+      }
+    ],
+    "h3": [
+      "Early Elementary arrangement",
+      "Materials and access requirements",
+      "Look at the available preview",
+      "Choose a small practice goal",
+      "What this page covers",
+      "Musical details for this edition"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/keyboard-notes/labeled",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Labeled Piano Keys & Printable Practice Pack | PianoGrid",
+    "description": "Explore labeled 88-key and 61-key piano layouts. Print a C4–C5 reference, white-key worksheet and answer page, then try the matching online practice.",
+    "h1": "Labeled Piano Keys",
+    "h2": [
+      "Explore the labeled keyboard",
+      "A small pack for your next lesson",
+      "How to use the pack",
+      "Sources and notation notes"
+    ],
+    "intent": "labeled piano keys / piano notes worksheet",
+    "batch": "b06",
+    "canonical": "https://pianogrid.com/keyboard-notes/labeled",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Piano key names: a printable practice pack",
+    "ogDescription": "C4–C5 reference, worksheet and answers, with an optional matching online practice.",
+    "titleLengthDiagnosticOnly": 56,
+    "descriptionLengthDiagnosticOnly": 149,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Match note names to a piano keyboard. Use the labeled layouts or print a C4–C5 reference, worksheet and answer page for a small practice task.",
+    "sections": [
+      {
+        "h2": "Explore the labeled keyboard",
+        "body": "",
+        "h3": [],
+        "preserveSlot": "PRESERVE_APPROVED_88_61_VIEWPORT_AND_FULL_REFERENCE"
+      },
+      {
+        "h2": "A small pack for your next lesson",
+        "body": "Use a labeled reference, a write-in worksheet and an answer page to practice white-key names. Print all three pages, or just the worksheet.",
+        "h3": [
+          "Reference",
+          "Worksheet",
+          "Answers & use notes"
+        ]
+      },
+      {
+        "h2": "How to use the pack",
+        "body": "",
+        "h3": [
+          "Start with the reference",
+          "Try the worksheet",
+          "Check and revisit"
+        ]
+      },
+      {
+        "h2": "Sources and notation notes",
+        "body": "Middle C is labeled C4 in this pack. Octave numbers identify register, not fingers. This is a reference worksheet, not a full-size keyboard sticker template.",
+        "h3": [
+          "Reading letter names and octave numbers",
+          "Using the reference with your keyboard"
+        ],
+        "preserveSlot": "PRESERVE_OTHER_ACCURATE_LABELED_GUIDANCE"
+      }
+    ],
+    "h3": [
+      "Reference",
+      "Worksheet",
+      "Answers & use notes",
+      "Start with the reference",
+      "Try the worksheet",
+      "Check and revisit",
+      "Reading letter names and octave numbers",
+      "Using the reference with your keyboard"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry.",
+    "ogImageDesignRef": "design/social/teacher-pack.png",
+    "ogImageAlt": "PianoGrid C4–C5 key-name pack: reference, worksheet, and answers."
+  },
+  {
+    "url": "/tools",
+    "mode": "APPLY_WHEN_FEATURE_PRESENT",
+    "title": "Piano Tools & Printables for Practice | PianoGrid",
+    "description": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
+    "h1": "Piano Tools and Printables",
+    "h2": [
+      "Choose the result you need",
+      "Available printables"
+    ],
+    "intent": "piano tools / practice printables",
+    "batch": "b07",
+    "canonical": "https://pianogrid.com/tools",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Piano Tools and Printables",
+    "ogDescription": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
+    "titleLengthDiagnosticOnly": 49,
+    "descriptionLengthDiagnosticOnly": 128,
+    "status": "APPLIED_METADATA_AND_LEAD",
+    "leadCopy": "Choose a small task: find a note, check a chord or scale, compare two sounds, or take a printable reference to your piano.",
+    "sections": [
+      {
+        "h2": "Choose the result you need",
+        "body": "Use the existing tool directory to open the capability you need. Each task links to its original tool rather than a duplicate.",
+        "h3": [
+          "Find a note",
+          "Check a chord or scale",
+          "Listen and compare"
+        ],
+        "preserveSlot": "PRESERVE_ALL_EXISTING_TOOLS_AND_GROUPS"
+      },
+      {
+        "h2": "Available printables",
+        "body": "Find the labeled reference, the C4–C5 key-name pack and the other existing print resources. Check the format on the resource page.",
+        "h3": [
+          "Piano key-name practice pack",
+          "Other printable references"
+        ],
+        "preserveSlot": "PRESERVE_ALL_EXISTING_PRINTABLES"
+      }
+    ],
+    "h3": [
+      "Find a note",
+      "Check a chord or scale",
+      "Listen and compare",
+      "Piano key-name practice pack",
+      "Other printable references"
+    ],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  },
+  {
+    "url": "/keyboard-notes",
+    "mode": "KEEP_IF_ALREADY_ACCURATE",
+    "title": "Piano Keys and Notes: Find, Hear & Practice | PianoGrid",
+    "description": "Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.",
+    "h1": "Piano Keys and Notes",
+    "h2": [
+      "PRESERVE_EXISTING_APPROVED_HEADINGS"
+    ],
+    "intent": "piano keys / piano notes",
+    "batch": "guard_only",
+    "canonical": "https://pianogrid.com/keyboard-notes",
+    "schema": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "ogTitle": "Piano Keys and Notes",
+    "ogDescription": "Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.",
+    "titleLengthDiagnosticOnly": 55,
+    "descriptionLengthDiagnosticOnly": 147,
+    "status": "GUARD_VERIFIED_METADATA",
+    "leadCopy": null,
+    "sections": [],
+    "h3": [],
+    "implementationNote": "Existing useful content remains. Use headings only with real content; no empty heading placeholders. Exact edition facts always come from the current registry."
+  }
+]

@@ -1,0 +1,597 @@
+﻿diff --git a/checks/batches/07-site-integration/foundation.json b/checks/batches/07-site-integration/foundation.json
+index d1d7604..fdba8b1 100644
+--- a/checks/batches/07-site-integration/foundation.json
++++ b/checks/batches/07-site-integration/foundation.json
+@@ -1,9 +1,9 @@
+ {
+   "stage": "07-site-integration",
+-  "executed_at": "2026-09-16T06:59:20.955Z",
++  "executed_at": "2026-09-16T14:18:58.436Z",
+   "runtime": "v24.14.1",
+-  "passed": 564,
+-  "failed": 1,
++  "passed": 565,
++  "failed": 0,
+   "warnings": [
+     "source-manifest 鐨勮鍒?Markdown 缂哄け璁板綍宸茶繃鏃讹紱褰撳墠鏂囦欢瀛樺湪涓斿凡瀵圭収鍐呭鍖呭熀绾垮搱甯岄獙璇侊紝璇﹁ local-validation.md銆?
+   ],
+@@ -2790,7 +2790,7 @@
+     },
+     {
+       "name": "Only necessary authorized chord components",
+-      "passed": false,
++      "passed": true,
+       "detail": ""
+     },
+     {
+diff --git a/checks/batches/07-site-integration/tailwind-compile.json b/checks/batches/07-site-integration/tailwind-compile.json
+index 4d59813..56ac3d7 100644
+--- a/checks/batches/07-site-integration/tailwind-compile.json
++++ b/checks/batches/07-site-integration/tailwind-compile.json
+@@ -1,5 +1,5 @@
+ {
+-  "executed_at": "2026-09-16T04:10:58.676Z",
++  "executed_at": "2026-09-16T14:19:02.161Z",
+   "passed": true,
+   "css_bytes": 37021,
+   "semantic_utilities": [
+diff --git a/docs/content/PianoGrid_Practical_Tools_Final_Execution_Pack_2026-09-15/tools-content-data.json b/docs/content/PianoGrid_Practical_Tools_Final_Execution_Pack_2026-09-15/tools-content-data.json
+index 68163fa..1bdb7f8 100644
+--- a/docs/content/PianoGrid_Practical_Tools_Final_Execution_Pack_2026-09-15/tools-content-data.json
++++ b/docs/content/PianoGrid_Practical_Tools_Final_Execution_Pack_2026-09-15/tools-content-data.json
+@@ -9,10 +9,10 @@
+   },
+   "page": {
+     "url": "/tools",
+-    "title": "Piano Tools: Notes, Chords, Scales & Printables | PianoGrid",
+-    "description": "Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub.",
++    "title": "Piano Tools & Printables for Practice | PianoGrid",
++    "description": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
+     "h1": "Piano Tools and Printables",
+-    "intro": "Find the task you need, then open the PianoGrid page that owns it. Use the practice timer here when you simply want to set aside a focused block of piano time."
++    "intro": "Choose a small task: find a note, check a chord or scale, compare two sounds, or take a printable reference to your piano."
+   },
+   "groups": [
+     {
+@@ -140,6 +140,13 @@
+           "owner": "scales",
+           "target": "/scales",
+           "decision": "REUSE"
++        },
++        {
++          "id": "key-name-pack",
++          "label": "Piano key-name practice pack",
++          "owner": "keyboard",
++          "target": "/keyboard-notes/labeled#teaching-pack",
++          "decision": "ADD"
+         }
+       ]
+     }
+diff --git a/scripts/check-foundation.mjs b/scripts/check-foundation.mjs
+index eab0da6..525d2f6 100644
+--- a/scripts/check-foundation.mjs
++++ b/scripts/check-foundation.mjs
+@@ -26,7 +26,7 @@ try {
+   const globals = await read('src/app/globals.css');
+   const tokens = await read('src/styles/tokens.css');
+   const foundation = await read('src/styles/foundation.css');
+-  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/chords/category.css') + await read('src/components/chords/page-toc.css') + await read('src/components/chords/chord-learning.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/keyboard-notes/keyboard-notes-v2.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/sheet-music/sheet-music.css') + await read('src/components/sheet-music/preserved.css') + await read('src/components/guides/guides.css') + await read('src/components/support/support-pages.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/hear-the-difference/hear-the-difference.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
++  const pageCSS = await read('src/app/chords/a-minor/a-minor.css') + await read('src/components/chords/shared.css') + await read('src/components/chords/center.css') + await read('src/components/chords/category.css') + await read('src/components/chords/page-toc.css') + await read('src/components/chords/chord-learning.css') + await read('src/components/keyboard-notes/keyboard-notes.css') + await read('src/components/keyboard-notes/keyboard-notes-v2.css') + await read('src/components/keyboard-notes/teaching-pack.css') + await read('src/components/scales/scales.css') + await read('src/components/songs/songs.css') + await read('src/components/songs/song-plan.css') + await read('src/components/sheet-music/sheet-music.css') + await read('src/components/sheet-music/preserved.css') + await read('src/components/guides/guides.css') + await read('src/components/support/support-pages.css') + await read('src/components/blank-sheet/blank-sheet.css') + await read('src/components/hear-the-difference/hear-the-difference.css') + await read('src/components/integration/integration.css') + await read('src/components/ui/breadcrumb.css') + await read('src/components/ui/site-brand.css');
+   const util = await read('src/lib/utils.ts');
+   const breadcrumb = await read('src/components/ui/breadcrumb.tsx');
+   const siteBrand = await read('src/components/ui/site-brand.tsx');
+@@ -102,18 +102,18 @@ try {
+   const allowedComponents = ['experience.tsx', 'keyboard.tsx', 'icon.tsx', 'page-search.tsx'].map(p => `src/components/a-minor/${p}`);
+   allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience','category-page','category-experience','page-toc','fingering-guide','chord-builder-practice','completion-category','completion-category-experience','library-index','supplement-index'].map(n=>`src/components/chords/${n}.tsx`));
+   allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css','src/components/chords/category.css','src/components/chords/page-toc.css','src/components/chords/chord-learning.css','src/components/chords/completion.css');
+-  allowedComponents.push(...['pages.tsx','keyboard-diagram.tsx','lookup-experience.tsx','labeled-experience.tsx','chart-experience.tsx','staff-diagram.tsx','tool-controls.tsx','use-note-audio.ts','practice.tsx','keyboard-notes-workspace.tsx','share-control.tsx','frequency-experience.tsx','blank-experience.tsx','keyboard-notes.css','keyboard-notes-v2.css'].map(n=>`src/components/keyboard-notes/${n}`));
++  allowedComponents.push(...['pages.tsx','keyboard-diagram.tsx','lookup-experience.tsx','labeled-experience.tsx','chart-experience.tsx','staff-diagram.tsx','tool-controls.tsx','use-note-audio.ts','practice.tsx','keyboard-notes-workspace.tsx','share-control.tsx','share-dialog.css','labeled-full-reference-collapsible.tsx','frequency-experience.tsx','blank-experience.tsx','teaching-pack.tsx','teaching-pack.css','keyboard-notes.css','keyboard-notes-v2.css'].map(n=>`src/components/keyboard-notes/${n}`));
+   allowedComponents.push(...['pages.tsx','center-experience.tsx','detail-experience.tsx','scale-learning.tsx','scale-reference.tsx','use-scale-audio.ts','scale-collection-experience.tsx','scale-finder.tsx','scale-guide-page.tsx','scale-ad-layout-slot.tsx','scale-tracked-link.tsx','scales.css'].map(n=>`src/components/scales/${n}`));
+-  allowedComponents.push(...['pages.tsx','center-experience.tsx','easy-experience.tsx','resource-card.tsx','songs.css'].map(n=>`src/components/songs/${n}`));
++  allowedComponents.push(...['pages.tsx','center-experience.tsx','easy-experience.tsx','resource-card.tsx','edition-cards.tsx','practice-plan.tsx','songs.css','song-plan.css'].map(n=>`src/components/songs/${n}`));
+   allowedComponents.push(...['arrangement-focus.tsx','arrangement-share.tsx','external-arrangement-card.tsx','original-exercise-player.tsx'].map(n=>`src/components/songs-sheet/${n}`));
+-  allowedComponents.push(...['pages.tsx','sheet-music.css','preserved.css'].map(n=>`src/components/sheet-music/${n}`));
++  allowedComponents.push(...['pages.tsx','edition-access.tsx','provider-open-link.tsx','sheet-music.css','preserved.css'].map(n=>`src/components/sheet-music/${n}`));
+   allowedComponents.push('src/components/guides/pages.tsx','src/components/guides/guides.css');
+   allowedComponents.push('src/components/support/support-pages.tsx','src/components/support/by-key-experience.tsx','src/components/support/progression-experience.tsx','src/components/support/finder-experience.tsx','src/components/support/support-pages.css');
+   allowedComponents.push('src/components/blank-sheet/pages.tsx','src/components/blank-sheet/blank-sheet-tool.tsx','src/components/blank-sheet/blank-sheet.css');
+   allowedComponents.push(...['pages.tsx','experience.tsx','use-comparison-audio.ts','hear-the-difference.css'].map(n=>`src/components/hear-the-difference/${n}`));
+   allowedComponents.push('src/components/integration/pages.tsx','src/components/integration/home-experience.tsx','src/components/integration/home-visuals.tsx','src/components/integration/practice-timer.tsx','src/components/integration/integration.css','src/components/integration/home-color-repair.css','src/components/integration/home-hero-background.css');
+   allowedComponents.push('src/components/site-navigation.tsx','src/components/site-navigation.css');
+-  allowedComponents.push('src/components/ui/breadcrumb.tsx','src/components/ui/breadcrumb.css','src/components/ui/site-brand.tsx','src/components/ui/site-brand.css','src/components/ui/rolling-text.tsx');
++  allowedComponents.push('src/components/ui/breadcrumb.tsx','src/components/ui/breadcrumb.css','src/components/ui/site-brand.tsx','src/components/ui/site-brand.css','src/components/ui/rolling-text.tsx','src/components/ui/collapsible.tsx','src/components/ui/collapsible.css');
+   const allowedPages=['src/app/page.tsx','src/app/tools/page.tsx','src/app/chords/page.tsx','src/app/chords/[slug]/page.tsx',...['major','minor','diminished','augmented','suspended','seventh','add','extended','altered','a-minor','a-major','c-major','g-major','c-minor','e-major','b-major','a-flat-major','c-flat-major','by-key','finder'].map(n=>`src/app/chords/${n}/page.tsx`)];
+   allowedPages.push('src/app/keyboard-notes/page.tsx','src/app/keyboard-notes/labeled/page.tsx','src/app/keyboard-notes/chart/page.tsx','src/app/keyboard-notes/finger-numbers/page.tsx','src/app/keyboard-notes/blank/page.tsx','src/app/keyboard-notes/frequencies/page.tsx');
+   allowedPages.push('src/app/scales/page.tsx','src/app/scales/c-major/page.tsx','src/app/scales/a-minor/page.tsx','src/app/scales/[slug]/page.tsx','src/app/arpeggios/page.tsx');
+@@ -132,7 +132,7 @@ try {
+   const n2bSlugs=['a-augmented','a-diminished','a-flat-augmented','a-flat-diminished','a-flat-sus2','a-flat-sus4','a-sus2','a-sus4','b-augmented','b-diminished','b-flat-augmented','b-flat-diminished','b-flat-sus2','b-flat-sus4','b-sus2','b-sus4','c-augmented','c-diminished','c-sus2','c-sus4','d-augmented','d-diminished','d-flat-augmented','d-flat-diminished','d-flat-sus2','d-flat-sus4','d-sus2','d-sus4','e-augmented','e-diminished','e-flat-augmented','e-flat-diminished','e-flat-sus2','e-flat-sus4','e-sus2','e-sus4','f-augmented','f-diminished','f-sharp-augmented','f-sharp-diminished','f-sharp-sus2','f-sharp-sus4','f-sus2','f-sus4','g-augmented','g-diminished','g-sus2','g-sus4'];
+   const n2cSlugs=['a-7','a-flat-7','a-flat-m7','a-flat-m7-flat5','a-flat-maj7','a-m7','a-m7-flat5','a-maj7','b-7','b-flat-7','b-flat-m7','b-flat-m7-flat5','b-flat-maj7','b-m7','b-m7-flat5','b-maj7','c-7','c-m7','c-m7-flat5','c-maj7','d-7','d-flat-7','d-flat-m7','d-flat-m7-flat5','d-flat-maj7','d-m7','d-m7-flat5','d-maj7','e-7','e-flat-7','e-flat-m7','e-flat-m7-flat5','e-flat-maj7','e-m7','e-m7-flat5','e-maj7','f-7','f-m7','f-m7-flat5','f-maj7','f-sharp-7','f-sharp-m7','f-sharp-m7-flat5','f-sharp-maj7','g-7','g-m7','g-m7-flat5','g-maj7'];
+   const n2dSlugs=['c-add9','d-flat-add9','d-add9','e-flat-add9','e-add9','f-add9','f-sharp-add9','g-add9','a-flat-add9','a-add9','b-flat-add9','b-add9','c-madd9','d-flat-madd9','d-madd9','e-flat-madd9','e-madd9','f-madd9','f-sharp-madd9','g-madd9','a-flat-madd9','a-madd9','b-flat-madd9','b-madd9'];
+-  check('Only authorized static assets', publicFiles.every(p => ['public/favicon.ico','public/favicon.svg','public/favicon-96x96.png','public/apple-touch-icon.png','public/icon-192.png','public/icon-512.png','public/assets/home/east-lake-grand-piano.webp','public/assets/home/east-lake-piano-hero.png','public/assets/home/pianogrid-hero-sunset.png','public/assets/tools/hear-the-difference-og.png','public/assets/chords/a-minor-notes-inversions.pdf','public/assets/guides/piano-starter-and-reading.pdf','public/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf','public/downloads/scales/pianogrid-scales-starter-reference.pdf',...['pianogrid-12-major-scales-note-reference.pdf','pianogrid-12-major-scales-note-reference-a4.pdf','pianogrid-major-minor-note-atlas.pdf','pianogrid-major-minor-note-atlas-a4.pdf','pianogrid-c-major-two-hand-starter.pdf','pianogrid-c-major-two-hand-starter-a4.pdf'].map(name=>`public/downloads/scales/${name}`),'public/reference/assets/chord-a-major.pdf','public/reference/assets/chord-c-major.pdf',...["g-major","c-minor","e-major","b-major","a-flat-major","c-flat-major",...expansionSlugs,...n2bSlugs,...n2cSlugs,...n2dSlugs].flatMap(slug=>[`public/reference/assets/chord-${slug}.pdf`,`public/reference/assets/chord-${slug}.svg`]),...['chords-extended-starter-reference.pdf','chords-altered-starter-reference.pdf','piano-power-fifths-reference.pdf','piano-chord-practice-starter.pdf'].map(name=>`public/reference/assets/${name}`),'public/reference/assets/blank-piano-staff-letter.pdf','public/reference/assets/blank-piano-staff-a4.pdf','public/reference/assets/blank-piano-staff-preview.svg','public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf', ...[88,61].flatMap(n=>['octaves','letters'].map(m=>`public/reference/generated/keyboard-notes/labeled-${n}-${m}.pdf`)),...['blank-keyboard-13-keys.svg','blank-keyboard-25-keys.svg','blank-keyboard-worksheet-letter.pdf','blank-keyboard-worksheet-a4.pdf'].map(name=>`public/reference/generated/keyboard-notes/${name}`)].includes(p)));
++  check('Only authorized static assets', publicFiles.every(p => ['public/favicon.ico','public/favicon.svg','public/favicon-96x96.png','public/apple-touch-icon.png','public/icon-192.png','public/icon-512.png','public/assets/home/east-lake-grand-piano.webp','public/assets/home/east-lake-piano-hero.png','public/assets/home/pianogrid-hero-sunset.png','public/assets/tools/hear-the-difference-og.png','public/assets/social/song-plan-og.png','public/assets/social/teacher-pack-og.png','public/assets/chords/a-minor-notes-inversions.pdf','public/assets/guides/piano-starter-and-reading.pdf','public/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf','public/downloads/scales/pianogrid-scales-starter-reference.pdf',...['pianogrid-12-major-scales-note-reference.pdf','pianogrid-12-major-scales-note-reference-a4.pdf','pianogrid-major-minor-note-atlas.pdf','pianogrid-major-minor-note-atlas-a4.pdf','pianogrid-c-major-two-hand-starter.pdf','pianogrid-c-major-two-hand-starter-a4.pdf'].map(name=>`public/downloads/scales/${name}`),'public/reference/assets/chord-a-major.pdf','public/reference/assets/chord-c-major.pdf',...["g-major","c-minor","e-major","b-major","a-flat-major","c-flat-major",...expansionSlugs,...n2bSlugs,...n2cSlugs,...n2dSlugs].flatMap(slug=>[`public/reference/assets/chord-${slug}.pdf`,`public/reference/assets/chord-${slug}.svg`]),...['chords-extended-starter-reference.pdf','chords-altered-starter-reference.pdf','piano-power-fifths-reference.pdf','piano-chord-practice-starter.pdf'].map(name=>`public/reference/assets/${name}`),'public/reference/assets/blank-piano-staff-letter.pdf','public/reference/assets/blank-piano-staff-a4.pdf','public/reference/assets/blank-piano-staff-preview.svg','public/reference/preserved-chords/assets/piano-chord-chart-selected.pdf', ...[88,61].flatMap(n=>['octaves','letters'].map(m=>`public/reference/generated/keyboard-notes/labeled-${n}-${m}.pdf`)),...['blank-keyboard-13-keys.svg','blank-keyboard-25-keys.svg','blank-keyboard-worksheet-letter.pdf','blank-keyboard-worksheet-a4.pdf','piano-key-names-c4-c5-letter.pdf','piano-key-names-c4-c5-a4.pdf','piano-key-names-c4-c5-letter-worksheet.pdf','piano-key-names-c4-c5-a4-worksheet.pdf'].map(name=>`public/reference/generated/keyboard-notes/${name}`)].includes(p)));
+   for (const source of sourceManifest.sources) {
+     const b = await readFile(join(root,source.path));
+     const rawHash = createHash('sha256').update(b).digest('hex');
+diff --git a/scripts/check-practical-tools-browser.mjs b/scripts/check-practical-tools-browser.mjs
+index bf08655..8f949e5 100644
+--- a/scripts/check-practical-tools-browser.mjs
++++ b/scripts/check-practical-tools-browser.mjs
+@@ -26,9 +26,9 @@ try{
+   check('/tools index follow',(await page.locator('meta[name=robots]').getAttribute('content')||'').replaceAll(' ','')==='index,follow');
+   check('find group six unique cards',await page.locator('[aria-labelledby="in-find-title"] .in-tool-task-card').count()===6);
+   check('practice group four unique cards',await page.locator('[aria-labelledby="in-practice-title"] .in-tool-task-card').count()===4);
+-  check('print group four unique cards',await page.locator('[aria-labelledby="in-printables-title"] .in-print-card').count()===4);
++  check('print group five unique cards',await page.locator('[aria-labelledby="in-printables-title"] .in-print-card').count()===5);
+   check('old duplicate reading absent',await page.locator('main .in-reading').count()===0);
+-  for(const href of ['/keyboard-notes','/keyboard-notes/chart','/chords','/chords/finder','/scales','/scales#find-by-notes','/scales#follow-along','/tools#practice-timer','/keyboard-notes#note-trainer','/chord-progressions','/tools/blank-sheet-music','/keyboard-notes/labeled']) check(`task link ${href}`,await page.locator(`main a[href="${href}"]`).count()>=1,String(await page.locator(`main a[href="${href}"]`).count()));
++  for(const href of ['/keyboard-notes','/keyboard-notes/chart','/chords','/chords/finder','/scales','/scales#find-by-notes','/scales#follow-along','/tools#practice-timer','/keyboard-notes#note-trainer','/chord-progressions','/tools/blank-sheet-music','/keyboard-notes/labeled','/keyboard-notes/labeled#teaching-pack']) check(`task link ${href}`,await page.locator(`main a[href="${href}"]`).count()>=1,String(await page.locator(`main a[href="${href}"]`).count()));
+   check('no generic metronome card',await page.getByText('Metronome',{exact:true}).count()===0);
+   check('boundary copy exact',await page.getByText('This timer tracks elapsed practice time. It does not set tempo or listen to your piano.',{exact:true}).count()===1);
+   check('timer default 10:00',await page.getByRole('timer').textContent()==='10:00');
+diff --git a/scripts/check-songs-sheet-browser.mjs b/scripts/check-songs-sheet-browser.mjs
+index 0d248f3..32cb77b 100644
+--- a/scripts/check-songs-sheet-browser.mjs
++++ b/scripts/check-songs-sheet-browser.mjs
+@@ -7,14 +7,14 @@ const base = process.env.PIANO_BASE_URL || 'http://127.0.0.1:3112';
+ const out = process.env.PIANO_CHECK_OUT || 'checks/songs-sheet-v2';
+ const routes = ['/songs','/songs/easy','/sheet-music','/sheet-music/easy','/sheet-music/beginner','/sheet-music/hot-cross-buns','/sheet-music/twinkle-twinkle-little-star','/sheet-music/ode-to-joy'];
+ const expected = {
+-  '/songs': ['Piano Songs: Choose Your Next Piece','Piano Songs by Version and Playing Skills | PianoGrid'],
+-  '/songs/easy': ['Easy Piano Songs for Beginners','Easy Piano Songs: Compare Beginner Versions | PianoGrid'],
++  '/songs': ['Piano Songs: Choose Your Next Piece','Piano Songs: Choose a Version to Practice | PianoGrid'],
++  '/songs/easy': ['Easy Piano Songs for Beginners','Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid'],
+   '/sheet-music': ['Piano Sheet Music','Piano Sheet Music: Versions and Access | PianoGrid'],
+   '/sheet-music/easy': ['Easy Piano Sheet Music','Easy Piano Sheet Music: Check the Edition | PianoGrid'],
+   '/sheet-music/beginner': ['Beginner Piano Sheet Music','Beginner Piano Sheet Music: Clear Versions and Access | PianoGrid'],
+-  '/sheet-music/hot-cross-buns': ['Hot Cross Buns Piano Sheet Music','Hot Cross Buns Piano Sheet Music: Version & Access | PianoGrid'],
+-  '/sheet-music/twinkle-twinkle-little-star': ['Twinkle, Twinkle, Little Star Piano Sheet Music','Twinkle, Twinkle, Little Star Piano Sheet Music: Version & Access | PianoGrid'],
+-  '/sheet-music/ode-to-joy': ['Ode to Joy Piano Sheet Music','Ode to Joy Piano Sheet Music: Version & Access | PianoGrid'],
++  '/sheet-music/hot-cross-buns': ['Hot Cross Buns Piano Sheet Music','Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid'],
++  '/sheet-music/twinkle-twinkle-little-star': ['Twinkle, Twinkle, Little Star Piano Sheet Music','Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid'],
++  '/sheet-music/ode-to-joy': ['Ode to Joy Piano Sheet Music','Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid'],
+ };
+ const ids = ['arr-ext-0a05b7954f5256','arr-ext-c3a78b0c5cb213','arr-ext-a60b8d92c5a325'];
+ const results=[]; const errors=[];
+@@ -103,7 +103,7 @@ try{
+   await page.goto(`${base}/`);
+   check('homepage Sheet Music destination released',await page.getByRole('link',{name:/Sheet Music/}).count()>0);
+   check('desktop navigation has seven authorized sections',await page.locator('.site-nav-desktop .site-nav-parent-link').count()===7,String(await page.locator('.site-nav-desktop .site-nav-parent-link').count()));
+-  check('desktop navigation has thirty direct child links',await page.locator('.site-nav-desktop .site-nav-child-link').count()===30,String(await page.locator('.site-nav-desktop .site-nav-child-link').count()));
++  check('desktop navigation has thirty-one direct child links',await page.locator('.site-nav-desktop .site-nav-child-link').count()===31,String(await page.locator('.site-nav-desktop .site-nav-child-link').count()));
+   await page.goto(`${base}/chords`);
+   await page.waitForFunction(()=>!document.querySelector('.am-play-btn')?.disabled);
+   check('Chords inherited route keeps 25 prepared results',await page.locator('.ch-result').count()===25,String(await page.locator('.ch-result').count()));
+diff --git a/src/app/songs/easy/page.tsx b/src/app/songs/easy/page.tsx
+index 1965ae1..8c01272 100644
+--- a/src/app/songs/easy/page.tsx
++++ b/src/app/songs/easy/page.tsx
+@@ -4,4 +4,7 @@ import { getSongPage } from '@/lib/song-content';
+ 
+ const { metadata: meta } = getSongPage('/songs/easy');
+ export const metadata = editorialMetadata({ title: meta.title, description: meta.description, alternates: { canonical: meta.canonicalPath }, robots: { index: true, follow: true } });
+-export default EasySongsPage;
++export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
++  const search = await searchParams;
++  return <EasySongsPage search={search} />;
++}
+diff --git a/src/components/integration/pages.tsx b/src/components/integration/pages.tsx
+index 21f6876..0fcf79e 100644
+--- a/src/components/integration/pages.tsx
++++ b/src/components/integration/pages.tsx
+@@ -48,7 +48,7 @@ function ToolTaskCard({item,index}:{item:ToolDestination;index:number}){
+   return <a className="in-task-card in-tool-task-card" href={item.url}><span className="in-card-number">{String(index+1).padStart(2,'0')}</span><span><strong>{item.label}</strong><small>{item.description}</small></span><span>{cta} <span aria-hidden="true">鈫?/span></span></a>;
+ }
+ function ToolResourceCard({item}:{item:ToolResource}){
+-  return <article className="in-print-card"><div><span>Available now</span><h3>{item.label}</h3><p>{item.description}</p></div><div className="in-card-actions"><a href={item.url}>Open resource</a>{item.downloads.map(download=><a href={download.url} download key={download.url}>{download.label}</a>)}</div></article>;
++  return <article className="in-print-card"><div><span>Available now</span><h3>{item.label}</h3><p>{item.description}</p></div><div className="in-card-actions"><a href={item.url}>{item.label}</a>{item.downloads.map(download=><a href={download.url} download key={download.url}>{download.label}</a>)}</div></article>;
+ }
+ function HomeFooter(){
+   return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Piano Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top 鈫?/a></div></footer>;
+diff --git a/src/components/keyboard-notes/blank-experience.tsx b/src/components/keyboard-notes/blank-experience.tsx
+index e79a73e..b456296 100644
+--- a/src/components/keyboard-notes/blank-experience.tsx
++++ b/src/components/keyboard-notes/blank-experience.tsx
+@@ -7,5 +7,5 @@ type BlankPDF = { paper: string; pages: number; asset: string };
+ export function BlankExperience({ layouts, pdfs, answerURL }: { layouts: BlankLayout[]; pdfs: BlankPDF[]; answerURL: string }) {
+   const [layoutID, setLayoutID] = useState(layouts[0].id);
+   const layout = layouts.find(item => item.id === layoutID) ?? layouts[0];
+-  return <section className="am-tool kn-tool kn-blank" aria-label="Blank piano keyboard worksheet"><div className="kn-toolbar kn-screen"><label className="kn-field">Keyboard segment<select value={layoutID} onChange={event => setLayoutID(event.target.value)}>{layouts.map(item => <option value={item.id} key={item.id}>{item.keyCount} keys 路 {item.range}</option>)}</select></label><button type="button" className="am-button am-secondary" onClick={() => window.print()}>Print selected segment</button></div><div className="kn-result"><h2>{layout.keyCount}-key blank keyboard</h2><p>{layout.whiteKeys} white keys and {layout.blackKeys} black keys 路 {layout.range}</p></div><div className="kn-blank-preview"><img src={layout.asset} alt={`Unlabeled ${layout.keyCount}-key piano keyboard segment`}/></div><p>Reference diagram - not a full-size sticker template.</p><div className="kn-actions kn-screen">{pdfs.map(pdf => <a className="am-button am-tertiary" download href={pdf.asset} key={pdf.paper}>Download {pdf.paper} PDF</a>)}<a className="am-button am-tertiary" href={answerURL}>Check note names</a></div><p className="kn-print-footer">PianoGrid 路 pianogrid.com/keyboard-notes/blank 路 Write note names or mark a scale. Not life-size.</p></section>;
++  return <section className="am-tool kn-tool kn-blank" aria-label="Blank piano keyboard worksheet"><div className="kn-toolbar kn-screen"><label className="kn-field">Keyboard segment<select value={layoutID} onChange={event => setLayoutID(event.target.value)}>{layouts.map(item => <option value={item.id} key={item.id}>{item.keyCount} keys 路 {item.range}</option>)}</select></label><button type="button" className="am-button am-secondary" onClick={() => window.print()}>Print selected segment</button></div><div className="kn-result"><h2>{layout.keyCount}-key blank keyboard</h2><p>{layout.whiteKeys} white keys and {layout.blackKeys} black keys 路 {layout.range}</p></div><div className="kn-blank-preview"><img src={layout.asset} alt={`Unlabeled ${layout.keyCount}-key piano keyboard segment`}/></div><p>Reference diagram - not a full-size sticker template.</p><div className="kn-actions kn-screen">{pdfs.map(pdf => <a className="am-button am-tertiary" download href={pdf.asset} key={pdf.paper}>Download {pdf.paper} PDF</a>)}<a className="am-button am-tertiary" href={answerURL}>Check note names</a><a className="am-button am-tertiary" href="/keyboard-notes/labeled#teaching-pack">Get the reference and answers</a></div><p className="kn-print-footer">PianoGrid 路 pianogrid.com/keyboard-notes/blank 路 Write note names or mark a scale. Not life-size.</p></section>;
+ }
+diff --git a/src/components/keyboard-notes/keyboard-notes-workspace.tsx b/src/components/keyboard-notes/keyboard-notes-workspace.tsx
+index 82b92a8..245e6cf 100644
+--- a/src/components/keyboard-notes/keyboard-notes-workspace.tsx
++++ b/src/components/keyboard-notes/keyboard-notes-workspace.tsx
+@@ -229,7 +229,8 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
+       <h2>Use the pattern, then use the note name.</h2>
+       <div className="kn-v2-reference-grid">{blocks.slice(0, 3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</div>
+       {blocks.length > 3 && <details className="kn-v2-more-reference"><summary>More piano key reference</summary>{blocks.slice(3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</details>}
+-      {links.length > 0 && <nav className="kn-v2-related" aria-label="Related keyboard references">{links.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}</nav>}
++      {links.length > 0 && <nav className="kn-v2-related" aria-label="Related keyboard references">{links.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}<a href="/keyboard-notes/labeled#teaching-pack">Print a note-name practice pack</a></nav>}
++      {links.length === 0 && <nav className="kn-v2-related" aria-label="Related keyboard references"><a href="/keyboard-notes/labeled#teaching-pack">Print a note-name practice pack</a></nav>}
+     </div>
+   </section>;
+ }
+diff --git a/src/components/keyboard-notes/labeled-experience.tsx b/src/components/keyboard-notes/labeled-experience.tsx
+index 9b6a4d7..8a2c1bf 100644
+--- a/src/components/keyboard-notes/labeled-experience.tsx
++++ b/src/components/keyboard-notes/labeled-experience.tsx
+@@ -10,6 +10,7 @@ import { KeyboardDiagram } from './keyboard-diagram';
+ import { ShareControl } from './share-control';
+ import { LayoutChoice } from './tool-controls';
+ import { LabeledFullReferenceCollapsible } from './labeled-full-reference-collapsible';
++import { TeachingPackExperience } from './teaching-pack';
+ 
+ export type LabeledSourceRef = { id: string; title: string; publisher: string; url: string };
+ 
+@@ -142,7 +143,11 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
+           </section>
+         ))}
+       </LabeledFullReferenceCollapsible>
++    </section>
++
++    <TeachingPackExperience layout={layout} />
+ 
++    <section className="kn-screen kn-labeled-followup" aria-label="Labeled keyboard guide">
+       <section className="kn-labeled-guide" aria-labelledby="kn-label-guide-title">
+         <h2 id="kn-label-guide-title">How to label your keyboard</h2>
+         <ol>
+@@ -151,7 +156,7 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
+           <li>Add octave numbers when needed</li>
+         </ol>
+         <nav className="kn-actions" aria-label="Related keyboard tools">
+-          <a href="/keyboard-notes" className="am-button am-tertiary">Find a specific note 鈫?/a>
++          <a href="/keyboard-notes" className="am-button am-tertiary">Find or hear a piano note 鈫?/a>
+           <a href="/keyboard-notes/chart" className="am-button am-tertiary">Match keys to staff 鈫?/a>
+           <a href={practiceEntryHref()} className="am-button am-tertiary">Practice notes 鈫?/a>
+         </nav>
+diff --git a/src/components/keyboard-notes/pages.tsx b/src/components/keyboard-notes/pages.tsx
+index 99b8de3..4cfea88 100644
+--- a/src/components/keyboard-notes/pages.tsx
++++ b/src/components/keyboard-notes/pages.tsx
+@@ -1,6 +1,7 @@
+ import type {ReactNode} from 'react';
+ import type {KeyboardPageModel} from '@/lib/keyboard-types';
+ import {getKeyboardPage,getLayouts,getChartData,getFrequencyData,getBlankData,getLabeledSources} from '@/lib/keyboard-content';
++import {getLeadCopy} from '@/lib/b07-content';
+ import {SiteHeader,SiteFooter} from '../chords/site-chrome';
+ import {PageBreadcrumb} from '@/components/ui/breadcrumb';
+ import {LookupExperience} from './lookup-experience';
+@@ -11,7 +12,7 @@ import {BlankExperience} from './blank-experience';
+ import '@/app/chords/a-minor/a-minor.css';
+ import './keyboard-notes.css';
+ import './keyboard-notes-v2.css';
+-function KeyboardPage({model,children}:{model:KeyboardPageModel;children:ReactNode}){const detail=model.url!=='/keyboard-notes',crumb:Record<string,string>={'/keyboard-notes/labeled':'Labeled keys','/keyboard-notes/chart':'Notes chart','/keyboard-notes/frequencies':'Frequencies','/keyboard-notes/blank':'Blank keyboard'};return <div className="am-page kn-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Keyboard Notes"/><main id="main" className="pr-container" tabIndex={-1}><header className="am-page-heading kn-screen"><PageBreadcrumb items={detail?[{label:'Keyboard Notes',href:'/keyboard-notes'},{label:crumb[model.url]??model.title}]:[{label:'Keyboard Notes'}]}/><h1>{model.title}</h1><p className="am-direct-answer kn-default-description">{model.description}</p><p className="am-direct-answer kn-v2-description">Find a note, hear it, then try finding it on your own.</p></header>{children}<div className="am-reading kn-screen">{model.blocks.map(b=><section className="am-content-section" id={`kn-${model.provenance.template_id}-${b.id}`} data-block-id={b.id} key={b.id}><h2>{b.heading}</h2><div className="am-content-body"><p>{b.body}</p></div></section>)}{model.links.length>0&&<nav className="kn-actions" aria-label="Related keyboard references">{model.links.map(l=><a key={l.url} className="am-button am-tertiary" href={l.url}>{l.label}</a>)}</nav>}</div></main><SiteFooter url={model.url}/></div>;}
++function KeyboardPage({model,children}:{model:KeyboardPageModel;children:ReactNode}){const detail=model.url!=='/keyboard-notes',crumb:Record<string,string>={'/keyboard-notes/labeled':'Labeled keys','/keyboard-notes/chart':'Notes chart','/keyboard-notes/frequencies':'Frequencies','/keyboard-notes/blank':'Blank keyboard'};const lead=getLeadCopy(model.url, model.description);return <div className="am-page kn-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Keyboard Notes"/><main id="main" className="pr-container" tabIndex={-1}><header className="am-page-heading kn-screen"><PageBreadcrumb items={detail?[{label:'Keyboard Notes',href:'/keyboard-notes'},{label:crumb[model.url]??model.title}]:[{label:'Keyboard Notes'}]}/><h1>{model.title}</h1><p className="am-direct-answer kn-default-description">{model.url==='/keyboard-notes/labeled'?lead:model.description}</p><p className="am-direct-answer kn-v2-description">Find a note, hear it, then try finding it on your own.</p></header>{children}<div className="am-reading kn-screen">{model.blocks.map(b=><section className="am-content-section" id={`kn-${model.provenance.template_id}-${b.id}`} data-block-id={b.id} key={b.id}><h2>{b.heading}</h2><div className="am-content-body"><p>{b.body}</p></div></section>)}{model.links.length>0&&<nav className="kn-actions" aria-label="Related keyboard references">{model.links.map(l=><a key={l.url} className="am-button am-tertiary" href={l.url}>{l.label}</a>)}</nav>}</div></main><SiteFooter url={model.url}/></div>;}
+ export function KeyboardLookupPage(){const {model}=getKeyboardPage('/keyboard-notes');return <KeyboardPage model={model}><LookupExperience layouts={getLayouts('/keyboard-notes')} blocks={model.blocks} links={model.links}/></KeyboardPage>;}
+ export function LabeledKeyboardPage(){const {model,data}=getKeyboardPage('/keyboard-notes/labeled');return <KeyboardPage model={model}><LabeledExperience layouts={getLayouts('/keyboard-notes/labeled')} sources={getLabeledSources()}/><ol className="kn-label-steps kn-screen">{data.how_to_label_steps.map((s:{step:number;action:string})=><li key={s.step}>{s.action}</li>)}</ol></KeyboardPage>;}
+ export function KeyboardChartPage(){const {model}=getKeyboardPage('/keyboard-notes/chart');return <KeyboardPage model={model}><ChartExperience {...getChartData()}/></KeyboardPage>;}
+diff --git a/src/components/keyboard-notes/share-dialog.css b/src/components/keyboard-notes/share-dialog.css
+index 5ba3f26..20fb551 100644
+--- a/src/components/keyboard-notes/share-dialog.css
++++ b/src/components/keyboard-notes/share-dialog.css
+@@ -40,3 +40,6 @@
+     padding:1.25rem 1rem calc(1.25rem + env(safe-area-inset-bottom));
+   }
+ }
++@media print{
++  .kn-share-dialog,.kn-share-dialog::backdrop{display:none!important}
++}
+diff --git a/src/components/sheet-music/pages.tsx b/src/components/sheet-music/pages.tsx
+index 6c75f1f..fc86229 100644
+--- a/src/components/sheet-music/pages.tsx
++++ b/src/components/sheet-music/pages.tsx
+@@ -4,9 +4,12 @@ import { PageBreadcrumb } from '@/components/ui/breadcrumb';
+ import { ArrangementFocus } from '@/components/songs-sheet/arrangement-focus';
+ import { ExternalArrangementCard } from '@/components/songs-sheet/external-arrangement-card';
+ import { OriginalExercisePlayer } from '@/components/songs-sheet/original-exercise-player';
++import { SheetEditionAccess } from './edition-access';
+ import { SongResourceCard } from '@/components/songs/resource-card';
+ import { canPublishAsset, capabilities, practiceUrl, publicDeploymentContext } from '@/lib/songs-sheet-contracts';
+ import { getLaunchExternalViews, getLegacySheetContent, getLockedOriginalViews, getPagePatch, getSongsSheetCatalog } from '@/lib/songs-sheet-content';
++import { editorialHeading } from '@/lib/seo-editorial';
++import { getLeadCopy, getPageSeo } from '@/lib/b07-content';
+ import type { ArrangementView, SheetMusicURL, SheetSection } from '@/lib/songs-sheet-types';
+ import '@/app/chords/a-minor/a-minor.css';
+ import '@/components/songs/songs.css';
+@@ -25,14 +28,53 @@ function JsonLd({ value }: { value: Record<string, unknown> }) {
+ 
+ function SheetShell({ url, children }: { url: SheetMusicURL; children: ReactNode }) {
+   const page = getPagePatch(url);
+-  const crumbs = url === '/sheet-music' ? [{ label: 'Sheet Music' }] : [{ label: 'Sheet Music', href: '/sheet-music' }, { label: page.h1.replace('Piano Sheet Music', '').trim() || page.h1 }];
++  const heading = editorialHeading(url, page.h1);
++  const intro = getLeadCopy(url, page.intro);
++  const crumbs = url === '/sheet-music' ? [{ label: 'Sheet Music' }] : [{ label: 'Sheet Music', href: '/sheet-music' }, { label: heading.replace(' Piano Sheet Music', '') || heading }];
+   return <div className="am-page sg-page ss-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Sheet Music"/><main id="main" className="pr-container" tabIndex={-1}>
+-    <header className="am-page-heading"><PageBreadcrumb items={crumbs}/><h1>{page.h1}</h1><p className="am-direct-answer">{page.intro}</p></header>
++    <header className="am-page-heading"><PageBreadcrumb items={crumbs}/><h1>{heading}</h1><p className="am-direct-answer">{intro}</p></header>
+     {children}
+     <JsonLd value={page.schema}/>
+   </main><SiteFooter url={url}/></div>;
+ }
+ 
++function SheetHubIntent({ url }: { url: SheetMusicURL }) {
++  const seo = getPageSeo(url);
++  if (!seo?.sections?.length) return null;
++  const preserved = new Set((seo.sections ?? []).filter((section) => section.preserveSlot).map((section) => section.h2));
++  const editorial = seo.sections.filter((section) => section.body || (section.h3 && section.h3.length));
++  if (!editorial.length) return null;
++  const practiceLink =
++    url === '/sheet-music'
++      ? { href: '/songs/easy', label: 'Choose a beginner practice goal', onH2: 'Beginner starting points' }
++      : url === '/sheet-music/easy'
++        ? { href: '/songs/easy', label: 'Choose what to practice first', onH2: 'Choose an easy edition' }
++        : url === '/sheet-music/beginner'
++          ? { href: '/songs/easy#first-10-minutes', label: 'Use a short practice plan', onH2: 'What to check before starting' }
++          : null;
++  return (
++    <div className="am-reading ss-reading ss-b07-intent">
++      {editorial.map((section) => (
++        <section className="am-content-section ss-section" id={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} key={section.h2} aria-labelledby={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-h`}>
++          <h2 id={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-h`}>{section.h2}</h2>
++          <div className="am-content-body">
++            {section.body ? <p>{section.body}</p> : null}
++            {preserved.has(section.h2) ? <p className="ss-preserve-note">The existing collection, filters and edition cards for this page remain below.</p> : null}
++            {section.h3?.length ? (
++              <ul className="ss-intent-points">
++                {section.h3.map((item) => <li key={item}><strong>{item}</strong></li>)}
++              </ul>
++            ) : null}
++            {practiceLink && practiceLink.onH2 === section.h2 ? (
++              <p><a className="am-button am-tertiary" href={practiceLink.href}>{practiceLink.label}</a></p>
++            ) : null}
++          </div>
++        </section>
++      ))}
++    </div>
++  );
++}
++
+ function Directory() {
+   return <nav className="ss-directory" aria-label="Sheet music collections"><a href="/sheet-music/easy"><span>By level</span><strong>Easy piano sheet music</strong><p>Compare publisher labels and known playing demands.</p></a><a href="/sheet-music/beginner"><span>Starting point</span><strong>Beginner sheet music</strong><p>Find identified first-lesson and early-elementary versions.</p></a><a href="/sheet-music/hot-cross-buns"><span>Exact edition</span><strong>Hot Cross Buns</strong><p>Hoffman Academy Lesson 1 materials.</p></a><a href="/sheet-music/twinkle-twinkle-little-star"><span>Exact edition</span><strong>Twinkle, Twinkle, Little Star</strong><p>Aron Bernstein Early Elementary edition.</p></a><a href="/sheet-music/ode-to-joy"><span>Exact edition</span><strong>Ode to Joy</strong><p>Joseph Hoffman D-major edition.</p></a></nav>;
+ }
+@@ -100,10 +142,15 @@ export function SheetMusicPage({ url }: { url: SheetMusicURL }) {
+   const page = getPagePatch(url);
+   const isRoot = url === '/sheet-music';
+   const isCollection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
++  const isHub = isRoot || isCollection;
+   const sections = page.sections.filter((section) => !section.arrangement_ids?.some((id) => id.startsWith('arr-ext-')));
+   return <SheetShell url={url}>
+     {isRoot && <Directory/>}
+-    {!isRoot && <section className="ss-primary" aria-labelledby="ss-primary-heading"><div className="sg-discovery-head"><div><p className="sg-overline">{isCollection ? 'Verified version comparison' : 'One exact external edition'}</p><h2 id="ss-primary-heading">{isCollection ? 'Compare identified editions' : 'Edition, access and learning path'}</h2></div><p>No third-party score or recording is hosted here. Musical details are shown only when supported for this exact edition.</p></div><LaunchCards url={url}/></section>}
++    {url === '/sheet-music/twinkle-twinkle-little-star' && <SheetEditionAccess editionKey="twinkle" />}
++    {url === '/sheet-music/hot-cross-buns' && <SheetEditionAccess editionKey="hot-cross-buns" />}
++    {url === '/sheet-music/ode-to-joy' && <SheetEditionAccess editionKey="ode-to-joy" />}
++    {isHub && <SheetHubIntent url={url}/>}
++    {!isRoot && isCollection && <section className="ss-primary" aria-labelledby="ss-primary-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Verified version comparison</p><h2 id="ss-primary-heading">Compare identified editions</h2></div><p>No third-party score or recording is hosted here. Musical details are shown only when supported for this exact edition.</p></div><LaunchCards url={url}/></section>}
+     <PreservedSheetContent url={url}/>
+     <div className="am-reading ss-reading">{sections.map((section) => <SectionBody section={section} url={url} key={section.id}/>)}</div>
+   </SheetShell>;
+diff --git a/src/components/sheet-music/sheet-music.css b/src/components/sheet-music/sheet-music.css
+index fa02bfa..1b983fd 100644
+--- a/src/components/sheet-music/sheet-music.css
++++ b/src/components/sheet-music/sheet-music.css
+@@ -1,4 +1,4 @@
+-.ss-page main{padding-bottom:3.5rem}.ss-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;padding:1.25rem 0 3rem;border-top:2px solid var(--foreground)}.ss-directory a{display:block;padding:1.2rem;border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--surface);color:var(--foreground);text-decoration:none}.ss-directory a:hover{border-color:var(--primary);background:var(--selected-hover)}.ss-directory a:focus-visible{outline:2px solid var(--primary);outline-offset:3px}.ss-directory span{display:block;color:var(--primary);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.ss-directory strong{display:block;margin-top:.3rem;font-size:1.1rem}.ss-directory p{margin-top:.35rem;color:var(--muted-foreground);font-size:.875rem;line-height:1.5}.ss-primary,.ss-launch{border-top:2px solid var(--foreground);padding:1.25rem 0 3rem}.ss-launch{margin-bottom:2rem}.ss-version-grid{display:grid;gap:1rem;margin-top:1.5rem}.ss-version-card{scroll-margin:5rem;padding:1.35rem;border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--background)}.ss-version-card:focus{outline:2px solid var(--primary);outline-offset:3px}.ss-version-title h3{font-size:1.35rem;line-height:1.2;letter-spacing:-.02em;margin-top:.25rem}.ss-version-title>p:last-child{color:var(--muted-foreground);margin-top:.3rem}.ss-version-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.9rem 1.25rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border)}.ss-version-facts dt{font-size:.75rem;color:var(--muted-foreground)}.ss-version-facts dd{font-size:.875rem;line-height:1.45;margin-top:.2rem}.ss-learning{margin-top:1.25rem;padding:1rem;border-radius:var(--pr-radius-control);background:var(--surface)}.ss-learning h4{font-size:1rem}.ss-learning p,.ss-learning li{font-size:.875rem;line-height:1.55}.ss-learning p{margin-top:.55rem}.ss-learning ol{margin:.65rem 0 0 1.25rem}.ss-version-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}.ss-rights{margin-top:.7rem;color:var(--muted-foreground);font-size:.78rem;line-height:1.5}.ss-share{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}.ss-share span,.ss-restore-status{font-size:.78rem;color:var(--muted-foreground)}.ss-version-card-compact{margin-top:1rem}.ss-version-card-compact .ss-learning{display:none}.ss-gate-note{margin-top:1.25rem;padding:1rem;border:1px solid var(--border);border-left:3px solid var(--primary);border-radius:var(--pr-radius-control);background:var(--surface)}.ss-gate-note p{margin-top:.35rem;color:var(--muted-foreground);font-size:.875rem;line-height:1.5}.ss-reading{container-type:inline-size}.ss-section .am-content-body>.am-button{margin-top:1rem}.ss-preserve-note{margin-top:1rem;padding-left:.85rem;border-left:2px solid var(--input);color:var(--muted-foreground);font-size:.875rem}.ss-faq{margin-top:1rem;border-top:1px solid var(--border);padding-top:.8rem}.ss-faq summary{font-weight:650;cursor:pointer}.ss-faq p{margin-top:.5rem}.ss-section-cards{grid-column:1/-1}
++.ss-page main{padding-bottom:3.5rem}.ss-page .am-page-heading{padding-block:1.25rem .75rem}.ss-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;padding:1.25rem 0 3rem;border-top:2px solid var(--foreground)}.ss-directory a{display:block;padding:1.2rem;border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--surface);color:var(--foreground);text-decoration:none}.ss-directory a:hover{border-color:var(--primary);background:var(--selected-hover)}.ss-directory a:focus-visible{outline:2px solid var(--primary);outline-offset:3px}.ss-directory span{display:block;color:var(--primary);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.ss-directory strong{display:block;margin-top:.3rem;font-size:1.1rem}.ss-directory p{margin-top:.35rem;color:var(--muted-foreground);font-size:.875rem;line-height:1.5}.ss-primary,.ss-launch{border-top:2px solid var(--foreground);padding:1rem 0 2rem}.ss-primary.pg-sheet-block{border-top-width:1px}.ss-launch{margin-bottom:2rem}.ss-version-grid{display:grid;gap:1rem;margin-top:1.5rem}.ss-version-card{scroll-margin:5rem;padding:1.35rem;border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--background)}.ss-version-card:focus{outline:2px solid var(--primary);outline-offset:3px}.ss-version-title h3{font-size:1.35rem;line-height:1.2;letter-spacing:-.02em;margin-top:.25rem}.ss-version-title>p:last-child{color:var(--muted-foreground);margin-top:.3rem}.ss-version-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.9rem 1.25rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border)}.ss-version-facts dt{font-size:.75rem;color:var(--muted-foreground)}.ss-version-facts dd{font-size:.875rem;line-height:1.45;margin-top:.2rem}.ss-learning{margin-top:1.25rem;padding:1rem;border-radius:var(--pr-radius-control);background:var(--surface)}.ss-learning h4{font-size:1rem}.ss-learning p,.ss-learning li{font-size:.875rem;line-height:1.55}.ss-learning p{margin-top:.55rem}.ss-learning ol{margin:.65rem 0 0 1.25rem}.ss-version-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}.ss-rights{margin-top:.7rem;color:var(--muted-foreground);font-size:.78rem;line-height:1.5}.ss-share{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}.ss-share span,.ss-restore-status{font-size:.78rem;color:var(--muted-foreground)}.ss-version-card-compact{margin-top:1rem}.ss-version-card-compact .ss-learning{display:none}.ss-gate-note{margin-top:1.25rem;padding:1rem;border:1px solid var(--border);border-left:3px solid var(--primary);border-radius:var(--pr-radius-control);background:var(--surface)}.ss-gate-note p{margin-top:.35rem;color:var(--muted-foreground);font-size:.875rem;line-height:1.5}.ss-reading{container-type:inline-size}.ss-section .am-content-body>.am-button{margin-top:1rem}.ss-preserve-note{margin-top:1rem;padding-left:.85rem;border-left:2px solid var(--input);color:var(--muted-foreground);font-size:.875rem}.ss-intent-points{margin:1rem 0 0 1.15rem;display:grid;gap:.35rem;color:var(--foreground);font-size:.9rem;line-height:1.45}.ss-b07-intent{padding-top:.5rem}.ss-faq{margin-top:1rem;border-top:1px solid var(--border);padding-top:.8rem}.ss-faq summary{font-weight:650;cursor:pointer}.ss-faq p{margin-top:.5rem}.ss-section-cards{grid-column:1/-1}
+ @media(max-width:67rem){.ss-version-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:47.999rem){.ss-directory{grid-template-columns:1fr}.ss-version-facts{grid-template-columns:1fr 1fr}.ss-version-actions .am-button{width:100%;text-align:center}.ss-section{display:block}.ss-section h2{margin-bottom:1rem}}
+ @media(max-width:22rem){.ss-version-facts{grid-template-columns:1fr}}
+diff --git a/src/components/songs/pages.tsx b/src/components/songs/pages.tsx
+index f4ec30c..fc22951 100644
+--- a/src/components/songs/pages.tsx
++++ b/src/components/songs/pages.tsx
+@@ -8,15 +8,20 @@ import { PageBreadcrumb } from '@/components/ui/breadcrumb';
+ import { getLaunchExternalViews, getPagePatch } from '@/lib/songs-sheet-content';
+ import { ArrangementFocus } from '@/components/songs-sheet/arrangement-focus';
+ import { ExternalArrangementCard } from '@/components/songs-sheet/external-arrangement-card';
++import { BeginnerEditionCards, SongsBeginnerTeaser } from './edition-cards';
++import { TwinklePracticePlan } from './practice-plan';
++import { getB05Copy } from '@/lib/b05-content';
++import { allowedProviderUrl, getBeginnerEditionView } from '@/lib/b05-editions';
+ import '@/app/chords/a-minor/a-minor.css';
+ import '@/components/sheet-music/sheet-music.css';
+ import './songs.css';
++import './song-plan.css';
+ 
+-function SongShell({ model, children }: { model: SongPageModel; children: ReactNode }) {
++function SongShell({ model, heading, intro, children }: { model: SongPageModel; heading: string; intro: string; children: ReactNode }) {
+   const detail = model.url === '/songs/easy';
+   const schema = getPagePatch(model.url).schema;
+   return <div className="am-page sg-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Songs"/><main id="main" className="pr-container" tabIndex={-1}>
+-    <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Songs', href: '/songs' }, { label: 'Easy' }] : [{ label: 'Songs' }]}/><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
++    <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Songs', href: '/songs' }, { label: 'Easy Piano Songs' }] : [{ label: 'Songs' }]}/><h1>{heading}</h1><p className="am-direct-answer">{intro}</p></header>
+     {children}
+     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }}/>
+   </main><SiteFooter url={model.url}/></div>;
+@@ -32,15 +37,35 @@ function CatalogTable({ resources }: { resources: SongResource[] }) {
+ 
+ function LaunchVersions({ detail = false }: { detail?: boolean }) {
+   const views = getLaunchExternalViews();
+-  return <section className="ss-launch" aria-labelledby="ss-launch-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Exact external editions</p><h2 id="ss-launch-heading">Three identified starting versions</h2></div><p>These are provider editions, not PianoGrid score or audio downloads. Unknown musical fields stay unknown.</p></div><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning={detail} key={view.arrangement.arrangement_id}/>)}</div></section>;
++  return <section className="ss-launch" aria-labelledby="ss-launch-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Exact external editions</p><h2 id="ss-launch-heading">Three identified starting versions</h2></div><p>These are provider editions, not PianoGrid score or audio downloads. Unknown musical fields stay unknown. Share links restore this exact version; they do not include personal practice check-ins.</p></div><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning={detail} key={view.arrangement.arrangement_id}/>)}</div></section>;
+ }
+ 
+ export function SongsCenterPage() {
+   const data = getSongCenter();
+-  return <SongShell model={data.model}><LaunchVersions/><SongCenterExperience resources={data.resources} goals={data.goals}/><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}>{block.id === 'start' && data.easyURLAvailable && <a className="am-button am-tertiary sg-inline-link" href="/songs/easy">Browse easy piano versions</a>}</ReadingSection>)}</div></SongShell>;
++  const copy = getB05Copy();
++  return <SongShell model={data.model} heading={copy.songs.h1} intro={copy.songs.intro}><SongsBeginnerTeaser/><LaunchVersions/><SongCenterExperience resources={data.resources} goals={data.goals}/><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}>{block.id === 'start' && data.easyURLAvailable && <a className="am-button am-tertiary sg-inline-link" href="/songs/easy">Browse easy piano versions</a>}</ReadingSection>)}</div></SongShell>;
+ }
+ 
+-export function EasySongsPage() {
++export function EasySongsPage({ search = {} }: { search?: Record<string, string | string[] | undefined> }) {
+   const data = getEasySongs();
+-  return <SongShell model={data.model}><LaunchVersions detail/><EasySongChooser resources={data.featuredResources} sections={data.sections}/><CatalogTable resources={data.catalogResources}/><p className="sg-catalog-policy">{data.numberQueryPolicy}</p><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}/>)}</div></SongShell>;
++  const copy = getB05Copy();
++  const twinkle = getBeginnerEditionView('twinkle');
++  const providerUrl = allowedProviderUrl(twinkle.resource.provider_url);
++  return <SongShell model={data.model} heading={copy.easy.h1} intro={copy.easy.intro}>
++    <BeginnerEditionCards withPlanAnchor />
++    <TwinklePracticePlan copy={copy.easy.plan} providerUrl={providerUrl} sheetHref="/sheet-music/twinkle-twinkle-little-star" search={search} />
++    <section className="pg-song-plan" aria-labelledby="pg-more-easy-heading">
++      <h2 id="pg-more-easy-heading">Browse more easy editions</h2>
++      <p className="pg-muted">Compare more versions using the existing catalogue. Check the stated level and materials for each one.</p>
++    </section>
++    <LaunchVersions detail />
++    <EasySongChooser resources={data.featuredResources} sections={data.sections}/>
++    <CatalogTable resources={data.catalogResources}/>
++    <p className="sg-catalog-policy">{data.numberQueryPolicy}</p>
++    <section className="pg-song-plan" aria-labelledby="pg-understand-heading">
++      <h2 id="pg-understand-heading">Understand your starting point</h2>
++      <div className="pg-learn-grid">{copy.easy.learnSections.map((item) => <article key={item.h2}><h3>{item.h2}</h3><p>{item.body}</p></article>)}</div>
++    </section>
++    <div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}/>)}</div>
++  </SongShell>;
+ }
+diff --git a/src/components/songs/songs.css b/src/components/songs/songs.css
+index f32bd9a..ed3203d 100644
+--- a/src/components/songs/songs.css
++++ b/src/components/songs/songs.css
+@@ -1,4 +1,4 @@
+-.sg-page{overflow-wrap:anywhere}.sg-page main{padding-bottom:3.5rem}.sg-page .am-page-heading{padding-bottom:2rem}.sg-overline{font-size:.75rem;line-height:1.4;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary)}
++.sg-page{overflow-wrap:anywhere}.sg-page main{padding-bottom:3.5rem}.sg-page .am-page-heading{padding-block:1.25rem .75rem}.sg-overline{font-size:.75rem;line-height:1.4;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary)}
+ .sg-discovery,.sg-easy-chooser{border-top:2px solid var(--foreground);padding-top:1.25rem}.sg-discovery-head,.sg-catalog-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(18rem,34rem);gap:3rem;align-items:end}.sg-discovery-head h2,.sg-catalog-head h2{font-size:clamp(1.6rem,2.4vw,2.1rem);line-height:1.15;letter-spacing:-.035em;margin-top:.25rem}.sg-discovery-head>p,.sg-catalog-head>p{color:var(--muted-foreground);font-size:.9375rem;line-height:1.55}
+ .sg-filters{display:grid;grid-template-columns:minmax(14rem,1.5fr) minmax(11rem,1fr) minmax(11rem,1fr) auto;gap:.75rem;align-items:end;margin-top:1.5rem;padding:1rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--pr-radius-panel)}.sg-filters label{display:flex;flex-direction:column;gap:.45rem;min-width:0}.sg-filters label>span,.sg-topic-choices legend{font-size:.8125rem;line-height:1.4;font-weight:600;color:var(--muted-foreground)}.sg-filters input,.sg-filters select{width:100%;min-height:var(--pr-control-min-size);padding:.6rem .75rem;border:1px solid var(--input);border-radius:var(--pr-radius-control);background:var(--background);color:var(--foreground);font:inherit}.sg-filters input:disabled,.sg-filters select:disabled{background:var(--disabled);color:var(--disabled-foreground)}
+ .sg-results-heading{display:flex;align-items:baseline;justify-content:space-between;gap:2rem;padding:1.25rem 0 .65rem;border-bottom:1px solid var(--input)}.sg-results-heading p{font-size:.875rem;color:var(--muted-foreground)}.sg-results-heading p:first-child{white-space:nowrap;flex-shrink:0}.sg-results-heading strong{font-size:1.125rem;color:var(--foreground);font-variant-numeric:tabular-nums}
+diff --git a/src/lib/integration-content.ts b/src/lib/integration-content.ts
+index 0a08f6c..9398d35 100644
+--- a/src/lib/integration-content.ts
++++ b/src/lib/integration-content.ts
+@@ -54,6 +54,7 @@ export function getToolsModel():ToolsModel{
+     'labeled-keyboard':'Open printable 88-key and 61-key labeled layouts.',
+     'notes-chart':'Print a staff-note and keyboard reference.',
+     'scale-print':'Open scale references and ready-made PDF downloads.',
++    'key-name-pack':'Download a C4鈥揅5 reference, worksheet and answer pack.',
+   };
+   const targetOverrides:Record<string,string>={
+     'scale-finder':'/scales#find-by-notes',
+@@ -82,6 +83,10 @@ export function getToolsModel():ToolsModel{
+       {label:'Download major and minor atlas',url:'/downloads/scales/pianogrid-major-minor-note-atlas.pdf'},
+       {label:'Download C major two-hand starter',url:'/downloads/scales/pianogrid-c-major-two-hand-starter.pdf'},
+     ],
++    'key-name-pack':[
++      {label:'Download US Letter 3-page PDF',url:'/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf'},
++      {label:'Download A4 3-page PDF',url:'/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf'},
++    ],
+   };
+   const printResources:ToolResource[]=printGroup.items.map(makeTask).filter(item=>item.available).map(item=>{
+     const downloads=(printByID[item.id]??[]).map(download=>{
+@@ -91,6 +96,6 @@ export function getToolsModel():ToolsModel{
+     });
+     return{...item,downloads};
+   });
+-  if(findLinks.length!==6||practiceLinks.length!==5||printResources.length!==4)throw new Error('Practical Tools release map is incomplete');
++  if(findLinks.length!==6||practiceLinks.length!==5||printResources.length!==5)throw new Error('Practical Tools release map is incomplete');
+   return {model:{...model,title:pack.page.h1,description:pack.page.intro,metadata:{...model.metadata,title:pack.page.title,description:pack.page.description}},findLinks,practiceLinks,printResources};
+ }
+diff --git a/src/lib/seo-editorial.ts b/src/lib/seo-editorial.ts
+index 5dcd459..bbb6a01 100644
+--- a/src/lib/seo-editorial.ts
++++ b/src/lib/seo-editorial.ts
+@@ -1,26 +1,27 @@
+ import type { Metadata } from 'next';
++import { SITE_ORIGIN } from '@/lib/site-config';
+ 
+ // Published-page editorial overrides. Original keyword/content sources stay intact.
+-// Future Sheet Music copy lives in the plan until its destination is available.
++// B05鈥揃07 TDH candidates live in docs/product-upgrade/b05-b07-v2/data/page-seo.json.
+ type Copy = { title: string; description: string; h1?: string };
+ export const SEO_COPY: Record<string, Copy> = {
+   '/': { title: 'Learn Piano: Chords, Scales & Practice Tools | PianoGrid', description: 'Explore piano notes, chords, scales, songs, and sheet music. Start playing with beginner guides, blank staff paper, and practical tools on PianoGrid.' },
+-  '/keyboard-notes': { title: 'Piano Keys and Notes: Names & Keyboard Layout', h1: 'Piano Keys and Notes', description: 'Find piano key names, locate notes by octave, and explore 88-key and 61-key layouts. Start with middle C, then check the black and white keys.' },
+-  '/keyboard-notes/labeled': { title: 'Labeled Piano Keys: 88-Key & 61-Key Layouts', h1: 'Labeled Piano Keys', description: 'See letter names and octave labels on 88-key and 61-key piano layouts, then use the guide to label the keys on your own keyboard.' },
++  '/keyboard-notes': { title: 'Piano Keys and Notes: Find, Hear & Practice | PianoGrid', h1: 'Piano Keys and Notes', description: 'Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.' },
++  '/keyboard-notes/labeled': { title: 'Labeled Piano Keys & Printable Practice Pack | PianoGrid', h1: 'Labeled Piano Keys', description: 'Explore labeled 88-key and 61-key piano layouts. Print a C4鈥揅5 reference, white-key worksheet and answer page, then try the matching online practice.' },
+   '/keyboard-notes/chart': { title: 'Piano Notes Chart: Staff Notes to Keyboard', h1: 'Piano Notes Chart', description: 'Match treble and bass clef notes to piano keys. Locate middle C and compare note names and octaves across the supported keyboard ranges.' },
+   '/keyboard-notes/finger-numbers': { title: 'Piano Finger Numbers: Left & Right Hand Chart', h1: 'Piano Finger Numbers', description: 'Learn finger numbers 1鈥? for both hands. Use the hand chart and examples to distinguish fingering from note names, octaves and scale degrees.' },
+   '/keyboard-notes/frequencies': { title: 'Piano Note Frequency Chart: A0鈥揅8', description: 'Look up all 88 piano keys by note, MIDI number and calculated frequency in hertz, using A4 = 440 Hz.' },
+   '/keyboard-notes/blank': { title: 'Blank Piano Keyboard Worksheet', description: 'Print an unlabeled 13-key or 25-key keyboard segment to write note names, mark a scale or make your own exercise.' },
+   '/chords': { title: 'Piano Chord Chart: Notes, Diagrams & Sound', description: 'Find piano chords by name, root or type. See their notes and keyboard positions, hear examples, and open detailed chord and inversion guides.' },
+   '/scales': { title: 'Piano Scales: Notes, Patterns & Fingering', description: 'Explore major, minor and other piano scales. See their notes and patterns, hear examples, and check available fingering before you practice.' },
+-  '/songs': { title: 'Piano Songs by Version and Playing Skills | PianoGrid', h1: 'Piano Songs: Choose Your Next Piece', description: 'Choose a piano piece by its specific arrangement, playing demands and resource access. Compare beginner options and see where to get each version.' },
+-  '/songs/easy': { title: 'Easy Piano Songs: Compare Beginner Versions | PianoGrid', h1: 'Easy Piano Songs for Beginners', description: 'Compare specific beginner piano arrangements by the skills, guidance and access they offer. Find the matching sheet-music resource without mixing editions.' },
+-  '/sheet-music': { title: 'Piano Sheet Music: Versions and Access | PianoGrid', description: 'Identify a specific piano edition, review its format and access conditions, and find its preview or provider. Local and external resources are clearly separated.' },
+-  '/sheet-music/easy': { title: 'Easy Piano Sheet Music: Check the Edition | PianoGrid', description: 'Compare easy piano editions without treating every easy label as the same level. Check the notation, preview and provider鈥檚 printing or download conditions.' },
+-  '/sheet-music/beginner': { title: 'Beginner Piano Sheet Music: Clear Versions and Access | PianoGrid', description: 'Find identified beginner piano resources, check how to obtain the exact edition, and distinguish local practice scores from external free or paid materials.' },
+-  '/sheet-music/hot-cross-buns': { title: 'Hot Cross Buns Piano Sheet Music: Version & Access | PianoGrid', description: 'Check the identified Hot Cross Buns edition, its learning context and provider access. This is an external resource, not a PianoGrid score download.' },
+-  '/sheet-music/twinkle-twinkle-little-star': { title: 'Twinkle, Twinkle, Little Star Piano Sheet Music: Version & Access | PianoGrid', description: 'Check the identified Twinkle, Twinkle, Little Star edition, its learning context and provider access. This is an external resource, not a PianoGrid score download.' },
+-  '/sheet-music/ode-to-joy': { title: 'Ode to Joy Piano Sheet Music: Version & Access | PianoGrid', description: 'Check the identified Ode to Joy edition, its learning context and provider access. This is an external resource, not a PianoGrid score download.' },
++  '/songs': { title: 'Piano Songs: Choose a Version to Practice | PianoGrid', h1: 'Piano Songs: Choose Your Next Piece', description: 'Compare piano pieces by edition, playing demands and access. Find a beginner starting point or browse versions for your next practice session.' },
++  '/songs/easy': { title: 'Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid', h1: 'Easy Piano Songs for Beginners', description: 'Compare three beginner piano editions, check how to access the music, and start a focused 10-minute plan for one version of Twinkle, Twinkle, Little Star.' },
++  '/sheet-music': { title: 'Piano Sheet Music: Find an Edition | PianoGrid', h1: 'Piano Sheet Music', description: 'Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.' },
++  '/sheet-music/easy': { title: 'Easy Piano Sheet Music: Compare Editions | PianoGrid', h1: 'Easy Piano Sheet Music', description: 'Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.' },
++  '/sheet-music/beginner': { title: 'Beginner Piano Sheet Music: Where to Start | PianoGrid', h1: 'Beginner Piano Sheet Music', description: 'Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.' },
++  '/sheet-music/hot-cross-buns': { title: 'Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid', h1: 'Hot Cross Buns Piano Sheet Music', description: 'Check Hoffman Academy鈥檚 Lesson 1 materials for Hot Cross Buns, including its parent-guide context, external access route and beginner practice links.' },
++  '/sheet-music/twinkle-twinkle-little-star': { title: 'Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid', h1: 'Twinkle, Twinkle, Little Star Piano Sheet Music', description: 'Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.' },
++  '/sheet-music/ode-to-joy': { title: 'Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid', h1: 'Ode to Joy Piano Sheet Music', description: 'Check the Early Elementary Ode to Joy edition from Hoffman Academy. See access conditions and version details before choosing materials for practice.' },
+   '/guide': { title: 'How to Play Piano for Beginners: First Steps', description: 'Start with C, D and E, try a four-count pattern, and learn the first steps of reading music. Follow links to piano notes, chords and scale practice.' },
+   '/guide/read-sheet-music': { title: 'How to Read Piano Sheet Music: Notes & Rhythm', description: 'Learn how clefs, staff positions and note values connect to piano keys. Use the examples and short checks to begin reading notes and rhythm.' },
+   '/guide/piano-chords': { title: 'How to Play Piano Chords: Your First Chord Changes', h1: 'How to Play Piano Chords', description: 'Learn chord symbols and note names, explore hand examples, and follow a C-to-Am change before moving on to chord charts and progressions.' },
+@@ -28,12 +29,27 @@ export const SEO_COPY: Record<string, Copy> = {
+   '/chords/by-key': { title: 'Piano Chords by Key: Triads & Seventh Chords', description: 'Compare triads and seventh chords in the available keys. Read Roman numerals and chord notes, and distinguish natural-minor from altered options.' },
+   '/chord-progressions': { title: 'Piano Chord Progressions: Patterns & Practice', h1: 'Piano Chord Progressions', description: 'Explore piano chord progressions, read Roman numerals and chord notes, and compare the available key examples before practicing each change.' },
+   '/chords/finder': { title: 'Piano Chord Finder: Identify Chords from Notes', description: 'Select piano notes to find possible chord names. Compare bass notes and alternative spellings, and see when your notes fall outside the supported library.' },
+-  '/tools': { title: 'Piano Tools: Notes, Chords, Scales & Printables | PianoGrid', description: 'Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub.' },
++  '/tools': { title: 'Piano Tools & Printables for Practice | PianoGrid', description: 'Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.' },
+   '/tools/blank-sheet-music': { title: 'Blank Piano Sheet Music PDF 鈥?Letter & A4 | PianoGrid', h1: 'Blank Piano Sheet Music', description: 'Download free blank piano sheet music with six grand-staff systems. Choose US Letter or A4, preview the page, and print without an account.' },
+   '/tools/hear-the-difference': { title: 'Major vs Minor Piano Chords: Hear the Difference | PianoGrid', h1: 'Hear the Difference Between Major and Minor Chords', description: 'Listen to minor and major piano chords, find the one note that changes, and see how raising the third by one semitone changes the chord.' },
+   '/arpeggios': { title: 'Piano Arpeggios: C & G Major Notes and Fingering', description: 'Explore C and G major arpeggio notes, compare chord tones with scales, and use the available fingering examples to plan a short practice.' },
+ };
+ 
++const STATIC_OG: Record<string, { title: string; description: string; image: string; alt: string }> = {
++  '/songs/easy': {
++    title: 'A small plan for your next piano session',
++    description: 'Five steps for one Early Elementary Twinkle edition. Check the publisher materials, then choose one small practice goal.',
++    image: `${SITE_ORIGIN}/assets/social/song-plan-og.png`,
++    alt: 'PianoGrid five-step practice plan for one Twinkle edition; materials supplied externally.',
++  },
++  '/keyboard-notes/labeled': {
++    title: 'Piano key names: a printable practice pack',
++    description: 'C4鈥揅5 reference, worksheet and answers, with an optional matching online practice.',
++    image: `${SITE_ORIGIN}/assets/social/teacher-pack-og.png`,
++    alt: 'PianoGrid C4鈥揅5 key-name pack: reference, worksheet, and answers.',
++  },
++};
++
+ export function editorialHeading(url: string, original: string): string {
+   return SEO_COPY[url]?.h1 ?? original;
+ }
+@@ -53,8 +69,35 @@ export function editorialMetadata(original: Metadata): Metadata {
+   if (url === '/tools/hear-the-difference') {
+     return { ...original, title: branded, description };
+   }
+-  return { ...original, title: branded, description,
+-    openGraph: { ...original.openGraph, title: branded, description },
++  const og = STATIC_OG[url];
++  if (og) {
++    const image = { url: og.image, width: 1200, height: 630, alt: og.alt };
++    return {
++      ...original,
++      title: branded,
++      description,
++      openGraph: {
++        ...original.openGraph,
++        title: og.title,
++        description: og.description,
++        type: 'website',
++        url: `${SITE_ORIGIN}${url}`,
++        images: [image],
++      },
++      twitter: {
++        ...original.twitter,
++        card: 'summary_large_image',
++        title: og.title,
++        description: og.description,
++        images: [og.image],
++      },
++    };
++  }
++  return {
++    ...original,
++    title: branded,
++    description,
+     twitter: { ...original.twitter, title: branded, description },
++    openGraph: { ...original.openGraph, title: branded, description },
+   };
+ }

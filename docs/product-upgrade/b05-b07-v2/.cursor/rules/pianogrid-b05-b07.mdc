@@ -1,0 +1,13 @@
+---
+description: PianoGrid B05 B06 B07 implementation. Use with docs/product-upgrade/b05-b07-v2 and the current published B04 baseline.
+alwaysApply: false
+---
+Read the current batch documents only, plus 02_SCOPE_BASELINE_COMPONENTS.md, 03_DESIGN_SYSTEM.md and 90_TEST_RELEASE.md.
+Preserve existing project rules, theme, routes and shared music engines.
+Do not repeat RC/B02/B03/B04 or reset to an old baseline.
+Implement one task at a time from task-board.json; record real tests in WORK_LOG.md.
+Use exact edition IDs from the current registry. No unlicensed scores, guessed note events, fake players or fabricated analytics.
+No new public business routes. Reuse ShareDialog, KeyboardDiagram, ReferenceAudio and existing print owners.
+Prototype/print samples are design references, not production engines.
+No commit, push, deployment, email send or paid-service authorization without an explicit user instruction.
+Never mark skipped/manual tests as PASS. Stop at the batch handoff.

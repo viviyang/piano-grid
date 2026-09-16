@@ -1,0 +1,33 @@
+{
+  "captured_at": "2026-09-16T12:45:00Z",
+  "workspace": "C:/Users/Admin/Documents/viviyang_github/pianogrid-final-integration",
+  "rejected_workspace": "C:/Users/Admin/Documents/viviyang_github/piano (codex/chords-b1 — stale, not B04 integration)",
+  "branch": "codex/final-integration",
+  "head": "1ce0a1d",
+  "head_subject": "Open labeled full reference in a default-expanded card collapsible.",
+  "remote_tracking": "origin/codex/final-integration",
+  "published_origin": "https://pianogrid.com",
+  "public_route_count": 206,
+  "b05_touched_routes": [
+    "/songs",
+    "/songs/easy",
+    "/sheet-music/hot-cross-buns",
+    "/sheet-music/twinkle-twinkle-little-star",
+    "/sheet-music/ode-to-joy"
+  ],
+  "new_public_business_routes": [],
+  "scripts": {
+    "check:foundation": "pass",
+    "typecheck": "pass",
+    "check:css": "pass",
+    "check:songs-sheet-v2": "78 passed",
+    "check-b05-plan": "6 passed",
+    "check-b05-browser": "35 passed",
+    "check-songs-sheet-browser": "139 passed",
+    "build": "EXIT:0"
+  },
+  "notes": [
+    "B04 hear-the-difference already present in this integration HEAD.",
+    "No commit/push/deploy performed for B05."
+  ]
+}

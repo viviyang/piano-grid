@@ -1,0 +1,104 @@
+[
+  {
+    "editionKey": "twinkle",
+    "actualWorkId": "work-twinkle-twinkle-little-star",
+    "actualArrangementId": "arr-ext-c3a78b0c5cb213",
+    "publicKey": "twinkle-early-elementary",
+    "revision": 1,
+    "providerUrl": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+    "sheetUrl": "/sheet-music/twinkle-twinkle-little-star",
+    "evidenceRefs": ["W03", "W06", "CE-02", "HA-TWINKLE-20260915"],
+    "assets": {
+      "score": { "path": null, "permissionEvidence": null, "verified": false },
+      "audio": { "path": null, "permissionEvidence": null, "verified": false },
+      "events": { "path": null, "permissionEvidence": null, "verified": false }
+    },
+    "musicFacts": {
+      "key": { "value": "C major", "source": "catalog.v2 arrangement.music" },
+      "meter": { "value": "4/4", "source": "catalog.v2 arrangement.music" },
+      "hands": { "value": "right and left", "source": "catalog.v2 arrangement.music" },
+      "fingering": { "value": null, "source": "catalog null — shown as unverified" }
+    },
+    "access": {
+      "kind": "EXTERNAL_FREE_FORM_OR_ACCOUNT",
+      "label": "Free on Hoffman Academy · email or sign-in required"
+    },
+    "capabilities": {
+      "hostedScore": false,
+      "playback": false,
+      "phraseLoop": false,
+      "tempoControl": false,
+      "handParts": false
+    },
+    "pathMode": "external_guided",
+    "status": "AUDITED_EXTERNAL_ONLY"
+  },
+  {
+    "editionKey": "hot-cross-buns",
+    "actualWorkId": "work-hot-cross-buns",
+    "actualArrangementId": "arr-ext-0a05b7954f5256",
+    "publicKey": "hot-cross-buns-lesson-1",
+    "revision": null,
+    "providerUrl": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+    "sheetUrl": "/sheet-music/hot-cross-buns",
+    "evidenceRefs": ["W07"],
+    "assets": {
+      "score": { "path": null, "permissionEvidence": null, "verified": false },
+      "audio": { "path": null, "permissionEvidence": null, "verified": false },
+      "events": { "path": null, "permissionEvidence": null, "verified": false }
+    },
+    "musicFacts": {
+      "key": { "value": null, "source": "catalog unverified for this edition UI" },
+      "meter": { "value": null, "source": "catalog unverified for this edition UI" },
+      "hands": { "value": null, "source": "catalog unverified for this edition UI" },
+      "fingering": { "value": null, "source": "catalog null" }
+    },
+    "access": {
+      "kind": "EXTERNAL_FREE_FORM_OR_ACCOUNT",
+      "label": "Free on Hoffman Academy · email or sign-in required"
+    },
+    "capabilities": {
+      "hostedScore": false,
+      "playback": false,
+      "phraseLoop": false,
+      "tempoControl": false,
+      "handParts": false
+    },
+    "pathMode": "external_reference_only",
+    "status": "AUDITED_EXTERNAL_ONLY"
+  },
+  {
+    "editionKey": "ode-to-joy",
+    "actualWorkId": "work-ode-to-joy",
+    "actualArrangementId": "arr-ext-a60b8d92c5a325",
+    "publicKey": "ode-to-joy-early-elementary",
+    "revision": null,
+    "providerUrl": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+    "sheetUrl": "/sheet-music/ode-to-joy",
+    "evidenceRefs": ["W08", "CE-05", "HA-ODE-20260915"],
+    "assets": {
+      "score": { "path": null, "permissionEvidence": null, "verified": false },
+      "audio": { "path": null, "permissionEvidence": null, "verified": false },
+      "events": { "path": null, "permissionEvidence": null, "verified": false }
+    },
+    "musicFacts": {
+      "key": { "value": "D major", "source": "catalog.v2 arrangement.music" },
+      "meter": { "value": "4/4", "source": "catalog.v2 arrangement.music" },
+      "hands": { "value": "right and left", "source": "catalog when present" },
+      "fingering": { "value": null, "source": "catalog null — shown as unverified" }
+    },
+    "access": {
+      "kind": "EXTERNAL_PAID_OR_MEMBERSHIP",
+      "label": "Paid or membership access on Hoffman Academy"
+    },
+    "capabilities": {
+      "hostedScore": false,
+      "playback": false,
+      "phraseLoop": false,
+      "tempoControl": false,
+      "handParts": false
+    },
+    "pathMode": "external_reference_only",
+    "status": "AUDITED_EXTERNAL_ONLY"
+  }
+]

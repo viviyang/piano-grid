@@ -1,0 +1,105 @@
+﻿ M checks/batches/07-site-integration/foundation.json
+ M checks/batches/07-site-integration/tailwind-compile.json
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/01-explore.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/02-start.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/03-receiver.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/04-question.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/05-wrong.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/06-hint.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/07-correct-assisted.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/08-revealed.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/09-result.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/10-review.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/desktop/11-share.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/01-explore.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/02-start.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/03-receiver.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/04-question.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/05-wrong.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/06-hint.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/07-correct-assisted.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/08-revealed.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/09-result.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/10-review.png
+ M checks/product-upgrade-2026-09-15/b02-b03-keyboard-notes/screenshots/mobile/11-share.png
+ M checks/songs-sheet-v2/browser-results.json
+ M checks/songs-sheet-v2/screenshots/sheet-music-1440.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-320.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-390.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-beginner-1440.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-beginner-320.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-beginner-390.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-easy-1440.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-easy-320.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-easy-390.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-hot-cross-buns-1440.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-hot-cross-buns-320.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-hot-cross-buns-390.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-ode-to-joy-1440.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-ode-to-joy-320.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-ode-to-joy-390.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-twinkle-twinkle-little-star-1440.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-twinkle-twinkle-little-star-320.png
+ M checks/songs-sheet-v2/screenshots/sheet-music-twinkle-twinkle-little-star-390.png
+ M checks/songs-sheet-v2/screenshots/songs-1440.png
+ M checks/songs-sheet-v2/screenshots/songs-320.png
+ M checks/songs-sheet-v2/screenshots/songs-390.png
+ M checks/songs-sheet-v2/screenshots/songs-easy-1440.png
+ M checks/songs-sheet-v2/screenshots/songs-easy-320.png
+ M checks/songs-sheet-v2/screenshots/songs-easy-390.png
+ M docs/content/PianoGrid_Practical_Tools_Final_Execution_Pack_2026-09-15/tools-content-data.json
+ M scripts/check-foundation.mjs
+ M scripts/check-practical-tools-browser.mjs
+ M scripts/check-songs-sheet-browser.mjs
+ M src/app/songs/easy/page.tsx
+ M src/components/integration/pages.tsx
+ M src/components/keyboard-notes/blank-experience.tsx
+ M src/components/keyboard-notes/keyboard-notes-workspace.tsx
+ M src/components/keyboard-notes/labeled-experience.tsx
+ M src/components/keyboard-notes/pages.tsx
+ M src/components/keyboard-notes/share-dialog.css
+ M src/components/sheet-music/pages.tsx
+ M src/components/sheet-music/sheet-music.css
+ M src/components/songs/pages.tsx
+ M src/components/songs/songs.css
+ M src/lib/integration-content.ts
+ M src/lib/seo-editorial.ts
+?? .next-s1-baseline/
+?? docs/product-upgrade/2026-09-16/release-closeout-delivery/deploy-labeled-collapsible.log
+?? docs/product-upgrade/2026-09-16/release-closeout-delivery/deploy-ls-final.log
+?? docs/product-upgrade/2026-09-16/release-closeout-delivery/deploy-prod-hotfix.log
+?? docs/product-upgrade/2026-09-16/release-closeout-delivery/deploy-prod.log
+?? docs/product-upgrade/b05-b07-v2/
+?? public/assets/social/
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4-worksheet.pdf
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter-worksheet.pdf
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf
+?? scripts/check-b05-browser.mjs
+?? scripts/check-b05-plan.mjs
+?? scripts/check-b06-browser.mjs
+?? scripts/check-b06-pdfs.mjs
+?? scripts/check-b06-plan.mjs
+?? scripts/check-b07-browser.mjs
+?? scripts/check-b07-events.mjs
+?? scripts/check-b07-links.mjs
+?? scripts/debug-b06-pdf-layout.mjs
+?? scripts/debug-b06-print.mjs
+?? scripts/export-teaching-pack-pdfs.mjs
+?? src/components/keyboard-notes/teaching-pack.css
+?? src/components/keyboard-notes/teaching-pack.tsx
+?? src/components/sheet-music/edition-access.tsx
+?? src/components/sheet-music/provider-open-link.tsx
+?? src/components/songs/edition-cards.tsx
+?? src/components/songs/practice-plan.tsx
+?? src/components/songs/song-plan.css
+?? src/components/ui/collapsible.css
+?? src/components/ui/collapsible.tsx
+?? src/lib/b05-content.ts
+?? src/lib/b05-editions.ts
+?? src/lib/b05-events.ts
+?? src/lib/b05-plan.ts
+?? src/lib/b06-content.ts
+?? src/lib/b06-events.ts
+?? src/lib/b06-teaching-pack.ts
+?? src/lib/b07-content.ts

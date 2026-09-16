@@ -10,6 +10,7 @@ import { KeyboardDiagram } from './keyboard-diagram';
 import { ShareControl } from './share-control';
 import { LayoutChoice } from './tool-controls';
 import { LabeledFullReferenceCollapsible } from './labeled-full-reference-collapsible';
+import { TeachingPackExperience } from './teaching-pack';
 
 export type LabeledSourceRef = { id: string; title: string; publisher: string; url: string };
 
@@ -142,7 +143,11 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
           </section>
         ))}
       </LabeledFullReferenceCollapsible>
+    </section>
 
+    <TeachingPackExperience layout={layout} />
+
+    <section className="kn-screen kn-labeled-followup" aria-label="Labeled keyboard guide">
       <section className="kn-labeled-guide" aria-labelledby="kn-label-guide-title">
         <h2 id="kn-label-guide-title">How to label your keyboard</h2>
         <ol>
@@ -151,7 +156,7 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
           <li>Add octave numbers when needed</li>
         </ol>
         <nav className="kn-actions" aria-label="Related keyboard tools">
-          <a href="/keyboard-notes" className="am-button am-tertiary">Find a specific note →</a>
+          <a href="/keyboard-notes" className="am-button am-tertiary">Find or hear a piano note →</a>
           <a href="/keyboard-notes/chart" className="am-button am-tertiary">Match keys to staff →</a>
           <a href={practiceEntryHref()} className="am-button am-tertiary">Practice notes →</a>
         </nav>

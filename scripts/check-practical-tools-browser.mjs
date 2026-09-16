@@ -26,9 +26,9 @@ try{
   check('/tools index follow',(await page.locator('meta[name=robots]').getAttribute('content')||'').replaceAll(' ','')==='index,follow');
   check('find group six unique cards',await page.locator('[aria-labelledby="in-find-title"] .in-tool-task-card').count()===6);
   check('practice group four unique cards',await page.locator('[aria-labelledby="in-practice-title"] .in-tool-task-card').count()===4);
-  check('print group four unique cards',await page.locator('[aria-labelledby="in-printables-title"] .in-print-card').count()===4);
+  check('print group five unique cards',await page.locator('[aria-labelledby="in-printables-title"] .in-print-card').count()===5);
   check('old duplicate reading absent',await page.locator('main .in-reading').count()===0);
-  for(const href of ['/keyboard-notes','/keyboard-notes/chart','/chords','/chords/finder','/scales','/scales#find-by-notes','/scales#follow-along','/tools#practice-timer','/keyboard-notes#note-trainer','/chord-progressions','/tools/blank-sheet-music','/keyboard-notes/labeled']) check(`task link ${href}`,await page.locator(`main a[href="${href}"]`).count()>=1,String(await page.locator(`main a[href="${href}"]`).count()));
+  for(const href of ['/keyboard-notes','/keyboard-notes/chart','/chords','/chords/finder','/scales','/scales#find-by-notes','/scales#follow-along','/tools#practice-timer','/keyboard-notes#note-trainer','/chord-progressions','/tools/blank-sheet-music','/keyboard-notes/labeled','/keyboard-notes/labeled#teaching-pack']) check(`task link ${href}`,await page.locator(`main a[href="${href}"]`).count()>=1,String(await page.locator(`main a[href="${href}"]`).count()));
   check('no generic metronome card',await page.getByText('Metronome',{exact:true}).count()===0);
   check('boundary copy exact',await page.getByText('This timer tracks elapsed practice time. It does not set tempo or listen to your piano.',{exact:true}).count()===1);
   check('timer default 10:00',await page.getByRole('timer').textContent()==='10:00');

@@ -1,0 +1,22 @@
+{
+  "batch": "B07",
+  "task": "T10",
+  "recordedAt": "2026-09-16",
+  "repo": "C:\\Users\\Admin\\Documents\\viviyang_github\\pianogrid-final-integration",
+  "branch": "codex/final-integration",
+  "baseHeadBeforeB05": "1ce0a1d6a6c806f59f85e2d162bb0f338e698658",
+  "worktree": "dirty with B05+B06 uncommitted changes — do not reset; B07 continues on same tree",
+  "publishedOrigin": "https://pianogrid.com",
+  "publicRouteSource": "src/lib/site-routes.ts PUBLIC_ROUTES + src/app/sitemap.ts",
+  "publicRouteCountBase": 206,
+  "publicRouteCountWorktree": 206,
+  "newPublicBusinessRoutes": [],
+  "removedPublicBusinessRoutes": [],
+  "b05Prerequisite": "docs/product-upgrade/b05-b07-v2/delivery/b05/",
+  "b06Prerequisite": "docs/product-upgrade/b05-b07-v2/delivery/b06/",
+  "notes": [
+    "PDF teaching-pack assets are static files under public/reference/generated/keyboard-notes/, not HTML routes.",
+    "Query/hash variants (plan=, paper=, printResource=, #first-10-minutes, #teaching-pack, #note-trainer) are not sitemap entries.",
+    "No commit/push/deploy in B07 until explicit authorization."
+  ]
+}

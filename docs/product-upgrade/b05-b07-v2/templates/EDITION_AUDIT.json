@@ -1,0 +1,43 @@
+{
+  "editionKey": "twinkle",
+  "actualWorkId": null,
+  "actualArrangementId": null,
+  "revision": null,
+  "providerUrl": null,
+  "evidenceRefs": [],
+  "assets": {
+    "score": {
+      "path": null,
+      "permissionEvidence": null,
+      "verified": false
+    },
+    "audio": {
+      "path": null,
+      "permissionEvidence": null,
+      "verified": false
+    }
+  },
+  "musicFacts": {
+    "key": {
+      "value": null,
+      "source": null
+    },
+    "meter": {
+      "value": null,
+      "source": null
+    },
+    "hands": {
+      "value": null,
+      "source": null
+    },
+    "fingering": {
+      "value": null,
+      "source": null
+    }
+  },
+  "capabilities": {
+    "hostedScore": false,
+    "playback": false
+  },
+  "status": "PENDING_REPO_AUDIT"
+}

@@ -1,0 +1,119 @@
+/* B06 teaching pack — scoped under .pg-teaching-pack*; must not alter labeled 88/61 landscape print. */
+
+.pg-teaching-pack{scroll-margin-top:1.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)}
+.pg-teaching-pack-kicker{color:var(--primary);font-size:.75rem;letter-spacing:.08em;font-weight:650;text-transform:uppercase;margin:0 0 .75rem}
+.pg-teaching-pack h2{font-size:clamp(1.5rem,2.2vw,1.75rem);letter-spacing:-.025em;margin:0}
+.pg-teaching-pack-grid{display:grid;grid-template-columns:minmax(270px,.85fr) minmax(0,1.15fr);gap:clamp(2rem,5vw,4rem);margin-top:1.75rem;align-items:start}
+.pg-teaching-pack-body{margin:1rem 0 0;color:var(--muted-foreground);max-width:70ch}
+.pg-teaching-pack-formats{border:0;padding:0;margin:1.5rem 0 0}
+.pg-teaching-pack-formats legend{font-size:.875rem;font-weight:650;margin-bottom:.65rem}
+.pg-teaching-pack-formats label{display:inline-flex;align-items:center;gap:.55rem;margin-right:1.35rem;min-height:2.75rem;font-size:.875rem}
+.pg-teaching-pack-formats input{accent-color:var(--primary)}
+.pg-teaching-pack-actions{display:grid;justify-items:start;gap:.4rem;margin-top:1.35rem}
+.pg-teaching-pack-secondary{display:flex;flex-wrap:wrap;gap:1.25rem;align-items:center}
+.pg-teaching-pack-help{margin-top:1.5rem;padding-top:1.35rem;border-top:1px solid var(--border)}
+.pg-teaching-pack-note{font-size:.875rem;color:var(--muted-foreground);margin:.75rem 0 0;max-width:70ch}
+.pg-teaching-pack-preview{min-width:0}
+.pg-teaching-pack-paper{max-width:32rem;width:100%;margin:0 auto;background:#fff;border:1px solid #cfd5de;box-shadow:0 10px 32px #18243b0b;padding:1.5rem;color:#1d1d1f}
+.pg-teaching-pack-paper .pg-teaching-pack-sheet{min-height:28rem;display:flex;flex-direction:column}
+.pg-teaching-pack-sheet-brand{display:flex;justify-content:space-between;gap:1rem;font-size:.8125rem;font-weight:750;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.pg-teaching-pack-sheet-side{font-size:.65rem;font-weight:500;letter-spacing:.04em;color:var(--muted-foreground)}
+.pg-teaching-pack-sheet-title{font-size:1.35rem;line-height:1.2;margin:1.25rem 0 0}
+.pg-teaching-pack-sheet-subtitle{font-size:.7rem;line-height:1.6;margin:.65rem 0 0;color:var(--muted-foreground)}
+.pg-teaching-pack-sheet h3{font-size:.8125rem;margin:1.15rem 0 0}
+.pg-teaching-pack-sheet p,.pg-teaching-pack-sheet li{font-size:.7rem;line-height:1.55;margin:.55rem 0 0}
+.pg-teaching-pack-sheet ul{margin:.45rem 0 0;padding-left:1.1rem}
+.pg-teaching-pack-sheet-note{color:var(--muted-foreground)}
+.pg-teaching-pack-answer-row{font-size:.8rem}
+.pg-teaching-pack-sheet-foot{margin-top:auto;padding-top:.85rem;border-top:1px solid var(--border);font-size:.6rem;color:var(--muted-foreground);display:flex;flex-direction:column;gap:.25rem}
+.pg-teaching-pack-sheet-foot a{color:inherit}
+.pg-teaching-pack-keyboard{margin-top:1.25rem}
+.pg-teaching-pack-keyboard .kn-keyboard{height:6.5rem}
+.pg-teaching-pack-keyboard .kn-key-text{font-size:.7rem}
+.pg-teaching-pack-keyboard-worksheet .kn-white .kn-key-text{display:none}
+.pg-teaching-pack-keyboard-worksheet .kn-white::after{content:"";position:absolute;left:18%;right:18%;bottom:14%;border-bottom:1px solid #718096}
+.pg-teaching-pack-keyboard-worksheet .kn-key{position:relative}
+.pg-teaching-pack-keyboard-worksheet .kn-middle{display:none}
+.pg-teaching-pack-thumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem;margin-top:1rem}
+.pg-teaching-pack-thumb{background:#fff;border:1px solid var(--border);border-radius:5px;padding:.7rem .45rem;min-height:3rem;display:grid;gap:.45rem;color:var(--muted-foreground);font-size:.75rem;text-align:left}
+.pg-teaching-pack-thumb[aria-pressed=true]{border-color:var(--primary);color:var(--primary);box-shadow:inset 0 0 0 1px var(--primary)}
+.pg-teaching-pack-thumb-paper{display:block;overflow:hidden;max-height:3.25rem;pointer-events:none}
+.pg-teaching-pack-thumb-paper .pg-teaching-pack-keyboard .kn-keyboard{height:3rem}
+.pg-teaching-pack-thumb-paper .kn-key-text,.pg-teaching-pack-thumb-paper .kn-middle{display:none}
+.pg-teaching-pack-howto{margin-top:3rem}
+.pg-teaching-pack-howto h2{font-size:clamp(1.5rem,2.2vw,1.75rem);margin:0}
+.pg-teaching-pack-howto-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;margin-top:1.5rem}
+.pg-teaching-pack-howto-grid h3{font-size:1.125rem;margin:0}
+.pg-teaching-pack-howto-grid p{margin:.75rem 0 0;color:var(--muted-foreground);font-size:.9375rem}
+.pg-teaching-pack-accessible{margin-top:2rem;border-block:1px solid var(--border);padding:1rem 0}
+.pg-teaching-pack-accessible summary{font-weight:600;cursor:pointer}
+.pg-teaching-pack-accessible p{margin-top:.75rem;font-size:.875rem;color:var(--muted-foreground)}
+.pg-teaching-pack-print-only{display:none}
+.pg-teaching-pack-dialog-root{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:1rem}
+.pg-teaching-pack-dialog-backdrop{position:absolute;inset:0;border:0;background:#18243b50;cursor:pointer}
+.pg-teaching-pack-dialog{position:relative;z-index:1;background:var(--background);color:var(--foreground);border:1px solid var(--border);border-radius:14px;padding:1.75rem;max-width:28rem;width:min(100%,28rem);box-shadow:0 18px 70px #0002}
+.pg-teaching-pack-dialog h2{font-size:1.5rem;margin:0 2rem 0 0}
+.pg-teaching-pack-dialog>p{margin:1rem 0 0;color:var(--muted-foreground);font-size:.9375rem}
+.pg-teaching-pack-dialog-close{position:absolute;top:.85rem;right:.85rem;border:0;background:transparent;width:2.25rem;height:2.25rem;font-size:1.5rem;line-height:1}
+.pg-teaching-pack-choice{display:flex;gap:.65rem;align-items:center;min-height:3rem;margin-top:.65rem;font-size:.9375rem}
+.pg-teaching-pack-choice input{accent-color:var(--primary)}
+.pg-teaching-pack-dialog-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+
+@media(max-width:767px){
+  .pg-teaching-pack-grid,.pg-teaching-pack-howto-grid{grid-template-columns:1fr;gap:1.5rem}
+  .pg-teaching-pack-paper{max-width:26rem;padding:1.15rem}
+  .pg-teaching-pack-thumbs{gap:.5rem}
+  .pg-teaching-pack-thumb{font-size:.6875rem;padding:.6rem .3rem}
+  .pg-teaching-pack-dialog{width:100%;max-width:none;border-radius:16px 16px 0 0;align-self:end;max-height:88vh;overflow:auto;padding:1.5rem 1.25rem max(1.5rem,env(safe-area-inset-bottom))}
+}
+
+/* Pack print activation — isolates portrait pack from labeled landscape sheets. */
+@media print{
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-page .kn-screen,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-page .am-screen,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-page .kn-print-only,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-share-dialog,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-dialog-root{
+    display:none!important;
+  }
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack.kn-screen,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-howto.kn-screen{
+    display:none!important;
+  }
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-print-only,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-print-only.is-print-active{
+    display:block!important;
+  }
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-print-only[hidden]{
+    display:block!important;
+  }
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet{
+    break-after:page;
+    break-inside:avoid;
+    page-break-after:always;
+    page-break-inside:avoid;
+    box-sizing:border-box;
+    min-height:0;
+    height:auto;
+    padding:0;
+    color:#000;
+    background:#fff;
+  }
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet:last-child{
+    break-after:auto;
+    page-break-after:auto;
+  }
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-keyboard .kn-keyboard{height:2.1in}
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet-title{font-size:24pt;font-weight:700}
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet h3{font-size:12pt}
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet p,
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet li{font-size:11pt}
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-sheet-foot{font-size:9pt}
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-key{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-black{background:#111!important;color:#fff!important}
+}
+
+/* Prefer CSS page size only while pack print is active. */
+html[data-pg-print-resource="piano-key-names-c4-c5"][data-pg-print-paper="letter"]{
+  /* Chromium picks up the injected @page from export/print helper; keep class hook for clarity. */
+}

@@ -1,0 +1,30 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "edition adapter maps three existing arrangement IDs",
+      "passed": true
+    },
+    {
+      "name": "in-site capabilities stay false without hosted assets",
+      "passed": true
+    },
+    {
+      "name": "plan parser whitelist",
+      "passed": true
+    },
+    {
+      "name": "share URL uses configured origin and no personal fields",
+      "passed": true
+    },
+    {
+      "name": "B05 copy has no hosted-player claims",
+      "passed": true
+    },
+    {
+      "name": "no new business routes added for B05",
+      "passed": true
+    }
+  ]
+}

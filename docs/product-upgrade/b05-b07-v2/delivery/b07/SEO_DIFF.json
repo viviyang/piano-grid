@@ -1,0 +1,224 @@
+{
+  "task": "T11",
+  "generatedAt": "2026-09-16",
+  "owner": "src/lib/seo-editorial.ts + src/lib/b07-content.ts + tools-content-data.json + sheet/keyboard pages",
+  "pages": [
+    {
+      "url": "/songs",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b05",
+      "before": {
+        "title": "(already matched page-seo / B05)",
+        "description": "(already matched page-seo / B05)"
+      },
+      "after": {
+        "title": "Piano Songs: Choose a Version to Practice | PianoGrid",
+        "description": "Compare piano pieces by edition, playing demands and access. Find a beginner starting point or browse versions for your next practice session.",
+        "h1": "Piano Songs: Choose Your Next Piece",
+        "leadCopy": "Choose a piece, then check the exact arrangement and how to get its music. Start with the beginner selection or browse the full catalogue."
+      },
+      "why": "Confirm B05/B06 applied copy still matches page-seo.json",
+      "og": null,
+      "headingStrategy": "Retain B05/B06 visible structure; metadata+lead synced"
+    },
+    {
+      "url": "/songs/easy",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b05",
+      "before": {
+        "title": "(already matched page-seo / B05)",
+        "description": "(already matched page-seo / B05)"
+      },
+      "after": {
+        "title": "Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid",
+        "description": "Compare three beginner piano editions, check how to access the music, and start a focused 10-minute plan for one version of Twinkle, Twinkle, Little Star.",
+        "h1": "Easy Piano Songs for Beginners",
+        "leadCopy": "Choose one edition and one small goal for your next session."
+      },
+      "why": "Confirm B05/B06 applied copy still matches page-seo.json",
+      "og": {
+        "ogTitle": "A small plan for your next piano session",
+        "ogDescription": "Five steps for one Early Elementary Twinkle edition. Check the publisher materials, then choose one small practice goal.",
+        "asset": "/assets/social/song-plan-og.png",
+        "alt": "PianoGrid five-step practice plan for one Twinkle edition; materials supplied externally."
+      },
+      "headingStrategy": "Retain B05/B06 visible structure; metadata+lead synced"
+    },
+    {
+      "url": "/sheet-music",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b07",
+      "before": {
+        "title": "Piano Sheet Music: Versions and Access | PianoGrid",
+        "description": "Identify a specific piano edition, review its format and access conditions, and find its preview or provider. Local and external resources are clearly separated."
+      },
+      "after": {
+        "title": "Piano Sheet Music: Find an Edition | PianoGrid",
+        "description": "Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.",
+        "h1": "Piano Sheet Music",
+        "leadCopy": "Find an edition and check how its music is supplied. Compare the provider, level and available formats before you download, print or begin."
+      },
+      "why": "Align TDH + lead with B07 page-seo.json; features present",
+      "og": null,
+      "headingStrategy": "Inject page-seo H2/lead as ss-b07-intent; preserve existing catalog/filters/sections below"
+    },
+    {
+      "url": "/sheet-music/easy",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b07",
+      "before": {
+        "title": "Easy Piano Sheet Music: Check the Edition | PianoGrid",
+        "description": "Compare easy piano editions without treating every easy label as the same level. Check the notation, preview and provider’s printing or download conditions."
+      },
+      "after": {
+        "title": "Easy Piano Sheet Music: Compare Editions | PianoGrid",
+        "description": "Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.",
+        "h1": "Easy Piano Sheet Music",
+        "leadCopy": "Compare editions described as easy or early level by their providers. Check the sample and the playing demands of the particular version."
+      },
+      "why": "Align TDH + lead with B07 page-seo.json; features present",
+      "og": null,
+      "headingStrategy": "Inject page-seo H2/lead as ss-b07-intent; preserve existing catalog/filters/sections below"
+    },
+    {
+      "url": "/sheet-music/beginner",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b07",
+      "before": {
+        "title": "Beginner Piano Sheet Music: Clear Versions and Access | PianoGrid",
+        "description": "Find identified beginner piano resources, check how to obtain the exact edition, and distinguish local practice scores from external free or paid materials."
+      },
+      "after": {
+        "title": "Beginner Piano Sheet Music: Where to Start | PianoGrid",
+        "description": "Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.",
+        "h1": "Beginner Piano Sheet Music",
+        "leadCopy": "Choose a specific beginner edition and find out what you need to start. These pages separate version details, access conditions and a practical next step."
+      },
+      "why": "Align TDH + lead with B07 page-seo.json; features present",
+      "og": null,
+      "headingStrategy": "Inject page-seo H2/lead as ss-b07-intent; preserve existing catalog/filters/sections below"
+    },
+    {
+      "url": "/sheet-music/twinkle-twinkle-little-star",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b05",
+      "before": {
+        "title": "(already matched page-seo / B05)",
+        "description": "(already matched page-seo / B05)"
+      },
+      "after": {
+        "title": "Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid",
+        "description": "Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.",
+        "h1": "Twinkle, Twinkle, Little Star Piano Sheet Music",
+        "leadCopy": "Check the Early Elementary edition and its external access route, then use a short plan to organize your first session."
+      },
+      "why": "Confirm B05/B06 applied copy still matches page-seo.json",
+      "og": null,
+      "headingStrategy": "Retain B05/B06 visible structure; metadata+lead synced"
+    },
+    {
+      "url": "/sheet-music/hot-cross-buns",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b05",
+      "before": {
+        "title": "(already matched page-seo / B05)",
+        "description": "(already matched page-seo / B05)"
+      },
+      "after": {
+        "title": "Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid",
+        "description": "Check Hoffman Academy’s Lesson 1 materials for Hot Cross Buns, including its parent-guide context, external access route and beginner practice links.",
+        "h1": "Hot Cross Buns Piano Sheet Music",
+        "leadCopy": "Check the Lesson 1 materials and parent-guide context from Hoffman Academy before choosing what to practice."
+      },
+      "why": "Confirm B05/B06 applied copy still matches page-seo.json",
+      "og": null,
+      "headingStrategy": "Retain B05/B06 visible structure; metadata+lead synced"
+    },
+    {
+      "url": "/sheet-music/ode-to-joy",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b05",
+      "before": {
+        "title": "(already matched page-seo / B05)",
+        "description": "(already matched page-seo / B05)"
+      },
+      "after": {
+        "title": "Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid",
+        "description": "Check the Early Elementary Ode to Joy edition from Hoffman Academy. See access conditions and version details before choosing materials for practice.",
+        "h1": "Ode to Joy Piano Sheet Music",
+        "leadCopy": "Check the Early Elementary edition, its available materials and the provider’s access conditions before you begin."
+      },
+      "why": "Confirm B05/B06 applied copy still matches page-seo.json",
+      "og": null,
+      "headingStrategy": "Retain B05/B06 visible structure; metadata+lead synced"
+    },
+    {
+      "url": "/keyboard-notes/labeled",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b06",
+      "before": {
+        "title": "Labeled Piano Keys: 88-Key & 61-Key Layouts",
+        "description": "See letter names and octave labels on 88-key and 61-key piano layouts, then use the guide to label the keys on your own keyboard."
+      },
+      "after": {
+        "title": "Labeled Piano Keys & Printable Practice Pack | PianoGrid",
+        "description": "Explore labeled 88-key and 61-key piano layouts. Print a C4–C5 reference, white-key worksheet and answer page, then try the matching online practice.",
+        "h1": "Labeled Piano Keys",
+        "leadCopy": "Match note names to a piano keyboard. Use the labeled layouts or print a C4–C5 reference, worksheet and answer page for a small practice task."
+      },
+      "why": "Align TDH + lead with B07 page-seo.json; features present",
+      "og": {
+        "ogTitle": "Piano key names: a printable practice pack",
+        "ogDescription": "C4–C5 reference, worksheet and answers, with an optional matching online practice.",
+        "asset": "/assets/social/teacher-pack-og.png",
+        "alt": "PianoGrid C4–C5 key-name pack: reference, worksheet, and answers."
+      },
+      "headingStrategy": "Retain B05/B06 visible structure; metadata+lead synced"
+    },
+    {
+      "url": "/tools",
+      "mode": "APPLY_WHEN_FEATURE_PRESENT",
+      "batch": "b07",
+      "before": {
+        "title": "Piano Tools: Notes, Chords, Scales & Printables | PianoGrid",
+        "description": "Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub."
+      },
+      "after": {
+        "title": "Piano Tools & Printables for Practice | PianoGrid",
+        "description": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
+        "h1": "Piano Tools and Printables",
+        "leadCopy": "Choose a small task: find a note, check a chord or scale, compare two sounds, or take a printable reference to your piano."
+      },
+      "why": "Align TDH + lead with B07 page-seo.json; features present",
+      "og": null,
+      "headingStrategy": "KEEP existing Tools group H2s (Find or identify / Practice / Print and download); map to page-seo Choose the result you need + Available printables"
+    },
+    {
+      "url": "/keyboard-notes",
+      "mode": "KEEP_IF_ALREADY_ACCURATE",
+      "batch": "guard_only",
+      "before": {
+        "title": "Piano Keys and Notes: Names & Keyboard Layout",
+        "description": "Find piano key names, locate notes by octave, and explore 88-key and 61-key layouts. Start with middle C, then check the black and white keys."
+      },
+      "after": {
+        "title": "Piano Keys and Notes: Find, Hear & Practice | PianoGrid",
+        "description": "Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.",
+        "h1": "Piano Keys and Notes",
+        "leadCopy": null
+      },
+      "why": "Align TDH + lead with B07 page-seo.json; features present",
+      "og": null,
+      "headingStrategy": "guard_only: metadata only; preserve approved workspace headings"
+    }
+  ],
+  "staticOgAssets": [
+    "public/assets/social/song-plan-og.png",
+    "public/assets/social/teacher-pack-og.png"
+  ],
+  "notes": [
+    "No fake Course/rating schema added",
+    "Share query states keep base canonical via existing alternates",
+    "guard_only /keyboard-notes not redesigned"
+  ]
+}

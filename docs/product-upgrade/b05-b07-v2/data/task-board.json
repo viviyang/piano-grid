@@ -1,0 +1,192 @@
+[
+  {
+    "id": "T00",
+    "batch": "B05",
+    "title": "记录当前发布/工作区/脚本/路由基线",
+    "dependsOn": [],
+    "read": "00/02；当前repo",
+    "output": "BASELINE.json；不得重置旧main",
+    "doneWhen": "git状态、route数量和脚本记录真实",
+    "status": "DONE"
+  },
+  {
+    "id": "T01",
+    "batch": "B05",
+    "title": "映射主题、共享owner、确切三版本",
+    "dependsOn": [
+      "T00"
+    ],
+    "read": "02/03、B05/01",
+    "output": "TOKEN_MAP、OWNER_MAP、EDITION_AUDIT",
+    "doneWhen": "无复制事实，来源/许可分开",
+    "status": "DONE"
+  },
+  {
+    "id": "T02",
+    "batch": "B05",
+    "title": "三卡入口与Sheet访问区域",
+    "dependsOn": [
+      "T01"
+    ],
+    "read": "B05/02、content.en.json",
+    "output": "现有5页面的局部变化（Songs两页+Sheet三页）",
+    "doneWhen": "CTA目标正确、外站条件可见、旧目录不丢",
+    "status": "DONE"
+  },
+  {
+    "id": "T03",
+    "batch": "B05",
+    "title": "五步plan状态与无JS正文",
+    "dependsOn": [
+      "T02"
+    ],
+    "read": "B05/03、design",
+    "output": "overview/step/finished/session机制",
+    "doneWhen": "visited≠selfChecked；无未授权播放器",
+    "status": "DONE"
+  },
+  {
+    "id": "T04",
+    "batch": "B05",
+    "title": "plan分享与导航/TDH",
+    "dependsOn": [
+      "T03"
+    ],
+    "read": "B07/02–04中B05行",
+    "output": "受控URL、receiver、内链与head",
+    "doneWhen": "过期版本不换谱、无个人进度",
+    "status": "DONE"
+  },
+  {
+    "id": "T05",
+    "batch": "B05",
+    "title": "B05自动回归及交接",
+    "dependsOn": [
+      "T04"
+    ],
+    "read": "90、acceptance B05",
+    "output": "delivery/b05",
+    "doneWhen": "失败不伪造PASS；站内内容阻塞分开",
+    "status": "DONE"
+  },
+  {
+    "id": "T06",
+    "batch": "B06",
+    "title": "资源projection和paper版式",
+    "dependsOn": [
+      "T05"
+    ],
+    "read": "B06/01–02",
+    "output": "renderer adapter、Letter/A4 PDF",
+    "doneWhen": "三页同源8白5黑、非栅格截图",
+    "status": "DONE"
+  },
+  {
+    "id": "T07",
+    "batch": "B06",
+    "title": "资源段/preview/下载/打印",
+    "dependsOn": [
+      "T06"
+    ],
+    "read": "03、design teacher",
+    "output": "teaching-pack工作区",
+    "doneWhen": "size/page_set一致、打印后还原",
+    "status": "DONE"
+  },
+  {
+    "id": "T08",
+    "batch": "B06",
+    "title": "Share/匹配练习/外联草稿",
+    "dependsOn": [
+      "T07"
+    ],
+    "read": "B06/03、links",
+    "output": "资源深链和5个候选记录",
+    "doneWhen": "不发送、不虚构联系信息；白键preset",
+    "status": "DONE"
+  },
+  {
+    "id": "T09",
+    "batch": "B06",
+    "title": "PDF/共享owner回归及交接",
+    "dependsOn": [
+      "T08"
+    ],
+    "read": "90、acceptance B06",
+    "output": "delivery/b06",
+    "doneWhen": "Letter/A4逐页渲染；样张不等于真实打印",
+    "status": "DONE"
+  },
+  {
+    "id": "T10",
+    "batch": "B07",
+    "title": "冻结三批路由与页面意图",
+    "dependsOn": [
+      "T09"
+    ],
+    "read": "B07/01、SEO map",
+    "output": "PAGE_INTENT、ROUTE_COUNTS",
+    "doneWhen": "零新增业务路由；旧B04保持",
+    "status": "DONE"
+  },
+  {
+    "id": "T11",
+    "batch": "B07",
+    "title": "逐页TDH/首答与来源表达",
+    "dependsOn": [
+      "T10"
+    ],
+    "read": "B07/02、content",
+    "output": "SEO_DIFF",
+    "doneWhen": "不写未有能力；guard_only不重设计",
+    "status": "DONE"
+  },
+  {
+    "id": "T12",
+    "batch": "B07",
+    "title": "站内链与资源/OG检查",
+    "dependsOn": [
+      "T11"
+    ],
+    "read": "B07/03",
+    "output": "LINK/HEAD/ASSET_CHECK",
+    "doneWhen": "anchor、query、模式与冷启动CSS测试",
+    "status": "DONE"
+  },
+  {
+    "id": "T13",
+    "batch": "B07",
+    "title": "事件owner与collector事实",
+    "dependsOn": [
+      "T12"
+    ],
+    "read": "B07/04",
+    "output": "EVENT_STATUS",
+    "doneWhen": "有接收证据才COLLECTED_VERIFIED",
+    "status": "DONE"
+  },
+  {
+    "id": "T14",
+    "batch": "B07",
+    "title": "三批同树综合回归",
+    "dependsOn": [
+      "T13"
+    ],
+    "read": "90、acceptance ALL",
+    "output": "完整日志、对照截图、PDF",
+    "doneWhen": "旧练习/分享/听音/打印无损",
+    "status": "DONE"
+  },
+  {
+    "id": "T15",
+    "batch": "B07",
+    "title": "可恢复交接与一次人工门禁",
+    "dependsOn": [
+      "T14"
+    ],
+    "read": "90",
+    "output": "delivery/final+zip+NEXT_ACTION",
+    "doneWhen": "含新增文件/差异/sha；不自行发布",
+    "status": "DONE"
+  }
+]

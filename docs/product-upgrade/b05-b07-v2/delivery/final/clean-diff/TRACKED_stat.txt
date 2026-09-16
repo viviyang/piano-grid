@@ -1,0 +1,20 @@
+﻿ checks/batches/07-site-integration/foundation.json |  8 +--
+ .../07-site-integration/tailwind-compile.json      |  2 +-
+ .../tools-content-data.json                        | 13 +++-
+ scripts/check-foundation.mjs                       | 12 ++--
+ scripts/check-practical-tools-browser.mjs          |  4 +-
+ scripts/check-songs-sheet-browser.mjs              | 12 ++--
+ src/app/songs/easy/page.tsx                        |  5 +-
+ src/components/integration/pages.tsx               |  2 +-
+ src/components/keyboard-notes/blank-experience.tsx |  2 +-
+ .../keyboard-notes/keyboard-notes-workspace.tsx    |  3 +-
+ .../keyboard-notes/labeled-experience.tsx          |  7 ++-
+ src/components/keyboard-notes/pages.tsx            |  3 +-
+ src/components/keyboard-notes/share-dialog.css     |  3 +
+ src/components/sheet-music/pages.tsx               | 53 +++++++++++++++-
+ src/components/sheet-music/sheet-music.css         |  2 +-
+ src/components/songs/pages.tsx                     | 37 +++++++++--
+ src/components/songs/songs.css                     |  2 +-
+ src/lib/integration-content.ts                     |  7 ++-
+ src/lib/seo-editorial.ts                           | 71 +++++++++++++++++-----
+ 19 files changed, 194 insertions(+), 54 deletions(-)

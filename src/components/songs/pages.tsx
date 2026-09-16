@@ -8,15 +8,20 @@ import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { getLaunchExternalViews, getPagePatch } from '@/lib/songs-sheet-content';
 import { ArrangementFocus } from '@/components/songs-sheet/arrangement-focus';
 import { ExternalArrangementCard } from '@/components/songs-sheet/external-arrangement-card';
+import { BeginnerEditionCards, SongsBeginnerTeaser } from './edition-cards';
+import { TwinklePracticePlan } from './practice-plan';
+import { getB05Copy } from '@/lib/b05-content';
+import { allowedProviderUrl, getBeginnerEditionView } from '@/lib/b05-editions';
 import '@/app/chords/a-minor/a-minor.css';
 import '@/components/sheet-music/sheet-music.css';
 import './songs.css';
+import './song-plan.css';
 
-function SongShell({ model, children }: { model: SongPageModel; children: ReactNode }) {
+function SongShell({ model, heading, intro, children }: { model: SongPageModel; heading: string; intro: string; children: ReactNode }) {
   const detail = model.url === '/songs/easy';
   const schema = getPagePatch(model.url).schema;
   return <div className="am-page sg-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Songs"/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Songs', href: '/songs' }, { label: 'Easy' }] : [{ label: 'Songs' }]}/><h1>{model.title}</h1><p className="am-direct-answer">{model.description}</p></header>
+    <header className="am-page-heading"><PageBreadcrumb items={detail ? [{ label: 'Songs', href: '/songs' }, { label: 'Easy Piano Songs' }] : [{ label: 'Songs' }]}/><h1>{heading}</h1><p className="am-direct-answer">{intro}</p></header>
     {children}
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }}/>
   </main><SiteFooter url={model.url}/></div>;
@@ -32,15 +37,35 @@ function CatalogTable({ resources }: { resources: SongResource[] }) {
 
 function LaunchVersions({ detail = false }: { detail?: boolean }) {
   const views = getLaunchExternalViews();
-  return <section className="ss-launch" aria-labelledby="ss-launch-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Exact external editions</p><h2 id="ss-launch-heading">Three identified starting versions</h2></div><p>These are provider editions, not PianoGrid score or audio downloads. Unknown musical fields stay unknown.</p></div><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning={detail} key={view.arrangement.arrangement_id}/>)}</div></section>;
+  return <section className="ss-launch" aria-labelledby="ss-launch-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Exact external editions</p><h2 id="ss-launch-heading">Three identified starting versions</h2></div><p>These are provider editions, not PianoGrid score or audio downloads. Unknown musical fields stay unknown. Share links restore this exact version; they do not include personal practice check-ins.</p></div><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning={detail} key={view.arrangement.arrangement_id}/>)}</div></section>;
 }
 
 export function SongsCenterPage() {
   const data = getSongCenter();
-  return <SongShell model={data.model}><LaunchVersions/><SongCenterExperience resources={data.resources} goals={data.goals}/><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}>{block.id === 'start' && data.easyURLAvailable && <a className="am-button am-tertiary sg-inline-link" href="/songs/easy">Browse easy piano versions</a>}</ReadingSection>)}</div></SongShell>;
+  const copy = getB05Copy();
+  return <SongShell model={data.model} heading={copy.songs.h1} intro={copy.songs.intro}><SongsBeginnerTeaser/><LaunchVersions/><SongCenterExperience resources={data.resources} goals={data.goals}/><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}>{block.id === 'start' && data.easyURLAvailable && <a className="am-button am-tertiary sg-inline-link" href="/songs/easy">Browse easy piano versions</a>}</ReadingSection>)}</div></SongShell>;
 }
 
-export function EasySongsPage() {
+export function EasySongsPage({ search = {} }: { search?: Record<string, string | string[] | undefined> }) {
   const data = getEasySongs();
-  return <SongShell model={data.model}><LaunchVersions detail/><EasySongChooser resources={data.featuredResources} sections={data.sections}/><CatalogTable resources={data.catalogResources}/><p className="sg-catalog-policy">{data.numberQueryPolicy}</p><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}/>)}</div></SongShell>;
+  const copy = getB05Copy();
+  const twinkle = getBeginnerEditionView('twinkle');
+  const providerUrl = allowedProviderUrl(twinkle.resource.provider_url);
+  return <SongShell model={data.model} heading={copy.easy.h1} intro={copy.easy.intro}>
+    <BeginnerEditionCards withPlanAnchor />
+    <TwinklePracticePlan copy={copy.easy.plan} providerUrl={providerUrl} sheetHref="/sheet-music/twinkle-twinkle-little-star" search={search} />
+    <section className="pg-song-plan" aria-labelledby="pg-more-easy-heading">
+      <h2 id="pg-more-easy-heading">Browse more easy editions</h2>
+      <p className="pg-muted">Compare more versions using the existing catalogue. Check the stated level and materials for each one.</p>
+    </section>
+    <LaunchVersions detail />
+    <EasySongChooser resources={data.featuredResources} sections={data.sections}/>
+    <CatalogTable resources={data.catalogResources}/>
+    <p className="sg-catalog-policy">{data.numberQueryPolicy}</p>
+    <section className="pg-song-plan" aria-labelledby="pg-understand-heading">
+      <h2 id="pg-understand-heading">Understand your starting point</h2>
+      <div className="pg-learn-grid">{copy.easy.learnSections.map((item) => <article key={item.h2}><h3>{item.h2}</h3><p>{item.body}</p></article>)}</div>
+    </section>
+    <div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}/>)}</div>
+  </SongShell>;
 }

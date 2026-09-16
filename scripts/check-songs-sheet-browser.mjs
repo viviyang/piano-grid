@@ -7,14 +7,14 @@ const base = process.env.PIANO_BASE_URL || 'http://127.0.0.1:3112';
 const out = process.env.PIANO_CHECK_OUT || 'checks/songs-sheet-v2';
 const routes = ['/songs','/songs/easy','/sheet-music','/sheet-music/easy','/sheet-music/beginner','/sheet-music/hot-cross-buns','/sheet-music/twinkle-twinkle-little-star','/sheet-music/ode-to-joy'];
 const expected = {
-  '/songs': ['Piano Songs: Choose Your Next Piece','Piano Songs by Version and Playing Skills | PianoGrid'],
-  '/songs/easy': ['Easy Piano Songs for Beginners','Easy Piano Songs: Compare Beginner Versions | PianoGrid'],
+  '/songs': ['Piano Songs: Choose Your Next Piece','Piano Songs: Choose a Version to Practice | PianoGrid'],
+  '/songs/easy': ['Easy Piano Songs for Beginners','Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid'],
   '/sheet-music': ['Piano Sheet Music','Piano Sheet Music: Versions and Access | PianoGrid'],
   '/sheet-music/easy': ['Easy Piano Sheet Music','Easy Piano Sheet Music: Check the Edition | PianoGrid'],
   '/sheet-music/beginner': ['Beginner Piano Sheet Music','Beginner Piano Sheet Music: Clear Versions and Access | PianoGrid'],
-  '/sheet-music/hot-cross-buns': ['Hot Cross Buns Piano Sheet Music','Hot Cross Buns Piano Sheet Music: Version & Access | PianoGrid'],
-  '/sheet-music/twinkle-twinkle-little-star': ['Twinkle, Twinkle, Little Star Piano Sheet Music','Twinkle, Twinkle, Little Star Piano Sheet Music: Version & Access | PianoGrid'],
-  '/sheet-music/ode-to-joy': ['Ode to Joy Piano Sheet Music','Ode to Joy Piano Sheet Music: Version & Access | PianoGrid'],
+  '/sheet-music/hot-cross-buns': ['Hot Cross Buns Piano Sheet Music','Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid'],
+  '/sheet-music/twinkle-twinkle-little-star': ['Twinkle, Twinkle, Little Star Piano Sheet Music','Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid'],
+  '/sheet-music/ode-to-joy': ['Ode to Joy Piano Sheet Music','Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid'],
 };
 const ids = ['arr-ext-0a05b7954f5256','arr-ext-c3a78b0c5cb213','arr-ext-a60b8d92c5a325'];
 const results=[]; const errors=[];
@@ -103,7 +103,7 @@ try{
   await page.goto(`${base}/`);
   check('homepage Sheet Music destination released',await page.getByRole('link',{name:/Sheet Music/}).count()>0);
   check('desktop navigation has seven authorized sections',await page.locator('.site-nav-desktop .site-nav-parent-link').count()===7,String(await page.locator('.site-nav-desktop .site-nav-parent-link').count()));
-  check('desktop navigation has thirty direct child links',await page.locator('.site-nav-desktop .site-nav-child-link').count()===30,String(await page.locator('.site-nav-desktop .site-nav-child-link').count()));
+  check('desktop navigation has thirty-one direct child links',await page.locator('.site-nav-desktop .site-nav-child-link').count()===31,String(await page.locator('.site-nav-desktop .site-nav-child-link').count()));
   await page.goto(`${base}/chords`);
   await page.waitForFunction(()=>!document.querySelector('.am-play-btn')?.disabled);
   check('Chords inherited route keeps 25 prepared results',await page.locator('.ch-result').count()===25,String(await page.locator('.ch-result').count()));

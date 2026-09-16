@@ -1,0 +1,65 @@
+{
+  "base": "http://localhost:3116",
+  "assets": [
+    {
+      "id": "OG-song-plan",
+      "path": "/assets/social/song-plan-og.png",
+      "status": 200,
+      "contentType": "image/png",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "OG-teacher-pack",
+      "path": "/assets/social/teacher-pack-og.png",
+      "status": 200,
+      "contentType": "image/png",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-letter",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-a4",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-letter-ws",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter-worksheet.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-a4-ws",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4-worksheet.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    }
+  ],
+  "coldShare": [
+    {
+      "path": "/songs/easy",
+      "opened": true,
+      "dialogStyled": true
+    },
+    {
+      "path": "/keyboard-notes/labeled",
+      "opened": true,
+      "dialogStyled": true
+    }
+  ]
+}

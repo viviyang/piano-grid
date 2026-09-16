@@ -229,7 +229,8 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
       <h2>Use the pattern, then use the note name.</h2>
       <div className="kn-v2-reference-grid">{blocks.slice(0, 3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</div>
       {blocks.length > 3 && <details className="kn-v2-more-reference"><summary>More piano key reference</summary>{blocks.slice(3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</details>}
-      {links.length > 0 && <nav className="kn-v2-related" aria-label="Related keyboard references">{links.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}</nav>}
+      {links.length > 0 && <nav className="kn-v2-related" aria-label="Related keyboard references">{links.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}<a href="/keyboard-notes/labeled#teaching-pack">Print a note-name practice pack</a></nav>}
+      {links.length === 0 && <nav className="kn-v2-related" aria-label="Related keyboard references"><a href="/keyboard-notes/labeled#teaching-pack">Print a note-name practice pack</a></nav>}
     </div>
   </section>;
 }

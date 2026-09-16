@@ -1,0 +1,114 @@
+{
+  "at": "2026-09-16T14:20:30.106Z",
+  "base": "http://localhost:3116",
+  "collector": "INSTRUMENTED_NOT_COLLECTED",
+  "reason": "No third-party analytics SDK / collector endpoint configured for B05/B06 events. Local CustomEvent only; externallySent remains false.",
+  "channels": {
+    "songPlan": "pianogrid:song-plan-event",
+    "teachingPack": "pianogrid:teaching-pack-event"
+  },
+  "contractMapping": [
+    {
+      "contract": "song_plan_* / share_* / edition_open / valid_shared_landing",
+      "implementedAs": "b05-events.ts SongPlanEventName"
+    },
+    {
+      "contract": "resource_preview / resource_download_click / resource_print_requested",
+      "implementedAs": "teaching_pack_preview_page / teaching_pack_download / teaching_pack_print_dialog (B06 naming)"
+    },
+    {
+      "contract": "share_panel_open (resource)",
+      "implementedAs": "teaching_pack_share_open"
+    }
+  ],
+  "localDispatchSample": [
+    {
+      "channel": "pianogrid:song-plan-event",
+      "name": "song_plan_open",
+      "properties": {
+        "plan_key": "twinkle-early-elementary",
+        "revision": 1,
+        "entry_type": "none"
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:song-plan-event",
+      "name": "song_plan_open",
+      "properties": {
+        "plan_key": "twinkle-early-elementary",
+        "revision": 1,
+        "entry_type": "none"
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:song-plan-event",
+      "name": "song_plan_start",
+      "properties": {
+        "plan_key": "twinkle-early-elementary",
+        "revision": 1
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:song-plan-event",
+      "name": "song_plan_step_view",
+      "properties": {
+        "plan_key": "twinkle-early-elementary",
+        "step_id": "edition"
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:song-plan-event",
+      "name": "share_panel_open",
+      "properties": {
+        "kind": "plan",
+        "public_key": "twinkle-early-elementary"
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:teaching-pack-event",
+      "name": "teaching_pack_view",
+      "properties": {
+        "resource_id": "piano-key-names-c4-c5",
+        "revision": 1
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:teaching-pack-event",
+      "name": "teaching_pack_view",
+      "properties": {
+        "resource_id": "piano-key-names-c4-c5",
+        "revision": 1
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    },
+    {
+      "channel": "pianogrid:teaching-pack-event",
+      "name": "teaching_pack_practice_open",
+      "properties": {
+        "resource_id": "piano-key-names-c4-c5"
+      },
+      "externallySent": false,
+      "hasSensitive": false
+    }
+  ],
+  "localDispatchCount": 8,
+  "sensitiveLeak": false,
+  "providersScanned": {
+    "gtagGlobalOnSongsEasy": false,
+    "plausible": false,
+    "dataLayer": false
+  }
+}

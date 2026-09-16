@@ -48,7 +48,7 @@ function ToolTaskCard({item,index}:{item:ToolDestination;index:number}){
   return <a className="in-task-card in-tool-task-card" href={item.url}><span className="in-card-number">{String(index+1).padStart(2,'0')}</span><span><strong>{item.label}</strong><small>{item.description}</small></span><span>{cta} <span aria-hidden="true">→</span></span></a>;
 }
 function ToolResourceCard({item}:{item:ToolResource}){
-  return <article className="in-print-card"><div><span>Available now</span><h3>{item.label}</h3><p>{item.description}</p></div><div className="in-card-actions"><a href={item.url}>Open resource</a>{item.downloads.map(download=><a href={download.url} download key={download.url}>{download.label}</a>)}</div></article>;
+  return <article className="in-print-card"><div><span>Available now</span><h3>{item.label}</h3><p>{item.description}</p></div><div className="in-card-actions"><a href={item.url}>{item.label}</a>{item.downloads.map(download=><a href={download.url} download key={download.url}>{download.label}</a>)}</div></article>;
 }
 function HomeFooter(){
   return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Piano Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top ↑</a></div></footer>;

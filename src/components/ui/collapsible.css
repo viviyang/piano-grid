@@ -1,0 +1,29 @@
+/* shadcn-like Collapsible, project tokens only — no Radix / no shadcn init */
+.pr-collapsible{border:1px solid var(--border);border-radius:var(--pr-radius-control);background:var(--background);overflow:clip}
+.pr-collapsible-trigger{display:flex;width:100%;align-items:center;justify-content:space-between;gap:.75rem;padding:.7rem .9rem;margin:0;border:0;background:transparent;color:inherit;font:inherit;font-weight:650;text-align:left;cursor:pointer;min-height:2.5rem}
+.pr-collapsible-trigger:hover{background:var(--surface)}
+.pr-collapsible-trigger:focus-visible{outline:2px solid var(--primary);outline-offset:-2px}
+.pr-collapsible-trigger-label{min-width:0;flex:1}
+.pr-collapsible-chevron{width:1rem;height:1rem;flex:0 0 auto;color:var(--muted-foreground);transition:transform var(--pr-duration-fast,120ms) ease}
+.pr-collapsible[data-state=open]>.pr-collapsible-trigger .pr-collapsible-chevron{transform:rotate(180deg)}
+.pr-collapsible-content{padding:0 .9rem .85rem;border-top:1px solid var(--border)}
+.pr-collapsible-content[hidden]{display:none}
+.pr-collapsible-content>:first-child{margin-top:.75rem}
+.pr-collapsible-content p{margin:0;font-size:.875rem;line-height:1.5;color:var(--muted-foreground)}
+.pr-collapsible-content p+p,.pr-collapsible-content p+.pr-option-links{margin-top:.55rem}
+.pr-collapsible-facts{margin:0;display:grid;gap:0}
+.pr-collapsible-facts>div{display:grid;grid-template-columns:minmax(7rem,9rem) minmax(0,1fr);gap:.75rem;align-items:baseline;padding-block:.55rem;border-bottom:1px solid var(--border);font-size:.875rem;line-height:1.4}
+.pr-collapsible-facts>div:last-child{border-bottom:0;padding-bottom:0}
+.pr-collapsible-facts dt{margin:0;color:var(--muted-foreground);font-weight:500}
+.pr-collapsible-facts dd{margin:0;color:var(--foreground)}
+.pr-collapsible-plain{border:0;border-radius:0;background:transparent}
+.pr-collapsible-plain>.pr-collapsible-trigger{padding:.65rem 0;min-height:0}
+.pr-collapsible-plain>.pr-collapsible-trigger:hover{background:transparent}
+.pr-collapsible-plain>.pr-collapsible-content{padding:0 0 .15rem;border-top:0}
+.pr-collapsible-plain>.pr-collapsible-content>:first-child{margin-top:.45rem}
+@media(max-width:30rem){
+  .pr-collapsible-facts>div{grid-template-columns:1fr;gap:.15rem;padding-block:.6rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .pr-collapsible-chevron{transition:none}
+}

@@ -9,10 +9,10 @@
   },
   "page": {
     "url": "/tools",
-    "title": "Piano Tools: Notes, Chords, Scales & Printables | PianoGrid",
-    "description": "Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub.",
+    "title": "Piano Tools & Printables for Practice | PianoGrid",
+    "description": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
     "h1": "Piano Tools and Printables",
-    "intro": "Find the task you need, then open the PianoGrid page that owns it. Use the practice timer here when you simply want to set aside a focused block of piano time."
+    "intro": "Choose a small task: find a note, check a chord or scale, compare two sounds, or take a printable reference to your piano."
   },
   "groups": [
     {
@@ -140,6 +140,13 @@
           "owner": "scales",
           "target": "/scales",
           "decision": "REUSE"
+        },
+        {
+          "id": "key-name-pack",
+          "label": "Piano key-name practice pack",
+          "owner": "keyboard",
+          "target": "/keyboard-notes/labeled#teaching-pack",
+          "decision": "ADD"
         }
       ]
     }

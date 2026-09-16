@@ -1,0 +1,409 @@
+{
+  "base": "http://localhost:3116",
+  "at": "2026-09-16T14:20:24.995Z",
+  "links": [
+    {
+      "id": "L01",
+      "from": "header Songs menu",
+      "to": "/songs/easy",
+      "anchorText": "Easy Piano Songs",
+      "found": true,
+      "resolved": "/songs/easy",
+      "note": "nav href present"
+    },
+    {
+      "id": "L02",
+      "from": "/songs",
+      "to": "/songs/easy#first-10-minutes",
+      "anchorText": "Try a 10-minute starting plan",
+      "found": true,
+      "resolved": "/songs/easy#first-10-minutes",
+      "modeOk": true,
+      "modeNote": "plan anchor reachable"
+    },
+    {
+      "id": "L03",
+      "from": "/songs/easy",
+      "to": "/sheet-music/twinkle-twinkle-little-star",
+      "anchorText": "Edition details",
+      "found": true,
+      "resolved": "/sheet-music/twinkle-twinkle-little-star",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L04",
+      "from": "/songs/easy",
+      "to": "/sheet-music/hot-cross-buns",
+      "anchorText": "See lesson materials",
+      "found": true,
+      "resolved": "/sheet-music/hot-cross-buns",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L05",
+      "from": "/songs/easy",
+      "to": "/sheet-music/ode-to-joy",
+      "anchorText": "See edition details",
+      "found": true,
+      "resolved": "/sheet-music/ode-to-joy",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L06",
+      "from": "/songs/easy",
+      "to": "/keyboard-notes",
+      "anchorText": "Find a piano note",
+      "found": true,
+      "resolved": "/keyboard-notes",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L07",
+      "from": "/songs/easy",
+      "to": "/keyboard-notes/finger-numbers",
+      "anchorText": "Read piano finger numbers",
+      "found": true,
+      "resolved": "/keyboard-notes/finger-numbers",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L08",
+      "from": "/sheet-music/twinkle-twinkle-little-star",
+      "to": "/songs/easy#first-10-minutes",
+      "anchorText": "Start this edition’s 10-minute plan",
+      "found": true,
+      "resolved": "/songs/easy#first-10-minutes",
+      "modeOk": true,
+      "modeNote": "plan anchor reachable"
+    },
+    {
+      "id": "L09",
+      "from": "/sheet-music/hot-cross-buns",
+      "to": "/songs/easy",
+      "anchorText": "Compare beginner editions",
+      "found": true,
+      "resolved": "/songs/easy",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L10",
+      "from": "/sheet-music/ode-to-joy",
+      "to": "/songs/easy",
+      "anchorText": "Compare beginner editions",
+      "found": true,
+      "resolved": "/songs/easy",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L11",
+      "from": "/sheet-music",
+      "to": "/songs/easy",
+      "anchorText": "Choose a beginner practice goal",
+      "found": true,
+      "resolved": "/songs/easy",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L12",
+      "from": "/sheet-music/easy",
+      "to": "/songs/easy",
+      "anchorText": "Choose what to practice first",
+      "found": true,
+      "resolved": "/songs/easy",
+      "modeOk": true,
+      "modeNote": "link present"
+    },
+    {
+      "id": "L13",
+      "from": "/sheet-music/beginner",
+      "to": "/songs/easy#first-10-minutes",
+      "anchorText": "Use a short practice plan",
+      "found": true,
+      "resolved": "/songs/easy#first-10-minutes",
+      "modeOk": true,
+      "modeNote": "plan anchor reachable"
+    },
+    {
+      "id": "L14",
+      "from": "/keyboard-notes/labeled",
+      "to": "/keyboard-notes#note-trainer",
+      "anchorText": "Try the matching online practice",
+      "found": true,
+      "resolved": "/keyboard-notes?practice=v1&practice-option=natural-c4-c5&practice-seed=1049055600&practice-count=10#note-trainer",
+      "modeOk": true,
+      "modeNote": "practice href=/keyboard-notes?practice=v1&practice-option=natural-c4-c5&practice-seed=1049055600&practice-count=10#note-trainer"
+    },
+    {
+      "id": "L15",
+      "from": "/keyboard-notes",
+      "to": "/keyboard-notes/labeled#teaching-pack",
+      "anchorText": "Print a note-name practice pack",
+      "found": true,
+      "resolved": "/keyboard-notes/labeled#teaching-pack",
+      "modeOk": true,
+      "modeNote": "teaching-pack anchor reachable"
+    },
+    {
+      "id": "L16",
+      "from": "/tools",
+      "to": "/keyboard-notes/labeled#teaching-pack",
+      "anchorText": "Piano key-name practice pack",
+      "found": true,
+      "resolved": "/keyboard-notes/labeled#teaching-pack",
+      "modeOk": true,
+      "modeNote": "teaching-pack anchor reachable"
+    },
+    {
+      "id": "L17",
+      "from": "/keyboard-notes/blank",
+      "to": "/keyboard-notes/labeled#teaching-pack",
+      "anchorText": "Get the reference and answers",
+      "found": true,
+      "resolved": "/keyboard-notes/labeled#teaching-pack",
+      "modeOk": true,
+      "modeNote": "teaching-pack anchor reachable"
+    },
+    {
+      "id": "L18",
+      "from": "/keyboard-notes/labeled",
+      "to": "/keyboard-notes",
+      "anchorText": "Find or hear a piano note",
+      "found": true,
+      "resolved": "/keyboard-notes",
+      "modeOk": true,
+      "modeNote": "link present"
+    }
+  ],
+  "heads": [
+    {
+      "path": "/songs",
+      "title": "Piano Songs: Choose a Version to Practice | PianoGrid",
+      "desc": "Compare piano pieces by edition, playing demands and access. Find a beginner starting point or browse versions for your next practice session.",
+      "canon": "https://pianogrid.com/songs",
+      "ogTitle": "Piano Songs: Choose a Version to Practice | PianoGrid",
+      "ogDesc": "Compare piano pieces by edition, playing demands and access. Find a beginner starting point or browse versions for your next practice session.",
+      "ogImage": null,
+      "h1": "Piano Songs: Choose Your Next Piece",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/songs/easy",
+      "title": "Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid",
+      "desc": "Compare three beginner piano editions, check how to access the music, and start a focused 10-minute plan for one version of Twinkle, Twinkle, Little Star.",
+      "canon": "https://pianogrid.com/songs/easy",
+      "ogTitle": "A small plan for your next piano session",
+      "ogDesc": "Five steps for one Early Elementary Twinkle edition. Check the publisher materials, then choose one small practice goal.",
+      "ogImage": "https://pianogrid.com/assets/social/song-plan-og.png",
+      "h1": "Easy Piano Songs for Beginners",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/songs/easy?plan=twinkle-early-elementary&plan-v=1",
+      "title": "Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid",
+      "desc": "Compare three beginner piano editions, check how to access the music, and start a focused 10-minute plan for one version of Twinkle, Twinkle, Little Star.",
+      "canon": "https://pianogrid.com/songs/easy",
+      "ogTitle": "A small plan for your next piano session",
+      "ogDesc": "Five steps for one Early Elementary Twinkle edition. Check the publisher materials, then choose one small practice goal.",
+      "ogImage": "https://pianogrid.com/assets/social/song-plan-og.png",
+      "h1": "Easy Piano Songs for Beginners",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/sheet-music",
+      "title": "Piano Sheet Music: Find an Edition | PianoGrid",
+      "desc": "Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.",
+      "canon": "https://pianogrid.com/sheet-music",
+      "ogTitle": "Piano Sheet Music: Find an Edition | PianoGrid",
+      "ogDesc": "Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.",
+      "ogImage": null,
+      "h1": "Piano Sheet Music",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/sheet-music/easy",
+      "title": "Easy Piano Sheet Music: Compare Editions | PianoGrid",
+      "desc": "Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.",
+      "canon": "https://pianogrid.com/sheet-music/easy",
+      "ogTitle": "Easy Piano Sheet Music: Compare Editions | PianoGrid",
+      "ogDesc": "Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.",
+      "ogImage": null,
+      "h1": "Easy Piano Sheet Music",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/sheet-music/beginner",
+      "title": "Beginner Piano Sheet Music: Where to Start | PianoGrid",
+      "desc": "Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.",
+      "canon": "https://pianogrid.com/sheet-music/beginner",
+      "ogTitle": "Beginner Piano Sheet Music: Where to Start | PianoGrid",
+      "ogDesc": "Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.",
+      "ogImage": null,
+      "h1": "Beginner Piano Sheet Music",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/sheet-music/twinkle-twinkle-little-star",
+      "title": "Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid",
+      "desc": "Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.",
+      "canon": "https://pianogrid.com/sheet-music/twinkle-twinkle-little-star",
+      "ogTitle": "Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid",
+      "ogDesc": "Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.",
+      "ogImage": null,
+      "h1": "Twinkle, Twinkle, Little Star Piano Sheet Music",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/keyboard-notes",
+      "title": "Piano Keys and Notes: Find, Hear & Practice | PianoGrid",
+      "desc": "Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.",
+      "canon": "https://pianogrid.com/keyboard-notes",
+      "ogTitle": "Piano Keys and Notes: Find, Hear & Practice | PianoGrid",
+      "ogDesc": "Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.",
+      "ogImage": null,
+      "h1": "Piano Keys and Notes",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/keyboard-notes/labeled",
+      "title": "Labeled Piano Keys & Printable Practice Pack | PianoGrid",
+      "desc": "Explore labeled 88-key and 61-key piano layouts. Print a C4–C5 reference, white-key worksheet and answer page, then try the matching online practice.",
+      "canon": "https://pianogrid.com/keyboard-notes/labeled",
+      "ogTitle": "Piano key names: a printable practice pack",
+      "ogDesc": "C4–C5 reference, worksheet and answers, with an optional matching online practice.",
+      "ogImage": "https://pianogrid.com/assets/social/teacher-pack-og.png",
+      "h1": "Labeled Piano Keys",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/keyboard-notes/labeled?paper=a4",
+      "title": "Labeled Piano Keys & Printable Practice Pack | PianoGrid",
+      "desc": "Explore labeled 88-key and 61-key piano layouts. Print a C4–C5 reference, white-key worksheet and answer page, then try the matching online practice.",
+      "canon": "https://pianogrid.com/keyboard-notes/labeled",
+      "ogTitle": "Piano key names: a printable practice pack",
+      "ogDesc": "C4–C5 reference, worksheet and answers, with an optional matching online practice.",
+      "ogImage": "https://pianogrid.com/assets/social/teacher-pack-og.png",
+      "h1": "Labeled Piano Keys",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    },
+    {
+      "path": "/tools",
+      "title": "Piano Tools & Printables for Practice | PianoGrid",
+      "desc": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
+      "canon": "https://pianogrid.com/tools",
+      "ogTitle": "Piano Tools & Printables for Practice | PianoGrid",
+      "ogDesc": "Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.",
+      "ogImage": null,
+      "h1": "Piano Tools and Printables",
+      "robots": "index, follow",
+      "canonicalOk": true,
+      "titlePresent": true,
+      "singleH1": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "OG-song-plan",
+      "path": "/assets/social/song-plan-og.png",
+      "status": 200,
+      "contentType": "image/png",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "OG-teacher-pack",
+      "path": "/assets/social/teacher-pack-og.png",
+      "status": 200,
+      "contentType": "image/png",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-letter",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-a4",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-letter-ws",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter-worksheet.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    },
+    {
+      "id": "PDF-a4-ws",
+      "path": "/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4-worksheet.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "ok": true,
+      "onDisk": true
+    }
+  ],
+  "coldShare": [
+    {
+      "path": "/songs/easy",
+      "opened": true,
+      "dialogStyled": true
+    },
+    {
+      "path": "/keyboard-notes/labeled",
+      "opened": true,
+      "dialogStyled": true
+    }
+  ],
+  "pass": {
+    "links": true,
+    "heads": true,
+    "assets": true,
+    "coldShare": true
+  }
+}

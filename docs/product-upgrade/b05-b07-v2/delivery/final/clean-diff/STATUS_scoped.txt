@@ -1,0 +1,50 @@
+﻿ M checks/batches/07-site-integration/foundation.json
+ M checks/batches/07-site-integration/tailwind-compile.json
+ M docs/content/PianoGrid_Practical_Tools_Final_Execution_Pack_2026-09-15/tools-content-data.json
+ M scripts/check-foundation.mjs
+ M scripts/check-practical-tools-browser.mjs
+ M scripts/check-songs-sheet-browser.mjs
+ M src/app/songs/easy/page.tsx
+ M src/components/integration/pages.tsx
+ M src/components/keyboard-notes/blank-experience.tsx
+ M src/components/keyboard-notes/keyboard-notes-workspace.tsx
+ M src/components/keyboard-notes/labeled-experience.tsx
+ M src/components/keyboard-notes/pages.tsx
+ M src/components/keyboard-notes/share-dialog.css
+ M src/components/sheet-music/pages.tsx
+ M src/components/sheet-music/sheet-music.css
+ M src/components/songs/pages.tsx
+ M src/components/songs/songs.css
+ M src/lib/integration-content.ts
+ M src/lib/seo-editorial.ts
+?? public/assets/social/
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4-worksheet.pdf
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter-worksheet.pdf
+?? public/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf
+?? scripts/check-b05-browser.mjs
+?? scripts/check-b05-plan.mjs
+?? scripts/check-b06-browser.mjs
+?? scripts/check-b06-pdfs.mjs
+?? scripts/check-b06-plan.mjs
+?? scripts/check-b07-browser.mjs
+?? scripts/check-b07-events.mjs
+?? scripts/check-b07-links.mjs
+?? scripts/export-teaching-pack-pdfs.mjs
+?? src/components/keyboard-notes/teaching-pack.css
+?? src/components/keyboard-notes/teaching-pack.tsx
+?? src/components/sheet-music/edition-access.tsx
+?? src/components/sheet-music/provider-open-link.tsx
+?? src/components/songs/edition-cards.tsx
+?? src/components/songs/practice-plan.tsx
+?? src/components/songs/song-plan.css
+?? src/components/ui/collapsible.css
+?? src/components/ui/collapsible.tsx
+?? src/lib/b05-content.ts
+?? src/lib/b05-editions.ts
+?? src/lib/b05-events.ts
+?? src/lib/b05-plan.ts
+?? src/lib/b06-content.ts
+?? src/lib/b06-events.ts
+?? src/lib/b06-teaching-pack.ts
+?? src/lib/b07-content.ts

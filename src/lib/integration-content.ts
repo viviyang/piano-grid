@@ -54,6 +54,7 @@ export function getToolsModel():ToolsModel{
     'labeled-keyboard':'Open printable 88-key and 61-key labeled layouts.',
     'notes-chart':'Print a staff-note and keyboard reference.',
     'scale-print':'Open scale references and ready-made PDF downloads.',
+    'key-name-pack':'Download a C4–C5 reference, worksheet and answer pack.',
   };
   const targetOverrides:Record<string,string>={
     'scale-finder':'/scales#find-by-notes',
@@ -82,6 +83,10 @@ export function getToolsModel():ToolsModel{
       {label:'Download major and minor atlas',url:'/downloads/scales/pianogrid-major-minor-note-atlas.pdf'},
       {label:'Download C major two-hand starter',url:'/downloads/scales/pianogrid-c-major-two-hand-starter.pdf'},
     ],
+    'key-name-pack':[
+      {label:'Download US Letter 3-page PDF',url:'/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf'},
+      {label:'Download A4 3-page PDF',url:'/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf'},
+    ],
   };
   const printResources:ToolResource[]=printGroup.items.map(makeTask).filter(item=>item.available).map(item=>{
     const downloads=(printByID[item.id]??[]).map(download=>{
@@ -91,6 +96,6 @@ export function getToolsModel():ToolsModel{
     });
     return{...item,downloads};
   });
-  if(findLinks.length!==6||practiceLinks.length!==5||printResources.length!==4)throw new Error('Practical Tools release map is incomplete');
+  if(findLinks.length!==6||practiceLinks.length!==5||printResources.length!==5)throw new Error('Practical Tools release map is incomplete');
   return {model:{...model,title:pack.page.h1,description:pack.page.intro,metadata:{...model.metadata,title:pack.page.title,description:pack.page.description}},findLinks,practiceLinks,printResources};
 }

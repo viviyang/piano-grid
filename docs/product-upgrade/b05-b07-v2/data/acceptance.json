@@ -1,0 +1,712 @@
+[
+  {
+    "id": "BASE-01",
+    "group": "BASE",
+    "severity": "P0",
+    "test": "当前HEAD/branch/worktree写入BASELINE，保留非本批改动",
+    "methodAndExpected": "对照git输出与manifest，禁止引用旧main为事实",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "BASE-02",
+    "group": "BASE",
+    "severity": "P0",
+    "test": "当前实际rules/font/theme被映射",
+    "methodAndExpected": "查看TOKEN_MAP与computed CSS，无新全站配色",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "BASE-03",
+    "group": "BASE",
+    "severity": "P0",
+    "test": "三首映射同一existing edition而非复制registry",
+    "methodAndExpected": "对照arrangementId/revision/source，未知字段不补造",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "BASE-04",
+    "group": "BASE",
+    "severity": "P0",
+    "test": "公开业务route增量=0",
+    "methodAndExpected": "比较前后集合；PDF assets独立统计",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "BASE-05",
+    "group": "BASE",
+    "severity": "P1",
+    "test": "当前检查命令真实存在",
+    "methodAndExpected": "无不存在脚本的伪通过；保存exit与日志",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-01",
+    "group": "B05",
+    "severity": "P0",
+    "test": "Twinkle卡进入唯一plan，另两卡进入版页",
+    "methodAndExpected": "逐个点击检查URL/标题/版本，不存在假plan按钮",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-02",
+    "group": "B05",
+    "severity": "P0",
+    "test": "三个卡的free/form或paid条件在动作前可见",
+    "methodAndExpected": "手机/桌面查看，不能只藏细节",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-03",
+    "group": "B05",
+    "severity": "P0",
+    "test": "/songs原目录/筛选保留",
+    "methodAndExpected": "选既有难度/搜索获得正确旧条目",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-04",
+    "group": "B05",
+    "severity": "P0",
+    "test": "无许可外部轨道无本站谱/音轨控制",
+    "methodAndExpected": "检查DOM、网络请求，无第三方镜像或伪Player",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-05",
+    "group": "B05",
+    "severity": "P0",
+    "test": "Start只开step1，不跳外站/播放",
+    "methodAndExpected": "监听导航/AudioContext触发",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-06",
+    "group": "B05",
+    "severity": "P0",
+    "test": "Next/Previous/直接跳步不自动勾自检",
+    "methodAndExpected": "step1不勾直去step5，checked_count仍0",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-07",
+    "group": "B05",
+    "severity": "P0",
+    "test": "Finish不夸大用户练琴或成绩",
+    "methodAndExpected": "0勾/部分勾/全勾三个结果都正确",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-08",
+    "group": "B05",
+    "severity": "P0",
+    "test": "shared链接仅plan+revision无个人数据",
+    "methodAndExpected": "勾选后分享并另上下文打开，接收者全新状态",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-09",
+    "group": "B05",
+    "severity": "P0",
+    "test": "未知key/version安全处理不静默换编配",
+    "methodAndExpected": "试未知、重复、超长参数及旧版",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-10",
+    "group": "B05",
+    "severity": "P0",
+    "test": "provider URL有allowlist验证",
+    "methodAndExpected": "注入javascript或任意外站测试被拒绝",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-11",
+    "group": "B05",
+    "severity": "P0",
+    "test": "sessionStorage不可用仍可完成全部流程",
+    "methodAndExpected": "模拟set/get抛异常，UI不崩溃",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-12",
+    "group": "B05",
+    "severity": "P1",
+    "test": "合法刷新/返回保持同版session而非混另一版",
+    "methodAndExpected": "同session和新browser context对照",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-13",
+    "group": "B05",
+    "severity": "P0",
+    "test": "步骤焦点与键盘可用",
+    "methodAndExpected": "只Tab/Enter走目录/Next/分享/关闭，焦点可见",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-14",
+    "group": "B05",
+    "severity": "P0",
+    "test": "无JS可读五步并有真实href",
+    "methodAndExpected": "禁JS加载查看正文和provider链接",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-15",
+    "group": "B05",
+    "severity": "P1",
+    "test": "首屏外链打开不被记为下载完成",
+    "methodAndExpected": "拦截事件核对名称和payload",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-16",
+    "group": "B05",
+    "severity": "P0",
+    "test": "Sheet→plan和plan→Sheet版本一致",
+    "methodAndExpected": "每个链接目标与edition audit对应",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-17",
+    "group": "B05",
+    "severity": "P1",
+    "test": "手机320/375/390无水平页面溢出",
+    "methodAndExpected": "scrollWidth<=clientWidth+1并检查主动作可见",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-18",
+    "group": "B05",
+    "severity": "P0",
+    "test": "plan无自动计时/自动评分/成绩上传",
+    "methodAndExpected": "代码与事件检查",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-19",
+    "group": "B05",
+    "severity": "P1",
+    "test": "站内样板分支有素材才显示",
+    "methodAndExpected": "capability矩阵与权限/事件数据对照，未做标BLOCKED_CONTENT",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B05-20",
+    "group": "B05",
+    "severity": "P1",
+    "test": "取消/重开share清理旧失败链接",
+    "methodAndExpected": "复制失败后切有效目标再打开，URL当前",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-01",
+    "group": "B06",
+    "severity": "P0",
+    "test": "生产资料projected白键8/黑键5",
+    "methodAndExpected": "C4至C5无漏键，黑键分2+3；与现有layout核对",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-02",
+    "group": "B06",
+    "severity": "P0",
+    "test": "两种纸张各3页，无多余空白页",
+    "methodAndExpected": "解析PDF pageCount/尺寸，逐页render",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-03",
+    "group": "B06",
+    "severity": "P0",
+    "test": "worksheet-only选项输出1页",
+    "methodAndExpected": "下载或打印preview检查页数/内容，不混答案",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-04",
+    "group": "B06",
+    "severity": "P0",
+    "test": "worksheet标签真正缺失",
+    "methodAndExpected": "PDF提取与渲染都无预填音名；仅题干允许范围文字",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-05",
+    "group": "B06",
+    "severity": "P0",
+    "test": "答案C4 D4 E4 F4 G4 A4 B4 C5准确",
+    "methodAndExpected": "投影和print文本对应",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-06",
+    "group": "B06",
+    "severity": "P0",
+    "test": "三个look-again答案F4 C5 D4准确",
+    "methodAndExpected": "标记位置与键位对应",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-07",
+    "group": "B06",
+    "severity": "P0",
+    "test": "format切换预览/下载/打印一致",
+    "methodAndExpected": "Letter→A4→Letter随机序列检查asset size",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-08",
+    "group": "B06",
+    "severity": "P0",
+    "test": "所有下载资源可取且不是HTML404",
+    "methodAndExpected": "content-type、PDF header、文件名与sha",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-09",
+    "group": "B06",
+    "severity": "P0",
+    "test": "旧88/61参考方向/页数不受新CSS污染",
+    "methodAndExpected": "新包print后立刻旧reference print对比；worksheet-only为1 of 1，并指向资源页答案，不引用不存在的page3。",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-10",
+    "group": "B06",
+    "severity": "P0",
+    "test": "打印中不包含ShareDialog/导航遮罩",
+    "methodAndExpected": "share打开→print请求→render检查",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-11",
+    "group": "B06",
+    "severity": "P0",
+    "test": "打印取消还原状态",
+    "methodAndExpected": "afterprint与取消路径，不残留旧resource snapshot",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-12",
+    "group": "B06",
+    "severity": "P0",
+    "test": "匹配练习是natural C4–C5合法preset",
+    "methodAndExpected": "跨设备恢复并检查每题目标可点击",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-13",
+    "group": "B06",
+    "severity": "P0",
+    "test": "资源分享不带自检/身份/答案",
+    "methodAndExpected": "payload与receiver检查",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-14",
+    "group": "B06",
+    "severity": "P1",
+    "test": "preview键盘/读屏等价内容",
+    "methodAndExpected": "缩略图有名字、当前页状态、HTML答案",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-15",
+    "group": "B06",
+    "severity": "P1",
+    "test": "Letter/A4灰度标签仍清楚",
+    "methodAndExpected": "渲染转灰度检查，不以颜色单独传含义",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-16",
+    "group": "B06",
+    "severity": "P0",
+    "test": "不编教育使用许可/联系信息",
+    "methodAndExpected": "文件/邮件按来源核对",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-17",
+    "group": "B06",
+    "severity": "P1",
+    "test": "5个外联seed有真实状态、未发出",
+    "methodAndExpected": "UNKNOWN保持、无伪邮箱/收录承诺",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B06-18",
+    "group": "B06",
+    "severity": "P1",
+    "test": "无JS仍有PDF href与文本说明",
+    "methodAndExpected": "禁JS打开资源段",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-01",
+    "group": "B07",
+    "severity": "P0",
+    "test": "title/description单实例且与功能匹配",
+    "methodAndExpected": "原始HTML和hydrated DOM逐页比对",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-02",
+    "group": "B07",
+    "severity": "P1",
+    "test": "每页一个明确H1，H2/H3层次非调试标题",
+    "methodAndExpected": "项目内容规则检查",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-03",
+    "group": "B07",
+    "severity": "P0",
+    "test": "参数share变体自canonical到base且sitemap仅base",
+    "methodAndExpected": "抽plan/keyboard/B04/resource四类",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-04",
+    "group": "B07",
+    "severity": "P0",
+    "test": "内链path+hash+active状态都正确",
+    "methodAndExpected": "逐行data/internal-links实际导航，不只200",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-05",
+    "group": "B07",
+    "severity": "P0",
+    "test": "旧B04/nav/major-minor比较未被本批重写",
+    "methodAndExpected": "git范围+关键user flow",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-06",
+    "group": "B07",
+    "severity": "P0",
+    "test": "没有unknown/draft/sourceID泄漏成主文案",
+    "methodAndExpected": "原文source区合法说明例外，其余检查",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-07",
+    "group": "B07",
+    "severity": "P0",
+    "test": "没有虚假结构化评级/课程/曲谱托管",
+    "methodAndExpected": "解析JSON-LD并对照可见能力",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-08",
+    "group": "B07",
+    "severity": "P1",
+    "test": "OG图像资产真实且无用户数据/外部版权图",
+    "methodAndExpected": "检查response/meta/实际图",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-09",
+    "group": "B07",
+    "severity": "P0",
+    "test": "collector状态按实际接收证据",
+    "methodAndExpected": "无provider时必须NOT_COLLECTED，不装SDK",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-10",
+    "group": "B07",
+    "severity": "P0",
+    "test": "埋点不上传答案/身份/原始url",
+    "methodAndExpected": "payload白名单测试",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-11",
+    "group": "B07",
+    "severity": "P1",
+    "test": "QA/test事件排除，重渲染不重复开始事件",
+    "methodAndExpected": "双click及rerender测试",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-12",
+    "group": "B07",
+    "severity": "P0",
+    "test": "下载/分享不因event错误失效",
+    "methodAndExpected": "模拟collector throw后实际操作成功",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-13",
+    "group": "B07",
+    "severity": "P1",
+    "test": "lastmod不在所有页面每build刷新",
+    "methodAndExpected": "两次无内容修改build比较",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-14",
+    "group": "B07",
+    "severity": "P0",
+    "test": "最终build/check/unit/browser日志可复核",
+    "methodAndExpected": "失败/skip不计PASS",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "B07-15",
+    "group": "B07",
+    "severity": "P0",
+    "test": "新增文件进入handoff，FULL.diff干净可恢复",
+    "methodAndExpected": "副本应用补丁+新增文件还原，再哈希验证",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-01",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "旧B03 v1分享仍还原原题组",
+    "methodAndExpected": "两固定旧链接before/after题序相等",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-02",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "白→黑custom模式目标不会被禁用",
+    "methodAndExpected": "枚举全部题目标是否enabled",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-03",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "黑键hint由geometry生成",
+    "methodAndExpected": "C#4/D#4/F#4等不提示去按白键",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-04",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "Explore Stop和切题/切后台实际取消",
+    "methodAndExpected": "检查真实audio owner调用/节点",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-05",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "B04 replay/reveal旧回调不能覆盖新状态",
+    "methodAndExpected": "play→reveal→旧complete，保持revealed",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-06",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "共享面板每个route冷启动样式完整",
+    "methodAndExpected": "各自独立browser context，不先访问Keyboard",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-07",
+    "group": "REGRESSION",
+    "severity": "P0",
+    "test": "B04真实音频失败/第二段失败可重试",
+    "methodAndExpected": "走owner失败，不在DOM伪插错误框",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "REGRESSION-08",
+    "group": "REGRESSION",
+    "severity": "P1",
+    "test": "原Labeled横竖屏/高音边缘范围正常",
+    "methodAndExpected": "旧功能path保留",
+    "execution": "AUTOMATED_OR_EVIDENCED_REVIEW",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "MANUAL-01",
+    "group": "MANUAL",
+    "severity": "P0",
+    "test": "Windows+iPhone真实分享/返回/复制",
+    "methodAndExpected": "从B05/B06各发一次链接，另一设备打开正确",
+    "execution": "MANUAL_REQUIRED",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "MANUAL-02",
+    "group": "MANUAL",
+    "severity": "P0",
+    "test": "Letter或A4至少一次实体打印",
+    "methodAndExpected": "选择实际纸张，确认完整标签/无裁切；另一格式PDF预览",
+    "execution": "MANUAL_REQUIRED",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "MANUAL-03",
+    "group": "MANUAL",
+    "severity": "P0",
+    "test": "VoiceOver或NVDA基础流程",
+    "methodAndExpected": "步骤、分享、资源链接/HTML等价内容可达",
+    "execution": "MANUAL_REQUIRED",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "MANUAL-04",
+    "group": "MANUAL",
+    "severity": "P0",
+    "test": "B02/B04听音快速回归",
+    "methodAndExpected": "Play/Stop/compare/后台中断，无重叠",
+    "execution": "MANUAL_REQUIRED",
+    "status": "PENDING",
+    "evidence": null
+  },
+  {
+    "id": "MANUAL-05",
+    "group": "MANUAL",
+    "severity": "P1",
+    "test": "用户读完版本获取说明且主任务清楚",
+    "methodAndExpected": "确认外部资源不是本站播放器",
+    "execution": "MANUAL_REQUIRED",
+    "status": "PENDING",
+    "evidence": null
+  }
+]

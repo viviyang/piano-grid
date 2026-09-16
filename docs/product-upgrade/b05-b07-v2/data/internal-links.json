@@ -1,0 +1,182 @@
+[
+  {
+    "id": "L01",
+    "from": "header Songs menu",
+    "to": "/songs/easy",
+    "anchorText": "Easy Piano Songs",
+    "placement": "existing nav row only",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy"
+  },
+  {
+    "id": "L02",
+    "from": "/songs",
+    "to": "/songs/easy#first-10-minutes",
+    "anchorText": "Try a 10-minute starting plan",
+    "placement": "beginner teaser; one contextual link",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy#first-10-minutes"
+  },
+  {
+    "id": "L03",
+    "from": "/songs/easy",
+    "to": "/sheet-music/twinkle-twinkle-little-star",
+    "anchorText": "Edition details",
+    "placement": "Twinkle card",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/sheet-music/twinkle-twinkle-little-star"
+  },
+  {
+    "id": "L04",
+    "from": "/songs/easy",
+    "to": "/sheet-music/hot-cross-buns",
+    "anchorText": "See lesson materials",
+    "placement": "Hot Cross Buns card",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/sheet-music/hot-cross-buns"
+  },
+  {
+    "id": "L05",
+    "from": "/songs/easy",
+    "to": "/sheet-music/ode-to-joy",
+    "anchorText": "See edition details",
+    "placement": "Ode card",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/sheet-music/ode-to-joy"
+  },
+  {
+    "id": "L06",
+    "from": "/songs/easy",
+    "to": "/keyboard-notes",
+    "anchorText": "Find a piano note",
+    "placement": "step setup optional help",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes"
+  },
+  {
+    "id": "L07",
+    "from": "/songs/easy",
+    "to": "/keyboard-notes/finger-numbers",
+    "anchorText": "Read piano finger numbers",
+    "placement": "step setup optional help",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes/finger-numbers"
+  },
+  {
+    "id": "L08",
+    "from": "/sheet-music/twinkle-twinkle-little-star",
+    "to": "/songs/easy#first-10-minutes",
+    "anchorText": "Start this edition’s 10-minute plan",
+    "placement": "after access summary",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy#first-10-minutes"
+  },
+  {
+    "id": "L09",
+    "from": "/sheet-music/hot-cross-buns",
+    "to": "/songs/easy",
+    "anchorText": "Compare beginner editions",
+    "placement": "after provider introduction",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy"
+  },
+  {
+    "id": "L10",
+    "from": "/sheet-music/ode-to-joy",
+    "to": "/songs/easy",
+    "anchorText": "Compare beginner editions",
+    "placement": "after provider introduction",
+    "batch": "B05",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy"
+  },
+  {
+    "id": "L11",
+    "from": "/sheet-music",
+    "to": "/songs/easy",
+    "anchorText": "Choose a beginner practice goal",
+    "placement": "beginner section only",
+    "batch": "B07",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy"
+  },
+  {
+    "id": "L12",
+    "from": "/sheet-music/easy",
+    "to": "/songs/easy",
+    "anchorText": "Choose what to practice first",
+    "placement": "existing beginner section",
+    "batch": "B07",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy"
+  },
+  {
+    "id": "L13",
+    "from": "/sheet-music/beginner",
+    "to": "/songs/easy#first-10-minutes",
+    "anchorText": "Use a short practice plan",
+    "placement": "only contextual Twinkle mention",
+    "batch": "B07",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/songs/easy#first-10-minutes"
+  },
+  {
+    "id": "L14",
+    "from": "/keyboard-notes/labeled",
+    "to": "/keyboard-notes#note-trainer",
+    "anchorText": "Try the matching online practice",
+    "placement": "must resolve C4–C5 white preset via existing builder; shown href illustrative base",
+    "batch": "B06",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes?practice=v1&practice-option=natural-c4-c5&practice-seed=506507063&practice-count=10#note-trainer"
+  },
+  {
+    "id": "L15",
+    "from": "/keyboard-notes",
+    "to": "/keyboard-notes/labeled#teaching-pack",
+    "anchorText": "Print a note-name practice pack",
+    "placement": "existing resource/related area, not duplicate primary",
+    "batch": "B06",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes/labeled#teaching-pack"
+  },
+  {
+    "id": "L16",
+    "from": "/tools",
+    "to": "/keyboard-notes/labeled#teaching-pack",
+    "anchorText": "Piano key-name practice pack",
+    "placement": "one printable resource item",
+    "batch": "B06",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes/labeled#teaching-pack"
+  },
+  {
+    "id": "L17",
+    "from": "/keyboard-notes/blank",
+    "to": "/keyboard-notes/labeled#teaching-pack",
+    "anchorText": "Get the reference and answers",
+    "placement": "only if this approved route exists",
+    "batch": "B06",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes/labeled#teaching-pack"
+  },
+  {
+    "id": "L18",
+    "from": "/keyboard-notes/labeled",
+    "to": "/keyboard-notes",
+    "anchorText": "Find or hear a piano note",
+    "placement": "existing related link; deduplicate",
+    "batch": "B06",
+    "status": "IMPLEMENTED_VERIFIED",
+    "verifiedHref": "/keyboard-notes"
+  }
+]

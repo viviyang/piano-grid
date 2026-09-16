@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "contentStatus": "APPROVED_IMPLEMENTATION_COPY_NOT_PUBLISHER_INSTRUCTION",
+  "locale": "en-US",
+  "editionEvidence": {
+    "twinkle": {
+      "workTitle": "Twinkle, Twinkle, Little Star",
+      "editionTitle": "Early Elementary Version",
+      "provider": "Hoffman Academy",
+      "providerUrl": "https://www.hoffmanacademy.com/store/sheet-music/twinkle-twinkle-little-star-early-elementary-version",
+      "sheetUrl": "/sheet-music/twinkle-twinkle-little-star",
+      "level": "Early Elementary",
+      "accessLabel": "Free on Hoffman Academy · email or sign-in required",
+      "accessKind": "external_free_form",
+      "evidence": [
+        "W03",
+        "W06"
+      ],
+      "verifiedNotes": null,
+      "verifiedFingering": null
+    },
+    "hot-cross-buns": {
+      "workTitle": "Hot Cross Buns",
+      "editionTitle": "Materials for Lesson 1 with Parent Guide",
+      "provider": "Hoffman Academy",
+      "providerUrl": "https://www.hoffmanacademy.com/store/learning-and-teaching-resources/materials-for-lesson-1",
+      "sheetUrl": "/sheet-music/hot-cross-buns",
+      "level": "Early Elementary",
+      "accessLabel": "Free on Hoffman Academy · email or sign-in required",
+      "accessKind": "external_free_form",
+      "evidence": [
+        "W07"
+      ],
+      "verifiedNotes": null,
+      "verifiedFingering": null
+    },
+    "ode-to-joy": {
+      "workTitle": "Ode to Joy",
+      "editionTitle": "Early Elementary arrangement",
+      "provider": "Hoffman Academy",
+      "providerUrl": "https://www.hoffmanacademy.com/store/sheet-music/ode-to-joy",
+      "sheetUrl": "/sheet-music/ode-to-joy",
+      "level": "Early Elementary",
+      "accessLabel": "Paid or membership access on Hoffman Academy",
+      "accessKind": "external_paid_or_membership",
+      "evidence": [
+        "W08"
+      ],
+      "verifiedNotes": null,
+      "verifiedFingering": null
+    }
+  },
+  "songs": {
+    "h1": "Piano Songs: Choose Your Next Piece",
+    "intro": "Choose a piece, then check the exact arrangement and how to get its music. Start with the beginner selection or browse the full catalogue.",
+    "sectionTitle": "Looking for a place to start?",
+    "sectionBody": "Compare three beginner editions, or use a short practice plan for one version of Twinkle, Twinkle, Little Star.",
+    "primary": "Find an easy starting point",
+    "browseHeading": "Browse piano versions"
+  },
+  "easy": {
+    "h1": "Easy Piano Songs for Beginners",
+    "intro": "Choose one edition and one small goal for your next session.",
+    "selectionHeading": "Choose a starting point",
+    "selectionNote": "These editions are available on the publisher’s website. Check the access details before you start.",
+    "cards": [
+      {
+        "editionKey": "twinkle",
+        "editorialLabel": "A focused first session",
+        "reason": "A named Early Elementary edition with a hand-position graphic and a matching tutorial.",
+        "primaryLabel": "See the 10-minute plan",
+        "primaryHref": "#first-10-minutes",
+        "secondaryLabel": "Edition details",
+        "secondaryHref": "/sheet-music/twinkle-twinkle-little-star"
+      },
+      {
+        "editionKey": "hot-cross-buns",
+        "editorialLabel": "A first lesson with a guide",
+        "reason": "Start with the publisher’s Lesson 1 materials and parent guide.",
+        "primaryLabel": "See lesson materials",
+        "primaryHref": "/sheet-music/hot-cross-buns",
+        "secondaryLabel": null,
+        "secondaryHref": null
+      },
+      {
+        "editionKey": "ode-to-joy",
+        "editorialLabel": "Another melody to explore",
+        "reason": "Check the Early Elementary edition and its access options before choosing it.",
+        "primaryLabel": "See edition details",
+        "primaryHref": "/sheet-music/ode-to-joy",
+        "secondaryLabel": null,
+        "secondaryHref": null
+      }
+    ],
+    "plan": {
+      "publicKey": "twinkle-early-elementary",
+      "revision": 1,
+      "anchor": "first-10-minutes",
+      "title": "Your first 10 minutes",
+      "subtitle": "Twinkle, Twinkle, Little Star",
+      "editionCaption": "Early Elementary · Hoffman Academy",
+      "intro": "A short plan for using this edition. Ten minutes is a focused start, not a promise to learn the whole piece.",
+      "mode": "external_guided",
+      "primaryLabel": "Start the plan",
+      "secondaryLabel": "Open this edition",
+      "shareLabel": "Share this plan",
+      "progressLabel": "Step {current} of 5",
+      "next": "Next step",
+      "previous": "Previous step",
+      "done": "Finish this check-in",
+      "exit": "Back to the plan",
+      "steps": [
+        {
+          "id": "edition",
+          "timeLabel": "0–2 min",
+          "title": "Get the right edition",
+          "body": "Open the Early Elementary version named above. Keep the edition title in view so that the score and tutorial match. The provider may ask for your name and email or a sign-in.",
+          "actionLabel": "Open this edition",
+          "action": "provider",
+          "checkLabel": "I have this edition ready.",
+          "helpTitle": "Not ready to open it?",
+          "helpBody": "You can read the plan first. Access to the music is handled by the provider, not by PianoGrid.",
+          "optionalLinks": [
+            {
+              "label": "Edition and access details",
+              "href": "/sheet-music/twinkle-twinkle-little-star"
+            }
+          ]
+        },
+        {
+          "id": "setup",
+          "timeLabel": "2–4 min",
+          "title": "Find the starting position",
+          "body": "Use the hand-position graphic and instructions in this edition. Find the starting keys on your own piano before trying the phrase. Follow the edition’s hand instructions rather than a different arrangement of the song.",
+          "actionLabel": null,
+          "action": null,
+          "checkLabel": "I found the starting position.",
+          "helpTitle": "Need help with the notation?",
+          "helpBody": "Use the note finder for an unfamiliar key name. Finger numbers describe fingers; they are not octave numbers.",
+          "optionalLinks": [
+            {
+              "label": "Find a piano note",
+              "href": "/keyboard-notes"
+            },
+            {
+              "label": "Read piano finger numbers",
+              "href": "/keyboard-notes/finger-numbers"
+            }
+          ]
+        },
+        {
+          "id": "phrase",
+          "timeLabel": "4–6 min",
+          "title": "Choose one short phrase",
+          "body": "Choose a short phrase from this score or its matching tutorial. Work on that section at a pace that lets you follow the notes. You do not need to finish the whole song in this session.",
+          "actionLabel": null,
+          "action": null,
+          "checkLabel": "I tried one short phrase.",
+          "helpTitle": "The phrase feels too long",
+          "helpBody": "Choose a smaller section from the same edition. Check the matching tutorial before deciding where to begin or which hand to use.",
+          "optionalLinks": []
+        },
+        {
+          "id": "repeat",
+          "timeLabel": "6–8 min",
+          "title": "Repeat one small section",
+          "body": "Repeat the section you chose. Pause at a place that feels uncertain, check the score or tutorial, and try that small part again. Move on when you are ready; the suggested minutes are not a countdown.",
+          "actionLabel": null,
+          "action": null,
+          "checkLabel": "I revisited one uncertain spot.",
+          "helpTitle": "Keep the goal small",
+          "helpBody": "For this session, one clearer note change or one more comfortable repetition is a useful thing to notice.",
+          "optionalLinks": []
+        },
+        {
+          "id": "reflect",
+          "timeLabel": "8–10 min",
+          "title": "Choose what to revisit",
+          "body": "Use the matching tutorial or reference to check your attempt. Choose one focus for next time: finding the notes, following the rhythm, or coordinating the hands. You may also leave this undecided.",
+          "actionLabel": null,
+          "action": null,
+          "checkLabel": "I chose a next focus.",
+          "helpTitle": "A check-in, not a score",
+          "helpBody": "These are your own notes about the session. PianoGrid has not listened to or graded your playing.",
+          "optionalLinks": []
+        }
+      ],
+      "selfReportOptions": [
+        {
+          "value": "notes",
+          "label": "Finding the notes"
+        },
+        {
+          "value": "rhythm",
+          "label": "Following the rhythm"
+        },
+        {
+          "value": "hands",
+          "label": "Coordinating the hands"
+        },
+        {
+          "value": "undecided",
+          "label": "Not sure yet"
+        }
+      ],
+      "result": {
+        "title": "A small session, a next step",
+        "body": "You reached the end of the plan. Your check-in is not an assessment of your playing.",
+        "revisit": "Revisit a step",
+        "nextSong": "Choose another edition",
+        "share": "Share this plan",
+        "shareBody": "The other person gets the plan and edition details—not your check-ins."
+      },
+      "shared": {
+        "label": "Shared practice plan",
+        "body": "Start at the beginning with the same edition. No one else’s check-ins are included."
+      },
+      "expired": {
+        "title": "This plan version is unavailable",
+        "body": "Choose an available plan below. We have not substituted another edition.",
+        "action": "Choose a current plan"
+      }
+    },
+    "learnSections": [
+      {
+        "h2": "What makes an arrangement a useful starting point?",
+        "body": "Look at the specific edition, not only the song title. Compare the publisher’s level, the sample, the required hand movement and how the materials are supplied. “Easy” is a label to investigate, not a guarantee that every version will fit your current skills."
+      },
+      {
+        "h2": "Make a small practice goal",
+        "body": "Choose a section from the exact score or its matching tutorial. Keep the first goal narrow: locate the starting keys, follow one phrase, or revisit a difficult change. You can shorten the session or return to a step at any time."
+      },
+      {
+        "h2": "Do I need chords and scales first?",
+        "body": "Not as a blanket requirement for every arrangement. Start with this edition’s instructions. Use a chord or scale reference when the score or tutorial gives you a specific reason to use it."
+      },
+      {
+        "h2": "Where do I get the music?",
+        "body": "The edition pages explain the provider and access route. These three publisher editions are not score or audio downloads hosted by PianoGrid."
+      }
+    ]
+  },
+  "sheet": {
+    "introTemplate": "Check the exact edition and access route before you begin.",
+    "accessHeading": "Edition and access",
+    "sourceHeading": "Source and notation notes",
+    "practiceHeading": "A focused way to begin",
+    "unverifiedField": "Not confirmed for this edition",
+    "providerButton": "Open on Hoffman Academy",
+    "planButton": "Start this edition’s 10-minute plan",
+    "genericButton": "Compare beginner editions",
+    "noHostedAssets": "The score and recording for this edition are provided externally. PianoGrid does not host them.",
+    "publisherLevelLabel": "Publisher level",
+    "technicalDetailsLabel": "Musical details for this edition"
+  },
+  "teacher": {
+    "anchor": "teaching-pack",
+    "title": "A small pack for your next lesson",
+    "subtitle": "Piano key names · C4–C5",
+    "body": "Use a labeled reference, a write-in worksheet and an answer page to practice white-key names. Print all three pages, or just the worksheet.",
+    "formatLegend": "Paper size",
+    "letter": "US Letter",
+    "a4": "A4",
+    "download": "Download 3-page PDF",
+    "print": "Print this pack",
+    "share": "Share resource",
+    "practice": "Try the matching online practice",
+    "pageLabels": [
+      "Reference",
+      "Worksheet",
+      "Answers & use notes"
+    ],
+    "scope": "White-key names from C4 to C5. Octave numbers identify register, not fingers.",
+    "caveat": "A reference worksheet, not a full-size keyboard sticker template.",
+    "emptyError": "The PDF could not be opened. Try again or use the accessible HTML version.",
+    "accessible": "Read the accessible text version",
+    "successCopy": "Link copied.",
+    "shareTitle": "A piano-key practice pack",
+    "shareBody": "Reference, worksheet and answers for C4–C5, with an optional online practice.",
+    "footerInstruction": "Share the resource page link so others can find the current version."
+  }
+}

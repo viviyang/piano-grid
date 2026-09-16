@@ -1,0 +1,110 @@
+﻿[
+    {
+        "name":  "check-foundation",
+        "exit":  0,
+        "seconds":  4,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-check-foundation.txt"
+    },
+    {
+        "name":  "typecheck",
+        "exit":  0,
+        "seconds":  11,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-typecheck.txt"
+    },
+    {
+        "name":  "check-css",
+        "exit":  0,
+        "seconds":  3,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-check-css.txt"
+    },
+    {
+        "name":  "check",
+        "exit":  0,
+        "seconds":  5,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-check.txt"
+    },
+    {
+        "name":  "b05-plan",
+        "exit":  0,
+        "seconds":  0,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b05-plan.txt"
+    },
+    {
+        "name":  "b06-plan",
+        "exit":  0,
+        "seconds":  0,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b06-plan.txt"
+    },
+    {
+        "name":  "b06-pdfs",
+        "exit":  0,
+        "seconds":  0,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b06-pdfs.txt"
+    },
+    {
+        "name":  "b05-browser",
+        "exit":  0,
+        "seconds":  17,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b05-browser.txt"
+    },
+    {
+        "name":  "b06-browser",
+        "exit":  0,
+        "seconds":  4,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b06-browser.txt"
+    },
+    {
+        "name":  "b07-links",
+        "exit":  0,
+        "seconds":  62,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b07-links.txt"
+    },
+    {
+        "name":  "b07-events",
+        "exit":  0,
+        "seconds":  5,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b07-events.txt"
+    },
+    {
+        "name":  "b07-browser",
+        "exit":  0,
+        "seconds":  32,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-b07-browser.txt"
+    },
+    {
+        "name":  "songs-sheet-v2",
+        "exit":  0,
+        "seconds":  1,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-songs-sheet-v2.txt"
+    },
+    {
+        "name":  "practical-tools",
+        "exit":  0,
+        "seconds":  1,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-practical-tools.txt"
+    },
+    {
+        "name":  "keyboard-practice",
+        "exit":  0,
+        "seconds":  30,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-keyboard-practice.txt"
+    },
+    {
+        "name":  "keyboard-completion",
+        "exit":  0,
+        "seconds":  1,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-keyboard-completion.txt"
+    },
+    {
+        "name":  "build",
+        "exit":  0,
+        "seconds":  126,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-build.txt"
+    },
+    {
+        "name":  "git-diff-check",
+        "exit":  0,
+        "seconds":  0,
+        "log":  "docs\\product-upgrade\\b05-b07-v2\\delivery\\final\\closeout-logs\\log-git-diff-check.txt"
+    }
+]

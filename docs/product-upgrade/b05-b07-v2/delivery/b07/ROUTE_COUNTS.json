@@ -1,0 +1,66 @@
+{
+  "capturedAt": "2026-09-16",
+  "source": {
+    "registry": "src/lib/site-routes.ts#PUBLIC_ROUTES",
+    "sitemap": "src/app/sitemap.ts maps PUBLIC_ROUTES 1:1",
+    "baseCommit": "1ce0a1d",
+    "method": "regex-extract PUBLIC_ROUTES entries from git show base vs worktree file; compare sets"
+  },
+  "publicBusinessRoutes": {
+    "beforeB05": 206,
+    "afterB05": 206,
+    "afterB06": 206,
+    "atB07T10": 206,
+    "deltaVsBase": 0,
+    "added": [],
+    "removed": []
+  },
+  "b07InScopePages": {
+    "applyWhenFeaturePresent": [
+      "/songs",
+      "/songs/easy",
+      "/sheet-music",
+      "/sheet-music/easy",
+      "/sheet-music/beginner",
+      "/sheet-music/twinkle-twinkle-little-star",
+      "/sheet-music/hot-cross-buns",
+      "/sheet-music/ode-to-joy",
+      "/keyboard-notes/labeled",
+      "/tools"
+    ],
+    "guardOnly": [
+      "/keyboard-notes"
+    ],
+    "newPrimaryPathsThisBatch": 0
+  },
+  "nonRouteAssets": {
+    "teachingPackPdfs": [
+      "/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter.pdf",
+      "/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4.pdf",
+      "/reference/generated/keyboard-notes/piano-key-names-c4-c5-letter-worksheet.pdf",
+      "/reference/generated/keyboard-notes/piano-key-names-c4-c5-a4-worksheet.pdf"
+    ],
+    "note": "Counted separately from HTML public business routes"
+  },
+  "nonSitemapActivation": {
+    "hashes": [
+      "/songs/easy#first-10-minutes",
+      "/keyboard-notes/labeled#teaching-pack",
+      "/keyboard-notes#note-trainer"
+    ],
+    "queries": [
+      "?plan=&plan-v=",
+      "?paper=",
+      "?printResource=&paper=&pageSet="
+    ]
+  },
+  "b04PreservedPathsSample": [
+    "/tools/hear-the-difference",
+    "/tools/blank-sheet-music",
+    "/keyboard-notes",
+    "/chords",
+    "/scales",
+    "/guide"
+  ],
+  "verdict": "PASS_ZERO_NEW_BUSINESS_ROUTES"
+}
