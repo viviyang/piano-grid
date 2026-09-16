@@ -1,6 +1,3 @@
-import { getChordCenter, getChordDetail, type CenterItem } from './chord-content';
-import type { ChordDetailRoute } from './chord-detail-model';
-import type { DetailVoicing } from './a-minor-types';
 import { getLayouts } from './keyboard-content';
 import type { PianoKey } from './keyboard-types';
 import {
@@ -9,6 +6,7 @@ import {
   type HearPairId,
   type HearPlayback,
 } from './hear-the-difference-core';
+import type { ChordDetailRoute } from './chord-detail-model';
 
 export type { HearPairData, HearPairId, HearRevealMethod, HearVoice } from './hear-the-difference-core';
 export {
@@ -29,20 +27,58 @@ const EXPECTED: Record<HearPairId, {
   root: string;
   minorId: string;
   majorId: string;
+  minorName: string;
+  majorName: string;
   minor: [string, string, string];
   major: [string, string, string];
   minorMidi: [number, number, number];
   majorMidi: [number, number, number];
 }> = {
-  a: { root: 'A', minorId: 'a-minor', majorId: 'a-major', minor: ['A3', 'C4', 'E4'], major: ['A3', 'C♯4', 'E4'], minorMidi: [57, 60, 64], majorMidi: [57, 61, 64] },
-  c: { root: 'C', minorId: 'c-minor', majorId: 'c-major', minor: ['C4', 'E♭4', 'G4'], major: ['C4', 'E4', 'G4'], minorMidi: [60, 63, 67], majorMidi: [60, 64, 67] },
-  d: { root: 'D', minorId: 'd-minor', majorId: 'd-major', minor: ['D4', 'F4', 'A4'], major: ['D4', 'F♯4', 'A4'], minorMidi: [62, 65, 69], majorMidi: [62, 66, 69] },
-  e: { root: 'E', minorId: 'e-minor', majorId: 'e-major', minor: ['E4', 'G4', 'B4'], major: ['E4', 'G♯4', 'B4'], minorMidi: [64, 67, 71], majorMidi: [64, 68, 71] },
+  a: {
+    root: 'A',
+    minorId: 'a-minor',
+    majorId: 'a-major',
+    minorName: 'A minor',
+    majorName: 'A major',
+    minor: ['A3', 'C4', 'E4'],
+    major: ['A3', 'C♯4', 'E4'],
+    minorMidi: [57, 60, 64],
+    majorMidi: [57, 61, 64],
+  },
+  c: {
+    root: 'C',
+    minorId: 'c-minor',
+    majorId: 'c-major',
+    minorName: 'C minor',
+    majorName: 'C major',
+    minor: ['C4', 'E♭4', 'G4'],
+    major: ['C4', 'E4', 'G4'],
+    minorMidi: [60, 63, 67],
+    majorMidi: [60, 64, 67],
+  },
+  d: {
+    root: 'D',
+    minorId: 'd-minor',
+    majorId: 'd-major',
+    minorName: 'D minor',
+    majorName: 'D major',
+    minor: ['D4', 'F4', 'A4'],
+    major: ['D4', 'F♯4', 'A4'],
+    minorMidi: [62, 65, 69],
+    majorMidi: [62, 66, 69],
+  },
+  e: {
+    root: 'E',
+    minorId: 'e-minor',
+    majorId: 'e-major',
+    minorName: 'E minor',
+    majorName: 'E major',
+    minor: ['E4', 'G4', 'B4'],
+    major: ['E4', 'G♯4', 'B4'],
+    minorMidi: [64, 67, 71],
+    majorMidi: [64, 68, 71],
+  },
 };
-
-function display(value: string) {
-  return value.replaceAll('#', '♯').replaceAll('b', '♭');
-}
 
 function letterOnly(pitch: string) {
   return pitch.replace(/\d+$/, '');
@@ -62,20 +98,6 @@ function playbackFor(notes: { display_pitch: string; midi: number }[]): HearPlay
   return { together: events(midis, 'together'), ascending: events(midis, 'ascending') };
 }
 
-function spellingsFor(item: CenterItem | null, detail: DetailVoicing | null, expected: [string, string, string]): [string, string, string] {
-  const source = detail?.notes_low_to_high ?? item?.voicing.notes_low_to_high;
-  if (!source || source.length !== 3) return expected.map(display) as [string, string, string];
-  return expected.map((pitch, index) => {
-    const letter = letterOnly(display(source[index].display_pitch));
-    const octave = pitch.match(/\d+$/)?.[0] ?? '';
-    return `${letter}${octave}`;
-  }) as [string, string, string];
-}
-
-function resolveNotes(expectedNames: [string, string, string], expectedMidi: [number, number, number], spellings: [string, string, string]) {
-  return expectedMidi.map((midi, index) => ({ display_pitch: spellings[index] || display(expectedNames[index]), midi }));
-}
-
 function assertPairMusic(pair: HearPairData) {
   const [root, third, fifth] = pair.minorNotes;
   const [rootM, thirdM, fifthM] = pair.majorNotes;
@@ -86,21 +108,13 @@ function assertPairMusic(pair: HearPairData) {
 }
 
 function buildPairs(): HearPairData[] {
-  const center = getChordCenter();
+  // Keep this module free of chord-content side-effect file reads so the
+  // /tools/hear-the-difference serverless function can ship without the
+  // pianogrid-chords-content-next JSON traces required by chord detail pages.
   return HEAR_PAIR_ORDER.map(id => {
     const spec = EXPECTED[id];
-    const minorURL = `/chords/${spec.minorId}` as ChordDetailRoute;
-    const majorURL = `/chords/${spec.majorId}` as ChordDetailRoute;
-    const minorItem = center.items.find(item => item.id === spec.minorId) ?? null;
-    const majorItem = center.items.find(item => item.id === spec.majorId) ?? null;
-    const minorDetail = getChordDetail(minorURL).data.voicings.find(voicing => /root/i.test(voicing.inversion_label)) ?? getChordDetail(minorURL).data.voicings[0];
-    const majorDetail = getChordDetail(majorURL).data.voicings.find(voicing => /root/i.test(voicing.inversion_label)) ?? getChordDetail(majorURL).data.voicings[0];
-    const minorSpellings = spellingsFor(minorItem, minorDetail, spec.minor);
-    const majorSpellings = spellingsFor(majorItem, majorDetail, spec.major);
-    const minorNotes = resolveNotes(spec.minor, spec.minorMidi, minorSpellings);
-    const majorNotes = resolveNotes(spec.major, spec.majorMidi, majorSpellings);
-    const minorName = minorItem?.name ?? `${spec.root} minor`;
-    const majorName = majorItem?.name ?? `${spec.root} major`;
+    const minorNotes = spec.minorMidi.map((midi, index) => ({ display_pitch: spec.minor[index], midi }));
+    const majorNotes = spec.majorMidi.map((midi, index) => ({ display_pitch: spec.major[index], midi }));
     const sourceThird = minorNotes[1];
     const targetThird = majorNotes[1];
     const midis = [...minorNotes, ...majorNotes].map(note => note.midi);
@@ -109,10 +123,10 @@ function buildPairs(): HearPairData[] {
       root: spec.root,
       minorChordId: spec.minorId,
       majorChordId: spec.majorId,
-      minorName,
-      majorName,
-      minorURL,
-      majorURL,
+      minorName: spec.minorName,
+      majorName: spec.majorName,
+      minorURL: `/chords/${spec.minorId}` as ChordDetailRoute,
+      majorURL: `/chords/${spec.majorId}` as ChordDetailRoute,
       voicing: 'root-position-close',
       changedDegree: 3,
       direction: 'raise-one-semitone',
@@ -125,7 +139,7 @@ function buildPairs(): HearPairData[] {
       majorPlayback: playbackFor(majorNotes),
       revealCopy: id === 'a'
         ? 'A minor uses C natural. Raise C to C♯ and the chord becomes A major. A and E stay the same.'
-        : `${minorName} uses ${letterOnly(sourceThird.display_pitch)}. Raise ${letterOnly(sourceThird.display_pitch)} to ${letterOnly(targetThird.display_pitch)} and the chord becomes ${majorName}. ${letterOnly(minorNotes[0].display_pitch)} and ${letterOnly(minorNotes[2].display_pitch)} stay the same.`,
+        : `${spec.minorName} uses ${letterOnly(sourceThird.display_pitch)}. Raise ${letterOnly(sourceThird.display_pitch)} to ${letterOnly(targetThird.display_pitch)} and the chord becomes ${spec.majorName}. ${letterOnly(minorNotes[0].display_pitch)} and ${letterOnly(minorNotes[2].display_pitch)} stay the same.`,
       rootExplain: `Both chords are built on ${spec.root}.`,
       thirdExplain: `${letterOnly(sourceThird.display_pitch)} → ${letterOnly(targetThird.display_pitch)} changes the minor third to a major third.`,
       fifthExplain: `${letterOnly(minorNotes[2].display_pitch)} stays fixed.`,
