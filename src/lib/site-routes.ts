@@ -141,6 +141,7 @@ export const PUBLIC_ROUTES = [
   '/guide/piano-chords',
   '/guide/piano-scales',
   '/tools/blank-sheet-music',
+  '/tools/hear-the-difference',
 ] as const;
 
 export type PublicRoute = (typeof PUBLIC_ROUTES)[number];
@@ -294,7 +295,12 @@ export const SITE_NAVIGATION = [
   {
     label: 'Tools',
     href: '/tools',
-    children: [{ label: 'Chord Finder', href: '/chords/finder' }, { label: 'Find Scale Notes', href: '/scales#find-by-notes' }, { label: 'Blank Sheet Music', href: '/tools/blank-sheet-music' }],
+    children: [
+      { label: 'Chord Finder', href: '/chords/finder' },
+      { label: 'Find Scale Notes', href: '/scales#find-by-notes' },
+      { label: 'Blank Sheet Music', href: '/tools/blank-sheet-music' },
+      { label: 'Hear the Difference', href: '/tools/hear-the-difference' },
+    ],
   },
 ] as const satisfies ReadonlyArray<{
   label: string;

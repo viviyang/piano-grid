@@ -49,6 +49,7 @@ export function getToolsModel():ToolsModel{
     'practice-timer':'Set aside a focused block of practice time.',
     'note-trainer':'Answer a ten-question piano-key note practice.',
     'progressions':'Compare and play the existing validated examples.',
+    'hear-the-difference':'Listen to two chords and find the one note that moved.',
     'blank-sheet':'Choose Letter or A4 grand-staff paper.',
     'labeled-keyboard':'Open printable 88-key and 61-key labeled layouts.',
     'notes-chart':'Print a staff-note and keyboard reference.',
@@ -90,6 +91,6 @@ export function getToolsModel():ToolsModel{
     });
     return{...item,downloads};
   });
-  if(findLinks.length!==6||practiceLinks.length!==4||printResources.length!==4)throw new Error('Practical Tools release map is incomplete');
+  if(findLinks.length!==6||practiceLinks.length!==5||printResources.length!==4)throw new Error('Practical Tools release map is incomplete');
   return {model:{...model,title:pack.page.h1,description:pack.page.intro,metadata:{...model.metadata,title:pack.page.title,description:pack.page.description}},findLinks,practiceLinks,printResources};
 }

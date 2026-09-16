@@ -128,6 +128,7 @@ export function getChordCenter():CenterModel {
  next.content.links.push({url:'/chords/seventh',label:'Browse seventh chords',published:true});
  next.content.links.push({url:'/chords/add',label:'Browse major and minor add9 chords',published:true});
  next.content.links.push({url:'/chords/extended',label:'Browse extended piano chords',published:true},{url:'/chords/altered',label:'Browse altered piano chords',published:true});
+ if(isPublicRoute('/tools/hear-the-difference'))next.content.links.push({url:'/tools/hear-the-difference',label:'Hear major vs minor →',published:true});
  blocks.find(block=>block.block_id==='chords-intro')!.content.paragraphs=['Use this piano chord chart to find the notes and keyboard positions for 25 major and minor triads. Read the notes from low to high, hear them together or one at a time, and print a reference to keep beside your keyboard.','The chart covers the practical 12 major and 12 minor pitch-class families, plus the published C-flat major written-spelling reference.'];
  blocks.find(block=>block.block_id==='chords-print')!.content.paragraphs[0]='Download the original three-page reference with nine selected chord names. The interactive chart above contains the broader 25-chord collection; use Print this chord or Print matching chords for those results.';
  blocks.find(block=>block.block_id==='chords-how-to-read')!.content.paragraphs.push(

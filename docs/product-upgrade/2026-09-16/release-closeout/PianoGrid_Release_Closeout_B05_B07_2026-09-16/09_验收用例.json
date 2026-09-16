@@ -1,0 +1,251 @@
+{
+  "status": "NOT_EXECUTED_ON_USER_REPOSITORY",
+  "note": "These are required acceptance cases, not claimed passes. Automated isolation evidence is separate.",
+  "cases": [
+    {
+      "id": "RC01-01",
+      "title": "B04 direct landing styles",
+      "expected": "1440直开B04及从Keyboard客户端进入；pair cards/内容栅格/内链间距一致，非APair连字",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC01-02",
+      "title": "Shared dialog route independence",
+      "expected": "390/1440冷启动B04、Labeled、Practice各打开Share；相同面板尺寸/状态/焦点，无CSS串路由依赖",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC01-03",
+      "title": "Labeled overview and labels",
+      "expected": "390下概览为紧凑条；C♯4/D♭4各完整不拆字符，内容不越界；88与61一致",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC01-04",
+      "title": "Print action hierarchy",
+      "expected": "主Print使用项目primary且是主操作；More不与桌面组重复显示",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC02-01",
+      "title": "Hash-only entry",
+      "expected": "/keyboard-notes#note-trainer显示Practice开始，页面无自动声音",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC02-02",
+      "title": "Entry state restore",
+      "expected": "有效v1恢复同seed；非法v1正常fallback；hashchange与back/forward进入正确模式",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC02-03",
+      "title": "Selected note survives resize",
+      "expected": "F3/A0/C7分享恢复，390↔1440、横竖屏后所选音仍在窗口且不改音",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC03-01",
+      "title": "Replay/reveal race",
+      "expected": "答错后Replay中试Hint/Reveal；被禁用或有正确事务；延迟完成不能reveal→ready",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC03-02",
+      "title": "Old run cannot clear new run",
+      "expected": "播放A→切C→立即播放C，旧A结束不影响C的busy/phase/guess gate",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC03-03",
+      "title": "Stop and hidden cancellation",
+      "expected": "chord1/gap/chord2阶段分别Stop/后台，旧事件不complete、不叠音",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC03-04",
+      "title": "Replay after reveal",
+      "expected": "reveal后重播仍是reveal，资料/分享不丢",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC04-01",
+      "title": "Whole-page spoiler gate",
+      "expected": "扫描整页初始可见内容含页尾，不能出现明确答案；不是只扫两个div",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC04-02",
+      "title": "All explanatory disclosures",
+      "expected": "打开任一答案说明→helpUsed；切pair关闭/重置；保留展开时不得算独立",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC04-03",
+      "title": "Assisted result copy",
+      "expected": "用了Hint/说明后正确反馈不推断heard/独立技能；general ability说明保留",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC05-01",
+      "title": "Stale manual share link",
+      "expected": "A复制失败→关面板→换C→再开，textarea/标题/状态全部是C",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC05-02",
+      "title": "Copy in-flight payload change",
+      "expected": "A复制pending切C，A完成不能给C写Link copied或旧manualURL",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC05-03",
+      "title": "Native cancel/fallback/focus",
+      "expected": "share成功resolve、取消、不可用、复制拒绝分别验；关闭回实际trigger",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC05-04",
+      "title": "Find cancels note",
+      "expected": "音频播放中Find成功/非法/音域外输入都先cancel；不保留旧声音",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC05-05",
+      "title": "Print state follows current UI",
+      "expected": "88 Print→afterprint→61/octaves off→Ctrl+P使用61/off；非法printPart不空白",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC05-06",
+      "title": "Round and review keyboard focus",
+      "expected": "Start→Question→Next→Results→Review→Back，键盘焦点有合理落点；原始分数不变",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC06-01",
+      "title": "Actual first-side failure",
+      "expected": "真实owner平台/资源边界失败；第二段不触发，答案disabled，错误可重试",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC06-02",
+      "title": "Actual second-side failure",
+      "expected": "第一段成功第二段失败，不能complete/解锁猜题",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC06-03",
+      "title": "Retry completeness",
+      "expected": "清除失败后Retry必须等两段完成，完成事件只一次；无残留source/timer",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC06-04",
+      "title": "No production force-error branch",
+      "expected": "生产实现不依赖window.__hearForceAudioError来模拟失败；测试不注入错误DOM",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC07-01",
+      "title": "Clean patch + new files",
+      "expected": "clean diff无stderr，所有新增B04路由/data/events/OG/viewport/assets都有manifest/内容",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC07-02",
+      "title": "Recoverability dry run",
+      "expected": "从记录baseline+快照在临时目录恢复scope且hash匹配；不在live dirty tree尝试",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC07-03",
+      "title": "Raw evidence included",
+      "expected": "raw unit/browser JSON+logs+exit codes+截图索引在ZIP内可读取",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC08-01",
+      "title": "All preset targets enabled",
+      "expected": "所有option/88/61完整10题target MIDI可点；黑键断言不接受任意自然音字母",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC08-02",
+      "title": "Backward compatible shared sequence",
+      "expected": "现有v1 seed=20260916 natural-c4-c5题序不变且不含发送者分数/身份",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC08-03",
+      "title": "Full same-tree regressions",
+      "expected": "Practice、B04、Tools、Foundation/build/diff check同candidate，失败不藏",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "RC08-04",
+      "title": "Event transport reality",
+      "expected": "确认事件owner/collector；本地事件不伪装真实流量采集",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "M01",
+      "title": "iPhone share real targets",
+      "expected": "真机原生面板打开/取消/发送，另一设备恢复当前payload",
+      "status": "PENDING_MANUAL",
+      "evidence": null
+    },
+    {
+      "id": "M02",
+      "title": "Listening real hardware",
+      "expected": "当前candidate听音/Stop/切pair/后台恢复，无旧声音与长时间失控",
+      "status": "PENDING_MANUAL",
+      "evidence": null
+    },
+    {
+      "id": "M03",
+      "title": "Screen reader practical path",
+      "expected": "VoiceOver/NVDA完成基础流程与dialog，焦点/名称可用",
+      "status": "PENDING_MANUAL",
+      "evidence": null
+    },
+    {
+      "id": "M04",
+      "title": "Print real output",
+      "expected": "当前88/61设置与实体输出一致，黑白键/边界完整可读",
+      "status": "PENDING_MANUAL",
+      "evidence": null
+    }
+  ]
+}

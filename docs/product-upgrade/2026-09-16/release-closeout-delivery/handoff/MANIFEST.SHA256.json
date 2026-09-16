@@ -1,0 +1,77 @@
+﻿[
+    {
+        "path":  "scripts/check-hear-the-difference-browser.mjs",
+        "sha256":  "A50CB23C12FB545BBC19DC791C52ECC6ABAF5A67B114DEE87BA534823212AB33",
+        "bytes":  11642
+    },
+    {
+        "path":  "scripts/check-integration-fix-acceptance.mjs",
+        "sha256":  "28CCDBE7921D65954F674F87A0E812D45DFA6B9AB0C1A0E804D771F6D64893B5",
+        "bytes":  8310
+    },
+    {
+        "path":  "src/components/hear-the-difference/experience.tsx",
+        "sha256":  "B9EB4A415A1D674FA2883F0382FA3501BFD15F53382A5EFAF68DE46F22E959A2",
+        "bytes":  21519
+    },
+    {
+        "path":  "src/components/hear-the-difference/hear-the-difference.css",
+        "sha256":  "2DBE90A65572B8E6B305B22BCFF115E5D71DFEFD6494DAFC7C39A870A6A6728C",
+        "bytes":  7577
+    },
+    {
+        "path":  "src/components/hear-the-difference/use-comparison-audio.ts",
+        "sha256":  "DAB75F8D46C75F61307BFD219823D3654C41A7B0E429FC2386C40871F4C6CBD6",
+        "bytes":  5025
+    },
+    {
+        "path":  "src/components/keyboard-notes/keyboard-notes-v2.css",
+        "sha256":  "A35624CC0779A800CC8A44B0ED514D5A1B1B2916583C5F9B237EBF621A8D8C26",
+        "bytes":  23108
+    },
+    {
+        "path":  "src/components/keyboard-notes/keyboard-notes-workspace.tsx",
+        "sha256":  "4B073652224D6D7062444F52A858D64810C307F855DA08CA5DAC214AFEF19B60",
+        "bytes":  37934
+    },
+    {
+        "path":  "src/components/keyboard-notes/keyboard-notes.css",
+        "sha256":  "4FE60E7BF011BE0FFEA7DD79A551F408E540757930AB9E1A999569FA05A579F0",
+        "bytes":  23205
+    },
+    {
+        "path":  "src/components/keyboard-notes/labeled-experience.tsx",
+        "sha256":  "C4B8CCCA89AFE20ED37AC7AB5D54833CA28BEB25134D81C6C98FEC0456570FF4",
+        "bytes":  9631
+    },
+    {
+        "path":  "src/components/keyboard-notes/pages.tsx",
+        "sha256":  "8A06533232015A081962CE9FD3CAAFFD15FED57C935D3F68791814DCF5F26ED3",
+        "bytes":  3384
+    },
+    {
+        "path":  "src/components/keyboard-notes/share-control.tsx",
+        "sha256":  "95595189C9134131990C2E0C0BC4D9773706FB80A61DCD7214C13CD9F117623D",
+        "bytes":  6546
+    },
+    {
+        "path":  "src/components/keyboard-notes/share-dialog.css",
+        "sha256":  "0BE982CBD2A1979116E3A45E1DD7D8541DB409911BCA6B551B7FD3A7B065A7A5",
+        "bytes":  1673
+    },
+    {
+        "path":  "src/lib/a-minor-audio.ts",
+        "sha256":  "F76A7C9AD2D59D20C1F9CCEC111DAB2E924E1AF270C99DB9F19BDAC241F3BEF9",
+        "bytes":  7377
+    },
+    {
+        "path":  "src/lib/keyboard-content.ts",
+        "sha256":  "622902E8714A41E5BE6168615B3483D2DCA06D2009FF1C7D707C96A7E371BF06",
+        "bytes":  6320
+    },
+    {
+        "path":  "src/lib/keyboard-practice.ts",
+        "sha256":  "B2144FEE6105643D3D93D819A5794F544C7E69AB0012E767328F96F4E19DCF06",
+        "bytes":  10061
+    }
+]

@@ -1,0 +1,18 @@
+﻿git : warning: in the working copy of 'src/components/keyboard-notes/keyboard-notes.css', CRLF will be replaced by LF t
+he next time Git touches it
+所在位置 C:\Users\Admin\AppData\Local\Temp\ps-script-2705de75-c2c4-412c-8de7-4a44e730fb5f.ps1:99 字符: 171
++ ... Copy-Item $f $target -Force }; git diff --stat -- $files 2>&1 | Out-F ...
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ scripts/check-keyboard-practice.mjs                |   8 +-
+ scripts/check-practical-tools.ts                   |   2 +-
+ src/components/keyboard-notes/keyboard-diagram.tsx |   8 +-
+ .../keyboard-notes/keyboard-notes-v2.css           |  16 +-
+ .../keyboard-notes/keyboard-notes-workspace.tsx    | 341 ++++++++++++---------
+ src/components/keyboard-notes/keyboard-notes.css   |  26 ++
+ .../keyboard-notes/labeled-experience.tsx          | 122 +++++++-
+ src/components/keyboard-notes/share-control.tsx    | 173 ++++++++++-
+ src/lib/keyboard-practice.ts                       |  62 +++-
+ 9 files changed, 586 insertions(+), 172 deletions(-)

@@ -30,6 +30,7 @@ export const SEO_COPY: Record<string, Copy> = {
   '/chords/finder': { title: 'Piano Chord Finder: Identify Chords from Notes', description: 'Select piano notes to find possible chord names. Compare bass notes and alternative spellings, and see when your notes fall outside the supported library.' },
   '/tools': { title: 'Piano Tools: Notes, Chords, Scales & Printables | PianoGrid', description: 'Find piano notes, identify chords, match scales, use a simple practice timer, and download printable piano references from one task-based hub.' },
   '/tools/blank-sheet-music': { title: 'Blank Piano Sheet Music PDF — Letter & A4 | PianoGrid', h1: 'Blank Piano Sheet Music', description: 'Download free blank piano sheet music with six grand-staff systems. Choose US Letter or A4, preview the page, and print without an account.' },
+  '/tools/hear-the-difference': { title: 'Major vs Minor Piano Chords: Hear the Difference | PianoGrid', h1: 'Hear the Difference Between Major and Minor Chords', description: 'Listen to minor and major piano chords, find the one note that changes, and see how raising the third by one semitone changes the chord.' },
   '/arpeggios': { title: 'Piano Arpeggios: C & G Major Notes and Fingering', description: 'Explore C and G major arpeggio notes, compare chord tones with scales, and use the available fingering examples to plan a short practice.' },
 };
 
@@ -48,6 +49,10 @@ export function editorialMetadata(original: Metadata): Metadata {
   if (typeof title !== 'string' || !description) return original;
   // Long specific titles retain their detail instead of forcing a brand suffix.
   const branded = title.includes('PianoGrid') || title.length > 52 ? title : `${title} | PianoGrid`;
+  // B04 share cards must stay non-spoiler; keep page-provided social metadata.
+  if (url === '/tools/hear-the-difference') {
+    return { ...original, title: branded, description };
+  }
   return { ...original, title: branded, description,
     openGraph: { ...original.openGraph, title: branded, description },
     twitter: { ...original.twitter, title: branded, description },

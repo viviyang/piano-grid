@@ -1,0 +1,1200 @@
+﻿git : warning: in the working copy of 'src/components/keyboard-notes/keyboard-notes.css', CRLF will be replaced by LF t
+he next time Git touches it
+所在位置 C:\Users\Admin\AppData\Local\Temp\ps-script-2705de75-c2c4-412c-8de7-4a44e730fb5f.ps1:99 字符: 259
++ ... andoff/DIFF_STAT.txt" -Encoding utf8; git diff -- $files 2>&1 | Out-F ...
++                                           ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+diff --git a/scripts/check-keyboard-practice.mjs b/scripts/check-keyboard-practice.mjs
+index 6e883c8..51b2b21 100644
+--- a/scripts/check-keyboard-practice.mjs
++++ b/scripts/check-keyboard-practice.mjs
+@@ -69,8 +69,8 @@ async function runFlow(browser, { width, height, device }) {
+ 
+   await page.goto(`${base}/keyboard-notes?${presetQuery}#note-trainer`);
+   await page.locator('.kn-v2-shell[data-hydrated="true"]').waitFor();
+-  await page.getByText('Practice shared with you', { exact: true }).waitFor();
+-  check(`${device} receiver does not auto-start`, await page.getByText('Start your own round with the same 10-note set. No one else鈥檚 answers or score are included.', { exact: true }).isVisible());
++  await page.getByText('Shared practice 路 10 notes', { exact: true }).waitFor();
++  check(`${device} receiver does not auto-start`, await page.getByRole('button', { name: 'Start 10-note practice', exact: true }).isVisible() && await page.locator('.kn-v2-question').count() === 0);
+   await screenshot(page, device, '03-receiver');
+   await page.getByRole('button', { name: 'Start 10-note practice', exact: true }).click();
+   await page.getByText('Question 1', { exact: true }).waitFor();
+@@ -136,7 +136,7 @@ async function runFlow(browser, { width, height, device }) {
+ 
+   await page.evaluate(() => { Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new DOMException('Denied', 'NotAllowedError'); } } }); });
+   await page.getByRole('button', { name: 'Copy practice link', exact: true }).click();
+-  check(`${device} copy denial exposes selectable URL`, await page.getByLabel('Practice link', { exact: true }).getAttribute('value') === copied);
++  check(`${device} copy denial exposes selectable URL`, await page.locator('.kn-share-manual textarea').inputValue() === copied);
+   await page.keyboard.press('Escape');
+   check(`${device} dialog Escape restores trigger focus`, await shareTrigger.evaluate(element => document.activeElement === element));
+ 
+@@ -204,7 +204,7 @@ try {
+   check('chart shared keyboard still selects exact MIDI', await shared.locator('.kn-result').getAttribute('data-selected-midi') === '60');
+   await shared.goto(`${base}/keyboard-notes/labeled`);
+   await shared.getByLabel('Keyboard layout').selectOption('61-key-C2-C7');
+-  check('labeled route still renders 61-key layout', await shared.locator('.kn-screen .kn-key').count() === 61);
++  check('labeled route still renders 61-key layout', await shared.locator('.kn-labeled-viewport .kn-v2-overview .kn-key').count() === 61);
+   await shared.goto(`${base}/keyboard-notes/frequencies`);
+   await shared.getByLabel('Find by note or MIDI').fill('C4');
+   await shared.getByRole('button', { name: 'Find', exact: true }).click();
+diff --git a/scripts/check-practical-tools.ts b/scripts/check-practical-tools.ts
+index f32043e..6858a8b 100644
+--- a/scripts/check-practical-tools.ts
++++ b/scripts/check-practical-tools.ts
+@@ -76,7 +76,7 @@ test('Blank metadata exact', () => assert.ok(seo.includes(pack.blank_sheet_metad
+ const routesSource = fs.readFileSync('src/lib/site-routes.ts','utf8');
+ const routeArray = routesSource.slice(routesSource.indexOf('export const PUBLIC_ROUTES'), routesSource.indexOf(']') + 1);
+ const routes = [...routeArray.matchAll(/'([^']+)'/g)].map(match => match[1]);
+-equal('public route count unchanged', routes.length, 205);
++equal('public route count unchanged', routes.length, 206);
+ test('route manifest has no fragment/query', () => assert.ok(routes.every(route => !route.includes('#') && !route.includes('?'))));
+ const sitemapSource = fs.readFileSync('src/app/sitemap.ts','utf8');
+ test('sitemap derives from public route manifest', () => assert.ok(sitemapSource.includes('PUBLIC_ROUTES')));
+diff --git a/src/components/keyboard-notes/keyboard-diagram.tsx b/src/components/keyboard-notes/keyboard-diagram.tsx
+index 5c28da0..8b39018 100644
+--- a/src/components/keyboard-notes/keyboard-diagram.tsx
++++ b/src/components/keyboard-notes/keyboard-diagram.tsx
+@@ -2,7 +2,8 @@
+ import { useEffect, useMemo, useRef } from 'react';
+ import { keyGeometry } from '@/lib/keyboard-geometry';
+ import type { PianoKey } from '@/lib/keyboard-types';
+-export function KeyboardDiagram({keys,selected=null,marked=[],sounding=[],onSelect,octaves=true,keyLabels={},label='Piano keyboard',ready=true,showVisualLabels=true,selectedState='selected',selectedLabel,fit=false,autoCenter=true,className='',isKeyDisabled}:{keys:PianoKey[];selected?:number|null;marked?:number[];sounding?:number[];onSelect?:(k:PianoKey)=>void;octaves?:boolean;keyLabels?:Record<number,string>;label?:string;ready?:boolean;showVisualLabels?:boolean;selectedState?:'selected'|'wrong'|'correct'|'revealed';selectedLabel?:string;fit?:boolean;autoCenter?:boolean;className?:string;isKeyDisabled?:(key:PianoKey)=>boolean}) {
++export type KeyboardKeyRole = 'common' | 'source' | 'target';
++export function KeyboardDiagram({keys,selected=null,marked=[],sounding=[],keyRoles={},onSelect,octaves=true,keyLabels={},label='Piano keyboard',ready=true,showVisualLabels=true,selectedState='selected',selectedLabel,fit=false,autoCenter=true,className='',isKeyDisabled}:{keys:PianoKey[];selected?:number|null;marked?:number[];sounding?:number[];keyRoles?:Partial<Record<number,KeyboardKeyRole>>;onSelect?:(k:PianoKey)=>void;octaves?:boolean;keyLabels?:Record<number,string>;label?:string;ready?:boolean;showVisualLabels?:boolean;selectedState?:'selected'|'wrong'|'correct'|'revealed';selectedLabel?:string;fit?:boolean;autoCenter?:boolean;className?:string;isKeyDisabled?:(key:PianoKey)=>boolean}) {
+   const ref=useRef<HTMLDivElement>(null),whites=keys.filter(k=>k.color==='white'),leading=keys[0]?.color==='black'?1:0,trailing=keys.at(-1)?.color==='black'?1:0,count=whites.length+leading+trailing;
+   const enabledKeys=useMemo(()=>keys.filter(key=>ready&&!isKeyDisabled?.(key)),[keys,ready,isKeyDisabled]);
+   useEffect(()=>{if(!autoCenter)return;const center=()=>{const el=ref.current?.querySelector<HTMLElement>(`[data-midi="${selected}"]`);if(el&&ref.current)ref.current.scrollLeft=el.offsetLeft-ref.current.clientWidth/2+el.clientWidth/2;};center();const observer=new ResizeObserver(center);if(ref.current)observer.observe(ref.current);return()=>observer.disconnect();},[selected,keys,autoCenter]);
+@@ -11,9 +12,10 @@ export function KeyboardDiagram({keys,selected=null,marked=[],sounding=[],onSele
+       {keys.map(k=>{const white=k.color==='white',index=leading+whites.filter(w=>w.midi<k.midi).length,labels=(keyLabels[k.midi]??(octaves?k.label_with_octave:k.default_label)).split(' / '),isMarked=marked.includes(k.midi);
+         const isSelected=selected===k.midi,disabled=!ready||Boolean(isKeyDisabled?.(k)),marker=isSelected?(selectedState==='wrong'?'脳':selectedState==='correct'||selectedState==='revealed'?'鉁?:'鈼?):isMarked?'鈼?:'';
+         const content=<>{showVisualLabels&&<span className="kn-key-text">{labels.map(l=><span key={l}>{l}</span>)}</span>}{isSelected&&selectedLabel&&selectedState!=='selected'&&<span className="kn-state-label" aria-hidden="true">{selectedLabel}</span>}{marker&&<span className="kn-selected-mark" aria-hidden="true">{marker}</span>}{showVisualLabels&&k.midi===60&&<span className="kn-middle" aria-hidden="true">C4</span>}</>;
+-        const cls=`kn-key ${white?'kn-white':'kn-black'} ${isMarked?'kn-marked':''} ${selected===k.midi?`kn-selected kn-selected-${selectedState}`:''} ${sounding.includes(k.midi)?'kn-sounding':''}`;
++        const role=keyRoles[k.midi];
++        const cls=`kn-key ${white?'kn-white':'kn-black'} ${isMarked?'kn-marked':''} ${selected===k.midi?`kn-selected kn-selected-${selectedState}`:''} ${sounding.includes(k.midi)?'kn-sounding':''} ${role?`kn-role kn-role-${role}`:''}`;
+         const accessibleLabel=keyLabels[k.midi]??k.label_with_octave;
+-        return onSelect?<button key={k.midi} type="button" data-midi={k.midi} data-key-state={isSelected?selectedState:'idle'} className={cls} style={keyGeometry(index,white,count)} aria-label={accessibleLabel} aria-pressed={isSelected} aria-invalid={isSelected&&selectedState==='wrong'?true:undefined} disabled={disabled} tabIndex={disabled?-1:isSelected||(!enabledKeys.some(key=>key.midi===selected)&&enabledKeys[0]?.midi===k.midi)?0:-1} onClick={()=>onSelect(k)} onKeyDown={e=>{const i=enabledKeys.findIndex(key=>key.midi===k.midi);const next=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:e.key==='Home'?0:e.key==='End'?enabledKeys.length-1:null;if(next!==null&&enabledKeys.length){e.preventDefault();const target=enabledKeys[Math.max(0,Math.min(enabledKeys.length-1,next))];ref.current?.querySelector<HTMLButtonElement>(`button[data-midi="${target.midi}"]`)?.focus();}}}>{content}</button>:<span key={k.midi} data-midi={k.midi} className={cls} style={keyGeometry(index,white,count)} aria-label={accessibleLabel}>{content}</span>;
++        return onSelect?<button key={k.midi} type="button" data-midi={k.midi} data-key-state={isSelected?selectedState:'idle'} data-key-role={role||undefined} className={cls} style={keyGeometry(index,white,count)} aria-label={accessibleLabel} aria-pressed={isSelected} aria-invalid={isSelected&&selectedState==='wrong'?true:undefined} disabled={disabled} tabIndex={disabled?-1:isSelected||(!enabledKeys.some(key=>key.midi===selected)&&enabledKeys[0]?.midi===k.midi)?0:-1} onClick={()=>onSelect(k)} onKeyDown={e=>{const i=enabledKeys.findIndex(key=>key.midi===k.midi);const next=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:e.key==='Home'?0:e.key==='End'?enabledKeys.length-1:null;if(next!==null&&enabledKeys.length){e.preventDefault();const target=enabledKeys[Math.max(0,Math.min(enabledKeys.length-1,next))];ref.current?.querySelector<HTMLButtonElement>(`button[data-midi="${target.midi}"]`)?.focus();}}}>{content}</button>:<span key={k.midi} data-midi={k.midi} data-key-role={role||undefined} className={cls} style={keyGeometry(index,white,count)} aria-label={accessibleLabel}>{content}</span>;
+       })}
+     </div>
+   </div>;
+diff --git a/src/components/keyboard-notes/keyboard-notes-v2.css b/src/components/keyboard-notes/keyboard-notes-v2.css
+index 0c2414a..e411c7b 100644
+--- a/src/components/keyboard-notes/keyboard-notes-v2.css
++++ b/src/components/keyboard-notes/keyboard-notes-v2.css
+@@ -6,8 +6,8 @@
+ .kn-v2-shell button,.kn-v2-shell input,.kn-v2-shell select{font:inherit}
+ .kn-v2-shell :is(.kn-v2-text-button,.kn-v2-copy-link,.kn-v2-leave,.kn-v2-note-choices button):is(:hover,:focus-visible):not(:disabled) .pr-rolling-text-current>span{transform:translateY(-112%)}
+ .kn-v2-shell :is(.kn-v2-text-button,.kn-v2-copy-link,.kn-v2-leave,.kn-v2-note-choices button):is(:hover,:focus-visible):not(:disabled) .pr-rolling-text-next>span{transform:translateY(0)}
+-.kn-v2-tabs{display:flex;gap:2rem;border-bottom:1px solid var(--border)}
+-.kn-v2-tabs button{position:relative;min-height:3.5rem;padding:0;border:0;background:transparent;color:var(--muted-foreground);font-weight:650;cursor:pointer}
++.kn-v2-tabs{display:flex;flex-wrap:wrap;gap:2rem;border-bottom:1px solid var(--border)}
++.kn-v2-tabs button{position:relative;min-height:3.5rem;padding:0;border:0;background:transparent;color:var(--muted-foreground);font-weight:650;cursor:pointer;white-space:normal;max-width:100%}
+ .kn-v2-tabs button[aria-selected=true]{color:var(--foreground)}
+ .kn-v2-tabs button[aria-selected=true]::after{content:"";position:absolute;right:0;bottom:-1px;left:0;height:3px;background:var(--primary)}
+ .kn-v2-tabs button:focus-visible,.kn-v2-text-button:focus-visible,.kn-v2-copy-link:focus-visible,.kn-v2-note-choices button:focus-visible{outline:var(--pr-focus-width) solid var(--ring);outline-offset:3px}
+@@ -110,9 +110,17 @@
+ .kn-v2-option-fields .kn-v2-checkbox{display:flex;align-items:center;gap:.75rem;color:var(--foreground);font-size:.9375rem;font-weight:500}
+ .kn-v2-checkbox input{width:1.25rem;height:1.25rem;accent-color:var(--primary)}
+ .kn-v2-explore-return{margin:1.25rem auto 0}
+-.kn-v2-receiver-note{max-width:38rem;margin:0 auto 2.5rem;padding-block:1rem;border-block:1px solid var(--border);color:var(--muted-foreground)}
+-.kn-v2-receiver-note .kn-v2-kicker{color:var(--foreground)}
++.kn-v2-receiver-note{margin:0 0 1rem;padding:.55rem 0;border-bottom:1px solid var(--border);color:var(--muted-foreground);text-align:left;max-width:none}
++.kn-v2-receiver-note .kn-v2-kicker{margin:0;color:var(--foreground);font-size:var(--pr-type-meta-size)}
+ .kn-v2-receiver-invalid{border-color:var(--error)}
++.kn-v2-how{max-width:42rem;margin:1rem auto 0;border-top:1px solid var(--border);text-align:left}
++.kn-v2-how summary{min-height:var(--pr-control-min-size);cursor:pointer;font-weight:650}
++.kn-v2-how ol{display:grid;gap:.85rem;margin:1rem 0 0;padding:0 0 1rem;list-style:none;counter-reset:how}
++.kn-v2-how li{position:relative;padding-left:2rem;counter-increment:how}
++.kn-v2-how li::before{content:counter(how);position:absolute;left:0;top:.1rem;width:1.25rem;height:1.25rem;border:1px solid var(--input);border-radius:50%;font-size:.7rem;line-height:1.15rem;text-align:center;color:var(--muted-foreground)}
++.kn-v2-how strong,.kn-v2-how span{display:block}
++.kn-v2-how span{margin-top:.2rem;color:var(--muted-foreground);font-size:.8125rem;line-height:1.45}
++.kn-v2-round-outcome{display:none}
+ .kn-v2-practice[data-phase=question]{padding-top:1.5rem}
+ .kn-v2-question{max-width:59rem;margin-inline:auto}
+ .kn-v2-question-head{padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+diff --git a/src/components/keyboard-notes/keyboard-notes-workspace.tsx b/src/components/keyboard-notes/keyboard-notes-workspace.tsx
+index b4d13a5..8dd5730 100644
+--- a/src/components/keyboard-notes/keyboard-notes-workspace.tsx
++++ b/src/components/keyboard-notes/keyboard-notes-workspace.tsx
+@@ -1,40 +1,39 @@
+ 'use client';
+ 
+-import { useEffect, useMemo, useRef, useState } from 'react';
++import { useEffect, useId, useMemo, useRef, useState } from 'react';
+ import type { Layout, PianoKey, ReadingBlock } from '@/lib/keyboard-types';
+ import { emitKeyboardPracticeEvent } from '@/lib/keyboard-events';
+ import {
+   PRACTICE_LENGTH,
+   PRACTICE_OPTIONS,
+   classifyPracticeAnswer,
+-  createPracticePreset,
+   generatePresetPractice,
++  practiceGeometryHint,
+   practicePresetParams,
++  practiceWrongFeedback,
++  resolveStartPreset,
+   restorePracticePreset,
+   reviewPracticeTargets,
+   summarizePractice,
++  type ActiveRoundConfig,
+   type PracticeAnswerKind,
+   type PracticeAnswerRecord,
+   type PracticeOption,
+-  type PracticePreset,
+   type PracticePresetRestore,
+   type PracticeTarget,
+ } from '@/lib/keyboard-practice';
++import { keysInMidiRange, visibleMidiWindow, clampRangeStart } from '@/lib/keyboard-viewport';
+ import { lookupMessage, lookupShareParams, resolveLookup, restoreLookup, selectCandidate, selectPianoKey, type LookupResolution } from '@/lib/keyboard-resolution';
+ import { Icon } from '@/components/a-minor/icon';
+ import { RollingText } from '@/components/ui/rolling-text';
+ import { KeyboardDiagram } from './keyboard-diagram';
+-import { buildShareURL, copyShareURL, openNativeShare } from './share-control';
++import { ShareDialog, buildShareURL, copyShareURL } from './share-control';
+ import { useNoteAudio } from './use-note-audio';
+ 
+ type Mode = 'explore' | 'practice';
+ type PracticePhase = 'start' | 'question' | 'results';
+ type LinkItem = { url: string; label: string };
+ 
+-function keysInRange(layout: Layout, min: number, max: number) {
+-  return layout.keys.filter(key => key.midi >= min && key.midi <= max);
+-}
+-
+ function primaryLabel(key: PianoKey | undefined) {
+   return key?.label_with_octave.split(' / ')[0] ?? '';
+ }
+@@ -46,18 +45,6 @@ function noteDescription(key: PianoKey | undefined) {
+   return 'White key 路 Natural note';
+ }
+ 
+-function keyPattern(label: string) {
+-  const letter = label[0]?.toUpperCase();
+-  if (letter === 'D') return 'D is the white key between the two black keys.';
+-  if (letter === 'C') return 'C is the white key just before a pair of black keys.';
+-  if (letter === 'E') return 'E is the white key just after a pair of black keys.';
+-  if (letter === 'F') return 'F is the white key just before a group of three black keys.';
+-  if (letter === 'G') return 'G is the white key between the first two keys in a group of three black keys.';
+-  if (letter === 'A') return 'A is the white key between the last two keys in a group of three black keys.';
+-  if (letter === 'B') return 'B is the white key just after a group of three black keys.';
+-  return 'Use the repeating pattern of two and three black keys to find the note.';
+-}
+-
+ function ModeTabs({ value, onChange }: { value: Mode; onChange: (mode: Mode) => void }) {
+   const refs = useRef<Array<HTMLButtonElement | null>>([]);
+   const modes: { id: Mode; label: string }[] = [{ id: 'explore', label: 'Explore notes' }, { id: 'practice', label: 'Practice notes' }];
+@@ -73,39 +60,35 @@ function ModeTabs({ value, onChange }: { value: Mode; onChange: (mode: Mode) =>
+       tabIndex={value === item.id ? 0 : -1}
+       onClick={() => onChange(item.id)}
+       onKeyDown={event => {
+-        const next = event.key === 'ArrowRight' ? (index + 1) % modes.length : event.key === 'ArrowLeft' ? (index - 1 + modes.length) % modes.length : null;
++        const next = event.key === 'ArrowRight' || event.key === 'ArrowLeft' ? (index + (event.key === 'ArrowRight' ? 1 : modes.length - 1)) % modes.length : event.key === 'Home' ? 0 : event.key === 'End' ? modes.length - 1 : null;
+         if (next === null) return;
+         event.preventDefault();
++        onChange(modes[next].id);
+         refs.current[next]?.focus();
+       }}
+-    >{item.label}</button>)}
++    ><RollingText>{item.label}</RollingText></button>)}
+   </div>;
+ }
+ 
+-function useCompactViewport() {
+-  const [compact, setCompact] = useState(false);
+-  useEffect(() => {
+-    const query = window.matchMedia('(max-width: 47.999rem)');
+-    const update = () => setCompact(query.matches);
+-    update();
+-    query.addEventListener('change', update);
+-    return () => query.removeEventListener('change', update);
+-  }, []);
+-  return compact;
+-}
+-
+-function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange, onPractice }: { layouts: Layout[]; layout: Layout; blocks: ReadingBlock[]; links: LinkItem[]; active: boolean; onLayoutChange: (layoutID: string) => void; onPractice: () => void }) {
+-  const compact = useCompactViewport();
++function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayoutChange, onPractice }: {
++  layout: Layout;
++  layouts: Layout[];
++  active: boolean;
++  compact: boolean;
++  blocks: ReadingBlock[];
++  links: LinkItem[];
++  onLayoutChange: (layoutID: string) => void;
++  onPractice: () => void;
++}) {
+   const audio = useNoteAudio();
+   const [query, setQuery] = useState('C4');
+   const [resolution, setResolution] = useState<LookupResolution>(() => resolveLookup('C4', layout));
+   const [rangeStart, setRangeStart] = useState(compact ? 60 : 48);
+   const [copyMessage, setCopyMessage] = useState('');
++  const [manualURL, setManualURL] = useState('');
+   const selected = resolution.selected ? layout.keys.find(key => key.midi === resolution.selected?.midi) : undefined;
+   const whiteSpan = compact ? 12 : 24;
+-  const rangeMin = Math.max(layout.keys[0]?.midi ?? 21, rangeStart);
+-  const rangeMax = Math.min(layout.keys.at(-1)?.midi ?? 108, rangeMin + whiteSpan);
+-  const visibleKeys = useMemo(() => keysInRange(layout, rangeMin, rangeMax), [layout, rangeMin, rangeMax]);
++  const { rangeMin, rangeMax, keys: visibleKeys } = useMemo(() => visibleMidiWindow(layout, rangeStart, whiteSpan), [layout, rangeStart, whiteSpan]);
+ 
+   useEffect(() => {
+     const restored = restoreLookup(new URLSearchParams(window.location.search), layouts);
+@@ -121,7 +104,7 @@ function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange,
+   function bringIntoView(midi: number, activeLayout = layout) {
+     if (activeLayout.layout_id === layout.layout_id && midi >= rangeMin && midi <= rangeMax) return;
+     const raw = compact ? midi - 5 : midi - 11;
+-    setRangeStart(Math.max(activeLayout.keys[0].midi, Math.min(raw, activeLayout.keys.at(-1)!.midi - whiteSpan)));
++    setRangeStart(clampRangeStart(activeLayout, raw, whiteSpan));
+   }
+ 
+   function selectKey(key: PianoKey) {
+@@ -133,17 +116,18 @@ function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange,
+   }
+ 
+   function findNote() {
+-    const resolution = resolveLookup(query, layout);
+-    if (resolution.status === 'selected' && resolution.selected) {
+-      setResolution(resolution);
+-      setQuery(resolution.selected.requestedSpelling.display);
+-      bringIntoView(resolution.selected.midi);
++    const next = resolveLookup(query, layout);
++    if (next.status === 'selected' && next.selected) {
++      setResolution(next);
++      setQuery(next.selected.requestedSpelling.display);
++      bringIntoView(next.selected.midi);
+       return;
+     }
+-    setResolution(resolution);
++    setResolution(next);
+   }
+ 
+   function chooseCandidate(midi: number, display: string) {
++    audio.cancel();
+     const candidate = resolution.candidates.find(item => item.midi === midi && item.display === display);
+     if (!candidate) return;
+     const next = selectCandidate(candidate, query, layout);
+@@ -162,10 +146,20 @@ function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange,
+   }
+ 
+   async function copyNoteLink() {
++    if (!resolution.selected) return;
++    const url = buildShareURL('/keyboard-notes', lookupShareParams(layout, resolution.selected));
++    const ok = await copyShareURL(url);
++    setManualURL(ok ? '' : url);
++    setCopyMessage(ok ? 'Link copied.' : 'Copy isn鈥檛 available here. Select the link below.');
++  }
++
++  function toggleHear() {
+     if (!selected) return;
+-    const resolution = selectPianoKey(selected, layout);
+-    const url = buildShareURL('/keyboard-notes', lookupShareParams(layout, resolution));
+-    setCopyMessage(await copyShareURL(url) ? 'Link copied.' : 'Copy failed. Copy the address from your browser.');
++    if (audio.state === 'playing') {
++      audio.cancel();
++      return;
++    }
++    audio.play(selected.midi);
+   }
+ 
+   const rangeStep = compact ? 12 : 24;
+@@ -179,8 +173,8 @@ function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange,
+       <div className="kn-v2-note-copy">
+         <h3>{selected?.midi === 60 ? 'Middle C' : selected ? primaryLabel(selected) : 'Choose a note'}</h3>
+         <p>{noteDescription(selected)}</p>
+-        <button className="am-button am-primary kn-v2-hear" type="button" onClick={() => selected && audio.play(selected.midi)} disabled={!audio.ready || !selected}>
+-          <Icon name={audio.state === 'playing' ? 'stop' : 'play'}/><RollingText>{audio.state === 'playing' ? 'Playing' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}</RollingText>
++        <button className="am-button am-primary kn-v2-hear" type="button" onClick={toggleHear} disabled={!audio.ready || !selected} aria-label={audio.state === 'playing' ? 'Stop note' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}>
++          <Icon name={audio.state === 'playing' ? 'stop' : 'play'}/><RollingText>{audio.state === 'playing' ? 'Stop' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}</RollingText>
+         </button>
+         <p className="kn-v2-audio-status" role="status">{audio.message}</p>
+       </div>
+@@ -208,8 +202,9 @@ function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange,
+         <div className="kn-v2-layout-choice"><label htmlFor="kn-v2-layout">Keyboard size</label><select id="kn-v2-layout" value={layout.layout_id} onChange={event => changeLayout(event.target.value)}>{layouts.map(item => <option key={item.layout_id} value={item.layout_id}>{item.label}</option>)}</select></div>
+         <div className="kn-v2-note-choices">{visibleKeys.filter(key => key.color === 'white').map(key => <button type="button" key={key.midi} className={key.midi === selected?.midi ? 'is-current' : ''} onClick={() => selectKey(key)}><RollingText>{primaryLabel(key)}</RollingText></button>)}</div>
+       </details>
+-      <button type="button" className="kn-v2-copy-link" onClick={copyNoteLink}><RollingText>Copy link</RollingText></button>
++      <button type="button" className="kn-v2-copy-link" onClick={() => void copyNoteLink()}><RollingText>Copy link</RollingText></button>
+       <span className="kn-v2-copy-status" role="status">{copyMessage}</span>
++      {manualURL ? <label className="kn-v2-manual-link">Note link<textarea value={manualURL} readOnly rows={2} onFocus={event => event.currentTarget.select()}/></label> : null}
+     </div>
+     <aside className="kn-v2-practice-callout">
+       <div><h3>Ready to test yourself?</h3><p>Find notes on a focused keyboard, then review the ones you missed.</p></div>
+@@ -227,10 +222,18 @@ function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange,
+ 
+ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: Layout; active: boolean; sharedPreset: PracticePresetRestore; onExplore: () => void }) {
+   const audio = useNoteAudio();
++  const exitTitleId = useId();
++  const exitDescId = useId();
+   const [phase, setPhase] = useState<PracticePhase>('start');
+-  const [option, setOption] = useState<PracticeOption>(sharedPreset.status === 'valid' ? sharedPreset.preset.option : 'natural-c4-c5');
+-  const [roundPreset, setRoundPreset] = useState<PracticePreset | null>(sharedPreset.status === 'valid' ? sharedPreset.preset : null);
++  const [draftOption, setDraftOption] = useState<PracticeOption>(sharedPreset.status === 'valid' ? sharedPreset.preset.option : 'natural-c4-c5');
+   const [showLabels, setShowLabels] = useState(false);
++  const [activeRound, setActiveRound] = useState<ActiveRoundConfig | null>(sharedPreset.status === 'valid' ? {
++    preset: sharedPreset.preset,
++    option: sharedPreset.preset.option,
++    showLabels: false,
++    isCustom: false,
++    fromShared: true,
++  } : null);
+   const [questions, setQuestions] = useState<PracticeTarget[]>([]);
+   const [index, setIndex] = useState(0);
+   const [records, setRecords] = useState<PracticeAnswerRecord[]>([]);
+@@ -241,29 +244,37 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+   const [resolved, setResolved] = useState<PracticeAnswerKind | null>(null);
+   const [isReview, setIsReview] = useState(false);
+   const [savedResult, setSavedResult] = useState<PracticeAnswerRecord[] | null>(null);
+-  const [shareStatus, setShareStatus] = useState('');
+-  const [manualShareURL, setManualShareURL] = useState('');
+-  const [canShare, setCanShare] = useState(false);
++  const [shareOpen, setShareOpen] = useState(false);
+   const exitDialog = useRef<HTMLDialogElement>(null);
+-  const shareDialog = useRef<HTMLDialogElement>(null);
++  const exitTrigger = useRef<HTMLButtonElement>(null);
+   const shareTrigger = useRef<HTMLButtonElement>(null);
+   const advancing = useRef(false);
++
++  const option = activeRound?.option ?? draftOption;
+   const optionConfig = PRACTICE_OPTIONS[option];
++  const labelsOn = activeRound?.showLabels ?? showLabels;
+   const target = questions[index];
+-  const questionKeys = useMemo(() => keysInRange(layout, Math.max(optionConfig.min, (target?.midi ?? optionConfig.min) - 12), Math.min(optionConfig.max, (target?.midi ?? optionConfig.max) + 12)), [layout, optionConfig, target]);
++  const questionKeys = useMemo(() => keysInMidiRange(layout, Math.max(optionConfig.min, (target?.midi ?? optionConfig.min) - 12), Math.min(optionConfig.max, (target?.midi ?? optionConfig.max) + 12)), [layout, optionConfig, target]);
+   const finalRecords = savedResult ?? records;
+   const missed = useMemo(() => reviewPracticeTargets(finalRecords), [finalRecords]);
++  const sharedUnedited = sharedPreset.status === 'valid' && draftOption === sharedPreset.preset.option && phase === 'start';
++  const startPreviewKeys = useMemo(() => keysInMidiRange(layout, PRACTICE_OPTIONS[draftOption].min, Math.min(PRACTICE_OPTIONS[draftOption].max, PRACTICE_OPTIONS[draftOption].min + 12)), [layout, draftOption]);
+ 
+-  useEffect(() => setCanShare(Boolean(navigator.share)), []);
+   useEffect(() => { if (!active) audio.cancel(); }, [active]);
+   useEffect(() => { advancing.current = false; }, [index, phase]);
+   useEffect(() => {
+     if (phase !== 'start') return;
+     if (sharedPreset.status === 'valid') {
+-      setOption(sharedPreset.preset.option);
+-      setRoundPreset(sharedPreset.preset);
++      setDraftOption(sharedPreset.preset.option);
++      setActiveRound({
++        preset: sharedPreset.preset,
++        option: sharedPreset.preset.option,
++        showLabels: false,
++        isCustom: false,
++        fromShared: true,
++      });
+     } else if (sharedPreset.status === 'invalid') {
+-      setRoundPreset(null);
++      setActiveRound(null);
+     }
+   }, [sharedPreset, phase]);
+ 
+@@ -277,13 +288,28 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+ 
+   function startPractice(reviewTargets?: PracticeTarget[]) {
+     audio.cancel();
+-    const preset = reviewTargets?.length
+-      ? roundPreset
+-      : sharedPreset.status === 'valid' && phase === 'start' && questions.length === 0 && records.length === 0
+-        ? sharedPreset.preset
+-        : createPracticePreset(option);
+-    const next = reviewTargets?.length ? reviewTargets : generatePresetPractice(layout, preset!);
+-    if (!reviewTargets?.length) setRoundPreset(preset);
++    let round = activeRound;
++    if (!reviewTargets?.length) {
++      const reuseShared = phase === 'start' && sharedPreset.status === 'valid' && draftOption === sharedPreset.preset.option;
++      const resolved = reuseShared
++        ? { preset: sharedPreset.preset, isCustom: false, fromShared: true }
++        : resolveStartPreset({ status: 'none', preset: null }, phase === 'start' ? draftOption : (activeRound?.option ?? draftOption));
++      if (!reuseShared && sharedPreset.status === 'valid' && phase === 'start' && draftOption !== sharedPreset.preset.option) {
++        resolved.isCustom = true;
++      }
++      round = {
++        preset: resolved.preset,
++        option: resolved.preset.option,
++        showLabels: phase === 'start' ? showLabels : (activeRound?.showLabels ?? showLabels),
++        isCustom: resolved.isCustom,
++        fromShared: resolved.fromShared,
++      };
++      setDraftOption(round.option);
++      setActiveRound(round);
++      setSavedResult(null);
++    }
++    const preset = round!.preset;
++    const next = reviewTargets?.length ? reviewTargets : generatePresetPractice(layout, preset);
+     setQuestions(next);
+     setIndex(0);
+     setRecords([]);
+@@ -291,7 +317,7 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+     advancing.current = false;
+     resetQuestionState();
+     setPhase('question');
+-    emitKeyboardPracticeEvent(reviewTargets?.length ? 'keyboard_practice_review_started' : 'keyboard_practice_started', { option, count: next.length });
++    emitKeyboardPracticeEvent(reviewTargets?.length ? 'keyboard_practice_review_started' : 'keyboard_practice_started', { option: round!.option, count: next.length });
+   }
+ 
+   function chooseAnswer(key: PianoKey) {
+@@ -328,6 +354,7 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+   function nextQuestion() {
+     if (!target || !resolved || advancing.current) return;
+     advancing.current = true;
++    audio.cancel();
+     const nextRecords = [...records, { target, kind: resolved }];
+     if (index + 1 >= questions.length) {
+       setRecords(nextRecords);
+@@ -341,81 +368,97 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+     resetQuestionState();
+   }
+ 
+-  function finishReview() {
++  function returnToResults() {
++    audio.cancel();
+     setPhase('results');
+     setIsReview(false);
++    setQuestions([]);
+     setRecords(savedResult ?? records);
++    resetQuestionState();
+   }
+ 
+-  function leavePractice() {
++  function discardRound() {
+     audio.cancel();
+     setPhase('start');
+     setQuestions([]);
+     setRecords([]);
+     setSavedResult(null);
+-    setRoundPreset(sharedPreset.status === 'valid' ? sharedPreset.preset : null);
+     setIsReview(false);
+     resetQuestionState();
++    if (sharedPreset.status === 'valid') {
++      setDraftOption(sharedPreset.preset.option);
++      setActiveRound({
++        preset: sharedPreset.preset,
++        option: sharedPreset.preset.option,
++        showLabels: false,
++        isCustom: false,
++        fromShared: true,
++      });
++    } else {
++      setActiveRound(null);
++    }
+   }
+ 
+   function practiceShareURL() {
+-    const preset = roundPreset ?? createPracticePreset(option);
+-    const params = practicePresetParams(preset);
+-    return buildShareURL('/keyboard-notes', params) + '#note-trainer';
++    const preset = activeRound?.preset ?? resolveStartPreset(sharedPreset, draftOption).preset;
++    return buildShareURL('/keyboard-notes', practicePresetParams(preset)) + '#note-trainer';
+   }
+ 
+-  async function copyPracticeLink() {
+-    const url = practiceShareURL();
+-    const copied = await copyShareURL(url);
+-    setManualShareURL(copied ? '' : url);
+-    setShareStatus(copied ? 'Link copied.' : 'Copy is unavailable. Select and copy the link below.');
+-    emitKeyboardPracticeEvent('keyboard_practice_share_copy', { status: copied ? 'copied' : 'unavailable' });
+-  }
+-
+-  async function moreShareOptions() {
+-    const status = await openNativeShare('Piano note practice', practiceShareURL());
+-    if (status === 'opened' || status === 'cancelled') setShareStatus('');
+-    if (status === 'unavailable') setShareStatus('Sharing is unavailable here. You can copy the link instead.');
+-    emitKeyboardPracticeEvent('keyboard_practice_share_native', { status });
++  function updateDraftOption(next: PracticeOption) {
++    setDraftOption(next);
++    if (sharedPreset.status === 'valid' && next === sharedPreset.preset.option) {
++      setActiveRound({
++        preset: sharedPreset.preset,
++        option: next,
++        showLabels,
++        isCustom: false,
++        fromShared: true,
++      });
++      return;
++    }
++    setActiveRound(current => current ? { ...current, option: next, isCustom: sharedPreset.status === 'valid', fromShared: false } : null);
+   }
+ 
+   const { independent, assisted, revealed: revealedCount } = summarizePractice(finalRecords);
+   const wrongKey = layout.keys.find(key => key.midi === wrongMidi);
+   const selectedState = revealed ? 'revealed' : resolved ? 'correct' : wrongMidi !== null ? 'wrong' : 'selected';
+   const selectedMidi = revealed || resolved ? target?.midi ?? null : wrongMidi;
+-  const labels = showLabels ? Object.fromEntries(questionKeys.map(key => [key.midi, primaryLabel(key)])) : {};
++  const labels = labelsOn ? Object.fromEntries(questionKeys.map(key => [key.midi, primaryLabel(key)])) : {};
++  const startMeta = PRACTICE_OPTIONS[draftOption];
++  const receiverCustom = sharedPreset.status === 'valid' && draftOption !== sharedPreset.preset.option;
+ 
+   return <section id="kn-v2-practice-panel" role="tabpanel" aria-labelledby="kn-v2-practice-tab" hidden={!active} className="kn-v2-panel kn-v2-practice" data-phase={phase}>
+     {phase === 'start' && <div className="kn-v2-practice-start" id="note-trainer">
+-      {sharedPreset.status === 'valid' && <div className="kn-v2-receiver-note"><p className="kn-v2-kicker">Practice shared with you</p><p>Start your own round with the same 10-note set. No one else鈥檚 answers or score are included.</p></div>}
++      {sharedPreset.status === 'valid' && !receiverCustom && <div className="kn-v2-receiver-note" role="status"><p className="kn-v2-kicker">Shared practice 路 10 notes</p></div>}
++      {receiverCustom && <div className="kn-v2-receiver-note" role="status"><p className="kn-v2-kicker">Custom practice 路 10 notes</p></div>}
+       {sharedPreset.status === 'invalid' && <div className="kn-v2-receiver-note kn-v2-receiver-invalid" role="alert"><p className="kn-v2-kicker">This practice link is no longer available</p><p>You can still start a new 10-note practice below.</p></div>}
+-      <div className="kn-v2-start-meta"><span>Piano note practice</span><span>{optionConfig.label.replace('Natural notes 路 ', '').replace('Black keys 路 ', '')} 路 {option === 'black-c4-c5' ? 'Black keys' : 'White keys'}</span></div>
++      <div className="kn-v2-start-meta"><span>Piano note practice</span><span>{startMeta.label.replace('Natural notes 路 ', '').replace('Black keys 路 ', '')} 路 {draftOption === 'black-c4-c5' ? 'Black keys' : 'White keys'}</span></div>
+       <div className="kn-v2-start-intro">
+         <div className="kn-v2-start-copy">
+           <p className="kn-v2-start-note">10-note round 路 Your pace</p>
+           <h2>Find your way around the keys.</h2>
+-          <p>See a note name, choose its key, then revisit the notes that need another try.</p>
++          <p>{startMeta.label.replace(' 路 ', ' 路 ')} 路 {showLabels ? 'With labels' : 'Without labels'}</p>
+           <button className="am-button am-primary kn-v2-start-button" type="button" onClick={() => startPractice()}><RollingText>Start 10-note practice</RollingText></button>
+-          <p className="kn-v2-start-summary">{optionConfig.label} 路 {showLabels ? 'With labels' : 'Without labels'}</p>
++          <p className="kn-v2-start-summary">{startMeta.label} 路 {showLabels ? 'With labels' : 'Without labels'}{sharedUnedited ? ' 路 Shared set' : receiverCustom ? ' 路 Custom set' : ''}</p>
+         </div>
+-        <aside className="kn-v2-round-outcome" aria-label="What happens in this practice">
+-          <p className="kn-v2-kicker">After the round</p>
+-          <ol>
+-            <li><strong>See your result</strong><span>First tries, helped answers, and revealed notes stay distinct.</span></li>
+-            <li><strong>Review missed notes</strong><span>Practice only the notes that need another look.</span></li>
+-            <li><strong>Share the practice</strong><span>Invite someone to start a fresh round without sharing your answers.</span></li>
+-          </ol>
+-        </aside>
+       </div>
+-      <div className="kn-v2-start-keyboard" aria-hidden="true"><KeyboardDiagram keys={keysInRange(layout, 60, 72)} selected={62} fit autoCenter={false} showVisualLabels={false}/></div>
+-      <div className="kn-v2-start-keyboard-meta"><span>One small part of the piano.</span><span>C4鈥揅5</span></div>
++      <div className="kn-v2-start-keyboard" aria-hidden="true"><KeyboardDiagram keys={startPreviewKeys} selected={startPreviewKeys[1]?.midi ?? null} fit autoCenter={false} showVisualLabels={false}/></div>
++      <div className="kn-v2-start-keyboard-meta"><span>One small part of the piano.</span><span>{startMeta.label.split(' 路 ')[1]}</span></div>
+       <details className="kn-v2-options">
+         <summary>Practice options</summary>
+         <div className="kn-v2-option-fields">
+-          <label>Notes and range<select value={option} onChange={event => { setOption(event.target.value as PracticeOption); setRoundPreset(null); }}>{Object.entries(PRACTICE_OPTIONS).map(([value, copy]) => <option value={value} key={value}>{copy.label}</option>)}</select></label>
++          <label>Notes and range<select value={draftOption} onChange={event => updateDraftOption(event.target.value as PracticeOption)}>{Object.entries(PRACTICE_OPTIONS).map(([value, copy]) => <option value={value} key={value}>{copy.label}</option>)}</select></label>
+           <label className="kn-v2-checkbox"><input type="checkbox" checked={showLabels} onChange={event => setShowLabels(event.target.checked)}/><span>Show key labels during practice</span></label>
+         </div>
+       </details>
++      <details className="kn-v2-how">
++        <summary>How this practice works</summary>
++        <ol>
++          <li><strong>See your result</strong><span>First tries, helped answers, and revealed notes stay distinct.</span></li>
++          <li><strong>Review missed notes</strong><span>Practice only the notes that need another look.</span></li>
++          <li><strong>Share the practice</strong><span>Invite someone to start a fresh round without sharing your answers.</span></li>
++        </ol>
++      </details>
+       <button type="button" className="kn-v2-text-button kn-v2-explore-return" onClick={onExplore}><RollingText>Explore with note names first</RollingText><Icon name="right"/></button>
+     </div>}
+ 
+@@ -423,7 +466,9 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+       <header className="kn-v2-question-head">
+         <div className="kn-v2-progress-row">
+           <div><p className="kn-v2-kicker">{isReview ? 'Missed-note review' : '10-note practice'}</p><p><strong>{isReview ? 'Review' : 'Question'} {index + 1}</strong><span> of {questions.length}</span></p></div>
+-          <button type="button" className="kn-v2-leave" onClick={() => exitDialog.current?.showModal()}><RollingText>Leave practice</RollingText></button>
++          {isReview
++            ? <button type="button" className="kn-v2-leave" onClick={returnToResults}><RollingText>Back to results</RollingText></button>
++            : <button ref={exitTrigger} type="button" className="kn-v2-leave" onClick={() => exitDialog.current?.showModal()}><RollingText>Exit practice</RollingText></button>}
+         </div>
+         <div className="kn-v2-progress-track" role="progressbar" aria-label={`${isReview ? 'Review' : 'Question'} ${index + 1} of ${questions.length}`} aria-valuemin={1} aria-valuemax={questions.length} aria-valuenow={index + 1}>
+           {questions.map((question, questionIndex) => <span key={`${question.midi}-${questionIndex}`} data-state={questionIndex < index ? 'complete' : questionIndex === index ? 'current' : 'upcoming'}/>) }
+@@ -441,17 +486,17 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+           onSelect={chooseAnswer}
+           fit
+           autoCenter={false}
+-          showVisualLabels={showLabels}
++          showVisualLabels={labelsOn}
+           keyLabels={labels}
+           isKeyDisabled={key => option === 'black-c4-c5' ? key.color !== 'black' : key.color !== 'white'}
+           label={`Question ${index + 1}. Find ${target.label}`}
+         />
+-        <div className="kn-v2-question-keyboard-meta"><span>{showLabels ? 'Note names shown' : 'Note names hidden'} 路 {optionConfig.label.split(' 路 ')[1]}</span><span>{option === 'black-c4-c5' ? 'Black keys only' : 'White keys only'}</span></div>
++        <div className="kn-v2-question-keyboard-meta"><span>{labelsOn ? 'Note names shown' : 'Note names hidden'} 路 {optionConfig.label.split(' 路 ')[1]}</span><span>{option === 'black-c4-c5' ? 'Black keys only' : 'White keys only'}</span></div>
+       </div>
+       <div className="kn-v2-feedback" aria-live="polite" data-kind={revealed ? 'revealed' : resolved ? 'correct' : wrongMidi !== null ? 'wrong' : hinted ? 'hint' : 'idle'}>
+         {wrongMidi === null && !hinted && !resolved && <p>Choose a {option === 'black-c4-c5' ? 'black' : 'white'} key. Take your time.</p>}
+-        {wrongMidi !== null && wrongKey && <p><strong>Not quite.</strong> You chose {primaryLabel(wrongKey)}. {keyPattern(primaryLabel(wrongKey))}</p>}
+-        {hinted && !resolved && <p><strong>Hint</strong> Look at the black-key pattern. This question will count as completed with help. {keyPattern(target.label)}</p>}
++        {wrongMidi !== null && wrongKey && <p><strong>Not quite.</strong> {practiceWrongFeedback(primaryLabel(wrongKey), target.midi, wrongKey.midi).replace(/^Not quite\.\s*/, '')}</p>}
++        {hinted && !resolved && <p><strong>Hint</strong> {practiceGeometryHint(target.label, target.midi)} This question will count as completed with help.</p>}
+         {revealed && <p><strong>This is {target.label}.</strong> This answer was revealed and will be added to your review.</p>}
+         {resolved && !revealed && <p><strong>{resolved === 'independent' ? 'That鈥檚 it.' : 'Found it.'}</strong> {target.label} is the right key.{resolved === 'assisted' ? ' This note will be added to your review.' : ''}</p>}
+       </div>
+@@ -463,10 +508,13 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+         </>}
+       </div>
+       <p className="kn-v2-audio-status" role="status">{audio.message}</p>
+-      <dialog ref={exitDialog} onClose={() => undefined}>
+-        <div className="am-dialog-head"><h2>Leave this practice?</h2><button className="am-button am-tertiary" type="button" aria-label="Close" onClick={() => exitDialog.current?.close()}><Icon name="close"/></button></div>
+-        <p>Your current answers will not be kept.</p>
+-        <div className="kn-v2-dialog-actions"><button className="am-button am-primary" type="button" onClick={() => { exitDialog.current?.close(); leavePractice(); }}><RollingText>Leave practice</RollingText></button><button className="am-button am-secondary" type="button" onClick={() => exitDialog.current?.close()}><RollingText>Keep practicing</RollingText></button></div>
++      <dialog ref={exitDialog} aria-labelledby={exitTitleId} aria-describedby={exitDescId} onClose={() => queueMicrotask(() => exitTrigger.current?.focus())}>
++        <div className="am-dialog-head"><h2 id={exitTitleId}>Leave this round?</h2><button className="am-button am-tertiary" type="button" aria-label="Close" onClick={() => exitDialog.current?.close()}><Icon name="close"/></button></div>
++        <p id={exitDescId}>Your progress in this round will be lost.</p>
++        <div className="kn-v2-dialog-actions">
++          <button className="am-button am-primary" type="button" autoFocus onClick={() => exitDialog.current?.close()}><RollingText>Keep practicing</RollingText></button>
++          <button className="am-button am-secondary" type="button" onClick={() => { exitDialog.current?.close(); discardRound(); }}><RollingText>Discard round</RollingText></button>
++        </div>
+       </dialog>
+     </div>}
+ 
+@@ -478,7 +526,7 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+           <h2 id="kn-v2-result-title">Your round, at a glance.</h2>
+           <p className="kn-v2-score-number"><strong>{independent}</strong><span>/ {finalRecords.length}</span></p>
+           <p className="kn-v2-score-caption">correct on the first try</p>
+-          <p className="kn-v2-score-context">{showLabels ? 'With labels' : 'Without labels'} 路 {optionConfig.label}</p>
++          <p className="kn-v2-score-context">{labelsOn ? 'With labels' : 'Without labels'} 路 {optionConfig.label}</p>
+           <div className="kn-v2-score-track" aria-label={`${independent} first try, ${assisted} with help, ${revealedCount} revealed`}>{finalRecords.map((record, answerIndex) => <span key={answerIndex} data-kind={record.kind}/>)}</div>
+           {assisted > 0 && <p className="kn-v2-score-detail">{assisted} found after another try or a hint</p>}
+           {revealedCount > 0 && <p className="kn-v2-score-detail">{revealedCount} {revealedCount === 1 ? 'answer' : 'answers'} revealed</p>}
+@@ -490,47 +538,64 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
+           {missed.length > 0 && <button className="am-button am-primary kn-v2-review-button" type="button" onClick={() => { setSavedResult(finalRecords); startPractice(missed); }}><RollingText>{`Review ${missed.length} ${missed.length === 1 ? 'note' : 'notes'}`}</RollingText><Icon name="right"/></button>}
+           <div className="kn-v2-result-actions">
+             <button className="kn-v2-text-button" type="button" onClick={() => { setSavedResult(null); startPractice(); }}><RollingText>Practice again</RollingText></button>
+-            <button className="kn-v2-text-button" type="button" onClick={() => { leavePractice(); onExplore(); }}><RollingText>Back to explore</RollingText></button>
++            <button className="kn-v2-text-button" type="button" onClick={() => { discardRound(); onExplore(); }}><RollingText>Back to explore</RollingText></button>
+           </div>
+         </section>
+       </div>
+-      {isReview && <button className="am-button am-primary" type="button" onClick={finishReview}><RollingText>Return to original results</RollingText></button>}
++      {isReview && <button className="am-button am-primary" type="button" onClick={returnToResults}><RollingText>Return to original results</RollingText></button>}
+       <aside className="kn-v2-share-strip">
+         <div><h3>Practice together</h3><p>Share a clean starting point for the same kind of note practice.</p></div>
+-        <button ref={shareTrigger} className="am-button am-secondary" type="button" onClick={() => { setShareStatus(''); setManualShareURL(''); shareDialog.current?.showModal(); }}><RollingText>Share practice</RollingText></button>
++        <button ref={shareTrigger} className="am-button am-secondary" type="button" onClick={() => setShareOpen(true)}><RollingText>Share practice</RollingText></button>
+       </aside>
+       <p className="kn-v2-result-note">This result describes the notes you recognized here, not your playing technique. Your score and answers are not included in the link.</p>
+-      <dialog ref={shareDialog} className="kn-v2-share-dialog" onClose={() => shareTrigger.current?.focus()}>
+-        <div className="am-dialog-head"><div><p className="kn-v2-kicker">Share practice</p><h2>Invite someone to try it.</h2></div><button className="am-button am-tertiary" type="button" aria-label="Close" onClick={() => shareDialog.current?.close()}><Icon name="close"/></button></div>
+-        <p>The link opens a fresh 10-note round. Your answers and score stay private.</p>
+-        <div className="kn-v2-share-preview"><span>{optionConfig.label}</span><span>{PRACTICE_LENGTH} notes</span></div>
+-        <button className="am-button am-primary" type="button" onClick={copyPracticeLink}><RollingText>Copy practice link</RollingText></button>
+-        {canShare && <button className="am-button am-secondary" type="button" onClick={moreShareOptions}><RollingText>More sharing options</RollingText></button>}
+-        <p className="kn-v2-copy-status" role="status">{shareStatus}</p>
+-        {manualShareURL && <label className="kn-v2-manual-link">Practice link<input value={manualShareURL} readOnly onFocus={event => event.currentTarget.select()}/></label>}
+-      </dialog>
++      <ShareDialog
++        open={shareOpen}
++        onClose={() => setShareOpen(false)}
++        returnFocusRef={shareTrigger}
++        title="Invite someone to try it."
++        description="The link opens a fresh 10-note round. Your answers and score stay private."
++        url={practiceShareURL()}
++        shareTitle="Piano note practice"
++        copyLabel="Copy practice link"
++        shareLabel="More sharing options"
++        preview={<div className="kn-v2-share-preview"><span>{optionConfig.label}</span><span>{PRACTICE_LENGTH} notes</span></div>}
++        onCopied={(_url, ok) => emitKeyboardPracticeEvent('keyboard_practice_share_copy', { status: ok ? 'copied' : 'unavailable' })}
++        onNative={status => emitKeyboardPracticeEvent('keyboard_practice_share_native', { status })}
++      />
+     </div>}
+   </section>;
+ }
+ 
++function useCompactViewport() {
++  const [compact, setCompact] = useState(false);
++  useEffect(() => {
++    const query = window.matchMedia('(max-width: 47.999rem)');
++    const update = () => setCompact(query.matches);
++    update();
++    query.addEventListener('change', update);
++    return () => query.removeEventListener('change', update);
++  }, []);
++  return compact;
++}
++
+ export function KeyboardNotesWorkspace({ layouts, blocks = [], links = [] }: { layouts: Layout[]; blocks?: ReadingBlock[]; links?: LinkItem[] }) {
+   const [mode, setMode] = useState<Mode>('explore');
+   const [hydrated, setHydrated] = useState(false);
+   const [layoutID, setLayoutID] = useState(layouts.find(item => item.layout_id === '88-key-A0-C8')?.layout_id ?? layouts[0].layout_id);
+   const [sharedPreset, setSharedPreset] = useState<PracticePresetRestore>({ status: 'none', preset: null });
+   const layout = layouts.find(item => item.layout_id === layoutID) ?? layouts[0];
++  const compact = useCompactViewport();
++
+   useEffect(() => {
+-    setHydrated(true);
+-    const params = new URLSearchParams(window.location.search);
+-    const restored = restorePracticePreset(params);
++    const restored = restorePracticePreset(new URLSearchParams(window.location.search));
+     setSharedPreset(restored);
+-    if (restored.status !== 'none' || window.location.hash === '#note-trainer') {
+-      setMode('practice');
+-    }
++    if (restored.status !== 'none') setMode('practice');
++    setHydrated(true);
+   }, []);
+-  return <div className="kn-v2-shell" data-mode={mode} data-hydrated={hydrated ? 'true' : undefined}>
+-    <ModeTabs value={mode} onChange={setMode}/>
+-    <ExploreNotes layouts={layouts} layout={layout} blocks={blocks} links={links} active={mode === 'explore'} onLayoutChange={setLayoutID} onPractice={() => setMode('practice')}/>
+-    <PracticeNotes layout={layout} active={mode === 'practice'} sharedPreset={sharedPreset} onExplore={() => setMode('explore')}/>
++
++  return <div className="kn-v2-shell" data-hydrated={hydrated ? 'true' : 'false'}>
++    <ModeTabs value={mode} onChange={setMode} />
++    <ExploreNotes layout={layout} layouts={layouts} active={mode === 'explore'} compact={compact} blocks={blocks} links={links} onLayoutChange={setLayoutID} onPractice={() => setMode('practice')} />
++    <PracticeNotes layout={layout} active={mode === 'practice'} sharedPreset={sharedPreset} onExplore={() => setMode('explore')} />
+   </div>;
+ }
+diff --git a/src/components/keyboard-notes/keyboard-notes.css b/src/components/keyboard-notes/keyboard-notes.css
+index 3a206fd..30a0c13 100644
+--- a/src/components/keyboard-notes/keyboard-notes.css
++++ b/src/components/keyboard-notes/keyboard-notes.css
+@@ -82,3 +82,29 @@
+ .kn-page:has(.kn-product-sample) .am-reading .am-content-section h2{color:var(--foreground);font-size:1rem}
+ .kn-page:has(.kn-product-sample) .am-reading .am-content-body{font-size:.9375rem}
+ @media(max-width:47.999rem){.kn-product-sample{margin-block:1.5rem 3rem}.kn-mode-tabs{gap:1.5rem}.kn-explore-sample,.kn-practice-start,.kn-practice-question,.kn-practice-result{padding-block:2.25rem}.kn-explore-heading,.kn-result-heading{display:block}.kn-note-identity h2{font-size:5rem}.kn-layout-control{margin-top:2rem}.kn-explore-keyboard{margin-block:2rem 1rem}.kn-explore-keyboard .kn-keyboard,.kn-practice-question .kn-keyboard{height:12rem}.kn-explore-actions,.kn-practice-actions,.kn-result-actions{align-items:stretch}.kn-explore-actions .am-button,.kn-practice-actions .am-button,.kn-result-actions .am-button{width:100%}.kn-explore-actions .kn-text-action,.kn-practice-actions .kn-text-action{width:100%;text-align:left}.kn-find-another{align-items:stretch;flex-direction:column}.kn-question-heading h2{font-size:4.25rem}.kn-result-heading>p{margin-top:1rem;text-align:left}.kn-result-score{grid-template-columns:1fr;margin-block:2rem}.kn-result-score>div{display:flex;align-items:baseline;gap:1rem;padding:1rem 0}.kn-result-score>div+div{padding-left:0;border-top:1px solid var(--border);border-left:0}.kn-review-line{grid-template-columns:1fr;gap:1rem}.kn-challenge-state{align-items:flex-start;flex-direction:column;gap:.5rem}.kn-page:has(.kn-product-sample) .am-reading .am-content-section{display:block}.kn-page:has(.kn-product-sample) .am-reading .am-content-section h2{margin-bottom:.5rem}}
++
++/* Shared compare roles + labeled/share (integration fix 2026-09-16) */
++.kn-key:focus-visible{z-index:4;outline:var(--pr-focus-width) solid var(--ring);outline-offset:3px}
++.kn-key:hover:not(:disabled):not(.kn-selected):not(.kn-role){box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--primary) 45%,transparent)}
++.kn-key.kn-role-common.kn-white{background:color-mix(in srgb,var(--foreground) 10%,var(--background));color:var(--foreground);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--foreground) 35%,transparent)}
++.kn-key.kn-role-common.kn-black{box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--background) 70%,transparent);color:var(--background)}
++.kn-key.kn-role-common .kn-key-text,.kn-key.kn-role-source .kn-key-text,.kn-key.kn-role-target .kn-key-text{font-weight:700;color:inherit}
++.kn-key.kn-role-source.kn-white{background:color-mix(in srgb,var(--muted-foreground) 18%,var(--background));color:var(--foreground);box-shadow:inset 0 0 0 2px var(--muted-foreground)}
++.kn-key.kn-role-source.kn-black{background:color-mix(in srgb,var(--muted-foreground) 55%,var(--piano-key-black));color:var(--background);box-shadow:inset 0 0 0 2px var(--background)}
++.kn-key.kn-role-target.kn-white{background:var(--accent);color:var(--primary);box-shadow:inset 0 0 0 3px var(--primary)}
++.kn-key.kn-role-target.kn-black{background:var(--primary);color:var(--background);box-shadow:inset 0 0 0 2px var(--background)}
++.kn-share-panel{display:grid;gap:.75rem;margin-top:.5rem}
++.kn-share-panel-actions{display:grid;gap:.5rem}
++.kn-share-panel-desc{color:var(--muted-foreground);line-height:1.55}
++.kn-share-manual textarea{width:100%;min-height:4rem;padding:.6rem .75rem;border:1px solid var(--input);border-radius:var(--pr-radius-control);background:var(--background);color:var(--foreground);font:inherit}
++.kn-labeled-toolbar{display:flex;flex-wrap:wrap;align-items:end;gap:1rem}
++.kn-labeled-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-left:auto}
++.kn-labeled-more{position:relative}
++.kn-labeled-more-panel{position:absolute;right:0;top:calc(100% + .35rem);z-index:5;display:grid;gap:.5rem;min-width:16rem;padding:.75rem;border:1px solid var(--border);border-radius:var(--pr-radius-control);background:var(--background)}
++.kn-labeled-viewport{margin-block:1.25rem 1rem}
++.kn-labeled-full{margin-top:1.5rem;border-top:1px solid var(--border)}
++.kn-labeled-full summary,.kn-labeled-guide summary{min-height:var(--pr-control-min-size);cursor:pointer;font-weight:650}
++.kn-labeled-guide{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)}
++.kn-labeled-guide ol{padding-left:1.25rem;margin:1rem 0}
++@media(max-width:47.999rem){.kn-labeled-desktop-only{display:none!important}.kn-labeled-actions{margin-left:0;width:100%}}
++@media(min-width:48rem){.kn-labeled-more{display:none}}
+diff --git a/src/components/keyboard-notes/labeled-experience.tsx b/src/components/keyboard-notes/labeled-experience.tsx
+index 3654767..60ed25c 100644
+--- a/src/components/keyboard-notes/labeled-experience.tsx
++++ b/src/components/keyboard-notes/labeled-experience.tsx
+@@ -1,16 +1,20 @@
+ 'use client';
++
+ import { useEffect, useMemo, useState } from 'react';
+ import { flushSync } from 'react-dom';
+ import type { Layout } from '@/lib/keyboard-types';
+ import { layoutCode } from '@/lib/keyboard-resolution';
++import { clampRangeStart, labeledFullSegments, printCompactSegments, visibleMidiWindow } from '@/lib/keyboard-viewport';
+ import { KeyboardDiagram } from './keyboard-diagram';
+ import { ShareControl } from './share-control';
+ import { LayoutChoice } from './tool-controls';
+ 
++function primaryLabel(label: string) {
++  return label.split(' / ')[0];
++}
++
+ export function compactSegments(layout: Layout) {
+-  const pages = layout.key_count === 88 ? 3 : 2;
+-  const size = Math.ceil(layout.keys.length / pages);
+-  return Array.from({ length: pages }, (_, index) => layout.keys.slice(index * size, (index + 1) * size)).filter(segment => segment.length);
++  return printCompactSegments(layout);
+ }
+ 
+ export function LabeledExperience({ layouts, sourceIDs }: { layouts: Layout[]; sourceIDs: string[] }) {
+@@ -20,7 +24,10 @@ export function LabeledExperience({ layouts, sourceIDs }: { layouts: Layout[]; s
+   const [error, setError] = useState('');
+   const [printPart, setPrintPart] = useState<number | null>(null);
+   const [snapshot, setSnapshot] = useState<{ layout: Layout; octaves: boolean } | null>(null);
++  const [moreOpen, setMoreOpen] = useState(false);
+   const layout = layouts.find(item => item.layout_id === layoutID) ?? layouts[0];
++  const whiteSpan = 12;
++  const [rangeStart, setRangeStart] = useState(60);
+ 
+   useEffect(() => {
+     const params = new URLSearchParams(window.location.search);
+@@ -30,23 +37,116 @@ export function LabeledExperience({ layouts, sourceIDs }: { layouts: Layout[]; s
+     if (params.get('octaves') === '0') setOctaves(false);
+     const requestedPart = Number(params.get('printPart'));
+     if (params.has('printPart') && Number.isInteger(requestedPart) && requestedPart >= 0) setPrintPart(requestedPart);
++    setRangeStart(clampRangeStart(restored, 60, whiteSpan));
+     setReady(true);
+   }, [layouts]);
+ 
++  useEffect(() => {
++    setRangeStart(clampRangeStart(layout, 60, whiteSpan));
++  }, [layout]);
++
++  const { rangeMin, rangeMax, keys: visibleKeys } = useMemo(() => visibleMidiWindow(layout, rangeStart, whiteSpan), [layout, rangeStart]);
++  const fullSegments = useMemo(() => labeledFullSegments(layout), [layout]);
+   const print = snapshot ?? { layout, octaves };
+   const printSegments = compactSegments(print.layout);
+   const renderedSegments = printPart === null ? printSegments : printSegments.slice(printPart, printPart + 1);
+   const shareParams = useMemo(() => new URLSearchParams({ layout: layoutCode(layout), octaves: octaves ? '1' : '0' }), [layout, octaves]);
++  const canLower = rangeStart > layout.keys[0].midi;
++  const canHigher = rangeMax < layout.keys.at(-1)!.midi;
++  const pdfHref = `/reference/generated/keyboard-notes/labeled-${layout.key_count}-${octaves ? 'octaves' : 'letters'}.pdf`;
++
+   return <>
+-    <section className="am-tool kn-tool kn-screen" aria-label="Labeled keyboard reference">
+-      <div className="kn-toolbar"><LayoutChoice layouts={layouts} value={layoutID} ready={ready} onChange={setLayoutID}/><label className="kn-checkbox"><input type="checkbox" checked={octaves} disabled={!ready} onChange={event => setOctaves(event.target.checked)}/>Show octave numbers</label></div>
+-      <p className="kn-range">{layout.label} 路 {layout.white_key_count} white / {layout.black_key_count} black keys</p>
+-      <div className="kn-toolbar"><button className="am-button am-secondary" disabled={!ready} onClick={() => { flushSync(() => setSnapshot({ layout, octaves })); try { window.print(); } catch { setError('Printing could not start. Download the reference PDF instead.'); } }}>Print this reference</button><a className="am-button am-tertiary" download href={`/reference/generated/keyboard-notes/labeled-${layout.key_count}-${octaves ? 'octaves' : 'letters'}.pdf`}>Download reference PDF</a><ShareControl path="/keyboard-notes/labeled" params={shareParams} label="Share this reference"/></div>
+-      <p role="status" className="kn-error">{error}</p><p className="kn-hint">Reference diagram - not a full-size sticker template. Octave numbers identify register, not fingers.</p>
+-      <nav className="kn-actions" aria-label="Octave sections">{layout.reading_segments.map((segment, index) => <a key={segment.label} href={`#labels-section-${index}`} className="am-button am-tertiary">{segment.label}</a>)}</nav>
+-      {layout.reading_segments.map((segment, index) => <section className="kn-segment" key={segment.label} id={`labels-section-${index}`} tabIndex={-1}><h2>{segment.label}</h2><KeyboardDiagram keys={layout.keys.filter(key => key.midi >= segment.midi_range[0] && key.midi <= segment.midi_range[1])} octaves={octaves} label={`${segment.label} labels`}/></section>)}
++    <section className="am-tool kn-tool kn-screen kn-labeled" aria-label="Labeled keyboard reference">
++      <div className="kn-labeled-toolbar">
++        <LayoutChoice layouts={layouts} value={layoutID} ready={ready} onChange={setLayoutID}/>
++        <label className="kn-checkbox"><input type="checkbox" checked={octaves} disabled={!ready} onChange={event => setOctaves(event.target.checked)}/>Octave numbers</label>
++        <div className="kn-labeled-actions">
++          <button
++            className="am-button am-secondary"
++            disabled={!ready}
++            onClick={() => {
++              flushSync(() => setSnapshot({ layout, octaves }));
++              try { window.print(); }
++              catch { setError('Printing could not start. Download the reference PDF instead.'); }
++            }}
++          >
++            Print reference
++          </button>
++          <div className="kn-labeled-more">
++            <button type="button" className="am-button am-tertiary" aria-expanded={moreOpen} onClick={() => setMoreOpen(value => !value)}>More</button>
++            {moreOpen ? (
++              <div className="kn-labeled-more-panel">
++                <a className="am-button am-tertiary" download href={pdfHref}>Download PDF</a>
++                <ShareControl path="/keyboard-notes/labeled" params={shareParams} label="Share reference"/>
++              </div>
++            ) : null}
++          </div>
++          <a className="am-button am-tertiary kn-labeled-desktop-only" download href={pdfHref}>Download PDF</a>
++          <div className="kn-labeled-desktop-only"><ShareControl path="/keyboard-notes/labeled" params={shareParams} label="Share reference"/></div>
++        </div>
++      </div>
++      <p role="status" className="kn-error">{error}</p>
++      <p className="kn-hint">Reference diagram 鈥?not a full-size sticker template. Octave numbers identify register, not fingers.</p>
++
++      <div className="kn-labeled-viewport">
++        <KeyboardDiagram
++          keys={visibleKeys}
++          octaves={octaves}
++          fit
++          autoCenter={false}
++          label={`Labeled keys ${primaryLabel(visibleKeys[0]?.label_with_octave ?? '')} to ${primaryLabel(visibleKeys.at(-1)?.label_with_octave ?? '')}`}
++        />
++        <div className="kn-v2-range-row">
++          <button type="button" className="kn-v2-text-button" disabled={!canLower || !ready} onClick={() => setRangeStart(value => clampRangeStart(layout, value - whiteSpan, whiteSpan))} aria-pressed={false}>Lower notes</button>
++          <p>Showing {primaryLabel(visibleKeys[0]?.label_with_octave ?? '')}鈥搟primaryLabel(visibleKeys.at(-1)?.label_with_octave ?? '')}</p>
++          <button type="button" className="kn-v2-text-button" disabled={!canHigher || !ready} onClick={() => setRangeStart(value => clampRangeStart(layout, value + whiteSpan, whiteSpan))}>Higher notes</button>
++        </div>
++        <div className="kn-v2-overview" aria-label={`${layout.label} overview. Current visible range is marked.`}>
++          <KeyboardDiagram keys={layout.keys} marked={visibleKeys.map(key => key.midi)} octaves={false} showVisualLabels={false} fit autoCenter={false}/>
++        </div>
++      </div>
++
++      <details className="kn-labeled-full">
++        <summary>View the full reference</summary>
++        {fullSegments.map(segment => (
++          <section className="kn-segment" key={segment.label} id={`labels-${segment.label.replace(/[^\w]+/g, '-').toLowerCase()}`} tabIndex={-1}>
++            <h2>{segment.label}</h2>
++            <KeyboardDiagram keys={segment.keys} octaves={octaves} label={`${segment.label} labels`}/>
++          </section>
++        ))}
++      </details>
++
++      <section className="kn-labeled-guide" aria-labelledby="kn-label-guide-title">
++        <h2 id="kn-label-guide-title">How to label your keyboard</h2>
++        <ol>
++          <li>Match your layout</li>
++          <li>Find the repeating pattern</li>
++          <li>Add octave numbers when needed</li>
++        </ol>
++        <nav className="kn-actions" aria-label="Related keyboard tools">
++          <a href="/keyboard-notes" className="am-button am-tertiary">Find a specific note 鈫?/a>
++          <a href="/keyboard-notes/chart" className="am-button am-tertiary">Match keys to staff 鈫?/a>
++          <a href="/keyboard-notes#note-trainer" className="am-button am-tertiary">Practice notes 鈫?/a>
++        </nav>
++      </section>
+       <p>{layout.scope_note}</p>
++      <p className="kn-print-sources">Sources: {sourceIDs.join(', ')}</p>
+     </section>
+-    <div className="kn-print-only" data-print-layout={print.layout.layout_id} data-print-octaves={print.octaves}>{renderedSegments.map((keys, renderedIndex) => { const index = printPart ?? renderedIndex; return <section className="kn-print-sheet" key={keys[0].midi}><div className="kn-print-title">Labeled Piano Keys</div><p>{print.layout.label} 路 Part {index + 1} of {printSegments.length} 路 {keys[0].label_with_octave.split(' / ')[0]} to {keys.at(-1)!.label_with_octave.split(' / ')[0]}</p><p>Octave numbers: {print.octaves ? 'shown' : 'hidden'}. Middle C = C4.</p><KeyboardDiagram keys={keys} octaves={print.octaves}/><footer><p>PianoGrid 路 pianogrid.com/keyboard-notes/labeled</p><p>Reference diagram - not a full-size sticker template.</p><p className="kn-print-sources">Sources: {sourceIDs.join(', ')}</p></footer></section>;})}</div>
++    <div className="kn-print-only" data-print-layout={print.layout.layout_id} data-print-octaves={print.octaves}>
++      {renderedSegments.map((keys, renderedIndex) => {
++        const index = printPart ?? renderedIndex;
++        return <section className="kn-print-sheet" key={keys[0].midi}>
++          <div className="kn-print-title">Labeled Piano Keys</div>
++          <p>{print.layout.label} 路 Part {index + 1} of {printSegments.length} 路 {keys[0].label_with_octave.split(' / ')[0]} to {keys.at(-1)!.label_with_octave.split(' / ')[0]}</p>
++          <p>Octave numbers: {print.octaves ? 'shown' : 'hidden'}. Middle C = C4.</p>
++          <KeyboardDiagram keys={keys} octaves={print.octaves}/>
++          <footer>
++            <p>PianoGrid 路 pianogrid.com/keyboard-notes/labeled</p>
++            <p>Reference diagram 鈥?not a full-size sticker template.</p>
++            <p className="kn-print-sources">Sources: {sourceIDs.join(', ')}</p>
++          </footer>
++        </section>;
++      })}
++    </div>
+   </>;
+ }
+diff --git a/src/components/keyboard-notes/share-control.tsx b/src/components/keyboard-notes/share-control.tsx
+index 717fbfc..bb9545f 100644
+--- a/src/components/keyboard-notes/share-control.tsx
++++ b/src/components/keyboard-notes/share-control.tsx
+@@ -1,7 +1,9 @@
+ 'use client';
+-import { useState } from 'react';
++
++import { useEffect, useId, useRef, useState, type ReactNode, type RefObject } from 'react';
+ 
+ export function buildShareURL(path: string, params: URLSearchParams) {
++  if (typeof window === 'undefined') return `${path}${params.size ? `?${params}` : ''}`;
+   return `${window.location.origin}${path}${params.size ? `?${params}` : ''}`;
+ }
+ 
+@@ -14,10 +16,12 @@ export async function copyShareURL(url: string) {
+   }
+ }
+ 
+-export async function openNativeShare(title: string, url: string) {
++export async function openNativeShare(title: string, url: string, text?: string) {
+   if (!navigator.share) return 'unavailable' as const;
+   try {
+-    await navigator.share({ title, url });
++    const payload = text ? { title, text, url } : { title, url };
++    if (navigator.canShare && !navigator.canShare(payload)) return 'unavailable' as const;
++    await navigator.share(payload);
+     return 'opened' as const;
+   } catch (error) {
+     if ((error as DOMException).name === 'AbortError') return 'cancelled' as const;
+@@ -25,17 +29,166 @@ export async function openNativeShare(title: string, url: string) {
+   }
+ }
+ 
+-export function ShareControl({ path, params, label = 'Share this note' }: { path: string; params: URLSearchParams; label?: string }) {
++export type SharePanelProps = {
++  heading?: string;
++  description: string;
++  url: string;
++  shareTitle?: string;
++  shareText?: string;
++  preview?: ReactNode;
++  copyLabel?: string;
++  shareLabel?: string;
++  onCopied?: (url: string, ok: boolean) => void;
++  onNative?: (status: 'opened' | 'cancelled' | 'unavailable') => void;
++  className?: string;
++};
++
++export function SharePanel({
++  heading,
++  description,
++  url,
++  shareTitle,
++  shareText,
++  preview,
++  copyLabel = 'Copy link',
++  shareLabel = 'More sharing options',
++  onCopied,
++  onNative,
++  className = '',
++}: SharePanelProps) {
+   const [message, setMessage] = useState('');
+-  function url() { return buildShareURL(path, params); }
++  const [manualURL, setManualURL] = useState('');
++  const [canShare, setCanShare] = useState(false);
++
++  useEffect(() => {
++    setCanShare(Boolean(typeof navigator !== 'undefined' && navigator.share));
++  }, []);
++
+   async function copy() {
+-    setMessage(await copyShareURL(url()) ? 'Link copied. It will reopen this page with the same state.' : 'Copy failed. Copy the address from your browser.');
++    const ok = await copyShareURL(url);
++    setManualURL(ok ? '' : url);
++    setMessage(ok ? 'Link copied.' : 'Copy isn鈥檛 available here. Select the link below.');
++    onCopied?.(url, ok);
+   }
++
+   async function share() {
+-    const result = await openNativeShare(document.title, url());
+-    if (result === 'opened') { setMessage('Sharing options opened.'); return; }
+-    if (result === 'cancelled') return;
++    const result = await openNativeShare(shareTitle ?? heading ?? 'Share', url, shareText);
++    onNative?.(result);
++    if (result === 'opened' || result === 'cancelled') {
++      setMessage('');
++      return;
++    }
+     await copy();
+   }
+-  return <div className="kn-share"><div className="kn-actions"><button type="button" className="am-button am-secondary" onClick={share}>{label}</button><button type="button" className="am-button am-tertiary" onClick={copy}>Copy link</button></div><p className="kn-status" role="status">{message}</p></div>;
++
++  return (
++    <div className={`kn-share-panel ${className}`.trim()}>
++      {heading ? <h3 className="kn-share-panel-heading">{heading}</h3> : null}
++      <p className="kn-share-panel-desc">{description}</p>
++      {preview}
++      <div className="kn-share-panel-actions">
++        <button type="button" className="am-button am-primary" onClick={() => void copy()}>{copyLabel}</button>
++        {canShare ? <button type="button" className="am-button am-secondary" onClick={() => void share()}>{shareLabel}</button> : null}
++      </div>
++      <p className="kn-status kn-share-status" role="status">{message}</p>
++      {manualURL ? (
++        <label className="kn-v2-manual-link kn-share-manual">
++          Share link
++          <textarea value={manualURL} readOnly rows={2} onFocus={event => event.currentTarget.select()} />
++        </label>
++      ) : null}
++    </div>
++  );
++}
++
++export function ShareDialog({
++  open,
++  onClose,
++  returnFocusRef,
++  title,
++  ...panel
++}: SharePanelProps & {
++  open: boolean;
++  onClose: () => void;
++  returnFocusRef?: RefObject<HTMLElement | null>;
++  title: string;
++}) {
++  const dialog = useRef<HTMLDialogElement>(null);
++  const titleId = useId();
++
++  useEffect(() => {
++    const node = dialog.current;
++    if (!node) return;
++    if (open && !node.open) node.showModal();
++    if (!open && node.open) node.close();
++  }, [open]);
++
++  return (
++    <dialog
++      ref={dialog}
++      className="kn-share-dialog kn-v2-share-dialog"
++      aria-labelledby={titleId}
++      onClose={() => {
++        onClose();
++        queueMicrotask(() => returnFocusRef?.current?.focus());
++      }}
++    >
++      <div className="am-dialog-head">
++        <div>
++          <p className="kn-v2-kicker">Share</p>
++          <h2 id={titleId}>{title}</h2>
++        </div>
++        <button type="button" className="am-button am-tertiary" aria-label="Close" onClick={() => dialog.current?.close()}>脳</button>
++      </div>
++      <SharePanel {...panel} />
++    </dialog>
++  );
++}
++
++/** Compatibility wrapper 鈥?same helpers, unified copy/fail messaging. */
++export function ShareControl({ path, params, label = 'Share this note' }: { path: string; params: URLSearchParams; label?: string }) {
++  const [open, setOpen] = useState(false);
++  const [inlineStatus, setInlineStatus] = useState('');
++  const [shareURL, setShareURL] = useState('');
++  const trigger = useRef<HTMLButtonElement>(null);
++
++  useEffect(() => {
++    setShareURL(buildShareURL(path, params));
++  }, [path, params]);
++
++  return (
++    <div className="kn-share">
++      <div className="kn-actions">
++        <button ref={trigger} type="button" className="am-button am-secondary" onClick={() => { setInlineStatus(''); setShareURL(buildShareURL(path, params)); setOpen(true); }}>{label}</button>
++        <button
++          type="button"
++          className="am-button am-tertiary"
++          onClick={async () => {
++            const href = buildShareURL(path, params);
++            setShareURL(href);
++            const ok = await copyShareURL(href);
++            if (ok) setInlineStatus('Link copied.');
++            else {
++              setInlineStatus('');
++              setOpen(true);
++            }
++          }}
++        >
++          Copy link
++        </button>
++      </div>
++      <p className="kn-status" role="status">{inlineStatus}</p>
++      <ShareDialog
++        open={open}
++        onClose={() => setOpen(false)}
++        returnFocusRef={trigger}
++        title={label}
++        description="The link reopens this page with the same reference settings. No personal data is included."
++        url={shareURL || `${path}${params.size ? `?${params}` : ''}`}
++        shareTitle={typeof document === 'undefined' ? label : document.title}
++        copyLabel="Copy link"
++        shareLabel="Share"
++      />
++    </div>
++  );
+ }
+diff --git a/src/lib/keyboard-practice.ts b/src/lib/keyboard-practice.ts
+index 40e072b..e198efc 100644
+--- a/src/lib/keyboard-practice.ts
++++ b/src/lib/keyboard-practice.ts
+@@ -1,5 +1,5 @@
+ import type { ChartKey, Layout, StaffNote } from './keyboard-types';
+-import { displayNote } from './keyboard-resolution.ts';
++import { displayNote, parseNoteInput } from './keyboard-resolution.ts';
+ 
+ export type PracticeLevel = '1' | '2' | '3';
+ export type PracticeTarget = { midi: number; label: string; clef?: 'treble' | 'bass'; staff?: StaffNote };
+@@ -119,3 +119,63 @@ export function scorePractice(targetMidi: number, answerMidi: number) {
+   if (targetMidi === answerMidi) return 'correct' as const;
+   return (targetMidi - answerMidi) % 12 === 0 ? 'wrong_octave' as const : 'wrong_note' as const;
+ }
++
++const BLACK_PITCH_HINTS: Record<number, string> = {
++  1: 'Find the left black key in the pair of two black keys in this octave.',
++  3: 'Find the right black key in the pair of two black keys in this octave.',
++  6: 'Find the left black key in the group of three black keys in this octave.',
++  8: 'Find the middle black key in the group of three black keys in this octave.',
++  10: 'Find the right black key in the group of three black keys in this octave.',
++};
++
++const WHITE_LETTER_HINTS: Record<string, string> = {
++  C: 'Find the white key just before a pair of black keys.',
++  D: 'Find the white key between the pair of black keys.',
++  E: 'Find the white key just after a pair of black keys.',
++  F: 'Find the white key just before a group of three black keys.',
++  G: 'Find the white key between the first two keys in a group of three black keys.',
++  A: 'Find the white key between the last two keys in a group of three black keys.',
++  B: 'Find the white key just after a group of three black keys.',
++};
++
++export function pitchClassFromMidi(midi: number) {
++  return ((midi % 12) + 12) % 12;
++}
++
++export function practiceGeometryHint(label: string, midi?: number) {
++  const parsed = parseNoteInput(label);
++  const pitchClass = typeof midi === 'number'
++    ? pitchClassFromMidi(midi)
++    : parsed && parsed.octave !== null
++      ? pitchClassFromMidi(12 * (parsed.octave + 1) + ({ C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 }[parsed.letter] ?? 0) + (parsed.accidental === '#' ? 1 : parsed.accidental === 'b' ? -1 : 0))
++      : null;
++  if (pitchClass !== null && BLACK_PITCH_HINTS[pitchClass]) return BLACK_PITCH_HINTS[pitchClass];
++  const letter = parsed?.letter ?? label.replace(/[^A-Ga-g]/g, '').charAt(0).toUpperCase();
++  return WHITE_LETTER_HINTS[letter] ?? 'Use the repeating pattern of two and three black keys to find the note.';
++}
++
++export function practiceWrongFeedback(selectedLabel: string, targetMidi: number, selectedMidi: number) {
++  if (scorePractice(targetMidi, selectedMidi) === 'wrong_octave') {
++    return `Not quite. You chose ${selectedLabel}. That is the right note name in a different octave. Try another key, or ask for a hint.`;
++  }
++  return `Not quite. You chose ${selectedLabel}. Try another key, or ask for a hint.`;
++}
++
++export type ActiveRoundConfig = {
++  preset: PracticePreset;
++  option: PracticeOption;
++  showLabels: boolean;
++  isCustom: boolean;
++  fromShared: boolean;
++};
++
++export function resolveStartPreset(incoming: PracticePresetRestore, draftOption: PracticeOption): { preset: PracticePreset; isCustom: boolean; fromShared: boolean } {
++  if (incoming.status === 'valid' && incoming.preset.option === draftOption) {
++    return { preset: incoming.preset, isCustom: false, fromShared: true };
++  }
++  return {
++    preset: createPracticePreset(draftOption),
++    isCustom: incoming.status === 'valid',
++    fromShared: false,
++  };
++}

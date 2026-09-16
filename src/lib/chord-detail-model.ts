@@ -64,5 +64,23 @@ export function finalizeChordDetailModel(model:ChordDetailModel):ChordDetailMode
     if(!same(example.fingers,expected))throw new Error(`Unexpected root-position fingering: ${data.url}`);
   }
   if(model.practice.id!=='practice'||!model.practice.heading||!model.practice.prompt||!model.practice.scope||model.practice.requiredPitchClassCount!==definition.expectedNoteCount||!model.blocks.some(block=>block.block_id==='practice'))throw new Error(`Invalid practice model: ${data.url}`);
+  const hearPairs:Partial<Record<string,{pair:string;label:string}>>={
+    '/chords/a-minor':{pair:'a',label:'Hear A minor vs A major →'},
+    '/chords/a-major':{pair:'a',label:'Hear A minor vs A major →'},
+    '/chords/c-minor':{pair:'c',label:'Hear C minor vs C major →'},
+    '/chords/c-major':{pair:'c',label:'Hear C minor vs C major →'},
+    '/chords/d-minor':{pair:'d',label:'Hear D minor vs D major →'},
+    '/chords/d-major':{pair:'d',label:'Hear D minor vs D major →'},
+    '/chords/e-minor':{pair:'e',label:'Hear E minor vs E major →'},
+    '/chords/e-major':{pair:'e',label:'Hear E minor vs E major →'},
+  };
+  const hear=hearPairs[data.url];
+  if(hear&&isPublicRoute('/tools/hear-the-difference')){
+    const hearURL=`/tools/hear-the-difference?pair=${hear.pair}&source=${data.chord.slug}`;
+    const related=model.blocks.find(block=>block.block_id.endsWith('-related')||block.block_id==='am-next');
+    if(related&&!related.content.links.some(link=>link.url.startsWith('/tools/hear-the-difference'))){
+      related.content.links.unshift({url:hearURL,label:hear.label,published:true});
+    }
+  }
   return model;
 }

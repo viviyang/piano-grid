@@ -1,0 +1,555 @@
+{
+  "status": "NOT_RUN",
+  "note": "验收规范，不是已执行测试。旧缺陷的隔离复现见evidence/probe-results.json。",
+  "cases": [
+    {
+      "id": "K01",
+      "group": "Practice",
+      "finding_ids": [
+        "F01"
+      ],
+      "method": "unit/browser",
+      "action": "打开现有v1自然键共享链接，不改配置开始；与修复前夹具比较全部10题。",
+      "expected": "version/seed/option/count及题序不变，未自动开始或发声。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K02",
+      "group": "Practice",
+      "finding_ids": [
+        "F01"
+      ],
+      "method": "browser",
+      "action": "接收natural-c4-c5链接；开始前将option改为black-c4-c5。",
+      "expected": "显示Custom practice；实际题组、range、enabled keys、结果和再分享均为黑键配置；无不可点击正确目标。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K03",
+      "group": "Practice",
+      "finding_ids": [
+        "F01"
+      ],
+      "method": "browser",
+      "action": "接收black-c4-c5链接；改为natural-c4-c5后开始。",
+      "expected": "全部目标自然键、目标可点击；不沿用黑键共享preset。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K04",
+      "group": "Practice",
+      "finding_ids": [
+        "F01"
+      ],
+      "method": "browser",
+      "action": "共享轮开始前改变音域；普通开始页逐个选择四种option。",
+      "expected": "题组、开始预览、题目范围、可点键统一读取冻结后的round config。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K05",
+      "group": "Practice",
+      "finding_ids": [
+        "F01",
+        "F04"
+      ],
+      "method": "browser",
+      "action": "有/无标签各完成一轮首答全对；随后复练或再开始。",
+      "expected": "结果显示正确的With/Without labels；不把标签辅助模式暗示为无辅助耳训/演奏成绩。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K06",
+      "group": "Practice",
+      "finding_ids": [
+        "F02"
+      ],
+      "method": "unit/browser",
+      "action": "对C♯/D♭、D♯/E♭、F♯/G♭、G♯/A♭、A♯/B♭的Hint做参数化测试。",
+      "expected": "所有拼写对应正确物理黑键与组位置；不返回指向白键的keyPattern说明。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K07",
+      "group": "Practice",
+      "finding_ids": [
+        "F02"
+      ],
+      "method": "browser",
+      "action": "白键、黑键各首次答错，再请求Hint，再Show answer。",
+      "expected": "第一次只标错键；hint有帮助但不提前标答案；揭晓才显示正确位置。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K08",
+      "group": "Practice",
+      "finding_ids": [
+        "F02"
+      ],
+      "method": "unit/browser",
+      "action": "宽音域下选同名不同八度。",
+      "expected": "利用已有pitch/score判定错八度；不把目标错误地描述为所选键的邻键。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K09",
+      "group": "Practice",
+      "finding_ids": [
+        "F02",
+        "F04"
+      ],
+      "method": "browser",
+      "action": "完成8首答、1重试/提示、1揭晓。",
+      "expected": "三桶互斥且合计10；只有非首答目标入复练；首答正确不显示added to review。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K10",
+      "group": "Practice",
+      "finding_ids": [
+        "F04"
+      ],
+      "method": "browser",
+      "action": "第3题已错答，打开Exit确认，再Keep practicing或Escape关闭。",
+      "expected": "题序、wrong/hint状态、记录不变；焦点回Exit。dialog有正确标题/说明关联。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K11",
+      "group": "Practice",
+      "finding_ids": [
+        "F04"
+      ],
+      "method": "browser",
+      "action": "普通轮点击Exit，确认Discard round。",
+      "expected": "停止旧音；只清该轮，回Start；不自动开始、发声或跳转新URL。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K12",
+      "group": "Practice",
+      "finding_ids": [
+        "F04"
+      ],
+      "method": "browser",
+      "action": "完成一轮、进入missed review，再Back to results。",
+      "expected": "原始10题结果和roundPreset保留；分享仍对应原题组，不变成短复练题组。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K13",
+      "group": "Practice",
+      "finding_ids": [
+        "F03",
+        "F04"
+      ],
+      "method": "browser",
+      "action": "做题中切Explore再切Practice。",
+      "expected": "保留题与记录；隐藏面板音频取消，不靠切tab丢弃整轮。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K14",
+      "group": "Practice",
+      "finding_ids": [
+        "F01",
+        "F04"
+      ],
+      "method": "browser",
+      "action": "完成复练；返回原结果，再开始另一轮。",
+      "expected": "复练不改原分数；新轮无旧savedResult残留；labels和option按新activeRoundConfig。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K15",
+      "group": "Practice",
+      "finding_ids": [
+        "F01",
+        "F03"
+      ],
+      "method": "browser",
+      "action": "同事件循环快速点击Next两次；快速点击两个不同答案。",
+      "expected": "不跳题、不重复计分；题目终态一致，旧答案回调不能修改下一题。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "K16",
+      "group": "Practice",
+      "finding_ids": [
+        "F03"
+      ],
+      "method": "browser",
+      "action": "AudioContext不可用时完成一轮视觉认键。",
+      "expected": "视觉练习仍可答；明确声音不可用，不报告虚假播放成功。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "A01",
+      "group": "Audio",
+      "finding_ids": [
+        "F03"
+      ],
+      "method": "browser/owner spy",
+      "action": "Explore播放音符时点显示Stop的按钮。",
+      "expected": "确实执行cancel且清sounding；按钮文字、图标和可访问名称一致。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "A02",
+      "group": "Audio",
+      "finding_ids": [
+        "F03"
+      ],
+      "method": "browser/owner spy",
+      "action": "正确或揭晓刚播放时立即Next、搜索其他音或选候选。",
+      "expected": "旧调度被取消，不跨题高亮/出声；正常finish信息不挤出布局。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "A03",
+      "group": "Audio",
+      "finding_ids": [
+        "F03",
+        "F10"
+      ],
+      "method": "browser/owner spy",
+      "action": "B04比较中切pair、多次点Replay、单听Chord1/2。",
+      "expected": "最多一个有效播放任务；旧回调不解锁新pair猜测。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "A04",
+      "group": "Audio",
+      "finding_ids": [
+        "F03",
+        "F10"
+      ],
+      "method": "browser/manual",
+      "action": "比较未结束时切后台；回页面；再完整重播。",
+      "expected": "中断轮不视为听完；重播成功后才解锁；真机确认没有旧声音延迟播放。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "A05",
+      "group": "Audio",
+      "finding_ids": [
+        "F10"
+      ],
+      "method": "browser",
+      "action": "在音频owner边界模拟初始化/播放失败，点击真正Retry。",
+      "expected": "进入业务error状态；Retry有实际恢复流程；失败不解锁答案；不得插DOM代替。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "A06",
+      "group": "Audio",
+      "finding_ids": [
+        "F10"
+      ],
+      "method": "browser",
+      "action": "音频失败后选择看解释，再恢复音频。",
+      "expected": "解释路径标为help/revealed而非听完答对；恢复后不继承错误completed状态。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S01",
+      "group": "Share",
+      "finding_ids": [
+        "F05"
+      ],
+      "method": "browser",
+      "action": "Practice、Labeled、B04各打开分享。",
+      "expected": "共用同一个panel行为，payload由业务owner生成；无旧按钮组错位/重复面板。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S02",
+      "group": "Share",
+      "finding_ids": [
+        "F05"
+      ],
+      "method": "browser",
+      "action": "三类分享中令Clipboard拒绝；查音Copy也拒绝。",
+      "expected": "显示实际生成的可选URL；不是让用户复制可能没有状态的地址栏。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S03",
+      "group": "Share",
+      "finding_ids": [
+        "F05"
+      ],
+      "method": "browser/manual",
+      "action": "native share先resolve一次，再取消一次。",
+      "expected": "取消清过期状态，不宣称送达；不将opened/resolved统计为发帖成功。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S04",
+      "group": "Share",
+      "finding_ids": [
+        "F05"
+      ],
+      "method": "browser",
+      "action": "navigator.share缺失或canShare拒绝payload。",
+      "expected": "复制与手动链接仍可用；没有死按钮或不可恢复错误。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S05",
+      "group": "Share",
+      "finding_ids": [
+        "F01",
+        "F05"
+      ],
+      "method": "unit/browser",
+      "action": "解析最终B03/B04分享URL，另窗口打开。",
+      "expected": "只有批准任务参数，无用户作答/score/identity；接收者从自己的开始状态进入。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S06",
+      "group": "Share",
+      "finding_ids": [
+        "F05"
+      ],
+      "method": "browser",
+      "action": "查B♯3、C♭4和一个黑键降号拼写，复制并还原。",
+      "expected": "请求拼写和八度保留，实际MIDI仍一致；不会强制改成默认升号/自然名。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "S07",
+      "group": "Share",
+      "finding_ids": [
+        "F04",
+        "F05"
+      ],
+      "method": "browser/manual",
+      "action": "dialog内Tab循环、ShiftTab、Escape关闭，手机旋转。",
+      "expected": "焦点约束和返回正确；内容可滚动无底部遮挡；真实系统Share Sheet另人工验证。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V01",
+      "group": "UI",
+      "finding_ids": [
+        "F06"
+      ],
+      "method": "screenshot/browser",
+      "action": "1440×1000与390×844打开shared landing。",
+      "expected": "紧凑提示与正文左对齐；开始按钮可见；不出现独立大空白块；200%允许自然流式延长。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V02",
+      "group": "UI",
+      "finding_ids": [
+        "F06",
+        "F01"
+      ],
+      "method": "screenshot/browser",
+      "action": "shared landing修改题型，完成后再开新轮。",
+      "expected": "Custom/Shared提示准确，不反复出现旧shared banner。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V03",
+      "group": "Labeled",
+      "finding_ids": [
+        "F07",
+        "F05"
+      ],
+      "method": "screenshot/browser",
+      "action": "88/61两布局打开工具栏、分享，再复制。",
+      "expected": "Print主操作，下载/分享次级；状态文本不参与按钮baseline，手机不挤四横排。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V04",
+      "group": "Labeled",
+      "finding_ids": [
+        "F07"
+      ],
+      "method": "unit/browser",
+      "action": "切88/61布局，范围箭头/总览定位，切octave numbers。",
+      "expected": "使用共享viewport与KeyboardDiagram；真实MIDI不变、范围标签匹配可视窗口。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V05",
+      "group": "Labeled",
+      "finding_ids": [
+        "F07"
+      ],
+      "method": "unit/browser",
+      "action": "展开完整88/61参考并检查所有MIDI、边缘分段、旧锚点。",
+      "expected": "完整参考层唯一键集合等于layout.keys；无漏/重；无独立C8–C8大块；旧锚点可用。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V06",
+      "group": "Print",
+      "finding_ids": [
+        "F07"
+      ],
+      "method": "print preview/manual",
+      "action": "details关闭、窗口处于C4时打印88；再打印61；检查A4和Letter。",
+      "expected": "打印完整所选布局，非当前窗口；边界和octave准确，无断开的键图/空页。实体打印另留人工项。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V07",
+      "group": "Print",
+      "finding_ids": [
+        "F07"
+      ],
+      "method": "artifact/browser",
+      "action": "选择不同layout/labels后Download PDF。",
+      "expected": "下载匹配资产；固定PDF选项与屏幕不同则明示；来源和权限说明保留。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V08",
+      "group": "Keyboard",
+      "finding_ids": [
+        "F09"
+      ],
+      "method": "computed style/screenshot",
+      "action": "B04四组reveal检查common/source/target，白键与黑键标签。",
+      "expected": "标签可读、角色互不覆盖；按computed值检验普通文字4.5:1；保留既有主题色。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V09",
+      "group": "Keyboard",
+      "finding_ids": [
+        "F09"
+      ],
+      "method": "browser/screenshot",
+      "action": "鼠标hover B3、键盘focus B3、选中/compare状态分别截图。",
+      "expected": "焦点/hover不伪装成第五个比较音；没有残留selected；focus仍可见。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "V10",
+      "group": "Responsive",
+      "finding_ids": [
+        "F06",
+        "F07",
+        "F09"
+      ],
+      "method": "browser/manual",
+      "action": "320/390/768/1440，200%文字，横竖屏；无障碍键盘路径。",
+      "expected": "无整页横向溢出、控件可达；按钮与琴键不因缩小失去主要操作；reduced motion沿用。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "H01",
+      "group": "B04",
+      "finding_ids": [
+        "F08"
+      ],
+      "method": "browser",
+      "action": "未播放/未回答，检查整个可见页面而非只.hd-feedback。",
+      "expected": "默认不见确切变化音、pair音列、third提示；详情可由用户主动访问。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "H02",
+      "group": "B04",
+      "finding_ids": [
+        "F08"
+      ],
+      "method": "browser",
+      "action": "答前打开解释或使用Hint，然后选Middle。",
+      "expected": "helpUsed生效；不报告无提示发现；解释保留SSR且可访问，不做爬虫专用内容。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "H03",
+      "group": "B04",
+      "finding_ids": [
+        "F08"
+      ],
+      "method": "unit/browser",
+      "action": "四pair逐一听完、答错/揭晓/答对、下一pair及旧分享链接。",
+      "expected": "原pair契约与音高断言保留；定位为引导式比较，不新增竞赛分数。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "H04",
+      "group": "B04",
+      "finding_ids": [
+        "F08",
+        "F10"
+      ],
+      "method": "test evidence",
+      "action": "审查所有error/interrupt/screenshot用例来源。",
+      "expected": "视觉注入夹具单列，不计功能成功；真实状态断言连接实际组件路径。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "X01",
+      "group": "Integration",
+      "finding_ids": [
+        "F11"
+      ],
+      "method": "repo/test logs",
+      "action": "在本轮最后一次源码改动后跑两批旧测试和新用例。",
+      "expected": "同一HEAD+dirty diff状态，日志含命令/时间/hash；不是不同版本PASS拼接。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "X02",
+      "group": "Integration",
+      "finding_ids": [
+        "F07",
+        "F09",
+        "F11"
+      ],
+      "method": "browser",
+      "action": "Chart选音、Frequencies查音、Blank/打印、Chords/Scales实际试听与视觉抽查。",
+      "expected": "共享keyboard/share/audio变动未影响既有消费者；不只检查HTTP200。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "X03",
+      "group": "SEO",
+      "finding_ids": [
+        "F12"
+      ],
+      "method": "HTML/routes",
+      "action": "检查所有受影响base/query的canonical、robots、sitemap、导航和链接。",
+      "expected": "新增URL=0；B04原base保留；query不入sitemap；不额外加noindex/robots屏蔽。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "X04",
+      "group": "Delivery",
+      "finding_ids": [
+        "F11"
+      ],
+      "method": "manifest",
+      "action": "打开新Handoff，核对代码文件、diff、未跟踪文件、日志、截图及hash。",
+      "expected": "B04实际业务源文件与共享owner可审查；无.env/secret；旧代码快照只作证据。",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "M01",
+      "group": "Manual",
+      "finding_ids": [
+        "F03",
+        "F04",
+        "F05",
+        "F07",
+        "F09",
+        "F10"
+      ],
+      "method": "manual",
+      "action": "Windows与iPhone实际听音、分享/复制到另一设备、退出和复练；基础读屏；必要打印。",
+      "expected": "逐项记录实测设备/结果；未测记PENDING，不由桌面mock替代。",
+      "status": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+'use client';
+
+import { useEffect, useMemo, useRef, useState } from 'react';
+import type { Layout, PianoKey, ReadingBlock } from '@/lib/keyboard-types';
+import { emitKeyboardPracticeEvent } from '@/lib/keyboard-events';
+import {
+  PRACTICE_LENGTH,
+  PRACTICE_OPTIONS,
+  classifyPracticeAnswer,
+  createPracticePreset,
+  generatePresetPractice,
+  practicePresetParams,
+  restorePracticePreset,
+  reviewPracticeTargets,
+  summarizePractice,
+  type PracticeAnswerKind,
+  type PracticeAnswerRecord,
+  type PracticeOption,
+  type PracticePreset,
+  type PracticePresetRestore,
+  type PracticeTarget,
+} from '@/lib/keyboard-practice';
+import { lookupMessage, lookupShareParams, resolveLookup, restoreLookup, selectCandidate, selectPianoKey, type LookupResolution } from '@/lib/keyboard-resolution';
+import { Icon } from '@/components/a-minor/icon';
+import { RollingText } from '@/components/ui/rolling-text';
+import { KeyboardDiagram } from './keyboard-diagram';
+import { buildShareURL, copyShareURL, openNativeShare } from './share-control';
+import { useNoteAudio } from './use-note-audio';
+
+type Mode = 'explore' | 'practice';
+type PracticePhase = 'start' | 'question' | 'results';
+type LinkItem = { url: string; label: string };
+
+function keysInRange(layout: Layout, min: number, max: number) {
+  return layout.keys.filter(key => key.midi >= min && key.midi <= max);
+}
+
+function primaryLabel(key: PianoKey | undefined) {
+  return key?.label_with_octave.split(' / ')[0] ?? '';
+}
+
+function noteDescription(key: PianoKey | undefined) {
+  if (!key) return 'Choose a piano key to inspect its note.';
+  if (key.color === 'black') return 'Black key · A sharp or flat note';
+  if (key.midi === 60) return 'A starting point on the keyboard.';
+  return 'White key · Natural note';
+}
+
+function keyPattern(label: string) {
+  const letter = label[0]?.toUpperCase();
+  if (letter === 'D') return 'D is the white key between the two black keys.';
+  if (letter === 'C') return 'C is the white key just before a pair of black keys.';
+  if (letter === 'E') return 'E is the white key just after a pair of black keys.';
+  if (letter === 'F') return 'F is the white key just before a group of three black keys.';
+  if (letter === 'G') return 'G is the white key between the first two keys in a group of three black keys.';
+  if (letter === 'A') return 'A is the white key between the last two keys in a group of three black keys.';
+  if (letter === 'B') return 'B is the white key just after a group of three black keys.';
+  return 'Use the repeating pattern of two and three black keys to find the note.';
+}
+
+function ModeTabs({ value, onChange }: { value: Mode; onChange: (mode: Mode) => void }) {
+  const refs = useRef<Array<HTMLButtonElement | null>>([]);
+  const modes: { id: Mode; label: string }[] = [{ id: 'explore', label: 'Explore notes' }, { id: 'practice', label: 'Practice notes' }];
+  return <div className="kn-v2-tabs" role="tablist" aria-label="Piano keys and notes modes">
+    {modes.map((item, index) => <button
+      key={item.id}
+      ref={element => { refs.current[index] = element; }}
+      id={`kn-v2-${item.id}-tab`}
+      type="button"
+      role="tab"
+      aria-selected={value === item.id}
+      aria-controls={`kn-v2-${item.id}-panel`}
+      tabIndex={value === item.id ? 0 : -1}
+      onClick={() => onChange(item.id)}
+      onKeyDown={event => {
+        const next = event.key === 'ArrowRight' ? (index + 1) % modes.length : event.key === 'ArrowLeft' ? (index - 1 + modes.length) % modes.length : null;
+        if (next === null) return;
+        event.preventDefault();
+        refs.current[next]?.focus();
+      }}
+    >{item.label}</button>)}
+  </div>;
+}
+
+function useCompactViewport() {
+  const [compact, setCompact] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 47.999rem)');
+    const update = () => setCompact(query.matches);
+    update();
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, []);
+  return compact;
+}
+
+function ExploreNotes({ layouts, layout, blocks, links, active, onLayoutChange, onPractice }: { layouts: Layout[]; layout: Layout; blocks: ReadingBlock[]; links: LinkItem[]; active: boolean; onLayoutChange: (layoutID: string) => void; onPractice: () => void }) {
+  const compact = useCompactViewport();
+  const audio = useNoteAudio();
+  const [query, setQuery] = useState('C4');
+  const [resolution, setResolution] = useState<LookupResolution>(() => resolveLookup('C4', layout));
+  const [rangeStart, setRangeStart] = useState(compact ? 60 : 48);
+  const [copyMessage, setCopyMessage] = useState('');
+  const selected = resolution.selected ? layout.keys.find(key => key.midi === resolution.selected?.midi) : undefined;
+  const whiteSpan = compact ? 12 : 24;
+  const rangeMin = Math.max(layout.keys[0]?.midi ?? 21, rangeStart);
+  const rangeMax = Math.min(layout.keys.at(-1)?.midi ?? 108, rangeMin + whiteSpan);
+  const visibleKeys = useMemo(() => keysInRange(layout, rangeMin, rangeMax), [layout, rangeMin, rangeMax]);
+
+  useEffect(() => {
+    const restored = restoreLookup(new URLSearchParams(window.location.search), layouts);
+    if (!restored.resolution) return;
+    onLayoutChange(restored.layout.layout_id);
+    setResolution(restored.resolution);
+    setQuery(restored.resolution.selected?.requestedSpelling.display ?? '');
+    if (restored.resolution.selected) bringIntoView(restored.resolution.selected.midi, restored.layout);
+  }, [layouts]);
+  useEffect(() => setRangeStart(compact ? 60 : 48), [compact]);
+  useEffect(() => { if (!active) audio.cancel(); }, [active]);
+
+  function bringIntoView(midi: number, activeLayout = layout) {
+    if (activeLayout.layout_id === layout.layout_id && midi >= rangeMin && midi <= rangeMax) return;
+    const raw = compact ? midi - 5 : midi - 11;
+    setRangeStart(Math.max(activeLayout.keys[0].midi, Math.min(raw, activeLayout.keys.at(-1)!.midi - whiteSpan)));
+  }
+
+  function selectKey(key: PianoKey) {
+    audio.cancel();
+    const next = selectPianoKey(key, layout);
+    setResolution({ rawInput: next.requestedSpelling.display, status: 'selected', normalizedPitchClass: next.requestedSpelling.letter + (next.requestedSpelling.accidental ?? ''), displaySpelling: next.requestedSpelling.display, candidates: [], selected: next, messageKey: null });
+    setQuery(next.requestedSpelling.display);
+    bringIntoView(key.midi);
+  }
+
+  function findNote() {
+    const resolution = resolveLookup(query, layout);
+    if (resolution.status === 'selected' && resolution.selected) {
+      setResolution(resolution);
+      setQuery(resolution.selected.requestedSpelling.display);
+      bringIntoView(resolution.selected.midi);
+      return;
+    }
+    setResolution(resolution);
+  }
+
+  function chooseCandidate(midi: number, display: string) {
+    const candidate = resolution.candidates.find(item => item.midi === midi && item.display === display);
+    if (!candidate) return;
+    const next = selectCandidate(candidate, query, layout);
+    setQuery(candidate.display);
+    setResolution(next);
+    bringIntoView(candidate.midi);
+  }
+
+  function changeLayout(layoutID: string) {
+    audio.cancel();
+    const nextLayout = layouts.find(item => item.layout_id === layoutID) ?? layouts[0];
+    onLayoutChange(nextLayout.layout_id);
+    const next = resolveLookup(query || resolution.selected?.requestedSpelling.display || 'C4', nextLayout, resolution.selected?.source === 'text_query' ? 'text_query' : 'share_restore');
+    setResolution(next);
+    if (next.selected) bringIntoView(next.selected.midi, nextLayout);
+  }
+
+  async function copyNoteLink() {
+    if (!selected) return;
+    const resolution = selectPianoKey(selected, layout);
+    const url = buildShareURL('/keyboard-notes', lookupShareParams(layout, resolution));
+    setCopyMessage(await copyShareURL(url) ? 'Link copied.' : 'Copy failed. Copy the address from your browser.');
+  }
+
+  const rangeStep = compact ? 12 : 24;
+  const canLower = rangeStart > layout.keys[0].midi;
+  const canHigher = rangeMax < layout.keys.at(-1)!.midi;
+  return <section id="kn-v2-explore-panel" role="tabpanel" aria-labelledby="kn-v2-explore-tab" hidden={!active} className="kn-v2-panel kn-v2-explore">
+    <div className="kn-v2-explore-head">
+      <div className="kn-v2-note-id">
+        <h2>{resolution.selected?.requestedSpelling.display ?? (query || '—')}</h2>
+      </div>
+      <div className="kn-v2-note-copy">
+        <h3>{selected?.midi === 60 ? 'Middle C' : selected ? primaryLabel(selected) : 'Choose a note'}</h3>
+        <p>{noteDescription(selected)}</p>
+        <button className="am-button am-primary kn-v2-hear" type="button" onClick={() => selected && audio.play(selected.midi)} disabled={!audio.ready || !selected}>
+          <Icon name={audio.state === 'playing' ? 'stop' : 'play'}/><RollingText>{audio.state === 'playing' ? 'Playing' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}</RollingText>
+        </button>
+        <p className="kn-v2-audio-status" role="status">{audio.message}</p>
+      </div>
+      <form className="kn-v2-search" onSubmit={event => { event.preventDefault(); findNote(); }}>
+        <label htmlFor="kn-v2-note-query">Find another note</label>
+        <div><input id="kn-v2-note-query" value={query} onChange={event => setQuery(event.target.value)} placeholder="Try F3 or B-flat 4"/><button className="am-button am-secondary" type="submit"><Icon name="search"/><RollingText>Find</RollingText></button></div>
+        <p className={resolution.status !== 'selected' ? 'kn-v2-form-error' : 'kn-v2-form-help'} role={resolution.status !== 'selected' ? 'alert' : undefined}>{resolution.status === 'selected' ? 'A note name and octave find one exact key.' : lookupMessage(resolution, layout)}</p>
+        {resolution.candidates.length > 0 && <div className="kn-v2-search-candidates" aria-label="Choose an octave">{resolution.candidates.map(candidate => <button type="button" key={`${candidate.midi}-${candidate.display}`} onClick={() => chooseCandidate(candidate.midi, candidate.display)}>{candidate.display}</button>)}</div>}
+      </form>
+    </div>
+    <div className="kn-v2-keyboard-stage kn-v2-explore-keyboard">
+      <KeyboardDiagram keys={visibleKeys} selected={selected?.midi ?? null} sounding={audio.sounding} onSelect={selectKey} ready={audio.ready} fit autoCenter={false} label={`Explore ${primaryLabel(visibleKeys[0])} to ${primaryLabel(visibleKeys.at(-1))}`}/>
+      <div className="kn-v2-range-row">
+        <button type="button" className="kn-v2-text-button" disabled={!canLower} onClick={() => setRangeStart(value => Math.max(layout.keys[0].midi, value - rangeStep))}><Icon name="left"/><RollingText>Lower notes</RollingText></button>
+        <p>{primaryLabel(visibleKeys[0])}–{primaryLabel(visibleKeys.at(-1))}</p>
+        <button type="button" className="kn-v2-text-button" disabled={!canHigher} onClick={() => setRangeStart(value => Math.min(layout.keys.at(-1)!.midi - whiteSpan, value + rangeStep))}><RollingText>Higher notes</RollingText><Icon name="right"/></button>
+      </div>
+      <div className="kn-v2-overview" aria-label={`${layout.label} overview. Current visible range is marked.`}>
+        <KeyboardDiagram keys={layout.keys} marked={visibleKeys.map(key => key.midi)} octaves={false} showVisualLabels={false} fit autoCenter={false}/>
+      </div>
+    </div>
+    <div className="kn-v2-explore-secondary">
+      <details>
+        <summary>Choose by note name</summary>
+        <div className="kn-v2-layout-choice"><label htmlFor="kn-v2-layout">Keyboard size</label><select id="kn-v2-layout" value={layout.layout_id} onChange={event => changeLayout(event.target.value)}>{layouts.map(item => <option key={item.layout_id} value={item.layout_id}>{item.label}</option>)}</select></div>
+        <div className="kn-v2-note-choices">{visibleKeys.filter(key => key.color === 'white').map(key => <button type="button" key={key.midi} className={key.midi === selected?.midi ? 'is-current' : ''} onClick={() => selectKey(key)}><RollingText>{primaryLabel(key)}</RollingText></button>)}</div>
+      </details>
+      <button type="button" className="kn-v2-copy-link" onClick={copyNoteLink}><RollingText>Copy link</RollingText></button>
+      <span className="kn-v2-copy-status" role="status">{copyMessage}</span>
+    </div>
+    <aside className="kn-v2-practice-callout">
+      <div><h3>Ready to test yourself?</h3><p>Find notes on a focused keyboard, then review the ones you missed.</p></div>
+      <button className="am-button am-secondary" type="button" onClick={onPractice}><RollingText>Practice notes</RollingText></button>
+    </aside>
+    <div className="kn-v2-reference">
+      <p className="kn-v2-kicker">Keyboard reference</p>
+      <h2>Use the pattern, then use the note name.</h2>
+      <div className="kn-v2-reference-grid">{blocks.slice(0, 3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</div>
+      {blocks.length > 3 && <details className="kn-v2-more-reference"><summary>More piano key reference</summary>{blocks.slice(3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</details>}
+      {links.length > 0 && <nav className="kn-v2-related" aria-label="Related keyboard references">{links.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}</nav>}
+    </div>
+  </section>;
+}
+
+function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: Layout; active: boolean; sharedPreset: PracticePresetRestore; onExplore: () => void }) {
+  const audio = useNoteAudio();
+  const [phase, setPhase] = useState<PracticePhase>('start');
+  const [option, setOption] = useState<PracticeOption>(sharedPreset.status === 'valid' ? sharedPreset.preset.option : 'natural-c4-c5');
+  const [roundPreset, setRoundPreset] = useState<PracticePreset | null>(sharedPreset.status === 'valid' ? sharedPreset.preset : null);
+  const [showLabels, setShowLabels] = useState(false);
+  const [questions, setQuestions] = useState<PracticeTarget[]>([]);
+  const [index, setIndex] = useState(0);
+  const [records, setRecords] = useState<PracticeAnswerRecord[]>([]);
+  const [wrongMidi, setWrongMidi] = useState<number | null>(null);
+  const [attemptedWrong, setAttemptedWrong] = useState(false);
+  const [hinted, setHinted] = useState(false);
+  const [revealed, setRevealed] = useState(false);
+  const [resolved, setResolved] = useState<PracticeAnswerKind | null>(null);
+  const [isReview, setIsReview] = useState(false);
+  const [savedResult, setSavedResult] = useState<PracticeAnswerRecord[] | null>(null);
+  const [shareStatus, setShareStatus] = useState('');
+  const [manualShareURL, setManualShareURL] = useState('');
+  const [canShare, setCanShare] = useState(false);
+  const exitDialog = useRef<HTMLDialogElement>(null);
+  const shareDialog = useRef<HTMLDialogElement>(null);
+  const shareTrigger = useRef<HTMLButtonElement>(null);
+  const advancing = useRef(false);
+  const optionConfig = PRACTICE_OPTIONS[option];
+  const target = questions[index];
+  const questionKeys = useMemo(() => keysInRange(layout, Math.max(optionConfig.min, (target?.midi ?? optionConfig.min) - 12), Math.min(optionConfig.max, (target?.midi ?? optionConfig.max) + 12)), [layout, optionConfig, target]);
+  const finalRecords = savedResult ?? records;
+  const missed = useMemo(() => reviewPracticeTargets(finalRecords), [finalRecords]);
+
+  useEffect(() => setCanShare(Boolean(navigator.share)), []);
+  useEffect(() => { if (!active) audio.cancel(); }, [active]);
+  useEffect(() => { advancing.current = false; }, [index, phase]);
+  useEffect(() => {
+    if (phase !== 'start') return;
+    if (sharedPreset.status === 'valid') {
+      setOption(sharedPreset.preset.option);
+      setRoundPreset(sharedPreset.preset);
+    } else if (sharedPreset.status === 'invalid') {
+      setRoundPreset(null);
+    }
+  }, [sharedPreset, phase]);
+
+  function resetQuestionState() {
+    setWrongMidi(null);
+    setAttemptedWrong(false);
+    setHinted(false);
+    setRevealed(false);
+    setResolved(null);
+  }
+
+  function startPractice(reviewTargets?: PracticeTarget[]) {
+    audio.cancel();
+    const preset = reviewTargets?.length
+      ? roundPreset
+      : sharedPreset.status === 'valid' && phase === 'start' && questions.length === 0 && records.length === 0
+        ? sharedPreset.preset
+        : createPracticePreset(option);
+    const next = reviewTargets?.length ? reviewTargets : generatePresetPractice(layout, preset!);
+    if (!reviewTargets?.length) setRoundPreset(preset);
+    setQuestions(next);
+    setIndex(0);
+    setRecords([]);
+    setIsReview(Boolean(reviewTargets?.length));
+    advancing.current = false;
+    resetQuestionState();
+    setPhase('question');
+    emitKeyboardPracticeEvent(reviewTargets?.length ? 'keyboard_practice_review_started' : 'keyboard_practice_started', { option, count: next.length });
+  }
+
+  function chooseAnswer(key: PianoKey) {
+    if (!target || resolved || revealed) return;
+    if (key.midi === target.midi) {
+      const kind = classifyPracticeAnswer({ attemptedWrong, hinted, revealed: false });
+      setWrongMidi(null);
+      setResolved(kind);
+      audio.play(key.midi);
+      emitKeyboardPracticeEvent('keyboard_practice_answered', { question: index + 1, outcome: kind });
+      return;
+    }
+    setAttemptedWrong(true);
+    setWrongMidi(key.midi);
+    audio.play(key.midi);
+    emitKeyboardPracticeEvent('keyboard_practice_answered', { question: index + 1, outcome: 'wrong' });
+  }
+
+  function showHint() {
+    setHinted(true);
+    setWrongMidi(null);
+    emitKeyboardPracticeEvent('keyboard_practice_hint_used', { question: index + 1 });
+  }
+
+  function showAnswer() {
+    if (!target || resolved || revealed) return;
+    setRevealed(true);
+    setResolved('revealed');
+    setWrongMidi(null);
+    audio.play(target.midi);
+    emitKeyboardPracticeEvent('keyboard_practice_answer_revealed', { question: index + 1 });
+  }
+
+  function nextQuestion() {
+    if (!target || !resolved || advancing.current) return;
+    advancing.current = true;
+    const nextRecords = [...records, { target, kind: resolved }];
+    if (index + 1 >= questions.length) {
+      setRecords(nextRecords);
+      setPhase('results');
+      const summary = summarizePractice(savedResult ?? nextRecords);
+      if (!isReview) emitKeyboardPracticeEvent('keyboard_practice_completed', { count: summary.total, first: summary.independent, assisted: summary.assisted, revealed: summary.revealed });
+      return;
+    }
+    setRecords(nextRecords);
+    setIndex(value => value + 1);
+    resetQuestionState();
+  }
+
+  function finishReview() {
+    setPhase('results');
+    setIsReview(false);
+    setRecords(savedResult ?? records);
+  }
+
+  function leavePractice() {
+    audio.cancel();
+    setPhase('start');
+    setQuestions([]);
+    setRecords([]);
+    setSavedResult(null);
+    setRoundPreset(sharedPreset.status === 'valid' ? sharedPreset.preset : null);
+    setIsReview(false);
+    resetQuestionState();
+  }
+
+  function practiceShareURL() {
+    const preset = roundPreset ?? createPracticePreset(option);
+    const params = practicePresetParams(preset);
+    return buildShareURL('/keyboard-notes', params) + '#note-trainer';
+  }
+
+  async function copyPracticeLink() {
+    const url = practiceShareURL();
+    const copied = await copyShareURL(url);
+    setManualShareURL(copied ? '' : url);
+    setShareStatus(copied ? 'Link copied.' : 'Copy is unavailable. Select and copy the link below.');
+    emitKeyboardPracticeEvent('keyboard_practice_share_copy', { status: copied ? 'copied' : 'unavailable' });
+  }
+
+  async function moreShareOptions() {
+    const status = await openNativeShare('Piano note practice', practiceShareURL());
+    if (status === 'opened' || status === 'cancelled') setShareStatus('');
+    if (status === 'unavailable') setShareStatus('Sharing is unavailable here. You can copy the link instead.');
+    emitKeyboardPracticeEvent('keyboard_practice_share_native', { status });
+  }
+
+  const { independent, assisted, revealed: revealedCount } = summarizePractice(finalRecords);
+  const wrongKey = layout.keys.find(key => key.midi === wrongMidi);
+  const selectedState = revealed ? 'revealed' : resolved ? 'correct' : wrongMidi !== null ? 'wrong' : 'selected';
+  const selectedMidi = revealed || resolved ? target?.midi ?? null : wrongMidi;
+  const labels = showLabels ? Object.fromEntries(questionKeys.map(key => [key.midi, primaryLabel(key)])) : {};
+
+  return <section id="kn-v2-practice-panel" role="tabpanel" aria-labelledby="kn-v2-practice-tab" hidden={!active} className="kn-v2-panel kn-v2-practice" data-phase={phase}>
+    {phase === 'start' && <div className="kn-v2-practice-start" id="note-trainer">
+      {sharedPreset.status === 'valid' && <div className="kn-v2-receiver-note"><p className="kn-v2-kicker">Practice shared with you</p><p>Start your own round with the same 10-note set. No one else’s answers or score are included.</p></div>}
+      {sharedPreset.status === 'invalid' && <div className="kn-v2-receiver-note kn-v2-receiver-invalid" role="alert"><p className="kn-v2-kicker">This practice link is no longer available</p><p>You can still start a new 10-note practice below.</p></div>}
+      <div className="kn-v2-start-meta"><span>Piano note practice</span><span>{optionConfig.label.replace('Natural notes · ', '').replace('Black keys · ', '')} · {option === 'black-c4-c5' ? 'Black keys' : 'White keys'}</span></div>
+      <div className="kn-v2-start-intro">
+        <div className="kn-v2-start-copy">
+          <p className="kn-v2-start-note">10-note round · Your pace</p>
+          <h2>Find your way around the keys.</h2>
+          <p>See a note name, choose its key, then revisit the notes that need another try.</p>
+          <button className="am-button am-primary kn-v2-start-button" type="button" onClick={() => startPractice()}><RollingText>Start 10-note practice</RollingText></button>
+          <p className="kn-v2-start-summary">{optionConfig.label} · {showLabels ? 'With labels' : 'Without labels'}</p>
+        </div>
+        <aside className="kn-v2-round-outcome" aria-label="What happens in this practice">
+          <p className="kn-v2-kicker">After the round</p>
+          <ol>
+            <li><strong>See your result</strong><span>First tries, helped answers, and revealed notes stay distinct.</span></li>
+            <li><strong>Review missed notes</strong><span>Practice only the notes that need another look.</span></li>
+            <li><strong>Share the practice</strong><span>Invite someone to start a fresh round without sharing your answers.</span></li>
+          </ol>
+        </aside>
+      </div>
+      <div className="kn-v2-start-keyboard" aria-hidden="true"><KeyboardDiagram keys={keysInRange(layout, 60, 72)} selected={62} fit autoCenter={false} showVisualLabels={false}/></div>
+      <div className="kn-v2-start-keyboard-meta"><span>One small part of the piano.</span><span>C4–C5</span></div>
+      <details className="kn-v2-options">
+        <summary>Practice options</summary>
+        <div className="kn-v2-option-fields">
+          <label>Notes and range<select value={option} onChange={event => { setOption(event.target.value as PracticeOption); setRoundPreset(null); }}>{Object.entries(PRACTICE_OPTIONS).map(([value, copy]) => <option value={value} key={value}>{copy.label}</option>)}</select></label>
+          <label className="kn-v2-checkbox"><input type="checkbox" checked={showLabels} onChange={event => setShowLabels(event.target.checked)}/><span>Show key labels during practice</span></label>
+        </div>
+      </details>
+      <button type="button" className="kn-v2-text-button kn-v2-explore-return" onClick={onExplore}><RollingText>Explore with note names first</RollingText><Icon name="right"/></button>
+    </div>}
+
+    {phase === 'question' && target && <div className="kn-v2-question">
+      <header className="kn-v2-question-head">
+        <div className="kn-v2-progress-row">
+          <div><p className="kn-v2-kicker">{isReview ? 'Missed-note review' : '10-note practice'}</p><p><strong>{isReview ? 'Review' : 'Question'} {index + 1}</strong><span> of {questions.length}</span></p></div>
+          <button type="button" className="kn-v2-leave" onClick={() => exitDialog.current?.showModal()}><RollingText>Leave practice</RollingText></button>
+        </div>
+        <div className="kn-v2-progress-track" role="progressbar" aria-label={`${isReview ? 'Review' : 'Question'} ${index + 1} of ${questions.length}`} aria-valuemin={1} aria-valuemax={questions.length} aria-valuenow={index + 1}>
+          {questions.map((question, questionIndex) => <span key={`${question.midi}-${questionIndex}`} data-state={questionIndex < index ? 'complete' : questionIndex === index ? 'current' : 'upcoming'}/>) }
+        </div>
+        {!isReview && <p className="kn-v2-share-cue">Finish the round to review missed notes and share a fresh practice.</p>}
+      </header>
+      <div className="kn-v2-task"><p>Choose the matching key</p><h2><span>Find</span> {target.label}</h2><p>Use the groups of two and three black keys as your guide.</p></div>
+      <div className="kn-v2-keyboard-stage kn-v2-question-keyboard">
+        <KeyboardDiagram
+          keys={questionKeys}
+          selected={selectedMidi}
+          selectedState={selectedState}
+          selectedLabel={wrongKey ? `You chose ${primaryLabel(wrongKey)}` : target.label}
+          sounding={audio.sounding}
+          onSelect={chooseAnswer}
+          fit
+          autoCenter={false}
+          showVisualLabels={showLabels}
+          keyLabels={labels}
+          isKeyDisabled={key => option === 'black-c4-c5' ? key.color !== 'black' : key.color !== 'white'}
+          label={`Question ${index + 1}. Find ${target.label}`}
+        />
+        <div className="kn-v2-question-keyboard-meta"><span>{showLabels ? 'Note names shown' : 'Note names hidden'} · {optionConfig.label.split(' · ')[1]}</span><span>{option === 'black-c4-c5' ? 'Black keys only' : 'White keys only'}</span></div>
+      </div>
+      <div className="kn-v2-feedback" aria-live="polite" data-kind={revealed ? 'revealed' : resolved ? 'correct' : wrongMidi !== null ? 'wrong' : hinted ? 'hint' : 'idle'}>
+        {wrongMidi === null && !hinted && !resolved && <p>Choose a {option === 'black-c4-c5' ? 'black' : 'white'} key. Take your time.</p>}
+        {wrongMidi !== null && wrongKey && <p><strong>Not quite.</strong> You chose {primaryLabel(wrongKey)}. {keyPattern(primaryLabel(wrongKey))}</p>}
+        {hinted && !resolved && <p><strong>Hint</strong> Look at the black-key pattern. This question will count as completed with help. {keyPattern(target.label)}</p>}
+        {revealed && <p><strong>This is {target.label}.</strong> This answer was revealed and will be added to your review.</p>}
+        {resolved && !revealed && <p><strong>{resolved === 'independent' ? 'That’s it.' : 'Found it.'}</strong> {target.label} is the right key.{resolved === 'assisted' ? ' This note will be added to your review.' : ''}</p>}
+      </div>
+      <div className="kn-v2-question-actions">
+        {resolved ? <button className="am-button am-primary" type="button" onClick={nextQuestion}><RollingText>{index + 1 === questions.length ? 'See results' : 'Next note'}</RollingText><Icon name="right"/></button> : <>
+          {wrongMidi !== null && <button className="am-button am-primary" type="button" onClick={() => setWrongMidi(null)}><RollingText>Try again</RollingText></button>}
+          <button className="am-button am-secondary" type="button" onClick={showHint} disabled={hinted}><RollingText>Hint</RollingText></button>
+          <button className="am-button am-tertiary" type="button" onClick={showAnswer}><RollingText>Show answer</RollingText></button>
+        </>}
+      </div>
+      <p className="kn-v2-audio-status" role="status">{audio.message}</p>
+      <dialog ref={exitDialog} onClose={() => undefined}>
+        <div className="am-dialog-head"><h2>Leave this practice?</h2><button className="am-button am-tertiary" type="button" aria-label="Close" onClick={() => exitDialog.current?.close()}><Icon name="close"/></button></div>
+        <p>Your current answers will not be kept.</p>
+        <div className="kn-v2-dialog-actions"><button className="am-button am-primary" type="button" onClick={() => { exitDialog.current?.close(); leavePractice(); }}><RollingText>Leave practice</RollingText></button><button className="am-button am-secondary" type="button" onClick={() => exitDialog.current?.close()}><RollingText>Keep practicing</RollingText></button></div>
+      </dialog>
+    </div>}
+
+    {phase === 'results' && <div className="kn-v2-results">
+      <div className="kn-v2-results-meta"><span>Practice complete</span><span>{optionConfig.label}</span></div>
+      <div className="kn-v2-result-grid">
+        <section className="kn-v2-score" aria-labelledby="kn-v2-result-title">
+          <p className="kn-v2-kicker">A little clearer, note by note.</p>
+          <h2 id="kn-v2-result-title">Your round, at a glance.</h2>
+          <p className="kn-v2-score-number"><strong>{independent}</strong><span>/ {finalRecords.length}</span></p>
+          <p className="kn-v2-score-caption">correct on the first try</p>
+          <p className="kn-v2-score-context">{showLabels ? 'With labels' : 'Without labels'} · {optionConfig.label}</p>
+          <div className="kn-v2-score-track" aria-label={`${independent} first try, ${assisted} with help, ${revealedCount} revealed`}>{finalRecords.map((record, answerIndex) => <span key={answerIndex} data-kind={record.kind}/>)}</div>
+          {assisted > 0 && <p className="kn-v2-score-detail">{assisted} found after another try or a hint</p>}
+          {revealedCount > 0 && <p className="kn-v2-score-detail">{revealedCount} {revealedCount === 1 ? 'answer' : 'answers'} revealed</p>}
+        </section>
+        <section className="kn-v2-review" aria-labelledby="kn-v2-review-title">
+          <h2 id="kn-v2-review-title">{missed.length ? `Give ${missed.map(item => item.label).join(missed.length === 2 ? ' & ' : ', ')} another look.` : 'Nothing to review.'}</h2>
+          <p>{missed.length ? 'A short review keeps the notes you needed help with in focus.' : 'Every note was found independently in this round.'}</p>
+          {missed.length > 0 && <ul>{missed.map(item => <li key={item.midi}>{item.label}</li>)}</ul>}
+          {missed.length > 0 && <button className="am-button am-primary kn-v2-review-button" type="button" onClick={() => { setSavedResult(finalRecords); startPractice(missed); }}><RollingText>{`Review ${missed.length} ${missed.length === 1 ? 'note' : 'notes'}`}</RollingText><Icon name="right"/></button>}
+          <div className="kn-v2-result-actions">
+            <button className="kn-v2-text-button" type="button" onClick={() => { setSavedResult(null); startPractice(); }}><RollingText>Practice again</RollingText></button>
+            <button className="kn-v2-text-button" type="button" onClick={() => { leavePractice(); onExplore(); }}><RollingText>Back to explore</RollingText></button>
+          </div>
+        </section>
+      </div>
+      {isReview && <button className="am-button am-primary" type="button" onClick={finishReview}><RollingText>Return to original results</RollingText></button>}
+      <aside className="kn-v2-share-strip">
+        <div><h3>Practice together</h3><p>Share a clean starting point for the same kind of note practice.</p></div>
+        <button ref={shareTrigger} className="am-button am-secondary" type="button" onClick={() => { setShareStatus(''); setManualShareURL(''); shareDialog.current?.showModal(); }}><RollingText>Share practice</RollingText></button>
+      </aside>
+      <p className="kn-v2-result-note">This result describes the notes you recognized here, not your playing technique. Your score and answers are not included in the link.</p>
+      <dialog ref={shareDialog} className="kn-v2-share-dialog" onClose={() => shareTrigger.current?.focus()}>
+        <div className="am-dialog-head"><div><p className="kn-v2-kicker">Share practice</p><h2>Invite someone to try it.</h2></div><button className="am-button am-tertiary" type="button" aria-label="Close" onClick={() => shareDialog.current?.close()}><Icon name="close"/></button></div>
+        <p>The link opens a fresh 10-note round. Your answers and score stay private.</p>
+        <div className="kn-v2-share-preview"><span>{optionConfig.label}</span><span>{PRACTICE_LENGTH} notes</span></div>
+        <button className="am-button am-primary" type="button" onClick={copyPracticeLink}><RollingText>Copy practice link</RollingText></button>
+        {canShare && <button className="am-button am-secondary" type="button" onClick={moreShareOptions}><RollingText>More sharing options</RollingText></button>}
+        <p className="kn-v2-copy-status" role="status">{shareStatus}</p>
+        {manualShareURL && <label className="kn-v2-manual-link">Practice link<input value={manualShareURL} readOnly onFocus={event => event.currentTarget.select()}/></label>}
+      </dialog>
+    </div>}
+  </section>;
+}
+
+export function KeyboardNotesWorkspace({ layouts, blocks = [], links = [] }: { layouts: Layout[]; blocks?: ReadingBlock[]; links?: LinkItem[] }) {
+  const [mode, setMode] = useState<Mode>('explore');
+  const [hydrated, setHydrated] = useState(false);
+  const [layoutID, setLayoutID] = useState(layouts.find(item => item.layout_id === '88-key-A0-C8')?.layout_id ?? layouts[0].layout_id);
+  const [sharedPreset, setSharedPreset] = useState<PracticePresetRestore>({ status: 'none', preset: null });
+  const layout = layouts.find(item => item.layout_id === layoutID) ?? layouts[0];
+  useEffect(() => {
+    setHydrated(true);
+    const params = new URLSearchParams(window.location.search);
+    const restored = restorePracticePreset(params);
+    setSharedPreset(restored);
+    if (restored.status !== 'none' || window.location.hash === '#note-trainer') {
+      setMode('practice');
+    }
+  }, []);
+  return <div className="kn-v2-shell" data-mode={mode} data-hydrated={hydrated ? 'true' : undefined}>
+    <ModeTabs value={mode} onChange={setMode}/>
+    <ExploreNotes layouts={layouts} layout={layout} blocks={blocks} links={links} active={mode === 'explore'} onLayoutChange={setLayoutID} onPractice={() => setMode('practice')}/>
+    <PracticeNotes layout={layout} active={mode === 'practice'} sharedPreset={sharedPreset} onExplore={() => setMode('explore')}/>
+  </div>;
+}

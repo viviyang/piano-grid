@@ -1,0 +1,532 @@
+{
+  "executed_at": "2026-09-15T15:03:17.689Z",
+  "passed": 95,
+  "failed": 10,
+  "results": [
+    {
+      "name": "/ HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/ title",
+      "passed": false,
+      "detail": "Learn Piano: Chords, Scales & Practice Tools | PianoGrid"
+    },
+    {
+      "name": "/ index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/ canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com"
+    },
+    {
+      "name": "/ seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/tools title",
+      "passed": false,
+      "detail": "Piano Tools: Notes, Chords, Scales & Printables | PianoGrid"
+    },
+    {
+      "name": "/tools index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/tools canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/tools"
+    },
+    {
+      "name": "/tools seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/tools no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords title",
+      "passed": false,
+      "detail": "Piano Chord Chart: Notes, Diagrams & Sound | PianoGrid"
+    },
+    {
+      "name": "/chords index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords"
+    },
+    {
+      "name": "/chords seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-minor title",
+      "passed": false,
+      "detail": "A Minor Piano Chord (Am): Notes, Inversions & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/a-minor index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-minor canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/a-minor"
+    },
+    {
+      "name": "/chords/a-minor seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-major title",
+      "passed": true,
+      "detail": "A Major Piano Chord: Notes, Inversions & Keyboard Diagrams"
+    },
+    {
+      "name": "/chords/a-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/a-major"
+    },
+    {
+      "name": "/chords/a-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/c-major title",
+      "passed": true,
+      "detail": "C Major Piano Chord: Notes, Inversions & Keyboard Diagrams"
+    },
+    {
+      "name": "/chords/c-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-major"
+    },
+    {
+      "name": "/chords/c-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/g-major title",
+      "passed": false,
+      "detail": "G Major Piano Chord (G): Notes, Inversions & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/g-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/g-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/g-major"
+    },
+    {
+      "name": "/chords/g-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/g-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-minor HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/c-minor title",
+      "passed": false,
+      "detail": "C Minor Piano Chord (Cm): Notes, Inversions & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/c-minor index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-minor canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-minor"
+    },
+    {
+      "name": "/chords/c-minor seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-minor thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-minor brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-minor no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/e-major title",
+      "passed": false,
+      "detail": "E Major Piano Chord (E): Notes, Inversions & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/e-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/e-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/e-major"
+    },
+    {
+      "name": "/chords/e-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/e-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/b-major title",
+      "passed": false,
+      "detail": "B Major Piano Chord (B): Notes, Inversions & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/b-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/b-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/b-major"
+    },
+    {
+      "name": "/chords/b-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/b-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/a-flat-major title",
+      "passed": true,
+      "detail": "A-flat Major Piano Chord (Ab): Notes, Inversions & PDF"
+    },
+    {
+      "name": "/chords/a-flat-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/a-flat-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/a-flat-major"
+    },
+    {
+      "name": "/chords/a-flat-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-flat-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-flat-major HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/c-flat-major title",
+      "passed": true,
+      "detail": "C-flat Major Piano Chord (Cb): Notes, Inversions & PDF"
+    },
+    {
+      "name": "/chords/c-flat-major index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-flat-major canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-flat-major"
+    },
+    {
+      "name": "/chords/c-flat-major seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-flat-major thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-flat-major brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-flat-major no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/by-key HTTP 200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "/chords/by-key title",
+      "passed": false,
+      "detail": "Piano Chords by Key: Triads & Seventh Chords | PianoGrid"
+    },
+    {
+      "name": "/chords/by-key index/follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/by-key canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/by-key"
+    },
+    {
+      "name": "/chords/by-key seven section groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/by-key thirty direct navigation links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/by-key brand links home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/by-key no source ledger payload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Integration browser runner completed",
+      "passed": false,
+      "detail": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3115/chords/finder\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\pianogrid-final-integration\\scripts\\check-integration-batch.mjs:23:55"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "auditDate": "2026-09-16",
+  "method": "Supplied functions extracted with TypeScript AST and executed with controlled bindings. Pure model imported from supplied .ts files. Synthetic Layout fixture, not original layout data. No full app, browser, runtime audio, deployment or current B04 source validated.",
+  "observations": [
+    {
+      "id": "P01",
+      "status": "REPRODUCED_IN_ISOLATION",
+      "title": "Black-key hint uses only the first letter",
+      "samples": [
+        {
+          "note": "C♯4",
+          "hint": "C is the white key just before a pair of black keys."
+        },
+        {
+          "note": "D♭4",
+          "hint": "D is the white key between the two black keys."
+        },
+        {
+          "note": "D♯4",
+          "hint": "D is the white key between the two black keys."
+        },
+        {
+          "note": "F♯4",
+          "hint": "F is the white key just before a group of three black keys."
+        },
+        {
+          "note": "A♭4",
+          "hint": "A is the white key between the last two keys in a group of three black keys."
+        }
+      ],
+      "source": "workspace.tsx:49-58,453-454"
+    },
+    {
+      "id": "P02",
+      "status": "REPRODUCED_IN_ISOLATION",
+      "sharedOption": "natural-c4-c5",
+      "changedVisibleOption": "black-c4-c5",
+      "generatedPreset": {
+        "version": 1,
+        "option": "natural-c4-c5",
+        "seed": 20260916,
+        "count": 10
+      },
+      "generatedTargets": [
+        {
+          "midi": 65,
+          "label": "F4"
+        },
+        {
+          "midi": 69,
+          "label": "A4"
+        },
+        {
+          "midi": 67,
+          "label": "G4"
+        },
+        {
+          "midi": 62,
+          "label": "D4"
+        },
+        {
+          "midi": 62,
+          "label": "D4"
+        },
+        {
+          "midi": 69,
+          "label": "A4"
+        },
+        {
+          "midi": 65,
+          "label": "F4"
+        },
+        {
+          "midi": 71,
+          "label": "B4"
+        },
+        {
+          "midi": 60,
+          "label": "C4"
+        },
+        {
+          "midi": 69,
+          "label": "A4"
+        }
+      ],
+      "disabledTargetCount": 10,
+      "total": 10,
+      "source": "workspace.tsx:278-294,415,446"
+    },
+    {
+      "id": "P02",
+      "status": "REPRODUCED_IN_ISOLATION",
+      "sharedOption": "black-c4-c5",
+      "changedVisibleOption": "natural-c4-c5",
+      "generatedPreset": {
+        "version": 1,
+        "option": "black-c4-c5",
+        "seed": 20260916,
+        "count": 10
+      },
+      "generatedTargets": [
+        {
+          "midi": 66,
+          "label": "G♭4"
+        },
+        {
+          "midi": 68,
+          "label": "G♯4"
+        },
+        {
+          "midi": 68,
+          "label": "G♯4"
+        },
+        {
+          "midi": 61,
+          "label": "D♭4"
+        },
+        {
+          "midi": 63,
+          "label": "D♯4"
+        },
+        {
+          "midi": 68,
+          "label": "G♯4"
+        },
+        {
+          "midi": 66,
+          "label": "G♭4"
+        },
+        {
+          "midi": 70,
+          "label": "B♭4"
+        },
+        {
+          "midi": 61,
+          "label": "D♭4"
+        },
+        {
+          "midi": 68,
+          "label": "G♯4"
+        }
+      ],
+      "disabledTargetCount": 10,
+      "total": 10,
+      "source": "workspace.tsx:278-294,415,446"
+    },
+    {
+      "id": "P03",
+      "status": "REPRODUCED_IN_ISOLATION",
+      "title": "Next question does not invoke audio cancellation",
+      "calls": [
+        "setRecords",
+        "setIndex",
+        "resetQuestionState"
+      ],
+      "source": "workspace.tsx:328-342"
+    },
+    {
+      "id": "P04",
+      "status": "REPRODUCED_IN_ISOLATION",
+      "title": "Existing leave handler also clears original result while reviewing",
+      "result": {
+        "savedResult": null,
+        "phase": "start",
+        "questions": [],
+        "records": [],
+        "roundPreset": null,
+        "isReview": false
+      },
+      "source": "workspace.tsx:350-358,466-470"
+    },
+    {
+      "id": "P05",
+      "status": "REPRODUCED_IN_ISOLATION",
+      "title": "Note copy discards requested enharmonic spelling",
+      "requested": "B♯3",
+      "copiedURL": "https://example.test/keyboard-notes?layout=88&note=C4",
+      "source": "workspace.tsx:164-168"
+    }
+  ]
+}

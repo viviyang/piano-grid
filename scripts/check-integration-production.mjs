@@ -7,7 +7,7 @@ const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PAT
 const master=JSON.parse(await readFile('docs/content/site-master/page-content.master.json','utf8'));
 const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3001',out=process.env.PIANO_CHECK_OUT||'checks/batches/07-site-integration';
 await mkdir(`${out}/screenshots`,{recursive:true});
-const routes=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/keyboard-notes/blank','/keyboard-notes/frequencies','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music'];
+const routes=['/','/tools','/chords','/chords/a-minor','/chords/a-major','/chords/c-major','/chords/g-major','/chords/c-minor','/chords/e-major','/chords/b-major','/chords/a-flat-major','/chords/c-flat-major','/chords/by-key','/chords/finder','/chord-progressions','/keyboard-notes','/keyboard-notes/labeled','/keyboard-notes/chart','/keyboard-notes/finger-numbers','/keyboard-notes/blank','/keyboard-notes/frequencies','/scales','/scales/c-major','/scales/a-minor','/songs','/songs/easy','/guide','/guide/read-sheet-music','/guide/piano-chords','/tools/blank-sheet-music','/tools/hear-the-difference'];
 const metadataTitleInputs={
   '/chords/a-major':'A Major Piano Chord: Notes, Inversions & Keyboard Diagrams',
   '/chords/c-major':'C Major Piano Chord: Notes, Inversions & Keyboard Diagrams',

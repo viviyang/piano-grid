@@ -98,6 +98,14 @@
           "target": "/chord-progressions",
           "decision": "REUSE",
           "priority": "secondary"
+        },
+        {
+          "id": "hear-the-difference",
+          "label": "Hear the Difference",
+          "owner": "tools",
+          "target": "/tools/hear-the-difference",
+          "decision": "ADD",
+          "cta": "Start listening"
         }
       ]
     },

@@ -1,0 +1,182 @@
+{
+  "passed": 44,
+  "failed": 0,
+  "results": [
+    {
+      "name": "default duration 10 minutes",
+      "passed": true
+    },
+    {
+      "name": "preset contract",
+      "passed": true
+    },
+    {
+      "name": "valid custom 1",
+      "passed": true
+    },
+    {
+      "name": "valid custom 120",
+      "passed": true
+    },
+    {
+      "name": "valid custom 07",
+      "passed": true
+    },
+    {
+      "name": "invalid custom empty",
+      "passed": true
+    },
+    {
+      "name": "invalid custom 0",
+      "passed": true
+    },
+    {
+      "name": "invalid custom 121",
+      "passed": true
+    },
+    {
+      "name": "invalid custom 1.5",
+      "passed": true
+    },
+    {
+      "name": "invalid custom abc",
+      "passed": true
+    },
+    {
+      "name": "invalid custom -1",
+      "passed": true
+    },
+    {
+      "name": "time formatting",
+      "passed": true
+    },
+    {
+      "name": "preset selection resets duration",
+      "passed": true
+    },
+    {
+      "name": "start enters running with one interval",
+      "passed": true
+    },
+    {
+      "name": "deadline calculation survives time jump",
+      "passed": true
+    },
+    {
+      "name": "per-second render does not change announcement",
+      "passed": true
+    },
+    {
+      "name": "pause preserves remaining and clears interval",
+      "passed": true
+    },
+    {
+      "name": "paused time does not drain",
+      "passed": true
+    },
+    {
+      "name": "resume starts one interval",
+      "passed": true
+    },
+    {
+      "name": "duplicate resume does not create interval",
+      "passed": true
+    },
+    {
+      "name": "reset returns selected full duration",
+      "passed": true
+    },
+    {
+      "name": "completion reaches zero once",
+      "passed": true
+    },
+    {
+      "name": "extra tick cannot duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "start again uses selected duration and one interval",
+      "passed": true
+    },
+    {
+      "name": "dispose clears interval",
+      "passed": true
+    },
+    {
+      "name": "interval lifecycle cleared timers",
+      "passed": true
+    },
+    {
+      "name": "boundary copy exact",
+      "passed": true
+    },
+    {
+      "name": "task groups exact",
+      "passed": true
+    },
+    {
+      "name": "no generic metronome",
+      "passed": true
+    },
+    {
+      "name": "no progression generator",
+      "passed": true
+    },
+    {
+      "name": "duplicate Reading removed from ToolsPage",
+      "passed": true
+    },
+    {
+      "name": "timer rendered inline",
+      "passed": true
+    },
+    {
+      "name": "Note Trainer owner anchor stable",
+      "passed": true
+    },
+    {
+      "name": "Tools metadata exact",
+      "passed": true
+    },
+    {
+      "name": "Blank metadata exact",
+      "passed": true
+    },
+    {
+      "name": "public route count unchanged",
+      "passed": true
+    },
+    {
+      "name": "route manifest has no fragment/query",
+      "passed": true
+    },
+    {
+      "name": "sitemap derives from public route manifest",
+      "passed": true
+    },
+    {
+      "name": "printable exists public/reference/assets/blank-piano-staff-letter.pdf",
+      "passed": true
+    },
+    {
+      "name": "printable exists public/reference/assets/blank-piano-staff-a4.pdf",
+      "passed": true
+    },
+    {
+      "name": "printable exists public/assets/guides/piano-starter-and-reading.pdf",
+      "passed": true
+    },
+    {
+      "name": "printable exists public/downloads/scales/pianogrid-12-major-scales-note-reference.pdf",
+      "passed": true
+    },
+    {
+      "name": "printable exists public/downloads/scales/pianogrid-major-minor-note-atlas.pdf",
+      "passed": true
+    },
+    {
+      "name": "printable exists public/downloads/scales/pianogrid-c-major-two-hand-starter.pdf",
+      "passed": true
+    }
+  ]
+}

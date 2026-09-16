@@ -1,9 +1,9 @@
 {
   "stage": "07-site-integration",
-  "executed_at": "2026-09-15T05:50:21.844Z",
+  "executed_at": "2026-09-16T06:59:20.955Z",
   "runtime": "v24.14.1",
-  "passed": 563,
-  "failed": 2,
+  "passed": 564,
+  "failed": 1,
   "warnings": [
     "source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。"
   ],
@@ -2785,7 +2785,7 @@
     },
     {
       "name": "Only authorized layout/page/component TSX",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {

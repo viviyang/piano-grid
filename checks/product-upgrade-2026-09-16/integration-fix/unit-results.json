@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "F01 shared option change creates custom black-key preset",
+      "passed": true
+    },
+    {
+      "name": "F01 v1 natural shared sequence remains stable",
+      "passed": true
+    },
+    {
+      "name": "F02 black-key geometry hints",
+      "passed": true
+    },
+    {
+      "name": "F02 wrong-octave feedback",
+      "passed": true
+    },
+    {
+      "name": "F05 lookup share keeps requested spelling",
+      "passed": true
+    },
+    {
+      "name": "F07 labeled segments cover edges without lone C8",
+      "passed": true
+    }
+  ]
+}

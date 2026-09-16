@@ -1,0 +1,402 @@
+{
+  "passed": 79,
+  "failed": 0,
+  "runtimeErrors": [],
+  "results": [
+    {
+      "name": "desktop default mode is Explore",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop S1 fixture text absent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop receiver does not auto-start",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop question starts at 1 of 10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop unanswered target key is idle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop wrong answer marks one selected wrong key",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop first wrong answer does not reveal target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop mode switch preserves wrong state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop hint does not select the answer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop helped answer resolves as correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop reveal marks only target as revealed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop double Next advances once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop result has mutually exclusive 8/1/1 buckets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop missed-note review is available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop review keeps original score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop copied link stays on existing route",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop copied link restores approved preset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop copied link excludes answers and score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop native share receives same preset URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop copy denial exposes selectable URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop dialog Escape restores trigger focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop receiver starts same deterministic sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop invalid preset has safe fallback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile default mode is Explore",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile S1 fixture text absent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile receiver does not auto-start",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile question starts at 1 of 10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile unanswered target key is idle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile wrong answer marks one selected wrong key",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile first wrong answer does not reveal target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile mode switch preserves wrong state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile hint does not select the answer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile helped answer resolves as correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile reveal marks only target as revealed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile double Next advances once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile result has mutually exclusive 8/1/1 buckets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile missed-note review is available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile review keeps original score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile copied link stays on existing route",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile copied link restores approved preset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile copied link excludes answers and score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile native share receives same preset URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile copy denial exposes selectable URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile dialog Escape restores trigger focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile receiver starts same deterministic sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile invalid preset has safe fallback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "responsive 320 no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "responsive 390 no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "responsive 768 no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "responsive 1440 no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "200% text has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion disables rolling transition",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "audio unavailable does not block visual practice",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "audio unavailable still accepts answer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart shared owner route responds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart shared owner has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/chart canonical unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled shared owner route responds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled shared owner has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/labeled canonical unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/frequencies shared owner route responds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/frequencies shared owner has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/frequencies canonical unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/blank shared owner route responds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/blank shared owner has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/blank canonical unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/finger-numbers shared owner route responds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/finger-numbers shared owner has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/keyboard-notes/finger-numbers canonical unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart still renders 61 shared keyboard keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chart shared keyboard still selects exact MIDI",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "labeled route still renders 61-key layout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frequency owner still resolves C4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/a-minor unaffected smoke",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/scales/c-major unaffected smoke",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shared preset keeps base canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no runtime or console errors",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

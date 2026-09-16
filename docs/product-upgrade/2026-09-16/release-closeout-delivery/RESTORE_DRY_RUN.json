@@ -1,0 +1,21 @@
+﻿{
+    "ok":  true,
+    "temp":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\pianogrid-rc-restore-20260916145953",
+    "checks":  [
+                   "OK scripts/check-hear-the-difference-browser.mjs",
+                   "OK scripts/check-integration-fix-acceptance.mjs",
+                   "OK src/components/hear-the-difference/experience.tsx",
+                   "OK src/components/hear-the-difference/hear-the-difference.css",
+                   "OK src/components/hear-the-difference/use-comparison-audio.ts",
+                   "OK src/components/keyboard-notes/keyboard-notes-v2.css",
+                   "OK src/components/keyboard-notes/keyboard-notes-workspace.tsx",
+                   "OK src/components/keyboard-notes/keyboard-notes.css",
+                   "OK src/components/keyboard-notes/labeled-experience.tsx",
+                   "OK src/components/keyboard-notes/pages.tsx",
+                   "OK src/components/keyboard-notes/share-control.tsx",
+                   "OK src/components/keyboard-notes/share-dialog.css",
+                   "OK src/lib/a-minor-audio.ts",
+                   "OK src/lib/keyboard-content.ts",
+                   "OK src/lib/keyboard-practice.ts"
+               ]
+}

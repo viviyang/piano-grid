@@ -1,0 +1,282 @@
+{
+  "passed": 55,
+  "failed": 0,
+  "results": [
+    {
+      "name": "desktop no autoplay on landing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop landing hides third spoiler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop answers disabled before comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop helper asks to listen first",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop answers enabled after comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop replay label after comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop wrong feedback does not say middle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop wrong actions present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no reveal keyboard before reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop hint copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop hint still hides reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop show-answer eyebrow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop reveal explains third",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop try another is primary after reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop copy link restores pair without answer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop native share payload non-spoiler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop next pair resets to landing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop next pair updates query",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop next pair no autoplay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop shared landing banner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop shared landing no autoplay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop correct reveal method",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop real audio-error path",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop retry clears audio-error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop homepage teaser CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop tools hub entry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop a-minor inbound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile no autoplay on landing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile landing hides third spoiler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile answers disabled before comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile helper asks to listen first",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile answers enabled after comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile replay label after comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile wrong feedback does not say middle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile wrong actions present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile no reveal keyboard before reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile hint copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile hint still hides reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile show-answer eyebrow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile reveal explains third",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile try another is primary after reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile copy link restores pair without answer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile native share payload non-spoiler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile next pair resets to landing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile next pair updates query",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile next pair no autoplay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile shared landing banner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile shared landing no autoplay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile correct reveal method",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile homepage teaser CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile tools hub entry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile a-minor inbound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no runtime errors",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "runtimeErrors": []
+}

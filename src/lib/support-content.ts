@@ -123,6 +123,7 @@ export function getPianoChordsGuide() {
   const guide=JSON.parse(readFileSync(resolve('docs/pianogrid-chords-completion/03_content/guide.piano-chords.modules.json'),'utf8')) as {modules:{id:string;title:string;goal:string;body:string[];next:string;sourceIds:string[]}[]};
   const blocks=[...original.blocks];const ids=new Set(blocks.map(block=>block.id));const links=[...original.links];
   for(const module of guide.modules){if(!ids.has(module.id)){blocks.push({id:module.id,heading:module.title,paragraphs:[...module.body],steps:[module.goal],table:null,sourceIDs:[...module.sourceIds],originalBlocks:[]});ids.add(module.id);}if(isPublicRoute(module.next.split('#')[0]))links.push({id:`completion-${module.id}`,url:module.next,label:`Continue: ${module.title}`,placement:module.id});}
+  if(isPublicRoute('/tools/hear-the-difference'))links.push({id:'b04-hear-third',url:'/tools/hear-the-difference',label:'Hear the third change by one semitone →',placement:'after instructions'});
   const model={...original,scope:'A practical path from chord symbols and formula tones through inversions, seventh chords, omissions, alterations, transitions and print references. Existing guide content remains in place.',blocks,links};
   return { model, data: page.data as {
     starter_chords: { name: string; notes: string[] }[];

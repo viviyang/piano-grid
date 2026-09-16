@@ -1,0 +1,67 @@
+﻿[
+    {
+        "path":  "src/components/hear-the-difference/experience.tsx",
+        "sha256":  "1B674657E8B6B529B0CBC686815C451D1B9C43BE4D3A6AADE4AC7EFF560C281D",
+        "bytes":  19862
+    },
+    {
+        "path":  "src/components/hear-the-difference/use-comparison-audio.ts",
+        "sha256":  "02B93AB7EE7A6E94731945CC911112D97BD77C8D68693DD4980EE3E7A2C0C9A8",
+        "bytes":  4035
+    },
+    {
+        "path":  "src/components/hear-the-difference/hear-the-difference.css",
+        "sha256":  "768F84288B5C262D36F0D2CFF2C5286F787B86C2F6B1B827B32E5794D51CFC00",
+        "bytes":  5904
+    },
+    {
+        "path":  "src/components/keyboard-notes/keyboard-notes-workspace.tsx",
+        "sha256":  "5280CAFD9C9B74EEFEBC14396B0493AAFC2ABE5EAC0DAF6EC1AC76F49447F2D5",
+        "bytes":  35659
+    },
+    {
+        "path":  "src/components/keyboard-notes/share-control.tsx",
+        "sha256":  "23EDC439BB8F84E038AD7F9B6E2FA251650C3923624920B4A5C23B98C63AFF3A",
+        "bytes":  6089
+    },
+    {
+        "path":  "src/components/keyboard-notes/labeled-experience.tsx",
+        "sha256":  "585ECCA652CB3F2E00F4CA94358FD6E6938D53B381257D5870368309857E8617",
+        "bytes":  8325
+    },
+    {
+        "path":  "src/components/keyboard-notes/keyboard-notes.css",
+        "sha256":  "59A8417466BC5AE7787824F0775B7E8D98DAF2ED98448A7404F0BF10880CCFFC",
+        "bytes":  22575
+    },
+    {
+        "path":  "src/components/keyboard-notes/keyboard-notes-v2.css",
+        "sha256":  "D98CACD60AAF013728C1F2B1C074586DFEACD8CC14FDF5A1F3B68A0F5EB37942",
+        "bytes":  22899
+    },
+    {
+        "path":  "src/lib/keyboard-practice.ts",
+        "sha256":  "B5A73DFC1BA339D3791A1B046BBDA04E5610D0F0D284941C917ACF39F89F2FD1",
+        "bytes":  9514
+    },
+    {
+        "path":  "src/lib/keyboard-viewport.ts",
+        "sha256":  "AE2057FD276BE1028E86D14667E23DCD550A9FF5F0D7497D1F9A051A1D2046DD",
+        "bytes":  2151
+    },
+    {
+        "path":  "src/lib/a-minor-audio.ts",
+        "sha256":  "9A0B9B55A92471CE0A79BA22204F229847D74D3C3624CCAED5600CB0CDB80E22",
+        "bytes":  6572
+    },
+    {
+        "path":  "scripts/check-integration-fix-acceptance.mjs",
+        "sha256":  "A965CD628D303223148726A872E2E2723F8E11A551A9BBDED76CE5735AB6D62E",
+        "bytes":  6818
+    },
+    {
+        "path":  "scripts/check-hear-the-difference-browser.mjs",
+        "sha256":  "8E846298AA22E3C30582F07908ECFF994A69434F24D94D784FAE38BD405F016D",
+        "bytes":  10768
+    }
+]

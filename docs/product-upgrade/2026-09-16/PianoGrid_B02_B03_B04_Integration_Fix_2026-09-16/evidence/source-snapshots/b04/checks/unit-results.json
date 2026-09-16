@@ -1,0 +1,50 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "four curated pairs minor→major",
+      "passed": true
+    },
+    {
+      "name": "exact B04 listening pitches",
+      "passed": true
+    },
+    {
+      "name": "deterministic next pair cycle",
+      "passed": true
+    },
+    {
+      "name": "share URL restores pair only",
+      "passed": true
+    },
+    {
+      "name": "compare roles only expose answer keys when requested",
+      "passed": true
+    },
+    {
+      "name": "public route, sitemap eligibility, tools nav",
+      "passed": true
+    },
+    {
+      "name": "tools hub entry exists",
+      "passed": true
+    },
+    {
+      "name": "SEO copy present and analytics unconfigured",
+      "passed": true
+    },
+    {
+      "name": "chord detail inbound links for A/C/D/E",
+      "passed": true
+    },
+    {
+      "name": "guide inbound link present",
+      "passed": true
+    },
+    {
+      "name": "center has low-weight hear link",
+      "passed": true
+    }
+  ]
+}

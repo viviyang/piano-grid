@@ -1,0 +1,56 @@
+{
+  "kind": "isolated-current-source-handlers",
+  "limitations": [
+    "No full Next repository",
+    "No real React DOM layout",
+    "Audio and browser globals replaced by explicit test doubles",
+    "No claim of production reproduction"
+  ],
+  "results": [
+    {
+      "id": "P01_hash_only_practice_entry",
+      "observed": "explore",
+      "detail": "Current component mount with #note-trainer and no practice query leaves active mode explore. Browser scroll behavior was not simulated."
+    },
+    {
+      "id": "P02_find_note_cancels_audio",
+      "observed": false,
+      "detail": "Submitting Find did not invoke useNoteAudio.cancel in this handler isolation."
+    },
+    {
+      "id": "P03_replay_show_answer_enabled",
+      "observed": true,
+      "detail": "Show answer is enabled during a pending comparison after a wrong guess."
+    },
+    {
+      "id": "P04_phase_before_replay_completion",
+      "observed": "reveal",
+      "detail": "The reveal is visible before pending replay resolves."
+    },
+    {
+      "id": "P05_phase_after_replay_completion",
+      "observed": "ready",
+      "detail": "Same current source handler changed reveal back to ready after replay completed. Audio was a controllable test double, not a real device."
+    },
+    {
+      "id": "P06_manual_copy_url_after_pair_change",
+      "observed": "https://pianogrid.com/tools/hear-the-difference?pair=a",
+      "detail": "Failed-copy textarea retains prior pair a after url prop changed to c. Current copy handler would generate new URL if pressed again."
+    },
+    {
+      "id": "P07_white_enharmonic_hint",
+      "observed": "Find the white key just after a group of three black keys.",
+      "detail": "Helper describes B geometry for physical C4. Optional hardening: current trainer does not generate this spelling."
+    },
+    {
+      "id": "P08_diff_covers_b04_source",
+      "observed": false,
+      "detail": "FULL.diff lists only nine tracked paths and has a PowerShell warning preamble; several supplied B04 files are absent from this patch."
+    },
+    {
+      "id": "P09_raw_results_in_delivery",
+      "observed": false,
+      "detail": "Manifest refers to external raw JSON paths but the ZIP does not include checks/results JSON."
+    }
+  ]
+}
