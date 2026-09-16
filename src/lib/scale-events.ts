@@ -1,7 +1,6 @@
 'use client';
 
 import {
-  ANALYTICS_CONSENT_KEY,
   ANALYTICS_RELEASE_VERSION,
   ANALYTICS_PROVIDER,
   getAnalyticsConfiguration,
@@ -55,6 +54,5 @@ export function getScaleMeasurementConfiguration() {
     provider: ANALYTICS_PROVIDER,
     releaseVersion: ANALYTICS_RELEASE_VERSION,
     externalTransportEnabled: config.externalTransportEnabled,
-    consentStorageKey: ANALYTICS_CONSENT_KEY,
   } as const;
 }
