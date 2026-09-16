@@ -11,6 +11,7 @@
     "check:foundation": "node scripts/check-foundation.mjs",
     "check:css": "node scripts/check-css.mjs",
     "check:keyboard-completion": "node --experimental-strip-types scripts/check-keyboard-completion.ts",
+    "check:keyboard-practice": "node scripts/check-keyboard-practice.mjs",
     "check:songs-sheet-v2": "node --experimental-strip-types scripts/check-songs-sheet-v2.ts",
     "check:practical-tools": "node --experimental-strip-types scripts/check-practical-tools.ts",
     "check": "npm run check:foundation && npm run typecheck && npm run check:css"

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { resolveLookup, lookupShareParams, restoreLookup } from '../src/lib/keyboard-resolution.ts';
-import { generateFindPractice, generateReadPractice, scorePractice } from '../src/lib/keyboard-practice.ts';
+import { classifyPracticeAnswer, createPracticePreset, generateFindPractice, generatePresetPractice, generateReadPractice, practicePresetParams, restorePracticePreset, reviewPracticeTargets, scorePractice, summarizePractice, type PracticeAnswerRecord } from '../src/lib/keyboard-practice.ts';
 
 const master = JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json', 'utf8'));
 const layouts = master.pages['/keyboard-notes'].data.layouts;
@@ -42,6 +42,16 @@ equal('find practice deterministic 10', [findA.length,findA.map(item=>item.midi)
 equal('practice correct', scorePractice(60,60), 'correct');
 equal('practice wrong octave', scorePractice(60,48), 'wrong_octave');
 equal('practice wrong note', scorePractice(60,61), 'wrong_note');
+const preset=createPracticePreset('natural-c4-c5',20260916),presetTargets=generatePresetPractice(layout88,preset),restoredPreset=restorePracticePreset(practicePresetParams(preset));
+equal('practice preset deterministic round', [presetTargets.length,presetTargets.map(item=>item.midi)], [10,generatePresetPractice(layout88,preset).map(item=>item.midi)]);
+equal('practice preset roundtrip', restoredPreset, {status:'valid',preset});
+equal('practice preset contains no result state', [...practicePresetParams(preset).keys()].sort(), ['practice','practice-count','practice-option','practice-seed']);
+for(const query of ['practice=v2&practice-option=natural-c4-c5&practice-seed=1&practice-count=10','practice=v1&practice-option=nope&practice-seed=1&practice-count=10','practice=v1&practice-option=natural-c4-c5&practice-seed=-1&practice-count=10','practice=v1&practice-option=natural-c4-c5&practice-seed=1&practice-count=11']) equal(`invalid practice preset ${query}`, restorePracticePreset(new URLSearchParams(query)).status, 'invalid');
+equal('practice params absent', restorePracticePreset(new URLSearchParams()).status, 'none');
+equal('answer buckets classify', [classifyPracticeAnswer({attemptedWrong:false,hinted:false,revealed:false}),classifyPracticeAnswer({attemptedWrong:true,hinted:false,revealed:false}),classifyPracticeAnswer({attemptedWrong:false,hinted:true,revealed:false}),classifyPracticeAnswer({attemptedWrong:false,hinted:false,revealed:true})], ['independent','assisted','assisted','revealed']);
+const bucketRecords:PracticeAnswerRecord[]=[{target:presetTargets[0],kind:'independent'},{target:presetTargets[1],kind:'assisted'},{target:presetTargets[1],kind:'revealed'}];
+equal('answer buckets mutually sum', summarizePractice(bucketRecords), {independent:1,assisted:1,revealed:1,total:3});
+equal('review targets deduplicate midi', reviewPracticeTargets(bucketRecords).map(item=>item.midi), [presetTargets[1].midi]);
 const readA=generateReadPractice(chart.keyboard_notes,'3',4321),readB=generateReadPractice(chart.keyboard_notes,'3',4321);
 equal('read practice deterministic 10', [readA.length,readA.map(item=>`${item.midi}:${item.clef}:${item.label}`)], [10,readB.map(item=>`${item.midi}:${item.clef}:${item.label}`)]);
 test('read practice has canonical staff events',()=>assert.ok(readA.every(item=>item.staff?.midi===item.midi&&!item.label.includes('𝄪')&&!item.label.includes('𝄫'))));

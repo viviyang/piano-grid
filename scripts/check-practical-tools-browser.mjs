@@ -74,7 +74,7 @@ try{
   await page.setViewportSize({width:1280,height:900});
   for(const [route,h1] of owners){response=await page.goto(base+route,{waitUntil:'networkidle'});check(`${route} status 200`,response?.status()===200,String(response?.status()));check(`${route} owner h1`,await page.locator('h1').textContent()===h1,await page.locator('h1').textContent());}
   await page.goto(`${base}/scales#find-by-notes`);check('scale finder stable anchor',await page.locator('#find-by-notes').count()===1);await page.goto(`${base}/scales#follow-along`);check('scale pulse stable anchor',await page.locator('#follow-along').count()===1);
-  await page.goto(`${base}/keyboard-notes#note-trainer`);check('Note Trainer owner anchor',await page.locator('#note-trainer').count()===1&&await page.locator('#note-trainer h2').textContent()==='Find this note');
+  await page.goto(`${base}/keyboard-notes#note-trainer`);check('Note Trainer owner anchor',await page.locator('#note-trainer').count()===1&&await page.locator('#note-trainer h2').textContent()==='Find your way around the keys.');
   await page.goto(`${base}/tools/blank-sheet-music`);check('Blank exact title',await page.title()==='Blank Piano Sheet Music PDF — Letter & A4 | PianoGrid',await page.title());check('Blank size choices',await page.locator('input[name="paper"]').count()===2);for(const asset of ['/reference/assets/blank-piano-staff-letter.pdf','/reference/assets/blank-piano-staff-a4.pdf'])check(`${asset} status 200`,(await page.request.get(base+asset)).status()===200);
   const sitemap=await (await page.request.get(`${base}/sitemap.xml`)).text();
   check('sitemap has no fragment/query',!sitemap.includes('#')&&!/<loc>[^<]*\?/.test(sitemap));

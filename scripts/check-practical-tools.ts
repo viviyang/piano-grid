@@ -68,7 +68,7 @@ equal('no progression generator', pack.classification.chord_progression_generato
 const pagesSource = fs.readFileSync('src/components/integration/pages.tsx','utf8');
 test('duplicate Reading removed from ToolsPage', () => assert.ok(!pagesSource.slice(pagesSource.indexOf('export function ToolsPage')).includes('<Reading')));
 test('timer rendered inline', () => assert.ok(pagesSource.includes('<PracticeTimer/>')));
-const keyboardPractice = fs.readFileSync('src/components/keyboard-notes/practice.tsx','utf8');
+const keyboardPractice = fs.readFileSync('src/components/keyboard-notes/keyboard-notes-workspace.tsx','utf8');
 test('Note Trainer owner anchor stable', () => assert.ok(keyboardPractice.includes('id="note-trainer"')));
 const seo = fs.readFileSync('src/lib/seo-editorial.ts','utf8');
 test('Tools metadata exact', () => assert.ok(seo.includes(pack.page.title) && seo.includes(pack.page.description)));
