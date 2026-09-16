@@ -102,8 +102,14 @@
 .kn-labeled-more{position:relative}
 .kn-labeled-more-panel{position:absolute;right:0;top:calc(100% + .35rem);z-index:5;display:grid;gap:.5rem;min-width:16rem;padding:.75rem;border:1px solid var(--border);border-radius:var(--pr-radius-control);background:var(--background)}
 .kn-labeled-viewport{margin-block:1.25rem 1rem}
-.kn-labeled-full{margin-top:1.5rem;border-top:1px solid var(--border)}
-.kn-labeled-full summary,.kn-labeled-guide summary{min-height:var(--pr-control-min-size);cursor:pointer;font-weight:650}
+.kn-labeled-full-card{margin-top:1.5rem;border:1px solid var(--border);border-radius:var(--pr-radius-control);background:var(--background);overflow:clip}
+.kn-labeled-full-card-trigger{display:flex;width:100%;min-height:var(--pr-control-min-size);align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1rem;border:0;background:transparent;color:var(--foreground);font:inherit;font-weight:650;cursor:pointer;text-align:left}
+.kn-labeled-full-card-trigger:focus-visible{outline:var(--pr-focus-width) solid var(--ring);outline-offset:-2px}
+.kn-labeled-full-card-chevron{width:1rem;height:1rem;flex:none;transition:transform .18s ease}
+.kn-labeled-full-card.is-open .kn-labeled-full-card-chevron{transform:rotate(180deg)}
+.kn-labeled-full-card-panel{padding:0 1rem 1rem;border-top:1px solid var(--border)}
+.kn-labeled-full-card-panel .kn-segment:first-child{border-top:0;padding-top:1rem}
+.kn-labeled-guide summary{min-height:var(--pr-control-min-size);cursor:pointer;font-weight:650}
 .kn-labeled-guide{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)}
 .kn-labeled-guide ol{padding-left:1.25rem;margin:1rem 0}
 @media(max-width:47.999rem){.kn-labeled-desktop-only{display:none!important}.kn-labeled-actions{margin-left:0;width:100%}.kn-labeled-viewport .kn-key-text{font-size:.575rem;white-space:nowrap}.kn-labeled-viewport .kn-black .kn-key-text span+span{display:none}.kn-labeled-viewport .kn-key-scroll{overflow-x:auto}}

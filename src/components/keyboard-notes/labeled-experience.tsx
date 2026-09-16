@@ -9,6 +9,7 @@ import { clampRangeStart, labeledFullSegments, printCompactSegments, visibleMidi
 import { KeyboardDiagram } from './keyboard-diagram';
 import { ShareControl } from './share-control';
 import { LayoutChoice } from './tool-controls';
+import { LabeledFullReferenceCollapsible } from './labeled-full-reference-collapsible';
 
 export type LabeledSourceRef = { id: string; title: string; publisher: string; url: string };
 
@@ -133,15 +134,14 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
         </div>
       </div>
 
-      <details className="kn-labeled-full">
-        <summary>View the full reference</summary>
+      <LabeledFullReferenceCollapsible defaultOpen>
         {fullSegments.map(segment => (
           <section className="kn-segment" key={segment.label} id={`labels-${segment.label.replace(/[^\w]+/g, '-').toLowerCase()}`} tabIndex={-1}>
             <h2>{segment.label}</h2>
             <KeyboardDiagram keys={segment.keys} octaves={octaves} label={`${segment.label} labels`}/>
           </section>
         ))}
-      </details>
+      </LabeledFullReferenceCollapsible>
 
       <section className="kn-labeled-guide" aria-labelledby="kn-label-guide-title">
         <h2 id="kn-label-guide-title">How to label your keyboard</h2>
