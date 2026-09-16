@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { HearTheDifferencePage } from '@/components/hear-the-difference/pages';
-import { parseHearPairId } from '@/lib/hear-the-difference-core';
 import { editorialMetadata } from '@/lib/seo-editorial';
 import { SITE_ORIGIN } from '@/lib/site-config';
 
@@ -29,20 +28,7 @@ export const metadata: Metadata = editorialMetadata({
   },
 });
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-}) {
-  const params = await searchParams;
-  const pairRaw = Array.isArray(params.pair) ? params.pair[0] : params.pair;
-  const fromRaw = Array.isArray(params.from) ? params.from[0] : params.from;
-  const sourceRaw = Array.isArray(params.source) ? params.source[0] : params.source;
-  return (
-    <HearTheDifferencePage
-      initialPair={parseHearPairId(pairRaw)}
-      sharedLanding={fromRaw === 'share'}
-      source={typeof sourceRaw === 'string' ? sourceRaw : null}
-    />
-  );
+/** Static page: pair/from/source restore on the client so the route can prerender. */
+export default function Page() {
+  return <HearTheDifferencePage />;
 }

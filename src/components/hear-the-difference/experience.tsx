@@ -12,6 +12,7 @@ import {
   HEAR_PAIR_ORDER,
   HEAR_PATH,
   nextHearPairId,
+  restoreHearPair,
   type HearPairData,
   type HearPairId,
   type HearRevealMethod,
@@ -43,14 +44,10 @@ export function HearTheDifferenceExperience({
   pairs,
   keyboards,
   initialPair,
-  sharedLanding = false,
-  source = null,
 }: {
   pairs: HearPairData[];
   keyboards: Record<HearPairId, PianoKey[]>;
   initialPair: HearPairId;
-  sharedLanding?: boolean;
-  source?: string | null;
 }) {
   const challengeRef = useRef<HTMLElement>(null);
   const revealRef = useRef<HTMLElement>(null);
@@ -61,6 +58,8 @@ export function HearTheDifferenceExperience({
   const pairRef = useRef(initialPair);
   const audio = useComparisonAudio(AUDIO_COPY);
   const [pairId, setPairId] = useState<HearPairId>(initialPair);
+  const [sharedLanding, setSharedLanding] = useState(false);
+  const [source, setSource] = useState<string | null>(null);
   const [phase, setPhase] = useState<ChallengePhase>('landing');
   const [guess, setGuess] = useState<HearVoice | null>(null);
   const [revealMethod, setRevealMethod] = useState<HearRevealMethod | null>(null);
@@ -69,6 +68,26 @@ export function HearTheDifferenceExperience({
   const [busy, setBusy] = useState(false);
   const [helpUsed, setHelpUsed] = useState(false);
   const viewed = useRef(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const restored = restoreHearPair(params);
+    setPairId(restored);
+    pairRef.current = restored;
+    const shared = params.get('from') === 'share';
+    setSharedLanding(shared);
+    const sourceRaw = params.get('source');
+    const nextSource = sourceRaw && sourceRaw.trim() ? sourceRaw : null;
+    setSource(nextSource);
+    if (viewed.current) return;
+    viewed.current = true;
+    emitHearEvent('one_note_view', { pair: restored, source: nextSource });
+    if (shared) emitHearEvent('one_note_shared_landing', { pair: restored, from: 'share' });
+  }, []);
+
+  useEffect(() => {
+    if (audio.state === 'error' || audio.state === 'unavailable') setAudioError(true);
+  }, [audio.state]);
 
   const pair = useMemo(() => findHearPair(pairs, pairId), [pairs, pairId]);
   const keys = useMemo(() => keyboards[pairId], [keyboards, pairId]);
@@ -84,17 +103,6 @@ export function HearTheDifferenceExperience({
   const canGuess = comparisonReady && phase !== 'reveal' && !busy && !audioError;
   const playingComparison = busy && (audio.phase === 'chord1' || audio.phase === 'gap' || audio.phase === 'chord2');
   pairRef.current = pairId;
-
-  useEffect(() => {
-    if (viewed.current) return;
-    viewed.current = true;
-    emitHearEvent('one_note_view', { pair: pairId, source: source ?? null });
-    if (sharedLanding) emitHearEvent('one_note_shared_landing', { pair: pairId, from: 'share' });
-  }, [pairId, sharedLanding, source]);
-
-  useEffect(() => {
-    if (audio.state === 'error' || audio.state === 'unavailable') setAudioError(true);
-  }, [audio.state]);
 
   function markHelp() {
     setHelpUsed(true);

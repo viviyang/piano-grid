@@ -15,6 +15,21 @@ const nextConfig: NextConfig = {
     staticGenerationMaxConcurrency: 2,
     staticGenerationMinPagesPerWorker: 20,
   } : undefined,
+  // Ensure content-backed routes keep site-master JSON in serverless traces.
+  outputFileTracingIncludes: {
+    '/tools/hear-the-difference': [
+      './docs/content/site-master/**/*',
+      './scripts/scale-faq-contract.mjs',
+    ],
+    '/keyboard-notes': [
+      './docs/content/site-master/**/*',
+      './scripts/scale-faq-contract.mjs',
+    ],
+    '/keyboard-notes/labeled': [
+      './docs/content/site-master/**/*',
+      './scripts/scale-faq-contract.mjs',
+    ],
+  },
 };
 
 export default nextConfig;

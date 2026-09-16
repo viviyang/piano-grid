@@ -1,20 +1,12 @@
 import { SiteFooter, SiteHeader } from '@/components/chords/site-chrome';
 import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { HearTheDifferenceExperience } from './experience';
-import { getHearPageModel, type HearPairId } from '@/lib/hear-the-difference';
+import { getHearPageModel } from '@/lib/hear-the-difference';
 import '@/app/chords/a-minor/a-minor.css';
 import './hear-the-difference.css';
 
-export function HearTheDifferencePage({
-  initialPair,
-  sharedLanding,
-  source,
-}: {
-  initialPair: HearPairId;
-  sharedLanding: boolean;
-  source: string | null;
-}) {
-  const model = getHearPageModel(initialPair);
+export function HearTheDifferencePage() {
+  const model = getHearPageModel('a');
   return (
     <div className="am-page hd-shell">
       <a className="am-skip" href="#main">Skip to content</a>
@@ -27,8 +19,6 @@ export function HearTheDifferencePage({
           pairs={model.pairs}
           keyboards={model.keyboards}
           initialPair={model.initialPair}
-          sharedLanding={sharedLanding}
-          source={source}
         />
       </main>
       <SiteFooter url="/tools/hear-the-difference" />
