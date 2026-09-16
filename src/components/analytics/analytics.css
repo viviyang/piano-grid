@@ -1,0 +1,48 @@
+.pg-analytics-consent {
+  position: fixed;
+  inset: auto 1rem 1rem 1rem;
+  z-index: 60;
+  max-width: 36rem;
+  margin-inline: auto;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--pr-radius-panel);
+  background: var(--background);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.12);
+  color: var(--foreground);
+}
+
+.pg-analytics-consent p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--muted-foreground);
+}
+
+.pg-analytics-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-end;
+  margin-top: 0.85rem;
+}
+
+@media (max-width: 30rem) {
+  .pg-analytics-consent {
+    inset: auto 0.75rem 0.75rem 0.75rem;
+  }
+
+  .pg-analytics-consent-actions {
+    justify-content: stretch;
+  }
+
+  .pg-analytics-consent-actions .am-button {
+    flex: 1 1 auto;
+  }
+}
+
+@media print {
+  .pg-analytics-consent {
+    display: none !important;
+  }
+}

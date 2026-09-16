@@ -1,5 +1,7 @@
 'use client';
 
+import { getAnalyticsConfiguration, sendAnalyticsEvent, type AnalyticsEventValue } from '@/lib/analytics';
+
 export type HearEventName =
   | 'one_note_view'
   | 'one_note_compare_start'
@@ -17,21 +19,25 @@ export type HearEventName =
   | 'one_note_audio_error'
   | 'one_note_open_reference';
 
-type EventValue = string | number | boolean | null;
-
 const allowed = new Set([
   'pair', 'source', 'guess', 'correct', 'method', 'fromPair', 'toPair', 'side', 'target', 'phase', 'from',
 ]);
 
-export function emitHearEvent(name: HearEventName, properties: Record<string, EventValue> = {}) {
+export function emitHearEvent(name: HearEventName, properties: Record<string, AnalyticsEventValue> = {}) {
   if (typeof window === 'undefined') return;
-  const safe: Record<string, EventValue> = {};
+  const safe: Record<string, AnalyticsEventValue> = {};
   for (const [key, value] of Object.entries(properties)) if (allowed.has(key)) safe[key] = value;
+  const externallySent = sendAnalyticsEvent(name, safe);
   window.dispatchEvent(new CustomEvent('pianogrid:one-note-event', {
-    detail: { name, properties: safe, timestamp: Date.now(), externallySent: false },
+    detail: { name, properties: safe, timestamp: Date.now(), externallySent },
   }));
 }
 
 export function getHearMeasurementConfiguration() {
-  return { provider: 'none', externalTransportEnabled: false, status: 'ANALYTICS_NOT_CONFIGURED' } as const;
+  const config = getAnalyticsConfiguration();
+  return {
+    provider: config.provider,
+    externalTransportEnabled: config.externalTransportEnabled,
+    status: config.status,
+  } as const;
 }

@@ -1,5 +1,7 @@
 'use client';
 
+import { getAnalyticsConfiguration, sendAnalyticsEvent, type AnalyticsEventValue } from '@/lib/analytics';
+
 export type TeachingPackEventName =
   | 'teaching_pack_view'
   | 'teaching_pack_format_change'
@@ -11,8 +13,6 @@ export type TeachingPackEventName =
   | 'teaching_pack_share_copy'
   | 'teaching_pack_practice_open';
 
-type EventValue = string | number | boolean | null;
-
 const allowed = new Set([
   'resource_id',
   'revision',
@@ -22,15 +22,21 @@ const allowed = new Set([
   'ok',
 ]);
 
-export function emitTeachingPackEvent(name: TeachingPackEventName, properties: Record<string, EventValue> = {}) {
+export function emitTeachingPackEvent(name: TeachingPackEventName, properties: Record<string, AnalyticsEventValue> = {}) {
   if (typeof window === 'undefined') return;
-  const safe: Record<string, EventValue> = {};
+  const safe: Record<string, AnalyticsEventValue> = {};
   for (const [key, value] of Object.entries(properties)) if (allowed.has(key)) safe[key] = value;
+  const externallySent = sendAnalyticsEvent(name, safe);
   window.dispatchEvent(new CustomEvent('pianogrid:teaching-pack-event', {
-    detail: { name, properties: safe, timestamp: Date.now(), externallySent: false },
+    detail: { name, properties: safe, timestamp: Date.now(), externallySent },
   }));
 }
 
 export function getTeachingPackMeasurementConfiguration() {
-  return { collector: 'INSTRUMENTED_NOT_COLLECTED' as const, channel: 'pianogrid:teaching-pack-event' };
+  const config = getAnalyticsConfiguration();
+  return {
+    collector: config.status,
+    channel: 'pianogrid:teaching-pack-event' as const,
+    externalTransportEnabled: config.externalTransportEnabled,
+  };
 }
