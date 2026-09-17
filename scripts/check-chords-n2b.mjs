@@ -41,7 +41,13 @@ try{
   }
   for(const raw of categories){
     const expected=raw.id==='suspended'?24:12,nojs=await page({javaScriptEnabled:false,viewport:{width:1280,height:900}}),response=await nojs.goto(base+raw.url+'?root=C&type=sus2'),html=await response.text();
-    check(`${raw.url} static category`,response.status()===200&&html.includes('<h1')&&await nojs.title()===raw.title&&await nojs.locator('meta[name=description]').getAttribute('content')===raw.description&&clean(await nojs.locator('h1').innerText())===raw.h1&&await nojs.locator('link[rel=canonical]').getAttribute('href')===`https://pianogrid.com${raw.url}`);
+    const publishedFamily={
+      '/chords/diminished':{title:'Diminished Chords: Piano Notes, Formula & Inversions | PianoGrid',h1:'Diminished Chords'},
+      '/chords/augmented':{title:'Augmented Chords: Piano Notes, Formula & Inversions | PianoGrid',h1:'Augmented Chords'},
+      '/chords/suspended':{title:'Suspended Chords: Sus2 & Sus4 Piano Notes & Inversions | PianoGrid',h1:'Suspended Chords'},
+    };
+    const expectedTitle=publishedFamily[raw.url]?.title??raw.title,expectedH1=publishedFamily[raw.url]?.h1??raw.h1;
+    check(`${raw.url} static category`,response.status()===200&&html.includes('<h1')&&await nojs.title()===expectedTitle&&await nojs.locator('meta[name=description]').getAttribute('content')===raw.description&&clean(await nojs.locator('h1').innerText())===expectedH1&&await nojs.locator('link[rel=canonical]').getAttribute('href')===`https://pianogrid.com${raw.url}`);
     check(`${raw.url} complete no-JS grid`,await nojs.locator('.ch-category-card').count()===expected&&await nojs.locator('.ch-category-card[hidden]').count()===0&&new Set(await nojs.locator('.ch-category-card>a').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('href')))).size===expected);
     check(`${raw.url} initial theory`,html.includes(raw.intro)&&html.includes('Root position and inversions'));
     await nojs.close();

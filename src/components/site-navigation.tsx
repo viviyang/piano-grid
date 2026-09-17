@@ -252,6 +252,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     const catalogSection = SITE_NAVIGATION.find(section => section.href === sectionHref);
     if (!catalogSection) return null;
     return <div className="site-mobile-children site-mobile-children-chords">
+      <a className="site-mobile-view-all" href={sectionHref} onClick={closeMenus} aria-current={pathname === sectionHref ? 'page' : undefined}>{sectionHref === '/chords' ? 'Browse all chords' : 'View overview'}</a>
       {menus.map(menu => {
         const menuKey = `${sectionHref}:${menu.id}`;
         const expanded = openCatalogMobileMenu === menuKey;
@@ -321,7 +322,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
             ><Chevron/></button>
           </div>
           <div className={`site-nav-panel${section.href === '/chords' || section.href === '/scales' ? ` site-nav-panel-chords${openCatalogDesktopMenu?.startsWith(`${section.href}:`) ? ' site-nav-panel-chords-expanded' : ''}` : ''}`} id={panelId} hidden={!expanded}>
-            <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>View overview →</span></a></div>
+            <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>{section.href === '/chords' ? 'Browse all chords →' : 'View overview →'}</span></a></div>
             {section.href === '/chords' || section.href === '/scales'
               ? renderCatalogDesktopPanel(section.href, section.href === '/chords' ? CHORD_MENUS : SCALE_MENUS)
               : <div className="site-nav-panel-links">{section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>}

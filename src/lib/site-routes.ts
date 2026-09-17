@@ -181,7 +181,7 @@ export const CHORD_MORE_NAVIGATION = [
   { label: 'Diminished', href: '/chords/diminished' },
   { label: 'Augmented', href: '/chords/augmented' },
   { label: 'Suspended', href: '/chords/suspended' },
-  { label: 'Add', href: '/chords/add' },
+  { label: 'Add9', href: '/chords/add' },
   { label: 'Extended', href: '/chords/extended' },
   { label: 'Altered', href: '/chords/altered' },
 ] as const satisfies ReadonlyArray<{ label: string; href: PublicRoute }>;
@@ -241,7 +241,7 @@ export const SITE_NAVIGATION = [
       { label: 'Diminished', href: '/chords/diminished', group: 'More Chords' },
       { label: 'Augmented', href: '/chords/augmented', group: 'More Chords' },
       { label: 'Suspended', href: '/chords/suspended', group: 'More Chords' },
-      { label: 'Add', href: '/chords/add', group: 'More Chords' },
+      { label: 'Add9', href: '/chords/add', group: 'More Chords' },
       { label: 'Extended', href: '/chords/extended', group: 'More Chords' },
       { label: 'Altered', href: '/chords/altered', group: 'More Chords' },
       { label: 'Chords by Key', href: '/chords/by-key', group: 'Explore' },

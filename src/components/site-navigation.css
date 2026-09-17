@@ -75,6 +75,7 @@
 .site-mobile-children a{display:block;padding:.45rem .55rem;border-radius:.4rem;color:var(--muted-foreground);font-size:.875rem;line-height:1.4;text-decoration:none}
 .site-mobile-children a:hover,.site-mobile-children a:focus-visible,.site-mobile-nav a[aria-current="page"]{background:var(--surface);color:var(--primary)}
 .site-mobile-children-chords{display:block}
+.site-mobile-children-chords>.site-mobile-view-all{display:flex;align-items:center;min-height:2.75rem;margin-bottom:.25rem;padding:.45rem .55rem;border-radius:.4rem;color:var(--foreground);font-size:.875rem;font-weight:650;text-decoration:none}
 .site-mobile-accordion{border-top:1px solid var(--border)}
 .site-mobile-accordion:first-child{border-top:0}
 .site-mobile-accordion-trigger{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:2.75rem;padding:.5rem .55rem;border-radius:.4rem;font-size:.875rem;font-weight:620;text-align:left}
