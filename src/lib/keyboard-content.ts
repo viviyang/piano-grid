@@ -1,4 +1,4 @@
-import { editorialHeading } from './seo-editorial';
+import { editorialHeading, editorialSectionHeading } from './seo-editorial';
 import { readAuthorizedPage } from './site-content';
 import { isPublicRoute } from './site-routes';
 import type { KeyboardPageModel, Layout, ChartKey, StaffNote } from './keyboard-types';
@@ -18,7 +18,7 @@ export function getKeyboardPage(url: keyof typeof blockIDs) {
   const links = [...related.filter((l:{url:string})=>isPublicRoute(l.url) && Object.keys(blockIDs).includes(l.url)), ...planned]
     .filter((link, index, all) => all.findIndex(item => item.url === link.url) === index);
   const model:KeyboardPageModel = {url,title:editorialHeading(url,page.title),description:page.description,metadata:page.metadata,
-    blocks:page.blocks.map((b:{id:string;heading:string;body:string})=>({id:b.id,heading:b.heading,body:b.body})),
+    blocks:page.blocks.map((b:{id:string;heading:string;body:string})=>({id:b.id,heading:editorialSectionHeading(url,b.heading),body:b.body})),
     links,
     provenance:{template_id:page.template_id,source_groups:page.source_groups.map((g:{id:string})=>g.id),source_ids:page.source_ids,block_ids:page.blocks.map((b:{id:string})=>b.id)}};
   return {model, data:page.data};

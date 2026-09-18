@@ -21,7 +21,7 @@ export function SongCenterExperience({ resources, goals }: { resources: SongReso
   }, [goal, goals, level, query, resources]);
   const clear = () => { setQuery(''); setLevel('all'); setGoal('all'); };
   return <section className="sg-discovery" aria-labelledby="sg-find-heading">
-    <div className="sg-discovery-head"><div><p className="sg-overline">Choose by practice goal</p><h2 id="sg-find-heading">Choose a checked edition</h2></div><p>Start with what you want to practise, then compare the publisher level, available challenge evidence and access route for each exact edition.</p></div>
+      <div className="sg-discovery-head"><div><p className="sg-overline">Choose by practice goal</p><h2 id="sg-find-heading">Choose a Piano Song to Learn</h2></div><p>Start with what you want to practise, then compare the publisher level, available challenge evidence and access route for each exact edition.</p></div>
     <div className="sg-filters" aria-label="Song filters">
       <label className="sg-search"><span>Search title, artist or edition</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Gymnopédie or Minecraft" disabled={!ready}/></label>
       <label><span>Publisher level</span><select value={level} onChange={(event) => setLevel(event.target.value)} disabled={!ready}><option value="all">All publisher levels</option>{levels.map((item) => <option key={item}>{item}</option>)}</select></label>

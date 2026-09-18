@@ -11,6 +11,7 @@ import { ExternalArrangementCard } from '@/components/songs-sheet/external-arran
 import { BeginnerEditionCards, SongsBeginnerTeaser } from './edition-cards';
 import { TwinklePracticePlan } from './practice-plan';
 import { getB05Copy } from '@/lib/b05-content';
+import { editorialHeading } from '@/lib/seo-editorial';
 import { allowedProviderUrl, getBeginnerEditionView } from '@/lib/b05-editions';
 import '@/app/chords/a-minor/a-minor.css';
 import '@/components/sheet-music/sheet-music.css';
@@ -43,7 +44,7 @@ function LaunchVersions({ detail = false }: { detail?: boolean }) {
 export function SongsCenterPage() {
   const data = getSongCenter();
   const copy = getB05Copy();
-  return <SongShell model={data.model} heading={copy.songs.h1} intro={copy.songs.intro}><SongsBeginnerTeaser/><LaunchVersions/><SongCenterExperience resources={data.resources} goals={data.goals}/><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}>{block.id === 'start' && data.easyURLAvailable && <a className="am-button am-tertiary sg-inline-link" href="/songs/easy">Browse easy piano versions</a>}</ReadingSection>)}</div></SongShell>;
+  return <SongShell model={data.model} heading={editorialHeading(data.model.url, copy.songs.h1)} intro={copy.songs.intro}><SongsBeginnerTeaser/><LaunchVersions/><SongCenterExperience resources={data.resources} goals={data.goals}/><div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}>{block.id === 'start' && data.easyURLAvailable && <a className="am-button am-tertiary sg-inline-link" href="/songs/easy">Browse easy piano versions</a>}</ReadingSection>)}</div></SongShell>;
 }
 
 export function EasySongsPage({ search = {} }: { search?: Record<string, string | string[] | undefined> }) {
@@ -51,7 +52,7 @@ export function EasySongsPage({ search = {} }: { search?: Record<string, string 
   const copy = getB05Copy();
   const twinkle = getBeginnerEditionView('twinkle');
   const providerUrl = allowedProviderUrl(twinkle.resource.provider_url);
-  return <SongShell model={data.model} heading={copy.easy.h1} intro={copy.easy.intro}>
+  return <SongShell model={data.model} heading={editorialHeading(data.model.url, copy.easy.h1)} intro={copy.easy.intro}>
     <BeginnerEditionCards withPlanAnchor />
     <TwinklePracticePlan copy={copy.easy.plan} providerUrl={providerUrl} sheetHref="/sheet-music/twinkle-twinkle-little-star" search={search} />
     <section className="pg-song-plan" aria-labelledby="pg-more-easy-heading">
@@ -63,7 +64,7 @@ export function EasySongsPage({ search = {} }: { search?: Record<string, string 
     <CatalogTable resources={data.catalogResources}/>
     <p className="sg-catalog-policy">{data.numberQueryPolicy}</p>
     <section className="pg-song-plan" aria-labelledby="pg-understand-heading">
-      <h2 id="pg-understand-heading">Understand your starting point</h2>
+      <h2 id="pg-understand-heading">How to Choose Your First Piano Song</h2>
       <div className="pg-learn-grid">{copy.easy.learnSections.map((item) => <article key={item.h2}><h3>{item.h2}</h3><p>{item.body}</p></article>)}</div>
     </section>
     <div className="am-reading sg-reading">{data.model.blocks.map((block) => <ReadingSection block={block} key={block.id}/>)}</div>

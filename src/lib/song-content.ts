@@ -1,4 +1,4 @@
-import { editorialHeading } from './seo-editorial';
+import { editorialHeading, editorialSectionHeading } from './seo-editorial';
 import { readAuthorizedPage } from './site-content';
 import { getPagePatch } from './songs-sheet-content';
 import { resolveFirstCheckFields } from './songs-sheet-contracts';
@@ -67,7 +67,7 @@ function model(url: SongURL, page: Raw): SongPageModel {
   return {
     url,
     templateID: expectedTemplate,
-    title: patch.h1 || editorialHeading(url, requiredString(page.title, `${url}.title`)),
+    title: editorialHeading(url, patch.h1 || requiredString(page.title, `${url}.title`)),
     description: patch.intro || requiredString(page.description, `${url}.description`),
     userTask: requiredString(page.user_task, `${url}.user_task`),
     metadata: {
@@ -77,7 +77,7 @@ function model(url: SongURL, page: Raw): SongPageModel {
     },
     blocks: page.blocks.map((block: Raw): SongBlock => ({
       id: block.id ?? block.block_id,
-      heading: requiredString(block.heading, `${url}.block.heading`),
+      heading: editorialSectionHeading(url, requiredString(block.heading, `${url}.block.heading`)),
       body: requiredString(block.body, `${url}.block.body`),
       evidenceStatus: block.evidence_status ?? '',
       sourceIDs: block.source_ids ?? [],
