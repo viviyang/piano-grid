@@ -1,5 +1,5 @@
 {
-  "passed": 137,
+  "passed": 139,
   "failed": 0,
   "errors": [],
   "results": [
@@ -18,7 +18,7 @@
     {
       "name": "/songs title",
       "passed": true,
-      "detail": "Piano Songs by Version and Playing Skills | PianoGrid"
+      "detail": "Piano Songs: Choose a Version to Practice | PianoGrid"
     },
     {
       "name": "/songs canonical",
@@ -44,6 +44,11 @@
       "name": "/songs no local media action",
       "passed": true,
       "detail": ""
+    },
+    {
+      "name": "/songs shared arrangement cards styled",
+      "passed": true,
+      "detail": "{\"padding\":21.6,\"border\":\"solid\",\"radius\":12}"
     },
     {
       "name": "/songs no staging path",
@@ -80,7 +85,7 @@
     {
       "name": "/songs/easy title",
       "passed": true,
-      "detail": "Easy Piano Songs: Compare Beginner Versions | PianoGrid"
+      "detail": "Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid"
     },
     {
       "name": "/songs/easy canonical",
@@ -106,6 +111,11 @@
       "name": "/songs/easy no local media action",
       "passed": true,
       "detail": ""
+    },
+    {
+      "name": "/songs/easy shared arrangement cards styled",
+      "passed": true,
+      "detail": "{\"padding\":21.6,\"border\":\"solid\",\"radius\":12}"
     },
     {
       "name": "/songs/easy no staging path",
@@ -328,7 +338,7 @@
     {
       "name": "/sheet-music/hot-cross-buns title",
       "passed": true,
-      "detail": "Hot Cross Buns Piano Sheet Music: Version & Access | PianoGrid"
+      "detail": "Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid"
     },
     {
       "name": "/sheet-music/hot-cross-buns canonical",
@@ -390,7 +400,7 @@
     {
       "name": "/sheet-music/twinkle-twinkle-little-star title",
       "passed": true,
-      "detail": "Twinkle, Twinkle, Little Star Piano Sheet Music: Version & Access | PianoGrid"
+      "detail": "Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid"
     },
     {
       "name": "/sheet-music/twinkle-twinkle-little-star canonical",
@@ -452,7 +462,7 @@
     {
       "name": "/sheet-music/ode-to-joy title",
       "passed": true,
-      "detail": "Ode to Joy Piano Sheet Music: Version & Access | PianoGrid"
+      "detail": "Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid"
     },
     {
       "name": "/sheet-music/ode-to-joy canonical",
@@ -512,7 +522,7 @@
     {
       "name": "share copies exact canonical fragment",
       "passed": true,
-      "detail": "http://127.0.0.1:3112/songs/easy#pg-arr=arr-ext-0a05b7954f5256&segment=all&speed=100"
+      "detail": "http://localhost:3116/songs/easy#pg-arr=arr-ext-0a05b7954f5256&segment=all&speed=100"
     },
     {
       "name": "generated external share restores with explicit default speed",
@@ -522,7 +532,7 @@
     {
       "name": "clipboard rejection exposes exact manual-copy URL",
       "passed": true,
-      "detail": "http://127.0.0.1:3112/songs/easy#pg-arr=arr-ext-c3a78b0c5cb213&segment=all&speed=100"
+      "detail": "http://localhost:3116/songs/easy#pg-arr=arr-ext-c3a78b0c5cb213&segment=all&speed=100"
     },
     {
       "name": "three named songs distinct",
@@ -665,9 +675,9 @@
       "detail": "7"
     },
     {
-      "name": "desktop navigation has thirty direct child links",
+      "name": "desktop navigation has thirty-one direct child links",
       "passed": true,
-      "detail": "30"
+      "detail": "31"
     },
     {
       "name": "Chords inherited route keeps 25 prepared results",
