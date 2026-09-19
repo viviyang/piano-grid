@@ -1,0 +1,184 @@
+{
+  "competitor_complete": true,
+  "site_complete": true,
+  "errors": [],
+  "assetCounts": {
+    "html": 803,
+    "pdf": 0,
+    "other": 0
+  },
+  "typeCounts": {
+    "Structure": 1,
+    "Unclassified": 300,
+    "Family": 9,
+    "Root hub": 17,
+    "Root collection": 17,
+    "Detail candidate": 459
+  },
+  "writtenRoots": 17,
+  "pitchClasses": 12,
+  "comboPages": 17,
+  "unclassified": 300,
+  "allCard": {
+    "url_rows": 158,
+    "urls_with_strict_topic_hit": 153,
+    "topic_hit_strings": 153,
+    "one_to_one": 129,
+    "one_to_many": 0,
+    "many_to_one_own_urls": 24,
+    "many_to_one_competitor_urls": 12,
+    "enharmonic_only": 1,
+    "not_found": 4,
+    "many_to_one_examples": [
+      {
+        "competitor": "https://www.pianochord.org/a-flat-sus.html",
+        "own_urls": "/chords/a-flat-sus2;/chords/a-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/a-sus.html",
+        "own_urls": "/chords/a-sus2;/chords/a-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/b-flat-sus.html",
+        "own_urls": "/chords/b-flat-sus2;/chords/b-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/b-sus.html",
+        "own_urls": "/chords/b-sus2;/chords/b-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/c-sus.html",
+        "own_urls": "/chords/c-sus2;/chords/c-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/d-flat-sus.html",
+        "own_urls": "/chords/d-flat-sus2;/chords/d-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/d-sus.html",
+        "own_urls": "/chords/d-sus2;/chords/d-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/e-flat-sus.html",
+        "own_urls": "/chords/e-flat-sus2;/chords/e-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/e-sus.html",
+        "own_urls": "/chords/e-sus2;/chords/e-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/f-sharp-sus.html",
+        "own_urls": "/chords/f-sharp-sus2;/chords/f-sharp-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/f-sus.html",
+        "own_urls": "/chords/f-sus2;/chords/f-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/g-sus.html",
+        "own_urls": "/chords/g-sus2;/chords/g-sus4",
+        "own_count": 2
+      }
+    ]
+  },
+  "cohortCard": {
+    "url_rows": 138,
+    "urls_with_strict_topic_hit": 138,
+    "topic_hit_strings": 138,
+    "one_to_one": 114,
+    "one_to_many": 0,
+    "many_to_one_own_urls": 24,
+    "many_to_one_competitor_urls": 12,
+    "enharmonic_only": 0,
+    "not_found": 0,
+    "many_to_one_examples": [
+      {
+        "competitor": "https://www.pianochord.org/a-flat-sus.html",
+        "own_urls": "/chords/a-flat-sus2;/chords/a-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/a-sus.html",
+        "own_urls": "/chords/a-sus2;/chords/a-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/b-flat-sus.html",
+        "own_urls": "/chords/b-flat-sus2;/chords/b-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/b-sus.html",
+        "own_urls": "/chords/b-sus2;/chords/b-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/c-sus.html",
+        "own_urls": "/chords/c-sus2;/chords/c-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/d-flat-sus.html",
+        "own_urls": "/chords/d-flat-sus2;/chords/d-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/d-sus.html",
+        "own_urls": "/chords/d-sus2;/chords/d-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/e-flat-sus.html",
+        "own_urls": "/chords/e-flat-sus2;/chords/e-flat-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/e-sus.html",
+        "own_urls": "/chords/e-sus2;/chords/e-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/f-sharp-sus.html",
+        "own_urls": "/chords/f-sharp-sus2;/chords/f-sharp-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/f-sus.html",
+        "own_urls": "/chords/f-sus2;/chords/f-sus4",
+        "own_count": 2
+      },
+      {
+        "competitor": "https://www.pianochord.org/g-sus.html",
+        "own_urls": "/chords/g-sus2;/chords/g-sus4",
+        "own_count": 2
+      }
+    ]
+  },
+  "fetchLog": [
+    {
+      "source": "https://www.pianochord.org/sitemap.xml",
+      "label": "competitor",
+      "kind": "urlset",
+      "saved_file": "raw/competitor_506dc914effa.xml",
+      "bytes": 53098
+    },
+    {
+      "source": "https://pianogrid.com/sitemap.xml",
+      "label": "site",
+      "kind": "urlset",
+      "saved_file": "raw/site_fa11803d9d0d.xml",
+      "bytes": 13111
+    }
+  ]
+}

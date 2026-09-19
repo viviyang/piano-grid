@@ -1,7 +1,9 @@
 import { getChordFamilyBrowse, type ChordFamilyBrowseCard } from '@/lib/chord-family-browse';
 
 function FamilyCard({ card }: { card: ChordFamilyBrowseCard }) {
-  const countLabel = `${card.count} ${card.count === 1 ? 'chord reference' : 'chord references'}`;
+  const countLabel = card.countKind === 'embedded_references'
+    ? `${card.count} ${card.count === 1 ? 'embedded reference' : 'embedded references'}`
+    : `${card.count} ${card.count === 1 ? 'independent chord page' : 'independent chord pages'}`;
   return (
     <article className="ch-family-card">
       <h4>{card.name}</h4>

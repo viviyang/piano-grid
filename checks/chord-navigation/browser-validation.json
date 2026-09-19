@@ -1,0 +1,324 @@
+{
+  "executedAt": "2026-09-17T13:28:58.333Z",
+  "base": "http://127.0.0.1:3120",
+  "passed": 34,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Desktop page responds",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Other header sections stay present",
+      "passed": false,
+      "detail": [
+        "Piano Notes",
+        "Chords",
+        "Scales",
+        "Songs",
+        "Sheet Music",
+        "Learn",
+        "Tools"
+      ]
+    },
+    {
+      "name": "Desktop focus opens Chords",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chords panel stays compact before a third level opens",
+      "passed": true,
+      "detail": {
+        "x": 179.00982666015625,
+        "y": 54.10063934326172,
+        "width": 440.1365966796875,
+        "height": 457.36014556884766
+      }
+    },
+    {
+      "name": "Chords overview column has the wider measure",
+      "passed": true,
+      "detail": {
+        "x": 186.92190551757812,
+        "y": 72.02922821044922,
+        "width": 149.98953247070312,
+        "height": 425.8234329223633
+      }
+    },
+    {
+      "name": "Major parent is a category link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Major hover opens third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chords panel expands only for third-level content",
+      "passed": true,
+      "detail": {
+        "compactPanelBox": {
+          "x": 179.00982666015625,
+          "y": 54.10063934326172,
+          "width": 440.1365966796875,
+          "height": 457.36014556884766
+        },
+        "expandedPanelBox": {
+          "x": 175.078125,
+          "y": 58.78125,
+          "width": 752,
+          "height": 465.53125
+        }
+      }
+    },
+    {
+      "name": "Major lists twelve published roots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Major uses two columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Third level uses the outer menu surface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Hover stays open inside third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Moving to a lower second-level item closes third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Major focus opens third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape restores submenu trigger focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Keyboard Enter opens third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Minor parent is a category link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Minor lists twelve published roots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Minor uses two columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "More Chords is a button-only group",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "More Chords opens its category panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "More Chords has exact category list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No fourth-level menu exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No /chords/more link exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Moving to empty menu space closes third level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile exposes three chord groups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile Major tap expands without navigating",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile Major starts with View all then twelve roots",
+      "passed": true,
+      "detail": [
+        {
+          "text": "View all Major Chords",
+          "href": "/chords/major"
+        },
+        {
+          "text": "C Major",
+          "href": "/chords/c-major"
+        },
+        {
+          "text": "D♭ Major",
+          "href": "/chords/d-flat-major"
+        },
+        {
+          "text": "D Major",
+          "href": "/chords/d-major"
+        },
+        {
+          "text": "E♭ Major",
+          "href": "/chords/e-flat-major"
+        },
+        {
+          "text": "E Major",
+          "href": "/chords/e-major"
+        },
+        {
+          "text": "F Major",
+          "href": "/chords/f-major"
+        },
+        {
+          "text": "F♯ Major",
+          "href": "/chords/f-sharp-major"
+        },
+        {
+          "text": "G Major",
+          "href": "/chords/g-major"
+        },
+        {
+          "text": "A♭ Major",
+          "href": "/chords/a-flat-major"
+        },
+        {
+          "text": "A Major",
+          "href": "/chords/a-major"
+        },
+        {
+          "text": "B♭ Major",
+          "href": "/chords/b-flat-major"
+        },
+        {
+          "text": "B Major",
+          "href": "/chords/b-major"
+        }
+      ]
+    },
+    {
+      "name": "Mobile Minor opens and Major closes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile Minor starts with View all then twelve roots",
+      "passed": true,
+      "detail": [
+        {
+          "text": "View all Minor Chords",
+          "href": "/chords/minor"
+        },
+        {
+          "text": "C Minor",
+          "href": "/chords/c-minor"
+        },
+        {
+          "text": "C♯ Minor",
+          "href": "/chords/c-sharp-minor"
+        },
+        {
+          "text": "D Minor",
+          "href": "/chords/d-minor"
+        },
+        {
+          "text": "E♭ Minor",
+          "href": "/chords/e-flat-minor"
+        },
+        {
+          "text": "E Minor",
+          "href": "/chords/e-minor"
+        },
+        {
+          "text": "F Minor",
+          "href": "/chords/f-minor"
+        },
+        {
+          "text": "F♯ Minor",
+          "href": "/chords/f-sharp-minor"
+        },
+        {
+          "text": "G Minor",
+          "href": "/chords/g-minor"
+        },
+        {
+          "text": "G♯ Minor",
+          "href": "/chords/g-sharp-minor"
+        },
+        {
+          "text": "A Minor",
+          "href": "/chords/a-minor"
+        },
+        {
+          "text": "B♭ Minor",
+          "href": "/chords/b-flat-minor"
+        },
+        {
+          "text": "B Minor",
+          "href": "/chords/b-minor"
+        }
+      ]
+    },
+    {
+      "name": "Mobile More has exact categories and no details",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile accordion touch targets are at least 44px",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "390px navigation has no horizontal overflow",
+      "passed": true,
+      "detail": [
+        390,
+        390
+      ]
+    },
+    {
+      "name": "No runtime or hydration errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "runtimeErrors": []
+}

@@ -9,6 +9,7 @@ export type ChordFamilyBrowseCard = {
   name: string;
   blurb: string;
   count: number;
+  countKind: 'independent_pages' | 'embedded_references';
   cta: string;
 };
 
@@ -28,6 +29,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Major Chords',
         blurb: 'Root, major third and fifth.',
         count: CHORD_MAJOR_NAVIGATION.length,
+        countKind: 'independent_pages',
         cta: 'Browse major chords →',
       },
       {
@@ -35,6 +37,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Minor Chords',
         blurb: 'Root, minor third and fifth.',
         count: CHORD_MINOR_NAVIGATION.length,
+        countKind: 'independent_pages',
         cta: 'Browse minor chords →',
       },
       {
@@ -42,6 +45,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Seventh Chords',
         blurb: 'Dominant 7, maj7, min7 and half-diminished.',
         count: N2C_DETAIL_ROUTES.length,
+        countKind: 'independent_pages',
         cta: 'Browse seventh chords →',
       },
     ],
@@ -51,6 +55,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Diminished Chords',
         blurb: 'Root, minor third and diminished fifth.',
         count: n2bCount('diminished'),
+        countKind: 'independent_pages',
         cta: 'Browse diminished chords →',
       },
       {
@@ -58,6 +63,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Augmented Chords',
         blurb: 'Root, major third and augmented fifth.',
         count: n2bCount('augmented'),
+        countKind: 'independent_pages',
         cta: 'Browse augmented chords →',
       },
       {
@@ -65,6 +71,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Suspended Chords',
         blurb: 'Sus2 and sus4 replace the third.',
         count: n2bCount('sus2') + n2bCount('sus4'),
+        countKind: 'independent_pages',
         cta: 'Browse suspended chords →',
       },
       {
@@ -72,6 +79,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Add9 Chords',
         blurb: 'Major and minor add9, with no seventh.',
         count: N2D_DETAIL_ROUTES.length,
+        countKind: 'independent_pages',
         cta: 'Browse add9 chords →',
       },
       {
@@ -79,6 +87,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Extended Chords',
         blurb: '9th, 11th and 13th references.',
         count: EXTENDED_REFERENCES.length,
+        countKind: 'embedded_references',
         cta: 'Browse extended chords →',
       },
       {
@@ -86,6 +95,7 @@ export function getChordFamilyBrowse(): ChordFamilyBrowseModel {
         name: 'Altered Dominant Chords',
         blurb: 'Named dominant-seventh alterations.',
         count: ALTERED_REFERENCES.length,
+        countKind: 'embedded_references',
         cta: 'Browse altered dominant chords →',
       },
     ],

@@ -11,7 +11,7 @@ import './category.css';
 
 export function ChordCategoryPage({model}:{model:ChordCategoryModel}) {
   const headingText=editorialHeading(model.url, model.title);
-  const heading=<header className="am-page-heading" data-block-id="category-intro"><PageBreadcrumb items={[{label:'Chords',href:'/chords'},{label:headingText}]}/><p className="am-eyebrow">Piano chord family</p><h1><ChordSectionTitle id="category-intro" text={headingText}/></h1><p className="am-direct-answer">{model.directAnswer}</p><p className="ch-category-intro">Every card below is present in the initial page HTML. Choose a root to focus the grid, then open a detail page for root position, inversions, sound and print.</p></header>;
+  const heading=<header className="am-page-heading" data-block-id="category-intro"><PageBreadcrumb items={[{label:'Chords',href:'/chords'},{label:headingText}]}/><p className="am-eyebrow">Piano chord family</p><h1><ChordSectionTitle id="category-intro" text={headingText}/></h1><p className="am-direct-answer">{model.directAnswer}</p><p className="ch-category-intro">Choose a root and chord type, then open a chord to see its notes, hear it and explore inversions.</p></header>;
   return <ChordCategoryExperience model={model} heading={heading}>
     {model.contentBlocks.map((block,index)=><section className="am-content-section" key={block.heading} id={`category-${index+1}`}><h2>{block.heading}</h2><div className="am-content-body"><p>{block.body}</p></div></section>)}
     <SupplementIndex route={model.url}/>

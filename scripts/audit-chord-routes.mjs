@@ -1,6 +1,7 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { queryCandidates, assertCandidateQuality } from './lib/chord-query-candidates.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = resolve(root, 'docs/seo/chords');
@@ -169,58 +170,6 @@ function originalMapping(url) {
   return { original_plan_url: '', original_keyword: '', original_volume_us: '', keyword_source: 'GENERATED_WITHOUT_ORIGINAL_KEYWORD_MAPPING', volume_status: 'NO_DATA', generated_after_original_plan: 'true' };
 }
 
-function parseRootSpelling(root) {
-  const raw = ascii(root || '').trim();
-  const match = raw.match(/^([A-Ga-g])(-?flat|-?sharp|bb|##|b|#)?$/i);
-  if (!match) {
-    const lower = raw.toLowerCase();
-    return { spoken: lower, compact: lower, hasAccidental: false };
-  }
-  const letter = match[1].toLowerCase();
-  const accidental = (match[2] || '').toLowerCase().replace(/^-/, '');
-  const spoken = accidental === 'b' || accidental === 'flat' ? `${letter} flat`
-    : accidental === '#' || accidental === 'sharp' ? `${letter} sharp`
-    : accidental === 'bb' ? `${letter} double flat`
-    : accidental === '##' ? `${letter} double sharp`
-    : letter;
-  const compact = accidental === 'flat' || accidental === 'b' ? `${letter}b`
-    : accidental === 'sharp' || accidental === '#' ? `${letter}#`
-    : accidental === 'bb' ? `${letter}bb`
-    : accidental === '##' ? `${letter}##`
-    : letter;
-  return { spoken, compact, hasAccidental: spoken !== letter };
-}
-
-function candidates(row) {
-  const { spoken, compact, hasAccidental } = parseRootSpelling(row.root);
-  const symbol = ascii(row.symbol || '').toLowerCase();
-  const unique = (...values) => [...new Set(values.filter(Boolean))];
-  switch (row.subtype || row.family) {
-    case 'major': return hasAccidental
-      ? unique(`${spoken} major chord`, `${compact} major chord`, `${spoken} major piano chord`)
-      : unique(`${spoken} major chord`, `${spoken} major piano chord`, `${symbol || spoken} chord piano`);
-    case 'minor': return hasAccidental
-      ? unique(`${spoken} minor chord`, `${compact} minor chord`, `${spoken} minor piano chord`)
-      : unique(`${spoken} minor chord`, `${spoken} minor piano chord`, `${symbol || (`${spoken}m`)} piano chord`);
-    case 'dominant7': return unique(`${symbol} chord`, `${symbol} piano chord`, `${spoken} dominant 7 chord`);
-    case 'major7': return unique(`${symbol} chord`, `${spoken} major 7 chord`, `${spoken} major 7 piano chord`);
-    case 'minor7': return unique(`${symbol} chord`, `${spoken} minor 7 chord`, `${spoken} minor 7 piano chord`);
-    case 'halfDiminished7': return unique(`${symbol} chord`, `${spoken} half diminished chord`, `${spoken} half diminished 7 piano chord`);
-    case 'diminished': return hasAccidental
-      ? unique(`${spoken} diminished chord`, `${compact} diminished chord`, `${spoken} diminished piano chord`)
-      : unique(`${spoken} diminished chord`, `${spoken} diminished piano chord`, `${symbol} piano chord`);
-    case 'augmented': return hasAccidental
-      ? unique(`${spoken} augmented chord`, `${compact} augmented chord`, `${spoken} augmented piano chord`)
-      : unique(`${spoken} augmented chord`, `${spoken} augmented piano chord`, `${symbol} piano chord`);
-    case 'sus2': return unique(`${symbol} chord`, `${spoken} sus2 chord`, `${spoken} sus2 piano chord`);
-    case 'sus4': return unique(`${symbol} chord`, `${spoken} sus4 chord`, `${spoken} sus4 piano chord`);
-    case 'add9': return unique(`${symbol} chord`, `${spoken} add9 chord`, `${symbol} piano chord`);
-    case 'minorAdd9': return unique(`${symbol} chord`, `${spoken} minor add9 chord`, `${symbol} piano chord`);
-    case 'seventh': return ['7th chords', 'seventh chords', 'piano 7th chords', '7th chords piano', 'seventh chords piano'];
-    default: return unique(`${row.display_name || row.family} chord`.toLowerCase(), `${row.display_name || row.family} piano chord`.toLowerCase());
-  }
-}
-
 function recommendation(url, row, mapping) {
   if (url === '/chords/seventh') return 'REVIEW_KEYWORD';
   if (familySeo[url]) return 'KEEP_SEO';
@@ -339,7 +288,7 @@ const manualRows = [
   ...rows.filter((row) => row.url === '/chords/seventh'),
   ...detailsOnly.filter((row) => row.volume_status === 'UNKNOWN' || row.volume_status === 'NO_DATA'),
 ].map((row) => {
-  const queries = candidates(row);
+  const queries = queryCandidates(row);
   return {
     url: row.url,
     family: familyLabel[row.subtype] || familyLabel[row.family] || row.family,
@@ -356,10 +305,11 @@ const manualRows = [
 });
 const manualCols = ['url','family','chord_name','candidate_keyword_1','candidate_keyword_2','candidate_keyword_3','current_title','current_h1','original_mapping','volume_us','status'];
 const manualCsv = `${[manualCols.join(','), ...manualRows.map((row) => manualCols.map((column) => csvEscape(row[column])).join(','))].join('\n')}\n`;
-const broken = manualRows.flatMap((row) => [row.candidate_keyword_1, row.candidate_keyword_2, row.candidate_keyword_3]
-  .filter((query) => /^\s*flat\b/i.test(query) || /flat flat/i.test(query))
-  .map((query) => `${row.url}: ${query}`));
-if (broken.length) throw new Error(`Keyword candidate spelling errors:\n${broken.join('\n')}`);
+for (const row of manualRows) {
+  for (const query of [row.candidate_keyword_1, row.candidate_keyword_2, row.candidate_keyword_3].filter(Boolean)) {
+    assertCandidateQuality(query, row.url);
+  }
+}
 writeFileSync(resolve(outDir, 'CHORD_KEYWORD_MANUAL_CHECK.csv'), manualCsv);
 
 const summary = {

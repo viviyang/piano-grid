@@ -1,0 +1,27 @@
+{
+  "competitor_complete": true,
+  "site_complete": true,
+  "warnings": [
+    "Topic counts depend on URL-pattern inference; audit Unclassified and multi-topic pages. Sitemap membership is not Google indexing/ranking."
+  ],
+  "errors": [],
+  "competitor_raw_loc_count": 820,
+  "competitor_unique_url_count": 803,
+  "competitor_duplicate_loc_count": 17,
+  "site_raw_loc_count": 206,
+  "site_unique_url_count": 206,
+  "site_duplicate_loc_count": 0,
+  "site_module_url_count_including_progressions": 158,
+  "own_csv_missing_from_live_sitemap": [],
+  "live_module_not_in_own_csv": [],
+  "own_csv_unique_urls": 158,
+  "competitor_page_type_counts": {
+    "Structure": 1,
+    "Unclassified": 300,
+    "Family": 9,
+    "Root hub": 17,
+    "Root collection": 17,
+    "Detail candidate": 459
+  },
+  "strict_candidate_matches": 153
+}
