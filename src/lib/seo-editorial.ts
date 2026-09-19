@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
-import { SITE_ORIGIN } from '@/lib/site-config';
+import { SITE_ORIGIN } from './site-config';
+import type { ChordDetailModel } from './a-minor-types';
+import { CHORD_DETAIL_SEO_COPY, type ChordDetailSeoCopy } from './chord-detail-seo-copy';
 
-// Published-page editorial overrides. Original keyword/content sources stay intact.
-// B05–B07 TDH candidates live in docs/product-upgrade/b05-b07-v2/data/page-seo.json.
-type Copy = { title: string; description: string; h1?: string; h2?: Record<string, string> };
+export type { ChordDetailSeoCopy };
+type Copy = ChordDetailSeoCopy;
 export const SEO_COPY: Record<string, Copy> = {
+  ...CHORD_DETAIL_SEO_COPY,
   '/': { title: 'Learn Piano: Chords, Scales & Practice Tools | PianoGrid', description: 'Explore piano notes, chords, scales, songs, and sheet music. Start playing with beginner guides, blank staff paper, and practical tools on PianoGrid.' },
   '/keyboard-notes': { title: 'Piano Keys and Notes: Find, Hear & Practice | PianoGrid', h1: 'Piano Keys and Notes', description: 'Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.' },
   '/keyboard-notes/labeled': {
@@ -146,6 +148,48 @@ export function editorialHeading(url: string, original: string): string {
 
 export function editorialSectionHeading(url: string, original: string): string {
   return SEO_COPY[url]?.h2?.[original] ?? original;
+}
+
+export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailModel {
+  const url = model.data.url;
+  const copy = SEO_COPY[url];
+  if (!copy) return model;
+  const heading = editorialHeading(url, model.data.heading);
+  const mapHeading = (value: string) => editorialSectionHeading(url, value);
+  const toolHeading = mapHeading(model.data.toolHeading);
+  const blocks = model.blocks.map((block) => {
+    let content = { ...block.content, heading: mapHeading(block.content.heading) };
+    if (copy.theory && block.block_id.endsWith('-intro') && content.paragraphs.length > 0) {
+      content = { ...content, paragraphs: [copy.theory, ...content.paragraphs.slice(1)] };
+    }
+    if (copy.fingering && block.block_id.endsWith('-fingering-example') && content.paragraphs.length > 0) {
+      content = { ...content, paragraphs: [copy.fingering, ...content.paragraphs.slice(1)] };
+    }
+    if (copy.keyboardHelp && block.block_id === model.data.toolId) {
+      content = { ...content, paragraphs: [...content.paragraphs, copy.keyboardHelp] };
+    }
+    if (copy.faq && block.block_id.endsWith('-questions') && content.table) {
+      content = { ...content, table: { ...content.table, rows: copy.faq.map((item) => [item.q, item.a]) } };
+    }
+    return { ...block, content };
+  });
+  return {
+    ...model,
+    answer: copy.intro ?? model.answer,
+    data: { ...model.data, heading, toolHeading },
+    blocks,
+    byId: Object.fromEntries(blocks.map((block) => [block.block_id, block])),
+    searchSections: model.searchSections.map((section) => {
+      const block = blocks.find((item) => item.block_id === section.id);
+      return {
+        ...section,
+        heading: mapHeading(section.heading),
+        text: block ? JSON.stringify(block.content) : section.text,
+      };
+    }),
+    tocItems: model.tocItems.map((item) => ({ ...item, label: mapHeading(item.label) })),
+    practice: { ...model.practice, heading: mapHeading(model.practice.heading) },
+  };
 }
 
 /** Preserve canonical/indexing and family-specific promises; synchronize social copy. */

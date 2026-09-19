@@ -71,7 +71,7 @@ check('module 158=145+9+4', counts.A === 158 && counts.B === 9 && counts.C === 1
 check('158 pack vs registry diffs empty or documented', Array.isArray(counts.pack_minus_repo) && Array.isArray(counts.repo_minus_pack));
 check('origin ledger 158', origin.length === 158, String(origin.length));
 check('origin dates are not mtime placeholders', origin.every((row) => row.origin_date === 'UNKNOWN' || /^\d{4}-\d{2}-\d{2}T/.test(row.origin_date)));
-check('GSC 14 rows with empty GSC facts', gsc.length === 14 && gsc.every((row) => row.indexed === '' && row.google_canonical === ''));
+check('GSC unique URLs include hub and F#madd9 with empty GSC facts', gsc.length === 16 && new Set(gsc.map((row) => row.url)).size === 16 && gsc.some((row) => row.url === '/chords') && gsc.some((row) => row.url === '/chords/f-sharp-madd9') && gsc.every((row) => row.indexed === '' && row.google_canonical === '' && row.report_time === '' && row.discovered === '' && row.crawled === '' && row.last_crawl === '' && row.first_impression === '' && row.hostload_or_server_errors === ''));
 check('five product URLs not auto-changed', five.every((row) => row.approved === 'false' && row.decision.includes('KEEP')));
 const noPositive = ['/chords/d-flat-m7-flat5', '/chords/f-sharp-madd9', '/chords/a-flat-madd9', '/chords/b-flat-madd9', '/chords/d-flat-madd9'];
 for (const url of noPositive) {

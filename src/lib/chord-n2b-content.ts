@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import type { Block, ChordDetailData, ChordDetailModel, ChordPractice, ChordSource, DetailVoicing, ThreeNoteSubtype } from './a-minor-types';
 import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family-model';
 import { finalizeChordDetailModel } from './chord-detail-model';
+import { applyEditorialChordCopy, editorialHeading } from './seo-editorial';
 import { readMaster } from './site-content';
 import { isPublicRoute } from './site-routes';
 import type { CenterItem, ChordCategoryModel } from './chord-content';
@@ -134,12 +135,12 @@ export function getN2BChordDetail(url:N2BChordDetailRoute):ChordDetailModel{
   blocks.push({block_id:`${slug}-print`,content:empty('Print this chord reference')});
   blocks.push({block_id:`${slug}-related`,content:{...empty('Related chord references'),links:[...related.values()]}});
   const byId=Object.fromEntries(blocks.map(block=>[block.block_id,block]));
-  return finalizeChordDetailModel({metadata:{title:raw.seo.title,description:correctedThreeNoteDescription(raw.seo.description),canonical_path:url},data,blocks,byId,answer:raw.content.directAnswer,introduction:[],fingeringExamples:[],sources:sourcesFor(raw),practice,searchSections:blocks.filter(block=>block.block_id!==`${slug}-intro`).map(block=>({id:block.block_id,heading:block.content.heading,text:JSON.stringify(block.content)})),tocItems:[{id:data.toolId,label:'Chord & positions'},...blocks.filter(block=>![`${slug}-intro`,data.toolId].includes(block.block_id)).map(block=>({id:block.block_id,label:block.content.heading}))]});
+  return applyEditorialChordCopy(finalizeChordDetailModel({metadata:{title:raw.seo.title,description:correctedThreeNoteDescription(raw.seo.description),canonical_path:url},data,blocks,byId,answer:raw.content.directAnswer,introduction:[],fingeringExamples:[],sources:sourcesFor(raw),practice,searchSections:blocks.filter(block=>block.block_id!==`${slug}-intro`).map(block=>({id:block.block_id,heading:block.content.heading,text:JSON.stringify(block.content)})),tocItems:[{id:data.toolId,label:'Chord & positions'},...blocks.filter(block=>![`${slug}-intro`,data.toolId].includes(block.block_id)).map(block=>({id:block.block_id,label:block.content.heading}))]}));
 }
 
 function categoryItem(raw:RawDetail):CenterItem{
   const model=getN2BChordDetail(raw.url),voicing=model.data.voicings[0];
-  return{id:model.data.chord.id,name:raw.name,root:raw.rootSpelling,quality:raw.subtype,url:raw.url,tones:[...raw.definition.toneSpellings],formula:[...model.data.chord.formula_degrees],voicing};
+  return{id:model.data.chord.id,name:editorialHeading(raw.url, raw.name),root:raw.rootSpelling,quality:raw.subtype,url:raw.url,tones:[...raw.definition.toneSpellings],formula:[...model.data.chord.formula_degrees],voicing};
 }
 
 export function getN2BCategory(category:N2BCategory):ChordCategoryModel{

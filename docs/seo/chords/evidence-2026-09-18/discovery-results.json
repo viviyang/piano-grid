@@ -1,6 +1,6 @@
 {
-  "base": "http://127.0.0.1:3127",
-  "failed": 0,
+  "base": "http://127.0.0.1:3128",
+  "failed": 4,
   "results": [
     {
       "name": "Every independent detail URL has an SSR family or hub href",
@@ -69,7 +69,7 @@
     },
     {
       "name": "desktop-1440 search Bb locates /chords/b-flat-major",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "desktop-1440 search Cmadd9 locates /chords/c-madd9",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "name": "mobile-390 search Bb locates /chords/b-flat-major",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {
@@ -174,7 +174,7 @@
     },
     {
       "name": "mobile-390 search Cmadd9 locates /chords/c-madd9",
-      "passed": true,
+      "passed": false,
       "detail": ""
     },
     {

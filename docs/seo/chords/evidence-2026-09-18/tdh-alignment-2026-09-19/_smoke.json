@@ -1,0 +1,346 @@
+{
+  "base": "http://127.0.0.1:3128",
+  "failed": 1,
+  "results": [
+    {
+      "name": "desktop b7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop b7 h1",
+      "passed": true,
+      "detail": "B7 Chord"
+    },
+    {
+      "name": "desktop b7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop cmaj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop cmaj7 h1",
+      "passed": true,
+      "detail": "Cmaj7 Chord"
+    },
+    {
+      "name": "desktop cmaj7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop cm7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop cm7 h1",
+      "passed": true,
+      "detail": "Cm7 Chord"
+    },
+    {
+      "name": "desktop cm7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop bm7b5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop bm7b5 h1",
+      "passed": true,
+      "detail": "B Half-Diminished Chord (Bm7♭5)"
+    },
+    {
+      "name": "desktop bm7b5 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop csus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop csus2 h1",
+      "passed": true,
+      "detail": "Csus2 Chord"
+    },
+    {
+      "name": "desktop csus2 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop csus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop csus4 h1",
+      "passed": true,
+      "detail": "Csus4 Chord"
+    },
+    {
+      "name": "desktop csus4 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop dflat7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop dflat7 h1",
+      "passed": true,
+      "detail": "D♭7 Chord"
+    },
+    {
+      "name": "desktop dflat7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop fsharpmaj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop fsharpmaj7 h1",
+      "passed": true,
+      "detail": "F♯maj7 Chord"
+    },
+    {
+      "name": "desktop fsharpmaj7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop bminor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop bminor h1",
+      "passed": true,
+      "detail": "B Minor Chord"
+    },
+    {
+      "name": "desktop bminor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop hold-dfm7b5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop hold-dfm7b5 h1 includes pack label",
+      "passed": true,
+      "detail": "D♭ Half-Diminished Seventh Piano Chord"
+    },
+    {
+      "name": "desktop hold-dfm7b5 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop seventh 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop seventh no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop hub 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop hub no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile b7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile b7 h1",
+      "passed": true,
+      "detail": "B7 Chord"
+    },
+    {
+      "name": "mobile b7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile cmaj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile cmaj7 h1",
+      "passed": true,
+      "detail": "Cmaj7 Chord"
+    },
+    {
+      "name": "mobile cmaj7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile cm7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile cm7 h1",
+      "passed": true,
+      "detail": "Cm7 Chord"
+    },
+    {
+      "name": "mobile cm7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile bm7b5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile bm7b5 h1",
+      "passed": true,
+      "detail": "B Half-Diminished Chord (Bm7♭5)"
+    },
+    {
+      "name": "mobile bm7b5 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile csus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile csus2 h1",
+      "passed": true,
+      "detail": "Csus2 Chord"
+    },
+    {
+      "name": "mobile csus2 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile csus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile csus4 h1",
+      "passed": true,
+      "detail": "Csus4 Chord"
+    },
+    {
+      "name": "mobile csus4 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile dflat7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile dflat7 h1",
+      "passed": true,
+      "detail": "D♭7 Chord"
+    },
+    {
+      "name": "mobile dflat7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile fsharpmaj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile fsharpmaj7 h1",
+      "passed": true,
+      "detail": "F♯maj7 Chord"
+    },
+    {
+      "name": "mobile fsharpmaj7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile bminor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile bminor h1",
+      "passed": true,
+      "detail": "B Minor Chord"
+    },
+    {
+      "name": "mobile bminor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile hold-dfm7b5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile hold-dfm7b5 h1 includes pack label",
+      "passed": true,
+      "detail": "D♭ Half-Diminished Seventh Piano Chord"
+    },
+    {
+      "name": "mobile hold-dfm7b5 no horizontal overflow",
+      "passed": false,
+      "detail": "delta=59"
+    },
+    {
+      "name": "mobile seventh 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile seventh no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile hub 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile hub no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    }
+  ]
+}

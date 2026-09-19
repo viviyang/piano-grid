@@ -62,6 +62,37 @@ function seoTitle(url) {
   };
 }
 
+function loadChordDetailSeoCopy() {
+  const file = resolve(root, 'src/lib/chord-detail-seo-copy.ts');
+  if (!existsSync(file)) return {};
+  const src = readFileSync(file, 'utf8');
+  const start = src.indexOf('export const CHORD_DETAIL_SEO_COPY');
+  if (start < 0) return {};
+  const brace = src.indexOf('{', start);
+  let depth = 0;
+  let inStr = false;
+  let quote = '';
+  let escape = false;
+  let end = brace;
+  for (let i = brace; i < src.length; i += 1) {
+    const ch = src[i];
+    if (inStr) {
+      if (escape) { escape = false; continue; }
+      if (ch === '\\') { escape = true; continue; }
+      if (ch === quote) { inStr = false; quote = ''; }
+      continue;
+    }
+    if (ch === '"' || ch === "'") { inStr = true; quote = ch; continue; }
+    if (ch === '{') depth += 1;
+    else if (ch === '}') {
+      depth -= 1;
+      if (depth === 0) { end = i; break; }
+    }
+  }
+  return Function(`"use strict"; return (${src.slice(brace, end + 1)});`)();
+}
+const appliedCopy = loadChordDetailSeoCopy();
+
 function brandTitle(title) {
   if (!title) return '';
   return title.includes('PianoGrid') || title.length > 52 ? title : `${title} | PianoGrid`;
@@ -212,13 +243,12 @@ function classify(row) {
 }
 
 function proposal(row, issues) {
-  const blocked = true;
   const seed = seedByUrl.get(row.url);
   if (HOLD.has(row.url)) {
     return { suggested_title: '', suggested_h1: '', suggested_description: '', suggested_intro: '', execution_state: 'HOLD_PRODUCT_REVIEW', applied: 'false', reason: 'Five no-positive URLs keep current service and copy this round.' };
   }
   if (UPSTREAM.has(row.url)) {
-    return { suggested_title: '', suggested_h1: '', suggested_description: '', suggested_intro: '', execution_state: 'UPSTREAM_PROTECTED', applied: 'false', reason: 'Approved eight-page TDH lives on origin/main; this worktree has not integrated it.' };
+    return { suggested_title: '', suggested_h1: '', suggested_description: '', suggested_intro: '', execution_state: 'UPSTREAM_PROTECTED', applied: 'false', reason: 'Approved eight-page TDH from 5fa6cb6 is integrated and kept. Task 11 did not overwrite these fields.' };
   }
   const align = issues.includes('SAME_ENTITY_LABEL_ALIGNMENT');
   if (!align) {
@@ -254,28 +284,41 @@ function proposal(row, issues) {
     suggested_description = `Learn the ${row.symbol} chord on piano: ${notes}. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.`;
     suggested_intro = `${row.symbol}, also called ${root} ${spoken}, contains ${notes}. Use the piano diagram to find the notes, hear the chord and explore its inversions.`;
   }
+  const inCopy = Boolean(appliedCopy[row.url]);
   return {
     suggested_title,
     suggested_h1,
     suggested_description,
     suggested_intro,
-    execution_state: blocked ? 'PROPOSED_BASELINE_BLOCKED' : 'APPLY',
-    applied: 'false',
-    reason: `Same chordId/symbol. Short label ${label} is an editorial alignment, not SERP proof. Seed proposed_display_label=${seed?.proposed_display_label || 'n/a'}. Not applied: origin/main eight-page TDH is not integrated; writing SEO_COPY now would collide with src/lib/seo-editorial.ts.`,
+    execution_state: inCopy ? 'APPLIED_LOCAL' : 'PROPOSED_NOT_APPLIED',
+    applied: inCopy ? 'true' : 'false',
+    reason: inCopy
+      ? `Same chordId/symbol. Short label ${label} applied locally via CHORD_DETAIL_SEO_COPY and editorial mapping. Music name/notes/URL unchanged. Not committed or published. Seed proposed_display_label=${seed?.proposed_display_label || 'n/a'}.`
+      : `Same chordId/symbol. Short label ${label} still meets the allow-list but is not in the generated copy map.`,
   };
 }
 
 const alignment = details.sort((a, b) => a.url.localeCompare(b.url)).map((row) => {
-  const override = seoCopyUrls.has(row.url) ? seoTitle(row.url) : null;
+  const explicit = seoCopyUrls.has(row.url) ? seoTitle(row.url) : null;
+  const generated = appliedCopy[row.url] || null;
+  const override = (explicit && (explicit.title || explicit.h1)) ? explicit : generated;
   const current_title = brandTitle(override?.title || row.pack_title);
   const current_h1 = override?.h1 || row.pack_h1;
   const current_description = applyDescriptionFix(override?.description || row.pack_description);
-  const current_intro = row.pack_intro;
+  const current_intro = override?.intro || row.pack_intro;
   const q = bestQueries(row.url);
   const issues = classify(row);
   const prop = proposal(row, issues);
-  const metadata_source = override ? 'seo-editorial.ts SEO_COPY' : `${row.source_file} pack seo`;
-  const h1_source = override?.h1 ? 'seo-editorial.ts h1' : `${row.source_file} seo.h1/h1`;
+  const metadata_source = explicit && (explicit.title || explicit.h1)
+    ? 'seo-editorial.ts SEO_COPY'
+    : generated
+      ? 'chord-detail-seo-copy.ts + editorialMetadata'
+      : `${row.source_file} pack seo`;
+  const h1_source = (explicit && explicit.h1)
+    ? 'seo-editorial.ts h1'
+    : generated?.h1
+      ? 'chord-detail-seo-copy.ts h1'
+      : `${row.source_file} seo.h1/h1`;
   const b7PianoAliases = row.url === '/chords/b-7'
     ? q.rows.filter((item) => pianoQuery(item.query) && item.query !== 'b7 chord piano').map((item) => `${item.query}=${item.volume}@${item.observation_date}`).join('; ')
     : '';
@@ -326,8 +369,8 @@ const alignment = details.sort((a, b) => a.url.localeCompare(b.url)).map((row) =
     suggested_h1: prop.suggested_h1,
     suggested_description: prop.suggested_description,
     suggested_intro: prop.suggested_intro,
-    breadcrumb_current: row.formal_name,
-    family_card_current: row.formal_name,
+    breadcrumb_current: (explicit?.h1 || generated?.h1 || row.formal_name),
+    family_card_current: (explicit?.h1 || generated?.h1 || row.formal_name),
     current_theory: row.theory || '',
     current_fingering_reason: row.fingering_reason || '',
     ...suggestedSections,
@@ -356,6 +399,9 @@ const counts = {
   proposed_title: alignment.filter((r) => r.suggested_title).length,
   proposed_h1: alignment.filter((r) => r.suggested_h1).length,
   proposed_description: alignment.filter((r) => r.suggested_description).length,
+  APPLIED_LOCAL: alignment.filter((r) => r.execution_state === 'APPLIED_LOCAL').length,
+  HOLD_PRODUCT_REVIEW: alignment.filter((r) => r.execution_state === 'HOLD_PRODUCT_REVIEW').length,
+  NO_TDH_CHANGE: alignment.filter((r) => r.execution_state === 'NO_TDH_CHANGE').length,
   applied: alignment.filter((r) => r.applied === 'true').length,
   article_bugs: alignment.filter((r) => r.article_case_bug === 'true').length,
   engineering_fingering: alignment.filter((r) => r.engineering_fingering_copy === 'true').length,
