@@ -1,6 +1,6 @@
 # Git baseline — C-group name/TDH alignment 2026-09-19
 
-Status: **APPLIED_LOCAL_TESTED_NOT_PUBLISHED**. Eight-page TDH from `5fa6cb6` is integrated. Task 11 copy is applied in the working tree only. No Task 11 final commit, push, or deploy.
+Status: **PUBLISHED_VERIFIED** for this Task 11 copy publish only. Eight-page TDH from `5fa6cb6` remains integrated. Task 11 copy is in `bd3ba53` and live on `https://pianogrid.com`.
 
 ## Current Git
 
@@ -8,16 +8,16 @@ Status: **APPLIED_LOCAL_TESTED_NOT_PUBLISHED**. Eight-page TDH from `5fa6cb6` is
 |---|---|
 | Worktree | `C:\Users\Admin\Documents\viviyang_github\pianogrid-final-integration` |
 | Branch | `codex/final-integration` |
-| HEAD | `e00ae6e` `Merge approved eight-page TDH from 5fa6cb6 into codex/final-integration.` |
+| Apply HEAD | `bd3ba535378c1be6cca69f4afc5800e66331d0b7` `Apply same-entity chord labels on the integrated eight-page TDH baseline.` |
+| Merge | `e00ae6e` `Merge approved eight-page TDH from 5fa6cb6 into codex/final-integration.` |
 | Merge parents | `f80084b` + `5fa6cb6bd4a6d9bd13cdf483498870041b133b7f` |
-| `origin/main` | `5fa6cb6bd4a6d9bd13cdf483498870041b133b7f` `feat: align TDH on eight high-priority public pages` |
-| Merge-base(HEAD, origin/main) | `5fa6cb6` — origin/main is now an ancestor of HEAD |
-| Ahead / behind vs `origin/main` | **2 checkpoint commits + 1 merge** on this branch; Task 11 copy still uncommitted |
-| `origin/codex/final-integration` | branch is ahead 4; not pushed this round |
+| `origin/main` | `bd3ba53` (fast-forward `5fa6cb6..bd3ba53`) |
+| `origin/codex/final-integration` | `bd3ba53` (fast-forward `6b95908..bd3ba53`) |
+| Push | `git push origin HEAD` then `git push origin HEAD:main`. No force-push, reset, clean, rebase, or hook skip. |
 
-Old `piano` / `codex/chords-b1` worktrees were not used. No reset, clean, rebase, autostash, push, or deploy.
+Old `piano` / `codex/chords-b1` worktrees were not used.
 
-## Protection and integration (this unlock round)
+## Protection and integration
 
 Out-of-repo backup: `C:\Users\Admin\Documents\viviyang_github\_checkpoints\pianogrid-t11-unlock-2026-09-19T211500+0800`
 
@@ -25,13 +25,12 @@ Out-of-repo backup: `C:\Users\Admin\Documents\viviyang_github\_checkpoints\piano
 |---|---|
 | `430579d` | Checkpoint 1: A/B chord browse + Task 11 evidence |
 | `f80084b` | Checkpoint 2: leftover check screenshots so merge could proceed |
-| `e00ae6e` | Local `--no-ff` merge of approved eight-page TDH only. No Task 11 copy. |
+| `e00ae6e` | Local `--no-ff` merge of approved eight-page TDH only |
+| `bd3ba53` | Task 11 apply; production Git SHA |
 
-`git fetch origin` after merge still showed `origin/main` exactly `5fa6cb6`. No extra upstream commits were pulled in.
+## Protected eight pages (live HTML 2026-09-19T14:16:45.297Z)
 
-## Protected eight pages (from real upstream diff, verified after merge + Task 11 apply)
-
-Local production HTML at `http://127.0.0.1:3128` matches the approved `5fa6cb6` Title/H1:
+Live `https://pianogrid.com` Title/H1 still match the approved `5fa6cb6` values:
 
 | URL | Title | H1 |
 |---|---|---|
@@ -48,4 +47,13 @@ Task 11 `CHORD_DETAIL_SEO_COPY` is spread first in `SEO_COPY`; these eight expli
 
 ## URL / index baseline (unchanged)
 
-Working-tree `PUBLIC_ROUTES` equals `e00ae6e:src/lib/site-routes.ts`: **206** public routes; chord module **158** = 145 detail + 9 family + 4 structure. No URL added, removed, or replaced. Canonical paths still equal the route. Robots still `index,follow` on checked pages.
+`PUBLIC_ROUTES` still equals `e00ae6e:src/lib/site-routes.ts`: **206** public routes; chord module **158** = 145 detail + 9 family + 4 structure. Live sitemap has the same 206 URLs, including `/chords/b-7` and `/chords/f-sharp-madd9`. Canonical paths still equal the route. Checked live pages still emit `index,follow`. `robots.txt` still allows `/` and points at `https://pianogrid.com/sitemap.xml`.
+
+## Production mapping
+
+| Layer | ID |
+|---|---|
+| Apply / production git | `bd3ba53` |
+| Vercel project | `piano-grid` / `prj_BrqhsQv8NcmPj0G2YJJ8AV70865s` |
+| This production deploy | `dpl_5T154PtaD8FjXUMPFpsQcdwwvhKP` Ready; target production; aliases `pianogrid.com` |
+| Previous Ready production | `dpl_5oVjSPciHC6aS9erqth6kGBk29hq` |

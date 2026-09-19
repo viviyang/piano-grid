@@ -1,0 +1,887 @@
+{
+  "checkedAt": "2026-09-19T14:16:45.297Z",
+  "origin": "https://pianogrid.com",
+  "deployment": {
+    "id": "dpl_5T154PtaD8FjXUMPFpsQcdwwvhKP",
+    "url": "https://piano-grid-8j1sen40z-weiweis-projects-eb330b65.vercel.app",
+    "git": "bd3ba535378c1be6cca69f4afc5800e66331d0b7",
+    "branch": "main"
+  },
+  "ok": true,
+  "failed": [],
+  "results": [
+    {
+      "name": "/chords/b-7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/b-7 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/b-7 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/b-7"
+    },
+    {
+      "name": "/chords/b-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/b-minor robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/b-minor self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/b-minor"
+    },
+    {
+      "name": "/chords/d-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/d-minor robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/d-minor self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/d-minor"
+    },
+    {
+      "name": "/chords/e-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/e-minor robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/e-minor self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/e-minor"
+    },
+    {
+      "name": "/chords/g-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/g-minor robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/g-minor self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/g-minor"
+    },
+    {
+      "name": "/keyboard-notes/labeled 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/keyboard-notes/labeled robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/keyboard-notes/labeled self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/keyboard-notes/labeled"
+    },
+    {
+      "name": "/songs 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/songs robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/songs self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/songs"
+    },
+    {
+      "name": "/songs/easy 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/songs/easy robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/songs/easy self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/songs/easy"
+    },
+    {
+      "name": "/guide/read-sheet-music 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/guide/read-sheet-music robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/guide/read-sheet-music self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/guide/read-sheet-music"
+    },
+    {
+      "name": "/chords 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords"
+    },
+    {
+      "name": "/chords/c-maj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/c-maj7 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-maj7 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-maj7"
+    },
+    {
+      "name": "/chords/c-m7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/c-m7 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-m7 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-m7"
+    },
+    {
+      "name": "/chords/b-m7-flat5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/b-m7-flat5 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/b-m7-flat5 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/b-m7-flat5"
+    },
+    {
+      "name": "/chords/c-sus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/c-sus2 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-sus2 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-sus2"
+    },
+    {
+      "name": "/chords/c-sus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/c-sus4 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-sus4 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-sus4"
+    },
+    {
+      "name": "/chords/d-flat-7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/d-flat-7 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/d-flat-7 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/d-flat-7"
+    },
+    {
+      "name": "/chords/f-sharp-maj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/f-sharp-maj7 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/f-sharp-maj7 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/f-sharp-maj7"
+    },
+    {
+      "name": "/chords/seventh 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/seventh robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/seventh self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/seventh"
+    },
+    {
+      "name": "/chords/c-add9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/c-add9 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/c-add9 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/c-add9"
+    },
+    {
+      "name": "/chords/f-sharp-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "/chords/f-sharp-madd9 robots index,follow",
+      "passed": true,
+      "detail": "index, follow"
+    },
+    {
+      "name": "/chords/f-sharp-madd9 self-canonical",
+      "passed": true,
+      "detail": "https://pianogrid.com/chords/f-sharp-madd9"
+    },
+    {
+      "name": "robots.txt 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "robots.txt sitemap line",
+      "passed": true,
+      "detail": "User-Agent: * Allow: / Sitemap: https://pianogrid.com/sitemap.xml "
+    },
+    {
+      "name": "B7 title",
+      "passed": true,
+      "detail": "B7 Chord: Piano Notes, Inversions & Sound | PianoGrid"
+    },
+    {
+      "name": "B7 h1",
+      "passed": true,
+      "detail": "B7 Chord"
+    },
+    {
+      "name": "B7 description",
+      "passed": true,
+      "detail": "Learn the B7 chord on piano: B, D♯, F♯ and A. See keyboard diagrams, explore all three inversions, hear the chord and practice finding its notes."
+    },
+    {
+      "name": "B7 brand once",
+      "passed": true,
+      "detail": "B7 Chord: Piano Notes, Inversions & Sound | PianoGrid"
+    },
+    {
+      "name": "/chords/b-minor protected title",
+      "passed": true,
+      "detail": "B Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid"
+    },
+    {
+      "name": "/chords/b-minor protected h1",
+      "passed": true,
+      "detail": "B Minor Chord"
+    },
+    {
+      "name": "/chords/d-minor protected title",
+      "passed": true,
+      "detail": "D Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid"
+    },
+    {
+      "name": "/chords/d-minor protected h1",
+      "passed": true,
+      "detail": "D Minor Chord"
+    },
+    {
+      "name": "/chords/e-minor protected title",
+      "passed": true,
+      "detail": "E Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid"
+    },
+    {
+      "name": "/chords/e-minor protected h1",
+      "passed": true,
+      "detail": "E Minor Chord"
+    },
+    {
+      "name": "/chords/g-minor protected title",
+      "passed": true,
+      "detail": "G Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid"
+    },
+    {
+      "name": "/chords/g-minor protected h1",
+      "passed": true,
+      "detail": "G Minor Chord"
+    },
+    {
+      "name": "/keyboard-notes/labeled protected title",
+      "passed": true,
+      "detail": "Piano Keyboard Keys Labeled – Note Names & Layout | PianoGrid"
+    },
+    {
+      "name": "/keyboard-notes/labeled protected h1",
+      "passed": true,
+      "detail": "Piano Keyboard Keys Labeled"
+    },
+    {
+      "name": "/songs protected title",
+      "passed": true,
+      "detail": "Piano Songs to Learn – Browse by Difficulty & Style | PianoGrid"
+    },
+    {
+      "name": "/songs protected h1",
+      "passed": true,
+      "detail": "Piano Songs to Learn"
+    },
+    {
+      "name": "/songs/easy protected title",
+      "passed": true,
+      "detail": "Easy Piano Songs for Beginners – Songs to Learn | PianoGrid"
+    },
+    {
+      "name": "/songs/easy protected h1",
+      "passed": true,
+      "detail": "Easy Piano Songs for Beginners"
+    },
+    {
+      "name": "/guide/read-sheet-music protected title",
+      "passed": true,
+      "detail": "How to Read Sheet Music for Piano – Beginner Guide | PianoGrid"
+    },
+    {
+      "name": "/guide/read-sheet-music protected h1",
+      "passed": true,
+      "detail": "How to Read Sheet Music for Piano"
+    },
+    {
+      "name": "/chords/c-maj7 live title matches applied CSV",
+      "passed": true,
+      "detail": "Cmaj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid | csv=Cmaj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/c-maj7 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "Cmaj7 Chord"
+    },
+    {
+      "name": "/chords/c-maj7 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "/chords/c-m7 live title matches applied CSV",
+      "passed": true,
+      "detail": "Cm7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid | csv=Cm7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/c-m7 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "Cm7 Chord"
+    },
+    {
+      "name": "/chords/c-m7 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "/chords/b-m7-flat5 live title matches applied CSV",
+      "passed": true,
+      "detail": "B Half-Diminished Chord (Bm7♭5): Piano Notes, Inversions, Sound & PDF | csv=B Half-Diminished Chord (Bm7♭5): Piano Notes, Inversions, Sound & PDF"
+    },
+    {
+      "name": "/chords/b-m7-flat5 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "B Half-Diminished Chord (Bm7♭5)"
+    },
+    {
+      "name": "/chords/b-m7-flat5 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "/chords/c-sus2 live title matches applied CSV",
+      "passed": true,
+      "detail": "Csus2 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid | csv=Csus2 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/c-sus2 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "Csus2 Chord"
+    },
+    {
+      "name": "/chords/c-sus2 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "/chords/c-sus4 live title matches applied CSV",
+      "passed": true,
+      "detail": "Csus4 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid | csv=Csus4 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/c-sus4 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "Csus4 Chord"
+    },
+    {
+      "name": "/chords/c-sus4 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "/chords/d-flat-7 live title matches applied CSV",
+      "passed": true,
+      "detail": "D♭7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid | csv=D♭7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/d-flat-7 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "D♭7 Chord"
+    },
+    {
+      "name": "/chords/d-flat-7 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "/chords/f-sharp-maj7 live title matches applied CSV",
+      "passed": true,
+      "detail": "F♯maj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid | csv=F♯maj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid"
+    },
+    {
+      "name": "/chords/f-sharp-maj7 live h1 matches applied CSV",
+      "passed": true,
+      "detail": "F♯maj7 Chord"
+    },
+    {
+      "name": "/chords/f-sharp-maj7 applied true",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "seventh family not B7 detail label",
+      "passed": true,
+      "detail": "Seventh Piano Chords"
+    },
+    {
+      "name": "seventh title still family",
+      "passed": true,
+      "detail": "Seventh Piano Chords: 7, Maj7, Min7 & Half-Diminished"
+    },
+    {
+      "name": "c-add9 title matches CSV keep",
+      "passed": true,
+      "detail": "Cadd9 Piano Chord: Notes, Voicings & Practice | PianoGrid"
+    },
+    {
+      "name": "c-add9 h1 matches CSV keep",
+      "passed": true,
+      "detail": "Cadd9 Piano Chord"
+    },
+    {
+      "name": "c-add9 not applied",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "f-sharp-madd9 not short-label rewritten",
+      "passed": true,
+      "detail": "F♯m(add9) Piano Chord"
+    },
+    {
+      "name": "f-sharp-madd9 matches CSV keep",
+      "passed": true,
+      "detail": "F♯m(add9) Piano Chord"
+    },
+    {
+      "name": "hub title present",
+      "passed": true,
+      "detail": "Piano Chord Chart: Notes, Diagrams & Sound | PianoGrid | Piano Chord Chart"
+    },
+    {
+      "name": "sitemap 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "sitemap URLs match PUBLIC_ROUTES",
+      "passed": true,
+      "detail": "sitemap=206 routes=206 missing= extra="
+    },
+    {
+      "name": "sitemap includes b-7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sitemap includes f-sharp-madd9",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "pages": {
+    "/chords/b-7": {
+      "status": 200,
+      "title": "B7 Chord: Piano Notes, Inversions & Sound | PianoGrid",
+      "description": "Learn the B7 chord on piano: B, D♯, F♯ and A. See keyboard diagrams, explore all three inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/b-7",
+      "h1": "B7 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::mlcsk-1789827406172-65021da1d3bc",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/b-minor": {
+      "status": 200,
+      "title": "B Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid",
+      "description": "Learn the B minor chord on piano, including the notes B–D–F♯, fingering, keyboard positions, root position, and inversions.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/b-minor",
+      "h1": "B Minor Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::vmcbq-1789827406723-91e8b4df02d1",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/d-minor": {
+      "status": 200,
+      "title": "D Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid",
+      "description": "Learn the D minor chord on piano, including the notes D–F–A, fingering, keyboard positions, root position, and inversions.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/d-minor",
+      "h1": "D Minor Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::rs8lv-1789827407002-9d672e629c55",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/chords/e-minor": {
+      "status": 200,
+      "title": "E Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid",
+      "description": "Learn the E minor chord on piano, including the notes E–G–B, fingering, keyboard positions, root position, and inversions.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/e-minor",
+      "h1": "E Minor Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::rs8lv-1789827407450-571d3f09dba0",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/chords/g-minor": {
+      "status": 200,
+      "title": "G Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid",
+      "description": "Learn the G minor chord on piano, including the notes G–B♭–D, fingering, keyboard positions, root position, and inversions.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/g-minor",
+      "h1": "G Minor Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::n5hws-1789827407945-8d4209a63a98",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/keyboard-notes/labeled": {
+      "status": 200,
+      "title": "Piano Keyboard Keys Labeled – Note Names & Layout | PianoGrid",
+      "description": "See piano keyboard keys labeled with their note names. Learn the repeating A–G pattern, black and white keys, and how notes are arranged across the keyboard.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/keyboard-notes/labeled",
+      "h1": "Piano Keyboard Keys Labeled",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::n5hws-1789827408473-eae0101a7e29",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/songs": {
+      "status": 200,
+      "title": "Piano Songs to Learn – Browse by Difficulty & Style | PianoGrid",
+      "description": "Find piano songs to learn and practice. Browse songs by difficulty, notes, chords, and playing level, from beginner-friendly pieces to more challenging music.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/songs",
+      "h1": "Piano Songs to Learn",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::7njh6-1789827409328-e381d29d3db2",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/songs/easy": {
+      "status": 200,
+      "title": "Easy Piano Songs for Beginners – Songs to Learn | PianoGrid",
+      "description": "Explore easy piano songs for beginners with simple notes, chords, difficulty levels, and practical tips to help you start playing each song.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/songs/easy",
+      "h1": "Easy Piano Songs for Beginners",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::iad1::qczsj-1789827409828-d57757fa4d12",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    "/guide/read-sheet-music": {
+      "status": 200,
+      "title": "How to Read Sheet Music for Piano – Beginner Guide | PianoGrid",
+      "description": "Learn how to read sheet music for piano step by step. Understand the staff, treble and bass clefs, note names, rhythm, and how notes map to piano keys.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/guide/read-sheet-music",
+      "h1": "How to Read Sheet Music for Piano",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::rs8lv-1789827411636-2030fc473a06",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/chords": {
+      "status": 200,
+      "title": "Piano Chord Chart: Notes, Diagrams & Sound | PianoGrid",
+      "description": "Find piano chords by name, root or type. See their notes and keyboard positions, hear examples, and open detailed chord and inversion guides.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords",
+      "h1": "Piano Chord Chart",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::mjppz-1789827412141-520703e448f9",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/c-maj7": {
+      "status": 200,
+      "title": "Cmaj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the Cmaj7 chord on piano: C, E, G and B. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/c-maj7",
+      "h1": "Cmaj7 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::hxfbf-1789827413069-f0388dace7ef",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/c-m7": {
+      "status": 200,
+      "title": "Cm7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the Cm7 chord on piano: C, E♭, G and B♭. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/c-m7",
+      "h1": "Cm7 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::hn76w-1789827413312-a6fb59d544f9",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/b-m7-flat5": {
+      "status": 200,
+      "title": "B Half-Diminished Chord (Bm7♭5): Piano Notes, Inversions, Sound & PDF",
+      "description": "Learn the B Half-Diminished Chord (Bm7♭5) on piano: B, D, F and A. See keyboard diagrams, explore inversions and hear the chord.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/b-m7-flat5",
+      "h1": "B Half-Diminished Chord (Bm7♭5)",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::4shtb-1789827413561-d6f1c4dbcf4c",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/c-sus2": {
+      "status": 200,
+      "title": "Csus2 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the Csus2 chord on piano: C, D and G. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/c-sus2",
+      "h1": "Csus2 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::hcjcv-1789827413815-5c0609b465ca",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/c-sus4": {
+      "status": 200,
+      "title": "Csus4 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the Csus4 chord on piano: C, F and G. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/c-sus4",
+      "h1": "Csus4 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::7njh6-1789827414075-8347c6c1cc8b",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/d-flat-7": {
+      "status": 200,
+      "title": "D♭7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the D♭7 chord on piano: D♭, F, A♭ and C♭. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/d-flat-7",
+      "h1": "D♭7 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::4shtb-1789827414333-272f68d65d35",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/f-sharp-maj7": {
+      "status": 200,
+      "title": "F♯maj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the F♯maj7 chord on piano: F♯, A♯, C♯ and E♯. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/f-sharp-maj7",
+      "h1": "F♯maj7 Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::4shtb-1789827414585-f6cf937ace9a",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/seventh": {
+      "status": 200,
+      "title": "Seventh Piano Chords: 7, Maj7, Min7 & Half-Diminished",
+      "description": "Browse dominant 7th, major 7th, minor 7th and half-diminished piano chords by root. Compare four-note formulas, keyboard diagrams and inversions.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/seventh",
+      "h1": "Seventh Piano Chords",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::7njh6-1789827414843-91730297da4b",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    "/chords/c-add9": {
+      "status": 200,
+      "title": "Cadd9 Piano Chord: Notes, Voicings & Practice | PianoGrid",
+      "description": "Find Cadd9 notes (C, E, G, D), compare two keyboard layouts, hear each one and practise chord tones or an exact voicing.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/c-add9",
+      "h1": "Cadd9 Piano Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::n5hws-1789827415339-b1e77773f7ef",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/chords/f-sharp-madd9": {
+      "status": 200,
+      "title": "F♯m(add9) Piano Chord: Notes, Voicings & Practice | PianoGrid",
+      "description": "Find F♯m(add9) notes (F♯, A, C♯, G♯), compare two keyboard layouts, hear each one and practise chord tones or an exact voicing.",
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/f-sharp-madd9",
+      "h1": "F♯m(add9) Piano Chord",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/html; charset=utf-8",
+        "x-vercel-id": "sfo1::n5hws-1789827416059-a4ecaf701e6e",
+        "x-vercel-cache": "PRERENDER"
+      }
+    },
+    "/robots.txt": {
+      "status": 200,
+      "text": "User-Agent: *\nAllow: /\n\nSitemap: https://pianogrid.com/sitemap.xml\n",
+      "headers": {
+        "x-robots-tag": null,
+        "content-type": "text/plain; charset=utf-8",
+        "x-vercel-id": "sfo1::jwxc5-1789827416573-2f61f8b14ecc",
+        "x-vercel-cache": "MISS"
+      }
+    }
+  },
+  "sitemap": {
+    "count": 206,
+    "publicRoutes": 206,
+    "missing": [],
+    "extra": []
+  }
+}

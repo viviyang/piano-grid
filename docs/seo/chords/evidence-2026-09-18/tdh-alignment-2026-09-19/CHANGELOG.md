@@ -1,14 +1,14 @@
-# CHANGELOG — applied name/TDH alignment (local, not published)
+# CHANGELOG — applied name/TDH alignment (published)
 
-`execution_state=APPLIED_LOCAL` for 71 same-entity rows. `applied=true` only for those rows. Working tree only; no Task 11 commit.
+`execution_state=APPLIED_LOCAL` remains the CSV row marker for the 71 same-entity rows (`applied=true`). Those rows are now live on `https://pianogrid.com` as of production deploy `dpl_5T154PtaD8FjXUMPFpsQcdwwvhKP` / git `bd3ba53`. Status of the wrap-up is `PUBLISHED_VERIFIED`.
 
 Implementation: `src/lib/chord-detail-seo-copy.ts` plus `SEO_COPY` spread in `src/lib/seo-editorial.ts`. Pack JSON music `name` / notes / URLs were not edited. `applyEditorialChordCopy` maps Title/H1/intro/section labels on N1/N2B/N2C models. Breadcrumb and family cards use `editorialHeading(url, …)`.
 
-## `/chords/b-7` (specified copy, applied locally)
+## `/chords/b-7` (specified copy, now live)
 
 Object unchanged: URL `/chords/b-7`, chordId `b-7`, symbol `B7`, formal name `B Dominant Seventh`, notes B D♯ F♯ A. Canonical `https://pianogrid.com/chords/b-7`. Robots `index,follow`.
 
-| Field | Before (pack / pre-apply render) | After (local production HTML) |
+| Field | Before (pack / pre-apply render) | After (live HTML 2026-09-19T14:16:45.297Z) |
 |---|---|---|
 | Title | `B Dominant Seventh Piano Chord (B7): Notes & Inversions` then branded if ≤52 | `B7 Chord: Piano Notes, Inversions & Sound \| PianoGrid` |
 | H1 | `B Dominant Seventh Piano Chord` | `B7 Chord` |
@@ -25,19 +25,20 @@ Object unchanged: URL `/chords/b-7`, chordId `b-7`, symbol `B7`, formal name `B 
 
 Brand suffix appears once. `intent_fit` stays `UNCHECKED`.
 
-## Other same-entity rows (70 applied locally)
+## Other same-entity rows (70 also live)
 
 Seed 72 minus HOLD `/chords/d-flat-m7-flat5` = 71 applied. Direction unchanged from the proposal: Dominant7 `B7 Chord` / `C7 Chord`; Major7 `Cmaj7 Chord`; Minor7 `Cm7 Chord`; Sus2/Sus4 `Csus2 Chord` / `Csus4 Chord`; Half-diminished spoken name first, e.g. `B Half-Diminished Chord (Bm7♭5)`.
 
 Title tails still use verified capabilities only. `COPY_ARTICLE_CASE` theory lines on applied seventh pages use `The {symbol} chord is…`. N2C fingering engineering sentence replaced on applied pages only.
 
-CSV `current_*` after `--html` is stamped from local production HTML, including unchanged pages whose pack JSON differs from runtime (N2B description correction, original-nine title branding).
+CSV `current_*` after local `--html` is stamped from local production HTML, including unchanged pages whose pack JSON differs from runtime (N2B description correction, original-nine title branding). Live acceptance URLs were checked at 2026-09-19T14:16:45.297Z and matched those `current_*` values. Historical 2026-09-18 HTML notes in `GSC_REVIEW.csv` were not overwritten.
 
 ## Explicitly not changed
 
 - Five HOLD URLs: `/chords/d-flat-m7-flat5`, `/chords/f-sharp-madd9`, `/chords/a-flat-madd9`, `/chords/b-flat-madd9`, `/chords/d-flat-madd9`.
 - Four upstream-protected details and four non-detail pages listed in BASELINE.md.
 - Seventh family and other `approved=false` TDH_REVIEW_QUEUE candidates.
+- `/chords/c-add9` kept `Cadd9 Piano Chord`.
 - URLs, canonical, robots, indexability, chordId, notes, inversions, audio MIDI, print spellings, PDF paths.
 - Formal music `name` fields in pack JSON.
 
