@@ -5,6 +5,7 @@ import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family
 import { finalizeChordDetailModel, type ChordDetailRoute } from './chord-detail-model';
 import { readMaster } from './site-content';
 import { isPublicRoute } from './site-routes';
+import { SEO_COPY, editorialHeading, editorialSectionHeading } from './seo-editorial';
 
 const packageRoot = resolve('docs/pianogrid-chords-next-expansion');
 const detailRoot = resolve(packageRoot, '04_details_next');
@@ -107,10 +108,31 @@ export function getExpansionChordDetail(url: (typeof EXPANSION_DETAIL_ROUTES)[nu
   blocks.push({ block_id: `${slug}-print`, content: empty('Print this chord reference') });
   blocks.push({ block_id: `${slug}-related`, content: { ...empty('Related chord references'), links: [...related.values()] } });
   const byId = Object.fromEntries(blocks.map(block => [block.block_id, block]));
-  return finalizeChordDetailModel({
+  return applyEditorialChordCopy(finalizeChordDetailModel({
     metadata: { title: raw.title, description: raw.description, canonical_path: url }, data, blocks, byId,
     answer: raw.content.direct_answer, introduction: [], fingeringExamples: [], sources: [], practice,
     searchSections: blocks.filter(block => block.block_id !== `${slug}-intro`).map(block => ({ id: block.block_id, heading: block.content.heading, text: JSON.stringify(block.content) })),
     tocItems: [{ id: data.toolId, label: 'Chord & positions' }, ...blocks.filter(block => ![`${slug}-intro`, data.toolId].includes(block.block_id)).map(block => ({ id: block.block_id, label: block.content.heading }))],
-  });
+  }));
+}
+
+function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailModel {
+  const url = model.data.url;
+  if (!SEO_COPY[url]) return model;
+  const heading = editorialHeading(url, model.data.heading);
+  const mapHeading = (value: string) => editorialSectionHeading(url, value);
+  const toolHeading = mapHeading(model.data.toolHeading);
+  const blocks = model.blocks.map(block => ({
+    ...block,
+    content: { ...block.content, heading: mapHeading(block.content.heading) },
+  }));
+  return {
+    ...model,
+    data: { ...model.data, heading, toolHeading },
+    blocks,
+    byId: Object.fromEntries(blocks.map(block => [block.block_id, block])),
+    searchSections: model.searchSections.map(section => ({ ...section, heading: mapHeading(section.heading) })),
+    tocItems: model.tocItems.map(item => ({ ...item, label: mapHeading(item.label) })),
+    practice: { ...model.practice, heading: mapHeading(model.practice.heading) },
+  };
 }

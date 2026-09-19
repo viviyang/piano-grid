@@ -1,4 +1,5 @@
 import { getChartData, getLayouts } from './keyboard-content';
+import { editorialHeading, editorialSectionHeading } from './seo-editorial';
 import { readAuthorizedPage } from './site-content';
 import type { ExerciseBar, GuideBlock, GuideCenterData, GuideModel, GuideURL, ReadingExercise, ReadingGuideData } from './guide-types';
 import { plannedLinksFor } from './support-content';
@@ -32,11 +33,11 @@ function model(url: GuideURL, page: Raw): GuideModel {
   const isBeginnerGuide = url === '/guide';
   return {
     url,
-    title: isBeginnerGuide ? beginnerGuideCopy.heading : requiredString(page.title, `${url}.title`),
+    title: editorialHeading(url, isBeginnerGuide ? beginnerGuideCopy.heading : requiredString(page.title, `${url}.title`)),
     description: requiredString(page.description, `${url}.description`),
     blocks: page.blocks.map((block: Raw, index: number): GuideBlock => ({
       id: blockIDs[url][index],
-      heading: requiredString(block.heading, `${url}.block.heading`),
+      heading: editorialSectionHeading(url, requiredString(block.heading, `${url}.block.heading`)),
       body: requiredString(block.body, `${url}.block.body`),
       sourceIDs: Array.isArray(block.source_ids) ? block.source_ids : [],
     })),

@@ -7,8 +7,8 @@ const base = process.env.PIANO_BASE_URL || 'http://127.0.0.1:3112';
 const out = process.env.PIANO_CHECK_OUT || 'checks/songs-sheet-v2';
 const routes = ['/songs','/songs/easy','/sheet-music','/sheet-music/easy','/sheet-music/beginner','/sheet-music/hot-cross-buns','/sheet-music/twinkle-twinkle-little-star','/sheet-music/ode-to-joy'];
 const expected = {
-  '/songs': ['Piano Songs: Choose Your Next Piece','Piano Songs: Choose a Version to Practice | PianoGrid'],
-  '/songs/easy': ['Easy Piano Songs for Beginners','Easy Piano Songs & a 10-Minute Practice Plan | PianoGrid'],
+  '/songs': ['Piano Songs to Learn','Piano Songs to Learn – Browse by Difficulty & Style | PianoGrid'],
+  '/songs/easy': ['Easy Piano Songs for Beginners','Easy Piano Songs for Beginners – Songs to Learn | PianoGrid'],
   '/sheet-music': ['Piano Sheet Music','Piano Sheet Music: Versions and Access | PianoGrid'],
   '/sheet-music/easy': ['Easy Piano Sheet Music','Easy Piano Sheet Music: Check the Edition | PianoGrid'],
   '/sheet-music/beginner': ['Beginner Piano Sheet Music','Beginner Piano Sheet Music: Clear Versions and Access | PianoGrid'],
