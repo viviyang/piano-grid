@@ -3,6 +3,8 @@ import type { NextConfig } from "next";
 // Preserve the project's existing Foundation-stage agent instructions verbatim.
 const nextConfig: NextConfig = {
   agentRules: false,
+  // Family/hub chord pages can exceed the 60s default on a 2-core Vercel worker.
+  staticPageGenerationTimeout: 180,
   // Bounded local verification can build beside an active `.next` dev server.
   distDir: process.env.PIANO_NEXT_DIST_DIR || ".next",
   // Staging score/audio sources are audit inputs, never deployable runtime files.
