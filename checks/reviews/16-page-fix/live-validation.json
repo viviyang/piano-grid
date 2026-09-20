@@ -1,0 +1,1825 @@
+{
+  "executed_at": "2026-09-20T01:44:22.613Z",
+  "base": "http://127.0.0.1:3019",
+  "passed": 327,
+  "failed": 0,
+  "metadataPass": 16,
+  "chordStates": 35,
+  "playwright": {
+    "ran": true,
+    "failed": [],
+    "notes": [
+      "/chords/b-7 play status: Playing chord…",
+      "/chords/b-minor play status: Playing chord…",
+      "songs Twinkle matches: 0"
+    ]
+  },
+  "results": [
+    {
+      "name": "/chords/b-7 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 title",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 description",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 title",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 description",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 title",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 description",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 title",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 description",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 title",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 description",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor title",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor description",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor title",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor description",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor title",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor description",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor title",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor description",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor title",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor description",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor h1",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor intro",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor robots",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor canonical",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor no double brand",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music 200",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music title",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music description",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music h1",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music intro",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music robots",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music canonical",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music no double brand",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy 200",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy title",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy description",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy h1",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy intro",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy robots",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy canonical",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy no double brand",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/songs 200",
+      "passed": true
+    },
+    {
+      "name": "/songs title",
+      "passed": true
+    },
+    {
+      "name": "/songs description",
+      "passed": true
+    },
+    {
+      "name": "/songs h1",
+      "passed": true
+    },
+    {
+      "name": "/songs intro",
+      "passed": true
+    },
+    {
+      "name": "/songs robots",
+      "passed": true
+    },
+    {
+      "name": "/songs canonical",
+      "passed": true
+    },
+    {
+      "name": "/songs no double brand",
+      "passed": true
+    },
+    {
+      "name": "/songs no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/songs no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled 200",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled title",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled description",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled h1",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled intro",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled robots",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled canonical",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled no double brand",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy 200",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy title",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy description",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy h1",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy intro",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy robots",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy canonical",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy no double brand",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner 200",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner title",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner description",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner h1",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner intro",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner robots",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner canonical",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner no double brand",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner no N2C codes",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner no fingering in title",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor no fingering H2",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor playing heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor by-key label",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor no fingering H2",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor playing heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor by-key label",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor no fingering H2",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor playing heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor by-key label",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor no fingering H2",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor playing heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor by-key label",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor position count",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor inversion rows",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor related heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor no fingering H2",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor playing heading",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor finger note",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor play control",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor pdf link",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor no by-key invention",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor by-key label",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/a-7 PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-7 PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-7 PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-7 PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-minor PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/d-minor PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-minor PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-minor PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "guide new teaching headings",
+      "passed": true
+    },
+    {
+      "name": "guide rest example",
+      "passed": true
+    },
+    {
+      "name": "guide C4 match",
+      "passed": true
+    },
+    {
+      "name": "guide PDF href",
+      "passed": true
+    },
+    {
+      "name": "guide PDF bytes",
+      "passed": true
+    },
+    {
+      "name": "songs dropped Style promise",
+      "passed": true
+    },
+    {
+      "name": "songs teaser not full cards",
+      "passed": true
+    },
+    {
+      "name": "songs catalog heading",
+      "passed": true
+    },
+    {
+      "name": "easy songbook compact 50 titles",
+      "passed": true
+    },
+    {
+      "name": "easy songbook one publisher button",
+      "passed": true
+    },
+    {
+      "name": "easy no fake play/download for songbook",
+      "passed": true
+    },
+    {
+      "name": "easy sheet comparison first",
+      "passed": true
+    },
+    {
+      "name": "beginner sheet first-piece heading",
+      "passed": true
+    },
+    {
+      "name": "sheet locked originals hidden",
+      "passed": true
+    },
+    {
+      "name": "sheet reading help",
+      "passed": true
+    },
+    {
+      "name": "sheet no source-ledger copy",
+      "passed": true
+    },
+    {
+      "name": "labeled explain headings",
+      "passed": true
+    },
+    {
+      "name": "labeled print-only markup present",
+      "passed": true
+    },
+    {
+      "name": "labeled PDF /reference/generated/keyboard-notes/labeled-88-octaves.pdf",
+      "passed": true
+    },
+    {
+      "name": "labeled PDF /reference/generated/keyboard-notes/labeled-88-letters.pdf",
+      "passed": true
+    },
+    {
+      "name": "labeled PDF /reference/generated/keyboard-notes/labeled-61-octaves.pdf",
+      "passed": true
+    },
+    {
+      "name": "labeled PDF /reference/generated/keyboard-notes/labeled-61-letters.pdf",
+      "passed": true
+    },
+    {
+      "name": "control /chords/c-major 200",
+      "passed": true
+    },
+    {
+      "name": "control /chords/c-major related not rewritten",
+      "passed": true
+    },
+    {
+      "name": "control /chords/c-major sources label",
+      "passed": true
+    },
+    {
+      "name": "control /chords/a-minor 200",
+      "passed": true
+    },
+    {
+      "name": "control /guide 200",
+      "passed": true
+    },
+    {
+      "name": "control /sheet-music keeps preserved mapping",
+      "passed": true
+    },
+    {
+      "name": "control /keyboard-notes/chart 200",
+      "passed": true
+    },
+    {
+      "name": "control /chords/c-7 related not rewritten",
+      "passed": true
+    },
+    {
+      "name": "sitemap still contains 16 URLs",
+      "passed": true
+    },
+    {
+      "name": "robots unchanged allow",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 live position radios",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 live voicing 0 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 live voicing 1 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 live voicing 2 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 live voicing 3 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 play clicked",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 build wrong feedback",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 build reveal then check",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 print-only hidden on screen",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor live position radios",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor live voicing 0 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor live voicing 1 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor live voicing 2 notes",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor play clicked",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor build wrong feedback",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor build reveal then check",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor print-only hidden on screen",
+      "passed": true
+    },
+    {
+      "name": "guide reveal answers",
+      "passed": true
+    },
+    {
+      "name": "songs search filters",
+      "passed": true
+    },
+    {
+      "name": "easy plan present",
+      "passed": true
+    },
+    {
+      "name": "easy sheet no locked cards",
+      "passed": true
+    },
+    {
+      "name": "beginner sheet no locked cards",
+      "passed": true
+    },
+    {
+      "name": "labeled print-only hidden on screen",
+      "passed": true
+    },
+    {
+      "name": "labeled heading before keyboard",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-7 overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/chords/b-minor overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/guide/read-sheet-music overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/songs overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/songs overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/songs/easy overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/easy overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/sheet-music/beginner overflow 390",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/labeled overflow 390",
+      "passed": true
+    }
+  ],
+  "details": {
+    "/chords/b-7": {
+      "status": 200,
+      "title": "B7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the B7 chord on piano: B, D♯, F♯ and A. See the keyboard diagram and three inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "B7 Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/b-7",
+      "ogTitle": "B7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "intro": "B7, also called B dominant seventh, contains B, D♯, F♯ and A. Use the piano diagram to find the notes and compare root position with three inversions.",
+      "h2": [
+        "Search this page",
+        "B7 Piano Notes and Keyboard Diagram",
+        "How the B7 Chord Is Built",
+        "B7 Compared with B Major",
+        "B7 Chord Inversions",
+        "Fingering is not provided for this reference",
+        "Questions About B7",
+        "Build B7 on the Keyboard",
+        "Print the B7 Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/a-7": {
+      "status": 200,
+      "title": "A7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the A7 chord on piano: A, C♯, E and G. See the keyboard diagram and three inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "A7 Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/a-7",
+      "ogTitle": "A7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "intro": "A7, also called A dominant seventh, contains A, C♯, E and G. Use the piano diagram to find the notes and compare root position with three inversions.",
+      "h2": [
+        "Search this page",
+        "A7 Piano Notes and Keyboard Diagram",
+        "How the A7 Chord Is Built",
+        "A7 Compared with A Major",
+        "A7 Chord Inversions",
+        "Fingering is not provided for this reference",
+        "Questions About A7",
+        "Build A7 on the Keyboard",
+        "Print the A7 Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/g-7": {
+      "status": 200,
+      "title": "G7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the G7 chord on piano: G, B, D and F. See the keyboard diagram and three inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "G7 Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/g-7",
+      "ogTitle": "G7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "intro": "G7, also called G dominant seventh, contains G, B, D and F. Use the piano diagram to find the notes and compare root position with three inversions.",
+      "h2": [
+        "Search this page",
+        "G7 piano notes and keyboard diagram",
+        "How is the G7 chord built?",
+        "G7 Compared with G Major",
+        "G7 inversions",
+        "Fingering is not provided for this reference",
+        "Questions About G7",
+        "Build G7 on the Keyboard",
+        "Print the G7 Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/d-7": {
+      "status": 200,
+      "title": "D7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the D7 chord on piano: D, F♯, A and C. See the keyboard diagram and three inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "D7 Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/d-7",
+      "ogTitle": "D7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "intro": "D7, also called D dominant seventh, contains D, F♯, A and C. Use the piano diagram to find the notes and compare root position with three inversions.",
+      "h2": [
+        "Search this page",
+        "D7 Piano Notes and Keyboard Diagram",
+        "How the D7 Chord Is Built",
+        "D7 Compared with D Major",
+        "D7 Chord Inversions",
+        "Fingering is not provided for this reference",
+        "Questions About D7",
+        "Build D7 on the Keyboard",
+        "Print the D7 Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/e-7": {
+      "status": 200,
+      "title": "E7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "description": "Learn the E7 chord on piano: E, G♯, B and D. See the keyboard diagram and three inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "E7 Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/e-7",
+      "ogTitle": "E7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "intro": "E7, also called E dominant seventh, contains E, G♯, B and D. Use the piano diagram to find the notes and compare root position with three inversions.",
+      "h2": [
+        "Search this page",
+        "E7 Piano Notes and Keyboard Diagram",
+        "How the E7 Chord Is Built",
+        "E7 Compared with E Major",
+        "E7 Chord Inversions",
+        "Fingering is not provided for this reference",
+        "Questions About E7",
+        "Build E7 on the Keyboard",
+        "Print the E7 Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/f-minor": {
+      "status": 200,
+      "title": "F Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "description": "Learn the F minor chord on piano: F, A♭ and C. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "F Minor Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/f-minor",
+      "ogTitle": "F Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "intro": "The F minor chord (Fm) contains F, A♭ and C. Use the piano diagram to find the notes and compare root position with two inversions.",
+      "h2": [
+        "Search this page",
+        "F Minor Chord Notes and Keyboard Diagram",
+        "How the F Minor Chord Is Built",
+        "F Minor Chord Inversions",
+        "Playing the F Minor Chord",
+        "Questions About F Minor",
+        "Build Fm on the Keyboard",
+        "Print the F Minor Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/b-minor": {
+      "status": 200,
+      "title": "B Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "description": "Learn the B minor chord on piano: B, D and F♯. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "B Minor Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/b-minor",
+      "ogTitle": "B Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "intro": "The B minor chord (Bm) contains B, D and F♯. Use the piano diagram to find the notes and compare root position with two inversions.",
+      "h2": [
+        "Search this page",
+        "B Minor Chord Notes and Keyboard Diagram",
+        "How the B Minor Chord Is Built",
+        "B Minor Chord Inversions",
+        "Playing the B Minor Chord",
+        "Questions About B Minor",
+        "Build Bm on the Keyboard",
+        "Print the B Minor Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/d-minor": {
+      "status": 200,
+      "title": "D Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "description": "Learn the D minor chord on piano: D, F and A. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "D Minor Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/d-minor",
+      "ogTitle": "D Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "intro": "The D minor chord (Dm) contains D, F and A. Use the piano diagram to find the notes and compare root position with two inversions.",
+      "h2": [
+        "Search this page",
+        "D Minor Chord Notes and Keyboard Diagram",
+        "How the D Minor Chord Is Built",
+        "D Minor Chord Inversions",
+        "Playing the D Minor Chord",
+        "Questions About D Minor",
+        "Build Dm on the Keyboard",
+        "Print the D Minor Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/e-minor": {
+      "status": 200,
+      "title": "E Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "description": "Learn the E minor chord on piano: E, G and B. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "E Minor Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/e-minor",
+      "ogTitle": "E Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "intro": "The E minor chord (Em) contains E, G and B. Use the piano diagram to find the notes and compare root position with two inversions.",
+      "h2": [
+        "Search this page",
+        "E Minor Chord Notes and Keyboard Diagram",
+        "How the E Minor Chord Is Built",
+        "E Minor Chord Inversions",
+        "Playing the E Minor Chord",
+        "Questions About E Minor",
+        "Build Em on the Keyboard",
+        "Print the E Minor Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/chords/g-minor": {
+      "status": 200,
+      "title": "G Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "description": "Learn the G minor chord on piano: G, B♭ and D. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.",
+      "h1": [
+        "G Minor Chord"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/chords/g-minor",
+      "ogTitle": "G Minor Chord – Piano Notes & Inversions | PianoGrid",
+      "intro": "The G minor chord (Gm) contains G, B♭ and D. Use the piano diagram to find the notes and compare root position with two inversions.",
+      "h2": [
+        "Search this page",
+        "G Minor Chord Notes and Keyboard Diagram",
+        "How the G Minor Chord Is Built",
+        "G Minor Chord Inversions",
+        "Playing the G Minor Chord",
+        "Questions About G Minor",
+        "Build Gm on the Keyboard",
+        "Print the G Minor Chord Reference",
+        "Related Chords and Practice",
+        "Root position"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/guide/read-sheet-music": {
+      "status": 200,
+      "title": "How to Read Sheet Music for Piano – Beginner Guide | PianoGrid",
+      "description": "Learn how to read sheet music for piano with staff and keyboard examples, note values, rests, and a short reading exercise with answers.",
+      "h1": [
+        "How to Read Sheet Music for Piano"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/guide/read-sheet-music",
+      "ogTitle": "How to Read Sheet Music for Piano – Beginner Guide | PianoGrid",
+      "intro": "Start with the clef, find the note on the staff, match it to a piano key, and count its length. Then put the steps together in a short reading exercise.",
+      "h2": [
+        "Piano Sheet Music Basics",
+        "Treble Clef and Bass Clef",
+        "How to Read Notes on the Staff",
+        "Match Written Notes to Piano Keys",
+        "Count Note Values and Rests",
+        "Read Time Signatures and Accidentals",
+        "Read the Grand Staff",
+        "Practice Reading Piano Sheet Music",
+        "Piano Starter and Reading Pack"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/songs/easy": {
+      "status": 200,
+      "title": "Easy Piano Songs for Beginners – Songs to Learn | PianoGrid",
+      "description": "Choose easy piano songs for beginners, compare specific editions and access options, and use a short practice plan to get started.",
+      "h1": [
+        "Easy Piano Songs for Beginners"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/songs/easy",
+      "ogTitle": "A small plan for your next piano session",
+      "intro": "Choose one piece and one small goal for your next practice session. Compare the named editions below, check how to get the music, and follow a starting plan.",
+      "h2": [
+        "Easy Piano Songs to Start With",
+        "Practice an Easy Piano Song",
+        "Share this plan",
+        "Choose by starting point",
+        "More Songs in a Published Collection",
+        "How to Choose Your First Piano Song",
+        "Choose an easy version you can actually use",
+        "For a child’s first few pieces",
+        "If you want a C-major version",
+        "For adult beginners",
+        "For a gentle piece or a small performance",
+        "Before you commit"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/songs": {
+      "status": 200,
+      "title": "Piano Songs to Learn – Find Your Next Piece | PianoGrid",
+      "description": "Find piano songs to learn, compare skill levels and practice goals, and follow links to learning plans and clearly identified sheet music editions.",
+      "h1": [
+        "Piano Songs to Learn"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/songs",
+      "ogTitle": "Piano Songs to Learn – Find Your Next Piece | PianoGrid",
+      "intro": "Find your next piano piece by comparing the published level, playing goal and access options of a specific edition. For a first session, start with the easy-song selection.",
+      "h2": [
+        "Piano Songs for Beginners",
+        "Choose a Piano Song to Learn",
+        "Choose your next version",
+        "Sad or reflective",
+        "Happy, cool or fun",
+        "Beautiful",
+        "Intermediate",
+        "Types of piece",
+        "Sing and play",
+        "Open the exact edition"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/keyboard-notes/labeled": {
+      "status": 200,
+      "title": "Piano Keyboard Keys Labeled – Note Names & Layout | PianoGrid",
+      "description": "See piano keyboard keys labeled with note names, find middle C, understand black and white keys, and print a reference or practice worksheet.",
+      "h1": [
+        "Piano Keyboard Keys Labeled"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/keyboard-notes/labeled",
+      "ogTitle": "Piano key names: a printable practice pack",
+      "intro": "Find the note names on a piano keyboard, starting with the repeating groups of two and three black keys. Use the labeled layout, then try the white-key worksheet.",
+      "h2": [
+        "Share reference",
+        "A0–B1",
+        "C2–B2",
+        "C3–B3",
+        "C4–B4",
+        "C5–B5",
+        "C6–B6",
+        "C7–C8",
+        "A small pack for your next lesson",
+        "Meet the white keys",
+        "How to use the pack",
+        "Meet the white keys",
+        "Your turn: name the keys",
+        "Check the names together",
+        "A piano-key practice pack",
+        "How the labels work",
+        "Sources",
+        "Choose the layout that matches your keyboard",
+        "White-Key Names",
+        "Label a small section first",
+        "How Notes Repeat Across the Keyboard",
+        "Print a reference you can read"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/sheet-music/easy": {
+      "status": 200,
+      "title": "Easy Piano Sheet Music: Compare Editions | PianoGrid",
+      "description": "Compare easy piano sheet music editions, publisher levels and access options. Find a suitable version and get the score from its publisher.",
+      "h1": [
+        "Easy Piano Sheet Music"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/sheet-music/easy",
+      "ogTitle": "Easy Piano Sheet Music: Compare Editions | PianoGrid",
+      "intro": "Compare easy piano sheet music by the exact edition, publisher level and access format. Open edition details here, then get the score from its publisher.",
+      "h2": [
+        "Compare Easy Piano Sheet Music",
+        "Choose an easy edition",
+        "Compare playing demands",
+        "Check the format and access",
+        "Additional Easy Editions",
+        "Publisher level and playing demands",
+        "Need a first-lesson option?",
+        "Easy editions and access details",
+        "New to Reading Music?"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    },
+    "/sheet-music/beginner": {
+      "status": 200,
+      "title": "Beginner Piano Sheet Music: Where to Start | PianoGrid",
+      "description": "Find beginner piano sheet music with clear edition and access details. Choose a first piece and use note-reading help before you start.",
+      "h1": [
+        "Beginner Piano Sheet Music"
+      ],
+      "robots": "index, follow",
+      "canonical": "https://pianogrid.com/sheet-music/beginner",
+      "ogTitle": "Beginner Piano Sheet Music: Where to Start | PianoGrid",
+      "intro": "Start with one beginner edition and check how to get its score. Use the reading and keyboard references when a note or symbol is unfamiliar.",
+      "h2": [
+        "Choose Your First Sheet Music",
+        "Three beginner editions",
+        "What to check before starting",
+        "Get help with piano notation",
+        "Need Help Reading the Notes?",
+        "More Beginner Editions",
+        "Before you print",
+        "Looking for finger numbers?"
+      ],
+      "flags": {
+        "n2c": false,
+        "ledger": false,
+        "fingeringTitle": false,
+        "styleTitle": false
+      }
+    }
+  },
+  "sitemapCount": 206
+}

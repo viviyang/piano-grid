@@ -38,8 +38,32 @@ export function BeginnerEditionCards({ withPlanAnchor = false }: { withPlanAncho
   );
 }
 
-export function SongsBeginnerTeaser() {
+export function SongsBeginnerTeaser({ compact = false }: { compact?: boolean }) {
   const copy = getB05Copy();
+  if (compact) {
+    return (
+      <section className="pg-song-plan pg-songs-teaser" aria-labelledby="pg-songs-start-heading">
+        <div className="pg-section-lead">
+          <div>
+            <h2 id="pg-songs-start-heading">{copy.songs.sectionTitle}</h2>
+            <p>{copy.songs.sectionBody}</p>
+          </div>
+        </div>
+        <nav className="pg-teaser-actions" aria-label="Song starting points">
+          <a className="am-button am-primary" href="/songs/easy">Start with easy songs</a>
+          <a className="am-button am-secondary" href="#sg-find-heading">Browse piano songs</a>
+        </nav>
+        <ul className="pg-teaser-list">
+          {copy.easy.cards.map((card) => {
+            const evidence = copy.editionEvidence[card.editionKey];
+            if (!evidence) throw new Error(`Missing beginner edition mapping: ${card.editionKey}`);
+            return <li key={card.editionKey}><a href="/songs/easy">{evidence.workTitle}</a><span>{card.reason}</span></li>;
+          })}
+        </ul>
+        <p><a className="am-button am-tertiary" href="/songs/easy#first-10-minutes">Try a 10-minute starting plan</a></p>
+      </section>
+    );
+  }
   return (
     <section className="pg-song-plan pg-songs-teaser" aria-labelledby="pg-songs-start-heading">
       <div className="pg-section-lead">

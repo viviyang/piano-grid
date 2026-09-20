@@ -8,7 +8,7 @@ import { SheetEditionAccess } from './edition-access';
 import { SongResourceCard } from '@/components/songs/resource-card';
 import { canPublishAsset, capabilities, practiceUrl, publicDeploymentContext } from '@/lib/songs-sheet-contracts';
 import { getLaunchExternalViews, getLegacySheetContent, getLockedOriginalViews, getPagePatch, getSongsSheetCatalog } from '@/lib/songs-sheet-content';
-import { editorialHeading } from '@/lib/seo-editorial';
+import { editorialHeading, editorialIntro } from '@/lib/seo-editorial';
 import { getLeadCopy, getPageSeo } from '@/lib/b07-content';
 import type { ArrangementView, SheetMusicURL, SheetSection } from '@/lib/songs-sheet-types';
 import '@/app/chords/a-minor/a-minor.css';
@@ -29,12 +29,13 @@ function JsonLd({ value }: { value: Record<string, unknown> }) {
 function SheetShell({ url, children }: { url: SheetMusicURL; children: ReactNode }) {
   const page = getPagePatch(url);
   const heading = editorialHeading(url, page.h1);
-  const intro = getLeadCopy(url, page.intro);
+  const intro = editorialIntro(url, getLeadCopy(url, page.intro));
+  const schema = url === '/sheet-music/easy' || url === '/sheet-music/beginner' ? { ...page.schema, name: heading, description: intro } : page.schema;
   const crumbs = url === '/sheet-music' ? [{ label: 'Sheet Music' }] : [{ label: 'Sheet Music', href: '/sheet-music' }, { label: heading.replace(' Piano Sheet Music', '') || heading }];
   return <div className="am-page sg-page ss-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Sheet Music"/><main id="main" className="pr-container" tabIndex={-1}>
     <header className="am-page-heading"><PageBreadcrumb items={crumbs}/><h1>{heading}</h1><p className="am-direct-answer">{intro}</p></header>
     {children}
-    <JsonLd value={page.schema}/>
+    <JsonLd value={schema}/>
   </main><SiteFooter url={url}/></div>;
 }
 
@@ -59,7 +60,7 @@ function SheetHubIntent({ url }: { url: SheetMusicURL }) {
           <h2 id={`b07-${section.h2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-h`}>{section.h2}</h2>
           <div className="am-content-body">
             {section.body ? <p>{section.body}</p> : null}
-            {preserved.has(section.h2) ? <p className="ss-preserve-note">The existing collection, filters and edition cards for this page remain below.</p> : null}
+            {preserved.has(section.h2) && url !== '/sheet-music/easy' && url !== '/sheet-music/beginner' ? <p className="ss-preserve-note">The existing collection, filters and edition cards for this page remain below.</p> : null}
             {section.h3?.length ? (
               <ul className="ss-intent-points">
                 {section.h3.map((item) => <li key={item}><strong>{item}</strong></li>)}
@@ -73,6 +74,23 @@ function SheetHubIntent({ url }: { url: SheetMusicURL }) {
       ))}
     </div>
   );
+}
+
+function hasReleasedOriginals() {
+  const catalog = getSongsSheetCatalog();
+  const deployment = publicDeploymentContext();
+  return getLockedOriginalViews().some((view) => {
+    const caps = capabilities(catalog, view.resource.resource_id, deployment);
+    return caps.previewLocal || caps.printLocal || caps.playLocal || caps.tempoAndSegments;
+  });
+}
+
+function ReadingHelp({ heading, includeBeginner = false }: { heading: string; includeBeginner?: boolean }) {
+  return <section className="am-content-section ss-section" id="ss-reading-help" aria-labelledby="ss-reading-help-h"><h2 id="ss-reading-help-h">{heading}</h2><div className="am-content-body">
+    {includeBeginner ? <p><a className="am-button am-tertiary" href="/sheet-music/beginner">Start with beginner sheet music</a></p> : null}
+    <article><h3>Piano Starter and Reading Pack</h3><p>Practise reading notes and counting rhythms before choosing your first piece.</p><a className="am-button am-tertiary" href="/guide/read-sheet-music">Open the reading guide</a></article>
+    <article><h3>Labeled Piano Keyboard and Worksheet</h3><p>Match written note names to keys, then try a short white-key naming worksheet.</p><a className="am-button am-tertiary" href="/keyboard-notes/labeled">Open labeled keyboard</a></article>
+  </div></section>;
 }
 
 function Directory() {
@@ -109,14 +127,20 @@ function OriginalExerciseReleasePanel() {
 function LaunchCards({ url }: { url: SheetMusicURL }) {
   const all = getLaunchExternalViews();
   const views = url === '/sheet-music/hot-cross-buns' ? [all[0]] : url === '/sheet-music/twinkle-twinkle-little-star' ? [all[1]] : url === '/sheet-music/ode-to-joy' ? [all[2]] : all;
-  return <><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning key={view.arrangement.arrangement_id}/>)}</div></>;
+  const selection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
+  return <><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning={url !== '/sheet-music/easy'} compact={url === '/sheet-music/easy'} omitUnverified={selection} key={view.arrangement.arrangement_id}/>)}</div></>;
 }
 
 function PreservedSheetContent({ url }: { url: SheetMusicURL }) {
   const legacy = getLegacySheetContent(url);
   const launchURLs = new Set(getLaunchExternalViews().map((view) => view.resource.provider_url));
   const additional = legacy.resources.filter((resource) => !launchURLs.has(resource.resourceURL));
-  return <section className="ss-preserved" aria-labelledby="ss-preserved-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Preserved approved mapping</p><h2 id="ss-preserved-heading">Original sections and external resources</h2></div><p>{legacy.sections.length ? `The source ledger retains ${legacy.sections.join(', ')} as distinct page sections.` : 'The original exact-version task remains part of this page.'} No listed score or recording is rehosted.</p></div>
+  const selection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
+  const heading = selection ? (url === '/sheet-music/beginner' ? 'More Beginner Editions' : 'Additional Easy Editions') : 'Original sections and external resources';
+  const note = selection
+    ? 'These extra publisher or library references are listed with their access route. PianoGrid does not host the scores or recordings.'
+    : `${legacy.sections.length ? `The source ledger retains ${legacy.sections.join(', ')} as distinct page sections.` : 'The original exact-version task remains part of this page.'} No listed score or recording is rehosted.`;
+  return <section className="ss-preserved" aria-labelledby="ss-preserved-heading"><div className="sg-discovery-head"><div><p className="sg-overline">{selection ? 'More versions' : 'Preserved approved mapping'}</p><h2 id="ss-preserved-heading">{heading}</h2></div><p>{note}</p></div>
     {additional.length > 0 && <div className="sg-resource-list">{additional.map((resource) => <SongResourceCard resource={resource} compact key={resource.id}/>)}</div>}
     <div className="ss-legacy-blocks">{legacy.blocks.map((block) => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</div>
   </section>;
@@ -126,14 +150,15 @@ function SectionBody({ section, url }: { section: SheetSection; url: SheetMusicU
   const ids = new Set(section.arrangement_ids ?? []);
   const cards = ids.size ? getLaunchExternalViews().filter((view) => ids.has(view.arrangement.arrangement_id)) : [];
   const localOnly = section.visibility_gate === 'LOCAL_EXERCISES_RELEASE_APPROVED';
+  const selection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
   return <section className="am-content-section ss-section" id={section.id} aria-labelledby={`${section.id}-heading`}><h2 id={`${section.id}-heading`}>{section.heading}</h2><div className="am-content-body">
     {section.body && <p>{section.body}</p>}
     {section.link && <a className="am-button am-tertiary" href={section.link}>Open this collection</a>}
     {section.cta && <a className="am-button am-secondary" href={section.cta.href} target="_blank" rel="noreferrer">{section.cta.label}</a>}
     {section.id === 'learning' && cards.length === 0 && <a className="am-button am-tertiary" href={practiceUrl('/songs/easy', getLaunchExternalViews().find((view) => details[view.arrangement.arrangement_id] === url)!.arrangement).replace('https://pianogrid.com', '')}>Open the matching learning plan</a>}
-    {cards.length > 0 && <div className="ss-section-cards">{cards.map((view: ArrangementView) => <ExternalArrangementCard view={view} compact key={view.arrangement.arrangement_id}/>)}</div>}
+    {cards.length > 0 && <div className="ss-section-cards">{cards.map((view: ArrangementView) => <ExternalArrangementCard view={view} compact omitUnverified={selection} key={view.arrangement.arrangement_id}/>)}</div>}
     {localOnly && <OriginalExerciseReleasePanel/>}
-    {section.render_existing && <p className="ss-preserve-note">The original approved task and resource mapping remains preserved in the source ledger. Only destinations and capabilities verified for this release are linked here.</p>}
+    {section.render_existing && !selection && <p className="ss-preserve-note">The original approved task and resource mapping remains preserved in the source ledger. Only destinations and capabilities verified for this release are linked here.</p>}
     {section.faqs?.map((faq) => <details className="ss-faq" key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
   </div></section>;
 }
@@ -143,15 +168,23 @@ export function SheetMusicPage({ url }: { url: SheetMusicURL }) {
   const isRoot = url === '/sheet-music';
   const isCollection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
   const isHub = isRoot || isCollection;
-  const sections = page.sections.filter((section) => !section.arrangement_ids?.some((id) => id.startsWith('arr-ext-')));
+  const hideLocked = isCollection && !hasReleasedOriginals();
+  const sections = page.sections.filter((section) => {
+    if (section.arrangement_ids?.some((id) => id.startsWith('arr-ext-'))) return false;
+    if (hideLocked && section.visibility_gate === 'LOCAL_EXERCISES_RELEASE_APPROVED') return false;
+    return true;
+  });
+  const primaryHeading = url === '/sheet-music/beginner' ? 'Choose Your First Sheet Music' : 'Compare Easy Piano Sheet Music';
   return <SheetShell url={url}>
     {isRoot && <Directory/>}
     {url === '/sheet-music/twinkle-twinkle-little-star' && <SheetEditionAccess editionKey="twinkle" />}
     {url === '/sheet-music/hot-cross-buns' && <SheetEditionAccess editionKey="hot-cross-buns" />}
     {url === '/sheet-music/ode-to-joy' && <SheetEditionAccess editionKey="ode-to-joy" />}
+    {!isRoot && isCollection && <section className="ss-primary" aria-labelledby="ss-primary-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Verified version comparison</p><h2 id="ss-primary-heading">{primaryHeading}</h2></div><p>No third-party score or recording is hosted here. Musical details are shown only when supported for this exact edition.</p></div><LaunchCards url={url}/></section>}
     {isHub && <SheetHubIntent url={url}/>}
-    {!isRoot && isCollection && <section className="ss-primary" aria-labelledby="ss-primary-heading"><div className="sg-discovery-head"><div><p className="sg-overline">Verified version comparison</p><h2 id="ss-primary-heading">Compare identified editions</h2></div><p>No third-party score or recording is hosted here. Musical details are shown only when supported for this exact edition.</p></div><LaunchCards url={url}/></section>}
+    {url === '/sheet-music/beginner' && <ReadingHelp heading="Need Help Reading the Notes?" />}
     <PreservedSheetContent url={url}/>
     <div className="am-reading ss-reading">{sections.map((section) => <SectionBody section={section} url={url} key={section.id}/>)}</div>
+    {url === '/sheet-music/easy' && <ReadingHelp heading="New to Reading Music?" includeBeginner />}
   </SheetShell>;
 }

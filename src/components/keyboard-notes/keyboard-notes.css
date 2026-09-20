@@ -112,8 +112,9 @@
 .kn-labeled-guide summary{min-height:var(--pr-control-min-size);cursor:pointer;font-weight:650}
 .kn-labeled-guide{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)}
 .kn-labeled-guide ol{padding-left:1.25rem;margin:1rem 0}
-@media(max-width:47.999rem){.kn-labeled-desktop-only{display:none!important}.kn-labeled-actions{margin-left:0;width:100%}.kn-labeled-viewport .kn-key-text{font-size:.575rem;white-space:nowrap}.kn-labeled-viewport .kn-black .kn-key-text span+span{display:none}.kn-labeled-viewport .kn-key-scroll{overflow-x:auto}}
+@media(max-width:47.999rem){.kn-labeled-desktop-only{display:none!important}.kn-labeled-actions{margin-left:0;width:100%}.kn-labeled-viewport .kn-key-text{font-size:.575rem;white-space:nowrap}.kn-labeled-viewport .kn-black .kn-key-text span+span{display:none}.kn-labeled-viewport .kn-key-scroll{overflow-x:auto}.kn-labeled-explain-grid{grid-template-columns:1fr}}
 @media(min-width:48rem){.kn-labeled-more{display:none}}
+.kn-labeled-explain{margin:2rem 0 1.5rem}.kn-labeled-explain-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}.kn-labeled-explain h3{font-size:1rem;margin:0 0 .4rem}.kn-labeled-explain p{color:var(--muted-foreground);font-size:.9rem;line-height:1.5}
 .kn-source-list{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)}
 .kn-source-list h2{margin:0 0 .75rem;font-size:1.125rem}
 .kn-source-list ul{margin:0;padding-left:1.2rem}

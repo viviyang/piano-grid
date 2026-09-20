@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { SITE_ORIGIN } from './site-config';
 import type { ChordDetailModel } from './a-minor-types';
 import { CHORD_DETAIL_SEO_COPY, type ChordDetailSeoCopy } from './chord-detail-seo-copy';
+import { BY_KEY_LABEL, FINGER_NUMBERS_NOTE, isPageFix16, RELATED_HEADING } from './page-fix-16';
 
 export type { ChordDetailSeoCopy };
 type Copy = ChordDetailSeoCopy;
@@ -12,10 +13,10 @@ export const SEO_COPY: Record<string, Copy> = {
   '/keyboard-notes/labeled': {
     title: 'Piano Keyboard Keys Labeled – Note Names & Layout | PianoGrid',
     h1: 'Piano Keyboard Keys Labeled',
-    description: 'See piano keyboard keys labeled with their note names. Learn the repeating A–G pattern, black and white keys, and how notes are arranged across the keyboard.',
+    description: 'See piano keyboard keys labeled with note names, find middle C, understand black and white keys, and print a reference or practice worksheet.',
+    intro: 'Find the note names on a piano keyboard, starting with the repeating groups of two and three black keys. Use the labeled layout, then try the white-key worksheet.',
     h2: {
-      'Read letters and octave labels': 'Piano Keyboard Keys and Note Names',
-      'Label a small section first': 'Find Any Note on the Piano',
+      'Read letters and octave labels': 'White-Key Names',
       'Where to start on the 61-key example': 'How Notes Repeat Across the Keyboard',
     },
   },
@@ -25,51 +26,93 @@ export const SEO_COPY: Record<string, Copy> = {
   '/keyboard-notes/blank': { title: 'Blank Piano Keyboard Worksheet', description: 'Print an unlabeled 13-key or 25-key keyboard segment to write note names, mark a scale or make your own exercise.' },
   '/chords': { title: 'Piano Chord Chart: Notes, Diagrams & Sound', description: 'Find piano chords by name, root or type. See their notes and keyboard positions, hear examples, and open detailed chord and inversion guides.' },
   '/chords/b-minor': {
-    title: 'B Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid',
+    title: 'B Minor Chord – Piano Notes & Inversions | PianoGrid',
     h1: 'B Minor Chord',
-    description: 'Learn the B minor chord on piano, including the notes B–D–F♯, fingering, keyboard positions, root position, and inversions.',
+    description: 'Learn the B minor chord on piano: B, D and F♯. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.',
+    intro: 'The B minor chord (Bm) contains B, D and F♯. Use the piano diagram to find the notes and compare root position with two inversions.',
+    fingering: 'Finger numbers are not included. The diagrams show note positions, not a prescribed hand shape.',
     h2: {
-      'B minor keyboard and inversions': 'How to Play the B Minor Chord on Piano',
-      'Chord & positions': 'How to Play the B Minor Chord on Piano',
-      'How the B Minor chord is built': 'B Minor Chord Notes',
+      'B minor keyboard and inversions': 'B Minor Chord Notes and Keyboard Diagram',
+      'Chord & positions': 'B Minor Chord Notes and Keyboard Diagram',
+      'How the B Minor chord is built': 'How the B Minor Chord Is Built',
       'Root position and inversions': 'B Minor Chord Inversions',
-      'Related chord references': 'Chords That Go With B Minor',
+      'Questions about this chord': 'Questions About B Minor',
+      'Build Bm on the keyboard': 'Build Bm on the Keyboard',
+      'Print this chord reference': 'Print the B Minor Chord Reference',
+      'Related chord references': 'Related Chords and Practice',
+      'Fingering is not provided for this reference': 'Playing the B Minor Chord',
     },
   },
   '/chords/d-minor': {
-    title: 'D Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid',
+    title: 'D Minor Chord – Piano Notes & Inversions | PianoGrid',
     h1: 'D Minor Chord',
-    description: 'Learn the D minor chord on piano, including the notes D–F–A, fingering, keyboard positions, root position, and inversions.',
+    description: 'Learn the D minor chord on piano: D, F and A. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.',
+    intro: 'The D minor chord (Dm) contains D, F and A. Use the piano diagram to find the notes and compare root position with two inversions.',
+    fingering: 'Finger numbers are not included. The diagrams show note positions, not a prescribed hand shape.',
     h2: {
-      'D minor keyboard and inversions': 'How to Play the D Minor Chord on Piano',
-      'Chord & positions': 'How to Play the D Minor Chord on Piano',
-      'How the D Minor chord is built': 'D Minor Chord Notes',
+      'D minor keyboard and inversions': 'D Minor Chord Notes and Keyboard Diagram',
+      'Chord & positions': 'D Minor Chord Notes and Keyboard Diagram',
+      'How the D Minor chord is built': 'How the D Minor Chord Is Built',
       'Root position and inversions': 'D Minor Chord Inversions',
-      'Related chord references': 'Chords That Go With D Minor',
+      'Questions about this chord': 'Questions About D Minor',
+      'Build Dm on the keyboard': 'Build Dm on the Keyboard',
+      'Print this chord reference': 'Print the D Minor Chord Reference',
+      'Related chord references': 'Related Chords and Practice',
+      'Fingering is not provided for this reference': 'Playing the D Minor Chord',
     },
   },
   '/chords/e-minor': {
-    title: 'E Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid',
+    title: 'E Minor Chord – Piano Notes & Inversions | PianoGrid',
     h1: 'E Minor Chord',
-    description: 'Learn the E minor chord on piano, including the notes E–G–B, fingering, keyboard positions, root position, and inversions.',
+    description: 'Learn the E minor chord on piano: E, G and B. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.',
+    intro: 'The E minor chord (Em) contains E, G and B. Use the piano diagram to find the notes and compare root position with two inversions.',
+    fingering: 'Finger numbers are not included. The diagrams show note positions, not a prescribed hand shape.',
     h2: {
-      'E minor keyboard and inversions': 'How to Play the E Minor Chord on Piano',
-      'Chord & positions': 'How to Play the E Minor Chord on Piano',
-      'How the E Minor chord is built': 'E Minor Chord Notes',
+      'E minor keyboard and inversions': 'E Minor Chord Notes and Keyboard Diagram',
+      'Chord & positions': 'E Minor Chord Notes and Keyboard Diagram',
+      'How the E Minor chord is built': 'How the E Minor Chord Is Built',
       'Root position and inversions': 'E Minor Chord Inversions',
-      'Related chord references': 'Chords That Go With E Minor',
+      'Questions about this chord': 'Questions About E Minor',
+      'Build Em on the keyboard': 'Build Em on the Keyboard',
+      'Print this chord reference': 'Print the E Minor Chord Reference',
+      'Related chord references': 'Related Chords and Practice',
+      'Fingering is not provided for this reference': 'Playing the E Minor Chord',
     },
   },
   '/chords/g-minor': {
-    title: 'G Minor Chord – Piano Notes, Fingering & Inversions | PianoGrid',
+    title: 'G Minor Chord – Piano Notes & Inversions | PianoGrid',
     h1: 'G Minor Chord',
-    description: 'Learn the G minor chord on piano, including the notes G–B♭–D, fingering, keyboard positions, root position, and inversions.',
+    description: 'Learn the G minor chord on piano: G, B♭ and D. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.',
+    intro: 'The G minor chord (Gm) contains G, B♭ and D. Use the piano diagram to find the notes and compare root position with two inversions.',
+    fingering: 'Finger numbers are not included. The diagrams show note positions, not a prescribed hand shape.',
     h2: {
-      'G minor keyboard and inversions': 'How to Play the G Minor Chord on Piano',
-      'Chord & positions': 'How to Play the G Minor Chord on Piano',
-      'How the G Minor chord is built': 'G Minor Chord Notes',
+      'G minor keyboard and inversions': 'G Minor Chord Notes and Keyboard Diagram',
+      'Chord & positions': 'G Minor Chord Notes and Keyboard Diagram',
+      'How the G Minor chord is built': 'How the G Minor Chord Is Built',
       'Root position and inversions': 'G Minor Chord Inversions',
-      'Related chord references': 'Chords That Go With G Minor',
+      'Questions about this chord': 'Questions About G Minor',
+      'Build Gm on the keyboard': 'Build Gm on the Keyboard',
+      'Print this chord reference': 'Print the G Minor Chord Reference',
+      'Related chord references': 'Related Chords and Practice',
+      'Fingering is not provided for this reference': 'Playing the G Minor Chord',
+    },
+  },
+  '/chords/f-minor': {
+    title: 'F Minor Chord – Piano Notes & Inversions | PianoGrid',
+    h1: 'F Minor Chord',
+    description: 'Learn the F minor chord on piano: F, A♭ and C. See the keyboard diagram and two inversions, hear the notes, and download a printable reference.',
+    intro: 'The F minor chord (Fm) contains F, A♭ and C. Use the piano diagram to find the notes and compare root position with two inversions.',
+    fingering: 'Finger numbers are not included. The diagrams show note positions, not a prescribed hand shape.',
+    h2: {
+      'F minor keyboard and inversions': 'F Minor Chord Notes and Keyboard Diagram',
+      'Chord & positions': 'F Minor Chord Notes and Keyboard Diagram',
+      'How the F Minor chord is built': 'How the F Minor Chord Is Built',
+      'Root position and inversions': 'F Minor Chord Inversions',
+      'Questions about this chord': 'Questions About F Minor',
+      'Build Fm on the keyboard': 'Build Fm on the Keyboard',
+      'Print this chord reference': 'Print the F Minor Chord Reference',
+      'Related chord references': 'Related Chords and Practice',
+      'Fingering is not provided for this reference': 'Playing the F Minor Chord',
     },
   },
   '/chords/diminished': { title: 'Diminished Chords: Piano Notes, Formula & Inversions | PianoGrid', h1: 'Diminished Chords', description: 'Browse diminished piano triads by root. See notes, the 1–♭3–♭5 formula, keyboard diagrams and detailed inversion pages.' },
@@ -80,9 +123,10 @@ export const SEO_COPY: Record<string, Copy> = {
   '/chords/altered': { title: 'Altered Dominant Chords: Piano Notes, Formulas & Voicings | PianoGrid', h1: 'Altered Dominant Chords', description: 'Compare explicit altered dominant chords on piano. Read changed degrees, hear written-note voicings, check omissions and practise a selected example.' },
   '/scales': { title: 'Piano Scales: Notes, Patterns & Fingering', description: 'Explore major, minor and other piano scales. See their notes and patterns, hear examples, and check available fingering before you practice.' },
   '/songs': {
-    title: 'Piano Songs to Learn – Browse by Difficulty & Style | PianoGrid',
+    title: 'Piano Songs to Learn – Find Your Next Piece | PianoGrid',
     h1: 'Piano Songs to Learn',
-    description: 'Find piano songs to learn and practice. Browse songs by difficulty, notes, chords, and playing level, from beginner-friendly pieces to more challenging music.',
+    description: 'Find piano songs to learn, compare skill levels and practice goals, and follow links to learning plans and clearly identified sheet music editions.',
+    intro: 'Find your next piano piece by comparing the published level, playing goal and access options of a specific edition. For a first session, start with the easy-song selection.',
     h2: {
       'Looking for a place to start?': 'Piano Songs for Beginners',
       'Choose a checked edition': 'Choose a Piano Song to Learn',
@@ -91,7 +135,8 @@ export const SEO_COPY: Record<string, Copy> = {
   '/songs/easy': {
     title: 'Easy Piano Songs for Beginners – Songs to Learn | PianoGrid',
     h1: 'Easy Piano Songs for Beginners',
-    description: 'Explore easy piano songs for beginners with simple notes, chords, difficulty levels, and practical tips to help you start playing each song.',
+    description: 'Choose easy piano songs for beginners, compare specific editions and access options, and use a short practice plan to get started.',
+    intro: 'Choose one piece and one small goal for your next practice session. Compare the named editions below, check how to get the music, and follow a starting plan.',
     h2: {
       'Choose a starting point': 'Easy Piano Songs to Start With',
       'Your first 10 minutes': 'Practice an Easy Piano Song',
@@ -99,8 +144,18 @@ export const SEO_COPY: Record<string, Copy> = {
     },
   },
   '/sheet-music': { title: 'Piano Sheet Music: Find an Edition | PianoGrid', h1: 'Piano Sheet Music', description: 'Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.' },
-  '/sheet-music/easy': { title: 'Easy Piano Sheet Music: Compare Editions | PianoGrid', h1: 'Easy Piano Sheet Music', description: 'Compare easy piano sheet-music editions and publisher levels. Check access and preview options, then choose a version for your next practice session.' },
-  '/sheet-music/beginner': { title: 'Beginner Piano Sheet Music: Where to Start | PianoGrid', h1: 'Beginner Piano Sheet Music', description: 'Choose beginner piano sheet music by exact edition. Check hand guidance, available previews and access, with links to a focused practice plan.' },
+  '/sheet-music/easy': {
+    title: 'Easy Piano Sheet Music: Compare Editions | PianoGrid',
+    h1: 'Easy Piano Sheet Music',
+    description: 'Compare easy piano sheet music editions, publisher levels and access options. Find a suitable version and get the score from its publisher.',
+    intro: 'Compare easy piano sheet music by the exact edition, publisher level and access format. Open edition details here, then get the score from its publisher.',
+  },
+  '/sheet-music/beginner': {
+    title: 'Beginner Piano Sheet Music: Where to Start | PianoGrid',
+    h1: 'Beginner Piano Sheet Music',
+    description: 'Find beginner piano sheet music with clear edition and access details. Choose a first piece and use note-reading help before you start.',
+    intro: 'Start with one beginner edition and check how to get its score. Use the reading and keyboard references when a note or symbol is unfamiliar.',
+  },
   '/sheet-music/hot-cross-buns': { title: 'Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid', h1: 'Hot Cross Buns Piano Sheet Music', description: 'Check Hoffman Academy’s Lesson 1 materials for Hot Cross Buns, including its parent-guide context, external access route and beginner practice links.' },
   '/sheet-music/twinkle-twinkle-little-star': { title: 'Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid', h1: 'Twinkle, Twinkle, Little Star Piano Sheet Music', description: 'Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.' },
   '/sheet-music/ode-to-joy': { title: 'Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid', h1: 'Ode to Joy Piano Sheet Music', description: 'Check the Early Elementary Ode to Joy edition from Hoffman Academy. See access conditions and version details before choosing materials for practice.' },
@@ -108,7 +163,8 @@ export const SEO_COPY: Record<string, Copy> = {
   '/guide/read-sheet-music': {
     title: 'How to Read Sheet Music for Piano – Beginner Guide | PianoGrid',
     h1: 'How to Read Sheet Music for Piano',
-    description: 'Learn how to read sheet music for piano step by step. Understand the staff, treble and bass clefs, note names, rhythm, and how notes map to piano keys.',
+    description: 'Learn how to read sheet music for piano with staff and keyboard examples, note values, rests, and a short reading exercise with answers.',
+    intro: 'Start with the clef, find the note on the staff, match it to a piano key, and count its length. Then put the steps together in a short reading exercise.',
     h2: {
       'Read in a useful order': 'Piano Sheet Music Basics',
       'Use anchors, then count steps': 'Treble Clef and Bass Clef',
@@ -146,15 +202,26 @@ export function editorialHeading(url: string, original: string): string {
   return SEO_COPY[url]?.h1 ?? original;
 }
 
+export function editorialIntro(url: string, fallback: string): string {
+  return SEO_COPY[url]?.intro ?? fallback;
+}
+
 export function editorialSectionHeading(url: string, original: string): string {
+  if (isPageFix16(url) && original === 'Related chord references') return RELATED_HEADING;
   return SEO_COPY[url]?.h2?.[original] ?? original;
 }
 
 const ENGINEERING_FINGERING = /No independently authorized fingering dataset is provided|No independent fingering dataset is authorized/;
 const PLAIN_FINGERING = 'Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.';
 
-function replaceEngineeringFingering(paragraphs: string[]): string[] {
-  return paragraphs.map((paragraph) => (ENGINEERING_FINGERING.test(paragraph) ? PLAIN_FINGERING : paragraph));
+function replaceEngineeringFingering(paragraphs: string[], url: string): string[] {
+  const plain = isPageFix16(url) ? FINGER_NUMBERS_NOTE : PLAIN_FINGERING;
+  return paragraphs.map((paragraph) => (ENGINEERING_FINGERING.test(paragraph) ? plain : paragraph));
+}
+
+function relatedLinksFor(url: string, links: ChordDetailModel['blocks'][number]['content']['links']) {
+  if (!isPageFix16(url)) return links;
+  return links.map((link) => (link.url === '/chords/by-key' ? { ...link, label: BY_KEY_LABEL } : link));
 }
 
 export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailModel {
@@ -164,7 +231,7 @@ export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailMod
     let changed = false;
     const blocks = model.blocks.map((block) => {
       if (!block.block_id.endsWith('-fingering-example')) return block;
-      const paragraphs = replaceEngineeringFingering(block.content.paragraphs);
+      const paragraphs = replaceEngineeringFingering(block.content.paragraphs, url);
       if (paragraphs.every((paragraph, index) => paragraph === block.content.paragraphs[index])) return block;
       changed = true;
       return { ...block, content: { ...block.content, paragraphs } };
@@ -191,7 +258,7 @@ export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailMod
     if (block.block_id.endsWith('-fingering-example') && content.paragraphs.length > 0) {
       const fingering = copy.fingering
         ? [copy.fingering, ...content.paragraphs.slice(1)]
-        : replaceEngineeringFingering(content.paragraphs);
+        : replaceEngineeringFingering(content.paragraphs, url);
       content = { ...content, paragraphs: fingering };
     }
     if (copy.keyboardHelp && block.block_id === model.data.toolId) {
@@ -199,6 +266,9 @@ export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailMod
     }
     if (copy.faq && block.block_id.endsWith('-questions') && content.table) {
       content = { ...content, table: { ...content.table, rows: copy.faq.map((item) => [item.q, item.a]) } };
+    }
+    if (block.block_id.endsWith('-related')) {
+      content = { ...content, links: relatedLinksFor(url, content.links) };
     }
     return { ...block, content };
   });

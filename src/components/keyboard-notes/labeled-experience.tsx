@@ -148,19 +148,28 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
     <TeachingPackExperience layout={layout} />
 
     <section className="kn-screen kn-labeled-followup" aria-label="Labeled keyboard guide">
-      <section className="kn-labeled-guide" aria-labelledby="kn-label-guide-title">
-        <h2 id="kn-label-guide-title">How to label your keyboard</h2>
-        <ol>
-          <li>Match your layout</li>
-          <li>Find the repeating pattern</li>
-          <li>Add octave numbers when needed</li>
-        </ol>
-        <nav className="kn-actions" aria-label="Related keyboard tools">
-          <a href="/keyboard-notes" className="am-button am-tertiary">Find or hear a piano note →</a>
-          <a href="/keyboard-notes/chart" className="am-button am-tertiary">Match keys to staff →</a>
-          <a href={practiceEntryHref()} className="am-button am-tertiary">Practice notes →</a>
-        </nav>
+      <section className="kn-labeled-explain" aria-labelledby="kn-labeled-explain-title">
+        <h2 id="kn-labeled-explain-title">How the labels work</h2>
+        <div className="kn-labeled-explain-grid">
+          <article>
+            <h3>Repeating letter names</h3>
+            <p>White keys repeat C–D–E–F–G–A–B in every octave. Octave numbers such as C3 and C4 name register, not finger numbers.</p>
+          </article>
+          <article>
+            <h3>Black Keys: Sharps and Flats</h3>
+            <p>Black keys sit in repeating groups of two and three. Each black key has two familiar names, such as F♯ and G♭.</p>
+          </article>
+          <article>
+            <h3>Find Middle C</h3>
+            <p>Middle C is C4. Find a group of two black keys, then the white key immediately to their left is a C. Match that C to C4 on the labeled layout.</p>
+          </article>
+        </div>
       </section>
+      <nav className="kn-actions" aria-label="Related keyboard tools">
+        <a href="/keyboard-notes" className="am-button am-tertiary">Find or hear a piano note →</a>
+        <a href="/keyboard-notes/chart" className="am-button am-tertiary">Match keys to staff →</a>
+        <a href={practiceEntryHref()} className="am-button am-tertiary">Practice notes →</a>
+      </nav>
       <p>{layout.scope_note}</p>
       <section className="kn-source-list" aria-labelledby="kn-labeled-sources-title">
         <h2 id="kn-labeled-sources-title">Sources</h2>

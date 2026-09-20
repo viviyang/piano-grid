@@ -5,7 +5,11 @@ import {SelectedVoicingContext} from '../a-minor/experience';
 
 function noteName(pitch:string){return pitch.replace(/-?\d+$/,'');}
 
-export function FingeringGuide({block,examples,sources,defaultVoicingId}:{block:Block;examples:FingeringExample[];sources:ChordSource[];defaultVoicingId:string}){
+export function ChordSourceList({sources,hideSourceCodes=false}:{sources:ChordSource[];hideSourceCodes?:boolean}){
+ return <>{sources.map(source=><article key={source.id} id={hideSourceCodes?undefined:`${source.id.toLowerCase()}`}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p><p><strong>Supports:</strong> {source.supports}</p><p><strong>Scope limit:</strong> {source.limitation}</p><small>Checked {source.checkedOn}{hideSourceCodes?'':` · ${source.id}`}</small></article>)}</>;
+}
+
+export function FingeringGuide({block,examples,sources,defaultVoicingId,hideSourceCodes=false}:{block:Block;examples:FingeringExample[];sources:ChordSource[];defaultVoicingId:string;hideSourceCodes?:boolean}){
  const selectedVoicingId=useContext(SelectedVoicingContext);
  const [hand,setHand]=useState<'right'|'left'>('right');
  const example=examples.find(item=>item.hand===hand&&item.voicingId===selectedVoicingId);
@@ -22,7 +26,7 @@ export function FingeringGuide({block,examples,sources,defaultVoicingId}:{block:
     <ol className="ch-finger-map" aria-label="Notes and corresponding finger numbers">{example.notes.map((pitch,index)=><li key={pitch}><span className="ch-finger-number" aria-label={`finger ${example.fingers[index]}`}>{example.fingers[index]}</span><span className="ch-finger-line" aria-hidden="true"/><strong>{noteName(pitch)}</strong><small>{pitch}</small></li>)}</ol>
     <p className="ch-fingering-scope">{example.scope} {example.limitation}</p>
    </div>:<div className="ch-fingering-unavailable" role="status"><strong>No verified fingering is shown for this inversion.</strong><p>The root-position {hand}-hand example ({rootExample.notes.map(noteName).join('–')}) remains available when you select Root position. The current chord tones, keyboard, sound, and print selection still follow the inversion above.</p></div>}
-   <details className="ch-source-details"><summary>Sources and scope</summary><div>{sources.map(source=><article key={source.id} id={`${block.block_id}-${source.id.toLowerCase()}`}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p><p><strong>Supports:</strong> {source.supports}</p><p><strong>Scope limit:</strong> {source.limitation}</p><small>Checked {source.checkedOn} · {source.id}</small></article>)}</div></details>
+   <details className="ch-source-details"><summary>{hideSourceCodes?'Sources':'Sources and scope'}</summary><div>{<ChordSourceList sources={sources} hideSourceCodes={hideSourceCodes}/>}</div></details>
   </div>
  </section>;
 }
