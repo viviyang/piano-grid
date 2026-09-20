@@ -85,8 +85,12 @@ try {
   check('shadcn aliases', config.aliases.utils === '@/lib/utils' && config.aliases.ui === '@/components/ui');
   check('TypeScript source alias', ts.compilerOptions.paths['@/*'][0] === './src/*');
   check('Root layout imports globals', layout.includes('import "./globals.css"'));
+  check('Root layout loads Microsoft Clarity', layout.includes('MicrosoftClarity') && layout.includes('@/components/analytics/microsoft-clarity'));
+  const clarity = await read('src/components/analytics/microsoft-clarity.tsx');
+  check('Clarity uses official tag snippet', clarity.includes('https://www.clarity.ms/tag/') && clarity.includes('JSON.stringify(CLARITY_PROJECT_ID)'));
   check('Root layout: no business chrome', !/<(Header|Piano|Chord|Footer)/.test(layout));
   check('Root layout: no external font', !/next\/font/.test(layout));
+  check('No Clarity npm package', !Object.keys({...pkg.dependencies,...pkg.devDependencies}).some(n => n === '@microsoft/clarity'));
   check('cn registers custom text sizes', util.includes('extendTailwindMerge') && util.includes('"pr-body"'));
   check('Shared breadcrumb uses Next Link', breadcrumb.includes("from 'next/link'") && breadcrumb.includes('data-slot="breadcrumb-link"'));
   check('Shared breadcrumb current-page semantics', breadcrumb.includes('aria-current="page"') && breadcrumb.includes('aria-disabled="true"'));
@@ -114,7 +118,7 @@ try {
   allowedComponents.push('src/components/integration/pages.tsx','src/components/integration/home-experience.tsx','src/components/integration/home-visuals.tsx','src/components/integration/practice-timer.tsx','src/components/integration/integration.css','src/components/integration/home-color-repair.css','src/components/integration/home-hero-background.css');
   allowedComponents.push('src/components/site-navigation.tsx','src/components/site-navigation.css');
   allowedComponents.push('src/components/ui/breadcrumb.tsx','src/components/ui/breadcrumb.css','src/components/ui/site-brand.tsx','src/components/ui/site-brand.css','src/components/ui/rolling-text.tsx','src/components/ui/collapsible.tsx','src/components/ui/collapsible.css');
-  allowedComponents.push('src/components/analytics/google-analytics.tsx','src/components/analytics/google-analytics-client.tsx');
+  allowedComponents.push('src/components/analytics/google-analytics.tsx','src/components/analytics/google-analytics-client.tsx','src/components/analytics/microsoft-clarity.tsx','src/components/analytics/microsoft-clarity-client.tsx');
   const allowedPages=['src/app/page.tsx','src/app/tools/page.tsx','src/app/chords/page.tsx','src/app/chords/[slug]/page.tsx',...['major','minor','diminished','augmented','suspended','seventh','add','extended','altered','a-minor','a-major','c-major','g-major','c-minor','e-major','b-major','a-flat-major','c-flat-major','by-key','finder'].map(n=>`src/app/chords/${n}/page.tsx`)];
   allowedPages.push('src/app/keyboard-notes/page.tsx','src/app/keyboard-notes/labeled/page.tsx','src/app/keyboard-notes/chart/page.tsx','src/app/keyboard-notes/finger-numbers/page.tsx','src/app/keyboard-notes/blank/page.tsx','src/app/keyboard-notes/frequencies/page.tsx');
   allowedPages.push('src/app/scales/page.tsx','src/app/scales/c-major/page.tsx','src/app/scales/a-minor/page.tsx','src/app/scales/[slug]/page.tsx','src/app/arpeggios/page.tsx');

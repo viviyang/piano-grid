@@ -28,6 +28,12 @@
 - [已核实] 未生成动态路由、`route.ts` 或后续规划页面；没有执行部署、DNS、Google Search Console 或 sitemap 提交。
 - [已核实] 真人听音、真机、屏幕阅读器人工长流程、浏览器打印对话框、实体打印、全部外链人工访问和专业音乐审阅仍为人工项目。Guide PDF 的结构标签限制保持记录。
 
+## 增长观察
+
+- [已核实] 生产已接 GA4（`NEXT_PUBLIC_GA_MEASUREMENT_ID`）。Microsoft Clarity 用同一套根布局注入官方脚本，开关为 `NEXT_PUBLIC_CLARITY_PROJECT_ID`；不新增 npm 依赖。
+- [已核实] Clarity 只在生产构建注入，本地开发和 Vercel Preview 不录像。
+- 用法：看录像和热力图，再改被反复证明的卡点。步骤见 [runbook](runbook.md)。
+
 ## 入口
 
 - [唯一进度](tasks/site-implementation-plan.md)
@@ -37,5 +43,6 @@
 - [公开发布检查](../checks/release/public-launch/report.md)
 - [组件契约](design/component-spec.md) / [模板映射](design/template-map.md)
 - [行为边界](../AGENTS.md)
+- [Clarity 观察](runbook.md)
 
-最后更新：2026-09-10。
+最后更新：2026-09-20。
