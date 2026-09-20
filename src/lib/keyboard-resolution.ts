@@ -120,6 +120,37 @@ export function lookupMessage(resolution: LookupResolution, layout: Layout) {
   return 'Use a letter A–G, an optional sharp or flat, and an optional octave. Try C, F3, A-flat, or B♯3.';
 }
 
+export function lookupHubMessage(resolution: LookupResolution, layout: Layout) {
+  if (resolution.messageKey === 'empty') return 'Enter a note, such as C4 or F♯3.';
+  if (resolution.messageKey === 'choose_octave') return `Choose an octave for ${resolution.displaySpelling}.`;
+  if (resolution.messageKey === 'outside_range') return `${resolution.displaySpelling ?? resolution.rawInput.trim()} is outside this keyboard’s ${layout.lowest_note}–${layout.highest_note} range.`;
+  if (resolution.messageKey === 'invalid' || resolution.messageKey === 'compound') return 'Use a note from A to G, such as C4 or F♯3.';
+  return 'Use a note name and octave to find one exact key.';
+}
+
+export function spokenPianoKeyName(key: PianoKey) {
+  const names = key.label_with_octave.split(' / ').map(spellSpoken);
+  const color = key.color === 'black' ? 'black key' : 'white key';
+  return [names.join(', '), key.midi === 60 ? 'middle C' : null, color].filter(Boolean).join(', ');
+}
+
+function spellSpoken(label: string) {
+  const parsed = parseNoteInput(label);
+  if (!parsed || parsed.octave === null) return displayNote(label).replaceAll('♯', ' sharp ').replaceAll('♭', ' flat ');
+  const accidental = parsed.accidental === '#' ? ' sharp' : parsed.accidental === 'b' ? ' flat' : '';
+  return `${parsed.letter}${accidental} ${parsed.octave}`;
+}
+
+export function blackKeyNeighborDescription(key: PianoKey, layout: Layout) {
+  const whites = layout.keys.filter(item => item.color === 'white');
+  const left = [...whites].reverse().find(item => item.midi < key.midi);
+  const right = whites.find(item => item.midi > key.midi);
+  if (!left || !right) return 'Black key · A sharp or flat note';
+  const leftName = displayNote(left.label_with_octave.split(' / ')[0]);
+  const rightName = displayNote(right.label_with_octave.split(' / ')[0]);
+  return `Black key between ${leftName} and ${rightName}.`;
+}
+
 export function lookupShareParams(layout: Layout, selected: PitchSelection | null) {
   const params = new URLSearchParams({ layout: layoutCode(layout) });
   if (selected) params.set('note', asciiNote(selected.requestedSpelling.display));
@@ -131,5 +162,9 @@ export function restoreLookup(params: URLSearchParams, layouts: Layout[]) {
   const layout = layouts.find(item => layoutCode(item) === requestedLayout) ?? layouts[0];
   const note = params.get('note');
   const resolution = note ? resolveLookup(note, layout, 'share_restore') : null;
-  return { layout, resolution: resolution?.status === 'selected' ? resolution : null };
+  return {
+    layout,
+    resolution: resolution?.status === 'selected' ? resolution : null,
+    invalidNote: Boolean(note) && resolution?.status !== 'selected',
+  };
 }

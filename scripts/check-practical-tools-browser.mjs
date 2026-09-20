@@ -68,7 +68,7 @@ try{
   }
 
   const owners=[
-    ['/chords/finder','Piano Chord Finder'],['/scales','Piano Scales'],['/keyboard-notes','Piano Keys and Notes'],
+    ['/chords/finder','Piano Chord Finder'],['/scales','Piano Scales'],['/keyboard-notes','Piano Keys Notes'],
     ['/tools/blank-sheet-music','Blank Piano Sheet Music'],['/chord-progressions','Piano Chord Progressions'],
   ];
   await page.setViewportSize({width:1280,height:900});

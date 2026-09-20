@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import type { Layout, PianoKey, ReadingBlock } from '@/lib/keyboard-types';
+import type { Layout, PianoKey } from '@/lib/keyboard-types';
 import { emitKeyboardPracticeEvent } from '@/lib/keyboard-events';
 import {
   PRACTICE_ENTRY_HASH,
@@ -26,7 +26,7 @@ import {
   type PracticeTarget,
 } from '@/lib/keyboard-practice';
 import { keysInMidiRange, visibleMidiWindow, clampRangeStart } from '@/lib/keyboard-viewport';
-import { lookupMessage, lookupShareParams, resolveLookup, restoreLookup, selectCandidate, selectPianoKey, type LookupResolution } from '@/lib/keyboard-resolution';
+import { blackKeyNeighborDescription, lookupHubMessage, lookupShareParams, resolveLookup, restoreLookup, selectCandidate, selectPianoKey, spokenPianoKeyName, type LookupResolution } from '@/lib/keyboard-resolution';
 import { Icon } from '@/components/a-minor/icon';
 import { RollingText } from '@/components/ui/rolling-text';
 import { KeyboardDiagram } from './keyboard-diagram';
@@ -35,18 +35,33 @@ import { useNoteAudio } from './use-note-audio';
 
 type Mode = 'explore' | 'practice';
 type PracticePhase = 'start' | 'question' | 'results';
-type LinkItem = { url: string; label: string };
 
 function primaryLabel(key: PianoKey | undefined) {
   return key?.label_with_octave.split(' / ')[0] ?? '';
 }
 
-function noteDescription(key: PianoKey | undefined) {
+function noteDescription(key: PianoKey | undefined, layout: Layout) {
   if (!key) return 'Choose a piano key to inspect its note.';
-  if (key.color === 'black') return 'Black key · A sharp or flat note';
+  if (key.color === 'black') return blackKeyNeighborDescription(key, layout);
   if (key.midi === 60) return 'A starting point on the keyboard.';
   return 'White key · Natural note';
 }
+
+function selectedDisplay(resolution: LookupResolution, key: PianoKey | undefined) {
+  const primary = resolution.selected?.requestedSpelling.display;
+  if (!primary) return resolution.rawInput || '—';
+  if (key?.color === 'black') {
+    const others = (resolution.selected?.equivalentLabels ?? []).filter(label => label !== primary);
+    return others.length ? `${primary} / ${others.join(' / ')}` : primary;
+  }
+  return primary;
+}
+
+const HUB_AUDIO = {
+  loading: 'Loading sound…',
+  error: 'Sound is unavailable. Try again.',
+  unavailable: 'Sound is unavailable. Try again.',
+} as const;
 
 function ModeTabs({ value, onChange }: { value: Mode; onChange: (mode: Mode) => void }) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -73,28 +88,35 @@ function ModeTabs({ value, onChange }: { value: Mode; onChange: (mode: Mode) => 
   </div>;
 }
 
-function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayoutChange, onPractice }: {
+function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
   layout: Layout;
   layouts: Layout[];
   active: boolean;
   compact: boolean;
-  blocks: ReadingBlock[];
-  links: LinkItem[];
   onLayoutChange: (layoutID: string) => void;
-  onPractice: () => void;
 }) {
-  const audio = useNoteAudio();
+  const audio = useNoteAudio(HUB_AUDIO);
   const [query, setQuery] = useState('C4');
   const [resolution, setResolution] = useState<LookupResolution>(() => resolveLookup('C4', layout));
   const [rangeStart, setRangeStart] = useState(compact ? 60 : 48);
   const [copyMessage, setCopyMessage] = useState('');
   const [manualURL, setManualURL] = useState('');
+  const [liveMessage, setLiveMessage] = useState('');
+  const [shareHint, setShareHint] = useState('');
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const selected = resolution.selected ? layout.keys.find(key => key.midi === resolution.selected?.midi) : undefined;
   const whiteSpan = compact ? 12 : 24;
   const { rangeMin, rangeMax, keys: visibleKeys } = useMemo(() => visibleMidiWindow(layout, rangeStart, whiteSpan), [layout, rangeStart, whiteSpan]);
+  const accessibleLabels = useMemo(() => Object.fromEntries(visibleKeys.map(key => [key.midi, spokenPianoKeyName(key)])), [visibleKeys]);
+  const heading = selectedDisplay(resolution, selected);
+  const selectedOutOfView = Boolean(selected && (selected.midi < rangeMin || selected.midi > rangeMax));
+  const queryHelpId = 'kn-v2-note-query-help';
+  const queryError = resolution.status === 'invalid' || resolution.status === 'outside_range';
+  const queryPrompt = resolution.status !== 'selected';
 
   useEffect(() => {
     const restored = restoreLookup(new URLSearchParams(window.location.search), layouts);
+    if (restored.invalidNote) setShareHint('That note link was not valid, so middle C is shown.');
     if (!restored.resolution) return;
     onLayoutChange(restored.layout.layout_id);
     setResolution(restored.resolution);
@@ -112,6 +134,22 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
     setRangeStart(compact ? 60 : 48);
   }, [compact]);
   useEffect(() => { if (!active) audio.cancel(); }, [active]);
+  useEffect(() => () => { if (copyTimer.current) clearTimeout(copyTimer.current); }, []);
+  useEffect(() => {
+    const showMiddleC = () => {
+      const next = resolveLookup('C4', layout);
+      setResolution(next);
+      setQuery('C4');
+      setShareHint('');
+      if (next.selected) bringIntoView(next.selected.midi);
+      queueMicrotask(() => {
+        document.getElementById('explore')?.scrollIntoView({ block: 'start' });
+        document.getElementById('kn-v2-explore-tab')?.focus();
+      });
+    };
+    window.addEventListener('pianogrid:show-middle-c', showMiddleC);
+    return () => window.removeEventListener('pianogrid:show-middle-c', showMiddleC);
+  }, [layout]);
 
   function bringIntoView(midi: number, activeLayout = layout) {
     const span = compact ? 12 : 24;
@@ -134,10 +172,13 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
     if (next.status === 'selected' && next.selected) {
       setResolution(next);
       setQuery(next.selected.requestedSpelling.display);
+      setLiveMessage(`${next.selected.requestedSpelling.display} selected.`);
+      setShareHint('');
       bringIntoView(next.selected.midi);
       return;
     }
-    setResolution(next);
+    setLiveMessage('');
+    setResolution(current => ({ ...next, selected: current.selected }));
   }
 
   function chooseCandidate(midi: number, display: string) {
@@ -164,7 +205,13 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
     const url = buildShareURL('/keyboard-notes', lookupShareParams(layout, resolution.selected));
     const ok = await copyShareURL(url);
     setManualURL(ok ? '' : url);
-    setCopyMessage(ok ? 'Link copied.' : 'Copy isn’t available here. Select the link below.');
+    if (copyTimer.current) clearTimeout(copyTimer.current);
+    if (ok) {
+      setCopyMessage('Link copied');
+      copyTimer.current = setTimeout(() => setCopyMessage(''), 2000);
+      return;
+    }
+    setCopyMessage('Copy isn’t available here. Select the link below.');
   }
 
   function toggleHear() {
@@ -176,36 +223,40 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
     audio.play(selected.midi);
   }
 
-  const rangeStep = compact ? 12 : 24;
+  const rangeStep = 12;
   const canLower = rangeStart > layout.keys[0].midi;
   const canHigher = rangeMax < layout.keys.at(-1)!.midi;
-  return <section id="kn-v2-explore-panel" role="tabpanel" aria-labelledby="kn-v2-explore-tab" hidden={!active} className="kn-v2-panel kn-v2-explore">
+  const helpText = queryPrompt ? lookupHubMessage(resolution, layout) : 'Use a note name and octave to find one exact key.';
+  return <section id="kn-v2-explore-panel" role="tabpanel" aria-labelledby="kn-v2-explore-tab" hidden={!active} className="kn-v2-panel kn-v2-explore" data-selected-midi={selected?.midi ?? ''}>
+    <p className="kn-hub-live" aria-live="polite">{liveMessage}</p>
     <div className="kn-v2-explore-head">
       <div className="kn-v2-note-id">
-        <h2>{resolution.selected?.requestedSpelling.display ?? (query || '—')}</h2>
+        <h2>{heading}</h2>
       </div>
       <div className="kn-v2-note-copy">
-        <h3>{selected?.midi === 60 ? 'Middle C' : selected ? primaryLabel(selected) : 'Choose a note'}</h3>
-        <p>{noteDescription(selected)}</p>
-        <button className="am-button am-primary kn-v2-hear" type="button" onClick={toggleHear} disabled={!audio.ready || !selected} aria-label={audio.state === 'playing' ? 'Stop note' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}>
+        <h3>{selected?.midi === 60 ? 'Middle C' : selected ? heading : 'Choose a note'}</h3>
+        <p>{noteDescription(selected, layout)}</p>
+        <button className="am-button am-primary kn-v2-hear" type="button" onClick={toggleHear} disabled={!audio.ready || !selected} aria-busy={audio.state === 'loading'} aria-label={audio.state === 'playing' ? 'Stop note' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}>
           <Icon name={audio.state === 'playing' ? 'stop' : 'play'}/><RollingText>{audio.state === 'playing' ? 'Stop' : selected ? `Hear ${primaryLabel(selected)}` : 'Hear note'}</RollingText>
         </button>
         <p className="kn-v2-audio-status" role="status">{audio.message}</p>
       </div>
-      <form className="kn-v2-search" onSubmit={event => { event.preventDefault(); findNote(); }}>
+      <form className="kn-v2-search" action="/keyboard-notes" method="get" onSubmit={event => { event.preventDefault(); findNote(); }}>
         <label htmlFor="kn-v2-note-query">Find another note</label>
-        <div><input id="kn-v2-note-query" value={query} onChange={event => setQuery(event.target.value)} placeholder="Try F3 or B-flat 4"/><button className="am-button am-secondary" type="submit"><Icon name="search"/><RollingText>Find</RollingText></button></div>
-        <p className={resolution.status !== 'selected' ? 'kn-v2-form-error' : 'kn-v2-form-help'} role={resolution.status !== 'selected' ? 'alert' : undefined}>{resolution.status === 'selected' ? 'A note name and octave find one exact key.' : lookupMessage(resolution, layout)}</p>
+        <div><input id="kn-v2-note-query" name="note" value={query} onChange={event => setQuery(event.target.value)} placeholder="Try F3, A4 or A-flat" aria-invalid={queryError} aria-describedby={queryHelpId}/><button className="am-button am-secondary" type="submit"><Icon name="search"/><RollingText>Find</RollingText></button></div>
+        <p id={queryHelpId} className={queryError ? 'kn-v2-form-error' : 'kn-v2-form-help'} role={queryError ? 'alert' : undefined}>{helpText}</p>
+        {shareHint ? <p className="kn-hub-share-hint" role="status">{shareHint}</p> : null}
         {resolution.candidates.length > 0 && <div className="kn-v2-search-candidates" aria-label="Choose an octave">{resolution.candidates.map(candidate => <button type="button" key={`${candidate.midi}-${candidate.display}`} onClick={() => chooseCandidate(candidate.midi, candidate.display)}>{candidate.display}</button>)}</div>}
       </form>
     </div>
     <div className="kn-v2-keyboard-stage kn-v2-explore-keyboard">
-      <KeyboardDiagram keys={visibleKeys} selected={selected?.midi ?? null} sounding={audio.sounding} onSelect={selectKey} ready={audio.ready} fit autoCenter={false} label={`Explore ${primaryLabel(visibleKeys[0])} to ${primaryLabel(visibleKeys.at(-1))}`}/>
+      <KeyboardDiagram keys={visibleKeys} selected={selected?.midi ?? null} sounding={audio.sounding} onSelect={selectKey} ready={audio.ready} fit={!compact} autoCenter={false} accessibleLabels={accessibleLabels} label={`Explore ${primaryLabel(visibleKeys[0])} to ${primaryLabel(visibleKeys.at(-1))}`}/>
       <div className="kn-v2-range-row">
         <button type="button" className="kn-v2-text-button" disabled={!canLower} onClick={() => setRangeStart(value => Math.max(layout.keys[0].midi, value - rangeStep))}><Icon name="left"/><RollingText>Lower notes</RollingText></button>
         <p>{primaryLabel(visibleKeys[0])}–{primaryLabel(visibleKeys.at(-1))}</p>
         <button type="button" className="kn-v2-text-button" disabled={!canHigher} onClick={() => setRangeStart(value => Math.min(layout.keys.at(-1)!.midi - whiteSpan, value + rangeStep))}><RollingText>Higher notes</RollingText><Icon name="right"/></button>
       </div>
+      {selectedOutOfView && selected ? <p className="kn-hub-show-selected"><button type="button" className="kn-v2-text-button" onClick={() => bringIntoView(selected.midi)}>Show selected note</button></p> : null}
       <div className="kn-v2-overview" aria-label={`${layout.label} overview. Current visible range is marked.`}>
         <KeyboardDiagram keys={layout.keys} marked={visibleKeys.map(key => key.midi)} octaves={false} showVisualLabels={false} fit autoCenter={false}/>
       </div>
@@ -214,23 +265,11 @@ function ExploreNotes({ layout, layouts, active, compact, blocks, links, onLayou
       <details>
         <summary>Choose by note name</summary>
         <div className="kn-v2-layout-choice"><label htmlFor="kn-v2-layout">Keyboard size</label><select id="kn-v2-layout" value={layout.layout_id} onChange={event => changeLayout(event.target.value)}>{layouts.map(item => <option key={item.layout_id} value={item.layout_id}>{item.label}</option>)}</select></div>
-        <div className="kn-v2-note-choices">{visibleKeys.filter(key => key.color === 'white').map(key => <button type="button" key={key.midi} className={key.midi === selected?.midi ? 'is-current' : ''} onClick={() => selectKey(key)}><RollingText>{primaryLabel(key)}</RollingText></button>)}</div>
+        <div className="kn-v2-note-choices">{visibleKeys.map(key => <button type="button" key={key.midi} className={key.midi === selected?.midi ? 'is-current' : ''} onClick={() => selectKey(key)}><RollingText>{primaryLabel(key)}</RollingText></button>)}</div>
       </details>
       <button type="button" className="kn-v2-copy-link" onClick={() => void copyNoteLink()}><RollingText>Copy link</RollingText></button>
       <span className="kn-v2-copy-status" role="status">{copyMessage}</span>
       {manualURL ? <label className="kn-v2-manual-link">Note link<textarea value={manualURL} readOnly rows={2} onFocus={event => event.currentTarget.select()}/></label> : null}
-    </div>
-    <aside className="kn-v2-practice-callout">
-      <div><h3>Ready to test yourself?</h3><p>Find notes on a focused keyboard, then review the ones you missed.</p></div>
-      <button className="am-button am-secondary" type="button" onClick={onPractice}><RollingText>Practice notes</RollingText></button>
-    </aside>
-    <div className="kn-v2-reference">
-      <p className="kn-v2-kicker">Keyboard reference</p>
-      <h2>Use the pattern, then use the note name.</h2>
-      <div className="kn-v2-reference-grid">{blocks.slice(0, 3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</div>
-      {blocks.length > 3 && <details className="kn-v2-more-reference"><summary>More piano key reference</summary>{blocks.slice(3).map(block => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</details>}
-      {links.length > 0 && <nav className="kn-v2-related" aria-label="Related keyboard references">{links.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}<a href="/keyboard-notes/labeled#teaching-pack">Print a note-name practice pack</a></nav>}
-      {links.length === 0 && <nav className="kn-v2-related" aria-label="Related keyboard references"><a href="/keyboard-notes/labeled#teaching-pack">Print a note-name practice pack</a></nav>}
     </div>
   </section>;
 }
@@ -624,7 +663,7 @@ function readLocationMode(): { mode: Mode; sharedPreset: PracticePresetRestore; 
   return { mode: 'explore', sharedPreset: { status: 'none', preset: null }, scrollPractice: false };
 }
 
-export function KeyboardNotesWorkspace({ layouts, blocks = [], links = [] }: { layouts: Layout[]; blocks?: ReadingBlock[]; links?: LinkItem[] }) {
+export function KeyboardNotesWorkspace({ layouts }: { layouts: Layout[] }) {
   const [mode, setMode] = useState<Mode>('explore');
   const [hydrated, setHydrated] = useState(false);
   const [layoutID, setLayoutID] = useState(layouts.find(item => item.layout_id === '88-key-A0-C8')?.layout_id ?? layouts[0].layout_id);
@@ -645,11 +684,17 @@ export function KeyboardNotesWorkspace({ layouts, blocks = [], links = [] }: { l
     setHydrated(true);
     const onHash = () => apply(true);
     const onPop = () => apply(false);
+    const onShowMiddleC = () => {
+      setMode('explore');
+      syncPracticeURL('explore');
+    };
     window.addEventListener('hashchange', onHash);
     window.addEventListener('popstate', onPop);
+    window.addEventListener('pianogrid:show-middle-c', onShowMiddleC);
     return () => {
       window.removeEventListener('hashchange', onHash);
       window.removeEventListener('popstate', onPop);
+      window.removeEventListener('pianogrid:show-middle-c', onShowMiddleC);
     };
   }, []);
 
@@ -658,9 +703,13 @@ export function KeyboardNotesWorkspace({ layouts, blocks = [], links = [] }: { l
     syncPracticeURL(next);
   }
 
-  return <div className="kn-v2-shell" data-hydrated={hydrated ? 'true' : 'false'}>
+  return <div id="explore" className="kn-v2-shell" data-hydrated={hydrated ? 'true' : 'false'}>
+    <noscript>
+      <p className="kn-hub-noscript">Enable JavaScript to find and hear notes. You can still use the chart below.</p>
+      <style>{`.kn-v2-shell button,.kn-v2-shell input,.kn-v2-shell select{pointer-events:none}`}</style>
+    </noscript>
     <ModeTabs value={mode} onChange={changeMode} />
-    <ExploreNotes layout={layout} layouts={layouts} active={mode === 'explore'} compact={compact} blocks={blocks} links={links} onLayoutChange={setLayoutID} onPractice={() => changeMode('practice')} />
+    <ExploreNotes layout={layout} layouts={layouts} active={mode === 'explore'} compact={compact} onLayoutChange={setLayoutID} />
     <PracticeNotes layout={layout} active={mode === 'practice'} sharedPreset={sharedPreset} onExplore={() => changeMode('explore')} />
   </div>;
 }

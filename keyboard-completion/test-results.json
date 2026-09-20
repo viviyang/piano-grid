@@ -1,5 +1,5 @@
 {
-  "passed": 51,
+  "passed": 70,
   "failed": 0,
   "results": [
     {
@@ -59,6 +59,42 @@
       "passed": true
     },
     {
+      "name": "hub empty message",
+      "passed": true
+    },
+    {
+      "name": "hub H4 message",
+      "passed": true
+    },
+    {
+      "name": "hub D8 message",
+      "passed": true
+    },
+    {
+      "name": "hub C octave message",
+      "passed": true
+    },
+    {
+      "name": "hub A-flat octave message",
+      "passed": true
+    },
+    {
+      "name": "Db4 spelling retained",
+      "passed": true
+    },
+    {
+      "name": "c#4 same pitch as Db4",
+      "passed": true
+    },
+    {
+      "name": "spoken C4 name",
+      "passed": true
+    },
+    {
+      "name": "spoken C#4 name",
+      "passed": true
+    },
+    {
       "name": "C candidates 88",
       "passed": true
     },
@@ -100,6 +136,14 @@
     },
     {
       "name": "bad share params safe",
+      "passed": true
+    },
+    {
+      "name": "invalid share note flagged",
+      "passed": true
+    },
+    {
+      "name": "missing share note not flagged",
       "passed": true
     },
     {
@@ -204,6 +248,38 @@
     },
     {
       "name": "blank asset blank-keyboard-worksheet-a4.pdf",
+      "passed": true
+    },
+    {
+      "name": "hub chart svg exists and is small",
+      "passed": true
+    },
+    {
+      "name": "hub chart viewBox",
+      "passed": true
+    },
+    {
+      "name": "hub chart has 8 white keys",
+      "passed": true
+    },
+    {
+      "name": "hub chart has 5 black keys",
+      "passed": true
+    },
+    {
+      "name": "hub chart white order",
+      "passed": true
+    },
+    {
+      "name": "hub chart black names",
+      "passed": true
+    },
+    {
+      "name": "hub chart marks middle C",
+      "passed": true
+    },
+    {
+      "name": "hub chart has no script or linked font",
       "passed": true
     }
   ]

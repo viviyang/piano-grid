@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { resolveLookup, lookupShareParams, restoreLookup } from '../src/lib/keyboard-resolution.ts';
+import { lookupHubMessage, lookupShareParams, resolveLookup, restoreLookup, spokenPianoKeyName } from '../src/lib/keyboard-resolution.ts';
 import { classifyPracticeAnswer, createPracticePreset, generateFindPractice, generatePresetPractice, generateReadPractice, practicePresetParams, restorePracticePreset, reviewPracticeTargets, scorePractice, summarizePractice, type PracticeAnswerRecord } from '../src/lib/keyboard-practice.ts';
 
 const master = JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json', 'utf8'));
@@ -18,6 +18,15 @@ for (const [query,midi] of [['A0',21],['C4',60],['A4',69],['C8',108],['B#3',60],
 equal('B-sharp spelling retained', resolveLookup('B-sharp3',layout88).selected?.requestedSpelling.display, 'B♯3');
 equal('C-flat spelling retained', resolveLookup('C-flat4',layout88).selected?.requestedSpelling.display, 'C♭4');
 equal('D8 outside range', resolveLookup('D8',layout88).status, 'outside_range');
+equal('hub empty message', lookupHubMessage(resolveLookup('',layout88),layout88), 'Enter a note, such as C4 or F♯3.');
+equal('hub H4 message', lookupHubMessage(resolveLookup('H4',layout88),layout88), 'Use a note from A to G, such as C4 or F♯3.');
+equal('hub D8 message', lookupHubMessage(resolveLookup('D8',layout88),layout88), 'D8 is outside this keyboard’s A0–C8 range.');
+equal('hub C octave message', lookupHubMessage(resolveLookup('C',layout88),layout88), 'Choose an octave for C.');
+equal('hub A-flat octave message', lookupHubMessage(resolveLookup('A-flat',layout88),layout88), 'Choose an octave for A♭.');
+equal('Db4 spelling retained', resolveLookup('Db4',layout88).selected?.requestedSpelling.display, 'D♭4');
+equal('c#4 same pitch as Db4', resolveLookup('c#4',layout88).selected?.midi, 61);
+equal('spoken C4 name', spokenPianoKeyName(layout88.keys.find((key:any)=>key.midi===60)), 'C 4, middle C, white key');
+equal('spoken C#4 name', spokenPianoKeyName(layout88.keys.find((key:any)=>key.midi===61)), 'C sharp 4, D flat 4, black key');
 equal('C candidates 88', resolveLookup('C',layout88).candidates.map(item=>item.display), ['C1','C2','C3','C4','C5','C6','C7','C8']);
 equal('C candidates 61', resolveLookup('C',layout61).candidates.map(item=>item.display), ['C2','C3','C4','C5','C6','C7']);
 equal('Ab candidates 88', resolveLookup('Ab',layout88).candidates.map(item=>item.display), ['A♭1','A♭2','A♭3','A♭4','A♭5','A♭6','A♭7']);
@@ -30,6 +39,8 @@ const shared = resolveLookup('Ab4',layout88).selected!;
 const restored = restoreLookup(lookupShareParams(layout88,shared),layouts);
 equal('share serialize restore', [restored.layout.layout_id,restored.resolution?.selected?.midi,restored.resolution?.selected?.requestedSpelling.display], ['88-key-A0-C8',68,'A♭4']);
 equal('bad share params safe', restoreLookup(new URLSearchParams('layout=nope&note=H4'),layouts).resolution, null);
+equal('invalid share note flagged', restoreLookup(new URLSearchParams('layout=nope&note=H4'),layouts).invalidNote, true);
+equal('missing share note not flagged', restoreLookup(new URLSearchParams(),layouts).invalidNote, false);
 const midi66 = chart.keyboard_notes.find((key:any)=>key.midi===66);
 const sharp = midi66.staff_spellings.find((item:any)=>item.name==='F#4');
 const flat = midi66.staff_spellings.find((item:any)=>item.name==='Gb4');
@@ -58,6 +69,15 @@ test('read practice has canonical staff events',()=>assert.ok(readA.every(item=>
 equal('A4 formula', 440*2**((69-69)/12), 440);
 test('88 formula rows finite',()=>assert.ok(layout88.keys.every((key:any)=>Number.isFinite(440*2**((key.midi-69)/12)))));
 for(const asset of ['blank-keyboard-13-keys.svg','blank-keyboard-25-keys.svg','blank-keyboard-worksheet-letter.pdf','blank-keyboard-worksheet-a4.pdf']) test(`blank asset ${asset}`,()=>assert.ok(fs.statSync(`public/reference/generated/keyboard-notes/${asset}`).size>1000));
+const chartSvg = fs.readFileSync('public/images/keyboard-notes/piano-keys-notes-chart.svg','utf8');
+test('hub chart svg exists and is small',()=>assert.ok(chartSvg.length>500 && Buffer.byteLength(chartSvg)<100*1024));
+test('hub chart viewBox',()=>assert.ok(chartSvg.includes('viewBox="0 0 1200 440"')));
+test('hub chart has 8 white keys',()=>assert.equal([...chartSvg.matchAll(/data-color="white"/g)].length,8));
+test('hub chart has 5 black keys',()=>assert.equal([...chartSvg.matchAll(/data-color="black"/g)].length,5));
+test('hub chart white order',()=>assert.ok(['C4','D4','E4','F4','G4','A4','B4','C5'].every(name=>chartSvg.includes(`data-key="${name}"`))));
+test('hub chart black names',()=>assert.ok(chartSvg.includes('C♯4') && chartSvg.includes('D♭4') && chartSvg.includes('F♯4') && chartSvg.includes('G♭4') && chartSvg.includes('A♯4') && chartSvg.includes('B♭4')));
+test('hub chart marks middle C',()=>assert.ok(chartSvg.includes('data-marker="middle-c"') && chartSvg.includes('Middle C')));
+test('hub chart has no script or linked font',()=>assert.ok(!chartSvg.includes('<script') && !/@import|url\(http/.test(chartSvg)));
 
 fs.mkdirSync('keyboard-completion',{recursive:true});
 fs.writeFileSync('keyboard-completion/test-results.json',JSON.stringify({passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,results},null,2));

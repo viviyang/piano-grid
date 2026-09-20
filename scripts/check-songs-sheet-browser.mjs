@@ -112,7 +112,7 @@ try{
   check('Scales inherited route smoke',await page.locator('h1').count()===1&&await page.locator('.sc-tool').count()===1,await page.locator('h1').allTextContents());
   check('Scales inherited C major deep link remains',await page.locator('a[href="/scales/c-major"]').count()>0);
   await page.goto(`${base}/keyboard-notes`);
-  check('Keyboard inherited route smoke',await page.locator('h1').textContent()==='Piano Keys and Notes');
+  check('Keyboard inherited route smoke',await page.locator('h1').textContent()==='Piano Keys Notes');
 
   const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:900}});
   const nojsPage=await nojs.newPage();

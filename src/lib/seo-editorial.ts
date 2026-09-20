@@ -9,7 +9,7 @@ type Copy = ChordDetailSeoCopy;
 export const SEO_COPY: Record<string, Copy> = {
   ...CHORD_DETAIL_SEO_COPY,
   '/': { title: 'Learn Piano: Chords, Scales & Practice Tools | PianoGrid', description: 'Explore piano notes, chords, scales, songs, and sheet music. Start playing with beginner guides, blank staff paper, and practical tools on PianoGrid.' },
-  '/keyboard-notes': { title: 'Piano Keys and Notes: Find, Hear & Practice | PianoGrid', h1: 'Piano Keys and Notes', description: 'Find a piano note by name and octave, hear it, and try a short note-recognition practice. Explore labeled layouts and printable learning resources.' },
+  '/keyboard-notes': { title: 'Piano Keys Notes: Interactive Keyboard & Chart | PianoGrid', h1: 'Piano Keys Notes', description: 'Learn piano keys notes with an interactive keyboard and labeled chart. Find middle C, hear each note, and practice white and black key names.' },
   '/keyboard-notes/labeled': {
     title: 'Piano Keyboard Keys Labeled – Note Names & Layout | PianoGrid',
     h1: 'Piano Keyboard Keys Labeled',
