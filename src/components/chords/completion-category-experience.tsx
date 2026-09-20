@@ -6,6 +6,7 @@ import type { Voicing } from '@/lib/a-minor-types';
 import { PlaybackControls } from './playback-controls';
 import { KeyboardViewport } from './keyboard-viewport';
 import {emitChordEvent} from '@/lib/chord-events';
+import { chordSearchMatches } from '@/lib/chord-search-text';
 
 const label = (value: string) => value.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, char => char.toUpperCase());
 const pc = (midi: number) => ((midi % 12) + 12) % 12;
@@ -21,7 +22,7 @@ export function CompletionCategoryExperience({ items, defaultObjectId, family, p
   const [practiceMode, setPracticeMode] = useState<'formula_pitch_classes' | 'example_pitch_classes' | 'example_midi_set'>('formula_pitch_classes'), [answer, setAnswer] = useState<number[]>([]), [feedback, setFeedback] = useState('');
   const player = useRef<ReferenceAudio | null>(null);
   useEffect(() => { const p = new ReferenceAudio((state, message, mode) => setAudio({ state, message, mode }), setSounding, { loading: 'Preparing sound…', audio_error: 'Sound could not start. Try again.', audio_unavailable: 'Sound is unavailable in this browser.' }); player.current = p; setReady(true); return () => p.dispose(); }, []);
-  const filtered = useMemo(() => items.filter(item => (!root || item.root === root) && (!subtype || item.subtype === subtype) && (!query.trim() || [item.name, item.symbol, ...item.aliases].join(' ').toLowerCase().includes(query.trim().toLowerCase()))), [items, query, root, subtype]);
+  const filtered = useMemo(() => items.filter(item => (!root || item.root === root) && (!subtype || item.subtype === subtype) && (!query.trim() || chordSearchMatches(query, [item.name, item.symbol, ...item.aliases]))), [items, query, root, subtype]);
   const selected = items.find(item => item.id === selectedId) || items[0];
   const realization = selected.realizations.find(item => item.id === realizationId) || selected.realizations.find(item => item.id === selected.defaultRealizationId) || selected.realizations[0];
   const voicing = asVoicing(selected, realization);

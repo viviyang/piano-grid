@@ -150,10 +150,36 @@ export function editorialSectionHeading(url: string, original: string): string {
   return SEO_COPY[url]?.h2?.[original] ?? original;
 }
 
+const ENGINEERING_FINGERING = /No independently authorized fingering dataset is provided|No independent fingering dataset is authorized/;
+const PLAIN_FINGERING = 'Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.';
+
+function replaceEngineeringFingering(paragraphs: string[]): string[] {
+  return paragraphs.map((paragraph) => (ENGINEERING_FINGERING.test(paragraph) ? PLAIN_FINGERING : paragraph));
+}
+
 export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailModel {
   const url = model.data.url;
   const copy = SEO_COPY[url];
-  if (!copy) return model;
+  if (!copy) {
+    let changed = false;
+    const blocks = model.blocks.map((block) => {
+      if (!block.block_id.endsWith('-fingering-example')) return block;
+      const paragraphs = replaceEngineeringFingering(block.content.paragraphs);
+      if (paragraphs.every((paragraph, index) => paragraph === block.content.paragraphs[index])) return block;
+      changed = true;
+      return { ...block, content: { ...block.content, paragraphs } };
+    });
+    if (!changed) return model;
+    return {
+      ...model,
+      blocks,
+      byId: Object.fromEntries(blocks.map((block) => [block.block_id, block])),
+      searchSections: model.searchSections.map((section) => {
+        const block = blocks.find((item) => item.block_id === section.id);
+        return block ? { ...section, text: JSON.stringify(block.content) } : section;
+      }),
+    };
+  }
   const heading = editorialHeading(url, model.data.heading);
   const mapHeading = (value: string) => editorialSectionHeading(url, value);
   const toolHeading = mapHeading(model.data.toolHeading);
@@ -162,8 +188,11 @@ export function applyEditorialChordCopy(model: ChordDetailModel): ChordDetailMod
     if (copy.theory && block.block_id.endsWith('-intro') && content.paragraphs.length > 0) {
       content = { ...content, paragraphs: [copy.theory, ...content.paragraphs.slice(1)] };
     }
-    if (copy.fingering && block.block_id.endsWith('-fingering-example') && content.paragraphs.length > 0) {
-      content = { ...content, paragraphs: [copy.fingering, ...content.paragraphs.slice(1)] };
+    if (block.block_id.endsWith('-fingering-example') && content.paragraphs.length > 0) {
+      const fingering = copy.fingering
+        ? [copy.fingering, ...content.paragraphs.slice(1)]
+        : replaceEngineeringFingering(content.paragraphs);
+      content = { ...content, paragraphs: fingering };
     }
     if (copy.keyboardHelp && block.block_id === model.data.toolId) {
       content = { ...content, paragraphs: [...content.paragraphs, copy.keyboardHelp] };

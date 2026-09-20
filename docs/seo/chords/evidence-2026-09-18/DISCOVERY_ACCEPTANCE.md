@@ -1,6 +1,6 @@
 # Discovery acceptance
 
-Test environment: local `http://127.0.0.1:3128` in worktree `pianogrid-final-integration`.
+Test environment: local `http://127.0.0.1:3132` in worktree `pianogrid-final-integration`.
 Browser: Playwright Chromium/Chrome, headless. Viewports: 1440x900 and 390x844.
 Date: 2026-09-18. Not a production crawl.
 
@@ -33,9 +33,9 @@ Independent detail URLs: 145. Missing family/hub hrefs: 0.
 | desktop-1440 hub has library name search | PASS |  |
 | desktop-1440 search Bm locates /chords/b-minor | PASS |  |
 | desktop-1440 search B minor locates /chords/b-minor | PASS |  |
-| desktop-1440 search Bb locates /chords/b-flat-major | FAIL |  |
+| desktop-1440 search Bb locates /chords/b-flat-major | PASS |  |
 | desktop-1440 search B-flat locates /chords/b-flat-major | PASS |  |
-| desktop-1440 search Cmadd9 locates /chords/c-madd9 | FAIL |  |
+| desktop-1440 search Cmadd9 locates /chords/c-madd9 | PASS |  |
 | desktop-1440 search Cm(add9) locates /chords/c-madd9 | PASS |  |
 | desktop-1440 B minor entry visible on /chords/minor | PASS |  |
 | desktop-1440 C7 entry visible on /chords/seventh | PASS |  |
@@ -52,9 +52,9 @@ Independent detail URLs: 145. Missing family/hub hrefs: 0.
 | mobile-390 hub has library name search | PASS |  |
 | mobile-390 search Bm locates /chords/b-minor | PASS |  |
 | mobile-390 search B minor locates /chords/b-minor | PASS |  |
-| mobile-390 search Bb locates /chords/b-flat-major | FAIL |  |
+| mobile-390 search Bb locates /chords/b-flat-major | PASS |  |
 | mobile-390 search B-flat locates /chords/b-flat-major | PASS |  |
-| mobile-390 search Cmadd9 locates /chords/c-madd9 | FAIL |  |
+| mobile-390 search Cmadd9 locates /chords/c-madd9 | PASS |  |
 | mobile-390 search Cm(add9) locates /chords/c-madd9 | PASS |  |
 | mobile-390 B minor entry visible on /chords/minor | PASS |  |
 | mobile-390 C7 entry visible on /chords/seventh | PASS |  |
@@ -68,6 +68,6 @@ Independent detail URLs: 145. Missing family/hub hrefs: 0.
 
 Screenshots: `docs/seo/chords/evidence-2026-09-18/screenshots/`.
 
-Overall: FAIL (4 checks).
+Overall: PASS.
 
 Optional proposal: the hub already has “Search the supported chord library”. No second chord-name engine was added. Family+root remains the primary path.

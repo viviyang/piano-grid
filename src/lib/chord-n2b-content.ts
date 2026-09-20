@@ -124,7 +124,7 @@ export function getN2BChordDetail(url:N2BChordDetailRoute):ChordDetailModel{
   const blocks:Block[]=[
     {block_id:`${slug}-intro`,content:{...empty(raw.seo.h1),paragraphs:[raw.content.theory,raw.content.spellingNote]}},
     {block_id:data.toolId,content:{...empty(data.toolHeading),paragraphs:['Choose a position to keep the written notes, sounding keys, bass note, playback and print reference synchronized.']}},
-    {block_id:`${slug}-formula`,content:{...empty(`${raw.name} formula`),paragraphs:[`${raw.symbol} uses ${raw.definition.formulaDegrees.join('–')}: ${raw.definition.toneSpellings.join('–')}.`,raw.content.theory]}},
+    {block_id:`${slug}-formula`,content:{...empty(`${raw.name} formula`),paragraphs:[`${raw.symbol} uses ${raw.definition.formulaDegrees.join('–')}: ${raw.definition.toneSpellings.join('–')}.`]}},
     {block_id:`${slug}-comparison`,content:{...empty(`Compare ${raw.name}`),paragraphs:[raw.content.comparison]}},
     {block_id:`${slug}-inversions`,content:{...empty(`${raw.name} inversions`),paragraphs:[raw.content.inversionExplanation],table:{columns:['Position','Symbol','Notes, low to high','Bass'],rows:voicings.map(voicing=>[voicing.inversion_label,voicing.chord_symbol,voicing.notes_low_to_high.map(note=>note.display_pitch).join('–'),voicing.bass_spelling])}}},
     {block_id:`${slug}-fingering-example`,content:{...empty('Fingering is not provided for this reference'),paragraphs:[raw.fingering.reason,'Use the written notes, keyboard positions and playback without treating the diagram as a required hand shape.'],links:[{url:'/keyboard-notes/finger-numbers',label:'Read left- and right-hand finger numbers',published:true}]}},

@@ -1,0 +1,1537 @@
+{
+  "base": "http://127.0.0.1:3132",
+  "generatedAt": "2026-09-19T23:46:33.726Z",
+  "failed": [],
+  "results": [
+    {
+      "name": "desktop-1440 /chords 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/major 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/major no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/major has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/minor has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/diminished 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/diminished no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/diminished has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/augmented 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/augmented no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/augmented has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/suspended 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/suspended no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/suspended has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/seventh 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/seventh no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/seventh has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/add 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/add no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/add has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/extended 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/extended no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/extended has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/altered 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/altered no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/altered has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/finder 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/finder no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/finder has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/by-key 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/by-key no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/by-key has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chord-progressions 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chord-progressions no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chord-progressions has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 hub library search exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 hub search Bb -> /chords/b-flat-major",
+      "passed": true,
+      "detail": "Bb"
+    },
+    {
+      "name": "desktop-1440 hub search Cmadd9 -> /chords/c-madd9",
+      "passed": true,
+      "detail": "Cmadd9"
+    },
+    {
+      "name": "desktop-1440 hub search Bm -> /chords/b-minor",
+      "passed": true,
+      "detail": "Bm"
+    },
+    {
+      "name": "desktop hub to minor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "minor family root filter B keeps B minor card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop family to B minor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B minor returns to minor family",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 finder empty state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 finder incomplete after one note",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 finder C-E-G yields matches",
+      "passed": true,
+      "detail": "matches"
+    },
+    {
+      "name": "desktop-1440 finder extra note still a defined state",
+      "passed": true,
+      "detail": "matches"
+    },
+    {
+      "name": "desktop-1440 finder clear returns empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 by-key G major table has chord links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 progressions play exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 progressions stop remains usable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440 /chords/b-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/b-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/b-minor tones visible",
+      "passed": true,
+      "detail": "B–D–F♯"
+    },
+    {
+      "name": "desktop-1440 /chords/b-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B–D–F♯ -> B–D–F♯"
+    },
+    {
+      "name": "desktop-1440 /chords/d-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/d-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/d-minor tones visible",
+      "passed": true,
+      "detail": "D–F–A"
+    },
+    {
+      "name": "desktop-1440 /chords/d-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "D–F–A -> D–F–A"
+    },
+    {
+      "name": "desktop-1440 /chords/c-maj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-maj7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-maj7 tones visible",
+      "passed": true,
+      "detail": "C–E–G–B"
+    },
+    {
+      "name": "desktop-1440 /chords/c-maj7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G–B -> C–E–G–B"
+    },
+    {
+      "name": "desktop-1440 /chords/c-7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-7 tones visible",
+      "passed": true,
+      "detail": "C–E–G–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/c-7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G–B♭ -> C–E–G–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/b-7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/b-7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/b-7 tones visible",
+      "passed": true,
+      "detail": "B–D♯–F♯–A"
+    },
+    {
+      "name": "desktop-1440 /chords/b-7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B–D♯–F♯–A -> B–D♯–F♯–A"
+    },
+    {
+      "name": "desktop-1440 /chords/c-m7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-m7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-m7 tones visible",
+      "passed": true,
+      "detail": "C–E♭–G–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/c-m7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E♭–G–B♭ -> C–E♭–G–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/c-add9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-add9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-add9 tones visible",
+      "passed": true,
+      "detail": "C–E–G–D"
+    },
+    {
+      "name": "desktop-1440 /chords/c-add9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G–D -> C–E–G–D"
+    },
+    {
+      "name": "desktop-1440 /chords/c-diminished 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-diminished no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-diminished tones visible",
+      "passed": true,
+      "detail": "C–E♭–G♭"
+    },
+    {
+      "name": "desktop-1440 /chords/c-diminished inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E♭–G♭ -> C–E♭–G♭"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus2 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus2 tones visible",
+      "passed": true,
+      "detail": "A–B–E"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus2 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A–B–E -> A–B–E"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus4 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus4 tones visible",
+      "passed": true,
+      "detail": "A–D–E"
+    },
+    {
+      "name": "desktop-1440 /chords/a-sus4 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A–D–E -> A–D–E"
+    },
+    {
+      "name": "desktop-1440 /chords/b-diminished 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/b-diminished no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/b-diminished tones visible",
+      "passed": true,
+      "detail": "B–D–F"
+    },
+    {
+      "name": "desktop-1440 /chords/b-diminished inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B–D–F -> B–D–F"
+    },
+    {
+      "name": "desktop-1440 /chords/f-add9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/f-add9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/f-add9 tones visible",
+      "passed": true,
+      "detail": "F–A–C–G"
+    },
+    {
+      "name": "desktop-1440 /chords/f-add9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "F–A–C–G -> F–A–C–G"
+    },
+    {
+      "name": "desktop-1440 /chords/c-augmented 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-augmented no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-augmented tones visible",
+      "passed": true,
+      "detail": "C–E–G♯"
+    },
+    {
+      "name": "desktop-1440 /chords/c-augmented inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G♯ -> C–E–G♯"
+    },
+    {
+      "name": "desktop-1440 /chords/c-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-madd9 tones visible",
+      "passed": true,
+      "detail": "C–E♭–G–D"
+    },
+    {
+      "name": "desktop-1440 /chords/c-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E♭–G–D -> C–E♭–G–D"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-m7-flat5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-m7-flat5 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-m7-flat5 tones visible",
+      "passed": true,
+      "detail": "D♭–F♭–A𝄫–C♭"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-m7-flat5 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "D♭–F♭–A𝄫–C♭ -> D♭–F♭–A𝄫–C♭"
+    },
+    {
+      "name": "desktop-1440 /chords/f-sharp-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/f-sharp-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/f-sharp-madd9 tones visible",
+      "passed": true,
+      "detail": "F♯–A–C♯–G♯"
+    },
+    {
+      "name": "desktop-1440 /chords/f-sharp-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "F♯–A–C♯–G♯ -> F♯–A–C♯–G♯"
+    },
+    {
+      "name": "desktop-1440 /chords/a-flat-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/a-flat-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/a-flat-madd9 tones visible",
+      "passed": true,
+      "detail": "A♭–C♭–E♭–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/a-flat-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A♭–C♭–E♭–B♭ -> A♭–C♭–E♭–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/b-flat-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/b-flat-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/b-flat-madd9 tones visible",
+      "passed": true,
+      "detail": "B♭–D♭–F–C"
+    },
+    {
+      "name": "desktop-1440 /chords/b-flat-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B♭–D♭–F–C -> B♭–D♭–F–C"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-madd9 tones visible",
+      "passed": true,
+      "detail": "D♭–F♭–A♭–E♭"
+    },
+    {
+      "name": "desktop-1440 /chords/d-flat-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "D♭–F♭–A♭–E♭ -> D♭–F♭–A♭–E♭"
+    },
+    {
+      "name": "desktop-1440 /chords/c-major 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-major no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-major tones visible",
+      "passed": true,
+      "detail": "C–E–G"
+    },
+    {
+      "name": "desktop-1440 /chords/c-major inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G -> C–E–G"
+    },
+    {
+      "name": "desktop-1440 /chords/a-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/a-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/a-minor tones visible",
+      "passed": true,
+      "detail": "A–C–E"
+    },
+    {
+      "name": "desktop-1440 /chords/a-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A–C–E -> A–C–E"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus2 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus2 tones visible",
+      "passed": true,
+      "detail": "C–D–G"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus2 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–D–G -> C–D–G"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus4 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus4 tones visible",
+      "passed": true,
+      "detail": "C–F–G"
+    },
+    {
+      "name": "desktop-1440 /chords/c-sus4 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–F–G -> C–F–G"
+    },
+    {
+      "name": "desktop-1440 /chords/g-major 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/g-major no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/g-major tones visible",
+      "passed": true,
+      "detail": "G–B–D"
+    },
+    {
+      "name": "desktop-1440 /chords/g-major inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "G–B–D -> G–B–D"
+    },
+    {
+      "name": "desktop-1440 /chords/e-flat-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop-1440 /chords/e-flat-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "desktop-1440 /chords/e-flat-minor tones visible",
+      "passed": true,
+      "detail": "E♭–G♭–B♭"
+    },
+    {
+      "name": "desktop-1440 /chords/e-flat-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "E♭–G♭–B♭ -> E♭–G♭–B♭"
+    },
+    {
+      "name": "mobile-390 /chords 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/major 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/major no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/major has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/minor has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/diminished 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/diminished no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/diminished has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/augmented 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/augmented no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/augmented has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/suspended 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/suspended no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/suspended has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/seventh 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/seventh no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/seventh has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/add 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/add no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/add has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/extended 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/extended no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/extended has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/altered 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/altered no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/altered has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/finder 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/finder no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/finder has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/by-key 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/by-key no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/by-key has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chord-progressions 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chord-progressions no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chord-progressions has h1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 hub library search exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 hub search Bb -> /chords/b-flat-major",
+      "passed": true,
+      "detail": "Bb"
+    },
+    {
+      "name": "mobile-390 hub search Cmadd9 -> /chords/c-madd9",
+      "passed": true,
+      "detail": "Cmadd9"
+    },
+    {
+      "name": "mobile-390 hub search Bm -> /chords/b-minor",
+      "passed": true,
+      "detail": "Bm"
+    },
+    {
+      "name": "mobile-390 finder empty state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 finder incomplete after one note",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 finder C-E-G yields matches",
+      "passed": true,
+      "detail": "matches"
+    },
+    {
+      "name": "mobile-390 finder extra note still a defined state",
+      "passed": true,
+      "detail": "matches"
+    },
+    {
+      "name": "mobile-390 finder clear returns empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 by-key G major table has chord links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 progressions play exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 progressions stop remains usable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390 /chords/b-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/b-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/b-minor tones visible",
+      "passed": true,
+      "detail": "B–D–F♯"
+    },
+    {
+      "name": "mobile-390 /chords/b-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B–D–F♯ -> B–D–F♯"
+    },
+    {
+      "name": "mobile-390 /chords/d-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/d-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/d-minor tones visible",
+      "passed": true,
+      "detail": "D–F–A"
+    },
+    {
+      "name": "mobile-390 /chords/d-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "D–F–A -> D–F–A"
+    },
+    {
+      "name": "mobile-390 /chords/c-maj7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-maj7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-maj7 tones visible",
+      "passed": true,
+      "detail": "C–E–G–B"
+    },
+    {
+      "name": "mobile-390 /chords/c-maj7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G–B -> C–E–G–B"
+    },
+    {
+      "name": "mobile-390 /chords/c-7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-7 tones visible",
+      "passed": true,
+      "detail": "C–E–G–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/c-7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G–B♭ -> C–E–G–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/b-7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/b-7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/b-7 tones visible",
+      "passed": true,
+      "detail": "B–D♯–F♯–A"
+    },
+    {
+      "name": "mobile-390 /chords/b-7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B–D♯–F♯–A -> B–D♯–F♯–A"
+    },
+    {
+      "name": "mobile-390 /chords/c-m7 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-m7 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-m7 tones visible",
+      "passed": true,
+      "detail": "C–E♭–G–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/c-m7 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E♭–G–B♭ -> C–E♭–G–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/c-add9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-add9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-add9 tones visible",
+      "passed": true,
+      "detail": "C–E–G–D"
+    },
+    {
+      "name": "mobile-390 /chords/c-add9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G–D -> C–E–G–D"
+    },
+    {
+      "name": "mobile-390 /chords/c-diminished 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-diminished no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-diminished tones visible",
+      "passed": true,
+      "detail": "C–E♭–G♭"
+    },
+    {
+      "name": "mobile-390 /chords/c-diminished inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E♭–G♭ -> C–E♭–G♭"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus2 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus2 tones visible",
+      "passed": true,
+      "detail": "A–B–E"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus2 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A–B–E -> A–B–E"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus4 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus4 tones visible",
+      "passed": true,
+      "detail": "A–D–E"
+    },
+    {
+      "name": "mobile-390 /chords/a-sus4 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A–D–E -> A–D–E"
+    },
+    {
+      "name": "mobile-390 /chords/b-diminished 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/b-diminished no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/b-diminished tones visible",
+      "passed": true,
+      "detail": "B–D–F"
+    },
+    {
+      "name": "mobile-390 /chords/b-diminished inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B–D–F -> B–D–F"
+    },
+    {
+      "name": "mobile-390 /chords/f-add9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/f-add9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/f-add9 tones visible",
+      "passed": true,
+      "detail": "F–A–C–G"
+    },
+    {
+      "name": "mobile-390 /chords/f-add9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "F–A–C–G -> F–A–C–G"
+    },
+    {
+      "name": "mobile-390 /chords/c-augmented 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-augmented no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-augmented tones visible",
+      "passed": true,
+      "detail": "C–E–G♯"
+    },
+    {
+      "name": "mobile-390 /chords/c-augmented inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G♯ -> C–E–G♯"
+    },
+    {
+      "name": "mobile-390 /chords/c-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-madd9 tones visible",
+      "passed": true,
+      "detail": "C–E♭–G–D"
+    },
+    {
+      "name": "mobile-390 /chords/c-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E♭–G–D -> C–E♭–G–D"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-m7-flat5 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-m7-flat5 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-m7-flat5 tones visible",
+      "passed": true,
+      "detail": "D♭–F♭–A𝄫–C♭"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-m7-flat5 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "D♭–F♭–A𝄫–C♭ -> D♭–F♭–A𝄫–C♭"
+    },
+    {
+      "name": "mobile-390 /chords/f-sharp-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/f-sharp-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/f-sharp-madd9 tones visible",
+      "passed": true,
+      "detail": "F♯–A–C♯–G♯"
+    },
+    {
+      "name": "mobile-390 /chords/f-sharp-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "F♯–A–C♯–G♯ -> F♯–A–C♯–G♯"
+    },
+    {
+      "name": "mobile-390 /chords/a-flat-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/a-flat-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/a-flat-madd9 tones visible",
+      "passed": true,
+      "detail": "A♭–C♭–E♭–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/a-flat-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A♭–C♭–E♭–B♭ -> A♭–C♭–E♭–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/b-flat-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/b-flat-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/b-flat-madd9 tones visible",
+      "passed": true,
+      "detail": "B♭–D♭–F–C"
+    },
+    {
+      "name": "mobile-390 /chords/b-flat-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "B♭–D♭–F–C -> B♭–D♭–F–C"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-madd9 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-madd9 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-madd9 tones visible",
+      "passed": true,
+      "detail": "D♭–F♭–A♭–E♭"
+    },
+    {
+      "name": "mobile-390 /chords/d-flat-madd9 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "D♭–F♭–A♭–E♭ -> D♭–F♭–A♭–E♭"
+    },
+    {
+      "name": "mobile-390 /chords/c-major 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-major no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-major tones visible",
+      "passed": true,
+      "detail": "C–E–G"
+    },
+    {
+      "name": "mobile-390 /chords/c-major inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–E–G -> C–E–G"
+    },
+    {
+      "name": "mobile-390 /chords/a-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/a-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/a-minor tones visible",
+      "passed": true,
+      "detail": "A–C–E"
+    },
+    {
+      "name": "mobile-390 /chords/a-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "A–C–E -> A–C–E"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus2 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus2 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus2 tones visible",
+      "passed": true,
+      "detail": "C–D–G"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus2 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–D–G -> C–D–G"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus4 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus4 no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus4 tones visible",
+      "passed": true,
+      "detail": "C–F–G"
+    },
+    {
+      "name": "mobile-390 /chords/c-sus4 inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "C–F–G -> C–F–G"
+    },
+    {
+      "name": "mobile-390 /chords/g-major 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/g-major no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/g-major tones visible",
+      "passed": true,
+      "detail": "G–B–D"
+    },
+    {
+      "name": "mobile-390 /chords/g-major inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "G–B–D -> G–B–D"
+    },
+    {
+      "name": "mobile-390 /chords/e-flat-minor 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile-390 /chords/e-flat-minor no horizontal overflow",
+      "passed": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "mobile-390 /chords/e-flat-minor tones visible",
+      "passed": true,
+      "detail": "E♭–G♭–B♭"
+    },
+    {
+      "name": "mobile-390 /chords/e-flat-minor inversion keeps same chord-tone letters",
+      "passed": true,
+      "detail": "E♭–G♭–B♭ -> E♭–G♭–B♭"
+    }
+  ]
+}
