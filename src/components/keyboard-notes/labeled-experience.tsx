@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import type { Layout } from '@/lib/keyboard-types';
 import { layoutCode } from '@/lib/keyboard-resolution';
@@ -30,6 +30,9 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
   const [printPart, setPrintPart] = useState<number | null>(null);
   const [snapshot, setSnapshot] = useState<{ layout: Layout; octaves: boolean } | null>(null);
   const [moreOpen, setMoreOpen] = useState(false);
+  const moreId = useId();
+  const moreRoot = useRef<HTMLDivElement>(null);
+  const moreTrigger = useRef<HTMLButtonElement>(null);
   const layout = layouts.find(item => item.layout_id === layoutID) ?? layouts[0];
   const whiteSpan = 12;
   const [rangeStart, setRangeStart] = useState(60);
@@ -77,6 +80,24 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
     return () => window.removeEventListener('beforeprint', capture);
   }, [layout, octaves]);
 
+  useEffect(() => {
+    if (!moreOpen) return;
+    const closeOnPointer = (event: PointerEvent) => {
+      if (!moreRoot.current?.contains(event.target as Node)) setMoreOpen(false);
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      setMoreOpen(false);
+      moreTrigger.current?.focus();
+    };
+    document.addEventListener('pointerdown', closeOnPointer);
+    document.addEventListener('keydown', closeOnEscape);
+    return () => {
+      document.removeEventListener('pointerdown', closeOnPointer);
+      document.removeEventListener('keydown', closeOnEscape);
+    };
+  }, [moreOpen]);
+
   const { rangeMin, rangeMax, keys: visibleKeys } = useMemo(() => visibleMidiWindow(layout, rangeStart, whiteSpan), [layout, rangeStart]);
   const fullSegments = useMemo(() => labeledFullSegments(layout), [layout]);
   const print = snapshot ?? { layout, octaves };
@@ -101,10 +122,10 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
         <label className="kn-checkbox"><input type="checkbox" checked={octaves} disabled={!ready} onChange={event => setOctaves(event.target.checked)}/>Octave numbers</label>
         <div className="kn-labeled-actions">
           <button className="am-button am-primary" disabled={!ready} onClick={startPrint}>Print reference</button>
-          <div className="kn-labeled-more">
-            <button type="button" className="am-button am-tertiary" aria-expanded={moreOpen} onClick={() => setMoreOpen(value => !value)}>More</button>
+          <div className="kn-labeled-more" ref={moreRoot}>
+            <button type="button" ref={moreTrigger} className="am-button am-tertiary" aria-expanded={moreOpen} aria-controls={moreId} onClick={() => setMoreOpen(value => !value)}>More</button>
             {moreOpen ? (
-              <div className="kn-labeled-more-panel">
+              <div className="kn-labeled-more-panel" id={moreId}>
                 <a className="am-button am-tertiary" download href={pdfHref}>Download PDF</a>
                 <ShareControl path="/keyboard-notes/labeled" params={shareParams} label="Share reference"/>
               </div>

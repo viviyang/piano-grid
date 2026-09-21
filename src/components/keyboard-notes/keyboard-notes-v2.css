@@ -61,9 +61,11 @@
 .kn-v2-overview .kn-key-text{display:none}
 .kn-v2-explore-secondary{display:flex;align-items:center;gap:1.25rem;margin-top:1.25rem}
 .kn-v2-explore-secondary details{flex:1;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.kn-v2-explore-secondary summary,.kn-v2-options summary,.kn-v2-more-reference summary{min-height:3.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;cursor:pointer;font-weight:650;list-style:none}
-.kn-v2-explore-secondary summary::after,.kn-v2-options summary::after,.kn-v2-more-reference summary::after{content:"+";font-size:1.25rem;font-weight:400}
-.kn-v2-explore-secondary details[open] summary::after,.kn-v2-options[open] summary::after,.kn-v2-more-reference[open] summary::after{content:"−"}
+.kn-v2-explore-secondary summary,.kn-v2-options summary,.kn-v2-more-reference summary,.kn-v2-how summary{min-height:3.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;cursor:pointer;font-weight:650;list-style:none}
+.kn-v2-explore-secondary summary::-webkit-details-marker,.kn-v2-options summary::-webkit-details-marker,.kn-v2-more-reference summary::-webkit-details-marker,.kn-v2-how summary::-webkit-details-marker{display:none}
+.kn-v2-explore-secondary summary::marker,.kn-v2-options summary::marker,.kn-v2-more-reference summary::marker,.kn-v2-how summary::marker{content:none}
+.kn-v2-explore-secondary summary::after,.kn-v2-options summary::after,.kn-v2-more-reference summary::after,.kn-v2-how summary::after{content:"+";font-size:1.25rem;font-weight:400}
+.kn-v2-explore-secondary details[open] summary::after,.kn-v2-options[open] summary::after,.kn-v2-more-reference[open] summary::after,.kn-v2-how[open] summary::after{content:"−"}
 .kn-v2-note-choices{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:.4rem;padding:0 0 1rem}
 .kn-v2-layout-choice{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:1rem;padding:0 0 1rem;color:var(--muted-foreground);font-size:var(--pr-type-meta-size)}
 .kn-v2-layout-choice select{width:100%;min-height:var(--pr-control-min-size);padding:.55rem .7rem;border:1px solid var(--input);border-radius:var(--pr-radius-control);background:var(--background);color:var(--foreground)}
@@ -116,8 +118,7 @@
 .kn-v2-receiver-note{margin:0 0 1rem;padding:.55rem 0;border-bottom:1px solid var(--border);color:var(--muted-foreground);text-align:left;max-width:none}
 .kn-v2-receiver-note .kn-v2-kicker{margin:0;color:var(--foreground);font-size:var(--pr-type-meta-size)}
 .kn-v2-receiver-invalid{border-color:var(--error)}
-.kn-v2-how{max-width:42rem;margin:1rem auto 0;border-top:1px solid var(--border);text-align:left}
-.kn-v2-how summary{min-height:var(--pr-control-min-size);cursor:pointer;font-weight:650}
+.kn-v2-how{max-width:42rem;margin:0 auto;border-bottom:1px solid var(--border);text-align:left}
 .kn-v2-how ol{display:grid;gap:.85rem;margin:1rem 0 0;padding:0 0 1rem;list-style:none;counter-reset:how}
 .kn-v2-how li{position:relative;padding-left:2rem;counter-increment:how}
 .kn-v2-how li::before{content:counter(how);position:absolute;left:0;top:.1rem;width:1.25rem;height:1.25rem;border:1px solid var(--input);border-radius:50%;font-size:.7rem;line-height:1.15rem;text-align:center;color:var(--muted-foreground)}

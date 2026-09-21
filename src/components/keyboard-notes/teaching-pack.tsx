@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type RefObject } from 'react';
 import { flushSync } from 'react-dom';
 import type { Layout } from '@/lib/keyboard-types';
 import { getB06TeacherCopy } from '@/lib/b06-content';
@@ -23,6 +23,7 @@ import {
   type TeachingPageSet,
   type TeachingPaper,
 } from '@/lib/b06-teaching-pack';
+import { Dialog, DialogClose } from '@/components/ui/dialog';
 import { KeyboardDiagram } from './keyboard-diagram';
 import { ShareDialog, buildShareURL } from './share-control';
 import './teaching-pack.css';
@@ -407,7 +408,7 @@ function PrintOptionsDialog({
 }: {
   open: boolean;
   onClose: () => void;
-  returnFocusRef: React.RefObject<HTMLButtonElement | null>;
+  returnFocusRef: RefObject<HTMLButtonElement | null>;
   pageSet: TeachingPageSet;
   onPageSet: (value: TeachingPageSet) => void;
   onConfirm: () => void;
@@ -415,56 +416,35 @@ function PrintOptionsDialog({
   fullHref: string;
 }) {
   const titleId = 'pg-teaching-pack-print-title';
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [open, onClose]);
-
-  useEffect(() => {
-    if (!open) return;
-    const previous = document.activeElement as HTMLElement | null;
-    const dialog = document.getElementById('pg-teaching-pack-print-dialog');
-    dialog?.querySelector<HTMLElement>('button, a, input')?.focus();
-    return () => {
-      returnFocusRef.current?.focus();
-      previous?.focus?.();
-    };
-  }, [open, returnFocusRef]);
-
-  if (!open) return null;
   return (
-    <div className="pg-teaching-pack-dialog-root" role="presentation">
-      <button type="button" className="pg-teaching-pack-dialog-backdrop" aria-label="Close print options" onClick={onClose} />
-      <div
-        id="pg-teaching-pack-print-dialog"
-        className="pg-teaching-pack-dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby={titleId}
-      >
-        <button type="button" className="pg-teaching-pack-dialog-close" aria-label="Close print options" onClick={onClose}>×</button>
+    <Dialog
+      open={open}
+      onClose={onClose}
+      returnFocusRef={returnFocusRef}
+      labelledBy={titleId}
+      id="pg-teaching-pack-print-dialog"
+      className="pg-teaching-pack-dialog pg-teaching-pack-dialog-root"
+    >
+      <div className="am-dialog-head">
         <h2 id={titleId}>Print this pack</h2>
-        <p>Choose what to print. The PDF opens with the selected paper size.</p>
-        <label className="pg-teaching-pack-choice">
-          <input type="radio" name="pg-teaching-pageset" checked={pageSet === 'full'} onChange={() => onPageSet('full')} />
-          Full pack · 3 pages
-        </label>
-        <label className="pg-teaching-pack-choice">
-          <input type="radio" name="pg-teaching-pageset" checked={pageSet === 'worksheet'} onChange={() => onPageSet('worksheet')} />
-          Worksheet only · 1 page
-        </label>
-        <div className="pg-teaching-pack-dialog-actions">
-          <button type="button" className="am-button am-primary" onClick={onConfirm}>Print with browser</button>
-          <a className="am-button am-tertiary" href={pageSet === 'worksheet' ? worksheetHref : fullHref} target="_blank" rel="noopener noreferrer">
-            Open print PDF
-          </a>
-        </div>
-        <p className="pg-teaching-pack-note">A print preview is not confirmation that paper was printed.</p>
+        <DialogClose aria-label="Close print options">×</DialogClose>
       </div>
-    </div>
+      <p>Choose what to print. The PDF opens with the selected paper size.</p>
+      <label className="pg-teaching-pack-choice">
+        <input type="radio" name="pg-teaching-pageset" checked={pageSet === 'full'} onChange={() => onPageSet('full')} />
+        Full pack · 3 pages
+      </label>
+      <label className="pg-teaching-pack-choice">
+        <input type="radio" name="pg-teaching-pageset" checked={pageSet === 'worksheet'} onChange={() => onPageSet('worksheet')} />
+        Worksheet only · 1 page
+      </label>
+      <div className="pg-teaching-pack-dialog-actions">
+        <button type="button" className="am-button am-primary" onClick={onConfirm}>Print with browser</button>
+        <a className="am-button am-tertiary" href={pageSet === 'worksheet' ? worksheetHref : fullHref} target="_blank" rel="noopener noreferrer">
+          Open print PDF
+        </a>
+      </div>
+      <p className="pg-teaching-pack-note">A print preview is not confirmation that paper was printed.</p>
+    </Dialog>
   );
 }

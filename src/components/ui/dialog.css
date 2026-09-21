@@ -1,0 +1,28 @@
+/* Native dialog wrapper — project tokens only, no Radix / no shadcn init */
+.pr-dialog {
+  border: 1px solid var(--border);
+  border-radius: var(--pr-radius-panel);
+  padding: 1.5rem;
+  width: min(36rem, calc(100% - 2rem));
+  max-height: 80vh;
+  overflow: auto;
+  color: var(--popover-foreground);
+  background: var(--popover);
+}
+.pr-dialog::backdrop {
+  background: var(--pr-overlay);
+}
+.pr-dialog-close {
+  flex: none;
+}
+.pr-dialog-close svg {
+  width: var(--pr-icon-default);
+  height: var(--pr-icon-default);
+  display: block;
+}
+@media print {
+  .pr-dialog,
+  .pr-dialog::backdrop {
+    display: none !important;
+  }
+}

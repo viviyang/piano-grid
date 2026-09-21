@@ -49,12 +49,9 @@
 .pg-teaching-pack-accessible summary{font-weight:600;cursor:pointer}
 .pg-teaching-pack-accessible p{margin-top:.75rem;font-size:.875rem;color:var(--muted-foreground)}
 .pg-teaching-pack-print-only{display:none}
-.pg-teaching-pack-dialog-root{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:1rem}
-.pg-teaching-pack-dialog-backdrop{position:absolute;inset:0;border:0;background:#18243b50;cursor:pointer}
-.pg-teaching-pack-dialog{position:relative;z-index:1;background:var(--background);color:var(--foreground);border:1px solid var(--border);border-radius:14px;padding:1.75rem;max-width:28rem;width:min(100%,28rem);box-shadow:0 18px 70px #0002}
-.pg-teaching-pack-dialog h2{font-size:1.5rem;margin:0 2rem 0 0}
+.pg-teaching-pack-dialog{width:min(100%,28rem);max-width:28rem;padding:1.75rem}
+.pg-teaching-pack-dialog h2{font-size:1.5rem;margin:0}
 .pg-teaching-pack-dialog>p{margin:1rem 0 0;color:var(--muted-foreground);font-size:.9375rem}
-.pg-teaching-pack-dialog-close{position:absolute;top:.85rem;right:.85rem;border:0;background:transparent;width:2.25rem;height:2.25rem;font-size:1.5rem;line-height:1}
 .pg-teaching-pack-choice{display:flex;gap:.65rem;align-items:center;min-height:3rem;margin-top:.65rem;font-size:.9375rem}
 .pg-teaching-pack-choice input{accent-color:var(--primary)}
 .pg-teaching-pack-dialog-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
@@ -64,7 +61,7 @@
   .pg-teaching-pack-paper{max-width:26rem;padding:1.15rem}
   .pg-teaching-pack-thumbs{gap:.5rem}
   .pg-teaching-pack-thumb{font-size:.6875rem;padding:.6rem .3rem}
-  .pg-teaching-pack-dialog{width:100%;max-width:none;border-radius:16px 16px 0 0;align-self:end;max-height:88vh;overflow:auto;padding:1.5rem 1.25rem max(1.5rem,env(safe-area-inset-bottom))}
+  .pg-teaching-pack-dialog{inset:auto 0 0 0;width:100%;max-width:none;margin:0;border-radius:var(--pr-radius-panel) var(--pr-radius-panel) 0 0;max-height:88vh;overflow:auto;padding:1.5rem 1.25rem max(1.5rem,env(safe-area-inset-bottom))}
 }
 
 /* Pack print activation — isolates portrait pack from labeled landscape sheets. */
@@ -73,7 +70,7 @@
   html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-page .am-screen,
   html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-page .kn-print-only,
   html[data-pg-print-resource="piano-key-names-c4-c5"] .kn-share-dialog,
-  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-dialog-root{
+  html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack-dialog{
     display:none!important;
   }
   html[data-pg-print-resource="piano-key-names-c4-c5"] .pg-teaching-pack.kn-screen,

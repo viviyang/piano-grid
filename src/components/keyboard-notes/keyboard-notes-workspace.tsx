@@ -28,6 +28,7 @@ import {
 import { keysInMidiRange, visibleMidiWindow, clampRangeStart } from '@/lib/keyboard-viewport';
 import { blackKeyNeighborDescription, lookupHubMessage, lookupShareParams, resolveLookup, restoreLookup, selectCandidate, selectPianoKey, spokenPianoKeyName, type LookupResolution } from '@/lib/keyboard-resolution';
 import { Icon } from '@/components/a-minor/icon';
+import { Dialog, DialogClose } from '@/components/ui/dialog';
 import { RollingText } from '@/components/ui/rolling-text';
 import { KeyboardDiagram } from './keyboard-diagram';
 import { ShareDialog, buildShareURL, copyShareURL } from './share-control';
@@ -299,8 +300,9 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
   const [isReview, setIsReview] = useState(false);
   const [savedResult, setSavedResult] = useState<PracticeAnswerRecord[] | null>(null);
   const [shareOpen, setShareOpen] = useState(false);
-  const exitDialog = useRef<HTMLDialogElement>(null);
+  const [exitOpen, setExitOpen] = useState(false);
   const exitTrigger = useRef<HTMLButtonElement>(null);
+  const keepPracticing = useRef<HTMLButtonElement>(null);
   const shareTrigger = useRef<HTMLButtonElement>(null);
   const advancing = useRef(false);
 
@@ -500,14 +502,14 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
       </div>
       <div className="kn-v2-start-keyboard" aria-hidden="true"><KeyboardDiagram keys={startPreviewKeys} selected={startPreviewKeys[1]?.midi ?? null} fit autoCenter={false} showVisualLabels={false}/></div>
       <div className="kn-v2-start-keyboard-meta"><span>One small part of the piano.</span><span>{startMeta.label.split(' · ')[1]}</span></div>
-      <details className="kn-v2-options">
+      <details className="kn-v2-options" open>
         <summary>Practice options</summary>
         <div className="kn-v2-option-fields">
           <label>Notes and range<select value={draftOption} onChange={event => updateDraftOption(event.target.value as PracticeOption)}>{Object.entries(PRACTICE_OPTIONS).map(([value, copy]) => <option value={value} key={value}>{copy.label}</option>)}</select></label>
           <label className="kn-v2-checkbox"><input type="checkbox" checked={showLabels} onChange={event => setShowLabels(event.target.checked)}/><span>Show key labels during practice</span></label>
         </div>
       </details>
-      <details className="kn-v2-how">
+      <details className="kn-v2-how" open>
         <summary>How this practice works</summary>
         <ol>
           <li><strong>See your result</strong><span>First tries, helped answers, and revealed notes stay distinct.</span></li>
@@ -524,7 +526,7 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
           <div><p className="kn-v2-kicker">{isReview ? 'Missed-note review' : '10-note practice'}</p><p><strong>{isReview ? 'Review' : 'Question'} {index + 1}</strong><span> of {questions.length}</span></p></div>
           {isReview
             ? <button type="button" className="kn-v2-leave" onClick={returnToResults}><RollingText>Back to results</RollingText></button>
-            : <button ref={exitTrigger} type="button" className="kn-v2-leave" onClick={() => exitDialog.current?.showModal()}><RollingText>Exit practice</RollingText></button>}
+            : <button ref={exitTrigger} type="button" className="kn-v2-leave" onClick={() => setExitOpen(true)}><RollingText>Exit practice</RollingText></button>}
         </div>
         <div className="kn-v2-progress-track" role="progressbar" aria-label={`${isReview ? 'Review' : 'Question'} ${index + 1} of ${questions.length}`} aria-valuemin={1} aria-valuemax={questions.length} aria-valuenow={index + 1}>
           {questions.map((question, questionIndex) => <span key={`${question.midi}-${questionIndex}`} data-state={questionIndex < index ? 'complete' : questionIndex === index ? 'current' : 'upcoming'}/>) }
@@ -564,14 +566,14 @@ function PracticeNotes({ layout, active, sharedPreset, onExplore }: { layout: La
         </>}
       </div>
       <p className="kn-v2-audio-status" role="status">{audio.message}</p>
-      <dialog ref={exitDialog} aria-labelledby={exitTitleId} aria-describedby={exitDescId} onClose={() => queueMicrotask(() => exitTrigger.current?.focus())}>
-        <div className="am-dialog-head"><h2 id={exitTitleId}>Leave this round?</h2><button className="am-button am-tertiary" type="button" aria-label="Close" onClick={() => exitDialog.current?.close()}><Icon name="close"/></button></div>
+      <Dialog open={exitOpen} onClose={() => setExitOpen(false)} returnFocusRef={exitTrigger} initialFocusRef={keepPracticing} labelledBy={exitTitleId} describedBy={exitDescId}>
+        <div className="am-dialog-head"><h2 id={exitTitleId}>Leave this round?</h2><DialogClose><Icon name="close"/></DialogClose></div>
         <p id={exitDescId}>Your progress in this round will be lost.</p>
         <div className="kn-v2-dialog-actions">
-          <button className="am-button am-primary" type="button" autoFocus onClick={() => exitDialog.current?.close()}><RollingText>Keep practicing</RollingText></button>
-          <button className="am-button am-secondary" type="button" onClick={() => { exitDialog.current?.close(); discardRound(); }}><RollingText>Discard round</RollingText></button>
+          <button ref={keepPracticing} className="am-button am-primary" type="button" onClick={() => setExitOpen(false)}><RollingText>Keep practicing</RollingText></button>
+          <button className="am-button am-secondary" type="button" onClick={() => { setExitOpen(false); discardRound(); }}><RollingText>Discard round</RollingText></button>
         </div>
-      </dialog>
+      </Dialog>
     </div>}
 
     {phase === 'results' && <div className="kn-v2-results">

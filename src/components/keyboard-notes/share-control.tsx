@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useId, useRef, useState, type ReactNode, type RefObject } from 'react';
+import { Dialog, DialogClose } from '@/components/ui/dialog';
 import './share-dialog.css';
 
 export function buildShareURL(path: string, params: URLSearchParams) {
@@ -126,35 +127,25 @@ export function ShareDialog({
   returnFocusRef?: RefObject<HTMLElement | null>;
   title: string;
 }) {
-  const dialog = useRef<HTMLDialogElement>(null);
   const titleId = useId();
 
-  useEffect(() => {
-    const node = dialog.current;
-    if (!node) return;
-    if (open && !node.open) node.showModal();
-    if (!open && node.open) node.close();
-  }, [open]);
-
   return (
-    <dialog
-      ref={dialog}
+    <Dialog
+      open={open}
+      onClose={onClose}
+      returnFocusRef={returnFocusRef}
+      labelledBy={titleId}
       className="kn-share-dialog kn-v2-share-dialog"
-      aria-labelledby={titleId}
-      onClose={() => {
-        onClose();
-        queueMicrotask(() => returnFocusRef?.current?.focus());
-      }}
     >
       <div className="am-dialog-head">
         <div>
           <p className="kn-v2-kicker">Share</p>
           <h2 id={titleId}>{title}</h2>
         </div>
-        <button type="button" className="am-button am-tertiary" aria-label="Close" onClick={() => dialog.current?.close()}>×</button>
+        <DialogClose>×</DialogClose>
       </div>
       {open ? <SharePanel key={`${panel.url}:${open}`} {...panel} /> : null}
-    </dialog>
+    </Dialog>
   );
 }
 

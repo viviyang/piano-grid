@@ -218,7 +218,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
                     type="button"
                     aria-expanded={expanded}
                     aria-controls={submenuId}
-                    onClick={() => setOpenCatalogDesktopMenu(menuKey)}
+                    onClick={() => setOpenCatalogDesktopMenu(current => current === menuKey ? null : menuKey)}
                   ><span>{menu.label}</span><Chevron/></button>}
               {menu.href ? <button
                   ref={node => { if (node) catalogDesktopTriggerRefs.current.set(menuKey, node); else catalogDesktopTriggerRefs.current.delete(menuKey); }}
@@ -227,7 +227,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
                   aria-label={`Open ${menu.label} submenu`}
                   aria-expanded={expanded}
                   aria-controls={submenuId}
-                  onClick={() => setOpenCatalogDesktopMenu(menuKey)}
+                  onClick={() => setOpenCatalogDesktopMenu(current => current === menuKey ? null : menuKey)}
                 ><Chevron/></button> : null}
             </div>
             <div className="site-nav-third-panel" data-kind={menu.id} id={submenuId} hidden={!expanded}>
