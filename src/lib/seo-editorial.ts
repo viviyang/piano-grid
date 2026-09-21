@@ -8,6 +8,7 @@ export type { ChordDetailSeoCopy };
 type Copy = ChordDetailSeoCopy;
 export const SEO_COPY: Record<string, Copy> = {
   ...CHORD_DETAIL_SEO_COPY,
+  '/chords/c-major': { title: 'C Major Chord on Piano: Notes, Inversions & Practice', h1: 'C Major Chord on Piano', description: 'Learn the C major chord on piano with C–E–G notes, keyboard diagrams, inversions and fingering examples. Hear the chord and practice finding its notes.' },
   '/': { title: 'Learn Piano: Chords, Scales & Practice Tools | PianoGrid', description: 'Explore piano notes, chords, scales, songs, and sheet music. Start playing with beginner guides, blank staff paper, and practical tools on PianoGrid.' },
   '/keyboard-notes': { title: 'Piano Keys Notes: Interactive Keyboard & Chart | PianoGrid', h1: 'Piano Keys Notes', description: 'Learn piano keys notes with an interactive keyboard and labeled chart. Find middle C, hear each note, and practice white and black key names.' },
   '/keyboard-notes/labeled': {

@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "name": "Pitch-class grading ignores octave and order",
+      "passed": true
+    },
+    {
+      "name": "Octave doubling toggles one pitch class rather than counting twice",
+      "passed": true
+    },
+    {
+      "name": "Cannot grade fewer than three distinct pitch classes",
+      "passed": true
+    },
+    {
+      "name": "Extra notes are rejected",
+      "passed": true
+    },
+    {
+      "name": "First correct is independent",
+      "passed": true
+    },
+    {
+      "name": "Wrong then correct retains retry classification",
+      "passed": true
+    },
+    {
+      "name": "Hint, reference and reveal survive Clear and Try again",
+      "passed": true
+    },
+    {
+      "name": "Two input sources share a live note",
+      "passed": true
+    },
+    {
+      "name": "Releasing one source preserves the other source",
+      "passed": true
+    },
+    {
+      "name": "Final source release clears note",
+      "passed": true
+    },
+    {
+      "name": "Sustain holds released note",
+      "passed": true
+    },
+    {
+      "name": "Stop overrides sustain and clears every oscillator",
+      "passed": true
+    },
+    {
+      "name": "Sustain off releases unheld voices",
+      "passed": true
+    },
+    {
+      "name": "Scheduled cancellation settles its promise",
+      "passed": true
+    },
+    {
+      "name": "Unmount clears scheduled and live voices",
+      "passed": true
+    },
+    {
+      "name": "Missing AudioContext reports unavailable",
+      "passed": true
+    },
+    {
+      "name": "Audio start failure cleans live voices",
+      "passed": true
+    },
+    {
+      "name": "Stop cancels an unresolved live resume",
+      "passed": true
+    },
+    {
+      "name": "A second audio owner cancels the first engine",
+      "passed": true
+    }
+  ],
+  "passed": 19,
+  "failed": 0
+}

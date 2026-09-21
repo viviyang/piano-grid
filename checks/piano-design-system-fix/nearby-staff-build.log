@@ -1,0 +1,92 @@
+
+> piano-grid@0.1.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 67ms
+- Experiments (use with caution):
+  · cpus: 4
+  · staticGenerationMaxConcurrency: 2
+  · staticGenerationMinPagesPerWorker: 20
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.4s
+  Running TypeScript ...
+  Finished TypeScript in 2.9s ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/211) ...
+  Generating static pages using 4 workers (52/211) 
+  Generating static pages using 4 workers (105/211) 
+  Generating static pages using 4 workers (158/211) 
+✓ Generating static pages using 4 workers (211/211) in 83s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /arpeggios
+├ ○ /chord-progressions
+├ ○ /chords
+├   /chords/[slug]
+│ ├ ● /chords/f-major
+│ ├ ● /chords/d-minor
+│ ├ ● /chords/e-minor
+│ └ ● [+133 more paths]
+├ ○ /chords/a-flat-major
+├ ○ /chords/a-major
+├ ○ /chords/a-minor
+├ ○ /chords/add
+├ ○ /chords/altered
+├ ○ /chords/augmented
+├ ○ /chords/b-major
+├ ○ /chords/by-key
+├ ○ /chords/c-flat-major
+├ ○ /chords/c-major
+├ ○ /chords/c-minor
+├ ○ /chords/diminished
+├ ○ /chords/e-major
+├ ○ /chords/extended
+├ ○ /chords/finder
+├ ○ /chords/g-major
+├ ○ /chords/major
+├ ○ /chords/minor
+├ ○ /chords/seventh
+├ ○ /chords/suspended
+├ ○ /guide
+├ ○ /guide/piano-chords
+├ ○ /guide/piano-scales
+├ ○ /guide/read-sheet-music
+├ ○ /keyboard-notes
+├ ○ /keyboard-notes/blank
+├ ○ /keyboard-notes/chart
+├ ○ /keyboard-notes/finger-numbers
+├ ○ /keyboard-notes/frequencies
+├ ○ /keyboard-notes/labeled
+├ ○ /manifest.webmanifest
+├ ○ /robots.txt
+├ ○ /scales
+├   /scales/[slug]
+│ ├ ● /scales/d-major
+│ ├ ● /scales/e-minor
+│ ├ ● /scales/f-major
+│ └ ● [+19 more paths]
+├ ○ /scales/a-minor
+├ ○ /scales/c-major
+├ ○ /sheet-music
+├ ○ /sheet-music/beginner
+├ ○ /sheet-music/easy
+├ ○ /sheet-music/hot-cross-buns
+├ ○ /sheet-music/ode-to-joy
+├ ○ /sheet-music/twinkle-twinkle-little-star
+├ ○ /sitemap.xml
+├ ○ /songs
+├ ƒ /songs/easy
+├ ○ /tools
+├ ○ /tools/blank-sheet-music
+└ ○ /tools/hear-the-difference
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

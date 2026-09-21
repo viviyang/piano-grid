@@ -1,0 +1,101 @@
+{
+  "styles": [
+    {
+      "selector": ".am-button.am-primary",
+      "font": "600 15px / 19.995px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 102, 204)",
+      "radius": "8px"
+    },
+    {
+      "selector": ".am-segment",
+      "font": "600 15px / 19.5px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "color": "rgb(0, 102, 204)",
+      "background": "rgb(255, 255, 255)",
+      "radius": "7px"
+    },
+    {
+      "selector": ".am-tool",
+      "font": "17px / 26.996px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "color": "rgb(29, 29, 31)",
+      "background": "rgb(246, 247, 249)",
+      "radius": "12px"
+    },
+    {
+      "selector": "h1",
+      "font": "700 36px / 43.9992px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "color": "rgb(29, 29, 31)",
+      "background": "rgba(0, 0, 0, 0)",
+      "radius": "0px"
+    }
+  ],
+  "meta": {
+    "title": "C Major Piano Chord: Notes, Inversions & Keyboard Diagrams",
+    "description": "Find the C major piano chord notes C, E and G. Compare root position and two inversions with keyboard diagrams, sound examples and a printable reference.",
+    "canonical": "https://pianogrid.com/chords/c-major",
+    "h1": "C Major Piano Chord",
+    "ids": [
+      "c-major-result",
+      "tool-heading",
+      "note-order",
+      "current-symbol",
+      "current-bass",
+      "keyboard-scroll",
+      "audio-status",
+      "practice",
+      "practice-heading",
+      "_R_ceatpesndlb_",
+      "c-major-fingering-example",
+      "c-major-fingering-example-heading",
+      "skoove-c",
+      "e-chord",
+      "_R_keatpesndlb_",
+      "c-major-staff",
+      "_R_seatpesndlb_",
+      "c-major-notice",
+      "c-major-notice-heading",
+      "c-major-inversions",
+      "c-major-inversions-heading",
+      "c-major-connections",
+      "c-major-connections-heading",
+      "c-major-reference",
+      "c-major-reference-heading",
+      "c-major-print",
+      "c-major-print-heading",
+      "c-major-related",
+      "c-major-related-heading"
+    ]
+  },
+  "sizes": [
+    {
+      "width": 320,
+      "inner": 320,
+      "scroll": 305
+    },
+    {
+      "width": 390,
+      "inner": 390,
+      "scroll": 375
+    },
+    {
+      "width": 768,
+      "inner": 768,
+      "scroll": 753
+    },
+    {
+      "width": 1440,
+      "inner": 1440,
+      "scroll": 1425
+    }
+  ],
+  "computedStylesMatchBaseline": true,
+  "metadataMatch": true,
+  "originalIdsPreserved": true,
+  "ssrContent": true,
+  "text200NoOverflow": false,
+  "text200": {
+    "width": 1440,
+    "page": 1911,
+    "mainRight": 1360.666748046875
+  }
+}

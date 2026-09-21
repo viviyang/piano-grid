@@ -13,7 +13,7 @@ import { PlaybackControls } from '../chords/playback-controls';
 import { RollingText } from '../ui/rolling-text';
 import { ChordTopicIcon } from '../chords/page-toc';
 
-const PrintContext=createContext({ready:false,print:()=>{},pdf:{url:'',label:''}});
+export const PrintContext=createContext({ready:false,print:()=>{},pdf:{url:'',label:''}});
 export const SelectedVoicingContext=createContext<string|null>(null);
 export const StopPlaybackContext=createContext<()=>void>(()=>{});
 

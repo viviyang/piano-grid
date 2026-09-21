@@ -6,10 +6,12 @@ import { editorialHeading, hideInternalSourceAudit } from '@/lib/seo-editorial';
 import { isPageFix16 } from '@/lib/page-fix-16';
 import { FingeringGuide, ChordSourceList } from './fingering-guide';
 import { ChordBuilderPractice } from './chord-builder-practice';
+import { CmajorExperience } from './c-major-experience';
+import { getChartData } from '@/lib/keyboard-content';
 import '@/app/chords/a-minor/a-minor.css';
 import './shared.css';
 import './chord-learning.css';
-export function ChordDetailPage({model}:{model:ChordDetailModel}) {
+export function ChordDetailPage({model,pilot=false}:{model:ChordDetailModel;pilot?:boolean}) {
   const {data,blocks,byId,answer,introduction,searchSections}=model;
   const prefix=data.namespace;
   const compactSources=isPageFix16(data.url);
@@ -19,11 +21,20 @@ export function ChordDetailPage({model}:{model:ChordDetailModel}) {
   const labels=definition.family==='add'?definition.exampleLabels:definition.positionLabels;
   const positionNames=labels.map(label=>label[0].toLowerCase()+label.slice(1));
   const positionCaption=`${positionNames.slice(0,-1).join(', ')}, and ${positionNames.at(-1)}`;
-  const heading=<><header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, category, { label: editorialHeading(data.url, data.chord.name_en) }]}/><h1><ChordSectionTitle id={`${prefix}-intro`} text={data.heading}/></h1><p className="am-direct-answer">{answer}</p></header><ChordPageToc items={model.tocItems}/></>;
+  const heading=<><header key="heading" className="am-page-heading" data-block-id={`${prefix}-intro`}><PageBreadcrumb items={[{ label: 'Chords', href: '/chords' }, category, { label: editorialHeading(data.url, data.chord.name_en) }]}/><h1><ChordSectionTitle id={`${prefix}-intro`} text={data.heading}/></h1><p className="am-direct-answer">{answer}</p></header>{<ChordPageToc items={pilot?model.tocItems.filter(item=>item.id!==`${prefix}-print`):model.tocItems}/>}</>;
   const intro=introduction.length>0&&<section key="introduction" className="am-intro-rest am-root-example-panel" id={`${prefix}-root-example`} tabIndex={-1} data-block-id={`${prefix}-intro`} aria-labelledby={`${prefix}-root-example-heading`}><h2 className="am-eyebrow" id={`${prefix}-root-example-heading`}><ChordSectionTitle id={`${prefix}-intro`} text="Root-position example"/></h2><div className="am-root-example-copy">{introduction.map(p=><p key={p}>{p}</p>)}</div></section>;
   const toolParagraphs=[...byId[`${prefix}-intro`].content.paragraphs,...byId[data.toolId].content.paragraphs];
-  return <ChordDetailExperience data={data} heading={heading} toolNotes={toolParagraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections}>
+  const Experience=pilot?CmajorExperience:ChordDetailExperience;
+  const chart=pilot?getChartData().notes:[];
+  const staffByVoicing=pilot?Object.fromEntries(data.voicings.map(voicing=>[voicing.voicing_id,voicing.notes_low_to_high.map(note=>{
+    const authored=chart.find(key=>key.midi===note.midi)?.staff_spellings.find(spelling=>spelling.treble.note===note.display_pitch)?.treble;
+    if(!authored)throw new Error(`Missing authored staff mapping: ${note.display_pitch}`);
+    return authored;
+  })])):{};
+  const fingering=pilot?<FingeringGuide block={byId[`${prefix}-fingering-example`]} examples={model.fingeringExamples} sources={model.sources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources} hideAuditNotes={publicSources} illustrated bothHands/>:null;
+  return <Experience data={data} heading={heading} toolNotes={toolParagraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections} practice={model.practice} fingering={fingering} staffByVoicing={staffByVoicing}>
     {blocks.filter(b=>![`${prefix}-intro`,data.toolId].includes(b.block_id)).map(block=>{const {block_id:id,content:c}=block;
+      if(pilot&&[`${prefix}-fingering-example`,`${prefix}-print`,'practice'].includes(id))return null;
       if(id===`${prefix}-fingering-example`)return model.fingeringExamples.length?<FingeringGuide key={id} block={block} examples={model.fingeringExamples} sources={model.sources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources} hideAuditNotes={publicSources}/>:<section className="am-content-section ch-fingering" id={id} data-block-id={id} data-fingering-visible="false" key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><div className="ch-section-heading"><div className="ch-section-kicker">Reference scope</div><h2 id={`${id}-heading`}>{c.heading}</h2></div><div className="am-content-body ch-learning-panel">{c.paragraphs.map(p=><p key={p}>{p}</p>)}{c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}{(!compactSources||model.sources.length>0)&&<details className="ch-source-details"><summary>{compactSources||publicSources?'Sources':'Sources and scope'}</summary><div><ChordSourceList sources={model.sources} hideSourceCodes={compactSources} hideAuditNotes={publicSources}/></div></details>}</div></section>;
       if(id==='practice')return <ChordBuilderPractice key={id} data={data} practice={model.practice}/>;
       return <section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}><ChordSectionTitle id={id} text={c.heading}/></h2><div className={`am-content-body${prefix==='am'&&['am-why-minor','am-practice'].includes(id)?' ch-learning-panel':''}`}>
@@ -36,5 +47,5 @@ export function ChordDetailPage({model}:{model:ChordDetailModel}) {
       {c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}
     </div></section>})}
 
-  </ChordDetailExperience>;
+  </Experience>;
 }
