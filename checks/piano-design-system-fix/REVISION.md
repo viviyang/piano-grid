@@ -58,3 +58,8 @@ Validation: npm run check passed; existing 19 audio/practice assertions passed. 
 Production build passed (independent-practice-build.log); preview restarted at localhost:4327. Production smoke confirmed practice mode removes position and reference playback controls while preserving heading and panel states. Show answer/retry and same-name octave toggling also passed browser checks.
 
 Theory disclosure correction: default theory=true; scoped removal of nested am-tool-notes top border leaves a single disclosure divider. npm run check passed. Browser confirmed initial aria-expanded=true, collapse/reopen works, inner border=0px; visually inspected narrow viewport.
+
+## Release SEO verification (2026-09-21)
+User authorized the proposed TDH update, commit and production deployment. Editorial-only C-major override preserves source content. Latest origin/main navigation fix 0b6a844 merged without changing its implementation; dependency conflict resolved by retaining both feature dependencies and main's @base-ui/react 1.8.0.
+
+Final npm run check, production build, 19 audio/practice assertions passed. Raw HTTP HTML with script elements removed contains the new TDH, chord notes, inversions and reference body. Prerender manifest includes /chords/c-major: static pre-rendering (SSG), with client hydration for interactive controls. Status 200, canonical https://pianogrid.com/chords/c-major, robots index/follow and matching OG title verified. No changes to robots, sitemap, site origin or original content assets relative to latest main. Production baseline saved in seo-production-before.json; final local evidence in seo-release-verification.json. This is not a guarantee of unchanged Google rankings; GSC data was not accessed.
