@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
+import { NavigationMenu as N } from '@base-ui/react/navigation-menu';
 import { usePathname } from 'next/navigation';
 import {
   CHORD_MAJOR_NAVIGATION,
@@ -12,6 +13,7 @@ import {
   SITE_NAVIGATION,
   type PublicRoute,
 } from '@/lib/site-routes';
+import { ChordTopicIcon } from '@/components/chords/page-toc';
 import './site-navigation.css';
 
 type NavigationVariant = 'home' | 'content';
@@ -70,202 +72,207 @@ const SCALE_MENUS: readonly CatalogMenu[] = [
   },
 ];
 
+const navigationIcons: Record<string, string> = {
+  '/keyboard-notes': 'keyboard', '/chords': 'inversions', '/scales': 'major',
+  '/songs': 'intro', '/sheet-music': 'print', '/guide': 'read', '/tools': 'practice',
+};
+
+function NavigationIcon({ href }: { href: string }) {
+  return <span className="site-nav-icon" aria-hidden="true"><ChordTopicIcon id={navigationIcons[href]}/></span>;
+}
+
+function isActiveSection(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`)
+    || (href === '/chords' && pathname === '/chord-progressions')
+    || (href === '/scales' && pathname === '/arpeggios');
+}
+
 function Chevron() {
   return <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.25 3.5 3.5 3.5-3.5"/></svg>;
 }
 
-function containsEventTarget(container: HTMLElement, target: EventTarget | null) {
-  return target instanceof Node && container.contains(target);
+// shadcn Base UI Navigation Menu composition using the existing site tokens.
+function MenuPopup() {
+  return <N.Portal><N.Positioner className="site-nav-positioner" side="bottom" align="start" sideOffset={8} collisionPadding={16}>
+    <N.Popup className="site-nav-popup"><N.Viewport className="site-nav-viewport"/></N.Popup>
+  </N.Positioner></N.Portal>;
+}
+
+function DesktopNavigation({ className, pathname }: { className: string; pathname: string }) {
+  const catalogId = useId();
+  const [value, setValue] = useState<string | null>(null);
+  const [catalog, setCatalog] = useState<string | null>(null);
+  const closeTimer = useRef<number | null>(null);
+  const cancelClose = () => {
+    if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
+    closeTimer.current = null;
+  };
+  const catalogHoverTimer = useRef<number | null>(null);
+  const cancelCatalogHover = () => {
+    if (catalogHoverTimer.current !== null) window.clearTimeout(catalogHoverTimer.current);
+    catalogHoverTimer.current = null;
+  };
+  const selectCatalog = (next: string | null) => {
+    cancelCatalogHover();
+    setCatalog(next);
+  };
+  const queueCatalogHover = (next: string) => {
+    cancelCatalogHover();
+    // Wait for the pointer to settle, so diagonal travel to the details column
+    // does not activate a different row on the way.
+    catalogHoverTimer.current = window.setTimeout(() => {
+      setCatalog(next);
+      catalogHoverTimer.current = null;
+    }, 180);
+  };
+  const openSection = (next: string | null) => {
+    cancelClose();
+    if (next !== value) selectCatalog(next === '/chords' || next === '/scales' ? 'major' : null);
+    setValue(next);
+  };
+  const close = () => { cancelClose(); setValue(null); selectCatalog(null); };
+  useEffect(() => {
+    if (!value) return;
+    // Use the pointer's actual position, not leave events bubbling through the
+    // portalled popup. Include the gap so slow travel to a link stays inside.
+    const trackPointer = (event: PointerEvent) => {
+      if (event.pointerType !== 'mouse') return;
+      const inside = ['.site-nav-desktop', '.site-nav-positioner'].some(selector => {
+        const rect = document.querySelector(selector)?.getBoundingClientRect();
+        return rect && event.clientX >= rect.left - 12 && event.clientX <= rect.right + 12
+          && event.clientY >= rect.top - 12 && event.clientY <= rect.bottom + 12;
+      });
+      if (inside) cancelClose();
+      else if (closeTimer.current === null) closeTimer.current = window.setTimeout(close, 350);
+    };
+    document.addEventListener('pointermove', trackPointer, true);
+    return () => { document.removeEventListener('pointermove', trackPointer, true); cancelClose(); };
+  }, [value]);
+  useEffect(() => {
+    const media = matchMedia('(min-width: 1201px)');
+    const reset = () => { setValue(null); selectCatalog(null); };
+    media.addEventListener('change', reset);
+    return () => { media.removeEventListener('change', reset); cancelCatalogHover(); cancelClose(); };
+  }, []);
+  return <N.Root className={`${className} site-nav-desktop`} aria-label="Site sections" value={value}
+    onValueChange={(next, event) => {
+      // Hover belongs to the complete split row, not just Base UI's button.
+      // Keep the primitive's keyboard, focus-out and outside-click dismissal.
+      if (event.reason !== 'trigger-hover') openSection(next);
+    }} delay={120} closeDelay={200}>
+    <N.List className="site-nav-list">{SITE_NAVIGATION.map(section => {
+      const active = isActiveSection(pathname, section.href);
+      const menus = section.href === '/chords' ? CHORD_MENUS : section.href === '/scales' ? SCALE_MENUS : null;
+      return <N.Item className="site-nav-group" key={section.href} value={section.href} data-active={active || undefined}>
+        <div className="site-nav-topline" onPointerEnter={event => {
+          if (event.pointerType === 'mouse') openSection(section.href);
+        }}>
+          <N.Link className="site-nav-parent-link" href={section.href} active={pathname === section.href}
+            onFocus={() => { openSection(section.href); }} onClick={close}><NavigationIcon href={section.href}/>{section.label}</N.Link>
+          <N.Trigger className="site-nav-trigger"
+            onMouseEnter={event => event.preventBaseUIHandler()}
+            onClick={event => {
+              event.preventBaseUIHandler();
+              openSection(value === section.href ? null : section.href);
+            }} aria-label={`${value === section.href ? 'Close' : 'Open'} ${section.label} menu`}><Chevron/></N.Trigger>
+        </div>
+        <N.Content className={`site-nav-panel${menus ? " site-nav-panel-catalog" : ""}`}>
+          <N.Link className="site-nav-overview-link" onPointerEnter={() => selectCatalog(null)} onFocus={() => selectCatalog(null)} href={section.href} onClick={close}>Browse all {section.label}<span aria-hidden="true">→</span></N.Link>
+          {menus ? <div className="site-nav-catalog-layout">
+            <N.Root className="site-nav-catalog" orientation="vertical" value={catalog}
+              onKeyDown={event => {
+                if (event.key === 'Escape' && catalog) {
+                  event.stopPropagation();
+                  const trigger = event.currentTarget.querySelector<HTMLButtonElement>('[data-expanded] button');
+                  selectCatalog(null);
+                  trigger?.focus();
+                }
+              }} onValueChange={selectCatalog} delay={120} closeDelay={200}>
+              <h3>Browse</h3>
+              <N.List className="site-nav-catalog-list">{menus.map(menu => <N.Item className="site-nav-chord-item" key={menu.id} value={menu.id} data-expanded={catalog === menu.id || undefined}
+                onPointerEnter={event => { if (event.pointerType === 'mouse' && catalog !== menu.id) queueCatalogHover(menu.id); }}
+                onPointerMove={event => { if (event.pointerType === 'mouse' && catalog !== menu.id) queueCatalogHover(menu.id); }}
+                onPointerLeave={cancelCatalogHover}>
+                <div className="site-nav-chord-item-topline">
+                  {menu.href ? <N.Link className="site-nav-chord-parent-link" href={menu.href} active={pathname === menu.href}
+                    onFocus={() => selectCatalog(menu.id)} onClick={close}>{menu.label}</N.Link> : null}
+                  <N.Trigger aria-controls={`${catalogId}-${section.href.slice(1)}`}
+                    onMouseEnter={event => event.preventBaseUIHandler()}
+                    onClick={event => {
+                      event.preventBaseUIHandler();
+                      cancelCatalogHover();
+                      setCatalog(current => current === menu.id ? null : menu.id);
+                    }} className={menu.href ? 'site-nav-chord-submenu-trigger' : 'site-nav-chord-group-button'} aria-label={`${catalog === menu.id ? 'Close' : 'Open'} ${menu.label} submenu`}>
+                    {!menu.href ? <span>{menu.label}</span> : null}<Chevron/>
+                  </N.Trigger>
+                </div>
+                <N.Content className="site-nav-third-panel" data-kind={menu.id}>
+                  <h3>{menu.label}</h3>
+                  {menu.href ? <N.Link className="site-nav-catalog-overview" href={menu.href} onClick={close}>{menu.viewAllLabel} →</N.Link> : null}
+                  <div className="site-nav-third-links">{menu.children.map(item => <N.Link href={item.href} key={item.href} active={pathname === item.href} onClick={close}>{item.label}</N.Link>)}</div>
+                </N.Content>
+              </N.Item>)}</N.List>
+              <N.Viewport id={`${catalogId}-${section.href.slice(1)}`} className="site-nav-catalog-viewport"/>
+            </N.Root>
+            <div className="site-nav-chord-direct-groups" onPointerEnter={() => selectCatalog(null)} onFocus={() => selectCatalog(null)}>{(['Explore', 'Learn'] as const).map(group => <section key={group}>
+              <h3>{group}</h3>
+              {section.children.filter(item => 'group' in item && item.group === group).map(item => <N.Link className="site-nav-child-link" href={item.href} key={item.href} active={pathname === item.href} onClick={close}>{item.label}</N.Link>)}
+            </section>)}</div>
+          </div> : <div className="site-nav-panel-links">{section.children.map(item => <N.Link className="site-nav-child-link" href={item.href} key={item.href} active={pathname === item.href} onClick={close}>{item.label}</N.Link>)}</div>}
+        </N.Content>
+      </N.Item>;
+    })}</N.List>
+    <MenuPopup/>
+  </N.Root>;
 }
 
 export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
   const pathname = usePathname();
   const id = useId().replaceAll(':', '');
-  const root = useRef<HTMLDivElement>(null);
-  const desktopNav = useRef<HTMLElement>(null);
   const mobileButton = useRef<HTMLButtonElement>(null);
-  const triggerRefs = useRef(new Map<string, HTMLButtonElement>());
-  const catalogDesktopTriggerRefs = useRef(new Map<string, HTMLButtonElement>());
+  const mobileTriggerRefs = useRef(new Map<string, HTMLButtonElement>());
   const catalogMobileTriggerRefs = useRef(new Map<string, HTMLButtonElement>());
-  const closeTimer = useRef<number | null>(null);
-  const suppressDesktopFocusOpen = useRef(false);
-  const [openSection, setOpenSection] = useState<string | null>(null);
-  const [openCatalogDesktopMenu, setOpenCatalogDesktopMenu] = useState<string | null>(null);
+  const [openMobileSection, setOpenMobileSection] = useState<string | null>(null);
   const [openCatalogMobileMenu, setOpenCatalogMobileMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [indicator, setIndicator] = useState({ left: 0, width: 0, visible: false });
   const desktopClass = variant === 'home' ? 'ph-desktop-nav' : 'am-site-nav';
   const menuButtonClass = variant === 'home' ? 'ph-menu-button' : 'am-menu-button';
   const mobileClass = variant === 'home' ? 'ph-mobile-nav' : 'am-mobile-nav';
-
+  function closeMenus() { setOpenMobileSection(null); setOpenCatalogMobileMenu(null); setMobileOpen(false); }
   useEffect(() => {
-    const closeOutside = (event: PointerEvent) => {
-      if (!root.current?.contains(event.target as Node)) {
-        setOpenSection(null);
-        setOpenCatalogDesktopMenu(null);
-      }
-    };
+    const media = matchMedia('(min-width: 1201px)');
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key !== 'Escape') return;
-      if (openCatalogDesktopMenu) {
-        const trigger = catalogDesktopTriggerRefs.current.get(openCatalogDesktopMenu);
-        suppressDesktopFocusOpen.current = true;
-        setOpenCatalogDesktopMenu(null);
-        trigger?.focus();
-        queueMicrotask(() => { suppressDesktopFocusOpen.current = false; });
-      } else if (openCatalogMobileMenu) {
-        const trigger = catalogMobileTriggerRefs.current.get(openCatalogMobileMenu);
-        setOpenCatalogMobileMenu(null);
-        trigger?.focus();
-      } else if (openSection) {
-        const trigger = triggerRefs.current.get(openSection);
-        suppressDesktopFocusOpen.current = true;
-        setOpenSection(null);
-        trigger?.focus();
-        queueMicrotask(() => { suppressDesktopFocusOpen.current = false; });
-      } else if (mobileOpen) {
-        setMobileOpen(false);
-        mobileButton.current?.focus();
-      }
+      if (event.key !== 'Escape' || !mobileOpen) return;
+      if (openCatalogMobileMenu) { setOpenCatalogMobileMenu(null); catalogMobileTriggerRefs.current.get(openCatalogMobileMenu)?.focus(); }
+      else if (openMobileSection) { setOpenMobileSection(null); mobileTriggerRefs.current.get(openMobileSection)?.focus(); }
+      else { setMobileOpen(false); mobileButton.current?.focus(); }
     };
-    const media = matchMedia('(min-width: 801px)');
-    const closeMobile = () => {
-      if (media.matches) {
-        setMobileOpen(false);
-        setOpenCatalogMobileMenu(null);
-      }
-    };
-    document.addEventListener('pointerdown', closeOutside);
     document.addEventListener('keydown', closeOnEscape);
-    media.addEventListener('change', closeMobile);
-    return () => {
-      document.removeEventListener('pointerdown', closeOutside);
-      document.removeEventListener('keydown', closeOnEscape);
-      media.removeEventListener('change', closeMobile);
-      if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
-    };
-  }, [mobileOpen, openCatalogDesktopMenu, openCatalogMobileMenu, openSection]);
-
-  function cancelPendingClose() {
-    if (closeTimer.current === null) return;
-    window.clearTimeout(closeTimer.current);
-    closeTimer.current = null;
-  }
-
-  function closeAfterPointerExit() {
-    cancelPendingClose();
-    closeTimer.current = window.setTimeout(() => {
-      setOpenSection(null);
-      setOpenCatalogDesktopMenu(null);
-      closeTimer.current = null;
-    }, 360);
-  }
-
-  function positionIndicator(link: HTMLAnchorElement | null) {
-    const nav = desktopNav.current;
-    if (!nav || !link) return;
-    const navBox = nav.getBoundingClientRect();
-    const linkBox = link.getBoundingClientRect();
-    setIndicator({ left: linkBox.left - navBox.left, width: linkBox.width, visible: true });
-  }
-
-  useEffect(() => {
-    const updateActiveIndicator = () => positionIndicator(desktopNav.current?.querySelector<HTMLAnchorElement>('.site-nav-group[data-active] .site-nav-parent-link') ?? null);
-    updateActiveIndicator();
-    window.addEventListener('resize', updateActiveIndicator);
-    return () => window.removeEventListener('resize', updateActiveIndicator);
-  }, [pathname]);
-
-  function closeMenus() {
-    setOpenSection(null);
-    setOpenCatalogDesktopMenu(null);
-    setOpenCatalogMobileMenu(null);
-    setMobileOpen(false);
-  }
-
-  function renderCatalogDesktopPanel(sectionHref: CatalogSectionHref, menus: readonly CatalogMenu[]) {
-    const catalogSection = SITE_NAVIGATION.find(section => section.href === sectionHref);
-    if (!catalogSection) return null;
-    const directGroups = ['Explore', 'Learn'] as const;
-
-    return <div className="site-nav-panel-links site-nav-panel-links-chords">
-      <section className="site-nav-link-group site-nav-chord-browse" aria-label="Browse">
-        <h3>Browse</h3>
-        {menus.map(menu => {
-          const menuKey = `${sectionHref}:${menu.id}`;
-          const expanded = openCatalogDesktopMenu === menuKey;
-          const submenuId = `${id}-${sectionHref.slice(1)}-${menu.id}-desktop`;
-          return <div
-            className="site-nav-chord-item"
-            data-open={expanded || undefined}
-            key={menu.id}
-            onPointerEnter={() => { cancelPendingClose(); setOpenCatalogDesktopMenu(menuKey); }}
-            onPointerMove={() => { cancelPendingClose(); setOpenCatalogDesktopMenu(menuKey); }}
-            onPointerLeave={event => {
-              if (!containsEventTarget(event.currentTarget, event.relatedTarget)) setOpenCatalogDesktopMenu(null);
-            }}
-            onFocus={() => { if (!suppressDesktopFocusOpen.current) setOpenCatalogDesktopMenu(menuKey); }}
-            onBlur={event => {
-              if (!containsEventTarget(event.currentTarget, event.relatedTarget)) setOpenCatalogDesktopMenu(null);
-            }}
-          >
-            <div className="site-nav-chord-item-topline">
-              {menu.href
-                ? <a className="site-nav-child-link site-nav-chord-parent-link" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.label}<span aria-hidden="true">↗</span></a>
-                : <button
-                    ref={node => { if (node) catalogDesktopTriggerRefs.current.set(menuKey, node); else catalogDesktopTriggerRefs.current.delete(menuKey); }}
-                    className="site-nav-chord-group-button"
-                    type="button"
-                    aria-expanded={expanded}
-                    aria-controls={submenuId}
-                    onClick={() => setOpenCatalogDesktopMenu(current => current === menuKey ? null : menuKey)}
-                  ><span>{menu.label}</span><Chevron/></button>}
-              {menu.href ? <button
-                  ref={node => { if (node) catalogDesktopTriggerRefs.current.set(menuKey, node); else catalogDesktopTriggerRefs.current.delete(menuKey); }}
-                  className="site-nav-chord-submenu-trigger"
-                  type="button"
-                  aria-label={`Open ${menu.label} submenu`}
-                  aria-expanded={expanded}
-                  aria-controls={submenuId}
-                  onClick={() => setOpenCatalogDesktopMenu(current => current === menuKey ? null : menuKey)}
-                ><Chevron/></button> : null}
-            </div>
-            <div className="site-nav-third-panel" data-kind={menu.id} id={submenuId} hidden={!expanded}>
-              <strong className="site-nav-third-heading">{menu.label}</strong>
-              <div className="site-nav-third-links">
-                {menu.children.map(item => <a className="site-nav-third-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
-              </div>
-            </div>
-          </div>;
-        })}
-      </section>
-      <div className="site-nav-chord-direct-groups" onPointerEnter={() => setOpenCatalogDesktopMenu(null)} onPointerMove={() => setOpenCatalogDesktopMenu(null)}>
-        {directGroups.map(group => <section className="site-nav-link-group" key={group} aria-label={group}>
-          <h3>{group}</h3>
-          {catalogSection.children.filter(item => 'group' in item && item.group === group).map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}
-        </section>)}
-      </div>
-    </div>;
-  }
+    media.addEventListener('change', closeMenus);
+    return () => { document.removeEventListener('keydown', closeOnEscape); media.removeEventListener('change', closeMenus); };
+  }, [mobileOpen, openMobileSection, openCatalogMobileMenu]);
 
   function renderCatalogMobileChildren(sectionHref: CatalogSectionHref, menus: readonly CatalogMenu[]) {
     const catalogSection = SITE_NAVIGATION.find(section => section.href === sectionHref);
     if (!catalogSection) return null;
     return <div className="site-mobile-children site-mobile-children-chords">
-      <a className="site-mobile-view-all" href={sectionHref} onClick={closeMenus} aria-current={pathname === sectionHref ? 'page' : undefined}>{sectionHref === '/chords' ? 'Browse all chords' : 'View overview'}</a>
       {menus.map(menu => {
         const menuKey = `${sectionHref}:${menu.id}`;
         const expanded = openCatalogMobileMenu === menuKey;
         const panelId = `${id}-${sectionHref.slice(1)}-${menu.id}-mobile`;
         return <div className="site-mobile-accordion" key={menu.id} data-open={expanded || undefined}>
+          <div className="site-mobile-topline">
+          {menu.href ? <a className="site-mobile-catalog-parent" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.label}</a> : null}
           <button
             ref={node => { if (node) catalogMobileTriggerRefs.current.set(menuKey, node); else catalogMobileTriggerRefs.current.delete(menuKey); }}
-            className="site-mobile-accordion-trigger"
+            className={`site-mobile-accordion-trigger${menu.href ? ' site-mobile-split-trigger' : ''}`}
             type="button"
+            aria-label={menu.href ? `${expanded ? 'Close' : 'Open'} ${menu.label} submenu` : undefined}
             aria-expanded={expanded}
             aria-controls={panelId}
             onClick={() => setOpenCatalogMobileMenu(current => current === menuKey ? null : menuKey)}
-          ><span>{menu.label}</span><Chevron/></button>
+          >{!menu.href ? <span>{menu.label}</span> : null}<Chevron/></button>
+          </div>
           <div className="site-mobile-accordion-panel" data-kind={menu.id} id={panelId} hidden={!expanded}>
             {menu.href && menu.viewAllLabel ? <a className="site-mobile-view-all" href={menu.href} onClick={closeMenus} aria-current={pathname === menu.href ? 'page' : undefined}>{menu.viewAllLabel}</a> : null}
             {menu.children.map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
@@ -278,58 +285,8 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
     </div>;
   }
 
-  return <div className={`site-navigation site-navigation-${variant}`} ref={root}>
-    <nav className={`${desktopClass} site-nav-desktop`} aria-label="Site sections" ref={desktopNav} onPointerEnter={cancelPendingClose} onPointerLeave={closeAfterPointerExit}>
-      <span className="site-nav-indicator" aria-hidden="true" style={{ '--site-nav-indicator-left': `${indicator.left}px`, '--site-nav-indicator-width': `${indicator.width}px`, opacity: indicator.visible ? 1 : 0 } as CSSProperties}/>
-      {SITE_NAVIGATION.map(section => {
-        const panelId = `${id}-${section.href.slice(1).replaceAll('/', '-') || 'home'}-menu`;
-        const sectionActive = pathname === section.href || pathname.startsWith(`${section.href}/`)
-          || (section.href === '/chords' && pathname === '/chord-progressions')
-          || (section.href === '/scales' && pathname === '/arpeggios');
-        const expanded = openSection === section.href;
-        return <div
-          className="site-nav-group"
-          data-active={sectionActive || undefined}
-          data-open={expanded || undefined}
-          key={section.href}
-          onPointerEnter={event => { cancelPendingClose(); positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
-          onPointerMove={event => { cancelPendingClose(); positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link')); setOpenSection(section.href); }}
-          onFocus={event => {
-            positionIndicator(event.currentTarget.querySelector<HTMLAnchorElement>('.site-nav-parent-link'));
-            if (!suppressDesktopFocusOpen.current) setOpenSection(section.href);
-          }}
-          onBlur={event => {
-            if (!containsEventTarget(event.currentTarget, event.relatedTarget)) {
-              setOpenSection(null);
-              setOpenCatalogDesktopMenu(null);
-            }
-          }}
-        >
-          <div className="site-nav-topline">
-            <a className="site-nav-parent-link" href={section.href} aria-current={pathname === section.href ? 'page' : undefined}>{section.label}</a>
-            <button
-              ref={node => { if (node) triggerRefs.current.set(section.href, node); else triggerRefs.current.delete(section.href); }}
-              className="site-nav-trigger"
-              type="button"
-              aria-label={`Open ${section.label} menu`}
-              aria-expanded={expanded}
-              aria-controls={panelId}
-              onClick={event => {
-                positionIndicator(event.currentTarget.parentElement?.querySelector<HTMLAnchorElement>('.site-nav-parent-link') ?? null);
-                setOpenSection(current => current === section.href ? null : section.href);
-                setOpenCatalogDesktopMenu(null);
-              }}
-            ><Chevron/></button>
-          </div>
-          <div className={`site-nav-panel${section.href === '/chords' || section.href === '/scales' ? ` site-nav-panel-chords${openCatalogDesktopMenu?.startsWith(`${section.href}:`) ? ' site-nav-panel-chords-expanded' : ''}` : ''}`} id={panelId} hidden={!expanded}>
-            <div className="site-nav-panel-intro"><a className="site-nav-overview-link" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><strong>{section.label}</strong><span>{section.href === '/chords' ? 'Browse all chords →' : 'View overview →'}</span></a></div>
-            {section.href === '/chords' || section.href === '/scales'
-              ? renderCatalogDesktopPanel(section.href, section.href === '/chords' ? CHORD_MENUS : SCALE_MENUS)
-              : <div className="site-nav-panel-links">{section.children.map(item => <a className="site-nav-child-link" href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}<span aria-hidden="true">↗</span></a>)}</div>}
-          </div>
-        </div>;
-      })}
-    </nav>
+  return <div className={`site-navigation site-navigation-${variant}`}>
+    <DesktopNavigation className={desktopClass} pathname={pathname}/>
     <button
       ref={mobileButton}
       type="button"
@@ -339,18 +296,37 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
       aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
       onClick={() => {
         setMobileOpen(value => !value);
+        setOpenMobileSection(null);
         setOpenCatalogMobileMenu(null);
       }}
     >
       <svg viewBox="0 0 24 24" aria-hidden="true">{mobileOpen ? <path d="m6 6 12 12M6 18 18 6"/> : <path d="M4 7h16M4 12h16M4 17h16"/>}</svg>
     </button>
     <nav id={`${id}-mobile-menu`} className={`${mobileClass} site-mobile-nav`} aria-label="Mobile site sections" hidden={!mobileOpen}>
-      {SITE_NAVIGATION.map(section => <section className="site-mobile-section" key={section.href} aria-labelledby={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`}>
-        <a id={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`} className="site-mobile-parent" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}>{section.label}</a>
+      {SITE_NAVIGATION.map(section => {
+        const expanded = openMobileSection === section.href;
+        const panelId = `${id}-${section.href.slice(1)}-mobile-children`;
+        return <section className="site-mobile-section" data-active={isActiveSection(pathname, section.href) || undefined} key={section.href} aria-labelledby={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`}>
+        <div className="site-mobile-topline">
+        <a id={`${id}-${section.href.slice(1).replaceAll('/', '-')}-mobile-heading`} className="site-mobile-parent" href={section.href} onClick={closeMenus} aria-current={pathname === section.href ? 'page' : undefined}><NavigationIcon href={section.href}/>{section.label}</a>
+        <button
+          ref={node => { if (node) mobileTriggerRefs.current.set(section.href, node); else mobileTriggerRefs.current.delete(section.href); }}
+          className="site-nav-trigger site-mobile-section-trigger"
+          type="button"
+          aria-label={`${expanded ? 'Close' : 'Open'} ${section.label} menu`}
+          aria-expanded={expanded}
+          aria-controls={panelId}
+          onClick={() => { setOpenMobileSection(current => current === section.href ? null : section.href); setOpenCatalogMobileMenu(null); }}
+        ><Chevron/></button>
+        </div>
+        <div id={panelId} className="site-mobile-section-panel" hidden={!expanded}>
+        <a className="site-mobile-overview" href={section.href} onClick={closeMenus}>Browse all {section.label} →</a>
         {section.href === '/chords' || section.href === '/scales'
           ? renderCatalogMobileChildren(section.href, section.href === '/chords' ? CHORD_MENUS : SCALE_MENUS)
           : <div className="site-mobile-children">{section.children.map(item => <a href={item.href} key={item.href} onClick={closeMenus} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>)}</div>}
-      </section>)}
+        </div>
+      </section>;
+      })}
     </nav>
   </div>;
 }
