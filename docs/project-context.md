@@ -34,6 +34,10 @@
 - [已核实] Clarity 只在生产构建注入，本地开发和 Vercel Preview 不录像。
 - 用法：看录像和热力图，再改被反复证明的卡点。步骤见 [runbook](runbook.md)。
 
+## 增长与外链
+
+- [已核实] 外链台账从 2026-09-18 起放在 `docs/seo/backlinks/`。`ledger.csv` 是提交状态的唯一记录；不把未发送的草稿写成已上线外链。
+
 ## 入口
 
 - [唯一进度](tasks/site-implementation-plan.md)
@@ -45,4 +49,4 @@
 - [行为边界](../AGENTS.md)
 - [Clarity 观察](runbook.md)
 
-最后更新：2026-09-20。
+最后更新：2026-09-21。
