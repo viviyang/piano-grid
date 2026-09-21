@@ -119,10 +119,10 @@ export const CHORD_DETAIL_SEO_COPY: Record<string, ChordDetailSeoCopy> = {
   "/chords/a-m7": {
     title: "Am7 Chord: Piano Notes, Inversions, Sound & PDF",
     h1: "Am7 Chord",
-    description: "Learn the Am7 chord on piano: A, C, E and G. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
-    intro: "Am7, also called A minor seventh, contains A, C, E and G. Use the piano diagram to find the notes, hear the chord and explore its inversions.",
-    theory: "The Am7 chord is a minor triad plus a minor seventh.",
-    fingering: "Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.",
+    description: "Learn the Am7 chord on piano: A, C, E and G. See the keyboard diagram and three inversions, hear the chord, practice the notes, and download a printable reference.",
+    intro: "Am7, also called A minor seventh, contains A–C–E–G and uses the formula 1–♭3–5–♭7.",
+    theory: "Am7 is a minor triad plus a minor seventh.",
+    fingering: "Fingering is not included on this page. The diagrams show note positions, not a required hand shape.",
     h2: {
       "A Minor Seventh Piano Chord": "Am7 Chord",
       "A Minor Seventh keyboard and inversions": "Am7 piano notes and keyboard diagram",

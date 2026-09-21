@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
+import { editorialHeading, editorialMetadata } from '../src/lib/seo-editorial.ts';
 const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH||'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3000';
 const out=process.env.PIANO_CHECK_OUT||'docs/pianogrid-chords-content-next/09_codex-results/latest/browser';
@@ -20,9 +21,11 @@ try{
  for(const route of routes){
   const slug=route.split('/').at(-1),rawPage=content.pages[route],binding=bindings[route],learn=learning[route],root=rawPage.data.voicings.find(item=>item.id===rawPage.data.default_voicing);
   const nojs=await newPage({javaScriptEnabled:false}),response=await nojs.goto(base+route),raw=await response.text();fs.writeFileSync(`${out}/${slug}-raw.html`,raw);
-  check(`${slug} HTTP/title/description/canonical`,response.status()===200&&(await nojs.title())===rawPage.metadata.title&&(await nojs.locator('meta[name=description]').getAttribute('content'))===rawPage.metadata.description&&(await nojs.locator('link[rel=canonical]').getAttribute('href')).endsWith(route),{status:response.status(),title:await nojs.title()});
+  const expectedMetadata=editorialMetadata({title:rawPage.metadata.title,description:rawPage.metadata.description,alternates:{canonical:route}});
+  const expectedH1=editorialHeading(route,binding.h1);
+  check(`${slug} HTTP/title/description/canonical`,response.status()===200&&(await nojs.title())===expectedMetadata.title&&(await nojs.locator('meta[name=description]').getAttribute('content'))===expectedMetadata.description&&(await nojs.locator('link[rel=canonical]').getAttribute('href')).endsWith(route),{status:response.status(),title:await nojs.title()});
   check(`${slug} raw HTTP contains rendered page nodes`,raw.includes('<h1')&&raw.includes('am-direct-answer')&&raw.includes(`${slug}-questions`)&&raw.includes('ch-source-details')&&raw.includes('ch-practice'),raw.length);
-  check(`${slug} H1/direct answer`,(await nojs.locator('h1').innerText()).trim()===binding.h1&&(await nojs.locator('.am-direct-answer').innerText()).trim()===binding.answer,{h1:await nojs.locator('h1').innerText(),answer:await nojs.locator('.am-direct-answer').innerText()});
+  check(`${slug} H1/direct answer`,(await nojs.locator('h1').innerText()).trim()===expectedH1&&(await nojs.locator('.am-direct-answer').innerText()).trim()===binding.answer,{h1:await nojs.locator('h1').innerText(),answer:await nojs.locator('.am-direct-answer').innerText()});
   const selectedMidi=[...new Set(await nojs.locator('.am-key.am-is-selected').evaluateAll(items=>items.map(item=>Number(item.getAttribute('data-midi')))))].sort((a,b)=>a-b);
   check(`${slug} root notes and keyboard`,JSON.stringify(await nojs.locator('.am-note-order .am-pitch').allTextContents())===JSON.stringify(root.notes.map(note=>note.replace(/#/g,'♯').replace(/b/g,'♭')))&&JSON.stringify(selectedMidi)===JSON.stringify([...root.midi].sort((a,b)=>a-b)),{notes:await nojs.locator('.am-note-order .am-pitch').allTextContents(),selectedMidi});
   check(`${slug} three positions/FAQ/sources`,await nojs.locator('.am-inversion-table tbody tr').count()===3&&await nojs.locator(`#${slug}-questions .am-faq-item`).count()===learn.extraBlocks.find(block=>block.block_id===`${slug}-questions`).content.table.rows.length&&await nojs.locator('.ch-source-details a[href^="https://"]').count()>=1);

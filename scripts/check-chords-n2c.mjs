@@ -3,6 +3,7 @@ import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
 import {createRequire} from 'node:module';
+import { editorialHeading, editorialMetadata } from '../src/lib/seo-editorial.ts';
 const {chromium}=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH||'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3101';
 const out=process.env.PIANO_CHECK_OUT||path.join(os.tmpdir(),'pianogrid-chords-n2c');
@@ -30,7 +31,9 @@ try{
   const nojs=await page({javaScriptEnabled:false,viewport:{width:1280,height:900}});
   for(const raw of details){
     const response=await nojs.goto(base+raw.url),html=await response.text(),main=clean(await nojs.locator('main').innerText()),seoRow=seo.find(item=>item.url===raw.url),slug=raw.url.split('/').at(-1);
-    check(`${raw.url} static HTTP/metadata`,response.status()===200&&html.includes('<h1')&&!html.includes('BAILOUT_TO_CLIENT_SIDE_RENDERING')&&await nojs.title()===seoRow.title&&await nojs.locator('meta[name=description]').getAttribute('content')===seoRow.description&&clean(await nojs.locator('h1').innerText())===seoRow.h1&&await nojs.locator('link[rel=canonical]').getAttribute('href')===`https://pianogrid.com${raw.url}`);
+    const expectedMetadata=editorialMetadata({title:seoRow.title,description:seoRow.description,alternates:{canonical:raw.url}});
+    const expectedH1=editorialHeading(raw.url,seoRow.h1);
+    check(`${raw.url} static HTTP/metadata`,response.status()===200&&html.includes('<h1')&&!html.includes('BAILOUT_TO_CLIENT_SIDE_RENDERING')&&await nojs.title()===expectedMetadata.title&&await nojs.locator('meta[name=description]').getAttribute('content')===expectedMetadata.description&&clean(await nojs.locator('h1').innerText())===expectedH1&&await nojs.locator('link[rel=canonical]').getAttribute('href')===`https://pianogrid.com${raw.url}`);
     check(`${raw.url} family/subtype/formula`,raw.family==='seventh'&&raw.expectedNoteCount===4&&same(raw.definition.formulaDegrees,formulaBySubtype[raw.subtype])&&raw.definition.toneSpellings.every(note=>main.includes(note))&&raw.definition.formulaDegrees.every(degree=>main.includes(degree)));
     check(`${raw.url} four structured positions`,raw.voicings.length===4&&await nojs.locator('.am-position-fieldset input').count()===4&&await nojs.locator('.am-inversion-table tbody tr').count()===4&&same(await nojs.locator('.am-inversion-table tbody tr').evaluateAll(rows=>rows.map(row=>row.getAttribute('data-position'))),['Root position','First inversion','Second inversion','Third inversion']));
     check(`${raw.url} slash bass and channels`,raw.voicings.every((voicing,index)=>voicing.position.inversionIndex===index&&voicing.bass===voicing.notesLowToHigh[0]&&voicing.midiLowToHigh.length===4&&same(voicing.midiLowToHigh,voicing.keyboardHighlights.map(item=>item.midi))&&same(voicing.midiLowToHigh,voicing.playbackEvents.map(item=>item.midi))&&same(voicing.notesLowToHigh,voicing.printPitches)&&(index===0?!voicing.symbol.includes('/'):voicing.symbol.endsWith('/'+voicing.bass.replace(/\d+$/,'')))));

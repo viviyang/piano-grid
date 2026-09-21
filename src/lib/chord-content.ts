@@ -12,6 +12,7 @@ import { getN2BCategory, getN2BChordDetail, isN2BChordDetailRoute, type N2BCateg
 import { getN2CCategory, getN2CChordDetail, isN2CChordDetailRoute, type N2CCategory } from './chord-n2c-content';
 import { getN2DCategory, getN2DChordDetail, isN2DChordDetailRoute } from './chord-n2d-content';
 import { getSupportedChordRegistry } from './chord-completion-content';
+import { applyEditorialChordCopy } from './seo-editorial';
 
 type NewVoicing = {id:string;label:string;symbol:string;bass:string;notes:string[];midi:number[];keyboard_highlights:{midi:number;spelling:string}[];playback:{simultaneous_midi:number[];ascending_midi:number[]}};
 type DetailBinding={h1:string;tool_heading:string;answer:string;keyboard_range_midi:number[];range_label:string;pdf:{url:string;label:string};quality:ThreeNoteSubtype;formula_degrees:string[];namespace:string;detail_publish_gate:string};
@@ -73,9 +74,9 @@ export function getChordDetail(url:ChordDetailRoute):ChordDetailModel {
  if(url==='/chords/a-major')blocks.find(block=>block.block_id==='a-major-notice')!.content.links.push({url:'/chords/a-minor',label:'Compare with A minor',published:true});
  const byId=Object.fromEntries(blocks.map(b=>[b.block_id,b]));
  const metadata=copy?{...page.metadata,title:copy.title,description:copy.description}:page.metadata;
- return finalizeChordDetailModel({data,blocks,byId,metadata,answer:binding.answer,introduction:[],fingeringExamples:learning.fingerings,sources:learning.sources,practice:learning.practice,
+ return applyEditorialChordCopy(finalizeChordDetailModel({data,blocks,byId,metadata,answer:binding.answer,introduction:[],fingeringExamples:learning.fingerings,sources:learning.sources,practice:learning.practice,
   searchSections:blocks.filter(b=>b.block_id!==`${prefix}-intro`).map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)})),
-  tocItems:[{id:data.toolId,label:'Chord & positions'},...blocks.filter(block=>![`${prefix}-intro`,data.toolId].includes(block.block_id)).map(block=>({id:block.block_id,label:block.content.heading}))]});
+  tocItems:[{id:data.toolId,label:'Chord & positions'},...blocks.filter(block=>![`${prefix}-intro`,data.toolId].includes(block.block_id)).map(block=>({id:block.block_id,label:block.content.heading}))]}));
 }
 
 export type CenterItem={id:string;name:string;root:string;quality:string;url:string|null;voicing:Voicing;tones:string[];formula:string[]};

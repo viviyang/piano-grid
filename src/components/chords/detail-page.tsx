@@ -2,7 +2,7 @@ import type { ChordDetailModel } from '@/lib/a-minor-types';
 import { AMinorExperience as ChordDetailExperience, InversionRow, PrintActions } from '../a-minor/experience';
 import { ChordPageToc, ChordSectionTitle } from './page-toc';
 import { PageBreadcrumb } from '@/components/ui/breadcrumb';
-import { editorialHeading } from '@/lib/seo-editorial';
+import { editorialHeading, hideInternalSourceAudit } from '@/lib/seo-editorial';
 import { isPageFix16 } from '@/lib/page-fix-16';
 import { FingeringGuide, ChordSourceList } from './fingering-guide';
 import { ChordBuilderPractice } from './chord-builder-practice';
@@ -13,6 +13,7 @@ export function ChordDetailPage({model}:{model:ChordDetailModel}) {
   const {data,blocks,byId,answer,introduction,searchSections}=model;
   const prefix=data.namespace;
   const compactSources=isPageFix16(data.url);
+  const publicSources=hideInternalSourceAudit(data.url);
   const definition=data.chord.definition;
   const category={label:definition.categoryLabel,href:definition.categoryRoute};
   const labels=definition.family==='add'?definition.exampleLabels:definition.positionLabels;
@@ -23,7 +24,7 @@ export function ChordDetailPage({model}:{model:ChordDetailModel}) {
   const toolParagraphs=[...byId[`${prefix}-intro`].content.paragraphs,...byId[data.toolId].content.paragraphs];
   return <ChordDetailExperience data={data} heading={heading} toolNotes={toolParagraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections}>
     {blocks.filter(b=>![`${prefix}-intro`,data.toolId].includes(b.block_id)).map(block=>{const {block_id:id,content:c}=block;
-      if(id===`${prefix}-fingering-example`)return model.fingeringExamples.length?<FingeringGuide key={id} block={block} examples={model.fingeringExamples} sources={model.sources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources}/>:<section className="am-content-section ch-fingering" id={id} data-block-id={id} data-fingering-visible="false" key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><div className="ch-section-heading"><div className="ch-section-kicker">Reference scope</div><h2 id={`${id}-heading`}>{c.heading}</h2></div><div className="am-content-body ch-learning-panel">{c.paragraphs.map(p=><p key={p}>{p}</p>)}{c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}{(!compactSources||model.sources.length>0)&&<details className="ch-source-details"><summary>{compactSources?'Sources':'Sources and scope'}</summary><div><ChordSourceList sources={model.sources} hideSourceCodes={compactSources}/></div></details>}</div></section>;
+      if(id===`${prefix}-fingering-example`)return model.fingeringExamples.length?<FingeringGuide key={id} block={block} examples={model.fingeringExamples} sources={model.sources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources} hideAuditNotes={publicSources}/>:<section className="am-content-section ch-fingering" id={id} data-block-id={id} data-fingering-visible="false" key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><div className="ch-section-heading"><div className="ch-section-kicker">Reference scope</div><h2 id={`${id}-heading`}>{c.heading}</h2></div><div className="am-content-body ch-learning-panel">{c.paragraphs.map(p=><p key={p}>{p}</p>)}{c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}{(!compactSources||model.sources.length>0)&&<details className="ch-source-details"><summary>{compactSources||publicSources?'Sources':'Sources and scope'}</summary><div><ChordSourceList sources={model.sources} hideSourceCodes={compactSources} hideAuditNotes={publicSources}/></div></details>}</div></section>;
       if(id==='practice')return <ChordBuilderPractice key={id} data={data} practice={model.practice}/>;
       return <section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}><ChordSectionTitle id={id} text={c.heading}/></h2><div className={`am-content-body${prefix==='am'&&['am-why-minor','am-practice'].includes(id)?' ch-learning-panel':''}`}>
       {c.paragraphs.map(p=><p key={p}>{p}</p>)}

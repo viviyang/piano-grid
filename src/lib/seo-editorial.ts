@@ -181,7 +181,39 @@ export const SEO_COPY: Record<string, Copy> = {
   '/tools/blank-sheet-music': { title: 'Blank Piano Sheet Music PDF — Letter & A4 | PianoGrid', h1: 'Blank Piano Sheet Music', description: 'Download free blank piano sheet music with six grand-staff systems. Choose US Letter or A4, preview the page, and print without an account.' },
   '/tools/hear-the-difference': { title: 'Major vs Minor Piano Chords: Hear the Difference | PianoGrid', h1: 'Hear the Difference Between Major and Minor Chords', description: 'Listen to minor and major piano chords, find the one note that changes, and see how raising the third by one semitone changes the chord.' },
   '/arpeggios': { title: 'Piano Arpeggios: C & G Major Notes and Fingering', description: 'Explore C and G major arpeggio notes, compare chord tones with scales, and use the available fingering examples to plan a short practice.' },
+  '/chords/g-major': {
+    title: 'G Major Chord: Piano Notes, Inversions & PDF',
+    h1: 'G Major Chord',
+    description: 'Learn the G major chord on piano: G, B and D. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes, and download a printable reference.',
+  },
+  '/chords/a-major': {
+    title: 'A Major Chord: Piano Notes, Fingering & Inversions',
+    h1: 'A Major Chord',
+    description: 'Learn the A major chord on piano: A, C♯ and E. See the keyboard diagram, root position, inversions, and sourced root-position fingering examples.',
+  },
+  '/chords/d-major': {
+    title: 'D Major Chord: Piano Notes, Inversions & PDF',
+    h1: 'D Major Chord',
+    description: 'Learn the D major chord on piano: D, F♯ and A. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes, and download a printable reference.',
+  },
+  '/chords/f-major': {
+    title: 'F Major Chord: Piano Notes, Inversions & PDF',
+    h1: 'F Major Chord',
+    description: 'Learn the F major chord on piano: F, A and C. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes, and download a printable reference.',
+  },
+  '/chords/b-major': {
+    title: 'B Major Chord: Piano Notes, Inversions & PDF',
+    h1: 'B Major Chord',
+    description: 'Learn the B major chord on piano: B, D♯ and F♯. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes, and download a printable reference.',
+  },
 };
+
+const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7']);
+
+/** Hide internal review IDs and audit labels on selected public chord pages. Keep source names and links. */
+export function hideInternalSourceAudit(url: string): boolean {
+  return PUBLIC_SOURCE_CLEANUP.has(url);
+}
 
 const STATIC_OG: Record<string, { title: string; description: string; image: string; alt: string }> = {
   '/songs/easy': {

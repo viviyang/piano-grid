@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 import { createRequire } from 'node:module';
+import { editorialHeading, editorialMetadata } from '../src/lib/seo-editorial.ts';
 const { chromium }=createRequire(import.meta.url)(process.env.PIANO_PLAYWRIGHT_PATH||'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const base=process.env.PIANO_BASE_URL||'http://127.0.0.1:3101';
 const out=process.env.PIANO_CHECK_OUT||'checks/chords-next-expansion';
@@ -48,7 +49,9 @@ try{
   const page=await browser.newPage({javaScriptEnabled:false,viewport:{width:1280,height:900}}),slug=raw.url.split('/').at(-1);observed(page);
   const response=await page.goto(base+raw.url),html=await response.text(),main=clean(await page.locator('main').innerText());
   check(`${raw.url} HTTP/static HTML`,response.status()===200&&html.includes('<h1')&&!html.includes('BAILOUT_TO_CLIENT_SIDE_RENDERING'),response.status());
-  check(`${raw.url} TDK/H1/canonical`,await page.title()===raw.title&&await page.locator('meta[name=description]').getAttribute('content')===raw.description&&clean(await page.locator('h1').innerText())===raw.h1&&await page.locator('link[rel=canonical]').getAttribute('href')===`https://pianogrid.com${raw.url}`);
+  const expectedMetadata=editorialMetadata({title:raw.title,description:raw.description,alternates:{canonical:raw.url}});
+  const expectedH1=editorialHeading(raw.url,raw.h1);
+  check(`${raw.url} TDK/H1/canonical`,await page.title()===expectedMetadata.title&&await page.locator('meta[name=description]').getAttribute('content')===expectedMetadata.description&&clean(await page.locator('h1').innerText())===expectedH1&&await page.locator('link[rel=canonical]').getAttribute('href')===`https://pianogrid.com${raw.url}`);
   check(`${raw.url} no meta keywords`,await page.locator('meta[name=keywords]').count()===0);
   check(`${raw.url} notes/formula/inversions in raw content`,raw.data.pitch_classes.every(note=>main.includes(note))&&main.includes(raw.data.formula_degrees.join('–'))&&await page.locator('.am-inversion-table tbody tr').count()===3);
   check(`${raw.url} no invented fingering`,await page.locator('.ch-finger-map,.ch-hand-switch').count()===0&&(await page.locator(`[data-block-id="${slug}-fingering-example"]`).innerText()).includes('No verified hand-number examples'));
