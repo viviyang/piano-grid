@@ -126,12 +126,12 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
             <button type="button" ref={moreTrigger} className="am-button am-tertiary" aria-expanded={moreOpen} aria-controls={moreId} onClick={() => setMoreOpen(value => !value)}>More</button>
             {moreOpen ? (
               <div className="kn-labeled-more-panel" id={moreId}>
-                <a className="am-button am-tertiary" download href={pdfHref}>Download PDF</a>
+                <a className="am-button am-tertiary" download href={pdfHref}>Download PDF<span className="pr-sr-only"> of {layout.label} labeled keys</span></a>
                 <ShareControl path="/keyboard-notes/labeled" params={shareParams} label="Share reference"/>
               </div>
             ) : null}
           </div>
-          <a className="am-button am-tertiary kn-labeled-desktop-only" download href={pdfHref}>Download PDF</a>
+          <a className="am-button am-tertiary kn-labeled-desktop-only" download href={pdfHref}>Download PDF<span className="pr-sr-only"> of {layout.label} labeled keys</span></a>
           <div className="kn-labeled-desktop-only"><ShareControl path="/keyboard-notes/labeled" params={shareParams} label="Share reference"/></div>
         </div>
       </div>
@@ -158,8 +158,8 @@ export function LabeledExperience({ layouts, sources }: { layouts: Layout[]; sou
 
       <LabeledFullReferenceCollapsible defaultOpen>
         {fullSegments.map(segment => (
-          <section className="kn-segment" key={segment.label} id={`labels-${segment.label.replace(/[^\w]+/g, '-').toLowerCase()}`} tabIndex={-1}>
-            <h2>{segment.label}</h2>
+          <section className="kn-segment" key={segment.label} id={`labels-${segment.label.replace(/[^\w]+/g, '-').toLowerCase()}`} aria-labelledby={`labels-${segment.label.replace(/[^\w]+/g, '-').toLowerCase()}-heading`} tabIndex={-1}>
+            <h2 id={`labels-${segment.label.replace(/[^\w]+/g, '-').toLowerCase()}-heading`}>{segment.label}</h2>
             <KeyboardDiagram keys={segment.keys} octaves={octaves} label={`${segment.label} labels`}/>
           </section>
         ))}

@@ -1,0 +1,30 @@
+[
+  {
+    "port": 3141,
+    "url": "/scales/c-major",
+    "started": false,
+    "state": "preparing",
+    "reset": "idle"
+  },
+  {
+    "port": 3141,
+    "url": "/arpeggios",
+    "started": true,
+    "state": "counting",
+    "reset": "idle"
+  },
+  {
+    "port": 3142,
+    "url": "/scales/c-major",
+    "started": false,
+    "state": "preparing",
+    "reset": "idle"
+  },
+  {
+    "port": 3142,
+    "url": "/arpeggios",
+    "started": true,
+    "state": "counting",
+    "reset": "idle"
+  }
+]

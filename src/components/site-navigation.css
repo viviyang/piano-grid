@@ -98,8 +98,9 @@
 .site-nav-popup .site-nav-chord-parent-link[data-active]{color:var(--foreground);font-weight:inherit}
 .site-nav-popup .site-nav-chord-item[data-expanded] .site-nav-chord-parent-link,.site-nav-chord-item[data-expanded] .site-nav-chord-group-button{color:var(--primary);font-weight:650}
 /* Navigation-only palette from the user reference; repeat on the portalled popup. */
-.site-navigation,.site-nav-popup{--background:#181f27;--foreground:#e8edf3;--muted-foreground:#b6c0ce;--surface:#28313c;--border:#36404c;--primary:#e6d394}
-.am-page .am-site-header,.ph-site-header{background:#181f27;border-bottom-color:#36404c}
+.site-navigation,.site-nav-popup,.home-page .ph-site-header{--background:#181f27;--foreground:#e8edf3;--muted-foreground:#b6c0ce;--surface:#28313c;--border:#36404c;--primary:#e6d394}
+/* Home's legacy translucent header rule loads later; keep the shared palette authoritative. */
+.am-page .am-site-header,.home-page .ph-site-header{background:#181f27;border-bottom-color:#36404c}
 .am-page .am-site-header .am-brand,.ph-site-header .ph-brand{color:#e8edf3}
 .am-page .am-site-header .am-search-trigger{color:#b6c0ce}
 .site-navigation .site-nav-parent-link{gap:.4rem;padding-inline:.5rem;color:var(--muted-foreground);font-size:.875rem}

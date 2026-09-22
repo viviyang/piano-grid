@@ -45,8 +45,8 @@ function KeyboardPage({model, children, hub = false}: {model: KeyboardPageModel;
         {!hub && (
           <div className="am-reading kn-screen">
             {model.blocks.map(block => (
-              <section className="am-content-section" id={`kn-${model.provenance.template_id}-${block.id}`} data-block-id={block.id} key={block.id}>
-                <h2>{block.heading}</h2>
+              <section className="am-content-section" id={`kn-${model.provenance.template_id}-${block.id}`} aria-labelledby={`kn-${model.provenance.template_id}-${block.id}-heading`} data-block-id={block.id} key={block.id}>
+                <h2 id={`kn-${model.provenance.template_id}-${block.id}-heading`}>{block.heading}</h2>
                 <div className="am-content-body"><p>{block.body}</p></div>
               </section>
             ))}

@@ -5,7 +5,6 @@
 .kn-page:has(.kn-v2-shell) .kn-v2-description{display:block}
 .kn-v2-shell button,.kn-v2-shell input,.kn-v2-shell select{font:inherit}
 .kn-v2-shell :is(.kn-v2-text-button,.kn-v2-copy-link,.kn-v2-leave,.kn-v2-note-choices button):is(:hover,:focus-visible):not(:disabled) .pr-rolling-text-current>span{transform:translateY(-112%)}
-.kn-v2-shell :is(.kn-v2-text-button,.kn-v2-copy-link,.kn-v2-leave,.kn-v2-note-choices button):is(:hover,:focus-visible):not(:disabled) .pr-rolling-text-next>span{transform:translateY(0)}
 .kn-v2-tabs{display:flex;flex-wrap:wrap;gap:2rem;border-bottom:1px solid var(--border)}
 .kn-v2-tabs button{position:relative;min-height:3.5rem;padding:0;border:0;background:transparent;color:var(--muted-foreground);font-weight:650;cursor:pointer;white-space:normal;max-width:100%}
 .kn-v2-tabs button[aria-selected=true]{color:var(--foreground)}

@@ -6,7 +6,8 @@ import { KeyboardViewport } from './keyboard-viewport';
 import { PageSearch } from '../a-minor/page-search';
 import { RollingText } from '../ui/rolling-text';
 
-export function ChordCategoryExperience({ model, heading, children }:{ model:ChordCategoryModel; heading:React.ReactNode; children:React.ReactNode }) {
+type CategoryInteractionModel=Pick<ChordCategoryModel,'url'|'quality'|'items'|'rootOrder'|'familySubtypes'|'contentBlocks'|'whitePitchClasses'>;
+export function ChordCategoryExperience({ model, heading, children }:{ model:CategoryInteractionModel; heading:React.ReactNode; children:React.ReactNode }) {
   const [root,setRoot]=useState('');
   const [subtype,setSubtype]=useState('');
   const [ready,setReady]=useState(false);

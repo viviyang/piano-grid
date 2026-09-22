@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "name": "Identical chord button geometry",
+      "passed": true
+    },
+    {
+      "name": "SSR chart retains 25 chord articles",
+      "passed": true
+    },
+    {
+      "name": "Root/type filters and radio selection",
+      "passed": true
+    },
+    {
+      "name": "Keyboard activation, audio starts/stops",
+      "passed": true
+    },
+    {
+      "name": "Print snapshot follows filtered chord",
+      "passed": true
+    },
+    {
+      "name": "Rolling animation focus and reduced-motion",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "geometry": [
+    [
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Play chord",
+        "width": 395.7062683105469,
+        "height": 44
+      },
+      {
+        "label": "Play notes one at a time",
+        "width": 498.3999938964844,
+        "height": 44
+      },
+      {
+        "label": "Stop",
+        "width": 94.6937484741211,
+        "height": 44
+      },
+      {
+        "label": "Print this chord",
+        "width": 134.52500915527344,
+        "height": 44
+      }
+    ],
+    [
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Play chord",
+        "width": 395.7062683105469,
+        "height": 44
+      },
+      {
+        "label": "Play notes one at a time",
+        "width": 498.3999938964844,
+        "height": 44
+      },
+      {
+        "label": "Stop",
+        "width": 94.6937484741211,
+        "height": 44
+      },
+      {
+        "label": "Print this chord",
+        "width": 134.52500915527344,
+        "height": 44
+      }
+    ]
+  ],
+  "screenshots": [
+    "C:\\Users\\Admin\\AppData\\Local\\Tabbit Browser\\User Data\\LocalAgent\\Runtime\\artifacts\\task-10540254-b338-49d2-a744-11b8149a14a1\\before-card-1440.png",
+    "C:\\Users\\Admin\\AppData\\Local\\Tabbit Browser\\User Data\\LocalAgent\\Runtime\\artifacts\\task-10540254-b338-49d2-a744-11b8149a14a1\\after-card-1440.png"
+  ]
+}

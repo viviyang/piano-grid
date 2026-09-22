@@ -70,14 +70,20 @@
   }
   .pr-rolling-text-track > span {
     --pr-rolling-index: 0;
+    position: relative;
     display: inline-block;
     transition: transform .38s cubic-bezier(.16,1,.3,1);
     transition-delay: calc(var(--pr-rolling-index) * 14ms);
     will-change: transform;
   }
-  .pr-rolling-text-next > span { transform: translateY(112%); }
+  /* The second visual glyph travels with the first; no duplicate DOM track. */
+  .pr-rolling-text-current > span::after {
+    content: attr(data-char);
+    position: absolute;
+    left: 0;
+    top: 112%;
+  }
   :is(.am-button, .ph-button, .ph-header-cta):is(:hover, :focus-visible):not(:disabled) .pr-rolling-text-current > span { transform: translateY(-112%); }
-  :is(.am-button, .ph-button, .ph-header-cta):is(:hover, :focus-visible):not(:disabled) .pr-rolling-text-next > span { transform: translateY(0); }
   .pr-breathe-surface {
     position: relative;
     z-index: 0;
