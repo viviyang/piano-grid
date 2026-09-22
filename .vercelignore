@@ -1,8 +1,8 @@
-# Deployment-only exclusions; audit evidence remains tracked in Git.
+# Deployment-only exclusions; runtime source/content remains available to Next.js.
 checks
-docs
-scripts
-10_P0_REVIEW_AND_EXECUTION.md
+docs/product-system-audit-*
+docs/product-system-p0-*
+docs/product-system-p1-*
 tmp-pdf-compare
 node_modules
 .next*
