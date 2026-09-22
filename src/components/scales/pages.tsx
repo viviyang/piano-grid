@@ -52,9 +52,10 @@ function CopySection({ section, model, children }: { section: ScaleCopySection; 
 }
 
 function FAQAndSources({ model }: { model: ScalePageModel }) {
+  const concise = model.url === '/scales/modes';
   return <>
     <section className="am-content-section sc-copy-section" id="faq"><h2>Frequently asked questions</h2><div className="am-content-body sc-faq-list">{model.copy.faqs.map((faq) => <details key={faq.id ?? faq.question} data-faq-id={faq.id}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
-    <section className="am-content-section sc-copy-section" id="sources"><h2>Sources and scope</h2><div className="am-content-body"><p>{model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} - {source.title}</a></h3><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></article>)}</div></div></section>
+    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? 'These references support the mode notes and spellings on this page.' : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} - {source.title}</a></h3>{concise ? <p>{source.scope}</p> : <><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></>}</article>)}</div></div></section>
   </>;
 }
 
@@ -115,7 +116,7 @@ export function ScaleDetailPage({ url }: { url: ScaleDetailRoute }) {
 export function ScaleFamilyPage({ url }: { url: ScaleFamilyRoute }) {
   const data = getScaleFamily(url);
   return <ScaleShell model={data.model}>
-    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope}/>
+    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={url === '/scales/modes'}/>
     <ScaleAdLayoutSlot id="scale-family-after-workspace"/>
     <div className="am-reading sc-reading sc-screen"><section className="am-content-section" id="comparison"><h2>Complete supported comparison</h2><div className="am-content-body"><p>This table lists every named example supported on this page. The final repeated note is the octave endpoint.</p><DataTable label={`${data.model.title} supported examples`} columns={['Example', 'Ascending notes', 'Interval steps']} rows={data.examples.map((example) => [example.label, example.option.sequences.RH.ascending.map((note) => display(note.spelling)).join(' – '), example.option.semitoneSteps.join(' – ')])}/></div></section>{data.model.copy.sections.map((section) => <CopySection section={section} model={data.model} key={section.id}/>)}<FAQAndSources model={data.model}/></div>
   </ScaleShell>;

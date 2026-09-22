@@ -220,9 +220,17 @@ export function getChordFinder(sourceChords: FinderChordSource[]) {
   const planned = plannedLinksFor('/chords/finder');
   const links = planned.some(link => link.url === '/chords/by-key') ? planned : [...planned, { id: 'FINAL-FINDER-BY-KEY', url: '/chords/by-key', label: 'Browse chords by key', placement: 'after instructions' }];
   const blocks=baseModel.blocks.map(block=>({...block,paragraphs:[...block.paragraphs]}));
-  const limits=blocks.find(block=>block.id==='limits');if(limits)limits.paragraphs[1]='The supported registry includes triads, power fifths, sixths, seventh chords, add chords, extended chords and explicit altered structures. Each family is validated before it enters this shared matcher; a reduced supplied voicing remains labeled separately from a complete formula match.';
+  const limits=blocks.find(block=>block.id==='limits');if(limits){
+    limits.heading='How matching works';
+    limits.paragraphs=[
+      'The finder compares your notes with 433 supported objects. Repeated octaves are treated as the same pitch classes, so doubling a note does not create a new chord.',
+      'A complete formula match contains every chord tone. A reduced voicing is labeled separately when the notes match an explicit example that leaves some degrees out.',
+      'The supported registry includes triads, power fifths, sixths, seventh chords, add chords, extended chords and explicit altered structures. Each family is validated before it enters this shared matcher.',
+      limits.paragraphs[0],
+    ];
+  }
   return {
-    model: { ...baseModel, scope: 'Matches all 433 objects in the supported registry by complete formula pitch classes or an explicitly supplied voicing. Results can be ambiguous; the finder does not infer missing tones freely.', links,blocks },
+    model: { ...baseModel, scope: "Select the notes you're playing to find possible chord names. Add the bass note if you know it, then compare matching chords and inversions.", links,blocks },
     data: { chords, labels: page.data.result_labels as { multiple: string; none: string; incomplete: string }, professionalReview: page.data.professional_review as string },
   };
 }

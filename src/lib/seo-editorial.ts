@@ -22,8 +22,8 @@ export const SEO_COPY: Record<string, Copy> = {
     },
   },
   '/keyboard-notes/chart': { title: 'Piano Notes Chart: Staff Notes to Keyboard', h1: 'Piano Notes Chart', description: 'Match treble and bass clef notes to piano keys. Locate middle C and compare note names and octaves across the supported keyboard ranges.' },
-  '/keyboard-notes/finger-numbers': { title: 'Piano Finger Numbers: Left & Right Hand Chart', h1: 'Piano Finger Numbers', description: 'Learn finger numbers 1–5 for both hands. Use the hand chart and examples to distinguish fingering from note names, octaves and scale degrees.' },
-  '/keyboard-notes/frequencies': { title: 'Piano Note Frequency Chart: A0–C8', description: 'Look up all 88 piano keys by note, MIDI number and calculated frequency in hertz, using A4 = 440 Hz.' },
+  '/keyboard-notes/finger-numbers': { title: 'Piano Finger Numbers Chart: Left & Right Hand | PianoGrid', h1: 'Piano Finger Numbers', description: 'Use this piano finger numbers chart to learn fingers 1–5 for the left and right hands, understand LH and RH labels, and read basic fingering notation.' },
+  '/keyboard-notes/frequencies': { title: 'Piano Note Frequency Chart: A0–C8', description: 'Use this piano note frequency chart to look up all 88 piano keys from A0 to C8, including note names, MIDI numbers and frequencies in hertz with A4 = 440 Hz.' },
   '/keyboard-notes/blank': { title: 'Blank Piano Keyboard Worksheet', description: 'Print an unlabeled 13-key or 25-key keyboard segment to write note names, mark a scale or make your own exercise.' },
   '/chords': { title: 'Piano Chord Chart: Notes, Diagrams & Sound', description: 'Find piano chords by name, root or type. See their notes and keyboard positions, hear examples, and open detailed chord and inversion guides.' },
   '/chords/b-minor': {
@@ -235,9 +235,14 @@ export const SEO_COPY: Record<string, Copy> = {
     h1: 'C-sharp Minor Chord',
     description: 'Learn the C-sharp minor chord on piano: C♯, E and G♯. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
   },
+  '/chords/e-diminished': {
+    title: 'E Diminished Chord: Piano Notes & Inversions | PianoGrid',
+    h1: 'E Diminished Chord',
+    description: 'Learn the E diminished chord on piano: E, G and B♭. See the keyboard diagram, root position and inversions, hear the chord, practice the notes and print a reference.',
+  },
 };
 
-const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7', '/chords/b-m7', '/chords/f-7', '/chords/a-minor', '/chords/c-diminished']);
+const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7', '/chords/b-m7', '/chords/f-7', '/chords/a-minor', '/chords/c-diminished', '/chords/e-diminished', '/chords/g-m7']);
 
 /** Hide internal review IDs and audit labels on selected public chord pages. Keep source names and links. */
 export function hideInternalSourceAudit(url: string): boolean {

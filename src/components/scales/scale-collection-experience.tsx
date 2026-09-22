@@ -13,12 +13,13 @@ import { SITE_NAME } from '@/lib/site-config';
 
 type Snapshot = { exampleID: string; option: (ScaleFamilyExample | ArpeggioExample)['option']; hand: ScaleHand; eventHand: ScaleHand | null; handLabel: string; direction: ScaleDirection };
 
-export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExampleID, kind, scope }: {
+export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExampleID, kind, scope, conciseSources = false }: {
   examples: Array<ScaleFamilyExample | ArpeggioExample>;
   keyboardKeys: PianoKey[];
   defaultExampleID: string;
   kind: 'scale' | 'arpeggio';
   scope: string;
+  conciseSources?: boolean;
 }) {
   const audio = useScaleAudio();
   const [exampleID, setExampleID] = useState(defaultExampleID);
@@ -71,7 +72,7 @@ export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExamp
       <label className="kn-field">Direction<select aria-label="Direction" value={direction} disabled={!audio.ready} onChange={(event) => change(() => setDirection(event.target.value as ScaleDirection))}><option value="ascending">Ascending</option><option value="descending">Descending</option><option value="up_down">Up and down</option></select></label>
     </div>
     <p className="sc-collection-summary">{selected.summary}</p><p>{selected.comparison}</p>
-    <ScaleReference option={selected.option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={60} audio={audio} showSummary={false} playLabel={kind === 'arpeggio' ? 'Play arpeggio' : 'Play scale'} handLabelOverride={selectedHandLabel} eventHand={eventHand}/>
+    <ScaleReference option={selected.option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={60} audio={audio} showSummary={false} playLabel={kind === 'arpeggio' ? 'Play arpeggio' : 'Play scale'} handLabelOverride={selectedHandLabel} eventHand={eventHand} conciseSources={conciseSources}/>
     <p className="sc-scope-note">Current collection: {scope}. Unknown fingering remains notes-only and is never copied from the previous selection.</p>
     {eventHand !== null && <><ScaleQuiz key={`quiz:${selected.id}:${hand}:${direction}`} option={selected.option} hand={hand} direction={direction} keyboardKeys={keyboardKeys} ready={audio.ready}/><ScalePractice key={`practice:${selected.id}:${hand}:${direction}`} option={selected.option} hand={hand} direction={direction} audio={audio} ready={audio.ready}/></>}
     {eventHand === null && <p className="sc-scope-note">This treble reference is not assigned to a hand and has no fingering or guided single-hand practice.</p>}
@@ -80,7 +81,7 @@ export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExamp
   </section>
   <div className="sc-print-only" data-print-scale={print.option.id} data-print-view={print.exampleID} data-print-hand={print.eventHand ?? 'none'} data-print-direction={print.direction}>
     <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{selected.collectionLabel}: {print.option.tonic} {print.option.formLabel}</div><p>View: {print.handLabel} · Direction: {print.direction.replace('_', ' ')} · Range: one octave</p>
-    <ScaleReference option={print.option} keyboardKeys={keyboardKeys} hand={print.hand} direction={print.direction} tempo={60} print handLabelOverride={print.handLabel} eventHand={print.eventHand}/>
+    <ScaleReference option={print.option} keyboardKeys={keyboardKeys} hand={print.hand} direction={print.direction} tempo={60} print handLabelOverride={print.handLabel} eventHand={print.eventHand} conciseSources={conciseSources}/>
     <p className="sc-print-foot">Current selected reference. Notes, staff, keyboard and any finger numbers come from this same view. Missing fingering remains notes-only.</p>
   </div></>;
 }

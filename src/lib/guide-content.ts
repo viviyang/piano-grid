@@ -80,7 +80,11 @@ export function getGuideCenter(): GuideCenterData {
   if (!Array.isArray(assets) || assets.length !== 1) throw new Error('Guide center requires one checked printable');
   return {
     model: model('/guide', page),
-    path: page.data.path.map((step: Raw) => ({ ...step, available: ['/keyboard-notes/chart', '/guide/read-sheet-music'].includes(step.url) })),
+    path: page.data.path.map((step: Raw) => {
+      const existingExercise = step.step === 3 ? '/guide#four-count-pattern' : step.step === 4 ? '/guide/read-sheet-music#check-yourself' : null;
+      const url = existingExercise ?? step.url;
+      return { ...step, url, available: Boolean(existingExercise) || ['/keyboard-notes/chart', '/guide/read-sheet-music'].includes(step.url) };
+    }),
     firstExample: bar(page.data.first_example),
     keyboardKeys: getLayouts('/keyboard-notes')[0].keys.filter((key) => key.midi >= 60 && key.midi <= 64),
     printableURL: asset(assets[0]),

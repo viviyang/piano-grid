@@ -61,19 +61,19 @@ function SequenceTable({ label, pitches, fingers, sounding, note }: { label: str
   </div>;
 }
 
-function ScaleSources({ option, print }: { option: ScaleOption; print: boolean }) {
-  return <section className="sc-sources" aria-label="Sources and checking scope">
-    <h3>Sources and checking scope</h3>
+function ScaleSources({ option, print, concise = false }: { option: ScaleOption; print: boolean; concise?: boolean }) {
+  return <section className="sc-sources" aria-label={concise ? 'Sources' : 'Sources and checking scope'}>
+    <h3>{concise ? 'Sources' : 'Sources and checking scope'}</h3>
     <ul>{option.sources.map((source) => <li key={source.url}>
       <a href={source.url}>{source.publisher}: {source.title}</a>
       {print && <span className="sc-source-url"> ({source.url})</span>}
-      <span className="sc-source-scope"><strong>Checked for:</strong> {source.scope}</span>
-      <span className="sc-source-scope"><strong>Location:</strong> {source.locator}</span>
+      {concise ? <span className="sc-source-scope">{source.scope}</span> : <span className="sc-source-scope"><strong>Checked for:</strong> {source.scope}</span>}
+      {!concise && <span className="sc-source-scope"><strong>Location:</strong> {source.locator}</span>}
     </li>)}</ul>
   </section>;
 }
 
-export function ScaleReference({ option, keyboardKeys, hand, direction, tempo, audio = null, print = false, showSummary = true, playLabel = 'Play scale', handLabelOverride, eventHand = hand }: { option: ScaleOption; keyboardKeys: PianoKey[]; hand: ScaleHand; direction: ScaleDirection; tempo: number; audio?: Audio | null; print?: boolean; showSummary?: boolean; playLabel?: string; handLabelOverride?: string; eventHand?: ScaleHand | null }) {
+export function ScaleReference({ option, keyboardKeys, hand, direction, tempo, audio = null, print = false, showSummary = true, playLabel = 'Play scale', handLabelOverride, eventHand = hand, conciseSources = false }: { option: ScaleOption; keyboardKeys: PianoKey[]; hand: ScaleHand; direction: ScaleDirection; tempo: number; audio?: Audio | null; print?: boolean; showSummary?: boolean; playLabel?: string; handLabelOverride?: string; eventHand?: ScaleHand | null; conciseSources?: boolean }) {
   const segments = parts(option, hand, direction);
   const playback = scaleSequence(option, hand, direction);
   const allPitches = segments.flatMap((segment) => segment.pitches);
@@ -97,6 +97,6 @@ export function ScaleReference({ option, keyboardKeys, hand, direction, tempo, a
       <button type="button" className="am-button am-secondary" disabled={!['loading', 'playing'].includes(audio.state)} onClick={() => { audio.cancel('stopped'); emitScaleEvent('scale_playback_stopped', { object_id: option.id, form: option.form, hand: eventHand, direction, reason: 'user_stop' }); }}>Stop</button>
       <p role="status" className={audio.state === 'error' ? 'kn-error' : 'kn-status'}>{audio.message}</p>
     </div>}
-    <ScaleSources option={option} print={print}/>
+    <ScaleSources option={option} print={print} concise={conciseSources}/>
   </div>;
 }
