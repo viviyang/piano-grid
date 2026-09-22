@@ -1,0 +1,602 @@
+diff --git a/scripts/check-css.mjs b/scripts/check-css.mjs
+index b13607f..d3bd0e2 100644
+--- a/scripts/check-css.mjs
++++ b/scripts/check-css.mjs
+@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
+ import { fileURLToPath, pathToFileURL } from 'node:url';
+ import assert from 'node:assert/strict';
+ const root=dirname(dirname(fileURLToPath(import.meta.url)));
+-const out=join(root,'checks/batches/07-site-integration');
++const out=join(root,process.env.PIANO_CHECK_OUT||'checks/batches/07-site-integration');
+ const temp=join(out,`.cn-${process.pid}.mjs`);
+ let compiled;
+ try {
+diff --git a/scripts/check-foundation.mjs b/scripts/check-foundation.mjs
+index 7485c9f..dc4de88 100644
+--- a/scripts/check-foundation.mjs
++++ b/scripts/check-foundation.mjs
+@@ -105,6 +105,7 @@ try {
+   const srcFiles = (await walk(join(root,'src'))).map(p=>relative(root,p).replaceAll('\\','/'));
+   const allowedComponents = ['experience.tsx', 'keyboard.tsx', 'icon.tsx', 'page-search.tsx'].map(p => `src/components/a-minor/${p}`);
+   // User-approved C-major-only pilot; do not broaden the public route allowlist.
++  allowedComponents.push('src/components/product-continuation.tsx');
+   allowedComponents.push('src/components/chords/c-major-experience.tsx','src/components/chords/c-major-pilot.css','src/components/chords/piano-surface.css','src/components/ui/button.tsx');
+   allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience','category-page','category-experience','page-toc','fingering-guide','chord-builder-practice','completion-category','completion-category-experience','library-index','supplement-index','family-browse'].map(n=>`src/components/chords/${n}.tsx`));
+   allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css','src/components/chords/category.css','src/components/chords/page-toc.css','src/components/chords/chord-learning.css','src/components/chords/completion.css');
+@@ -158,8 +159,9 @@ try {
+   if (!(await exists('package-lock.json'))) warnings.push('尚无实际 npm 锁文件；首次 npm install 后生成并提交，以后使用 npm ci。');
+   const report={stage:'design-foundation',executed_at:new Date().toISOString(),runtime:process.version,passed:results.filter(x=>x.passed).length,failed:results.filter(x=>!x.passed).length,warnings,results,not_covered:['npm dependency installation','Next build','Tailwind compilation','real component interaction','full accessibility compliance']};
+   report.stage = '07-site-integration';
+-  await mkdir(join(root,'checks/batches/07-site-integration'),{recursive:true});
+-  await writeFile(join(root,'checks/batches/07-site-integration/foundation.json'),JSON.stringify(report,null,2)+'\n');
++  const output = join(root, process.env.PIANO_CHECK_OUT || 'checks/batches/07-site-integration');
++  await mkdir(output,{recursive:true});
++  await writeFile(join(output,'foundation.json'),JSON.stringify(report,null,2)+'\n');
+   console.log(`Foundation: ${report.passed} passed, ${report.failed} failed.`);
+   for (const w of warnings) console.warn(`NOTE: ${w}`);
+   for (const r of results.filter(x=>!x.passed)) console.error(`FAIL: ${r.name} ${r.detail}`);
+diff --git a/scripts/check-integration-data.mjs b/scripts/check-integration-data.mjs
+index 4220d6c..c741f0a 100644
+--- a/scripts/check-integration-data.mjs
++++ b/scripts/check-integration-data.mjs
+@@ -1,5 +1,6 @@
+ import { createHash } from 'node:crypto';
+ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
++import { checkProtectedBytes } from './protected-source-hash.mjs';
+ 
+ const master=JSON.parse(readFileSync('docs/content/site-master/page-content.master.json','utf8'));
+ const batch=JSON.parse(readFileSync('docs/content/site-master/F-Homepage/batch-page-content.json','utf8'));
+@@ -30,5 +31,6 @@ check('Tools visibility policy exact',tools.data.visibility_policy==='show desti
+ const releasedAssets=[['assets/blank-piano-staff-letter.pdf','public/reference/assets/blank-piano-staff-letter.pdf'],['assets/piano-starter-and-reading.pdf','public/assets/guides/piano-starter-and-reading.pdf']];
+ for(const [logical,publicPath] of releasedAssets){const record=assets.find(item=>item.logical_id===logical);check(`${logical} asset mapped`,record.output_path===publicPath&&record.url==='/'+publicPath.slice(7)&&record.status==='exported_hash_verified');check(`${logical} byte identical`,hash('docs/content/site-master/'+logical)===hash(publicPath));}
+ const protectedFiles=JSON.parse(readFileSync('checks/batches/07-site-integration/source-before.json','utf8')).files.filter(item=>item.path.startsWith('docs/content/site-master/')||item.path.startsWith('docs/product/')||item.path.startsWith('docs/design/reference/')||item.path.startsWith('docs/design/piano-final/'));
+-for(const file of protectedFiles){if(file.path==='docs/content/site-master/page-content.master.json')continue;check(`Protected source unchanged: ${file.path}`,hash(file.path)===file.sha256);}
++const amendments=JSON.parse(readFileSync(new URL('./protected-source-amendments.json',import.meta.url),'utf8'));
++for(const file of protectedFiles){if(file.path==='docs/content/site-master/page-content.master.json')continue;const amendment=amendments.find(item=>item.path===file.path);if(amendment&&amendment.oldExpected!==file.sha256)throw new Error(`Protected baseline amendment no longer applies: ${file.path}`);const result=checkProtectedBytes(file.path,readFileSync(file.path),amendment?.approvedExpected??file.sha256);check(`Protected source unchanged: ${file.path}`,result.passed,{...result,originalExpected:file.sha256,amendment:amendment??null});}
+ const report={executed_at:new Date().toISOString(),passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,results};writeFileSync(`${out}/data-validation.json`,JSON.stringify(report,null,2)+'\n');console.log(`Integration data: ${report.passed} passed, ${report.failed} failed.`);process.exitCode=report.failed?1:0;
+diff --git a/scripts/check-scale-completion-contract.mjs b/scripts/check-scale-completion-contract.mjs
+index 5a83051..767579d 100644
+--- a/scripts/check-scale-completion-contract.mjs
++++ b/scripts/check-scale-completion-contract.mjs
+@@ -2,7 +2,9 @@ import fs from 'node:fs';
+ import { execFileSync } from 'node:child_process';
+ import { validateScaleAuthoringBundle } from './scale-authoring-contract.mjs';
+ 
+-const inputPath = process.env.PIANO_SCALE_AUTHORING_BUNDLE || 'checks/scales-completion/current-authoring-bundle.json';
++const outputDir = process.env.PIANO_CHECK_OUT || 'checks/scales-completion';
++fs.mkdirSync(outputDir, { recursive: true });
++const inputPath = process.env.PIANO_SCALE_AUTHORING_BUNDLE || `${outputDir}/current-authoring-bundle.json`;
+ if (!process.env.PIANO_SCALE_AUTHORING_BUNDLE) execFileSync(process.execPath, ['scripts/export-scale-authoring.mjs', '--output', inputPath], { stdio: 'pipe' });
+ const input = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
+ const master = JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json', 'utf8'));
+@@ -49,6 +51,6 @@ expectPass('family and arpeggio event counts retain 5/6/7/12 and 3-tone boundari
+ });
+ 
+ const report = { executed_at: new Date().toISOString(), passed: results.filter((item) => item.passed).length, failed: results.filter((item) => !item.passed).length, results };
+-fs.writeFileSync('checks/scales-completion/contract-validation.json', `${JSON.stringify(report, null, 2)}\n`);
++fs.writeFileSync(`${outputDir}/contract-validation.json`, `${JSON.stringify(report, null, 2)}\n`);
+ console.log(`Scales completion contract: ${report.passed} passed, ${report.failed} failed`);
+ if (report.failed) process.exitCode = 1;
+diff --git a/src/components/a-minor/experience.tsx b/src/components/a-minor/experience.tsx
+index 3624fec..9575248 100644
+--- a/src/components/a-minor/experience.tsx
++++ b/src/components/a-minor/experience.tsx
+@@ -1,4 +1,8 @@
+ 'use client';
++import {ProductContinuation} from '@/components/product-continuation';
++import {useDetailContinuation} from '@/lib/use-continuation-state';
++import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
++
+ import { createContext, Fragment, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+ import { flushSync } from 'react-dom';
+ import { cn } from '@/lib/utils';
+@@ -41,6 +45,7 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
+   const [audio,setAudio]=useState<{state:AudioStatus;message:string;mode:PlaybackMode|null}>({state:'idle',message:'',mode:null});
+   const [sounding,setSounding]=useState<number[]>([]), [announcement,setAnnouncement]=useState('');
+   const player=useRef<ReferenceAudio|null>(null);
++  const continuationMessage=useDetailContinuation(data,id=>{setSelected(id);selected.current=id;},()=>player.current?.cancel());
+   const printSnapshot=useRef<string|null>(null);
+   const [printId,setPrintId]=useState<string|null>(null), [printError,setPrintError]=useState('');
+   const voicing=data.voicings.find(v=>v.voicing_id===selectedVoicingId)!;
+@@ -67,11 +72,15 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
+     setAnnouncement(`${v.inversion_label}. ${v.chord_symbol}. ${data.microcopy.selected_note_summary}: ${v.notes_low_to_high.map(n=>n.display_pitch).join(', ')}. Bass: ${v.bass_spelling}.`);
+   }
+   function print() {
++    emitPilotEvent('p0_print_request',{object_id:data.namespace});
+     player.current?.cancel();setPrintError('');printSnapshot.current=selected.current;
+     flushSync(()=>setPrintId(selected.current));
+     try { if(typeof window.print!=='function')throw new Error('Print unavailable');window.print(); }
+     catch {printSnapshot.current=null;setPrintId(null);setPrintError(data.microcopy.print_error);}
+   }
++  const resultRef=useRef<HTMLDivElement>(null);
++  useResultExposure(resultRef,data.namespace,selectedVoicingId);
++  usePilotAudio(audio.state,data.namespace,audio.mode);
+   const notes=voicing.notes_low_to_high;
+   const stopPlayback=()=>player.current?.cancel('Playback stopped.','stopped');
+   return <PrintContext.Provider value={{ready,print,pdf:data.pdf}}><StopPlaybackContext.Provider value={stopPlayback}><SelectedVoicingContext.Provider value={selectedVoicingId}><div className="am-page" data-selected-voicing={selectedVoicingId} data-position={voicing.inversion_label} data-note-count={data.chord.definition.expectedNoteCount} data-family={data.chord.definition.family}>
+@@ -82,14 +91,14 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
+         <h2 className="pr-sr-only" id="tool-heading">{data.toolHeading}</h2>
+         <dl className="am-summary"><div><dt>{data.chord.name_en}</dt><dd className="am-chord-id">{data.chord.symbol}</dd></div><div><dt>Chord tones</dt><dd className="am-tone-list">{data.chord.note_spellings.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span>{n}</span></Fragment>)}</dd></div><div><dt>Formula</dt><dd className="am-formula">{data.chord.formula_degrees.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">·</span>}<span>{degree(n)}</span></Fragment>)}</dd></div></dl>
+         <dl className="am-quick-facts" aria-label="Quick facts"><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-intro`}/></span>Notes</dt><dd>{data.chord.note_spellings.join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-${data.chord.definition.subtype}`}/></span>Quality</dt><dd>{data.chord.definition.qualityLabel}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-inversions`}/></span>Formula</dt><dd>{data.chord.formula_degrees.map(degree).join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={data.toolId}/></span>Keyboard range</dt><dd>{data.rangeLabel}</dd></div></dl>
+-        <div className="am-select-result"><fieldset className="am-position-fieldset" data-position-count={data.options.length} disabled={!ready}><legend>{data.selectorLegend||'Position'}</legend><div className="am-positions">{data.options.map(o=><label className="am-radio-label" key={o.value}><input type="radio" name="position" value={o.value} checked={selectedVoicingId===o.value} onChange={()=>change(o.value)}/><span className="am-segment">{o.label}</span></label>)}</div></fieldset><div className="am-current-result"><div><div className="am-field-label">{data.microcopy.selected_note_summary}</div><div className="am-note-order" id="note-order" aria-label={`${data.microcopy.selected_note_summary}: ${notes.map(n=>n.display_pitch).join(', ')}`}>{notes.map((n,i)=><Fragment key={n.midi}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span data-midi={n.midi} className={cn('am-pitch',sounding.includes(n.midi)&&'am-sounding')}>{n.display_pitch}</span></Fragment>)}</div></div><div className="am-current-symbol"><strong id="current-symbol">{voicing.chord_symbol}</strong><div>Bass: <span id="current-bass">{voicing.bass_spelling}</span></div></div></div></div>
++        <div className="am-select-result"><fieldset className="am-position-fieldset" data-position-count={data.options.length} disabled={!ready}><legend>{data.selectorLegend||'Position'}</legend><div className="am-positions">{data.options.map(o=><label className="am-radio-label" key={o.value}><input type="radio" name="position" value={o.value} checked={selectedVoicingId===o.value} onChange={()=>change(o.value)}/><span className="am-segment">{o.label}</span></label>)}</div></fieldset><div ref={resultRef} className="am-current-result"><div><div className="am-field-label">{data.microcopy.selected_note_summary}</div><div className="am-note-order" id="note-order" aria-label={`${data.microcopy.selected_note_summary}: ${notes.map(n=>n.display_pitch).join(', ')}`}>{notes.map((n,i)=><Fragment key={n.midi}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span data-midi={n.midi} className={cn('am-pitch',sounding.includes(n.midi)&&'am-sounding')}>{n.display_pitch}</span></Fragment>)}</div></div><div className="am-current-symbol"><strong id="current-symbol">{voicing.chord_symbol}</strong><div>Bass: <span id="current-bass">{voicing.bass_spelling}</span></div></div></div></div>
+         <KeyboardViewport id="keyboard-scroll" voicing={voicing} whitePitchClasses={data.whitePitchClasses} sounding={sounding} ready={ready} rangeLabel={data.rangeLabel}/>
+         <div className="am-controls"><div className="am-control-bar"><PlaybackControls ready={ready} state={audio.state} mode={audio.mode} onPlay={mode=>void player.current?.play(voicing,mode)} onStop={stopPlayback}/><PrintActions noun={data.selectorNoun}/></div><div className="am-playback-feedback"><span>{data.microcopy.playback_note}</span><div className={cn('am-playback-status',['error','unavailable'].includes(audio.state)&&'am-error')} id="audio-status" role="status" aria-live="polite" aria-atomic="true">{audio.message}</div></div><div className="am-resource-feedback" role="status">{printError}</div></div>
+         <noscript><p className="am-nojs-note">JavaScript is off. {data.noScriptDescription||'The root-position diagram, comparison table, explanations, and PDF remain available. Enable JavaScript to switch positions or play sound.'}</p></noscript>
+         <div className="am-tool-notes">{toolNotes}</div>
+       </section>
+       <div className="pr-sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</div>
+-      {introduction}<div className="am-reading">{children}</div>
++      {continuationMessage&&<p role="status">{continuationMessage}</p>}<ProductContinuation path={data.url}/>{introduction}<div className="am-reading">{children}</div>
+     </main>
+     <SiteFooter url={data.url}/>
+     <article className="am-print-only" id="print-content" data-voicing-id={printed.voicing_id}><PrintVoicing voicing={printed} whitePitchClasses={data.whitePitchClasses} title={data.heading} tones={data.chord.note_spellings} formula={data.chord.formula_degrees} url={data.url} disclaimer={data.printDisclaimer}/></article>
+diff --git a/src/components/chords/c-major-experience.tsx b/src/components/chords/c-major-experience.tsx
+index 588f3ae..efc2f84 100644
+--- a/src/components/chords/c-major-experience.tsx
++++ b/src/components/chords/c-major-experience.tsx
+@@ -1,4 +1,7 @@
+ 'use client';
++import {ProductContinuation} from '@/components/product-continuation';
++import {useDetailContinuation} from '@/lib/use-continuation-state';
++import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
+ 
+ import { Children, isValidElement, Fragment, useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+ import { flushSync } from 'react-dom';
+@@ -41,6 +44,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
+   const player=useRef<ReferenceAudio|null>(null), holders=useRef(new Map<string,number>());
+   const settingsTrigger=useRef<HTMLButtonElement>(null), shareTrigger=useRef<HTMLButtonElement>(null);
+   const workspace=useRef<HTMLElement>(null), currentPosition=useRef(position), printSnapshot=useRef<string|null>(null);
++  const continuationMessage=useDetailContinuation(data,id=>{setPosition(id);currentPosition.current=id;},()=>player.current?.cancel());
+   const positionSettings=useCallback(()=>{
+     const trigger=settingsTrigger.current,popover=settingsPanel.current;
+     if(!trigger||!popover||!popover.matches(':popover-open'))return;
+@@ -58,6 +62,11 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
+   const root=data.voicings.find(item=>item.voicing_id===data.defaultId)!;
+   const answer=root.notes_low_to_high.map(note=>note.midi);
+   const inPractice=mode==='practice';
++  const resultRef=useRef<HTMLDivElement>(null);
++  useResultExposure(resultRef,data.namespace,position,!inPractice);
++  usePilotAudio(audio.state,data.namespace);
++  const measurement=usePilotPractice(data.namespace,'guided-chord');
++  useEffect(()=>{if(attempt.result==='correct')measurement.complete(attempt.hinted||attempt.revealed||attempt.viewedReference);},[attempt.result,attempt.hinted,attempt.revealed,attempt.viewedReference]);
+   const stop=useCallback(()=>{
+     holders.current.clear();setPressed([]);player.current?.cancel('Playback stopped.','stopped');
+   },[]);
+@@ -80,6 +89,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
+     stop();setMode('reference');requestAnimationFrame(()=>document.querySelector<HTMLButtonElement>('.cp-start-practice')?.focus({preventScroll:true}));
+   }
+   function enterPractice(){
++    measurement.start();
+     stop();setStarted(true);setMode('practice');setAttempt(value=>({...value,viewedReference:true}));
+     requestAnimationFrame(()=>document.getElementById('practice')?.focus({preventScroll:true}));
+   }
+@@ -104,6 +114,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
+   },[ready,revealAnchor]);
+   function changePosition(next:string){stop();currentPosition.current=next;setPosition(next);}
+   function print(){
++    emitPilotEvent('p0_print_request',{object_id:data.namespace});
+     stop();setPrintError('');printSnapshot.current=currentPosition.current;
+     flushSync(()=>setPrintId(currentPosition.current));
+     try{if(typeof window.print!=='function')throw new Error('Unavailable');window.print();}
+@@ -129,7 +140,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
+         <div id="cp-print-actions" className="cp-reference-actions"><PrintActions/><Button ref={shareTrigger} variant="ghost" disabled={!ready} onClick={()=>{stop();setShare(true);}}>Share</Button></div>
+         <section ref={workspace} className="am-tool cp-workspace" id={data.toolId} data-block-id={data.toolId} data-voicing-id={position} data-audio-state={audio.state} data-mode={mode} tabIndex={-1} aria-labelledby="tool-heading">
+           <h2 id="tool-heading" className="pr-sr-only">{data.toolHeading}</h2>
+-          <div className="cp-reference-summary">
++          <div ref={resultRef} className="cp-reference-summary">
+         <dl className="am-summary"><div><dt>{data.chord.name_en}</dt><dd className="am-chord-id">{data.chord.symbol}</dd></div><div><dt>Chord tones</dt><dd className="am-tone-list">{data.chord.note_spellings.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span>{n}</span></Fragment>)}</dd></div><div><dt>Formula</dt><dd className="am-formula">{data.chord.formula_degrees.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">·</span>}<span>{n}</span></Fragment>)}</dd></div></dl>
+         <dl className="am-quick-facts" aria-label="Quick facts"><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-intro`}/></span>Notes</dt><dd>{data.chord.note_spellings.join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-${data.chord.definition.subtype}`}/></span>Quality</dt><dd>{data.chord.definition.qualityLabel}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-inversions`}/></span>Formula</dt><dd>{data.chord.formula_degrees.map(n=>n).join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={data.toolId}/></span>Keyboard range</dt><dd>{data.rangeLabel}</dd></div></dl>
+ 
+@@ -162,16 +173,16 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
+             <h3 id="practice-heading" className="pr-sr-only">{inPractice?'Your selection':practice.heading}</h3>
+             {inPractice&&<> 
+               <p className="cp-selected">{attempt.selected.length?attempt.selected.map(pc=>noteNames[pc]).join(' · '):'No notes selected'} <span>({attempt.selected.length} / {practice.requiredPitchClassCount} different notes)</span></p>
+-              <div className="cp-toolbar"><Button disabled={attempt.selected.length<practice.requiredPitchClassCount} onClick={()=>{stop();setAttempt(value=>checkChordAttempt(value,answer));}}>Check answer</Button><Button variant="secondary" onClick={()=>{stop();setAttempt(clearChordAttempt);}}>Clear</Button>{!attempt.revealed&&<Button variant="ghost" disabled={attempt.hinted} onClick={()=>setAttempt(value=>({...value,hinted:true}))}>{attempt.hinted?'Hint shown':'Hint'}</Button>}<Button variant="ghost" onClick={()=>{stop();setAttempt(value=>({...value,selected:answer.map(midi=>midi%12),revealed:true,result:'revealed'}));}}>Show answer</Button></div>
++              <div className="cp-toolbar"><Button disabled={attempt.selected.length<practice.requiredPitchClassCount} onClick={()=>{stop();setAttempt(value=>checkChordAttempt(value,answer));}}>Check answer</Button><Button variant="secondary" onClick={()=>{stop();measurement.reset();setAttempt(clearChordAttempt);}}>Clear</Button>{!attempt.revealed&&<Button variant="ghost" disabled={attempt.hinted} onClick={()=>setAttempt(value=>({...value,hinted:true}))}>{attempt.hinted?'Hint shown':'Hint'}</Button>}<Button variant="ghost" onClick={()=>{stop();setAttempt(value=>({...value,selected:answer.map(midi=>midi%12),revealed:true,result:'revealed'}));}}>Show answer</Button></div>
+               {attempt.hinted&&!attempt.revealed&&<p className="cp-hint" role="status">Hint: start with C, then skip a white key between each chord tone.</p>}
+               {attempt.result==='revealed'?<p>Answer viewed: {data.chord.note_spellings.join(' · ')}.</p>:attempt.revealed&&<p>You viewed the answer earlier. Further attempts on this question remain marked as helped.</p>}
+               <p className="cp-result" role="status" aria-live="polite">{chordAttemptMessage(attempt, true)}</p>
+-              {(attempt.result==='correct'||attempt.result==='revealed')&&<div className="cp-toolbar"><Button variant="secondary" onClick={()=>setAttempt(clearChordAttempt)}>Try again</Button><Button variant="ghost" onClick={()=>{reference();openPanel('theory');}}>Next: explore the chord connections</Button></div>}
++              {(attempt.result==='correct'||attempt.result==='revealed')&&<div className="cp-toolbar"><Button variant="secondary" onClick={()=>{measurement.reset();setAttempt(clearChordAttempt);}}>Try again</Button><Button variant="ghost" onClick={()=>{emitPilotEvent('p0_next_step_click',{object_id:data.namespace,target:'/chords/c-major',mode:'connections'});reference();openPanel('theory');}}>Next: explore the chord connections</Button></div>}
+             </>}
+           </div>
+           <noscript><p>The root-position reference and PDF are available. Enable JavaScript to play keys, switch positions or practice.</p><style>{'.cp-pilot .cp-panels .pr-collapsible-content[hidden]{display:block!important}.cp-pilot .cp-panels .pr-collapsible-trigger{display:none}'}</style></noscript>
+         </section>
+-        <div className="cp-panels">{panes.map(item=><Collapsible key={item.id} open={!!panels[item.id]} onOpenChange={open=>{setPanels(value=>({...value,[item.id]:open}));if(open&&inPractice)setAttempt(value=>({...value,viewedReference:true}));}}><h2 className="cp-panel-heading"><CollapsibleTrigger id={`cp-section-${item.id}`}><ChordSectionTitle id={item.id==='compare'?`${data.namespace}-inversions`:item.id==='fingering'?`${data.namespace}-fingering-example`:`${data.namespace}-${item.id}`} text={item.label}/></CollapsibleTrigger></h2><CollapsibleContent aria-labelledby={`cp-section-${item.id}`}>{item.content}</CollapsibleContent></Collapsible>)}</div>
++        {continuationMessage&&<p role="status">{continuationMessage}</p>}<ProductContinuation path={data.url}/><div className="cp-panels">{panes.map(item=><Collapsible key={item.id} open={!!panels[item.id]} onOpenChange={open=>{setPanels(value=>({...value,[item.id]:open}));if(open&&inPractice)setAttempt(value=>({...value,viewedReference:true}));}}><h2 className="cp-panel-heading"><CollapsibleTrigger id={`cp-section-${item.id}`}><ChordSectionTitle id={item.id==='compare'?`${data.namespace}-inversions`:item.id==='fingering'?`${data.namespace}-fingering-example`:`${data.namespace}-${item.id}`} text={item.label}/></CollapsibleTrigger></h2><CollapsibleContent aria-labelledby={`cp-section-${item.id}`}>{item.content}</CollapsibleContent></Collapsible>)}</div>
+         <p role="status">{printError}</p>
+       </main>
+       <SiteFooter url={data.url}/>
+diff --git a/src/components/chords/center-experience.tsx b/src/components/chords/center-experience.tsx
+index 4bbc758..4f5127a 100644
+--- a/src/components/chords/center-experience.tsx
++++ b/src/components/chords/center-experience.tsx
+@@ -1,4 +1,7 @@
+ 'use client';
++import {ProductContinuation} from '@/components/product-continuation';
++import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
++
+ import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+ import { flushSync } from 'react-dom';
+ import type { CenterItem, CenterModel } from '@/lib/chord-content';
+@@ -26,6 +29,9 @@ export function ChordCenterExperience({data,heading,chartIntro,children,searchSe
+  const [audioId,setAudioId]=useState<string|null>(null),[sounding,setSounding]=useState<number[]>([]),[printError,setPrintError]=useState('');
+  const player=useRef<ReferenceAudio|null>(null),snapshot=useRef<CenterItem[]|null>(null),[printItems,setPrintItems]=useState<CenterItem[]|null>(null);
+  const filtered=data.items.filter(i=>(!root||i.root===root)&&(!quality||i.quality===quality));
++ const resultRef=useRef<HTMLDivElement>(null);
++ useResultExposure(resultRef,'chord-chart',`${root||'all'}:${quality||'all'}`,filtered.length>0);
++ usePilotAudio(audio.state,audioId||'chord-chart',audio.mode);
+  const current=filtered.find(i=>i.id===selected)||null,currentRef=useRef<CenterItem|null>(current);currentRef.current=current;
+  useEffect(()=>{const p=new ReferenceAudio((state,message,mode)=>setAudio({state,message,mode}),setSounding,data.microcopy);player.current=p;setReady(true);if(!p.available)p.cancel();const hidden=()=>{if(document.hidden){p.cancel('Playback stopped.','stopped');setAudioId(null);}};const leave=()=>p.cancel('', 'idle',false);document.addEventListener('visibilitychange',hidden);window.addEventListener('pagehide',leave);return()=>{p.dispose();player.current=null;document.removeEventListener('visibilitychange',hidden);window.removeEventListener('pagehide',leave);};},[data.microcopy]);
+  useEffect(()=>{const before=()=>{player.current?.cancel();const items=snapshot.current??(currentRef.current?[currentRef.current]:[]);snapshot.current=items;flushSync(()=>setPrintItems(items));};const after=()=>{snapshot.current=null;setPrintItems(null);};window.addEventListener('beforeprint',before);window.addEventListener('afterprint',after);return()=>{window.removeEventListener('beforeprint',before);window.removeEventListener('afterprint',after);};},[]);
+@@ -33,16 +39,16 @@ export function ChordCenterExperience({data,heading,chartIntro,children,searchSe
+  function filter(nextRoot:string,nextQuality:string){stop();setRoot(nextRoot);setQuality(nextQuality);const next=data.items.filter(i=>(!nextRoot||i.root===nextRoot)&&(!nextQuality||i.quality===nextQuality));setSelected(next.some(i=>i.id===selected)?selected:next[0]?.id||null);}
+  function choose(id:string){stop();setSelected(id);}
+  function play(item:CenterItem,mode:PlaybackMode){setSelected(item.id);setAudioId(item.id);void player.current?.play(item.voicing,mode);}
+- function print(items:CenterItem[]){if(!items.length)return;stop();setPrintError('');snapshot.current=[...items];flushSync(()=>setPrintItems(snapshot.current));try{if(typeof window.print!=='function')throw new Error('Print unavailable');window.print();}catch{snapshot.current=null;setPrintItems(null);setPrintError(data.microcopy.print_error);}}
++ function print(items:CenterItem[]){if(!items.length)return;emitPilotEvent('p0_print_request',{object_id:'chord-chart',selected_count:items.length});stop();setPrintError('');snapshot.current=[...items];flushSync(()=>setPrintItems(snapshot.current));try{if(typeof window.print!=='function')throw new Error('Print unavailable');window.print();}catch{snapshot.current=null;setPrintItems(null);setPrintError(data.microcopy.print_error);}}
+  return <PrintContext.Provider value={{ready,hasResults:filtered.length>0,printCurrent:()=>print(current?[current]:[]),printFiltered:()=>print(filtered),pdf:data.pdf}}><div className="am-page ch-center" data-selected-chord={selected||''} data-audio-state={audio.state} data-audio-chord={audioId||''}>
+   <a className="am-skip am-screen" href="#chords-chart">Skip to chord chart</a><SiteHeader search={<PageSearch sections={searchSections} ready={ready} onOpen={stop}/>}/>
+   <main id="main" className="pr-container am-screen">{heading}<section id="chords-chart" data-block-id="chords-chart" className="ch-chart" tabIndex={-1} aria-labelledby="chart-title"><h2 id="chart-title">Find a chord</h2>{chartIntro}
+   <div className="ch-filters"><FilterChoice id="center-root" label="Root note" value={root} options={data.filters.root_options} ready={ready} onChange={value=>filter(value,quality)}/><FilterChoice id="center-quality" label="Chord type" value={quality} options={data.filters.quality_options} ready={ready} onChange={value=>filter(root,value)}/><button type="button" className="am-button am-secondary" disabled={!ready||(!root&&!quality)} onClick={()=>filter('','')}><RollingText>Show the full collection</RollingText></button></div>
+-  <div className="ch-results-bar"><p role="status" aria-live="polite">{filtered.length} {filtered.length===1?'chord':'chords'}</p><button type="button" className="am-button am-secondary" disabled={!ready||!filtered.length} onClick={()=>print(filtered)}><RollingText>Print matching chords</RollingText></button></div>
++  <div ref={resultRef} className="ch-results-bar"><p role="status" aria-live="polite">{filtered.length} {filtered.length===1?'chord':'chords'}</p><button type="button" className="am-button am-secondary" disabled={!ready||!filtered.length} onClick={()=>print(filtered)}><RollingText>Print matching chords</RollingText></button></div>
+   <p className="ch-audio-note">{data.microcopy.playback_note}</p><div role="status" aria-live="polite" className="ch-feedback">{audio.message}{printError&&<p>{printError}</p>}</div>
+   {!filtered.length&&<p className="ch-empty">{data.microcopy.no_results}</p>}
+   <div className="ch-results" role="group" aria-label="Chord chart results">{filtered.map(item=><article className="ch-result" data-chord-id={item.id} data-current={selected===item.id} key={item.id} aria-labelledby={`center-${item.id}-title`}><div className="ch-result-heading"><h3 id={`center-${item.id}-title`}>{item.name} <span>{item.voicing.chord_symbol}</span></h3><label className="ch-select"><input type="radio" name="center-current" checked={selected===item.id} disabled={!ready} onChange={()=>choose(item.id)}/>Current chord<span className="pr-sr-only">: {item.name}</span></label></div><div className="ch-result-notes"><strong>{item.voicing.notes_low_to_high.map(n=>n.display_pitch).join(' – ')}</strong><span>Bass: {item.voicing.bass_spelling}</span></div><KeyboardViewport voicing={item.voicing} whitePitchClasses={data.whitePitchClasses} ready={ready} rangeLabel="C3–C5" sounding={audioId===item.id?sounding:[]}/><PlaybackControls ready={ready} state={audio.state==='unavailable'?'unavailable':audioId===item.id?audio.state:'idle'} mode={audioId===item.id?audio.mode:null} onPlay={mode=>play(item,mode)} onStop={stop}/><div className="ch-result-actions"><button type="button" className="am-button am-tertiary" disabled={!ready} onClick={()=>{setSelected(item.id);print([item]);}}><RollingText>Print this chord</RollingText></button>{item.url&&<a className="am-button am-tertiary" href={item.url}><RollingText>Notes and inversions</RollingText><span className="pr-sr-only">: {item.name}</span></a>}</div></article>)}</div>
+-  <noscript><p>JavaScript is off. All {data.items.length} diagrams, explanations, and the original nine-chord PDF remain available. Filters and sound require JavaScript.</p></noscript></section><div className="am-reading">{children}</div></main><SiteFooter url="/chords"/>
++  <noscript><p>JavaScript is off. All {data.items.length} diagrams, explanations, and the original nine-chord PDF remain available. Filters and sound require JavaScript.</p></noscript></section><ProductContinuation path="/chords"/><div className="am-reading">{children}</div></main><SiteFooter url="/chords"/>
+   <div className="am-print-only" id="center-print-content">{(printItems??(current?[current]:[])).map(item=><article className="ch-print-item" data-voicing-id={item.voicing.voicing_id} key={item.id}><PrintVoicing voicing={item.voicing} whitePitchClasses={data.whitePitchClasses} title={`${item.name} Piano Chord`} tones={item.tones} formula={item.formula} url="/chords" disclaimer="The marked keys show pitches, not a hand shape or a required fingering."/></article>)}{!(printItems??(current?[current]:[])).length&&<p>No matching chord to print.</p>}</div>
+  </div></PrintContext.Provider>;
+ }
+diff --git a/src/components/chords/chord-builder-practice.tsx b/src/components/chords/chord-builder-practice.tsx
+index 9814395..4d116d4 100644
+--- a/src/components/chords/chord-builder-practice.tsx
++++ b/src/components/chords/chord-builder-practice.tsx
+@@ -1,4 +1,5 @@
+ 'use client';
++import { usePilotPractice } from '@/lib/product-measurement';
+ import {useContext,useEffect,useMemo,useState} from 'react';
+ import type {AddChordPractice,ChordDetailData,ChordPractice} from '@/lib/a-minor-types';
+ import {SelectedVoicingContext,StopPlaybackContext} from '../a-minor/experience';
+@@ -18,29 +19,33 @@ const genericNames=['C','C♯','D','D♯','E','F','F♯','G','G♯','A','A♯','
+ 
+ function BasicPractice({data,practice}:{data:ChordDetailData;practice:ChordPractice}){
+  const [ready,setReady]=useState(false),[selected,setSelected]=useState<number[]>([]),[feedback,setFeedback]=useState<{kind:'success'|'error'|'info';text:string}|null>(null);
++ const measurement=usePilotPractice(data.namespace,'chord-builder');
++ useEffect(()=>{if(feedback?.kind==='success')measurement.complete();},[feedback]);
+  useEffect(()=>setReady(true),[]);
+  const root=data.voicings.find(voicing=>voicing.voicing_id===data.defaultId)!;
+  const answer=useMemo(()=>root.notes_low_to_high.map(note=>pc(note.midi)),[root]);
+  const answerNames=new Map(answer.map((value,index)=>[value,data.chord.note_spellings[index]]));
+  const display=(value:number)=>answerNames.get(value)||KEYS.find(key=>key.pc===value)!.label;
+  const countWord=practice.requiredPitchClassCount===3?'three':practice.requiredPitchClassCount===4?'four':String(practice.requiredPitchClassCount);
+- function toggle(value:number){setSelected(current=>current.includes(value)?current.filter(item=>item!==value):[...current,value]);setFeedback(null);}
+- function check(){if(selected.length===0){setFeedback({kind:'error',text:`No notes selected. Choose the ${countWord} pitch classes in ${data.chord.symbol}, then check again.`});return;}const missing=answer.filter(value=>!selected.includes(value)),extra=selected.filter(value=>!answer.includes(value));if(!missing.length&&!extra.length){setFeedback({kind:'success',text:`Correct: ${data.chord.symbol} contains ${data.chord.note_spellings.join(', ')}. Octave and selection order do not affect this check.`});return;}const parts=[];if(missing.length)parts.push(`Missing: ${missing.map(display).join(', ')}`);if(extra.length)parts.push(`Extra: ${extra.map(display).join(', ')}`);setFeedback({kind:'error',text:`Not yet. ${parts.join('. ')}.`});}
+- return <section className="am-content-section ch-practice" id="practice" data-block-id="practice" data-practice-state={feedback?.kind||'unanswered'} tabIndex={-1} aria-labelledby="practice-heading"><div className="ch-section-heading"><div className="ch-section-kicker">Interactive practice</div><h2 id="practice-heading">{practice.heading}</h2></div><div className="am-content-body ch-learning-panel"><p>{practice.prompt}</p><p>{practice.scope}</p><div className="ch-practice-task"><div><span className="ch-practice-count">{practice.requiredPitchClassCount}</span><strong>Choose {countWord} pitch classes</strong></div><p>One octave, C through B. Select a key again to remove it.</p></div><fieldset className="ch-practice-fieldset" disabled={!ready}><legend className="pr-sr-only">One-octave keyboard from C through B</legend><div className="ch-practice-keyboard">{KEYS.map(key=><button key={key.pc} type="button" className={`ch-practice-key ${key.black?'is-black':'is-white'} key-${keyClass[key.pc]}`} aria-label={`${key.label} pitch class`} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)}><span>{key.label}</span></button>)}</div></fieldset><div className="ch-current-selection"><strong>Selected:</strong> <span>{selected.length?selected.map(display).join(' · '):'none'}</span></div><div className="ch-practice-actions"><button className="am-button am-primary" type="button" disabled={!ready} onClick={check}>Check answer</button><button className="am-button am-secondary" type="button" disabled={!ready} onClick={()=>{setSelected([]);setFeedback(null);}}>Try again</button><button className="am-button am-tertiary" type="button" disabled={!ready} onClick={()=>{setSelected([...answer]);setFeedback({kind:'info',text:`Answer shown: ${data.chord.note_spellings.join(', ')}. This reveal is not recorded as a correct attempt.`});}}>Show answer</button></div><div className={`ch-practice-feedback${feedback?` is-${feedback.kind}`:''}`} role="status" aria-live="polite" aria-atomic="true">{feedback?.text||'Choose notes, then check your answer.'}</div><noscript><details className="ch-static-answer"><summary>Show the non-interactive answer</summary><p>{data.chord.symbol} uses the pitch classes {data.chord.note_spellings.join(', ')}. JavaScript is required to select keys and receive feedback.</p></details></noscript></div></section>;
++ function toggle(value:number){measurement.start();setSelected(current=>current.includes(value)?current.filter(item=>item!==value):[...current,value]);setFeedback(null);}
++ function check(){measurement.start();if(selected.length===0){setFeedback({kind:'error',text:`No notes selected. Choose the ${countWord} pitch classes in ${data.chord.symbol}, then check again.`});return;}const missing=answer.filter(value=>!selected.includes(value)),extra=selected.filter(value=>!answer.includes(value));if(!missing.length&&!extra.length){setFeedback({kind:'success',text:`Correct: ${data.chord.symbol} contains ${data.chord.note_spellings.join(', ')}. Octave and selection order do not affect this check.`});return;}const parts=[];if(missing.length)parts.push(`Missing: ${missing.map(display).join(', ')}`);if(extra.length)parts.push(`Extra: ${extra.map(display).join(', ')}`);setFeedback({kind:'error',text:`Not yet. ${parts.join('. ')}.`});}
++ return <section className="am-content-section ch-practice" id="practice" data-block-id="practice" data-practice-state={feedback?.kind||'unanswered'} tabIndex={-1} aria-labelledby="practice-heading"><div className="ch-section-heading"><div className="ch-section-kicker">Interactive practice</div><h2 id="practice-heading">{practice.heading}</h2></div><div className="am-content-body ch-learning-panel"><p>{practice.prompt}</p><p>{practice.scope}</p><div className="ch-practice-task"><div><span className="ch-practice-count">{practice.requiredPitchClassCount}</span><strong>Choose {countWord} pitch classes</strong></div><p>One octave, C through B. Select a key again to remove it.</p></div><fieldset className="ch-practice-fieldset" disabled={!ready}><legend className="pr-sr-only">One-octave keyboard from C through B</legend><div className="ch-practice-keyboard">{KEYS.map(key=><button key={key.pc} type="button" className={`ch-practice-key ${key.black?'is-black':'is-white'} key-${keyClass[key.pc]}`} aria-label={`${key.label} pitch class`} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)}><span>{key.label}</span></button>)}</div></fieldset><div className="ch-current-selection"><strong>Selected:</strong> <span>{selected.length?selected.map(display).join(' · '):'none'}</span></div><div className="ch-practice-actions"><button className="am-button am-primary" type="button" disabled={!ready} onClick={check}>Check answer</button><button className="am-button am-secondary" type="button" disabled={!ready} onClick={()=>{measurement.reset();setSelected([]);setFeedback(null);}}>Try again</button><button className="am-button am-tertiary" type="button" disabled={!ready} onClick={()=>{measurement.reveal();setSelected([...answer]);setFeedback({kind:'info',text:`Answer shown: ${data.chord.note_spellings.join(', ')}. This reveal is not recorded as a correct attempt.`});}}>Show answer</button></div><div className={`ch-practice-feedback${feedback?` is-${feedback.kind}`:''}`} role="status" aria-live="polite" aria-atomic="true">{feedback?.text||'Choose notes, then check your answer.'}</div><noscript><details className="ch-static-answer"><summary>Show the non-interactive answer</summary><p>{data.chord.symbol} uses the pitch classes {data.chord.note_spellings.join(', ')}. JavaScript is required to select keys and receive feedback.</p></details></noscript></div></section>;
+ }
+ 
+ function AddPractice({data,practice}:{data:ChordDetailData;practice:AddChordPractice}){
+  const activeId=useContext(SelectedVoicingContext)||data.defaultId,stopPlayback=useContext(StopPlaybackContext),active=data.voicings.find(item=>item.voicing_id===activeId)!;
+  const [ready,setReady]=useState(false),[mode,setMode]=useState<'chordTones'|'matchExample'>(practice.defaultMode),[selected,setSelected]=useState<number[]>([]),[feedback,setFeedback]=useState<{kind:'success'|'error'|'info';text:string}|null>(null);
++ const measurement=usePilotPractice(data.namespace,mode);
++ useEffect(()=>{if(feedback?.kind==='success')measurement.complete();},[feedback]);
+  useEffect(()=>setReady(true),[]);useEffect(()=>{setSelected([]);setFeedback(null);},[activeId,mode]);
+  const definitionPcs=practice.modes[0].expectedPitchClasses,target=active.notes_low_to_high.map(note=>note.midi),targetPcSet=[...new Set(target.map(pc))];
+  const preferred=new Map<number,string>();data.chord.note_spellings.forEach((name,index)=>preferred.set(pc(data.voicings[0].notes_low_to_high[index].midi),name));
+  const label=(midi:number)=>`${preferred.get(pc(midi))||genericNames[pc(midi)]}${octave(midi)}`;
+- function toggle(midi:number){setSelected(current=>current.includes(midi)?current.filter(item=>item!==midi):[...current,midi]);setFeedback(null);}
+- function changeMode(next:'chordTones'|'matchExample'){stopPlayback();setMode(next);}
+- function clear(){stopPlayback();setSelected([]);setFeedback(null);}
+- function check(){if(!selected.length){setFeedback({kind:'error',text:'No notes selected. Choose four chord tones, then check again.'});return;}const selectedPcSet=[...new Set(selected.map(pc))];if(mode==='chordTones'){const missing=targetPcSet.filter(value=>!selectedPcSet.includes(value)),extra=selectedPcSet.filter(value=>!targetPcSet.includes(value));if(!missing.length&&!extra.length){setFeedback({kind:'success',text:`Correct: ${data.chord.symbol} contains ${data.chord.note_spellings.join(', ')}. Octave doublings and selection order do not change this pitch-class check.`});return;}const parts=[];if(missing.length)parts.push(`Missing: ${missing.map(value=>preferred.get(value)||genericNames[value]).join(', ')}`);if(extra.length)parts.push(`Extra: ${extra.map(value=>genericNames[value]).join(', ')}`);setFeedback({kind:'error',text:`Not yet. ${parts.join('. ')}.`});return;}if(same(selected,target)){setFeedback({kind:'success',text:`Correct: you matched ${active.notes_low_to_high.map(note=>note.display_pitch).join(', ')}.`});return;}if(same(selectedPcSet,targetPcSet)){setFeedback({kind:'info',text:practice.modes[1].samePitchClassesWrongRegisterFeedback});return;}const missing=targetPcSet.filter(value=>!selectedPcSet.includes(value)),extra=selectedPcSet.filter(value=>!targetPcSet.includes(value));const parts=[];if(missing.length)parts.push(`Missing chord tone: ${missing.map(value=>preferred.get(value)||genericNames[value]).join(', ')}`);if(extra.length)parts.push(`Extra chord tone: ${extra.map(value=>genericNames[value]).join(', ')}`);setFeedback({kind:'error',text:`Not yet. ${parts.join('. ')||'Match the four displayed pitches.'}.`});}
+- function show(){stopPlayback();const answer=mode==='matchExample'?target:data.voicings[0].notes_low_to_high.map(note=>note.midi);setSelected([...answer]);setFeedback({kind:'info',text:`Answer shown: ${(mode==='matchExample'?active.notes_low_to_high.map(note=>note.display_pitch):data.chord.note_spellings).join(', ')}. This reveal is not recorded as a correct attempt.`});}
++ function toggle(midi:number){measurement.start();setSelected(current=>current.includes(midi)?current.filter(item=>item!==midi):[...current,midi]);setFeedback(null);}
++ function changeMode(next:'chordTones'|'matchExample'){measurement.reset();stopPlayback();setMode(next);}
++ function clear(){measurement.reset();stopPlayback();setSelected([]);setFeedback(null);}
++ function check(){measurement.start();if(!selected.length){setFeedback({kind:'error',text:'No notes selected. Choose four chord tones, then check again.'});return;}const selectedPcSet=[...new Set(selected.map(pc))];if(mode==='chordTones'){const missing=targetPcSet.filter(value=>!selectedPcSet.includes(value)),extra=selectedPcSet.filter(value=>!targetPcSet.includes(value));if(!missing.length&&!extra.length){setFeedback({kind:'success',text:`Correct: ${data.chord.symbol} contains ${data.chord.note_spellings.join(', ')}. Octave doublings and selection order do not change this pitch-class check.`});return;}const parts=[];if(missing.length)parts.push(`Missing: ${missing.map(value=>preferred.get(value)||genericNames[value]).join(', ')}`);if(extra.length)parts.push(`Extra: ${extra.map(value=>genericNames[value]).join(', ')}`);setFeedback({kind:'error',text:`Not yet. ${parts.join('. ')}.`});return;}if(same(selected,target)){setFeedback({kind:'success',text:`Correct: you matched ${active.notes_low_to_high.map(note=>note.display_pitch).join(', ')}.`});return;}if(same(selectedPcSet,targetPcSet)){setFeedback({kind:'info',text:practice.modes[1].samePitchClassesWrongRegisterFeedback});return;}const missing=targetPcSet.filter(value=>!selectedPcSet.includes(value)),extra=selectedPcSet.filter(value=>!targetPcSet.includes(value));const parts=[];if(missing.length)parts.push(`Missing chord tone: ${missing.map(value=>preferred.get(value)||genericNames[value]).join(', ')}`);if(extra.length)parts.push(`Extra chord tone: ${extra.map(value=>genericNames[value]).join(', ')}`);setFeedback({kind:'error',text:`Not yet. ${parts.join('. ')||'Match the four displayed pitches.'}.`});}
++ function show(){measurement.reveal();stopPlayback();const answer=mode==='matchExample'?target:data.voicings[0].notes_low_to_high.map(note=>note.midi);setSelected([...answer]);setFeedback({kind:'info',text:`Answer shown: ${(mode==='matchExample'?active.notes_low_to_high.map(note=>note.display_pitch):data.chord.note_spellings).join(', ')}. This reveal is not recorded as a correct attempt.`});}
+  const [minimum,maximum]=practice.midiRange,buttons=Array.from({length:maximum-minimum+1},(_,index)=>minimum+index);
+  return <section className="am-content-section ch-practice ch-add-practice" id="practice" data-block-id="practice" data-practice-mode={mode} data-active-example={activeId} data-practice-state={feedback?.kind||'unanswered'} tabIndex={-1} aria-labelledby="practice-heading"><div className="ch-section-heading"><div className="ch-section-kicker">Interactive practice</div><h2 id="practice-heading">{practice.heading}</h2></div><div className="am-content-body ch-learning-panel"><p>{practice.prompt}</p><p>{practice.scope}</p><fieldset className="ch-mode-fieldset" disabled={!ready}><legend>Choose a task</legend><div className="ch-mode-options">{practice.modes.map(item=><label key={item.id}><input type="radio" name="practice-mode" value={item.id} checked={mode===item.id} onChange={()=>changeMode(item.id)}/><span>{item.label}</span></label>)}</div></fieldset><div className="ch-practice-task"><div><span className="ch-practice-count">4</span><strong>{practice.modes.find(item=>item.id===mode)!.label}</strong></div><p>{practice.modes.find(item=>item.id===mode)!.instruction}</p></div><fieldset className="ch-midi-fieldset" disabled={!ready}><legend>Select pitches from C3 through E5</legend><div className="ch-midi-grid">{buttons.map(midi=><button key={midi} type="button" className={`ch-midi-key ${[1,3,6,8,10].includes(pc(midi))?'is-black':'is-white'}`} aria-pressed={selected.includes(midi)} onClick={()=>toggle(midi)}>{label(midi)}</button>)}</div></fieldset><div className="ch-current-selection"><strong>Selected:</strong> <span>{selected.length?sorted(selected).map(label).join(' · '):'none'}</span></div><div className="ch-practice-actions"><button className="am-button am-primary" type="button" disabled={!ready} onClick={check}>Check answer</button><button className="am-button am-secondary" type="button" disabled={!ready} onClick={clear}>Clear</button><button className="am-button am-tertiary" type="button" disabled={!ready} onClick={show}>Show answer</button></div><div className={`ch-practice-feedback${feedback?` is-${feedback.kind}`:''}`} role="status" aria-live="polite" aria-atomic="true">{feedback?.text||'Choose notes, then check your answer.'}</div><noscript><details className="ch-static-answer"><summary>Show the non-interactive answer</summary><p>{data.chord.symbol} uses the pitch classes {data.chord.note_spellings.join(', ')}. Both authored layouts remain listed above.</p></details></noscript></div></section>;
+ }
+diff --git a/src/components/chords/completion-category-experience.tsx b/src/components/chords/completion-category-experience.tsx
+index bff3995..1137d6c 100644
+--- a/src/components/chords/completion-category-experience.tsx
++++ b/src/components/chords/completion-category-experience.tsx
+@@ -1,4 +1,5 @@
+ 'use client';
++import {readContinuation} from '@/lib/product-continuation-state';
+ import { useEffect, useMemo, useRef, useState } from 'react';
+ import type { CompletionReference, CompletionRealization } from '@/lib/chord-completion-content';
+ import { ReferenceAudio, type AudioStatus } from '@/lib/a-minor-audio';
+@@ -21,6 +22,21 @@ export function CompletionCategoryExperience({ items, defaultObjectId, family, p
+   const [audio, setAudio] = useState<{ state: AudioStatus; message: string; mode: 'together' | 'ascending' | null }>({ state: 'idle', message: '', mode: null }), [sounding, setSounding] = useState<number[]>([]);
+   const [practiceMode, setPracticeMode] = useState<'formula_pitch_classes' | 'example_pitch_classes' | 'example_midi_set'>('formula_pitch_classes'), [answer, setAnswer] = useState<number[]>([]), [feedback, setFeedback] = useState('');
+   const player = useRef<ReferenceAudio | null>(null);
++  const [restoreMessage,setRestoreMessage]=useState('');
++  useEffect(()=>{
++    if(family!=='extended')return;
++    const restore=()=>{
++      const state=readContinuation(location.search);let hash='';try{hash=decodeURIComponent(location.hash.slice(1));}catch{}
++      const requested=state.object?items.find(item=>item.id===state.object):items.find(item=>item.destination.split('#')[1]===hash);
++      const mismatch=state.object&&hash&&requested?.destination.split('#')[1]!==hash;
++      const valid=requested&&!mismatch&&!state.invalidBass&&(state.context===null||state.context==='c-major');
++      const next=valid?requested:items.find(item=>item.id===defaultObjectId)!;
++      const matching=state.bass===null?null:next.realizations.find(item=>item.bass.midi%12===state.bass);
++      player.current?.cancel();setSelectedId(next.id);setRealizationId(matching?.id??next.defaultRealizationId);setRoot('');setSubtype('');setQuery('');setAnswer([]);setFeedback('');
++      setRestoreMessage(valid?(state.bass!==null&&!matching?'Selected chord restored. The requested bass is unavailable; the reference voicing has been reset.':'Selected chord restored. The displayed example does not preserve your original octaves or spacing.'):(state.present||hash.startsWith('ref-')?'This reference link could not be restored. The default reference is shown.':''));
++    };restore();window.addEventListener('hashchange',restore);window.addEventListener('popstate',restore);
++    return()=>{window.removeEventListener('hashchange',restore);window.removeEventListener('popstate',restore);};
++  },[items,defaultObjectId,family]);
+   useEffect(() => { const p = new ReferenceAudio((state, message, mode) => setAudio({ state, message, mode }), setSounding, { loading: 'Preparing sound…', audio_error: 'Sound could not start. Try again.', audio_unavailable: 'Sound is unavailable in this browser.' }); player.current = p; setReady(true); return () => p.dispose(); }, []);
+   const filtered = useMemo(() => items.filter(item => (!root || item.root === root) && (!subtype || item.subtype === subtype) && (!query.trim() || chordSearchMatches(query, [item.name, item.symbol, ...item.aliases]))), [items, query, root, subtype]);
+   const selected = items.find(item => item.id === selectedId) || items[0];
+@@ -30,10 +46,10 @@ export function CompletionCategoryExperience({ items, defaultObjectId, family, p
+   const examplePcs = unique(realization.midi.map(pc));
+   const expected = practiceMode === 'formula_pitch_classes' ? formulaPcs : practiceMode === 'example_pitch_classes' ? examplePcs : [...realization.midi].sort((a, b) => a - b);
+   const answerOptions = practiceMode === 'example_midi_set' ? Array.from({ length: realization.keyboard.maxMidi - realization.keyboard.minMidi + 1 }, (_, i) => realization.keyboard.minMidi + i) : Array.from({ length: 12 }, (_, i) => i);
+-  function chooseObject(id: string) { player.current?.cancel('Playback stopped.', 'stopped'); setSelectedId(id); const next = items.find(item => item.id === id)!; setRealizationId(next.defaultRealizationId); setAnswer([]); setFeedback(''); emitChordEvent('chord_result_selected',{objectId:next.id,family:next.family,origin:`${family}_category`}); }
++  function chooseObject(id: string) { player.current?.cancel('Playback stopped.', 'stopped'); setSelectedId(id); const next = items.find(item => item.id === id)!; if(family==='extended'){const url=new URL(location.href);url.searchParams.delete('pg-object');url.searchParams.delete('pg-bass');url.hash=next.destination.split('#')[1];history.pushState(history.state,'',url.pathname+url.search+url.hash);setRestoreMessage('');} setRealizationId(next.defaultRealizationId); setAnswer([]); setFeedback(''); emitChordEvent('chord_result_selected',{objectId:next.id,family:next.family,origin:`${family}_category`}); }
+   function check() { const current = unique(answer); const target = unique(expected),correct=same(current,target); if (correct) setFeedback('Correct for this named task.'); else if (practiceMode === 'example_midi_set' && same(unique(answer.map(pc)), examplePcs)) setFeedback('The chord tones are correct. Now match the octaves shown in this example.'); else { const missing = target.filter(value => !current.includes(value)); const extra = current.filter(value => !target.includes(value)); setFeedback(`${missing.length ? `Missing: ${missing.join(', ')}. ` : ''}${extra.length ? `Extra: ${extra.join(', ')}.` : ''}`.trim()); } emitChordEvent('practice_answer',{taskMode:practiceMode,outcome:correct?'correct':'incorrect',answerShown:false}); }
+   return <section id="all-roots" className="cc-explorer" aria-labelledby="cc-heading"><div className="cc-heading"><div><p className="sp-overline">{items.length} named references</p><h2 id="cc-heading">{allRoots.heading}</h2>{allRoots.paragraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</div><p>Filters change this view only. All names stay on the page.</p></div>
+-    <div className="cc-filters"><label>Search name or symbol<input type="search" value={query} onChange={event => setQuery(event.target.value)}/></label><label>Root<select value={root} onChange={event => setRoot(event.target.value)}><option value="">All roots</option>{[...new Set(items.map(item => item.root))].map(value => <option key={value}>{value}</option>)}</select></label><label>Type<select value={subtype} onChange={event => setSubtype(event.target.value)}><option value="">All types</option>{[...new Set(items.map(item => item.subtype))].map(value => <option key={value}>{label(value)}</option>)}</select></label><button className="am-button am-secondary" type="button" disabled={!query && !root && !subtype} onClick={() => { setQuery(''); setRoot(''); setSubtype(''); }}>Clear filters</button></div>
++    {restoreMessage&&<p role="status">{restoreMessage}</p>}<div className="cc-filters"><label>Search name or symbol<input type="search" value={query} onChange={event => setQuery(event.target.value)}/></label><label>Root<select value={root} onChange={event => setRoot(event.target.value)}><option value="">All roots</option>{[...new Set(items.map(item => item.root))].map(value => <option key={value}>{value}</option>)}</select></label><label>Type<select value={subtype} onChange={event => setSubtype(event.target.value)}><option value="">All types</option>{[...new Set(items.map(item => item.subtype))].map(value => <option key={value}>{label(value)}</option>)}</select></label><button className="am-button am-secondary" type="button" disabled={!query && !root && !subtype} onClick={() => { setQuery(''); setRoot(''); setSubtype(''); }}>Clear filters</button></div>
+     <div className="cc-workspace"><article className="cc-preview" aria-live="polite"><header><div><p className="sp-overline">Current reference · {family}</p><h3>{selected.symbol} <span>{selected.name}</span></h3></div><div className="cc-preview-actions"><a className="am-button am-tertiary" href={pdf} download onClick={()=>emitChordEvent('reference_download_clicked',{assetId:pdf})}>Download starter PDF</a><button className="am-button am-secondary" type="button" onClick={()=>{emitChordEvent('print_opened',{objectId:selected.id,realizationId:realization.id});window.print();}}>Print current view</button></div></header><dl className="cc-facts"><div><dt>Formula inventory</dt><dd>{selected.definition.displayFormula.join(' – ')}</dd></div><div><dt>Written tones</dt><dd>{selected.definition.toneSpellings.join(' · ')}</dd></div><div><dt>Root</dt><dd>{selected.root}</dd></div><div><dt>Type</dt><dd>{label(selected.subtype)}</dd></div></dl><label className="cc-layout">View<select value={realization.id} onChange={event => { player.current?.cancel(); setRealizationId(event.target.value); setAnswer([]); setFeedback(''); }}>{selected.realizations.map(item => <option value={item.id} key={item.id}>{item.label}</option>)}</select></label><p><strong>Actual notes:</strong> {realization.notes.join(' · ')}</p><p>{realization.displayNote} {realization.doubledDegrees.length ? `Doubled: ${realization.doubledDegrees.join(', ')}.` : ''}</p><KeyboardViewport voicing={voicing} whitePitchClasses={[0, 2, 4, 5, 7, 9, 11]} ready={ready} rangeLabel={`${realization.notes[0]}–${realization.notes.at(-1)}`} sounding={sounding}/><PlaybackControls ready={ready} state={audio.state} mode={audio.mode} onPlay={mode => {emitChordEvent('chord_audio_start',{objectId:selected.id,realizationId:realization.id,mode});void player.current?.play(voicing, mode);}} onStop={() => player.current?.cancel('Playback stopped.', 'stopped')}/><p className="ch-feedback" role="status" aria-live="polite">{audio.message}</p>
+       <div className="cc-practice"><h4>Practice this reference</h4><label>Task<select value={practiceMode} onChange={event => { setPracticeMode(event.target.value as typeof practiceMode); setAnswer([]); setFeedback(''); }}><option value="formula_pitch_classes">Build formula tones</option><option value="example_pitch_classes">Build this example’s tones</option><option value="example_midi_set">Match this example’s octaves</option></select></label><div className="cc-answer" role="group" aria-label="Practice answer">{answerOptions.map(value => <button type="button" key={value} aria-pressed={answer.includes(value)} onClick={() => setAnswer(current => current.includes(value) ? current.filter(item => item !== value) : [...current, value])}>{practiceMode === 'example_midi_set' ? value : ['C','C♯','D','E♭','E','F','F♯','G','A♭','A','B♭','B'][value]}</button>)}</div><div className="cc-practice-actions"><button className="am-button am-primary" type="button" onClick={check}>Check</button><button className="am-button am-secondary" type="button" onClick={() => { setAnswer([...expected]); setFeedback('Answer shown for this task.'); }}>Show answer</button><button className="am-button am-tertiary" type="button" onClick={() => { setAnswer([]); setFeedback(''); }}>Reset</button></div><p role="status" aria-live="polite">{feedback}</p></div>
+     </article><div className="cc-index"><div className="cc-count" role="status">{filtered.length} references</div>{filtered.map(item => <article id={item.destination.split('#')[1]} className="cc-row" data-family={item.family} data-subtype={item.subtype} key={item.id}><button type="button" aria-pressed={selected.id === item.id} onClick={() => chooseObject(item.id)}><span><strong>{item.symbol}</strong><small>{item.name}</small></span><span><b>{item.definition.displayFormula.join('–')}</b><small>{item.definition.toneSpellings.join(' · ')}</small></span></button></article>)}{!filtered.length && <p>No match in this supported category.</p>}</div></div>
+diff --git a/src/components/keyboard-notes/keyboard-notes-workspace.tsx b/src/components/keyboard-notes/keyboard-notes-workspace.tsx
+index a56e70b..fc707a6 100644
+--- a/src/components/keyboard-notes/keyboard-notes-workspace.tsx
++++ b/src/components/keyboard-notes/keyboard-notes-workspace.tsx
+@@ -1,4 +1,7 @@
+ 'use client';
++import {ProductContinuation} from '@/components/product-continuation';
++import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
++
+ 
+ import { useEffect, useId, useMemo, useRef, useState } from 'react';
+ import type { Layout, PianoKey } from '@/lib/keyboard-types';
+@@ -106,6 +109,9 @@ function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
+   const [shareHint, setShareHint] = useState('');
+   const copyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+   const selected = resolution.selected ? layout.keys.find(key => key.midi === resolution.selected?.midi) : undefined;
++  const resultRef=useRef<HTMLDivElement>(null);
++  useResultExposure(resultRef,selected?`midi-${selected.midi}`:'no-note',layout.layout_id,active&&!!selected);
++  usePilotAudio(audio.state,selected?`midi-${selected.midi}`:'no-note');
+   const whiteSpan = compact ? 12 : 24;
+   const { rangeMin, rangeMax, keys: visibleKeys } = useMemo(() => visibleMidiWindow(layout, rangeStart, whiteSpan), [layout, rangeStart, whiteSpan]);
+   const accessibleLabels = useMemo(() => Object.fromEntries(visibleKeys.map(key => [key.midi, spokenPianoKeyName(key)])), [visibleKeys]);
+@@ -229,8 +235,9 @@ function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
+   const canHigher = rangeMax < layout.keys.at(-1)!.midi;
+   const helpText = queryPrompt ? lookupHubMessage(resolution, layout) : 'Use a note name and octave to find one exact key.';
+   return <section id="kn-v2-explore-panel" role="tabpanel" aria-labelledby="kn-v2-explore-tab" hidden={!active} className="kn-v2-panel kn-v2-explore" data-selected-midi={selected?.midi ?? ''}>
++
+     <p className="kn-hub-live" aria-live="polite">{liveMessage}</p>
+-    <div className="kn-v2-explore-head">
++    <div ref={resultRef} className="kn-v2-explore-head">
+       <div className="kn-v2-note-id">
+         <h2>{heading}</h2>
+       </div>
+@@ -272,6 +279,7 @@ function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
+       <span className="kn-v2-copy-status" role="status">{copyMessage}</span>
+       {manualURL ? <label className="kn-v2-manual-link">Note link<textarea value={manualURL} readOnly rows={2} onFocus={event => event.currentTarget.select()}/></label> : null}
+     </div>
++    <ProductContinuation path="/keyboard-notes" primaryHref={selected?`/keyboard-notes?${lookupShareParams(layout,resolution.selected!)}#note-trainer`:"#note-trainer"}/>
+   </section>;
+ }
+ 
+diff --git a/src/components/keyboard-notes/share-control.tsx b/src/components/keyboard-notes/share-control.tsx
+index a5616c4..cf4087b 100644
+--- a/src/components/keyboard-notes/share-control.tsx
++++ b/src/components/keyboard-notes/share-control.tsx
+@@ -1,4 +1,5 @@
+ 'use client';
++import { emitPilotEvent } from '@/lib/product-measurement';
+ 
+ import { useEffect, useId, useRef, useState, type ReactNode, type RefObject } from 'react';
+ import { Dialog, DialogClose } from '@/components/ui/dialog';
+@@ -81,6 +82,7 @@ export function SharePanel({
+     setManualURL(ok ? '' : requested);
+     setMessage(ok ? 'Link copied.' : 'Copy isn’t available here. Select the link below.');
+     onCopied?.(requested, ok);
++    if(!onCopied)emitPilotEvent('p0_share',{status:ok?'copy_success':'copy_failed'});
+   }
+ 
+   async function share() {
+@@ -88,6 +90,7 @@ export function SharePanel({
+     const result = await openNativeShare(shareTitle ?? heading ?? 'Share', requested, shareText);
+     if (requested !== url) return;
+     onNative?.(result);
++    if(!onNative)emitPilotEvent('p0_share',{status:result==='opened'?'native_success':result});
+     if (result === 'opened' || result === 'cancelled') {
+       setMessage('');
+       return;
+diff --git a/src/components/scales/detail-experience.tsx b/src/components/scales/detail-experience.tsx
+index 5e07018..85f9ddb 100644
+--- a/src/components/scales/detail-experience.tsx
++++ b/src/components/scales/detail-experience.tsx
+@@ -1,4 +1,7 @@
+ 'use client';
++import {ProductContinuation} from '@/components/product-continuation';
++import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
++
+ 
+ import { useEffect, useRef, useState } from 'react';
+ import { flushSync } from 'react-dom';
+@@ -21,6 +24,8 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
+   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
+   const [printError, setPrintError] = useState('');
+   const option = options.find((item) => item.form === form) ?? options[0];
++  const resultRef=useRef<HTMLElement>(null);
++  useResultExposure(resultRef,option.id,`${hand}:${direction}`);
+   const lastReference = useRef(`${option.id}:${hand}:${direction}:${tempo}`);
+   const print = snapshot ?? { option, hand, direction, tempo };
+   const change = (callback: () => void) => { audio.cancel('settings'); setPrintError(''); callback(); };
+@@ -48,7 +53,7 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
+   };
+ 
+   return <>
+-    <section className="am-tool sc-tool sc-screen" aria-label={`${option.tonic} scale reference`} data-current-scale={option.id}>
++    <section ref={resultRef} className="am-tool sc-tool sc-screen" aria-label={`${option.tonic} scale reference`} data-current-scale={option.id}>
+       <div className="sc-fixed-summary"><div><span>Starting note</span><strong>{option.tonic}</strong></div><div><span>Key signature</span><strong>{keySignature}</strong></div><div><span>Range</span><strong>1 octave</strong></div></div>
+       <ScaleCurrentAnswer option={option} hand={hand} direction={direction} tempo={tempo}/>
+       <div className="sc-controls">
+@@ -61,13 +66,14 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
+       <div className="sc-print-bar"><button type="button" className="am-button am-secondary" disabled={!audio.ready} onClick={startPrint}>Print current scale</button></div>
+       <p role="status" className="kn-error">{printError}</p>
+       <p className="sc-scope-note">Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.</p>
++      {option.tonic==='C'&&option.form==='major'&&<><ProductContinuation path="/scales/c-major"/><p className="sc-boundary">Reference edition: 2026-09-22. The sources below apply to the stated hand, direction and one-octave range. The two-hand starter PDF is a fixed reference, not a snapshot of these controls. No independent teacher review is claimed.</p></>}
+       <ScaleQuiz key={`quiz:${option.id}:${hand}:${direction}`} option={option} hand={hand} direction={direction} keyboardKeys={keyboardKeys} ready={audio.ready}/>
+       <ScalePractice key={`practice:${option.id}:${hand}:${direction}`} option={option} hand={hand} direction={direction} audio={audio} ready={audio.ready}/>
+     </section>
+     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
+       <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div><p>Key signature: {keySignature}</p>
+       <ScaleReference {...print} keyboardKeys={keyboardKeys} print/>
+-      <p className="sc-print-foot">One-octave reference. Finger numbers appear only for the hand and direction combinations covered by the sources listed above.</p>
++      {print.option.tonic==='C'&&print.option.form==='major'&&<p>Reference edition: 2026-09-22. Current hand and direction are shown above. Source scope is listed with the reference; no independent teacher review is claimed.</p>}<p className="sc-print-foot">One-octave reference. Finger numbers appear only for the hand and direction combinations covered by the sources listed above.</p>
+     </div>
+   </>;
+ }
+diff --git a/src/components/support/by-key-experience.tsx b/src/components/support/by-key-experience.tsx
+index ad8a6b5..a8adec3 100644
+--- a/src/components/support/by-key-experience.tsx
++++ b/src/components/support/by-key-experience.tsx
+@@ -13,12 +13,13 @@ export function ByKeyExperience({ keys, defaultKey, cMajorScaleLink }: { keys: B
+   const [selectedKey, setSelectedKey] = useState(defaultKey);
+   const [ready, setReady] = useState(false);
+   const anchorFor=(key:ByKeyTable)=>key.id.replace('-natural_minor','-minor').replaceAll('_','-');
+-  useEffect(() => {const anchor=window.location.hash.slice(1),match=keys.find(key=>anchorFor(key)===anchor);if(match)setSelectedKey(match.key);setReady(true);}, [keys]);
++  const [restoreMessage,setRestoreMessage]=useState('');
++  useEffect(()=>{const restore=()=>{let anchor='';try{anchor=decodeURIComponent(location.hash.slice(1));}catch{}if(['read-degrees','minor-options','build-a-row','by-key-table-heading'].includes(anchor)){setReady(true);return;}const match=keys.find(key=>anchorFor(key)===anchor);setSelectedKey(match?.key??defaultKey);setRestoreMessage(anchor&&!match?'This key context could not be restored. The default key is shown.':'');setReady(true);};restore();window.addEventListener('hashchange',restore);window.addEventListener('popstate',restore);return()=>{window.removeEventListener('hashchange',restore);window.removeEventListener('popstate',restore);};},[keys,defaultKey]);
+   const selected = keys.find(key => key.key === selectedKey) || keys[0];
+   return <section className="sp-result bk-result" aria-labelledby="by-key-table-heading">
+     <div className="sp-result-head"><div><p className="sp-overline">24 verified key contexts · 336 rows</p><h2 id="by-key-table-heading">Choose a key, then compare triads and sevenths</h2></div><p>Changing the key changes the scale collection. It does not filter the chord chart by one root note.</p></div>
+-    <div className="bk-picker"><label htmlFor="by-key-select">Key</label><select id="by-key-select" value={selectedKey} onChange={event => setSelectedKey(event.target.value)}>{keys.map(key => <option value={key.key} key={key.key}>{key.key}</option>)}</select><p aria-live="polite"><strong>{selected.key}</strong><span>{display(selected.scale.join(' · '))}</span></p></div>
+-    <div className="bk-key-panels">{keys.map(key => <section id={anchorFor(key)} className="bk-key-panel" data-key={key.key} hidden={ready && key.key !== selectedKey} key={key.key} aria-labelledby={`${anchorFor(key)}-heading`}>
++    <div className="bk-picker"><label htmlFor="by-key-select">Key</label><select id="by-key-select" value={selectedKey} onChange={event => {setSelectedKey(event.target.value);const key=keys.find(item=>item.key===event.target.value)!;const url=new URL(location.href);url.searchParams.delete('pg-context');url.hash=anchorFor(key);history.pushState(history.state,'',url.pathname+url.search+url.hash);setRestoreMessage('');}}>{keys.map(key => <option value={key.key} key={key.key}>{key.key}</option>)}</select><p aria-live="polite"><strong>{selected.key}</strong><span>{display(selected.scale.join(' · '))}</span></p></div>
++    {restoreMessage&&<p role="status">{restoreMessage}</p>}{selected.key==='C major'&&<p><a className="am-button am-secondary" href="/chord-progressions?pg-context=c-major#progression-pop-four-c-major">Hear a progression in this C major context</a></p>}<div className="bk-key-panels">{keys.map(key => <section id={anchorFor(key)} className="bk-key-panel" data-key={key.key} hidden={ready && key.key !== selectedKey} key={key.key} aria-labelledby={`${anchorFor(key)}-heading`}>
+       <header><div><p className="sp-overline">{key.basis} scale</p><h3 id={`${anchorFor(key)}-heading`}>{key.key} chords</h3></div><p><span>Scale notes</span><strong>{display(key.scale.join(' · '))}</strong>{key.key === 'C major' && cMajorScaleLink && <a href={cMajorScaleLink.url}>{cMajorScaleLink.label}</a>}</p></header>
+       <div className="bk-table-scroll" tabIndex={0} role="region" aria-label={`${key.key} chord table`}><table><caption>Seven triads and seven seventh chords built from the named {key.basis} scale. Key, root, quality and Roman numeral are separate fields.</caption><thead><tr><th scope="col">Degree</th><th scope="col">Roman numeral</th><th scope="col">Chord</th><th scope="col">Root note</th><th scope="col">Chord quality</th><th scope="col">Chord tones</th></tr></thead><tbody>{key.chords.map(chord => <tr data-degree={chord.degree} data-quality={chord.quality} key={`${key.key}-${chord.roman}`}><td data-label="Degree">{chord.degree}</td><td data-label="Roman numeral"><span className={`bk-roman bk-${chord.quality}`}>{chord.roman}</span></td><td data-label="Chord">{chord.destination?<ChordLink url={chord.destination} symbol={chord.symbol}/>:<strong>{display(chord.symbol)}</strong>}</td><td data-label="Root note">{display(chord.notes[0])}</td><td data-label="Chord quality">{chord.quality}</td><td data-label="Chord tones">{display(chord.notes.join(' · '))}</td></tr>)}</tbody></table></div>
+       {key.raisedLeadingToneOptions.length > 0 && <aside className="bk-altered" aria-labelledby="raised-leading-tone"><div><p className="sp-overline">Separate altered options</p><h4 id="raised-leading-tone">Raised-leading-tone choices</h4><p>These use C♯ and do not replace the D natural minor rows above.</p></div><div>{key.raisedLeadingToneOptions.map(option => <article key={option.roman}><span>{option.roman}</span><ChordLink url={option.detailURL} symbol={option.symbol}/><p>{display(option.notes.join(' · '))}</p><small>{option.change}</small></article>)}</div></aside>}
+diff --git a/src/components/support/finder-experience.tsx b/src/components/support/finder-experience.tsx
+index d12c771..840b79d 100644
+--- a/src/components/support/finder-experience.tsx
++++ b/src/components/support/finder-experience.tsx
+@@ -1,5 +1,9 @@
+ 'use client';
+-import { useMemo, useState } from 'react';
++import {ProductContinuation} from '@/components/product-continuation';
++import {finderDestination,finderQuery,restoreFinder} from '@/lib/product-continuation-state';
++import { useEffect, useMemo, useState, useRef } from 'react';
++import { emitPilotEvent, useResultExposure, useStableToolResult } from '@/lib/product-measurement';
++import { finderFingerprint } from '@/lib/product-measurement-core';
+ import type { FinderChord } from '@/lib/support-content';
+ const keys=[{pc:0,label:'C',aria:'C',kind:'white',left:0},{pc:1,label:'C♯ / D♭',aria:'C sharp or D flat',kind:'black',left:10},{pc:2,label:'D',aria:'D',kind:'white',left:0},{pc:3,label:'D♯ / E♭',aria:'D sharp or E flat',kind:'black',left:24.3},{pc:4,label:'E',aria:'E',kind:'white',left:0},{pc:5,label:'F',aria:'F',kind:'white',left:0},{pc:6,label:'F♯ / G♭',aria:'F sharp or G flat',kind:'black',left:52.8},{pc:7,label:'G',aria:'G',kind:'white',left:0},{pc:8,label:'G♯ / A♭',aria:'G sharp or A flat',kind:'black',left:67.1},{pc:9,label:'A',aria:'A',kind:'white',left:0},{pc:10,label:'A♯ / B♭',aria:'A sharp or B flat',kind:'black',left:81.4},{pc:11,label:'B / C♭',aria:'B or C flat',kind:'white',left:0}] as const;
+ const display=(value:string)=>value.replaceAll('#','♯').replaceAll('b','♭');
+@@ -9,10 +13,18 @@ function bassName(chord:FinderChord,pitchClass:number){return chord.tones.find(t
+ type Match={chord:FinderChord;kind:'exact_formula'|'supplied_voicing';omitted:string[]};
+ export function FinderExperience({chords,labels}:{chords:FinderChord[];labels:{multiple:string;none:string;incomplete:string}}){
+  const[selected,setSelected]=useState<number[]>([]),[bass,setBass]=useState<number|null>(null),[bassConstraint,setBassConstraint]=useState<'interpret'|'root'>('interpret');
++ const resultRef=useRef<HTMLDivElement>(null),started=useRef(false);
++ const [interacted,setInteracted]=useState(false),[restored,setRestored]=useState(false),[restoreMessage,setRestoreMessage]=useState('');
++ useEffect(()=>{const restore=()=>{const next=restoreFinder(location.search);setSelected(next.notes);setBass(next.bass);setBassConstraint(next.mode);setRestoreMessage(next.invalid?'This note selection could not be restored. Choose the notes again.':'');setRestored(true);};restore();window.addEventListener('popstate',restore);return()=>window.removeEventListener('popstate',restore);},[]);
++ useEffect(()=>{if(!restored)return;const url=new URL(location.href);for(const key of ['pg-notes','pg-bass','pg-mode'])url.searchParams.delete(key);finderQuery(selected,bass,bassConstraint).forEach((value,key)=>url.searchParams.set(key,value));history.replaceState(history.state,'',url.pathname+url.search+url.hash);},[restored,selected,bass,bassConstraint]);
++ function userInput(){setInteracted(true);if(!started.current){started.current=true;emitPilotEvent('p0_tool_start',{object_id:'chord-finder'});}}
+  const matches=useMemo(()=>{const found:Match[]=[];for(const chord of chords){if(same(chord.pitchClasses,selected))found.push({chord,kind:'exact_formula',omitted:[]});else{const voicing=chord.suppliedVoicings.find(item=>same(item.pitchClasses,selected));if(voicing)found.push({chord,kind:'supplied_voicing',omitted:voicing.omittedDegrees});}}return found.filter(match=>bass===null||bassConstraint==='interpret'||match.chord.rootPitchClass===bass);},[chords,selected,bass,bassConstraint]);
+  const whiteKeys=keys.filter(key=>key.kind==='white'),blackKeys=keys.filter(key=>key.kind==='black');
+- function toggle(pc:number){setSelected(current=>{const next=current.includes(pc)?current.filter(value=>value!==pc):[...current,pc].sort((a,b)=>a-b);if(!next.includes(pc)&&bass===pc)setBass(null);return next;});}
++ function toggle(pc:number){userInput();setSelected(current=>{const next=current.includes(pc)?current.filter(value=>value!==pc):[...current,pc].sort((a,b)=>a-b);if(!next.includes(pc)&&bass===pc)setBass(null);return next;});}
+  function clear(){setSelected([]);setBass(null);setBassConstraint('interpret');}
+  const selectedLabels=selected.map(pc=>keys.find(key=>key.pc===pc)!.label),state=selected.length===0?'empty':selected.length<2?'incomplete':matches.length?'matches':'none';
+- return <section className="sp-result fd-result" aria-labelledby="finder-heading" data-result-state={state}><div className="sp-result-head"><div><p className="sp-overline">{chords.length} supported objects</p><h2 id="finder-heading">Choose the keys you are playing</h2></div><p>Complete formula matches and explicitly supplied reduced voicings are kept separate. Octave doubling does not change the pitch-class set.</p></div><fieldset className="fd-fieldset"><legend>Select piano keys</legend><div className="fd-keyboard" role="group" aria-label="One octave from C to B"><div className="fd-white-keys">{whiteKeys.map(key=><button type="button" className="fd-key fd-white" data-pitch-class={key.pc} aria-label={key.aria} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)} key={key.pc}><span>{key.label}</span></button>)}</div>{blackKeys.map(key=><button type="button" className="fd-key fd-black" style={{left:`${key.left}%`}} data-pitch-class={key.pc} aria-label={key.aria} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)} key={key.pc}><span>{key.label}</span></button>)}</div></fieldset><div className="fd-controls"><div><strong>Selected notes</strong><p>{selectedLabels.length?selectedLabels.join(' · '):'No keys selected yet.'}</p></div><label htmlFor="finder-bass"><span>Lowest note (optional)</span><select id="finder-bass" value={bass??''} disabled={!selected.length} onChange={event=>setBass(event.target.value===''?null:Number(event.target.value))}><option value="">Bass not specified</option>{selected.map(pc=><option value={pc} key={pc}>{keys.find(key=>key.pc===pc)!.label}</option>)}</select></label><label htmlFor="finder-bass-rule"><span>Bass constraint</span><select id="finder-bass-rule" value={bassConstraint} disabled={bass===null} onChange={event=>setBassConstraint(event.target.value as 'interpret'|'root')}><option value="interpret">Interpret lowest note</option><option value="root">Require root in bass</option></select></label><button type="button" className="am-button am-secondary" onClick={clear} disabled={!selected.length}>Clear</button></div><div className="fd-results" aria-live="polite" aria-atomic="true">{state==='empty'&&<div className="fd-state"><strong>Start by choosing the distinct notes you hear.</strong><p>Two-note power fifths and larger chords are both in the supported collection.</p></div>}{state==='incomplete'&&<div className="fd-state"><strong>{labels.incomplete}</strong><p>One pitch class is not enough for a supported chord match.</p></div>}{state==='none'&&<div className="fd-state"><strong>{labels.none}</strong><p>The current supported library has no matching complete formula or declared supplied voicing. This does not prove the notes are not a chord in another context.</p></div>}{state==='matches'&&<div><div className="fd-result-heading"><div><p className="sp-overline">{matches.length>1?labels.multiple:'Chord match'}</p><h3>{matches.length} {matches.length===1?'candidate':'candidates'}</h3></div><p>{bass===null?'No lowest note specified. Multiple roots can describe the same pitch-class set.':`Lowest selected note: ${keys.find(key=>key.pc===bass)?.label}`}</p></div><div className="fd-candidates">{matches.map(({chord,kind,omitted})=>{const bassSpelling=bass===null?null:bassName(chord,bass),inversion=bass!==null&&bass!==chord.rootPitchClass,symbol=bassSpelling&&inversion?`${chord.symbol}/${bassSpelling}`:chord.symbol;return <article key={chord.id} data-chord-id={chord.id} data-match={kind}><div><span>{kind==='exact_formula'?'Exact formula pitch-class set':`Matches supplied voicing${omitted.length?` · omitted ${omitted.join(', ')}`:''}`}</span><h4>{display(symbol)}</h4><p>{chord.name} · {chord.family} / {chord.quality}</p></div><dl><div><dt>Root</dt><dd>{display(chord.root)}</dd></div><div><dt>Formula tones</dt><dd>{chord.tones.map(display).join(' · ')}</dd></div><div><dt>Bass</dt><dd>{bassSpelling?display(bassSpelling):'Not specified'}</dd></div></dl><a className="am-button am-tertiary" href={chord.destination}>{chord.detailURL?`Open the ${chord.name} detail`:`Open ${chord.name} in its category`}</a></article>;})}</div></div>}</div><noscript><p className="fd-noscript">The explanation and supported-vocabulary notes remain readable without JavaScript. Enable JavaScript to select keys and compare matches.</p></noscript></section>;
++ const fingerprint=finderFingerprint(selected,bass,bassConstraint);
++ const settled=useStableToolResult(fingerprint,selected.length,matches.length,interacted);
++ useResultExposure(resultRef,'chord-finder',fingerprint,selected.length>=2&&((!interacted&&restored)||settled===fingerprint));
++ return <section className="sp-result fd-result" aria-labelledby="finder-heading" data-result-state={state}><div className="sp-result-head"><div><p className="sp-overline">{chords.length} supported objects</p><h2 id="finder-heading">Choose the keys you are playing</h2></div><p>Complete formula matches and explicitly supplied reduced voicings are kept separate. Octave doubling does not change the pitch-class set.</p></div><fieldset className="fd-fieldset"><legend>Select piano keys</legend><div className="fd-keyboard" role="group" aria-label="One octave from C to B"><div className="fd-white-keys">{whiteKeys.map(key=><button type="button" className="fd-key fd-white" data-pitch-class={key.pc} aria-label={key.aria} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)} key={key.pc}><span>{key.label}</span></button>)}</div>{blackKeys.map(key=><button type="button" className="fd-key fd-black" style={{left:`${key.left}%`}} data-pitch-class={key.pc} aria-label={key.aria} aria-pressed={selected.includes(key.pc)} onClick={()=>toggle(key.pc)} key={key.pc}><span>{key.label}</span></button>)}</div></fieldset><div className="fd-controls"><div><strong>Selected notes</strong><p>{selectedLabels.length?selectedLabels.join(' · '):'No keys selected yet.'}</p></div><label htmlFor="finder-bass"><span>Lowest note (optional)</span><select id="finder-bass" value={bass??''} disabled={!selected.length} onChange={event=>{userInput();setBass(event.target.value===''?null:Number(event.target.value));}}><option value="">Bass not specified</option>{selected.map(pc=><option value={pc} key={pc}>{keys.find(key=>key.pc===pc)!.label}</option>)}</select></label><label htmlFor="finder-bass-rule"><span>Bass constraint</span><select id="finder-bass-rule" value={bassConstraint} disabled={bass===null} onChange={event=>{userInput();setBassConstraint(event.target.value as 'interpret'|'root');}}><option value="interpret">Interpret lowest note</option><option value="root">Require root in bass</option></select></label><button type="button" className="am-button am-secondary" onClick={clear} disabled={!selected.length}>Clear</button></div><div ref={resultRef} className="fd-results" aria-live="polite" aria-atomic="true">{state==='empty'&&<div className="fd-state"><strong>Start by choosing the distinct notes you hear.</strong><p>Two-note power fifths and larger chords are both in the supported collection.</p></div>}{state==='incomplete'&&<div className="fd-state"><strong>{labels.incomplete}</strong><p>One pitch class is not enough for a supported chord match.</p></div>}{state==='none'&&<div className="fd-state"><strong>{labels.none}</strong><p>The current supported library has no matching complete formula or declared supplied voicing. This does not prove the notes are not a chord in another context.</p></div>}{state==='matches'&&<div><div className="fd-result-heading"><div><p className="sp-overline">{matches.length>1?labels.multiple:'Chord match'}</p><h3>{matches.length} {matches.length===1?'candidate':'candidates'}</h3></div><p>{bass===null?'No lowest note specified. Multiple roots can describe the same pitch-class set.':`Lowest selected note: ${keys.find(key=>key.pc===bass)?.label}`}</p></div><div className="fd-candidates">{matches.map(({chord,kind,omitted})=>{const bassSpelling=bass===null?null:bassName(chord,bass),inversion=bass!==null&&bass!==chord.rootPitchClass,symbol=bassSpelling&&inversion?`${chord.symbol}/${bassSpelling}`:chord.symbol;return <article key={chord.id} data-chord-id={chord.id} data-match={kind}><div><span>{kind==='exact_formula'?'Exact formula pitch-class set':`Matches supplied voicing${omitted.length?` · omitted ${omitted.join(', ')}`:''}`}</span><h4>{display(symbol)}</h4><p>{chord.name} · {chord.family} / {chord.quality}</p></div><dl><div><dt>Root</dt><dd>{display(chord.root)}</dd></div><div><dt>Formula tones</dt><dd>{chord.tones.map(display).join(' · ')}</dd></div><div><dt>Bass</dt><dd>{bassSpelling?display(bassSpelling):'Not specified'}</dd></div></dl><a className="am-button am-tertiary" href={finderDestination(chord.destination,chord.id,bass)} onClick={()=>emitPilotEvent('finder_result_selected',{object_id:chord.id,result_state:fingerprint,match_kind:kind,target:chord.destination.split('#')[0]})}>{chord.detailURL?`Open the ${chord.name} detail`:`Open ${chord.name} in its category`}</a></article>;})}</div></div>}</div>{restoreMessage&&<p role="status">{restoreMessage}</p>}<ProductContinuation path="/chords/finder"/><noscript><p className="fd-noscript">The explanation and supported-vocabulary notes remain readable without JavaScript. Enable JavaScript to select keys and compare matches.</p></noscript></section>;
+ }
+diff --git a/src/components/support/progression-experience.tsx b/src/components/support/progression-experience.tsx
+index 30ad392..cad462d 100644
+--- a/src/components/support/progression-experience.tsx
++++ b/src/components/support/progression-experience.tsx
+@@ -6,12 +6,15 @@ function common(a:ProgressionStep,b:ProgressionStep){const set=new Set(a.midi.ma
+ function Step({step,index,active,next}:{step:ProgressionStep;index:number;active:boolean;next?:ProgressionStep}){return <li data-active={active} data-diatonic={!step.nonDiatonicTones.length} data-degree={step.degree}><span className="pg-position">{index+1}</span><div className="pg-roman"><small>Roman numeral</small><b>{step.roman}</b></div><div className="pg-symbol"><small>Chord symbol</small>{step.destination?<a href={step.destination}>{display(step.symbol)}</a>:<strong>{display(step.symbol)}</strong>}</div><div className="pg-notes"><small>Chord notes</small><span>{display(step.referenceTones.join(' · '))}</span></div><div className="pg-quality"><small>Quality</small><span>{step.subtype}</span></div>{step.notDiatonicReason&&<p className="pg-warning">Outside the named scale: {display(step.nonDiatonicTones.join(', '))}. {step.notDiatonicReason}</p>}{next&&<p className="pg-common"><small>Common tones with next chord</small> {display(common(step,next).join(' · ')||'None')}</p>}</li>}
+ export function ProgressionExperience({patterns,examples,defaultExample}:{patterns:ProgressionPattern[];examples:ProgressionExample[];defaultExample:string}){
+  const[selectedId,setSelectedId]=useState(defaultExample),[patternId,setPatternId]=useState(examples.find(x=>x.id===defaultExample)!.patternId),[tempo,setTempo]=useState(60),[mode,setMode]=useState<'block'|'broken'>('block'),[loop,setLoop]=useState(false),[active,setActive]=useState(-1),[status,setStatus]=useState(''),[ready,setReady]=useState(false);const context=useRef<AudioContext|null>(null),generation=useRef(0),timers=useRef<number[]>([]);
++ const [restoreMessage,setRestoreMessage]=useState('');
++ useEffect(()=>{const restore=(event?:Event)=>{let hash='';try{hash=decodeURIComponent(location.hash.slice(1));}catch{}const contextId=new URLSearchParams(location.search).get('pg-context');const id=hash.startsWith('progression-')?hash.slice(12):hash==='c-major'||contextId==='c-major'?'pop-four-c-major':'';const match=examples.find(item=>item.id===id);if(!id&&!contextId&&event?.type!=='popstate')return;stop(false);const next=match??examples.find(item=>item.id===defaultExample)!;setSelectedId(next.id);setPatternId(next.patternId);setTempo(next.tempoBpmDefault);setRestoreMessage(match?'Selected progression restored in its named key context.':'This progression link could not be restored. The default example is shown.');};restore();window.addEventListener('hashchange',restore);window.addEventListener('popstate',restore);return()=>{window.removeEventListener('hashchange',restore);window.removeEventListener('popstate',restore);};},[examples,defaultExample]);
++ function recordExample(id:string){const url=new URL(location.href);url.searchParams.delete('pg-context');url.hash=`progression-${id}`;history.pushState(history.state,'',url.pathname+url.search+url.hash);setRestoreMessage('');}
+  const patternExamples=useMemo(()=>examples.filter(x=>x.patternId===patternId),[examples,patternId]);const selected=examples.find(x=>x.id===selectedId&&x.patternId===patternId)||patternExamples[0];
+  useEffect(()=>{setReady(true);return()=>stop(false);},[]);
+  function stop(announce=true){generation.current++;timers.current.forEach(clearTimeout);timers.current=[];context.current?.close().catch(()=>{});context.current=null;setActive(-1);if(announce)setStatus('Playback stopped.');}
+  function scheduleChord(ctx:AudioContext,step:ProgressionStep,start:number,duration:number){step.midi.forEach((midi,n)=>{const offset=mode==='broken'?n*.12:0,osc=ctx.createOscillator(),gain=ctx.createGain(),begin=start+offset,end=start+duration;osc.frequency.value=440*2**((midi-69)/12);gain.gain.setValueAtTime(0,begin);gain.gain.linearRampToValueAtTime(.08,begin+.01);gain.gain.setValueAtTime(.08,Math.max(begin+.02,end-.05));gain.gain.linearRampToValueAtTime(0,end);osc.connect(gain);gain.connect(ctx.destination);osc.start(begin);osc.stop(end);});}
+  function play(){stop(false);const Ctor=window.AudioContext||(window as Window&{webkitAudioContext?:typeof AudioContext}).webkitAudioContext;if(!Ctor){setStatus('Sound is unavailable in this browser.');return;}const ctx=new Ctor();context.current=ctx;const token=++generation.current,beat=60/tempo,bar=beat*4,total=selected.steps.length*bar,origin=ctx.currentTime+.05;selected.steps.forEach((step,index)=>{scheduleChord(ctx,step,origin+index*bar,bar-.08);timers.current.push(window.setTimeout(()=>{if(generation.current===token)setActive(index);},(index*bar+.02)*1000));});timers.current.push(window.setTimeout(()=>{if(generation.current!==token)return;if(loop){setActive(-1);play();}else{setActive(-1);setStatus('Playback complete.');}},total*1000));setStatus(`Playing ${selected.name} in ${selected.tonic}.`);}
+- function selectPattern(id:string){stop(false);setPatternId(id);const next=examples.find(x=>x.patternId===id)!;setSelectedId(next.id);setTempo(next.tempoBpmDefault);}
++ function selectPattern(id:string){stop(false);setPatternId(id);const next=examples.find(x=>x.patternId===id)!;setSelectedId(next.id);setTempo(next.tempoBpmDefault);recordExample(next.id);}
+  const pick=(id:string)=>examples.find(example=>example.id===id)!;const summary=(id:string)=>pick(id).steps.map(step=>`${step.roman} ${display(step.symbol)} (${display(step.referenceTones.join('–'))})`).join(' → ');
+- return <section className="sp-result pg-result" aria-labelledby="progression-examples-heading"><div className="sp-result-head"><div><p className="sp-overline">96 validated progression examples</p><h2 id="progression-examples-heading">Choose a pattern and key context</h2></div><p>Each step preserves its Roman numeral, actual chord symbol, written notes and diatonic status.</p></div><section className="pg-task-map" aria-label="Progression task examples"><article id="how-it-works"><h3>How chord progressions work</h3><p>A pattern keeps its Roman numerals while the selected key maps each degree to an actual chord symbol and validated note spelling.</p></article><article id="common"><h3>Common progression examples</h3><p>{summary('pop-four-c-major')}</p><p>{summary('basic-cadence-c-major')}</p></article>{[['c-major','C'],['e-major','E'],['a-major','A']].map(([id,key])=><article id={id} key={id}><h3>{key} major progression</h3><p>{summary(`pop-four-${id}`)}</p></article>)}<article id="beautiful"><span id="color-ii-v-i" aria-hidden="true"/><h3>“Beautiful” color example</h3><p>{summary('color-ii-v-i-c-major')}</p><small>This is a subjective practice label, not a guaranteed listener response.</small></article><article id="happy"><h3>“Happy” cadence example</h3><p>{summary('basic-cadence-c-major')}</p><small>This is a subjective practice label; tempo, register and musical context change the effect.</small></article></section><div className="pg-picker"><label>Pattern<select value={patternId} onChange={e=>selectPattern(e.target.value)}>{patterns.map(p=><option value={p.id} key={p.id}>{p.title}</option>)}</select></label><label>Key context<select value={selected.id} onChange={e=>{stop(false);setSelectedId(e.target.value);const next=examples.find(x=>x.id===e.target.value)!;setTempo(next.tempoBpmDefault);}}>{patternExamples.map(x=><option value={x.id} key={x.id}>{x.tonic} · {x.keyId.includes('natural_minor')?'natural minor':'major'}</option>)}</select></label><label>Tempo<input type="number" min={selected.bpmRange[0]} max={selected.bpmRange[1]} value={tempo} onChange={e=>setTempo(Math.min(selected.bpmRange[1],Math.max(selected.bpmRange[0],Number(e.target.value))))}/></label><label>Playback<select value={mode} onChange={e=>setMode(e.target.value as 'block'|'broken')}><option value="block">Block chords</option><option value="broken">Broken chords</option></select></label></div><div className="pg-actions"><button className="am-button am-primary" type="button" disabled={!ready} onClick={play}>Play</button><button className="am-button am-secondary" type="button" disabled={!ready} onClick={()=>stop()}>Stop</button><label><input type="checkbox" checked={loop} onChange={e=>setLoop(e.target.checked)}/> Loop full pattern</label><button className="am-button am-tertiary" type="button" onClick={()=>window.print()}>Print current example</button></div><p role="status" aria-live="polite">{status}</p><div className="pg-key-panels">{examples.map(example=><section className="pg-key-panel" data-example={example.id} hidden={ready&&example.id!==selected.id} key={example.id} aria-labelledby={`progression-${example.id}`}><header><p className="sp-overline">{example.keyId.includes('natural_minor')?'Natural-minor context':'Major-key context'}</p><h3 id={`progression-${example.id}`}>{example.name} in {example.tonic}</h3><p>{example.moodDisclaimer}</p></header><ol className="pg-chord-line">{example.steps.map((step,index)=><Step key={`${example.id}-${index}`} step={step} index={index} active={active===index} next={example.steps[index+1]}/>)}</ol><footer><strong>How to practise</strong><p>Start with block chords, name each symbol before it sounds, then switch to broken chords. Slow the tempo until every change is deliberate. No fingering is assigned.</p></footer></section>)}</div><noscript><p>All 96 progression examples, symbols and written notes are present above. Enable JavaScript for key selection and sound.</p></noscript></section>;
++ return <section className="sp-result pg-result" aria-labelledby="progression-examples-heading"><div className="sp-result-head"><div><p className="sp-overline">96 validated progression examples</p><h2 id="progression-examples-heading">Choose a pattern and key context</h2></div><p>Each step preserves its Roman numeral, actual chord symbol, written notes and diatonic status.</p></div><section className="pg-task-map" aria-label="Progression task examples"><article id="how-it-works"><h3>How chord progressions work</h3><p>A pattern keeps its Roman numerals while the selected key maps each degree to an actual chord symbol and validated note spelling.</p></article><article id="common"><h3>Common progression examples</h3><p>{summary('pop-four-c-major')}</p><p>{summary('basic-cadence-c-major')}</p></article>{[['c-major','C'],['e-major','E'],['a-major','A']].map(([id,key])=><article id={id} key={id}><h3>{key} major progression</h3><p>{summary(`pop-four-${id}`)}</p></article>)}<article id="beautiful"><span id="color-ii-v-i" aria-hidden="true"/><h3>“Beautiful” color example</h3><p>{summary('color-ii-v-i-c-major')}</p><small>This is a subjective practice label, not a guaranteed listener response.</small></article><article id="happy"><h3>“Happy” cadence example</h3><p>{summary('basic-cadence-c-major')}</p><small>This is a subjective practice label; tempo, register and musical context change the effect.</small></article></section>{restoreMessage&&<p role="status">{restoreMessage}</p>}<div className="pg-picker"><label>Pattern<select value={patternId} onChange={e=>selectPattern(e.target.value)}>{patterns.map(p=><option value={p.id} key={p.id}>{p.title}</option>)}</select></label><label>Key context<select value={selected.id} onChange={e=>{stop(false);setSelectedId(e.target.value);recordExample(e.target.value);const next=examples.find(x=>x.id===e.target.value)!;setTempo(next.tempoBpmDefault);}}>{patternExamples.map(x=><option value={x.id} key={x.id}>{x.tonic} · {x.keyId.includes('natural_minor')?'natural minor':'major'}</option>)}</select></label><label>Tempo<input type="number" min={selected.bpmRange[0]} max={selected.bpmRange[1]} value={tempo} onChange={e=>setTempo(Math.min(selected.bpmRange[1],Math.max(selected.bpmRange[0],Number(e.target.value))))}/></label><label>Playback<select value={mode} onChange={e=>setMode(e.target.value as 'block'|'broken')}><option value="block">Block chords</option><option value="broken">Broken chords</option></select></label></div><div className="pg-actions"><button className="am-button am-primary" type="button" disabled={!ready} onClick={play}>Play</button><button className="am-button am-secondary" type="button" disabled={!ready} onClick={()=>stop()}>Stop</button><label><input type="checkbox" checked={loop} onChange={e=>setLoop(e.target.checked)}/> Loop full pattern</label><button className="am-button am-tertiary" type="button" onClick={()=>window.print()}>Print current example</button></div><p role="status" aria-live="polite">{status}</p><div className="pg-key-panels">{examples.map(example=><section className="pg-key-panel" data-example={example.id} hidden={ready&&example.id!==selected.id} key={example.id} aria-labelledby={`progression-${example.id}`}><header><p className="sp-overline">{example.keyId.includes('natural_minor')?'Natural-minor context':'Major-key context'}</p><h3 id={`progression-${example.id}`}>{example.name} in {example.tonic}</h3><p>{example.moodDisclaimer}</p></header><ol className="pg-chord-line">{example.steps.map((step,index)=><Step key={`${example.id}-${index}`} step={step} index={index} active={active===index} next={example.steps[index+1]}/>)}</ol><footer><strong>How to practise</strong><p>Start with block chords, name each symbol before it sounds, then switch to broken chords. Slow the tempo until every change is deliberate. No fingering is assigned.</p></footer></section>)}</div><noscript><p>All 96 progression examples, symbols and written notes are present above. Enable JavaScript for key selection and sound.</p></noscript></section>;
+ }
+diff --git a/src/lib/chord-completion-content.ts b/src/lib/chord-completion-content.ts
+index b327b6d..46047d4 100644
+--- a/src/lib/chord-completion-content.ts
++++ b/src/lib/chord-completion-content.ts
+@@ -1,3 +1,4 @@
++import {getPilotCoreSourceIDs} from './chord-learning-content';
+ import { readFileSync } from 'node:fs';
+ import { resolve } from 'node:path';
+ import type { CenterItem } from './chord-content';
+@@ -70,7 +71,7 @@ function legacyFromModel(model: ReturnType<typeof getN2BChordDetail> | ReturnTyp
+ }
+ 
+ export function getSupportedChordRegistry(core: CenterItem[]) {
+-  const legacyCore: CompletionReference[] = core.map(item => ({ id: item.id, family: 'triad', subtype: item.quality, name: item.name, root: item.root, rootPitchClass: completionPitchClass(item.root), symbol: item.voicing.chord_symbol, aliases: [item.voicing.chord_symbol, item.name], destination: item.url || '/chords', detailURL: item.url, definition: { formulaDegrees: [...item.formula], displayFormula: item.formula.map(value => value.replace('b', '♭').replace('#', '♯')), toneSpellings: [...item.tones], pitchClassIntervals: item.tones.map(note => (completionPitchClass(note) - completionPitchClass(item.root) + 12) % 12), uniquePitchClassCount: item.tones.length }, realizations: [{ id: item.voicing.voicing_id, label: item.voicing.inversion_label, purpose: 'published_detail_example', symbol: item.voicing.chord_symbol, displayNote: '', notes: item.voicing.notes_low_to_high.map(note => note.display_pitch), midi: item.voicing.notes_low_to_high.map(note => note.midi), realizedDegrees: [...item.formula], omittedDegrees: [], doubledDegrees: [], bass: { spelling: item.voicing.bass_spelling.replace(/-?\d+$/, ''), midi: item.voicing.notes_low_to_high[0].midi, formulaDegree: '1' }, keyboard: { minMidi: item.voicing.diagram.keyboard_range_midi[0], maxMidi: item.voicing.diagram.keyboard_range_midi[1] }, audio: { block: item.voicing.playback.together.map(event => ({ midi: event.midi, onsetMs: event.onset_ms, durationMs: event.duration_ms })), ascending: item.voicing.playback.ascending.map(event => ({ midi: event.midi, onsetMs: event.onset_ms, durationMs: event.duration_ms })) } }], defaultRealizationId: item.voicing.voicing_id, content: [], practiceModes: ['formula_pitch_classes'], sourceIDs: [], teacherReviewed: false }));
++  const legacyCore: CompletionReference[] = core.map(item => ({ id: item.id, family: 'triad', subtype: item.quality, name: item.name, root: item.root, rootPitchClass: completionPitchClass(item.root), symbol: item.voicing.chord_symbol, aliases: [item.voicing.chord_symbol, item.name], destination: item.url || '/chords', detailURL: item.url, definition: { formulaDegrees: [...item.formula], displayFormula: item.formula.map(value => value.replace('b', '♭').replace('#', '♯')), toneSpellings: [...item.tones], pitchClassIntervals: item.tones.map(note => (completionPitchClass(note) - completionPitchClass(item.root) + 12) % 12), uniquePitchClassCount: item.tones.length }, realizations: [{ id: item.voicing.voicing_id, label: item.voicing.inversion_label, purpose: 'published_detail_example', symbol: item.voicing.chord_symbol, displayNote: '', notes: item.voicing.notes_low_to_high.map(note => note.display_pitch), midi: item.voicing.notes_low_to_high.map(note => note.midi), realizedDegrees: [...item.formula], omittedDegrees: [], doubledDegrees: [], bass: { spelling: item.voicing.bass_spelling.replace(/-?\d+$/, ''), midi: item.voicing.notes_low_to_high[0].midi, formulaDegree: '1' }, keyboard: { minMidi: item.voicing.diagram.keyboard_range_midi[0], maxMidi: item.voicing.diagram.keyboard_range_midi[1] }, audio: { block: item.voicing.playback.together.map(event => ({ midi: event.midi, onsetMs: event.onset_ms, durationMs: event.duration_ms })), ascending: item.voicing.playback.ascending.map(event => ({ midi: event.midi, onsetMs: event.onset_ms, durationMs: event.duration_ms })) } }], defaultRealizationId: item.voicing.voicing_id, content: [], practiceModes: ['formula_pitch_classes'], sourceIDs: getPilotCoreSourceIDs(item.url), teacherReviewed: false }));
+   const legacy = [...N2B_DETAIL_ROUTES.map(route => legacyFromModel(getN2BChordDetail(route))), ...N2C_DETAIL_ROUTES.map(route => legacyFromModel(getN2CChordDetail(route))), ...N2D_DETAIL_ROUTES.map(route => legacyFromModel(getN2DChordDetail(route)))];
+   const map = new Map([...legacyCore, ...legacy, ...COMPLETION_REFERENCES].map(item => [item.id, item]));
+   if (map.size !== 433) throw new Error(`Supported chord registry expected 433 objects, received ${map.size}`);
+diff --git a/src/lib/chord-learning-content.ts b/src/lib/chord-learning-content.ts
+index 936f639..9fb5da7 100644
+--- a/src/lib/chord-learning-content.ts
++++ b/src/lib/chord-learning-content.ts
+@@ -39,6 +39,11 @@ const pageSourceIds:Partial<Record<ChordDetailRoute,string[]>>={
+   '/chords/c-major':['SKOOVE-C','E-CHORD'],
+ };
+ 
++// Only these two P1 core references inherit the existing detail source records.
++export function getPilotCoreSourceIDs(url:string|null):string[] {
++  return url==='/chords/c-major'||url==='/chords/a-minor' ? [...pageSourceIds[url]!] : [];
++}
++
+ type PreparedChordLearning=Omit<NextChordLearning,'practice'>&{practice:ChordPractice};
+ function prepareThreeNoteLearning(learning:NextChordLearning):PreparedChordLearning{
+   const count=learning.practice.requiredPitchClassCount??3;
+diff --git a/src/lib/support-content.ts b/src/lib/support-content.ts
+index a72b59e..be062e4 100644
+--- a/src/lib/support-content.ts
++++ b/src/lib/support-content.ts
+@@ -124,7 +124,9 @@ export function getPianoChordsGuide() {
+   const blocks=[...original.blocks];const ids=new Set(blocks.map(block=>block.id));const links=[...original.links];
+   for(const module of guide.modules){if(!ids.has(module.id)){blocks.push({id:module.id,heading:module.title,paragraphs:[...module.body],steps:[module.goal],table:null,sourceIDs:[...module.sourceIds],originalBlocks:[]});ids.add(module.id);}if(isPublicRoute(module.next.split('#')[0]))links.push({id:`completion-${module.id}`,url:module.next,label:`Continue: ${module.title}`,placement:module.id});}
+   if(isPublicRoute('/tools/hear-the-difference'))links.push({id:'b04-hear-third',url:'/tools/hear-the-difference',label:'Hear the third change by one semitone →',placement:'after instructions'});
+-  const model={...original,scope:'A practical path from chord symbols and formula tones through inversions, seventh chords, omissions, alterations, transitions and print references. Existing guide content remains in place.',blocks,links};
++  // The old practice continuation pointed to a removed chart anchor. Name the actual task.
++  const publishedLinks=links.map(link=>link.url==='/chords#find-a-chord'?{...link,url:'/chords/finder',label:'Identify a chord from selected notes'}:link);
++  const model={...original,scope:'A practical path from chord symbols and formula tones through inversions, seventh chords, omissions, alterations, transitions and print references. Existing guide content remains in place.',blocks,links:publishedLinks};
+   return { model, data: page.data as {
+     starter_chords: { name: string; notes: string[] }[];
+     verified_fingering_example: { hand: 'right'; notes: string[]; fingers: number[]; scope: string };
+@@ -220,6 +222,11 @@ export function getChordFinder(sourceChords: FinderChordSource[]) {
+   const planned = plannedLinksFor('/chords/finder');
+   const links = planned.some(link => link.url === '/chords/by-key') ? planned : [...planned, { id: 'FINAL-FINDER-BY-KEY', url: '/chords/by-key', label: 'Browse chords by key', placement: 'after instructions' }];
+   const blocks=baseModel.blocks.map(block=>({...block,paragraphs:[...block.paragraphs]}));
++  const inputHelp=blocks.find(block=>block.id==='how-to-enter');
++  if(inputHelp)inputHelp.paragraphs=[
++    'Select each different note on the keyboard above. For example, choose C, E and G to look for a C major chord. Select a key again to remove it.',
++    'If you know the lowest note, choose it under Lowest note. Otherwise leave Bass not specified. The keyboard records note names, not octaves or repeated notes, so it cannot recover the original spacing of the chord.',
++  ];
+   const limits=blocks.find(block=>block.id==='limits');if(limits)limits.paragraphs[1]='The supported registry includes triads, power fifths, sixths, seventh chords, add chords, extended chords and explicit altered structures. Each family is validated before it enters this shared matcher; a reduced supplied voicing remains labeled separately from a complete formula match.';
+   return {
+     model: { ...baseModel, scope: 'Matches all 433 objects in the supported registry by complete formula pitch classes or an explicitly supplied voicing. Results can be ambiguous; the finder does not infer missing tones freely.', links,blocks },

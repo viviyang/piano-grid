@@ -1,4 +1,7 @@
 'use client';
+import {ProductContinuation} from '@/components/product-continuation';
+import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
+
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { Layout, PianoKey } from '@/lib/keyboard-types';
@@ -106,6 +109,9 @@ function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
   const [shareHint, setShareHint] = useState('');
   const copyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const selected = resolution.selected ? layout.keys.find(key => key.midi === resolution.selected?.midi) : undefined;
+  const resultRef=useRef<HTMLDivElement>(null);
+  useResultExposure(resultRef,selected?`midi-${selected.midi}`:'no-note',layout.layout_id,active&&!!selected);
+  usePilotAudio(audio.state,selected?`midi-${selected.midi}`:'no-note');
   const whiteSpan = compact ? 12 : 24;
   const { rangeMin, rangeMax, keys: visibleKeys } = useMemo(() => visibleMidiWindow(layout, rangeStart, whiteSpan), [layout, rangeStart, whiteSpan]);
   const accessibleLabels = useMemo(() => Object.fromEntries(visibleKeys.map(key => [key.midi, spokenPianoKeyName(key)])), [visibleKeys]);
@@ -229,8 +235,9 @@ function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
   const canHigher = rangeMax < layout.keys.at(-1)!.midi;
   const helpText = queryPrompt ? lookupHubMessage(resolution, layout) : 'Use a note name and octave to find one exact key.';
   return <section id="kn-v2-explore-panel" role="tabpanel" aria-labelledby="kn-v2-explore-tab" hidden={!active} className="kn-v2-panel kn-v2-explore" data-selected-midi={selected?.midi ?? ''}>
+
     <p className="kn-hub-live" aria-live="polite">{liveMessage}</p>
-    <div className="kn-v2-explore-head">
+    <div ref={resultRef} className="kn-v2-explore-head">
       <div className="kn-v2-note-id">
         <h2>{heading}</h2>
       </div>
@@ -272,6 +279,7 @@ function ExploreNotes({ layout, layouts, active, compact, onLayoutChange }: {
       <span className="kn-v2-copy-status" role="status">{copyMessage}</span>
       {manualURL ? <label className="kn-v2-manual-link">Note link<textarea value={manualURL} readOnly rows={2} onFocus={event => event.currentTarget.select()}/></label> : null}
     </div>
+    <ProductContinuation path="/keyboard-notes" primaryHref={selected?`/keyboard-notes?${lookupShareParams(layout,resolution.selected!)}#note-trainer`:"#note-trainer"}/>
   </section>;
 }
 

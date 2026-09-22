@@ -1,0 +1,1 @@
+await page.locator('[data-print-current]').first().click();const printEvents=await page.evaluate(()=>window.__p0.filter(e=>e.name==='p0_print_request'));assert.equal(printEvents.length,1);await page.locator('h1').scrollIntoViewIfNeeded();return {printEvents,screenshot:await page.screenshot({fullPage:false,animations:'disabled',timeout:15000})};

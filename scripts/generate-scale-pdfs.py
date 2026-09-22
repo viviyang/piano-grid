@@ -91,17 +91,23 @@ def draw_clef(pdf, clef, x, y):
     pdf.setLineWidth(1.35)
     if clef == "treble":
         center = x + 23
-        path = pdf.beginPath()
-        path.moveTo(center + 1, y - 9)
-        path.curveTo(center - 10, y - 6, center - 10, y + 5, center + 1, y + 10)
-        path.curveTo(center + 13, y + 15, center + 12, y + 27, center + 2, y + 31)
-        path.curveTo(center - 7, y + 35, center - 5, y + 45, center + 1, y + 48)
-        path.curveTo(center + 8, y + 44, center + 7, y + 36, center + 1, y + 29)
-        path.lineTo(center - 2, y - 10)
-        path.curveTo(center - 3, y - 16, center + 6, y - 17, center + 7, y - 10)
-        path.curveTo(center + 7, y - 4, center - 1, y - 3, center - 3, y - 8)
-        pdf.drawPath(path, fill=0, stroke=1)
-        pdf.circle(center, y + 10, 2.5, fill=1, stroke=0)
+        # A compact vector treble clef: the spiral must wrap the second line
+        # (G4) and the stem must remain continuous through the staff.
+        stem = pdf.beginPath()
+        stem.moveTo(center + 2, y - 14)
+        stem.curveTo(center + 1, y + 8, center + 1, y + 33, center + 2, y + 58)
+        pdf.drawPath(stem, fill=0, stroke=1)
+        upper = pdf.beginPath()
+        upper.moveTo(center + 2, y + 56)
+        upper.curveTo(center - 10, y + 51, center - 10, y + 39, center, y + 32)
+        upper.curveTo(center + 13, y + 26, center + 14, y + 14, center + 4, y + 9)
+        pdf.drawPath(upper, fill=0, stroke=1)
+        spiral = pdf.beginPath()
+        spiral.moveTo(center + 4, y + 9)
+        spiral.curveTo(center - 8, y + 9, center - 13, y + 3, center - 9, y - 4)
+        spiral.curveTo(center - 6, y - 10, center + 1, y - 11, center + 4, y - 7)
+        spiral.curveTo(center + 6, y - 4, center + 4, y - 1, center + 1, y + 1)
+        pdf.drawPath(spiral, fill=0, stroke=1)
     else:
         center = x + 22
         path = pdf.beginPath()
@@ -125,7 +131,8 @@ def staff(pdf, notes, x, y, width, clef):
         pdf.line(x, y + row * 6, x + width, y + row * 6)
     pdf.setFont("Helvetica-Bold", 7)
     pdf.setFillColor(MUTED)
-    pdf.drawString(x, y + 30, "TREBLE CLEF" if clef == "treble" else "BASS CLEF")
+    # Leave room for the vector clef (up to y + 48) below its text label.
+    pdf.drawString(x, y + 54, "TREBLE CLEF" if clef == "treble" else "BASS CLEF")
     draw_clef(pdf, clef, x, y)
     usable_x = x + 66
     step_x = (width - 70) / max(len(notes), 1)

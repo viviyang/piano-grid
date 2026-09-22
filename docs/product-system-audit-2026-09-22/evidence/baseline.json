@@ -1,0 +1,19 @@
+{
+  "auditDate": "2026-09-22",
+  "remote": "https://github.com/viviyang/piano-grid.git",
+  "ref": "origin/main",
+  "sha": "c1a017a533289616b84e354c97f1345114f809e2",
+  "checkout": "detached HEAD",
+  "initialDirty": false,
+  "originalBranch": "codex/chords-b1",
+  "originalDirty": true,
+  "readRules": {
+    "componentRules": "2026-09-21, supplied workspace copy; absent from remote snapshot",
+    "pageRules": "2026-09-15, ../docs/page-rules.md",
+    "TDH": "remote docs/seo/TDH-RULES.md; 197 route note is historical"
+  },
+  "browser": "Tabbit: first evaluation deadline terminated executor, resumed read-only request failed OUTCOME_UNKNOWN after runtime restart; no accepted screenshots",
+  "build": "exit 0",
+  "check": "exit 0",
+  "noProductionEdits": true
+}

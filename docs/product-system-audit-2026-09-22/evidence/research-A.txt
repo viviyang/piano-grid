@@ -1,0 +1,1884 @@
+--- PAGE 1 ---
+bodytypecalculator.org 全方位竞品逆向研究：从一个
+关键词到一个产品型 SEO 网站
+结论与证据边界
+Executive Summary
+[已核实] 这个案例真正值得研究的地方，不是“一个 EMD 域名靠一个 calculator 排起来了”，而是它把一个非常窄的
+起点任务——“输入身体测量值，告诉我属于什么 body shape/body type”——扩展成了一条完整的需求链：测量
+方法 → 计算 → 结果解释 → 相邻类型比较 → 单一体型知识页 → 穿搭 → 测量参考数据 → 男性版本 → WHR 等相邻
+工具。当前首页本身已经不只是一个简单表单，而是支持女性/男性、英寸/厘米、实时 SVG 比例预览、结果比例
+卡、雷达图、结果链接复制和图片下载；About 页面还明确写明该团队专注于“front-end product design、
+measurement-content research、SEO publishing for practical tools”。
+[推断] 因而，它更准确的模式不是：
+Keyword → Article → 更多 Article
+而是：
+Keyword → Product Primitive → 输入前问题 → 结果 → 结果后的问题 → 独立工具/参考资产 →
+内链闭环 → 更多可搜索任务
+这正是你当初看到 body type calculator 却“不知道下一步应该做什么”时所缺的那一层：不是继续做关键词
+扩展，而是先把关键词翻译成一个可执行的用户任务，再从任务前后推导网站。 这个结论也符合你在原始研究 brief
+中提出的真正研究目标。fileciteturn0file0
+[已核实] 你通过 Semrush 网页界面观察到的约 21K Organic Traffic、2.7K Organic Keywords、AS 22、304
+Referring Domains、588 Backlinks，应严格视为第三方估计，而不是 GSC/GA4 实际值。fileciteturn0file0
+本次尝试调用 Semrush Organic Research 时，账户被返回“有订阅但 API units 不足”，因此我没有伪造或插值 Top
+Pages、historical traffic、keyword positions 等私有数据。
+[已核实] 当前 Google 搜索生态已经明显比“早期机会期”拥挤：现在可发现 DiscoverFashions、Calqulate、
+BodyShapeCalculator .org、NumberBench、SirCalculator、CalcBee 等多个专门的 body-shape/body-type
+calculators，而且不少竞争者也开始采用浏览器本地计算、图形化结果、隐私承诺、穿搭建议等类似产品结构。
+ 因此，不能从它今天的成功反推“今天再注册一个 EMD、照着做就会成功”。
+[推断] 在我看来，本案例最有价值的竞争优势排序是：
+把搜索词识别成了一个真正可完成的任务，而不是文章主题。
+1
+2
+1. 
+1
+
+--- PAGE 2 ---
+围绕输入质量、结果解释和 next question 扩展页面，而不是随机写“相关内容”。
+工具本身承担任务完成，内容承担理解、边界情况和长尾需求。
+静态可抓取内容 + 浏览器端工具，使 product-first 和 SEO 并不冲突。
+存在较强的多站点工具开发/SEO 运营经验信号。
+Backlinks、EMD 很可能是放大器，但公开证据不足以证明它们是根因。
+这几项的证据强度并不相同，下面会逐项拆开。
+Evidence Status
+关键问题 状态 本研究能确定什么
+当前产品结构与
+公开页面 CONFIRMED 可直接检查首页、工具、指南、comparison、outfit、男性页
+等。
+当前导航规模 CONFIRMED /
+PARTIAL
+当前导航可还原约 35 个去重目的页；不等于 sitemap 全量。
+用户提供的
+Semrush 当前估
+算
+CONFIRMED as user-
+provided estimate
+21K / 2.7K / AS22 / 304 RD / 588 backlinks；不可视为真实
+analytics。fileciteturn0file0
+Semrush Top
+Pages / exact
+positions
+UNKNOWN API units 不足。
+Top 1 / Top 3 /
+Top 10 流量占比UNKNOWN 没有 GSC 或可用的 Semrush URL report。
+域名准确注册日 UNKNOWN 本轮公开检索没有取得可引用的目标域名 RDAP 记录；不能
+猜。
+Wayback 最早
+snapshot UNKNOWN 本研究环境无法可靠取得目标域名 archive snapshot。
+sitemap 历史 UNKNOWN 当前 sitemap/robots 端点也无法在研究环境可靠读取。
+页面大规模扩展
+时间 PARTIAL
+2025 有可见旧内容；2026 年 4–7 月大量当前页面标示更新
+日期，说明这一时期发生明显扩充，但更新时间不能当发布日
+期。
+Backlink 304 个
+域名的完整组成 UNKNOWN 只能验证零散公开引用与 portfolio 线索，不能重构 304 个
+RD。
+同一运营体系/
+portfolio
+CONFIRMED at
+operational-contact
+level
+多个工具站共享 contact@aigotowork.work，部分还共
+享 midoriko053@gmail.com。
+同一最终法律/受
+益所有人 UNKNOWN 共享运营邮箱并不等同于法律所有权。
+2. 
+3. 
+4. 
+5. 
+6. 
+1
+3
+4
+5
+2
+
+--- PAGE 3 ---
+关键问题 状态 本研究能确定什么
+EMD 是否“导
+致”排名
+UNKNOWN / 不可证
+明
+Google 明确有 Exact Match Domain system 防止 EMD 获得
+过度信用。
+当前显性商业化 PARTIAL 抽样页面未见 paywall、premium、显性 affiliate/广告；是
+否存在未显示的广告脚本或其他收入 UNKNOWN。
+Missing Evidence
+最值得补的不是“大量 CSV”，而是三个最小数据包：
+缺什么 为什么重要 最小需要字段
+Semrush Organic
+Pages
+判断到底是 homepage 集
+中流量还是长尾页面群
+URL、Traffic%、Keywords、Top Keyword、
+Position、Volume；Top 50 即可
+Semrush Organic
+Positions 历史快照
+判断何时从单一词扩展成
+多 cluster
+Keyword、URL、Position、Volume、
+Timestamp；当前 + 3–6 个历史月即可
+Semrush Backlinks /
+Referring Domains 回答 304 RD 到底是什么
+Source URL/domain、Target URL、Anchor、
+First Seen、Follow/Nofollow、AS；Top 100–300
+即可
+[推断] 如果只能给一个 report，优先级最高的是 Organic Pages。它会一次性解决本研究最大的不确定性：“真正
+是哪几个 URL 在增长？”
+时间线、URL 资产与信息架构
+Site Timeline / Growth Timeline
+公开证据可以还原“产品/content 结构的演变”，但不能可靠还原真实流量曲线。
+时间 可验证页面规模/证据 关键词/流量
+证据
+Backlink 证
+据 产品/内容变化
+域名注册 UNKNOWN UNKNOWNUNKNOWN 不推断
+约 2025 初
+[PARTIAL] full-body-
+measurement-guide 当前标
+记 Last updated Jan 15, 2025；
+搜索索引也将该页与 Compare
+Female Body Types 标为约 1.7
+年前发布。
+UNKNOWNUNKNOWN
+[推断] 至少说
+明“measurement/
+reference + female
+comparison”不是纯
+2026 才出现的概念；但
+不能把 Last updated 当
+首发日
+6
+1
+7
+3
+
+--- PAGE 4 ---
+时间 可验证页面规模/证据 关键词/流量
+证据
+Backlink 证
+据 产品/内容变化
+2026-04-01[已核实] 首页当前版本 Last
+updated Apr 1, 2026。 UNKNOWNUNKNOWN 当前主 calculator/结果
+分享/男女模式结构可见
+2026-04-05
+[已核实] Female Calculator、
+WHR、Body Measurements
+Chart、测量类页面集中标记 Apr
+5, 2026。
+UNKNOWNUNKNOWN
+明显形成 calculator +
+measurement + data/
+reference 层
+2026-04-06[已核实] About 当前版本 Apr 6,
+2026。 UNKNOWNUNKNOWN 公开方法论、团队定位
+和 trust 页面完善
+2026-05 至
+07
+[已核实] 多个男女 body-type 页
+面在这一时期显示更新；例如
+Apple 页面及部分 inverted-
+triangle / male pages。
+UNKNOWNUNKNOWN
+[推断] entity/detail 页面
+和 downstream 内容继
+续扩大
+2026-09
+[已核实] 当前搜索结果可发现核
+心工具、measurements、
+comparison、type pages 等；
+用户 Semrush UI 观察约 2.7K
+ranking keywords / 21K
+estimated traffic。
+fileciteturn0file0
+用户第三方
+估算
+用户第三方
+估算 304
+RD / 588
+links
+已形成主题型微站
+关键时间线判断：
+[推断] 当前证据不能证明“先只有 calculator，后来才开始 supporting content”。事实上，full-body-
+measurement-guide 与 compare-female-body-types 有较早的 2025 公开时间信号，而目前最明显的
+calculator/reference 扩张集中在 2026 年 4 月。
+因此，“Tool First → Content Second”更适合作为当前网站结构的产品逻辑，而不是已经被历史证据证明的发布顺
+序。
+URL Inventory
+[推断] 按当前导航去重，至少可以还原出约 35 个导航级目的页面；它不是完整 sitemap 数，因此不能把 35 当成网
+站全部 indexable URLs。当前 IA 明显不是“几百个 pSEO 页面”，而是几十个高相关页面围绕一个主题集中展开。
+8
+9
+10
+11
+12
+13
+4
+
+--- PAGE 5 ---
+Page Type 约
+数 已验证/导航可见 URL 示例 Primary Job
+Core /
+Supporting Tools4
+/、/female-body-type-
+calculator/、/body-type-calculator-for-
+men/、/waist-to-hip-ratio-calculator/
+完成计算任
+务
+Female Body
+Type /
+Comparison
+约
+13
+/female-body-types/、/compare-female-body-
+types/、/hourglass-vs-pear-body-type/、/
+hourglass-body-shape/、/hourglass-body-
+type/、/pear-body-shape/、/pear-body-
+type/、/apple-body-shape/、/rectangle-body-
+shape/、/rectangle-body-type/、/inverted-
+triangle-body-shape/、/inverted-triangle-body-
+type/，另有 Soft vs Classic Hourglass 导航项
+解释结果、
+处理边界与
+比较
+Outfit Guides 5
+/hourglass-body-type-outfits/、/pear-body-
+type-outfits/、/apple-body-type-outfits/、/
+rectangle-body-type-outfits/、/inverted-
+triangle-body-type-outfits/
+Result →
+“what
+should I
+wear?”
+Measurement /
+Reference 5
+/how-to-measure-body-type/、/full-body-
+measurement-guide/、/how-to-measure-body-for-
+body-type-calculator/、/how-to-measure-bust-
+waist-hips/、/body-measurements-chart/
+解决输入准
+确性和数据
+参考
+Male Detail 4 trapezoid、rectangle、inverted triangle、oval 男性详情页
+对男性结果
+做 entity
+expansion
+About / Legal 4 /about/、Contact、Privacy、Terms
+Trust /
+policy /
+contact
+这些分类和当前导航关系可直接从站点及 About 页面列出的“core tools”得到验证。
+值得注意的是：
+[已核实] 主 calculator 实际支持男性 trapezoid、rectangle、oval、triangle、inverted triangle 五类，但当前
+导航只明确暴露四个男性详情页。
+[推断] 这意味着它并没有机械地“每个可能实体都建一个页面”。这点对 PianoGrid 非常重要：当前案例不能支持“可
+生成就全部生成”的结论。
+Site Architecture
+13
+8
+5
+
+--- PAGE 6 ---
+Homepage / Main Calculator
+│
+├── Female Calculator
+│   ├── Female Body Types Hub
+│   ├── Compare All Female Types
+│   ├── Hourglass
+│   │   ├── Body Shape
+│   │   ├── Body Type
+│   │   ├── vs Pear
+│   │   └── Outfits
+│   ├── Pear
+│   │   ├── Shape / Type
+│   │   └── Outfits
+│   ├── Apple
+│   │   ├── Shape
+│   │   └── Outfits
+│   ├── Rectangle
+│   │   ├── Shape / Type
+│   │   └── Outfits
+│   └── Inverted Triangle
+│       ├── Shape / Type
+│       └── Outfits
+│
+├── Measurement Layer
+│   ├── Calculator-specific measurement
+│   ├── Bust / Waist / Hip
+│   ├── Full 19-point guide
+│   └── Body Measurements Chart
+│
+├── Male Calculator
+│   ├── Trapezoid
+│   ├── Rectangle
+│   ├── Oval
+│   └── Inverted Triangle
+│
+└── Adjacent Tool
+    └── Waist-to-Hip Ratio
+[已核实] 这不是我根据关键词臆造出的 taxonomy；首页、About 页以及具体 measurement/type 页都明确互相链
+接，且将这些页面描述为不同任务。
+[推断] 对 Google 和用户而言，主题边界都非常清楚：它几乎没有突然跳去无关 calculator，而是把“body
+proportion / measurement / fit / body-shape interpretation”作为一个狭窄 topical universe。这里的优势不只是
+topical authority 这个抽象概念，更实际的是：绝大多数 URL 都可以从同一个用户 journey 中解释为什么存在。
+Information Architecture / Crawl Depth
+14
+6
+
+--- PAGE 7 ---
+[已核实] 主要工具和关键 measurement/reference 页面都从首页或 About 的工具列表直接可达，Female/Male/
+Measurements 也是顶层导航分类；body-type detail 又互相指向 comparison、measurement、outfit 和
+calculator。
+[推断] 因此核心页面大多属于一至两跳结构，而不是博客 archive 中五六层深的文章。公开样本中没有发现明显的
+孤儿页证据，但因为 sitemap 不可用，“零 orphan pages”是 UNKNOWN。
+搜索需求、产品与用户旅程
+Keyword → URL Map
+这个网站最重要的设计不是“抓了哪些词”，而是把不同的任务状态分给不同 URL。
+Cluster Parent
+Intent Example Query对应页面 Page Type 状态
+Core
+diagnosis
+“我是什么
+体型？”
+body type
+calculator / body
+shape calculator
+/ Product [已核实] 
+Female-
+specific
+“女性五类
+里我是哪
+种？”
+female body
+type calculator
+/female-body-
+type-
+calculator/
+Product +
+Hub
+[已核实] 
+Male-specific
+“男性
+frame 是哪
+种？”
+body type
+calculator for
+men
+male calculator Product [已核实] 
+Input
+correctness
+“到底怎么
+量？”
+how to measure
+bust waist hips
+/how-to-
+measure-bust-
+waist-hips/
+How-to [已核实] 
+Calculator-
+specific input
+“这个
+calculator
+具体要量哪
+里？”
+how to measure
+for body type
+calculator
+/how-to-
+measure-body-
+for-body-type-
+calculator/
+Support [已核实] 
+Full reference
+“其他身体
+尺寸怎么
+量？”
+full body
+measurement
+guide
+/full-body-
+measurement-
+guide/
+Reference/
+tool
+[已核实] 
+Population
+reference
+“我的尺寸
+和平均值比
+如何？”
+body
+measurements
+chart
+/body-
+measurements-
+chart/
+Data/
+reference
+[已核实] 
+Entity
+interpretation
+“Pear 到底
+是什么意
+思？”
+pear body
+shape / apple
+body shape
+per-type pages Definition +
+utility
+[已核实] 
+15
+8
+16
+8
+17
+18
+19
+20
+11
+7
+
+--- PAGE 8 ---
+Cluster Parent
+Intent Example Query对应页面 Page Type 状态
+Boundary
+case
+“我是
+hourglass
+还是
+pear？”
+hourglass vs
+pear
+/hourglass-vs-
+pear-body-
+type/
+Comparison [已核实] 
+Adjacent ratio
+“waist 与
+hip 比例是
+多少？”
+waist to hip ratio
+calculator WHR calculator Product [已核实] 
+Post-result
+action
+“梨形应该
+穿什么？”
+pear body type
+outfits outfit page Downstream
+guide
+[已核实] 当
+前导航有五
+类 outfit
+guides。
+哪些可能是起点需求？
+[推断] 最自然的起点不是 “pear outfits” 或 “body measurements chart”，而是：
+body type calculator / body shape calculator
+→ “What body shape am I?”
+理由不是事后看流量，而是它拥有最明确的 input → transformation → output：
+Input = bust/chest/shoulders + waist + hips + optional high hip
+Transformation = ratio / difference / threshold logic
+Output = named body shape
+Next question = “what does that mean?”
+这正是一个适合独立 Web Tool 的 product primitive。首页现在仍以该任务作为站点入口。
+哪些明显属于后续扩展？
+[推断] how to measure... 是解决输入质量；hourglass vs pear 是解决分类边界；单一 body-shape 页
+是结果解释；outfit pages 是结果后的 action；measurement chart 是进一步扩大 reference utility。这个顺序由
+各页面之间实际 CTA 和说明关系支持。
+Search Intent Map
+body type calculator 不能只标成 Informational。真实任务至少有五层：
+21
+22
+3
+• 
+• 
+• 
+• 
+8
+23
+8
+
+--- PAGE 9 ---
+Keyword / State User QuestionRequired Input Expected
+Output
+Next
+Question
+body type
+calculator
+我是哪一种
+shape？
+bust/chest、waist、hips；
+部分情况 high hip/
+shoulders
+体型标签 + 比
+例
+为什么？准不
+准？
+how to measure...我该在哪里量？无，或当前 tape
+measurement
+可重复的测量方
+法
+把数字填到哪
+里？
+female body type
+calculator
+我在五种女性体
+型里属于哪种？bust/waist/hips shape + ratios我是否接近另
+外一种？
+hourglass vs pear
+两种看起来都
+像，我是哪一
+种？
+bust/waist/hip differences明确 separator穿什么？
+body
+measurements
+chart
+我的数字正常/
+常见吗？
+age/gender/own
+measurements
+reference
+comparison
+这些比例意味
+着什么？
+body-type outfit
+query
+知道结果后怎么
+用？ body type clothing
+principles
+具体 jeans/
+dress/top？
+这一链条直接反映在目标网站的工具、measurement guides、comparison 和 outfit 页面中。
+[已核实] 用户输入质量不是次要问题：站点的测量指南明确指出一两英寸的测量误差可能让边界分类变化，并且详
+细处理 bust、natural waist、hips、high hip、男性 chest/shoulder 等位置。
+[推断] 这解释了为什么一个看似“一页 calculator 足够”的关键词，实际上天然长出 supporting content：
+calculator 的准确性依赖用户首先学会产生正确 input。
+Calculator Product Analysis
+当前主 calculator 的公开产品链如下：
+Female / Male
+      ↓
+in / cm
+      ↓
+Bust or Chest/Shoulders
+Waist
+High Hip (optional)
+Hips
+      ↓
+Live proportion preview
+      ↓
+Classification
+24
+25
+9
+
+--- PAGE 10 ---
+      ↓
+Ratio cards + radar/proportion graphic
+      ↓
+Plain-English explanation
+      ↓
+Copy result / download image
+      ↓
+Measurement / type / comparison / outfit content
+[已核实] 首页明确支持男女模式、inch/cm 即时转换、optional high hip、实时 SVG 比例预览；结果区设计了
+dynamic proportion graphic、radar chart、ratio cards、styling guidance、Copy result link 和 Download
+result image。
+[已核实] Female 专页则故意把产品简化为 bust、waist、hips 三个核心输入，并显示 Bust-Hip Difference、
+WHR、Waist-Bust Ratio，然后自动突出匹配体型。
+[推断] 这里有一个值得复制的产品原则：
+主工具允许 richer experience；针对单一搜索意图的 landing page 可以做 reduced
+interface。
+这比“所有关键词都复用同一个巨大 widget”更贴合具体任务。
+Calculator Algorithm / Value
+[已核实] 站点自己声称核心计算在浏览器端 JavaScript 完成，决策规则可检查，并强调这些 body-shape labels 是
+fit/style shorthand，而不是完整科学模型。
+公开内容暴露了部分决策阈值。例如 Pear comparison 页面将 hips − bust ≥ 3.6 in 作为核心 pear
+separator；Apple 页面使用 WHR 与 bust/waist、hip/waist difference 共同处理 apple/rectangle 边界。
+[已核实] 3.6 inch、9 inch 等类型阈值并非凭空出现：2004 年 Simmons、Istook、Devarajan 的 Female
+Figure Identification Technique for Apparel (FFIT) 是服装人体形态分类体系，后续研究仍引用它；2020 年研
+究甚至专门对 FFIT 公式进行修改以提高 plus-size body 的适用性。
+这带来一个重要限定：
+[已核实] FFIT 是 apparel/body-shape 分类方法，不是医学诊断系统，而且原公式并不对所有身体都完美。 2020
+年的 plus-size 修改研究明确指出一些扫描会被错误分类或无法分类。
+[推断] 所以目标网站真正的第一版技术门槛并不高。一个开发者需要：
+找到合理的公开 apparel classification；
+把输入、单位转换、阈值和边界条件编码；
+把结果变成人能理解的解释；
+8
+16
+10
+26
+27
+28
+1. 
+2. 
+3. 
+10
+
+--- PAGE 11 ---
+处理“介于两类之间”的不确定性。
+难点更偏向 需求建模、分类方法选择、measurement UX 和 edge cases，而不是算法工程本身。
+真正产品价值 vs Presentation vs SEO
+层 价值 判断
+Product Value 用户无需手工计算 bust/hip/waist
+relationships
+[已核实] calculator 实际完成此任务。
+Input Utility 告诉用户到底怎么量 [已核实] 多个 measurement tools/
+guides。
+Interpretation 数字 → named shape → why [已核实] ratio cards、type
+explanations。
+Presentation SVG、radar、downloadable result[已核实] 
+SEO Surface 单一体型、比较、measurement、
+outfit 页面 [已核实] 当前 IA。
+Health-adjacent
+value WHR screening [已核实] 独立 WHR 工具。
+User Journey / Result-after-demand
+[推断] 目标网站选择覆盖的 journey 大致是：
+What body type am I?
+        ↓
+Do I have the right measurements?
+        ↓
+Calculate
+        ↓
+Hourglass / Pear / Apple / Rectangle / Inverted Triangle
+        ↓
+What does this classification mean?
+        ↓
+Am I actually between two types?
+        ↓
+How does my measurement compare?
+        ↓
+What should I wear?
+这一链条由 measurement、comparison、body-type 与 outfit URL 共同支持。
+4. 
+8
+29
+8
+8
+3
+22
+30
+11
+
+--- PAGE 12 ---
+[已核实] 它没有明显继续深入减肥方案、补剂、疾病诊断、整形、美容治疗等更高风险方向；About 和首页反而明
+确把用途限定在 educational/style/fit guidance，强调不是医学诊断。
+[推断] 这就是一个很好的“网站边界”案例：它沿着 fit/proportion 扩张，而没有因为关键词相关就无限向 health/
+weight-loss 扩张。
+内容系统、内链与 SERP 竞争
+Supporting Content Strategy
+这个站的 supporting content 可以按“解决产品摩擦”来理解，而不是按“博客类型”理解：
+用户摩擦 Supporting Asset 为什么存在
+不知道怎么量 Bust/Waist/Hips Guide改善 calculator input
+想测更多部位 19-point Full Guide 扩展为独立 reference task
+不知道是否算对 Single-type pages 解释 formula / examples
+两种结果接近 Hourglass vs Pear 等 处理 ambiguity
+想知道常见值 Body Measurements Chart数据/reference intent
+得到结果不知道干什么Outfit Guides Result → action
+男性意图不同 Men calculator/detail 分离不同 taxonomy
+想看健康比例 WHR Tool 相邻但独立计算任务
+以上用途可直接从各页面产品描述和 CTA 得到验证。
+[推断] 这是一种比“Keyword Difficulty 低就写文章”更稳的扩展方式：
+每一个 supporting URL 都应回答：它消除了主产品 journey 中哪一种 uncertainty/friction？
+如果答不出来，页面就更可能只是 SEO inventory，而不是 product system。
+Internal Linking Strategy
+[已核实] 当前内部链接至少有四个方向：
+Calculator → 测量指南、Female/Male calculator、WHR、comparison/reference；
+Measurement → 把测量值送回 calculator；
+Body-type/detail → 邻近体型、comparison、outfit、calculator；
+Reference → calculator / WHR。
+1
+31
+• 
+• 
+• 
+• 24
+12
+
+--- PAGE 13 ---
+例如 Bust/Waist/Hips guide 在填写测量记录后直接提供 Find My Body Type，并说明值保存在本地后传给首页
+calculator；这不是 SEO footer link，而是用户 workflow 中的下一步。
+[推断] 这类链接的价值比“Related Articles”模板更高，因为它同时完成：
+当前任务完成 → 下一任务发现 → topical relationship
+对 PianoGrid，真正值得抄的是这个逻辑，而不是 anchor 数量。
+Page Template Analysis
+抽样页面具有非常稳定的模板：
+Search-specific H1
+↓
+Quick answer / task framing
+↓
+Tool / chart / calculator / comparison
+↓
+How it works / measurement logic
+↓
+Detailed interpretation
+↓
+Examples / table
+↓
+FAQ
+↓
+Related task CTA
+↓
+Disclaimer / footer
+Female Calculator、Full Measurement Guide、Body Measurements Chart、Apple page、Hourglass vs Pear
+都体现了这一模式。
+[已核实] 页面确实具有明显模板化特征，而且甚至有 /hourglass-body-shape/ 与 /hourglass-body-
+type/、pear shape/type、rectangle shape/type、inverted-triangle shape/type 这样的近义 URL pair。
+[推断] 这类 pair 是当前站内最需要警惕的 pSEO/cannibalization 区域。因为 “body shape” 和 “body type” 在日常
+搜索中高度重叠，若两个页面没有非常清晰的任务差异，就可能制造重复 intent。
+但这不等于整个网站是 thin pSEO。
+Content / pSEO Analysis
+17
+32
+3
+13
+
+--- PAGE 14 ---
+按 Google 当前规则，问题不是“模板化”本身。Google 把 scaled content abuse 定义为大规模生产主要为操纵排
+名、且缺少原创价值的页面；Google 还明确指出，仅仅创建更多页面并不会使网站更高质量或更 relevant。
+据此分类：
+内容类型 判断 原因
+Main calculator Legitimate scalable
+utility 独立任务完成
+Female/Male calculator Legitimate 输入与 taxonomy 差异真实
+WHR calculator Legitimate 独立公式和 intent
+Measurement chart Strong utility/referenceinteractive compare + CSV + source
+context。
+Full measurement guide Strong supporting utility19 个测量点、local tracker、CSV/
+print。
+Hourglass vs Pear Legitimate comparison搜索问题本身不同，阈值和 side-by-side
+答案独立。
+Outfit by shape Generally legitimate 结果后的独立 clothing task
+X-body-shape / X-body-
+type pair
+Borderline / requires
+monitoring
+[推断] 高度重合 intent，最容易滑向 SEO
+分页
+未抽样页面 UNKNOWN 不因模板一致就判 thin
+[推断] 它目前给我们的正确教训不是“批量建页仍然能排”，而是：
+模板可以复用；用户问题不能伪造。
+Top Traffic Pages
+由于没有可用 Semrush URL report，本节不伪造 traffic share。
+精确结论：
+Top 1 URL traffic share：UNKNOWN
+Top 3：UNKNOWN
+Top 10：UNKNOWN
+Long-tail contribution：UNKNOWN
+每个 URL 的 ranking keyword count / volume / position / estimated traffic：UNKNOWN
+但可以建立定性候选层级：
+33
+20
+19
+21
+• 
+• 
+• 
+• 
+• 
+14
+
+--- PAGE 15 ---
+优先级 URL/Cluster 证据 不能得出的结论
+Tier A Homepage / main
+calculator
+核心 query 当前搜索可直接发现，且是全
+站产品入口。
+不能说占 50%、70%
+等
+Tier B Female Calculator 搜索独立收录，直接满足 female-specific
+intent。 流量数 UNKNOWN
+Tier B Measurement guides多个页面当前被索引，任务高度独立。不能断言贡献大于
+calculator
+Tier B Body Measurements
+Chart
+独立 reference + interactive/CSV utility。traffic UNKNOWN
+Tier
+B/C
+Compare / single-shape
+pages 独立搜索型问题，当前可发现。 具体排名 UNKNOWN
+Tier C Outfit pages 强 downstream intent，但没有 URL-level
+traffic 数据 traffic UNKNOWN
+[推断] 我的先验假设会是 A 与 B 的混合模型：主 calculator 很可能是最大的单页入口，但 supporting pages 很可
+能贡献了不可忽略的长尾覆盖。真正验证它只需要前述一个 Semrush Organic Pages export，而不是更多猜测。
+SERP Competitive Analysis
+当前 2026 年 9 月的 core calculator SERP 已经明显出现“专门工具站竞争”：DiscoverFashions 提供女性
+calculator + personalized style；Calqulate 提供 3D visualizer；BodyShapeCalculator .org 做相似 exact-intent
+calculator；NumberBench/SirCalculator/CalcBee 也都有独立计算产品。
+因此：
+[已核实] 现在的 SERP 已不能称为“缺 calculator”。
+但：
+[UNKNOWN] bodytypecalculator.org 出现之前的 SERP 是否长期缺专门工具。
+没有历史 SERP archive 就不应该事后编造。
+本研究覆盖的约 22 个关键词/intent 可以这样分：
+Cluster Keywords/variants 当前 SERP/竞争形态
+Core body type calculator; body shape calculator专门 calculator 较多，竞争已成熟。
+Gender female body type calculator; male body type
+calculator tool + guide
+34
+35
+29
+20
+26
+2
+36
+15
+
+--- PAGE 16 ---
+Cluster Keywords/variants 当前 SERP/竞争形态
+Entity
+hourglass body shape; pear body shape;
+apple body shape; rectangle body shape;
+inverted triangle body shape
+guide / fashion / specialized niche
+sites
+Comparison hourglass vs pear; soft vs classic hourglassspecialized comparison guides；当前
+已有直接竞争者。
+Measurement
+how to measure body type; how to measure
+for body type calculator; how to measure
+bust waist hips
+retailer / tailoring / niche guide；本质
+是 practical how-to。
+Reference body measurements chart; average body
+measurements
+government/reference + specialized
+charts；CDC 本身公开 waist/height/
+weight reference。
+Adjacent toolwaist to hip ratio calculator calculator + health/reference
+Downstreamhourglass outfits; pear outfits; apple outfits;
+rectangle outfits; inverted triangle outfitsfashion/editorial
+[推断] 这个 niche 有一个很有意思的结构：大站和政府资源掌握 measurement/health facts，但未必完成“告诉
+我属于哪种 shape，并继续告诉我怎么办”的整个任务。 专门工具站的机会来自组合这些碎片，而不是拥有独家科
+学数据。
+权威、站群、技术、EMD、分发与变现
+Backlink Analysis
+首先必须明确：
+304 referring domains 的组成，当前仍然是 UNKNOWN。
+用户提供的是 Semrush UI 总量估算，没有 URL-level backlink export。fileciteturn0file0 因此不能负责任
+地写成“多少 editorial、多少 spam、多少 forum”。
+公开搜索能验证到至少一个真实 editorial citation：2026 年 7 月一个波兰女性时尚站在介绍 pear body shape 时
+直接引用 BodyTypeCalculator .org 的比例信息。
+这证明：
+[已核实] 至少存在非本站的 contextual/editorial citation。
+但一个案例不能代表 304 个域名。
+37
+38
+39
+40
+16
+
+--- PAGE 17 ---
+[推断] Body Measurements Chart、calculator 本身、shareable result、measurement reference 都具有自
+然的“可被引用性”；尤其 chart 提供 CSV 下载、reference context、interactive comparison，这类资源理论上比
+普通“what is pear shape”文章更容易获得 resource/editorial links。 这是 linkability 分析，不是已证明的
+backlink 来源比例。
+Aigotowork / Site Portfolio Investigation
+这里的证据比 backlink 部分明显强得多。
+[已核实] BodyTypeCalculator About 页公开主要联系邮箱：
+contact@aigotowork.work。
+同一个邮箱可在这些站点直接验证：
+Domain 共享信号 证据判断
+LineCounter .org contact@aigotowork.work；backup 
+midoriko053@gmail.com
+Confirmed
+operational-contact
+relation
+SquareFootageCalculator .cc同一 primary email；静态、本地工具风格
+Confirmed
+operational-contact
+relation
+DrywallCalculators.org 同一 primary email；相似“小团队/浏览器端
+工具”表述
+Confirmed
+operational-contact
+relation
+FullScreenCountdownTimer .comfooter 使用 contact@aigotowork.work
+Confirmed
+operational-contact
+relation
+BodyTypeCalculator .org primary email 相同 基准站 
+[已核实] LineCounter 还明确说明核心工具完全在浏览器本地运行，并通过 advertising revenue 保持免费。
+[推断] 因此可以比较有把握地说：bodytypecalculator.org 并非看起来像某个第一次做 SEO 工具站的孤立实验。
+多站点共享联系身份、browser-first 工具模式和相似运营表达，说明至少存在一个具有多工具站经验的共同运营体
+系或团队。
+但必须守住边界：
+[已核实] 共享联系/运营身份；
+[推断] 共享开发/SEO 方法论很可能存在；
+[UNKNOWN] 所有网站是否属于同一个最终受益所有人；
+[UNKNOWN] 是否互相传递 backlinks；
+20
+41
+42
+43
+44
+45
+41
+42
+• 
+• 
+• 
+• 
+17
+
+--- PAGE 18 ---
+[UNKNOWN] bodytypecalculator .org 的 AS22 是否由 portfolio links 建立；
+[UNKNOWN] portfolio 是否给它提供了 launch distribution。
+这正是最容易被错误写成“站群给它灌权重”的地方。目前没有足够证据。
+[已核实] 此外，公开邮件列表中曾出现使用 midoriko053 身份批量列出多个 calculator/generator 域名的帖
+子；这一身份与 LineCounter 公开 backup email 相吻合。
+[推断] 这是“该运营体系熟悉工具站批量建设与外部推广”的额外信号，但仍然不能直接证明这些活动给
+bodytypecalculator.org 建了任何具体 backlink。
+AS 22 可能如何形成？
+合理的、但不能被写成因果事实的模型是：
+[推断] 一部分可引用工具/reference pages
++ 一部分自然/editorial mentions
++ 可能的主动 distribution/portfolio 经验
++ 数百个 RD 的累积
+→ 第三方 Authority Score 上升
+目前无法给这几个来源分配百分比。
+Technical SEO
+[已核实] About 页明确表示站点采用 static, fast-loading pages，核心 calculators 在 client-side JavaScript 中运
+行，measurement values 留在 browser；同时搜索引擎已经能够抽取大量静态正文、FAQ、tables 和工具说明。
+[推断] 这是一个非常适合 tool SEO 的架构：
+Static HTML = crawlable answer / definitions / internal links
+Client JS   = interactivity / calculator / local state / charts
+因此 JS 不会成为搜索引擎理解页面基本主题的单点依赖。
+[已核实] Google 本身的 Search Essentials 也建议使用用户真正搜索的词放在 title/H1 等显著位置、确保 links
+crawlable，并强调 useful people-first content。
+目标站抽样页面在这方面非常直接：
+Body Type Calculator
+Female Body Type Calculator
+How to Measure Bust, Waist, and Hips
+• 
+• 
+46
+47
+48
+• 
+• 
+• 
+18
+
+--- PAGE 19 ---
+Body Measurements Chart
+Hourglass vs Pear Body Type
+都是“URL/H1 ≈ 独立任务”的设计。
+以下技术项当前必须保持 UNKNOWN/PARTIAL：
+项目 状态
+robots.txt UNKNOWN：研究环境直接访问失败，不代表文件不存在
+sitemap.xml / sitemap history UNKNOWN
+canonical implementation UNKNOWN
+sitewide meta robots UNKNOWN
+JSON-LD/schema 全量 PARTIAL / 未完整验证源代码
+image lazy-loading 全站比例 UNKNOWN
+CWV / CrUX field data UNKNOWN
+SSR vs hand-built static generator/framework只确认“static pages”，具体 stack UNKNOWN
+URL normalization rules UNKNOWN
+因此不应写“技术 SEO 很完美”。能确认的真正优势更朴素：关键答案可以静态抓取，而工具交互仍然很丰富。
+EMD Analysis
+bodytypecalculator.org 与核心查询 body type calculator 几乎完全一致。
+但是 Google 对此有非常明确的官方说明：domain 中的词确实是众多 relevance factors 之一，但 Google 同时运
+行 Exact Match Domain system，目的正是防止为匹配查询而设计的域名获得过度 ranking credit。
+因此应分三层：
+可以证明
+[已核实] 域名本身直接表达产品用途；搜索者一眼即可知道这是 body type calculator。
+合理推断
+[推断] EMD 可能带来更清晰的 brand/query alignment，也可能让自然提及时的品牌文字本身包含关键词；这可能
+有利于理解和点击，但本研究没有 CTR 或 anchor-distribution 数据。
+不能证明
+• 
+• 
+49
+6
+19
+
+--- PAGE 20 ---
+“它因为 EMD 所以排起来了。”
+这一因果目前没有证据，而且 Google 官方设计恰恰试图限制这种过度优势。
+Brand / UX / Trust / YMYL
+[已核实] 网站有 About、Contact、Privacy、Terms；About 公开方法论、浏览器端处理、联系邮箱，并明确表示
+不是 fashion retailer、supplement brand 或 medical practice。
+[已核实] 首页和多篇正文持续使用“fit/style guidance，不是 health diagnosis”的限定。
+这很重要，因为 Body Shape 和 WHR 不是同一个风险等级：
+body-shape classification 主要属于 apparel/style；
+WHR 确实进入公共卫生风险筛查语境。
+WHO 的 expert consultation 明确把 waist circumference 和 WHR 用于研究 cardiovascular disease、
+diabetes、mortality risk，并讨论 sex/age/ethnicity 与 cut-offs。
+[推断] 所以正确的产品边界应该是：shape label 不医疗化；WHR 单独引用正式健康来源并附 disclaimer。 目标
+站整体上正在这样做。
+一个需要继续警惕的点是：FFIT/body-shape formulas 本身有边界和 population limitations；不能把 style
+classification 包装成“科学证明你的身体属于 X”。后续研究对 plus-size body 的 FFIT 修正正说明了这一点。
+Distribution / Sharing
+[已核实] 主 calculator 有：
+Copy result link
+Download result image
+这意味着结果在产品层面具备传播 primitive。
+但：
+public share counts：UNKNOWN
+social referral share：UNKNOWN
+Pinterest traffic：UNKNOWN
+Reddit traffic：UNKNOWN
+viral coefficient：UNKNOWN
+[推断] “可分享”不等于“已经 viral”。现有公开证据更支持 SEO-first acquisition，而不是 viral-first；用户提供的数
+据本身也是 Organic Search 指标，而没有 social/referral evidence。fileciteturn0file0
+Monetization
+6
+10
+50
+• 
+• 
+51
+52
+28
+• 
+• 
+8
+• 
+• 
+• 
+• 
+• 
+20
+
+--- PAGE 21 ---
+[已核实] 当前抽样的目标站页面明确强调 no signup、no checkout wall，About 也说不把用户引导进 product
+funnel；本轮没有发现明显付费 calculator、premium result、e-commerce 或显性 affiliate CTA。
+因此最准确的写法是：
+[已核实] 抽样公开页面暂未发现明显显性商业化。
+[UNKNOWN] 是否存在未被本研究页面输出捕获的广告脚本、广告实验、私下 sponsorship 或其
+他收入。
+值得注意的是，同一 operational-contact 体系的 LineCounter 明确说靠 advertising revenue 支持免费工具。
+[推断] 这说明 display ads 是该运营体系熟悉的模式，但不能因此写成 BodyTypeCalculator 当前也在靠广告赚
+钱。
+对这个 niche，未来合理的商业化顺序可能是：
+Display advertising；
+Clothing/fashion affiliate；
+sizing / fit recommendation referral；
+更高级 printable/report；
+B2B embed/API。
+[推断] 其中 affiliate 的商业价值可能高，但也最容易把原本中立的 shape result 变成推荐漏斗；健康产品/
+supplement 则不建议作为自然延伸，因为会显著提高 YMYL 和 trust 风险。
+增长机制、复制难度与 PianoGrid
+Growth Mechanism
+基于现有证据，最保守、同时最解释得通的增长结构是：
+[已核实]
+明确搜索任务：
+“What body type am I?”
+        ↓
+[已核实]
+Exact-intent calculator
+        ↓
+[已核实]
+输入问题被发现：
+“How do I measure?”
+        ↓
+[已核实]
+Measurement guides / reference tools
+        ↓
+1
+42
+1. 
+2. 
+3. 
+4. 
+5. 
+21
+
+--- PAGE 22 ---
+[已核实]
+结果产生新问题：
+“What does pear/hourglass/apple mean?”
+        ↓
+[已核实]
+Body-type entity pages
+        ↓
+[已核实]
+边界问题：
+“Hourglass or pear?”
+        ↓
+[已核实]
+Comparison pages
+        ↓
+[已核实]
+结果后的行动：
+“What should I wear?”
+        ↓
+[已核实]
+Outfit guides
+        ↓
+[推断]
+更多独立 long-tail query coverage
+        ↓
+[PARTIAL]
+部分页面/数据资产被外部引用
+        ↓
+[UNKNOWN]
+具体 backlink → authority → broader rankings 的因果强度
+这里最关键的一点是：前七层都不需要先假设 backlinks。 它们首先来自用户任务自身。
+真正的 SEO Flywheel
+“Ranking → Traffic → Sharing → Links → Authority → More Ranking”目前只能证明一部分。
+飞轮环节 状态
+Search-indexable product/
+content [已核实]
+Organic visibility [已核实/第三方估计] 用户 Semrush UI 有明显 organic footprint。
+fileciteturn0file0
+Sharing primitives [已核实] Copy link / download result。8
+22
+
+--- PAGE 23 ---
+飞轮环节 状态
+外部 links 存在 [已核实] 用户估算 304 RD；公开可见至少有 editorial citation。
+fileciteturn0file0 
+Search traffic 导致这些 linksUNKNOWN
+Links 导致 ranking 扩大 UNKNOWN
+成熟 self-reinforcing
+flywheel 没有足够证据证明
+所以我不会把一个漂亮的 flywheel diagram 当事实。
+What Actually Mattered
+[已核实]
+calculator 真正可用，而不是 fake-tool landing page；Google 的 spam policy 也明确把“声称有功能但实
+际上没有”列为 misleading functionality。
+measurement support 是产品的一部分。
+supporting pages 与主任务高度同主题。
+多种页面有独立 utility：calculator、CSV/chart、comparison、tracker、outfit。
+static crawlable content + browser JS。
+一个共享 operational-contact 的工具站 portfolio 确实存在。
+[推断]
+对用户 journey 的理解，很可能比 calculator 编程难度本身更重要。
+portfolio 经验很可能降低了上线速度、模板开发、SEO publishing 和 distribution 的学习成本。
+reference/data pages 很可能比纯 definition pages 更具 linkability。
+紧密 IA 可能帮助搜索引擎理解 topical relationships。
+2026 集中扩张可能让站点快速增加 keyword surface，但缺乏历史流量数据，无法证明其增量。
+[猜测]
+某个 portfolio 站给了它关键早期 link。
+EMD 显著提高了 ranking。
+304 RD 中大部分是“主动建出来”的。
+某次 Google update 是增长拐点。
+这些都不能依据当前证据确认。
+What Probably Did NOT Matter Much
+[推断] 至少不应该被视为核心解释的有：
+复杂算法。 主要是公开/可解释比例与 threshold logic。
+40
+• 
+53
+• 29
+• 
+• 
+• 
+• 5
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+23
+
+--- PAGE 24 ---
+海量 page count。 当前核心 IA 只是几十页，不是十万级 pSEO。
+漂亮品牌设计本身。 UX 有帮助，但用户任务比视觉品牌更核心。
+只靠 EMD。 Google 官方有 EMD 限制系统。
+只靠 FAQ 长文。 真正可区分的页面往往带 tool、chart、tracker、comparison。
+“AI 写很多内容”本身。 Google 明确说大数量本身不会提高网站质量。
+复制难度
+分类 能学什么
+可以直接学习 task-based IA、calculator ↔ measurement ↔ result ↔ comparison 内链、静态正文
++ JS utility、明确网站边界
+可以学但需要能力classification logic、interaction design、数据/reference assets、edge-case UX、
+SEO publishing
+很难直接复制 已有工具站开发经验、可能的 portfolio distribution、已积累的外链网络/关系
+Timing-
+dependent 当时 SERP 是否缺产品、竞争者数量、Google 对该 intent 的结果偏好
+[推断] 因此它不是“难在技术”，而是“第一版不难，知道该把第一版扩成什么比较难”。
+失败反事实
+另一个开发者同时做 body type calculator 仍可能失败，原因包括：
+只做一个三输入表单，结果只有“Pear”，没有解释；
+不解决测量错误，导致 classification 经常让用户不信；
+用户介于两个类别时强行输出唯一确定答案；
+从工具直接跳到十几篇 SEO article，缺乏任务链；
+没有足够 crawlable static content；
+算法来源完全不透明；
+把 fashion classification 写成医学结论；
+做了几十个近义 X body type/X body shape 页却没有 unique utility；
+没有任何 distribution/linkable asset；
+在一个已经被更好 calculators 占满的 SERP 中晚进入，却没有产品 wedge。
+这些原因分别由当前站点选择做的相反设计以及当前竞争格局支持。
+What PianoGrid Should Learn
+[已核实] PianoGrid 目前已经有非常明显的 product/reference primitive：Chord hub 展示 major/minor/seventh
+等 family，并指向大量独立 chord pages；Chord Finder 可以从用户选定 notes 匹配 433 个受支持对象；Scales
+pages 保留静态答案，同时用 JS 提供 audio/answer checking。
+这与 BodyTypeCalculator 的结构性相似点其实很强：
+2. 
+3. 
+4. 6
+5. 
+6. 54
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+55
+56
+24
+
+--- PAGE 25 ---
+BodyTypeCalculatorPianoGrid
+输入 measurements输入/选择 notes、key、scale
+算出 body type 找 chord / 展示 scale
+解释 result 展示 note spelling / fingering / keyboard
+measurement guidehow-to / beginner practice
+body type detail individual chord / scale detail
+comparison page chord/scale conceptual comparison
+result → outfit result → practice / related chord / scale / song
+[推断] PianoGrid 最值得学的不是“再做更多 chord URLs”，而是：
+对每一个 detail URL 问：用户来到这里，是要完成什么不同于其他页面的动作？完成后下一步是什
+么？
+当前 PianoGrid scale pages已经有这方面的好迹象：静态 reference、keyboard、play、fingering、practice
+check、source scope 都围绕具体任务，而不是单纯替换 key name。
+Supporting pages 什么时候建？
+[推断] 不是“calculator 做完之后就开始写博客”，而是当你观察到：
+用户无法正确提供 input
+或无法理解 output
+或 output 自然产生下一问题
+再建 supporting page。
+对 PianoGrid，类似：
+C Major chord
+→ 为什么是 C-E-G？
+→ inversion 怎么弹？
+→ fingering？
+→ 哪些 scale 包含它？
+→ 哪些 progression 常用？
+→ 哪些 beginner songs 用它？
+这里每一步只在存在真实独立任务时才值得拆 URL。
+Page Count
+57
+25
+
+--- PAGE 26 ---
+[已核实] Google 现在明确提醒：大量针对搜索变体建页不会因为数量多而让网站更高质量，若主要为了操纵搜索且
+缺乏独特价值还可能触及 scaled content abuse。
+所以本案例恰恰不能证明“页面越多越好”。
+它更接近证明：
+用户任务越清楚，页面体系越容易合理扩展。
+PianoGrid 当前大量 chord URL 应学什么？
+[推断] 三个问题比“还能生成多少 URL”更重要：
+这个 chord URL 是否直接给出用户来找的 answer？
+它是否有 chord-specific information，而不仅仅替换 C → D？
+页面完成后，有没有自然 next action？
+如果三者都弱，就不应因为组合数存在而继续扩。
+Backlinks / Distribution
+对“PianoGrid 当前最缺的是不是 links”：
+UNKNOWN。
+本次没有取得 PianoGrid 的 backlink/traffic dataset，所以不能为了迎合案例直接说“你最缺 backlinks”。
+更严谨的结论是：
+[推断] BodyTypeCalculator 案例提醒 PianoGrid：内容覆盖完成以后，还需要刻意设计“值得被引用或分享的产品
+资产”，例如可靠 printable references、interactive finder、source-checked data/reference、embeddable
+diagrams，而不是只再生成 detail pages。
+Chord Finder 的 433-object registry 和 source-checked scales 已经比普通 SEO article 更有这种潜力。
+What PianoGrid Should NOT Copy
+不要注册一堆 EMD 来模仿 portfolio。
+不要为了 C chord / C piano chord / C major piano chord 分三个近义 URL。
+不要因为 BodyType 有 shape/type pairs 就认为 cannibalization 没问题。
+不要先定“1000 pages”再寻找理由。
+不要为了 backlink 数购买低质目录或批量论坛 links；Google 明确把 automated links、低质
+directories、优化 anchor 的 forum links 等列为 link spam。
+不要把“AS22”当目标 KPI。
+不要复制与用户 journey 无关的内容 category。
+58
+1. 
+2. 
+3. 
+59
+• 
+• 
+• 
+• 
+• 
+53
+• 
+• 
+26
+
+--- PAGE 27 ---
+不要从现在的成功倒推“2025 当时这个 niche 一定容易”。
+决策框架、机会发现 SOP 与行动清单
+If I Had Found This Keyword Before Them
+假设完全不知道 bodytypecalculator .org 后来会成功，只看到：
+body type calculator
+正确流程不是直接 BUILD，而是依次取消不确定性。
+Keyword
+[推断] Volume、KD、CPC 只能决定“值不值得花 15 分钟继续看”，不能决定建站。
+进入下一阶段的证据应是：
+搜索量不是纯事件型；
+query 本身包含明确动作；
+query 长期有需求；
+不只是一个容易被 Google 直接 answer 的事实问题。
+对 body type calculator，最重要的信号其实是 calculator modifier：它暗示用户希望输入自己的数据得
+到 personalized output。
+SERP
+真正要问：
+搜索者要的是 calculator，结果页给他的真的是 calculator 吗？
+当时若发现 Top 10 主要是：
+长文章；
+功能极差的旧 calculator；
+general fashion brands；
+forum/Reddit；
+多个结果只解释五类 body shape 而不能输入 measurement；
+那么这会是非常强的 intent gap 信号。
+反过来，如果前十已经是五六个极成熟、快速、可信、可视化的 calculators，新站必须有新的 wedge。
+[已核实] 2026 年今天这个条件已经更苛刻，因为当前 SERP 中专门工具显著增多。
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+60
+27
+
+--- PAGE 28 ---
+User Pain
+应先写出：
+Question: What body shape am I?
+Input: Bust / waist / hips
+Problem: I don't know how to measure them.
+Transformation: Compare ratios/differences.
+Output: Named shape.
+Uncertainty: I'm between two shapes.
+Next action: How do I dress for it?
+一旦能得到这张图，你就不再只有一个 keyword，而开始拥有 product system。
+Can I Build It?
+研究公开 classification method。
+[已核实] FFIT 等 apparel research 已经提供了可使用和研究的 body-shape classification 基础，后续研究也展示
+了它的局限与修改空间。
+因此一个个人开发者会得出：
+第一版工程可行；
+最大风险不是 coding，而是 methodology、edge cases 和 measurement UX。
+这时才值得做一个 spreadsheet/JS prototype。
+Product Expansion
+不要打开 keyword tool 先搜 500 个词。
+先问产品：
+Before input → 我怎么量？
+During input → 单位、错误、边界怎么处理？
+After output → 为什么是这个结果？
+Ambiguity → 为什么不是另外一种？
+Interpretation → 这个体型意味着什么？
+Action → 穿什么？
+Reference → 我的 measurement 常见吗？
+Adjacent calculation → WHR？
+61
+28
+
+--- PAGE 29 ---
+然后再用 keyword research 验证每一个问题有没有独立 search demand。
+这一步正是你当初最可能缺少的。
+Keyword Expansion
+[推断] 不是“是否能生成 100 个 URL”，而是：
+是否能列出 20–50 个互相不同的 user questions，而不是 20–50 个关键词写法？
+例如：
+pear body shape 与 what is a pear shaped body 很可能是一个页面；
+而：
+pear body shape 与 hourglass vs pear 是两个不同任务。
+这是避免 pSEO 的关键。
+Distribution
+在 build 前就问：
+“除了 Google 排名，有什么人会引用这个东西？”
+BodyType 里合理的答案包括：
+measurement reference；
+visual chart；
+downloadable result；
+bloggers 写体型/服装时引用；
+interactive tool list；
+downloadable/CSV reference。
+目标站现有 chart 和 sharing primitives 确实体现这些方向。
+Monetization
+当时不能因为 CPC 高低直接决定。
+要画出：
+• 
+• 
+• 
+• 
+• 
+• 
+62
+29
+
+--- PAGE 30 ---
+User discovers body shape
+→ apparel need
+→ sizing / outfits / clothing decision
+[推断] 这是一个商业相关性存在但未必立即高 RPM 的 niche，因此至少有 advertising/fashion affiliate 潜力；同时
+不需要第一天就 monetize 才能验证 SEO/Product。
+Risk
+必须写在 MVP 前：
+classification 是否有科学/行业基础；
+是否可能给 health diagnosis；
+body-image sensitivity；
+formula 是否对所有人群成立；
+SERP 是否已经被强工具垄断；
+monetization 是否依赖不可信 health claims；
+页面扩展是否会变成 synonym pSEO。
+WHO 与后续 FFIT 研究都提醒：health ratio 与 style classification 必须分开，身体分类也有 population
+limitations。
+Build / Validate / Abandon Framework
+不要总分。
+Dimension BUILD 信号 VALIDATE 信号 ABANDON 信号
+Search Demand 持续的明确任务 query 有 demand 但 trend/
+intent 不确定
+主要是短期热点或零任务意
+图
+Product Depth 输入→处理→有价值输出
+明显
+产品能做但
+differentiation 不明确
+文章即可完全回答，没有
+product primitive
+Expansion Depth有多个自然 before/after
+questions
+只有少量 adjacent
+needs 只能靠同义词硬凑页面
+SERP Opportunity前十存在明显 task/UX
+gap
+已有好产品但仍有
+wedge
+多个强产品全面满足且你无
+差异
+Authority
+Requirement 小站/工具也能出现 混合 SERP 几乎全是强机构且主题高度
+YMYL
+Distribution 有 data/tool/chart/
+embed/share reason 有少量 outreach targets没有任何理由让第三方引用
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+63
+30
+
+--- PAGE 31 ---
+Dimension BUILD 信号 VALIDATE 信号 ABANDON 信号
+Monetization 用户 journey 自然接近商
+业决策 只能广告 低价值流量且成本高
+Execution Cost MVP 数天到数周可完成需专业帮助/数据许可 个人无法取得核心数据/资
+质
+Risk 清楚 disclaimer 和范围即
+可 方法争议较大 必须提供高风险医学/法律
+结论
+操作定义：
+BUILD MVP：核心 task、product primitive、SERP gap、adjacent journey 四者同时成立，且风险可控。
+VALIDATE：需求成立，但 algorithm、SERP gap、distribution 或 monetization 中至少一个关键假设没有证据。
+ABANDON：唯一支持它的理由是“volume 高/KD 低”，而 product、expansion 与 differentiation 都解释不出
+来。
+一个词 → 一个网站的通用模型
+Keyword
+   ↓
+SERP
+“Google 当前怎样解决？”
+   ↓
+User Job
+“用户究竟想完成什么？”
+   ↓
+Product Primitive
+“输入 / 转换 / 输出是什么？”
+   ↓
+Result
+“什么叫任务完成？”
+   ↓
+Next Question
+“完成以后自然问什么？”
+   ↓
+Keyword Cluster
+“哪些 next questions 有真实独立需求？”
+   ↓
+URL Architecture
+“一个任务对应哪个最佳页面？”
+   ↓
+Distribution
+31
+
+--- PAGE 32 ---
+“为什么第三方会分享/引用？”
+   ↓
+Authority
+“需要什么信任和 links 才能扩大？”
+   ↓
+Monetization
+“用户价值如何转化？”
+[推断] 真正的机会不是 Keyword，而是 Keyword 背后有没有一个 Product System。
+Keyword → Product System 观察框架
+不要综合打分，逐项保留证据：
+维度 看什么 继续条件
+Search Demand trend、volume、query variations、论坛问
+题 需求真实且重复
+Product Depth 是否存在 input/process/output 工具比文章显著减少劳动
+Expansion Depth before/after/edge-case questions 至少若干自然 cluster
+SERP Opportunity Top 10 是否满足 exact task 有产品/UX/information gap
+Authority
+Requirement 小站能否进入、引用来源要求 能靠产品价值进入，而非纯 DR 战
+争
+Distribution Potentialchart/data/embed/download/share至少一种自然 link reason
+Monetization downstream commercial intent 不必第一天变现，但路径存在
+Execution Cost data/API/domain expertise/dev costMVP 可被个人验证
+Niche Discovery SOP
+第一轮：30–60 分钟
+[推断] 目标不是决定“成功不成功”，而是决定是否值得投入第二轮。
+时间 动作 输出
+0–10 min 查 keyword、trend、variants Demand hypothesis
+10–20 min手动看 SERP 前 10–20 个结果 Intent-gap sheet
+20–30 min写 Input → Logic → Output Product primitive
+30–40 min写 Before / After / Edge CasesExpansion map
+32
+
+--- PAGE 33 ---
+时间 动作 输出
+40–50 min查谁可能引用、现有 links 类型 Distribution hypothesis
+50–60 minMonetization + YMYL/legal/data riskSTOP / VALIDATE
+第一轮 STOP 条件：
+不知道用户要完成什么；
+工具并不比文章更有用；
+只能想出同义词，没有 next questions；
+SERP 已经明显优质且无 wedge；
+核心能力依赖不可取得数据；
+高风险领域缺少可信 methodology。
+第二轮：2–4 小时
+[推断] 只给通过第一轮的关键词。
+第一块：SERP reverse engineering。 对 20–30 个真实 query 分类：tool/article/forum/brand、大站/小站、用
+户任务、缺失 feature。
+第二块：MVP spike。 用 spreadsheet 或最小 JS 把核心 input → output 跑通，专门测试 borderline cases。
+第三块：IA。 不用 keyword list，而用：
+Core task
+├── Input problems
+├── Output interpretation
+├── Boundary cases
+├── Result entities
+├── Comparison
+└── Next actions
+每一个 node 再验证 search demand。
+第四块：distribution/monetization。 至少找 20 个可能真正会引用类似 tool/reference 的网站/社区类型；同时
+判断流量最终有什么经济价值。
+最后只允许三个状态：
+STOP
+VALIDATE
+BUILD MVP
+• 
+• 
+• 
+• 
+• 
+• 
+33
+
+--- PAGE 34 ---
+不要在第二轮直接得出“做一个 500 页网站”。
+最容易误学的地方
+[已核实] EMD ≠ 排名捷径。 Google 专门限制 EMD 的过度 ranking credit。
+[推断] 看到 shape/type 双页面后就复制近义词分页，是最危险的错误之一。
+[已核实] 页面数量本身不是质量信号。
+[已核实] 304 RD 是第三方估算，不能自动解释为“高质量链接”。fileciteturn0file0
+[推断] 工具代码简单，不意味着 niche 简单；需求建模才可能是难点。
+[推断] 当前能排，不证明进入时 SERP 同样容易。
+[已核实] 存在 portfolio 运营信号，因此不要假设这是零经验开发者第一次做站。
+[推断] share button 存在不等于 viral growth。
+[已核实] style body type 与医学健康指标不是同一概念；不要复制 health claims。
+[推断] 成功站当前所有页面都存在，不代表每个页面都是增长必要条件。
+Next Actions
+今天可以做
+[推断] 不要从 BodyType 案例开始复制一个新 calculator。先把你最近找到但“不知道能做什么”的 3–5 个关键词，
+各填一张：
+Query → User Job → Input → Processing → Output → Before Problem → Next Problem →
+Linkable Asset
+凡是填不到 Output/Next Problem 的，先降级。
+对 PianoGrid，则用同一张表重新抽样 20 个 chord URLs，检查它们是真实独立任务页还是仅参数替换页。
+本周可以做
+[推断] 选一个 PianoGrid 现有最高价值 journey，而不是继续扩 URL 数，例如：
+Find chord
+→ See notes
+→ Hear chord
+→ Understand formula
+→ See inversions
+→ Related scale
+→ Practice
+→ Printable/shareable reference
+然后检查每一步是否已经通过 contextual internal links 连起来。目标不是“更多链接”，而是减少用户下一步寻找成
+本。
+1. 6
+2. 
+3. 54
+4. 
+5. 
+6. 
+7. 64
+8. 
+9. 63
+10. 
+34
+
+--- PAGE 35 ---
+另外优先设计至少一个真正可引用的 asset，例如 source-checked reference chart、downloadable dataset/
+printable、interactive lookup，而不是再写十篇泛 guide。
+以后持续观察
+持续记录：
+页面级 impressions/clicks，而不是只看总 traffic；
+每个新页面是否真的拥有独立 query set；
+Core tool → supporting page 和反向点击；
+referring domains 实际 target 哪些资产；
+哪种资产被 editorially cited；
+哪些页面长期零 impressions；
+哪些近义页面互相 cannibalize。
+这才会让 PianoGrid 自己积累出类似案例中最重要的资产：关于“什么产品页面值得做”的一手经验。
+最重要的十个发现
+[已核实] 它已经不是单 calculator，而是 calculator、measurement、type、comparison、reference、
+outfit 的一个小型 product system。
+[推断] 核心创新更像需求拆解，而不是算法创新。
+[已核实] 输入质量本身被做成多个独立产品/内容页面。
+[已核实] 结果之后继续覆盖“meaning / comparison / outfit”，不是计算完就结束。
+[已核实] 静态可抓取正文与 client-side tool 并存。
+[已核实] 当前导航规模只是几十页，不支持“海量 pSEO 才成功”的叙事。
+[已核实] 存在共享 aigotowork.work 联系身份的多工具站 portfolio。
+[UNKNOWN] 304 referring domains 的质量组成仍无法公开数据完整还原。
+[已核实] 当前 2026 SERP 已经出现许多类似 calculators，机会窗口与早期并不相同。
+[推断] 最值得迁移到 PianoGrid 的，是 task → next task 的页面系统，而不是 body-type 页面模板。
+最让我当初可能错过这个机会的原因
+核心原因不是“没看到 volume”。
+而是你看到的是：
+一个 keyword
+却没有继续问：
+它代表一个怎样的 state transition？
+body type calculator 实际隐含：
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+10
+2. 
+3. 29
+4. 
+5. 10
+6. 
+7. 64
+8. 
+9. 65
+10. 
+35
+
+--- PAGE 36 ---
+不知道自己是什么
+        ↓
+提供 measurements
+        ↓
+系统分类
+        ↓
+知道自己是什么
+接着每一个箭头都会产生问题：
+measurements 怎么得到？
+formula 怎么做？
+result 为什么？
+两类之间怎么办？
+result 有什么实际用途？
+[推断] 一个有经验的 SEO/开发者仍可能错过，是因为传统 keyword research 很容易停在 volume/KD/SERP，而
+product opportunity research 还需要再做一步：
+把 Query 画成 Input → Transformation → Output → Next State。
+没有这一层，你只能看到“一个 calculator 词”；有了这一层，你才能看到一个网站。
+下次类似机会出现时的十个信号
+Query 中直接含 Calculator / Generator / Checker / Finder / Converter。
+用户需要 personalized output，不是固定事实。
+当前 SERP 文章多、真正好工具少。
+Input 很容易获得。
+Transformation 可以公开解释。
+Output 对用户有明确决策价值。
+用户会质疑 input accuracy。
+结果天然产生多个 next questions。
+能做 reference/chart/download/share 等 linkable asset。
+个人开发者可以快速构建可信 MVP。
+这些是 [推断] 的机会识别信号，不是保证成功的公式。
+出现哪些信号应该立即放弃
+你只能解释关键词，解释不了 user job。
+产品输出没有比 ChatGPT/普通文章多提供什么。
+所谓 expansion 只是同义词替换。
+必须虚构算法才能给结果。
+必须做医学/财务/法律结论而你无专业/数据基础。
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+• 
+• 
+• 
+• 
+• 
+36
+
+--- PAGE 37 ---
+SERP 全是非常成熟工具，而你的差异只是“页面更漂亮”。
+核心数据需要昂贵 license/API，MVP 无法取得。
+没有任何可以合理获得 link/share 的资产。
+商业价值极低且 acquisition cost 又高。
+唯一支持 BUILD 的依据是“KD 很低”。
+最终回答十个成功标准
+bodytypecalculator.org 怎么把一个词做成网站？
+[推断] 它把 calculator 视为 journey 起点，然后围绕 input、classification、ambiguity、interpretation、action
+建 URL，而不是围绕同义关键词堆文章。
+哪几个页面真正承担增长？
+精确答案 UNKNOWN；最可能的候选是主 calculator + female calculator + measurement/reference + type/
+comparison clusters，但没有 Organic Pages report 不能给 traffic share。
+Calculator 为什么有价值？
+[已核实] 它把多个身体测量值转成可解释分类，并提供 ratio、visual result、分享和 next-step content。
+Supporting pages 为什么存在？
+[推断] 主要是解决输入错误、结果解释、边界分类和结果后的下一步，而不是单纯“增加 content”。
+Backlinks 从哪里来？
+完整组成 UNKNOWN；至少有公开 editorial citation，也有较强 portfolio/主动运营经验线索，但没有证据把 304
+RD 全归因于任何单一来源。
+增长多少来自执行、niche/timing/portfolio？
+无法定量。执行层的 product/IA 可确认；portfolio 经验很可能有帮助；timing 和 backlinks 的因果权重 
+UNKNOWN。
+PianoGrid 能学什么？
+围绕真实 task 建 tool/detail/reference/supporting pages，并把每次任务完成变成下一任务入口。
+哪些绝对不能照抄？
+EMD 迷信、近义词分页、追页面数、追 AS、无证据买 links、把模板规模化本身当增长战略。
+时间回到当初，应做哪些验证？
+Keyword → SERP intent gap → User Job → Input/Logic/Output → edge cases → next questions → keyword
+validation → distribution → monetization → risk → MVP。
+下次怎样更早发现类似机会？
+看到关键词以后，不要先问“能写多少篇”，而先问：
+“这个 query 能不能变成一个 state-changing product；结果之前和之后，是否各自存在真实需
+求？”
+• 
+• 
+• 
+• 
+• 
+8
+66
+37
+
+--- PAGE 38 ---
+这就是这个案例相比任何单一 SEO tactic 更可迁移的部分。
+https://bodytypecalculator .org/
+https://bodytypecalculator .org/
+https://www.discoverfashions.com/tools/body-shape-calculator/
+https://www.discoverfashions.com/tools/body-shape-calculator/
+https://bodytypecalculator .org/full-body-measurement-guide/
+https://bodytypecalculator .org/full-body-measurement-guide/
+https://linecounter .org/contact
+https://linecounter .org/contact
+https://developers.google.com/search/docs/appearance/ranking-systems-guide
+https://developers.google.com/search/docs/appearance/ranking-systems-guide
+https://bodytypecalculator .org/female-body-type-calculator/
+https://bodytypecalculator .org/female-body-type-calculator/
+https://bodytypecalculator .org/about/
+https://bodytypecalculator .org/about/
+https://bodytypecalculator .org/apple-body-shape/
+https://bodytypecalculator .org/apple-body-shape/
+https://bodytypecalculator .org/how-to-measure-bust-waist-hips/
+https://bodytypecalculator .org/how-to-measure-bust-waist-hips/
+https://bodytypecalculator .org/how-to-measure-body-for-body-type-calculator/
+https://bodytypecalculator .org/how-to-measure-body-for-body-type-calculator/
+https://bodytypecalculator .org/body-measurements-chart/
+https://bodytypecalculator .org/body-measurements-chart/
+https://bodytypecalculator .org/hourglass-vs-pear-body-type/
+https://bodytypecalculator .org/hourglass-vs-pear-body-type/
+https://bodytypecalculator .org/waist-to-hip-ratio-calculator/
+https://bodytypecalculator .org/waist-to-hip-ratio-calculator/
+https://journals.sagepub.com/doi/abs/10.1177/00405175241307370
+https://journals.sagepub.com/doi/abs/10.1177/00405175241307370
+https://proc.3dbody.tech/abstracts/2020/2022sokolowski.html
+https://proc.3dbody.tech/abstracts/2020/2022sokolowski.html
+https://developers.google.com/search/blog/2024/03/core-update-spam-policies
+https://developers.google.com/search/blog/2024/03/core-update-spam-policies
+https://www.discoverfashions.com/blog/pear-hourglass-body-shape/
+https://www.discoverfashions.com/blog/pear-hourglass-body-shape/
+https://www.bintabadmus.com/help/measurements
+https://www.bintabadmus.com/help/measurements
+1 3 8 13 14 15 24 34 49 50
+2 36 55 60 65
+4 7 12 19
+5 42 64
+6
+9 16 32 35
+10 41 47
+11
+17 23 29 30 31
+18 25
+20 62
+21 26
+22 52
+27 61
+28
+33
+37
+38
+38
+
+--- PAGE 39 ---
+https://www.cdc.gov/nchs/fastats/body-measurements.htm
+https://www.cdc.gov/nchs/fastats/body-measurements.htm
+https://magazynkobieta.eu/jak-dobrac-ubrania-do-sylwetki/
+https://magazynkobieta.eu/jak-dobrac-ubrania-do-sylwetki/
+https://squarefootagecalculator .cc/contact/
+https://squarefootagecalculator .cc/contact/
+https://drywallcalculators.org/contact/
+https://drywallcalculators.org/contact/
+https://fullscreencountdowntimer .com/summer-vacation-countdown
+https://fullscreencountdowntimer .com/summer-vacation-countdown
+https://www.mail-archive.com/hpvs%40lists.lysator .liu.se/msg00618.html
+https://www.mail-archive.com/hpvs%40lists.lysator .liu.se/msg00618.html
+https://developers.google.com/search/docs/essentials
+https://developers.google.com/search/docs/essentials
+https://www.who.int/publications/i/item/9789241501491
+https://www.who.int/publications/i/item/9789241501491
+https://developers.google.com/search/docs/essentials/spam-policies
+https://developers.google.com/search/docs/essentials/spam-policies
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+https://pianogrid.com/chords
+https://pianogrid.com/chords
+https://pianogrid.com/scales
+https://pianogrid.com/scales
+https://pianogrid.com/chords/finder
+https://pianogrid.com/chords/finder
+39
+40 66
+43
+44
+45
+46
+48
+51 63
+53
+54 58
+56
+57
+59
+39

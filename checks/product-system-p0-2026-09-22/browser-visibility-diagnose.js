@@ -1,0 +1,1 @@
+return await page.evaluate(()=>({visibility:document.visibilityState,events:window.__visibilityEvents,p0:window.__p0,observers:window.__observers.map(o=>({connected:o.connected,tag:o.el?.tagName,cls:o.el?.className,rects:o.el?.getClientRects().length,style:o.el?{visibility:getComputedStyle(o.el).visibility,opacity:getComputedStyle(o.el).opacity}:null}))}));

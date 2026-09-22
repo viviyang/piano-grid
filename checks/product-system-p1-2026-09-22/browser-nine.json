@@ -1,0 +1,587 @@
+{
+  "results": [
+    {
+      "route": "/chords",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/chords/finder",
+          "text": "Find a chord from notes",
+          "primary": true
+        },
+        {
+          "href": "/chords/by-key#c-major",
+          "text": "Explore chords in C major",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/finder",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#finder-heading",
+          "text": "Review the selected notes and candidates",
+          "primary": true
+        },
+        {
+          "href": "/chords",
+          "text": "Browse chords by name instead",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-major",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/chords/by-key?pg-context=c-major#c-major",
+          "text": "See C major in its key context",
+          "primary": true
+        },
+        {
+          "href": "#practice",
+          "text": "Check the chord tones",
+          "primary": false
+        },
+        {
+          "href": "/scales/c-major",
+          "text": "Compare the C major scale",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/a-minor",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-maj7",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-diminished",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-add9",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/scales/c-major",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#check-notes",
+          "text": "Check the scale notes",
+          "primary": true
+        },
+        {
+          "href": "/chords/by-key?pg-context=c-major#c-major",
+          "text": "Compare C major’s triads",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/keyboard-notes",
+      "width": 1440,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/keyboard-notes?layout=88&note=C4#note-trainer",
+          "text": "Practise note locations",
+          "primary": true
+        },
+        {
+          "href": "/chords/c-major",
+          "text": "Compare notes in C major",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/chords/finder",
+          "text": "Find a chord from notes",
+          "primary": true
+        },
+        {
+          "href": "/chords/by-key#c-major",
+          "text": "Explore chords in C major",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/finder",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#finder-heading",
+          "text": "Review the selected notes and candidates",
+          "primary": true
+        },
+        {
+          "href": "/chords",
+          "text": "Browse chords by name instead",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-major",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/chords/by-key?pg-context=c-major#c-major",
+          "text": "See C major in its key context",
+          "primary": true
+        },
+        {
+          "href": "#practice",
+          "text": "Check the chord tones",
+          "primary": false
+        },
+        {
+          "href": "/scales/c-major",
+          "text": "Compare the C major scale",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/a-minor",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-maj7",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-diminished",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-add9",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/scales/c-major",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#check-notes",
+          "text": "Check the scale notes",
+          "primary": true
+        },
+        {
+          "href": "/chords/by-key?pg-context=c-major#c-major",
+          "text": "Compare C major’s triads",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/keyboard-notes",
+      "width": 390,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/keyboard-notes?layout=88&note=C4#note-trainer",
+          "text": "Practise note locations",
+          "primary": true
+        },
+        {
+          "href": "/chords/c-major",
+          "text": "Compare notes in C major",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/chords/finder",
+          "text": "Find a chord from notes",
+          "primary": true
+        },
+        {
+          "href": "/chords/by-key#c-major",
+          "text": "Explore chords in C major",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/finder",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#finder-heading",
+          "text": "Review the selected notes and candidates",
+          "primary": true
+        },
+        {
+          "href": "/chords",
+          "text": "Browse chords by name instead",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-major",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/chords/by-key?pg-context=c-major#c-major",
+          "text": "See C major in its key context",
+          "primary": true
+        },
+        {
+          "href": "#practice",
+          "text": "Check the chord tones",
+          "primary": false
+        },
+        {
+          "href": "/scales/c-major",
+          "text": "Compare the C major scale",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/a-minor",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-maj7",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-diminished",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/c-add9",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#practice",
+          "text": "Check these chord tones",
+          "primary": true
+        },
+        {
+          "href": "/chords/finder",
+          "text": "Compare possible chord names",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/scales/c-major",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "#check-notes",
+          "text": "Check the scale notes",
+          "primary": true
+        },
+        {
+          "href": "/chords/by-key?pg-context=c-major#c-major",
+          "text": "Compare C major’s triads",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/keyboard-notes",
+      "width": 768,
+      "areas": 1,
+      "links": [
+        {
+          "href": "/keyboard-notes?layout=88&note=C4#note-trainer",
+          "text": "Practise note locations",
+          "primary": true
+        },
+        {
+          "href": "/chords/c-major",
+          "text": "Compare notes in C major",
+          "primary": false
+        }
+      ],
+      "h1": 1,
+      "overflow": false
+    },
+    {
+      "route": "/chords/d-major",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/chords/d-maj7",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/chords/d-add9",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/scales/a-minor",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/chords/altered",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/songs/easy",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/sheet-music",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/tools/hear-the-difference",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    },
+    {
+      "route": "/tools/blank-sheet-music",
+      "nonPilot": true,
+      "status": 200,
+      "newAreas": 0
+    }
+  ],
+  "errors": []
+}

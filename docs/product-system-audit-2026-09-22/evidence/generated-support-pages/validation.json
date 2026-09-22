@@ -1,0 +1,18 @@
+{
+  "executed_at": "2026-09-22T04:32:06.462Z",
+  "base": "http://127.0.0.1:3000",
+  "passed": 0,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Support-page validation runner completed",
+      "passed": false,
+      "detail": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/guide/piano-chords\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3000/guide/piano-chords\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano-main-product-audit\\scripts\\check-support-pages.mjs:27:33"
+    }
+  ],
+  "not_tested": [
+    "real mobile/tablet device",
+    "screen reader",
+    "independent piano-teacher review"
+  ]
+}

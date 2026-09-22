@@ -1,0 +1,25 @@
+{
+  "executedAt": "2026-09-22T04:32:10.517Z",
+  "base": "http://127.0.0.1:3101",
+  "passed": 0,
+  "failed": 1,
+  "counts": {
+    "newRoutes": 2,
+    "newReferences": 288,
+    "supportedRegistry": 433,
+    "keyContexts": 24,
+    "byKeyRows": 336,
+    "progressionExamples": 96,
+    "progressionSteps": 432,
+    "sitemap": 173,
+    "buildOutputs": 178
+  },
+  "results": [
+    {
+      "name": "Completion browser suite completed",
+      "passed": false,
+      "detail": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3101/chords/extended\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3101/chords/extended\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Admin\\Documents\\viviyang_github\\piano-main-product-audit\\scripts\\check-chords-completion.mjs:8:147"
+    }
+  ],
+  "runtimeErrors": []
+}

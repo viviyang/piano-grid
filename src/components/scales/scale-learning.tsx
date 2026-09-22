@@ -165,6 +165,10 @@ export function ScalePractice({ option, hand, direction, audio, ready }: { optio
             ? 'Practice stopped. Start again when ready.'
             : 'The previous audio or practice session stopped.';
     resetLocal(copy);
+    if (reason === 'audio_error') {
+      setState('error');
+      setMessage('Sound stopped unexpectedly. Try again, or continue with a silent visual guide.');
+    }
   }), [audio.registerCancellation, option.id, hand, direction]);
   useEffect(() => () => { runGeneration.current += 1; clearTimers(); }, []);
   const schedule = (run: number, at: number, callback: () => void) => {

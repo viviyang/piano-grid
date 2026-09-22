@@ -1,0 +1,30 @@
+commit 9937d528d78857056356bc440d22348cc4c19fe2
+Author:     weiwei <apupp@163.com>
+AuthorDate: Tue Sep 22 10:53:30 2026 +0800
+Commit:     weiwei <apupp@163.com>
+CommitDate: Tue Sep 22 10:53:30 2026 +0800
+
+    Replace the dead MIDI citation and disambiguate sharp-minor titles.
+    
+    The shared scale source now points at the MIDI Association page, and the A-sharp and F-sharp minor document titles stay distinct from the natural-minor pages.
+    
+    Co-authored-by: Cursor <cursoragent@cursor.com>
+
+diff --git a/docs/content/site-master/A-Scales/batch-source-ledger.md b/docs/content/site-master/A-Scales/batch-source-ledger.md
+index 0c7b280..dea068e 100644
+--- a/docs/content/site-master/A-Scales/batch-source-ledger.md
++++ b/docs/content/site-master/A-Scales/batch-source-ledger.md
+@@ -81,10 +81,10 @@
+ 
+ ## AM-MIDI
+ 
+-[Standard MIDI file format, updated — Appendix 1.3](https://www.cs.cmu.edu/~music/cmsip/readings/Standard-MIDI-file-format-updated.pdf)
++[Standard MIDI Files](https://midi.org/standard-midi-files)
+ 
+-发布者：Carnegie Mellon University hosted technical reading；核查：2026-09-09；访问状态：opened_pdf_text。
+-支持：['C4=60 selected octave naming convention; chromatic MIDI integer table']；定位：Appendix 1.3: Table of MIDI Note Numbers, printed page 17, extracted lines 626–642。
++发布者：The MIDI Association；核查：2026-09-22；访问状态：opened_full_text。
++支持：['Official public entry for the Standard MIDI Files specification']；定位：Standard MIDI Files overview。
+ 
+ ## AM-NOTES-C-MAJOR
+ 

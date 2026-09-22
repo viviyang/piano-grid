@@ -1,0 +1,39 @@
+{
+  "generator_version": "2026-09-22-SCALES-COMPLETION-3",
+  "master_path": "docs/content/site-master/page-content.master.json",
+  "input_subset_sha256": "bcd891ee98e24c355398be5808ad9978390e70b97a6defd22ff35556ca462af8",
+  "generator_sha256": "9456cacba20a0166375f3dd70ec7b378afe71ad5161070da17c9ef2f7e6905ff",
+  "outputs": [
+    {
+      "resource_id": "R-TWOHAND-C",
+      "paper": "LETTER",
+      "path": "public/downloads/scales/pianogrid-c-major-two-hand-starter.pdf",
+      "bytes": 9026,
+      "pages": 3,
+      "file_sha256": "2ea98995abd3de5cd8fdf781aa623e3f3d4b740274a42a61919902bb39dddb13",
+      "input_subset_sha256": "bcd891ee98e24c355398be5808ad9978390e70b97a6defd22ff35556ca462af8",
+      "generator_sha256": "9456cacba20a0166375f3dd70ec7b378afe71ad5161070da17c9ef2f7e6905ff",
+      "objects": [
+        "Right Hand · C4-C5",
+        "Left Hand · C3-C4"
+      ]
+    },
+    {
+      "resource_id": "R-TWOHAND-C",
+      "paper": "A4",
+      "path": "public/downloads/scales/pianogrid-c-major-two-hand-starter-a4.pdf",
+      "bytes": 9334,
+      "pages": 3,
+      "file_sha256": "8ea1b4ffc01ec0b1cc66d242eb166c17f38904f38bdf29ff039581ad7c700196",
+      "input_subset_sha256": "bcd891ee98e24c355398be5808ad9978390e70b97a6defd22ff35556ca462af8",
+      "generator_sha256": "9456cacba20a0166375f3dd70ec7b378afe71ad5161070da17c9ef2f7e6905ff",
+      "objects": [
+        "Right Hand · C4-C5",
+        "Left Hand · C3-C4"
+      ]
+    }
+  ],
+  "pdf_tagging": "NOT_VERIFIED",
+  "physical_printing": "NOT_RUN",
+  "rights": "PianoGrid original text, vector diagrams and layout; source facts transcribed; no third-party source file or font file embedded."
+}

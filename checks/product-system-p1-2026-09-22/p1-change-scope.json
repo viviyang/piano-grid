@@ -1,0 +1,48 @@
+{
+  "new": [
+    "src/components/product-continuation.tsx",
+    "src/lib/product-continuation-state.ts",
+    "src/lib/product-continuation.ts",
+    "src/lib/use-continuation-state.ts",
+    "scripts/check-product-continuation-data.cjs",
+    "scripts/check-product-continuation.test.mjs",
+    "scripts/lib/chord-query-candidates.mjs"
+  ],
+  "modifiedFromP0": [
+    "src/lib/chord-completion-content.ts",
+    "src/lib/chord-learning-content.ts",
+    "src/lib/product-measurement.ts",
+    "src/components/a-minor/experience.tsx",
+    "src/components/chords/c-major-experience.tsx",
+    "src/components/chords/center-experience.tsx",
+    "src/components/chords/completion-category-experience.tsx",
+    "src/components/keyboard-notes/keyboard-notes-workspace.tsx",
+    "src/components/scales/detail-experience.tsx",
+    "src/components/support/by-key-experience.tsx",
+    "src/components/support/finder-experience.tsx",
+    "src/components/support/progression-experience.tsx",
+    "scripts/check-foundation.mjs"
+  ],
+  "hashes": {
+    "src/components/product-continuation.tsx": "b41658ec9f5bdef6599b435f7fa97c2ddc16af069a5947a40a415ca11560c23f",
+    "src/lib/chord-completion-content.ts": "4be19020a098eea8b24ff88f274e196be2a6129da871d001c7607aad5e3c2a00",
+    "src/lib/chord-learning-content.ts": "7267397fe4386f8ad084376b397d960e1f73c78e7a9e0642beafb29ecf29ce0b",
+    "src/lib/product-continuation-state.ts": "bc78f6888d70752dee95f22c9989a581d716a527edd601abba2e404016891a64",
+    "src/lib/product-continuation.ts": "1c0dbaefec25e7eecaed6da45cabd77504709aa95ebc971463f67c24716ebdee",
+    "src/lib/product-measurement.ts": "b87482ac80d5906086023a3452f7471807fc10adce5a3c483b98ebb8b8ad407d",
+    "src/lib/use-continuation-state.ts": "e2439418c357a58964debdd0311a12aafedbe41afc528e1eeae49989e0859245",
+    "src/components/a-minor/experience.tsx": "85e8922c71903cf5821b36b3de94ba22a40df1123c4778a01684079bba03d124",
+    "src/components/chords/c-major-experience.tsx": "b5288d0e80564afae583554cc0b5979f03a15d8d905e0db67ddef0ec9d53e2c3",
+    "src/components/chords/center-experience.tsx": "04b1e9550141bf37f570739e425a1d168e5ff9b474d5280ad2e72d317dc6f860",
+    "src/components/chords/completion-category-experience.tsx": "d0d38b802924c5dfb33886a62fb150402e60b7a34c794a92c283a8da9f15c909",
+    "src/components/keyboard-notes/keyboard-notes-workspace.tsx": "433b516925f29249801da5f19fbce47499ef05616e8be971c428e65aa5b8e9c0",
+    "src/components/scales/detail-experience.tsx": "37bc78278c52be4d091a51f5d1ed735ac11fad66de2febdf3857b4ea99da3a21",
+    "src/components/support/by-key-experience.tsx": "c7ce0b1569df65b7cf505efd56c8309b1c6233ddbce2a2cb2135e92095f01309",
+    "src/components/support/finder-experience.tsx": "cdef36858818b5395ff27ea5eaddfefb18a1d7f52132ff423cc56a65e0cc6c87",
+    "src/components/support/progression-experience.tsx": "5a48ca272d3808a2dee7dcfee7d9500a5955bc4121c6166cbbe24309274e2f42",
+    "scripts/check-foundation.mjs": "6084124cbc669097d860abf6d4c1710614aaae8245fcad853a44305a0647f150",
+    "scripts/check-product-continuation-data.cjs": "537bcf7b24d1b8a655ecc55109a405d02e2b6b7fb73dcd5af211656e10edcf1d",
+    "scripts/check-product-continuation.test.mjs": "b4d99c55efccc5f4e5eb09fafa64736133238a96a2e2865aecfe6987bb9bee30",
+    "scripts/lib/chord-query-candidates.mjs": "3f28ba057056d97d09a24cba6cb25255a9d686fa0f62503d243c3f2319fd7bad"
+  }
+}

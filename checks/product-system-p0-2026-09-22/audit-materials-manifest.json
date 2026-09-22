@@ -1,0 +1,206 @@
+[
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\00_CURRENT_STATE.md",
+    "sha256": "077a25daa4c35543c6e667b626b230a8f9370050a1168e9b8dea5f88ed86396c"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\01_RESEARCH_EVIDENCE_MATRIX.md",
+    "sha256": "1ada37d6b4ac6dfac0614d18b1cde172ce60260487ffc3553f276caaa5d67832"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\02_PRODUCT_SYSTEM_MAP.md",
+    "sha256": "f91ff87664d220b28ee51bc654b75247812af0f3869f670afa4d2386471919d7"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\03_URL_TASK_AUDIT.md",
+    "sha256": "5bd880656469dae3c41f2973a1e7e51869bbf60f5f4050e39e0ffdb65ada2a85"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\04_GAP_ANALYSIS.md",
+    "sha256": "8856cb97369e2515ba913718de53c2b064840f4476f9c57795a27f5b4cc5d91d"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\05_PAGE_GATE.md",
+    "sha256": "66820a17c385dca94b5cc30f580b51dd10c8df859ce220807a68781b6905caec"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\06_P0_P1_BACKLOG.md",
+    "sha256": "1a46204ec0853d0a6918558c44a814982305e3a0cf364fc10161227c11bcfae9"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\07_IMPLEMENTATION_PLAN.md",
+    "sha256": "1f4f6799bf7fa2c7fa449a009908ae15d11b1961a5bb90e299429710d6307917"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\08_ACCEPTANCE_CRITERIA.md",
+    "sha256": "6841a726c2fcfa10fd3980ee1a6403aaa728f0e872568b8de8954cdbf6eb3209"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\09_DECISION_LOG.md",
+    "sha256": "1a108d56b3e52eed950b25b3a670c55b87878e797b364b855ac9302f1d444ae9"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\analyze_build.py",
+    "sha256": "fd5b25e482da7354ea83a8269355e63ad7f80b5a23b08f48dab7179029d226a5"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\baseline.json",
+    "sha256": "4c38f34fede23faf11061b855e318a846b4b013be67666b70865c8ee8ec161b1"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\build-audit-summary.json",
+    "sha256": "03899b94e58cbee7475cdb62a6e9946207d95f5d02e1dd97a23db8d4ead52976"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\build-pages.json",
+    "sha256": "cf05e09c8e4f64372dfa7e87fab908a3b4b50c511e6dc999168553fc970b1550"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\build.log",
+    "sha256": "24319d94f4fb20929bb5edfe6483d154d94700588760680cc4c0a1a4e16ba66f"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\check-status.txt",
+    "sha256": "7a949bceec1a691d25aae73b1d6914e7168694bac680c1b7723d6b857ea1abda"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\chords-browser-validation.json",
+    "sha256": "80bfd2ef4cce3799d1a9e6b35696fe88191e06639ab1bea1cd07cc8f3efafabb"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\collect_http.py",
+    "sha256": "4dd074cdb67b7c5429cfac7ea98e0af694b283cc571c7d074148e016a6f54e6b"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\COMPONENT-RULES.workspace.md",
+    "sha256": "3ef01afaad0eaadda3d214cf92e5b05899cd196512ee50dac3697974b61b8d9e"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\final-verification.json",
+    "sha256": "f60711970ba53791b419ad3bfc3f7fa610603bed30a097827115a7aaa6dfa4b6"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\finalize_inventory.py",
+    "sha256": "6e3379cf398644a009e3afba752c9e8daedfcea92637efedeb17298aa13a529b"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\generated-scales-completion\\contract-validation.json",
+    "sha256": "a48f62ce5bf1f8e210f89babf4ea82cca4bc4424c002ec9b287507c12ca887eb"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\generated-scales-completion\\current-authoring-bundle.json",
+    "sha256": "d6e33e2434071c4c6907e85eff751a2a541a44c4b38529ce95e2542333cfb116"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\generated-support-pages\\validation.json",
+    "sha256": "f208827e527de612f12fd66b97600176c93f491f4c6d762c446f2cd4d5bc63d1"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\hash-diagnosis.json",
+    "sha256": "726f6adab7ab8a8e86f5042880f4d223baeceb148c9b4fbc9fbc6316d968f2c4"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\integration-data-validation.json",
+    "sha256": "40494dcbe0cabb24916ba919bb06bb08f7174e4383aabc413c74753354590c78"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\live-finder.html",
+    "sha256": "ffe6150b8d6caf6c23c867ea45d5e92b74294e8f634c439eb2a3c60a189b1f6f"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\live-http.json",
+    "sha256": "fc1f793c55e5150c7828950fe430aa2e39bc2beef8217eefd3084c842601b6cd"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\live-pages.json",
+    "sha256": "077fd411bdd2f385acbe454081843d0b80ed63f864eace8ce6268a9116efaddc"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\live-robots.txt",
+    "sha256": "cfab2ad95c8bf40ad945710f43f28b834a717a3e171f3e598f02a5ea19e47da9"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\live-sitemap-powershell.xml",
+    "sha256": "1dd1400210536bbb13e14132506660365b9a3ec4e0484e18c8746a35044589d8"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\live-sitemap.xml",
+    "sha256": "e174960457f2168e92bd4ad610744e033d34680939dda0952f8e7205895f2b3c"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\node-scripts-check-chords-completion-mjs.log",
+    "sha256": "a4670afda2ffecf6d5de5f4ebf46760cc2c0b32018d9cb0a1b26dc0ca16fe3ab"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\node-scripts-check-integration-batch-mjs.log",
+    "sha256": "614114c8260f6fbdedb7826bc8531d9505c08c5e8d48057342c0a37c1af3e922"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\node-scripts-check-integration-data-mjs.log",
+    "sha256": "b95c4e6d9034d536c204c5a565c4a553b5966b49f835fe31fad7b7b7625c416a"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\node-scripts-check-scale-completion-contract-mjs.log",
+    "sha256": "c2b11ebb96d4a95633d8dba22ad4150b718afa09e51599795cd661187d103c6d"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\node-scripts-check-support-pages-mjs.log",
+    "sha256": "cfafb2e407a35fce65153efa362aaf6abc0a2050767e0a06313b0afa3a7b2227"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\npm-ci.log",
+    "sha256": "1f6d078a8a4e9d4ec88b8bded5a91a115966aec7996897365d5bbe40a9b8fa98"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\npm-run-check.log",
+    "sha256": "4fb0c0cd54e9e58e382103cdf61920c157d5bfebb4d4cb25f274916245134f06"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\prerender-routes.json",
+    "sha256": "78f3f92df19a6e22012d5a451098363eb22b74916a1884ff6795bceecc5f8b52"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\repo-routes.json",
+    "sha256": "58c29be4167d7a0e03df52cca2a91548ddbe66d6df19d180aef00748ef0417d7"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\research-A.txt",
+    "sha256": "e5e3ee91cdb58eac483732dd9303d7f7deb8d4853b6d5c1192450830ea9c5807"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\research-B-p6.png",
+    "sha256": "773a8df950462e498411a2fdf28ca5fdf309a9900c29761f9c37616b03f34751"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\research-B-readable.txt",
+    "sha256": "d15aca01f2382b7bd3c4463e56b80a240938ac0f106c555d6060ee189a745bd5"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\research-B.txt",
+    "sha256": "f146ffd2710b060cc8dfdb1219e5c0637241e131605eb43a110ce8c6a78a7141"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\research-files.json",
+    "sha256": "246505ae7ac9e79861c04cd36322d229314698ea1eef813231219b36337bba8c"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\research-P.txt",
+    "sha256": "7c72172c7f06b387abf7aa7f6a23f67a5d8ebbf4b4cdbbef7fd3d34a29a8be3a"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\evidence\\verify_delivery.py",
+    "sha256": "e969b4d8253d0555e4ba28ea737817f98bf1db3b6b5fad8a5ac6c192fa2a6908"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\EVIDENCE_INDEX.md",
+    "sha256": "3c34766202397d266aa050a046b36ba84cc5f6fcdc3186db054695a6b8717f76"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\README.md",
+    "sha256": "e5f5415c9e05fbd5ba2bdfc4126108cefe049cc369eab1c6520f2299839d32b6"
+  },
+  {
+    "path": "docs\\product-system-audit-2026-09-22\\ROUTE_TEMPLATE_INVENTORY.md",
+    "sha256": "d867fd8b4e769dbcbc74f7a2e141ee93ca133f1375e72be10884ca241e19c189"
+  }
+]

@@ -1,0 +1,2526 @@
+{
+  "registryCount": 433,
+  "sources": [
+    {
+      "route": "/chords/c-major",
+      "objectId": "c-major",
+      "sourceIds": [
+        "SKOOVE-C",
+        "E-CHORD"
+      ],
+      "teacherReviewed": false,
+      "sources": [
+        {
+          "id": "SKOOVE-C",
+          "title": "C major chord on piano",
+          "publisher": "Skoove; reviewed by Matthew Dickman, composer and music educator",
+          "url": "https://www.skoove.com/en/tools/piano-chords/c-major",
+          "checkedOn": "2026-09-11",
+          "supports": "C–E–G root position; right hand 1–3–5 and left hand 5–3–1.",
+          "limitation": "The source specifies chord tones and fingers, but not PianoGrid’s C4–E4–G4 octave placement."
+        },
+        {
+          "id": "E-CHORD",
+          "title": "Basic Piano Chords for Beginners, Part 1",
+          "publisher": "Yamaha / Jerry Kovarsky",
+          "url": "https://hub.yamaha.com/keyboards/k-how-to/basic-piano-chords-for-beginners-part-1/",
+          "checkedOn": "2026-09-11",
+          "supports": "Major and minor root-position triads usually use thumb, middle finger and pinky; C major is the illustrated reference.",
+          "limitation": "The article supports the right-hand root-position convention; it does not specify PianoGrid’s octave placement or a left-hand C example."
+        }
+      ]
+    },
+    {
+      "route": "/chords/a-minor",
+      "objectId": "a-minor",
+      "sourceIds": [
+        "SKOOVE-AM"
+      ],
+      "teacherReviewed": false,
+      "sources": [
+        {
+          "id": "SKOOVE-AM",
+          "title": "A minor chord on piano",
+          "publisher": "Skoove; reviewed by Matthew Dickman, composer and music educator",
+          "url": "https://www.skoove.com/en/tools/piano-chords/a-minor",
+          "checkedOn": "2026-09-11",
+          "supports": "A–C–E root position; right hand 1–3–5 and left hand 5–3–1.",
+          "limitation": "The source specifies chord tones and fingers, but not PianoGrid’s A3–C4–E4 octave placement."
+        }
+      ]
+    },
+    {
+      "route": "/chords/c-maj7",
+      "objectId": "c-maj7",
+      "sourceIds": [
+        "N2C-OMT-SEVENTH",
+        "N2C-OMT-SYMBOLS",
+        "N2C-PC-SEVENTH"
+      ],
+      "teacherReviewed": false,
+      "sources": [
+        {
+          "id": "N2C-OMT-SEVENTH",
+          "title": "Seventh Chords — Open Music Theory",
+          "publisher": "Open Music Theory",
+          "url": "https://viva.pressbooks.pub/openmusictheory/chapter/seventh-chords/",
+          "checkedOn": "2026-09-12",
+          "supports": "seventh chords are four-note chords; major seventh, dominant seventh, minor seventh and half-diminished seventh constructions; four positions including third inversion; written spelling and inversion principles",
+          "limitation": "Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied."
+        },
+        {
+          "id": "N2C-OMT-SYMBOLS",
+          "title": "Chord Symbols — Open Music Theory",
+          "publisher": "Open Music Theory",
+          "url": "https://viva.pressbooks.pub/openmusictheory/chapter/chord-symbols/",
+          "checkedOn": "2026-09-12",
+          "supports": "C7 dominant convention; maj7/min7/half-diminished symbol families; slash bass notation",
+          "limitation": "Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied."
+        },
+        {
+          "id": "N2C-PC-SEVENTH",
+          "title": "The Piano Chord Collection — Major & Minor 7th",
+          "publisher": "PianoChord.org",
+          "url": "https://www.pianochord.org/The%20Piano%20Chord%20Collection%20BW.pdf",
+          "checkedOn": "2026-09-12",
+          "supports": "competitor family coverage; cross-check examples for major/minor seventh",
+          "limitation": "Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied."
+        }
+      ]
+    },
+    {
+      "route": "/chords/c-diminished",
+      "objectId": "c-diminished",
+      "sourceIds": [
+        "N2B-OMT-TRIADS",
+        "N2B-PC-COLLECTION"
+      ],
+      "teacherReviewed": false,
+      "sources": [
+        {
+          "id": "N2B-OMT-TRIADS",
+          "title": "Triads — Open Music Theory",
+          "publisher": "Open Music Theory",
+          "url": "https://viva.pressbooks.pub/openmusictheory/chapter/triads/",
+          "checkedOn": "2026-09-12",
+          "supports": "diminished = minor third + diminished fifth; augmented = major third + augmented fifth; triad spelling principles",
+          "limitation": "Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied."
+        },
+        {
+          "id": "N2B-PC-COLLECTION",
+          "title": "The Piano Chord Collection — Diminished & Augmented",
+          "publisher": "PianoChord.org",
+          "url": "https://www.pianochord.org/The%20Piano%20Chord%20Collection%20HI%20RES.pdf",
+          "checkedOn": "2026-09-12",
+          "supports": "competitor family coverage; cross-check examples only",
+          "limitation": "Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied."
+        }
+      ]
+    },
+    {
+      "route": "/chords/c-add9",
+      "objectId": "c-add9",
+      "sourceIds": [
+        "OMT-ADDED-NOTES",
+        "MUSICCA-CADD9",
+        "PIANOCHORD-ADD"
+      ],
+      "teacherReviewed": false,
+      "sources": [
+        {
+          "id": "OMT-ADDED-NOTES",
+          "title": "Chord Symbols — Added Notes (add) and Suspensions (sus)",
+          "publisher": "Open Music Theory / VIVA Open Publishing",
+          "url": "https://viva.pressbooks.pub/openmusictheory/chapter/chord-symbols/",
+          "checkedOn": "2026-09-12",
+          "supports": "Added-note symbols do not imply a seventh.; The textbook illustrates Cadd9 with D above the triad and Cadd2 with D inside it.",
+          "limitation": "A textbook illustration is not proof of a single permitted fingering or register for every performance. All transposed examples in this package are calculated reference examples, not individually transcribed from this source."
+        },
+        {
+          "id": "MUSICCA-CADD9",
+          "title": "Cadd9 chord",
+          "publisher": "Musicca",
+          "url": "https://www.musicca.com/dictionary/chords/c-added-ninth",
+          "checkedOn": "2026-09-12",
+          "supports": "Musicca lists Cadd2 as an alternative to Cadd9 and describes use of the second in place of the ninth.",
+          "limitation": "Used to document notation variation, not to prescribe all arrangements."
+        },
+        {
+          "id": "PIANOCHORD-ADD",
+          "title": "Add chords explained — add9 and add2",
+          "publisher": "PianoChord.org",
+          "url": "https://www.pianochord.org/add.html",
+          "checkedOn": "2026-09-12",
+          "supports": "Major and minor added-note examples; add9/add2 and madd9/madd2 comparison.",
+          "limitation": "Reference only: no copied prose, diagrams, recordings or PDF files."
+        }
+      ]
+    }
+  ],
+  "scale": {
+    "model": {
+      "url": "/scales/c-major",
+      "title": "C Major Piano Scale: Notes and Fingering",
+      "description": "See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.",
+      "blocks": [
+        {
+          "id": "notes",
+          "heading": "C Major notes",
+          "body": "C Major contains C, D, E, F, G, A, B. Repeat C at the top to complete one octave. Its key signature has no sharps or flats."
+        },
+        {
+          "id": "focus",
+          "heading": "White keys, unequal distances",
+          "body": "C major uses only white keys, but those keys are not equally spaced in pitch. E–F and B–C are half steps; the other adjacent pairs in the scale are whole steps. Keep that distinction when checking the keyboard against the staff. A reference starting and ending on C demonstrates the C-major scale. Starting a melody on another note does not by itself determine a different tonic."
+        },
+        {
+          "id": "fingering",
+          "heading": "One-octave fingering",
+          "body": "In this one-octave version, the right hand crosses from E with finger 3 to F with the thumb. The left hand crosses from G with the thumb to A with finger 3. Read the separate descending row when coming back. Finger numbers identify the fingers, not the scale degrees."
+        },
+        {
+          "id": "practice",
+          "heading": "A short practice check",
+          "body": "Suggested drill: play C–D–E, pause, then continue F–G–A–B–C with the printed right-hand fingers. Next, connect E–F without the pause. With the left hand, isolate G–A instead. Finish with one unhurried ascent and descent, saying each note name."
+        }
+      ],
+      "copy": {
+        "h1": "C Major Scale on Piano",
+        "intro": "See the notes, compare the two hand references, and practice one octave at a time.",
+        "jumps": [
+          {
+            "label": "Notes & fingering",
+            "href": "#sc-notes"
+          },
+          {
+            "label": "How it is built",
+            "href": "#sc-focus"
+          },
+          {
+            "label": "Practice",
+            "href": "#practice"
+          },
+          {
+            "label": "Print",
+            "href": "#print"
+          }
+        ],
+        "sections": [
+          {
+            "id": "notes",
+            "legacyBlockID": "notes",
+            "heading": "C major notes",
+            "paragraphs": [
+              "C major has no sharps or flats in its key signature. The last C repeats the tonic one octave higher. The reference is fixed to C while hand and direction remain selectable."
+            ],
+            "noteLines": [
+              "C-D-E-F-G-A-B-C"
+            ]
+          },
+          {
+            "id": "fingering",
+            "legacyBlockID": "fingering",
+            "heading": "One-octave fingering and hand references",
+            "paragraphs": [
+              "Read each finger with the note above it. These are source-documented one-octave references, not a rule that the same ending fingers should be repeated across two octaves.",
+              "Ascending with the right hand, move from E with finger 3 to F with the thumb. Ascending with the left hand, move from G with the thumb to A with finger 3. Read the separate descending row when reversing direction.",
+              "The two references have separately labeled ranges. They are not a two-hand synchronization exercise. The displayed register is a PianoGrid reference choice, not a source-prescribed range for every learner."
+            ],
+            "table": {
+              "label": "C major one-octave fingering",
+              "columns": [
+                "Hand and direction",
+                "Notes in playing order",
+                "Fingers"
+              ],
+              "rows": [
+                [
+                  "Right hand, ascending",
+                  "C4-D4-E4-F4-G4-A4-B4-C5",
+                  "1-2-3-1-2-3-4-5"
+                ],
+                [
+                  "Right hand, descending",
+                  "C5-B4-A4-G4-F4-E4-D4-C4",
+                  "5-4-3-2-1-3-2-1"
+                ],
+                [
+                  "Left hand, ascending",
+                  "C3-D3-E3-F3-G3-A3-B3-C4",
+                  "5-4-3-2-1-3-2-1"
+                ],
+                [
+                  "Left hand, descending",
+                  "C4-B3-A3-G3-F3-E3-D3-C3",
+                  "1-2-3-1-2-3-4-5"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "built",
+            "legacyBlockID": "focus",
+            "heading": "White keys, unequal distances",
+            "paragraphs": [
+              "C major uses white keys, but adjacent white keys are not all the same distance apart in pitch. E-F and B-C are half steps. C-D, D-E, F-G, G-A and A-B are whole steps.",
+              "Compare the note names with the keyboard and staff. The staff shows spelled notes; the keyboard shows physical key positions. A reference starting and ending on C demonstrates C major. Starting a melody on another note does not by itself determine a different tonic.",
+              "Scale degrees are not finger numbers. F is degree 4 but uses right-hand finger 1 in this ascending one-octave reference."
+            ],
+            "noteLines": [
+              "C-D 2 · D-E 2 · E-F 1 · F-G 2 · G-A 2 · A-B 2 · B-C 1 semitones"
+            ]
+          },
+          {
+            "id": "practice",
+            "legacyBlockID": "practice",
+            "heading": "Practice a short section, then the octave",
+            "paragraphs": [
+              "Play C-D-E, pause, then continue F-G-A-B-C. Connect E to F only when the note and finger pairing is clear. Do not hurry the crossing to keep up with a preset speed.",
+              "Use the left-hand reference and focus on G to A in the ascending line. Then read its descending row before playing back down. Name the notes as you go.",
+              "Select the notes of C major, or enter C4 through C5 in ascending order. The web exercise includes the final upper C but does not measure piano playing.",
+              "Begin with one pass at a pace you choose. The default is 60 BPM with one note per beat and four count-in beats. Pause or stop at any time and mark completion yourself."
+            ],
+            "links": [
+              {
+                "label": "Match notes to the staff",
+                "href": "/keyboard-notes/chart"
+              },
+              {
+                "label": "Read piano sheet music",
+                "href": "/guide/read-sheet-music"
+              }
+            ]
+          },
+          {
+            "id": "related",
+            "heading": "Related scales and chords",
+            "paragraphs": [
+              "C major and A natural minor use the same white-key collection but have different tonics. A harmonic and classical melodic A minor change notes, so same notes does not describe every A-minor form.",
+              "C major and C natural minor share tonic C. C natural minor changes E, A and B to E-flat, A-flat and B-flat.",
+              "Degrees 1, 3 and 5 of C major are C-E-G. They form a C-major triad, not the entire seven-note scale."
+            ],
+            "links": [
+              {
+                "label": "Compare A natural minor",
+                "href": "/scales/a-minor"
+              },
+              {
+                "label": "Parallel-scale comparison",
+                "href": "/scales#sc-compare"
+              },
+              {
+                "label": "Build the C major chord: C-E-G",
+                "href": "/chords/c-major"
+              }
+            ]
+          },
+          {
+            "id": "print",
+            "heading": "Print this C-major reference",
+            "paragraphs": [
+              "Print the selected hand and direction, or use the C-major section of C Major & A Minor - One-Octave Piano Reference. Each printed reference includes its range and source notes. Do not extend one-octave fingering by repeating the ending pattern."
+            ],
+            "links": [
+              {
+                "label": "Download the one-octave reference (PDF)",
+                "href": "/downloads/scales/pianogrid-scales-starter-reference.pdf"
+              },
+              {
+                "label": "Download the practice worksheet (PDF)",
+                "href": "/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Why are E-F and B-C half steps without a black key between them?",
+            "answer": "A half step is the distance between adjacent piano keys. E and F are adjacent keys, as are B and C. White-key color alone does not tell you whether the next scale step is whole or half."
+          },
+          {
+            "question": "Which hand should I select?",
+            "answer": "Select the hand whose reference you want to read. The numbers and labeled range change with it. This setting does not detect which hand you use on a real piano."
+          },
+          {
+            "question": "Can I repeat the fingering row to play two octaves?",
+            "answer": "No two-octave fingering is supplied. A one-octave ending is not automatically the correct connection into another octave. Use an explicitly matched two-octave source before extending it."
+          },
+          {
+            "question": "Is the C-major chord the same as the C-major scale?",
+            "answer": "No. The C-major triad uses C, E and G. The scale uses seven different notes. The chord is one useful selection from the scale, not a replacement for it."
+          }
+        ],
+        "sourceNote": "Berklee C-major material and the cited theory sources support the notes and pattern. LearnMusicTheory and Music Fun support the stated one-octave fingerings. Displayed hand ranges are PianoGrid reference registers. Sources do not represent a teacher assessment of your technique."
+      },
+      "pageSources": [
+        {
+          "sourceID": "AM-NOTES-C-MAJOR",
+          "title": "C Major Scale – Piano Notes & Practice",
+          "publisher": "Berklee PULSE",
+          "url": "https://pulse.berklee.edu/scales/c-major-scale.html",
+          "scope": "C major seven-note spelling; key signature accidental count",
+          "locator": "Opening notes and key-signature sentences, lines 4–6"
+        },
+        {
+          "sourceID": "AM-FINGER-LMT",
+          "title": "Major and Natural Minor Scales for Piano with Fingerings",
+          "publisher": "LearnMusicTheory.net / High-Yield Music Theory",
+          "url": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
+          "scope": "C,D,F,G,A,E,B,Bb,Eb major: one-octave staff spelling and RH/LH ascending/descending numbers; Bb/Eb LH top finger 2; Eb RH start finger 2 A natural minor, PDF page 2 printed page 40 A row: one-octave RH/LH ascending and descending numbers; source staff A3-A4",
+          "locator": "PDF page 1 major scales; PDF page 2 (0-based page 1), printed page 40, Natural minor scales A row; RH above/LH below; visually checked in the approved Scales plan evidence"
+        },
+        {
+          "sourceID": "AM-FINGER-MF",
+          "title": "Major Scale Fingering Charts for Keyboards",
+          "publisher": "Music Fun / Beatrice Wilder",
+          "url": "https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf",
+          "scope": "Independent visual checks of one-octave RH/LH ascending/descending sequences and staff pitches for C,G,D,A,E,B,F,Bb,Eb",
+          "locator": "PDF pages 3,4,5,6,7,8,10,11,12; the labeled key-specific pages."
+        },
+        {
+          "sourceID": "AM-THEORY",
+          "title": "Scales and scale degrees",
+          "publisher": "Open Music Theory / Hybrid Pedagogy Publishing",
+          "url": "https://openmusictheory.github.io/scales.html",
+          "scope": "Major-scale W–W–H–W–W–W–H rule; ascending/descending scale definition; half step is adjacent keyboard pitches; tonic repeated at octave",
+          "locator": "The major scale, lines 6 and 12–21"
+        },
+        {
+          "sourceID": "AM-MUSICXML",
+          "title": "The MIDI-Compatible Part of MusicXML 4.0",
+          "publisher": "W3C Music Notation Community Group",
+          "url": "https://www.w3.org/2021/06/musicxml40/tutorial/midi-compatible-part/",
+          "scope": "Pitch step, alter, octave; C4 convention; key signature fifths positive/negative",
+          "locator": "Key and Pitch, lines 80–119"
+        },
+        {
+          "sourceID": "AM-MIDI",
+          "title": "Standard MIDI Files",
+          "publisher": "The MIDI Association",
+          "url": "https://midi.org/standard-midi-files",
+          "scope": "Official public entry for the Standard MIDI Files specification",
+          "locator": "Standard MIDI Files overview"
+        },
+        {
+          "sourceID": "AM-BAYLOR",
+          "title": "23. One-Octave Major Scales",
+          "publisher": "Baylor University / Michael Clark",
+          "url": "https://openbooks.library.baylor.edu/pianobasics/chapter/one-octave-major-scales/",
+          "scope": "Explicit one-octave C,G,D,A,E fingering applicability; F RH crossing at Bb–C; B LH starting finger 4 and thumb E; finger-number role",
+          "locator": "One-Octave Major Scales; CAGED, F Major, B Major, lines 336–416"
+        }
+      ],
+      "metadata": {
+        "title": "C Major Piano Scale: Notes and Fingering",
+        "description": "See C major notes, key signature, keyboard pitches and separately verified one-octave fingering for each hand and direction.",
+        "canonical_path": "/scales/c-major",
+        "language": "en-US"
+      },
+      "provenance": {
+        "template_id": "T12",
+        "source_groups": [
+          "P183"
+        ],
+        "source_ids": [
+          "AM-NOTES-C-MAJOR",
+          "AM-FINGER-LMT",
+          "AM-FINGER-MF",
+          "AM-THEORY",
+          "AM-MUSICXML",
+          "AM-MIDI",
+          "AM-BAYLOR"
+        ],
+        "block_ids": [
+          "notes",
+          "focus",
+          "fingering",
+          "practice"
+        ]
+      }
+    },
+    "options": [
+      {
+        "id": "major:C",
+        "tonic": "C",
+        "form": "major",
+        "formLabel": "Major",
+        "semitoneSteps": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "sequences": {
+          "RH": {
+            "ascending": [
+              {
+                "spelling": "C",
+                "note": "C4",
+                "midi": 60,
+                "key_color": "white",
+                "staff": {
+                  "note": "C4",
+                  "midi": 60,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": -2,
+                  "ledger_line_steps": [
+                    -2
+                  ]
+                }
+              },
+              {
+                "spelling": "D",
+                "note": "D4",
+                "midi": 62,
+                "key_color": "white",
+                "staff": {
+                  "note": "D4",
+                  "midi": 62,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": -1,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "E",
+                "note": "E4",
+                "midi": 64,
+                "key_color": "white",
+                "staff": {
+                  "note": "E4",
+                  "midi": 64,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 0,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "F",
+                "note": "F4",
+                "midi": 65,
+                "key_color": "white",
+                "staff": {
+                  "note": "F4",
+                  "midi": 65,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 1,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "G",
+                "note": "G4",
+                "midi": 67,
+                "key_color": "white",
+                "staff": {
+                  "note": "G4",
+                  "midi": 67,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 2,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "A",
+                "note": "A4",
+                "midi": 69,
+                "key_color": "white",
+                "staff": {
+                  "note": "A4",
+                  "midi": 69,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 3,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "B",
+                "note": "B4",
+                "midi": 71,
+                "key_color": "white",
+                "staff": {
+                  "note": "B4",
+                  "midi": 71,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 4,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "C",
+                "note": "C5",
+                "midi": 72,
+                "key_color": "white",
+                "staff": {
+                  "note": "C5",
+                  "midi": 72,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 5,
+                  "ledger_line_steps": []
+                }
+              }
+            ],
+            "descending": [
+              {
+                "spelling": "C",
+                "note": "C5",
+                "midi": 72,
+                "key_color": "white",
+                "staff": {
+                  "note": "C5",
+                  "midi": 72,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 5,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "B",
+                "note": "B4",
+                "midi": 71,
+                "key_color": "white",
+                "staff": {
+                  "note": "B4",
+                  "midi": 71,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 4,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "A",
+                "note": "A4",
+                "midi": 69,
+                "key_color": "white",
+                "staff": {
+                  "note": "A4",
+                  "midi": 69,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 3,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "G",
+                "note": "G4",
+                "midi": 67,
+                "key_color": "white",
+                "staff": {
+                  "note": "G4",
+                  "midi": 67,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 2,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "F",
+                "note": "F4",
+                "midi": 65,
+                "key_color": "white",
+                "staff": {
+                  "note": "F4",
+                  "midi": 65,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 1,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "E",
+                "note": "E4",
+                "midi": 64,
+                "key_color": "white",
+                "staff": {
+                  "note": "E4",
+                  "midi": 64,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 0,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "D",
+                "note": "D4",
+                "midi": 62,
+                "key_color": "white",
+                "staff": {
+                  "note": "D4",
+                  "midi": 62,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": -1,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "C",
+                "note": "C4",
+                "midi": 60,
+                "key_color": "white",
+                "staff": {
+                  "note": "C4",
+                  "midi": 60,
+                  "clef": "treble",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": -2,
+                  "ledger_line_steps": [
+                    -2
+                  ]
+                }
+              }
+            ]
+          },
+          "LH": {
+            "ascending": [
+              {
+                "spelling": "C",
+                "note": "C3",
+                "midi": 48,
+                "key_color": "white",
+                "staff": {
+                  "note": "C3",
+                  "midi": 48,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 3,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "D",
+                "note": "D3",
+                "midi": 50,
+                "key_color": "white",
+                "staff": {
+                  "note": "D3",
+                  "midi": 50,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 4,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "E",
+                "note": "E3",
+                "midi": 52,
+                "key_color": "white",
+                "staff": {
+                  "note": "E3",
+                  "midi": 52,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 5,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "F",
+                "note": "F3",
+                "midi": 53,
+                "key_color": "white",
+                "staff": {
+                  "note": "F3",
+                  "midi": 53,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 6,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "G",
+                "note": "G3",
+                "midi": 55,
+                "key_color": "white",
+                "staff": {
+                  "note": "G3",
+                  "midi": 55,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 7,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "A",
+                "note": "A3",
+                "midi": 57,
+                "key_color": "white",
+                "staff": {
+                  "note": "A3",
+                  "midi": 57,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 8,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "B",
+                "note": "B3",
+                "midi": 59,
+                "key_color": "white",
+                "staff": {
+                  "note": "B3",
+                  "midi": 59,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 9,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "C",
+                "note": "C4",
+                "midi": 60,
+                "key_color": "white",
+                "staff": {
+                  "note": "C4",
+                  "midi": 60,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 10,
+                  "ledger_line_steps": [
+                    10
+                  ]
+                }
+              }
+            ],
+            "descending": [
+              {
+                "spelling": "C",
+                "note": "C4",
+                "midi": 60,
+                "key_color": "white",
+                "staff": {
+                  "note": "C4",
+                  "midi": 60,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 10,
+                  "ledger_line_steps": [
+                    10
+                  ]
+                }
+              },
+              {
+                "spelling": "B",
+                "note": "B3",
+                "midi": 59,
+                "key_color": "white",
+                "staff": {
+                  "note": "B3",
+                  "midi": 59,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 9,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "A",
+                "note": "A3",
+                "midi": 57,
+                "key_color": "white",
+                "staff": {
+                  "note": "A3",
+                  "midi": 57,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 8,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "G",
+                "note": "G3",
+                "midi": 55,
+                "key_color": "white",
+                "staff": {
+                  "note": "G3",
+                  "midi": 55,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 7,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "F",
+                "note": "F3",
+                "midi": 53,
+                "key_color": "white",
+                "staff": {
+                  "note": "F3",
+                  "midi": 53,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 6,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "E",
+                "note": "E3",
+                "midi": 52,
+                "key_color": "white",
+                "staff": {
+                  "note": "E3",
+                  "midi": 52,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 5,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "D",
+                "note": "D3",
+                "midi": 50,
+                "key_color": "white",
+                "staff": {
+                  "note": "D3",
+                  "midi": 50,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 4,
+                  "ledger_line_steps": []
+                }
+              },
+              {
+                "spelling": "C",
+                "note": "C3",
+                "midi": 48,
+                "key_color": "white",
+                "staff": {
+                  "note": "C3",
+                  "midi": 48,
+                  "clef": "bass",
+                  "accidental": null,
+                  "staff_step_from_bottom_line": 3,
+                  "ledger_line_steps": []
+                }
+              }
+            ]
+          }
+        },
+        "fingering": {
+          "RH": {
+            "ascending": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "descending": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1
+            ]
+          },
+          "LH": {
+            "ascending": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1
+            ],
+            "descending": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "fingeringNote": {
+          "RH": {
+            "ascending": "Source-documented one-octave row.",
+            "descending": "Source-documented one-octave row."
+          },
+          "LH": {
+            "ascending": "Source-documented one-octave row.",
+            "descending": "Source-documented one-octave row."
+          }
+        },
+        "detailURL": "/scales/c-major",
+        "sources": [
+          {
+            "sourceID": "AM-NOTES-C-MAJOR",
+            "title": "C Major Scale – Piano Notes & Practice",
+            "publisher": "Berklee PULSE",
+            "url": "https://pulse.berklee.edu/scales/c-major-scale.html",
+            "scope": "C major note spelling and its key signature.",
+            "locator": "Opening notes and key-signature sentences, lines 4–6"
+          },
+          {
+            "sourceID": "AM-FINGER-LMT",
+            "title": "Major and Natural Minor Scales for Piano with Fingerings",
+            "publisher": "LearnMusicTheory.net / High-Yield Music Theory",
+            "url": "https://learnmusictheory.net/PDFs/pdffiles/01-02-07-ScalesforPiano.pdf",
+            "scope": "C major one-octave note spelling and fingering for both hands, ascending and descending.",
+            "locator": "PDF page 1 major scales; PDF page 2 (0-based page 1), printed page 40, Natural minor scales A row; RH above/LH below; visually checked in the approved Scales plan evidence"
+          },
+          {
+            "sourceID": "AM-FINGER-MF",
+            "title": "Major Scale Fingering Charts for Keyboards",
+            "publisher": "Music Fun / Beatrice Wilder",
+            "url": "https://www.musicfun.net.au/pdf_files/scale_fingering_maj.pdf",
+            "scope": "Independent comparison of that one-octave fingering for both hands and directions.",
+            "locator": "PDF pages 3,4,5,6,7,8,10,11,12; the labeled key-specific pages."
+          }
+        ]
+      }
+    ],
+    "keyboardKeys": [
+      {
+        "key_id": "pitch-21",
+        "midi": 21,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A0",
+        "lookup_spellings": [
+          "A0"
+        ],
+        "white_key_index": 0,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-22",
+        "midi": 22,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#0 / Bb0",
+        "lookup_spellings": [
+          "A#0",
+          "Bb0"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "key_id": "pitch-23",
+        "midi": 23,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B0",
+        "lookup_spellings": [
+          "B0",
+          "Cb1"
+        ],
+        "white_key_index": 1,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-24",
+        "midi": 24,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C1",
+        "lookup_spellings": [
+          "C1",
+          "B#0"
+        ],
+        "white_key_index": 2,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-25",
+        "midi": 25,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#1 / Db1",
+        "lookup_spellings": [
+          "C#1",
+          "Db1"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "key_id": "pitch-26",
+        "midi": 26,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D1",
+        "lookup_spellings": [
+          "D1"
+        ],
+        "white_key_index": 3,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-27",
+        "midi": 27,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#1 / Eb1",
+        "lookup_spellings": [
+          "D#1",
+          "Eb1"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "key_id": "pitch-28",
+        "midi": 28,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E1",
+        "lookup_spellings": [
+          "E1",
+          "Fb1"
+        ],
+        "white_key_index": 4,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-29",
+        "midi": 29,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F1",
+        "lookup_spellings": [
+          "F1",
+          "E#1"
+        ],
+        "white_key_index": 5,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-30",
+        "midi": 30,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#1 / Gb1",
+        "lookup_spellings": [
+          "F#1",
+          "Gb1"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          5,
+          6
+        ]
+      },
+      {
+        "key_id": "pitch-31",
+        "midi": 31,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G1",
+        "lookup_spellings": [
+          "G1"
+        ],
+        "white_key_index": 6,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-32",
+        "midi": 32,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#1 / Ab1",
+        "lookup_spellings": [
+          "G#1",
+          "Ab1"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          6,
+          7
+        ]
+      },
+      {
+        "key_id": "pitch-33",
+        "midi": 33,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A1",
+        "lookup_spellings": [
+          "A1"
+        ],
+        "white_key_index": 7,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-34",
+        "midi": 34,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#1 / Bb1",
+        "lookup_spellings": [
+          "A#1",
+          "Bb1"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          7,
+          8
+        ]
+      },
+      {
+        "key_id": "pitch-35",
+        "midi": 35,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B1",
+        "lookup_spellings": [
+          "B1",
+          "Cb2"
+        ],
+        "white_key_index": 8,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-36",
+        "midi": 36,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C2",
+        "lookup_spellings": [
+          "C2",
+          "B#1"
+        ],
+        "white_key_index": 9,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-37",
+        "midi": 37,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#2 / Db2",
+        "lookup_spellings": [
+          "C#2",
+          "Db2"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          9,
+          10
+        ]
+      },
+      {
+        "key_id": "pitch-38",
+        "midi": 38,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D2",
+        "lookup_spellings": [
+          "D2"
+        ],
+        "white_key_index": 10,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-39",
+        "midi": 39,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#2 / Eb2",
+        "lookup_spellings": [
+          "D#2",
+          "Eb2"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          10,
+          11
+        ]
+      },
+      {
+        "key_id": "pitch-40",
+        "midi": 40,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E2",
+        "lookup_spellings": [
+          "E2",
+          "Fb2"
+        ],
+        "white_key_index": 11,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-41",
+        "midi": 41,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F2",
+        "lookup_spellings": [
+          "F2",
+          "E#2"
+        ],
+        "white_key_index": 12,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-42",
+        "midi": 42,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#2 / Gb2",
+        "lookup_spellings": [
+          "F#2",
+          "Gb2"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          12,
+          13
+        ]
+      },
+      {
+        "key_id": "pitch-43",
+        "midi": 43,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G2",
+        "lookup_spellings": [
+          "G2"
+        ],
+        "white_key_index": 13,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-44",
+        "midi": 44,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#2 / Ab2",
+        "lookup_spellings": [
+          "G#2",
+          "Ab2"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          13,
+          14
+        ]
+      },
+      {
+        "key_id": "pitch-45",
+        "midi": 45,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A2",
+        "lookup_spellings": [
+          "A2"
+        ],
+        "white_key_index": 14,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-46",
+        "midi": 46,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#2 / Bb2",
+        "lookup_spellings": [
+          "A#2",
+          "Bb2"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          14,
+          15
+        ]
+      },
+      {
+        "key_id": "pitch-47",
+        "midi": 47,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B2",
+        "lookup_spellings": [
+          "B2",
+          "Cb3"
+        ],
+        "white_key_index": 15,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-48",
+        "midi": 48,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C3",
+        "lookup_spellings": [
+          "C3",
+          "B#2"
+        ],
+        "white_key_index": 16,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-49",
+        "midi": 49,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#3 / Db3",
+        "lookup_spellings": [
+          "C#3",
+          "Db3"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          16,
+          17
+        ]
+      },
+      {
+        "key_id": "pitch-50",
+        "midi": 50,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D3",
+        "lookup_spellings": [
+          "D3"
+        ],
+        "white_key_index": 17,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-51",
+        "midi": 51,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#3 / Eb3",
+        "lookup_spellings": [
+          "D#3",
+          "Eb3"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          17,
+          18
+        ]
+      },
+      {
+        "key_id": "pitch-52",
+        "midi": 52,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E3",
+        "lookup_spellings": [
+          "E3",
+          "Fb3"
+        ],
+        "white_key_index": 18,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-53",
+        "midi": 53,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F3",
+        "lookup_spellings": [
+          "F3",
+          "E#3"
+        ],
+        "white_key_index": 19,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-54",
+        "midi": 54,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#3 / Gb3",
+        "lookup_spellings": [
+          "F#3",
+          "Gb3"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          19,
+          20
+        ]
+      },
+      {
+        "key_id": "pitch-55",
+        "midi": 55,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G3",
+        "lookup_spellings": [
+          "G3"
+        ],
+        "white_key_index": 20,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-56",
+        "midi": 56,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#3 / Ab3",
+        "lookup_spellings": [
+          "G#3",
+          "Ab3"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          20,
+          21
+        ]
+      },
+      {
+        "key_id": "pitch-57",
+        "midi": 57,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A3",
+        "lookup_spellings": [
+          "A3"
+        ],
+        "white_key_index": 21,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-58",
+        "midi": 58,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#3 / Bb3",
+        "lookup_spellings": [
+          "A#3",
+          "Bb3"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          21,
+          22
+        ]
+      },
+      {
+        "key_id": "pitch-59",
+        "midi": 59,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B3",
+        "lookup_spellings": [
+          "B3",
+          "Cb4"
+        ],
+        "white_key_index": 22,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-60",
+        "midi": 60,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C4",
+        "lookup_spellings": [
+          "C4",
+          "B#3"
+        ],
+        "white_key_index": 23,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-61",
+        "midi": 61,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#4 / Db4",
+        "lookup_spellings": [
+          "C#4",
+          "Db4"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          23,
+          24
+        ]
+      },
+      {
+        "key_id": "pitch-62",
+        "midi": 62,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D4",
+        "lookup_spellings": [
+          "D4"
+        ],
+        "white_key_index": 24,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-63",
+        "midi": 63,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#4 / Eb4",
+        "lookup_spellings": [
+          "D#4",
+          "Eb4"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          24,
+          25
+        ]
+      },
+      {
+        "key_id": "pitch-64",
+        "midi": 64,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E4",
+        "lookup_spellings": [
+          "E4",
+          "Fb4"
+        ],
+        "white_key_index": 25,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-65",
+        "midi": 65,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F4",
+        "lookup_spellings": [
+          "F4",
+          "E#4"
+        ],
+        "white_key_index": 26,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-66",
+        "midi": 66,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#4 / Gb4",
+        "lookup_spellings": [
+          "F#4",
+          "Gb4"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          26,
+          27
+        ]
+      },
+      {
+        "key_id": "pitch-67",
+        "midi": 67,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G4",
+        "lookup_spellings": [
+          "G4"
+        ],
+        "white_key_index": 27,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-68",
+        "midi": 68,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#4 / Ab4",
+        "lookup_spellings": [
+          "G#4",
+          "Ab4"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          27,
+          28
+        ]
+      },
+      {
+        "key_id": "pitch-69",
+        "midi": 69,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A4",
+        "lookup_spellings": [
+          "A4"
+        ],
+        "white_key_index": 28,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-70",
+        "midi": 70,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#4 / Bb4",
+        "lookup_spellings": [
+          "A#4",
+          "Bb4"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          28,
+          29
+        ]
+      },
+      {
+        "key_id": "pitch-71",
+        "midi": 71,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B4",
+        "lookup_spellings": [
+          "B4",
+          "Cb5"
+        ],
+        "white_key_index": 29,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-72",
+        "midi": 72,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C5",
+        "lookup_spellings": [
+          "C5",
+          "B#4"
+        ],
+        "white_key_index": 30,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-73",
+        "midi": 73,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#5 / Db5",
+        "lookup_spellings": [
+          "C#5",
+          "Db5"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          30,
+          31
+        ]
+      },
+      {
+        "key_id": "pitch-74",
+        "midi": 74,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D5",
+        "lookup_spellings": [
+          "D5"
+        ],
+        "white_key_index": 31,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-75",
+        "midi": 75,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#5 / Eb5",
+        "lookup_spellings": [
+          "D#5",
+          "Eb5"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          31,
+          32
+        ]
+      },
+      {
+        "key_id": "pitch-76",
+        "midi": 76,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E5",
+        "lookup_spellings": [
+          "E5",
+          "Fb5"
+        ],
+        "white_key_index": 32,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-77",
+        "midi": 77,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F5",
+        "lookup_spellings": [
+          "F5",
+          "E#5"
+        ],
+        "white_key_index": 33,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-78",
+        "midi": 78,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#5 / Gb5",
+        "lookup_spellings": [
+          "F#5",
+          "Gb5"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          33,
+          34
+        ]
+      },
+      {
+        "key_id": "pitch-79",
+        "midi": 79,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G5",
+        "lookup_spellings": [
+          "G5"
+        ],
+        "white_key_index": 34,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-80",
+        "midi": 80,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#5 / Ab5",
+        "lookup_spellings": [
+          "G#5",
+          "Ab5"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          34,
+          35
+        ]
+      },
+      {
+        "key_id": "pitch-81",
+        "midi": 81,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A5",
+        "lookup_spellings": [
+          "A5"
+        ],
+        "white_key_index": 35,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-82",
+        "midi": 82,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#5 / Bb5",
+        "lookup_spellings": [
+          "A#5",
+          "Bb5"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          35,
+          36
+        ]
+      },
+      {
+        "key_id": "pitch-83",
+        "midi": 83,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B5",
+        "lookup_spellings": [
+          "B5",
+          "Cb6"
+        ],
+        "white_key_index": 36,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-84",
+        "midi": 84,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C6",
+        "lookup_spellings": [
+          "C6",
+          "B#5"
+        ],
+        "white_key_index": 37,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-85",
+        "midi": 85,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#6 / Db6",
+        "lookup_spellings": [
+          "C#6",
+          "Db6"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          37,
+          38
+        ]
+      },
+      {
+        "key_id": "pitch-86",
+        "midi": 86,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D6",
+        "lookup_spellings": [
+          "D6"
+        ],
+        "white_key_index": 38,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-87",
+        "midi": 87,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#6 / Eb6",
+        "lookup_spellings": [
+          "D#6",
+          "Eb6"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          38,
+          39
+        ]
+      },
+      {
+        "key_id": "pitch-88",
+        "midi": 88,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E6",
+        "lookup_spellings": [
+          "E6",
+          "Fb6"
+        ],
+        "white_key_index": 39,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-89",
+        "midi": 89,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F6",
+        "lookup_spellings": [
+          "F6",
+          "E#6"
+        ],
+        "white_key_index": 40,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-90",
+        "midi": 90,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#6 / Gb6",
+        "lookup_spellings": [
+          "F#6",
+          "Gb6"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          40,
+          41
+        ]
+      },
+      {
+        "key_id": "pitch-91",
+        "midi": 91,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G6",
+        "lookup_spellings": [
+          "G6"
+        ],
+        "white_key_index": 41,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-92",
+        "midi": 92,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#6 / Ab6",
+        "lookup_spellings": [
+          "G#6",
+          "Ab6"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          41,
+          42
+        ]
+      },
+      {
+        "key_id": "pitch-93",
+        "midi": 93,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A6",
+        "lookup_spellings": [
+          "A6"
+        ],
+        "white_key_index": 42,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-94",
+        "midi": 94,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#6 / Bb6",
+        "lookup_spellings": [
+          "A#6",
+          "Bb6"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          42,
+          43
+        ]
+      },
+      {
+        "key_id": "pitch-95",
+        "midi": 95,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B6",
+        "lookup_spellings": [
+          "B6",
+          "Cb7"
+        ],
+        "white_key_index": 43,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-96",
+        "midi": 96,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C7",
+        "lookup_spellings": [
+          "C7",
+          "B#6"
+        ],
+        "white_key_index": 44,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-97",
+        "midi": 97,
+        "color": "black",
+        "default_label": "C# / Db",
+        "label_with_octave": "C#7 / Db7",
+        "lookup_spellings": [
+          "C#7",
+          "Db7"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          44,
+          45
+        ]
+      },
+      {
+        "key_id": "pitch-98",
+        "midi": 98,
+        "color": "white",
+        "default_label": "D",
+        "label_with_octave": "D7",
+        "lookup_spellings": [
+          "D7"
+        ],
+        "white_key_index": 45,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-99",
+        "midi": 99,
+        "color": "black",
+        "default_label": "D# / Eb",
+        "label_with_octave": "D#7 / Eb7",
+        "lookup_spellings": [
+          "D#7",
+          "Eb7"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          45,
+          46
+        ]
+      },
+      {
+        "key_id": "pitch-100",
+        "midi": 100,
+        "color": "white",
+        "default_label": "E",
+        "label_with_octave": "E7",
+        "lookup_spellings": [
+          "E7",
+          "Fb7"
+        ],
+        "white_key_index": 46,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-101",
+        "midi": 101,
+        "color": "white",
+        "default_label": "F",
+        "label_with_octave": "F7",
+        "lookup_spellings": [
+          "F7",
+          "E#7"
+        ],
+        "white_key_index": 47,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-102",
+        "midi": 102,
+        "color": "black",
+        "default_label": "F# / Gb",
+        "label_with_octave": "F#7 / Gb7",
+        "lookup_spellings": [
+          "F#7",
+          "Gb7"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          47,
+          48
+        ]
+      },
+      {
+        "key_id": "pitch-103",
+        "midi": 103,
+        "color": "white",
+        "default_label": "G",
+        "label_with_octave": "G7",
+        "lookup_spellings": [
+          "G7"
+        ],
+        "white_key_index": 48,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-104",
+        "midi": 104,
+        "color": "black",
+        "default_label": "G# / Ab",
+        "label_with_octave": "G#7 / Ab7",
+        "lookup_spellings": [
+          "G#7",
+          "Ab7"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          48,
+          49
+        ]
+      },
+      {
+        "key_id": "pitch-105",
+        "midi": 105,
+        "color": "white",
+        "default_label": "A",
+        "label_with_octave": "A7",
+        "lookup_spellings": [
+          "A7"
+        ],
+        "white_key_index": 49,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-106",
+        "midi": 106,
+        "color": "black",
+        "default_label": "A# / Bb",
+        "label_with_octave": "A#7 / Bb7",
+        "lookup_spellings": [
+          "A#7",
+          "Bb7"
+        ],
+        "white_key_index": null,
+        "black_key_between_white_indices": [
+          49,
+          50
+        ]
+      },
+      {
+        "key_id": "pitch-107",
+        "midi": 107,
+        "color": "white",
+        "default_label": "B",
+        "label_with_octave": "B7",
+        "lookup_spellings": [
+          "B7",
+          "Cb8"
+        ],
+        "white_key_index": 50,
+        "black_key_between_white_indices": null
+      },
+      {
+        "key_id": "pitch-108",
+        "midi": 108,
+        "color": "white",
+        "default_label": "C",
+        "label_with_octave": "C8",
+        "lookup_spellings": [
+          "C8",
+          "B#7"
+        ],
+        "white_key_index": 51,
+        "black_key_between_white_indices": null
+      }
+    ],
+    "defaultForm": "major",
+    "tempoOptions": [
+      60
+    ],
+    "keySignature": "No sharps or flats",
+    "relatedLinks": [
+      {
+        "url": "/scales",
+        "label": "All piano scales",
+        "activation": "only when target is live"
+      }
+    ],
+    "chords": []
+  },
+  "extendedFixture": {
+    "id": "d-dominant9",
+    "family": "extended",
+    "subtype": "dominant9",
+    "name": "D dominant 9th",
+    "root": "D",
+    "rootPitchClass": 2,
+    "symbol": "D9",
+    "aliases": [
+      "D9",
+      "D dominant 9th"
+    ],
+    "destination": "/chords/extended#ref-d-dominant9",
+    "detailURL": null,
+    "definition": {
+      "formulaDegrees": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "displayFormula": [
+        "1",
+        "3",
+        "5",
+        "♭7",
+        "9"
+      ],
+      "toneSpellings": [
+        "D",
+        "F♯",
+        "A",
+        "C",
+        "E"
+      ],
+      "pitchClassIntervals": [
+        0,
+        4,
+        7,
+        10,
+        2
+      ],
+      "uniquePitchClassCount": 5
+    },
+    "realizations": [
+      {
+        "id": "formula-stack",
+        "label": "Formula stack — study view",
+        "purpose": "theory_inventory",
+        "symbol": "D9",
+        "displayNote": "No formula tones omitted in this example.",
+        "notes": [
+          "D3",
+          "F♯3",
+          "A3",
+          "C4",
+          "E4"
+        ],
+        "midi": [
+          50,
+          54,
+          57,
+          60,
+          64
+        ],
+        "realizedDegrees": [
+          "1",
+          "3",
+          "5",
+          "b7",
+          "9"
+        ],
+        "omittedDegrees": [],
+        "doubledDegrees": [],
+        "bass": {
+          "spelling": "D",
+          "midi": 50,
+          "formulaDegree": "1"
+        },
+        "keyboard": {
+          "minMidi": 48,
+          "maxMidi": 72
+        },
+        "audio": {
+          "block": [
+            {
+              "midi": 50,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 54,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 57,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 60,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 64,
+              "onsetMs": 0,
+              "durationMs": 1400
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 50,
+              "onsetMs": 0,
+              "durationMs": 1200
+            },
+            {
+              "midi": 54,
+              "onsetMs": 600,
+              "durationMs": 1200
+            },
+            {
+              "midi": 57,
+              "onsetMs": 1200,
+              "durationMs": 1200
+            },
+            {
+              "midi": 60,
+              "onsetMs": 1800,
+              "durationMs": 1200
+            },
+            {
+              "midi": 64,
+              "onsetMs": 2400,
+              "durationMs": 1200
+            }
+          ]
+        }
+      },
+      {
+        "id": "rooted-example",
+        "label": "Rooted example — play these notes",
+        "purpose": "playing_example",
+        "symbol": "D9",
+        "displayNote": "Omitted here: 5",
+        "notes": [
+          "D3",
+          "F♯3",
+          "C4",
+          "E4"
+        ],
+        "midi": [
+          50,
+          54,
+          60,
+          64
+        ],
+        "realizedDegrees": [
+          "1",
+          "3",
+          "b7",
+          "9"
+        ],
+        "omittedDegrees": [
+          "5"
+        ],
+        "doubledDegrees": [],
+        "bass": {
+          "spelling": "D",
+          "midi": 50,
+          "formulaDegree": "1"
+        },
+        "keyboard": {
+          "minMidi": 48,
+          "maxMidi": 72
+        },
+        "audio": {
+          "block": [
+            {
+              "midi": 50,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 54,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 60,
+              "onsetMs": 0,
+              "durationMs": 1400
+            },
+            {
+              "midi": 64,
+              "onsetMs": 0,
+              "durationMs": 1400
+            }
+          ],
+          "ascending": [
+            {
+              "midi": 50,
+              "onsetMs": 0,
+              "durationMs": 1200
+            },
+            {
+              "midi": 54,
+              "onsetMs": 600,
+              "durationMs": 1200
+            },
+            {
+              "midi": 60,
+              "onsetMs": 1200,
+              "durationMs": 1200
+            },
+            {
+              "midi": 64,
+              "onsetMs": 1800,
+              "durationMs": 1200
+            }
+          ]
+        }
+      }
+    ],
+    "defaultRealizationId": "rooted-example",
+    "content": [
+      {
+        "id": "answer",
+        "heading": "D dominant 9th",
+        "paragraphs": [
+          "D9 has the reference formula 1–3–5–♭7–9. Written tones: D, F♯, A, C, E."
+        ]
+      },
+      {
+        "id": "definition-vs-sound",
+        "heading": "The formula and the notes you hear",
+        "paragraphs": [
+          "The formula view lists the reference chord tones. The playing view names the exact notes in this supplied example. Its omissions are shown rather than hidden. A different arrangement is not automatically a wrong chord."
+        ]
+      },
+      {
+        "id": "play",
+        "heading": "Try the displayed example",
+        "paragraphs": [
+          "Read the low-to-high note list, then play the block or ascending preview. The hand split is one layout suggestion, not a fingering prescription or a test of your playing technique. Compare the formula view to hear what was left out."
+        ]
+      },
+      {
+        "id": "practice",
+        "heading": "Choose your practice task",
+        "paragraphs": [
+          "Build formula tones checks the full reference pitch-class set. Match this example checks the displayed MIDI pitches. An approved omitted-note layout is checked only under its named realization task, not against an unspecified universal rule."
+        ]
+      }
+    ],
+    "practiceModes": [
+      "formula_pitch_classes",
+      "example_midi_set",
+      "example_pitch_classes"
+    ],
+    "sourceIDs": [
+      "OMT-SYMBOLS",
+      "OMT-JAZZ-VOICINGS",
+      "MUSICCA-CHORDS"
+    ],
+    "teacherReviewed": false
+  }
+}

@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import runpy
+import argparse
 from reportlab.lib.pagesizes import A4, letter
 from reportlab.pdfgen import canvas
 
@@ -18,7 +19,10 @@ EVIDENCE = ROOT / "checks" / "scales-completion" / "pdf"
 OUT.mkdir(parents=True, exist_ok=True)
 EVIDENCE.mkdir(parents=True, exist_ok=True)
 BASE = runpy.run_path(str(ROOT / "scripts" / "generate-scale-pdfs.py"))
-GENERATOR_VERSION = "2026-09-14-SCALES-COMPLETION-1"
+# run_path returns a copy; functions still read their original globals. Mutate
+# that namespace so every helper uses the selected paper's actual dimensions.
+BASE = BASE["header"].__globals__
+GENERATOR_VERSION = "2026-09-22-SCALES-COMPLETION-3"
 
 
 def set_page(size):
@@ -144,6 +148,11 @@ def build_two_hand(master, suffix, pagesize):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--two-hand-only", action="store_true", help="Regenerate only the two existing C-major starter PDFs")
+    parser.add_argument("--evidence-dir", type=Path, default=EVIDENCE)
+    args = parser.parse_args()
+    args.evidence_dir.mkdir(parents=True, exist_ok=True)
     master = json.loads(MASTER.read_text(encoding="utf-8"))
     generator_hash = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     relevant = {
@@ -154,7 +163,8 @@ def main():
     input_hash = hashlib.sha256(json.dumps(relevant, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
     outputs = []
     for suffix, pagesize, paper in (("", letter, "LETTER"), ("-a4", A4, "A4")):
-        for resource_id, builder in (("R-MAJ12", build_major), ("R-ATLAS60", build_atlas), ("R-TWOHAND-C", build_two_hand)):
+        builders = (("R-TWOHAND-C", build_two_hand),) if args.two_hand_only else (("R-MAJ12", build_major), ("R-ATLAS60", build_atlas), ("R-TWOHAND-C", build_two_hand))
+        for resource_id, builder in builders:
             path, sections = builder(master, suffix, pagesize)
             outputs.append({
                 "resource_id": resource_id,
@@ -177,7 +187,7 @@ def main():
         "physical_printing": "NOT_RUN",
         "rights": "PianoGrid original text, vector diagrams and layout; source facts transcribed; no third-party source file or font file embedded.",
     }
-    (EVIDENCE / "generation-metadata.json").write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (args.evidence_dir / "generation-metadata.json").write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"generated": len(outputs), "outputs": [{"path": item["path"], "pages": item["pages"], "bytes": item["bytes"]} for item in outputs]}, indent=2))
 
 

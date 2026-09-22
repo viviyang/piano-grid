@@ -1,0 +1,19 @@
+FAIL Protected source unchanged: docs/content/site-master/A-Scales/batch-page-content.json {
+  passed: false,
+  mode: 'byte-mismatch',
+  expected: '8a6f9681acec1a3091f1d938b15580afa9648b1e1337f1abd7f1cb3f88087580',
+  rawHash: 'd086fd50224c3fed4bebb05ce07497511895bafc4836bbf1b33bcd20e320606e'
+}
+FAIL Protected source unchanged: docs/content/site-master/A-Scales/batch-source-ledger.md {
+  passed: false,
+  mode: 'byte-mismatch',
+  expected: 'ce54c4cd56ff6d27a8ccc4341952fe94ca8d116c3e30fdb9b01292299d651be3',
+  rawHash: '9dba0af92aa019a57f0978862da58dc7ff47489a4a5e77a09d029bd566322d97'
+}
+FAIL Protected source unchanged: docs/content/site-master/source-ledger.master.md {
+  passed: false,
+  mode: 'byte-mismatch',
+  expected: '5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2',
+  rawHash: 'cd79cb6b8f1f63ae67f0d6d2e34ded6f0e150a2173a6a6e5e5f5d50ebb711db0'
+}
+Integration data: 149 passed, 3 failed.

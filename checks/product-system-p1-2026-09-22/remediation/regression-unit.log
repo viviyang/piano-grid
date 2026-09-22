@@ -1,0 +1,30 @@
+(node:77340) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Admin/Documents/viviyang_github/piano-main-product-audit/src/lib/product-continuation-state.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to C:\Users\Admin\Documents\viviyang_github\piano-main-product-audit\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ bounded finder state round trip, no octave information (8.292ms)
+✔ invalid note, bass, mode and oversized input reject safely (1.1425ms)
+✔ detail restores a supported bass, never invents a voicing (1.1407ms)
+✔ invalid or foreign object restores safe default with explanation (0.7768ms)
+✔ only the five detail receivers and extended accept new Finder state (1.3548ms)
+(node:15144) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Admin/Documents/viviyang_github/piano-main-product-audit/src/lib/product-measurement-core.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to C:\Users\Admin\Documents\viviyang_github\piano-main-product-audit\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ nine paths only; input fingerprint has only supported state (2.903ms)
+✔ logical-view exposure and engaged denominator cannot exceed 100% (0.7353ms)
+✔ 300ms settling cancels stale input, even if an old callback is delivered (1.8852ms)
+✔ help stays sticky across retries; success repeats are not new completions (1.5571ms)
+✔ existing transport handles absent and throwing gtag without breaking the task (14.4784ms)
+✔ only an explicitly reviewed text path accepts CRLF/LF equivalence (4.1078ms)
+✔ reads current file bytes and rejects a one-character edit, whitespace edits and BOM (29.5374ms)
+✔ invalid UTF8 is rejected; exact binary bytes retain byte-exact behavior (0.6209ms)
+✔ all 23 reviewed repository files match the historical hash, but a byte edit fails (109.3438ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 481.3642

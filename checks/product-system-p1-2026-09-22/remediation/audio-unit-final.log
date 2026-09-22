@@ -1,0 +1,17 @@
+✔ startup reports scheduled origin; legacy promise still waits for completion (257.6073ms)
+✔ suspended context startup uses the resumed clock, never request time (90.2229ms)
+✔ cancel during resume never emits startup and settles completion (54.0789ms)
+✔ unavailable and rejected resume settle without a false startup (99.3738ms)
+✔ superseded playback is cancelled while the new playback completes (36.3779ms)
+✔ scale startup settles before completion and carries the actual origin (185.9279ms)
+✔ cancel before startup settles as cancelled, never a success (56.7788ms)
+✔ post-start output failure invalidates session and notifies practice cancellation (33.8357ms)
+✔ unavailable startup remains a recoverable failure (31.5786ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1197.5375

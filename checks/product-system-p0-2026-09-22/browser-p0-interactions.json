@@ -1,0 +1,92 @@
+{
+  "results": [
+    {
+      "name": "audio actual playing state emits success",
+      "passed": true
+    },
+    {
+      "name": "guided revealed completion marked assisted",
+      "passed": true
+    },
+    {
+      "name": "print is request only",
+      "passed": false,
+      "error": "TimeoutError: locator.click: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Print', exact: true }).first()\u001b[22m\n"
+    },
+    {
+      "name": "failed audio does not emit success, UI stays functional",
+      "passed": true
+    },
+    {
+      "name": "cancelled native share is not successful share",
+      "passed": true
+    }
+  ],
+  "normalEvents": [
+    {
+      "name": "p0_result_seen",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/c-major",
+        "object_id": "c-major",
+        "result_state": "c-major--root"
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_audio_play",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/c-major",
+        "object_id": "c-major",
+        "mode": "reference"
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_practice_start",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/c-major",
+        "object_id": "c-major",
+        "mode": "guided-chord",
+        "attempt": 1
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_practice_complete",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/c-major",
+        "object_id": "c-major",
+        "mode": "guided-chord",
+        "attempt": 1,
+        "assisted": true,
+        "outcome": "exercise_success"
+      },
+      "externallySent": false
+    }
+  ],
+  "failureEvents": [
+    {
+      "name": "p0_result_seen",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/c-major",
+        "object_id": "c-major",
+        "result_state": "c-major--first"
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_share",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/c-major",
+        "status": "cancelled"
+      },
+      "externallySent": false
+    }
+  ]
+}

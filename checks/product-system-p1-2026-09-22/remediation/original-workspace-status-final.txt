@@ -1,0 +1,130 @@
+ M AGENTS.md
+ M checks/batches/02-keyboard-notes/data-validation.json
+ M checks/batches/03-scales/data-validation.json
+ M checks/batches/03-scales/print-pdfs/a-minor-melodic-rh-descending.pdf
+ M checks/batches/03-scales/print-pdfs/a-minor-natural-rh-ascending.pdf
+ M checks/batches/03-scales/print-pdfs/c-major-lh-up-down.pdf
+ M checks/batches/03-scales/print-pdfs/scales-center-c-major.pdf
+ M checks/batches/03-scales/screenshots/scales-1440.png
+ M checks/batches/03-scales/screenshots/scales-320.png
+ M checks/batches/03-scales/screenshots/scales-390.png
+ M checks/batches/03-scales/screenshots/scales-768.png
+ M checks/batches/03-scales/screenshots/scales-a-minor-1440.png
+ M checks/batches/03-scales/screenshots/scales-a-minor-320.png
+ M checks/batches/03-scales/screenshots/scales-a-minor-390.png
+ M checks/batches/03-scales/screenshots/scales-a-minor-768.png
+ M checks/batches/03-scales/screenshots/scales-a-minor-text200.png
+ M checks/batches/03-scales/screenshots/scales-c-major-1440.png
+ M checks/batches/03-scales/screenshots/scales-c-major-320.png
+ M checks/batches/03-scales/screenshots/scales-c-major-390.png
+ M checks/batches/03-scales/screenshots/scales-c-major-768.png
+ M checks/batches/03-scales/screenshots/scales-c-major-text200.png
+ M checks/batches/03-scales/screenshots/scales-text200.png
+ M checks/batches/03-scales/validation.json
+ M checks/batches/05-guides/data-validation.json
+ M checks/batches/07-site-integration/data-validation.json
+ M checks/batches/07-site-integration/foundation.compiled.css
+ M checks/batches/07-site-integration/foundation.json
+ M checks/batches/07-site-integration/tailwind-compile.json
+ M docs/content/site-master/page-content.master.json
+ M docs/pianogrid-chords-content-next/07_validation/content-check-results.json
+ M docs/project-context.md
+ M public/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf
+ M public/downloads/scales/pianogrid-scales-starter-reference.pdf
+ M scripts/check-chord-content-next.mjs
+ M scripts/check-content-adapters.mjs
+ M scripts/check-css.mjs
+ M scripts/check-foundation.mjs
+ M scripts/check-guide-data.mjs
+ M scripts/check-integration-batch.mjs
+ M scripts/check-integration-data.mjs
+ M scripts/check-integration-production.mjs
+ M scripts/check-keyboard-data.mjs
+ M scripts/check-scale-batch.mjs
+ M scripts/check-scale-data.mjs
+ M scripts/check-scale-sample.mjs
+ M scripts/generate-scale-pdfs.py
+ M src/components/chords/center-page.tsx
+ M src/components/chords/detail-page.tsx
+ M src/components/guides/guides.css
+ M src/components/guides/pages.tsx
+ M src/components/scales/center-experience.tsx
+ M src/components/scales/detail-experience.tsx
+ M src/components/scales/pages.tsx
+ M src/components/scales/scale-learning.tsx
+ M src/components/scales/scale-reference.tsx
+ M src/components/scales/scales.css
+ M src/components/scales/use-scale-audio.ts
+ M src/lib/a-minor-audio.ts
+ M src/lib/a-minor-content.ts
+ M src/lib/a-minor-types.ts
+ M src/lib/chord-content.ts
+ M src/lib/chord-detail-model.ts
+ M src/lib/chord-learning-content.ts
+ M src/lib/guide-content.ts
+ M src/lib/guide-types.ts
+ M src/lib/integration-content.ts
+ M src/lib/keyboard-content.ts
+ M src/lib/scale-authoring.ts
+ M src/lib/scale-content.ts
+ M src/lib/scale-types.ts
+ M src/lib/site-routes.ts
+?? .cursor/
+?? CLAUDE.md
+?? CONSOLIDATION_REPORT.md
+?? SCALES_RESULT.md
+?? _handoff/
+?? checks/scales-sample-step1-approved/
+?? checks/scales-sample-step1-final/
+?? checks/scales-sample-step1-review/
+?? checks/scales-sample/pdf-a4-proof/
+?? checks/scales-sample/pdf-a4-renders/
+?? checks/scales-sample/print-isolated/
+?? checks/scales-sample/print-pdfs/a-minor-classical-descending-final.pdf
+?? checks/scales-sample/print-pdfs/c-major-final.pdf
+?? checks/scales-sample/print-renders-final/
+?? checks/scales-sample/print-renders-final2/
+?? checks/scales-sample/print-renders-latest/
+?? checks/scales-step2-final/
+?? docs/design/COMPONENT-RULES.md
+?? docs/design/keyboard-notes-v2/
+?? docs/pianogrid-chords-content-next/09_codex-results/20260911-204548-support/
+?? docs/pianogrid-chords-content-next/09_codex-results/20260911-210906-by-key/
+?? docs/pianogrid-chords-content-next/09_codex-results/20260911-215042-progressions/
+?? docs/pianogrid-chords-content-next/09_codex-results/20260911-225244-final-chords/
+?? docs/pianogrid-execution-v2/
+?? docs/product-upgrade/
+?? docs/product/feedback-launch-gates.md
+?? docs/product/feedback-v0.2.md
+?? docs/release/PianoGrid_Chords_N2D_v2_Confirmed_Pack_2026-09-12/
+?? docs/seo-index-audit/
+?? docs/seo/
+?? "docs/\347\253\236\345\223\201\350\260\203\347\240\224_Competitor_Research_Pack_2026-09-15/"
+?? public/reference/assets/chord-c-flat-major.pdf
+?? public/reference/assets/chord-c-flat-major.svg
+?? scripts/build-scales-final-handoff.mjs
+?? scripts/capture-scale-print.mjs
+?? scripts/check-by-key.mjs
+?? scripts/check-chord-progressions.mjs
+?? scripts/check-chords-final.mjs
+?? scripts/check-scale-final-pdfs.py
+?? scripts/check-scale-final.mjs
+?? scripts/check-scale-sample-pdfs.py
+?? scripts/check-scale-step2-browser.mjs
+?? scripts/check-support-pages.mjs
+?? scripts/export-scale-authoring.mjs
+?? scripts/import-scale-authoring.mjs
+?? scripts/make-browser-contact-sheets.py
+?? scripts/make-pdf-contact-sheets.py
+?? scripts/scale-authoring-contract.mjs
+?? scripts/seo-audit.mjs
+?? scripts/sync-indexing-ledger.mjs
+?? seo-audit/
+?? src/app/chord-progressions/
+?? src/app/chords/by-key/
+?? src/app/chords/c-flat-major/
+?? src/app/chords/finder/
+?? src/app/guide/piano-chords/
+?? src/app/keyboard-notes/finger-numbers/
+?? src/components/support/
+?? src/lib/support-content.ts

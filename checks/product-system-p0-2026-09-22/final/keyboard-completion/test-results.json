@@ -1,0 +1,286 @@
+{
+  "passed": 70,
+  "failed": 0,
+  "results": [
+    {
+      "name": "88-key invariant",
+      "passed": true
+    },
+    {
+      "name": "61-key invariant",
+      "passed": true
+    },
+    {
+      "name": "resolve A0",
+      "passed": true
+    },
+    {
+      "name": "resolve C4",
+      "passed": true
+    },
+    {
+      "name": "resolve A4",
+      "passed": true
+    },
+    {
+      "name": "resolve C8",
+      "passed": true
+    },
+    {
+      "name": "resolve B#3",
+      "passed": true
+    },
+    {
+      "name": "resolve B#4",
+      "passed": true
+    },
+    {
+      "name": "resolve Cb4",
+      "passed": true
+    },
+    {
+      "name": "resolve Ab4",
+      "passed": true
+    },
+    {
+      "name": "resolve G#4",
+      "passed": true
+    },
+    {
+      "name": "B-sharp spelling retained",
+      "passed": true
+    },
+    {
+      "name": "C-flat spelling retained",
+      "passed": true
+    },
+    {
+      "name": "D8 outside range",
+      "passed": true
+    },
+    {
+      "name": "hub empty message",
+      "passed": true
+    },
+    {
+      "name": "hub H4 message",
+      "passed": true
+    },
+    {
+      "name": "hub D8 message",
+      "passed": true
+    },
+    {
+      "name": "hub C octave message",
+      "passed": true
+    },
+    {
+      "name": "hub A-flat octave message",
+      "passed": true
+    },
+    {
+      "name": "Db4 spelling retained",
+      "passed": true
+    },
+    {
+      "name": "c#4 same pitch as Db4",
+      "passed": true
+    },
+    {
+      "name": "spoken C4 name",
+      "passed": true
+    },
+    {
+      "name": "spoken C#4 name",
+      "passed": true
+    },
+    {
+      "name": "C candidates 88",
+      "passed": true
+    },
+    {
+      "name": "C candidates 61",
+      "passed": true
+    },
+    {
+      "name": "Ab candidates 88",
+      "passed": true
+    },
+    {
+      "name": "B# candidates 61",
+      "passed": true
+    },
+    {
+      "name": "Cb candidates 61",
+      "passed": true
+    },
+    {
+      "name": "invalid empty",
+      "passed": true
+    },
+    {
+      "name": "invalid H4",
+      "passed": true
+    },
+    {
+      "name": "compound query",
+      "passed": true
+    },
+    {
+      "name": "layout re-resolution",
+      "passed": true
+    },
+    {
+      "name": "share serialize restore",
+      "passed": true
+    },
+    {
+      "name": "bad share params safe",
+      "passed": true
+    },
+    {
+      "name": "invalid share note flagged",
+      "passed": true
+    },
+    {
+      "name": "missing share note not flagged",
+      "passed": true
+    },
+    {
+      "name": "F#4/Gb4 identity and staff letters",
+      "passed": true
+    },
+    {
+      "name": "C4 two clefs",
+      "passed": true
+    },
+    {
+      "name": "61 chart mode approved",
+      "passed": true
+    },
+    {
+      "name": "find practice deterministic 10",
+      "passed": true
+    },
+    {
+      "name": "practice correct",
+      "passed": true
+    },
+    {
+      "name": "practice wrong octave",
+      "passed": true
+    },
+    {
+      "name": "practice wrong note",
+      "passed": true
+    },
+    {
+      "name": "practice preset deterministic round",
+      "passed": true
+    },
+    {
+      "name": "practice preset roundtrip",
+      "passed": true
+    },
+    {
+      "name": "practice preset contains no result state",
+      "passed": true
+    },
+    {
+      "name": "invalid practice preset practice=v2&practice-option=natural-c4-c5&practice-seed=1&practice-count=10",
+      "passed": true
+    },
+    {
+      "name": "invalid practice preset practice=v1&practice-option=nope&practice-seed=1&practice-count=10",
+      "passed": true
+    },
+    {
+      "name": "invalid practice preset practice=v1&practice-option=natural-c4-c5&practice-seed=-1&practice-count=10",
+      "passed": true
+    },
+    {
+      "name": "invalid practice preset practice=v1&practice-option=natural-c4-c5&practice-seed=1&practice-count=11",
+      "passed": true
+    },
+    {
+      "name": "practice params absent",
+      "passed": true
+    },
+    {
+      "name": "answer buckets classify",
+      "passed": true
+    },
+    {
+      "name": "answer buckets mutually sum",
+      "passed": true
+    },
+    {
+      "name": "review targets deduplicate midi",
+      "passed": true
+    },
+    {
+      "name": "read practice deterministic 10",
+      "passed": true
+    },
+    {
+      "name": "read practice has canonical staff events",
+      "passed": true
+    },
+    {
+      "name": "A4 formula",
+      "passed": true
+    },
+    {
+      "name": "88 formula rows finite",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-13-keys.svg",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-25-keys.svg",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-worksheet-letter.pdf",
+      "passed": true
+    },
+    {
+      "name": "blank asset blank-keyboard-worksheet-a4.pdf",
+      "passed": true
+    },
+    {
+      "name": "hub chart svg exists and is small",
+      "passed": true
+    },
+    {
+      "name": "hub chart viewBox",
+      "passed": true
+    },
+    {
+      "name": "hub chart has 8 white keys",
+      "passed": true
+    },
+    {
+      "name": "hub chart has 5 black keys",
+      "passed": true
+    },
+    {
+      "name": "hub chart white order",
+      "passed": true
+    },
+    {
+      "name": "hub chart black names",
+      "passed": true
+    },
+    {
+      "name": "hub chart marks middle C",
+      "passed": true
+    },
+    {
+      "name": "hub chart has no script or linked font",
+      "passed": true
+    }
+  ]
+}

@@ -154,3 +154,14 @@
 .am-page .am-fact-icon .ch-topic-icon{width:1rem;height:1rem}
 @media(max-width:48rem){.am-page .am-quick-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.am-page .am-quick-facts>div{padding:.625rem}}
 .am-footer-topics{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;padding-bottom:1.5rem}.am-footer-topics a{display:inline-flex;align-items:center;min-height:2.75rem}
+
+/* Product continuation: compact, shared next-step treatment across chord detail pages. */
+.am-page [data-product-continuation]{display:grid;grid-template-columns:minmax(14rem,.8fr) minmax(0,1.2fr);align-items:center;gap:1.5rem;margin-top:2rem;padding:1.25rem 1.5rem;border:1px solid var(--border);border-radius:var(--pr-radius-panel);background:var(--surface)}
+.am-page [data-product-continuation]>p{max-width:28rem;margin:0;color:var(--muted-foreground);line-height:1.5}
+.am-page [data-product-continuation] .am-section-actions{display:flex;align-items:center;gap:.65rem;margin-top:0}
+.am-page [data-product-continuation] .am-section-actions .am-button{flex:1 1 16rem;min-height:2.5rem;padding:.45rem .8rem;font-size:.9rem;white-space:normal;text-align:center}
+.am-page [data-product-continuation] .am-section-actions .am-primary{background:var(--foreground);border-color:var(--foreground);color:var(--background)}
+.am-page [data-product-continuation] .am-section-actions .am-primary:hover:not(:disabled){background:var(--primary);border-color:var(--primary)}
+.am-page [data-product-continuation] .am-section-actions .am-tertiary{border-color:var(--primary);background:var(--background);color:var(--primary)}
+.am-page [data-product-continuation] .am-section-actions .am-tertiary:hover{background:var(--selected-hover)}
+@media(max-width:47.999rem){.am-page [data-product-continuation]{grid-template-columns:1fr;gap:.75rem;padding:1rem}.am-page [data-product-continuation] .am-section-actions{align-items:stretch;flex-direction:column}.am-page [data-product-continuation] .am-section-actions .am-button{width:100%;flex:0 0 auto}}

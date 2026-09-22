@@ -39,6 +39,11 @@ const pageSourceIds:Partial<Record<ChordDetailRoute,string[]>>={
   '/chords/c-major':['SKOOVE-C','E-CHORD'],
 };
 
+// Only these two P1 core references inherit the existing detail source records.
+export function getPilotCoreSourceIDs(url:string|null):string[] {
+  return url==='/chords/c-major'||url==='/chords/a-minor' ? [...pageSourceIds[url]!] : [];
+}
+
 type PreparedChordLearning=Omit<NextChordLearning,'practice'>&{practice:ChordPractice};
 function prepareThreeNoteLearning(learning:NextChordLearning):PreparedChordLearning{
   const count=learning.practice.requiredPitchClassCount??3;

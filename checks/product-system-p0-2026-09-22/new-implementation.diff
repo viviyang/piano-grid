@@ -1,0 +1,302 @@
+--- /dev/null
++++ b/scripts/check-product-measurement.test.mjs
+@@ -0,0 +1,34 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { createMeasurementSession, createSettler, createPracticeAttempt, finderFingerprint, isP0Path, P0_PATHS, RESULT_SETTLE_MS } from '../src/lib/product-measurement-core.ts';
++test('nine paths only; input fingerprint has only supported state',()=>{
++ assert.equal(P0_PATHS.length,9);assert.equal(isP0Path('/chords/d-major'),false);
++ assert.equal(finderFingerprint([7,0,4,0],4,'interpret'),'0-4-7:4:interpret');
++ assert.notEqual(finderFingerprint([0,4,7],4,'root'),finderFingerprint([0,4,7],4,'interpret'));
++});
++test('logical-view exposure and engaged denominator cannot exceed 100%',()=>{
++ const view=createMeasurementSession();assert.equal(view.rate(),null);
++ assert.equal(view.engage('c'),false);assert.equal(view.once('seen:c'),true);
++ assert.equal(view.once('seen:c'),false);assert.equal(view.engage('c'),true);assert.equal(view.engage('c'),false);
++ assert.equal(view.rate(),1);view.once('seen:a');assert.equal(view.rate(),0.5);
++ assert.equal(createMeasurementSession().once('seen:c'),true);
++});
++test('300ms settling cancels stale input, even if an old callback is delivered',()=>{
++ const queue=[],calls=[];const settle=createSettler((fn,ms)=>{assert.equal(ms,300);queue.push(fn);return queue.length;},()=>{});
++ assert.equal(RESULT_SETTLE_MS,300);settle.update(()=>calls.push('old'));settle.update(()=>calls.push('new'));
++ queue[0]();queue[1]();assert.deepEqual(calls,['new']);settle.update(()=>calls.push('cancelled'));settle.cancel();queue[2]();assert.deepEqual(calls,['new']);
++});
++test('help stays sticky across retries; success repeats are not new completions',()=>{
++ const task=createPracticeAttempt();assert.equal(task.start(),1);assert.equal(task.start(),null);task.reveal();
++ assert.equal(task.complete().assisted,true);assert.equal(task.complete(),null);task.reset();assert.equal(task.start(),2);assert.equal(task.complete().assisted,true);
++ const independent=createPracticeAttempt();assert.equal(independent.complete().assisted,false);
++});
++test('existing transport handles absent and throwing gtag without breaking the task',async()=>{
++ process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID='G-LOCAL-STUB';process.env.NEXT_PUBLIC_PIANOGRID_ANALYTICS_PROVIDER='ga4';
++ const {sendAnalyticsEvent}=await import('../src/lib/analytics.ts');
++ globalThis.window={location:{pathname:'/chords'}};
++ assert.equal(sendAnalyticsEvent('test'),false);
++ window.gtag=()=>{throw Error('blocked');};assert.equal(sendAnalyticsEvent('test'),false);
++ const calls=[];window.gtag=(...args)=>calls.push(args);assert.equal(sendAnalyticsEvent('test'),true);assert.equal(calls.length,1);
++ delete globalThis.window;
++});
+--- /dev/null
++++ b/scripts/check-product-system-data.cjs
+@@ -0,0 +1,18 @@
++const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),ts=require('typescript');
++// Execute existing server adapters using the locked TypeScript compiler; no copied music model.
++require.extensions['.ts']=(module,filename)=>module._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,filename);
++const {getChordCenter}=require('../src/lib/chord-content.ts');
++const {getChordFinder,getPianoChordsGuide}=require('../src/lib/support-content.ts');
++const finder=getChordFinder(getChordCenter().items),guide=getPianoChordsGuide();
++assert.equal(finder.data.chords.length,433);
++const help=finder.model.blocks.find(b=>b.id==='how-to-enter').paragraphs.join(' ');
++assert.ok(help.includes('Select each different note'));assert.ok(!help.includes('Enter pitch names with octave'));
++assert.ok(guide.model.links.some(l=>l.url==='/chords/finder'&&l.label==='Identify a chord from selected notes'));
++assert.ok(!guide.model.links.some(l=>l.url==='/chords#find-a-chord'));
++const knownSets=new Set(finder.data.chords.flatMap(c=>[c.pitchClasses,...c.suppliedVoicings.map(v=>v.pitchClasses)]).map(s=>s.join(',')));
++let noMatch;
++for(let a=0;a<12&&!noMatch;a++)for(let b=a+1;b<12&&!noMatch;b++)if(!knownSets.has(`${a},${b}`))noMatch=[a,b];
++assert.ok(noMatch);
++const out=process.env.PIANO_CHECK_OUT||'checks/product-system-p0-2026-09-22';fs.mkdirSync(out,{recursive:true});
++const report={passed:5,registryCount:433,noMatch,help,guideLink:guide.model.links.find(l=>l.url==='/chords/finder'&&l.label==='Identify a chord from selected notes')};
++fs.writeFileSync(path.join(out,'product-data.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+--- /dev/null
++++ b/scripts/check-protected-source-hash.test.mjs
+@@ -0,0 +1,47 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { mkdtempSync, readFileSync, writeFileSync, rmSync, rmdirSync } from 'node:fs';
++import { tmpdir } from 'node:os';
++import { join } from 'node:path';
++import { checkProtectedBytes, sha256 } from './protected-source-hash.mjs';
++
++const allowed = 'docs/design/reference/final-a-minor.html';
++test('only an explicitly reviewed text path accepts CRLF/LF equivalence', () => {
++  const expected = sha256(Buffer.from('alpha\nbeta\n'));
++  assert.equal(checkProtectedBytes(allowed, Buffer.from('alpha\r\nbeta\r\n'), expected).passed, true);
++  assert.equal(checkProtectedBytes('public/unlisted.html', Buffer.from('alpha\r\nbeta\r\n'), expected).passed, false);
++  assert.equal(checkProtectedBytes('public/file.pdf', Buffer.from('alpha\r\nbeta\r\n'), expected).passed, false);
++});
++test('reads current file bytes and rejects a one-character edit, whitespace edits and BOM', () => {
++  const directory = mkdtempSync(join(tmpdir(), 'piano-protected-test-'));
++  const file = join(directory, 'fixture.txt');
++  try {
++    const expected = sha256(Buffer.from('alpha\nbeta\n'));
++    writeFileSync(file, 'alpha\r\nbeta\r\n');
++    assert.equal(checkProtectedBytes(allowed, readFileSync(file), expected).passed, true);
++    for (const text of ['Alpha\r\nbeta\r\n', 'alpha \nbeta\n', 'alpha\nbeta', '\ufeffalpha\nbeta\n']) {
++      writeFileSync(file, text);
++      assert.equal(checkProtectedBytes(allowed, readFileSync(file), expected).passed, false);
++    }
++  } finally { rmSync(file, { force: true }); rmdirSync(directory); }
++});
++test('invalid UTF8 is rejected; exact binary bytes retain byte-exact behavior', () => {
++  const bytes = Buffer.from([0xff, 13, 10]);
++  assert.equal(checkProtectedBytes(allowed, bytes, 'incorrect').passed, false);
++  assert.equal(checkProtectedBytes('asset.pdf', bytes, sha256(bytes)).passed, true);
++});
++test('all 23 reviewed repository files match the historical hash, but a byte edit fails', () => {
++  const paths = JSON.parse(readFileSync(new URL('./protected-source-text-paths.json', import.meta.url), 'utf8'));
++  const manifest = JSON.parse(readFileSync('checks/batches/07-site-integration/source-before.json', 'utf8')).files;
++  assert.equal(paths.length, 23);
++  for (const path of paths) {
++    const expected = manifest.find(item => item.path === path).sha256;
++    const bytes = readFileSync(path);
++    assert.equal(checkProtectedBytes(path, bytes, expected).passed, true, path);
++    const altered = Buffer.from(bytes);
++    const index = altered.findIndex(byte => byte >= 65 && byte <= 90 || byte >= 97 && byte <= 122);
++    assert.ok(index >= 0);
++    altered[index] = altered[index] === 65 ? 66 : 65;
++    assert.equal(checkProtectedBytes(path, altered, expected).passed, false, path);
++  }
++});
+--- /dev/null
++++ b/scripts/protected-source-amendments.json
+@@ -0,0 +1,35 @@
++[
++  {
++    "path": "docs/content/site-master/A-Scales/batch-page-content.json",
++    "oldExpected": "8a6f9681acec1a3091f1d938b15580afa9648b1e1337f1abd7f1cb3f88087580",
++    "approvedExpected": "d086fd50224c3fed4bebb05ce07497511895bafc4836bbf1b33bcd20e320606e",
++    "introducingCommit": "9937d528d78857056356bc440d22348cc4c19fe2",
++    "approvedBy": "User",
++    "approvalDate": "2026-09-22",
++    "approvalText": "批准",
++    "scope": "Exact three AM-MIDI source-record hash maintenance; preserve music data and source-scope limitation",
++    "evidence": "docs/product-system-p0-2026-09-22/RESULT.md"
++  },
++  {
++    "path": "docs/content/site-master/A-Scales/batch-source-ledger.md",
++    "oldExpected": "ce54c4cd56ff6d27a8ccc4341952fe94ca8d116c3e30fdb9b01292299d651be3",
++    "approvedExpected": "9dba0af92aa019a57f0978862da58dc7ff47489a4a5e77a09d029bd566322d97",
++    "introducingCommit": "9937d528d78857056356bc440d22348cc4c19fe2",
++    "approvedBy": "User",
++    "approvalDate": "2026-09-22",
++    "approvalText": "批准",
++    "scope": "Exact three AM-MIDI source-record hash maintenance; preserve music data and source-scope limitation",
++    "evidence": "docs/product-system-p0-2026-09-22/RESULT.md"
++  },
++  {
++    "path": "docs/content/site-master/source-ledger.master.md",
++    "oldExpected": "5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2",
++    "approvedExpected": "cd79cb6b8f1f63ae67f0d6d2e34ded6f0e150a2173a6a6e5e5f5d50ebb711db0",
++    "introducingCommit": "9937d528d78857056356bc440d22348cc4c19fe2",
++    "approvedBy": "User",
++    "approvalDate": "2026-09-22",
++    "approvalText": "批准",
++    "scope": "Exact three AM-MIDI source-record hash maintenance; preserve music data and source-scope limitation",
++    "evidence": "docs/product-system-p0-2026-09-22/RESULT.md"
++  }
++]--- /dev/null
++++ b/scripts/protected-source-hash.mjs
+@@ -0,0 +1,17 @@
++import { createHash } from 'node:crypto';
++import { readFileSync } from 'node:fs';
++
++// Exact reviewed text paths only. No extension-wide normalization or JSON rewriting.
++const textPaths = new Set(JSON.parse(readFileSync(new URL('./protected-source-text-paths.json', import.meta.url), 'utf8')));
++export const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
++export function checkProtectedBytes(path, bytes, expected) {
++  const rawHash = sha256(bytes);
++  if (rawHash === expected) return { passed: true, mode: 'byte-exact', expected, rawHash };
++  if (!textPaths.has(path)) return { passed: false, mode: 'byte-mismatch', expected, rawHash };
++  // Fatal decoding prevents binary/invalid UTF-8 data from being silently replaced.
++  let text;
++  try { text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(bytes); }
++  catch { return { passed: false, mode: 'invalid-utf8', expected, rawHash }; }
++  const lfHash = sha256(Buffer.from(text.replaceAll('\r\n', '\n'), 'utf8'));
++  return { passed: lfHash === expected, mode: lfHash === expected ? 'crlf-equivalent' : 'content-mismatch', expected, rawHash, lfHash };
++}
+--- /dev/null
++++ b/scripts/protected-source-text-paths.json
+@@ -0,0 +1,25 @@
++[
++  "docs/content/site-master/assets/blank-keyboard-13-keys.svg",
++  "docs/content/site-master/assets/blank-keyboard-25-keys.svg",
++  "docs/content/site-master/assets/Bravura-LICENSE.txt",
++  "docs/content/site-master/preserved-chords/assets/a-flat-major--root.svg",
++  "docs/content/site-master/preserved-chords/assets/a-major--root.svg",
++  "docs/content/site-master/preserved-chords/assets/a-minor--first.svg",
++  "docs/content/site-master/preserved-chords/assets/a-minor--root.svg",
++  "docs/content/site-master/preserved-chords/assets/a-minor--second.svg",
++  "docs/content/site-master/preserved-chords/assets/b-major--root.svg",
++  "docs/content/site-master/preserved-chords/assets/c-flat-major--root.svg",
++  "docs/content/site-master/preserved-chords/assets/c-major--root.svg",
++  "docs/content/site-master/preserved-chords/assets/c-minor--root.svg",
++  "docs/content/site-master/preserved-chords/assets/e-major--root.svg",
++  "docs/content/site-master/preserved-chords/assets/g-major--root.svg",
++  "docs/design/piano-final/chords/a-minor/index.html",
++  "docs/design/piano-final/index.html",
++  "docs/design/piano-final/requirements-dev.txt",
++  "docs/design/piano-final/source/app.js",
++  "docs/design/piano-final/source/browser_config.py",
++  "docs/design/piano-final/source/build.py",
++  "docs/design/piano-final/source/render.py",
++  "docs/design/piano-final/source/verify.py",
++  "docs/design/reference/final-a-minor.html"
++]--- /dev/null
++++ b/src/lib/product-measurement-core.ts
+@@ -0,0 +1,27 @@
++export const P0_PATHS = ['/chords','/chords/finder','/chords/c-major','/chords/a-minor','/chords/c-maj7','/chords/c-diminished','/chords/c-add9','/scales/c-major','/keyboard-notes'] as const;
++export const RESULT_SETTLE_MS = 300;
++export function isP0Path(path: string) { return (P0_PATHS as readonly string[]).includes(path); }
++export function finderFingerprint(notes: number[], bass: number|null, mode: string) {
++  return `${[...new Set(notes)].sort((a,b)=>a-b).join('-')}:${bass??'none'}:${mode==='root'?'root':'interpret'}`;
++}
++export function createMeasurementSession() {
++  const seen = new Set<string>(), engaged = new Set<string>();
++  return {
++    once(key: string) { if(seen.has(key))return false;seen.add(key);return true; },
++    engage(key: string) { if(!seen.has(`seen:${key}`)||engaged.has(key))return false;engaged.add(key);return true; },
++    rate() { const denominator=[...seen].filter(key=>key.startsWith('seen:')).length;return denominator?engaged.size/denominator:null; },
++  };
++}
++export function createSettler(schedule: (callback:()=>void, ms:number)=>unknown, cancel:(id:unknown)=>void) {
++  let generation=0, timer:unknown;
++  return { update(callback:()=>void) { generation++;const own=generation;cancel(timer);timer=schedule(()=>{if(own===generation)callback();},RESULT_SETTLE_MS); }, cancel(){generation++;cancel(timer);} };
++}
++export function createPracticeAttempt() {
++  let started=false,assisted=false,completed=false,number=1;
++  return {
++    start(){if(started)return null;started=true;return number;},
++    reveal(){assisted=true;},
++    reset(){started=false;completed=false;number++;},
++    complete(helped=false){if(completed)return null;completed=true;return {attempt:number,assisted:assisted||helped,outcome:'exercise_success'};},
++  };
++}
+--- /dev/null
++++ b/src/lib/product-measurement.ts
+@@ -0,0 +1,77 @@
++'use client';
++import { useEffect, useRef, useState, type RefObject } from 'react';
++import { sendAnalyticsEvent, type AnalyticsEventValue } from './analytics';
++import { createMeasurementSession, createSettler, createPracticeAttempt, isP0Path } from './product-measurement-core';
++
++type Payload = Record<string, AnalyticsEventValue>;
++const allowed = new Set(['object_id','result_state','selected_count','match_count','mode','outcome','assisted','target','match_kind','attempt','hand','direction','status']);
++// A wire event represents one fact. Legacy domain events are not re-emitted as aliases.
++export function emitPilotEvent(name:string, properties:Payload={}) {
++  if(typeof window==='undefined'||!isP0Path(window.location.pathname))return;
++  const safe:Payload={measurement_version:'p0-v1',page_path:window.location.pathname};
++  for(const [key,value] of Object.entries(properties))if(allowed.has(key))safe[key]=value;
++  try { const externallySent=sendAnalyticsEvent(name,safe);window.dispatchEvent(new CustomEvent('pianogrid:product-event',{detail:{name,properties:safe,externallySent}})); } catch { /* Measurement must not break the task. */ }
++}
++
++// One mounted task/reference owns a logical view; rerenders and listener reinstalls retain it.
++export function useResultExposure(ref:RefObject<HTMLElement|null>, objectId:string, resultState='reference', enabled=true) {
++  const session=useRef(createMeasurementSession());
++  const latest=useRef({objectId,resultState});latest.current={objectId,resultState};
++  useEffect(()=>{
++    if(!isP0Path(window.location.pathname)||!enabled||!ref.current||typeof IntersectionObserver==='undefined')return;
++    const element=ref.current,key=`${objectId}:${resultState}`;
++    let active=true;
++    const observer=new IntersectionObserver(entries=>{
++      const style=getComputedStyle(element);
++      if(active&&entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>=0.1)&&document.visibilityState==='visible'&&element.getClientRects().length&&style.visibility!=='hidden'&&style.opacity!=='0'&&session.current.once(`seen:${key}`))emitPilotEvent('p0_result_seen',{object_id:objectId,result_state:resultState});
++    },{threshold:0.1});
++    observer.observe(element);
++    const visibility=()=>{observer.unobserve(element);observer.observe(element);};
++    document.addEventListener('visibilitychange',visibility);
++    return()=>{active=false;observer.disconnect();document.removeEventListener('visibilitychange',visibility);};
++  },[ref,objectId,resultState,enabled]);
++  useEffect(()=>{
++    if(!isP0Path(window.location.pathname)||!ref.current)return;
++    // Scope to this task's containing main, excluding header/footer navigation.
++    const main=ref.current.closest('main');
++    const click=(event:Event)=>{
++      const link=event.target instanceof Element?event.target.closest('a[href]'):null;
++      if(!link||!main?.contains(link))return;
++      const url=new URL(link.getAttribute('href')!,window.location.href);
++      const {objectId,resultState}=latest.current,key=`${objectId}:${resultState}`;
++      if(url.origin!==location.origin)return;
++      const legacyScale=window.location.pathname==='/scales/c-major';
++      if(link.hasAttribute('download')||url.pathname.endsWith('.pdf')){if(!legacyScale)emitPilotEvent('p0_download_request',{object_id:objectId,target:url.pathname});return;}
++      if(url.pathname===location.pathname&&!url.hash)return;
++      if(!legacyScale)emitPilotEvent('p0_next_step_click',{object_id:objectId,result_state:resultState,target:url.pathname});
++      if(session.current.engage(key))emitPilotEvent('p0_result_engaged',{object_id:objectId,result_state:resultState});
++    };
++    main?.addEventListener('click',click);return()=>main?.removeEventListener('click',click);
++  },[ref]);
++}
++
++export function useStableToolResult(fingerprint:string, selectedCount:number, matchCount:number, interacted:boolean) {
++  const counted=useRef(new Set<string>());
++  const [settled,setSettled]=useState('');
++  useEffect(()=>{
++    if(!interacted||selectedCount<2||!isP0Path(window.location.pathname))return;
++    const settler=createSettler((callback,ms)=>window.setTimeout(callback,ms),id=>window.clearTimeout(id as number|undefined));
++    settler.update(()=>{
++      setSettled(fingerprint);
++      if(counted.current.has(fingerprint))return;counted.current.add(fingerprint);
++      emitPilotEvent(matchCount?'p0_tool_result':'finder_no_match',{object_id:'chord-finder',result_state:fingerprint,selected_count:selectedCount,match_count:matchCount});
++    });
++    return()=>settler.cancel();
++  },[fingerprint,selectedCount,matchCount,interacted]);
++  return settled;
++}
++
++export function usePilotAudio(state:string, objectId:string, mode:string|null=null) {
++  const previous=useRef('idle');
++  useEffect(()=>{if(state==='playing'&&previous.current!=='playing')emitPilotEvent('p0_audio_play',{object_id:objectId,mode:mode??'reference'});previous.current=state;},[state,objectId,mode]);
++}
++export function usePilotPractice(objectId:string,mode:string) {
++  const attempt=useRef(createPracticeAttempt());
++  const start=()=>{const number=attempt.current.start();if(number!==null)emitPilotEvent('p0_practice_start',{object_id:objectId,mode,attempt:number});};
++  return {start,reveal(){start();attempt.current.reveal();},reset(){attempt.current.reset();},complete(assisted=false){start();const result=attempt.current.complete(assisted);if(result)emitPilotEvent('p0_practice_complete',{object_id:objectId,mode,...result});}};
++}

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "name": "Finder C/E/G bass E -> same chord first inversion",
+      "passed": true
+    },
+    {
+      "name": "refresh preserves receiver bass",
+      "passed": true
+    },
+    {
+      "name": "back restores Finder notes without a fake tool_start",
+      "passed": false,
+      "error": "TimeoutError: page.goBack: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"domcontentloaded\"\u001b[22m\n\u001b[2m    - navigated to \"http://127.0.0.1:4350/chords/finder?pg-notes=0%2C4%2C7&pg-bass=4\"\u001b[22m\n"
+    },
+    {
+      "name": "unsupported bass explicitly resets reference",
+      "passed": true
+    },
+    {
+      "name": "nondefault extended fragment selects the matching object",
+      "passed": true
+    },
+    {
+      "name": "nondefault progression fragment sets pattern and key together",
+      "passed": false,
+      "error": "Error: expect(locator).toHaveValue(expected) failed\n\nLocator: getByLabel('Key context', { exact: true })\nExpected: \"basic-cadence-c-major\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.have.value\" with timeout 5000ms\n  - waiting for getByLabel('Key context', { exact: true })\n"
+    },
+    {
+      "name": "C major -> named key -> progression preserves context",
+      "passed": false,
+      "error": "Error: expect(locator).toHaveValue(expected) failed\n\nLocator: getByLabel('Key context', { exact: true })\nExpected: \"pop-four-c-major\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.have.value\" with timeout 5000ms\n  - waiting for getByLabel('Key context', { exact: true })\n"
+    }
+  ],
+  "errors": []
+}

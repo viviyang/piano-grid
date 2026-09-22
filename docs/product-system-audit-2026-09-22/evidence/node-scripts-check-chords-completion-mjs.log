@@ -1,0 +1,6 @@
+FAIL Completion browser suite completed page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3101/chords/extended
+Call log:
+  - navigating to "http://127.0.0.1:3101/chords/extended", waiting until "load"
+
+    at C:\Users\Admin\Documents\viviyang_github\piano-main-product-audit\scripts\check-chords-completion.mjs:8:147
+Chords completion: 0 passed, 1 failed.

@@ -1,0 +1,1897 @@
+--- PAGE 1 ---
+PianoGrid 产品型 SEO 落地方案：从“查答案”升级为“可
+验证、可练习的下一步”
+执行摘要
+[已核实] 前一轮对 BodyTypeCalculator 的 Deep Research 最重要的结论，并不是“做 Calculator + 写很多 SEO 页
+面”，而是把一个搜索词翻译成完整的用户状态变化：
+Keyword → Product Primitive → 输入前问题 → 结果 → 结果解释 → 边界问题 → 下一行动 → 可引用资产 → 新
+的可搜索任务。
+换句话说，Supporting Content 不是围绕关键词随机扩写，而是用来消除主产品任务前后的真实摩擦；独立 URL
+也不应该因为“可以生成”就生成，而应当对应真实、独立的用户任务。fileciteturn0file0
+[已核实] PianoGrid 其实已经具备这套模式最难得的基础。当前首页不是传统“钢琴博客”，而是直接按任务组织用
+户：Find sheet music、Look up a chord、Check a scale、Find a note、Choose a song、Learn the
+basics；Chord、Scale、Note、Songs、Sheet Music、Learn、Tools 也已经成为明确的顶层产品区域。首页甚至
+直接写明，应从用户当前任务开始，并给出一个具体结果或下一步。
+[已核实] 更重要的是，PianoGrid 已经具有几个强 Product Primitive：Chord Hub 提供音符、键盘位置、试听和打
+印，并将和弦按 Major、Minor、Seventh、Diminished、Augmented、Suspended、Add9 等家族组织；Chord
+Finder 对其当前 registry 中的 433 个对象做完整音高类/显式 voicing 匹配；Scale 系统则把静态答案、试听、手指
+法、练习检查和来源边界放在同一个任务中。
+[推断] 因此 PianoGrid 接下来最值得做的，不是再问：
+“还能生成多少 chord / scale URL？”
+而是问：
+“用户通过 Google 落到任何一个 PianoGrid 页面后，能不能在不重新思考和重新搜索的情况下，
+从‘知道答案’继续走到‘理解答案 → 验证答案 → 练习答案 → 应用答案’？”
+这将决定 PianoGrid 是一个“钢琴 reference 网站”，还是一个真正具有复利效应的 Piano Task System。
+我建议把 PianoGrid 的核心定位明确为：
+PianoGrid = 把一个钢琴问题，最快变成一个可信、可听、可练、可打印的下一步。
+[推断] 未来九十天不应以“新建多少页面”为第一 KPI。第一优先级应是连接现有资产，形成三个闭环：
+1
+2
+1
+
+--- PAGE 2 ---
+发现闭环
+Search
+→ Chord / Scale / Note / Finder
+→ Correct answer
+→ Explanation / ambiguity resolution
+练习闭环
+Answer
+→ Hear
+→ Fingering / inversion / pattern
+→ Start practice
+→ Finish a short task
+→ Repeat / next task
+SEO / 分发闭环
+Useful answer
+→ Source-checked reference
+→ Printable / shareable / embeddable asset
+→ External use / citation
+→ More discovery
+[推断] 90 天内最重要的产品动作不是 MIDI、麦克风识别、AI 老师或大规模歌曲库，而是：统一 Next Step、修通
+Finder 结果链、建立 Practice Queue、建立页面发布门槛、做第一批 ambiguity/comparison 页面、增加可打
+印/可引用资产，并把 GA4 + GSC 的任务事件测量建立起来。
+[已核实] 这与前一轮 Deep Research 的证据边界一致：BodyTypeCalculator 最值得迁移的是“task → next task”的
+产品系统，而不是 EMD、页面数量或某个站点模板。fileciteturn0file0 Google 当前也明确强调 people-first
+content、可抓取的链接与对用户真正有帮助的内容；同时把主要为操纵排名而大规模产生、缺乏新增价值的页面列
+为 scaled content abuse。
+建议的 90 天北极星指标
+[推断] 因为当前没有 PianoGrid 的 GA4/GSC 基线数据，本报告不虚构绝对转化率。建议以前两周数据建立
+baseline，然后以相对变化作为第一个周期目标：
+指标 定义 90 天规划目标证据状态
+Task Continuation
+Rate
+得到答案后发生 ≥1 个有效下一步动作的
+session / 得到答案的 session
+相对提升
+≥20%
+[推断] 规划目标，不
+是行业 benchmark
+3
+2
+
+--- PAGE 3 ---
+指标 定义 90 天规划目标证据状态
+Practice Start Ratepractice_start / result_seen相对提升
+≥15% [推断]
+Practice
+Completion Rate
+practice_complete / 
+practice_start
+Week 2 建基
+线，之后持续
+上升
+[推断]
+Reference Utility
+Rate print + download + share / result_seen相对提升
+≥20% [推断]
+Non-brand
+Organic DiscoveryGSC 非品牌 impressions / clicks 目标 cluster 呈
+持续上升趋势
+[推断]；不能保证固
+定 SEO 增幅
+Eligible Pages With
+Impressions
+通过发布门槛且获得 GSC impression 的
+页面比例
+越接近 100%
+越好 [推断]
+Dead-end Rate 有结果但无下一步互动的 session 比例 持续下降 [推断]
+[已核实] Google 官方建议把 Search Console 与 Google Analytics 联合使用：前者解释用户在 Google 搜索中的
+impressions、clicks、queries、position 等，后者解释进入网站后的行为。
+现状审计与目标用户
+PianoGrid 当前已经拥有什么
+[已核实] 当前 PianoGrid 首页的信息架构已经相当接近正确方向：首页从用户任务进入，而不是按“文章分类”进
+入；其导航覆盖 Piano Notes、Chords、Scales、Songs、Sheet Music、Learn、Tools，并提供 A minor 的交互
+键盘和合成音试听作为首页 product demonstration。
+[推断] 从产品角度看，当前问题不是“没有 IA”，而更可能是：
+已经有很多好节点，但节点之间尚未完全变成一条强任务链。
+区域 当前状态 当前已验证能力 下一阶段应解决的问题
+首页 [已核实] 已形
+成任务入口
+“找谱、查和弦、查音阶、找琴键、选
+歌曲、学基础”均有明确入口。
+[推断] 首页下一步应更多承担“选
+择任务”，而不是继续塞内容
+Chords [已核实] 强
+独立和弦家族、键盘图、音符、试
+听、打印、inversion/detail 链接。
+[推断] 从单个 chord 更系统地进
+入 inversion、key、scale、
+progression、practice
+Chord Finder
+[已核实] 强
+Product
+Primitive
+根据 notes 匹配支持对象，并保留
+bass / spelling / ambiguity 等语境。
+[推断] “找到候选和弦”还应该继
+续进入比较、为什么有多个答
+案、怎么弹、在哪里使用
+4
+1
+1
+5
+6
+3
+
+--- PAGE 4 ---
+区域 当前状态 当前已验证能力 下一阶段应解决的问题
+Scales [已核实] 强
+规模化 reference、试听、source-
+checked fingering、practice
+checking，核心答案不依赖纯交互才
+能理解。
+[推断] 从 scale 更系统进入
+relative/parallel key、chords
+in key、progression 和
+practice
+Piano Notes [已核实] 已存
+在
+首页可进入 Labeled Keyboard、
+Notes Chart、Finger Numbers、
+Blank Keyboard、Note
+Frequencies。
+[推断] Note → interval →
+chord/scale 的桥可以加强
+Learn [已核实] 已存
+在
+当前至少有 Read Sheet Music、
+Learn Piano Chords、Practice Piano
+Scales 等学习路径。
+[推断] 不应发展成普通博客；应
+围绕产品摩擦建 guide
+Songs /
+Sheet Music
+[已核实] 已成
+为独立区域
+当前首页明确区分 song discovery 与
+exact sheet-music edition/
+reference。
+[推断] 与 chord/key/scale/
+practice 的连接可以成为未来重
+要 downstream
+Printables /
+Tools
+[已核实] 已存
+在
+Chord 页面已经支持打印；首页 Tools
+提供 Blank Sheet Music 等入口。
+[推断] 可升级为真正具有
+backlink / teacher utility 的
+reference asset layer
+一个值得保留的设计：不是所有组合都必须成为独立 URL
+[已核实] Chord Hub 当前明确区分了不同的发布深度：Major、Minor、Seventh 等有独立 reference collection；
+Extended Chords 列出 108 个 reference，Altered Dominant 列出 96 个 reference，但网站并没有简单宣称“所有
+可计算组合都要做成同等级独立 SEO 页面”。
+[推断] 这个行为非常重要，应正式变成产品/SEO 规则：
+Data object 可以很多，indexable landing page 不必一样多。
+即：
+数据库里可以存在
+≠
+必须有独立 URL
+≠
+必须让 Google 索引
+这正是前一轮 BodyTypeCalculator 研究最重要的防 pSEO 结论之一。fileciteturn0file0
+7
+1
+1
+1
+8
+5
+4
+
+--- PAGE 5 ---
+技术栈审计：能够确认什么，不能确认什么
+项目 状态 判断
+关键内容是否可作为静态正
+文被抓取 [已核实] 当前 Chord / Scale 页面大量核心 note、definition、link、
+reference 可由抓取结果直接获得。
+JS 是否承担增强型交互 [已核实] Scale / chord 等包含试听、checking、filter 等交互；部分交
+互要求 JavaScript。
+架构理念 [推断] 用户可见行为符合“静态答案 + JS enhancement”的产品型
+SEO 架构
+React / Next.js / Astro /
+Eleventy / 自研 SSG unspecified本次公开审计没有得到足够可验证信息，不推断
+Hosting / CDN unspecified不推断 Cloudflare/Vercel 等
+CMS unspecified未验证
+数据生成 pipeline unspecified未验证
+CI/CD unspecified未验证
+GA4 / analytics 当前配置unspecified无后台访问权限
+GSC 当前配置与表现 unspecified无后台访问权限
+robots.txt 精确状态 unspecified本次环境没有取得足够可靠内容，因此不把访问失败写成“文
+件不存在”
+sitemap 当前完整结构 unspecified同上
+canonical 全站规则 unspecified需要代码/页面级技术审计确认
+CrUX / CWV 实际 field dataunspecified本报告不编造性能得分
+[已核实] Google 对 JavaScript 网站的说明是：Google 可以经历 crawl、render、index 流程处理 JS，但服务端渲
+染/预渲染仍然可能改善用户与 crawler 的体验；关键内容、URL、canonical 与可抓取链接不应依赖脆弱的运行时
+状态。
+[推断] PianoGrid 没必要为了“现代化”重写当前前端。除非代码审计证明当前栈已经成为功能开发或性能瓶颈，否则
+90 天内不要把 framework migration 当增长项目。
+目标用户画像：应按任务状态，而不是人口属性来定义
+[推断] 当前没有 PianoGrid 第一方受众调研，所以以下不是“已知用户人口画像”，而是基于当前产品入口、搜索任
+务和竞争格局推导出的 job-based personas。
+9
+9
+10
+5
+
+--- PAGE 6 ---
+Persona 用户正在做什么 核心痛点 PianoGrid 应交付的“完成
+状态”
+速查型初学者
+搜 “C major chord
+notes”、“A minor scale
+notes”
+不想先上一堂乐理课；不知道
+键位；note 与 finger number
+容易混
+立即看到正确音符、键盘、
+听到声音，然后得到一个下
+一步
+正在钢琴前练
+习的人
+已知道 chord/scale，但
+要真正弹
+不知道手指法、inversion、换
+位、节奏、下一练习动作
+从 reference 直接启动 2–5
+分钟练习
+反向识别者 手上只有若干 notes，想
+知道是什么 chord/scale
+多个结果可能共享 pitch
+classes；bass/root/context
+会改变解释
+给候选而不是假装唯一答
+案，并解释为什么
+乐理困惑型用
+户
+搜 “C6 vs Am7”、“maj7
+vs 7”、“sus2 vs sus4”
+网上答案常只有 definition，
+没有可以听和弹的对比
+side-by-side keyboard +
+audio + rule + practice
+歌曲导向自学
+者
+想弹某首歌/寻找适合当前
+水平的谱
+同名曲多版本、难度描述混
+乱、授权来源不明确
+精确到 edition / source /
+difficulty，再链接对应学习
+任务
+教师 /
+reference 用
+户
+想找可靠 chart、
+worksheet、printable
+互联网上大量未经来源校验的
+fingerings/charts
+source-checked HTML +
+PDF/print + 可引用说明
+[已核实] PianoGrid 当前已经体现“不要伪造确定性”的产品倾向：Chord Finder 处理候选而不是任意补齐缺失音；
+Scale 系统明确区分有来源验证的 fingering 与没有足够依据的内容。
+[推断] 这不是小细节，而应该成为 PianoGrid 的品牌层差异：
+“不知道就明确说不知道；存在多个音乐解释时，显示上下文，而不是给一个漂亮但错误的答案。”
+这比“拥有最多 chord pages”更难复制。
+竞争格局与定位
+五个最值得用来校准 PianoGrid 的竞争者
+[已核实] 本次曾尝试使用已连接的 Semrush 账户做统一 competitor report，但账户返回“订阅有效、API units 不
+足”，因此没有伪造统一 Semrush API 数据。
+[已核实] 下表的流量值因此使用公开可见的 Semrush 网站流量估计，不是竞争对手的 GA4 / first-party
+analytics，且可用月份不完全一致；它们适合判断大致量级，不适合用几十个百分点的差异做经营结论。
+11
+12
+6
+
+--- PAGE 7 ---
+竞争者 核心能力 定价状态 第三方访问量
+估计
+对 PianoGrid
+的强项
+对 PianoGrid
+而言的可切入
+弱点
+Musicca
+[已核实]
+Browser
+theory app；
+notes、
+rhythm、
+interval、
+chord、
+scale、key
+signatures；
+chord/scale
+finder；ear
+training；账
+号保存进度；
+学校/class 功
+能。
+[已核实] 核心
+exercise 免
+费；免费账号
+可保存进度，
+官方称所有
+exercises 免
+费。
+[已核实]
+Semrush 公
+共估计约 
+5.45M visits
+（2026-06）。
+[推断] 工具宽
+度、训练闭
+环、多乐器、
+账户与学校场
+景非常强
+[推断]
+PianoGrid 不
+应和它拼“全音
+乐理论”；可以
+在 piano-
+specific exact
+reference +
+source
+fidelity +
+search-to-
+practice 上更
+聚焦
+musictheory.net /
+Tenuto
+[已核实]
+Tenuto 提供
+24
+exercises、6
+calculators、
+offline、自定
+义弱项与
+Challenge
+Mode。
+[已核实] Web
+内容以公开学
+习工具为主；
+Tenuto 是付
+费 App；本次
+没有取得足够
+可靠的当前
+Tenuto 统一
+价格，因此记
+为 price
+unspecified
+[已核实] 公共
+第三方页面曾
+显示约 
+1.79M
+monthly
+visits 的
+Semrush 估
+计；不是
+first-party
+analytics。
+[推断] “简洁
+理论解释 + 高
+质量 drill”非
+常成熟
+[推断]
+PianoGrid 可
+以做得更像“我
+现在在琴上要
+完成什么”，而
+不是泛 theory
+curriculum
+teoria.com
+[已核实] 自
+1997 年起专注
+乐理与 aural
+skills；包含
+tutorials、
+exercises，并
+支持部分 MIDI
+keyboard 练
+习和练习时间/
+成绩记录。
+[已核实] 主要
+靠免费使用与
+捐赠，
+exercise 页面
+说明已移除广
+告并请求
+donation。
+[已核实]
+Semrush 公
+共估计约 
+266K visits
+（2026-07）。
+[推断] 深度、
+教育可信度、
+耳训/MIDI、
+长期积累强
+[推断] 体验更
+偏课程/练习系
+统；PianoGrid
+可以把“搜索进
+来的即时任
+务”做得更直
+接、更琴键化
+13
+14
+15
+16
+17
+17
+18
+7
+
+--- PAGE 8 ---
+竞争者 核心能力 定价状态 第三方访问量
+估计
+对 PianoGrid
+的强项
+对 PianoGrid
+而言的可切入
+弱点
+Chordify
+[已核实] 以歌
+曲→和弦为中
+心，覆盖
+piano/guitar/
+ukulele 等，
+并围绕歌曲播
+放、和弦、转
+调、练习工具
+形成产品。
+[已核实] 具有
+免费/付费分
+层；
+Premium 页
+面存在多级付
+费方案，地
+区/促销会变
+化。
+[已核实]
+Semrush 公
+共估计约 
+7.59M visits
+（2026-06）。
+[推断] “我想
+弹这首歌”这
+一
+downstream
+任务、庞大
+repertoire、
+播放/练习闭
+环极强
+[推断]
+PianoGrid 90
+天内不应正面
+复制 song
+recognition；
+应先做理论对
+象之间的可信
+关系与
+practice
+graph
+Pianote
+[已核实] 结构
+化 piano
+curriculum、
+真人老师、
+video
+lessons、
+play-along、
+500+ 授权/专
+业转写歌曲
+等。
+[已核实] 当前
+官方计划页公
+开过年付约 
+$279/year
+（折合
+$23.25/
+month）、
+月付约 $30/
+month；促
+销可能变化。
+[已核实]
+Semrush 公
+共估计约 
+183K visits
+（2026-07）。
+[推断] 教师人
+格、课程连续
+性、视频教育
+与订阅变现非
+常强
+[推断] 用户只
+是想查一个
+chord/scale
+时，完整课程
+的承诺更重；
+PianoGrid 可
+占领“zero-
+commitment
+instant utility”
+竞争定位不应该是“内容比别人多”
+[推断] 这五个竞争者实际上对应五种不同战场：
+Musicca          → interactive music theory ecosystem
+musictheory.net  → canonical theory + drills
+teoria           → deep theory + aural practice
+Chordify         → song → chord → play
+Pianote          → teacher-led piano curriculum
+PianoGrid 不适合在 90 天内同时击败五种模式。
+最合理的 wedge 是：
+Piano-specific
++
+Search-first
++
+19
+20
+21
+22
+23
+24
+8
+
+--- PAGE 9 ---
+Exact answer
++
+Source-aware
++
+Keyboard/audio verification
++
+Immediate next practice
+即：
+不是“Learn everything about piano”。
+而是“Whatever piano question brought you here, finish that task and know exactly what
+to do next.”
+[推断] 这实际上比“免费 Piano Theory 网站”更清晰，因为它避开了 Musicca 和 teoria 已经非常成熟的横向理论覆
+盖，也避开了 Pianote 的视频学校模式和 Chordify 的海量歌曲识别模式。
+PianoGrid 可以建立的四层差异化
+层 竞争优势 为什么值得建立
+答案速
+度 query → exact answer，不要求注册/进入课程[推断] 搜索型用户首先要完成当前任务
+音乐正
+确性
+enharmonic spelling、root/bass、inversion、
+source status 都保留语境
+[推断] 这是普通 SEO 模板最难可靠复制
+的部分
+任务连
+续性
+answer → hear → understand → practice → next
+object
+[推断] 把一次性 SEO click 变成产品
+session
+可引用
+性
+printable、source ledger、charts、embeddable
+diagrams
+[推断] 把产品价值进一步转成
+distribution / backlinks
+产品系统、功能优先级与用户任务流
+把 PianoGrid 的基本单位从“页面”改成“任务对象”
+前一轮 BodyTypeCalculator 的通用模型是：
+Keyword
+→ User Job
+→ Input
+→ Transformation
+→ Output
+9
+
+--- PAGE 10 ---
+→ Uncertainty
+→ Next Question
+fileciteturn0file0
+[推断] PianoGrid 应把它翻译为：
+Query
+→ Music Object
+→ User State
+→ Trusted Answer
+→ Context
+→ Action
+→ Next Music Object
+一个页面是否值得独立存在，不再以“这个关键词能不能做 URL”为判断，而以：
+“这个 Music Object × User Task 是否形成了不同的任务完成状态？”
+为判断。
+例如：
+C major chord
+不是：
+“写一篇关于 C major 的 SEO 文章”
+而是：
+Input:
+  用户查 C major
+Result:
+  C–E–G
+  formula 1–3–5
+  keyboard positions
+  sound
+Context:
+  inversions
+  fingering source status
+  C/E 与 C/G
+  key context
+Next:
+10
+
+--- PAGE 11 ---
+  practice C → F → G
+  chords in C major
+  C major scale
+建议的数据/产品架构
+[推断] 不要求重写现有 stack，但逻辑数据层最好逐渐收敛成以下 canonical objects：
+其中每个对象至少具有：
+字段层 建议结构
+Identity stable id、canonical name、aliases
+Musical representationnotes、interval formula、pitch classes、spelling
+Context key、root、bass、inversion/voicing
+Piano presentation keyboard range、audio representation
+Practice exercise type、tempo/range、success condition
+Evidence source、source scope、verification status
+SEO canonical URL eligibility、primary task、search intent
+Graph parent、related、compare、practice next step
+Asset printable / share / embed eligibility
+[推断] 最重要的是把 source status 作为一等字段，而不是写作时临时决定。PianoGrid 当前已有“只有被 source-
+check 的 fingering 才展示”的意识，应继续制度化。
+Note
+Interval
+Chord
+Scale
+Voicing
+/
+Inversion
+Key
+Progression
+Exercise
+Reference
+/
+Printable
+Song
+/
+Edition
+External
+or
+Licensed
+Edition
+Source
+Metadata
+7
+11
+
+--- PAGE 12 ---
+功能优先级
+优先
+级 功能 为什么现在做 核心 KPI
+P0 Universal Next Step
+Component
+[推断] 当前资产已经足够，先解决“答案
+后断掉”
+next-step CTR、
+continuation rate
+P0 Finder Result Graph
+[推断] Finder 是高价值输入→输出工
+具；结果天然产生 ambiguity / context
+问题
+result→detail CTR、no-
+dead-end rate
+P0 Chord → Key → Scale →
+Progression bridge [推断] 将独立 reference 变成任务网络multi-object session rate
+P0 Scale → Key / Chords /
+Practice bridge 同上 practice-start rate
+P0 Analytics event
+taxonomy
+没有它，90 天后仍不知道哪些 next
+steps 有效 ≥95% 核心事件可验证
+P0 Indexable Page Gate防止产品数据库自动演化成 pSEO
+inventory 新页面 100% 通过 gate
+P1 Practice Queue [推断] 把 reference utility 转为重复使用
+practice starts、
+completions、7-day
+return
+P1 Ambiguity /
+Comparison Engine
+[推断] “为什么两个答案都可能对”具有真
+实教育价值和 search intent
+comparison entry +
+downstream use
+P1 Printable / Embed Asset
+Layer [推断] 增强教师、博客与资源页引用理由print/download/share、
+referring domains
+P1 Source Registry /
+Provenance UI 强化可信度和可维护性 sourced-field coverage
+P2 Account / cloud history先验证用户确实反复 practice 后再做repeat rate、account
+conversion
+P2 MIDI input
+teoria 已证明 MIDI 可用于交互练习，但
+PianoGrid 是否值得现在做尚无第一方证
+据。
+先做需求验证
+P2 /
+暂缓
+Microphone
+performance grading
+[推断] 工程、设备、误判成本显著增加；
+当前未证明它是最大用户摩擦 不进入首个 90 天
+Universal Next Step 应该长什么样
+不要所有页面底部统一显示：
+25
+12
+
+--- PAGE 13 ---
+Related Articles
+而应该根据 当前任务状态 生成下一步。
+[推断] 例如 C Major Chord：
+You found the chord
+C–E–G
+Hear it
+↓
+See inversions
+↓
+See C major in a key
+↓
+Practice C → F → G
+↓
+See the C major scale
+↓
+Print / save
+A Minor Scale：
+You found the scale
+A–B–C–D–E–F–G
+Hear it
+↓
+See fingering
+↓
+Check A natural minor vs harmonic minor
+↓
+See chords in A minor
+↓
+Practice one octave
+↓
+Try a progression
+Chord Finder 输出 C–E–G–A：
+Possible matches
+├ C6
+└ Am7
+13
+
+--- PAGE 14 ---
+Why are there two answers?
+↓
+What is the bass note?
+↓
+Compare C6 vs Am7
+↓
+Hear both contexts
+↓
+Open the correct chord page
+[已核实] PianoGrid 当前 Chord Finder 本身已经承认音符集合可能有多个合理解释，并保留 bass / spelling /
+context，而不是任意补全信息。
+[推断] 因而 “ambiguity” 不应当被当成工具的缺陷；它反而可以成为最有价值的 supporting product layer。
+用户任务流
+UX 的五个里程碑
+[推断] 每个核心 landing page 都应尽量完成以下阶段，而不是用文章长度来衡量页面完整性。
+6
+是
+否
+Google
+/
+Direct
+/
+Shared
+asset
+用户当前任务
+查
+Chord
+/
+Scale
+/
+Note
+从
+Notes
+反向识别
+理解或练习某概念
+找
+Song
+/
+Sheet
+Music
+Canonical
+Answer
+Keyboard
++
+Audio
+验证
+是否存在歧义或上下文问题?
+Comparison
+/
+Root-Bass
+/
+Spelling
+/
+Boundary
+Choose
+Next
+Step
+Inversion
+/
+Fingering
+Key
+/
+Related
+Scale
+/
+Progression
+Short
+Practice
+Print
+/
+Download
+/
+Share
+Practice
+Complete
+Repeat
+/
+Next
+Object
+Progression
+/
+Song
+Application
+Exact
+Edition
+/
+Source
+/
+Difficulty
+14
+
+--- PAGE 15 ---
+用户阶段 页面必须回答什么 成功事件
+Answer “答案是什么？” result_seen
+Verify “我怎么看/听出这是对的？”audio_play / keyboard interaction
+Understand“为什么是这个答案？” explanation / compare interaction
+Act “我现在在钢琴上做什么？”practice_start / inversion / progression
+Continue “下一步最自然是什么？”next_step_click / practice_complete
+[推断] 第一屏优先级应该是 Answer > Verify > Explanation > Next Action > Long-form context。这不意味着
+删除深度正文，而是不要让完成任务依赖先阅读长文。
+SEO、内容、分析与实验系统
+SEO 战略：从 Keyword Cluster 转成 Task Cluster
+[推断] 前 90 天应围绕以下九类 task clusters 扩展，而不是围绕关键词修饰词批量造页面。
+Cluster 真实任务 当前基础 下一步内容/产品 独立 URL 原则
+Chord Lookup“X chord 有哪些音、
+怎么弹？” [已核实] 很强。
+完善 next-step /
+inversion /
+practice
+只有独立
+chord task 足
+够明确时建立
+Chord
+Ambiguity
+“这组 notes 为什么有
+两个名字？”
+[已核实] Finder 已遇
+到该问题。
+C6 vs Am7、root
+vs bass 等
+有独立比较意
+图 + 独特工具
+才拆
+Chord Quality
+Comparison
+“maj7 vs 7 / sus2 vs
+sus4 / add9 vs 9”
+[已核实] 已有大量
+chord families。
+side-by-side
+keyboard/audio
+非简单定义替
+换
+Inversions /
+Voicing
+“同一个 chord 为什
+么键位不一样？” 已有 detail 基础
+inversion
+explorer、bass
+context
+有不同 user
+job 才建
+Key /
+Progression
+“这个 chord 在哪个
+key？下一和弦是什
+么？”
+[已核实] 已有 Chords
+by Key /
+Progressions。
+统一 graph linking
+首先增强产品
+节点，不急于
+扩 page count
+Scale Lookup “X scale notes /
+fingering？” [已核实] 很强。 relative / parallel /
+key / chord bridge
+source
+coverage 不足
+则不要编
+fingering
+Scale
+Comparison
+natural vs harmonic
+vs melodic minor、
+mode differences
+有 scale system
+audio + semitone
++ keyboard
+compare
+高独立 intent
+才建
+5
+6
+5
+8
+7
+15
+
+--- PAGE 16 ---
+Cluster 真实任务 当前基础 下一步内容/产品 独立 URL 原则
+Note /
+Keyboard
+Literacy
+“这是什么琴键？
+finger number 是什
+么？”
+[已核实] 首页已有完
+整入口。
+与 chord/scale
+task 双向连接 任务型 guide
+Practice /
+Application
+“我知道了，怎么
+练？” 已有 practice guide
+2–5 min drills、
+queue、
+progressions
+不需要每个组
+合单独 SEO
+URL
+Song / Edition“我要弹这首，哪版适
+合？”
+已有 Songs / Sheet
+Music
+与 key/chord/
+practice 关联
+权利和 edition
+信息必须明确
+Reference
+Assets “我要打印/教学/保存”已有 Print
+atlas、
+worksheet、
+source tables、
+embed
+每个 asset 必
+须有真实使用
+价值
+页面发布门槛：这是整个 SEO 系统最重要的规则
+[已核实] Google 的政策没有说“模板化页面一定违规”；真正的风险是为了操纵排名，大规模创建缺乏原创价值、主
+要重复已有内容的页面。
+[推断] 因此所有新的 indexable PianoGrid URL，在进入 sitemap 前至少回答以下六个问题：
+Gate 必须满足
+Distinct Job 用户在这个 URL 完成的任务是否与现有页面不同？
+Unique Utility 有没有独有的 keyboard、audio、finder、compare、practice、chart 等 utility？
+Unique Information是否有 chord/scale/context-specific 信息，而不是只替换 root name？
+Evidence Boundary信息来源是什么？哪些字段没被验证？
+Natural Next Step完成页面后用户自然做什么？
+Demand EvidenceGSC、SERP、站内 search、Finder ambiguity、用户行为中是否有需求迹象？
+结果：
+6 项明显成立
+→ 可以考虑独立 indexable page
+只有数据对象成立、任务不独立
+→ 放进 hub / interactive state
+只是另一个关键词写法
+→ 合并到 canonical page
+1
+26
+16
+
+--- PAGE 17 ---
+没有新增 utility / explanation
+→ 不发布
+[推断] 例如不应该因为存在：
+C chord
+C piano chord
+C major piano chord
+C chord on piano
+就建四个 URL。
+而：
+C major chord
+C major inversions
+C major vs C7
+C major chord in the key of F
+可能分别存在不同任务，但也仍需先判断是否值得独立 URL，而不是机械拆分。
+Supporting Content 不应叫“博客策略”
+前一轮 BodyTypeCalculator 研究发现，最有价值的 supporting assets 都可以回答一个问题：
+“它消除了主工具 journey 中哪一种 uncertainty / friction？” fileciteturn0file0
+[推断] PianoGrid 可以直接采用同样的分类：
+用户摩擦 Supporting Asset
+不知道 finger number 和 note name 是否一回事Finger-number explainer + keyboard demo
+Chord Finder 给出多个答案 Ambiguity comparison
+不知道 root 与 bass 区别 Slash-chord/root-bass explainer
+不理解 enharmonic spelling “为什么 F♯ chord 里会出现 E♯ / C𝄪？”类解释
+知道 chord 但手不知道放哪里 inversion / fingering / voicing task
+知道 scale notes，但不会练 short practice workflow
+不知道 scale 与 key/chord 的关系 key relationship tool
+17
+
+--- PAGE 18 ---
+用户摩擦 Supporting Asset
+找到歌曲，但不知道适不适合 exact-edition + difficulty evidence
+老师需要打印材料 source-checked printables
+想对比两个听起来接近的概念 audio comparison asset
+第一批最值得制作的 comparison / friction pages
+[推断] 不是根据虚构 search volume，而是根据 PianoGrid 现有 product graph 推导出来的候选池。正式发布前仍
+应使用 GSC/SERP 验证。
+优先候选包括：
+Major 7 vs Dominant 7
+C6 vs Am7
+Sus2 vs Sus4
+Add9 vs 9
+Root Note vs Bass Note
+Chord Inversion vs Slash Chord
+Natural Minor vs Harmonic Minor
+Natural Minor vs Melodic Minor
+Relative Minor vs Parallel Minor
+Finger Numbers vs Note Names
+[推断] 第一批不需要 50 篇。6–10 个真正来自产品摩擦、并带交互 utility 的页面，比 100 个“X vs Y”模板更符合当
+前战略。
+内链：从 SEO link graph 转成 Task Graph
+[已核实] Google 建议使用标准、可抓取的 <a href> 链接以及能说明目标页面内容的 descriptive anchor text；
+链接既帮助用户，也帮助 Google 发现和理解页面。
+[推断] PianoGrid 应把链接分成五种语义，而不是一个通用 Related 区块：
+Hub → Entity
+例：Major Chords → C Major
+Tool Result → Entity
+例：Chord Finder → Am7
+Entity → Explanation
+例：C6 → C6 vs Am7
+Entity → Application
+例：C Major → Chords in C → C-F-G practice
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+27
+18
+
+--- PAGE 19 ---
+Guide → Tool
+例：How inversions work → inversion-enabled chord reference
+Asset → Canonical HTML
+例：Printable chord chart → full online reference
+建议链接组件明确标识动作：
+Hear this chord
+See its inversions
+Why this can also be Am7
+See chords in C major
+Practice this progression
+Print this reference
+而不是：
+Learn more
+Related
+Click here
+SEO 测量不应该再用“索引页数量”做成功指标
+[推断] 每种 page template 建立独立 dashboard：
+Template 看什么
+Chord detailnon-brand impressions、result_seen、next-step CTR
+Scale detail query coverage、practice starts
+Finder tool activation、result count、no-match、result→detail
+ComparisonSERP impressions、compare interactions、return-to-tool
+Practice starts、completions、repeat visits
+Printable downloads、prints、referrals/backlinks
+Song/Editionoutbound edition clicks、task continuation
+真正重要的是：
+某种页面是否形成独立 query set + 独立 utility + 下一步行为。
+而不是：
+“Google index 了 1000 个页面。”
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+19
+
+--- PAGE 20 ---
+Analytics 事件设计
+[已核实] GA4 的官方事件模型允许 automatic、recommended 和 custom events，并可以在 Realtime /
+DebugView 等环境中验证实现；Google 也提供 search、share、tutorial_begin、
+tutorial_complete 等推荐事件语义。
+建议：
+事件 类型 关键参数
+search GA4
+recommended search_term, search_type
+tool_start custom tool_name, entry_page_type
+tool_result custom entity_type, result_count, 
+match_mode
+tool_no_match custom tool_name, input_count
+result_seen custom entity_id, entity_type
+audio_play custom entity_id, audio_type
+next_step_click custom source_type, target_type, 
+relationship
+practice_start custom exercise_type, entity_id
+practice_complete custom exercise_type, duration_bucket
+tutorial_begin recommended guide/practice context
+tutorial_complete recommended guide/practice context
+print_reference custom asset_type, entity_id
+download_asset custom asset_id, file_type
+share recommended content_type, item_id, method
+outbound_edition_clickcustom piece_id, provider_type
+comparison_select custom left_entity, right_entity
+[推断] 所有 product events 最好统一带上：
+page_type
+entity_type
+entity_id
+task_type
+source_page_type
+28
+20
+
+--- PAGE 21 ---
+target_page_type
+has_fingering
+has_audio
+source_status
+experiment_id
+variant
+这样 90 天之后才能回答真正重要的问题，例如：
+“从 Google 进入 Scale Detail 的用户，点击 related chord 后，Practice Start 是否明显高于直接退
+出的人？”
+GSC + GA4 的周报
+[已核实] Search Console 更适合回答 Google Search 中的查询、展示、点击和排名；GA4 更适合分析用户点击进
+入后的行为，两者结合才能建立完整 SEO funnel。
+每周只看四层：
+Acquisition
+Non-brand impressions
+Non-brand clicks
+CTR
+Query → Landing Page
+Activation
+tool_start
+result_seen
+audio_play
+Continuation
+next_step_click
+second meaningful page
+Practice / Utility
+practice_start
+practice_complete
+print
+4
+21
+
+--- PAGE 22 ---
+download
+share
+7-day return
+[推断] 这比单看 sessions 或 pageviews 更符合 PianoGrid 的产品目标。
+A/B Testing 计划
+[推断] 前两周不要急着跑“增长实验”。先验证 event data，否则 A/B 只会制造精确的错误。
+优先实验顺序：
+实验 A B Primary metric Guardrail
+Contextual
+Next Step
+Generic
+related
+resources
+根据当前 object/
+state 的具体下一步next_step_clickresult_seen 不
+下降
+Result-first
+layout
+较长解释后进
+入下一步
+result + keyboard/
+audio 后立即给 next
+action
+task continuation
+Organic
+engagement、
+CWV
+Practice CTA “Practice” “Practice C → F → G
+at 60 BPM” practice_startcompletion rate
+Printable CTA底部
+Resources result 附近 print/download 不干扰核心 task
+Ambiguity
+handling 多候选列表 多候选 + “Why
+multiple answers?”candidate selectionno-match /
+abandonment
+[推断] sample size 必须等 Week 1–2 的真实 baseline conversion 出来后再计算。若某一模板流量不足以在合理周
+期内检验预设最小效果，不应因为 B 数字更高就宣布“赢”；改用阶段性 rollout + 行为证据继续积累。
+[推断] 也不要 A/B test crawler-critical 结构，例如一半用户有 canonical、一半没有，或让 Googlebot随机看到不
+同主内容。实验应该集中在用户交互层。
+性能与技术 SEO guardrail
+[已核实] 当前 Web Vitals 推荐阈值中，良好 INP 为 ≤200ms、CLS 为 ≤0.1，LCP 良好目标为 ≤2.5s，通常以第
+75 百分位评估用户体验；field data 应优先用于真实体验判断。
+因此建议把以下设为产品上线 guardrail，而不是单独“SEO 优化周”才看：
+29
+22
+
+--- PAGE 23 ---
+LCP ≤ 2.5s
+INP ≤ 200ms
+CLS ≤ 0.1
+[推断] 任何新的 keyboard/audio/practice layer 如果显著破坏这些指标，都应优先 lazy-load 或拆分，而不是以“互
+动更多”为理由接受明显性能退化。
+九十天执行路线图
+以下从 2026-09-22 起算。
+[推断] effort 假设为“小团队/独立开发者模式”：大约一名主要 full-stack/product 开发者，加部分 SEO/content 能
+力。姓名和实际 owner 当前都 unspecified，因此表中只给角色建议。若完全单人执行，应优先保 P0，减少 Week
+9–10 内容数量，而不是压缩质量门槛。
+每周 Sprint
+周 日
+期 核心工作 Deliverable Owner 估算
+Effort 成功条件
+W1
+Sep
+22–
+28
+全站 task /
+template /
+data audit
+URL-template inventory；
+Music Object schema；KPI
+dictionary；P0 backlog
+姓名
+unspecified；
+Product/SEO
+4 人
+日
+[推断] 100% 核心 page
+types 有明确 user job、
+next step、indexability 状
+态
+W2
+Sep
+29–
+Oct
+5
+GA4 + GSC
+measurement
+layer
+核心 events、DebugView
+validation、baseline
+dashboard
+unspecified；
+Dev/Analytics
+4 人
+日
+≥95% P0 event paths 被
+人工测试并正确记录
+W3
+Oct
+6–
+12
+Chord
+Universal
+Next Step
+Chord detail 上线 contextual
+next-action block
+unspecified；
+Product/Dev
+5 人
+日
+所有 priority chord
+template 有
+answer→hear→inversion/
+key/practice 链
+W4
+Oct
+13–
+19
+Chord Finder
+结果任务链
+candidate→detail；ambiguity
+explanation；no-match
+recovery
+unspecified；
+Dev/Music
+QA
+5 人
+日
+[推断] Finder 不再出现“结
+果展示完即死路”的主流程
+W5
+Oct
+20–
+26
+Scale task
+graph
+Scale→relative/parallel/key/
+chord/practice connection
+unspecified；
+Dev/Content
+5 人
+日
+priority scale template 全
+部有结构化 next action
+W6
+Oct
+27–
+Nov
+2
+SEO Page
+Gate +
+canonical
+object rules
+publication checklist；index /
+embed / merge decision
+rules
+unspecified；
+SEO/Dev
+4 人
+日
+新 URL 100% 必须过
+gate；停止无依据组合页
+23
+
+--- PAGE 24 ---
+周 日
+期 核心工作 Deliverable Owner 估算
+Effort 成功条件
+W7 Nov
+3–9
+Practice
+Queue MVP
+用户可从 chord/scale 把任务放
+进短练习队列；优先 local state
+unspecified；
+Product/Dev
+6 人
+日
+practice_start 可跟
+踪；核心 object 可启动 2–
+5 min task
+W8
+Nov
+10–
+16
+Repeat loop 最近练习、再次练习、下一个
+task；无需先强制账户
+unspecified；
+Dev/UX
+5 人
+日
+repeat behavior 可测；开
+始建立 7-day return
+baseline
+W9
+Nov
+17–
+23
+Linkable
+assets
+第一批 2 个高质量 printable/
+reference assets
+unspecified；
+Content/
+Design/Dev
+5 人
+日
+有稳定 landing HTML、
+print/download、source
+note
+W10
+Nov
+24–
+30
+Friction-led
+supporting
+cluster
+约 6 个 comparison/
+ambiguity 页面或工具状态
+unspecified；
+SEO/Music
+QA
+6 人
+日
+每个页面通过六项 Page
+Gate，并至少从一个真实
+product state 链入
+W11 Dec
+1–7
+Technical
+QA / CWV /
+Accessibility
+crawlable link audit、
+canonical/sitemap/robots 确
+认、CWV 修复
+unspecified；
+Dev/SEO
+5 人
+日
+无已知 P0 crawl blocker；
+性能不因新功能明显退化
+W12
+Dec
+8–
+14
+第一次受控实
+验
+Contextual CTA 或 Practice
+CTA experiment
+unspecified；
+Product/
+Analytics
+4 人
+日
+tracking 完整；只有
+sample 足够时才作 winner
+判断
+W13
+Dec
+15–
+21
+90-day
+synthesis
+Query→Page→Task→Practice
+report；Q1 roadmap
+unspecified；
+Founder/
+Product
+3 人
+日
+每个 P0/P1 项明确 Keep /
+Improve / Kill / Scale
+合计约 61 人日。[推断] 这不是代码估价；因为真实 repo、framework、测试覆盖和数据结构均 unspecified，工
+程复杂度必须在 W1 重新估算。
+时间线
+Sprint 中真正不能省掉的音乐 QA
+[推断] PianoGrid 与普通 Calculator 网站最大的不同，是它处理的是具有 notation/context correctness 的知识
+系统。
+09/27
+10/04
+10/11
+10/18
+10/25
+11/01
+11/08
+11/15
+11/22
+11/29
+12/06
+12/13
+12/20
+产品/页面/数据审计
+Analytics 与 KPI
+Chord Next Step
+Finder Result Graph
+Scale Task Graph
+Page Quality Gate
+Practice Queue MVP
+Repeat Loop
+Linkable Assets
+Supporting Cluster
+Technical / CWV QA
+Controlled Experiment
+90-Day Review
+基线与测量
+TaskGraph
+Practice与Assets
+优化与学习
+PianoGrid 90 天执行时间线
+24
+
+--- PAGE 25 ---
+因此新功能上线至少要自动/人工验证：
+Enharmonic spelling
+Root vs bass
+Inversion labeling
+Pitch-class equivalence
+Octave representation
+Chord formula
+Scale formula
+Relative / parallel relation
+Fingering source scope
+Audio notes == displayed notes
+Print notes == HTML notes
+Finder registry == detail-page canonical object
+[推断] 这意味着 SEO content pipeline 不能脱离 canonical music data 单独“写文章”。正文、keyboard、audio、
+printable 和 finder 最好尽量引用同一个 source of truth。
+90 天之后应该如何决定第二阶段
+不要因为某个功能已经写完就继续扩。
+建立四个决策：
+Scale
+Task continuation ↑
+Practice starts ↑
+Organic query footprint ↑
+User repeats ↑
+→ 扩到更多 object / template
+Improve
+Users activate
+但 next step 很低
+→ UX / context 问题
+Merge
+25
+
+--- PAGE 26 ---
+多个 pages 拿同一批 queries
+且任务高度重叠
+→ canonicalize / consolidate
+Kill / Do not index
+长期无独立 impressions
+无独立 utility
+无 downstream behavior
+→ 不继续维护为独立 SEO landing page
+[推断] 这会让 PianoGrid 自己开始积累最重要的一手能力：知道“什么音乐对象值得成为页面”，而不是依赖外部
+keyword tool 猜。
+风险、依赖与下一步清单
+主要风险与控制措施
+风险 状态 为什么重要 Mitigation
+组合式 pSEO 膨胀
+[已核实] Google 明确有
+scaled content abuse 政
+策。
+音符/和弦/调/音阶组合几
+乎无限，极容易“数据很多
+=页面很多”
+Page Gate；默认
+interactive state；只有独
+立任务才 index
+音乐事实错误
+[已核实] 当前 PianoGrid 已
+经显式处理 source scope
+和语境。
+一个错误 fingering/
+spelling 会直接损坏信任
+Canonical object
+model、source
+registry、Music QA tests
+页面互相
+cannibalize
+[推断] 大量近义任务拆页后
+容易出现
+Google 不知道该排哪
+个，用户也看不出差异
+Query-overlap review；
+merge/canonical
+Supporting
+content 变普通博
+客
+[推断] 最常见的扩张失控方
+式 与 product system 脱节每页必须注明“解决哪个
+product friction”
+技术栈未知
+[已核实] 当前 framework/
+hosting/pipeline
+unspecified
+可能影响 roadmap effort
+W1 repo/build/deploy
+audit，不在审计前承诺重
+构
+Analytics 基线未
+知
+[已核实] 本研究没有
+PianoGrid GA4/GSC 后台
+数据
+无法知道 uplift W2 前不把任何相对 uplift
+写成事实
+A/B 样本不足 [推断] 对中小型 SEO 站常
+见 容易误判噪音为结果
+先计算 sample；不足则
+rollout + longer
+observation
+26
+11
+26
+
+--- PAGE 27 ---
+风险 状态 为什么重要 Mitigation
+过早做 MIDI /
+microphone
+[推断] 复杂度显著高于
+reference/practice graph
+可能吃掉一个季度却没有
+需求证据
+P2；先用 click/interest
+test 验证
+交互造成性能下降[已核实] CWV 对真实体验
+有明确阈值参考。
+Piano UI/audio 很容易增
+加 JS
+lazy load、bundle
+budget、field
+monitoring
+版权 / sheet
+music 权利
+[推断] Song/Sheet Music
+比理论数据风险高
+不能把 reference
+expansion 变成未授权内
+容库
+区分原创、授权、外部
+reference；保留 edition/
+source
+过度依赖 Google
+[推断] 当前战略仍然以
+search acquisition 为重要
+入口
+算法变化会影响
+acquisition
+build print/share/direct-
+repeat assets，而非只扩
+URL
+追竞争对手功能数
+量
+[推断] Musicca/Chordify/
+Pianote 均已拥有成熟不同
+系统
+会造成战略失焦 坚持 Piano-specific task-
+to-practice wedge
+最关键的依赖项
+[已核实] 当前最重要的缺失证据不是“更多行业报告”，而是 PianoGrid 自己的一方数据：
+第一优先级：GSC
+最小字段：
+Query
+Landing Page
+Clicks
+Impressions
+CTR
+Average Position
+Country
+Device
+Date
+至少需要：
+最近 28 天
+最近 90 天
+如有历史，再加前一可比周期
+第二优先级：GA4
+29
+27
+
+--- PAGE 28 ---
+最小需要：
+Landing Page
+Sessions
+Organic Sessions
+Engaged Sessions
+Event Name
+Event Count
+Users
+Device
+Country
+Date
+[推断] 有了这两个数据包，就可以回答现在无法公开网页判断的问题：
+Chord 还是 Scale 真正承担最多 acquisition？
+哪些 chord pages 只是 index inventory，哪些是真正 landing pages？
+Finder 有没有自然入口流量？
+哪些 pages 获得大量 impressions 却 CTR 低？
+用户从哪个 template 最容易继续下一步？
+哪些 query 已经暗示应该做 comparison page？
+Semrush 数据的证据限制
+[已核实] 本次 Semrush connector 因 API units 不足，无法运行统一域名竞争/关键词报表。
+因此：
+PianoGrid 当前 Organic Traffic：unspecified
+PianoGrid 当前 Organic Keywords：unspecified
+PianoGrid Top Organic Pages：unspecified
+PianoGrid Referring Domains：unspecified
+PianoGrid keyword gap against competitors：unspecified
+PianoGrid historical position changes：unspecified
+[推断] 这些数字有价值，但不是开始这份 90 天产品工作的前置条件。真正不可缺的是 first-party GSC/GA4
+baseline。
+立刻执行的 Checklist
+状
+态 下一动作 完成定义
+☐ 确认技术栈 framework、build、deploy、data source、audio generation、
+PDF pipeline 均记录下来
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+28
+
+--- PAGE 29 ---
+状
+态 下一动作 完成定义
+☐ 导出/接入 GSC 基线 至少 28 / 90 天 Query × Page 数据
+☐ 建立 GA4 event taxonomyresult_seen、next_step_click、practice_* 等可
+在 DebugView 验证
+☐ 全量 inventory 当前 indexable
+templates
+Chord / Scale / Note / Finder / Learn / Song / Sheet / Tools 均
+分类
+☐ 暂停“因为能生成所以发布”的新
+URL 所有新页面先过 Page Gate
+☐ 把 Next Step 组件加入 Chord
+Detail answer→hear→inversion→key/scale→practice
+☐ 把 Next Step 组件加入 Scale
+Detail answer→hear→fingering→related context→practice
+☐ 修通 Finder 候选结果链 ambiguity / no-match / detail 都有下一步
+☐ 建立 canonical Music Object
+schema page、finder、audio、print 共用 object identity
+☐ 上线 Practice Queue MVP无需注册即可从结果启动短练习
+☐ 做第一批 2 个 linkable assetsHTML landing + print/download + source note
+☐ 只做约 6 个 friction-led
+supporting pages 每个都有真实产品触发点与独立 utility
+☐ 审计 canonical / robots /
+sitemap 当前 unspecified 项变成已验证事实
+☐ 检查 crawlable contextual
+links 关键关系使用真实 <a href> 与 descriptive anchor。
+☐ 建立 CWV guardrail LCP / INP / CLS 不因新交互明显退化。
+☐ Week 12 只跑一个主要实验样本与 event quality 合格后再作决定
+☐ Day 90 做 Keep / Improve /
+Merge / Kill review 不以“做完功能”为成功，而以用户任务数据决定下一季度
+最终决策框架
+把 BodyTypeCalculator 的经验压缩到 PianoGrid，不应该得到：
+Calculator 成功
+→ PianoGrid 也做很多 tools
+27
+29
+29
+
+--- PAGE 30 ---
+→ 再写很多文章
+→ 再做很多 backlinks
+而应得到：
+Search Query
+↓
+用户到底正在钢琴前解决什么问题？
+↓
+Product Primitive
+Chord / Scale / Note / Finder / Edition
+↓
+Immediate Answer
+↓
+用户为什么可能不相信、看不懂或不会使用这个答案？
+↓
+Verification / Explanation / Ambiguity
+↓
+用户拿到答案之后最自然的下一动作是什么？
+↓
+Practice / Key / Progression / Song / Print
+↓
+这个下一动作是否本身存在独立搜索需求？
+↓
+有：验证后建立独立 URL / Tool
+无：留在产品状态中，不为了 SEO 建页
+↓
+是否产生值得保存、打印、分享、引用的资产？
+↓
+Distribution / Authority
+↓
+通过 GSC + GA4 观察真实任务
+↓
+决定下一轮 Build / Improve / Merge / Kill
+这个逻辑与前一轮 Deep Research 对 BodyTypeCalculator 的核心结论一致：真正值得复制的不是某个 calculator
+页面，而是从一个明确搜索任务出发，把输入问题、输出解释、边界情况和结果后的需求组织成一个 Product
+System。 fileciteturn0file0
+[推断] 对 PianoGrid 而言，最重要的战略变化可以压缩成一句话：
+未来不要优先建设“更多 PianoGrid 页面”；优先建设“更多已经被连接起来、能把用户带到下一次真
+实钢琴动作的任务”。
+30
+
+--- PAGE 31 ---
+[已核实] PianoGrid 今天已经有 Chords、Scales、Notes、Finder、Songs、Sheet Music、Learn 和 Tools 这些核
+心节点，也已经具备音符、键盘、音频、打印、来源边界等产品基础。
+[推断] 因此它下一阶段最可能的增长杠杆，并不是再寻找一个全新的内容方向，而是把这些节点从：
+一组不错的独立 references
+变成：
+Search
+→ Answer
+→ Verify
+→ Understand
+→ Practice
+→ Continue
+→ Return / Share
+一旦这条链被真实行为数据验证，新增关键词、新增页面、内部链接、可引用资产和未来商业化，才会开始围绕同
+一个产品系统自然扩展，而不是分别作为 SEO、内容、工具和增长四件互不相干的事情来做。
+https://pianogrid.com/
+https://pianogrid.com/
+https://pianogrid.com/chords
+https://pianogrid.com/chords
+https://developers.google.com/search/docs/essentials
+https://developers.google.com/search/docs/essentials
+https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console
+https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console
+https://pianogrid.com/chords/finder
+https://pianogrid.com/chords/finder
+https://pianogrid.com/scales
+https://pianogrid.com/scales
+https://www.semrush.com/website/musicca.com/overview/
+https://www.semrush.com/website/musicca.com/overview/
+https://www.musicca.com/music-theory-app
+https://www.musicca.com/music-theory-app
+https://www.musictheory.net/products/tenuto
+https://www.musictheory.net/products/tenuto
+30
+1 8 30
+2 5 9
+3 10
+4
+6 11
+7
+12 15
+13 14
+16
+31
+
+--- PAGE 32 ---
+https://www.teoria.com/en/help/about.php
+https://www.teoria.com/en/help/about.php
+https://www.semrush.com/website/teoria.com/overview/
+https://www.semrush.com/website/teoria.com/overview/
+https://chordify.net/pl/
+https://chordify.net/pl/
+https://chordify.net/it/premium
+https://chordify.net/it/premium
+https://www.semrush.com/website/chordify.net/overview/
+https://www.semrush.com/website/chordify.net/overview/
+https://www.pianote.com/
+https://www.pianote.com/
+https://www.pianote.com/ericwortham/plan
+https://www.pianote.com/ericwortham/plan
+https://www.semrush.com/website/pianote.com/overview/
+https://www.semrush.com/website/pianote.com/overview/
+https://www.teoria.com/en/exercises/
+https://www.teoria.com/en/exercises/
+https://developers.google.com/search/docs/essentials/spam-policies
+https://developers.google.com/search/docs/essentials/spam-policies
+https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+https://developers.google.com/analytics/devguides/collection/ga4/events
+https://developers.google.com/analytics/devguides/collection/ga4/events
+https://web.dev/articles/optimize-inp
+https://web.dev/articles/optimize-inp
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+32

@@ -1,0 +1,6 @@
+npm run check : 0
+node scripts/check-integration-data.mjs : 1
+node scripts/check-integration-batch.mjs : 1
+node scripts/check-support-pages.mjs : 1
+node scripts/check-chords-completion.mjs : 1
+node scripts/check-scale-completion-contract.mjs : 0

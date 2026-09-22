@@ -1,0 +1,158 @@
+[
+  {
+    "path": "docs/content/site-master/A-Scales/batch-page-content.json",
+    "expected": "8a6f9681acec1a3091f1d938b15580afa9648b1e1337f1abd7f1cb3f88087580",
+    "lfMatches": false,
+    "gitBlobMatches": false
+  },
+  {
+    "path": "docs/content/site-master/A-Scales/batch-source-ledger.md",
+    "expected": "ce54c4cd56ff6d27a8ccc4341952fe94ca8d116c3e30fdb9b01292299d651be3",
+    "lfMatches": false,
+    "gitBlobMatches": false
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-keyboard-13-keys.svg",
+    "expected": "febe9d82e4b992d530f555b5c2b6c32a4eeabe66bd96360d873aa021ead96333",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/assets/blank-keyboard-25-keys.svg",
+    "expected": "e7dd25e5ca69822047b73a40e1d8ae7a7c0f2921cf212d5b616dae2795d8f02f",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/assets/Bravura-LICENSE.txt",
+    "expected": "bdca252186865f3b2c0e76da4a4e335c14ba1d37f80194fca254ddfa88e84fbf",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-flat-major--root.svg",
+    "expected": "a59cc0efa28d9f72c5dbeb0106e0d68819d642bbc6aab639bd0b2fd704463d89",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-major--root.svg",
+    "expected": "fe80d769b13accc879bde4c0421461b51a78ac9abb09c07cc463988d003439b9",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor--first.svg",
+    "expected": "fec03e26eac2c68ec5cda07a8269bc05318f00efefe59a950e5acfc72dbcfd23",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor--root.svg",
+    "expected": "f2a192906e970de51754d67d4824fd8ff9eebf9c5febfc68ba4d4dad5a729cb1",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/a-minor--second.svg",
+    "expected": "1bd87f800320f1b65dc786d0259cf41dcfc44a309e4406c83f3e92e95eef8d5c",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/b-major--root.svg",
+    "expected": "03bac802238be7d8dc69980ccba5b0a1f6332133d4e97677ebabec2cdd8633d9",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/c-flat-major--root.svg",
+    "expected": "16e4c7a0c825d7f6f30da8445948d0282b138ce01473c01288b2af85627b02cd",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/c-major--root.svg",
+    "expected": "351e3aef376cc66c9093eadc8f6e944c8ef786372eff50ee415e8d4696561cc0",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/c-minor--root.svg",
+    "expected": "37a4b7b04566889986fb77865e704ceadadaaa6087de034d4f95dfe913025283",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/e-major--root.svg",
+    "expected": "12994bfb08dde5e039110d61fb3b8b05ea236ba2637b5529dc17ed4147acba64",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/preserved-chords/assets/g-major--root.svg",
+    "expected": "d2dcbf853760318a474cd014a2d03e481051d0e2f6afd8d2fdacc5a0339e5a03",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/content/site-master/source-ledger.master.md",
+    "expected": "5998755f52e665255a006a058a00127df680a5e4693c3ee2af52a20588d291b2",
+    "lfMatches": false,
+    "gitBlobMatches": false
+  },
+  {
+    "path": "docs/design/piano-final/chords/a-minor/index.html",
+    "expected": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/index.html",
+    "expected": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/requirements-dev.txt",
+    "expected": "835f93bb252512fbdcb82df69f12b3feaf83bf80ebdeb2d6967e538f20f86c91",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/source/app.js",
+    "expected": "fe56b078d8bbd0c8f1547f4f0a98465d48fbb3326f3b4c2c5578c9e923d55b45",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/source/browser_config.py",
+    "expected": "5ebd59baf626f297d0cd646d89f45e3912196b0bb25042e91d70e5cad114ebbe",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/source/build.py",
+    "expected": "e4738b9e4f2126d2b3c74ca7bda28d6fdccc022b0d4c6ba4e95fa6422a8898e0",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/source/render.py",
+    "expected": "f357ee9ee51b8bb9dd84352c3219cf97a093e2dff091c421cdc689a4fd81b9fe",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/piano-final/source/verify.py",
+    "expected": "18717456256a0b89089460a780a940ec7df23aca339333b67e848da82f8c06e7",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  },
+  {
+    "path": "docs/design/reference/final-a-minor.html",
+    "expected": "3e1fed7b9a20e5abb151c723a42c3536691b66462c725e189b266f7fcd745dc2",
+    "lfMatches": true,
+    "gitBlobMatches": true
+  }
+]

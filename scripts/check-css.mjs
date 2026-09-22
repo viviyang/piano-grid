@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import assert from 'node:assert/strict';
 const root=dirname(dirname(fileURLToPath(import.meta.url)));
-const out=join(root,'checks/batches/07-site-integration');
+const out=join(root,process.env.PIANO_CHECK_OUT||'checks/batches/07-site-integration');
 const temp=join(out,`.cn-${process.pid}.mjs`);
 let compiled;
 try {

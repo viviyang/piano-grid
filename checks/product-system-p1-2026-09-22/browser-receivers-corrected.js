@@ -1,0 +1,14 @@
+const results=[];async function check(name,fn){try{await fn();results.push({name,passed:true});}catch(e){results.push({name,passed:false,error:String(e).slice(0,650)});}}
+const base='http://127.0.0.1:4350';
+await page.goto(base+'/chord-progressions#progression-basic-cadence-c-major',{waitUntil:'domcontentloaded'});
+await check('progression fragment restores both selectors',async()=>{await expect(page.locator('.pg-picker select').nth(1)).toHaveValue('basic-cadence-c-major');await expect(page.locator('.pg-picker select').nth(0)).toHaveValue('basic-cadence');});
+await check('progression hashchange and invalid state',async()=>{await page.evaluate(()=>location.hash='progression-pop-four-c-major');await expect(page.locator('.pg-picker select').nth(1)).toHaveValue('pop-four-c-major');await page.evaluate(()=>location.hash='progression-not-real');await expect(page.getByText('This progression link could not be restored. The default example is shown.')).toBeVisible();});
+await page.goto(base+'/chords/finder?pg-notes=0,4,7&pg-bass=4',{waitUntil:'domcontentloaded'});await page.locator('[data-chord-id="c-major"] a').click();
+await check('native history back restores Finder supported state',async()=>{await page.evaluate(()=>history.back());await page.waitForURL(/\/chords\/finder\?/);await expect(page.getByLabel('Lowest note (optional)')).toHaveValue('4');for(const name of ['C','E','G'])await expect(page.getByRole('button',{name,exact:true})).toHaveAttribute('aria-pressed','true');assert.equal(await page.evaluate(()=>window.__events.filter(e=>e.name==='p0_tool_start').length),0);});
+await page.goto(base+'/chords/c-major',{waitUntil:'domcontentloaded'});
+await check('C major context journey',async()=>{await page.getByRole('link',{name:'See C major in its key context',exact:true}).click();await expect(page.getByLabel('Key',{exact:true})).toHaveValue('C major');await page.getByRole('link',{name:'Hear a progression in this C major context',exact:true}).click();await expect(page.locator('.pg-picker select').nth(1)).toHaveValue('pop-four-c-major');});
+await page.goto(base+'/chords/extended?pg-object=not-real#ref-not-real',{waitUntil:'domcontentloaded'});
+await check('invalid category object explains safe fallback',async()=>{await expect(page.getByText('This reference link could not be restored. The default reference is shown.')).toBeVisible();});
+await page.goto(base+'/keyboard-notes?note=F%234&layout=88-key-A0-C8',{waitUntil:'domcontentloaded'});
+await check('keyboard continuation reaches existing practice without auto-start',async()=>{await page.getByRole('link',{name:'Practise note locations',exact:true}).click();await expect(page.getByRole('button',{name:'Start 10-note practice',exact:true})).toBeVisible();assert.equal(await page.locator('.kn-v2-question').count(),0);});
+const path=artifactPath('p1-receivers-corrected.json');await(await import('node:fs/promises')).writeFile(path,JSON.stringify(results,null,2));return {path,results};

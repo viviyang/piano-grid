@@ -1,4 +1,7 @@
 'use client';
+import {ProductContinuation} from '@/components/product-continuation';
+import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
+
 
 import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
@@ -21,6 +24,8 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
   const [printError, setPrintError] = useState('');
   const option = options.find((item) => item.form === form) ?? options[0];
+  const resultRef=useRef<HTMLElement>(null);
+  useResultExposure(resultRef,option.id,`${hand}:${direction}`);
   const lastReference = useRef(`${option.id}:${hand}:${direction}:${tempo}`);
   const print = snapshot ?? { option, hand, direction, tempo };
   const change = (callback: () => void) => { audio.cancel('settings'); setPrintError(''); callback(); };
@@ -48,7 +53,7 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
   };
 
   return <>
-    <section className="am-tool sc-tool sc-screen" aria-label={`${option.tonic} scale reference`} data-current-scale={option.id}>
+    <section ref={resultRef} className="am-tool sc-tool sc-screen" aria-label={`${option.tonic} scale reference`} data-current-scale={option.id}>
       <div className="sc-fixed-summary"><div><span>Starting note</span><strong>{option.tonic}</strong></div><div><span>Key signature</span><strong>{keySignature}</strong></div><div><span>Range</span><strong>1 octave</strong></div></div>
       <ScaleCurrentAnswer option={option} hand={hand} direction={direction} tempo={tempo}/>
       <div className="sc-controls">
@@ -61,13 +66,14 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
       <div className="sc-print-bar"><button type="button" className="am-button am-secondary" disabled={!audio.ready} onClick={startPrint}>Print current scale</button></div>
       <p role="status" className="kn-error">{printError}</p>
       <p className="sc-scope-note">Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.</p>
+      {option.tonic==='C'&&option.form==='major'&&<><ProductContinuation path="/scales/c-major"/><p className="sc-boundary">Reference edition: 2026-09-22. The sources below apply to the stated hand, direction and one-octave range. The two-hand starter PDF is a fixed reference, not a snapshot of these controls. No independent teacher review is claimed.</p></>}
       <ScaleQuiz key={`quiz:${option.id}:${hand}:${direction}`} option={option} hand={hand} direction={direction} keyboardKeys={keyboardKeys} ready={audio.ready}/>
       <ScalePractice key={`practice:${option.id}:${hand}:${direction}`} option={option} hand={hand} direction={direction} audio={audio} ready={audio.ready}/>
     </section>
     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
       <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div><p>Key signature: {keySignature}</p>
       <ScaleReference {...print} keyboardKeys={keyboardKeys} print/>
-      <p className="sc-print-foot">One-octave reference. Finger numbers appear only for the hand and direction combinations covered by the sources listed above.</p>
+      {print.option.tonic==='C'&&print.option.form==='major'&&<p>Reference edition: 2026-09-22. Current hand and direction are shown above. Source scope is listed with the reference; no independent teacher review is claimed.</p>}<p className="sc-print-foot">One-octave reference. Finger numbers appear only for the hand and direction combinations covered by the sources listed above.</p>
     </div>
   </>;
 }

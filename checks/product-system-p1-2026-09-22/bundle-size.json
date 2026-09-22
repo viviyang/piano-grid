@@ -1,0 +1,13 @@
+{
+  "scope": "all emitted JS chunks; not per-route download or Web Vitals",
+  "builds": {
+    ".next-p0-final": {
+      "chunkCount": 27,
+      "allChunkBytes": 1243788
+    },
+    ".next-p1-final": {
+      "chunkCount": 28,
+      "allChunkBytes": 1277841
+    }
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "progression fragment restores both selectors",
+    "passed": true
+  },
+  {
+    "name": "progression hashchange and invalid state",
+    "passed": true
+  },
+  {
+    "name": "native history back restores Finder supported state",
+    "passed": false,
+    "error": "TimeoutError: page.waitForURL: Timeout 7000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"http://127.0.0.1:4350/chords/finder?pg-notes=0%2C4%2C7&pg-bass=4\"\n  \"networkidle\" event fired\n============================================================"
+  },
+  {
+    "name": "C major context journey",
+    "passed": true
+  },
+  {
+    "name": "invalid category object explains safe fallback",
+    "passed": true
+  },
+  {
+    "name": "keyboard continuation reaches existing practice without auto-start",
+    "passed": true
+  }
+]

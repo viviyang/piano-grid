@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter.pdf",
+      "hand": "RH",
+      "direction": "ascending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter.pdf",
+      "hand": "RH",
+      "direction": "descending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter.pdf",
+      "hand": "LH",
+      "direction": "ascending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter.pdf",
+      "hand": "LH",
+      "direction": "descending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter-a4.pdf",
+      "hand": "RH",
+      "direction": "ascending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter-a4.pdf",
+      "hand": "RH",
+      "direction": "descending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter-a4.pdf",
+      "hand": "LH",
+      "direction": "ascending",
+      "notesEqual": true,
+      "fingersEqual": true
+    },
+    {
+      "file": "public\\downloads\\scales\\pianogrid-c-major-two-hand-starter-a4.pdf",
+      "hand": "LH",
+      "direction": "descending",
+      "notesEqual": true,
+      "fingersEqual": true
+    }
+  ],
+  "sourceIDs": [
+    "AM-NOTES-C-MAJOR",
+    "AM-FINGER-LMT",
+    "AM-FINGER-MF"
+  ],
+  "visualResult": "FAIL: Letter RH upper keyboard only two black keys; A4 cover text overlap; parser structure warnings; original assets unchanged"
+}

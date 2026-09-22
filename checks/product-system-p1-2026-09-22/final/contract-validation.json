@@ -1,0 +1,48 @@
+{
+  "executed_at": "2026-09-22T08:36:40.100Z",
+  "passed": 9,
+  "failed": 0,
+  "results": [
+    {
+      "name": "all 27 approved authoring records and 74 dependency-closure sources validate",
+      "passed": true
+    },
+    {
+      "name": "C4 cannot be declared as a black key",
+      "passed": true,
+      "detail": "Error: pages./scales/c-major.data.pitch_sequences.RH.ascending[0].key_color: must be white for MIDI 60"
+    },
+    {
+      "name": "C major cannot silently contain D-sharp even with internally consistent MIDI and color",
+      "passed": true,
+      "detail": "Error: pages./scales/c-major.data.pitch_sequences.RH.ascending: written pitches must match the scale definition"
+    },
+    {
+      "name": "nested unknown source IDs are rejected",
+      "passed": true,
+      "detail": "Error: pages./scales/d-major: unknown nested source id SOURCE-DOES-NOT-EXIST"
+    },
+    {
+      "name": "new descending fingering without exact descending scope is rejected",
+      "passed": true,
+      "detail": "Error: pages./scales/e-minor.data.forms[1].fingering.descending: non-null descending fingering requires exact descending source scope"
+    },
+    {
+      "name": "ascending event order cannot be swapped",
+      "passed": true,
+      "detail": "Error: pages./scales/d-major.data.pitch_sequences.RH.ascending[1].midi: must be strictly ascending"
+    },
+    {
+      "name": "C-flat written octave maps to B3 physical MIDI without changing the spelling",
+      "passed": true
+    },
+    {
+      "name": "A classical melodic minor descent restores F and G naturals",
+      "passed": true
+    },
+    {
+      "name": "family and arpeggio event counts retain 5/6/7/12 and 3-tone boundaries",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "test": "pause/resume/reset",
+    "states": [
+      "counting",
+      "paused",
+      "counting",
+      "idle"
+    ],
+    "passed": true
+  },
+  {
+    "test": "settings cancel",
+    "passed": true
+  },
+  {
+    "test": "silent guide",
+    "passed": true
+  }
+]

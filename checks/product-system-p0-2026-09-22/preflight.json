@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-09-22T06:41:10.912115+00:00",
+  "cwd": "C:\\Users\\Admin\\Documents\\viviyang_github\\piano-main-product-audit",
+  "head": "c1a017a533289616b84e354c97f1345114f809e2",
+  "expected": "d15c0142cc6d00b01d060ba17092000a5bf060ca",
+  "branch": "DETACHED",
+  "tracked_diff": "",
+  "lock_sha256": "6d79be22cdee11ce85b7efa81e13df33978baeaa3f3fac846ab9ba30f1e1208f",
+  "requested_instruction_exists": false,
+  "found_instruction": "10_P0_REVIEW_AND_EXECUTION.md",
+  "found_instruction_sha256": "08dc893cb0ad5ad8a9a932bbd5e3af0f30ee950d118f284bf55eac4031d0904f",
+  "audit_file_count": 51,
+  "hash_failures": 26,
+  "newline_only": 23,
+  "real_content": 3,
+  "integration_data_exit": 1,
+  "baseline_gate": "BLOCKED",
+  "implementation": "NOT_STARTED"
+}

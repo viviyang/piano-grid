@@ -1,0 +1,2203 @@
+{
+  "results": [
+    {
+      "name": "audio begins during count-in, then practice advances and completes",
+      "passed": true
+    },
+    {
+      "name": "pause/resume/reset cancel the old timeline",
+      "passed": true
+    },
+    {
+      "name": "settings and beforeprint cancel both audio and practice",
+      "passed": true
+    },
+    {
+      "name": "silent guide remains available",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "timeline": [
+    {
+      "ms": 946.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 962.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 991,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1021.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1051.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1081,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1111.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1142.1999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1171.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1202.6999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1231.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1261,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1292,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1321.5999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1353,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1382.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1411.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1442.6999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1471,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1503,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1532,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1561,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1591.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1622.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1652.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1682.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1712,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1741.5,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1771.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1802,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1831.6999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1861.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1891.8999999761581,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1921.5,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1952,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 1982,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2011.6999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2041,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2073.399999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2101.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2131.1999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2161.5,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2192.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2221.2999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2252.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2282.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2311.899999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2341.5999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2371.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2403.399999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2431.899999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2461.1999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2492.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2522.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2551.399999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2581.5999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2612.0999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2641.5999999046326,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2672.399999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2703,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2731.1999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2774.7999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2791.2999999523163,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2821.399999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2852.899999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2881.899999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2911,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 2942.1999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 3938,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 3990,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 4021.6999999284744,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 4061.899999976158,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 4083.5,
+      "practice": "idle",
+      "cue": "120 BPM",
+      "sounding": [],
+      "audio": "Settings changed. The previous practice has stopped. Start again with the new settings."
+    },
+    {
+      "ms": 4808.399999976158,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 4857.199999928474,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 4863.199999928474,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 4913.5,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 4922.199999928474,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 4953.199999928474,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 4981.199999928474,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5014,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5042.799999952316,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5071.599999904633,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5102.099999904633,
+      "practice": "counting",
+      "cue": "Count in 1",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5132,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5162,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5191.299999952316,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5223.599999904633,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5252.599999904633,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5281.599999904633,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5319.199999928474,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5342.099999904633,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5371.799999952316,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5401.199999928474,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5432.099999904633,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5461.399999976158,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5493,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5522.699999928474,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5551.299999952316,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5581.399999976158,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5611.899999976158,
+      "practice": "counting",
+      "cue": "Count in 2",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5641.199999928474,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5672,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5701.099999904633,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5731,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5761.699999928474,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5791.299999952316,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5822.099999904633,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5851.899999976158,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5881.899999976158,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5911.5,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5941.5,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 5972,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6002,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6031.699999928474,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6061.199999928474,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6091.799999952316,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6121.199999928474,
+      "practice": "counting",
+      "cue": "Count in 3",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6151.299999952316,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6182.899999976158,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6211,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6241,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6271.199999928474,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6302.699999928474,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6331.699999928474,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6361.899999976158,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6391,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6421.299999952316,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6452.899999976158,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6481.399999976158,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6512.299999952316,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6541.299999952316,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6571.399999976158,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6602.399999976158,
+      "practice": "counting",
+      "cue": "Count in 4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6631.199999928474,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6661.899999976158,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6691.5,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6722.799999952316,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6750.899999976158,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6781.099999904633,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6811.699999928474,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6841.899999976158,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6871.399999976158,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6901.299999952316,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6931.399999976158,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6962.399999976158,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 6991.799999952316,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7021.299999952316,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7052.299999952316,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7081.5,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7112.299999952316,
+      "practice": "playing",
+      "cue": "C4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7141.299999952316,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7178.199999928474,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7202.199999928474,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7232.299999952316,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7262.799999952316,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7291.699999928474,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7321.699999928474,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7352.899999976158,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7381.699999928474,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7412.299999952316,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7442.099999904633,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7471.799999952316,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7502,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7532.899999976158,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7562,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7592,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7621.399999976158,
+      "practice": "playing",
+      "cue": "D4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7651.099999904633,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7681.399999976158,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7712.299999952316,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7741.299999952316,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7771,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7801.299999952316,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7831.899999976158,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7861.599999904633,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7890.899999976158,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7921.899999976158,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7951.599999904633,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 7981.799999952316,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8011.599999904633,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8042,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8072,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8101.299999952316,
+      "practice": "playing",
+      "cue": "E4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8131.599999904633,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8162,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        60
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8191.5,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8222,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8251.199999928474,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8281.299999952316,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8312.299999952316,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8341.899999976158,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8371,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8402,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8432.899999976158,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8461.599999904633,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8492.699999928474,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8521.899999976158,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8551.699999928474,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8581.799999952316,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8611.899999976158,
+      "practice": "playing",
+      "cue": "F4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8641.399999976158,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8671.799999952316,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8702.899999976158,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8731.899999976158,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8761.599999904633,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8792.399999976158,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8821.799999952316,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8851.699999928474,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8881.799999952316,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8912.299999952316,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8941.699999928474,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 8971.699999928474,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9001.699999928474,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9031.899999976158,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9061.599999904633,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9092.099999904633,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9123,
+      "practice": "playing",
+      "cue": "G4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9152.899999976158,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        64
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9181.199999928474,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9212.199999928474,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9242.5,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9272.399999976158,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9302.599999904633,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9331.399999976158,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9362.399999976158,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9392.099999904633,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9421.5,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9451.5,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9482.299999952316,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9511.699999928474,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9541.299999952316,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9572.5,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9601.599999904633,
+      "practice": "playing",
+      "cue": "A4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9632.099999904633,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9661.199999928474,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9691.799999952316,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9721.799999952316,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9753.799999952316,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9781.799999952316,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9812.099999904633,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9841.899999976158,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9871.899999976158,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9901.599999904633,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9932.299999952316,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9961.399999976158,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 9992.399999976158,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10022.099999904633,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10052.399999976158,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10081.699999928474,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10112.599999904633,
+      "practice": "playing",
+      "cue": "B4",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10141.899999976158,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        67
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10180.099999904633,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10201.099999904633,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10231.5,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10261.899999976158,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10291.699999928474,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10321.5,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10351.899999976158,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10381,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10411.399999976158,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10441.899999976158,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10471.399999976158,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10501.5,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10531.599999904633,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10561.799999952316,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10591.599999904633,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10621.199999928474,
+      "practice": "playing",
+      "cue": "C5",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10652.399999976158,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10681.5,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10711.899999976158,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10741.899999976158,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10771.5,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10802.5,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10831.899999976158,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    },
+    {
+      "ms": 10861.899999976158,
+      "practice": "completed",
+      "cue": "120 BPM",
+      "sounding": [
+        71
+      ],
+      "audio": "Playing scale…"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+✔ startup reports scheduled origin; legacy promise still waits for completion (299.0485ms)
+✖ suspended context startup uses the resumed clock, never request time (94.322ms)
+✔ cancel during resume never emits startup and settles completion (52.8206ms)
+✔ unavailable and rejected resume settle without a false startup (92.6437ms)
+✔ superseded playback is cancelled while the new playback completes (38.6609ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2486.3677
+
+✖ failing tests:
+
+test at scripts\check-audio-start-contract.test.mjs:45:1
+✖ suspended context startup uses the resumed clock, never request time (94.322ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(Math.abs(origin - 2535) < 0.001)
+  
+      at TestContext.<anonymous> (file:///C:/Users/Admin/Documents/viviyang_github/piano-main-product-audit/scripts/check-audio-start-contract.test.mjs:50:10)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

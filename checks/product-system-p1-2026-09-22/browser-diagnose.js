@@ -1,0 +1,1 @@
+return {url:page.url(),h1:await page.locator('h1').allTextContents(),selects:await page.locator('select').evaluateAll(nodes=>nodes.map(n=>({name:n.getAttribute('aria-label'),labels:[...n.labels].map(l=>l.textContent.slice(0,140)),value:n.value}))),context:await page.locator('main').innerText().then(s=>s.slice(0,1300))};

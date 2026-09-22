@@ -6,6 +6,8 @@
 *.md text eol=lf
 *.json text eol=lf
 *.png binary
+public/downloads/scales/pianogrid-c-major-two-hand-starter.pdf binary
+public/downloads/scales/pianogrid-c-major-two-hand-starter-a4.pdf binary
 docs/pianogrid-chords-next-expansion/02_routes/routes.N1.tsv whitespace=-blank-at-eol
 docs/pianogrid-chords-completion/baseline/Piano_URL规划说明.md whitespace=-trailing-space
 docs/content/songs-sheet-v2/content-data/assets/** -text

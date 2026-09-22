@@ -1,0 +1,31 @@
+ .gitattributes                                     |    2 +
+ .../07-site-integration/data-validation.json       | 1248 +++++++++++++++++---
+ .../07-site-integration/foundation.compiled.css    |   18 +-
+ checks/batches/07-site-integration/foundation.json |   19 +-
+ .../07-site-integration/tailwind-compile.json      |    4 +-
+ .../pianogrid-c-major-two-hand-starter-a4.pdf      |  Bin 9197 -> 9457 bytes
+ .../scales/pianogrid-c-major-two-hand-starter.pdf  |  Bin 9152 -> 9159 bytes
+ scripts/check-css.mjs                              |    2 +-
+ scripts/check-foundation.mjs                       |    6 +-
+ scripts/check-integration-data.mjs                 |    4 +-
+ scripts/check-scale-completion-contract.mjs        |    6 +-
+ scripts/generate-scale-completion-pdfs.py          |   16 +-
+ scripts/generate-scale-pdfs.py                     |    3 +-
+ src/components/a-minor/experience.tsx              |   13 +-
+ src/components/chords/c-major-experience.tsx       |   19 +-
+ src/components/chords/center-experience.tsx        |   12 +-
+ src/components/chords/chord-builder-practice.tsx   |   21 +-
+ .../chords/completion-category-experience.tsx      |   20 +-
+ .../keyboard-notes/keyboard-notes-workspace.tsx    |   10 +-
+ src/components/keyboard-notes/share-control.tsx    |    3 +
+ src/components/scales/detail-experience.tsx        |   10 +-
+ src/components/scales/scale-learning.tsx           |    4 +
+ src/components/scales/use-scale-audio.ts           |   27 +-
+ src/components/support/by-key-experience.tsx       |    7 +-
+ src/components/support/finder-experience.tsx       |   18 +-
+ src/components/support/progression-experience.tsx  |    7 +-
+ src/lib/a-minor-audio.ts                           |   18 +-
+ src/lib/chord-completion-content.ts                |    3 +-
+ src/lib/chord-learning-content.ts                  |    5 +
+ src/lib/support-content.ts                         |    9 +-
+ 30 files changed, 1317 insertions(+), 217 deletions(-)

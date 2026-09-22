@@ -8,7 +8,7 @@ type AudioNavigator = Navigator & { audioSession?: { type: string } };
 export class ReferenceAudio {
   private context: AudioContext | null = null;
   private generation = 0;
-  private animation = 0;
+  private animation: ReturnType<typeof setTimeout> | undefined;
   private abort: AbortController | null = null;
   private nodes = new Set<{oscillator:OscillatorNode;gain:GainNode}>();
   private state: AudioStatus = 'idle';
@@ -110,7 +110,7 @@ export class ReferenceAudio {
     for(const node of this.live.values())try{node.gain.disconnect();node.oscillator.stop();node.oscillator.disconnect();}catch{}
     this.live.clear();this.scheduled=[];
     this.abort?.abort(); this.abort=null;
-    cancelAnimationFrame(this.animation);
+    clearTimeout(this.animation);
     for(const node of this.nodes) {
       // Disconnect first, including oscillators scheduled to start in the future.
       try{node.gain.disconnect();node.oscillator.stop();node.oscillator.disconnect();}catch{}
@@ -123,7 +123,7 @@ export class ReferenceAudio {
     if(!this.disposed) this.mark([]);
     if(announce) this.describe(this.available?state:'unavailable',this.available?message:this.copy.audio_unavailable);
   }
-  async play(voicing:Pick<Voicing, 'playback'>,mode:PlaybackMode): Promise<AudioPlayResult> {
+  async play(voicing:Pick<Voicing, 'playback'>,mode:PlaybackMode,onStarted?:(originMs:number)=>void): Promise<AudioPlayResult> {
     this.cancel('', 'idle', false);
     const audioWindow=window as AudioWindow;
     if(audioWindow.__pianoGridAudioOwner&&audioWindow.__pianoGridAudioOwner!==this.ownerCancel)audioWindow.__pianoGridAudioOwner();
@@ -171,6 +171,9 @@ export class ReferenceAudio {
       if(this.disposed||generation!==this.generation||document.hidden)return 'cancelled';
       if(context.state!=='running')throw new Error('Audio context unavailable');
       this.describe('playing',mode==='together'?'Playing chord…':'Playing notes one at a time…',mode);
+      // Report the scheduled audio origin on the performance clock. Completion
+      // remains the promise contract for existing chord and playback callers.
+      onStarted?.(performance.now() + (origin - context.currentTime) * 1000);
       const end=Math.max(...events.map(e=>e.end)); let last='';
       await new Promise<void>(resolve => {
         this.finishPlayback=resolve;
@@ -180,7 +183,7 @@ export class ReferenceAudio {
           const active=events.filter(e=>time>=e.start&&time<e.end).map(e=>e.midi);
           if(active.join()!==last){this.emit(active);last=active.join();}
           if(time>=end){
-            cancelAnimationFrame(this.animation);
+            clearTimeout(this.animation);
             this.nodes.clear();
             this.finishPlayback=null;
             if(!this.disposed) this.emit([]);
@@ -188,9 +191,12 @@ export class ReferenceAudio {
             resolve();
             return;
           }
-          this.animation=requestAnimationFrame(tick);
+          // Audio keeps advancing when an occluded window throttles animation
+          // frames. Sample the audio clock independently so note marks and the
+          // completion promise do not wait for a compositor frame.
+          this.animation=setTimeout(tick,16);
         };
-        this.animation=requestAnimationFrame(tick);
+        this.animation=setTimeout(tick,16);
       });
       if(this.disposed||generation!==this.generation) return 'cancelled';
       if(this.state==='error') return 'error';

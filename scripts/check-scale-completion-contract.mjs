@@ -2,7 +2,9 @@ import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { validateScaleAuthoringBundle } from './scale-authoring-contract.mjs';
 
-const inputPath = process.env.PIANO_SCALE_AUTHORING_BUNDLE || 'checks/scales-completion/current-authoring-bundle.json';
+const outputDir = process.env.PIANO_CHECK_OUT || 'checks/scales-completion';
+fs.mkdirSync(outputDir, { recursive: true });
+const inputPath = process.env.PIANO_SCALE_AUTHORING_BUNDLE || `${outputDir}/current-authoring-bundle.json`;
 if (!process.env.PIANO_SCALE_AUTHORING_BUNDLE) execFileSync(process.execPath, ['scripts/export-scale-authoring.mjs', '--output', inputPath], { stdio: 'pipe' });
 const input = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
 const master = JSON.parse(fs.readFileSync('docs/content/site-master/page-content.master.json', 'utf8'));
@@ -49,6 +51,6 @@ expectPass('family and arpeggio event counts retain 5/6/7/12 and 3-tone boundari
 });
 
 const report = { executed_at: new Date().toISOString(), passed: results.filter((item) => item.passed).length, failed: results.filter((item) => !item.passed).length, results };
-fs.writeFileSync('checks/scales-completion/contract-validation.json', `${JSON.stringify(report, null, 2)}\n`);
+fs.writeFileSync(`${outputDir}/contract-validation.json`, `${JSON.stringify(report, null, 2)}\n`);
 console.log(`Scales completion contract: ${report.passed} passed, ${report.failed} failed`);
 if (report.failed) process.exitCode = 1;

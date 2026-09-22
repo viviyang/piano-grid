@@ -1,0 +1,36 @@
+{
+  "source": "chrome-shared-audio.json and chrome-shared-audio-corrected.json",
+  "cMajor": {
+    "route": "/chords/c-major",
+    "started": "playing",
+    "stoppable": true,
+    "ended": "idle"
+  },
+  "other": [
+    {
+      "route": "/chords/a-minor",
+      "started": "playing",
+      "ended": "stopped",
+      "passed": true
+    },
+    {
+      "route": "/chords/c-maj7",
+      "started": "playing",
+      "ended": "stopped",
+      "passed": true
+    },
+    {
+      "route": "/chords/c-diminished",
+      "started": "playing",
+      "ended": "idle",
+      "passed": true
+    },
+    {
+      "route": "/chords/c-add9",
+      "started": "playing",
+      "ended": "idle",
+      "passed": true
+    }
+  ],
+  "note": "Initial generic Stop sound locator targeted a different keyboard control. Corrected Stop locator stopped all four reference players. stopped is a valid explicit stop state; idle is also observed after React updates."
+}

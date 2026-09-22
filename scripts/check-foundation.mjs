@@ -105,6 +105,7 @@ try {
   const srcFiles = (await walk(join(root,'src'))).map(p=>relative(root,p).replaceAll('\\','/'));
   const allowedComponents = ['experience.tsx', 'keyboard.tsx', 'icon.tsx', 'page-search.tsx'].map(p => `src/components/a-minor/${p}`);
   // User-approved C-major-only pilot; do not broaden the public route allowlist.
+  allowedComponents.push('src/components/product-continuation.tsx');
   allowedComponents.push('src/components/chords/c-major-experience.tsx','src/components/chords/c-major-pilot.css','src/components/chords/piano-surface.css','src/components/ui/button.tsx');
   allowedComponents.push(...['site-chrome','playback-controls','detail-page','keyboard-viewport','print-voicing','center-page','center-experience','category-page','category-experience','page-toc','fingering-guide','chord-builder-practice','completion-category','completion-category-experience','library-index','supplement-index','family-browse'].map(n=>`src/components/chords/${n}.tsx`));
   allowedComponents.push('src/components/chords/shared.css','src/components/chords/center.css','src/components/chords/category.css','src/components/chords/page-toc.css','src/components/chords/chord-learning.css','src/components/chords/completion.css');
@@ -158,8 +159,9 @@ try {
   if (!(await exists('package-lock.json'))) warnings.push('尚无实际 npm 锁文件；首次 npm install 后生成并提交，以后使用 npm ci。');
   const report={stage:'design-foundation',executed_at:new Date().toISOString(),runtime:process.version,passed:results.filter(x=>x.passed).length,failed:results.filter(x=>!x.passed).length,warnings,results,not_covered:['npm dependency installation','Next build','Tailwind compilation','real component interaction','full accessibility compliance']};
   report.stage = '07-site-integration';
-  await mkdir(join(root,'checks/batches/07-site-integration'),{recursive:true});
-  await writeFile(join(root,'checks/batches/07-site-integration/foundation.json'),JSON.stringify(report,null,2)+'\n');
+  const output = join(root, process.env.PIANO_CHECK_OUT || 'checks/batches/07-site-integration');
+  await mkdir(output,{recursive:true});
+  await writeFile(join(output,'foundation.json'),JSON.stringify(report,null,2)+'\n');
   console.log(`Foundation: ${report.passed} passed, ${report.failed} failed.`);
   for (const w of warnings) console.warn(`NOTE: ${w}`);
   for (const r of results.filter(x=>!x.passed)) console.error(`FAIL: ${r.name} ${r.detail}`);

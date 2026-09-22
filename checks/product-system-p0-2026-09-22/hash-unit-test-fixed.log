@@ -1,0 +1,11 @@
+✔ only an explicitly reviewed text path accepts CRLF/LF equivalence (2.4228ms)
+✔ reads current file bytes and rejects a one-character edit, whitespace edits and BOM (7.8204ms)
+✔ invalid UTF8 is rejected; exact binary bytes retain byte-exact behavior (0.2862ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.7493

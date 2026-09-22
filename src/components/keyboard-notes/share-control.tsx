@@ -1,4 +1,5 @@
 'use client';
+import { emitPilotEvent } from '@/lib/product-measurement';
 
 import { useEffect, useId, useRef, useState, type ReactNode, type RefObject } from 'react';
 import { Dialog, DialogClose } from '@/components/ui/dialog';
@@ -81,6 +82,7 @@ export function SharePanel({
     setManualURL(ok ? '' : requested);
     setMessage(ok ? 'Link copied.' : 'Copy isn’t available here. Select the link below.');
     onCopied?.(requested, ok);
+    if(!onCopied)emitPilotEvent('p0_share',{status:ok?'copy_success':'copy_failed'});
   }
 
   async function share() {
@@ -88,6 +90,7 @@ export function SharePanel({
     const result = await openNativeShare(shareTitle ?? heading ?? 'Share', requested, shareText);
     if (requested !== url) return;
     onNative?.(result);
+    if(!onNative)emitPilotEvent('p0_share',{status:result==='opened'?'native_success':result});
     if (result === 'opened' || result === 'cancelled') {
       setMessage('');
       return;

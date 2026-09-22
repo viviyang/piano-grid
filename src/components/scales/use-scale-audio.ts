@@ -5,7 +5,7 @@ import { ReferenceAudio, type AudioStatus } from '@/lib/a-minor-audio';
 import type { ScalePitch } from '@/lib/scale-types';
 
 export type ScaleSessionKind = 'demo' | 'practice';
-export type ScaleCancelReason = 'stopped' | 'settings' | 'printing' | 'hidden' | 'pagehide' | 'unload' | 'superseded' | 'unmount';
+export type ScaleCancelReason = 'stopped' | 'settings' | 'printing' | 'hidden' | 'pagehide' | 'unload' | 'superseded' | 'unmount' | 'audio_error';
 export type ScaleSessionToken = { id: number; kind: ScaleSessionKind };
 export type ScaleAudioStart = { ok: boolean; startedAtMs: number; reason?: 'cancelled' | 'unavailable' | 'error' };
 
@@ -18,11 +18,11 @@ const cancelCopy: Record<ScaleCancelReason, string> = {
   unload: '',
   superseded: '',
   unmount: '',
+  audio_error: '',
 };
 
 export function useScaleAudio() {
   const audio = useRef<ReferenceAudio | null>(null);
-  const currentAudioState = useRef<AudioStatus>('idle');
   const sessionID = useRef(0);
   const cancellationListeners = useRef(new Set<(reason: ScaleCancelReason) => void>());
   const [ready, setReady] = useState(false);
@@ -51,9 +51,14 @@ export function useScaleAudio() {
   useEffect(() => {
     const controller = new ReferenceAudio(
       (next, detail) => {
-        currentAudioState.current = next;
         setState(next);
         setMessage(next === 'playing' ? 'Playing scale…' : detail);
+        if (next === 'error') {
+          // Startup and completion are separate now: a later output failure
+          // must still invalidate the visual practice's scheduled callbacks.
+          sessionID.current += 1;
+          for (const listener of cancellationListeners.current) listener('audio_error');
+        }
       },
       setSounding,
       {
@@ -93,11 +98,19 @@ export function useScaleAudio() {
     token: ScaleSessionToken,
   ): Promise<ScaleAudioStart> => {
     if (!audio.current?.available) return { ok: false, startedAtMs: 0, reason: 'unavailable' };
-    await audio.current.play({ playback: { together: events, ascending: events } }, 'ascending');
     if (!isCurrent(token)) return { ok: false, startedAtMs: 0, reason: 'cancelled' };
-    if (!audio.current.available) return { ok: false, startedAtMs: 0, reason: 'unavailable' };
-    if (currentAudioState.current === 'error') return { ok: false, startedAtMs: 0, reason: 'error' };
-    return { ok: true, startedAtMs: performance.now() };
+    return new Promise<ScaleAudioStart>((resolve) => {
+      void audio.current!.play({ playback: { together: events, ascending: events } }, 'ascending', (startedAtMs) => {
+        resolve(isCurrent(token)
+          ? { ok: true, startedAtMs }
+          : { ok: false, startedAtMs: 0, reason: 'cancelled' });
+      }).then((result) => {
+        // A failure/cancellation before startup must also settle the waiter.
+        // After startup this is a harmless second resolve, not another start.
+        resolve({ ok: false, startedAtMs: 0, reason: !isCurrent(token) || result === 'cancelled'
+          ? 'cancelled' : result === 'unavailable' ? 'unavailable' : 'error' });
+      });
+    });
   }, [isCurrent]);
 
   const play = useCallback(async (pitches: ScalePitch[], tempo: number, notesPerBeat: 1 | 2 = 1) => {

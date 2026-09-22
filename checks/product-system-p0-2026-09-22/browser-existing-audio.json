@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "name": "/scales/c-major audio start/stop",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major note checker",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major practice start/reset",
+      "passed": false,
+      "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: locator('#follow-along')\nExpected pattern: /counting|playing/\nReceived string:  \"preparing\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"to.have.attribute.value\" with timeout 5000ms\n  - waiting for locator('#follow-along')\n    13 × locator resolved to <section id=\"follow-along\" class=\"sc-learning-card\" data-practice-state=\"preparing\" aria-labelledby=\"follow-along-heading\">…</section>\n       - unexpected value \"preparing\"\n"
+    },
+    {
+      "name": "/scales/c-major print snapshot",
+      "passed": true
+    },
+    {
+      "name": "/arpeggios audio start/stop",
+      "passed": true
+    },
+    {
+      "name": "/arpeggios note checker",
+      "passed": true
+    },
+    {
+      "name": "/arpeggios practice start/reset",
+      "passed": false,
+      "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: locator('#follow-along')\nExpected pattern: /counting|playing/\nReceived string:  \"preparing\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"to.have.attribute.value\" with timeout 5000ms\n  - waiting for locator('#follow-along')\n    14 × locator resolved to <section id=\"follow-along\" class=\"sc-learning-card\" data-practice-state=\"preparing\" aria-labelledby=\"follow-along-heading\">…</section>\n       - unexpected value \"preparing\"\n"
+    },
+    {
+      "name": "/arpeggios print snapshot",
+      "passed": true
+    },
+    {
+      "name": "Home audio and motion controls",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

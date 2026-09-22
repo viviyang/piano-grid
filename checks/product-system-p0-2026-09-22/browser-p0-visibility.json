@@ -1,0 +1,22 @@
+[
+  {
+    "name": "not visible => no exposure",
+    "passed": true
+  },
+  {
+    "name": "visible once",
+    "passed": true
+  },
+  {
+    "name": "duplicate observer notifications deduped",
+    "passed": true
+  },
+  {
+    "name": "new result state once; stale observer ignored",
+    "passed": true
+  },
+  {
+    "name": "new document creates a new logical view",
+    "passed": true
+  }
+]

@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { checkProtectedBytes } from './protected-source-hash.mjs';
 
 const master=JSON.parse(readFileSync('docs/content/site-master/page-content.master.json','utf8'));
 const batch=JSON.parse(readFileSync('docs/content/site-master/F-Homepage/batch-page-content.json','utf8'));
@@ -30,5 +31,6 @@ check('Tools visibility policy exact',tools.data.visibility_policy==='show desti
 const releasedAssets=[['assets/blank-piano-staff-letter.pdf','public/reference/assets/blank-piano-staff-letter.pdf'],['assets/piano-starter-and-reading.pdf','public/assets/guides/piano-starter-and-reading.pdf']];
 for(const [logical,publicPath] of releasedAssets){const record=assets.find(item=>item.logical_id===logical);check(`${logical} asset mapped`,record.output_path===publicPath&&record.url==='/'+publicPath.slice(7)&&record.status==='exported_hash_verified');check(`${logical} byte identical`,hash('docs/content/site-master/'+logical)===hash(publicPath));}
 const protectedFiles=JSON.parse(readFileSync('checks/batches/07-site-integration/source-before.json','utf8')).files.filter(item=>item.path.startsWith('docs/content/site-master/')||item.path.startsWith('docs/product/')||item.path.startsWith('docs/design/reference/')||item.path.startsWith('docs/design/piano-final/'));
-for(const file of protectedFiles){if(file.path==='docs/content/site-master/page-content.master.json')continue;check(`Protected source unchanged: ${file.path}`,hash(file.path)===file.sha256);}
+const amendments=JSON.parse(readFileSync(new URL('./protected-source-amendments.json',import.meta.url),'utf8'));
+for(const file of protectedFiles){if(file.path==='docs/content/site-master/page-content.master.json')continue;const amendment=amendments.find(item=>item.path===file.path);if(amendment&&amendment.oldExpected!==file.sha256)throw new Error(`Protected baseline amendment no longer applies: ${file.path}`);const result=checkProtectedBytes(file.path,readFileSync(file.path),amendment?.approvedExpected??file.sha256);check(`Protected source unchanged: ${file.path}`,result.passed,{...result,originalExpected:file.sha256,amendment:amendment??null});}
 const report={executed_at:new Date().toISOString(),passed:results.filter(item=>item.passed).length,failed:results.filter(item=>!item.passed).length,results};writeFileSync(`${out}/data-validation.json`,JSON.stringify(report,null,2)+'\n');console.log(`Integration data: ${report.passed} passed, ${report.failed} failed.`);process.exitCode=report.failed?1:0;

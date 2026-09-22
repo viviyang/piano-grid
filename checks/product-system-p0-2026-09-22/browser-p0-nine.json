@@ -1,0 +1,502 @@
+{
+  "results": [
+    {
+      "route": "/chords",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords",
+            "object_id": "chord-chart",
+            "result_state": "all:all"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/finder",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/finder",
+      "events": [
+        {
+          "name": "p0_tool_start",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder"
+          },
+          "externallySent": false
+        },
+        {
+          "name": "finder_no_match",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4:none:interpret",
+            "selected_count": 2,
+            "match_count": 0
+          },
+          "externallySent": false
+        },
+        {
+          "name": "p0_tool_result",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4-7:none:interpret",
+            "selected_count": 3,
+            "match_count": 1
+          },
+          "externallySent": false
+        },
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4-7:none:interpret"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-major",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-major",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-major",
+            "object_id": "c-major",
+            "result_state": "c-major--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/a-minor",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/a-minor",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/a-minor",
+            "object_id": "am",
+            "result_state": "a-minor--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-maj7",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-maj7",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-maj7",
+            "object_id": "c-maj7",
+            "result_state": "c-maj7--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-diminished",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-diminished",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-diminished",
+            "object_id": "c-diminished",
+            "result_state": "c-diminished--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-add9",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-add9",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-add9",
+            "object_id": "c-add9",
+            "result_state": "c-add9--ninth-above"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/scales/c-major",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/scales/c-major",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/scales/c-major",
+            "object_id": "major:C",
+            "result_state": "RH:ascending"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/keyboard-notes",
+      "width": 1440,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/keyboard-notes",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/keyboard-notes",
+            "object_id": "midi-60",
+            "result_state": "88-key-A0-C8"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords",
+            "object_id": "chord-chart",
+            "result_state": "all:all"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/finder",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/finder",
+      "events": [
+        {
+          "name": "p0_tool_start",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder"
+          },
+          "externallySent": false
+        },
+        {
+          "name": "finder_no_match",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4:none:interpret",
+            "selected_count": 2,
+            "match_count": 0
+          },
+          "externallySent": false
+        },
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4:none:interpret"
+          },
+          "externallySent": false
+        },
+        {
+          "name": "p0_tool_result",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4-7:none:interpret",
+            "selected_count": 3,
+            "match_count": 1
+          },
+          "externallySent": false
+        },
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/finder",
+            "object_id": "chord-finder",
+            "result_state": "0-4-7:none:interpret"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-major",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-major",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-major",
+            "object_id": "c-major",
+            "result_state": "c-major--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/a-minor",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/a-minor",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/a-minor",
+            "object_id": "am",
+            "result_state": "a-minor--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-maj7",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-maj7",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-maj7",
+            "object_id": "c-maj7",
+            "result_state": "c-maj7--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-diminished",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-diminished",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-diminished",
+            "object_id": "c-diminished",
+            "result_state": "c-diminished--root"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/c-add9",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/chords/c-add9",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/chords/c-add9",
+            "object_id": "c-add9",
+            "result_state": "c-add9--ninth-above"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/scales/c-major",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/scales/c-major",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/scales/c-major",
+            "object_id": "major:C",
+            "result_state": "RH:ascending"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/keyboard-notes",
+      "width": 390,
+      "status": 200,
+      "exposed": true,
+      "h1": 1,
+      "overflow": false,
+      "canonical": "https://pianogrid.com/keyboard-notes",
+      "events": [
+        {
+          "name": "p0_result_seen",
+          "properties": {
+            "measurement_version": "p0-v1",
+            "page_path": "/keyboard-notes",
+            "object_id": "midi-60",
+            "result_state": "88-key-A0-C8"
+          },
+          "externallySent": false
+        }
+      ],
+      "analyticsScripts": 0
+    },
+    {
+      "route": "/chords/d-major",
+      "nonPilot": true,
+      "newEvents": 0
+    },
+    {
+      "route": "/scales/d-major",
+      "nonPilot": true,
+      "newEvents": 0
+    },
+    {
+      "route": "/keyboard-notes/labeled",
+      "nonPilot": true,
+      "newEvents": 0
+    },
+    {
+      "route": "/chords/by-key",
+      "nonPilot": true,
+      "newEvents": 0
+    },
+    {
+      "route": "/chord-progressions",
+      "nonPilot": true,
+      "newEvents": 0
+    }
+  ],
+  "errors": []
+}

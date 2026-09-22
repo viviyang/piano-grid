@@ -1,0 +1,6 @@
+FAIL Support-page validation runner completed page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/guide/piano-chords
+Call log:
+  - navigating to "http://127.0.0.1:3000/guide/piano-chords", waiting until "load"
+
+    at C:\Users\Admin\Documents\viviyang_github\piano-main-product-audit\scripts\check-support-pages.mjs:27:33
+Support pages: 0 passed, 1 failed

@@ -1,4 +1,8 @@
 'use client';
+import {ProductContinuation} from '@/components/product-continuation';
+import {useDetailContinuation} from '@/lib/use-continuation-state';
+import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
+
 import { createContext, Fragment, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { cn } from '@/lib/utils';
@@ -41,6 +45,7 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
   const [audio,setAudio]=useState<{state:AudioStatus;message:string;mode:PlaybackMode|null}>({state:'idle',message:'',mode:null});
   const [sounding,setSounding]=useState<number[]>([]), [announcement,setAnnouncement]=useState('');
   const player=useRef<ReferenceAudio|null>(null);
+  const continuationMessage=useDetailContinuation(data,id=>{setSelected(id);selected.current=id;},()=>player.current?.cancel());
   const printSnapshot=useRef<string|null>(null);
   const [printId,setPrintId]=useState<string|null>(null), [printError,setPrintError]=useState('');
   const voicing=data.voicings.find(v=>v.voicing_id===selectedVoicingId)!;
@@ -67,11 +72,15 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
     setAnnouncement(`${v.inversion_label}. ${v.chord_symbol}. ${data.microcopy.selected_note_summary}: ${v.notes_low_to_high.map(n=>n.display_pitch).join(', ')}. Bass: ${v.bass_spelling}.`);
   }
   function print() {
+    emitPilotEvent('p0_print_request',{object_id:data.namespace});
     player.current?.cancel();setPrintError('');printSnapshot.current=selected.current;
     flushSync(()=>setPrintId(selected.current));
     try { if(typeof window.print!=='function')throw new Error('Print unavailable');window.print(); }
     catch {printSnapshot.current=null;setPrintId(null);setPrintError(data.microcopy.print_error);}
   }
+  const resultRef=useRef<HTMLDivElement>(null);
+  useResultExposure(resultRef,data.namespace,selectedVoicingId);
+  usePilotAudio(audio.state,data.namespace,audio.mode);
   const notes=voicing.notes_low_to_high;
   const stopPlayback=()=>player.current?.cancel('Playback stopped.','stopped');
   return <PrintContext.Provider value={{ready,print,pdf:data.pdf}}><StopPlaybackContext.Provider value={stopPlayback}><SelectedVoicingContext.Provider value={selectedVoicingId}><div className="am-page" data-selected-voicing={selectedVoicingId} data-position={voicing.inversion_label} data-note-count={data.chord.definition.expectedNoteCount} data-family={data.chord.definition.family}>
@@ -82,14 +91,14 @@ export function AMinorExperience({data,heading,toolNotes,introduction,children,s
         <h2 className="pr-sr-only" id="tool-heading">{data.toolHeading}</h2>
         <dl className="am-summary"><div><dt>{data.chord.name_en}</dt><dd className="am-chord-id">{data.chord.symbol}</dd></div><div><dt>Chord tones</dt><dd className="am-tone-list">{data.chord.note_spellings.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span>{n}</span></Fragment>)}</dd></div><div><dt>Formula</dt><dd className="am-formula">{data.chord.formula_degrees.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">·</span>}<span>{degree(n)}</span></Fragment>)}</dd></div></dl>
         <dl className="am-quick-facts" aria-label="Quick facts"><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-intro`}/></span>Notes</dt><dd>{data.chord.note_spellings.join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-${data.chord.definition.subtype}`}/></span>Quality</dt><dd>{data.chord.definition.qualityLabel}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-inversions`}/></span>Formula</dt><dd>{data.chord.formula_degrees.map(degree).join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={data.toolId}/></span>Keyboard range</dt><dd>{data.rangeLabel}</dd></div></dl>
-        <div className="am-select-result"><fieldset className="am-position-fieldset" data-position-count={data.options.length} disabled={!ready}><legend>{data.selectorLegend||'Position'}</legend><div className="am-positions">{data.options.map(o=><label className="am-radio-label" key={o.value}><input type="radio" name="position" value={o.value} checked={selectedVoicingId===o.value} onChange={()=>change(o.value)}/><span className="am-segment">{o.label}</span></label>)}</div></fieldset><div className="am-current-result"><div><div className="am-field-label">{data.microcopy.selected_note_summary}</div><div className="am-note-order" id="note-order" aria-label={`${data.microcopy.selected_note_summary}: ${notes.map(n=>n.display_pitch).join(', ')}`}>{notes.map((n,i)=><Fragment key={n.midi}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span data-midi={n.midi} className={cn('am-pitch',sounding.includes(n.midi)&&'am-sounding')}>{n.display_pitch}</span></Fragment>)}</div></div><div className="am-current-symbol"><strong id="current-symbol">{voicing.chord_symbol}</strong><div>Bass: <span id="current-bass">{voicing.bass_spelling}</span></div></div></div></div>
+        <div className="am-select-result"><fieldset className="am-position-fieldset" data-position-count={data.options.length} disabled={!ready}><legend>{data.selectorLegend||'Position'}</legend><div className="am-positions">{data.options.map(o=><label className="am-radio-label" key={o.value}><input type="radio" name="position" value={o.value} checked={selectedVoicingId===o.value} onChange={()=>change(o.value)}/><span className="am-segment">{o.label}</span></label>)}</div></fieldset><div ref={resultRef} className="am-current-result"><div><div className="am-field-label">{data.microcopy.selected_note_summary}</div><div className="am-note-order" id="note-order" aria-label={`${data.microcopy.selected_note_summary}: ${notes.map(n=>n.display_pitch).join(', ')}`}>{notes.map((n,i)=><Fragment key={n.midi}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span data-midi={n.midi} className={cn('am-pitch',sounding.includes(n.midi)&&'am-sounding')}>{n.display_pitch}</span></Fragment>)}</div></div><div className="am-current-symbol"><strong id="current-symbol">{voicing.chord_symbol}</strong><div>Bass: <span id="current-bass">{voicing.bass_spelling}</span></div></div></div></div>
         <KeyboardViewport id="keyboard-scroll" voicing={voicing} whitePitchClasses={data.whitePitchClasses} sounding={sounding} ready={ready} rangeLabel={data.rangeLabel}/>
         <div className="am-controls"><div className="am-control-bar"><PlaybackControls ready={ready} state={audio.state} mode={audio.mode} onPlay={mode=>void player.current?.play(voicing,mode)} onStop={stopPlayback}/><PrintActions noun={data.selectorNoun}/></div><div className="am-playback-feedback"><span>{data.microcopy.playback_note}</span><div className={cn('am-playback-status',['error','unavailable'].includes(audio.state)&&'am-error')} id="audio-status" role="status" aria-live="polite" aria-atomic="true">{audio.message}</div></div><div className="am-resource-feedback" role="status">{printError}</div></div>
         <noscript><p className="am-nojs-note">JavaScript is off. {data.noScriptDescription||'The root-position diagram, comparison table, explanations, and PDF remain available. Enable JavaScript to switch positions or play sound.'}</p></noscript>
         <div className="am-tool-notes">{toolNotes}</div>
       </section>
       <div className="pr-sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</div>
-      {introduction}<div className="am-reading">{children}</div>
+      {continuationMessage&&<p role="status">{continuationMessage}</p>}<ProductContinuation path={data.url}/>{introduction}<div className="am-reading">{children}</div>
     </main>
     <SiteFooter url={data.url}/>
     <article className="am-print-only" id="print-content" data-voicing-id={printed.voicing_id}><PrintVoicing voicing={printed} whitePitchClasses={data.whitePitchClasses} title={data.heading} tones={data.chord.note_spellings} formula={data.chord.formula_degrees} url={data.url} disclaimer={data.printDisclaimer}/></article>

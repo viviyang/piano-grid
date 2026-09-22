@@ -1,0 +1,17 @@
+(node:26016) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Admin/Documents/viviyang_github/piano-main-product-audit/src/lib/product-continuation-state.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to C:\Users\Admin\Documents\viviyang_github\piano-main-product-audit\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ bounded finder state round trip, no octave information (4.0397ms)
+✔ invalid note, bass, mode and oversized input reject safely (0.573ms)
+✔ detail restores a supported bass, never invents a voicing (0.7164ms)
+✔ invalid or foreign object restores safe default with explanation (0.3175ms)
+✔ only the five detail receivers and extended accept new Finder state (0.5719ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 265.308

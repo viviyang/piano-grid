@@ -1,0 +1,31 @@
+✔ only an explicitly reviewed text path accepts CRLF/LF equivalence (2.0681ms)
+✖ reads current file bytes and rejects a one-character edit, whitespace edits and BOM (11.0288ms)
+✔ invalid UTF8 is rejected; exact binary bytes retain byte-exact behavior (0.5375ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 177.6032
+
+✖ failing tests:
+
+test at scripts\check-protected-source-hash.test.mjs:15:1
+✖ reads current file bytes and rejects a one-character edit, whitespace edits and BOM (11.0288ms)
+  SystemError [ERR_FS_EISDIR]: Path is a directory: rm returned EISDIR (is a directory) C:\Users\Admin\AppData\Local\Temp\piano-protected-test-CmUIBJ
+      at rmSync (node:fs:1220:16)
+      at TestContext.<anonymous> (file:///C:/Users/Admin/Documents/viviyang_github/piano-main-product-audit/scripts/check-protected-source-hash.test.mjs:26:46)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    code: 'ERR_FS_EISDIR',
+    info: { code: 'EISDIR', message: 'is a directory', path: 'C:\\Users\\Admin\\AppData\\Local\\Temp\\piano-protected-test-CmUIBJ', syscall: 'rm', errno: 21 },
+    errno: 21,
+    syscall: 'rm',
+    path: 'C:\\Users\\Admin\\AppData\\Local\\Temp\\piano-protected-test-CmUIBJ'
+  }

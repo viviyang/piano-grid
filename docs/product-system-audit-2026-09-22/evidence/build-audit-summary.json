@@ -1,0 +1,68 @@
+{
+  "routes": 206,
+  "prerenderPublic": 205,
+  "dynamicPublic": [
+    "/songs/easy"
+  ],
+  "canonicalErrors": [],
+  "robotsErrors": [],
+  "h1Errors": [],
+  "noIncoming": [],
+  "linkIssues": [
+    {
+      "source": "/sheet-music/hot-cross-buns",
+      "href": "/songs/easy#pg-arr=arr-ext-0a05b7954f5256&segment=all",
+      "kind": "missing_static_anchor"
+    },
+    {
+      "source": "/sheet-music/hot-cross-buns",
+      "href": "/songs/easy#pg-arr=arr-ext-0a05b7954f5256&segment=all&speed=100",
+      "kind": "missing_static_anchor"
+    },
+    {
+      "source": "/sheet-music/twinkle-twinkle-little-star",
+      "href": "/songs/easy#pg-arr=arr-ext-c3a78b0c5cb213&segment=all",
+      "kind": "missing_static_anchor"
+    },
+    {
+      "source": "/sheet-music/twinkle-twinkle-little-star",
+      "href": "/songs/easy#pg-arr=arr-ext-c3a78b0c5cb213&segment=all&speed=100",
+      "kind": "missing_static_anchor"
+    },
+    {
+      "source": "/sheet-music/ode-to-joy",
+      "href": "/songs/easy#pg-arr=arr-ext-a60b8d92c5a325&segment=all",
+      "kind": "missing_static_anchor"
+    },
+    {
+      "source": "/sheet-music/ode-to-joy",
+      "href": "/songs/easy#pg-arr=arr-ext-a60b8d92c5a325&segment=all&speed=100",
+      "kind": "missing_static_anchor"
+    },
+    {
+      "source": "/guide/piano-chords",
+      "href": "/chords#find-a-chord",
+      "kind": "missing_static_anchor"
+    }
+  ],
+  "schemaTypes": [
+    "CollectionPage",
+    "WebPage",
+    "WebSite"
+  ],
+  "normalizationNotes": [
+    "Root https://pianogrid.com and https://pianogrid.com/ are equivalent; raw comparator flag reviewed, no canonical defect."
+  ],
+  "reviewedLinkIssues": [
+    {
+      "href": "/songs/easy#pg-arr=...",
+      "status": "supported_client_fragment",
+      "evidence": "src/components/songs-sheet/arrangement-focus.tsx:8-29"
+    },
+    {
+      "href": "/chords#find-a-chord",
+      "status": "missing_target",
+      "evidence": "build HTML and src search have no target id"
+    }
+  ]
+}

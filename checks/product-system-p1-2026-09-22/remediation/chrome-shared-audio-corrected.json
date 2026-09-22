@@ -1,0 +1,26 @@
+[
+  {
+    "route": "/chords/a-minor",
+    "started": "playing",
+    "ended": "stopped",
+    "passed": false
+  },
+  {
+    "route": "/chords/c-maj7",
+    "started": "playing",
+    "ended": "stopped",
+    "passed": false
+  },
+  {
+    "route": "/chords/c-diminished",
+    "started": "playing",
+    "ended": "idle",
+    "passed": true
+  },
+  {
+    "route": "/chords/c-add9",
+    "started": "playing",
+    "ended": "idle",
+    "passed": true
+  }
+]

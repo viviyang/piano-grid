@@ -1,0 +1,58 @@
+{
+  "samples": 178,
+  "soundingSamples": 92,
+  "transitionMismatches": [
+    {
+      "sample": {
+        "ms": 1790070390740,
+        "audio": "Playing scale\u2026",
+        "cue": "E4",
+        "notes": [
+          65
+        ],
+        "state": "playing"
+      },
+      "adjacentSamples": [
+        {
+          "ms": 1790070390685,
+          "audio": "Playing scale\u2026",
+          "cue": "E4",
+          "notes": [],
+          "state": "playing"
+        },
+        {
+          "ms": 1790070390740,
+          "audio": "Playing scale\u2026",
+          "cue": "E4",
+          "notes": [
+            65
+          ],
+          "state": "playing"
+        },
+        {
+          "ms": 1790070390776,
+          "audio": "Playing scale\u2026",
+          "cue": "F4",
+          "notes": [
+            65
+          ],
+          "state": "playing"
+        }
+      ],
+      "maxBracketMs": 91
+    }
+  ],
+  "notesObserved": [
+    60,
+    62,
+    64,
+    65,
+    67,
+    69,
+    71,
+    72
+  ],
+  "finalState": "completed",
+  "toleranceMs": 80,
+  "passed": false
+}

@@ -1,4 +1,7 @@
 'use client';
+import {ProductContinuation} from '@/components/product-continuation';
+import {useDetailContinuation} from '@/lib/use-continuation-state';
+import { emitPilotEvent, useResultExposure, usePilotAudio, usePilotPractice } from '@/lib/product-measurement';
 
 import { Children, isValidElement, Fragment, useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
@@ -41,6 +44,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
   const player=useRef<ReferenceAudio|null>(null), holders=useRef(new Map<string,number>());
   const settingsTrigger=useRef<HTMLButtonElement>(null), shareTrigger=useRef<HTMLButtonElement>(null);
   const workspace=useRef<HTMLElement>(null), currentPosition=useRef(position), printSnapshot=useRef<string|null>(null);
+  const continuationMessage=useDetailContinuation(data,id=>{setPosition(id);currentPosition.current=id;},()=>player.current?.cancel());
   const positionSettings=useCallback(()=>{
     const trigger=settingsTrigger.current,popover=settingsPanel.current;
     if(!trigger||!popover||!popover.matches(':popover-open'))return;
@@ -58,6 +62,11 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
   const root=data.voicings.find(item=>item.voicing_id===data.defaultId)!;
   const answer=root.notes_low_to_high.map(note=>note.midi);
   const inPractice=mode==='practice';
+  const resultRef=useRef<HTMLDivElement>(null);
+  useResultExposure(resultRef,data.namespace,position,!inPractice);
+  usePilotAudio(audio.state,data.namespace);
+  const measurement=usePilotPractice(data.namespace,'guided-chord');
+  useEffect(()=>{if(attempt.result==='correct')measurement.complete(attempt.hinted||attempt.revealed||attempt.viewedReference);},[attempt.result,attempt.hinted,attempt.revealed,attempt.viewedReference]);
   const stop=useCallback(()=>{
     holders.current.clear();setPressed([]);player.current?.cancel('Playback stopped.','stopped');
   },[]);
@@ -80,6 +89,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
     stop();setMode('reference');requestAnimationFrame(()=>document.querySelector<HTMLButtonElement>('.cp-start-practice')?.focus({preventScroll:true}));
   }
   function enterPractice(){
+    measurement.start();
     stop();setStarted(true);setMode('practice');setAttempt(value=>({...value,viewedReference:true}));
     requestAnimationFrame(()=>document.getElementById('practice')?.focus({preventScroll:true}));
   }
@@ -104,6 +114,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
   },[ready,revealAnchor]);
   function changePosition(next:string){stop();currentPosition.current=next;setPosition(next);}
   function print(){
+    emitPilotEvent('p0_print_request',{object_id:data.namespace});
     stop();setPrintError('');printSnapshot.current=currentPosition.current;
     flushSync(()=>setPrintId(currentPosition.current));
     try{if(typeof window.print!=='function')throw new Error('Unavailable');window.print();}
@@ -129,7 +140,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
         <div id="cp-print-actions" className="cp-reference-actions"><PrintActions/><Button ref={shareTrigger} variant="ghost" disabled={!ready} onClick={()=>{stop();setShare(true);}}>Share</Button></div>
         <section ref={workspace} className="am-tool cp-workspace" id={data.toolId} data-block-id={data.toolId} data-voicing-id={position} data-audio-state={audio.state} data-mode={mode} tabIndex={-1} aria-labelledby="tool-heading">
           <h2 id="tool-heading" className="pr-sr-only">{data.toolHeading}</h2>
-          <div className="cp-reference-summary">
+          <div ref={resultRef} className="cp-reference-summary">
         <dl className="am-summary"><div><dt>{data.chord.name_en}</dt><dd className="am-chord-id">{data.chord.symbol}</dd></div><div><dt>Chord tones</dt><dd className="am-tone-list">{data.chord.note_spellings.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">–</span>}<span>{n}</span></Fragment>)}</dd></div><div><dt>Formula</dt><dd className="am-formula">{data.chord.formula_degrees.map((n,i)=><Fragment key={n}>{i>0&&<span className="am-separator" aria-hidden="true">·</span>}<span>{n}</span></Fragment>)}</dd></div></dl>
         <dl className="am-quick-facts" aria-label="Quick facts"><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-intro`}/></span>Notes</dt><dd>{data.chord.note_spellings.join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-${data.chord.definition.subtype}`}/></span>Quality</dt><dd>{data.chord.definition.qualityLabel}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={`${data.namespace}-inversions`}/></span>Formula</dt><dd>{data.chord.formula_degrees.map(n=>n).join(' · ')}</dd></div><div><dt><span className="am-fact-icon"><ChordTopicIcon id={data.toolId}/></span>Keyboard range</dt><dd>{data.rangeLabel}</dd></div></dl>
 
@@ -162,16 +173,16 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
             <h3 id="practice-heading" className="pr-sr-only">{inPractice?'Your selection':practice.heading}</h3>
             {inPractice&&<> 
               <p className="cp-selected">{attempt.selected.length?attempt.selected.map(pc=>noteNames[pc]).join(' · '):'No notes selected'} <span>({attempt.selected.length} / {practice.requiredPitchClassCount} different notes)</span></p>
-              <div className="cp-toolbar"><Button disabled={attempt.selected.length<practice.requiredPitchClassCount} onClick={()=>{stop();setAttempt(value=>checkChordAttempt(value,answer));}}>Check answer</Button><Button variant="secondary" onClick={()=>{stop();setAttempt(clearChordAttempt);}}>Clear</Button>{!attempt.revealed&&<Button variant="ghost" disabled={attempt.hinted} onClick={()=>setAttempt(value=>({...value,hinted:true}))}>{attempt.hinted?'Hint shown':'Hint'}</Button>}<Button variant="ghost" onClick={()=>{stop();setAttempt(value=>({...value,selected:answer.map(midi=>midi%12),revealed:true,result:'revealed'}));}}>Show answer</Button></div>
+              <div className="cp-toolbar"><Button disabled={attempt.selected.length<practice.requiredPitchClassCount} onClick={()=>{stop();setAttempt(value=>checkChordAttempt(value,answer));}}>Check answer</Button><Button variant="secondary" onClick={()=>{stop();measurement.reset();setAttempt(clearChordAttempt);}}>Clear</Button>{!attempt.revealed&&<Button variant="ghost" disabled={attempt.hinted} onClick={()=>setAttempt(value=>({...value,hinted:true}))}>{attempt.hinted?'Hint shown':'Hint'}</Button>}<Button variant="ghost" onClick={()=>{stop();setAttempt(value=>({...value,selected:answer.map(midi=>midi%12),revealed:true,result:'revealed'}));}}>Show answer</Button></div>
               {attempt.hinted&&!attempt.revealed&&<p className="cp-hint" role="status">Hint: start with C, then skip a white key between each chord tone.</p>}
               {attempt.result==='revealed'?<p>Answer viewed: {data.chord.note_spellings.join(' · ')}.</p>:attempt.revealed&&<p>You viewed the answer earlier. Further attempts on this question remain marked as helped.</p>}
               <p className="cp-result" role="status" aria-live="polite">{chordAttemptMessage(attempt, true)}</p>
-              {(attempt.result==='correct'||attempt.result==='revealed')&&<div className="cp-toolbar"><Button variant="secondary" onClick={()=>setAttempt(clearChordAttempt)}>Try again</Button><Button variant="ghost" onClick={()=>{reference();openPanel('theory');}}>Next: explore the chord connections</Button></div>}
+              {(attempt.result==='correct'||attempt.result==='revealed')&&<div className="cp-toolbar"><Button variant="secondary" onClick={()=>{measurement.reset();setAttempt(clearChordAttempt);}}>Try again</Button><Button variant="ghost" onClick={()=>{emitPilotEvent('p0_next_step_click',{object_id:data.namespace,target:'/chords/c-major',mode:'connections'});reference();openPanel('theory');}}>Next: explore the chord connections</Button></div>}
             </>}
           </div>
           <noscript><p>The root-position reference and PDF are available. Enable JavaScript to play keys, switch positions or practice.</p><style>{'.cp-pilot .cp-panels .pr-collapsible-content[hidden]{display:block!important}.cp-pilot .cp-panels .pr-collapsible-trigger{display:none}'}</style></noscript>
         </section>
-        <div className="cp-panels">{panes.map(item=><Collapsible key={item.id} open={!!panels[item.id]} onOpenChange={open=>{setPanels(value=>({...value,[item.id]:open}));if(open&&inPractice)setAttempt(value=>({...value,viewedReference:true}));}}><h2 className="cp-panel-heading"><CollapsibleTrigger id={`cp-section-${item.id}`}><ChordSectionTitle id={item.id==='compare'?`${data.namespace}-inversions`:item.id==='fingering'?`${data.namespace}-fingering-example`:`${data.namespace}-${item.id}`} text={item.label}/></CollapsibleTrigger></h2><CollapsibleContent aria-labelledby={`cp-section-${item.id}`}>{item.content}</CollapsibleContent></Collapsible>)}</div>
+        {continuationMessage&&<p role="status">{continuationMessage}</p>}<ProductContinuation path={data.url}/><div className="cp-panels">{panes.map(item=><Collapsible key={item.id} open={!!panels[item.id]} onOpenChange={open=>{setPanels(value=>({...value,[item.id]:open}));if(open&&inPractice)setAttempt(value=>({...value,viewedReference:true}));}}><h2 className="cp-panel-heading"><CollapsibleTrigger id={`cp-section-${item.id}`}><ChordSectionTitle id={item.id==='compare'?`${data.namespace}-inversions`:item.id==='fingering'?`${data.namespace}-fingering-example`:`${data.namespace}-${item.id}`} text={item.label}/></CollapsibleTrigger></h2><CollapsibleContent aria-labelledby={`cp-section-${item.id}`}>{item.content}</CollapsibleContent></Collapsible>)}</div>
         <p role="status">{printError}</p>
       </main>
       <SiteFooter url={data.url}/>

@@ -1,0 +1,12 @@
+✔ only an explicitly reviewed text path accepts CRLF/LF equivalence (2.1841ms)
+✔ reads current file bytes and rejects a one-character edit, whitespace edits and BOM (15.6933ms)
+✔ invalid UTF8 is rejected; exact binary bytes retain byte-exact behavior (0.3373ms)
+✔ all 23 reviewed repository files match the historical hash, but a byte edit fails (75.9404ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 277.4535

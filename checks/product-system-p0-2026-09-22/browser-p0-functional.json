@@ -1,0 +1,131 @@
+{
+  "results": [
+    {
+      "name": "Finder published help",
+      "passed": true
+    },
+    {
+      "name": "empty/single inputs do not issue result/no-match",
+      "passed": true
+    },
+    {
+      "name": "stable complete result and visible aggregate counted",
+      "passed": true
+    },
+    {
+      "name": "repeated visibility does not double count",
+      "passed": true
+    },
+    {
+      "name": "bass state uses actual fingerprint",
+      "passed": true
+    },
+    {
+      "name": "registry-derived C/C-sharp no-match",
+      "passed": true
+    },
+    {
+      "name": "guide task link reaches Finder",
+      "passed": true
+    },
+    {
+      "name": "revealed add-chord answer is assisted, no duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "non-pilot has no new measurement side effects",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Values have same structure but are not reference-equal:\n\n{}\n"
+    }
+  ],
+  "errors": [],
+  "finderEvents": [
+    {
+      "name": "p0_tool_start",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder"
+      },
+      "externallySent": false
+    },
+    {
+      "name": "finder_no_match",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-4:none:interpret",
+        "selected_count": 2,
+        "match_count": 0
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_tool_result",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-4-7:none:interpret",
+        "selected_count": 3,
+        "match_count": 1
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_result_seen",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-4-7:none:interpret"
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_tool_result",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-4-7:4:interpret",
+        "selected_count": 3,
+        "match_count": 1
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_result_seen",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-4-7:4:interpret"
+      },
+      "externallySent": false
+    },
+    {
+      "name": "finder_no_match",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-1:none:interpret",
+        "selected_count": 2,
+        "match_count": 0
+      },
+      "externallySent": false
+    },
+    {
+      "name": "p0_result_seen",
+      "properties": {
+        "measurement_version": "p0-v1",
+        "page_path": "/chords/finder",
+        "object_id": "chord-finder",
+        "result_state": "0-1:none:interpret"
+      },
+      "externallySent": false
+    }
+  ]
+}

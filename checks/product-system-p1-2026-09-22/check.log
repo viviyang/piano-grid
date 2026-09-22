@@ -1,0 +1,15 @@
+
+> piano-grid@0.1.0 check
+> npm run check:foundation && npm run typecheck && npm run check:css
+
+
+> piano-grid@0.1.0 check:foundation
+> node scripts/check-foundation.mjs
+
+Foundation: 568 passed, 0 failed.
+NOTE: source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。
+
+> piano-grid@0.1.0 typecheck
+> tsc --noEmit
+
+src/lib/chord-learning-content.ts(44,65): error TS2488: Type 'string[] | undefined' must have a '[Symbol.iterator]()' method that returns an iterator.

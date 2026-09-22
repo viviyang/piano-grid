@@ -1,0 +1,1 @@
+return {url:page.url(),continuation:await page.locator('[data-product-continuation]').innerText(),smoke:JSON.parse(await(await import('node:fs/promises')).readFile(artifactPath('p1-final-smoke.json'),'utf8'))};
