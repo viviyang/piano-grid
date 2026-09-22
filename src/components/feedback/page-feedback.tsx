@@ -23,13 +23,13 @@ export function PageFeedback({ pagePath }: { pagePath: string }) {
   const [message, setMessage] = useState('');
   const [website, setWebsite] = useState('');
   const [sending, setSending] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState<'none' | 'other' | 'rate_limited'>('none');
 
   async function send(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!reason || sending) return;
     setSending(true);
-    setError(false);
+    setError('none');
     try {
       const response = await submitFeedback({
         source: 'page_feedback',
@@ -43,11 +43,11 @@ export function PageFeedback({ pagePath }: { pagePath: string }) {
         setChoice('sent');
         sendAnalyticsEvent('page_feedback_negative', { page_path: pagePath, feedback_type: reason });
       } else {
-        setError(true);
+        setError(response.reason === 'rate_limited' ? 'rate_limited' : 'other');
         sendAnalyticsEvent('feedback_failed', { source: 'page_feedback', reason: response.reason });
       }
     } catch {
-      setError(true);
+      setError('other');
       sendAnalyticsEvent('feedback_failed', { source: 'page_feedback', reason: 'network' });
     } finally {
       setSending(false);
@@ -65,7 +65,8 @@ export function PageFeedback({ pagePath }: { pagePath: string }) {
       <label className="fb-field">Tell us more <span>{reason === 'content_error' || reason === 'bug' ? '(please describe the problem)' : '(optional)'}</span><textarea value={message} onChange={(event) => setMessage(event.target.value)} minLength={reason === 'content_error' || reason === 'bug' ? 4 : undefined} maxLength={4000} rows={3} required={reason === 'content_error' || reason === 'bug'}/></label>
       <label className="fb-honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" value={website} onChange={(event) => setWebsite(event.target.value)}/></label>
       <p className="fb-privacy">Your feedback is stored with a private service and reviewed by {productName}. Please do not include sensitive information.</p>
-      {error && <p className="fb-error" role="alert">We couldn’t send your feedback. Please try again.</p>}
+      {error === 'other' && <p className="fb-error" role="alert">We couldn’t send your feedback. Please try again.</p>}
+      {error === 'rate_limited' && <p className="fb-error" role="alert">Too many attempts. Please wait a few minutes and try again.</p>}
       <div className="fb-actions"><Button variant="secondary" onClick={() => setChoice('none')} disabled={sending}>Cancel</Button><Button type="submit" disabled={!reason || sending}>{sending ? 'Sending…' : 'Send'}</Button></div>
     </form>}
   </div></section>;

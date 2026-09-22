@@ -59,6 +59,12 @@ try {
   assert.equal(await page.getByRole('textbox', { name: 'Tell us more' }).inputValue(), failedMessage);
   await page.unroute('**/api/feedback');
 
+  await page.route('**/api/feedback', route => route.fulfill({ status: 429, contentType: 'text/html', body: 'Rate limited' }));
+  await page.getByRole('button', { name: 'Send feedback' }).click();
+  await page.getByRole('alert').filter({ hasText: 'Please wait a few minutes' }).waitFor();
+  assert.equal(await page.getByRole('textbox', { name: 'Tell us more' }).inputValue(), failedMessage);
+  await page.unroute('**/api/feedback');
+
   if (process.env.PIANO_FEEDBACK_LIVE === '1') {
     if (process.env.PIANO_FEEDBACK_LIVE_PAGE_ONLY !== '1') {
       await page.getByRole('textbox', { name: 'Tell us more' }).fill('Local feedback integration test. No user data.');
@@ -73,6 +79,16 @@ try {
     await page.getByRole('button', { name: 'Send', exact: true }).click();
     await page.getByRole('status').filter({ hasText: 'Thanks — this helps us improve PianoGrid.' }).waitFor();
   }
+
+  await page.goto(base + '/chords/c-major');
+  await page.getByRole('button', { name: 'Not really' }).click();
+  await page.getByRole('radio', { name: 'Something looks incorrect' }).check();
+  await page.getByRole('textbox', { name: 'Tell us more' }).fill(failedMessage);
+  await page.route('**/api/feedback', route => route.fulfill({ status: 429, contentType: 'text/html', body: 'Rate limited' }));
+  await page.getByRole('button', { name: 'Send', exact: true }).click();
+  await page.getByRole('alert').filter({ hasText: 'Please wait a few minutes' }).waitFor();
+  assert.equal(await page.getByRole('textbox', { name: 'Tell us more' }).inputValue(), failedMessage);
+  await page.unroute('**/api/feedback');
 
   assert.deepEqual(errors, []);
   assert.deepEqual(githubRequests, []);

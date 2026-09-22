@@ -36,7 +36,7 @@ export function FeedbackDialog({
   const [email, setEmail] = useState('');
   const [website, setWebsite] = useState('');
   const [sending, setSending] = useState(false);
-  const [result, setResult] = useState<'idle' | 'success' | 'error'>('idle');
+  const [result, setResult] = useState<'idle' | 'success' | 'error' | 'rate_limited'>('idle');
   const busy = useRef(false);
 
   function closeDialog() {
@@ -69,7 +69,7 @@ export function FeedbackDialog({
         setResult('success');
         sendAnalyticsEvent('feedback_submitted', { source: 'global_feedback', feedback_type: type });
       } else {
-        setResult('error');
+        setResult(response.reason === 'rate_limited' ? 'rate_limited' : 'error');
         sendAnalyticsEvent('feedback_failed', { source: 'global_feedback', reason: response.reason });
       }
     } catch {
@@ -93,6 +93,7 @@ export function FeedbackDialog({
       <label className="fb-honeypot" aria-hidden="true" htmlFor={`${id}-website`}>Website<input id={`${id}-website`} name="website" tabIndex={-1} autoComplete="off" value={website} onChange={(event) => setWebsite(event.target.value)}/></label>
       <p className="fb-privacy">Your feedback is stored with a private service and reviewed by {productName}. Please do not include passwords or sensitive information.</p>
       {result === 'error' && <p className="fb-error" role="alert">We couldn’t send your feedback. Please try again.</p>}
+      {result === 'rate_limited' && <p className="fb-error" role="alert">Too many attempts. Please wait a few minutes and try again.</p>}
       <div className="fb-actions"><Button variant="secondary" onClick={closeDialog} disabled={sending}>Cancel</Button><Button type="submit" disabled={sending || !type}>{sending ? 'Sending…' : 'Send feedback'}</Button></div>
     </form>}
   </Dialog>;
