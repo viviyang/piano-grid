@@ -18,15 +18,21 @@ EVIDENCE = ROOT / "checks" / "scales-completion" / "pdf"
 OUT.mkdir(parents=True, exist_ok=True)
 EVIDENCE.mkdir(parents=True, exist_ok=True)
 BASE = runpy.run_path(str(ROOT / "scripts" / "generate-scale-pdfs.py"))
+# runpy returns a copy of the module dict. Drawing helpers keep the original
+# globals, so page size has to be written to both or A4 text lands on the header.
+LAYOUT = BASE["header"].__globals__
 GENERATOR_VERSION = "2026-09-14-SCALES-COMPLETION-1"
 
 
 def set_page(size):
     width, height = size
-    BASE["PAGE_W"] = width
-    BASE["PAGE_H"] = height
-    BASE["CONTENT_W"] = min(520, width - 72)
-    BASE["LEFT"] = (width - BASE["CONTENT_W"]) / 2
+    content_w = min(520, width - 72)
+    left = (width - content_w) / 2
+    for namespace in (LAYOUT, BASE):
+        namespace["PAGE_W"] = width
+        namespace["PAGE_H"] = height
+        namespace["CONTENT_W"] = content_w
+        namespace["LEFT"] = left
 
 
 def absolute_notes(names, hand="RH", direction="ascending"):
