@@ -83,41 +83,143 @@ def parse_note(note):
     return {"letter": letter, "accidental": accidental, "octave": octave, "midi": midi, "note": note}
 
 
+# Clef outlines traced from the project's own starter reading PDF.
+# Coordinates are in that PDF's staff units (7pt), with Y up.
+# Treble origin is the G line; bass origin is the F line.
+# No music font is embedded.
+
+TREBLE_CLEF = [
+    [
+        ('m', 10.53, 11.62),
+        ('c', 10.47, 11.96, 10.53, 11.98, 10.7, 12.15),
+        ('c', 11.14, 12.57, 11.73, 13.16, 12.26, 13.75),
+        ('c', 14.62, 16.32, 16.02, 19.66, 16.02, 22.82),
+        ('c', 16.02, 25.26, 15.34, 27.66, 14.2, 29.34),
+        ('c', 13.78, 29.96, 13.05, 30.74, 12.74, 30.74),
+        ('c', 12.35, 30.74, 11.48, 30.02, 10.92, 29.4),
+        ('c', 8.85, 27.1, 8.18, 23.6, 8.18, 20.69),
+        ('c', 8.18, 19.07, 8.37, 17.25, 8.57, 16.1),
+        ('c', 8.62, 15.76, 8.65, 15.71, 8.32, 15.43),
+        ('c', 6.52, 13.94, 4.59, 12.24, 3.14, 10.44),
+        ('c', 1.2, 8.04, 0.0, 5.43, 0.0, 2.44),
+        ('c', 0.0, -2.44, 3.33, -7.06, 10.19, -7.06),
+        ('c', 10.84, -7.06, 11.56, -7.0, 12.12, -6.89),
+        ('c', 12.43, -6.83, 12.49, -6.8, 12.54, -7.14),
+        ('c', 12.88, -9.02, 13.3, -11.45, 13.3, -12.77),
+        ('c', 13.3, -16.91, 10.5, -17.42, 8.85, -17.42),
+        ('c', 7.34, -17.42, 6.61, -16.97, 6.61, -16.6),
+        ('c', 6.61, -16.41, 6.86, -16.32, 7.5, -16.13),
+        ('c', 8.37, -15.88, 9.38, -15.12, 9.38, -13.5),
+        ('c', 9.38, -11.96, 8.4, -10.64, 6.69, -10.64),
+        ('c', 4.82, -10.64, 3.7, -12.12, 3.7, -13.86),
+        ('c', 3.7, -15.68, 4.79, -18.42, 9.02, -18.42),
+        ('c', 10.89, -18.42, 14.53, -17.58, 14.53, -12.82),
+        ('c', 14.53, -11.23, 14.03, -8.57, 13.72, -6.83),
+        ('c', 13.66, -6.5, 13.69, -6.52, 14.08, -6.36),
+        ('c', 16.91, -5.24, 18.79, -2.86, 18.79, 0.31),
+        ('c', 18.79, 3.89, 16.16, 7.06, 12.04, 7.06),
+        ('c', 11.31, 7.06, 11.31, 7.06, 11.23, 7.56),
+        ('l', 10.53, 11.62),
+    ],
+    [
+        ('m', 13.16, 26.4),
+        ('c', 14.08, 26.4, 14.84, 25.65, 14.84, 24.11),
+        ('c', 14.84, 22.18, 13.92, 20.38, 11.73, 18.2),
+        ('c', 11.28, 17.75, 10.61, 17.11, 9.97, 16.55),
+        ('c', 9.77, 16.38, 9.66, 16.41, 9.6, 16.77),
+        ('c', 9.49, 17.5, 9.44, 18.45, 9.44, 19.35),
+        ('c', 9.44, 23.72, 11.45, 26.4, 13.16, 26.4),
+    ],
+    [
+        ('m', 10.11, 7.34),
+        ('c', 10.19, 6.8, 10.19, 6.83, 9.69, 6.66),
+        ('c', 7.22, 5.82, 5.63, 3.61, 5.63, 1.23),
+        ('c', 5.63, -1.29, 6.94, -3.08, 8.85, -3.72),
+        ('c', 9.07, -3.81, 9.41, -3.89, 9.6, -3.89),
+        ('c', 9.83, -3.89, 9.94, -3.75, 9.94, -3.58),
+        ('c', 9.94, -3.39, 9.72, -3.3, 9.52, -3.22),
+        ('c', 8.34, -2.72, 7.5, -1.51, 7.5, -0.22),
+        ('c', 7.5, 1.37, 8.6, 2.58, 10.3, 3.05),
+        ('c', 10.75, 3.16, 10.81, 3.14, 10.86, 2.83),
+        ('l', 12.26, -5.52),
+        ('c', 12.32, -5.82, 12.29, -5.82, 11.87, -5.91),
+        ('c', 11.42, -5.99, 10.86, -6.05, 10.3, -6.05),
+        ('c', 5.4, -6.05, 2.24, -3.33, 2.24, 0.56),
+        ('c', 2.24, 2.21, 2.52, 4.42, 4.84, 7.06),
+        ('c', 6.52, 8.93, 7.81, 9.97, 9.13, 11.03),
+        ('c', 9.41, 11.26, 9.46, 11.23, 9.52, 10.92),
+        ('l', 10.11, 7.34),
+    ],
+    [
+        ('m', 12.04, 2.88),
+        ('c', 11.98, 3.22, 12.01, 3.3, 12.35, 3.28),
+        ('c', 14.62, 3.08, 16.49, 1.18, 16.49, -1.29),
+        ('c', 16.49, -3.05, 15.43, -4.48, 13.86, -5.26),
+        ('c', 13.52, -5.43, 13.47, -5.43, 13.41, -5.1),
+        ('l', 12.04, 2.88),
+    ],
+]
+
+BASS_CLEF = [
+    [
+        ('m', 7.06, 7.34),
+        ('c', 2.18, 7.34, 0.0, 3.78, 0.0, 1.09),
+        ('c', 0.0, -1.15, 1.18, -3.08, 3.44, -3.08),
+        ('c', 5.21, -3.08, 6.41, -1.85, 6.41, -0.11),
+        ('c', 6.41, 1.68, 5.1, 2.8, 3.72, 2.8),
+        ('c', 2.97, 2.8, 2.69, 2.6, 2.32, 2.6),
+        ('c', 1.96, 2.6, 1.88, 2.83, 1.88, 3.11),
+        ('c', 1.88, 4.23, 3.56, 6.27, 6.41, 6.27),
+        ('c', 9.38, 6.27, 10.67, 3.36, 10.67, -1.04),
+        ('c', 10.67, -3.92, 10.05, -7.28, 8.32, -9.97),
+        ('c', 6.64, -12.57, 3.75, -14.95, 0.28, -16.94),
+        ('c', 0.03, -17.08, -0.14, -17.22, -0.14, -17.44),
+        ('c', -0.14, -17.61, -0.03, -17.78, 0.22, -17.78),
+        ('c', 0.36, -17.78, 0.53, -17.72, 0.7, -17.64),
+        ('c', 4.42, -15.82, 8.01, -13.69, 10.98, -10.5),
+        ('c', 13.41, -7.87, 14.87, -4.45, 14.87, -0.78),
+        ('c', 14.87, 4.09, 11.9, 7.34, 7.06, 7.34),
+    ],
+    [
+        ('m', 17.61, 5.04),
+        ('c', 16.74, 5.04, 16.07, 4.37, 16.07, 3.5),
+        ('c', 16.07, 2.63, 16.74, 1.96, 17.61, 1.96),
+        ('c', 18.48, 1.96, 19.15, 2.63, 19.15, 3.5),
+        ('c', 19.15, 4.37, 18.48, 5.04, 17.61, 5.04),
+    ],
+    [
+        ('m', 17.64, -1.99),
+        ('c', 16.77, -1.99, 16.13, -2.63, 16.13, -3.5),
+        ('c', 16.13, -4.37, 16.77, -5.01, 17.64, -5.01),
+        ('c', 18.51, -5.01, 19.15, -4.37, 19.15, -3.5),
+        ('c', 19.15, -2.63, 18.51, -1.99, 17.64, -1.99),
+    ],
+]
+
+
 def draw_clef(pdf, clef, x, y):
-    """Draw original vector clef marks so no music-symbol font is embedded."""
+    """Draw the starter-reading clef outline. The G curl sits on the second line."""
+    outlines = TREBLE_CLEF if clef == "treble" else BASS_CLEF
+    anchor_y = y + (6 if clef == "treble" else 18)
+    scale = 6 / 7
+    origin_x = x + 2
     pdf.saveState()
-    pdf.setStrokeColor(INK)
     pdf.setFillColor(INK)
-    pdf.setLineWidth(1.35)
-    if clef == "treble":
-        center = x + 23
-        # A compact vector treble clef: the spiral must wrap the second line
-        # (G4) and the stem must remain continuous through the staff.
-        stem = pdf.beginPath()
-        stem.moveTo(center + 2, y - 14)
-        stem.curveTo(center + 1, y + 8, center + 1, y + 33, center + 2, y + 58)
-        pdf.drawPath(stem, fill=0, stroke=1)
-        upper = pdf.beginPath()
-        upper.moveTo(center + 2, y + 56)
-        upper.curveTo(center - 10, y + 51, center - 10, y + 39, center, y + 32)
-        upper.curveTo(center + 13, y + 26, center + 14, y + 14, center + 4, y + 9)
-        pdf.drawPath(upper, fill=0, stroke=1)
-        spiral = pdf.beginPath()
-        spiral.moveTo(center + 4, y + 9)
-        spiral.curveTo(center - 8, y + 9, center - 13, y + 3, center - 9, y - 4)
-        spiral.curveTo(center - 6, y - 10, center + 1, y - 11, center + 4, y - 7)
-        spiral.curveTo(center + 6, y - 4, center + 4, y - 1, center + 1, y + 1)
-        pdf.drawPath(spiral, fill=0, stroke=1)
-    else:
-        center = x + 22
-        path = pdf.beginPath()
-        path.moveTo(center - 7, y + 23)
-        path.curveTo(center - 3, y + 34, center + 11, y + 31, center + 11, y + 19)
-        path.curveTo(center + 11, y + 8, center + 2, y + 2, center - 8, y + 1)
-        pdf.drawPath(path, fill=0, stroke=1)
-        pdf.circle(center - 7, y + 23, 2.8, fill=1, stroke=0)
-        pdf.circle(center + 17, y + 21, 1.7, fill=1, stroke=0)
-        pdf.circle(center + 17, y + 14, 1.7, fill=1, stroke=0)
+    path = pdf.beginPath()
+    for contour in outlines:
+        for op, *nums in contour:
+            if op == "m":
+                path.moveTo(origin_x + nums[0] * scale, anchor_y + nums[1] * scale)
+            elif op == "c":
+                path.curveTo(
+                    origin_x + nums[0] * scale, anchor_y + nums[1] * scale,
+                    origin_x + nums[2] * scale, anchor_y + nums[3] * scale,
+                    origin_x + nums[4] * scale, anchor_y + nums[5] * scale,
+                )
+            else:
+                path.lineTo(origin_x + nums[0] * scale, anchor_y + nums[1] * scale)
+        path.close()
+    pdf.drawPath(path, stroke=0, fill=1, fillMode=1)
     pdf.restoreState()
 
 
@@ -131,8 +233,7 @@ def staff(pdf, notes, x, y, width, clef):
         pdf.line(x, y + row * 6, x + width, y + row * 6)
     pdf.setFont("Helvetica-Bold", 7)
     pdf.setFillColor(MUTED)
-    # Leave room for the vector clef (up to y + 48) below its text label.
-    pdf.drawString(x, y + 54, "TREBLE CLEF" if clef == "treble" else "BASS CLEF")
+    pdf.drawString(x + 24, y + 32, "TREBLE CLEF" if clef == "treble" else "BASS CLEF")
     draw_clef(pdf, clef, x, y)
     usable_x = x + 66
     step_x = (width - 70) / max(len(notes), 1)
