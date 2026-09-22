@@ -103,6 +103,6 @@ Feedback UI → POST /api/feedback → PianoGrid Route Handler
 
 - [已核实] `npm run check`（Foundation 568 项、TypeScript、CSS）和 `npm run check:feedback` 通过；`npm run build` 完成 212 个静态页面，并列出动态 `POST /api/feedback` 接口。
 - [已核实] 本地浏览器覆盖首页与内页 Footer、移动菜单、键盘关闭与焦点恢复、页面有用性提问、失败时保留输入、关闭配置时隐藏入口。接口检查覆盖错误 Origin、内容类型、超长请求及非法路径。用本地开发凭据向私有仓库创建三条测试 Issue，核对来源、路径和实体后均已关闭；生产没有设置该凭据。
-- [已核实] 浏览器构建文件未匹配到 `api.github.com/repos`、`FEEDBACK_GITHUB_TOKEN` 或接收仓库名。未做真实手机、读屏器或生产防刷验证。
+- [已核实] 浏览器构建文件未匹配到 `api.github.com/repos`、`FEEDBACK_GITHUB_TOKEN` 或接收仓库名。真实手机、读屏器和已部署反馈接口的防刷验证仍未完成；当前生产仅验证了尚无反馈接口时的 WAF 路径级拦截。
 - [已核实] 历史集成数据脚本因未修改的受保护源文件哈希断言失败；集成批次脚本还与当前页面标题、导航数量基线不符。记录为既有检查基线问题，不把它们报告为通过，也不在本次反馈任务中改动内容源文件或放宽断言。
-- [待决] 已形成 [Vercel 防火墙限流候选与上线门禁](feedback-launch-gates.md)，但规则尚未发布和验证；仍需创建仅对反馈仓库授予 Issues 写权限的运行令牌，确认反馈邮箱的保留/删除流程。上述条件完成后才能配置生产环境、重新构建并按发布流程验收。当前 `FEEDBACK_ENABLED=false`，线上不受本分支影响。
+- [已核实] [Vercel 防火墙限流与上线门禁](feedback-launch-gates.md)中的路径级规则已生效，当前生产尚无反馈接口；连续第 6 次匿名 POST 已返回 429，首页与 robots 仍返回 200。[待决] 仍需创建仅对反馈仓库授予 Issues 写权限的运行令牌，确认反馈邮箱的保留/删除流程，并在真实预览接口复验。上述条件完成后才能配置生产环境、重新构建并按发布流程验收。当前 `FEEDBACK_ENABLED=false`，反馈功能线上不可用。
