@@ -14,6 +14,9 @@ import {
   type PublicRoute,
 } from '@/lib/site-routes';
 import { ChordTopicIcon } from '@/components/chords/page-toc';
+import { FeedbackDialog } from '@/components/feedback/feedback-dialog';
+import { useFeedbackAvailability } from '@/components/feedback/feedback-availability';
+import { sendAnalyticsEvent } from '@/lib/analytics';
 import './site-navigation.css';
 
 type NavigationVariant = 'home' | 'content';
@@ -227,6 +230,7 @@ function DesktopNavigation({ className, pathname }: { className: string; pathnam
 }
 
 export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
+  const { enabled: feedbackEnabled } = useFeedbackAvailability();
   const pathname = usePathname();
   const id = useId().replaceAll(':', '');
   const mobileButton = useRef<HTMLButtonElement>(null);
@@ -235,6 +239,7 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
   const [openMobileSection, setOpenMobileSection] = useState<string | null>(null);
   const [openCatalogMobileMenu, setOpenCatalogMobileMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const desktopClass = variant === 'home' ? 'ph-desktop-nav' : 'am-site-nav';
   const menuButtonClass = variant === 'home' ? 'ph-menu-button' : 'am-menu-button';
   const mobileClass = variant === 'home' ? 'ph-mobile-nav' : 'am-mobile-nav';
@@ -327,6 +332,8 @@ export function SiteNavigation({ variant }: { variant: NavigationVariant }) {
         </div>
       </section>;
       })}
+      {feedbackEnabled && <button type="button" className="site-mobile-feedback" onClick={() => { closeMenus(); setFeedbackOpen(true); sendAnalyticsEvent('feedback_opened', { source: 'global_feedback' }); }}>Feedback</button>}
     </nav>
+    {feedbackEnabled && <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} pagePath={pathname} returnFocusRef={mobileButton}/>}
   </div>;
 }

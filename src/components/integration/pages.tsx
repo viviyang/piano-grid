@@ -17,6 +17,7 @@ import { getHomeModel, getToolsModel } from '@/lib/integration-content';
 import type { Destination, IntegrationBlock, IntegrationPageModel, ToolDestination, ToolResource } from '@/lib/integration-types';
 import { SITE_NAME } from '@/lib/site-config';
 import { SITE_NAVIGATION } from '@/lib/site-routes';
+import { FeedbackEntry } from '@/components/feedback/feedback-entry';
 import '@/app/chords/a-minor/a-minor.css';
 import './integration.css';
 import './home-color-repair.css';
@@ -51,7 +52,7 @@ function ToolResourceCard({item}:{item:ToolResource}){
   return <article className="in-print-card"><div><span>Available now</span><h3>{item.label}</h3><p>{item.description}</p></div><div className="in-card-actions"><a href={item.url}>{item.label}</a>{item.downloads.map(download=><a href={download.url} download key={download.url}>{download.label}</a>)}</div></article>;
 }
 function HomeFooter(){
-  return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Piano Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><a href="#main">Back to top ↑</a></div></footer>;
+  return <footer className="ph-footer"><div className="pr-container ph-footer-main"><SiteBrand className="ph-footer-brand"/><nav aria-label="Footer navigation"><a href="/keyboard-notes">Piano Notes</a><a href="/chords">Chords</a><a href="/scales">Scales</a><a href="/songs">Songs</a><a href="/guide">Learn</a><a href="/tools">Tools</a></nav></div><div className="pr-container ph-footer-bottom"><p>Clear references for the moments you sit down to play.</p><FeedbackEntry pagePath="/"/><a href="#main">Back to top ↑</a></div></footer>;
 }
 function HomeReferenceDirectory(){
   return <section className="pr-container ph-reference-directory" aria-labelledby="home-reference-directory-title"><div className="ph-section-heading"><div><p className="ph-eyebrow">Explore piano topics</p><h2 id="home-reference-directory-title">Find your next<br/>piano topic.</h2></div><p>Open a focused reference directly, or start with a section overview.</p></div><nav className="ph-reference-directory-grid" aria-label="Piano topics">{SITE_NAVIGATION.map(section=><section className="ph-reference-group pr-breathe-surface pr-breathe-surface-tint" key={section.href} aria-labelledby={`home-reference-${section.href.slice(1).replaceAll('/','-')}`}><h3 id={`home-reference-${section.href.slice(1).replaceAll('/','-')}`}><a href={section.href}>{section.label}<HomeArrow/></a></h3><ul>{section.children.map(child=><li key={child.href}><a href={child.href}>{child.label}</a></li>)}</ul></section>)}</nav></section>;

@@ -140,3 +140,5 @@
 /* Keep links targetable while Base UI's button-only hover polygon is active. */
 .site-nav-topline,.site-nav-popup,.site-nav-popup a,.site-nav-popup button{pointer-events:auto!important}
 .site-nav-popup::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px;pointer-events:auto}
+/* Feedback is a utility action, separate from the seven content sections. */
+.site-mobile-feedback { display: block; width: 100%; min-height: 2.75rem; padding: .7rem 1rem; border: 0; border-top: 1px solid var(--border); background: var(--background); color: var(--primary); font: inherit; font-weight: 600; text-align: left; cursor: pointer; }

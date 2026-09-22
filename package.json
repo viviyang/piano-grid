@@ -14,6 +14,9 @@
     "check:keyboard-practice": "node scripts/check-keyboard-practice.mjs",
     "check:songs-sheet-v2": "node --experimental-strip-types scripts/check-songs-sheet-v2.ts",
     "check:practical-tools": "node --experimental-strip-types scripts/check-practical-tools.ts",
+    "check:feedback": "node --experimental-strip-types scripts/check-feedback.mjs",
+    "check:feedback:browser": "node scripts/check-feedback-browser.mjs",
+    "check:feedback:api": "node scripts/check-feedback-api.mjs",
     "check": "npm run check:foundation && npm run typecheck && npm run check:css"
   },
   "engines": {

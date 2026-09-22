@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { MicrosoftClarity } from "@/components/analytics/microsoft-clarity";
 import { SITE_NAME, SITE_ORIGIN } from "@/lib/site-config";
+import { FeedbackAvailabilityProvider } from "@/components/feedback/feedback-availability";
+import { getFeedbackConfig, pageFeedbackEnabled } from "@/lib/feedback/config";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,7 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body>
-        {children}
+        <FeedbackAvailabilityProvider enabled={getFeedbackConfig().enabled} pageEnabled={pageFeedbackEnabled()} productName={getFeedbackConfig().productName}>{children}</FeedbackAvailabilityProvider>
         <GoogleAnalytics />
         <MicrosoftClarity />
       </body>

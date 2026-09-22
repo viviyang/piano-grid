@@ -1,0 +1,26 @@
+.fb-footer-link { border: 0; padding: 0; background: none; color: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+.pr-dialog.fb-dialog { width: min(34rem, calc(100% - 1.25rem)); max-height: min(92dvh, 52rem); margin: auto; padding: 1.5rem; }
+.fb-dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+.fb-dialog-head h2 { font-size: 1.5rem; line-height: 1.25; }
+.fb-form { display: grid; gap: 1.1rem; }
+.fb-options { display: grid; gap: .4rem; border: 0; padding: 0; min-width: 0; }
+.fb-options legend { margin-bottom: .6rem; font-weight: 650; }
+.fb-option { display: flex; gap: .7rem; align-items: center; min-height: 2.75rem; padding: .5rem .75rem; border: 1px solid var(--border); border-radius: var(--pr-radius-control); cursor: pointer; }
+.fb-option:has(input:checked) { border-color: var(--selected-border); background: var(--accent); }
+.fb-option input { flex: none; accent-color: var(--primary); }
+.fb-field { display: grid; gap: .4rem; font-weight: 650; }
+.fb-field span { color: var(--muted-foreground); font-size: .875rem; font-weight: 400; }
+.fb-field input, .fb-field textarea { width: 100%; min-height: 2.75rem; padding: .7rem .8rem; border: 1px solid var(--input); border-radius: var(--pr-radius-control); color: var(--foreground); background: var(--background); font-weight: 400; }
+.fb-field textarea { resize: vertical; }
+.fb-privacy { color: var(--muted-foreground); font-size: .875rem; }
+.fb-actions { display: flex; justify-content: flex-end; gap: .65rem; flex-wrap: wrap; }
+.fb-error { color: var(--error); }
+.fb-success { display: grid; gap: 1rem; justify-items: start; }
+.fb-page-wrap { padding-block: 1.5rem; border-top: 1px solid var(--border); }
+.fb-page { display: grid; gap: .8rem; }
+.fb-page h2 { font-size: 1.125rem; }
+.fb-page-actions { display: flex; gap: .65rem; flex-wrap: wrap; }
+.fb-page-form { max-width: 36rem; }
+.fb-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+@media (max-width: 600px) { .pr-dialog.fb-dialog { padding: 1rem; max-height: calc(100dvh - 1rem); } .fb-actions > button { flex: 1 1 8rem; } }
+@media print { .fb-page-wrap, .fb-footer-link { display: none !important; } }
