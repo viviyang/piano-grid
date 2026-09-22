@@ -123,6 +123,9 @@ export const SEO_COPY: Record<string, Copy> = {
   '/chords/extended': { title: 'Extended Chords: 9th, 11th & 13th Piano Chords | PianoGrid', h1: 'Extended Chords', description: 'Explore ninth, eleventh and thirteenth piano chords. Compare full formulas with explicit voicing examples, hear the notes and practise a selected layout.' },
   '/chords/altered': { title: 'Altered Dominant Chords: Piano Notes, Formulas & Voicings | PianoGrid', h1: 'Altered Dominant Chords', description: 'Compare explicit altered dominant chords on piano. Read changed degrees, hear written-note voicings, check omissions and practise a selected example.' },
   '/scales': { title: 'Piano Scales: Notes, Patterns & Fingering', description: 'Explore major, minor and other piano scales. See their notes and patterns, hear examples, and check available fingering before you practice.' },
+  // Document titles spell "sharp" so they stay distinct from the natural-minor titles. Visible note names stay A# and F#.
+  '/scales/a-sharp-minor': { title: 'A-Sharp Minor Scale on Piano: Natural, Harmonic & Melodic | PianoGrid', description: 'Find the notes of A# minor, compare its three forms and descending patterns, and read source-checked piano fingerings.' },
+  '/scales/f-sharp-minor': { title: 'F-Sharp Minor Scale on Piano: Natural, Harmonic & Melodic | PianoGrid', description: 'Find the notes of F# minor, compare its three forms and descending patterns, and read source-checked piano fingerings.' },
   '/songs': {
     title: 'Piano Songs to Learn – Find Your Next Piece | PianoGrid',
     h1: 'Piano Songs to Learn',

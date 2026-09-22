@@ -94,12 +94,12 @@
 
 ## AM-MIDI
 
-[Standard MIDI file format, updated — Appendix 1.3](https://www.cs.cmu.edu/~music/cmsip/readings/Standard-MIDI-file-format-updated.pdf)
+[Standard MIDI Files](https://midi.org/standard-midi-files)
 
-批次：A；发布者：Carnegie Mellon University hosted technical reading。
-核查：2026-09-09；访问：opened_pdf_text。
-支持范围：['C4=60 selected octave naming convention; chromatic MIDI integer table']。
-定位：Appendix 1.3: Table of MIDI Note Numbers, printed page 17, extracted lines 626–642。
+批次：A；发布者：The MIDI Association。
+核查：2026-09-22；访问：opened_full_text。
+支持范围：['Official public entry for the Standard MIDI Files specification']。
+定位：Standard MIDI Files overview。
 同 URL 的来源 ID：AM-MIDI。
 
 ## AM-MUSICXML
