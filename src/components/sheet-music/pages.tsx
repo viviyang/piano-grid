@@ -131,17 +131,26 @@ function LaunchCards({ url }: { url: SheetMusicURL }) {
   return <><ArrangementFocus arrangementIDs={views.map((view) => view.arrangement.arrangement_id)}/><div className="ss-version-grid">{views.map((view) => <ExternalArrangementCard view={view} showLearning={url !== '/sheet-music/easy'} compact={url === '/sheet-music/easy'} omitUnverified={selection} key={view.arrangement.arrangement_id}/>)}</div></>;
 }
 
+function publicEditionKicker(kicker: string | undefined) {
+  if (!kicker || /recheck before|metadata only|source ledger|approved mapping/i.test(kicker)) return 'External edition';
+  return kicker;
+}
+
 function PreservedSheetContent({ url }: { url: SheetMusicURL }) {
   const legacy = getLegacySheetContent(url);
   const launchURLs = new Set(getLaunchExternalViews().map((view) => view.resource.provider_url));
   const additional = legacy.resources.filter((resource) => !launchURLs.has(resource.resourceURL));
   const selection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
-  const heading = selection ? (url === '/sheet-music/beginner' ? 'More Beginner Editions' : 'Additional Easy Editions') : 'Original sections and external resources';
+  const hub = url === '/sheet-music';
+  const resources = hub ? additional.map((resource) => ({ ...resource, editionKicker: publicEditionKicker(resource.editionKicker) })) : additional;
+  const heading = selection ? (url === '/sheet-music/beginner' ? 'More Beginner Editions' : 'Additional Easy Editions') : hub ? 'Editions and external resources' : 'Original sections and external resources';
   const note = selection
     ? 'These extra publisher or library references are listed with their access route. PianoGrid does not host the scores or recordings.'
-    : `${legacy.sections.length ? `The source ledger retains ${legacy.sections.join(', ')} as distinct page sections.` : 'The original exact-version task remains part of this page.'} No listed score or recording is rehosted.`;
-  return <section className="ss-preserved" aria-labelledby="ss-preserved-heading"><div className="sg-discovery-head"><div><p className="sg-overline">{selection ? 'More versions' : 'Preserved approved mapping'}</p><h2 id="ss-preserved-heading">{heading}</h2></div><p>{note}</p></div>
-    {additional.length > 0 && <div className="sg-resource-list">{additional.map((resource) => <SongResourceCard resource={resource} compact key={resource.id}/>)}</div>}
+    : hub
+      ? `${legacy.sections.length ? `These references are grouped as ${legacy.sections.join(', ')}.` : 'These references stay with their listed editions.'} No listed score or recording is hosted on PianoGrid.`
+      : `${legacy.sections.length ? `The source ledger retains ${legacy.sections.join(', ')} as distinct page sections.` : 'The original exact-version task remains part of this page.'} No listed score or recording is rehosted.`;
+  return <section className="ss-preserved" aria-labelledby="ss-preserved-heading"><div className="sg-discovery-head"><div><p className="sg-overline">{selection ? 'More versions' : hub ? 'External editions' : 'Preserved approved mapping'}</p><h2 id="ss-preserved-heading">{heading}</h2></div><p>{note}</p></div>
+    {resources.length > 0 && <div className="sg-resource-list">{resources.map((resource) => <SongResourceCard resource={resource} compact key={resource.id}/>)}</div>}
     <div className="ss-legacy-blocks">{legacy.blocks.map((block) => <article key={block.id}><h3>{block.heading}</h3><p>{block.body}</p></article>)}</div>
   </section>;
 }
@@ -151,14 +160,15 @@ function SectionBody({ section, url }: { section: SheetSection; url: SheetMusicU
   const cards = ids.size ? getLaunchExternalViews().filter((view) => ids.has(view.arrangement.arrangement_id)) : [];
   const localOnly = section.visibility_gate === 'LOCAL_EXERCISES_RELEASE_APPROVED';
   const selection = url === '/sheet-music/easy' || url === '/sheet-music/beginner';
-  return <section className="am-content-section ss-section" id={section.id} aria-labelledby={`${section.id}-heading`}><h2 id={`${section.id}-heading`}>{section.heading}</h2><div className="am-content-body">
+  const heading = url === '/sheet-music' && section.heading === 'Browse the approved collections' ? 'Browse the collections' : section.heading;
+  return <section className="am-content-section ss-section" id={section.id} aria-labelledby={`${section.id}-heading`}><h2 id={`${section.id}-heading`}>{heading}</h2><div className="am-content-body">
     {section.body && <p>{section.body}</p>}
     {section.link && <a className="am-button am-tertiary" href={section.link}>Open this collection</a>}
     {section.cta && <a className="am-button am-secondary" href={section.cta.href} target="_blank" rel="noreferrer">{section.cta.label}</a>}
     {section.id === 'learning' && cards.length === 0 && <a className="am-button am-tertiary" href={practiceUrl('/songs/easy', getLaunchExternalViews().find((view) => details[view.arrangement.arrangement_id] === url)!.arrangement).replace('https://pianogrid.com', '')}>Open the matching learning plan</a>}
     {cards.length > 0 && <div className="ss-section-cards">{cards.map((view: ArrangementView) => <ExternalArrangementCard view={view} compact omitUnverified={selection} key={view.arrangement.arrangement_id}/>)}</div>}
     {localOnly && <OriginalExerciseReleasePanel/>}
-    {section.render_existing && !selection && <p className="ss-preserve-note">The original approved task and resource mapping remains preserved in the source ledger. Only destinations and capabilities verified for this release are linked here.</p>}
+    {section.render_existing && !selection && <p className="ss-preserve-note">{url === '/sheet-music' ? 'Only checked publisher destinations are linked. Scores and recordings stay on the provider’s site, and each access condition still applies.' : 'The original approved task and resource mapping remains preserved in the source ledger. Only destinations and capabilities verified for this release are linked here.'}</p>}
     {section.faqs?.map((faq) => <details className="ss-faq" key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
   </div></section>;
 }

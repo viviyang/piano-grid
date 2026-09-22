@@ -3,6 +3,7 @@ import { SiteFooter, SiteHeader } from '@/components/chords/site-chrome';
 import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { getChordFinder, getChordProgressions, getChordsByKey, getFingerNumbersReference, getPianoChordsGuide, type SupportBlock, type SupportLink } from '@/lib/support-content';
 import { getChordCenter } from '@/lib/chord-content';
+import { editorialHeading, editorialIntro } from '@/lib/seo-editorial';
 import { ByKeyExperience } from './by-key-experience';
 import { FinderExperience } from './finder-experience';
 import { ProgressionExperience } from './progression-experience';
@@ -12,7 +13,7 @@ import './support-pages.css';
 function SupportShell({ kind, title, description, scope, url, children }: { kind: 'Guide' | 'Keyboard Notes' | 'Chords'; title: string; description: string; scope: string; url: string; children: ReactNode }) {
   const parent = kind === 'Guide' ? '/guide' : kind === 'Keyboard Notes' ? '/keyboard-notes' : '/chords';
   return <div className="am-page sp-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current={kind}/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading"><PageBreadcrumb items={[{ label: kind, href: parent }, { label: title }]}/><h1>{title}</h1><p className="am-direct-answer">{description}</p><p className="sp-scope">{scope}</p></header>{children}
+    <header className="am-page-heading"><PageBreadcrumb items={[{ label: kind, href: parent }, { label: title }]}/><h1>{editorialHeading(url, title)}</h1><p className="am-direct-answer">{editorialIntro(url, description)}</p><p className="sp-scope">{scope}</p></header>{children}
   </main><SiteFooter url={url}/></div>;
 }
 

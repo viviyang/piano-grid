@@ -147,7 +147,7 @@ export const SEO_COPY: Record<string, Copy> = {
       'Understand your starting point': 'How to Choose Your First Piano Song',
     },
   },
-  '/sheet-music': { title: 'Piano Sheet Music: Find an Edition | PianoGrid', h1: 'Piano Sheet Music', description: 'Find piano sheet music by edition and level. Check the provider, format and access conditions before downloading, printing or starting a practice plan.' },
+  '/sheet-music': { title: 'Piano Sheet Music: Browse Editions & Levels | PianoGrid', h1: 'Piano Sheet Music', description: 'Browse piano sheet music by level and edition. Compare publishers, formats, access options and beginner-friendly scores before you print, download or start playing.' },
   '/sheet-music/easy': {
     title: 'Easy Piano Sheet Music: Compare Editions | PianoGrid',
     h1: 'Easy Piano Sheet Music',
@@ -176,9 +176,9 @@ export const SEO_COPY: Record<string, Copy> = {
       'Check yourself': 'Practice Reading Piano Sheet Music',
     },
   },
-  '/guide/piano-chords': { title: 'How to Play Piano Chords: Your First Chord Changes', h1: 'How to Play Piano Chords', description: 'Learn chord symbols and note names, explore hand examples, and follow a C-to-Am change before moving on to chord charts and progressions.' },
+  '/guide/piano-chords': { title: 'How to Play Chords on Piano: Beginner Guide | PianoGrid', h1: 'How to Play Chords on Piano', description: 'Learn how to play chords on piano step by step. Start with C, Am, F and G, understand chord symbols and finger numbers, then practice your first chord changes.', intro: 'Learn how to play chords on piano step by step. Start with C, Am, F and G, understand chord symbols and finger numbers, then practice your first chord changes.' },
   '/guide/piano-scales': { title: 'Piano Scales for Beginners: A Practice Routine', description: 'Choose one piano scale, check its notes and available fingering, then follow a short routine with playback, note checks and printable resources.' },
-  '/chords/by-key': { title: 'Piano Chords by Key: Triads & Seventh Chords', description: 'Compare triads and seventh chords in the available keys. Read Roman numerals and chord notes, and distinguish natural-minor from altered options.' },
+  '/chords/by-key': { title: 'Piano Chords by Key: Triads & Seventh Chords | PianoGrid', description: 'Find piano chords by key across major and minor keys. Compare triads, seventh chords, Roman numerals, chord tones and scale degrees.' },
   '/chord-progressions': { title: 'Piano Chord Progressions: Patterns & Practice', h1: 'Piano Chord Progressions', description: 'Explore piano chord progressions, read Roman numerals and chord notes, and compare the available key examples before practicing each change.' },
   '/chords/finder': { title: 'Piano Chord Finder: Identify Chords from Notes', description: 'Select piano notes to find possible chord names. Compare bass notes and alternative spellings, and see when your notes fall outside the supported library.' },
   '/tools': { title: 'Piano Tools & Printables for Practice | PianoGrid', description: 'Find piano notes, chords and scales, try a listening comparison, or choose a printable reference for your next practice session.' },
@@ -210,9 +210,34 @@ export const SEO_COPY: Record<string, Copy> = {
     h1: 'B Major Chord',
     description: 'Learn the B major chord on piano: B, D♯ and F♯. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes, and download a printable reference.',
   },
+  '/chords/a-minor': {
+    title: 'A Minor Chord: Piano Notes, Fingering & Inversions | PianoGrid',
+    h1: 'A Minor Chord',
+    description: 'Learn the A minor chord on piano: A, C and E. See the keyboard diagram, root position, inversions, sourced fingering examples and interactive practice.',
+  },
+  '/chords/b-flat-major': {
+    title: 'B-flat Major Chord: Piano Notes, Inversions & PDF | PianoGrid',
+    h1: 'B-flat Major Chord',
+    description: 'Learn the B-flat major chord on piano: B♭, D and F. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
+  },
+  '/chords/e-flat-major': {
+    title: 'E-flat Major Chord: Piano Notes, Inversions & PDF | PianoGrid',
+    h1: 'E-flat Major Chord',
+    description: 'Learn the E-flat major chord on piano: E♭, G and B♭. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
+  },
+  '/chords/c-diminished': {
+    title: 'C Diminished Chord: Piano Notes & Inversions | PianoGrid',
+    h1: 'C Diminished Chord',
+    description: 'Learn the C diminished chord on piano: C, E♭ and G♭. See the keyboard diagram, root position and inversions, hear the chord and practice the notes.',
+  },
+  '/chords/c-sharp-minor': {
+    title: 'C-sharp Minor Chord: Piano Notes, Inversions & PDF | PianoGrid',
+    h1: 'C-sharp Minor Chord',
+    description: 'Learn the C-sharp minor chord on piano: C♯, E and G♯. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
+  },
 };
 
-const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7']);
+const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7', '/chords/b-m7', '/chords/f-7', '/chords/a-minor', '/chords/c-diminished']);
 
 /** Hide internal review IDs and audit labels on selected public chord pages. Keep source names and links. */
 export function hideInternalSourceAudit(url: string): boolean {

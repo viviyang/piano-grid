@@ -4,6 +4,7 @@ import type { ChordDetailData, Block, DetailVoicing, SearchSection, ChordDetailM
 import { positionForThreeNote, resolveThreeNoteDefinition } from './chord-family-model';
 import { isPublicRoute } from './site-routes';
 import { finalizeChordDetailModel } from './chord-detail-model';
+import { applyEditorialChordCopy } from './seo-editorial';
 import { fingeringBlock, getChordLearning, practiceBlock } from './chord-learning-content';
 import { plannedLinksFor } from './support-content';
 
@@ -49,10 +50,10 @@ export function getAMinorContent():ChordDetailModel {
   blocks.splice(originalPracticeIndex+1,0,practiceBlock(data,learning.practice));
   byId=Object.fromEntries(blocks.map(block => [block.block_id, block]));
   const searchSections: SearchSection[] = blocks.filter(b=>b.block_id!=='am-intro').map(b=>({id:b.block_id,heading:b.content.heading,text:JSON.stringify(b.content)}));
-  return finalizeChordDetailModel({ metadata:page.metadata as {title:string;description:string;canonical_path:string}, blocks, byId, data, introduction,
+  return applyEditorialChordCopy(finalizeChordDetailModel({ metadata:page.metadata as {title:string;description:string;canonical_path:string}, blocks, byId, data, introduction,
     answer:intro.paragraphs[0].slice(0,split), searchSections, fingeringExamples:learning.fingerings,sources:learning.sources,practice:learning.practice,tocItems:[
       {id:data.toolId,label:'Chord & positions'},{id:'am-root-example',label:'Root-position example'},{id:'am-find-notes',label:'Find the notes'},
       {id:'am-inversions',label:'Inversions'},{id:'am-fingering-example',label:'Fingering'},{id:'am-why-minor',label:'Why minor?'},{id:'am-practice',label:'Practice steps'},{id:'practice',label:'Build the chord'},
       {id:'am-print',label:'Print & PDF'},{id:'am-questions',label:'Questions'},{id:'am-next',label:'Next steps'},
-    ] });
+    ] }));
 }

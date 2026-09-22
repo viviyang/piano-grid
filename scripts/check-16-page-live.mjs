@@ -263,7 +263,11 @@ test('control /chords/c-major related not rewritten', () => { assert(!h2s(contro
 test('control /chords/c-major sources label', () => { assert(/Sources and scope/.test(controlMajor)); });
 test('control /chords/a-minor 200', () => { assert(pages['/chords/a-minor'].status === 200); });
 test('control /guide 200', () => { assert(pages['/guide'].status === 200); });
-test('control /sheet-music keeps preserved mapping', () => { assert(/Preserved approved mapping/.test(pages['/sheet-music'].text)); });
+test('control /sheet-music uses public edition copy', () => {
+  const text = pages['/sheet-music'].text;
+  assert(!/Preserved approved mapping|source ledger|recheck before new claims|original approved task/i.test(text));
+  assert(/External editions/.test(text));
+});
 test('control /keyboard-notes/chart 200', () => { assert(pages['/keyboard-notes/chart'].status === 200); });
 if (pages['/chords/c-7'].status === 200) {
   test('control /chords/c-7 related not rewritten', () => { assert(!h2s(pages['/chords/c-7'].text).map(decode).includes('Related Chords and Practice')); });

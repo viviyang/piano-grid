@@ -90,7 +90,7 @@ try{
   check('Ode D major fact exact',await page.locator(`#${ids[2]}`).getByText('D major',{exact:true}).count()===1);
   check('no inferred Ode chords',!(await page.locator(`#${ids[2]}`).textContent()).includes('C / F / G'));
   await page.goto(`${base}/sheet-music`);
-  check('historical Gymnopedie is not labeled checked',await page.locator('[data-resource-id="cr-18-1"] .sg-kicker').textContent()==='Preserved external reference — recheck before new claims');
+  check('historical Gymnopedie is not labeled checked',await page.locator('[data-resource-id="cr-18-1"] .sg-kicker').textContent()==='External edition');
 
   const sitemap=await (await page.request.get(`${base}/sitemap.xml`)).text();
   for(const route of routes)check(`sitemap ${route}`,sitemap.includes(`<loc>https://pianogrid.com${route}</loc>`));
