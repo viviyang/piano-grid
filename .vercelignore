@@ -1,2 +1,11 @@
-# Rights-gated staging score and audio sources are never uploaded for deployment.
-docs/content/songs-sheet-v2/content-data/assets/
+# Deployment-only exclusions; audit evidence remains tracked in Git.
+checks/
+docs/
+scripts/
+10_P0_REVIEW_AND_EXECUTION.md
+tmp-pdf-compare/
+node_modules/
+.next/
+.next-p1-layout/
+.git/
+*.log
