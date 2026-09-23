@@ -23,14 +23,14 @@
 
 ## 上线顺序
 
-1. [已核实配置，待云端调用验证] GitHub 细粒度令牌 `PianoGrid feedback (Vercel)` 仅选择 `viviyang/pianogrid-feedback`，仓库权限为 **Issues: Read and write**（GitHub 自动附加必需的 Metadata: Read-only），无账户权限。首次创建时有效期至 2026-12-21；因令牌值曾出现在本次浏览器自动化工具结果中，账户持有人已按要求轮换，Vercel 界面确认 `FEEDBACK_GITHUB_TOKEN` Preview Secret 刚刚更新。新令牌值未写入代码或 Git；到期前须轮换，不要使用本地开发测试用的广权限凭据。
+1. [已核实配置，云端写入已通过] GitHub 细粒度令牌 `PianoGrid feedback (Vercel)` 仅选择 `viviyang/pianogrid-feedback`，仓库权限为 **Issues: Read and write**（GitHub 自动附加必需的 Metadata: Read-only），无账户权限。因首次创建值进入本次浏览器自动化工具结果，账户持有人随后完成轮换；Vercel 界面确认 `FEEDBACK_GITHUB_TOKEN` Preview Secret 已更新。通过新预览部署创建测试 Issue 成功；新令牌值未写入代码或 Git。到期前须轮换，不要使用本地开发测试用的广权限凭据。
 2. 确定谁能访问私有 Issue、邮箱使用期限、关闭后的清理和删除流程。Issue 关闭不等于删除。将真实的第三方处理说明纳入适用的隐私文案；前台无需公开技术接收仓库名称。
-3. 在预览环境验收完整链路：真实创建并清理测试 Issue、合法浏览器提交、无效 Origin/字段、429、GitHub 失败、手机与读屏体验。正向 `Yes` 事件要验证 GA4 可用且不会产生 Issue。
-4. [已完成部分] Vercel 路径级规则已发布，第 6 次匿名 POST 得到 429，首页和 robots 未受影响。仍须在预览部署的真实接口上复验合法提交、超限提示、共享 IP 误报和反馈 Issue 量。
+3. 在预览环境验收完整链路：真实创建并清理测试 Issue、浏览器提交、无效 Origin/字段、429、GitHub 失败、手机与读屏体验。正向 `Yes` 事件要验证 GA4 可用且不会产生 Issue。
+4. [已完成部分] Vercel 路径级规则已发布，第 6 次匿名 POST 得到 429，首页和 robots 未受影响。Preview API 的真实 Issue 创建已返回 201，测试 Issue #4 随后关闭；错误 Origin 返回 403、非法字段返回 400。浏览器表单提交在受保护 Preview 上失败：未登录的 `Invoke-WebRequest` 收到 Vercel 登录页，而产品请求刻意不发送 Cookie；页面通过已登录 Chrome 可查看。通过 `vercel curl` 的受保护部署绕过完成了 API 集成验证。UI 匿名提交、429 展示、共享 IP 误报、GitHub 失败、手机与读屏体验仍待验收；不应为测试擅自关闭 Preview 访问保护。
 5. 上述门禁全通过后，才在生产设置 `FEEDBACK_ENABLED=true`、仓库和令牌，重新构建并部署。根布局的静态页面入口在构建时确定，单纯修改环境变量不会立即更新已发布页面。
 
 如果试运行中出现集中滥用、分布式请求或大量人工刷入，[推断]单纯按 IP 限流可能不足，需评估 Turnstile 或其他保护。紧急停止时应回滚到反馈入口关闭的部署；服务端开关也需单独检查，不能只隐藏前台按钮。
 
 [已核实] `FEEDBACK_GITHUB_REPOSITORY=viviyang/pianogrid-feedback` 与 `FEEDBACK_ENABLED=true` 已作为 Vercel **Preview Config** 保存；三项新变量均只显示 Preview 作用范围。生产没有配置这些变量，代码的默认开关为关闭。环境变量变更需要新部署才能生效。令牌轮换后应覆盖 Preview Secret；新令牌不能发到聊天或保存在仓库。
 
-[已核实] 2026-09-22 从已提交反馈分支尝试新建 Preview 部署时，Vercel CLI 准备上传约 1.1 GB 本地文件，该上传已取消。对当时的既有反馈分支 Preview 部署执行 `vercel redeploy --target preview` 时，Vercel 返回 HTTP 402，错误为 `api-deployments-free-per-day`（每日超过 100 次，提示 24 小时后再试）。没有升级 Hobby 套餐或改动生产部署。2026-09-23 项目出现新的 Production 构建；[推断]免费部署额度可能已恢复，须以此次 Preview 构建结果为准。令牌真实写入测试仍未完成。
+[已核实] 2026-09-22 从已提交反馈分支尝试新建 Preview 部署时，Vercel CLI 准备上传约 1.1 GB 本地文件，该上传已取消。对当时的既有反馈分支 Preview 部署执行 `vercel redeploy --target preview` 时，Vercel 返回 HTTP 402，错误为 `api-deployments-free-per-day`（每日超过 100 次，提示 24 小时后再试）。没有升级 Hobby 套餐或改动生产部署。2026-09-23 新 Preview 部署已由 Git 分支自动构建成功，部署 ID `dpl_4EybzmAaqDzaFi2wx76Dw4tzAUX6`，URL `https://piano-grid-mkcospyb2-weiweis-projects-eb330b65.vercel.app`。当日未进行生产部署；生产仍未配置反馈环境变量。
