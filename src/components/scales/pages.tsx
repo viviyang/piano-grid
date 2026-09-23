@@ -8,7 +8,7 @@ import { ScaleDetailExperience } from './detail-experience';
 import { ScaleCollectionExperience } from './scale-collection-experience';
 import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { SCALE_FAMILY_ROUTES } from '@/lib/scale-completion-types';
-import { editorialHeading, editorialIntro, editorialSectionHeading } from '@/lib/seo-editorial';
+import { editorialHeading, editorialIntro, editorialSectionHeading, hideInternalScaleSources, publicSourceAttribution } from '@/lib/seo-editorial';
 import { ScaleTrackedLink } from './scale-tracked-link';
 import { ScaleAdLayoutSlot } from './scale-ad-layout-slot';
 import '@/app/chords/a-minor/a-minor.css';
@@ -59,10 +59,14 @@ function CopySection({ section, model, children }: { section: ScaleCopySection; 
 }
 
 function FAQAndSources({ model }: { model: ScalePageModel }) {
-  const concise = model.url === '/scales/modes';
+  const modes = model.url === '/scales/modes';
+  const concise = modes || hideInternalScaleSources(model.url);
+  const sourceIntro = modes
+    ? 'References for the mode notes, interval patterns and C examples on this page.'
+    : 'References for the notes, patterns and examples on this page.';
   return <>
     <section className="am-content-section sc-copy-section" id="faq"><h2>Frequently asked questions</h2><div className="am-content-body sc-faq-list">{model.copy.faqs.map((faq) => <details key={faq.id ?? faq.question} data-faq-id={faq.id}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
-    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? 'References for the mode notes, interval patterns and C examples on this page.' : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} — {source.title}</a></h3>{concise ? <p>{source.scope}</p> : <><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></>}</article>)}</div></div></section>
+    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? sourceIntro : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} — {source.title}</a></h3>{concise ? <p>{publicSourceAttribution(source.scope)}</p> : <><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></>}</article>)}</div></div></section>
   </>;
 }
 
@@ -112,7 +116,7 @@ export function ScalesCenterPage() {
 export function ScaleDetailPage({ url }: { url: ScaleDetailRoute }) {
   const data = url === '/scales/c-major' || url === '/scales/a-minor' ? getScaleDetail(url) : getCompletionScaleDetail(url);
   return <ScaleShell model={data.model}>
-    <ScaleDetailExperience options={data.options} keyboardKeys={data.keyboardKeys} defaultForm={data.defaultForm} tempoOptions={data.tempoOptions} keySignature={data.keySignature}/>
+    <ScaleDetailExperience options={data.options} keyboardKeys={data.keyboardKeys} defaultForm={data.defaultForm} tempoOptions={data.tempoOptions} keySignature={data.keySignature} conciseSources={hideInternalScaleSources(url)}/>
     <ScaleAdLayoutSlot id="scale-detail-after-workspace"/>
     <div className="am-reading sc-reading sc-screen">{data.model.copy.sections.map((section) => <CopySection section={section} model={data.model} key={section.id}>
       {url === '/scales/a-minor' && section.legacyBlockID === 'section-4' && <DataTable label="Triads from A natural minor" columns={['Degree', 'Chord', 'Notes']} rows={data.chords.map((item: any) => [item.degree, item.name, item.notes.map(display).join(' – ')])}/>} 
@@ -143,7 +147,7 @@ export function ScaleFamilyPage({ url }: { url: ScaleFamilyRoute }) {
   const comparison = <FamilyComparison url={url} data={data}/>;
   return <ScaleShell model={data.model}>
     {modes && <div className="am-reading sc-reading sc-screen">{comparison}</div>}
-    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={modes} explorerHeading={modes ? 'Explore a Mode' : undefined} hideScopeNote={modes}/>
+    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={hideInternalScaleSources(url)} explorerHeading={modes ? 'Explore a Mode' : undefined} hideScopeNote={modes}/>
     <ScaleAdLayoutSlot id="scale-family-after-workspace"/>
     <div className="am-reading sc-reading sc-screen">{!modes && comparison}{data.model.copy.sections.map((section) => <CopySection section={section} model={data.model} key={section.id}/>)}<FAQAndSources model={data.model}/></div>
   </ScaleShell>;

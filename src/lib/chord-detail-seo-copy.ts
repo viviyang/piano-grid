@@ -388,10 +388,10 @@ export const CHORD_DETAIL_SEO_COPY: Record<string, ChordDetailSeoCopy> = {
   "/chords/c-m7": {
     title: "Cm7 Chord: Piano Notes, Inversions, Sound & PDF",
     h1: "Cm7 Chord",
-    description: "Learn the Cm7 chord on piano: C, E♭, G and B♭. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
-    intro: "Cm7, also called C minor seventh, contains C, E♭, G and B♭. Use the piano diagram to find the notes, hear the chord and explore its inversions.",
-    theory: "The Cm7 chord is a minor triad plus a minor seventh.",
-    fingering: "Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.",
+    description: "Learn the Cm7 chord on piano: C, E♭, G and B♭. See the keyboard diagram and three inversions, hear the chord, practice the notes and download a printable reference.",
+    intro: "Cm7, also called C minor seventh, contains C–E♭–G–B♭ and uses the formula 1–♭3–5–♭7.",
+    theory: "Cm7 is a minor triad plus a minor seventh.",
+    fingering: "Fingering is not included on this page. The diagrams show note positions, not a required hand shape.",
     h2: {
       "C Minor Seventh Piano Chord": "Cm7 Chord",
       "C Minor Seventh keyboard and inversions": "Cm7 piano notes and keyboard diagram",
@@ -842,9 +842,9 @@ export const CHORD_DETAIL_SEO_COPY: Record<string, ChordDetailSeoCopy> = {
   "/chords/f-maj7": {
     title: "Fmaj7 Chord: Piano Notes, Inversions, Sound & PDF",
     h1: "Fmaj7 Chord",
-    description: "Learn the Fmaj7 chord on piano: F, A, C and E. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
-    intro: "Fmaj7, also called F major seventh, contains F, A, C and E. Use the piano diagram to find the notes, hear the chord and explore its inversions.",
-    theory: "The Fmaj7 chord is a major triad plus a major seventh.",
+    description: "Learn the Fmaj7 chord on piano: F, A, C and E. See the keyboard diagram and three inversions, hear the chord, practice the notes and download a printable reference.",
+    intro: "Fmaj7, also called F major seventh, contains F–A–C–E and uses the formula 1–3–5–7.",
+    theory: "Fmaj7 is a major triad plus a major seventh.",
     fingering: "Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.",
     h2: {
       "F Major Seventh Piano Chord": "Fmaj7 Chord",
@@ -1018,10 +1018,10 @@ export const CHORD_DETAIL_SEO_COPY: Record<string, ChordDetailSeoCopy> = {
   "/chords/g-maj7": {
     title: "Gmaj7 Chord: Piano Notes, Inversions, Sound & PDF",
     h1: "Gmaj7 Chord",
-    description: "Learn the Gmaj7 chord on piano: G, B, D and F♯. See keyboard diagrams, explore inversions, hear the chord and practice finding its notes.",
-    intro: "Gmaj7, also called G major seventh, contains G, B, D and F♯. Use the piano diagram to find the notes, hear the chord and explore its inversions.",
-    theory: "The Gmaj7 chord is a major triad plus a major seventh.",
-    fingering: "Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.",
+    description: "Learn the Gmaj7 chord on piano: G, B, D and F♯. See the keyboard diagram and three inversions, hear the chord, practice the notes and download a printable reference.",
+    intro: "Gmaj7, also called G major seventh, contains G–B–D–F♯ and uses the formula 1–3–5–7.",
+    theory: "Gmaj7 is a major triad plus a major seventh.",
+    fingering: "Fingering is not included on this page. The diagrams show note positions, not a required hand shape.",
     h2: {
       "G Major Seventh Piano Chord": "Gmaj7 Chord",
       "G Major Seventh keyboard and inversions": "Gmaj7 piano notes and keyboard diagram",

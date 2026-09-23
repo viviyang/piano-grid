@@ -7,6 +7,7 @@ import { scaleSequence } from '@/lib/scale-resolver';
 import type { ScaleDirection, ScaleHand, ScaleOption, ScalePitch } from '@/lib/scale-types';
 import type { useScaleAudio } from './use-scale-audio';
 import { emitScaleEvent } from '@/lib/scale-events';
+import { publicSourceAttribution } from '@/lib/seo-editorial';
 
 type Audio = ReturnType<typeof useScaleAudio>;
 
@@ -68,7 +69,7 @@ function ScaleSources({ option, print, concise = false }: { option: ScaleOption;
     <ul>{option.sources.map((source) => <li key={source.url}>
       <a href={source.url}>{source.publisher}: {source.title}</a>
       {print && <span className="sc-source-url"> ({source.url})</span>}
-      {concise ? <span className="sc-source-scope">{source.scope}</span> : <span className="sc-source-scope"><strong>Checked for:</strong> {source.scope}</span>}
+      {concise ? <span className="sc-source-scope">{publicSourceAttribution(source.scope)}</span> : <span className="sc-source-scope"><strong>Checked for:</strong> {source.scope}</span>}
       {!concise && <span className="sc-source-scope"><strong>Location:</strong> {source.locator}</span>}
     </li>)}</ul>
   </section>;

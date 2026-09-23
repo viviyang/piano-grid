@@ -123,6 +123,26 @@ export const SEO_COPY: Record<string, Copy> = {
   '/chords/extended': { title: 'Extended Chords: 9th, 11th & 13th Piano Chords | PianoGrid', h1: 'Extended Chords', description: 'Explore ninth, eleventh and thirteenth piano chords. Compare full formulas with explicit voicing examples, hear the notes and practise a selected layout.' },
   '/chords/altered': { title: 'Altered Dominant Chords: Piano Notes, Formulas & Voicings | PianoGrid', h1: 'Altered Dominant Chords', description: 'Compare explicit altered dominant chords on piano. Read changed degrees, hear written-note voicings, check omissions and practise a selected example.' },
   '/scales': { title: 'Piano Scales: Notes, Patterns & Fingering', description: 'Explore major, minor and other piano scales. See their notes and patterns, hear examples, and check available fingering before you practice.' },
+  '/scales/c-major': {
+    title: 'C Major Scale on Piano: Notes & Fingering | PianoGrid',
+    h1: 'C Major Scale on Piano',
+    description: 'Learn the C major scale on piano: C, D, E, F, G, A and B. See the key signature, keyboard notes, one-octave fingering, practice exercises and printable reference.',
+  },
+  '/scales/d-major': {
+    title: 'D Major Scale on Piano: Notes & Fingering | PianoGrid',
+    h1: 'D Major Scale on Piano',
+    description: 'Learn the D major scale on piano: D, E, F♯, G, A, B and C♯. See the key signature, keyboard notes, one-octave fingering, practice exercises and printable reference.',
+  },
+  '/chords/a-flat-major': {
+    title: 'A-flat Major Chord: Piano Notes, Inversions & PDF | PianoGrid',
+    h1: 'A-flat Major Chord',
+    description: 'Learn the A-flat major chord on piano: A♭, C and E♭. See the keyboard diagram, root position and two inversions, hear the chord and download a printable reference.',
+  },
+  '/chords/b-flat-minor': {
+    title: 'B-flat Minor Chord: Piano Notes, Inversions & PDF | PianoGrid',
+    h1: 'B-flat Minor Chord',
+    description: 'Learn the B-flat minor chord on piano: B♭, D♭ and F. See the keyboard diagram, root position and two inversions, hear the chord and download a printable reference.',
+  },
   '/scales/modes': {
     title: 'Scale Modes on Piano: 7 Modes, Notes & Patterns | PianoGrid',
     h1: 'Scale Modes on Piano',
@@ -253,7 +273,26 @@ export const SEO_COPY: Record<string, Copy> = {
   },
 };
 
-const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7', '/chords/b-m7', '/chords/f-7', '/chords/a-minor', '/chords/c-diminished', '/chords/e-diminished', '/chords/g-m7']);
+const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7', '/chords/b-m7', '/chords/f-7', '/chords/a-minor', '/chords/c-diminished', '/chords/e-diminished', '/chords/g-m7', '/chords/a-flat-major', '/chords/b-flat-minor', '/chords/c-m7', '/chords/f-maj7', '/chords/g-maj7']);
+
+const PUBLIC_SCALE_SOURCE_CLEANUP = new Set(['/scales/modes', '/scales/c-major', '/scales/a-minor', '/scales/blues', '/scales/d-major', '/scales/e-minor']);
+
+/** Hide source-record IDs and audit labels on selected public scale pages. Keep source names and links. */
+export function hideInternalScaleSources(url: string): boolean {
+  return PUBLIC_SCALE_SOURCE_CLEANUP.has(url);
+}
+
+export function publicSourceAttribution(scope: string): string {
+  return scope
+    .replace(/visually checked in the approved Scales plan evidence/gi, '')
+    .replace(/approved[- ]plan evidence/gi, '')
+    .replace(/;?\s*no contents verified/gi, '')
+    .replace(/\b(?:AT|AM|AN|PG|N2[A-D])-[A-Z0-9-]+\b/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.;])/g, '$1')
+    .replace(/^[,;.\s]+|[,;\s]+$/g, '')
+    .trim();
+}
 
 /** Hide internal review IDs and audit labels on selected public chord pages. Keep source names and links. */
 export function hideInternalSourceAudit(url: string): boolean {

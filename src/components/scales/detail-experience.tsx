@@ -12,7 +12,7 @@ import { emitScaleEvent } from '@/lib/scale-events';
 
 type Snapshot = { option: ScaleOption; hand: ScaleHand; direction: ScaleDirection; tempo: number };
 
-export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, tempoOptions, keySignature }: { options: ScaleOption[]; keyboardKeys: PianoKey[]; defaultForm: ScaleFormID; tempoOptions: number[]; keySignature: string }) {
+export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, tempoOptions, keySignature, conciseSources = false }: { options: ScaleOption[]; keyboardKeys: PianoKey[]; defaultForm: ScaleFormID; tempoOptions: number[]; keySignature: string; conciseSources?: boolean }) {
   const audio = useScaleAudio();
   const [form, setForm] = useState(defaultForm);
   const [hand, setHand] = useState<ScaleHand>('RH');
@@ -57,7 +57,7 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
         <label className="kn-field">Direction<select aria-label="Direction" value={direction} disabled={!audio.ready} onChange={(event) => change(() => setDirection(event.target.value as ScaleDirection))}><option value="ascending">Ascending</option><option value="descending">Descending</option><option value="up_down">Up and down</option></select></label>
         {tempoOptions.length > 1 ? <label className="kn-field">Tempo<select aria-label="Tempo" value={tempo} disabled={!audio.ready} onChange={(event) => change(() => setTempo(Number(event.target.value)))}>{tempoOptions.map((value) => <option key={value} value={value}>{value} BPM</option>)}</select></label> : <div className="sc-static-field"><span>Tempo</span><strong>{tempo} BPM</strong></div>}
       </div>
-      <ScaleReference option={option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={tempo} audio={audio} showSummary={false}/>
+      <ScaleReference option={option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={tempo} audio={audio} showSummary={false} conciseSources={conciseSources}/>
       <div className="sc-print-bar"><button type="button" className="am-button am-secondary" disabled={!audio.ready} onClick={startPrint}>Print current scale</button></div>
       <p role="status" className="kn-error">{printError}</p>
       <p className="sc-scope-note">Finger numbers identify fingers, not scale degrees. Only one-octave, separately checked rows are shown.</p>
@@ -66,7 +66,7 @@ export function ScaleDetailExperience({ options, keyboardKeys, defaultForm, temp
     </section>
     <div className="sc-print-only" data-print-scale={print.option.id} data-print-hand={print.hand} data-print-direction={print.direction} data-print-tempo={print.tempo}>
       <p className="sc-print-brand">{SITE_NAME}</p><div className="sc-print-title">{print.option.tonic} {print.option.formLabel}</div><p>Key signature: {keySignature}</p>
-      <ScaleReference {...print} keyboardKeys={keyboardKeys} print/>
+      <ScaleReference {...print} keyboardKeys={keyboardKeys} print conciseSources={conciseSources}/>
       <p className="sc-print-foot">One-octave reference. Finger numbers appear only for the hand and direction combinations covered by the sources listed above.</p>
     </div>
   </>;
