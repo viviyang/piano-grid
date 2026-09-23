@@ -6,6 +6,7 @@ import {finalizeChordDetailModel} from './chord-detail-model';
 import {isPublicRoute} from './site-routes';
 import {readMaster} from './site-content';
 import type {CenterItem,ChordCategoryModel} from './chord-content';
+import {publicAddedNoteCopy} from './seo-editorial';
 
 const packageRoot=resolve('docs/pianogrid-chords-n2d-v2');
 const detailRoot=resolve(packageRoot,'03_content/details');
@@ -83,7 +84,7 @@ export function getN2DChordDetail(url:N2DChordDetailRoute):ChordDetailModel{
  const related=new Map<string,{url:string;label:string;published:boolean}>();
  for(const edge of links.filter(edge=>edge.from===url))if(edge.to!==url&&isPublicRoute(edge.to))related.set(edge.to,{url:edge.to,label:edge.anchor,published:true});
  related.set('/chords/add',{url:'/chords/add',label:'Browse add9 and minor add9 chords',published:true});
- const blocks:Block[]=[{block_id:`${slug}-intro`,content:{...empty(raw.seo.h1),paragraphs:[raw.aliasPolicy,raw.definition.validationScope]}},{block_id:data.toolId,content:{...empty(data.toolHeading),paragraphs:[raw.positionPolicy.reason]}}];
+ const blocks:Block[]=[{block_id:`${slug}-intro`,content:{...empty(raw.seo.h1),paragraphs:[publicAddedNoteCopy(raw.aliasPolicy),publicAddedNoteCopy(raw.definition.validationScope)]}},{block_id:data.toolId,content:{...empty(data.toolHeading),paragraphs:[raw.positionPolicy.reason]}}];
  for(const content of raw.content.blocks)blocks.push({block_id:`${slug}-${content.id}`,content:{...empty(content.heading),paragraphs:[...content.paragraphs]}});
  const voicingBlock=blocks.find(block=>block.block_id===`${slug}-voicings`)!;
  voicingBlock.content.table={columns:['Example','Notation hint','Notes, low to high','Bass'],rows:voicings.map(item=>[item.inversion_label,item.chord_symbol,item.notes_low_to_high.map(note=>note.display_pitch).join('–'),item.bass_spelling])};

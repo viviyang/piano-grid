@@ -275,6 +275,32 @@ export const SEO_COPY: Record<string, Copy> = {
 
 const PUBLIC_SOURCE_CLEANUP = new Set(['/chords/c-7', '/chords/a-m7', '/chords/b-m7', '/chords/f-7', '/chords/a-minor', '/chords/c-diminished', '/chords/e-diminished', '/chords/g-m7', '/chords/a-flat-major', '/chords/b-flat-minor', '/chords/c-m7', '/chords/f-maj7', '/chords/g-maj7']);
 
+const PUBLIC_SOURCE_CODE_CLEANUP = new Set(['/chords/c-add9']);
+
+/** Hide review identifiers only. The source scope and rights limitations stay visible. */
+export function hideInternalSourceCodes(url: string): boolean {
+  return PUBLIC_SOURCE_CODE_CLEANUP.has(url);
+}
+
+/**
+ * Added-note packs store build directives and validator fragments in fields that reach the public
+ * intro. Replace those exact strings with the reader-facing theory scope they were standing in for.
+ */
+const ADDED_NOTE_PUBLIC_COPY = new Map([
+  [
+    'Contextual notational variants only; do not make duplicate pages or universally rewrite symbols.',
+    'On this page, add9 and add2 label the same added note in different notation rather than two separate chords.',
+  ],
+  [
+    'complete four-member add9/minorAdd9 references; not every possible performance omission',
+    'The examples below are complete four-note references. They do not list every omission a performer might make.',
+  ],
+]);
+
+export function publicAddedNoteCopy(text: string): string {
+  return ADDED_NOTE_PUBLIC_COPY.get(text) ?? text;
+}
+
 const PUBLIC_SCALE_SOURCE_CLEANUP = new Set(['/scales/modes', '/scales/c-major', '/scales/a-minor', '/scales/blues', '/scales/d-major', '/scales/e-minor']);
 
 /** Hide source-record IDs and audit labels on selected public scale pages. Keep source names and links. */

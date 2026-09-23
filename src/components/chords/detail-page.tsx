@@ -2,7 +2,7 @@ import type { ChordDetailModel } from '@/lib/a-minor-types';
 import { AMinorExperience as ChordDetailExperience, InversionRow, PrintActions } from '../a-minor/experience';
 import { ChordPageToc, ChordSectionTitle } from './page-toc';
 import { PageBreadcrumb } from '@/components/ui/breadcrumb';
-import { editorialHeading, hideInternalSourceAudit } from '@/lib/seo-editorial';
+import { editorialHeading, hideInternalSourceAudit, hideInternalSourceCodes } from '@/lib/seo-editorial';
 import { isPageFix16 } from '@/lib/page-fix-16';
 import { FingeringGuide, ChordSourceList } from './fingering-guide';
 import { ChordBuilderPractice } from './chord-builder-practice';
@@ -14,7 +14,7 @@ import './chord-learning.css';
 export function ChordDetailPage({model,pilot=false}:{model:ChordDetailModel;pilot?:boolean}) {
   const {data,blocks,byId,answer,introduction,searchSections}=model;
   const prefix=data.namespace;
-  const compactSources=isPageFix16(data.url);
+  const compactSources=isPageFix16(data.url)||hideInternalSourceCodes(data.url);
   const publicSources=hideInternalSourceAudit(data.url);
   const definition=data.chord.definition;
   const category={label:definition.categoryLabel,href:definition.categoryRoute};

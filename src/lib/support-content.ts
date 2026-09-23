@@ -205,6 +205,29 @@ export function getChordProgressions() {
   return{model:{...model,scope:'Eight named practice patterns mapped to twelve suitable key contexts each. Symbols, formulas and note spellings come from the validated progression dataset.'},data:{patterns,examples,defaultExample:'pop-four-c-major',professionalReview:'pending'}};
 }
 
+const FINDER_READER_COPY: readonly [string, string | null, readonly string[]][] = [
+  ['how-to-enter', null, [
+    'Select the distinct notes you are playing on the one-octave keyboard. You choose note names rather than registers, so a C in any octave is the same selection here.',
+    'If you know which of those notes is lowest, choose it under Lowest note. Leaving it unset means the bass is unknown, so every root that fits the same notes stays in the candidate list.',
+  ]],
+  ['read-results', null, [
+    'C, E and G supports C major. The same three notes with E as the lowest note are described more precisely as C/E, a C major chord with E in the bass.',
+    'Read the candidate name, the bass and the supported vocabulary together. A chord’s root is not always its lowest note, and a name missing from the supported set does not mean your notes are musically wrong.',
+  ]],
+  ['multiple-names', null, [
+    'The notes C, E, G and A can be read as C6 or Am7. With C set as the lowest note, the A-minor-seventh reading appears as Am7/C.',
+    'With A as the lowest note, Am7 and C6/A are both candidates. Musical context can favour one reading, but the notes on their own do not settle it.',
+  ]],
+  ['duplicates', 'Doubling a note changes spacing, not the note set', [
+    'Playing C in two octaves adds spacing, not a new note name. The finder compares note names, so a doubled C does not change the candidate list.',
+    'Spacing still matters at the piano. Use Lowest note to say which note is at the bottom, because that is what separates C major from C/E.',
+  ]],
+  ['no-match', 'When no supported match is found', [
+    'C and G contain no third, so this selection cannot decide between C major and C minor. That is a limit of the notes you entered, not proof that two notes cannot sound useful together.',
+    'When a selection falls outside the supported vocabulary, your note list stays visible and the result reports that no supported match was found rather than offering the nearest guess.',
+  ]],
+];
+
 export type FinderChordSource = { id: string; name: string; root: string; quality: string; url: string | null; tones: string[] };
 export type FinderChord = { id: string; name: string; symbol: string; root: string; rootPitchClass: number; quality: string; family:string; pitchClasses: number[]; tones: string[]; detailURL: string | null; destination:string; suppliedVoicings:{id:string;label:string;pitchClasses:number[];omittedDegrees:string[]}[] };
 
@@ -228,6 +251,23 @@ export function getChordFinder(sourceChords: FinderChordSource[]) {
       'The supported registry includes triads, power fifths, sixths, seventh chords, add chords, extended chords and explicit altered structures. Each family is validated before it enters this shared matcher.',
       limits.paragraphs[0],
     ];
+  }
+  // The prepared pack states these blocks as build rules and octave-entry examples. The keyboard above
+  // accepts note names plus an optional lowest note, so the public copy describes that input instead.
+  for (const [id, heading, paragraphs] of FINDER_READER_COPY) {
+    const block = blocks.find(item => item.id === id);
+    if (!block) throw new Error(`Missing finder block for reader copy: ${id}`);
+    if (heading) block.heading = heading;
+    block.paragraphs = [...paragraphs];
+  }
+  const questions = blocks.find(block => block.id === 'questions');
+  if (questions?.table) {
+    questions.table = {
+      columns: [...questions.table.columns],
+      rows: questions.table.rows.map(row => row[0] === 'Does an empty bass field mean the bass is unknown?'
+        ? [row[0], 'Yes. The finder works with note names rather than octaves, so an unset lowest note is treated as an unknown bass. Choose the lowest note when you know it.']
+        : [...row]),
+    };
   }
   return {
     model: { ...baseModel, scope: "Select the notes you're playing to find possible chord names. Add the bass note if you know it, then compare matching chords and inversions.", links,blocks },

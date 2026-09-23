@@ -1,0 +1,224 @@
+{
+  "executed_at": "2026-09-23T11:53:43.632Z",
+  "base": "http://127.0.0.1:3031",
+  "passed": 54,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/chords/finder 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/finder single H1",
+      "passed": true
+    },
+    {
+      "name": "/chords/finder canonical unchanged",
+      "passed": true
+    },
+    {
+      "name": "/chords/finder indexable",
+      "passed": true
+    },
+    {
+      "name": "/chords/finder no X-Robots-Tag",
+      "passed": true
+    },
+    {
+      "name": "/chords/finder no internal directives",
+      "passed": true
+    },
+    {
+      "name": "/tools/hear-the-difference 200",
+      "passed": true
+    },
+    {
+      "name": "/tools/hear-the-difference single H1",
+      "passed": true
+    },
+    {
+      "name": "/tools/hear-the-difference canonical unchanged",
+      "passed": true
+    },
+    {
+      "name": "/tools/hear-the-difference indexable",
+      "passed": true
+    },
+    {
+      "name": "/tools/hear-the-difference no X-Robots-Tag",
+      "passed": true
+    },
+    {
+      "name": "/tools/hear-the-difference no internal directives",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major 200",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major single H1",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major canonical unchanged",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major indexable",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major no X-Robots-Tag",
+      "passed": true
+    },
+    {
+      "name": "/scales/c-major no internal directives",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-add9 200",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-add9 single H1",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-add9 canonical unchanged",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-add9 indexable",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-add9 no X-Robots-Tag",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-add9 no internal directives",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/frequencies 200",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/frequencies single H1",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/frequencies canonical unchanged",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/frequencies indexable",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/frequencies no X-Robots-Tag",
+      "passed": true
+    },
+    {
+      "name": "/keyboard-notes/frequencies no internal directives",
+      "passed": true
+    },
+    {
+      "name": "finder describes the real input model",
+      "passed": true
+    },
+    {
+      "name": "finder keeps root, bass and vocabulary facts",
+      "passed": true
+    },
+    {
+      "name": "finder FAQ matches the note-name input",
+      "passed": true
+    },
+    {
+      "name": "finder keeps a no-JavaScript text reference",
+      "passed": true
+    },
+    {
+      "name": "Cadd9 replaces the build directive with reader-facing scope",
+      "passed": true
+    },
+    {
+      "name": "Cadd9 keeps notes, formula and comparisons",
+      "passed": true
+    },
+    {
+      "name": "Cadd9 keeps real source names and links",
+      "passed": true
+    },
+    {
+      "name": "Cadd9 keeps source scope and rights limits while hiding review codes",
+      "passed": true
+    },
+    {
+      "name": "Cadd9 keeps the voicing and fingering limits in the body",
+      "passed": true
+    },
+    {
+      "name": "Cadd9 does not overstate add9/add2 equivalence or ninth placement",
+      "passed": true
+    },
+    {
+      "name": "hear-the-difference explains the no-JavaScript state",
+      "passed": true
+    },
+    {
+      "name": "hear-the-difference keeps the accurate task description",
+      "passed": true
+    },
+    {
+      "name": "frequency chart states tuning basis and method",
+      "passed": true
+    },
+    {
+      "name": "C major keeps one-octave fingering and operations in HTML",
+      "passed": true
+    },
+    {
+      "name": "/chords/g-add9 shares the added-note cleanup without borrowing C data",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-madd9 shares the added-note cleanup without borrowing C data",
+      "passed": true
+    },
+    {
+      "name": "/chords/f-sharp-add9 shares the added-note cleanup without borrowing C data",
+      "passed": true
+    },
+    {
+      "name": "/chords/e-flat-madd9 shares the added-note cleanup without borrowing C data",
+      "passed": true
+    },
+    {
+      "name": "/chords/c-7 out-of-scope page unchanged",
+      "passed": true
+    },
+    {
+      "name": "/chords/by-key out-of-scope page unchanged",
+      "passed": true
+    },
+    {
+      "name": "/chord-progressions out-of-scope page unchanged",
+      "passed": true
+    },
+    {
+      "name": "/scales/d-major out-of-scope page unchanged",
+      "passed": true
+    },
+    {
+      "name": "robots.txt unchanged and allows crawling",
+      "passed": true
+    },
+    {
+      "name": "sitemap keeps clean business URLs",
+      "passed": true
+    }
+  ]
+}

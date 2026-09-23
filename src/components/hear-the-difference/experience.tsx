@@ -235,6 +235,10 @@ export function HearTheDifferenceExperience({
         <p className="hd-lead">Two chords. One note moves. Listen to the comparison, then find the voice that changed.</p>
       </section>
 
+      <noscript>
+        <p className="hd-muted">Enable JavaScript to play the comparison and answer the challenge. The interval explanation and the steps for playing both chords yourself remain readable below.</p>
+      </noscript>
+
       <section className="hd-challenge" id="challenge" ref={challengeRef} aria-labelledby="hd-challenge-title">
         <div className="hd-challenge-head">
           <div>
