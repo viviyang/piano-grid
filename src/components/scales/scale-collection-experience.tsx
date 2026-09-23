@@ -13,13 +13,15 @@ import { SITE_NAME } from '@/lib/site-config';
 
 type Snapshot = { exampleID: string; option: (ScaleFamilyExample | ArpeggioExample)['option']; hand: ScaleHand; eventHand: ScaleHand | null; handLabel: string; direction: ScaleDirection };
 
-export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExampleID, kind, scope, conciseSources = false }: {
+export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExampleID, kind, scope, conciseSources = false, explorerHeading, hideScopeNote = false }: {
   examples: Array<ScaleFamilyExample | ArpeggioExample>;
   keyboardKeys: PianoKey[];
   defaultExampleID: string;
   kind: 'scale' | 'arpeggio';
   scope: string;
   conciseSources?: boolean;
+  explorerHeading?: string;
+  hideScopeNote?: boolean;
 }) {
   const audio = useScaleAudio();
   const [exampleID, setExampleID] = useState(defaultExampleID);
@@ -64,16 +66,18 @@ export function ScaleCollectionExperience({ examples, keyboardKeys, defaultExamp
     try { window.print(); } catch { setPrintError('Printing could not start. Please use your browser’s print command.'); }
   };
 
-  return <><section className="am-tool sc-tool sc-screen sc-collection" aria-label={`${selected.collectionLabel} explorer`} data-current-scale={selected.id} data-view-id={arpeggio?.viewID ?? undefined}>
-    <ScaleCurrentAnswer option={selected.option} hand={hand} direction={direction} tempo={60} objectLabel={kind} heading={selected.label} handLabelOverride={selectedHandLabel}/>
+  const exampleLabel = kind === 'arpeggio' ? 'Reference view' : explorerHeading ? 'Mode' : 'Example';
+  return <><section className="am-tool sc-tool sc-screen sc-collection" id={explorerHeading ? 'explore-mode' : undefined} aria-labelledby={explorerHeading ? 'explore-mode-heading' : undefined} aria-label={explorerHeading ? undefined : `${selected.collectionLabel} explorer`} data-current-scale={selected.id} data-view-id={arpeggio?.viewID ?? undefined}>
+    {explorerHeading && <h2 className="sc-explorer-heading" id="explore-mode-heading">{explorerHeading}</h2>}
+    <ScaleCurrentAnswer option={selected.option} hand={hand} direction={direction} tempo={60} objectLabel={kind} heading={selected.label} handLabelOverride={selectedHandLabel} fieldName={explorerHeading ? 'Selected mode' : undefined} headingLevel={explorerHeading ? 'h3' : 'h2'}/>
     <div className="sc-controls">
-      <label className="kn-field">{kind === 'arpeggio' ? 'Reference view' : 'Example'}<select aria-label={kind === 'arpeggio' ? 'Reference view' : 'Example'} value={selected.id} disabled={!audio.ready} onChange={(event) => change(() => setExampleID(event.target.value))}>{examples.map((example) => <option value={example.id} key={example.id}>{example.label}</option>)}</select></label>
+      <label className="kn-field">{exampleLabel}<select aria-label={exampleLabel} value={selected.id} disabled={!audio.ready} onChange={(event) => change(() => setExampleID(event.target.value))}>{examples.map((example) => <option value={example.id} key={example.id}>{example.label}</option>)}</select></label>
       {kind === 'arpeggio' && arpeggio?.handSelectable && <label className="kn-field">Hand<select aria-label="Hand" value={hand} disabled={!audio.ready} onChange={(event) => change(() => setHand(event.target.value as ScaleHand))}><option value="RH">Right hand</option><option value="LH">Left hand</option></select></label>}
       <label className="kn-field">Direction<select aria-label="Direction" value={direction} disabled={!audio.ready} onChange={(event) => change(() => setDirection(event.target.value as ScaleDirection))}><option value="ascending">Ascending</option><option value="descending">Descending</option><option value="up_down">Up and down</option></select></label>
     </div>
     <p className="sc-collection-summary">{selected.summary}</p><p>{selected.comparison}</p>
     <ScaleReference option={selected.option} keyboardKeys={keyboardKeys} hand={hand} direction={direction} tempo={60} audio={audio} showSummary={false} playLabel={kind === 'arpeggio' ? 'Play arpeggio' : 'Play scale'} handLabelOverride={selectedHandLabel} eventHand={eventHand} conciseSources={conciseSources}/>
-    <p className="sc-scope-note">Current collection: {scope}. Unknown fingering remains notes-only and is never copied from the previous selection.</p>
+    {!hideScopeNote && <p className="sc-scope-note">Current collection: {scope}. Unknown fingering remains notes-only and is never copied from the previous selection.</p>}
     {eventHand !== null && <><ScaleQuiz key={`quiz:${selected.id}:${hand}:${direction}`} option={selected.option} hand={hand} direction={direction} keyboardKeys={keyboardKeys} ready={audio.ready}/><ScalePractice key={`practice:${selected.id}:${hand}:${direction}`} option={selected.option} hand={hand} direction={direction} audio={audio} ready={audio.ready}/></>}
     {eventHand === null && <p className="sc-scope-note">This treble reference is not assigned to a hand and has no fingering or guided single-hand practice.</p>}
     <div className="sc-print-bar"><button type="button" className="am-button am-secondary" onClick={startPrint}>Print current {kind}</button></div>

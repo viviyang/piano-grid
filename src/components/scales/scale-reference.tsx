@@ -14,7 +14,7 @@ const display = (value: string) => value.replaceAll('##', '𝄪').replaceAll('bb
 const directionLabel: Record<ScaleDirection, string> = { ascending: 'Ascending', descending: 'Descending', up_down: 'Up and down' };
 const handLabel: Record<ScaleHand, string> = { RH: 'Right hand', LH: 'Left hand' };
 
-export function ScaleCurrentAnswer({ option, hand, direction, tempo, objectLabel = 'scale', heading, handLabelOverride }: { option: ScaleOption; hand: ScaleHand; direction: ScaleDirection; tempo: number; objectLabel?: 'scale' | 'arpeggio'; heading?: string; handLabelOverride?: string }) {
+export function ScaleCurrentAnswer({ option, hand, direction, tempo, objectLabel = 'scale', heading, handLabelOverride, fieldName, headingLevel = 'h2' }: { option: ScaleOption; hand: ScaleHand; direction: ScaleDirection; tempo: number; objectLabel?: 'scale' | 'arpeggio'; heading?: string; handLabelOverride?: string; fieldName?: string; headingLevel?: 'h2' | 'h3' }) {
   const playback = scaleSequence(option, hand, direction);
   const directionSteps = playback.slice(1).map((item, index) => Math.abs(item.midi - playback[index].midi));
   const low = playback.reduce((current, pitch) => pitch.midi < current.midi ? pitch : current);
@@ -23,9 +23,10 @@ export function ScaleCurrentAnswer({ option, hand, direction, tempo, objectLabel
   const movement = direction === 'up_down'
     ? `${display(playback[0].note)} → ${display(option.sequences[hand].ascending.at(-1)!.note)} → ${display(playback.at(-1)!.note)}`
     : `${display(playback[0].note)} → ${display(playback.at(-1)!.note)}`;
+  const ResultHeading = headingLevel;
   return <div className="sc-current-answer" aria-live="polite">
     <div className="sc-result-head">
-      <div><span className="sc-field-name">Current {objectLabel}</span><h2>{heading ?? `${display(option.tonic)} ${option.formLabel}`}</h2></div>
+      <div><span className="sc-field-name">{fieldName ?? `Current ${objectLabel}`}</span><ResultHeading>{heading ?? `${display(option.tonic)} ${option.formLabel}`}</ResultHeading></div>
       <dl className="sc-result-meta"><div><dt>Hand</dt><dd>{handLabelOverride ?? handLabel[hand]}</dd></div><div><dt>Range</dt><dd>{range} · 1 octave</dd></div><div><dt>Demo / print tempo</dt><dd>{tempo} BPM</dd></div></dl>
     </div>
     <p className="sc-note-line" aria-label={`${option.formLabel} ${directionLabel[direction]} notes`}>{playback.map((item) => display(item.spelling)).join(' – ')}</p>

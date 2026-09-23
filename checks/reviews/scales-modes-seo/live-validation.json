@@ -1,0 +1,131 @@
+{
+  "executed_at": "2026-09-23T05:28:01.974Z",
+  "base": "http://127.0.0.1:3022",
+  "passed": 29,
+  "failed": 0,
+  "playwright": {
+    "ran": true,
+    "notes": [
+      "play: Playing scale…",
+      "practice state: preparing"
+    ]
+  },
+  "results": [
+    {
+      "name": "modes 200",
+      "passed": true
+    },
+    {
+      "name": "modes title",
+      "passed": true
+    },
+    {
+      "name": "modes exactly one H1",
+      "passed": true
+    },
+    {
+      "name": "modes keyword in Title/H1",
+      "passed": true
+    },
+    {
+      "name": "modes description",
+      "passed": true
+    },
+    {
+      "name": "modes intro",
+      "passed": true
+    },
+    {
+      "name": "modes canonical",
+      "passed": true
+    },
+    {
+      "name": "modes robots index,follow",
+      "passed": true
+    },
+    {
+      "name": "comparison before explorer",
+      "passed": true
+    },
+    {
+      "name": "comparison heading",
+      "passed": true
+    },
+    {
+      "name": "explorer heading",
+      "passed": true
+    },
+    {
+      "name": "educational headings",
+      "passed": true
+    },
+    {
+      "name": "kept sections",
+      "passed": true
+    },
+    {
+      "name": "seven modes and C spellings",
+      "passed": true
+    },
+    {
+      "name": "no internal QA copy",
+      "passed": true
+    },
+    {
+      "name": "source links kept",
+      "passed": true
+    },
+    {
+      "name": "blues 200 unchanged family page",
+      "passed": true
+    },
+    {
+      "name": "blues keeps comparison heading",
+      "passed": true
+    },
+    {
+      "name": "blues keeps Current scale",
+      "passed": true
+    },
+    {
+      "name": "sitemap still lists modes",
+      "passed": true
+    },
+    {
+      "name": "robots unchanged",
+      "passed": true
+    },
+    {
+      "name": "live one H1",
+      "passed": true
+    },
+    {
+      "name": "mode selector",
+      "passed": true
+    },
+    {
+      "name": "play clicked",
+      "passed": true
+    },
+    {
+      "name": "quiz works",
+      "passed": true
+    },
+    {
+      "name": "practice starts",
+      "passed": true
+    },
+    {
+      "name": "print snapshot",
+      "passed": true
+    },
+    {
+      "name": "overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "overflow 390",
+      "passed": true
+    }
+  ]
+}

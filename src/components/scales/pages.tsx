@@ -8,6 +8,7 @@ import { ScaleDetailExperience } from './detail-experience';
 import { ScaleCollectionExperience } from './scale-collection-experience';
 import { PageBreadcrumb } from '@/components/ui/breadcrumb';
 import { SCALE_FAMILY_ROUTES } from '@/lib/scale-completion-types';
+import { editorialHeading, editorialIntro, editorialSectionHeading } from '@/lib/seo-editorial';
 import { ScaleTrackedLink } from './scale-tracked-link';
 import { ScaleAdLayoutSlot } from './scale-ad-layout-slot';
 import '@/app/chords/a-minor/a-minor.css';
@@ -15,12 +16,18 @@ import '@/components/keyboard-notes/keyboard-notes.css';
 import './scales.css';
 
 const display = (value: string) => value.replaceAll('##', '𝄪').replaceAll('bb', '𝄫').replaceAll('#', '♯').replaceAll('b', '♭');
+const wholeHalfPattern = (steps: number[]) => steps.map((step) => (step === 2 ? 'W' : step === 1 ? 'H' : String(step))).join('–');
 
 function ScaleShell({ model, children }: { model: ScalePageModel; children: ReactNode }) {
   validateCompletionAuthoringPage(model.url);
   const detail = model.url !== '/scales';
-  return <div className="am-page sc-page"><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Scales"/><main id="main" className="pr-container" tabIndex={-1}>
-    <header className="am-page-heading sc-screen"><PageBreadcrumb items={detail ? [{ label: 'Scales', href: '/scales' }, { label: model.copy.h1.replace(/:.*$/, '') }] : [{ label: 'Scales' }]}/><h1>{model.copy.h1}</h1><p className="am-direct-answer">{model.copy.intro}</p><nav className="sc-jumps" aria-label="On this page">{model.copy.jumps.map((jump) => <a href={jump.href} key={jump.href}>{jump.label}</a>)}</nav></header>
+  const h1 = editorialHeading(model.url, model.copy.h1);
+  const intro = editorialIntro(model.url, model.copy.intro);
+  const jumps = model.url === '/scales/modes'
+    ? [{ label: 'Compare the Seven Scale Modes', href: '#comparison' }, { label: 'Explore a Mode', href: '#explore-mode' }, ...model.copy.jumps.map((jump) => ({ ...jump, label: editorialSectionHeading(model.url, jump.label) }))]
+    : model.copy.jumps;
+  return <div className={`am-page sc-page${model.url === '/scales/modes' ? ' sc-modes' : ''}`}><a className="am-skip" href="#main">Skip to content</a><SiteHeader search={null} current="Scales"/><main id="main" className="pr-container" tabIndex={-1}>
+    <header className="am-page-heading sc-screen"><PageBreadcrumb items={detail ? [{ label: 'Scales', href: '/scales' }, { label: h1.replace(/:.*$/, '') }] : [{ label: 'Scales' }]}/><h1>{h1}</h1><p className="am-direct-answer">{intro}</p><nav className="sc-jumps" aria-label="On this page">{jumps.map((jump) => <a href={jump.href} key={jump.href}>{jump.label}</a>)}</nav></header>
     <noscript><p className="sc-nojs-note">Enable JavaScript for audio and answer checking. The reference and static answers remain available.</p></noscript>{children}
   </main><SiteFooter url={model.url}/></div>;
 }
@@ -40,13 +47,13 @@ function CopySection({ section, model, children }: { section: ScaleCopySection; 
   const id = block ? `sc-${block.id}` : section.id;
   return <section className="am-content-section sc-copy-section" id={id} data-block-id={block?.id} tabIndex={-1} aria-labelledby={`${id}-heading`}>
     {(compatibilityAnchors[block?.id ?? ''] ?? []).map((anchor) => <span className="sc-anchor" id={anchor} key={anchor} aria-hidden="true"/>)}
-    <h2 id={`${id}-heading`}>{section.heading}</h2><div className="am-content-body">
+    <h2 id={`${id}-heading`}>{editorialSectionHeading(model.url, section.heading)}</h2><div className="am-content-body">
       {block && <p className="sc-preserved-copy">{block.body}</p>}
       {section.noteLines?.map((line) => <p className="sc-copy-note-line" key={line}>{display(line)}</p>)}
       {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
       {section.table && <DataTable label={section.table.label} columns={section.table.columns} rows={section.table.rows}/>} 
       {children}
-      {section.links && <nav className="sc-related" aria-label={`${section.heading} links`}>{section.links.map((link) => <ScaleTrackedLink event="related" className="am-button am-tertiary" href={link.href} key={link.href}>{link.label}</ScaleTrackedLink>)}</nav>}
+      {section.links && <nav className="sc-related" aria-label={`${editorialSectionHeading(model.url, section.heading)} links`}>{section.links.map((link) => <ScaleTrackedLink event="related" className="am-button am-tertiary" href={link.href} key={link.href}>{link.label}</ScaleTrackedLink>)}</nav>}
     </div>
   </section>;
 }
@@ -55,7 +62,7 @@ function FAQAndSources({ model }: { model: ScalePageModel }) {
   const concise = model.url === '/scales/modes';
   return <>
     <section className="am-content-section sc-copy-section" id="faq"><h2>Frequently asked questions</h2><div className="am-content-body sc-faq-list">{model.copy.faqs.map((faq) => <details key={faq.id ?? faq.question} data-faq-id={faq.id}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
-    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? 'These references support the mode notes and spellings on this page.' : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} - {source.title}</a></h3>{concise ? <p>{source.scope}</p> : <><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></>}</article>)}</div></div></section>
+    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? 'References for the mode notes, interval patterns and C examples on this page.' : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} — {source.title}</a></h3>{concise ? <p>{source.scope}</p> : <><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></>}</article>)}</div></div></section>
   </>;
 }
 
@@ -113,12 +120,32 @@ export function ScaleDetailPage({ url }: { url: ScaleDetailRoute }) {
   </ScaleShell>;
 }
 
+function FamilyComparison({ url, data }: { url: ScaleFamilyRoute; data: ReturnType<typeof getScaleFamily> }) {
+  const modes = url === '/scales/modes';
+  const columns = modes ? ['Mode', 'Notes on C', 'Whole/half-step pattern', 'Semitone pattern'] : ['Example', 'Ascending notes', 'Interval steps'];
+  const rows = data.examples.map((example) => {
+    const notes = example.option.sequences.RH.ascending.map((note) => display(note.spelling)).join(' – ');
+    const semitones = example.option.semitoneSteps.join(modes ? '–' : ' – ');
+    return modes ? [example.option.formLabel, notes, wholeHalfPattern(example.option.semitoneSteps), semitones] : [example.label, notes, semitones];
+  });
+  return <section className="am-content-section" id="comparison">
+    <h2>{modes ? 'Compare the Seven Scale Modes' : 'Complete supported comparison'}</h2>
+    <div className="am-content-body">
+      <p>{modes ? 'Each row keeps C as the tonic so the seven mode patterns can be compared side by side. The last C repeats the tonic one octave higher.' : 'This table lists every named example supported on this page. The final repeated note is the octave endpoint.'}</p>
+      <DataTable label={modes ? 'Seven scale modes on C' : `${data.model.title} supported examples`} columns={columns} rows={rows}/>
+    </div>
+  </section>;
+}
+
 export function ScaleFamilyPage({ url }: { url: ScaleFamilyRoute }) {
   const data = getScaleFamily(url);
+  const modes = url === '/scales/modes';
+  const comparison = <FamilyComparison url={url} data={data}/>;
   return <ScaleShell model={data.model}>
-    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={url === '/scales/modes'}/>
+    {modes && <div className="am-reading sc-reading sc-screen">{comparison}</div>}
+    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={modes} explorerHeading={modes ? 'Explore a Mode' : undefined} hideScopeNote={modes}/>
     <ScaleAdLayoutSlot id="scale-family-after-workspace"/>
-    <div className="am-reading sc-reading sc-screen"><section className="am-content-section" id="comparison"><h2>Complete supported comparison</h2><div className="am-content-body"><p>This table lists every named example supported on this page. The final repeated note is the octave endpoint.</p><DataTable label={`${data.model.title} supported examples`} columns={['Example', 'Ascending notes', 'Interval steps']} rows={data.examples.map((example) => [example.label, example.option.sequences.RH.ascending.map((note) => display(note.spelling)).join(' – '), example.option.semitoneSteps.join(' – ')])}/></div></section>{data.model.copy.sections.map((section) => <CopySection section={section} model={data.model} key={section.id}/>)}<FAQAndSources model={data.model}/></div>
+    <div className="am-reading sc-reading sc-screen">{!modes && comparison}{data.model.copy.sections.map((section) => <CopySection section={section} model={data.model} key={section.id}/>)}<FAQAndSources model={data.model}/></div>
   </ScaleShell>;
 }
 
