@@ -1,8 +1,8 @@
 {
   "stage": "07-site-integration",
-  "executed_at": "2026-09-18T05:24:21.958Z",
+  "executed_at": "2026-09-24T11:05:12.581Z",
   "runtime": "v24.14.1",
-  "passed": 565,
+  "passed": 568,
   "failed": 0,
   "warnings": [
     "source-manifest 的规划 Markdown 缺失记录已过时；当前文件存在且已对照内容包基线哈希验证，详见 local-validation.md。"
@@ -2714,12 +2714,27 @@
       "detail": ""
     },
     {
+      "name": "Root layout loads Microsoft Clarity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Clarity uses official tag snippet",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "Root layout: no business chrome",
       "passed": true,
       "detail": ""
     },
     {
       "name": "Root layout: no external font",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No Clarity npm package",
       "passed": true,
       "detail": ""
     },

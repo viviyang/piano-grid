@@ -70,19 +70,25 @@ function PianoKeyboard({compact=false,active,sounding,onPlay}:{compact?:boolean;
 
 export function HomePianoDemo({ chord, copy }: { chord: HomeChord; copy: AudioCopy }) {
   const sound = useHomeAudio(copy);
+  const keyboardScroll = useRef<HTMLDivElement>(null);
   const notes = chord.voicing.notes_low_to_high.map(note => note.display_pitch);
   const [paused,setPaused]=useState(true),[motionStep,setMotionStep]=useState(3);
   useEffect(()=>{if(paused)return;const id=window.setInterval(()=>setMotionStep(step=>(step+1)%4),820);return()=>window.clearInterval(id);},[paused]);
+  useEffect(()=>{
+    const scroller=keyboardScroll.current;
+    const selected=scroller?.querySelector<HTMLButtonElement>('button[data-midi="57"]');
+    if(scroller&&selected&&scroller.scrollWidth>scroller.clientWidth) scroller.scrollLeft=selected.offsetLeft-scroller.clientWidth/3;
+  },[]);
   const motionSequence:number[][]=[[57],[57,60],[57,60,64],[]];
   const motionNotes=paused?[57,60,64]:motionSequence[motionStep] ?? [];
   const active=[...new Set([...motionNotes,...sound.sounding])];
   return <section className="ph-piano-stage" aria-labelledby="home-piano-title" data-audio-state={sound.audio.state} data-motion={paused?'paused':'running'}>
-    <h2 id="home-piano-title" className="pr-sr-only">Interactive A minor keyboard</h2>
-    <div className="ph-stage-label"><span>One chord, three notes</span><span className="ph-stage-line"/><span>A minor</span></div>
-    <div className="ph-chord-bubble" aria-label={`A minor chord: ${notes.join(', ')}`}><span className="ph-chord-bubble-name">A minor</span><span className="ph-chord-bubble-divider"/>{notes.map(note=><span className="ph-note-chip" key={note}>{note.replace(/\d+$/,'')}<small>{note.match(/\d+$/)?.[0]}</small></span>)}</div>
-    <div className="ph-instrument pg-piano"><div className="ph-piano-fallboard"><span>{SITE_NAME}</span></div><div className="ph-desktop-keyboard"><PianoKeyboard active={active} sounding={sound.sounding} onPlay={sound.playNote}/></div><div className="ph-mobile-keyboard"><PianoKeyboard compact active={active} sounding={sound.sounding} onPlay={sound.playNote}/></div><div className="ph-piano-front"/></div>
-    <div className="ph-piano-controls"><p className="ph-sound-note"><Icon name="sequence"/><span>Try a key. Sound only on tap.</span></p><button className="ph-hear-chord" type="button" disabled={!sound.ready||sound.audio.state==='unavailable'} onClick={()=>sound.audio.state==='playing'?sound.stop():sound.play(chord.voicing,'together')}><Icon name={sound.audio.state==='playing'?'stop':'play'}/><span>{sound.audio.state==='playing'?'Stop sound':'Hear A minor'}</span></button><button className="ph-motion-button" type="button" aria-pressed={paused} onClick={()=>setPaused(value=>!value)}><Icon name={paused?'play':'stop'}/><span>{paused?'Resume motion':'Pause motion'}</span></button></div>
-    <p className="ph-synth-label">Synthesized tone preview · A3–C4–E4 · Not a fingering lesson</p><p className="pr-sr-only" role="status" aria-live="polite">{sound.audio.message}</p>
+    <p className="ph-stage-label">Try it here · One chord, three notes</p>
+    <h2 id="home-piano-title">Interactive A minor keyboard</h2>
+    <div className="ph-chord-bubble" aria-label={`A minor chord: ${notes.join(', ')}`}>{notes.map(note=><span className="ph-note-chip" key={note}>{note.replace(/\d+$/,'')}<small>{note.match(/\d+$/)?.[0]}</small></span>)}</div>
+    <div className="ph-keyboard-scroll" ref={keyboardScroll}><div className="ph-instrument pg-piano"><div className="ph-piano-fallboard" aria-hidden="true"><span>{SITE_NAME}</span></div><div className="ph-desktop-keyboard"><PianoKeyboard active={active} sounding={sound.sounding} onPlay={sound.playNote}/></div><div className="ph-piano-front"/></div></div>
+    <div className="ph-piano-controls"><button className="ph-hear-chord" type="button" disabled={!sound.ready||sound.audio.state==='unavailable'} onClick={()=>sound.audio.state==='playing'?sound.stop():sound.play(chord.voicing,'together')}><Icon name={sound.audio.state==='playing'?'stop':'play'}/><span>{sound.audio.state==='playing'?'Stop sound':'Hear A minor'}</span></button><p className="ph-sound-note">Tap a key, or hear all three notes together.</p><button className="ph-motion-button" type="button" aria-pressed={paused} onClick={()=>setPaused(value=>!value)}><span>{paused?'Resume motion':'Pause motion'}</span></button></div>
+    <p className="ph-synth-label">Sound only on tap · Synthesized tone preview · A3–C4–E4 · Not a fingering lesson</p><p className="pr-sr-only" role="status" aria-live="polite">{sound.audio.message}</p>
   </section>;
 }
 
@@ -109,6 +115,6 @@ export function HomeChordDiscovery({ chords, copy }: { chords: [HomeChord, HomeC
     <button className="ph-study-play" type="button" disabled={!sound.ready || sound.audio.state === 'unavailable'} onClick={() => sound.audio.state==='playing'?sound.stop():sound.play(selected.voicing, 'together')}>
       <Icon name="play" /><span>Hear {selected.name}</span>
     </button>
-    <p className="ph-study-footnote" role="status" aria-live="polite">{sound.audio.message || 'Synthesized tone preview'}</p>
+    <p className="ph-study-footnote" role="status" aria-live="polite">{sound.audio.message || 'Choose a chord, then tap Hear. Sound only on tap.'}</p>
   </div>;
 }
