@@ -5,6 +5,8 @@ Foundation、00–08 与首轮 17 条路由已完成；08 独立结论为 `PASS_
 
 ## Read first
 
+所有在本仓库工作的 agent 在新增、修改或审查前端页面、组件和样式前，必须读取 `docs/design/COMPONENT-RULES.md`，并核对 `docs/design/design-system.md`、`docs/design/tokens.json`、`src/styles/tokens.css` 与相关页面的实际设计依据。组件选用与复用规范只在 `COMPONENT-RULES.md` 维护；本文件和其他工具入口仅引用它，不复制规则正文。Foundation 文档中的“不创建组件”等历史阶段描述不能当作当前已授权实现的禁令。任务交接须注明所读规则版本、涉及组件和验证状态。
+
 页面规划、内容、TDH、导航及 SEO 修改还必须读取 `docs/seo/TDH-RULES.md`。这是 PianoGrid 专属规则；不要把本站路由、关键词或代码入口推广到其他项目。
 
 1. docs/design/design-system.md
