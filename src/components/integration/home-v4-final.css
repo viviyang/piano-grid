@@ -1,6 +1,6 @@
 /* HOME-V4-FINAL-DESIGN-R2-20260924: homepage presentation only. */
 .home-v4-final {
-  --home-hero-overlay: linear-gradient(90deg, var(--background) 0%, var(--background) 31%, rgb(255 255 255 / .97) 40%, rgb(255 255 255 / .8) 49%, rgb(255 255 255 / .35) 60%, transparent 76%);
+  --home-hero-overlay: linear-gradient(90deg, var(--background) 0%, var(--background) 29%, rgb(255 255 255 / .82) 38%, rgb(255 255 255 / .5) 47%, rgb(255 255 255 / .1) 57%, transparent 68%);
   --home-preview-blue: #f0f5ff;
   --home-preview-lilac: #f3efff;
   --home-preview-pink: #f8f1f8;
@@ -29,7 +29,7 @@
 .home-v4-final .hv-free-badge{display:inline-flex;align-items:center;min-height:2rem;margin:0 0 .65rem;padding:.3rem .8rem;border:1px solid color-mix(in srgb,var(--primary) 23%,var(--border));border-radius:2rem;background:rgb(255 255 255 / .92);color:var(--primary);font-size:.72rem;font-weight:750;letter-spacing:.05em;text-transform:uppercase}
 .home-v4-final .ph-hero-copy>.ph-eyebrow{display:block;justify-content:flex-start;color:var(--muted-foreground);font-size:.68rem}
 .home-v4-final .ph-hero-copy>.ph-eyebrow>span{display:none}
-.home-v4-final .ph-hero h1{max-width:35rem;font-size:clamp(2.65rem,4vw,3.6rem);font-weight:650;line-height:1.09;letter-spacing:-.045em}
+.home-v4-final .ph-hero h1{max-width:35rem;font-size:clamp(2.65rem,4vw,3.6rem);font-weight:510;line-height:1.09;letter-spacing:-.045em}
 .home-v4-final .ph-hero-title-line{padding:0;overflow:visible}
 .home-v4-final .ph-hero-title-line>*{animation:none}
 .home-v4-final .ph-hero h1 em{margin-top:.2rem;color:var(--primary);font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.13}

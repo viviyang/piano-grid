@@ -90,7 +90,13 @@ function validateRaw(raw:RawDetail){
   return definition;
 }
 
-function sourcesFor(raw:RawDetail):ChordSource[]{return raw.sources.map(id=>{const source=sourceLedger[id];if(!source)throw new Error(`Missing N2C source: ${id}`);return{id,title:source.title,publisher:id.startsWith('N2C-OMT')?'Open Music Theory':'PianoChord.org',url:source.url,checkedOn:'2026-09-12',supports:source.supports.join('; '),limitation:'Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied.'};});}
+function sourcesFor(raw:RawDetail):ChordSource[]{
+  for(const id of raw.sources)if(!sourceLedger[id])throw new Error(`Missing N2C source: ${id}`);
+  const id='N2C-OMT-SEVENTH';
+  if(!raw.sources.includes(id))throw new Error(`Missing applicable N2C source: ${raw.url}/${id}`);
+  const source=sourceLedger[id];
+  return [{id,title:source.title,publisher:'Open Music Theory',url:source.url,checkedOn:'2026-09-12',supports:`${raw.qualityLabel} chord construction, written spelling and inversion principles`,limitation:'Supports theory and spelling only; keyboard layouts are PianoGrid examples, and no fingering is assigned.'}];
+}
 
 export function getN2CChordDetail(url:N2CChordDetailRoute):ChordDetailModel{
   const raw=rawDetails.get(url)!;const definition=validateRaw(raw),slug=url.split('/').at(-1)!;

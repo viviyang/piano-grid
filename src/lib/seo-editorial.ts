@@ -250,21 +250,25 @@ export const SEO_COPY: Record<string, Copy> = {
     title: 'B-flat Major Chord: Piano Notes, Inversions & PDF | PianoGrid',
     h1: 'B-flat Major Chord',
     description: 'Learn the B-flat major chord on piano: B♭, D and F. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
+    theory: 'Find B♭ immediately to the left of B. Add D and F, then check the three highlighted keys. In first inversion, D is the lowest note; the chord is still B♭ major.',
   },
   '/chords/e-flat-major': {
     title: 'E-flat Major Chord: Piano Notes, Inversions & PDF | PianoGrid',
     h1: 'E-flat Major Chord',
     description: 'Learn the E-flat major chord on piano: E♭, G and B♭. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
+    theory: 'Find E♭ immediately to the left of E. G is a white key, and B♭ is immediately to the left of B. Check those three notes before changing the inversion.',
   },
   '/chords/c-diminished': {
     title: 'C Diminished Chord: Piano Notes & Inversions | PianoGrid',
     h1: 'C Diminished Chord',
     description: 'Learn the C diminished chord on piano: C, E♭ and G♭. See the keyboard diagram, root position and inversions, hear the chord and practice the notes.',
+    theory: 'Start with C minor: C–E♭–G. Keep C and E♭, then lower G to G♭. The result is C diminished: C–E♭–G♭.',
   },
   '/chords/c-sharp-minor': {
     title: 'C-sharp Minor Chord: Piano Notes, Inversions & PDF | PianoGrid',
     h1: 'C-sharp Minor Chord',
     description: 'Learn the C-sharp minor chord on piano: C♯, E and G♯. See the keyboard diagram, root position and two inversions, hear the chord, practice the notes and download a printable reference.',
+    theory: 'Play C♯, E and G♯. The middle note is E, not E♯. In first inversion, E moves to the bass while the chord keeps the same three note names.',
   },
   '/chords/e-diminished': {
     title: 'E Diminished Chord: Piano Notes & Inversions | PianoGrid',

@@ -2,3 +2,14 @@
 .cc-preview-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.5rem}@media print{.cc-page .am-site-header,.cc-page .am-site-footer,.cc-page .am-page-heading,.cc-page .cc-toc,.cc-page .cc-heading,.cc-page .cc-filters,.cc-page .cc-index,.cc-page .cc-reading,.cc-page .cc-links,.cc-page .cc-preview-actions,.cc-page .cc-practice,.cc-page noscript{display:none!important}.cc-page .cc-explorer,.cc-page .cc-workspace,.cc-page .cc-preview{display:block;border:0;padding:0;box-shadow:none}.cc-page .cc-preview{position:static}.cc-page .am-keyboard-viewport{break-inside:avoid}}
 .cc-workspace,.cc-preview,.cc-index{min-width:0;max-width:100%}
 .cc-layout select,.cc-practice select{width:100%;max-width:100%;min-width:0}
+
+/* The category page owns its contents navigation and filter sizing. */
+.cc-page .cc-toc{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem 1.25rem;padding:1rem 0 1.25rem;border-top:1px solid var(--pr-color-border,#d9dee7);border-bottom:1px solid var(--pr-color-border,#d9dee7)}
+.cc-page .cc-toc a{color:var(--pr-color-accent,#2d68c4);font-size:.875rem;text-decoration:none}
+.cc-page .cc-toc a:hover{text-decoration:underline}
+.cc-page .cc-filters{grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) auto}
+.cc-page .cc-filters label{min-width:0}
+.cc-page .cc-filters input,.cc-page .cc-filters select{box-sizing:border-box;width:100%;min-width:0}
+.cc-page .cc-filters button{justify-self:start;white-space:nowrap}
+@media(max-width:900px){.cc-page .cc-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.cc-page .cc-filters{grid-template-columns:1fr}}

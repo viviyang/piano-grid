@@ -1,6 +1,7 @@
 'use client';
 import { useMemo, useState } from 'react';
 import type { FinderChord } from '@/lib/support-content';
+import { chordFamilyLabel, chordQualityLabel } from '@/lib/chord-quality-label';
 const keys=[{pc:0,label:'C',aria:'C',kind:'white',left:0},{pc:1,label:'C♯ / D♭',aria:'C sharp or D flat',kind:'black',left:10},{pc:2,label:'D',aria:'D',kind:'white',left:0},{pc:3,label:'D♯ / E♭',aria:'D sharp or E flat',kind:'black',left:24.3},{pc:4,label:'E',aria:'E',kind:'white',left:0},{pc:5,label:'F',aria:'F',kind:'white',left:0},{pc:6,label:'F♯ / G♭',aria:'F sharp or G flat',kind:'black',left:52.8},{pc:7,label:'G',aria:'G',kind:'white',left:0},{pc:8,label:'G♯ / A♭',aria:'G sharp or A flat',kind:'black',left:67.1},{pc:9,label:'A',aria:'A',kind:'white',left:0},{pc:10,label:'A♯ / B♭',aria:'A sharp or B flat',kind:'black',left:81.4},{pc:11,label:'B / C♭',aria:'B or C flat',kind:'white',left:0}] as const;
 const display=(value:string)=>value.replaceAll('#','♯').replaceAll('b','♭');
 const same=(a:number[],b:number[])=>a.length===b.length&&a.every((value,index)=>value===b[index]);

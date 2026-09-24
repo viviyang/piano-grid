@@ -121,10 +121,20 @@ export function getPianoChordsGuide() {
   if (page.data.finger_diagram !== null || page.data.transition_fingering !== null) throw new Error('Unsupported guide asset or transition fingering');
   if (page.data.starter_chords.length !== 4 || page.data.transition_voicings.length !== 3) throw new Error('Incomplete piano-chords guide data');
   const guide=JSON.parse(readFileSync(resolve('docs/pianogrid-chords-completion/03_content/guide.piano-chords.modules.json'),'utf8')) as {modules:{id:string;title:string;goal:string;body:string[];next:string;sourceIds:string[]}[]};
-  const blocks=[...original.blocks];const ids=new Set(blocks.map(block=>block.id));const links=[...original.links];
-  for(const module of guide.modules){if(!ids.has(module.id)){blocks.push({id:module.id,heading:module.title,paragraphs:[...module.body],steps:[module.goal],table:null,sourceIDs:[...module.sourceIds],originalBlocks:[]});ids.add(module.id);}if(isPublicRoute(module.next.split('#')[0]))links.push({id:`completion-${module.id}`,url:module.next,label:`Continue: ${module.title}`,placement:module.id});}
+  const pathCopy:Record<string,Pick<SupportBlock,'heading'|'paragraphs'|'steps'>>={
+    'start-here':{heading:'Start with four chords',paragraphs:['Begin with C major (C–E–G), A minor (A–C–E), F major (F–A–C) and G major (G–B–D). This short path shows how to read a chord and complete one change; use the chord chart when you need another name.'],steps:['Find C, E and G on the keyboard, then read the C chord reference.']},
+    'read-a-symbol':{heading:'Read notes before finger numbers',paragraphs:['A chord symbol names a root and a quality. C is C–E–G; Am is A–C–E. Formula numbers such as 1–3–5 describe chord members, while C4 names an octave and finger 1 names a thumb. Read the note names before choosing a hand shape.'],steps:[]},
+    'hands':{heading:'Use a fingering only for its stated example',paragraphs:['Finger numbers identify digits, not keys. The shown right-hand 1–3–5 example applies to root-position C major. An inversion or a change between chords can require a different hand shape.'],steps:[]},
+    'first-change':{heading:'Move one note, then name the bass',paragraphs:['Play C4–E4–G4, then keep C4 and E4 while moving G4 to A4. The second chord is Am/C: A minor with C as its lowest note. This changes the bass and chord name without assigning a new fingering.'],steps:['Read C4–E4–G4, move G4 to A4, then return to G4.']},
+    'practice-scope':{heading:'Try one chord change',paragraphs:['Use the existing chord references to hear and check each note set. Then open the progression practice, choose the vi–IV–I–V example in C major, and follow Am–F–C–G at a comfortable pace. The browser checks its own controls; it does not assess acoustic timing or hand position.'],steps:[]},
+    'next-step':{heading:'What to learn next',paragraphs:['After this first change, compare a major and minor third, read an inversion, or explore seventh chords. The references below cover those distinct tasks and more advanced chord types.'],steps:[]},
+  };
+  const blocks=original.blocks.map(block=>pathCopy[block.id]?{...block,...pathCopy[block.id],originalBlocks:[]}:block);
+  const ids=new Set(blocks.map(block=>block.id));const links=[...original.links];
+  const advancedModules=new Set(['major-minor','seventh','extensions','alterations','jazz','power']);
+  for(const module of guide.modules){if(!advancedModules.has(module.id))continue;if(!ids.has(module.id)){blocks.push({id:module.id,heading:module.title,paragraphs:[...module.body],steps:[module.goal],table:null,sourceIDs:[...module.sourceIds],originalBlocks:[]});ids.add(module.id);}if(isPublicRoute(module.next.split('#')[0]))links.push({id:`completion-${module.id}`,url:module.next,label:`Continue: ${module.title}`,placement:module.id});}
   if(isPublicRoute('/tools/hear-the-difference'))links.push({id:'b04-hear-third',url:'/tools/hear-the-difference',label:'Hear the third change by one semitone →',placement:'after instructions'});
-  const model={...original,scope:'A practical path from chord symbols and formula tones through inversions, seventh chords, omissions, alterations, transitions and print references. Existing guide content remains in place.',blocks,links};
+  const model={...original,scope:'Start with C, Am, F and G. Read the notes, try one chord change, then choose a more advanced reference when you need it.',blocks,links};
   return { model, data: page.data as {
     starter_chords: { name: string; notes: string[] }[];
     verified_fingering_example: { hand: 'right'; notes: string[]; fingers: number[]; scope: string };
@@ -169,7 +179,8 @@ export type ByKeyTable = { id: string; key: string; mode: 'major'|'natural_minor
 const completionRoot = resolve('docs/pianogrid-chords-completion');
 function supportedRegistry(){return getSupportedChordRegistry(getChordCenter().items);}
 function resolveReference(symbol:string, root:string, quality:string, registry:CompletionReference[]){
-  const exact=registry.find(item=>item.symbol===symbol&&item.root===root&&item.subtype===quality)||registry.find(item=>item.symbol===symbol&&item.root===root);
+  const spelling=(value:string)=>value.replaceAll('𝄪','##').replaceAll('𝄫','bb').replaceAll('♯','#').replaceAll('♭','b');
+  const exact=registry.find(item=>spelling(item.symbol)===spelling(symbol)&&spelling(item.root)===spelling(root)&&item.subtype===quality);
   return exact?{detailURL:exact.detailURL,destination:exact.destination,reference:exact}:{detailURL:null,destination:null,reference:null};
 }
 
@@ -187,10 +198,18 @@ export function getChordsByKey() {
     return{id:context.id,key:`${context.tonic} ${context.mode==='major'?'major':'natural minor'}`,mode:context.mode,scale:[...context.scaleNotes],basis:context.mode==='major'?'major':'natural minor',evidenceStatus:'package validator passed',chords,raisedLeadingToneOptions:[]};
   });
   if(keys.length!==24||keys.reduce((sum,key)=>sum+key.chords.length,0)!==336)throw new Error('Incomplete completion by-key data');
-  return {model:{...model,scope:'Twenty-four key contexts: twelve major and twelve natural-minor scales. Each table keeps key, root, quality and Roman numeral as separate fields.'},data:{keys,defaultKey:'C major',professionalReview:'pending'}};
+  const publicBlocks=model.blocks.map(block=>({
+    ...block,
+    paragraphs:block.paragraphs.map(text=>text
+      .replace('The prepared tables cover C, G, D, A, E and F major, plus D minor. They show a deliberately limited set of keys rather than a claim to every scale, mode or borrowed chord.',`The current tables cover ${keys.filter(key=>key.mode==='major').length} major and ${keys.filter(key=>key.mode==='natural_minor').length} natural-minor keys. Choose a key to see its diatonic triads and seventh chords.`)
+      .replace('A row for B diminished belongs in this table even though the current major/minor detail template cannot render it as a full object page.','B diminished has its own detail page; use its link to check the notes and inversions.')
+      .replace('A table row may therefore be a complete written reference without having a dedicated detail link. Keep the row visible and only provide a link when the requested detail actually exists.','Each row keeps the written chord tones visible. Open a detail link where a matching published page exists.')),
+    table:block.table?{...block.table,rows:block.table.rows.map(row=>row.map(text=>text.replace('The table’s written data can be supported before a dedicated diminished-chord interactive template exists. Missing a detail page is not a reason to omit the scale degree.','B diminished has a published detail page. The table also keeps its written notes visible.')))}:null,
+  }));
+  return {model:{...model,scope:`Choose from ${keys.length} major and natural-minor key contexts to find triads and seventh chords. Read the Roman numeral, chord symbol and note names together.`,blocks:publicBlocks},data:{keys,defaultKey:'C major',professionalReview:'pending'}};
 }
 
-export type ProgressionPattern = { id: string; title: string; mode: 'major'|'natural_minor'; steps: [number,string][] };
+export type ProgressionPattern = { id: string; title: string; mode: 'major'|'natural_minor'; steps: [number,string][]; romanNumerals: string[] };
 export type ProgressionStep = {degree:number;roman:string;subtype:string;rootSpelling:string;symbol:string;formulaDegrees:string[];referenceTones:string[];midi:number[];beats:number;nonDiatonicTones:string[];notDiatonicReason:string|null;destination:string|null};
 export type ProgressionExample = {id:string;patternId:string;name:string;keyId:string;tonic:string;steps:ProgressionStep[];tempoBpmDefault:number;bpmRange:number[];meter:number[];countInBars:number;moodDisclaimer:string};
 
@@ -198,9 +217,10 @@ export function getChordProgressions() {
   const model = base('/chord-progressions');
   const registry=supportedRegistry();
   const rawPatterns=JSON.parse(readFileSync(resolve(completionRoot,'04_music/progressions.patterns.json'),'utf8')) as Raw[];
-  const patterns:ProgressionPattern[]=rawPatterns.map(item=>({id:item.id,title:item.name,mode:item.mode,steps:item.steps.map((step:unknown[])=>[Number(step[0]),String(step[1])] as [number,string])}));
+  const patterns:ProgressionPattern[]=rawPatterns.map(item=>({id:item.id,title:item.name,mode:item.mode,steps:item.steps.map((step:unknown[])=>[Number(step[0]),String(step[1])] as [number,string]),romanNumerals:[...item.romanNumerals]}));
+  if(patterns.some(pattern=>pattern.romanNumerals.length!==pattern.steps.length||pattern.romanNumerals.some(roman=>!/^([ivIV]+)(?:ø7|maj9|maj7|13|9|7)?$/.test(roman))))throw new Error('Invalid progression Roman numeral data');
   const rawExamples=JSON.parse(readFileSync(resolve(completionRoot,'04_music/progressions.examples.json'),'utf8')) as Raw[];
-  const examples:ProgressionExample[]=rawExamples.map(item=>{const pattern=rawPatterns.find(candidate=>candidate.id===item.patternId);if(!pattern)throw new Error(`Missing progression pattern: ${item.patternId}`);return{id:item.id,patternId:item.patternId,name:item.name,keyId:item.keyId,tonic:item.tonic,steps:item.steps.map((step:Raw,index:number)=>{const ref=resolveReference(step.symbol,step.rootSpelling,step.subtype,registry),realization=ref.reference?.realizations.find(candidate=>candidate.id===ref.reference?.defaultRealizationId)||ref.reference?.realizations[0];return{degree:step.degree,roman:String(pattern.steps[index][1]),subtype:step.subtype,rootSpelling:step.rootSpelling,symbol:step.symbol,formulaDegrees:[...step.formulaDegrees],referenceTones:[...step.referenceTones],midi:realization?[...realization.midi]:[],beats:step.beats,nonDiatonicTones:[...step.nonDiatonicTones],notDiatonicReason:step.notDiatonicReason,destination:ref.destination};}),tempoBpmDefault:item.tempoBpmDefault,bpmRange:[...item.bpmRange],meter:[...item.meter],countInBars:item.countInBars,moodDisclaimer:item.moodDisclaimer};});
+  const examples:ProgressionExample[]=rawExamples.map(item=>{const pattern=patterns.find(candidate=>candidate.id===item.patternId);if(!pattern)throw new Error(`Missing progression pattern: ${item.patternId}`);if(item.steps.length!==pattern.steps.length)throw new Error(`Progression step count drift: ${item.id}`);return{id:item.id,patternId:item.patternId,name:item.name,keyId:item.keyId,tonic:item.tonic,steps:item.steps.map((step:Raw,index:number)=>{if(step.degree!==pattern.steps[index][0]||step.subtype!==pattern.steps[index][1])throw new Error(`Progression degree/quality drift: ${item.id}/${index}`);const ref=resolveReference(step.symbol,step.rootSpelling,step.subtype,registry),realization=ref.reference?.realizations.find(candidate=>candidate.id===ref.reference?.defaultRealizationId)||ref.reference?.realizations[0];return{degree:step.degree,roman:pattern.romanNumerals[index],subtype:step.subtype,rootSpelling:step.rootSpelling,symbol:step.symbol,formulaDegrees:[...step.formulaDegrees],referenceTones:[...step.referenceTones],midi:realization?[...realization.midi]:[],beats:step.beats,nonDiatonicTones:[...step.nonDiatonicTones],notDiatonicReason:step.notDiatonicReason,destination:ref.destination};}),tempoBpmDefault:item.tempoBpmDefault,bpmRange:[...item.bpmRange],meter:[...item.meter],countInBars:item.countInBars,moodDisclaimer:item.moodDisclaimer};});
   if(patterns.length!==8||examples.length!==96||examples.some(example=>!patterns.some(pattern=>pattern.id===example.patternId)))throw new Error('Incomplete completion progression data');
   return{model:{...model,scope:'Eight named practice patterns mapped to twelve suitable key contexts each. Symbols, formulas and note spellings come from the validated progression dataset.'},data:{patterns,examples,defaultExample:'pop-four-c-major',professionalReview:'pending'}};
 }

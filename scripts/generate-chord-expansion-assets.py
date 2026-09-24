@@ -2,16 +2,15 @@
 import html, json, re, shutil
 from pathlib import Path
 from reportlab.lib.pagesizes import letter
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
+from chord_pdf_font import register_chord_pdf_font
 
 ROOT=Path(__file__).resolve().parents[1]
 DETAILS=ROOT/'docs/pianogrid-chords-next-expansion/04_details_next'
 SOURCE=ROOT/'docs/pianogrid-chords-next-expansion/09_generated_assets'
 PUBLIC=ROOT/'public/reference/assets'
-FONT=Path(r'C:\Windows\Fonts\arial.ttf')
-PDF_FONT='PianoGridArial'
+FONT=Path(r'C:\Windows\Fonts\NotoSansSC-VF.ttf')
+PDF_FONT='PianoGridSymbol'
 WHITE_PCS={0,2,4,5,7,9,11}
 NOTE_NAMES={0:'C',2:'D',4:'E',5:'F',7:'G',9:'A',11:'B'}
 
@@ -56,8 +55,8 @@ def make_pdf(raw,path):
     c.drawString(42,176,'Each example keeps the chord tones but may use a different register.')
     c.drawString(42,161,'No staff notation or hand-specific finger numbers are included in this PDF.')
     c.drawString(42,142,'Keyboard window: C3–E5. Fingering is intentionally not assigned.')
-    c.setFont(PDF_FONT,7.5); c.drawString(42,119,'Formula and notation rules: PG-TRIADS, PG-OMT and PG-ASPN; package validation passed.')
-    c.drawString(42,105,'Original diagrams generated from the supplied note data. Content checked 2026-09-12.')
+    c.setFont(PDF_FONT,7.5); c.drawString(42,119,'Theory: PianoGrid triad formulas and written note spellings.')
+    c.drawString(42,105,'Original keyboard diagrams generated from the note and MIDI data shown above.')
     c.setFont(PDF_FONT,8); c.drawString(42,76,'pianogrid.com'+raw['url']); c.drawRightString(570,76,'1 / 1')
     c.showPage(); c.save()
 
@@ -90,14 +89,13 @@ def make_svg(raw,path):
 <text x="42" y="662" class="meta">Each example keeps the chord tones but may use a different register.</text>
 <text x="42" y="677" class="meta">No staff notation or hand-specific finger numbers are included.</text>
 <text x="42" y="696" class="meta">Keyboard window: C3–E5. Fingering is intentionally not assigned.</text>
-<text x="42" y="719" class="meta">Formula and notation rules: PG-TRIADS, PG-OMT and PG-ASPN; package validation passed.</text>
-<text x="42" y="733" class="meta">Original diagrams generated from supplied note data. Content checked 2026-09-12.</text>
+<text x="42" y="719" class="meta">Theory: PianoGrid triad formulas and written note spellings.</text>
+<text x="42" y="733" class="meta">Original keyboard diagrams generated from the note and MIDI data shown above.</text>
 <text x="42" y="757" class="brand">pianogrid.com{html.escape(raw['url'])}</text><text x="570" y="757" text-anchor="end" class="meta">1 / 1</text></svg>'''
     path.write_text(body,encoding='utf-8')
 
 def main():
-    if not FONT.exists(): raise SystemExit(f'Missing required Unicode font: {FONT}')
-    pdfmetrics.registerFont(TTFont(PDF_FONT,str(FONT)))
+    register_chord_pdf_font(FONT, PDF_FONT)
     SOURCE.mkdir(parents=True,exist_ok=True); PUBLIC.mkdir(parents=True,exist_ok=True)
     details=[]
     for fp in sorted(DETAILS.glob('*.page.json')):

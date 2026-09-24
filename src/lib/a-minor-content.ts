@@ -35,7 +35,7 @@ export function getAMinorContent():ChordDetailModel {
   const intro = byId['am-intro'].content;
   const split = intro.paragraphs[0].indexOf('. ') + 1;
   // Approved final reference adaptation; source JSON stays unchanged.
-  const introduction = [intro.paragraphs[0].slice(split + 1), intro.paragraphs[1].replace('The example below', 'The root-position example')];
+  const introduction = ['The root-position example uses A3–C4–E4, with C4 as middle C. Listen to the notes, then move the lowest note with the inversion selector.'];
   const data: ChordDetailData = {
     url:'/chords/a-minor',namespace:'am',toolId:'am-result',pdf:{url:'/assets/chords/a-minor-notes-inversions.pdf',label:'Download A minor PDF'},rangeLabel:'C3–C5',
     defaultId: page.selection.default_voicing_id, options: page.selection.options.map((o: {value:string;label:string})=>({value:o.value,label:o.label})),

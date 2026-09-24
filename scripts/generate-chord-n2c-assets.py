@@ -2,15 +2,14 @@
 import html, json, shutil
 from pathlib import Path
 from reportlab.lib.pagesizes import letter
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
+from chord_pdf_font import register_chord_pdf_font
 
 ROOT=Path(__file__).resolve().parents[1]
 DETAILS=ROOT/'docs/pianogrid-chords-n2c/03_details'
 SOURCE=ROOT/'docs/pianogrid-chords-n2c/09_generated_assets'
 PUBLIC=ROOT/'public/reference/assets'
-FONT=Path(r'C:\Windows\Fonts\seguisym.ttf')
+FONT=Path(r'C:\Windows\Fonts\NotoSansSC-VF.ttf')
 PDF_FONT='PianoGridSymbol'
 WHITE_PCS={0,2,4,5,7,9,11}
 NOTE_NAMES={0:'C',2:'D',4:'E',5:'F',7:'G',9:'A',11:'B'}
@@ -51,8 +50,8 @@ def draw_pdf_page(pdf,raw,voicings,page_number):
     pdf.drawString(42,139,'Octave numbers identify register, not fingers. No fingering is assigned.')
     pdf.drawString(42,124,'All four positions keep the same pitch-class set and change the lowest chord tone.')
     pdf.drawString(42,109,'Keyboard window: C3-C6. Written spelling is preserved in notes, symbols and bass labels.')
-    pdf.setFont(PDF_FONT,7.5);pdf.drawString(42,88,'Theory and spelling sources: N2C source ledger; package validation passed.')
-    pdf.drawString(42,74,'Original diagrams generated from supplied note and MIDI data. Content checked 2026-09-12.')
+    pdf.setFont(PDF_FONT,7.5);pdf.drawString(42,88,'Theory reference: Open Music Theory, Seventh Chords. See the chord page for scope.')
+    pdf.drawString(42,74,'Original keyboard diagrams show the written notes and MIDI pitches above.')
     pdf.setFont(PDF_FONT,8);pdf.drawString(42,50,'pianogrid.com'+raw['url']);pdf.drawRightString(570,50,f'{page_number} / 2')
 
 def make_pdf(raw,path):
@@ -92,17 +91,27 @@ def make_svg(raw,path):
 <text x="42" y="893" class="meta">Octave numbers identify register, not fingers. No fingering is assigned.</text>
 <text x="42" y="908" class="meta">All four positions keep the same pitch-class set and change the lowest chord tone.</text>
 <text x="42" y="923" class="meta">Keyboard window: C3-C6. Written spelling is preserved in notes, symbols and bass labels.</text>
-<text x="42" y="946" class="meta">Theory and spelling sources: N2C source ledger; package validation passed.</text>
+<text x="42" y="946" class="meta">Theory reference: Open Music Theory, Seventh Chords. See the chord page for scope.</text>
 <text x="42" y="974" class="brand">pianogrid.com{html.escape(raw['url'])}</text><text x="570" y="974" text-anchor="end" class="meta">4 positions</text></svg>'''
     path.write_text(body,encoding='utf-8')
 
+def export_spelling(value):
+    """ReportLab text extraction truncates supplementary-plane music glyphs.
+
+    Two BMP accidentals retain the same written spelling and copy cleanly.
+    Source JSON is unchanged; only the exported PDF/SVG text is normalized.
+    """
+    if isinstance(value,str):return value.replace('𝄫','♭♭').replace('𝄪','♯♯')
+    if isinstance(value,list):return [export_spelling(item) for item in value]
+    if isinstance(value,dict):return {key:export_spelling(item) for key,item in value.items()}
+    return value
+
 def main():
-    if not FONT.exists():raise SystemExit(f'Missing required Unicode font: {FONT}')
-    pdfmetrics.registerFont(TTFont(PDF_FONT,str(FONT)))
+    register_chord_pdf_font(FONT, PDF_FONT)
     SOURCE.mkdir(parents=True,exist_ok=True);PUBLIC.mkdir(parents=True,exist_ok=True)
     generated=[]
     for source in sorted(DETAILS.glob('*.page.json')):
-        raw=json.loads(source.read_text(encoding='utf-8'))
+        raw=export_spelling(json.loads(source.read_text(encoding='utf-8')))
         if len(raw['voicings'])!=4 or raw['expectedNoteCount']!=4 or raw['fingering']['status']!='not_provided':raise SystemExit(f'Invalid N2C asset source: {source.name}')
         slug=raw['url'].split('/')[-1];pdf=SOURCE/f'chord-{slug}.pdf';svg=SOURCE/f'chord-{slug}.svg'
         make_pdf(raw,pdf);make_svg(raw,svg);shutil.copyfile(pdf,PUBLIC/pdf.name);shutil.copyfile(svg,PUBLIC/svg.name)

@@ -1,0 +1,793 @@
+{
+  "executed_at": "2026-09-24T14:34:13.276Z",
+  "base": "http://127.0.0.1:3047",
+  "passed": 147,
+  "failed": 0,
+  "counts": {
+    "contexts": 24,
+    "rows": 336,
+    "sitemap": 173
+  },
+  "results": [
+    {
+      "name": "Prepared completion data has 24 contexts and 336 rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Each context separates seven triads and seven sevenths",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Prepared data has no fingering field or claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTTP 200 and planned TDK/H1/canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No meta keywords",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SSR exposes 24 contexts and all 336 rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Key root quality and Roman numeral stay separate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Original content remains",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Current by-key instructions replace outdated scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D♭ major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E♭ major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F♯ major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A♭ major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B♭ major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B major SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C♯ natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E♭ natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F♯ natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "G♯ natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B♭ natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B natural minor SSR rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Required support links are present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No duplicate IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Linked target / returns 200",
+      "passed": true,
+      "detail": "/"
+    },
+    {
+      "name": "Linked target /chords returns 200",
+      "passed": true,
+      "detail": "/chords"
+    },
+    {
+      "name": "Linked target /scales/c-major returns 200",
+      "passed": true,
+      "detail": "/scales/c-major"
+    },
+    {
+      "name": "Linked target /chords/c-major returns 200",
+      "passed": true,
+      "detail": "/chords/c-major"
+    },
+    {
+      "name": "Linked target /chords/c-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/c-maj7"
+    },
+    {
+      "name": "Linked target /chords/d-minor returns 200",
+      "passed": true,
+      "detail": "/chords/d-minor"
+    },
+    {
+      "name": "Linked target /chords/d-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/d-m7"
+    },
+    {
+      "name": "Linked target /chords/e-minor returns 200",
+      "passed": true,
+      "detail": "/chords/e-minor"
+    },
+    {
+      "name": "Linked target /chords/e-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/e-m7"
+    },
+    {
+      "name": "Linked target /chords/f-major returns 200",
+      "passed": true,
+      "detail": "/chords/f-major"
+    },
+    {
+      "name": "Linked target /chords/f-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/f-maj7"
+    },
+    {
+      "name": "Linked target /chords/g-major returns 200",
+      "passed": true,
+      "detail": "/chords/g-major"
+    },
+    {
+      "name": "Linked target /chords/g-7 returns 200",
+      "passed": true,
+      "detail": "/chords/g-7"
+    },
+    {
+      "name": "Linked target /chords/a-minor returns 200",
+      "passed": true,
+      "detail": "/chords/a-minor"
+    },
+    {
+      "name": "Linked target /chords/a-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/a-m7"
+    },
+    {
+      "name": "Linked target /chords/b-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/b-diminished"
+    },
+    {
+      "name": "Linked target /chords/b-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/b-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/d-flat-major returns 200",
+      "passed": true,
+      "detail": "/chords/d-flat-major"
+    },
+    {
+      "name": "Linked target /chords/d-flat-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/d-flat-maj7"
+    },
+    {
+      "name": "Linked target /chords/e-flat-minor returns 200",
+      "passed": true,
+      "detail": "/chords/e-flat-minor"
+    },
+    {
+      "name": "Linked target /chords/e-flat-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/e-flat-m7"
+    },
+    {
+      "name": "Linked target /chords/f-minor returns 200",
+      "passed": true,
+      "detail": "/chords/f-minor"
+    },
+    {
+      "name": "Linked target /chords/f-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/f-m7"
+    },
+    {
+      "name": "Linked target /chords/a-flat-major returns 200",
+      "passed": true,
+      "detail": "/chords/a-flat-major"
+    },
+    {
+      "name": "Linked target /chords/a-flat-7 returns 200",
+      "passed": true,
+      "detail": "/chords/a-flat-7"
+    },
+    {
+      "name": "Linked target /chords/b-flat-minor returns 200",
+      "passed": true,
+      "detail": "/chords/b-flat-minor"
+    },
+    {
+      "name": "Linked target /chords/b-flat-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/b-flat-m7"
+    },
+    {
+      "name": "Linked target /chords/c-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/c-diminished"
+    },
+    {
+      "name": "Linked target /chords/c-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/c-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/d-major returns 200",
+      "passed": true,
+      "detail": "/chords/d-major"
+    },
+    {
+      "name": "Linked target /chords/d-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/d-maj7"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-minor returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-minor"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-m7"
+    },
+    {
+      "name": "Linked target /chords/g-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/g-maj7"
+    },
+    {
+      "name": "Linked target /chords/a-major returns 200",
+      "passed": true,
+      "detail": "/chords/a-major"
+    },
+    {
+      "name": "Linked target /chords/a-7 returns 200",
+      "passed": true,
+      "detail": "/chords/a-7"
+    },
+    {
+      "name": "Linked target /chords/b-minor returns 200",
+      "passed": true,
+      "detail": "/chords/b-minor"
+    },
+    {
+      "name": "Linked target /chords/b-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/b-m7"
+    },
+    {
+      "name": "Linked target /chords/e-flat-major returns 200",
+      "passed": true,
+      "detail": "/chords/e-flat-major"
+    },
+    {
+      "name": "Linked target /chords/e-flat-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/e-flat-maj7"
+    },
+    {
+      "name": "Linked target /chords/g-minor returns 200",
+      "passed": true,
+      "detail": "/chords/g-minor"
+    },
+    {
+      "name": "Linked target /chords/g-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/g-m7"
+    },
+    {
+      "name": "Linked target /chords/a-flat-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/a-flat-maj7"
+    },
+    {
+      "name": "Linked target /chords/b-flat-major returns 200",
+      "passed": true,
+      "detail": "/chords/b-flat-major"
+    },
+    {
+      "name": "Linked target /chords/b-flat-7 returns 200",
+      "passed": true,
+      "detail": "/chords/b-flat-7"
+    },
+    {
+      "name": "Linked target /chords/c-minor returns 200",
+      "passed": true,
+      "detail": "/chords/c-minor"
+    },
+    {
+      "name": "Linked target /chords/c-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/c-m7"
+    },
+    {
+      "name": "Linked target /chords/d-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/d-diminished"
+    },
+    {
+      "name": "Linked target /chords/d-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/d-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/e-major returns 200",
+      "passed": true,
+      "detail": "/chords/e-major"
+    },
+    {
+      "name": "Linked target /chords/e-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/e-maj7"
+    },
+    {
+      "name": "Linked target /chords/g-sharp-minor returns 200",
+      "passed": true,
+      "detail": "/chords/g-sharp-minor"
+    },
+    {
+      "name": "Linked target /chords/a-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/a-maj7"
+    },
+    {
+      "name": "Linked target /chords/b-major returns 200",
+      "passed": true,
+      "detail": "/chords/b-major"
+    },
+    {
+      "name": "Linked target /chords/b-7 returns 200",
+      "passed": true,
+      "detail": "/chords/b-7"
+    },
+    {
+      "name": "Linked target /chords/c-sharp-minor returns 200",
+      "passed": true,
+      "detail": "/chords/c-sharp-minor"
+    },
+    {
+      "name": "Linked target /chords/b-flat-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/b-flat-maj7"
+    },
+    {
+      "name": "Linked target /chords/c-7 returns 200",
+      "passed": true,
+      "detail": "/chords/c-7"
+    },
+    {
+      "name": "Linked target /chords/e-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/e-diminished"
+    },
+    {
+      "name": "Linked target /chords/e-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/e-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-major returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-major"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-maj7"
+    },
+    {
+      "name": "Linked target /chords/b-maj7 returns 200",
+      "passed": true,
+      "detail": "/chords/b-maj7"
+    },
+    {
+      "name": "Linked target /chords/d-7 returns 200",
+      "passed": true,
+      "detail": "/chords/d-7"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-diminished"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/e-flat-7 returns 200",
+      "passed": true,
+      "detail": "/chords/e-flat-7"
+    },
+    {
+      "name": "Linked target /chords/g-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/g-diminished"
+    },
+    {
+      "name": "Linked target /chords/g-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/g-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/e-7 returns 200",
+      "passed": true,
+      "detail": "/chords/e-7"
+    },
+    {
+      "name": "Linked target /chords/f-7 returns 200",
+      "passed": true,
+      "detail": "/chords/f-7"
+    },
+    {
+      "name": "Linked target /chords/a-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/a-diminished"
+    },
+    {
+      "name": "Linked target /chords/a-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/a-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/f-sharp-7 returns 200",
+      "passed": true,
+      "detail": "/chords/f-sharp-7"
+    },
+    {
+      "name": "Linked target /chords/f-diminished returns 200",
+      "passed": true,
+      "detail": "/chords/f-diminished"
+    },
+    {
+      "name": "Linked target /chords/f-m7-flat5 returns 200",
+      "passed": true,
+      "detail": "/chords/f-m7-flat5"
+    },
+    {
+      "name": "Linked target /chords/a-flat-m7 returns 200",
+      "passed": true,
+      "detail": "/chords/a-flat-m7"
+    },
+    {
+      "name": "Linked target /chords/c-flat-major returns 200",
+      "passed": true,
+      "detail": "/chords/c-flat-major"
+    },
+    {
+      "name": "Linked target /chords/d-flat-7 returns 200",
+      "passed": true,
+      "detail": "/chords/d-flat-7"
+    },
+    {
+      "name": "Linked target /chord-progressions returns 200",
+      "passed": true,
+      "detail": "/chord-progressions"
+    },
+    {
+      "name": "Interactive picker exposes all 24 contexts",
+      "passed": true,
+      "detail": [
+        "C major",
+        "D♭ major",
+        "D major",
+        "E♭ major",
+        "E major",
+        "F major",
+        "F♯ major",
+        "G major",
+        "A♭ major",
+        "A major",
+        "B♭ major",
+        "B major",
+        "C natural minor",
+        "C♯ natural minor",
+        "D natural minor",
+        "E♭ natural minor",
+        "E natural minor",
+        "F natural minor",
+        "F♯ natural minor",
+        "G natural minor",
+        "G♯ natural minor",
+        "A natural minor",
+        "B♭ natural minor",
+        "B natural minor"
+      ]
+    },
+    {
+      "name": "Selection C major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection D♭ major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection D major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection E♭ major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection E major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection F major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection F♯ major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection G major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection A♭ major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection A major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection B♭ major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection B major shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection C natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection C♯ natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection D natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection E♭ natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection E natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection F natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection F♯ natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection G natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection G♯ natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection A natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection B♭ natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selection B natural minor shows one 14-row table",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Responsive width 1440",
+      "passed": true,
+      "detail": {
+        "innerWidth": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "Responsive width 768",
+      "passed": true,
+      "detail": {
+        "innerWidth": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "Responsive width 390",
+      "passed": true,
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "Responsive width 320",
+      "passed": true,
+      "detail": {
+        "innerWidth": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "200% text reflow",
+      "passed": true,
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "No runtime or hydration errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Current sitemap and includes by-key/completion categories",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "not_tested": [
+    "real mobile/tablet device",
+    "screen reader",
+    "independent music-theory review"
+  ]
+}

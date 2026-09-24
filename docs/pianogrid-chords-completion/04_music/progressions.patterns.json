@@ -3,6 +3,7 @@
     "id": "pop-four",
     "name": "Four-chord comparison",
     "mode": "major",
+    "romanNumerals": ["I", "V", "vi", "IV"],
     "steps": [
       [
         1,
@@ -27,6 +28,7 @@
     "id": "basic-cadence",
     "name": "I–IV–V–I",
     "mode": "major",
+    "romanNumerals": ["I", "IV", "V", "I"],
     "steps": [
       [
         1,
@@ -53,6 +55,7 @@
     "id": "rotated-four",
     "name": "vi–IV–I–V",
     "mode": "major",
+    "romanNumerals": ["vi", "IV", "I", "V"],
     "steps": [
       [
         6,
@@ -77,6 +80,7 @@
     "id": "triad-ii-v-i",
     "name": "ii–V–I with triads",
     "mode": "major",
+    "romanNumerals": ["ii", "V", "I"],
     "steps": [
       [
         2,
@@ -97,6 +101,7 @@
     "id": "jazz-ii-v-i",
     "name": "ii7–V7–Imaj7",
     "mode": "major",
+    "romanNumerals": ["ii7", "V7", "Imaj7"],
     "steps": [
       [
         2,
@@ -117,6 +122,7 @@
     "id": "color-ii-v-i",
     "name": "ii9–V13–Imaj9",
     "mode": "major",
+    "romanNumerals": ["ii9", "V13", "Imaj9"],
     "steps": [
       [
         2,
@@ -139,6 +145,7 @@
     "id": "minor-cadence",
     "name": "iiø7–V7–i",
     "mode": "natural_minor",
+    "romanNumerals": ["iiø7", "V7", "i"],
     "steps": [
       [
         2,
@@ -159,6 +166,7 @@
     "id": "blues-twelve",
     "name": "Twelve-bar dominant-seventh study",
     "mode": "major",
+    "romanNumerals": ["I7", "I7", "I7", "I7", "IV7", "IV7", "I7", "I7", "V7", "IV7", "I7", "V7"],
     "steps": [
       [
         1,

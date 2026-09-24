@@ -33,7 +33,7 @@ export function ChordCategoryExperience({ model, heading, children }:{ model:Cat
           {model.items.map(item=><article className="ch-category-card" key={item.id} data-chord-id={item.id} data-subtype={item.quality} hidden={Boolean(ready&&((root&&root!==item.root)||(subtype&&subtype!==item.quality)))}>
             <div className="ch-category-card-heading"><h3>{item.name}</h3><span>{item.voicing.chord_symbol}</span></div>
             <p className="ch-category-tones"><strong>{item.tones.join(' – ')}</strong><span>Formula {item.formula.map(accidental).join('–')}</span></p>
-            <KeyboardViewport voicing={item.voicing} whitePitchClasses={model.whitePitchClasses} ready={ready} rangeLabel="C3–C5"/>
+            <KeyboardViewport voicing={item.voicing} whitePitchClasses={model.whitePitchClasses} ready={ready}/>
             <a className="am-button am-tertiary" href={item.url!}><RollingText>{model.quality==='add'?'Notes and layouts':'Notes and inversions'}</RollingText><span className="pr-sr-only">: {item.name}</span></a>
           </article>)}
         </div>

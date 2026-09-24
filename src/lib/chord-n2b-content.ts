@@ -97,7 +97,13 @@ function validateRaw(raw:RawDetail){
 }
 
 function sourcesFor(raw:RawDetail):ChordSource[]{
-  return raw.sources.map(id=>{const source=sourceLedger[id];if(!source)throw new Error(`Missing N2B source: ${id}`);return{id,title:source.title,publisher:id==='N2B-OMT-TRIADS'?'Open Music Theory':'PianoChord.org',url:source.url,checkedOn:'2026-09-12',supports:source.supports.join('; '),limitation:'Theory and spelling cross-check only; no source prose, artwork, fingering or PDF is copied.'};});
+  for (const id of raw.sources) if (!sourceLedger[id]) throw new Error(`Missing N2B source: ${id}`);
+  // The package retains every review source. The reader sees only the source supporting this family's formula.
+  const suspended=raw.subtype==='sus2'||raw.subtype==='sus4';
+  const id=suspended?'N2B-PC-SUS':'N2B-OMT-TRIADS';
+  if(!raw.sources.includes(id))throw new Error(`Missing applicable N2B source: ${raw.url}/${id}`);
+  const source=sourceLedger[id];
+  return [{id,title:source.title,publisher:suspended?'PianoChord.org':'Open Music Theory',url:source.url,checkedOn:'2026-09-12',supports:suspended?`${raw.subtype} chord formula and written tone pattern`:`${raw.subtype} triad formula and written tone spelling`,limitation:'Supports the chord formula and spelling only; keyboard layouts are PianoGrid examples, and no fingering is assigned.'}];
 }
 
 export function getN2BChordDetail(url:N2BChordDetailRoute):ChordDetailModel{

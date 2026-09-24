@@ -140,7 +140,7 @@ export function CmajorExperience({ data, heading, toolNotes, introduction, child
 
           <div className={`cp-instrument${inPractice?' cp-instrument-practice':''}`}>
             <div className="cp-piano-column">
-          <KeyboardViewport key={mode} id="keyboard-scroll" voicing={inPractice?root:voicing} whitePitchClasses={data.whitePitchClasses} sounding={sounding} ready={ready} rangeLabel={data.rangeLabel} input={{ready,practice:inPractice,labels,selected:attempt.selected,pressed,feedback,press,release,toggle:midi=>setAttempt(value=>toggleChordNote(value,midi))}}/>
+          <KeyboardViewport key={mode} id="keyboard-scroll" voicing={inPractice?root:voicing} whitePitchClasses={data.whitePitchClasses} sounding={sounding} ready={ready} input={{ready,practice:inPractice,labels,selected:attempt.selected,pressed,feedback,press,release,toggle:midi=>setAttempt(value=>toggleChordNote(value,midi))}}/>
             </div>
             {!inPractice&&<section className="cp-nearby-staff" id="c-major-staff" tabIndex={-1} aria-labelledby="cp-staff-heading">
               <h3 id="cp-staff-heading">Staff notation</h3>

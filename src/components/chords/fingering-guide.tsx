@@ -14,7 +14,7 @@ function FingerNumbersDiagram({hand}:{hand:'left'|'right'}) {
 }
 
 export function ChordSourceList({sources,hideSourceCodes=false,hideAuditNotes=false}:{sources:ChordSource[];hideSourceCodes?:boolean;hideAuditNotes?:boolean}){
- return <>{sources.map(source=><article key={source.id} id={hideSourceCodes||hideAuditNotes?undefined:`${source.id.toLowerCase()}`}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p><p><strong>Supports:</strong> {source.supports}</p>{hideAuditNotes?null:<p><strong>Scope limit:</strong> {source.limitation}</p>}{hideAuditNotes?null:<small>Checked {source.checkedOn}{hideSourceCodes?'':` · ${source.id}`}</small>}</article>)}</>;
+ return <>{sources.map(source=><article key={source.id}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p><p><strong>Supports:</strong> {source.supports}</p>{hideAuditNotes?null:<p><strong>Scope limit:</strong> {source.limitation}</p>}</article>)}</>;
 }
 
 export function FingeringGuide({block,examples,sources,defaultVoicingId,hideSourceCodes=false,hideAuditNotes=false,illustrated=false,bothHands=false}:{block:Block;examples:FingeringExample[];sources:ChordSource[];defaultVoicingId:string;hideSourceCodes?:boolean;hideAuditNotes?:boolean;illustrated?:boolean;bothHands?:boolean}){

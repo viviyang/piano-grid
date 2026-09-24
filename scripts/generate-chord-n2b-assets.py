@@ -2,15 +2,14 @@
 import html, json, shutil
 from pathlib import Path
 from reportlab.lib.pagesizes import letter
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
+from chord_pdf_font import register_chord_pdf_font
 
 ROOT=Path(__file__).resolve().parents[1]
 DETAILS=ROOT/'docs/pianogrid-chords-n2b/03_details'
 SOURCE=ROOT/'docs/pianogrid-chords-n2b/09_generated_assets'
 PUBLIC=ROOT/'public/reference/assets'
-FONT=Path(r'C:\Windows\Fonts\seguisym.ttf')
+FONT=Path(r'C:\Windows\Fonts\NotoSansSC-VF.ttf')
 PDF_FONT='PianoGridSymbol'
 WHITE_PCS={0,2,4,5,7,9,11}
 NOTE_NAMES={0:'C',2:'D',4:'E',5:'F',7:'G',9:'A',11:'B'}
@@ -53,8 +52,9 @@ def make_pdf(raw,path):
     pdf.drawString(42,176,'Octave numbers identify register, not fingers. No fingering is assigned.')
     pdf.drawString(42,161,'Each position keeps the same three chord tones and changes the lowest chord tone.')
     pdf.drawString(42,142,'Keyboard window: C3–C6. Written spelling is preserved in notes, symbols and bass labels.')
-    pdf.setFont(PDF_FONT,7.5);pdf.drawString(42,119,'Theory and spelling sources: N2B source ledger; package validation passed.')
-    pdf.drawString(42,105,'Original diagrams generated from supplied note and MIDI data. Content checked 2026-09-12.')
+    source_label = 'Open Music Theory, Triads' if raw['subtype'] in ('diminished','augmented') else 'PianoChord.org, Suspended 2nd & 4th'
+    pdf.setFont(PDF_FONT,7.5);pdf.drawString(42,119,'Theory reference: '+source_label+'. See the chord page for source scope.')
+    pdf.drawString(42,105,'Original keyboard diagrams show the written notes and MIDI pitches above.')
     pdf.setFont(PDF_FONT,8);pdf.drawString(42,76,'pianogrid.com'+raw['url']);pdf.drawRightString(570,76,'1 / 1')
     pdf.showPage();pdf.save()
 
@@ -87,18 +87,28 @@ def make_svg(raw,path):
 <text x="42" y="662" class="meta">Octave numbers identify register, not fingers. No fingering is assigned.</text>
 <text x="42" y="677" class="meta">Each position keeps the same three chord tones and changes the lowest chord tone.</text>
 <text x="42" y="696" class="meta">Keyboard window: C3–C6. Written spelling is preserved in notes, symbols and bass labels.</text>
-<text x="42" y="719" class="meta">Theory and spelling sources: N2B source ledger; package validation passed.</text>
-<text x="42" y="733" class="meta">Original diagrams generated from supplied note and MIDI data. Content checked 2026-09-12.</text>
+<text x="42" y="719" class="meta">Theory reference: {"Open Music Theory, Triads" if raw["subtype"] in ("diminished","augmented") else "PianoChord.org, Suspended 2nd &amp; 4th"}. See the chord page for source scope.</text>
+<text x="42" y="733" class="meta">Original keyboard diagrams show the written notes and MIDI pitches above.</text>
 <text x="42" y="757" class="brand">pianogrid.com{html.escape(raw['url'])}</text><text x="570" y="757" text-anchor="end" class="meta">1 / 1</text></svg>'''
     path.write_text(body,encoding='utf-8')
 
+def export_spelling(value):
+    """ReportLab text extraction truncates supplementary-plane music glyphs.
+
+    Two BMP accidentals retain the same written spelling and copy cleanly.
+    Source JSON is unchanged; only the exported PDF/SVG text is normalized.
+    """
+    if isinstance(value,str):return value.replace('𝄫','♭♭').replace('𝄪','♯♯')
+    if isinstance(value,list):return [export_spelling(item) for item in value]
+    if isinstance(value,dict):return {key:export_spelling(item) for key,item in value.items()}
+    return value
+
 def main():
-    if not FONT.exists():raise SystemExit(f'Missing required Unicode font: {FONT}')
-    pdfmetrics.registerFont(TTFont(PDF_FONT,str(FONT)))
+    register_chord_pdf_font(FONT, PDF_FONT)
     SOURCE.mkdir(parents=True,exist_ok=True);PUBLIC.mkdir(parents=True,exist_ok=True)
     generated=[]
     for source in sorted(DETAILS.glob('*.page.json')):
-        raw=json.loads(source.read_text(encoding='utf-8'))
+        raw=export_spelling(json.loads(source.read_text(encoding='utf-8')))
         if len(raw['voicings'])!=3 or raw['fingering']['status']!='not_provided':raise SystemExit(f'Invalid N2B asset source: {source.name}')
         slug=raw['url'].split('/')[-1];pdf=SOURCE/f'chord-{slug}.pdf';svg=SOURCE/f'chord-{slug}.svg'
         make_pdf(raw,pdf);make_svg(raw,svg);shutil.copyfile(pdf,PUBLIC/pdf.name);shutil.copyfile(svg,PUBLIC/svg.name)

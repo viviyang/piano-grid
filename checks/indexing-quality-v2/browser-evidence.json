@@ -1,0 +1,455 @@
+{
+  "environment": "LOCAL_BUILD",
+  "base": "http://127.0.0.1:3047",
+  "passed": 43,
+  "failed": 0,
+  "results": [
+    {
+      "name": "/chords/by-key no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "The current tables cover 12 major and 12 natural-minor keys",
+        "canonical": "https://pianogrid.com/chords/by-key",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "/guide/piano-chords no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "Start with four chords",
+        "canonical": "https://pianogrid.com/guide/piano-chords",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "/chords/a-minor no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "The root-position example uses A3–C4–E4",
+        "canonical": "https://pianogrid.com/chords/a-minor",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "/chords/b-flat-major no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "Find B♭ immediately to the left of B",
+        "canonical": "https://pianogrid.com/chords/b-flat-major",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "/chords/e-flat-major no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "Find E♭ immediately to the left of E",
+        "canonical": "https://pianogrid.com/chords/e-flat-major",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "/chords/c-sharp-minor no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "The middle note is E, not E♯",
+        "canonical": "https://pianogrid.com/chords/c-sharp-minor",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "/chords/c-diminished no-JS content, canonical and robots",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "phrase": "Keep C and E♭, then lower G to G♭",
+        "canonical": "https://pianogrid.com/chords/c-diminished",
+        "robots": "index, follow"
+      }
+    },
+    {
+      "name": "By-key exact-spelling links and unlinked rows",
+      "passed": true,
+      "detail": {
+        "total": 336,
+        "links": 289,
+        "linked": {
+          "Bdim": "/chords/b-diminished",
+          "D♭": "/chords/d-flat-major",
+          "B♭": "/chords/b-flat-major",
+          "C♯m": "/chords/c-sharp-minor"
+        }
+      }
+    },
+    {
+      "name": "/chords/extended full reference index in no-JS HTML",
+      "passed": true,
+      "detail": {
+        "actual": 108,
+        "complete": true
+      }
+    },
+    {
+      "name": "/chords/altered full reference index in no-JS HTML",
+      "passed": true,
+      "detail": {
+        "actual": 96,
+        "complete": true
+      }
+    },
+    {
+      "name": "C major duplicate-title candidate is hidden from screen and accessibility tree",
+      "passed": true,
+      "detail": [
+        {
+          "visible": true
+        },
+        {
+          "visible": false
+        }
+      ]
+    },
+    {
+      "name": "/chords/diminished visible and ARIA keyboard range matches drawn keys",
+      "passed": true,
+      "detail": {
+        "aria": "Piano keyboard, C3–C6. Use left and right arrow keys to scroll.",
+        "caption": "Keyboard range: C3–C6",
+        "first": "48",
+        "last": "84"
+      }
+    },
+    {
+      "name": "/chords/augmented visible and ARIA keyboard range matches drawn keys",
+      "passed": true,
+      "detail": {
+        "aria": "Piano keyboard, C3–C6. Use left and right arrow keys to scroll.",
+        "caption": "Keyboard range: C3–C6",
+        "first": "48",
+        "last": "84"
+      }
+    },
+    {
+      "name": "/chords/suspended visible and ARIA keyboard range matches drawn keys",
+      "passed": true,
+      "detail": {
+        "aria": "Piano keyboard, C3–C6. Use left and right arrow keys to scroll.",
+        "caption": "Keyboard range: C3–C6",
+        "first": "48",
+        "last": "84"
+      }
+    },
+    {
+      "name": "/chords/add visible and ARIA keyboard range matches drawn keys",
+      "passed": true,
+      "detail": {
+        "aria": "Piano keyboard, C3–E5. Use left and right arrow keys to scroll.",
+        "caption": "Keyboard range: C3–E5",
+        "first": "48",
+        "last": "76"
+      }
+    },
+    {
+      "name": "/chords/extended hydrated reference index remains complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/altered hydrated reference index remains complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Altered type labels are readable",
+      "passed": true,
+      "detail": [
+        "All types",
+        "Dominant seventh, flat ninth",
+        "Dominant seventh, sharp ninth",
+        "Dominant seventh, flat fifth",
+        "Dominant seventh, sharp fifth",
+        "Dominant seventh, sharp eleventh",
+        "Dominant seventh, flat thirteenth",
+        "Dominant seventh, flat ninth and flat thirteenth",
+        "Dominant seventh, sharp fifth and sharp ninth"
+      ]
+    },
+    {
+      "name": "By-key selection C major",
+      "passed": true,
+      "detail": {
+        "expectRow": "Bdim"
+      }
+    },
+    {
+      "name": "By-key selection D♭ major",
+      "passed": true,
+      "detail": {
+        "expectRow": "D♭"
+      }
+    },
+    {
+      "name": "By-key selection A natural minor",
+      "passed": true,
+      "detail": {
+        "expectRow": "Em"
+      }
+    },
+    {
+      "name": "By-key selection D natural minor",
+      "passed": true,
+      "detail": {
+        "expectRow": "Am"
+      }
+    },
+    {
+      "name": "Natural-minor fifth stays minor v",
+      "passed": true,
+      "detail": "v"
+    },
+    {
+      "name": "Progression pop-four-c-major numerals, quality and transposition",
+      "passed": true,
+      "detail": {
+        "romans": [
+          "I",
+          "V",
+          "vi",
+          "IV"
+        ],
+        "qualities": [
+          "Major",
+          "Major",
+          "Minor",
+          "Major"
+        ],
+        "actualSymbols": [
+          "C",
+          "G",
+          "Am",
+          "F"
+        ]
+      }
+    },
+    {
+      "name": "Progression pop-four-e-major numerals, quality and transposition",
+      "passed": true,
+      "detail": {
+        "romans": [
+          "I",
+          "V",
+          "vi",
+          "IV"
+        ],
+        "qualities": [
+          "Major",
+          "Major",
+          "Minor",
+          "Major"
+        ],
+        "actualSymbols": [
+          "E",
+          "B",
+          "C♯m",
+          "A"
+        ]
+      }
+    },
+    {
+      "name": "Progression pop-four-a-major numerals, quality and transposition",
+      "passed": true,
+      "detail": {
+        "romans": [
+          "I",
+          "V",
+          "vi",
+          "IV"
+        ],
+        "qualities": [
+          "Major",
+          "Major",
+          "Minor",
+          "Major"
+        ],
+        "actualSymbols": [
+          "A",
+          "E",
+          "F♯m",
+          "D"
+        ]
+      }
+    },
+    {
+      "name": "b-flat-major first inversion keeps notes, bass and diagram synchronized",
+      "passed": true,
+      "detail": {
+        "currentNotes": [
+          "D4",
+          "F4",
+          "B♭4"
+        ],
+        "currentBass": "D4",
+        "selectedMidis": [
+          62,
+          65,
+          70,
+          62,
+          65,
+          70
+        ]
+      }
+    },
+    {
+      "name": "b-flat-major audio plays selected inversion and stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "e-flat-major first inversion keeps notes, bass and diagram synchronized",
+      "passed": true,
+      "detail": {
+        "currentNotes": [
+          "G4",
+          "B♭4",
+          "E♭5"
+        ],
+        "currentBass": "G4",
+        "selectedMidis": [
+          67,
+          70,
+          75,
+          67,
+          70,
+          75
+        ]
+      }
+    },
+    {
+      "name": "e-flat-major audio plays selected inversion and stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "c-sharp-minor first inversion keeps notes, bass and diagram synchronized",
+      "passed": true,
+      "detail": {
+        "currentNotes": [
+          "E4",
+          "G♯4",
+          "C♯5"
+        ],
+        "currentBass": "E4",
+        "selectedMidis": [
+          64,
+          68,
+          73,
+          64,
+          68,
+          73
+        ]
+      }
+    },
+    {
+      "name": "c-sharp-minor audio plays selected inversion and stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/chords/c-sus2 public sources match reader-facing claims",
+      "passed": true,
+      "detail": "Sources and scope\nThe Piano Chord Collection — Suspended 2nd & 4th\n\nPianoChord.org\n\nSupports: sus2 chord formula and written tone pattern\n\nScope limit: Supports the chord formula and spelling only; keyboard layouts are PianoGrid examples, and no fingering is assigned."
+    },
+    {
+      "name": "/chords/c-diminished public sources match reader-facing claims",
+      "passed": true,
+      "detail": "Sources\nTriads — Open Music Theory\n\nOpen Music Theory\n\nSupports: diminished triad formula and written tone spelling"
+    },
+    {
+      "name": "/chords/d-flat-diminished public sources match reader-facing claims",
+      "passed": true,
+      "detail": "Sources and scope\nTriads — Open Music Theory\n\nOpen Music Theory\n\nSupports: diminished triad formula and written tone spelling\n\nScope limit: Supports the chord formula and spelling only; keyboard layouts are PianoGrid examples, and no fingering is assigned."
+    },
+    {
+      "name": "/chords/c-maj7 public sources match reader-facing claims",
+      "passed": true,
+      "detail": "Sources and scope\nSeventh Chords — Open Music Theory\n\nOpen Music Theory\n\nSupports: Major Seventh chord construction, written spelling and inversion principles\n\nScope limit: Supports theory and spelling only; keyboard layouts are PianoGrid examples, and no fingering is assigned."
+    },
+    {
+      "name": "/chords/c-add9 public sources match reader-facing claims",
+      "passed": true,
+      "detail": "Sources\nChord Symbols — Added Notes (add) and Suspensions (sus)\n\nOpen Music Theory / VIVA Open Publishing\n\nSupports: Added-note symbols do not imply a seventh; Cadd9 and Cadd2 illustrate different placements of D.\n\nScope limit: Theory and naming reference only. The transposed keyboard layouts on this page are PianoGrid examples; no fingering is assigned.\n\nCadd9 chord\n\nMusicca\n\nSupports: Cadd9 and Cadd2 naming variation.\n\nScope limit: Theory and n"
+    },
+    {
+      "name": "Progression controls align without overlap",
+      "passed": true,
+      "detail": {
+        "labels": 4,
+        "controlsUnderLabels": true,
+        "noOverlap": true,
+        "tempoWidth": 255.5
+      }
+    },
+    {
+      "name": "Altered contents and filters do not collide",
+      "passed": true,
+      "detail": {
+        "links": 7,
+        "linksSeparated": true,
+        "controlsSeparated": true
+      }
+    },
+    {
+      "name": "Guide has one ordered beginner path and retained advanced topics",
+      "passed": true,
+      "detail": [
+        "Start with four chords",
+        "Read notes before finger numbers",
+        "Use a fingering only for its stated example",
+        "Move one note, then name the bass",
+        "Try one chord change",
+        "What to learn next",
+        "Questions and answers",
+        "Change the third, keep the other notes",
+        "Add a seventh without changing its name",
+        "Separate the formula from what is played",
+        "Read the changed degree",
+        "Hear a seventh-chord progression in context",
+        "A root and fifth without a third"
+      ]
+    },
+    {
+      "name": "Guide mobile document fits viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "Chord detail mobile document fits viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "No browser page errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "manual_gates": [
+    "real mobile device",
+    "screen reader",
+    "professional music-theory review",
+    "acoustic listening and print review"
+  ]
+}

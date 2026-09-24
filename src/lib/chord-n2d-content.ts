@@ -69,7 +69,14 @@ function validateRaw(raw:RawDetail){
  return definition;
 }
 
-function sourceRows(raw:RawDetail):ChordSource[]{return raw.sourceIds.map(id=>{const source=sourceMap.get(id);if(!source)throw new Error(`Missing Add source: ${id}`);return{id,title:source.title,publisher:source.publisher,url:source.url,checkedOn:source.accessedOn,supports:source.supports.join('; '),limitation:source.limits.join(' ')};});}
+function sourceRows(raw:RawDetail):ChordSource[]{
+ for(const id of raw.sourceIds)if(!sourceMap.has(id))throw new Error(`Missing Add source: ${id}`);
+ return raw.sourceIds.filter(id=>id!=='MUSICCA-CADD9'||(raw.rootSpelling==='C'&&raw.subtype==='add9')).map(id=>{
+  const source=sourceMap.get(id)!;
+  const supports=id==='OMT-ADDED-NOTES'?'Added-note symbols do not imply a seventh; Cadd9 and Cadd2 illustrate different placements of D.':id==='MUSICCA-CADD9'?'Cadd9 and Cadd2 naming variation.':'Major and minor add9/add2 construction and naming.';
+  return{id,title:source.title,publisher:source.publisher,url:source.url,checkedOn:source.accessedOn,supports,limitation:'Theory and naming reference only. The transposed keyboard layouts on this page are PianoGrid examples; no fingering is assigned.'};
+ });
+}
 
 export function getN2DChordDetail(url:N2DChordDetailRoute):ChordDetailModel{
  const raw=rawDetails.get(url)!;const definition=validateRaw(raw),master=readMaster(),slug=raw.id;
