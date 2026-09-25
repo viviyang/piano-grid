@@ -1,0 +1,73 @@
+{
+  "priorities": {
+    "P2": 77,
+    "P3": 58,
+    "P1": 6
+  },
+  "missingD": [],
+  "multiH1": [],
+  "titleMismatch": [
+    {
+      "id": "PG-038",
+      "path": "/chords/d-augmented",
+      "live": "D Augmented Piano Chord (Daug): Notes & Inversions | PianoGrid",
+      "observed": "D Augmented Piano Chord (Daug): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-039",
+      "path": "/chords/d-sus2",
+      "live": "Dsus2 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "observed": "D Suspended 2nd Piano Chord (Dsus2): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-040",
+      "path": "/chords/d-sus4",
+      "live": "Dsus4 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "observed": "D Suspended 4th Piano Chord (Dsus4): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-041",
+      "path": "/chords/e-flat-7",
+      "live": "E♭7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "observed": "E♭ Dominant Seventh Piano Chord (E♭7): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-043",
+      "path": "/chords/g-augmented",
+      "live": "G Augmented Piano Chord (Gaug): Notes & Inversions | PianoGrid",
+      "observed": "G Augmented Piano Chord (Gaug): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-048",
+      "path": "/chords/a-flat-7",
+      "live": "A♭7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "observed": "A♭ Dominant Seventh Piano Chord (A♭7): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-049",
+      "path": "/chords/e-augmented",
+      "live": "E Augmented Piano Chord (Eaug): Notes & Inversions | PianoGrid",
+      "observed": "E Augmented Piano Chord (Eaug): Notes & Inversions",
+      "stale": true
+    },
+    {
+      "id": "PG-050",
+      "path": "/chords/e-maj7",
+      "live": "Emaj7 Chord: Piano Notes, Inversions, Sound & PDF | PianoGrid",
+      "observed": "E Major Seventh Piano Chord (Emaj7): Notes & Inversions",
+      "stale": true
+    }
+  ],
+  "fixed": [
+    "/sheet-music/twinkle-twinkle-little-star",
+    "/sheet-music/hot-cross-buns",
+    "/sheet-music/ode-to-joy",
+    "/chords/add"
+  ]
+}

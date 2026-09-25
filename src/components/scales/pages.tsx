@@ -66,7 +66,7 @@ function FAQAndSources({ model }: { model: ScalePageModel }) {
     : 'References for the notes, patterns and examples on this page.';
   return <>
     <section className="am-content-section sc-copy-section" id="faq"><h2>Frequently asked questions</h2><div className="am-content-body sc-faq-list">{model.copy.faqs.map((faq) => <details key={faq.id ?? faq.question} data-faq-id={faq.id}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
-    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? sourceIntro : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} — {source.title}</a></h3>{concise ? <p>{publicSourceAttribution(source.scope)}</p> : <><p><strong>Supports:</strong> {source.scope}</p><p><strong>Location:</strong> {source.locator}</p><p className="sc-source-id">Source record: {source.sourceID}</p></>}</article>)}</div></div></section>
+    <section className="am-content-section sc-copy-section" id="sources"><h2>{concise ? 'Sources' : 'Sources and scope'}</h2><div className="am-content-body"><p>{concise ? sourceIntro : model.copy.sourceNote}</p><div className="sc-page-sources">{model.pageSources.map((source) => <article key={source.sourceID}><h3><a href={source.url}>{source.publisher} — {source.title}</a></h3>{concise ? <p>{publicSourceAttribution(source.scope)}</p> : <><p><strong>Supports:</strong> {publicSourceAttribution(source.scope)}</p><p><strong>Location:</strong> {publicSourceAttribution(source.locator)}</p></>}</article>)}</div></div></section>
   </>;
 }
 

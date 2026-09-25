@@ -11,7 +11,10 @@ import './category.css';
 
 export function ChordCategoryPage({model}:{model:ChordCategoryModel}) {
   const headingText=editorialHeading(model.url, model.title);
-  const heading=<header className="am-page-heading" data-block-id="category-intro"><PageBreadcrumb items={[{label:'Chords',href:'/chords'},{label:headingText}]}/><p className="am-eyebrow">Piano chord family</p><h1><ChordSectionTitle id="category-intro" text={headingText}/></h1><p className="am-direct-answer">{model.directAnswer}</p><p className="ch-category-intro">Choose a root and chord type, then open a chord to see its notes, hear it and explore inversions.</p></header>;
+  const intro = model.url === '/chords/add'
+    ? 'Compare major and minor add9 chords, see their notes, and explore two voicing layouts for each reference.'
+    : 'Choose a root and chord type, then open a chord to see its notes, hear it and explore inversions.';
+  const heading=<header className="am-page-heading" data-block-id="category-intro"><PageBreadcrumb items={[{label:'Chords',href:'/chords'},{label:headingText}]}/><p className="am-eyebrow">Piano chord family</p><h1><ChordSectionTitle id="category-intro" text={headingText}/></h1><p className="am-direct-answer">{model.directAnswer}</p><p className="ch-category-intro">{intro}</p></header>;
   const {url,quality,items,rootOrder,familySubtypes,contentBlocks,whitePitchClasses}=model;
   return <ChordCategoryExperience model={{url,quality,items,rootOrder,familySubtypes,contentBlocks,whitePitchClasses}} heading={heading}>
     {model.contentBlocks.map((block,index)=><section className="am-content-section" key={block.heading} id={`category-${index+1}`} aria-labelledby={`category-${index+1}-heading`}><h2 id={`category-${index+1}-heading`}>{block.heading}</h2><div className="am-content-body"><p>{block.body}</p></div></section>)}

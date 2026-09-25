@@ -13,16 +13,33 @@ function FingerNumbersDiagram({hand}:{hand:'left'|'right'}) {
  </svg><figcaption>Finger numbers: 1 thumb · 2 index · 3 middle · 4 ring · 5 little. This diagram explains numbering; the note-to-finger example below is specific to the selected position.</figcaption></figure>;
 }
 
-export function ChordSourceList({sources,hideSourceCodes=false,hideAuditNotes=false}:{sources:ChordSource[];hideSourceCodes?:boolean;hideAuditNotes?:boolean}){
- return <>{sources.map(source=><article key={source.id}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p><p><strong>Supports:</strong> {source.supports}</p>{hideAuditNotes?null:<p><strong>Scope limit:</strong> {source.limitation}</p>}</article>)}</>;
+function publicChordSourceText(text: string): string {
+  const cleaned = text
+    .replace(/competitor family coverage/gi, '')
+    .replace(/cross-check examples only/gi, '')
+    .replace(/no independent fingering dataset is authorized[^.]*\.?/gi, '')
+    .replace(/\bchecked \d{4}-\d{2}-\d{2}(?:\s*·\s*\S+)?/gi, '')
+    .replace(/\b(?:AT|AM|AN|PG|N2[A-D])-[A-Z0-9-]+\b/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.;])/g, '$1')
+    .trim();
+  return cleaned;
 }
 
-export function FingeringGuide({block,examples,sources,defaultVoicingId,hideSourceCodes=false,hideAuditNotes=false,illustrated=false,bothHands=false}:{block:Block;examples:FingeringExample[];sources:ChordSource[];defaultVoicingId:string;hideSourceCodes?:boolean;hideAuditNotes?:boolean;illustrated?:boolean;bothHands?:boolean}){
+export function ChordSourceList({sources,hideSourceCodes=false,hideAuditNotes=false}:{sources:ChordSource[];hideSourceCodes?:boolean;hideAuditNotes?:boolean}){
+ return <>{sources.map(source=>{
+  const supports = publicChordSourceText(source.supports);
+  const limitation = hideAuditNotes ? '' : publicChordSourceText(source.limitation);
+  return <article key={source.id}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p>{supports ? <p><strong>Supports:</strong> {supports}</p> : null}{limitation ? <p><strong>Scope limit:</strong> {limitation}</p> : null}</article>;
+ })}</>;
+}
+
+export function FingeringGuide({block,examples,sources,defaultVoicingId,hideSourceCodes=false,hideAuditNotes=false,illustrated=false,bothHands=false,omitHeading=false}:{block:Block;examples:FingeringExample[];sources:ChordSource[];defaultVoicingId:string;hideSourceCodes?:boolean;hideAuditNotes?:boolean;illustrated?:boolean;bothHands?:boolean;omitHeading?:boolean}){
  const selectedVoicingId=useContext(SelectedVoicingContext);
  const [hand,setHand]=useState<'right'|'left'>('right');
  const example=examples.find(item=>item.hand===hand&&item.voicingId===selectedVoicingId);
- return <section className="am-content-section ch-fingering" id={block.block_id} data-block-id={block.block_id} data-hand={hand} data-fingering-visible={example?'true':'false'} tabIndex={-1} aria-labelledby={`${block.block_id}-heading`}>
-  <div className="ch-section-heading"><div className="ch-section-kicker">Playing example</div><h2 id={`${block.block_id}-heading`}>{block.content.heading}</h2></div>
+ return <section className="am-content-section ch-fingering" id={block.block_id} data-block-id={block.block_id} data-hand={hand} data-fingering-visible={example?'true':'false'} tabIndex={-1} aria-labelledby={omitHeading?undefined:`${block.block_id}-heading`} aria-label={omitHeading?block.content.heading:undefined}>
+  <div className="ch-section-heading"><div className="ch-section-kicker">Playing example</div>{omitHeading?null:<h2 id={`${block.block_id}-heading`}>{block.content.heading}</h2>}</div>
   <div className="am-content-body ch-learning-panel">
    {block.content.paragraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}
    {!bothHands&&<><fieldset className="ch-hand-switch"><legend>Choose one hand</legend><div>

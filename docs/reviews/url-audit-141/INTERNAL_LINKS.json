@@ -1,0 +1,2182 @@
+[
+  {
+    "id": "PG-001",
+    "url": "/scales/f-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major",
+      "/guide/piano-scales"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-002",
+    "url": "/scales/g-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major",
+      "/guide/piano-scales"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-003",
+    "url": "/scales/pentatonic",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major",
+      "/guide/piano-scales"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-004",
+    "url": "/chords/a-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-005",
+    "url": "/chords/d-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-006",
+    "url": "/chords/d-flat-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/f-m7",
+      "/chords/f-sharp-major",
+      "/guide/piano-scales"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-007",
+    "url": "/chords/f-m7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-madd9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-008",
+    "url": "/chords/f-sharp-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/guide/piano-scales"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-009",
+    "url": "/guide/piano-scales",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-010",
+    "url": "/keyboard-notes/blank",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-011",
+    "url": "/scales/a-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-012",
+    "url": "/scales/c-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-013",
+    "url": "/scales/d-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-014",
+    "url": "/scales/e-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-015",
+    "url": "/chords/a-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/a-sus4",
+      "/chords/a-add9",
+      "/chords/a-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-016",
+    "url": "/chords/d-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-017",
+    "url": "/chords/g-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/g-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-018",
+    "url": "/scales/b-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-019",
+    "url": "/scales/f-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-020",
+    "url": "/scales/harmonic-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-021",
+    "url": "/chords/a-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-022",
+    "url": "/chords/b-flat-7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-add9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-023",
+    "url": "/chords/c-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-024",
+    "url": "/chords/e-flat-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-025",
+    "url": "/chords/e-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-026",
+    "url": "/chords/f-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-027",
+    "url": "/chords/f-sharp-7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-add9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-028",
+    "url": "/chords/f-sharp-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-029",
+    "url": "/chords/g-sharp-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-030",
+    "url": "/chords/g-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/g-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-031",
+    "url": "/scales/a-sharp-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-032",
+    "url": "/scales/b-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-033",
+    "url": "/chords/a-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-034",
+    "url": "/chords/b-flat-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-035",
+    "url": "/chords/c-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-036",
+    "url": "/scales/b-flat-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-037",
+    "url": "/scales/g-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-038",
+    "url": "/chords/d-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-039",
+    "url": "/chords/d-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/d-sus4",
+      "/chords/d-add9",
+      "/chords/d-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-040",
+    "url": "/chords/d-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-041",
+    "url": "/chords/e-flat-7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-add9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-042",
+    "url": "/chords/e-flat-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-043",
+    "url": "/chords/g-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/g-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-044",
+    "url": "/scales/chromatic",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-045",
+    "url": "/scales/e-flat-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-046",
+    "url": "/scales/f-sharp-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-047",
+    "url": "/tools/blank-sheet-music",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-048",
+    "url": "/chords/a-flat-7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-add9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-049",
+    "url": "/chords/e-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-050",
+    "url": "/chords/e-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-051",
+    "url": "/chords/f-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-052",
+    "url": "/scales/c-flat-major",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 0,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "nav-only"
+  },
+  {
+    "id": "PG-053",
+    "url": "/sheet-music/hot-cross-buns",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-054",
+    "url": "/chords/a-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-055",
+    "url": "/chords/c-flat-major",
+    "inSitemap": true,
+    "navInlinks": 1,
+    "contextualInlinks": 1,
+    "inlinkSources": [
+      "/chords/major",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-056",
+    "url": "/chords/c-minor",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-057",
+    "url": "/chords/c-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/c-sus4",
+      "/chords/c-madd9",
+      "/chords/c-add9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-058",
+    "url": "/chords/d-flat-7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-flat-add9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-059",
+    "url": "/chords/f-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-060",
+    "url": "/chords/f-sharp-m7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 4,
+    "inlinkSources": [
+      "/chords/f-sharp-maj7",
+      "/chords/f-sharp-madd9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-061",
+    "url": "/chords/b-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/augmented",
+      "/chords/b-diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-062",
+    "url": "/chords/b-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-063",
+    "url": "/chords/c-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/c-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-064",
+    "url": "/chords/e-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-065",
+    "url": "/chords/a-flat-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-066",
+    "url": "/chords/b-flat-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-067",
+    "url": "/chords/e-flat-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-068",
+    "url": "/chords/f-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/f-add9",
+      "/chords/f-sus4",
+      "/chords/f-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-069",
+    "url": "/chords/g-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/g-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-070",
+    "url": "/chords/g-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/g-sus4",
+      "/chords/g-add9",
+      "/chords/g-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-071",
+    "url": "/chords/a-flat-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-072",
+    "url": "/chords/b-flat-m7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 4,
+    "inlinkSources": [
+      "/chords/b-flat-maj7",
+      "/chords/b-flat-madd9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-073",
+    "url": "/chords/b-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-074",
+    "url": "/chords/d-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-075",
+    "url": "/chords/e-flat-m7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 4,
+    "inlinkSources": [
+      "/chords/e-flat-maj7",
+      "/chords/e-flat-madd9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-076",
+    "url": "/chords/b-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-077",
+    "url": "/chords/b-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/b-sus4",
+      "/chords/b-add9",
+      "/chords/b-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-078",
+    "url": "/chords/d-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-079",
+    "url": "/chords/a-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-080",
+    "url": "/chords/b-flat-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-081",
+    "url": "/chords/d-flat-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-flat-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-082",
+    "url": "/chords/e-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/e-sus4",
+      "/chords/e-add9",
+      "/chords/e-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-083",
+    "url": "/chords/f-sharp-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-084",
+    "url": "/chords/e-flat-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-085",
+    "url": "/chords/a-flat-m7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 4,
+    "inlinkSources": [
+      "/chords/a-flat-maj7",
+      "/chords/a-flat-madd9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-086",
+    "url": "/chords/a-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-087",
+    "url": "/chords/a-flat-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-088",
+    "url": "/chords/d-flat-maj7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-flat-7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-089",
+    "url": "/chords/e-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-090",
+    "url": "/chords/a-flat-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-m7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-091",
+    "url": "/chords/a-flat-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/a-flat-sus4",
+      "/chords/a-flat-add9",
+      "/chords/a-flat-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-092",
+    "url": "/chords/a-flat-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-093",
+    "url": "/chords/b-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-094",
+    "url": "/chords/b-flat-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/add",
+      "/chords/b-flat-madd9",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-095",
+    "url": "/chords/b-flat-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-m7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-096",
+    "url": "/chords/b-flat-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/b-flat-add9",
+      "/chords/b-flat-sus4",
+      "/chords/b-flat-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-097",
+    "url": "/chords/b-flat-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-098",
+    "url": "/chords/c-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-099",
+    "url": "/chords/d-flat-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-flat-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-100",
+    "url": "/chords/d-flat-m7",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 4,
+    "inlinkSources": [
+      "/chords/d-flat-maj7",
+      "/chords/d-flat-madd9",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-101",
+    "url": "/chords/d-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-102",
+    "url": "/chords/e-flat-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/add",
+      "/chords/e-flat-madd9",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-103",
+    "url": "/chords/e-flat-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-m7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-104",
+    "url": "/chords/e-flat-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/e-flat-add9",
+      "/chords/e-flat-sus4",
+      "/chords/e-flat-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-105",
+    "url": "/chords/e-flat-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-106",
+    "url": "/chords/e-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-107",
+    "url": "/chords/e-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-108",
+    "url": "/chords/f-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-m7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-109",
+    "url": "/chords/f-sharp-augmented",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-diminished",
+      "/chords/augmented",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-110",
+    "url": "/chords/f-sharp-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-m7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-111",
+    "url": "/chords/f-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-112",
+    "url": "/chords/g-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-113",
+    "url": "/chords/a-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-114",
+    "url": "/chords/f-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-115",
+    "url": "/chords/f-sharp-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-116",
+    "url": "/chords/g-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/g-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-117",
+    "url": "/chords/a-flat-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-118",
+    "url": "/chords/b-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-119",
+    "url": "/chords/c-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/add",
+      "/chords/c-add9",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-120",
+    "url": "/chords/d-flat-sus4",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-flat-sus2",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-121",
+    "url": "/chords/f-sharp-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-122",
+    "url": "/chords/f-sharp-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/f-sharp-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-123",
+    "url": "/chords/f-sharp-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/f-sharp-sus4",
+      "/chords/f-sharp-add9",
+      "/chords/f-sharp-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-124",
+    "url": "/chords/a-flat-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/a-flat-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-125",
+    "url": "/chords/add",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 25,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-126",
+    "url": "/chords/altered",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 1,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-127",
+    "url": "/chords/augmented",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 13,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-128",
+    "url": "/chords/b-diminished",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-augmented",
+      "/chords/diminished",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-129",
+    "url": "/chords/b-flat-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/b-flat-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-130",
+    "url": "/chords/c-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/c-madd9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-131",
+    "url": "/chords/d-flat-add9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/add",
+      "/chords/d-flat-madd9",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-132",
+    "url": "/chords/d-flat-m7-flat5",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/d-flat-m7",
+      "/chords/seventh",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-133",
+    "url": "/chords/d-flat-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/add",
+      "/chords/d-flat-add9",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-134",
+    "url": "/chords/d-flat-sus2",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 5,
+    "inlinkSources": [
+      "/chords/d-flat-sus4",
+      "/chords/d-flat-add9",
+      "/chords/d-flat-madd9",
+      "/chords/suspended",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-135",
+    "url": "/chords/e-flat-madd9",
+    "inSitemap": true,
+    "navInlinks": 0,
+    "contextualInlinks": 3,
+    "inlinkSources": [
+      "/chords/e-flat-add9",
+      "/chords/add",
+      "/chords"
+    ],
+    "clickDepthFromHome": 2,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-136",
+    "url": "/chords/extended",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 1,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-137",
+    "url": "/chords/suspended",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 25,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  },
+  {
+    "id": "PG-138",
+    "url": "/sheet-music/ode-to-joy",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-139",
+    "url": "/sheet-music/twinkle-twinkle-little-star",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 2,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-140",
+    "url": "/tools",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 1,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "weakly-linked"
+  },
+  {
+    "id": "PG-141",
+    "url": "/tools/hear-the-difference",
+    "inSitemap": true,
+    "navInlinks": 153,
+    "contextualInlinks": 6,
+    "inlinkSources": [
+      "/scales/f-major",
+      "/scales/g-major",
+      "/scales/pentatonic",
+      "/chords/a-diminished",
+      "/chords/d-diminished",
+      "/chords/d-flat-major",
+      "/chords/f-m7",
+      "/chords/f-sharp-major"
+    ],
+    "clickDepthFromHome": 1,
+    "linkClass": "contextual"
+  }
+]
