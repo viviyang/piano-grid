@@ -87,7 +87,7 @@ function routeLabel(url: string) {
 
 function ScaleRouteDirectory({ detailURLs }: { detailURLs: string[] }) {
   const urls = [...detailURLs, ...SCALE_FAMILY_ROUTES, '/arpeggios', '/guide/piano-scales'];
-  return <section className="am-content-section sc-copy-section sc-screen" id="supported-references"><h2>Supported scale references</h2><div className="am-content-body"><p>Open a ready detail, family comparison, arpeggio reference or practice guide. These links do not create filter-state URLs.</p><nav className="sc-route-directory" aria-label="Supported scale references">{[...new Set(urls)].map((url) => <ScaleTrackedLink event="related" href={url} key={url}>{routeLabel(url)}</ScaleTrackedLink>)}</nav></div></section>;
+  return <section className="am-content-section sc-copy-section sc-screen" id="supported-references"><h2>Supported scale references</h2><div className="am-content-body"><p>Choose a scale to see its notes and available fingering, compare scale families, or follow a practice guide.</p><nav className="sc-route-directory" aria-label="Supported scale references">{[...new Set(urls)].map((url) => <ScaleTrackedLink event="related" href={url} key={url}>{routeLabel(url)}</ScaleTrackedLink>)}</nav></div></section>;
 }
 
 export function ScalesCenterPage() {

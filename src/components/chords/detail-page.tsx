@@ -1,3 +1,4 @@
+import { publicSourceText } from '@/lib/public-source-copy';
 import type { ChordDetailModel } from '@/lib/a-minor-types';
 import { AMinorExperience as ChordDetailExperience, InversionRow, PrintActions } from '../a-minor/experience';
 import { ChordPageToc, ChordSectionTitle } from './page-toc';
@@ -17,7 +18,7 @@ export function ChordDetailPage({model,pilot=false}:{model:ChordDetailModel;pilo
   const compactSources=isPageFix16(data.url)||hideInternalSourceCodes(data.url);
   const publicSources=hideInternalSourceAudit(data.url);
   // Keep audit IDs and checked dates in the server model; only reader-facing fields cross the client boundary.
-  const renderedSources=model.sources.map(({id: _id, checkedOn: _checkedOn, ...source})=>({...source,id:source.url,checkedOn:''}));
+  const renderedSources=model.sources.map(({id: _id, checkedOn: _checkedOn, ...source})=>({...source,id:source.url,checkedOn:'',supports:publicSourceText(source.supports),limitation:publicSourceText(source.limitation)}));
   const renderedFingerings=model.fingeringExamples.map(({sourceIds: _sourceIds, ...example})=>({...example,sourceIds:[]}));
   const definition=data.chord.definition;
   const category={label:definition.categoryLabel,href:definition.categoryRoute};

@@ -24,7 +24,7 @@ INK = colors.HexColor("#1D1D1F")
 MUTED = colors.HexColor("#5C626B")
 LINE = colors.HexColor("#E1E4E8")
 SURFACE = colors.HexColor("#F6F7F9")
-GENERATOR_VERSION = "2026-09-11-STEP2"
+GENERATOR_VERSION = "2026-09-26-PUBLIC-COPY"
 INPUT_SHA256 = hashlib.sha256(MASTER.read_bytes()).hexdigest()
 
 
@@ -315,6 +315,13 @@ def hand_page(pdf, page_number, form_name, hand_label, ascending, descending, up
     wrap(pdf, scope, LEFT, y, CONTENT_W, size=7.5, leading=9, color=MUTED)
 
 
+def public_source_locator(locator):
+    """Keep book/page/section references; do not print internal screenshot IDs."""
+    text = re.sub(r"Screenshots?:\s*(?:turn\d+(?:view|search|file)\d+[;,\s]*)+", "", locator, flags=re.I)
+    text = re.sub(r"visually checked in the approved Scales plan evidence", "", text, flags=re.I)
+    return re.sub(r"\s{2,}", " ", text).strip(" ;,")
+
+
 def source_rows(master, source_ids):
     by_id = {item["source_id"]: item for item in master["sources"]}
     return [by_id[source_id] for source_id in source_ids if source_id in by_id]
@@ -326,7 +333,7 @@ def mapped(form, key):
 
 def generate_reference(master):
     path = OUT / "pianogrid-scales-starter-reference.pdf"
-    pdf = canvas.Canvas(str(path), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
+    pdf = canvas.Canvas(str(path), pagesize=(PAGE_W, PAGE_H), pageCompression=1, invariant=1)
     pdf.setTitle("C Major & A Minor - One-Octave Piano Reference")
     pdf.setAuthor("PianoGrid")
     pdf.setSubject(f"Generator {GENERATOR_VERSION}; input SHA-256 {INPUT_SHA256}")
@@ -340,20 +347,20 @@ def generate_reference(master):
         y = wrap(pdf, item, LEFT + 14, y + 6, CONTENT_W - 14, size=10, leading=15) - 4
     pdf.setFillColor(SURFACE)
     pdf.roundRect(LEFT, 110, CONTENT_W, 150, 8, fill=1, stroke=0)
-    wrap(pdf, "Coverage and build identity", LEFT + 16, 235, CONTENT_W - 32, size=11, leading=14, font="Helvetica-Bold")
-    wrap(pdf, f"Generator: {GENERATOR_VERSION}. Input SHA-256: {INPUT_SHA256}. Coverage: C major plus A natural, harmonic and classical melodic minor; one octave; separate hands; ascending and descending pitch diagrams. Finger numbers are omitted when the required source scope is unavailable.", LEFT + 16, 215, CONTENT_W - 32, size=8.5, leading=12, color=MUTED)
+    wrap(pdf, "Coverage and use", LEFT + 16, 235, CONTENT_W - 32, size=11, leading=14, font="Helvetica-Bold")
+    wrap(pdf, "Coverage: C major plus A natural, harmonic and classical melodic minor; one octave; separate hands; ascending and descending pitch diagrams. Finger numbers are omitted when the required source scope is unavailable.", LEFT + 16, 215, CONTENT_W - 32, size=8.5, leading=12, color=MUTED)
     pdf.showPage()
 
     header(pdf, "Sources, rights & limits", "Human-readable URLs and source locators", 2)
     source_ids = ["AM-NOTES-C-MAJOR", "AM-FINGER-LMT", "AM-FINGER-MF", "AN-OMT", "AN-PS-NAT", "AN-PS-HAR", "AN-PS-MEL", "AN-DENTON", "AN-HA-A"]
     y = PAGE_H - 96
     for source in source_rows(master, source_ids):
-        y = wrap(pdf, f"{source['source_id']} · {source['title']}", LEFT, y, CONTENT_W, size=8.5, leading=10, font="Helvetica-Bold")
+        y = wrap(pdf, source["title"], LEFT, y, CONTENT_W, size=8.5, leading=10, font="Helvetica-Bold")
         y = wrap(pdf, source["url"], LEFT, y - 1, CONTENT_W, size=7.5, leading=9, color=BLUE)
-        y = wrap(pdf, f"Locator: {source.get('locator') or 'not supplied'}", LEFT, y - 1, CONTENT_W, size=7.5, leading=9, color=MUTED) - 7
+        y = wrap(pdf, f"Locator: {public_source_locator(source.get('locator') or 'not supplied')}", LEFT, y - 1, CONTENT_W, size=7.5, leading=9, color=MUTED) - 7
     y -= 2
     y = wrap(pdf, "Rights and provenance", LEFT, y, CONTENT_W, size=9, leading=11, font="Helvetica-Bold")
-    wrap(pdf, "Scale facts, note spellings and source-scoped fingering facts are transcribed from the named references. PianoGrid created this PDF's text, diagrams and layout. No third-party source PDF, image, music engraving or font file is embedded. Helvetica is a built-in PDF base font.", LEFT, y - 2, CONTENT_W, size=7.5, leading=9, color=MUTED)
+    wrap(pdf, "Scale facts, note spellings and fingering examples with the stated scope are transcribed from the named references. PianoGrid created this PDF's text, diagrams and layout. No third-party source PDF, image, music engraving or font file is embedded. Helvetica is a built-in PDF base font.", LEFT, y - 2, CONTENT_W, size=7.5, leading=9, color=MUTED)
     pdf.showPage()
 
     c = master["pages"]["/scales/c-major"]["data"]
@@ -362,7 +369,7 @@ def generate_reference(master):
     for name, form in objects:
         if form is None:
             for hand, label in [("RH", "Right hand"), ("LH", "Left hand")]:
-                hand_page(pdf, page_number, name, label, [item["note"] for item in c["pitch_sequences"][hand]["ascending"]], [item["note"] for item in c["pitch_sequences"][hand]["descending"]], c["fingering"][hand]["ascending"], c["fingering"][hand]["descending"], "Source-documented C-major one-octave row. The displayed register is PianoGrid's labeled reference range.")
+                hand_page(pdf, page_number, name, label, [item["note"] for item in c["pitch_sequences"][hand]["ascending"]], [item["note"] for item in c["pitch_sequences"][hand]["descending"]], c["fingering"][hand]["ascending"], c["fingering"][hand]["descending"], "C-major one-octave fingering from the listed sources. The displayed register is PianoGrid's labeled reference range.")
                 pdf.showPage()
                 page_number += 1
         else:
@@ -389,7 +396,7 @@ def answer_rule(pdf, y, number, answer):
 
 def generate_worksheet():
     path = OUT / "pianogrid-scales-notes-check-worksheet.pdf"
-    pdf = canvas.Canvas(str(path), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
+    pdf = canvas.Canvas(str(path), pagesize=(PAGE_W, PAGE_H), pageCompression=1, invariant=1)
     pdf.setTitle("Piano Scale Notes - Practice Worksheet")
     pdf.setAuthor("PianoGrid")
     pdf.setSubject(f"Generator {GENERATOR_VERSION}; input SHA-256 {INPUT_SHA256}")
@@ -451,7 +458,7 @@ def generate_worksheet():
     y = answer_rule(pdf, y, 3, "Choice A. F and G return to their natural-minor values in this classical descending exercise.") - 32
     wrap(pdf, "Reference and scope", LEFT, y, CONTENT_W, size=11, leading=14, font="Helvetica-Bold")
     y = wrap(pdf, "PianoGrid Scales: C Major and A Minor. Scale-form rules are documented in Open Music Theory: https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/ . This worksheet is an original note-knowledge exercise, not a teacher-reviewed performance assessment.", LEFT, y - 22, CONTENT_W, size=9, leading=14, color=MUTED)
-    wrap(pdf, f"Generator: {GENERATOR_VERSION}. Input SHA-256: {INPUT_SHA256}. No third-party source PDF, image, engraving or font file is embedded.", LEFT, y - 12, CONTENT_W, size=7.5, leading=10, color=MUTED)
+    wrap(pdf, "PianoGrid created the text, diagrams and layout. No third-party score or source document is reproduced.", LEFT, y - 12, CONTENT_W, size=7.5, leading=10, color=MUTED)
     pdf.showPage()
     pdf.save()
     return path

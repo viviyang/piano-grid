@@ -21,7 +21,7 @@ BASE = runpy.run_path(str(ROOT / "scripts" / "generate-scale-pdfs.py"))
 # runpy returns a copy of the module dict. Drawing helpers keep the original
 # globals, so page size has to be written to both or A4 text lands on the header.
 LAYOUT = BASE["header"].__globals__
-GENERATOR_VERSION = "2026-09-14-SCALES-COMPLETION-1"
+GENERATOR_VERSION = "2026-09-26-SCALES-PUBLIC-COPY"
 
 
 def set_page(size):
@@ -63,7 +63,7 @@ def reference_page(pdf, page_number, title, ascending_names, descending_names, s
 
 def make_pdf(path, pagesize, title, subject, page_writer):
     set_page(pagesize)
-    pdf = canvas.Canvas(str(path), pagesize=pagesize, pageCompression=1)
+    pdf = canvas.Canvas(str(path), pagesize=pagesize, pageCompression=1, invariant=1)
     pdf.setTitle(title)
     pdf.setAuthor("PianoGrid")
     pdf.setSubject(subject)
@@ -101,7 +101,7 @@ def cover(pdf, title, subtitle, body, page_number=1):
     y = BASE["PAGE_H"] - 112
     y = BASE["wrap"](pdf, body, BASE["LEFT"], y, BASE["CONTENT_W"], size=11, leading=17)
     y -= 24
-    BASE["wrap"](pdf, f"Generator: {GENERATOR_VERSION}. Current music input subset SHA-256 is recorded in the accompanying generation metadata. No third-party source PDF, image, engraving or font file is embedded.", BASE["LEFT"], y, BASE["CONTENT_W"], size=8, leading=11, color=BASE["MUTED"])
+    BASE["wrap"](pdf, "PianoGrid created the text, keyboard diagrams and notation in this reference. No third-party score or source document is reproduced.", BASE["LEFT"], y, BASE["CONTENT_W"], size=8, leading=11, color=BASE["MUTED"])
     pdf.showPage()
 
 
@@ -142,7 +142,7 @@ def build_two_hand(master, suffix, pagesize):
         for page_number, (hand, label) in enumerate((("RH", "Right Hand · C4-C5"), ("LH", "Left Hand · C3-C4")), 2):
             asc = [item["note"] for item in data["pitch_sequences"][hand]["ascending"]]
             desc = [item["note"] for item in data["pitch_sequences"][hand]["descending"]]
-            BASE["hand_page"](pdf, page_number, "C Major", "Right hand" if hand == "RH" else "Left hand", asc, desc, data["fingering"][hand]["ascending"], data["fingering"][hand]["descending"], "Source-documented one-octave row. First read each hand separately; this document does not score two-hand coordination.")
+            BASE["hand_page"](pdf, page_number, "C Major", "Right hand" if hand == "RH" else "Left hand", asc, desc, data["fingering"][hand]["ascending"], data["fingering"][hand]["descending"], "One-octave fingering from the listed sources. First read each hand separately; this document does not score two-hand coordination.")
             sections.append({"title": label, "ascending": asc, "descending": desc, "fingering": data["fingering"][hand]})
             pdf.showPage()
         return sections

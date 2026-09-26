@@ -1,6 +1,7 @@
 'use client';
 import {useContext,useState} from 'react';
 import type {Block,ChordSource,FingeringExample} from '@/lib/a-minor-types';
+import {publicSourceText} from '@/lib/public-source-copy';
 import {SelectedVoicingContext} from '../a-minor/experience';
 
 function noteName(pitch:string){return pitch.replace(/-?\d+$/,'');}
@@ -13,24 +14,13 @@ function FingerNumbersDiagram({hand}:{hand:'left'|'right'}) {
  </svg><figcaption>Finger numbers: 1 thumb · 2 index · 3 middle · 4 ring · 5 little. This diagram explains numbering; the note-to-finger example below is specific to the selected position.</figcaption></figure>;
 }
 
-function publicChordSourceText(text: string): string {
-  const cleaned = text
-    .replace(/competitor family coverage/gi, '')
-    .replace(/cross-check examples only/gi, '')
-    .replace(/no independent fingering dataset is authorized[^.]*\.?/gi, '')
-    .replace(/\bchecked \d{4}-\d{2}-\d{2}(?:\s*·\s*\S+)?/gi, '')
-    .replace(/\b(?:AT|AM|AN|PG|N2[A-D])-[A-Z0-9-]+\b/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/\s+([,.;])/g, '$1')
-    .trim();
-  return cleaned;
-}
 
 export function ChordSourceList({sources,hideSourceCodes=false,hideAuditNotes=false}:{sources:ChordSource[];hideSourceCodes?:boolean;hideAuditNotes?:boolean}){
  return <>{sources.map(source=>{
-  const supports = publicChordSourceText(source.supports);
-  const limitation = hideAuditNotes ? '' : publicChordSourceText(source.limitation);
-  return <article key={source.id}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p>{supports ? <p><strong>Supports:</strong> {supports}</p> : null}{limitation ? <p><strong>Scope limit:</strong> {limitation}</p> : null}</article>;
+  const supports = publicSourceText(source.supports);
+  // Compact presentation must not hide attribution or fingering limitations.
+  const limitation = publicSourceText(source.limitation);
+  return <article key={source.id}><h3><a href={source.url} rel="noreferrer">{source.title}</a></h3><p>{source.publisher}</p>{supports ? <p><strong>Supports:</strong> {supports}</p> : null}{limitation ? <p><strong>Scope:</strong> {limitation}</p> : null}</article>;
  })}</>;
 }
 
@@ -47,13 +37,13 @@ export function FingeringGuide({block,examples,sources,defaultVoicingId,hideSour
    </div></fieldset></>}
    <div className={bothHands?"cp-both-hands":undefined}>{(bothHands?(['left','right'] as const):[hand]).map(shownHand=>{
     const shownExample=examples.find(item=>item.hand===shownHand&&item.voicingId===selectedVoicingId);
-    const shownRoot=examples.find(item=>item.hand===shownHand&&item.voicingId===defaultVoicingId)!;
+    const shownRoot=examples.find(item=>item.hand===shownHand&&item.voicingId===defaultVoicingId);
     return <div key={shownHand} data-hand={shownHand}>   {illustrated&&<FingerNumbersDiagram hand={shownHand}/>}
    {shownExample?<div className="ch-fingering-example" role="group" aria-label={`${shownHand} hand fingering for root position`}>
     <div className="ch-fingering-title"><strong>{shownHand==='right'?'Right-hand':'Left-hand'} root position</strong><span>one hand · low to high</span></div>
     <ol className="ch-finger-map" aria-label="Notes and corresponding finger numbers">{shownExample.notes.map((pitch,index)=><li key={pitch}><span className="ch-finger-number" aria-label={`finger ${shownExample.fingers[index]}`}>{shownExample.fingers[index]}</span><span className="ch-finger-line" aria-hidden="true"/><strong>{noteName(pitch)}</strong><small>{pitch}</small></li>)}</ol>
     <p className="ch-fingering-scope">{shownExample.scope} {shownExample.limitation}</p>
-   </div>:<div className="ch-fingering-unavailable" role="status"><strong>No verified fingering is shown for this inversion.</strong><p>The root-position {shownHand}-hand example ({shownRoot.notes.map(noteName).join('–')}) remains available when you select Root position. The current chord tones, keyboard, sound, and print selection still follow the inversion above.</p></div>}
+   </div>:<div className="ch-fingering-unavailable" role="status"><strong>No verified fingering is shown for this position and hand.</strong><p>{shownRoot ? <>The root-position {shownHand}-hand example ({shownRoot.notes.map(noteName).join('–')}) remains available when you select Root position. </> : <>No fingering example is available for this hand. </>}The current chord tones, keyboard, sound, and print selection still follow the selected position.</p></div>}
 </div>;
    })}</div>
    <details className="ch-source-details"><summary>{hideSourceCodes||hideAuditNotes?'Sources':'Sources and scope'}</summary><div>{<ChordSourceList sources={sources} hideSourceCodes={hideSourceCodes} hideAuditNotes={hideAuditNotes}/>}</div></details>

@@ -1,3 +1,4 @@
+import { publicSourceText, publicTriadDescription } from './public-source-copy';
 import type { Metadata } from 'next';
 import { SITE_ORIGIN } from './site-config';
 import type { ChordDetailModel } from './a-minor-types';
@@ -313,15 +314,7 @@ export function hideInternalScaleSources(url: string): boolean {
 }
 
 export function publicSourceAttribution(scope: string): string {
-  return scope
-    .replace(/visually checked in the approved Scales plan evidence/gi, '')
-    .replace(/approved[- ]plan evidence/gi, '')
-    .replace(/;?\s*no contents verified/gi, '')
-    .replace(/\b(?:AT|AM|AN|PG|N2[A-D])-[A-Z0-9-]+\b/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/\s+([,.;])/g, '$1')
-    .replace(/^[,;.\s]+|[,;\s]+$/g, '')
-    .trim();
+  return publicSourceText(scope);
 }
 
 /** Hide internal review IDs and audit labels on selected public chord pages. Keep source names and links. */
@@ -444,7 +437,8 @@ export function editorialMetadata(original: Metadata): Metadata {
   const url = canonical.startsWith('https://') ? new URL(canonical).pathname : canonical;
   const copy = SEO_COPY[url];
   const title = copy?.title ?? original.title;
-  const description = (copy?.description ?? original.description)?.replace(/\bthe ([a-g])(?= (?:major|minor|dominant|diminished|augmented|suspended))/g, (_, root: string) => `the ${root.toUpperCase()}`);
+  const rawDescription = (copy?.description ?? original.description)?.replace(/\bthe ([a-g])(?= (?:major|minor|dominant|diminished|augmented|suspended))/g, (_, root: string) => `the ${root.toUpperCase()}`);
+  const description = rawDescription ? publicTriadDescription(url, rawDescription) : rawDescription;
   if (typeof title !== 'string' || !description) return original;
   // Long specific titles retain their detail instead of forcing a brand suffix.
   const branded = title.includes('PianoGrid') || title.length > 52 ? title : `${title} | PianoGrid`;
