@@ -147,7 +147,7 @@ export function ScaleFamilyPage({ url }: { url: ScaleFamilyRoute }) {
   const comparison = <FamilyComparison url={url} data={data}/>;
   return <ScaleShell model={data.model}>
     {modes && <div className="am-reading sc-reading sc-screen">{comparison}</div>}
-    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={hideInternalScaleSources(url)} explorerHeading={modes ? 'Explore a Mode' : undefined} hideScopeNote={modes}/>
+    <ScaleCollectionExperience examples={data.examples} keyboardKeys={data.keyboardKeys} defaultExampleID={data.defaultExampleID} kind="scale" scope={data.scope} conciseSources={hideInternalScaleSources(url)} explorerHeading={modes ? 'Explore a Mode' : undefined} hideScopeNote={modes || url === '/scales/pentatonic'}/>
     <ScaleAdLayoutSlot id="scale-family-after-workspace"/>
     <div className="am-reading sc-reading sc-screen">{!modes && comparison}{data.model.copy.sections.map((section) => <CopySection section={section} model={data.model} key={section.id}/>)}<FAQAndSources model={data.model}/></div>
   </ScaleShell>;

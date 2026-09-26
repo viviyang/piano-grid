@@ -345,6 +345,13 @@ function optionFromEvents(example: UnknownRecord, page: UnknownRecord, master: {
   };
 }
 
+function publicFamilyComparison(url: ScaleFamilyRoute, value: string) {
+  if (url === '/scales/pentatonic' && /checked against Texas A&M/i.test(value)) {
+    return 'Compare this five-note pattern with the major and minor pentatonic examples below.';
+  }
+  return value;
+}
+
 export function getScaleFamily(url: ScaleFamilyRoute): ScaleFamilyPageData {
   const { page, master } = readAuthorizedPage(url);
   const examples = page.data.examples.map((example: UnknownRecord) => ({
@@ -353,7 +360,7 @@ export function getScaleFamily(url: ScaleFamilyRoute): ScaleFamilyPageData {
     collectionLabel: page.title,
     option: optionFromEvents(example, page, master),
     summary: example.spelling_note ?? example.comparison ?? `${example.label}: ${example.ascending_notes.join(' - ')}.`,
-    comparison: example.comparison ?? example.cross_check ?? 'Compare the written notes and interval pattern shown in the table.',
+    comparison: publicFamilyComparison(url, example.comparison ?? example.cross_check ?? 'Compare the written notes and interval pattern shown in the table.'),
     family: page.url,
   }));
   return { model: modelFor(page, master), examples, defaultExampleID: examples[0].id, scope: page.data.scope, keyboardKeys: getLayouts('/keyboard-notes')[0].keys };

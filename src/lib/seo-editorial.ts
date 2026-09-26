@@ -25,7 +25,87 @@ export const SEO_COPY: Record<string, Copy> = {
   '/keyboard-notes/chart': { title: 'Piano Notes Chart: Staff Notes to Keyboard', h1: 'Piano Notes Chart', description: 'Match treble and bass clef notes to piano keys. Locate middle C and compare note names and octaves across the supported keyboard ranges.' },
   '/keyboard-notes/finger-numbers': { title: 'Piano Finger Numbers Chart: Left & Right Hand | PianoGrid', h1: 'Piano Finger Numbers', description: 'Use this piano finger numbers chart to learn fingers 1–5 for the left and right hands, understand LH and RH labels, and read basic fingering notation.' },
   '/keyboard-notes/frequencies': { title: 'Piano Note Frequency Chart: A0–C8', description: 'Use this piano note frequency chart to look up all 88 piano keys from A0 to C8, including note names, MIDI numbers and frequencies in hertz with A4 = 440 Hz.' },
-  '/keyboard-notes/blank': { title: 'Blank Piano Keyboard Worksheet', description: 'Print an unlabeled 13-key or 25-key keyboard segment to write note names, mark a scale or make your own exercise.' },
+  '/keyboard-notes/blank': { title: 'Blank Piano Keyboard Worksheet – Printable PDF | PianoGrid', h1: 'Blank Piano Keyboard Worksheet', description: 'Print a blank piano keyboard worksheet with 13-key and 25-key layouts. Download US Letter or A4 PDFs to label notes, mark scales or make your own exercises.' },
+  '/scales/f-major': {
+    title: 'F Major Scale on Piano: Notes & Fingering | PianoGrid',
+    h1: 'F Major Scale on Piano',
+    description: 'Learn the F major scale on piano: F, G, A, B♭, C, D and E. See the key signature, keyboard notes, one-octave fingering for both hands, sound and practice.',
+    intro: 'The F major scale uses F, G, A, B♭, C, D and E. See the keyboard, key signature and one-octave fingering for both hands, then hear and practice the scale.',
+  },
+  '/scales/g-major': {
+    title: 'G Major Scale on Piano: Notes & Fingering | PianoGrid',
+    h1: 'G Major Scale on Piano',
+    description: 'Learn the G major scale on piano: G, A, B, C, D, E and F♯. See the key signature, keyboard notes, one-octave fingering for both hands, sound and practice.',
+    intro: 'The G major scale uses G, A, B, C, D, E and F♯. See the keyboard, key signature and one-octave fingering for both hands, then hear and practice the scale.',
+  },
+  '/scales/pentatonic': {
+    title: 'Pentatonic Scale on Piano: Major & Minor | PianoGrid',
+    h1: 'Pentatonic Scale on Piano',
+    description: 'Learn major and minor pentatonic scales on piano. Compare five-note patterns, keyboard diagrams and sound for C, A, G and E examples.',
+    intro: 'Compare major and minor pentatonic scales on piano, see their five-note patterns on the keyboard, and hear or practice each example.',
+  },
+  '/chords/a-diminished': {
+    title: 'A Diminished Chord: Piano Notes & Inversions | PianoGrid',
+    h1: 'A Diminished Chord',
+    description: 'Learn the A diminished chord on piano: A, C and E♭. See the keyboard diagram, 1–♭3–♭5 formula, root position and two inversions, sound and practice.',
+    intro: 'The A diminished chord (Adim) contains A, C and E♭. Use the keyboard diagram to see the notes, hear the chord and compare root position with its two inversions.',
+    fingering: 'Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.',
+    h2: {
+      'A Diminished keyboard and inversions': 'A Diminished Chord Notes & Inversions',
+      'A Diminished formula': 'How the A Diminished Chord Is Built',
+      'Compare A Diminished': 'A Diminished vs A Minor',
+      'A Diminished inversions': 'A Diminished Chord Inversions',
+      'Questions about Adim': 'A Diminished Chord FAQ',
+      'Build Adim on the keyboard': 'Build the A Diminished Chord on Piano',
+      'Print this chord reference': 'Print the A Diminished Chord Reference',
+    },
+  },
+  '/chords/d-diminished': {
+    title: 'D Diminished Chord: Piano Notes & Inversions | PianoGrid',
+    h1: 'D Diminished Chord',
+    description: 'Learn the D diminished chord on piano: D, F and A♭. See the keyboard diagram, 1–♭3–♭5 formula, root position and two inversions, sound and practice.',
+    intro: 'The D diminished chord (Ddim) contains D, F and A♭. Use the keyboard diagram to see the notes, hear the chord and compare root position with its two inversions.',
+    fingering: 'Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.',
+    h2: {
+      'D Diminished keyboard and inversions': 'D Diminished Chord Notes & Inversions',
+      'D Diminished formula': 'How the D Diminished Chord Is Built',
+      'Compare D Diminished': 'D Diminished vs D Minor',
+      'D Diminished inversions': 'D Diminished Chord Inversions',
+      'Questions about Ddim': 'D Diminished Chord FAQ',
+      'Build Ddim on the keyboard': 'Build the D Diminished Chord on Piano',
+      'Print this chord reference': 'Print the D Diminished Chord Reference',
+    },
+  },
+  '/chords/d-flat-major': {
+    title: 'D-flat Major Chord: Piano Notes & Inversions | PianoGrid',
+    h1: 'D-flat Major Chord',
+    description: 'Learn the D-flat major chord on piano: D♭, F and A♭. See the keyboard diagram, root position and two inversions, hear the chord and download a printable reference.',
+    intro: 'The D-flat major chord contains D♭, F and A♭. Use the keyboard diagram to see the notes, hear the chord and compare root position with two inversions.',
+    fingering: 'Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.',
+    h2: {
+      'D♭ major keyboard and inversions': 'D-flat Major Chord Notes & Inversions',
+      'How the D-flat Major chord is built': 'How the D-flat Major Chord Is Built',
+      'Root position and inversions': 'D-flat Major Chord Inversions',
+      'Questions about this chord': 'D-flat Major Chord FAQ',
+      'Build D♭ on the keyboard': 'Build the D-flat Major Chord on Piano',
+      'Print this chord reference': 'Print the D-flat Major Chord Reference',
+    },
+  },
+  '/chords/f-sharp-major': {
+    title: 'F-sharp Major Chord: Piano Notes & Inversions | PianoGrid',
+    h1: 'F-sharp Major Chord',
+    description: 'Learn the F-sharp major chord on piano: F♯, A♯ and C♯. See the keyboard diagram, root position and two inversions, hear the chord and download a printable reference.',
+    intro: 'The F-sharp major chord contains F♯, A♯ and C♯. Use the keyboard diagram to see the notes, hear the chord and compare root position with two inversions.',
+    fingering: 'Fingerings are not included on this page. The diagram shows note positions, not a prescribed hand shape.',
+    h2: {
+      'F♯ major keyboard and inversions': 'F-sharp Major Chord Notes & Inversions',
+      'How the F-sharp Major chord is built': 'How the F-sharp Major Chord Is Built',
+      'Root position and inversions': 'F-sharp Major Chord Inversions',
+      'Questions about this chord': 'F-sharp Major Chord FAQ',
+      'Build F♯ on the keyboard': 'Build the F-sharp Major Chord on Piano',
+      'Print this chord reference': 'Print the F-sharp Major Chord Reference',
+    },
+  },
   '/chords': { title: 'Piano Chord Chart: Notes, Diagrams & Sound', description: 'Find piano chords by name, root or type. See their notes and keyboard positions, hear examples, and open detailed chord and inversion guides.' },
   '/chords/b-minor': {
     title: 'B Minor Chord – Piano Notes & Inversions | PianoGrid',
@@ -306,7 +386,7 @@ export function publicAddedNoteCopy(text: string): string {
   return ADDED_NOTE_PUBLIC_COPY.get(text) ?? text;
 }
 
-const PUBLIC_SCALE_SOURCE_CLEANUP = new Set(['/scales/modes', '/scales/c-major', '/scales/a-minor', '/scales/blues', '/scales/d-major', '/scales/e-minor']);
+const PUBLIC_SCALE_SOURCE_CLEANUP = new Set(['/scales/modes', '/scales/c-major', '/scales/a-minor', '/scales/blues', '/scales/d-major', '/scales/e-minor', '/scales/f-major', '/scales/g-major', '/scales/pentatonic']);
 
 /** Hide source-record IDs and audit labels on selected public scale pages. Keep source names and links. */
 export function hideInternalScaleSources(url: string): boolean {
