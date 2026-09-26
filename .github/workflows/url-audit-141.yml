@@ -93,8 +93,13 @@ jobs:
           allowed = {item['path'] for item in records}
           allowed.update(str(p.relative_to(root)) for p in (root/'public/downloads/scales').glob('*.pdf'))
           allowed.add(str(output.relative_to(root)))
+          # Existing project checks rewrite their own tracked reports. Never stage those reports.
+          generated_checks = {'checks/batches/07-site-integration/tailwind-compile.json',
+                              'checks/batches/07-site-integration/foundation.json',
+                              'checks/batches/07-site-integration/foundation.compiled.css'}
           changed = subprocess.check_output(['git','diff','--name-only']).decode().splitlines()
-          assert set(changed) <= allowed, f'Unexpected changed files: {set(changed)-allowed}'
+          unexpected = set(changed) - allowed - generated_checks
+          assert not unexpected, f'Unexpected changed files: {unexpected}'
           branch = 'audit/141-url-content-intent'
           remote = subprocess.check_output(['git','ls-remote','origin',f'refs/heads/{branch}']).decode().split()[0]
           assert remote == os.environ['GITHUB_SHA'], 'Remote branch advanced; do not overwrite concurrent work.'
