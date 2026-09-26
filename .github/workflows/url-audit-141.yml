@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: url-audit-141-${{ github.ref }}
@@ -22,17 +22,14 @@ jobs:
       PIANO_AUDIT_BASE: http://127.0.0.1:8123
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Apply checksum-verified reviewed edits once
-        run: |
-          if test -f scripts/apply-url-audit-reviewed-edits.py; then
-            python scripts/apply-url-audit-reviewed-edits.py
-          fi
       - name: Install locked application and pinned audit dependencies
         run: |
           npm ci
@@ -41,11 +38,12 @@ jobs:
         run: |
           node --experimental-strip-types --test tests/url-audit/public-source-copy.test.mjs
           python -m unittest discover -s tests/url-audit -p 'test_*.py'
-      - name: Regenerate the eight scale resources and verify all public PDFs
+      - name: Regenerate and verify PDF resources without committing
         run: |
           python scripts/generate-scale-pdfs.py
           python scripts/generate-scale-completion-pdfs.py
           python scripts/check-url-audit-pdfs.py
+          git diff --exit-code -- public/downloads/scales/
       - name: Project checks
         run: npm run check
       - name: Production build without deployment
@@ -63,53 +61,7 @@ jobs:
           export CHROME_BIN="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
           test -n "$CHROME_BIN"
           node scripts/check-url-audit-browser.mjs
-      - name: Record verified result and finish the authorized branch-only commit
-        run: |
-          python - <<'PY'
-          import json, pathlib, os, subprocess
-          root = pathlib.Path.cwd()
-          html = json.loads((root/'checks/url-audit-final/HTML_AUDIT.json').read_text())
-          pdf = json.loads((root/'checks/url-audit-final/PDF_AUDIT.json').read_text())
-          browser = json.loads((root/'checks/url-audit-final/browser/BROWSER_AUDIT.json').read_text())
-          assert html['target_failures'] == 0 and html['graph_complete_for_sitemap']
-          assert not pdf['errors'] and not browser['errors'] and browser['failures'] == 0 and browser['pages'] == 12
-          result = {'tested_source_commit': os.environ['GITHUB_SHA'], 'workflow_run': os.environ['GITHUB_RUN_ID'],
-                    'unit_tests': 22, 'project_check': 'PASS', 'production_build': 'PASS',
-                    'sitemap_urls': html['sitemap_urls'], 'html_observed': html['observed_html'],
-                    'target_urls': html['target_count'], 'target_failures': html['target_failures'],
-                    'target_main_link_missing': html['target_main_link_missing'],
-                    'pdf_files': pdf['public_pdfs'], 'pdf_pages': pdf['pages_scanned'], 'pdf_errors': pdf['errors'],
-                    'generated_pairs': pdf['generated_pairs'], 'scale_pdf_music_regressions': pdf['music_regressions'],
-                    'browser_cases': browser['pages'], 'browser_failures': browser['failures'],
-                    'gsc': 'UNKNOWN', 'production_deployment': 'NOT_PERFORMED', 'main_merge': 'NOT_PERFORMED',
-                    'physical_devices_and_print': 'NOT_TESTED'}
-          output = root/'docs/reviews/url-audit-141/final/RESULT.json'
-          output.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
-          # Finish only the explicit one-time reviewed delta. Later runs remain check-only.
-          manifest = root/'scripts/url-audit-reviewed-edits.json'
-          if not manifest.exists():
-              raise SystemExit(0)
-          records = json.loads(manifest.read_text())
-          allowed = {item['path'] for item in records}
-          allowed.update(str(p.relative_to(root)) for p in (root/'public/downloads/scales').glob('*.pdf'))
-          allowed.add(str(output.relative_to(root)))
-          # Existing project checks rewrite their own tracked reports. Never stage those reports.
-          generated_checks = {'checks/batches/07-site-integration/tailwind-compile.json',
-                              'checks/batches/07-site-integration/foundation.json',
-                              'checks/batches/07-site-integration/foundation.compiled.css'}
-          changed = subprocess.check_output(['git','diff','--name-only']).decode().splitlines()
-          unexpected = set(changed) - allowed - generated_checks
-          assert not unexpected, f'Unexpected changed files: {unexpected}'
-          branch = 'audit/141-url-content-intent'
-          remote = subprocess.check_output(['git','ls-remote','origin',f'refs/heads/{branch}']).decode().split()[0]
-          assert remote == os.environ['GITHUB_SHA'], 'Remote branch advanced; do not overwrite concurrent work.'
-          subprocess.run(['git','add','--',*sorted(allowed)],check=True)
-          subprocess.run(['git','rm','--','scripts/url-audit-reviewed-edits.json','scripts/apply-url-audit-reviewed-edits.py'],check=True)
-          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
-          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-          subprocess.run(['git','commit','-m','Complete verified 141 URL copy, metadata and PDF fixes'],check=True)
-          subprocess.run(['git','push','origin',f'HEAD:refs/heads/{branch}'],check=True)
-          PY
+          git rev-parse HEAD > checks/url-audit-final/VERIFIED_COMMIT.txt
       - name: Upload audit evidence and regenerated resources
         if: always()
         uses: actions/upload-artifact@v4
