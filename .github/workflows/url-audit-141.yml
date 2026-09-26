@@ -16,7 +16,7 @@ jobs:
   verify:
     if: github.ref == 'refs/heads/audit/141-url-content-intent'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     env:
       NEXT_TELEMETRY_DISABLED: '1'
       PIANO_AUDIT_BASE: http://127.0.0.1:8123
@@ -62,6 +62,14 @@ jobs:
           test -n "$CHROME_BIN"
           node scripts/check-url-audit-browser.mjs
           git rev-parse HEAD > checks/url-audit-final/VERIFIED_COMMIT.txt
+      - name: Verify deployed production
+        env:
+          PIANO_AUDIT_BASE: https://pianogrid.com
+        run: |
+          python scripts/audit-url-141.py --base-url https://pianogrid.com
+          export CHROME_BIN="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          test -n "$CHROME_BIN"
+          node scripts/check-url-audit-browser.mjs
       - name: Upload audit evidence and regenerated resources
         if: always()
         uses: actions/upload-artifact@v4
