@@ -1,0 +1,69 @@
+name: 141 URL audit verification
+
+on:
+  push:
+    branches: [audit/141-url-content-intent]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: url-audit-141-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Capture review inputs (tracked files only, no credentials or fonts)
+        run: |
+          mkdir -p /tmp/pianogrid-audit
+          python3 - <<'PY'
+          import pathlib, subprocess, tarfile
+          allowed = {'.ts', '.tsx', '.js', '.mjs', '.json', '.css', '.md', '.py', '.svg', '.pdf', '.html', '.txt', '.xml'}
+          roots = {'src', 'scripts', 'docs', 'public', 'checks', 'keyboard-completion', 'songs-sheet-v2', 'practical-tools', 'PianoGrid_Scales_Intake'}
+          files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          with tarfile.open('/tmp/pianogrid-audit/review-inputs.tar.gz', 'w:gz') as out:
+              for name in files:
+                  if not name:
+                      continue
+                  p = pathlib.Path(name)
+                  if p.is_symlink() or any(part.startswith('.') for part in p.parts):
+                      continue
+                  if p.suffix.lower() not in allowed:
+                      continue
+                  if len(p.parts) > 1 and p.parts[0] not in roots:
+                      continue
+                  out.add(p, arcname=name, recursive=False)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: review-inputs-${{ github.sha }}
+          path: /tmp/pianogrid-audit/review-inputs.tar.gz
+          retention-days: 2
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Project checks
+        run: npm run check
+      - name: Production build (no deployment)
+        run: npm run build
+      - name: Capture generated HTML for audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-pages-${{ github.sha }}
+          path: |
+            .next/server/app/**/*.html
+            .next/prerender-manifest.json
+          include-hidden-files: true
+          retention-days: 2
+          if-no-files-found: warn
