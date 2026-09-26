@@ -240,7 +240,7 @@ function normalizeMajor(page: UnknownRecord, master: { sources: SourceRecord[] }
     validateFingers(fingering[hand][direction], row.length, `${page.url}.fingering.${hand}.${direction}`);
     return [direction, row];
   }))])) as ScaleOption['sequences'];
-  const checked = 'Source-scoped one-octave fingering row.';
+  const checked = 'One-octave fingering.';
   return [{
     id: `major:${data.tonic}`,
     tonic: data.tonic,
@@ -268,7 +268,7 @@ function normalizeMinor(page: UnknownRecord, master: { sources: SourceRecord[] }
       return [direction, row];
     }))])) as ScaleOption['sequences'];
     const fingeringNote = emptyFingeringNote();
-    for (const hand of ['RH', 'LH'] as const) for (const direction of ['ascending', 'descending'] as const) if (fingering[hand][direction]) fingeringNote[hand][direction] = 'Source-scoped one-octave fingering row.';
+    for (const hand of ['RH', 'LH'] as const) for (const direction of ['ascending', 'descending'] as const) if (fingering[hand][direction]) fingeringNote[hand][direction] = 'One-octave fingering.';
     return {
       id: `${form.id}:${page.data.tonic}`,
       tonic: page.data.tonic,
@@ -329,8 +329,8 @@ function optionFromEvents(example: UnknownRecord, page: UnknownRecord, master: {
     fingering[preferredHand].descending = [full.fingers[apex - 1], ...full.fingers.slice(apex)].slice(0, sequences[preferredHand].descending.length);
   }
   const fingeringNote = emptyFingeringNote();
-  if (fingering[preferredHand].ascending) fingeringNote[preferredHand].ascending = 'Source-scoped one-octave arpeggio row.';
-  if (fingering[preferredHand].descending) fingeringNote[preferredHand].descending = 'Source-scoped one-octave arpeggio row.';
+  if (fingering[preferredHand].ascending) fingeringNote[preferredHand].ascending = 'One-octave arpeggio fingering.';
+  if (fingering[preferredHand].descending) fingeringNote[preferredHand].descending = 'One-octave arpeggio fingering.';
   return {
     id: `${page.url.slice(1)}:${example.id}${selectedView ? `:${selectedView.view_id}` : ''}`,
     tonic: example.root,

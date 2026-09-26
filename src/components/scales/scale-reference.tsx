@@ -64,13 +64,13 @@ function SequenceTable({ label, pitches, fingers, sounding, note }: { label: str
 }
 
 function ScaleSources({ option, print, concise = false }: { option: ScaleOption; print: boolean; concise?: boolean }) {
-  return <section className="sc-sources" aria-label={concise ? 'Sources' : 'Sources and checking scope'}>
-    <h3>{concise ? 'Sources' : 'Sources and checking scope'}</h3>
+  return <section className="sc-sources" aria-label={concise ? 'Sources' : 'Sources and scope'}>
+    <h3>{concise ? 'Sources' : 'Sources and scope'}</h3>
     <ul>{option.sources.map((source) => <li key={source.url}>
       <a href={source.url}>{source.publisher}: {source.title}</a>
       {print && <span className="sc-source-url"> ({source.url})</span>}
-      {concise ? <span className="sc-source-scope">{publicSourceAttribution(source.scope)}</span> : <span className="sc-source-scope"><strong>Checked for:</strong> {source.scope}</span>}
-      {!concise && <span className="sc-source-scope"><strong>Location:</strong> {source.locator}</span>}
+      {concise ? <span className="sc-source-scope">{publicSourceAttribution(source.scope)}</span> : <span className="sc-source-scope"><strong>Supports:</strong> {publicSourceAttribution(source.scope)}</span>}
+      {!concise && <span className="sc-source-scope"><strong>Location:</strong> {publicSourceAttribution(source.locator)}</span>}
     </li>)}</ul>
   </section>;
 }

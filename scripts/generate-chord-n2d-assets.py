@@ -9,7 +9,8 @@ ROOT=Path(__file__).resolve().parents[1]
 DETAILS=ROOT/'docs/pianogrid-chords-n2d-v2/03_content/details'
 SOURCE=ROOT/'docs/pianogrid-chords-n2d-v2/09_generated_assets'
 PUBLIC=ROOT/'public/reference/assets'
-FONT=Path(r'C:\Windows\Fonts\NotoSansSC-VF.ttf');PDF_FONT='PianoGridSymbol'
+FONT=None  # Resolve PIANOGRID_PDF_FONT or the legacy path at generation time.
+PDF_FONT='PianoGridSymbol'
 WHITE_PCS={0,2,4,5,7,9,11};NAMES={0:'C',2:'D',4:'E',5:'F',7:'G',9:'A',11:'B'}
 
 def whites(start=48,end=76):return [m for m in range(start,end+1) if m%12 in WHITE_PCS]

@@ -1,3 +1,4 @@
+import { publicSourceText, publicTriadDescription } from './public-source-copy';
 import type { Metadata } from 'next';
 import { SITE_ORIGIN } from './site-config';
 import type { ChordDetailModel } from './a-minor-types';
@@ -192,7 +193,7 @@ export const SEO_COPY: Record<string, Copy> = {
     intro: 'Start with one beginner edition and check how to get its score. Use the reading and keyboard references when a note or symbol is unfamiliar.',
   },
   '/sheet-music/hot-cross-buns': { title: 'Hot Cross Buns Piano Sheet Music: Edition & Access | PianoGrid', h1: 'Hot Cross Buns Piano Sheet Music', description: 'Check Hoffman Academy’s Lesson 1 materials for Hot Cross Buns, including its parent-guide context, external access route and beginner practice links.' },
-  '/sheet-music/twinkle-twinkle-little-star': { title: 'Twinkle, Twinkle Piano Sheet Music: Edition & Plan | PianoGrid', h1: 'Twinkle, Twinkle, Little Star Piano Sheet Music', description: 'Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.' },
+  '/sheet-music/twinkle-twinkle-little-star': { title: 'Twinkle Twinkle Little Star Piano Sheet Music | PianoGrid', h1: 'Twinkle, Twinkle, Little Star Piano Sheet Music', description: 'Check the Early Elementary Twinkle, Twinkle, Little Star edition from Hoffman Academy, its external access requirements and a focused 10-minute practice plan.' },
   '/sheet-music/ode-to-joy': { title: 'Ode to Joy Piano Sheet Music: Edition & Access | PianoGrid', h1: 'Ode to Joy Piano Sheet Music', description: 'Check the Early Elementary Ode to Joy edition from Hoffman Academy. See access conditions and version details before choosing materials for practice.' },
   '/guide': { title: 'How to Play Piano for Beginners: First Steps', description: 'Start with C, D and E, try a four-count pattern, and learn the first steps of reading music. Follow links to piano notes, chords and scale practice.' },
   '/guide/read-sheet-music': {
@@ -313,15 +314,7 @@ export function hideInternalScaleSources(url: string): boolean {
 }
 
 export function publicSourceAttribution(scope: string): string {
-  return scope
-    .replace(/visually checked in the approved Scales plan evidence/gi, '')
-    .replace(/approved[- ]plan evidence/gi, '')
-    .replace(/;?\s*no contents verified/gi, '')
-    .replace(/\b(?:AT|AM|AN|PG|N2[A-D])-[A-Z0-9-]+\b/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/\s+([,.;])/g, '$1')
-    .replace(/^[,;.\s]+|[,;\s]+$/g, '')
-    .trim();
+  return publicSourceText(scope);
 }
 
 /** Hide internal review IDs and audit labels on selected public chord pages. Keep source names and links. */
@@ -444,7 +437,8 @@ export function editorialMetadata(original: Metadata): Metadata {
   const url = canonical.startsWith('https://') ? new URL(canonical).pathname : canonical;
   const copy = SEO_COPY[url];
   const title = copy?.title ?? original.title;
-  const description = (copy?.description ?? original.description)?.replace(/\bthe ([a-g])(?= (?:major|minor|dominant|diminished|augmented|suspended))/g, (_, root: string) => `the ${root.toUpperCase()}`);
+  const rawDescription = (copy?.description ?? original.description)?.replace(/\bthe ([a-g])(?= (?:major|minor|dominant|diminished|augmented|suspended))/g, (_, root: string) => `the ${root.toUpperCase()}`);
+  const description = rawDescription ? publicTriadDescription(url, rawDescription) : rawDescription;
   if (typeof title !== 'string' || !description) return original;
   // Long specific titles retain their detail instead of forcing a brand suffix.
   const branded = title.includes('PianoGrid') || title.length > 52 ? title : `${title} | PianoGrid`;

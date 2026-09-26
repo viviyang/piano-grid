@@ -1,0 +1,5 @@
+# Audit and PDF-generation tooling only; no application dependency changes.
+reportlab==4.4.9
+fonttools==4.63.0
+pypdf==5.9.0
+PyMuPDF==1.26.7

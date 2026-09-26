@@ -2,10 +2,9 @@
 import json,hashlib,textwrap
 from pathlib import Path
 from reportlab.lib.pagesizes import letter
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
-ROOT=Path(__file__).resolve().parents[1];PACK=ROOT/'docs/pianogrid-chords-completion';PUBLIC=ROOT/'public/reference/assets';OUT=ROOT/'checks/chords-completion/generated-assets';FONT=Path(r'C:\Windows\Fonts\seguisym.ttf');NAME='PianoGridSymbol'
+from chord_pdf_font import register_chord_pdf_font
+ROOT=Path(__file__).resolve().parents[1];PACK=ROOT/'docs/pianogrid-chords-completion';PUBLIC=ROOT/'public/reference/assets';OUT=ROOT/'checks/chords-completion/generated-assets';NAME='PianoGridSymbol'
 def line(pdf,text,x,y,size=9,bold=False):pdf.setFont(NAME,size);pdf.setFillColorRGB(.11,.14,.19);pdf.drawString(x,y,text);return y-14
 def wrapped(pdf,text,x,y,width=92,size=8.5):
  for part in textwrap.wrap(text,width=width):y=line(pdf,part,x,y,size)
@@ -29,8 +28,7 @@ def practice_pdf(path):
  for answer in answers:y=wrapped(pdf,answer,52,y,84,9);y-=8
  footer(pdf,1);pdf.showPage();pdf.save()
 def main():
- if not FONT.exists():raise SystemExit('Missing Segoe UI Symbol font')
- pdfmetrics.registerFont(TTFont(NAME,str(FONT)));PUBLIC.mkdir(parents=True,exist_ok=True);OUT.mkdir(parents=True,exist_ok=True)
+ register_chord_pdf_font(None, NAME);PUBLIC.mkdir(parents=True,exist_ok=True);OUT.mkdir(parents=True,exist_ok=True)
  ext=load('extended.objects.json');alt=load('altered.objects.json');sup=load('supplement.objects.json');jobs=[]
  specs=[('chords-extended-starter-reference.pdf','Extended chord starter reference','Nine structures on C. Full formula inventory and the explicit rooted example are shown separately.',[x for x in ext if x['rootSpelling']=='C']),('chords-altered-starter-reference.pdf','Altered chord starter reference','Eight explicit altered structures on C. Written altered intervals are preserved.',[x for x in alt if x['rootSpelling']=='C']),('piano-power-fifths-reference.pdf','Piano power fifths reference','Twelve root-and-fifth examples. A symbol such as C5 is distinct from the single pitch C5.',[x for x in sup if x['subtype']=='power5'])]
  for filename,title,scope,objects in specs:

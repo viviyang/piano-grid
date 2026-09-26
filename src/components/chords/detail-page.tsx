@@ -1,3 +1,4 @@
+import { publicSourceText } from '@/lib/public-source-copy';
 import type { ChordDetailModel } from '@/lib/a-minor-types';
 import { AMinorExperience as ChordDetailExperience, InversionRow, PrintActions } from '../a-minor/experience';
 import { ChordPageToc, ChordSectionTitle } from './page-toc';
@@ -17,7 +18,7 @@ export function ChordDetailPage({model,pilot=false}:{model:ChordDetailModel;pilo
   const compactSources=isPageFix16(data.url)||hideInternalSourceCodes(data.url);
   const publicSources=hideInternalSourceAudit(data.url);
   // Keep audit IDs and checked dates in the server model; only reader-facing fields cross the client boundary.
-  const renderedSources=model.sources.map(({id: _id, checkedOn: _checkedOn, ...source})=>({...source,id:source.url,checkedOn:''}));
+  const renderedSources=model.sources.map(({id: _id, checkedOn: _checkedOn, ...source})=>({...source,id:source.url,checkedOn:'',supports:publicSourceText(source.supports),limitation:publicSourceText(source.limitation)}));
   const renderedFingerings=model.fingeringExamples.map(({sourceIds: _sourceIds, ...example})=>({...example,sourceIds:[]}));
   const definition=data.chord.definition;
   const category={label:definition.categoryLabel,href:definition.categoryRoute};
@@ -34,13 +35,14 @@ export function ChordDetailPage({model,pilot=false}:{model:ChordDetailModel;pilo
     if(!authored)throw new Error(`Missing authored staff mapping: ${note.display_pitch}`);
     return authored;
   })])):{};
-  const fingering=pilot?<FingeringGuide block={byId[`${prefix}-fingering-example`]} examples={renderedFingerings} sources={renderedSources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources} hideAuditNotes={publicSources} illustrated bothHands/>:null;
+  const fingering=pilot?<FingeringGuide block={byId[`${prefix}-fingering-example`]} examples={renderedFingerings} sources={renderedSources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources} hideAuditNotes={publicSources} illustrated bothHands omitHeading/>:null;
   return <Experience data={data} heading={heading} toolNotes={toolParagraphs.map(p=><p key={p}>{p}</p>)} introduction={intro} searchSections={searchSections} practice={model.practice} fingering={fingering} staffByVoicing={staffByVoicing}>
     {blocks.filter(b=>![`${prefix}-intro`,data.toolId].includes(b.block_id)).map(block=>{const {block_id:id,content:c}=block;
       if(pilot&&[`${prefix}-fingering-example`,`${prefix}-print`,'practice'].includes(id))return null;
       if(id===`${prefix}-fingering-example`)return model.fingeringExamples.length?<FingeringGuide key={id} block={block} examples={renderedFingerings} sources={renderedSources} defaultVoicingId={data.defaultId} hideSourceCodes={compactSources} hideAuditNotes={publicSources}/>:<section className="am-content-section ch-fingering" id={id} data-block-id={id} data-fingering-visible="false" key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><div className="ch-section-heading"><div className="ch-section-kicker">Reference scope</div><h2 id={`${id}-heading`}>{c.heading}</h2></div><div className="am-content-body ch-learning-panel">{c.paragraphs.map(p=><p key={p}>{p}</p>)}{c.links.filter(l=>l.published).map(l=><a className="am-button am-tertiary" key={l.url} href={l.url}>{l.label}</a>)}{(!compactSources||model.sources.length>0)&&<details className="ch-source-details"><summary>{compactSources||publicSources?'Sources':'Sources and scope'}</summary><div><ChordSourceList sources={renderedSources} hideSourceCodes={compactSources} hideAuditNotes={publicSources}/></div></details>}</div></section>;
       if(id==='practice')return <ChordBuilderPractice key={id} data={data} practice={model.practice}/>;
-      return <section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={`${id}-heading`}><h2 id={`${id}-heading`}><ChordSectionTitle id={id} text={c.heading}/></h2><div className={`am-content-body${prefix==='am'&&['am-why-minor','am-practice'].includes(id)?' ch-learning-panel':''}`}>
+      const panelOwnsHeading=pilot&&(id===`${prefix}-notice`||id===`${prefix}-inversions`);
+      return <section className="am-content-section" id={id} data-block-id={id} key={id} tabIndex={-1} aria-labelledby={panelOwnsHeading?undefined:`${id}-heading`} aria-label={panelOwnsHeading?c.heading:undefined}>{panelOwnsHeading?null:<h2 id={`${id}-heading`}><ChordSectionTitle id={id} text={c.heading}/></h2>}<div className={`am-content-body${prefix==='am'&&['am-why-minor','am-practice'].includes(id)?' ch-learning-panel':''}`}>
       {c.paragraphs.map(p=><p key={p}>{p}</p>)}
       {c.steps.length>0&&<ol className="am-steps">{c.steps.map(s=><li key={s}><span>{s}</span></li>)}</ol>}
       {(id===`${prefix}-inversions`||id===`${prefix}-voicings`)&&c.table&&<div className="am-table-scroll" tabIndex={0} role="region" aria-label={`${data.chord.name_en} ${definition.family==='add'?'layout':'inversion'} comparison table`}><table className="am-inversion-table"><caption className="pr-sr-only">{data.chord.name_en}: {positionCaption}</caption><thead><tr>{c.table.columns.map(t=><th scope="col" key={t}>{t}</th>)}</tr></thead><tbody>{c.table.rows.map((row,i)=><InversionRow key={data.options[i].value} voicingId={data.options[i].value} position={data.options[i].label} cells={row}/>)}</tbody></table></div>}

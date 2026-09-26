@@ -1,0 +1,72 @@
+{
+  "tested_source_commit": "3f5a2734178b021f7583c932f22e3fab09887593",
+  "workflow_run": "36234661441",
+  "unit_tests": 22,
+  "project_check": "PASS",
+  "production_build": "PASS",
+  "sitemap_urls": 206,
+  "html_observed": 206,
+  "target_urls": 141,
+  "target_failures": 0,
+  "target_main_link_missing": 0,
+  "pdf_files": 171,
+  "pdf_pages": 396,
+  "pdf_errors": [],
+  "generated_pairs": 136,
+  "scale_pdf_music_regressions": [
+    {
+      "path": "public/downloads/scales/pianogrid-12-major-scales-note-reference-a4.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 432,
+      "pages": 13
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-12-major-scales-note-reference.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 432,
+      "pages": 13
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-c-major-two-hand-starter-a4.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 72,
+      "pages": 3
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-c-major-two-hand-starter.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 72,
+      "pages": 3
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-major-minor-note-atlas-a4.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 2160,
+      "pages": 61
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-major-minor-note-atlas.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 2160,
+      "pages": 61
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-scales-notes-check-worksheet.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 0,
+      "pages": 3
+    },
+    {
+      "path": "public/downloads/scales/pianogrid-scales-starter-reference.pdf",
+      "music_rows_unchanged": true,
+      "music_rows": 288,
+      "pages": 10
+    }
+  ],
+  "browser_cases": 12,
+  "browser_failures": 0,
+  "gsc": "UNKNOWN",
+  "production_deployment": "NOT_PERFORMED",
+  "main_merge": "NOT_PERFORMED",
+  "physical_devices_and_print": "NOT_TESTED"
+}

@@ -1,0 +1,86 @@
+name: 141 URL audit verification
+
+on:
+  push:
+    branches: [audit/141-url-content-intent]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: url-audit-141-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/audit/141-url-content-intent'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      PIANO_AUDIT_BASE: http://127.0.0.1:8123
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked application and pinned audit dependencies
+        run: |
+          npm ci
+          python -m pip install -r scripts/url-audit-python-requirements.txt
+      - name: Targeted unit tests
+        run: |
+          node --experimental-strip-types --test tests/url-audit/public-source-copy.test.mjs
+          python -m unittest discover -s tests/url-audit -p 'test_*.py'
+      - name: Regenerate and verify PDF resources without committing
+        run: |
+          python scripts/generate-scale-pdfs.py
+          python scripts/generate-scale-completion-pdfs.py
+          python scripts/check-url-audit-pdfs.py
+          git diff --exit-code -- public/downloads/scales/
+      - name: Project checks
+        run: npm run check
+      - name: Production build without deployment
+        run: npm run build
+      - name: Verify runtime HTML, TDH, links and browser rendering
+        run: |
+          npm run start -- --hostname 127.0.0.1 --port 8123 > /tmp/pianogrid-next.log 2>&1 &
+          ready=0
+          for i in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:8123/ > /dev/null; then ready=1; break; fi
+            sleep 1
+          done
+          test "$ready" = 1
+          python scripts/audit-url-141.py --base-url http://127.0.0.1:8123
+          export CHROME_BIN="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          test -n "$CHROME_BIN"
+          node scripts/check-url-audit-browser.mjs
+          git rev-parse HEAD > checks/url-audit-final/VERIFIED_COMMIT.txt
+      - name: Upload audit evidence and regenerated resources
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-review-${{ github.sha }}
+          path: |
+            checks/url-audit-final/
+            docs/reviews/url-audit-141/final/
+            public/downloads/scales/*.pdf
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Upload generated HTML for independent review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-pages-${{ github.sha }}
+          path: |
+            .next/server/app/**/*.html
+            .next/prerender-manifest.json
+          include-hidden-files: true
+          retention-days: 2
+          if-no-files-found: warn
